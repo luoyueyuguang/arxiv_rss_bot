@@ -352,14 +352,43 @@ class ICLRBot:
                 logger.warning("Failed to load cache: %s", e)
 
         logger.info("Fetching ICLR %s submissions from OpenReview...", self.year)
-        # For testing, limit to first 2000 papers to avoid timeout
         self.max_papers = 20000
-        submissions = self._fetch_notes(self.conference_domain)
+        try:
+            submissions = self._fetch_notes(self.conference_domain)
+            logger.info("Fetched %d submissions", len(submissions))
+            if not submissions:
+                logger.warning("OpenReview returned no submissions, falling back to cache")
+                return self._build_submissions_from_cache()
+            return submissions
+        except Exception as e:
+            logger.warning("OpenReview fetch failed: %s, falling back to cache", e)
+            return self._build_submissions_from_cache()
 
-        logger.info("Fetched %d submissions", len(submissions))
+    def _build_submissions_from_cache(self) -> List[Dict[str, Any]]:
         return submissions
 
-    def _fetch_ratings(self, paper_number: int, forum_id: str) -> Dict[str, Any]:
+    def _build_submissions_from_cache(self) -> List[Dict[str, Any]]:
+        """Build submission dicts from cached papers when OpenReview is unavailable."""
+        from datetime import datetime, timezone as tz
+        cached = self.load_cached_papers()
+        if not cached:
+            logger.warning("No cache available")
+            return []
+        logger.info("Using %d papers from cache", len(cached))
+        return [{
+            "content": {
+                "title": {"value": p["title"]},
+                "authors": {"value": p["authors"]},
+                "keywords": {"value": p["keywords"]},
+                "abstract": {"value": p["abstract"]},
+                "pdf": p.get("pdf_link")
+            },
+            "forum": p["forum_id"],
+            "id": p["forum_id"],
+            "cdate": int(datetime.fromisoformat(
+                p["submission_date"].replace("Z", "+00:00")
+            ).timestamp() * 1000) if p.get("submission_date") else None
+        } for p in cached]
         """Fetch review ratings for a specific paper."""
         try:
             # Get all replies/reviews for this paper's forum
