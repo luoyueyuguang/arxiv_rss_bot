@@ -1,0 +1,468 @@
+{
+  "name": "ai",
+  "conference": "AI / AI for Science",
+  "last_updated": "2026-06-12T05:34:16.096086+00:00",
+  "paper_count": 20,
+  "papers": [
+    {
+      "forum_id": "2606.12828",
+      "paper_number": -1,
+      "title": "Topical Phase Transitions in Artificial Intelligence Research: Large-Scale Evidence and an Early-Warning Signature for Emerging Topics",
+      "authors": [
+        "Rasul Khanbayov, Hasan Kurban"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ICML"
+      ],
+      "abstract": "arXiv:2606.12828v1 Announce Type: new \nAbstract: Do research topics in artificial intelligence grow gradually, or do they advance through abrupt, detectable jumps? Analyzing 80,814 accepted main-track papers from five premier AI conferences (ACL, CVPR, ICLR, ICML, NeurIPS) spanning 2017 to 2025, we show major AI topics advance through topical phase transitions: remaining marginal for years, then surging across venues within one to three years. Large language models became the dominant cross-venue topic by 2025, diffusion models rose with comparable abruptness, and language-model methods crossed into computer vision via vision-language models, whereas reinforcement learning compounded smoothly, distinguishing genuine phase transitions from ordinary growth. This structure is our primary cont",
+      "pdf_link": "https://arxiv.org/pdf/2606.12828.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.12828",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ICML",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 47.5,
+      "updated_at": "2026-06-12T05:34:15.229496+00:00"
+    },
+    {
+      "forum_id": "2606.12935",
+      "paper_number": -1,
+      "title": "MARS: Margin-Adversarial Risk-controlled Stopping for Parallel LLM Test-time Scaling",
+      "authors": [
+        "Wenbo Chen, Puheng Li, Mengyang Liu, Weijie Su, Tianpei Xie"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.12935v1 Announce Type: new \nAbstract: Parallel test-time scaling samples many reasoning traces and majority-votes their answers, improving LLM accuracy but requiring traces to run to completion, incurring substantial computational overhead. We observe that probing partial traces at intermediate checkpoints can extract current answers without disrupting generation, revealing an evolving aggregate vote. Based on this observation, we introduce MARS, a margin-adversarial stopping rule that estimates which active traces are likely to change their answers and stops once the leader remains safe under a conservative bound on future vote movement. The rule separates two sources of uncertainty. It learns the trace-level switch probabilities that determine how much of the current margin is",
+      "pdf_link": "https://arxiv.org/pdf/2606.12935.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.12935",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 6.5,
+      "updated_at": "2026-06-12T05:34:15.229723+00:00"
+    },
+    {
+      "forum_id": "2606.12983",
+      "paper_number": -1,
+      "title": "Structured Testbench Generation for LLM-Driven HDL Design and Verification-Oriented Data Curation",
+      "authors": [
+        "En-Ming Huang, Yu-Hung Kao, Ren-Hao Deng, Wei-Po Hsin, Yao-Ting Hsieh, Cheng Liang, Hsiang-Yu Tsou, Mu-Chi Chen, Yu-Kai Hung, Shao-Chun Ho, Po-Hsuang Huang, Shih-Hao Hung, H. T. Kung"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.12983v1 Announce Type: new \nAbstract: Automated testbench generation has become a critical bottleneck in large language model (LLM)-driven Register Transfer Level (RTL) workflows, where large numbers of candidate designs must be verified rapidly and reliably. Existing prompt-based approaches treat testbench generation as unconstrained code synthesis, yielding stochastic outputs with high token cost, low reproducibility, and insufficient coverage. To address this gap, we present STG, a Structured Testbench Generation framework that exploits the inherent structure of hardware designs to generate deterministic testbenches. As a direct verification tool, STG runs 720x faster than an iterative LLM-based testbench generation flow and higher rate of successful compilation, achieves hig",
+      "pdf_link": "https://arxiv.org/pdf/2606.12983.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.12983",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 24.5,
+      "updated_at": "2026-06-12T05:34:15.229861+00:00"
+    },
+    {
+      "forum_id": "2606.12634",
+      "paper_number": -1,
+      "title": "Keep Policy Gradient in Charge: Sibling-Guided Credit Distillation for Long-Horizon Tool-Use Agents",
+      "authors": [
+        "Tianyu Ding, Jianhong Xin, Juan Pablo De la Cruz Weinstein"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.12634v1 Announce Type: cross \nAbstract: Long-horizon tool-use reinforcement learning can learn from outcome verification, but its\n  trajectory-level advantage is broadcast across many reasoning, API, and answer tokens.\n  Self-distillation promises a denser signal by reusing a policy's own rollouts or a privileged\n  teacher. We show, however, that direct token-level self-distillation can silently destroy tool use:\n  it rehearses teacher behavior without knowing which actions the verifier rewards, so useful skills\n  and harmful shortcuts are amplified together. We introduce Sibling-Guided Credit Distillation\n  (SGCD), which uses distillation for credit assignment rather than as a competing actor loss.\n  Dynamic sampling produces mixed successful and failed sibling rollouts; an ext",
+      "pdf_link": "https://arxiv.org/pdf/2606.12634.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.12634",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 73.5,
+      "updated_at": "2026-06-12T05:34:15.231713+00:00"
+    },
+    {
+      "forum_id": "2606.12647",
+      "paper_number": -1,
+      "title": "Token Complexity Theory for AI-Augmented Computing",
+      "authors": [
+        "Jie Wang"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.12647v1 Announce Type: cross \nAbstract: AI-augmented computing delegates natural language queries, code generation requests, and other open-ended tasks to a cluster of AI models that processes queries and generates responses. This paradigm introduces a resource dimension that neither classical time nor space complexity captures: the cost of sending queries to and receiving responses from such a cluster. We introduce token complexity, a formal resource measure defined as the minimum expected token cost to achieve a specified level of output quality on a task, and develop a taxonomy classifying AI systems by the strength of their probabilistic properties.\n  We develop token complexity within the framework of AI-Oracle Turing machines, in which a probabilistic Turing machine intera",
+      "pdf_link": "https://arxiv.org/pdf/2606.12647.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.12647",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-12T05:34:15.231737+00:00"
+    },
+    {
+      "forum_id": "2606.12923",
+      "paper_number": -1,
+      "title": "Order Is Not Control",
+      "authors": [
+        "Gareth Seneque, Lap-Hang Ho, Nafise Erfanian Saeedi, Jeffrey Molendijk, Tim Elson"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.12923v1 Announce Type: cross \nAbstract: AI alignment, interpretability, steering, and neural perturbation studies identify order-inducing objects. We argue that order is not control. Control requires a receiver-gated response law: a denominator-indexed operator mapping material state, action/drive, bath, and receiver state to response displacement, sinks, effort, and basin projection. We identify it across biological, LLM, adapter, and stochastic-operator panels. The laws are local: an intervention can be admitted, saturated, sign-changing, leaky, or overdriven depending on medium, bath, receiver state, action port, and comparator. Control is assigned when finite effort moves a target or outcome-readout class under the same denominator while damage, null/evasive, invalid format,",
+      "pdf_link": "https://arxiv.org/pdf/2606.12923.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.12923",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.0,
+      "updated_at": "2026-06-12T05:34:15.232429+00:00"
+    },
+    {
+      "forum_id": "2606.13486",
+      "paper_number": -1,
+      "title": "CRAFTIIF: Cross-Resolution Analytic Four-Type Interpretable Isolation Forest for Multivariate Time Series Anomaly Detection",
+      "authors": [
+        "William Smits"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.13486v1 Announce Type: cross \nAbstract: Anomaly detection in multivariate time series is challenged by four structurally distinct anomaly types -- point (isolated spikes), distributional (level shifts), temporal (rhythm changes), and collective (inter-sensor correlation breakdowns) -- each requiring different feature representations. Most unsupervised methods target only one or two types and provide limited interpretability. We present CRAFTIIF (Cross-Resolution Analytic Four-Type Interpretable Isolation Forest), a fully unsupervised framework targeting all four types without dataset-specific tuning. CRAFTIIF generates K=500 random analytic wavelet feature draws across four families (Morlet, DOG, Haar, Coiflet), each targeting a specific anomaly type, feeding five structured Iso",
+      "pdf_link": "https://arxiv.org/pdf/2606.13486.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.13486",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-06-12T05:34:15.233644+00:00"
+    },
+    {
+      "forum_id": "2606.13571",
+      "paper_number": -1,
+      "title": "Existence Precedes Value: Joint Modeling of Observational Existence and Evolving States in Time Series Forecasting",
+      "authors": [
+        "Yifan Hu, Hongzhou Chen, Peiyuan Liu, Yiding Liu, Zewei Dong, Jiang-Ming Yang"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.13571v1 Announce Type: cross \nAbstract: Real-world time series are often highly incomplete and irregular due to sensor dormancy, transmission delays, and event-driven sampling, making reliable forecasting fundamentally challenging. Existing methods have evolved from impute-then-forecast pipelines to continuous-time models such as Neural ODEs and continuous-time graph networks. While these approaches improve the modeling of historical irregularity, they still rely on an implicit oracle assumption at inference time: the timestamps of future valid observations are presumed to be known in advance. This assumption limits practical relevance, since in many real systems the more fundamental question is not only what the future value will be, but also whether a valid observation will oc",
+      "pdf_link": "https://arxiv.org/pdf/2606.13571.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.13571",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-12T05:34:15.233781+00:00"
+    },
+    {
+      "forum_id": "2606.08098",
+      "paper_number": -1,
+      "title": "When Does Delegation Beat Majority? A Delegation-Based Aggregator for Multi-Sample LLM Inference",
+      "authors": [
+        "Yasushi Sakai, Allen Song, Kent Larson"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.08098v2 Announce Type: replace \nAbstract: Majority voting over sampled answers is the dominant unsupervised aggregator for multi-sample LLM inference. In this paper, we show a delegation-based aggregator (Propagational Proxy Voting, PPV; Sakai et al., 2025) yields an unsupervised consensus rule that beats majority on MMLU-Pro by +1.5 pp overall and +2.24 pp on the non-trivial subset (paired McNemar p ~ 1.0e-14, n = 8,099). Majority discards two signals that every sample carries: within-group letter entropy and between-group reasoning geometry. PPV exposes per-voter levers that consume exactly these two signals: When (how much weight a voter keeps on its own pick) and Whom (how it splits the remainder across peers). We drive When with letter entropy and Whom with per-question-cen",
+      "pdf_link": "https://arxiv.org/pdf/2606.08098.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.08098",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-06-12T05:34:15.234465+00:00"
+    },
+    {
+      "forum_id": "2601.19827",
+      "paper_number": -1,
+      "title": "When Iterative RAG Beats Ideal Evidence: A Diagnostic Study in Scientific Multi-hop Question Answering",
+      "authors": [
+        "Mahdi Astaraki, Mohammad Arshi Saloot, Ali Shiraee Kasmaee, Hamidreza Mahyar, Soheila Samiee"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2601.19827v4 Announce Type: replace-cross \nAbstract: Retrieval-Augmented Generation (RAG) extends large language models (LLMs) beyond parametric knowledge, yet it is unclear when iterative retrieval-reasoning loops meaningfully outperform static RAG, particularly in scientific domains with multi-hop reasoning, sparse domain knowledge, and heterogeneous evidence. We provide the first controlled, mechanism-level diagnostic study of whether synchronized iterative retrieval and reasoning can surpass an idealized static upper bound (Gold Context) RAG. We benchmark eleven state-of-the-art LLMs under three regimes: (i) No Context, measuring reliance on parametric memory; (ii) Gold Context, where all oracle evidence is supplied at once; and (iii) Iterative RAG, a training-free controller tha",
+      "pdf_link": "https://arxiv.org/pdf/2601.19827.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.19827",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 47.0,
+      "updated_at": "2026-06-12T05:34:15.235314+00:00"
+    },
+    {
+      "forum_id": "2602.10132",
+      "paper_number": -1,
+      "title": "TokaMark: A Comprehensive Benchmark for MAST Tokamak Plasma Models",
+      "authors": [
+        "C\\'ecile Rousseau, Samuel Jackson, Rodrigo H. Ordonez-Hurtado, Nicola C. Amorisco, Tobia Boschi, George K. Holt, Andrea Loreti, Eszter Sz\\'ekely, Alexander Whittle, Adriano Agnello, Stanislas Pamela, Alessandra Pascale, Robert Akers, Juan Bernabe Moreno, Sue Thorne, Mykhaylo Zayats"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2602.10132v3 Announce Type: replace-cross \nAbstract: Development and operation of commercially viable fusion energy reactors such as tokamaks require accurate predictions of plasma dynamics from sparse, noisy, and incomplete sensors readings. The complexity of the underlying physics and the heterogeneity of experimental data pose formidable challenges for conventional numerical methods, and highlight the promise of modern data-native approaches. A major obstacle in realizing this potential is, however, the lack of curated, openly available datasets and standardized benchmarks. Existing fusion datasets are scarce, fragmented across institutions, facility-specific, and inconsistently annotated, which limits reproducibility and prevents a fair and scalable comparison of AI approaches. I",
+      "pdf_link": "https://arxiv.org/pdf/2602.10132.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.10132",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 24.0,
+      "updated_at": "2026-06-12T05:34:15.235496+00:00"
+    },
+    {
+      "forum_id": "2606.11199",
+      "paper_number": -1,
+      "title": "NightFeats @ MMU-RAGent NeurIPS 2025: A Context-Optimized Multi-Agent RAG System for the Text-to-Text Track",
+      "authors": [
+        "Quentin Fever, Naziha Aslam"
+      ],
+      "keywords": [
+        "cs.LG",
+        "NeurIPS"
+      ],
+      "abstract": "arXiv:2606.11199v1 Announce Type: cross \nAbstract: We present NightFeats, a structured multi-agent retrieval-augmented generation (RAG) system submitted to the MMU-RAGent competition at NeurIPS 2025, where it was awarded Best Dynamic Evaluation in the text-to-text track. Rather than targeting benchmark maximization, this work proposes a principled pipeline that decomposes knowledge synthesis into three coordinated phases: retrieval, curation, and composition, each governed by explicit intermediate representations and handoff contracts. Inspired by Agentic Context Engineering (ACE), the system introduces temporal-semantic reranking, bounded contradiction reconciliation, and citation-preserving composition as core architectural primitives. Competition results show that NightFeats surpasses p",
+      "pdf_link": "https://arxiv.org/pdf/2606.11199.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.11199",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "NeurIPS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.5,
+      "updated_at": "2026-06-12T05:34:15.644841+00:00"
+    },
+    {
+      "forum_id": "2606.11256",
+      "paper_number": -1,
+      "title": "My Chemical Harness: Evolutionary Molecular Design over Synthetic Pathways with Large Language Model Agents",
+      "authors": [
+        "C\\'esar Ojeda, Darius A. Faroughy, Maryam Karimi, Payam Zarrintaj, Mir Mehdi Seyedebrahimi, Mart\\'in Carballo-Pacheco"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.11256v1 Announce Type: cross \nAbstract: Designing molecules with target properties is most useful when candidate structures are accompanied by feasible synthetic routes. We introduce My Chemical Harness, a route-native evolutionary framework for goal-directed molecular design in which the search population consists of executable synthetic pathways rather than isolated molecular graphs. Each route is built from purchasable building blocks and reaction templates, executed by deterministic chemistry tools, and scored through task-specific molecular oracles. Large language models (LLMs) are used only as strategy controllers that select high-level preferences over route length, move type, reaction families, motifs, and exploration pressure, while local code performs route constructio",
+      "pdf_link": "https://arxiv.org/pdf/2606.11256.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.11256",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 35.0,
+      "updated_at": "2026-06-12T05:34:15.645034+00:00"
+    },
+    {
+      "forum_id": "2606.11339",
+      "paper_number": -1,
+      "title": "Quantized Stochastic Primal-Dual Methods for Distributed Optimization under Relaxed Global Geometry",
+      "authors": [
+        "Susmit Sarkar, Abhinav Raghuvanshi, Kushal Chakrabarti, Mayank Baranwal"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.11339v1 Announce Type: cross \nAbstract: We study distributed optimization with stochastic gradients and finite-bit communication modeled by random (unbiased) quantization. We propose q-PDGD, a quantized stochastic primal-dual method, and analyze it under relaxed global geometry. Under restricted secant inequality (RSI), a constant step-size yields linear contraction to an explicit neighborhood determined by gradient noise, quantization distortion, and network connectivity, while a diminishing step-size achieves O(1/k) convergence without shared-minimizer assumptions. Under Polyak-Lojasiewicz (PL) inequality, we obtain linear-to-neighborhood convergence in the same stochastic quantized setting. Our results match the best-known centralized stochastic rates in oracle complexity, an",
+      "pdf_link": "https://arxiv.org/pdf/2606.11339.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.11339",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-06-12T05:34:15.645234+00:00"
+    },
+    {
+      "forum_id": "2606.11437",
+      "paper_number": -1,
+      "title": "The Power of Test-Time Training for Approximate Sampling",
+      "authors": [
+        "Noah Golowich, Ankur Moitra, Dhruv Rohatgi"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.11437v1 Announce Type: cross \nAbstract: Efficiently sampling from a complex probability distribution is a fundamental problem which has become increasingly pertinent in recent years with the rise of generative AI, as sophisticated sampling procedures from LLMs have been proposed to solve challenging reasoning problems. The efficacy of such sampling algorithms is limited, however, by the relationship between the LLM and the particular sampling task at hand, which has motivated the framework of test-time training (TTT). TTT works by updating a model's weights in response to partial generations and reward feedback received at inference time, thus adapting to the particular problem. In this work, we propose a formalization for TTT as the problem of producing a sample from a given pr",
+      "pdf_link": "https://arxiv.org/pdf/2606.11437.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.11437",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-06-12T05:34:15.645385+00:00"
+    },
+    {
+      "forum_id": "2606.12211",
+      "paper_number": -1,
+      "title": "Quantum Occam Learning: Sample-Supported Expressibility for Circuit-Based Quantum Learning",
+      "authors": [
+        "Jeongho Bang, Kyoungho Cho, Jeongwoo Jae"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.12211v1 Announce Type: cross \nAbstract: A central principle in quantum machine learning is that an ansatz should be expressive enough to represent the quantum data of interest. Yet, the expressibility is statistically meaningful only insofar as it can be learned from finitely many copies of an unknown quantum state. In this work, we develop an information-theoretic Occam theory for quantum data generated by finite-size quantum circuits. For the class $S_{n,G}$ of $n$-qubit pure states preparable with at most $G$ two-qubit gates, a metric-entropy argument gives the realizable sample law $\\widetilde{\\Theta}(G/\\epsilon^2)$ in the circuit-limited regime. For an arbitrary source $\\hat{\\rho}$, we introduce the best $G$-gate approximation error $d_G(\\hat{\\rho})$ and the approximate cir",
+      "pdf_link": "https://arxiv.org/pdf/2606.12211.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.12211",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-06-12T05:34:15.646584+00:00"
+    },
+    {
+      "forum_id": "2511.21594",
+      "paper_number": -1,
+      "title": "Visualizing LLM Latent Space Geometry Through Dimensionality Reduction",
+      "authors": [
+        "Alex Ning, Vainateya Rangaraju, Yen-Ling Kuo"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ICLR"
+      ],
+      "abstract": "arXiv:2511.21594v3 Announce Type: replace \nAbstract: Large language models (LLMs) achieve state-of-the-art results across many natural language tasks, but their internal mechanisms remain difficult to interpret. In this work, we extract, process, and visualize latent state geometries in Transformer-based language models through dimensionality reduction. We capture layerwise activations at multiple points within Transformer blocks and enable systematic analysis through Principal Component Analysis (PCA) and Uniform Manifold Approximation and Projection (UMAP). We demonstrate experiments on GPT-2 and LLaMa models, where we uncover interesting geometric patterns in latent space. Notably, we identify a clear separation between attention and MLP component outputs across intermediate layers, a p",
+      "pdf_link": "https://arxiv.org/pdf/2511.21594.pdf",
+      "forum_link": "https://arxiv.org/abs/2511.21594",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ICLR",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 24.5,
+      "updated_at": "2026-06-12T05:34:15.647355+00:00"
+    },
+    {
+      "forum_id": "2512.22088",
+      "paper_number": -1,
+      "title": "Unifying Learning Dynamics and Generalization in Transformers Scaling Law",
+      "authors": [
+        "Chiwun Yang"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2512.22088v3 Announce Type: replace \nAbstract: The scaling law, a cornerstone of Large Language Model (LLM) development, predicts improvements in model performance with increasing computational resources. Yet, while empirically validated, its theoretical underpinnings remain poorly understood. This work formalizes the learning dynamics of transformer-based language models as an ordinary differential equation (ODE) system, then approximates this process to kernel behaviors. Departing from prior toy-model analyses, we rigorously analyze stochastic gradient descent (SGD) training for multi-layer transformers on sequence-to-sequence data with arbitrary data distribution, closely mirroring real-world conditions. Our analysis characterizes the convergence of generalization error to the irr",
+      "pdf_link": "https://arxiv.org/pdf/2512.22088.pdf",
+      "forum_link": "https://arxiv.org/abs/2512.22088",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 58.0,
+      "updated_at": "2026-06-12T05:34:15.647411+00:00"
+    },
+    {
+      "forum_id": "2505.03296",
+      "paper_number": -1,
+      "title": "The Unreasonable Effectiveness of Discrete-Time Gaussian Process Mixtures for Robot Policy Learning",
+      "authors": [
+        "Jan Ole von Hartz, Adrian R\\\"ofer, Joschka Boedecker, Abhinav Valada"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2505.03296v2 Announce Type: replace-cross \nAbstract: We present Mixture of Discrete-time Gaussian Processes (MiDiGap), a novel approach for flexible policy representation and imitation learning in robot manipulation. MiDiGap enables learning from as few as five demonstrations using only camera observations and generalizes across a wide range of challenging tasks. It excels at long-horizon behaviors such as making coffee, highly constrained motions such as opening doors, dynamic actions such as scooping with a spatula, and multimodal tasks such as hanging a mug. MiDiGap learns these tasks on a CPU in less than a minute and scales linearly to large datasets. We also develop a rich suite of tools for inference-time steering using evidence such as collision signals and robot kinematic co",
+      "pdf_link": "https://arxiv.org/pdf/2505.03296.pdf",
+      "forum_link": "https://arxiv.org/abs/2505.03296",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-06-12T05:34:15.648871+00:00"
+    },
+    {
+      "forum_id": "2505.08784",
+      "paper_number": -1,
+      "title": "PCS-UQ: Uncertainty Quantification via the Predictability-Computability-Stability Framework",
+      "authors": [
+        "Abhineet Agarwal, Fange Xiao, Rebecca Barter, Omer Ronen, Boyu Fan, Bin Yu"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2505.08784v2 Announce Type: replace-cross \nAbstract: As machine learning (ML) enters high-stakes domains, trustworthy uncertainty quantification (UQ) is essential for safety. In this paper we introduce PCS-UQ, a framework based on the Predictability, Computability, and Stability (PCS) principles for veridical data science. Starting with a candidate set of models or algorithms, PCS-UQ integrates a rigorous prediction-check to screen out unsuitable models in the set and utilizes bootstrap samples, in order to capture both inter-sample variability and algorithmic instability for the prediction-checked algorithms. We then introduce a novel multiplicative calibration scheme to enhance local adaptivity, which basically corresponds to a new score in conformal prediction. Moreover, we produc",
+      "pdf_link": "https://arxiv.org/pdf/2505.08784.pdf",
+      "forum_link": "https://arxiv.org/abs/2505.08784",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-06-12T05:34:15.648923+00:00"
+    }
+  ]
+}

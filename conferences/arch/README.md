@@ -1,15 +1,14 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-06-12 03:12:21 UTC
-- **Total Filtered Papers**: 4
-- **Displaying**: 4 (arXiv: 4, OpenReview: 0)
+- **Last Updated**: 2026-06-12 05:34:13 UTC
+- **Total Filtered Papers**: 3
+- **Displaying**: 3 (arXiv: 3, OpenReview: 0)
 - **Papers with Ratings**: 0
-- **Lookback**: 90 days
+- **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [TileFuse: A Fused Mixed-Precision Kernel Library for Efficient Quantized LLM Inference on AMD NPUs](https://arxiv.org/abs/2606.11357) | `ARXIV` | 34.5 |
-| 2 | [Optimizing Cloud Deployment: Blending of IaaS and FaaS for Microservice Architecture](https://arxiv.org/abs/2606.11824) | `ARXIV` | 23.5 |
-| 3 | [Partitioned Tags, Shared Data: Reconciling Strict Cache Isolation with Write-Shared Coherence](https://arxiv.org/abs/2606.12259) | `ARXIV` | 2.5 |
-| 4 | [Harnessing Routing Foresight for Micro-step-level MoE load balancing in RL Post-training](https://arxiv.org/abs/2606.11867) | `ARXIV` | 1.0 |
+| 1 | [Ten-Four: An Open-Source Fused Dot Product Unit for Mixed-Precision GPGPU Tensor Cores](https://arxiv.org/abs/2512.00053) | `ARXIV` | 69.0 |
+| 2 | [Quantum-Driven Neuromorphic Computing for Million-Qubit-Scale Workloads](https://arxiv.org/abs/2606.12968) | `ARXIV` | 48.0 |
+| 3 | [SupraSNN: Exploiting Synapse-Level Parallelism in Spiking Neural Network Accelerators through Co-Optimized Mapping and Scheduling](https://arxiv.org/abs/2606.13354) | `ARXIV` | 45.5 |

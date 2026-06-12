@@ -1,0 +1,100 @@
+{
+  "name": "chip",
+  "conference": "Chip Design / EDA",
+  "last_updated": "2026-06-12T05:34:14.830338+00:00",
+  "paper_count": 4,
+  "papers": [
+    {
+      "forum_id": "2606.13328",
+      "paper_number": -1,
+      "title": "Non-Parametric Dual-Manifold Mapping via 8-Bit Bounded Transformation Matrices: Challenging FP-centric Hardware Paradigms in Low-Energy AI",
+      "authors": [
+        "Lars Kopp"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2606.13328v1 Announce Type: new \nAbstract: Modern deep learning hardware paradigms rely heavily on computationally expensive floating-point arithmetic (FP32, FP16, and FP8), requiring massive thermal and energetic overheads to maintain gradient-based optimization. This paper introduces a non-parametric, training-free computational framework for dual-manifold mapping that operates strictly within an 8-bit signed integer boundary and leverages simple bitwise and accumulation logic. By mapping a Spatial Manifold (N_spatial = 8192 neurons) and a Gabor-pooled Structural Manifold (N_structural = 4096 neurons) through an integer-based transformation matrix (Z-matrix), we eliminate the need for floating-point multipliers. Inference is achieved via cache-friendly pointer offsets and bitwise m",
+      "pdf_link": "https://arxiv.org/pdf/2606.13328.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.13328",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-12T05:34:14.829246+00:00"
+    },
+    {
+      "forum_id": "2606.13560",
+      "paper_number": -1,
+      "title": "ReSCom: A Reconfigurable Spiking Neural Network Accelerator Using Stochastic Computing",
+      "authors": [
+        "Ali Alipour Fereidani, Mohammad Rasoul Roshanshah, Saeed Safari"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2606.13560v1 Announce Type: new \nAbstract: Spiking Neural Networks (SNNs) provide an attractive framework for energy-efficient inference due to their event-driven computation and biologically inspired dynamics. However, efficient hardware realization of SNNs remains challenging because neuronal computations incur significant power and area costs, and uncontrolled approximate arithmetic can destabilize recurrent state updates when precision is not properly managed. To address these challenges, this paper presents ReSCom, a reconfigurable SNN accelerator that leverages stochastic computing to reduce hardware complexity while maintaining stable inference. The proposed architecture employs stochastic arithmetic for multiplication operations in neuron dynamics, while preserving exact fixe",
+      "pdf_link": "https://arxiv.org/pdf/2606.13560.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.13560",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-06-12T05:34:14.829296+00:00"
+    },
+    {
+      "forum_id": "2606.12968",
+      "paper_number": -1,
+      "title": "Quantum-Driven Neuromorphic Computing for Million-Qubit-Scale Workloads",
+      "authors": [
+        "Adams Ivanov, Samer Rahmeh, Erick Giovani Sperandio Nascimento, Daniela Herrmann"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2606.12968v1 Announce Type: cross \nAbstract: We introduce Apollo, a 10000 node p-qubit neuromorphic processor fabricated in 16 nm mixed signal CMOS and operating fully at room temperature with a typical analog core power envelope of about 0.5 W. Its fundamental element, the p-qubit, is a bistable stochastic unit whose continuous time state fluctuations are driven by integrated quantum entropy units that inject true quantum derived randomness. This enables ultrafast stochastic transitions at low energy while preserving a classical state representation. Apollo combines these p-qubits with a high degree Hyperion 256 interconnect topology, allowing efficient embedding of dense Ising and QUBO problems with substantially reduced minor embedding overhead compared with sparse annealing platf",
+      "pdf_link": "https://arxiv.org/pdf/2606.12968.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.12968",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-06-12T05:34:14.829354+00:00"
+    },
+    {
+      "forum_id": "2512.00053",
+      "paper_number": -1,
+      "title": "Ten-Four: An Open-Source Fused Dot Product Unit for Mixed-Precision GPGPU Tensor Cores",
+      "authors": [
+        "Nikhil Rout, Blaise Tine"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2512.00053v3 Announce Type: replace \nAbstract: Efficient mixed-precision MMA operations are critical for accelerating deep learning workloads on GPGPUs. However, existing open-source Tensor Core implementations rely on discrete arithmetic unit designs, leading to high latency, accumulated rounding errors, and poor resource utilization. To address these challenges, we propose Ten-Four, a configurable mixed-precision fused dot product unit integrating both floating-point and integer arithmetic pipelines within a unified architecture, implemented as part of the open-source RISC-V-based Vortex GPGPU's Tensor Core Unit extension. It supports low-precision multiplication in TF32/FP16/BF16/FP8/BF8/INT8/INT4 with higher-precision FP32/INT32 accumulation, native Microscaling (MX) support, and",
+      "pdf_link": "https://arxiv.org/pdf/2512.00053.pdf",
+      "forum_link": "https://arxiv.org/abs/2512.00053",
+      "submission_date": "2026-06-12T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-12T05:34:14.829422+00:00"
+    }
+  ]
+}
