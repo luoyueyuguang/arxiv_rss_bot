@@ -5,6 +5,9 @@ on:
     branches: [ main, master ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update:
     if: github.event_name == 'workflow_dispatch' || github.run_number == 1
@@ -26,7 +29,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          if git diff --quiet; then
+          if git diff --quiet && git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
           fi
@@ -36,7 +39,6 @@ jobs:
           git commit -m "Update ICLR papers"
 
       - name: Push changes
-        if: github.event_name == 'workflow_dispatch' || github.run_number == 1
         uses: ad-m/github-push-action@v0.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

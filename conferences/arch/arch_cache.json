@@ -1,0 +1,100 @@
+{
+  "name": "arch",
+  "conference": "Computer Architecture",
+  "last_updated": "2026-06-12T03:12:21.667027+00:00",
+  "paper_count": 4,
+  "papers": [
+    {
+      "forum_id": "2606.11357",
+      "paper_number": -1,
+      "title": "TileFuse: A Fused Mixed-Precision Kernel Library for Efficient Quantized LLM Inference on AMD NPUs",
+      "authors": [
+        "Wesley Pang, Gregory Hyegang Jun, Feiyang Liu, Deming Chen"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2606.11357v1 Announce Type: cross \nAbstract: With the growing demand for on-device LLM inference, edge SoCs increasingly integrate NPUs to improve performance and energy efficiency under tight power and thermal budgets. However, practical LLM deployment on current client NPUs remains difficult: widely used quantization formats such as AWQ do not map cleanly onto many existing NPU software stacks, which are often proprietary and expose limited low-level control. In this work, we present \\textit{TileFuse}, a close-to-metal mixed-precision kernel library for AMD XDNA2 NPUs that targets transformer linear layers in quantized LLM inference. TileFuse brings practical low-bit formats such as AWQ-style W4A16 and W8A16 directly onto XDNA2, rather than forcing the model to be reshaped around a",
+      "pdf_link": "https://arxiv.org/pdf/2606.11357.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.11357",
+      "submission_date": "2026-06-11T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.5,
+      "updated_at": "2026-06-12T03:12:16.912566+00:00"
+    },
+    {
+      "forum_id": "2606.12259",
+      "paper_number": -1,
+      "title": "Partitioned Tags, Shared Data: Reconciling Strict Cache Isolation with Write-Shared Coherence",
+      "authors": [
+        "Kartik Ramkrishnan, Stephen McCamant, Antonia Zhai, Pen Chung Yew"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2606.12259v1 Announce Type: cross \nAbstract: Cache partitioning is among the strongest structural defenses against eviction-based cache side channels, yet a decade-old design issue has blocked its widespread deployment in secure shared-OS settings. The issue is that write-shared coherence collapses under strict partitioning. We present SCP (Secure and Coherent Partitioning), which combines strict eviction isolation with write-shared coherence by partitioning only the tags, sharing a single data pool, and sizing the data pool so capacity-driven cross-partition eviction cannot occur. Timing obfuscation extends protections to the inter-partition lookup path. Coherence-based leakage on shared-writeable lines is mitigated by routing those writes through to the LLC once a leakage threshold",
+      "pdf_link": "https://arxiv.org/pdf/2606.12259.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.12259",
+      "submission_date": "2026-06-11T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-06-12T03:12:16.912578+00:00"
+    },
+    {
+      "forum_id": "2606.11824",
+      "paper_number": -1,
+      "title": "Optimizing Cloud Deployment: Blending of IaaS and FaaS for Microservice Architecture",
+      "authors": [
+        "Nikhil Kapoor, Sougata Mukherjea"
+      ],
+      "keywords": [
+        "cs.DC",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2606.11824v1 Announce Type: new \nAbstract: The rapid evolution of cloud computing has resulted in the adoption of hybrid deployments that blend Infrastructure-as-a-Service (IaaS) and Function-as-a-Service (FaaS) service models to optimize resource utilization, scalability, and operational efficiency. This paper presents a comprehensive study and practical implementation of a metrics-driven approach for migrating microservices from a traditional IaaS service model to a hybrid IaaS + FaaS model, using two microservice applications as case studies. The research develops an automated framework to analyze service-level performance metrics to identify microservices that are best suited for serverless execution. The findings of our research highlight the benefits and limitations of differen",
+      "pdf_link": "https://arxiv.org/pdf/2606.11824.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.11824",
+      "submission_date": "2026-06-11T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 23.5,
+      "updated_at": "2026-06-12T03:12:18.516951+00:00"
+    },
+    {
+      "forum_id": "2606.11867",
+      "paper_number": -1,
+      "title": "Harnessing Routing Foresight for Micro-step-level MoE load balancing in RL Post-training",
+      "authors": [
+        "Yuming Zhou, Haoyang Li, Sheng Lin, Yanfeng Zhao, Tong Zhao, Xupeng Miao, Jie Jiang, Fangcheng Fu, Bin Cui"
+      ],
+      "keywords": [
+        "cs.DC",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2606.11867v1 Announce Type: new \nAbstract: Mixture-of-Experts (MoE) and reinforcement learning (RL) post-training now dominate large language model (LLM) development, yet expert load imbalance remains a critical challenge. Existing load-balancing systems target pre-training by relying on historical step-level statistics. However, these methods fail under the unique workload dynamics of RL post-training: the step-level load is stable, but the tiny batch sizes processed during micro-steps cause severe, high-frequency load fluctuations.\n  We introduce ForeMoE, a micro-step-level load balancing system for MoE RL post-training. Instead of relying on historical statistics, ForeMoE exploits the multi-stage RL pipeline (rollout, recompute, policy update) by using foreseeable routing informat",
+      "pdf_link": "https://arxiv.org/pdf/2606.11867.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.11867",
+      "submission_date": "2026-06-11T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-12T03:12:18.516958+00:00"
+    }
+  ]
+}

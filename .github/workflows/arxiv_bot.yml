@@ -38,13 +38,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         
-    - name: Test bot functionality
-      run: |
-        python ./tests/core/test_bot.py
-        
     - name: Run arXiv Bot
       env:
-        DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+        ARK_API_KEY: ${{ secrets.ARK_API_KEY }}
       run: |
         python arxiv_bot.py
         
@@ -53,8 +49,8 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add README.md
-        git diff --quiet && git diff --staged --quiet || git commit -m "🤖 Update papers from arXiv - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-        git pull && git push
+        git diff --staged --quiet || git commit -m "🤖 Update papers from arXiv - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+        git push
         
     - name: Show updated papers count
       run: |

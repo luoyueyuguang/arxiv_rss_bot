@@ -3,48 +3,26 @@
         "cs.AI",
         "cs.CL",
         "cs.DC",
-        "cs.LG"
+        "cs.LG",
+        "cs.AR"
     ],
     "keywords": [
-        "kv cache",
-        "offload",
-        "State Space",
-        "SSM",
-        "framework",
-        "System",
-        "Generation",
-        "Video",
-        "Linear",
-        "LLM",
-        "RL",
-        "RLHF",
-        "Inference",
-        "Training",
-        "Attention",
-        "Pipeline",
-        "MOE",
-        "Sparse",
-        "Quantization",
-        "Speculative",
-        "Efficient",
-        "Efficiency",
-        "Framework",
-        "Parallel",
-        "Distributed",
-        "Kernel",
-        "Decode",
-        "Decoding",
-        "Prefill",
-        "Throughput",
-        "Fast",
-        "Network",
-        "Hardware",
-        "Cluster",
-        "FP8",
-        "FP4",
-        "Optimization",
-        "Scalable",
-        "Communication"
+        "LLM", "Inference", "Training",
+        "kv cache", "Speculative decoding", "Prefill", "Decode",
+        "FlashAttention", "PagedAttention", "continuous batching",
+        "MOE", "mixture of experts",
+        "Quantization", "FP8", "FP4",
+        "Parallel", "Distributed", "Pipeline",
+        "Sparse", "Sparse Attention", "State Space", "SSM",
+        "Throughput", "Scalable", "Efficient",
+        "vLLM", "SGLang", "DeepSpeed", "FSDP",
+        "AI compiler", "TVM", "Triton", "MLIR", "torch.compile",
+        "kernel fusion", "polyhedral",
+        "RISC-V", "RVV", "XiangShan", "custom instruction",
+        "eBPF", "RDMA", "disaggregated",
+        "chiplet", "NoC", "CXL", "HBM", "systolic array",
+        "Kernel", "Cluster", "Communication", "Offload",
+        "Hardware", "Accelerator", "Compiler", "Optimization"
     ],
     "exclude_keywords": [
         "survey",
@@ -60,11 +38,68 @@
     "display_limit": 500,
     "ai_summary": {
         "enabled": true,
-        "api_key_env": "DASHSCOPE_API_KEY",
-        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "model": "qwen-long",
+        "api_key_env": "ARK_API_KEY",
+        "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+        "model": "doubao-seed-2-0-mini-260428",
         "prompt_file": "ai_summary_prompt.txt",
         "max_papers_to_summarize": 15,
-        "max_workers": 3
+        "max_workers": 3,
+        "use_pdf": true
+    },
+    "high_score_keywords": [
+        "LLM serving", "vLLM", "SGLang", "DeepSpeed", "FSDP",
+        "FlashAttention", "PagedAttention", "continuous batching",
+        "speculative decoding", "KV cache",
+        "tensor parallelism", "pipeline parallelism", "expert parallelism",
+        "mixture of experts", "MoE serving",
+        "AI compiler", "TVM", "Triton", "MLIR", "torch.compile",
+        "RISC-V", "RVV", "XiangShan",
+        "eBPF", "RDMA", "disaggregated",
+        "chiplet", "NoC", "CXL", "HBM",
+        "MPI", "CUDA", "GPU cluster",
+        "distributed training", "training system",
+        "prefill", "decode", "throughput",
+        "systolic array", "tensor core",
+        "reinforcement learning", "RLHF", "DPO", "GRPO",
+        "diffusion model", "flow matching",
+        "graph neural network", "GNN",
+        "state space model", "Mamba",
+        "retrieval augmented", "RAG",
+        "chain-of-thought", "reasoning",
+        "multimodal", "vision-language",
+        "neural operator", "PINN",
+        "mixture of experts", "sparse attention"
+    ],
+    "conferences": {
+        "arch": {
+            "display_limit": 200,
+            "fetch_ratings": true,
+            "year": 2026
+        },
+        "hpc": {
+            "display_limit": 200,
+            "fetch_ratings": true,
+            "year": 2026
+        },
+        "sys": {
+            "display_limit": 200,
+            "fetch_ratings": true,
+            "year": 2026
+        },
+        "chip": {
+            "display_limit": 200,
+            "fetch_ratings": true,
+            "year": 2026
+        },
+        "ai": {
+            "display_limit": 200,
+            "fetch_ratings": true,
+            "year": 2026
+        },
+        "num": {
+            "display_limit": 200,
+            "fetch_ratings": false,
+            "year": 2026
+        }
     }
 } 

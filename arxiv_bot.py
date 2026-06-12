@@ -8,6 +8,7 @@ import feedparser
 import json
 import os
 import requests
+from io import BytesIO
 from datetime import datetime, timedelta
 from typing import List, Dict, Any, Optional, Tuple
 from pathlib import Path
@@ -16,6 +17,7 @@ import re
 from openai import OpenAI
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
+from pypdf import PdfReader
 
 # Configure logging
 logging.basicConfig(
@@ -62,8 +64,9 @@ class ArxivBot:
             "min_score": 0.0,
             "ai_summary": {
                 "enabled": False,
-                "api_key_env": "DASHSCOPE_API_KEY",
-                "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+                "api_key_env": "ARK_API_KEY",
+                "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+                "model": "Doubao-Seed-2.0-mini",
                 "model": "qwen-long",
                 "prompt_file": "ai_summary_prompt.txt",
                 "max_papers_to_summarize": 5,
@@ -262,11 +265,21 @@ class ArxivBot:
             if keyword.lower() in text_to_check:
                 score += 1.0
 
+        # Bonus for high-score keywords (+10 text, +20 title)
+        high_score_keywords = self.config.get("high_score_keywords", [])
+        for keyword in high_score_keywords:
+            if keyword.lower() in text_to_check:
+                score += 10.0
+
         # Bonus for title matches
         title_lower = paper["title"].lower()
         for keyword in keywords:
             if keyword.lower() in title_lower:
                 score += 0.5
+
+        for keyword in high_score_keywords:
+            if keyword.lower() in title_lower:
+                score += 20.0
 
         return score
 
@@ -321,7 +334,182 @@ class ArxivBot:
             logger.error(f"Error downloading PDF for {paper.get('title', 'unknown')}: {e}")
             return None
 
-    def summarize_pdf_with_ai(self, pdf_path: Path, paper_title: str = "", client: Optional[OpenAI] = None) -> Optional[str]:
+    def extract_pdf_text(self, pdf_path: Path, max_chars: int = 8000) -> str:
+        try:
+            with open(pdf_path, "rb") as f:
+                reader = PdfReader(f, strict=False)
+                text_parts = []
+                char_count = 0
+                for page in reader.pages:
+                    try:
+                        page_text = page.extract_text()
+                        if page_text:
+                            text_parts.append(page_text)
+                            char_count += len(page_text)
+                            if char_count >= max_chars:
+                                break
+                    except Exception:
+                        continue
+                return "\n".join(text_parts)[:max_chars]
+        except Exception as e:
+            logger.error("Error extracting PDF text: %s", e)
+            return ""
+
+    def summarize_pdf_native_with_ai(
+        self, pdf_path: Path, paper_title: str, abstract: str,
+        client: Optional[OpenAI] = None
+    ) -> Optional[str]:
+        """Summarize paper by uploading PDF natively via Volcano Engine File API.
+
+        Args:
+            pdf_path: Path to the PDF file
+            paper_title: Paper title
+            abstract: Paper abstract
+            client: Optional OpenAI client
+
+        Returns:
+            Summary text if successful, None otherwise
+        """
+        ai_config = self.config.get("ai_summary", {})
+        if not ai_config.get("enabled", False):
+            return None
+
+        try:
+            api_key_env = ai_config.get("api_key_env", "ARK_API_KEY")
+            if client is None:
+                api_key = os.environ.get(api_key_env)
+                if not api_key:
+                    logger.warning(f"AI summary enabled but {api_key_env} not set, skipping")
+                    return None
+                base_url = ai_config.get("base_url", "https://ark.cn-beijing.volces.com/api/v3")
+                client = OpenAI(api_key=api_key, base_url=base_url)
+
+            # Upload PDF file
+            logger.info("Uploading PDF to Volcano Engine: %s", pdf_path.name)
+            file_obj = client.files.create(
+                file=open(pdf_path, "rb"),
+                purpose="user_data"
+            )
+            logger.info("File uploaded: %s", file_obj.id)
+
+            prompt_file = ai_config.get("prompt_file", "ai_summary_prompt.txt")
+            prompt = self._load_ai_prompt(prompt_file)
+            user_content = f"论文标题：{paper_title}\n\n论文摘要：{abstract}\n\n{prompt}"
+
+            model = ai_config.get("model", "doubao-seed-2-0-mini-260428")
+            ark_key = os.environ.get(api_key_env)
+
+            # Chat API multimodal: file_url + text (same pattern as image_url)
+            resp = requests.post(
+                f"{ai_config.get('base_url', 'https://ark.cn-beijing.volces.com/api/v3')}/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {ark_key}",
+                    "Content-Type": "application/json",
+                },
+                json={
+                    "model": model,
+                    "messages": [{
+                        "role": "user",
+                        "content": f"fileid://{file_obj.id}\n\n{user_content}",
+                    }],
+                },
+                timeout=120,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+            return data["choices"][0]["message"]["content"]
+
+        except Exception as e:
+            logger.warning("Native PDF summary failed, falling back: %s", e)
+            return None
+
+    def summarize_pdf_text_with_ai(
+        self, paper_title: str, abstract: str, pdf_text: str,
+        client: Optional[OpenAI] = None
+    ) -> Optional[str]:
+        """Summarize using extracted PDF text (fallback when native upload fails).
+
+        Args:
+            paper_title: Paper title
+            abstract: Paper abstract
+            pdf_text: Extracted PDF text
+            client: Optional OpenAI client
+
+        Returns:
+            Summary text if successful, None otherwise
+        """
+        ai_config = self.config.get("ai_summary", {})
+        if not ai_config.get("enabled", False):
+            return None
+
+        try:
+            api_key_env = ai_config.get("api_key_env", "ARK_API_KEY")
+            if client is None:
+                api_key = os.environ.get(api_key_env)
+                if not api_key:
+                    logger.warning(f"AI summary enabled but {api_key_env} not set, skipping")
+                    return None
+                base_url = ai_config.get("base_url", "https://ark.cn-beijing.volces.com/api/v3")
+                client = OpenAI(api_key=api_key, base_url=base_url)
+
+            prompt_file = ai_config.get("prompt_file", "ai_summary_prompt.txt")
+            prompt = self._load_ai_prompt(prompt_file)
+            user_content = f"论文标题：{paper_title}\n\n论文摘要：{abstract}\n\n论文正文（节选）：\n{pdf_text}\n\n{prompt}"
+            model = ai_config.get("model", "doubao-seed-2-0-mini-260428")
+
+            completion = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": user_content}],
+                temperature=0.3,
+            )
+            return completion.choices[0].message.content
+        except Exception as e:
+            logger.debug(f"Error summarizing PDF text: {e}")
+            return None
+
+    def summarize_text_with_ai(self, paper_title: str, abstract: str, client: Optional[OpenAI] = None) -> Optional[str]:
+        """Summarize paper using AI via title + abstract (no PDF needed).
+        Works with DeepSeek, OpenAI, and any OpenAI-compatible API.
+
+        Args:
+            paper_title: Paper title
+            abstract: Paper abstract text
+            client: Optional OpenAI client (if None, will create one)
+
+        Returns:
+            Summary text if successful, None otherwise
+        """
+        ai_config = self.config.get("ai_summary", {})
+
+        if not ai_config.get("enabled", False):
+            return None
+
+        try:
+            if client is None:
+                api_key_env = ai_config.get("api_key_env", "ARK_API_KEY")
+                api_key = os.environ.get(api_key_env)
+                if not api_key:
+                    logger.warning(f"AI summary enabled but {api_key_env} not set, skipping")
+                    return None
+                base_url = ai_config.get("base_url", "https://ark.cn-beijing.volces.com/api/v3")
+                client = OpenAI(api_key=api_key, base_url=base_url)
+
+            prompt_file = ai_config.get("prompt_file", "ai_summary_prompt.txt")
+            prompt = self._load_ai_prompt(prompt_file)
+
+            user_content = f"论文标题：{paper_title}\n\n论文摘要：{abstract}\n\n{prompt}"
+
+            model = ai_config.get("model", "Doubao-Seed-2.0-mini")
+            completion = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": user_content}],
+                temperature=0.3,
+            )
+            return completion.choices[0].message.content
+
+        except Exception as e:
+            logger.debug(f"Error summarizing text: {e}")
+            return None
         """Summarize PDF using AI (Qwen/DashScope or other OpenAI-compatible API).
         
         Args:
@@ -341,15 +529,14 @@ class ArxivBot:
             # Use provided client or create new one
             if client is None:
                 # Get API key from environment
-                api_key_env = ai_config.get("api_key_env", "DASHSCOPE_API_KEY")
+                api_key_env = ai_config.get("api_key_env", "ARK_API_KEY")
                 api_key = os.environ.get(api_key_env)
                 
                 if not api_key:
                     logger.warning(f"AI summary enabled but {api_key_env} not set, skipping")
                     return None
                 
-                # Initialize OpenAI client with configurable base URL
-                base_url = ai_config.get("base_url", "https://dashscope.aliyuncs.com/compatible-mode/v1")
+                base_url = ai_config.get("base_url", "https://ark.cn-beijing.volces.com/api/v3")
                 client = OpenAI(
                     api_key=api_key,
                     base_url=base_url,
@@ -381,7 +568,7 @@ class ArxivBot:
             ]
             
             # Get model from config
-            model = ai_config.get("model", "qwen-long")
+            model = ai_config.get("model", "Doubao-Seed-2.0-mini")
             
             # Call chat completion
             completion = client.chat.completions.create(
@@ -516,27 +703,40 @@ The bot runs daily at 12:00 UTC via GitHub Actions to fetch the latest papers.
 """
 
     def _process_paper_with_ai(self, paper: Dict[str, Any], index: int, ai_config: Dict[str, Any], client: Optional[OpenAI]) -> Tuple[int, Optional[str]]:
-        """Process a single paper: download PDF and get AI summary.
-        
+        """Process a single paper: AI summary via native PDF upload or text mode.
+
         Args:
             paper: Paper dictionary
             index: Paper index (1-based)
             ai_config: AI configuration
             client: OpenAI client instance
-            
+
         Returns:
             Tuple of (index, ai_summary)
         """
         try:
-            # Download PDF
-            pdf_path = self.download_arxiv_pdf(paper)
-            if pdf_path:
-                # Get AI summary
-                ai_summary = self.summarize_pdf_with_ai(pdf_path, paper['title'], client)
+            if ai_config.get("use_pdf", False):
+                pdf_path = self.download_arxiv_pdf(paper)
+                if pdf_path:
+                    # Try native PDF upload to Volcano Engine
+                    ai_summary = self.summarize_pdf_native_with_ai(
+                        pdf_path, paper['title'], paper['summary'], client
+                    )
+                    if ai_summary:
+                        return (index, ai_summary)
+                    # Fallback: extract text locally and send as text
+                    pdf_text = self.extract_pdf_text(pdf_path)
+                    if pdf_text:
+                        ai_summary = self.summarize_pdf_text_with_ai(
+                            paper['title'], paper['summary'], pdf_text, client
+                        )
+                        return (index, ai_summary)
+            else:
+                ai_summary = self.summarize_text_with_ai(paper['title'], paper['summary'], client)
                 return (index, ai_summary)
         except Exception as e:
             logger.debug(f"Failed to get AI summary for paper {index}: {e}")
-        
+
         return (index, None)
 
     def generate_papers_section(self, papers: List[Dict[str, Any]]) -> str:
@@ -556,10 +756,10 @@ The bot runs daily at 12:00 UTC via GitHub Actions to fetch the latest papers.
         # Initialize OpenAI client once if needed
         ai_client = None
         if ai_enabled and papers_to_summarize:
-            api_key_env = ai_config.get("api_key_env", "DASHSCOPE_API_KEY")
+            api_key_env = ai_config.get("api_key_env", "ARK_API_KEY")
             api_key = os.environ.get(api_key_env)
             if api_key:
-                base_url = ai_config.get("base_url", "https://dashscope.aliyuncs.com/compatible-mode/v1")
+                base_url = ai_config.get("base_url", "https://ark.cn-beijing.volces.com/api/v3")
                 ai_client = OpenAI(
                     api_key=api_key,
                     base_url=base_url,
