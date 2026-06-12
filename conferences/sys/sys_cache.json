@@ -1,7 +1,7 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-06-12T05:34:14.686217+00:00",
+  "last_updated": "2026-06-12T10:21:31.732345+00:00",
   "paper_count": 2,
   "papers": [
     {
@@ -25,7 +25,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 42.0,
-      "updated_at": "2026-06-12T05:34:14.381613+00:00"
+      "updated_at": "2026-06-12T10:21:31.432966+00:00"
     },
     {
       "forum_id": "2511.05972",
@@ -48,7 +48,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 34.0,
-      "updated_at": "2026-06-12T05:34:14.382024+00:00"
+      "updated_at": "2026-06-12T10:21:31.433498+00:00"
     }
   ]
 }

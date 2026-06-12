@@ -1,7 +1,7 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-06-12T05:34:14.830338+00:00",
+  "last_updated": "2026-06-12T10:21:31.784842+00:00",
   "paper_count": 4,
   "papers": [
     {
@@ -25,7 +25,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-06-12T05:34:14.829246+00:00"
+      "updated_at": "2026-06-12T10:21:31.783666+00:00"
     },
     {
       "forum_id": "2606.13560",
@@ -48,7 +48,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-06-12T05:34:14.829296+00:00"
+      "updated_at": "2026-06-12T10:21:31.783735+00:00"
     },
     {
       "forum_id": "2606.12968",
@@ -71,7 +71,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 4.0,
-      "updated_at": "2026-06-12T05:34:14.829354+00:00"
+      "updated_at": "2026-06-12T10:21:31.783810+00:00"
     },
     {
       "forum_id": "2512.00053",
@@ -94,7 +94,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-06-12T05:34:14.829422+00:00"
+      "updated_at": "2026-06-12T10:21:31.783895+00:00"
     }
   ]
 }
