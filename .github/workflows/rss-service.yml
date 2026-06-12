@@ -33,7 +33,7 @@ jobs:
         
     - name: Test RSS service
       run: |
-        python test_rss_service.py
+        python tests/services/test_rss_service.py
         
     - name: Generate RSS feeds and update cache
       run: |
@@ -49,5 +49,6 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
-        git diff --quiet && git diff --staged --quiet || git commit -m "📡 Update RSS service - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+        git diff --staged --quiet || git commit -m "📡 Update RSS service - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+        git pull --rebase origin master
         git push
