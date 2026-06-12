@@ -39,60 +39,51 @@ MAX_DAYS_TO_KEEP = 30
 @app.route("/")
 def index():
     """Home page with information about the RSS service."""
-    return """
+    categories_html = "<p><a href='/rss' class='rss-link'>📊 Main Feed</a> - All filtered papers</p>"
+    try:
+        from arxiv_bot import ArxivBot
+        bot = ArxivBot()
+        cat_names = {
+            "cs.AI": "🤖 AI", "cs.CL": "💬 NLP", "cs.CV": "👁️ CV",
+            "cs.LG": "🧠 ML", "cs.DC": "🌐 Distributed", "cs.AR": "🏗️ Architecture",
+            "cs.OS": "💻 OS", "cs.PL": "🔧 PL/Compiler", "cs.ET": "⚡ Emerging Tech",
+            "cs.NA": "🔢 Numerical", "cs.CR": "🔒 Security", "cs.DB": "🗄️ Database",
+            "cs.NI": "🌍 Networking", "cs.PF": "⚙️ Performance",
+        }
+        for cat in bot.config.get("categories", []):
+            name = cat_names.get(cat, cat)
+            categories_html += f'<p><a href="/rss/{cat}" class="rss-link">{name}</a> - {cat}</p>'
+    except Exception:
+        pass
+    return f"""
     <!DOCTYPE html>
     <html>
     <head>
         <title>arXiv RSS Service</title>
         <style>
-            body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
-            .rss-link { background: #ff6600; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
-            .info { background: #f0f0f0; padding: 15px; border-radius: 5px; margin: 20px 0; }
+            body {{ font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }}
+            .rss-link {{ background: #ff6600; color: white; padding: 8px 16px; text-decoration: none; border-radius: 5px; display: inline-block; margin: 4px 0; }}
+            .info {{ background: #f0f0f0; padding: 15px; border-radius: 5px; margin: 20px 0; }}
         </style>
     </head>
     <body>
         <h1>🤖 arXiv RSS Service</h1>
         <p>This service provides RSS feeds for filtered arXiv papers based on your configuration.</p>
-        
+
         <div class="info">
             <h3>📡 Available RSS Feeds</h3>
-            <p><a href="/rss" class="rss-link">📊 Main Feed</a> - All filtered papers</p>
-            <p><a href="/rss/cs.AI" class="rss-link">🤖 AI Papers</a> - Computer Science AI papers</p>
-            <p><a href="/rss/cs.LG" class="rss-link">🧠 ML Papers</a> - Machine Learning papers</p>
-            <p><a href="/rss/cs.CL" class="rss-link">💬 NLP Papers</a> - Natural Language Processing papers</p>
-            <p><a href="/rss/cs.CV" class="rss-link">👁️ CV Papers</a> - Computer Vision papers</p>
+            {categories_html}
         </div>
-        
+
         <div class="info">
             <h3>🔧 How to Subscribe</h3>
-            <p>Copy any of the RSS feed URLs above and add them to your RSS reader:</p>
+            <p>Copy any RSS feed URL and add to your reader:</p>
             <ul>
-                <li><strong>Feedly:</strong> Click the "+" button and paste the RSS URL</li>
-                <li><strong>Inoreader:</strong> Go to "Subscriptions" → "Add New" → paste the URL</li>
-                <li><strong>RSS Reader apps:</strong> Use the "Add Feed" option with the URL</li>
+                <li><strong>Feedly:</strong> Click "+" → paste RSS URL</li>
+                <li><strong>Inoreader:</strong> Subscriptions → Add New → paste URL</li>
+                <li><strong>NetNewsWire / Reeder:</strong> Add Feed → paste URL</li>
             </ul>
         </div>
-        
-        <div class="info">
-            <h3>⚙️ Configuration</h3>
-            <p>The feeds are filtered based on your <code>config.json</code> settings:</p>
-            <ul>
-                <li>Keywords: <code id="keywords"></code></li>
-                <li>Max papers: <code id="max_papers"></code></li>
-                <li>Days back: <code id="days_back"></code></li>
-            </ul>
-        </div>
-        
-        <script>
-            // Load and display config
-            fetch('/config')
-                .then(response => response.json())
-                .then(config => {
-                    document.getElementById('keywords').textContent = config.keywords.join(', ');
-                    document.getElementById('max_papers').textContent = config.max_papers;
-                    document.getElementById('days_back').textContent = config.days_back;
-                });
-        </script>
     </body>
     </html>
     """
@@ -102,6 +93,18 @@ def index():
 def rss_feed():
     """Main RSS feed endpoint."""
     return generate_rss_feed()
+
+
+@app.route("/rss/iclr")
+def iclr_rss_feed():
+    """ICLR papers RSS feed."""
+    return generate_rss_feed(category="iclr")
+
+
+@app.route("/rss/conferences/<name>")
+def conference_rss_feed(name):
+    """Conference bot RSS feed (arch/hpc/sys/chip/ai/num)."""
+    return generate_rss_feed(category=f"conferences/{name}")
 
 
 @app.route("/rss/<category>")
