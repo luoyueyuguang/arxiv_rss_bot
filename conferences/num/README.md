@@ -1,53 +1,39 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-06-12 10:21:32 UTC
-- **Total Filtered Papers**: 42
-- **Displaying**: 42 (arXiv: 42, OpenReview: 0)
+- **Last Updated**: 2026-06-15 12:26:46 UTC
+- **Total Filtered Papers**: 28
+- **Displaying**: 28 (arXiv: 28, OpenReview: 0)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Convergence analysis of GMRES applied to Helmholtz problems near resonances](https://arxiv.org/abs/2505.16345) | `ARXIV` | 58.5 |
-| 2 | [Embedded Trefftz DG method for steady Navier-Stokes flow. Part II: Nonlinear problem](https://arxiv.org/abs/2606.13219) | `ARXIV` | 36.5 |
-| 3 | [Subdivision-based isogeometric analysis for axisymmetric electromagnetic problems](https://arxiv.org/abs/2606.13308) | `ARXIV` | 36.5 |
-| 4 | [Embedded Trefftz DG method for steady Navier-Stokes flow. Part I: Oseen linearization](https://arxiv.org/abs/2606.13229) | `ARXIV` | 34.5 |
-| 5 | [The modified Physics-Informed Hybrid Parallel Kolmogorov--Arnold and Multilayer Perceptron Architecture with domain decomposition](https://arxiv.org/abs/2511.11228) | `ARXIV` | 33.5 |
-| 6 | [Discontinuous Galerkin approximation of a nonlinear multiphysics problem arising in ultrasound-enhanced drug delivery](https://arxiv.org/abs/2603.08415) | `ARXIV` | 33.5 |
-| 7 | [Design Criteria for SGD Preconditioners: Local Conditioning, Noise Floors, and Basin Stability](https://arxiv.org/abs/2511.19716) | `ARXIV` | 32.5 |
-| 8 | [Cascading Smoothers for Multigrid](https://arxiv.org/abs/2606.12577) | `ARXIV` | 31.5 |
-| 9 | [A Scalable Deflated Conjugate Gradient Solver for the Time-Dependent Pseudo-Stress Stokes Problem](https://arxiv.org/abs/2606.13429) | `ARXIV` | 14.5 |
-| 10 | [Embedding-based Methods for Linear Solver Performance Prediction](https://arxiv.org/abs/2606.13255) | `ARXIV` | 14.5 |
-| 11 | [Structure-preserving discretization and fingering dynamics of a Cahn-Hilliard model for traction-driven digit morphogenesis](https://arxiv.org/abs/2606.12574) | `ARXIV` | 13.5 |
-| 12 | [A Quadratic Order Reduction -- Gaussian Process Ordinary Differential Equation framework for the inference of Large Continuous Dynamical Systems](https://arxiv.org/abs/2606.13063) | `ARXIV` | 13.0 |
-| 13 | [Lyapunov Stability and Optimal Error Estimates for an SIPG Method for Weakly Damped Semilinear Wave Equations](https://arxiv.org/abs/2606.13185) | `ARXIV` | 11.0 |
-| 14 | [Reduced basis algorithm for solving nonlinear differential equations on quantum computers](https://arxiv.org/abs/2606.13457) | `ARXIV` | 7.0 |
-| 15 | [Accurate Models of NVIDIA Tensor Cores](https://arxiv.org/abs/2512.07004) | `ARXIV` | 5.5 |
-| 16 | [A Novel Stochastic Particle-Field Algorithm for a Reaction-Diffusion-Advection Cancer Invasion Model](https://arxiv.org/abs/2605.20140) | `ARXIV` | 5.0 |
-| 17 | [The QR factorization of a Banded-Plus-Semiseparable Matrix is Computable with Linear Complexity](https://arxiv.org/abs/2606.13225) | `ARXIV` | 4.5 |
-| 18 | [Linear convergence of iterative contour integral-based eigensolvers for nonlinear eigenvalue problems](https://arxiv.org/abs/2606.13357) | `ARXIV` | 4.0 |
-| 19 | [Momentum Space Algorithm for Electronic Structure of Double-Incommensurate Trilayer Graphene](https://arxiv.org/abs/2606.13434) | `ARXIV` | 3.5 |
-| 20 | [Switching Hamiltonian Monte Carlo for sampling from mixture distributions](https://arxiv.org/abs/2606.13234) | `ARXIV` | 3.5 |
-| 21 | [Discretization, Uniform-in-Time Estimations and Approximation of Invariant Measures for Nonlinear Stochastic Differential Equations with Non-Uniform Dissipativity](https://arxiv.org/abs/2511.12124) | `ARXIV` | 3.5 |
-| 22 | [Stability and error analysis of fully discrete original energy-dissipative and length-preserving scheme for the Landau-Lifshitz-Gilbert equation](https://arxiv.org/abs/2602.07571) | `ARXIV` | 3.0 |
-| 23 | [Hyperbolicity-Preserving Stochastic Galerkin Methods for Conservation Laws Based on Associative Truncated Products on Polynomial Spaces](https://arxiv.org/abs/2606.12632) | `ARXIV` | 2.5 |
-| 24 | [The three dimensional Neumann Green's function for general surfaces: singular asymptotics and boundary integral methods](https://arxiv.org/abs/2606.12714) | `ARXIV` | 2.5 |
-| 25 | [A Stabilized Multilevel B-Spline-Based Fast Integral Method for the Solution of the Electric Field Integral Equation](https://arxiv.org/abs/2606.13482) | `ARXIV` | 2.5 |
-| 26 | [Error bounds for approximate posteriors from likelihood-informed reduced-order models](https://arxiv.org/abs/2606.00274) | `ARXIV` | 2.5 |
-| 27 | [A variable time-step, second-order, and MBP-preserving linear stabilized scheme for the time-fractional Allen-Cahn equation](https://arxiv.org/abs/2606.12799) | `ARXIV` | 2.0 |
-| 28 | [Local Consistency and Higher-Order Structure of Spherical Interpolation](https://arxiv.org/abs/2606.12802) | `ARXIV` | 2.0 |
-| 29 | [Tracking in-silico Lagrangian sensors in a lab-scale stirred tank reactor](https://arxiv.org/abs/2606.13099) | `ARXIV` | 2.0 |
-| 30 | [A Note About Algebraic $(s, t)$-Weak Tractability Of Linear Tensor Product Problems In The Worst-Case Setting](https://arxiv.org/abs/2606.13339) | `ARXIV` | 2.0 |
-| 31 | [A general-purpose global regularization method for 3D volume integral operators](https://arxiv.org/abs/2606.13549) | `ARXIV` | 2.0 |
-| 32 | [Feature-preserving Latent-EnKF for Data Assimilation of Flows with Shocks](https://arxiv.org/abs/2606.12559) | `ARXIV` | 2.0 |
-| 33 | [Allure of Craquelure: A Variational-Generative Approach to Crack Detection in Paintings](https://arxiv.org/abs/2602.09730) | `ARXIV` | 2.0 |
-| 34 | [Multitrace M\"uller Boundary Integral Equation for Electromagnetic Scattering by Composite Objects](https://arxiv.org/abs/2601.13823) | `ARXIV` | 1.5 |
-| 35 | [The table maker's quantum search](https://arxiv.org/abs/2601.13306) | `ARXIV` | 1.5 |
-| 36 | [Massively parallel flow routing and drainage area determination](https://arxiv.org/abs/2606.12800) | `ARXIV` | 1.0 |
-| 37 | [A Quaternion--BCH Framework for the Local Accuracy of SIDER Interpolation](https://arxiv.org/abs/2606.12833) | `ARXIV` | 1.0 |
-| 38 | [A Robust Helmholtz-Decomposition-Based Real Compressed Layer Method for Time-Harmonic Elastic Wave Scattering](https://arxiv.org/abs/2606.12974) | `ARXIV` | 1.0 |
-| 39 | [Three-term Recurrence Relation with Arbitrary Degree Step for Orthogonal Polynomials](https://arxiv.org/abs/2606.13056) | `ARXIV` | 1.0 |
-| 40 | [Finite-Query Collapse and Modal Exact Bases in the SCI Hierarchy](https://arxiv.org/abs/2606.13250) | `ARXIV` | 1.0 |
-| 41 | [Coarse scrambling for Sobol' and Niederreiter sequences](https://arxiv.org/abs/2510.02111) | `ARXIV` | 1.0 |
-| 42 | [Elastica++: A high-performance, multiphysics framework for large interacting assemblies of Cosserat rods](https://arxiv.org/abs/2605.13766) | `ARXIV` | 1.0 |
+| 1 | [A Geometric Multigrid Preconditioner for Discontinuous Galerkin Shifted Boundary Method](https://arxiv.org/abs/2506.12899) | `ARXIV` | 97.5 |
+| 2 | [Discontinuous Galerkin approximations of the Jordan-Moore-Gibson-Thompson equation in the vanishing relaxation limit](https://arxiv.org/abs/2606.14655) | `ARXIV` | 35.5 |
+| 3 | [Primal finite element scheme of the Hodge-Laplace problem](https://arxiv.org/abs/2606.14273) | `ARXIV` | 34.0 |
+| 4 | [Local high order space-time apdaptive MLSDC](https://arxiv.org/abs/2606.14369) | `ARXIV` | 23.0 |
+| 5 | [Taming Slivers: A Robust TFEM Framework for Reliable Computations on Degenerate Tetrahedral Meshes](https://arxiv.org/abs/2606.14301) | `ARXIV` | 14.5 |
+| 6 | [Parameter-robust well-posedness and discretisation for coupled Darcy--Forchheimer and advection-diffusion-reaction equations](https://arxiv.org/abs/2606.14630) | `ARXIV` | 13.5 |
+| 7 | [Approximating Whittle-Matern Fields over Discretized Manifolds](https://arxiv.org/abs/2606.13827) | `ARXIV` | 12.0 |
+| 8 | [Posterior error bounds for prior-driven balancing in linear Gaussian inverse problems](https://arxiv.org/abs/2601.03971) | `ARXIV` | 12.0 |
+| 9 | [On the unmapped tent pitching for the heterogeneous wave equation](https://arxiv.org/abs/2601.09337) | `ARXIV` | 12.0 |
+| 10 | [An integrated numerical model for coupled poro-hydro-mechanics and fracture propagation using embedded meshes](https://arxiv.org/abs/2008.03186) | `ARXIV` | 7.0 |
+| 11 | [Concatenated Matrix SVD: Compression Bounds, Incremental Approximation, and Error-Constrained Clustering](https://arxiv.org/abs/2601.11626) | `ARXIV` | 4.5 |
+| 12 | [The QR Factorization for Banded-Plus-Semiseparable Matrices Is Computable in Linear Complexity](https://arxiv.org/abs/2606.13225) | `ARXIV` | 4.5 |
+| 13 | [A Generalized Hacker Dynamics Model with Nonlinear Incidence: Analysis and Positivity-Preserving Numerical Simulation](https://arxiv.org/abs/2606.14191) | `ARXIV` | 4.0 |
+| 14 | [Efficient and Fast Tensor-Product Multinode Shepard Collocation for Elliptic PDEs on Cartesian Grids](https://arxiv.org/abs/2606.14503) | `ARXIV` | 4.0 |
+| 15 | [Mathematical Modeling of Salt Precipitation and Multi-Phase Flow in High Enthalpy Fractured Geothermal Systems](https://arxiv.org/abs/2606.14328) | `ARXIV` | 3.5 |
+| 16 | [Robin-Neumann Coupling of PINN and FEM Solvers: A Steklov-Poincar\'e View, with Application to Fluid-Structure Interaction with Contact](https://arxiv.org/abs/2606.14181) | `ARXIV` | 3.0 |
+| 17 | [Epstein zeta method for many-body lattice sums](https://arxiv.org/abs/2504.11989) | `ARXIV` | 3.0 |
+| 18 | [Uniform-in-time error estimates for McKean-Vlasov SDEs with common noise and stochastic algorithms](https://arxiv.org/abs/2606.14170) | `ARXIV` | 2.5 |
+| 19 | [Operator Calculus for Population-Based Optimization: A Mean-Field Convergence Theory](https://arxiv.org/abs/2606.14289) | `ARXIV` | 2.5 |
+| 20 | [A WKB-related time-stepping scheme for differential equations describing oscillatory systems](https://arxiv.org/abs/2606.13807) | `ARXIV` | 2.0 |
+| 21 | [Analytic First Derivatives of SIDER Interpolation](https://arxiv.org/abs/2606.13998) | `ARXIV` | 2.0 |
+| 22 | [Chosen-Plaintext Attacks of Double Random Phase Encryption with Nonlinear Optical Media](https://arxiv.org/abs/2606.13946) | `ARXIV` | 2.0 |
+| 23 | [Computation and properties of the Epstein zeta function with applications to quantum systems](https://arxiv.org/abs/2412.16317) | `ARXIV` | 1.5 |
+| 24 | [A new class of efficient linear higher-order schemes for the Landau-Lifshitz-Gilbert equation with reduced restriction on the damping parameter](https://arxiv.org/abs/2606.14316) | `ARXIV` | 1.0 |
+| 25 | [Efficient Multi-Precision Computation of Bessel Functions for Real Orders and Complex Arguments with Fortran Implementation -- Part I: The Modified Bessel Function of the First Kind, $I_\nu(z)$](https://arxiv.org/abs/2505.09770) | `ARXIV` | 1.0 |
+| 26 | [Demystifying Tubal Tensor Algebra](https://arxiv.org/abs/2506.03311) | `ARXIV` | 1.0 |
+| 27 | [A Joint Variational Framework for Multimodal X-ray Ptychography and Fluorescence Reconstruction](https://arxiv.org/abs/2511.02153) | `ARXIV` | 1.0 |
+| 28 | [MAD: Manifold Attracted Diffusion](https://arxiv.org/abs/2509.24710) | `ARXIV` | 1.0 |

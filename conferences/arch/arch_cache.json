@@ -1,77 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-06-12T10:21:30.713160+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-06-15T12:26:42.432343+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2606.13354",
+      "forum_id": "2606.14566",
       "paper_number": -1,
-      "title": "SupraSNN: Exploiting Synapse-Level Parallelism in Spiking Neural Network Accelerators through Co-Optimized Mapping and Scheduling",
+      "title": "Extended Abstract: Re-Evaluating the Real-System Modeling Accuracy of Ramulator 2.0",
       "authors": [
-        "Seyed Sadra Ghavami, Mohammad Hossein Nikkhah, Mohammad Rasoul Roshanshah, Saeed Safari"
+        "F. Nisa Bostanci, Haocong Luo, Ataberk Olgun, Maria Makeenkova, Geraldo F. Oliveira, A. Giray Yaglikci, Onur Mutlu"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2606.13354v1 Announce Type: new \nAbstract: Spiking Neural Networks (SNNs) offer a brain-inspired path toward highly efficient computation, but their practical deployment is constrained by the challenge of managing and executing their massive parallelism on physical hardware. This problem mirrors the historical challenge in processor design of moving beyond serial execution, a barrier broken by superscalar architectures that dispatch multiple instructions to parallel functional units. Drawing inspiration from this paradigm, we introduce a hardware-software co-design framework that treats synaptic events as parallelizable micro-operations. We present SupraSNN, a superscalar-inspired architecture that achieves high synapse-level parallelism by physically decoupling synaptic and neuronal",
-      "pdf_link": "https://arxiv.org/pdf/2606.13354.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.13354",
-      "submission_date": "2026-06-12T04:00:00+00:00",
+      "abstract": "arXiv:2606.14566v1 Announce Type: new \nAbstract: Cycle-level DRAM simulators provide accurate and flexible models for DRAM and memory controller operations and enable research on current and future memory systems. Therefore, they are critical for improving the performance, efficiency, and robustness of DRAM-based memory systems. Ramulator 2.0 (successor of Ramulator) is a highly modular and extensible cycle-accurate DRAM simulator that enables rapid exploration of new ideas in DRAM-based memory systems.\n  A MICRO 2024 best paper runner-up publication, A Mess of Memory System Benchmarking, Simulation and Application Profiling, which we refer to as \"the Mess paper,\" with all three artifact badges awarded (including \"Reproducible\"), proposes a new benchmark to evaluate real and simulated memo",
+      "pdf_link": "https://arxiv.org/pdf/2606.14566.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.14566",
+      "submission_date": "2026-06-15T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 45.5,
-      "updated_at": "2026-06-12T10:21:30.711771+00:00"
-    },
-    {
-      "forum_id": "2606.12968",
-      "paper_number": -1,
-      "title": "Quantum-Driven Neuromorphic Computing for Million-Qubit-Scale Workloads",
-      "authors": [
-        "Adams Ivanov, Samer Rahmeh, Erick Giovani Sperandio Nascimento, Daniela Herrmann"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2606.12968v1 Announce Type: cross \nAbstract: We introduce Apollo, a 10000 node p-qubit neuromorphic processor fabricated in 16 nm mixed signal CMOS and operating fully at room temperature with a typical analog core power envelope of about 0.5 W. Its fundamental element, the p-qubit, is a bistable stochastic unit whose continuous time state fluctuations are driven by integrated quantum entropy units that inject true quantum derived randomness. This enables ultrafast stochastic transitions at low energy while preserving a classical state representation. Apollo combines these p-qubits with a high degree Hyperion 256 interconnect topology, allowing efficient embedding of dense Ising and QUBO problems with substantially reduced minor embedding overhead compared with sparse annealing platf",
-      "pdf_link": "https://arxiv.org/pdf/2606.12968.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.12968",
-      "submission_date": "2026-06-12T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 48.0,
-      "updated_at": "2026-06-12T10:21:30.711860+00:00"
-    },
-    {
-      "forum_id": "2512.00053",
-      "paper_number": -1,
-      "title": "Ten-Four: An Open-Source Fused Dot Product Unit for Mixed-Precision GPGPU Tensor Cores",
-      "authors": [
-        "Nikhil Rout, Blaise Tine"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2512.00053v3 Announce Type: replace \nAbstract: Efficient mixed-precision MMA operations are critical for accelerating deep learning workloads on GPGPUs. However, existing open-source Tensor Core implementations rely on discrete arithmetic unit designs, leading to high latency, accumulated rounding errors, and poor resource utilization. To address these challenges, we propose Ten-Four, a configurable mixed-precision fused dot product unit integrating both floating-point and integer arithmetic pipelines within a unified architecture, implemented as part of the open-source RISC-V-based Vortex GPGPU's Tensor Core Unit extension. It supports low-precision multiplication in TF32/FP16/BF16/FP8/BF8/INT8/INT4 with higher-precision FP32/INT32 accumulation, native Microscaling (MX) support, and",
-      "pdf_link": "https://arxiv.org/pdf/2512.00053.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.00053",
-      "submission_date": "2026-06-12T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 69.0,
-      "updated_at": "2026-06-12T10:21:30.711931+00:00"
+      "score": 23.0,
+      "updated_at": "2026-06-15T12:26:42.431421+00:00"
     }
   ]
 }

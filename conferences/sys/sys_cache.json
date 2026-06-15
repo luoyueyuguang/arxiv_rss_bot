@@ -1,54 +1,31 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-06-12T10:21:31.732345+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-06-15T12:26:44.874444+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2606.13374",
+      "forum_id": "2606.14007",
       "paper_number": -1,
-      "title": "Temporal Conductance and Bounds on the Voter Model for Dynamic Networks",
+      "title": "VaultxGPU: GPU-Accelerated Blockchain Consensus",
       "authors": [
-        "Tatiana Rocha Avila, Holger Dell, John Lapinskas"
+        "Samuel Taiwo Fatunmbi, Om Amit Gandhi, Luke Logan"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2606.13374v1 Announce Type: new \nAbstract: The voter model is a classical stochastic process that models how opinions might spread through a network: at each step, every node lazily adopts the opinion of a random neighbour; eventually all nodes share the same opinion (consensus). Stronger connectivity should yield faster consensus. Berenbrink, Giakkoupis, Kermarrec, and Mallmann-Trenn (ICALP 2016) make this precise via the network's conductance: if the network has $m$ edges, minimum degree $d_{\\min}$, and conductance at least $\\phi$, then the voter model reaches consensus in expected $O(m/(d_{\\min}\\phi))$ steps. Their results extend to dynamic networks with fixed vertex degrees by considering the network's conductance at each time step.\n  We introduce temporal conductance $\\Phi$, a m",
-      "pdf_link": "https://arxiv.org/pdf/2606.13374.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.13374",
-      "submission_date": "2026-06-12T04:00:00+00:00",
+      "abstract": "arXiv:2606.14007v1 Announce Type: new \nAbstract: Blockchain consensus mechanisms based on Proof-of-Work consume significant energy, with Bitcoin alone estimated at approximately 150 TWh per year. Proof-of-Space reduces this cost by replacing repeated computation with storage, but plot generation remains bottlenecked by CPU hashing throughput. Prior work on VaultX demonstrated a high-performance CPU-based Proof-of-Space plotter using multi-threaded Blake3 hashing, achieving plotting speeds 4 to 50x faster than Chia depending on hardware configuration. In this paper, we present VaultxGPU, a GPU-accelerated extension of the VaultX plotter that offloads the Blake3 hashing pipeline to the GPU using custom kernels. We implement the plotter in both CUDA for NVIDIA hardware and SYCL for AMD and In",
+      "pdf_link": "https://arxiv.org/pdf/2606.14007.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.14007",
+      "submission_date": "2026-06-15T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 42.0,
-      "updated_at": "2026-06-12T10:21:31.432966+00:00"
-    },
-    {
-      "forum_id": "2511.05972",
-      "paper_number": -1,
-      "title": "DWM-RO: Decentralized World Models with Reasoning Offloading for SWIPT-enabled Satellite-Terrestrial HetNets",
-      "authors": [
-        "Guangyuan Liu, Yinqiu Liu, Ruichen Zhang, Nan Ma, Jiawen Kang, Sumei Sun, Abbas Jamalipour, Ping Zhang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2511.05972v3 Announce Type: replace \nAbstract: Wireless networks are undergoing a paradigm shift toward massive connectivity with energy-efficient operation, driving the integration of satellite-terrestrial architectures with simultaneous wireless information and power transfer (SWIPT). Optimizing transmit beamforming and power splitting in such systems faces formidable challenges, e.g., time-varying channels and multi-tier interference, which create a complex decision landscape where conventional model-free multi-agent reinforcement learning (MARL) suffers from sample inefficiency due to rarely-encountered state transitions and poor coordination as decentralized agents act independently. This paper proposes the Decentralized World Model with Reasoning Offloading (DWM-RO) framework t",
-      "pdf_link": "https://arxiv.org/pdf/2511.05972.pdf",
-      "forum_link": "https://arxiv.org/abs/2511.05972",
-      "submission_date": "2026-06-12T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 34.0,
-      "updated_at": "2026-06-12T10:21:31.433498+00:00"
+      "score": 77.0,
+      "updated_at": "2026-06-15T12:26:43.137073+00:00"
     }
   ]
 }
