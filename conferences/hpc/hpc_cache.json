@@ -1,169 +1,468 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-06-15T12:26:42.956010+00:00",
-  "paper_count": 7,
+  "last_updated": "2026-06-16T11:20:54.975548+00:00",
+  "paper_count": 20,
   "papers": [
     {
-      "forum_id": "2606.14073",
+      "forum_id": "2606.14712",
       "paper_number": -1,
-      "title": "Extreme-Scale Atomistic Simulation of Real-Temperature Magnetic Skyrmion Dynamics by Coupled Spin-Lattice Modeling",
+      "title": "Secure and Low-Latency IoT Analytics Using an Edge-Based Streaming Architecture",
       "authors": [
-        "Pin Chen, Cheng-bing Chen, Hai Liu, Yuewen Huang, Kangyou Zhong, Hai-Jun Zhao, Liu-Liu Han, Guixin Guo, Jiang Li, Dan Huang, Ben Xu, Yutong Lu"
+        "Atul, Varun Shukla, Vivek Shukla, Mehul Kumar Das"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2606.14073v1 Announce Type: new \nAbstract: Real-temperature topological magnetic dynamics in functional materials is governed by coupled lattice and spin evolution, yet remains inaccessible to predictive simulation at device-relevant scales. As a flagship example, thermally driven helix-to-skyrmion transformation in FeGe requires atomistic resolution, explicit lattice motion, and micrometer-scale domains to resolve device-scale topological texture formation. We combine a spin-constrained density-functional-theory-trained neuro-evolution potential with a structure-preserving spin-lattice integrator within one machine-learned framework. Architecture-specific optimizations, kernel fusion, SVE2 vectorization, and NUMA-aware data layout deliver a seven orders-of-magnitude speedup over pri",
-      "pdf_link": "https://arxiv.org/pdf/2606.14073.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14073",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.14712v1 Announce Type: new \nAbstract: The rapid growth of Internet of Things (IoT) devices has led to large-scale continuous data streams that require realtime processing. Traditional cloud-centric architectures fail to meet low-latency and bandwidth efficiency requirements due to network delays and high data transmission overhead. This paper proposes EdgeStream, a lightweight edge-based framework for real-time streaming analytics in IoT environments. The system integrates edge nodes for local processing with a cloud backend for coordination and storage, using MQTT-based communication and distributed processing with anomaly detection. Analytical models for latency, throughput, and bandwidth are developed to evaluate performance. Experimental results, compared to cloudbased syste",
+      "pdf_link": "https://arxiv.org/pdf/2606.14712.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.14712",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-06-15T12:26:42.535640+00:00"
+      "score": 14.0,
+      "updated_at": "2026-06-16T11:20:54.428584+00:00"
     },
     {
-      "forum_id": "2606.14356",
+      "forum_id": "2606.14881",
       "paper_number": -1,
-      "title": "PLAIground: SLO-Driven Runtime Model Selection for Compound AI Systems in the Edge-Cloud-Space Continuum",
+      "title": "Evaluating Gemma4 Models as AI Teaching Assistants for Introductory Parallel Programming: A DataRaceBench Study",
       "authors": [
-        "Milos Gravara, Cynthia Marcelino, Andrija Stanisic, Stefan Nastic"
+        "Sabbir Hussain Meraj, Riham Chowdhury, Shimul Debnath, Wei Wang"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2606.14356v1 Announce Type: new \nAbstract: Applications in the 3D Computing Continuum, which unifies edge, cloud, and space, require combining multiple AI tasks such as object detection, time-series analytics, and natural language processing into Compound AI systems. These systems must satisfy stringent Service Level Objectives (SLOs) on accuracy, latency, and cost. A key mechanism for maintaining SLO compliance of Compound AI systems is runtime model selection, where AI models are dynamically switched for each workflow task. However, existing distributed and compound AI frameworks do not natively support runtime model selection. We present PLAIground, a framework that enables runtime model selection for Compound AI systems. PLAIground introduces Compoundable AI Model (CAIM) abstract",
-      "pdf_link": "https://arxiv.org/pdf/2606.14356.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14356",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.14881v1 Announce Type: new \nAbstract: Debugging data races is a major challenge for students learning parallel programming due to the non-deterministic nature of concurrent execution and the complexity of shared-memory semantics. Recent advances in Large Language Models (LLMs) suggest that they could serve as AI teaching assistants, but the capabilities of lower-cost open-weight models for parallel debugging remain unclear. In this paper, we evaluate two Gemma4 open-weight models, Gemma4-E4B and Gemma4-31B, on their ability to identify, explain, and repair data races in OpenMP programs from the DataRaceBench benchmark suite. We also investigate whether contextual hints, including ThreadSanitizer (TSan) reports and model-generated explanations, improve repair quality. Our results",
+      "pdf_link": "https://arxiv.org/pdf/2606.14881.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.14881",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 21.0,
-      "updated_at": "2026-06-15T12:26:42.535718+00:00"
+      "score": 13.5,
+      "updated_at": "2026-06-16T11:20:54.428616+00:00"
     },
     {
-      "forum_id": "2606.13725",
+      "forum_id": "2606.15050",
       "paper_number": -1,
-      "title": "A Modern Large-Scale Memory Characterization Laboratory",
+      "title": "Solyx AI Grid: Hardware-Telemetry-Aware Routing Across Geographically Distributed GPU Clusters",
       "authors": [
-        "Ataberk Olgun, Haocong Luo, Ismail Emir Yuksel, F. Nisa Bostanci, A. Giray Yaglikci, Onur Mutlu"
+        "Aleks Bernhard, Nithin Katla"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2606.13725v1 Announce Type: cross \nAbstract: Real memory chip characterization yields insights into fundamental operational characteristics of modern memory, enabling new mechanisms that improve memory performance, robustness, security, and energy efficiency. We describe our large-scale DRAM characterization laboratory for understanding DRAM. A key building block of this laboratory is DRAM Bender, a versatile and easy-to-use modern DRAM characterization infrastructure. We have updated DRAM Bender to i) introduce support for new types of characterization experiments, ii) expand on its DRAM interface standard support, and iii) make it easier to use at large scale. This paper introduces these updates for the first time. We hope our infrastructure enables the community to discover new pr",
-      "pdf_link": "https://arxiv.org/pdf/2606.13725.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.13725",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.15050v1 Announce Type: new \nAbstract: As GPU capacity fragments across geographically distributed sites, single-cluster LLM inference routing assumptions break down in measurable ways. We present Solyx AI Grid, a cross-site inference routing control plane that integrates GPU hardware telemetry (DCGM), vLLM application metrics, and real-time WAN signals (RTT, jitter) into per-request placement decisions via a 10-signal weighted pressure scorer. Across two empirical campaigns--six H100/H200 SXM GPUs and nine RTX PRO 6000 Blackwell SE GPUs spanning three US datacenters, eight workload classes, and a 216-cell SLO matrix--Solyx AI Grid delivers 1.56--1.75x throughput at tier-2 SLO over round-robin across all eight classes, cuts capability-mismatch leakage to 0.43% (versus 32% for sta",
+      "pdf_link": "https://arxiv.org/pdf/2606.15050.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15050",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-06-15T12:26:42.535792+00:00"
+      "score": 45.5,
+      "updated_at": "2026-06-16T11:20:54.428673+00:00"
     },
     {
-      "forum_id": "2606.13834",
+      "forum_id": "2606.15177",
       "paper_number": -1,
-      "title": "Solving Subgraph Extraction Problems Using $\\Delta$Search",
+      "title": "Coordinated Scheduling for MoE LLM Serving",
       "authors": [
-        "Rebin Silva Valan Arasu, Rajiv Gupta"
+        "Yifan Sun, Zhexiang Zhang, Jiantong Jiang, Gholamreza Haffari, Minxian Xu, Feng Liu, Rajkumar Buyya, Adel N. Toosi"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2606.13834v1 Announce Type: cross \nAbstract: Many NP-hard graph problems can be modeled as optimal subgraph extraction problems with feasibility constraints. From Network Design to Facility Location, from Robotics to Graph Drawing, the subgraph extraction pattern emerges across diverse domains. Despite this commonality, these problems are typically solved with domain-specific heuristics. Usually, these problems balance competing objectives such as maximizing coverage or minimizing cost while satisfying structural constraints such as connectivity, planarity and reachability. In this work, we introduce $\\Delta$Search, a general and fast heuristic framework that exploits the insight of Reward-Penalty optimization for solving a large class of subgraph extraction problems. The framework i",
-      "pdf_link": "https://arxiv.org/pdf/2606.13834.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.13834",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.15177v1 Announce Type: new \nAbstract: Serving Mixture-of-Experts (MoE) large language models (LLMs) is challenging because dynamic request workloads interact with sparse expert routing, creating both data-parallel (DP) engine imbalance and expert-level hotspots. Existing LLM serving systems typically make these decisions in isolation: frontend schedulers route requests using coarse request counters, while backend expert balancers rely mainly on aggregate expert activation counts. This separation prevents the serving system from reacting to fine-grained engine pressure, backend MoE pressure, and source-dependent expert traffic. To address this gap, we propose Gimbal, a coordinated cross-level scheduling system for efficient MoE-based LLM serving. First, Gimbal presents a fine-gra",
+      "pdf_link": "https://arxiv.org/pdf/2606.15177.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15177",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-06-15T12:26:42.535815+00:00"
+      "score": 3.5,
+      "updated_at": "2026-06-16T11:20:54.428731+00:00"
     },
     {
-      "forum_id": "2606.14069",
+      "forum_id": "2606.15376",
       "paper_number": -1,
-      "title": "Vivace: Exact Temporal OLAP over Interval Histories via Independent Serverless Execution",
+      "title": "CoAgent: Concurrency Control for Multi-Agent Systems",
       "authors": [
-        "Woohyeok Park, Taeyoon Kim, Hyunjoon Kim, Kungyong Lee"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.14069v1 Announce Type: cross \nAbstract: Temporal online analytical processing (OLAP) analyzes past states of data whose values change over time. Such histories are naturally stored as interval histories, in which each row records the period during which a value remained valid. Because temporal analyses typically arrive in infrequent, intermittent bursts, serverless execution that launches functions only at query time offers a cost advantage over always-on clusters. Splitting a computation that a single process performs as a whole across independent serverless functions, however, breaks correctness in two ways. A function may not receive the rows that determine the state of its time range, and naively summing partial results yields incorrect answers for duration-weighted and cumu",
-      "pdf_link": "https://arxiv.org/pdf/2606.14069.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14069",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 41.0,
-      "updated_at": "2026-06-15T12:26:42.535856+00:00"
-    },
-    {
-      "forum_id": "2606.14228",
-      "paper_number": -1,
-      "title": "Selective Field Transmission: Bandwidth Efficient Communication under Standardized Message Schemas",
-      "authors": [
-        "David Philipp Kl\\\"uner, David Murach, Stefan Kowalewski, Alexandru Kampmann"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.14228v1 Announce Type: cross \nAbstract: In this paper, we introduce and evaluate Selective Field Transmission (SFT), a middleware mechanism that decouples transmission content from statically defined message types in publish-subscribe systems. Industrial and robotics developers often face a dilemma: They can follow established best practices and use standard message types, such as in the Robot Operating System 2 (ROS 2) and COVESA projects, to benefit from reusable and interoperable interfaces, or they can introduce proprietary, project-specific message types tailored to receiver requirements to reduce bandwidth. SFT resolves this trade-off by dynamically adapting the transmitted message components to each receivers actual needs while preserving unmodified standard interfaces. R",
-      "pdf_link": "https://arxiv.org/pdf/2606.14228.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14228",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-06-15T12:26:42.535877+00:00"
-    },
-    {
-      "forum_id": "2602.02355",
-      "paper_number": -1,
-      "title": "Mitigating Heterogeneity-Induced Drift in Hierarchical Sign-Based Federated Learning",
-      "authors": [
-        "Amirreza Kazemi, Seyed Mohammad Azimi-Abarghouyi, Gabor Fodor, Carlo Fischione"
+        "Hongtao Lyu, Dingyan Zhang, Mingyu Wu, Xingda Wei, Haibo Chen"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2602.02355v2 Announce Type: replace \nAbstract: Hierarchical federated learning (HFL) is well suited for large-scale wireless and Internet of Things systems, where devices communicate with nearby edge servers before reaching the cloud. In these environments, uplink bandwidth and latency impose strict communication constraints, making aggressive gradient compression essential. One-bit sign-based stochastic gradient descent methods provide an attractive solution in flat federated settings, but their behavior in hierarchical edge--cloud architectures remains insufficiently understood, especially under inter-cluster data heterogeneity. To address this gap, we develop a sign-based HFL framework in which devices transmit binary stochastic-gradient signs to edge servers, edge servers apply m",
-      "pdf_link": "https://arxiv.org/pdf/2602.02355.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.02355",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.15376v1 Announce Type: new \nAbstract: Multi-agent LLM systems -- coding agents, devops agents, document agents -- now routinely run several agents in parallel against the same git tree, Kubernetes cluster, or document. As soon as two of them mutate shared state, they enter the regime classical concurrency control has studied for decades, but classical mechanisms fit LLM agents poorly. A single agent transaction spans minutes of inference, read sets are broad and opaque rather than statically inferable, and the live state agents act on admits neither fork nor buffer, so writes take effect the moment they execute. Locks block long inference intervals; OCC abort-and-retry discards minutes of work on every conflict.\n  This paper builds concurrency control on a capability classical t",
+      "pdf_link": "https://arxiv.org/pdf/2606.15376.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15376",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-06-15T12:26:42.535997+00:00"
+      "updated_at": "2026-06-16T11:20:54.428830+00:00"
+    },
+    {
+      "forum_id": "2606.15490",
+      "paper_number": -1,
+      "title": "Is RISC-V Ready for Massively Parallel Astrophysical Codes?",
+      "authors": [
+        "Jenny Lynn Almerol, Nitin Shukla, Federico Ficarelli, Geray S. Karademir, Andrea Bartolini, Emanuele Venieri, Giacomo Madella, Elisabetta Boella"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2606.15490v1 Announce Type: new \nAbstract: We present a performance and portability evaluation of three well-established astrophysical production codes, namely iPIC3D, PLUTO, and OpenGGCM, on a Sophgo SG2044 RISC-V processor (part of the Monte Cimone cluster), with comparisons to AMD EPYC 9554 (x86) and NVIDIA GH200 Grace (ARM) systems. These applications represent memory-bound, compute-bound, and hybrid workloads, respectively. Numerical correctness is verified across all platforms, confirming portability. RISC-V shows consistently lower performance, with slowdowns of about $3-6\\times$ relative to x86 and $5-9\\times$ relative to ARM. The gap is mainly due to limited memory bandwidth, shared cache constraints, narrower 128-bit vector units, and lower clock frequency, but also less-ma",
+      "pdf_link": "https://arxiv.org/pdf/2606.15490.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15490",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.5,
+      "updated_at": "2026-06-16T11:20:54.428859+00:00"
+    },
+    {
+      "forum_id": "2606.16555",
+      "paper_number": -1,
+      "title": "Incentives and Evidence in Learned Service Orchestration",
+      "authors": [
+        "Syed Izhan Khilji, Alireza Furutanpey, Schahram Dustdar"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2606.16555v1 Announce Type: new \nAbstract: Reinforcement learning for service orchestration has been the subject of sustained research for over a decade, yet it is not used in production at scale. The usual explanation is that learned controllers degrade under delayed and noisy telemetry, workload shifts, and uncontrolled tenants. We test whether existing evidence supports that explanation. We evaluate three highly influential RL-based orchestration systems spanning resource allocation, DAG scheduling, and autoscaling, using pre-registered predictions about comparative degradation under production-relevant perturbations and paired inference with family-wise error correction. Across the tests, most predicted performance reversals do not occur. Diagnostic analyses show that these outco",
+      "pdf_link": "https://arxiv.org/pdf/2606.16555.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16555",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-06-16T11:20:54.429121+00:00"
+    },
+    {
+      "forum_id": "2606.16589",
+      "paper_number": -1,
+      "title": "DRIFT: Risk-Constrained Diffusion with Imitation Priors for Mixed-Autonomy Traffic Generation",
+      "authors": [
+        "Yaoshen Yu, Minghui Liwang, Wenbo Zhu, Xinlei Yi, Yiguang Hong, Yuhan Su, Seyyedali Hosseinalipour"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2606.16589v1 Announce Type: new \nAbstract: Future intelligent transportation systems are envisioned to evolve toward a long-term mixed-autonomy paradigm, where human-driven vehicles (HVs) and autonomous vehicles (AVs) coexist within highly coupled traffic ecosystems. Such coexistence introduces pronounced heterogeneity, amplified uncertainty, and increasingly intricate interaction dynamics. In this context, it remains fundamentally challenging to simultaneously capture the heterogeneous behavioral distribution shifts arising from dynamic AV penetration, generate diverse yet executable trajectories under strong inter-vehicle coupling, and conduct reliable closed-loop safety and stability diagnostics for rare but high-impact events. To this end, we present risk-constrained diffusion wi",
+      "pdf_link": "https://arxiv.org/pdf/2606.16589.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16589",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-06-16T11:20:54.429148+00:00"
+    },
+    {
+      "forum_id": "2606.16907",
+      "paper_number": -1,
+      "title": "Tangram: Hiding GPU Heterogeneity for Efficient LLM Parallelization",
+      "authors": [
+        "Yanda Tao, Pedro F. Silvestre, Marcel Wagenl\\\"ander, Peter Pietzuch"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2606.16907v1 Announce Type: new \nAbstract: The scale of LLM training jobs requires parallelization planning over large GPU clusters. Due to different GPU types and interconnects added over time, these GPU clusters are increasingly heterogeneous. Automatic LLM parallelizers can search for parallelization plans but face an exploding search space with heterogeneous GPUs. To make search tractable in heterogeneous GPU clusters, parallelizers often omit types of parallelism (e.g., expert parallelism) or memory-saving techniques (e.g., ZeRO), which results in worse plans.\n  We describe Tangram, a system that enables the use of existing heterogeneity-unaware LLM parallelizers in heterogeneous GPU clusters by decoupling parallelization planning from GPU heterogeneity. For this, Tangram exploi",
+      "pdf_link": "https://arxiv.org/pdf/2606.16907.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16907",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 45.0,
+      "updated_at": "2026-06-16T11:20:54.429270+00:00"
+    },
+    {
+      "forum_id": "2606.14919",
+      "paper_number": -1,
+      "title": "The Essence of Entity Component System",
+      "authors": [
+        "Anisha Tasnim, Tian Zhao"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2606.14919v1 Announce Type: cross \nAbstract: Modern game engines increasingly adopt the Entity Component System (ECS) paradigm as a data-oriented alternative to traditional object-oriented architecture. While ECS promotes modularity and performance through the separation of data and behavior, its practical efficiency depends heavily on the underlying data layout. Despite widespread adoption in frameworks, such as Unity DOTS, Bevy, and Flecs, the semantics of the archetype ECS remain informal and implementation-dependent, limiting rigorous reasoning about determinism, system scheduling, and structural mutations.\n  This work formalizes and experimentally evaluates the archetype ECS. The formal model captures entity creation, component composition, system execution, and archetype migrat",
+      "pdf_link": "https://arxiv.org/pdf/2606.14919.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.14919",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-06-16T11:20:54.429321+00:00"
+    },
+    {
+      "forum_id": "2606.15559",
+      "paper_number": -1,
+      "title": "SDVDiag: Multimodal Causal Discovery for Online Diagnosis in Software-defined Vehicles",
+      "authors": [
+        "Matthias Wei{\\ss}, Athreya Hosahalli Prakash, Falk Dettinger, Nasser Jazdi, Michael Weyrich"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2606.15559v1 Announce Type: cross \nAbstract: The transition toward software-defined vehicles concentrates an increasing share of vehicle functionality into distributed software services, where failures propagate through service dependencies and the surface symptom is often several causal hops away from the underlying defect. Existing approaches to causal root-cause analysis in such systems address this only partially: they typically reason over a single observability modality and operate in an offline, operator-driven mode that does not match the demands of continuous vehicle operation. This paper presents SDVDiag, a multimodal causal-discovery pipeline that fuses log-based and metric-based service representations into a shared embedding space before graph construction, coupled with ",
+      "pdf_link": "https://arxiv.org/pdf/2606.15559.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15559",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-16T11:20:54.429399+00:00"
+    },
+    {
+      "forum_id": "2606.16106",
+      "paper_number": -1,
+      "title": "Beyond CPU-GPU Frequency: Memory-Clock and Tail Effects in Edge Inference Latency Estimation",
+      "authors": [
+        "Jaehoon Kang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2606.16106v1 Announce Type: cross \nAbstract: Frequency-aware latency estimators enable deadline-aware DVFS for edge ML inference by modeling latency over CPU and GPU frequencies. We present a measurement study on an NVIDIA Jetson Orin Nano showing three phenomena outside this modeling scope. (1) The memory clock is a missing axis: across the realistic upper EMC range (2133->3199 MHz) it shifts median latency by +11% to +48% depending on workload, and for a synthetic L2-resident kernel at the top GPU clock we observe a reproducible non-monotonic case (-9%). A GPU-frequency estimator profiled under one power profile and deployed under another consequently underestimates latency by up to 32%; tabulating the four lockable EMC points repairs most workloads, while a parametric 1/f_emc term",
+      "pdf_link": "https://arxiv.org/pdf/2606.16106.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16106",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 32.5,
+      "updated_at": "2026-06-16T11:20:54.429452+00:00"
+    },
+    {
+      "forum_id": "2606.16959",
+      "paper_number": -1,
+      "title": "Diagonal-Budgeted Trotterization for Efficient Quantum Hamiltonian Simulation",
+      "authors": [
+        "Srikar Chundury, Blake Burgstahler, Jiajia Li, In-Saeng Suh, Frank Mueller"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2606.16959v1 Announce Type: cross \nAbstract: Efficient classical simulation of quantum Hamiltonian dynamics is often bottlenecked by exponential state growth and the overhead of generic sparse linear algebra. We introduce diagonal-budgeted Trotterization, a structure-aware strategy that decomposes Hamiltonians into factors preserving diagonal sparsity while tightly controlling fidelity loss.\n  Our implementation, HamSim, utilizes a compact diagonal-sparse data layout and specialized C++/CUDA kernels to bypass the overheads of generic formats like CSR. By leveraging SIMD vectorization, multithreading, and GPU acceleration, HamSim achieves high performance across heterogeneous architectures. Benchmarks on the HamLib suite show that HamSim significantly outperforms Qiskit-Aer. On CPUs, ",
+      "pdf_link": "https://arxiv.org/pdf/2606.16959.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16959",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 38.0,
+      "updated_at": "2026-06-16T11:20:54.429555+00:00"
+    },
+    {
+      "forum_id": "2507.01113",
+      "paper_number": -1,
+      "title": "Stannic: Systolic STochAstic ONliNe SchedulIng AcCelerator",
+      "authors": [
+        "Adam H. Ross, Vairavan Palaniappan, Debjit Pal"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2507.01113v4 Announce Type: replace \nAbstract: Efficient workload scheduling is a critical challenge in modern heterogeneous computing environments, particularly in high-performance computing (HPC) systems. Traditional software-based schedulers struggle to efficiently balance workloads due to scheduling overhead, lack of adaptability to stochastic workloads, and suboptimal resource utilization. The scheduling problem further compounds in the context of shared HPC clusters, where job arrivals and processing times are inherently stochastic. Prediction of these elements is possible, but it introduces additional overhead. To perform this complex scheduling, we developed two FPGA-assisted hardware accelerator microarchitectures, Hercules and Stannic. Hercules adopts a task-centric abstrac",
+      "pdf_link": "https://arxiv.org/pdf/2507.01113.pdf",
+      "forum_link": "https://arxiv.org/abs/2507.01113",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 67.0,
+      "updated_at": "2026-06-16T11:20:54.429616+00:00"
+    },
+    {
+      "forum_id": "2512.22560",
+      "paper_number": -1,
+      "title": "RollArt: Disaggregated Multi-Task Agentic RL Training at Scale",
+      "authors": [
+        "Wei Gao, Yuheng Zhao, Tianyuan Wu, Shaopan Xiong, Weixun Wang, Dakai An, Lunxi Cao, Dilxat Muhtar, Zichen Liu, Haizhou Zhao, Ju Huang, Siran Yang, Yongbin Li, Wenbo Su, Jiamang Wang, Lin Qu, Bo Zheng, Wei Wang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2512.22560v2 Announce Type: replace \nAbstract: Agentic Reinforcement Learning (RL) trains LLMs through multi-turn interactions with environments, producing workloads that mix compute-bound prefill, bandwidth-bound decoding, CPU-heavy environment execution, and bursty reward evaluation. Existing systems either colocate all stages on a single GPU cluster or decouple them only at a coarse granularity, overlooking hardware heterogeneity and incurring substantial synchronization overhead across stages.\n  We present ROLLART, a system for multi-task agentic RL on disaggregated infrastructure. ROLLART maps each pipeline stage to best-fit hardware, routing prefill-heavy tasks to compute-optimized GPUs, decode-heavy tasks to bandwidth-optimized GPUs, and environments to CPU clusters. It decoup",
+      "pdf_link": "https://arxiv.org/pdf/2512.22560.pdf",
+      "forum_link": "https://arxiv.org/abs/2512.22560",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.0,
+      "updated_at": "2026-06-16T11:20:54.429671+00:00"
+    },
+    {
+      "forum_id": "2605.09370",
+      "paper_number": -1,
+      "title": "From Detection to Recovery: Operational Analysis on LLM Pre-training with 504 GPUs",
+      "authors": [
+        "Daemyung Kang, Eunjin Hwang, Hanjeong Lee, HyeokJin Kim, Hyunhoi Koo, Jeongkyu Shin, Jeongseok Kang, Jihyun Kang, Jinho Heo, Joongi Kim, Junbum Lee, Jungseung Yang, Kyujin Cho, Youngsook Song"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2605.09370v5 Announce Type: replace \nAbstract: Large-scale AI training is fundamentally a distributed systems problem, where hardware failures are routine operating conditions rather than rare exceptions, yet public operational evidence from production training clusters remains limited. This report presents an empirical analysis of a 63-node NVIDIA B200 production cluster (504 GPUs), using 55 days of Prometheus time-series data and 73 days of operational logs covering 224 multi-node training sessions.\n  The environment is cross-organizational: five parties (SKT, Upstage, Lablup, NVIDIA Korea, VAST Data) share a unified monitoring pipeline. This enabled joint diagnosis of a 60-node-scale storage I/O bottleneck absent in 2-4-node tests, a production-scale phenomenon no single team coul",
+      "pdf_link": "https://arxiv.org/pdf/2605.09370.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.09370",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 55.5,
+      "updated_at": "2026-06-16T11:20:54.429750+00:00"
+    },
+    {
+      "forum_id": "2605.21312",
+      "paper_number": -1,
+      "title": "Frontier: Towards Comprehensive and Accurate LLM Inference Simulation",
+      "authors": [
+        "Yicheng Feng, Xin Tan, Yangtao Deng, Yimin Jiang, Yibo Zhu, Hong Xu"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2605.21312v2 Announce Type: replace \nAbstract: Modern LLM serving is no longer homogeneous or monolithic. Production systems now combine disaggregated execution, complex parallelism, runtime optimizations, and stateful workloads such as reasoning, agents, and RL rollouts. Simulation is attractive for exploring this growing design space, yet existing simulators lack the architectural completeness and decision-grade fidelity it demands. Their monolithic-replica abstractions are ill-suited to disaggregated serving, while average-case analytical proxies can distort SLA predictions and even reverse optimization conclusions.\n  We present Frontier, a discrete-event simulator for modern LLM inference serving. Frontier features a disaggregated abstraction. It captures the structure and dynami",
+      "pdf_link": "https://arxiv.org/pdf/2605.21312.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.21312",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-16T11:20:54.429777+00:00"
+    },
+    {
+      "forum_id": "2505.19699",
+      "paper_number": -1,
+      "title": "Mosaic: Data-Free Knowledge Distillation via Mixture-of-Experts for Heterogeneous Distributed Environments",
+      "authors": [
+        "Junming Liu, Yanting Gao, Yuqi Li, Siyuan Meng, Yifei Sun, Aoqi Wu, Yirong Chen, Ding Wang, Shiping Wen"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2505.19699v2 Announce Type: replace-cross \nAbstract: Federated Learning (FL) is a decentralized machine learning paradigm that enables clients to collaboratively train models while preserving data privacy. However, the coexistence of model and data heterogeneity gives rise to inconsistent representations and divergent optimization dynamics across clients, ultimately hindering robust global performance. To transcend these challenges, we propose Mosaic, a novel data-free knowledge distillation framework tailored for heterogeneous distributed environments. Mosaic first trains local generative models to approximate each client's personalized distribution, enabling synthetic data generation that safeguards privacy through strict separation from real data. Subsequently, Mosaic forms a Mixt",
+      "pdf_link": "https://arxiv.org/pdf/2505.19699.pdf",
+      "forum_link": "https://arxiv.org/abs/2505.19699",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.0,
+      "updated_at": "2026-06-16T11:20:54.429877+00:00"
+    },
+    {
+      "forum_id": "2507.20424",
+      "paper_number": -1,
+      "title": "Communication-Efficient Distributed Training for Collaborative Flat Optima Recovery in Deep Learning",
+      "authors": [
+        "Tolga Dimlioglu, Anna Choromanska"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2507.20424v3 Announce Type: replace-cross \nAbstract: We study centralized distributed data parallel training of deep neural networks (DNNs), aiming to improve the trade-off between communication efficiency and model performance of the local gradient methods. To this end, we revisit the flat-minima hypothesis, which suggests that models with better generalization tend to lie in flatter regions of the loss landscape. We introduce a simple, yet effective, sharpness measure, Inverse Mean Valley, and demonstrate its strong correlation with the generalization gap of DNNs. We incorporate an efficient relaxation of this measure into the distributed training objective as a lightweight regularizer that encourages workers to collaboratively seek wide minima. The regularizer exerts a pushing for",
+      "pdf_link": "https://arxiv.org/pdf/2507.20424.pdf",
+      "forum_link": "https://arxiv.org/abs/2507.20424",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 7.0,
+      "updated_at": "2026-06-16T11:20:54.429943+00:00"
+    },
+    {
+      "forum_id": "2606.04145",
+      "paper_number": -1,
+      "title": "EvalStop: Using World Feedback to Detect and Correct Reward Overoptimization in Multi-Tenant RLHF Platforms",
+      "authors": [
+        "Guilin Zhang, Chuanyi Sun, Kai Zhao, Xu Chu, Shahryar Sarkani, John M. Fossaceca"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2606.04145v3 Announce Type: replace-cross \nAbstract: Cloud LLM fine-tuning platforms increasingly serve RLHF workloads, where a learned reward model is optimized as a proxy for human quality. As Gao et al. (2023) showed, this proxy diverges from world feedback (downstream eval metrics) under sustained optimization pressure, a phenomenon known as reward overoptimization. Existing platform schedulers ignore this divergence: non-clairvoyant schedulers optimize JCT without any quality signal, SLAQ-style quality-aware schedulers use training loss (a weaker proxy that drops monotonically through hacking), and classical per-job early stopping requires human monitoring and does not free shared GPUs. We propose EvalStop, a composable scheduling primitive that terminates jobs on k consecutive ",
+      "pdf_link": "https://arxiv.org/pdf/2606.04145.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.04145",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-06-16T11:20:54.430164+00:00"
     }
   ]
 }

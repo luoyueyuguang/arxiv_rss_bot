@@ -1,18 +1,31 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-06-15 12:26:42 UTC
-- **Total Filtered Papers**: 7
-- **Displaying**: 7 (arXiv: 7, OpenReview: 0)
+- **Last Updated**: 2026-06-16 11:20:54 UTC
+- **Total Filtered Papers**: 20
+- **Displaying**: 20 (arXiv: 20, OpenReview: 0)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Vivace: Exact Temporal OLAP over Interval Histories via Independent Serverless Execution](https://arxiv.org/abs/2606.14069) | `ARXIV` | 41.0 |
-| 2 | [PLAIground: SLO-Driven Runtime Model Selection for Compound AI Systems in the Edge-Cloud-Space Continuum](https://arxiv.org/abs/2606.14356) | `ARXIV` | 21.0 |
-| 3 | [A Modern Large-Scale Memory Characterization Laboratory](https://arxiv.org/abs/2606.13725) | `ARXIV` | 12.0 |
-| 4 | [Extreme-Scale Atomistic Simulation of Real-Temperature Magnetic Skyrmion Dynamics by Coupled Spin-Lattice Modeling](https://arxiv.org/abs/2606.14073) | `ARXIV` | 2.0 |
-| 5 | [Mitigating Heterogeneity-Induced Drift in Hierarchical Sign-Based Federated Learning](https://arxiv.org/abs/2602.02355) | `ARXIV` | 2.0 |
-| 6 | [Selective Field Transmission: Bandwidth Efficient Communication under Standardized Message Schemas](https://arxiv.org/abs/2606.14228) | `ARXIV` | 1.5 |
-| 7 | [Solving Subgraph Extraction Problems Using $\Delta$Search](https://arxiv.org/abs/2606.13834) | `ARXIV` | 1.0 |
+| 1 | [Stannic: Systolic STochAstic ONliNe SchedulIng AcCelerator](https://arxiv.org/abs/2507.01113) | `ARXIV` | 67.0 |
+| 2 | [From Detection to Recovery: Operational Analysis on LLM Pre-training with 504 GPUs](https://arxiv.org/abs/2605.09370) | `ARXIV` | 55.5 |
+| 3 | [Solyx AI Grid: Hardware-Telemetry-Aware Routing Across Geographically Distributed GPU Clusters](https://arxiv.org/abs/2606.15050) | `ARXIV` | 45.5 |
+| 4 | [Tangram: Hiding GPU Heterogeneity for Efficient LLM Parallelization](https://arxiv.org/abs/2606.16907) | `ARXIV` | 45.0 |
+| 5 | [Diagonal-Budgeted Trotterization for Efficient Quantum Hamiltonian Simulation](https://arxiv.org/abs/2606.16959) | `ARXIV` | 38.0 |
+| 6 | [Mosaic: Data-Free Knowledge Distillation via Mixture-of-Experts for Heterogeneous Distributed Environments](https://arxiv.org/abs/2505.19699) | `ARXIV` | 34.0 |
+| 7 | [Beyond CPU-GPU Frequency: Memory-Clock and Tail Effects in Edge Inference Latency Estimation](https://arxiv.org/abs/2606.16106) | `ARXIV` | 32.5 |
+| 8 | [Is RISC-V Ready for Massively Parallel Astrophysical Codes?](https://arxiv.org/abs/2606.15490) | `ARXIV` | 14.5 |
+| 9 | [Secure and Low-Latency IoT Analytics Using an Edge-Based Streaming Architecture](https://arxiv.org/abs/2606.14712) | `ARXIV` | 14.0 |
+| 10 | [Evaluating Gemma4 Models as AI Teaching Assistants for Introductory Parallel Programming: A DataRaceBench Study](https://arxiv.org/abs/2606.14881) | `ARXIV` | 13.5 |
+| 11 | [RollArt: Disaggregated Multi-Task Agentic RL Training at Scale](https://arxiv.org/abs/2512.22560) | `ARXIV` | 13.0 |
+| 12 | [EvalStop: Using World Feedback to Detect and Correct Reward Overoptimization in Multi-Tenant RLHF Platforms](https://arxiv.org/abs/2606.04145) | `ARXIV` | 12.0 |
+| 13 | [DRIFT: Risk-Constrained Diffusion with Imitation Priors for Mixed-Autonomy Traffic Generation](https://arxiv.org/abs/2606.16589) | `ARXIV` | 11.0 |
+| 14 | [Communication-Efficient Distributed Training for Collaborative Flat Optima Recovery in Deep Learning](https://arxiv.org/abs/2507.20424) | `ARXIV` | 7.0 |
+| 15 | [Coordinated Scheduling for MoE LLM Serving](https://arxiv.org/abs/2606.15177) | `ARXIV` | 3.5 |
+| 16 | [CoAgent: Concurrency Control for Multi-Agent Systems](https://arxiv.org/abs/2606.15376) | `ARXIV` | 2.0 |
+| 17 | [Incentives and Evidence in Learned Service Orchestration](https://arxiv.org/abs/2606.16555) | `ARXIV` | 2.0 |
+| 18 | [The Essence of Entity Component System](https://arxiv.org/abs/2606.14919) | `ARXIV` | 2.0 |
+| 19 | [SDVDiag: Multimodal Causal Discovery for Online Diagnosis in Software-defined Vehicles](https://arxiv.org/abs/2606.15559) | `ARXIV` | 1.0 |
+| 20 | [Frontier: Towards Comprehensive and Accurate LLM Inference Simulation](https://arxiv.org/abs/2605.21312) | `ARXIV` | 1.0 |

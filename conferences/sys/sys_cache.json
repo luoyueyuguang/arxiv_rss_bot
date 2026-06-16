@@ -1,31 +1,123 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-06-15T12:26:44.874444+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-06-16T11:20:55.591729+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2606.14007",
+      "forum_id": "2606.15137",
       "paper_number": -1,
-      "title": "VaultxGPU: GPU-Accelerated Blockchain Consensus",
+      "title": "uringscope: Portable, Low-Overhead Observability for io_uring",
       "authors": [
-        "Samuel Taiwo Fatunmbi, Om Amit Gandhi, Luke Logan"
+        "Rajarshi Chowdhury"
       ],
       "keywords": [
-        "cs.DC",
+        "cs.OS",
         "FAST"
       ],
-      "abstract": "arXiv:2606.14007v1 Announce Type: new \nAbstract: Blockchain consensus mechanisms based on Proof-of-Work consume significant energy, with Bitcoin alone estimated at approximately 150 TWh per year. Proof-of-Space reduces this cost by replacing repeated computation with storage, but plot generation remains bottlenecked by CPU hashing throughput. Prior work on VaultX demonstrated a high-performance CPU-based Proof-of-Space plotter using multi-threaded Blake3 hashing, achieving plotting speeds 4 to 50x faster than Chia depending on hardware configuration. In this paper, we present VaultxGPU, a GPU-accelerated extension of the VaultX plotter that offloads the Blake3 hashing pipeline to the GPU using custom kernels. We implement the plotter in both CUDA for NVIDIA hardware and SYCL for AMD and In",
-      "pdf_link": "https://arxiv.org/pdf/2606.14007.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14007",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.15137v1 Announce Type: new \nAbstract: io_uring moves I/O submission and completion into shared-memory rings. This makes it fast, and it also makes it invisible. strace sees only the ring setup, and the kernel tracepoints that expose the request flow are not stable ABI, so the few tools built on them work only on narrow kernel ranges. We present uringscope, a single-binary, language-agnostic observability tool for io_uring built on CO-RE (Compile Once, Run Everywhere) eBPF. uringscope makes four contributions. The first is a precise model of the request lifecycle and a method to reconstruct per-request flows from kernel events. The second is a technique for attaching portably to an unstable tracepoint surface, using BTF-probed program variants, CO-RE field flavors, and position-i",
+      "pdf_link": "https://arxiv.org/pdf/2606.15137.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15137",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 77.0,
-      "updated_at": "2026-06-15T12:26:43.137073+00:00"
+      "score": 33.0,
+      "updated_at": "2026-06-16T11:20:55.057555+00:00"
+    },
+    {
+      "forum_id": "2606.16824",
+      "paper_number": -1,
+      "title": "CacheWise: Understanding Workloads and Optimizing KVCache Management for Efficiently Serving LLM Coding Agents",
+      "authors": [
+        "Shubham Tiwari, Tapan Chugh, Nash Rickert, Simon Peter, Ratul Mahajan, Haiying Shen"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2606.16824v1 Announce Type: cross \nAbstract: Coding agents are a fast-growing LLM application, executing as long-running closed-loop sessions in which LLM generations alternate with external tool calls. Yet, unlike chat workloads, their serving behavior has not been studied extensively. We address this gap by collecting a dataset of real-world coding assistant traces. Our analysis shows that coding agent sessions repeatedly reuse large prefixes and create sustained KVCache pressure that conventional LLM serving policies handle poorly.\n  Based on our analysis, we present CacheWise, a KVCache management layer that improves KVCache reuse for coding agent workloads. CacheWise combines prefix-aware scheduling with reuse-aware eviction guided by lightweight predictions from tool call metad",
+      "pdf_link": "https://arxiv.org/pdf/2606.16824.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16824",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 23.0,
+      "updated_at": "2026-06-16T11:20:55.057639+00:00"
+    },
+    {
+      "forum_id": "2606.15954",
+      "paper_number": -1,
+      "title": "Green SARC: Predictive Cost and Carbon Governance for Agentic AI Systems",
+      "authors": [
+        "Gaston Besanson"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2606.15954v1 Announce Type: cross \nAbstract: Agentic AI systems act through tools and sub-agents, yet the controls meant to bound their financial and environmental cost still sit on dashboards evaluated beside or after execution. Green SARC applies the SARC governance-by-architecture framework -- four enforcement sites in the agent loop -- to FinOps and GreenOps, contributing the theory of what to enforce and how to predict it. We report four policy-independent results. (i) The unconstrained \"State Snowball\" is $\\Theta(n^2)$ in loop depth; on 3,000 real multi-step plans (SWE-rebench) it holds on 100%, with median curvature $\\hat{c}_2=216$ exceeding the linear-accretion prediction $p/2=134$ -- real plans accrete faster than the model. (ii) On real residuals the Normal-$\\sigma$ gate un",
+      "pdf_link": "https://arxiv.org/pdf/2606.15954.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15954",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.0,
+      "updated_at": "2026-06-16T11:20:55.200474+00:00"
+    },
+    {
+      "forum_id": "2411.02908",
+      "paper_number": -1,
+      "title": "Photon: Federated LLM Pre-Training",
+      "authors": [
+        "Lorenzo Sani, Alex Iacob, Zeyu Cao, Royson Lee, Bill Marino, Yan Gao, Dongqi Cai, Zexi Li, Wanru Zhao, Xinchi Qiu, Nicholas D. Lane"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2411.02908v2 Announce Type: replace-cross \nAbstract: Scaling large language models (LLMs) demands extensive data and computing resources, which are traditionally constrained to data centers by the high-bandwidth requirements of distributed training. Low-bandwidth methods like federated learning (FL) could enable collaborative training of larger models across weakly-connected GPUs if they can effectively be used for pre-training. To achieve this, we introduce Photon, the first complete system for federated end-to-end LLM training, leveraging cross-silo FL for global-scale training with minimal communication overheads. Using Photon, we train the first federated family of decoder-only LLMs from scratch. We show that: (1) Photon can train model sizes up to 7B in a federated fashion while",
+      "pdf_link": "https://arxiv.org/pdf/2411.02908.pdf",
+      "forum_link": "https://arxiv.org/abs/2411.02908",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 45.0,
+      "updated_at": "2026-06-16T11:20:55.201266+00:00"
+    },
+    {
+      "forum_id": "2512.12737",
+      "paper_number": -1,
+      "title": "Communication-Efficient Neural Tangent Kernels for Heterogeneous Decentralized Federated Learning",
+      "authors": [
+        "Li Xia"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2512.12737v2 Announce Type: replace-cross \nAbstract: Decentralized federated learning (DFL) enables collaborative model training without a central server, but converges slowly under statistical heterogeneity. Recent work has shown that neural tangent kernel (NTK) methods achieve faster convergence than gradient-based updates in DFL, while momentum has proven effective for accelerating gradient-based FL. However, applying momentum to NTK updates can destabilize training under heterogeneous data. We propose SPARK, which addresses this instability with a stage-wise annealed soft-label regularizer evaluated on neighborhood-aggregated data, so that momentum can accelerate NTK updates stably. Under high heterogeneity, SPARK converges about 3$\\times$ faster than baselines and lowers the tot",
+      "pdf_link": "https://arxiv.org/pdf/2512.12737.pdf",
+      "forum_link": "https://arxiv.org/abs/2512.12737",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 64.0,
+      "updated_at": "2026-06-16T11:20:55.201681+00:00"
     }
   ]
 }

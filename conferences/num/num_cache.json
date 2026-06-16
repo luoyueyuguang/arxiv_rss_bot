@@ -1,59 +1,473 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-06-15T12:26:46.016646+00:00",
-  "paper_count": 28,
+  "last_updated": "2026-06-16T11:20:57.663100+00:00",
+  "paper_count": 52,
   "papers": [
     {
-      "forum_id": "2606.13807",
+      "forum_id": "2606.14839",
       "paper_number": -1,
-      "title": "A WKB-related time-stepping scheme for differential equations describing oscillatory systems",
+      "title": "Efficient Multi-Precision Computation of Bessel Functions for Real Orders and Complex Arguments with Fortran Implementation -- Part II: The Modified Bessel Function of the Second Kind, $K_\\nu(z)$",
       "authors": [
-        "Juliane Rosemeier, Rupert Klein"
+        "Mofreh R. Zaghloul, Steven G. Johnson"
       ],
       "keywords": [
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2606.13807v1 Announce Type: new \nAbstract: In this study, we present a novel time-stepping scheme for multiscale differential equations describing oscillatory systems with well-separated scales, where the scale separation is controlled by a small parameter $\\epsilon$. The time-stepping method is related to a multi-modal WKB approximation and relies on a transformation of variables derived in this work. The analysis reveals that, in the transformed formulation, the leading-order oscillations are either eliminated or appear only at higher asymptotic order. The method is applied to ordinary differential equations, including the well-known van der Pol oscillator. We investigate the accuracy of the proposed method numerically for different parameter regimes, in particular for decreasing v",
-      "pdf_link": "https://arxiv.org/pdf/2606.13807.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.13807",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.14839v1 Announce Type: new \nAbstract: This paper, the second in a series, presents an efficient, self-contained algorithm for computing the modified Bessel function of the second kind, \\(K_{\\nu}(z)\\) for complex argument and real orders, building on Part~I (for \\(I_{\\nu}\\)). The method adaptively selects among analytic representations such as power series, large-\\(|z|\\) asymptotics, uniform asymptotics for large \\(|\\nu|\\), and numerically stable forward recurrence with region boundaries tuned for accuracy and efficiency. A robust \\texttt{Fortran} implementation supports double precision and quadruple precision. The use of quadruple precision extends the reliable computational domain and improves stability in challenging regimes. Accuracy is validated against high-precision \\text",
+      "pdf_link": "https://arxiv.org/pdf/2606.14839.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.14839",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-16T11:20:57.651986+00:00"
+    },
+    {
+      "forum_id": "2606.14937",
+      "paper_number": -1,
+      "title": "Efficient Multi-Precision Computation of Bessel Functions for Real Orders and Complex Arguments with a Fortran Implementation -- Part III: Regular Bessel Functions of the First and Second Kinds $J_{\\nu}(z)$ and $Y_{\\nu}(z)$",
+      "authors": [
+        "Mofreh R Zaghloul, Steven G. Johnson"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.14937v1 Announce Type: new \nAbstract: This paper is the final part in a series devoted to the development of numerically stable and efficient algorithms, together with multi-precision Fortran implementations, for computing Bessel functions with real orders and complex arguments. Parts~I and~II presented stable and efficient algorithms for the modified Bessel functions I_nu(z) and K_nu(z); here we treat Bessel functions J_nu(z) and Y_nu(z). The proposed algorithms support complex arguments for both positive and negative real orders and are implemented in native double and quadruple precision. Quadruple precision substantially increases dynamic range and accuracy (by roughly an order of magnitude in reliably computable |nu| and |z|), thereby extending applicability to problems req",
+      "pdf_link": "https://arxiv.org/pdf/2606.14937.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.14937",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-16T11:20:57.652018+00:00"
+    },
+    {
+      "forum_id": "2606.14950",
+      "paper_number": -1,
+      "title": "A HDG method with transmission variables for time-harmonic wave propagation problems with constant coefficients",
+      "authors": [
+        "Simone Pescuma, Gw\\'ena\\\"el Gabard, Th\\'eophile Chaumont-Frelet, Axel Modave"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.14950v1 Announce Type: new \nAbstract: Iterative finite element solvers for time-harmonic wave problems are notoriously slow to converge, owing to fundamental properties of these problems. We present a variant of the hybridizable discontinuous Galerkin (HDG) method that is better suited to fast iterative solution. Unlike the standard hybridization strategy, which eliminates physical unknowns by introducing an auxiliary numerical flux on element faces, our approach instead introduces a transmission variable on those faces. For Helmholtz problems, this reformulation, known as CHDG, has been shown to significantly accelerate the convergence of iterative schemes relative to standard HDG. The present work extends CHDG to a general framework covering wave propagation problems with cons",
+      "pdf_link": "https://arxiv.org/pdf/2606.14950.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.14950",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 26.0,
+      "updated_at": "2026-06-16T11:20:57.652040+00:00"
+    },
+    {
+      "forum_id": "2606.14991",
+      "paper_number": -1,
+      "title": "A Finite Element Approximation of an Optimal Insulation Problem with Convective Heat Transfer",
+      "authors": [
+        "Harbir Antil, Alex Kaltenbach, Keegan L. A. Kirk"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.14991v1 Announce Type: new \nAbstract: A finite element discretization of an optimal insulation problem with convective heat transfer is considered. The model is formulated as a non-smooth, two-variable convex minimization problem. It accounts for the temperature distribution in a thermally conducting body $\\Omega\\subseteq\\mathbb{R}^d$, with $d\\in \\{2,3\\}$, and the distribution of a given amount of insulation material on an insulated boundary part $\\Gamma_I\\subseteq \\partial\\Omega$.\n  The surface integral over the insulated boundary $\\Gamma_I$ is approximated by a mass-lumping quadrature that preserves the structure of the continuous setting and, in particular, yields discrete optimality conditions mirroring their continuous counterparts. Well-posedness, stability, and weak conve",
+      "pdf_link": "https://arxiv.org/pdf/2606.14991.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.14991",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 32.5,
+      "updated_at": "2026-06-16T11:20:57.652065+00:00"
+    },
+    {
+      "forum_id": "2606.15067",
+      "paper_number": -1,
+      "title": "A Structure-preserving Adaptive-Rank Approach to the High-Dimensional Wigner-Poisson System",
+      "authors": [
+        "Andrew J. Christlieb, Sining Gong, Jing-Mei Qiu, Nanyi Zheng"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15067v1 Announce Type: new \nAbstract: The Wigner-Poisson system is a deterministic phase-space model for quantum kinetic electron dynamics, but high-dimensional simulations are limited by the full 3D3V phase space and the nonlocal Wigner potential. We develop a structure-preserving, sampling-based adaptive-rank solver in hierarchical Tucker format for finite-$H$ regimes in which Wigner-Poisson solutions exhibit exploitable low-rank structure. The central difficulty is that adaptive compression can destroy the Fourier-Hermitian tensor symmetry required for a real inverse velocity transform and can break discrete global conservation laws. We address these issues with a Fourier-Hermitian-symmetry-aware sampling and mapping procedure and a global moment correction enforcing mass, mo",
+      "pdf_link": "https://arxiv.org/pdf/2606.15067.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15067",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-06-15T12:26:46.011478+00:00"
+      "updated_at": "2026-06-16T11:20:57.652128+00:00"
     },
     {
-      "forum_id": "2606.13827",
+      "forum_id": "2606.15163",
       "paper_number": -1,
-      "title": "Approximating Whittle-Matern Fields over Discretized Manifolds",
+      "title": "Hybrid-high order method in space and implicit schemes in time for the biharmonic wave equation",
       "authors": [
-        "Srinivas Nambirajan"
+        "Raman Kumar, Neela Nataraj, Aamir Yousuf"
       ],
       "keywords": [
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2606.13827v1 Announce Type: new \nAbstract: Markovian Whittle-Mat\\'ern fields have been convergently approximated by discrete Gauss Markov Random Fields (GMRFs) with sparse precision matrices using a Finite Element approximation of the two-parameter family, \\[ (\\kappa^2 - \\Delta)^{\\alpha/2} u = \\mathcal{W}, \\;\\; \\kappa \\in \\mathbb{R}, \\; \\alpha \\in \\mathbb{N}. \\] of SPDEs. Using recent developements in the analysis of Discrete Exterior Calculus (DEC), we present a different, yet closely related, convergent GMRF approximation to these Mat\\'ern fields over complete, boundaryless Riemannian manifolds discretized as well-centered simplicial complexes. This convergent method (i) is agnostic to $\\alpha, \\kappa$ and thus allows a universal approximation scheme for the precision and covarianc",
-      "pdf_link": "https://arxiv.org/pdf/2606.13827.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.13827",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.15163v1 Announce Type: new \nAbstract: This article presents the numerical analysis for the biharmonic wave equation with clamped boundary conditions employing two variants of the {hybrid high-order} method for the space discretization and two implicit time-stepping schemes for the time discretization. The Newmark scheme directly discretizes the second-order time derivative, while the Crank-Nicolson scheme discretizes a reformulated system where we introduce velocity as an independent variable to create coupled first-order equations. Optimal orders of convergence in space and time are achieved for both schemes. The numerical experiments validate the theoretical convergence rates and show the effectiveness of the proposed methods. To the best of our knowledge, this is the first wo",
+      "pdf_link": "https://arxiv.org/pdf/2606.15163.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15163",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-06-15T12:26:46.011505+00:00"
+      "score": 3.0,
+      "updated_at": "2026-06-16T11:20:57.652148+00:00"
     },
     {
-      "forum_id": "2606.13998",
+      "forum_id": "2606.15175",
       "paper_number": -1,
-      "title": "Analytic First Derivatives of SIDER Interpolation",
+      "title": "A uniform-in-time weakly convergent explicit numerical method for the underdamped Langevin equation with polynomial potentials",
+      "authors": [
+        "Diancong Jin"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15175v1 Announce Type: new \nAbstract: The underdamped Langevin equation is a fundamental model in statistical mechanics for sampling Gibbs measures and simulating molecular dynamics, for which numerical methods with uniform-in-time weak convergence are essential for accurately reproducing long-time statistical observables and invariant measures of the underlying dynamics. Currently, such uniform-in-time weak convergence is established for implicit schemes, but remains unknown for explicit ones under polynomially growing potentials. To improve efficiency in long-time simulations, we propose the first explicit numerical method for the underdamped Langevin equation with polynomially growing potentials that is proven to achieve uniform-in-time weak convergence. The explicit numerica",
+      "pdf_link": "https://arxiv.org/pdf/2606.15175.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15175",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.0,
+      "updated_at": "2026-06-16T11:20:57.652170+00:00"
+    },
+    {
+      "forum_id": "2606.15223",
+      "paper_number": -1,
+      "title": "A Staggered Discontinuous Galerkin Method for linear elasticity problem on Polytopal Meshes",
+      "authors": [
+        "Long Chen, Xuehai Huang, Ruishu Wang, Ran Zhang"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15223v1 Announce Type: new \nAbstract: This paper develops a novel staggered discontinuous Galerkin (SDG) method for linear elasticity based on the Hellinger-Reissner variational principle. We construct symmetric stress spaces with normal continuity across element boundaries on arbitrary polytopal meshes, while approximating the displacement field using piecewise polynomial functions defined on the same meshes. The method is locking-free and satisfies a local balance of linear momentum and angular momentum. We present a comprehensive theoretical analysis, including proofs of stability and error estimates. The formulation admits a hybridizable structure, which significantly simplifies the numerical implementation. Numerical experiments validate the theoretical results and demonstr",
+      "pdf_link": "https://arxiv.org/pdf/2606.15223.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15223",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.5,
+      "updated_at": "2026-06-16T11:20:57.652189+00:00"
+    },
+    {
+      "forum_id": "2606.15296",
+      "paper_number": -1,
+      "title": "An isotropic recovery-based error estimator algorithm for mesh adaptation in a finite volume environment with application to atmospheric flows",
+      "authors": [
+        "Lander Besabe, Michele Girfoglio, Simona Perotto, Annalisa Quaini, Gianluigi Rozza"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15296v1 Announce Type: new \nAbstract: We develop an Isotropic Recovery-based Error Estimator (IREE) to drive mesh adaptation within a finite volume framework. Recovery-based error estimators are widely used in practice thanks to their simplicity, relying solely on the available discrete solution and a suitable post-processing step. While recovery-based estimators are well established in the finite element framework, their application to finite volume methods, despite the widespread use of the latter in industrial and commercial codes, remains largely unexplored and motivates the present study. We assess the performance of the proposed IREE-driven mesh adaptation procedure through well-known benchmarks for dry atmospheric flows modeling and compare it against a widely-used plain ",
+      "pdf_link": "https://arxiv.org/pdf/2606.15296.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15296",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-06-16T11:20:57.652212+00:00"
+    },
+    {
+      "forum_id": "2606.15340",
+      "paper_number": -1,
+      "title": "Conforming and non-conforming virtual element methods for the biharmonic Steklov eigenvalue problem with minimum regularity",
+      "authors": [
+        "Dibyendu Adak, Daniele Boffi, Francesca Gardini, Gianmarco Manzini, Jesus Vellojin"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15340v1 Announce Type: new \nAbstract: In this work, we analyze the conforming and $C^0$-non-conforming Virtual Element Method for a fourth-order Steklov eigenvalue problem on a generally shaped, possibly nonconvex, polygonal domain. By employing an {\\it enriching } operator, we derive the convergence analysis using the discrete $H^2$ seminorm, and the $H^1$ and $L^2$ norms. We use the Babu\\v{s}ka--Osborn spectral theory \\cite{BO} to prove that the numerical scheme approximates the spectrum without introducing any spurious eigenvalue. Moreover, we derive the optimal order of convergence for eigenfunctions and double order for eigenvalues. We assess the performance of the method on several numerical tests using different families of polygonal meshes.",
+      "pdf_link": "https://arxiv.org/pdf/2606.15340.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15340",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-06-16T11:20:57.652231+00:00"
+    },
+    {
+      "forum_id": "2606.15350",
+      "paper_number": -1,
+      "title": "Linear algebra at exponential scale via tensor network dimension reduction",
+      "authors": [
+        "Chris Cama\\~no, Ethan N. Epperly, Raphael A. Meyer, Joel A. Tropp"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15350v1 Announce Type: new \nAbstract: Many problems in modern scientific computing are challenging because of a \\emph{curse of dimension}, where their mathematical formulation involves objects whose dimension is \\emph{exponential} in the nominal \"size\" of the problem. Tensor networks can provide a compact representation for exponentially large vectors and matrices that arise in applications, but these representations do not always lead to reliable algorithms. This paper develops and analyzes techniques for randomized dimension reduction of tensor network data. These techniques support a suite of efficient algorithms for provably solving exponential-scale linear algebra problems, including trace estimation and eigenvalue approximation. The paper includes several stylized illustra",
+      "pdf_link": "https://arxiv.org/pdf/2606.15350.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15350",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-06-16T11:20:57.652249+00:00"
+    },
+    {
+      "forum_id": "2606.15703",
+      "paper_number": -1,
+      "title": "Strong Stability Preserving Integrating Factor Runge-Kutta Methods for Differential Lyapunov Equations with Positivity Preservation",
+      "authors": [
+        "Wenhui Zhang, Rihui Lan, Xiaobo Jing"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15703v1 Announce Type: new \nAbstract: This paper introduces second- and third-order integrating factor strong stability preserving Runge-Kutta methods for solving differential Lyapunov equations. The proposed schemes break the traditional order barrier while rigorously preserving the symmetry and positive semidefiniteness (SPSD) of numerical solutions-an essential property for stability analysis and control-theoretic applications. Furthermore, we provide a rigorous error estimate for the second-order scheme. Numerical experiments validate the accuracy of the methods and their ability to maintain SPSD properties.",
+      "pdf_link": "https://arxiv.org/pdf/2606.15703.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15703",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-16T11:20:57.652268+00:00"
+    },
+    {
+      "forum_id": "2606.15726",
+      "paper_number": -1,
+      "title": "Optimized high-order IMEX-RK schemes for degenerate diffusion-reaction problems with application to travelling waves phenomena",
+      "authors": [
+        "Paola F. Antonietti, Mattia Corti, Giuseppe Orlando"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15726v1 Announce Type: new \nAbstract: We study a class of IMplicit-EXplicit Runge--Kutta (IMEX-RK) schemes for the numerical approximation of reaction and diffusion-reaction problems arising in a variety of biological and physical applications. Such models may admit travelling wave solutions, with the Fisher--Kolmogorov equation representing a prototypical example. Motivated by this feature, the proposed time integration schemes are designed to accurately capture sharp propagating fronts. We also investigate a less standard use of IMEX-RK methods that circumvents a splitting of reaction terms into linear and nonlinear components, while still requiring the solution of linear systems at each stage. This semi-implicit formulation, referred to as SI-IMEX-RK, enables a targeted treat",
+      "pdf_link": "https://arxiv.org/pdf/2606.15726.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15726",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.5,
+      "updated_at": "2026-06-16T11:20:57.652289+00:00"
+    },
+    {
+      "forum_id": "2606.15878",
+      "paper_number": -1,
+      "title": "Convergence of the PML-BIE Method for Acoustic Scattering in an Impedance Half-Space",
+      "authors": [
+        "Wangtao Lu"
+      ],
+      "keywords": [
+        "cs.NA",
+        "SIAM"
+      ],
+      "abstract": "arXiv:2606.15878v1 Announce Type: new \nAbstract: The perfectly matched layer-based boundary integral equation (PML-BIE) method (Lu et al., \\emph{SIAM J. Appl. Math.} 78 (2018)) has become an effective tool for wave scattering problems in unbounded domains. Despite its successful applications, a rigorous convergence theory has remained incomplete in many physically relevant settings. In this paper, we present a general framework for establishing convergence of PML-BIE methods, using acoustic scattering in an impedance half-space as the first illustrative example. The framework separates the analysis into three components: convergence of the PML truncated partial differential equation, equivalence between the PML problem and an exact PML-BIE, and convergence of a computable PML-BIE obtained ",
+      "pdf_link": "https://arxiv.org/pdf/2606.15878.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15878",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "SIAM",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-06-16T11:20:57.652306+00:00"
+    },
+    {
+      "forum_id": "2606.15925",
+      "paper_number": -1,
+      "title": "First-Order Compatible-Strain Mixed Quadrilateral Finite Elements for 2D Nonlinear Elasticity",
+      "authors": [
+        "Mohsen Jahanshahi, Damiano Pasini, Arash Yavari"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15925v1 Announce Type: new \nAbstract: Compatible-strain mixed finite elements (CSMFEs) use the differential complex of nonlinear elasticity to construct discretizations that preserve the underlying topological structure. Existing CSMFEs have focused on simplicial meshes for compressible and incompressible nonlinear elasticity. In this paper, we develop compatible-strain mixed formulations for quadrilateral elements applicable to both compressible and incompressible solids. For general quadrilateral elements, the Piola transformation preserves vector fields tangent and normal to element edges only for special geometries, such as rectangles, parallelograms, and trapezoids, and therefore cannot be used to construct compatible shape functions. To overcome this limitation, the shape ",
+      "pdf_link": "https://arxiv.org/pdf/2606.15925.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15925",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.5,
+      "updated_at": "2026-06-16T11:20:57.652331+00:00"
+    },
+    {
+      "forum_id": "2606.16086",
+      "paper_number": -1,
+      "title": "Random-Feature Kalman Filtering for Linear PDE Data Assimilation",
+      "authors": [
+        "Xi'an Li, Jiale Linghu, Yangshuai Wang"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.16086v1 Announce Type: new \nAbstract: Data assimilation for time-dependent partial differential equations (PDEs) requires Bayesian updates of an evolving field from streaming, sparse, and noisy observations, while keeping the filtering state finite dimensional. We introduce a random-feature Kalman filtering framework for linear PDE data assimilation. Once the random features are frozen and the linear PDE is Galerkin discretized, the coefficient vector satisfies a finite-dimensional linear-Gaussian state-space model, so the Kalman recursion gives the exact posterior for the chosen coefficient model. For non-orthogonal random-feature draws, we construct a mass-whitened effective-rank coordinate system that removes near-null mass directions and identifies the posterior dimension $r",
+      "pdf_link": "https://arxiv.org/pdf/2606.16086.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16086",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-06-16T11:20:57.652354+00:00"
+    },
+    {
+      "forum_id": "2606.16142",
+      "paper_number": -1,
+      "title": "A priori error analysis of a mass-lumped midpoint finite element method with a structure-preserving solver for the Landau--Lifshitz--Gilbert equation with Dzyaloshinskii--Moriya interaction",
+      "authors": [
+        "Agus L. Soenjaya"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.16142v1 Announce Type: new \nAbstract: The Landau--Lifshitz--Gilbert (LLG) equation is a fundamental model in micromagnetics for the magnetisation dynamics of ferromagnets at temperatures well below the Curie temperature. In chiral magnetic materials, the bulk Dzyaloshinskii--Moriya interaction (DMI) contributes a first-order term to the effective field, induces a natural chiral boundary condition, and plays an important role in the dynamics of skyrmions. In this paper, we analyse a mass-lumped midpoint finite element scheme for the LLG equation with exchange interaction and bulk DMI. The fully discrete scheme preserves the nodal unit-length constraint exactly and satisfies a discrete energy law. Under suitable regularity assumptions on the exact solution, we prove an optimal-ord",
+      "pdf_link": "https://arxiv.org/pdf/2606.16142.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16142",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 32.5,
+      "updated_at": "2026-06-16T11:20:57.652376+00:00"
+    },
+    {
+      "forum_id": "2606.16192",
+      "paper_number": -1,
+      "title": "Infinite-lattice discrete Calder\\'on projection via the lattice Green's function for active noise shielding and confinement",
+      "authors": [
+        "Qing Xia"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.16192v1 Announce Type: new \nAbstract: We construct an infinite-lattice discrete Calder\\'on projection for the Helmholtz equation by convolution with the lattice Green's function (LGF), and apply it to active noise shielding and confinement on Cartesian grids with arbitrary geometry. The LGF fixes the outgoing radiation condition and removes the geometry-dependent auxiliary Helmholtz problem and artificial outer boundary from the projection and control synthesis; its finite numerical tabulation depends only on $(h,k)$ and is reusable across geometries. We prove idempotence, characterize the range as the trace space of interior lattice-Helmholtz solutions, and establish range equivalence with a well-posed Tsynkov-type projection. The two projectors coincide as operators when the a",
+      "pdf_link": "https://arxiv.org/pdf/2606.16192.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16192",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-16T11:20:57.652399+00:00"
+    },
+    {
+      "forum_id": "2606.16251",
+      "paper_number": -1,
+      "title": "Topological spectral gap, multiscale Weyl's law, and homogenization in high-contrast PDEs",
+      "authors": [
+        "Eric T. Chung, Lijian Jiang, Yajun Wang"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.16251v1 Announce Type: new \nAbstract: This paper introduces a unified abstract variational and topological framework to characterize the spectral gap and eigenvalue distribution in high-contrast multiscale partial differential equations (PDEs). We rigorously prove that the exact location of the spectral gap is universally determined by the dimension of the local null space associated with the high-contrast inclusions. For systems with infinite-dimensional kernels, this location is strictly determined by the topological Betti numbers. Furthermore, we establish a multiscale Weyl's law via a spectral decoupling theorem, demonstrating that as the contrast approaches infinity, the multiscale spectrum bifurcates into two independent components: the Dirichlet spectrum of the background",
+      "pdf_link": "https://arxiv.org/pdf/2606.16251.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16251",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.5,
+      "updated_at": "2026-06-16T11:20:57.652419+00:00"
+    },
+    {
+      "forum_id": "2606.16293",
+      "paper_number": -1,
+      "title": "Isogeometric Analysis for Explicit Wave Propagation in Poroelastic Media",
+      "authors": [
+        "Maarten M. Hodzelmans, Ren\\'e R. Hiemstra, Joris J. C. Remmers, Clemens V. Verhoosel"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.16293v1 Announce Type: new \nAbstract: For higher-order discretizations of explicit dynamics problems, Isogeometric Analysis (IGA) has several favorable properties as compared to classical Finite Element Analysis (FEA). While FEA produces spurious modes at orders beyond linear, this is not the case for IGA. Consequently, fewer degrees of freedom are required for comparable accuracy, larger timesteps can be taken, and the method is more robust for nonlinear problems. If outlier modes are removed, the timestep even becomes virtually independent of the order. In this paper, we investigate how these advantages apply to the poroelastic continuum model. We consider both a primal formulation, wherein our variables are the displacement of the matrix material, the fluid displacement, and ",
+      "pdf_link": "https://arxiv.org/pdf/2606.16293.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16293",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 46.0,
+      "updated_at": "2026-06-16T11:20:57.652441+00:00"
+    },
+    {
+      "forum_id": "2606.16463",
+      "paper_number": -1,
+      "title": "Geodesic Interpolation on the Grassmann Manifold: GLERP and Recursive GIDER Interpolants",
       "authors": [
         "Shingyu Leung"
       ],
@@ -61,155 +475,615 @@
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2606.13998v1 Announce Type: new \nAbstract: Spherical interpolation is required in numerical and geometric applications in which the unknowns are constrained to remain on the unit sphere. Spherical Interpolation of orDER $n$ (SIDER-$n$) was introduced as the high-order reconstruction component of spherical essentially non-oscillatory interpolation, where the reconstruction is built entirely from spherical linear interpolation (SLERP) operations and therefore preserves the spherical constraint exactly. This paper develops analytic first-derivative formulas for SIDER curves of arbitrary order. The central observation is that the recursive definition of SIDER can be differentiated by direct chain-rule propagation through its binary tree of SLERP operations. After deriving the total deriv",
-      "pdf_link": "https://arxiv.org/pdf/2606.13998.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.13998",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.16463v1 Announce Type: new \nAbstract: This article develops a geodesic interpolation framework for data on the Grassmann manifold. The motivation is that many matrix-valued data sets represent subspaces rather than fixed bases: if the columns of two matrices differ only by a right orthogonal transformation, then they describe the same point on $Gr(r,m)$. Interpolation should therefore be invariant under this basis ambiguity. We first introduce $GLERP$, a Grassmann analogue of spherical linear interpolation defined by the Grassmann exponential and logarithm maps. The method follows the constant-speed geodesic joining two nearby subspaces and is second-order accurate for smooth Grassmann-valued curves under the usual normal-neighborhood condition. We then define $GIDER_n$, a recur",
+      "pdf_link": "https://arxiv.org/pdf/2606.16463.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16463",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-06-15T12:26:46.011539+00:00"
+      "score": 1.5,
+      "updated_at": "2026-06-16T11:20:57.652463+00:00"
     },
     {
-      "forum_id": "2606.14181",
+      "forum_id": "2606.16510",
       "paper_number": -1,
-      "title": "Robin-Neumann Coupling of PINN and FEM Solvers: A Steklov-Poincar\\'e View, with Application to Fluid-Structure Interaction with Contact",
+      "title": "Petrov-Galerkin Variational Physics-Informed Neural Network Framework for Two-Dimensional Singularly Perturbed Problems",
       "authors": [
-        "Mikel Landajuela"
+        "Vijay Kumar, Gautam Singh"
       ],
       "keywords": [
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2606.14181v1 Announce Type: new \nAbstract: Physics-informed neural networks (PINNs) are meshless and carry moving geometry and topology change through resampling of collocation points; the finite-element method (FEM) is the workhorse for boundary-fitted discretisations. Coupling the two across a shared interface promises the best of both, yet existing PINN-FEM schemes are validated only empirically. We put the coupling on a domain-decomposition footing: viewing each solver as a Steklov-Poincar\\'e (trace-to-flux) operator, we transfer the classical Dirichlet-Neumann (DN) divergence diagnosis and its Robin-Neumann (RN) cure, including a closed-form, sweep-free interface impedance, and prove a PINN-specific contraction theorem: a trained network realises only a perturbed Steklov operato",
-      "pdf_link": "https://arxiv.org/pdf/2606.14181.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14181",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.16510v1 Announce Type: new \nAbstract: This study proposes a Petrov-Galerkin based Variational Physics-Informed Neural Network (VPINN) for efficiently solving two-dimensional singularly perturbed problems (SPPs) with one and two small perturbation parameters. The approach employs neural networks to construct the trial solution space, while tensor-product hat functions are adopted as test functions to enforce the variational form. To accurately resolve of sharp boundary layers, the variational form is implemented using a Petrov-Galerkin formulation. Dirichlet boundary conditions are imposed directly, while the source terms are computed using automatic differentiation. Computational experiments on standard two-dimensional problems demonstrate that the proposed method achieves high ",
+      "pdf_link": "https://arxiv.org/pdf/2606.16510.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16510",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-06-15T12:26:46.011561+00:00"
+      "score": 1.5,
+      "updated_at": "2026-06-16T11:20:57.652482+00:00"
     },
     {
-      "forum_id": "2606.14191",
+      "forum_id": "2606.16563",
       "paper_number": -1,
-      "title": "A Generalized Hacker Dynamics Model with Nonlinear Incidence: Analysis and Positivity-Preserving Numerical Simulation",
+      "title": "A geometric reformulation and structure-preserving rotational discrete gradient scheme for the full Ericksen-Leslie model",
       "authors": [
-        "Manh Tuan Hoang, Hoai Thu Pham, Matthias Ehrhardt"
+        "Hanbin Wang, Jie Xu, Zhiguo Yang"
       ],
       "keywords": [
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2606.14191v1 Announce Type: new \nAbstract: We propose and analyze a generalized compartment model for hacker dynamics in cybersecurity systems. This model is an extension of a recently introduced framework, replacing the bilinear interaction term with a broad class of nonlinear incidence functions. This provides greater modeling flexibility and allows for the description of a wider range of cyber-propagation and information-spreading processes.\n  First, we investigate the qualitative dynamics of the model. We establish the positivity and boundedness of solutions, derive the basic reproduction number, and characterize the existence of hacker-free and hacker-present equilibria. We obtain local and global asymptotic stability results, yielding a complete description of the global dynami",
-      "pdf_link": "https://arxiv.org/pdf/2606.14191.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14191",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.16563v1 Announce Type: new \nAbstract: In this paper, we present a structure-preserving rotational discrete gradient method of the full Ericksen-Leslie model for nematic liquid crystal flows with general anisotropic Oseen-Frank elasticity and full Leslie stress. The main difficulty resides in preserving both the pointwise unit-length constraint on the director field and the energy-dissipation at the discrete level, which involves high nonlinearities in the interplay between the length constraint, anisotropic elastic energy, and hydrodynamic couplings. To address this issue, we first reformulate the Ericksen-Leslie system into an equivalent rotational form in which the director evolution is intrinsically tangent to the unit sphere and the coupling terms in the Leslie and Ericksen ",
+      "pdf_link": "https://arxiv.org/pdf/2606.16563.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16563",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-06-15T12:26:46.011580+00:00"
+      "score": 1.5,
+      "updated_at": "2026-06-16T11:20:57.652502+00:00"
     },
     {
-      "forum_id": "2606.14273",
+      "forum_id": "2606.16697",
       "paper_number": -1,
-      "title": "Primal finite element scheme of the Hodge-Laplace problem",
+      "title": "Geometric structure-preserving parametric finite element approximations for the constrained Helfrich flow",
       "authors": [
-        "Wenyu Dong, Shuo Zhang"
+        "Xiaoxiao Liu, Quan Zhao"
       ],
       "keywords": [
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2606.14273v1 Announce Type: new \nAbstract: In this paper, we construct nonconforming finite element spaces $\\boldsymbol{V}^{\\mathbf{d}\\cap\\mathring{\\boldsymbol{\\delta}}}_h\\Lambda^k$ for the approximation of $H\\Lambda^k\\cap H^*_0\\Lambda^k$ on simplicial meshes, for $n\\ge 2$ and $1\\le k\\le n-1$, by enforcing adjoint continuity against piecewise Whitney spaces rather than trace matching. It holds, with $\\mathbf{d}^k_h$ and $\\boldsymbol{\\delta}_{k,h}$ denoting respectively the piecewise action of differential and codifferential operators, and $\\boldsymbol{\\mathfrak{H}}_h\\Lambda^k$ being the discrete harmonic forms in the FEEC sense, that $\\boldsymbol{\\mathfrak{H}}_h\\Lambda^k=\\{\\boldsymbol{\\mu}_h\\in \\boldsymbol{V}^{\\mathbf{d}\\cap\\mathring{\\boldsymbol{\\delta}}}_h\\Lambda^k:\\mathbf{d}^k_h\\bo",
-      "pdf_link": "https://arxiv.org/pdf/2606.14273.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14273",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.16697v1 Announce Type: new \nAbstract: We propose a structure-preserving parametric finite element method for the constrained Helfrich flow of closed curves and surfaces. The proposed method is based on a two-stage velocity-splitting strategy. In the first stage, the normal velocity is computed from a curvature evolution equation, with the volume and surface area constraints imposed softly in terms of the normal velocity. This step approximates the gradient-flow structure of the Helfrich flow, and its fully discrete parametric finite element approximation leads to a linear system and yields an unconditional energy dissipation estimate at the fully discrete level. In the second stage, the surface mesh is updated by combining the computed normal velocity with a BGN-type tangential ",
+      "pdf_link": "https://arxiv.org/pdf/2606.16697.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16697",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 34.0,
-      "updated_at": "2026-06-15T12:26:46.011620+00:00"
+      "score": 31.5,
+      "updated_at": "2026-06-16T11:20:57.652560+00:00"
     },
     {
-      "forum_id": "2606.14301",
+      "forum_id": "2606.16755",
       "paper_number": -1,
-      "title": "Taming Slivers: A Robust TFEM Framework for Reliable Computations on Degenerate Tetrahedral Meshes",
+      "title": "A variable-offset joint formulation for beams with arbitrary cross-sections using a null space method",
       "authors": [
-        "Antoine Quiriny, Jonathan Lambrechts, Nicolas Mo\\\"es, V\\'aclav Ku\\v{c}era, Jean-Fran\\c{c}ois Remacle"
+        "Myung-Jin Choi, Roger A. Sauer, Simon Klarmann, Sven Klinkel"
       ],
       "keywords": [
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2606.14301v1 Announce Type: new \nAbstract: Sliver elements are an intrinsic difficulty of three-dimensional tetrahedral mesh generation and remain costly, and sometimes impractical, to eliminate completely. Although isolated degenerate elements do not necessarily prevent finite element convergence, connected clusters or sheets of slivers may impose artificial constraints on the discrete solution, leading to locking and severe loss of accuracy. In this work, we revisit the effect of slivers from the viewpoint of the finite element solution and propose a robust solver-side treatment based on the Tempered Finite Element Method (TFEM). The method limits the singular contribution of degenerate elements by introducing a lower bound on the Jacobian determinant, which can be interpreted as a",
-      "pdf_link": "https://arxiv.org/pdf/2606.14301.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14301",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.16755v1 Announce Type: new \nAbstract: In this paper, we present a variational formulation of local configurational constraints that couple multiple beams with arbitrarily shaped cross-sections. Since this formulation requires no explicit interface to rotational degrees-of-freedom, it applies to any beam kinematics and finite element discretization. Here, we define the offset coordinates in a moving frame to constrain or release the relative position between connected beams. The present method is based on a first-order approximation of the Lagrange multiplier field in the cross-section, which limits the transferability of the joint to the resultant force and moment only. The multipliers are eliminated using a discrete null space method, which provides size reduction and improved ",
+      "pdf_link": "https://arxiv.org/pdf/2606.16755.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16755",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-06-15T12:26:46.011640+00:00"
+      "score": 11.0,
+      "updated_at": "2026-06-16T11:20:57.652580+00:00"
     },
     {
-      "forum_id": "2606.14316",
+      "forum_id": "2606.17052",
       "paper_number": -1,
-      "title": "A new class of efficient linear higher-order schemes for the Landau-Lifshitz-Gilbert equation with reduced restriction on the damping parameter",
+      "title": "Nitsche-based FEM for the Laplace eigenvalue problem: spectral approximation and a posteriori error analysis",
       "authors": [
-        "Fukeng Huang, Binghong Li, Xiaoli Li, Jie Shen"
+        "Arbaz Khan, David Mora, Jesus Vellojin"
       ],
       "keywords": [
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2606.14316v1 Announce Type: new \nAbstract: Classical high-order backward differentiation formula (BDF) methods for the Landau-Lifshitz-Gilbert (LLG) equation often suffer from restrictive stability constraints, requiring small time steps and imposing stringent lower bounds on the damping parameter. These limitations become particularly severe for schemes of order higher than three. In this paper, we develop a class of high-order generalized BDF (GBDF) schemes for the LLG equation, including both semi-implicit and fully explicit treatments of the gyromagnetic term. The proposed schemes significantly improve stability properties and substantially relax the damping parameter constraints, but introduce essential difficulty in its analysis compared to the classical BDF schemes. We constru",
-      "pdf_link": "https://arxiv.org/pdf/2606.14316.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14316",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.17052v1 Announce Type: new \nAbstract: In this paper, we present the numerical analysis of an elliptic eigenvalue problem in which the essential boundary condition is imposed weakly by means of the Nitsche method. The resulting discrete eigenvalue problem is studied within the framework of compact operator theory. We prove norm convergence of the discrete solution operator and derive error estimates for the eigenvalues and eigenfunctions, with rates depending on the chosen Nitsche variant. In addition, we develop an a posteriori error analysis and propose a residual-based estimator suitable for adaptive refinement. Several numerical experiments are presented to assess the convergence, stability and robustness of the method, including the influence of the Nitsche stabilization par",
+      "pdf_link": "https://arxiv.org/pdf/2606.17052.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17052",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.5,
+      "updated_at": "2026-06-16T11:20:57.652621+00:00"
+    },
+    {
+      "forum_id": "2606.15053",
+      "paper_number": -1,
+      "title": "Physics-conforming Latent Twins",
+      "authors": [
+        "Matthias Chung, Yutong Bu, Deepanshu Verma"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15053v1 Announce Type: cross \nAbstract: Surrogate models are central to scientific machine learning, where they enable fast prediction, simulation, inference, and control for complex physical systems. For time-dependent problems, however, accurate interpolation of training trajectories is not sufficient: reliable surrogates should also respect the conservation laws, invariants, admissibility conditions, and dissipative structures that give those trajectories physical meaning. We introduce Physics-conforming Latent Twins, a framework for learning latent surrogate solution operators whose dynamics satisfy selected physical principles by design. The method builds on the Latent Twin formulation by jointly learning an encoder, a decoder, and a latent flow map between arbitrary time-i",
+      "pdf_link": "https://arxiv.org/pdf/2606.15053.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15053",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-06-15T12:26:46.011659+00:00"
+      "updated_at": "2026-06-16T11:20:57.652642+00:00"
     },
     {
-      "forum_id": "2606.14328",
+      "forum_id": "2606.15061",
       "paper_number": -1,
-      "title": "Mathematical Modeling of Salt Precipitation and Multi-Phase Flow in High Enthalpy Fractured Geothermal Systems",
+      "title": "VQE as Initial State Preparation for QPE on Heisenberg Spin-Glass Hamiltonians",
       "authors": [
-        "Micheal B. Oguntola, Omar Duran, Eirik Keilegavlen, Inga Berre"
+        "Elijah Pelofske, Stephan Eidenbenz"
       ],
       "keywords": [
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2606.14328v1 Announce Type: new \nAbstract: Simulating high-enthalpy fractured geothermal reservoirs is challenging due to the complex coupled processes of non-isothermal, multiphase, multicomponent flow, strongly nonlinear thermodynamics, and the dominant role of fractures. These complexities are amplified by mineral scaling, such as halite precipitation, which can impair reservoir permeability and well productivity. To address this, we present a new compositional flow model based on a persistent set of primary variables (pressure, enthalpy, and overall salt mass fraction). The formulation naturally handles phase transitions without manual switching, enhancing numerical stability. The model integrates a discrete fracture-matrix approach and employs an efficient, robust correlation-ba",
-      "pdf_link": "https://arxiv.org/pdf/2606.14328.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14328",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.15061v1 Announce Type: cross \nAbstract: Quantum Phase Estimation (QPE) is the quantum algorithmic workhorse for computing ground state energies of quantum Hamiltonians with quantum computers. Ground state energy calculation of physical systems is perhaps the most promising use case for quantum computing in terms of scientific and commercial value with a plausible path to outperformance of classical alternatives. This path, however, hinges on the availability of initial states for QPE with significant overlap with the true ground state. Using extensive (classical) numerical computations, we study whether the NISQ-era algorithm VQE (Variational Quantum Eigensolver) could be used to efficiently prepare high-overlap states of disordered fully-connected anisotropic Heisenberg spin gl",
+      "pdf_link": "https://arxiv.org/pdf/2606.15061.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15061",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-06-15T12:26:46.011679+00:00"
+      "score": 3.0,
+      "updated_at": "2026-06-16T11:20:57.652663+00:00"
+    },
+    {
+      "forum_id": "2606.15375",
+      "paper_number": -1,
+      "title": "Numerical Integration at the Intersection of Probability Theory, Number Theory and Dynamical Systems",
+      "authors": [
+        "Zicheng Wang, Haisen Zhang, Xu Zhang"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15375v1 Announce Type: cross \nAbstract: This paper is devoted to the study of uniformly distributed (u.d.) sequences on general non-compact topological spaces. Convergence-determining classes and the equivalent characterizations of u.d. sequences on $T_4$ spaces are discussed. For Polish spaces endowed with regular probability measures, the existence of a countable convergence-determining class for u.d. sequences is proved by virtue of the tightness of Borel probability measures. It is shown that, under the condition that a countable convergence-determining class exists, both independent identically distributed (i.i.d.) randomly sampled sequences and orbit sequences of ergodic transformations are u.d.\\ with full measure.",
+      "pdf_link": "https://arxiv.org/pdf/2606.15375.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15375",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-06-16T11:20:57.652680+00:00"
+    },
+    {
+      "forum_id": "2606.15571",
+      "paper_number": -1,
+      "title": "Liquid Random Feature Methods for Time-Dependent Partial Differential Equations",
+      "authors": [
+        "Jiale Linghu, Yangshuai Wang"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15571v1 Announce Type: cross \nAbstract: A central challenge in mesh-free space--time approximation for time-dependent partial differential equations is to represent evolving temporal scales while keeping residual minimization computationally tractable. Random feature methods simplify this algebraic problem by freezing nonlinear trial functions and fitting only a linear readout, but standard static space--time activations provide no explicit relaxation-scale mechanism, making temporal-scale resolution a finite-dimensional bottleneck in stiff, dispersive, or multi-scale regimes. We introduce liquid random feature methods (L-RFM), which replace static temporal activations by closed-form liquid time-constant responses with sampled relaxation scales. The resulting frozen features for",
+      "pdf_link": "https://arxiv.org/pdf/2606.15571.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15571",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-06-16T11:20:57.652702+00:00"
+    },
+    {
+      "forum_id": "2606.15616",
+      "paper_number": -1,
+      "title": "A High-Order Nystr\\\"om Method for Coupled Boundary Integral Equations in Oblique-Incidence Scattering by Impedance Cylinders",
+      "authors": [
+        "Haochen Liu, Qinghao Yu"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15616v1 Announce Type: cross \nAbstract: We study the numerical solution of electromagnetic scattering by an infinitely long impedance cylinder under oblique incidence. After separation of the axial phase factor, the axial electric and magnetic components satisfy a pair of coupled two-dimensional Helmholtz equations. The Leontovich impedance condition couples these components through tangential derivatives, and the associated boundary integral system contains both logarithmic kernels and principal-value tangential derivative terms. Building on existing coupled integral-equation formulations for oblique-incidence cylinder scattering, we construct a high-order Nystrom implementation based on Kress-type logarithmic kernel decomposition, periodic product quadrature, Fourier different",
+      "pdf_link": "https://arxiv.org/pdf/2606.15616.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15616",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-06-16T11:20:57.652724+00:00"
+    },
+    {
+      "forum_id": "2606.15679",
+      "paper_number": -1,
+      "title": "Stochastic trace estimation with tensor train random vectors",
+      "authors": [
+        "Zvonimir Bujanovi\\'c, Daniel Kressner, Hrvoje Oli\\'c"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15679v1 Announce Type: cross \nAbstract: Stochastic trace estimation is a standard tool for approximating the trace of a large-scale matrix available only through matrix-vector products. However, in tensor-structured settings, unstructured Gaussian or Rademacher test vectors may be prohibitively expensive to store and compute with, while cheaper rank-one tensor-product vectors can require sample complexities that grow exponentially with the tensor order. This work studies Gaussian random tensor train vectors as a structured alternative for stochastic trace estimation. We show that, with a suitable choice of the tensor train rank, random tensor train vectors recover dimension-independent guarantees for the Girard--Hutchinson estimator. In particular, a median-of-means variant with",
+      "pdf_link": "https://arxiv.org/pdf/2606.15679.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15679",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-06-16T11:20:57.652746+00:00"
+    },
+    {
+      "forum_id": "2606.15843",
+      "paper_number": -1,
+      "title": "Exponential Convengence of DLRA for SDEs",
+      "authors": [
+        "Jianhai Bao, Haitao Wang, Yue Wu"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15843v1 Announce Type: cross \nAbstract: We study dynamical orthogonal (DO) approximations of stochastic differential equations and investigate their long-time behaviour. The DO formulation represents the solution by a low-rank decomposition and leads to a coupled system consisting of an evolution equation on the Stiefel manifold and a reduced stochastic process. We establish the well-posedness of the strong DO system and derive quantitative error estimates between the original stochastic differential equation and its low-rank approximation in the Wasserstein distance.\n  Our main contribution is the analysis of invariant probability measures for the DO dynamics. Under suitable dissipativity, Lipschitz continuity, and non-degeneracy assumptions on the coefficients, we prove the ex",
+      "pdf_link": "https://arxiv.org/pdf/2606.15843.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15843",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-06-16T11:20:57.652767+00:00"
+    },
+    {
+      "forum_id": "2606.15882",
+      "paper_number": -1,
+      "title": "Finite-Dimensional Type I von Neumann Algebras in PyTorch: A GPU-Accelerated Framework for Random Block-Diagonal Operators",
+      "authors": [
+        "Irina Nikolaeva, Andrej Novikov"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.15882v1 Announce Type: cross \nAbstract: We present \\texttt{torch\\_vn\\_algebra}, an open-source Python library built on PyTorch for numerical experiments with finite-dimensional Type I von Neumann algebras (direct sums of matrix algebras). The library provides:\n  $\\bullet$ a compact batched tensor representation $(B,C,k_{\\max},k_{\\max})$ that handles both Monte Carlo samples and multiple direct summands;\n  $\\bullet$ lazy evaluation of operators to avoid unnecessary memory allocation;\n  $\\bullet$ generation of random operators with arbitrary eigenvalue distributions (user-provided samplers) and various unitary ensembles (Haar, $\\mathrm{SU}(n)$, COE, CSE, diagonal phases);\n  $\\bullet$ functional calculus via SVD (absolute value, square root, inverse, entropy) and a hybrid method fo",
+      "pdf_link": "https://arxiv.org/pdf/2606.15882.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15882",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 6.5,
+      "updated_at": "2026-06-16T11:20:57.652788+00:00"
+    },
+    {
+      "forum_id": "2606.16217",
+      "paper_number": -1,
+      "title": "symveig: Verified eigenvalue enclosures for symmetry-decomposed Hermitian matrices",
+      "authors": [
+        "Sarang Vehale, Ritu Goel"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.16217v1 Announce Type: cross \nAbstract: Exact diagonalization of quantum lattice Hamiltonians returns floating-point eigenvalues whose accuracy is not certified: rounding error, eigensolver behaviour, and ill-conditioning can corrupt a result without warning. We present \\texttt{symveig}, a pure NumPy/SciPy package that computes rigorous, machine-checkable enclosures of all eigenvalues of a Hermitian matrix, with an optional symmetry-sector decomposition. For a matrix that commutes with an abelian conserved quantity diagonal in the working basis (for example the total magnetization of a spin model), the package verifies each symmetry sector independently. Because each sector block is much smaller than the full matrix, this yields enclosures that are both tighter (by a factor of $",
+      "pdf_link": "https://arxiv.org/pdf/2606.16217.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16217",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.0,
+      "updated_at": "2026-06-16T11:20:57.652809+00:00"
+    },
+    {
+      "forum_id": "2606.16346",
+      "paper_number": -1,
+      "title": "Phase-field analysis of fracture in heterogeneous wellbore systems: effects of casing eccentricity and cement-formation interface strength",
+      "authors": [
+        "Tharunsarathy, Wasim Niyaz Munshi, Chandrasekhar Annavarapu, Birendra Jha"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.16346v1 Announce Type: cross \nAbstract: Predicting the initiation and propagation of cracks in heterogeneous wellbore systems under complex in-situ conditions remains challenging. We present a hybrid phase-field fracture framework to model crack growth in heterogeneous wellbore systems with weak interfaces. The framework is first validated against benchmark problems with available analytical and numerical solutions. Subsequently, numerical experiments are conducted to isolate the effects of interface strength and casing eccentricity on crack growth. The results show that casing eccentricity strongly influences both the pressure at crack initiation and the resulting crack paths, reducing the crack initiation pressure by up to 30% relative to the concentric configuration. Beyond a",
+      "pdf_link": "https://arxiv.org/pdf/2606.16346.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16346",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-06-16T11:20:57.652831+00:00"
+    },
+    {
+      "forum_id": "2606.16578",
+      "paper_number": -1,
+      "title": "Walking on Heat Stars for Parabolic Heat Equations with Neumann Boundary Conditions",
+      "authors": [
+        "Anchang Bao, Enya Shen, Jianmin Wang"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.16578v1 Announce Type: cross \nAbstract: Monte Carlo methods have proven highly effective for elliptic partial differential equations through algorithms such as Walk on Spheres and Walk on Stars, which evaluate solutions at individual points without volumetric meshing or global linear solves. Extending these methods to the transient regime has remained an open challenge: parabolic equations couple space and time through an anisotropic scaling, requiring joint sampling of spatial displacements and backward time steps whose distribution was not previously available in a unified, exact form.\n  We present Walk on Heat Stars, a grid-free Monte Carlo solver that closes this gap by extending the boundary integral framework of Walk on Stars to the parabolic setting. Our method introduces",
+      "pdf_link": "https://arxiv.org/pdf/2606.16578.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16578",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-06-16T11:20:57.652854+00:00"
+    },
+    {
+      "forum_id": "2606.16602",
+      "paper_number": -1,
+      "title": "PhysGuard: Fisher-Guided Gradient Projection for Sim-to-Real Neural PDE Surrogates",
+      "authors": [
+        "Changjian Zhou, Junfeng Fang, Negin Yousefpour, Peng Wu, Bin Yan, Guillermo A Narsilio"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.16602v1 Announce Type: cross \nAbstract: Neural operator models trained on simulation data often lose accuracy when applied to experimental measurements due to the sim-to-real gap. Standard fine-tuning with limited real data can reduce this gap, but it may also damage the core physics-relevant representations learned during pretraining. Although knowledge-preserving adaptation has been widely investigated in vision or language tasks, it remains unclear whether these methods are suitable for neural operators whose architectures and protected knowledge are fundamentally different. Neural operators need to preserve core-scale physical structures rather than semantic or visual features. We propose PhysGuard, a physics-preserving framework for accurate sim-to-real adaptation of neural",
+      "pdf_link": "https://arxiv.org/pdf/2606.16602.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16602",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.5,
+      "updated_at": "2026-06-16T11:20:57.652878+00:00"
+    },
+    {
+      "forum_id": "2606.16653",
+      "paper_number": -1,
+      "title": "The CREATOR Project: Towards a Computational Electric Machine Laboratory",
+      "authors": [
+        "Sebastian Sch\\\"ops, Annette Muetze, Herbert De Gersem, Herbert Egger, Manfred Kaltenbacher"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.16653v1 Announce Type: cross \nAbstract: The Collaborative Research Centre TRR 361/F90 CREATOR (2022-2030) aims at establishing a new paradigm for the simulation-driven design of electric machines. Increasing demands on efficiency, power density and sustainability require the integration of multiphysical effects, advanced materials and complex geometries into the design process. Traditional sequential workflows are no longer sufficient to address these challenges. CREATOR therefore combines expertise from electrical engineering, applied mathematics, fluid dynamics and materials science to establish integrated modelling, simulation and optimisation methodologies in a single large-scale project funded by the German and Austrian national funding agencies. This article provides an ov",
+      "pdf_link": "https://arxiv.org/pdf/2606.16653.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16653",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-16T11:20:57.652897+00:00"
+    },
+    {
+      "forum_id": "2606.16671",
+      "paper_number": -1,
+      "title": "Chebyshev-Exact Acceleration under Hessian Variation, I: Sine-Jacobi Method",
+      "authors": [
+        "Dmitry Pasechnyuk-Vilensky, Martin Tak\\'a\\v{c}"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.16671v1 Announce Type: cross \nAbstract: We study finite-horizon one-gradient realizations with the Chebyshev minimax terminal residual on $[\\mu,L]$. Under time-dependent Hessian perturbations, the terminal first variation is governed by a time-ordered spectral kernel $K_s(\\lambda,\\nu)$; its sharp $\\ell_2$ gain is $A_N$. For the prefix-exact Chebyshev recurrence, $$\n  A_N^{\\rm pref}\n  =\\frac{\\epsilon_N^\\star}{L-\\mu}\n  \\left(4N^2+16\\sum_{m=1}^{N-1}m^2\\right)^{1/2}\n  =\\frac4{\\sqrt3}\\frac{N^{3/2}}{L-\\mu}\\epsilon_N^\\star(1+o(1)), $$ and this is sharp in the causal two-term class with Chebyshev exactness at every prefix. For terminal-only exactness, Jacobi coordinates give $P_N=2^{1-N}T_N$: the spectrum is fixed at the midpoint Chebyshev nodes, while the spectral weights parametrize t",
+      "pdf_link": "https://arxiv.org/pdf/2606.16671.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16671",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-16T11:20:57.652929+00:00"
+    },
+    {
+      "forum_id": "2409.16551",
+      "paper_number": -1,
+      "title": "fOGA: An Orthogonal Greedy Algorithm for Fractional Laplacian Problems",
+      "authors": [
+        "Ruitong Shan, Young Ju Lee, Jiwei Jia"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2409.16551v2 Announce Type: replace \nAbstract: In this paper, we propose a numerical method for fractional Laplace equations that combines finite difference discretization with shallow neural network approximation. The fractional Laplace operator is discretized using a directional representation of Riemann--Liouville type, which leads to a finite difference approximation of the nonlocal operator. In two dimensions, the angular integral is approximated by a quadrature rule, and auxiliary points are introduced along each direction to facilitate the evaluation of the operator. Based on the resulting discrete system, the solution is then represented by a shallow neural network constructed through the orthogonal greedy algorithm (OGA).",
+      "pdf_link": "https://arxiv.org/pdf/2409.16551.pdf",
+      "forum_link": "https://arxiv.org/abs/2409.16551",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-06-16T11:20:57.652982+00:00"
+    },
+    {
+      "forum_id": "2503.14750",
+      "paper_number": -1,
+      "title": "Matrix nearness problems and eigenvalue optimization",
+      "authors": [
+        "Nicola Guglielmi, Christian Lubich"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2503.14750v3 Announce Type: replace \nAbstract: This book is about solving matrix nearness problems that are related to eigenvalues or singular values or pseudospectra. These problems arise in great diversity in various fields, be they related to dynamics, as in questions of robust stability and robust control, or related to graphs, as in questions of clustering and ranking. Algorithms for such problems work with matrix perturbations that drive eigenvalues or singular values or Rayleigh quotients to desired locations.\n  Remarkably, the optimal perturbation matrices are typically of rank one or are projections of rank-1 matrices onto a linear structure, e.g. a prescribed sparsity pattern. In the approach worked out here, these optimal rank-1 perturbations will be determined in a two-le",
+      "pdf_link": "https://arxiv.org/pdf/2503.14750.pdf",
+      "forum_link": "https://arxiv.org/abs/2503.14750",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.5,
+      "updated_at": "2026-06-16T11:20:57.653003+00:00"
+    },
+    {
+      "forum_id": "2505.08461",
+      "paper_number": -1,
+      "title": "An Optimal and Robust Nonconforming Finite Element Method for the Strain Gradient Elasticity",
+      "authors": [
+        "Jianguo Huang, Xuehai Huang, Zheqian Tang"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2505.08461v3 Announce Type: replace \nAbstract: An optimal and robust low-order nonconforming finite element method is developed for the strain gradient elasticity (SGE) model in arbitrary dimensions. An $H^2$-nonconforming quadratic vector-valued finite element in arbitrary dimensions is constructed, which together with the Nitsche's technique, is applied for solving the SGE model. The resulting nonconforming finite element method is optimal and robust with respect to the Lam\\'{e} coefficient $\\lambda$ and the size parameter $\\iota$, as confirmed by numerical results. Additionally, nonconforming finite element discretization of the smooth Stokes complex in two and three dimensions is devised.",
+      "pdf_link": "https://arxiv.org/pdf/2505.08461.pdf",
+      "forum_link": "https://arxiv.org/abs/2505.08461",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.5,
+      "updated_at": "2026-06-16T11:20:57.653022+00:00"
+    },
+    {
+      "forum_id": "2510.05597",
+      "paper_number": -1,
+      "title": "Sharp and unified $L^2$ error estimates for the nonsymmetric Nitsche method on convex polytopes",
+      "authors": [
+        "Gang Chen, Chaoran Liu, Yangwen Zhang"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2510.05597v3 Announce Type: replace \nAbstract: Nitsche's method weakly imposes Dirichlet boundary conditions, but its nonsymmetric variant has long shown a gap between theory and computation: the classical $L^2$~analysis under $H^{k+1}$~regularity predicts a half-order convergence loss, whereas numerical experiments on smooth test problems consistently produce the optimal rate. Whether this discrepancy reflects a limitation of the analysis or an essential feature of the method has remained an open question.\n  On bounded convex polytopes in two and three dimensions, we prove a unified, regularity-dependent $L^2$~error estimate valid across the entire penalty scale $h^{-\\alpha}$: \\begin{align*}\n  \\|u-u_h\\|_{L^2(\\Omega)}\\le C h^r |u|_{W^{k+1,p}(\\Omega)},\\qquad\n  r=\\min\\bigl\\{k+1,\\,k+\\ma",
+      "pdf_link": "https://arxiv.org/pdf/2510.05597.pdf",
+      "forum_link": "https://arxiv.org/abs/2510.05597",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-16T11:20:57.653055+00:00"
+    },
+    {
+      "forum_id": "2602.05341",
+      "paper_number": -1,
+      "title": "A residual-based finite element surrogate solver for elliptic partial differential equations",
+      "authors": [
+        "Kyoungjin Jung, Jae Yong Lee, Dongwook Shin"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2602.05341v2 Announce Type: replace \nAbstract: We propose a residual-based finite element surrogate solver for elliptic partial differential equations. The method combines convolutional neural networks with classical finite element discretization in a data-free setting, where the loss function is defined directly from the finite element residual. This enables the approximation of the solution operator without requiring paired input-output data. A key feature of the proposed approach is that it can be analyzed using standard finite element theory under mesh refinement. We establish a relationship between the training loss and the error in the $H^1$-seminorm, and derive training criteria that ensure optimal convergence rates. To improve efficiency, we introduce a decomposition strategy",
+      "pdf_link": "https://arxiv.org/pdf/2602.05341.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.05341",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.0,
+      "updated_at": "2026-06-16T11:20:57.653092+00:00"
+    },
+    {
+      "forum_id": "2606.02086",
+      "paper_number": -1,
+      "title": "Boundary-preserving hp interpolation and p-robust discrete harmonic extensions on tetrahedral meshes",
+      "authors": [
+        "Situan Li, Weiying Zheng"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.02086v2 Announce Type: replace \nAbstract: We construct a boundary-preserving hp interpolation operator on three-dimensional tetrahedral meshes with locally variable polynomial degrees. If the trace of an H^1 function on the prescribed Dirichlet boundary is already a piecewise polynomial trace of the finite element space, the interpolant preserves this trace exactly and satisfies the standard local h_K/p_K approximation estimates. The statement follows the scaling form of Melenk's hp quasi-interpolation for nonsmooth functions.\n  As a consequence, a discrete trace is extended by first applying the continuous trace theorem and then applying the boundary-preserving interpolant; the corresponding discrete harmonic extension is bounded by variational comparison. The proof of the inte",
+      "pdf_link": "https://arxiv.org/pdf/2606.02086.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.02086",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-06-16T11:20:57.653133+00:00"
+    },
+    {
+      "forum_id": "2606.12632",
+      "paper_number": -1,
+      "title": "Hyperbolicity-Preserving Stochastic Galerkin Methods for Conservation Laws Based on Associative Truncated Products on Polynomial Spaces",
+      "authors": [
+        "Haroun Meghaichi, Yulong Xing"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2606.12632v2 Announce Type: replace \nAbstract: Stochastic Galerkin discretizations of nonlinear hyperbolic conservation laws may lose hyperbolicity because the standard pseudospectral product is generally nonassociative, leading to non-commuting blocks in the flux Jacobian matrix. We develop a novel framework for constructing hyperbolicity-preserving stochastic Galerkin systems based on associative truncated products on polynomial spaces. In one stochastic dimension, we characterize associative truncated products through a single polynomial datum and identify examples with useful symmetry, positivity, and spectral properties, including collocation products and an associative symmetric product based on Gaussian quadrature nodes. We prove a consistency result showing that, under suitab",
+      "pdf_link": "https://arxiv.org/pdf/2606.12632.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.12632",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-06-16T11:20:57.653153+00:00"
     },
     {
       "forum_id": "2606.14369",
@@ -222,431 +1096,109 @@
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2606.14369v1 Announce Type: new \nAbstract: Building upon the semi-implicit multilevel spectral deferred correction (SI-MLSDC) method introduced by Pfister and Stiller [38], this work presents a 1D space-time adaptive high-order method combining discontinuous Galerkin spectral element discretizations with multilevel spectral deferred corrections. The proposed approach enables genuine arbitrary-order accuracy in space and time while dynamically balancing spatial and temporal discretization errors to reduce computational cost. A key contribution is the development of a novel temporal error estimator that in combination with a spectral error estimator in space provides a reliable basis for adaptive refinement decisions. The error estimator is compared with two alternative refinement crit",
+      "abstract": "arXiv:2606.14369v2 Announce Type: replace \nAbstract: Building upon the semi-implicit multilevel spectral deferred correction (SI-MLSDC) method introduced by Pfister and Stiller [38], this work presents a 1D space-time adaptive high-order method combining discontinuous Galerkin spectral element discretizations with multilevel spectral deferred corrections. The proposed approach enables genuine arbitrary-order accuracy in space and time while dynamically balancing spatial and temporal discretization errors to reduce computational cost. A key contribution is the development of a novel temporal error estimator that in combination with a spectral error estimator in space provides a reliable basis for adaptive refinement decisions. The error estimator is compared with two alternative refinement ",
       "pdf_link": "https://arxiv.org/pdf/2606.14369.pdf",
       "forum_link": "https://arxiv.org/abs/2606.14369",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 23.0,
-      "updated_at": "2026-06-15T12:26:46.011699+00:00"
+      "updated_at": "2026-06-16T11:20:57.653174+00:00"
     },
     {
-      "forum_id": "2606.14503",
+      "forum_id": "2509.03945",
       "paper_number": -1,
-      "title": "Efficient and Fast Tensor-Product Multinode Shepard Collocation for Elliptic PDEs on Cartesian Grids",
+      "title": "Prob-GParareal: A Probabilistic Numerical Parallel-in-Time Solver for Differential Equations",
       "authors": [
-        "Anouar El Harrak, Hatim Tayeq, Benaissa Zerroudi"
+        "Guglielmo Gattiglio, Lyudmila Grigoryeva, Massimiliano Tamborrino"
       ],
       "keywords": [
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2606.14503v1 Announce Type: new \nAbstract: We introduce a Grid-Based Multinode Shepard Collocation Method (GBMSC) for two-dimensional elliptic boundary value problems on rectangular domains. The method combines Shepard-type partition functions with tensor-product Lagrange interpolation on overlapping local Cartesian subgrids. The Cartesian structure avoids the local unisolvency search required by multinode Shepard constructions on scattered data, while the local character of the approximation yields sparse collocation matrices and moderate conditioning. We establish the main structural properties of the method, including the cardinal property, tensor-product polynomial reproduction, and local interpolation estimates. Numerical experiments for Poisson problems with Dirichlet and mixed",
-      "pdf_link": "https://arxiv.org/pdf/2606.14503.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14503",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2509.03945v2 Announce Type: replace-cross \nAbstract: We introduce Prob-GParareal, a probabilistic extension of the GParareal algorithm designed to provide uncertainty quantification for the Parallel-in-Time (PinT) solution of (ordinary and partial) differential equations (ODEs, PDEs). The method employs Gaussian processes (GPs) to model the Parareal correction function, in line with GParareal, further enabling the propagation of numerical uncertainty across time and yielding probabilistic forecasts of the system's evolution. Furthermore, Prob-GParareal accommodates probabilistic initial conditions and maintains compatibility with classical numerical solvers, ensuring its straightforward integration into existing Parareal frameworks. Here, we first conduct a theoretical analysis of th",
+      "pdf_link": "https://arxiv.org/pdf/2509.03945.pdf",
+      "forum_link": "https://arxiv.org/abs/2509.03945",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.5,
+      "updated_at": "2026-06-16T11:20:57.653195+00:00"
+    },
+    {
+      "forum_id": "2601.06535",
+      "paper_number": -1,
+      "title": "Automated dimensional analysis for PDEs",
+      "authors": [
+        "Michal Habera, Andreas Zilian"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2601.06535v2 Announce Type: replace-cross \nAbstract: Physical units are fundamental to scientific computing. However, many finite element frameworks lack built-in support for dimensional analysis. In this work, we present a systematic framework for integrating physical units into the Unified Form Language (UFL). We implement a symbolic \\texttt{Quantity} class to track units within variational forms. The implementation exploits the abelian group structure of physical dimensions. We represent them as vectors in $\\mathbb{Q}^n$ to simplify operations and improve performance. A graph-based visitor pattern traverses the expression tree to automate consistency checks and factorization. We demonstrate that this automated nondimensionalization functions as the simplest form of Full Operator P",
+      "pdf_link": "https://arxiv.org/pdf/2601.06535.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.06535",
+      "submission_date": "2026-06-16T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.5,
+      "updated_at": "2026-06-16T11:20:57.653216+00:00"
+    },
+    {
+      "forum_id": "2603.09923",
+      "paper_number": -1,
+      "title": "OptEMA: Adaptive Exponential Moving Average for Stochastic Optimization with Zero-Noise Optimality",
+      "authors": [
+        "Ganzhao Yuan"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2603.09923v4 Announce Type: replace-cross \nAbstract: Exponential moving averages (EMAs) are a central component of widely used adaptive optimizers such as Adam. However, existing analyses of Adam-style methods often yield suboptimal guarantees in the zero-noise regime, rely on open-loop parameter schedules, or require prior knowledge of smoothness constants. Motivated by these limitations, we introduce OptEMA and analyze two complementary variants: OptEMA-M, which applies an adaptive, decreasing EMA coefficient to the first moment with a fixed second-moment decay, and OptEMA-V, which swaps these roles. At the heart of these variants is a Corrected AdaGrad-Norm coefficient schedule. This formulation renders OptEMA algorithmically closed-loop and Lipschitz-free, meaning its effective s",
+      "pdf_link": "https://arxiv.org/pdf/2603.09923.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.09923",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 4.0,
-      "updated_at": "2026-06-15T12:26:46.011726+00:00"
+      "updated_at": "2026-06-16T11:20:57.653237+00:00"
     },
     {
-      "forum_id": "2606.14630",
+      "forum_id": "2606.03654",
       "paper_number": -1,
-      "title": "Parameter-robust well-posedness and discretisation for coupled Darcy--Forchheimer and advection-diffusion-reaction equations",
+      "title": "Graph Regularized Non-negative Reduced Biquaternion Matrix Factorization for Color Image Recognition",
       "authors": [
-        "Rishi Das, Harsha Hutridurga, Amiya K. Pani, Ricardo Ruiz-Baier"
+        "Hailang Wu, Yonghe Liu, Bingxuan Yu, Chaoqian Li"
       ],
       "keywords": [
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2606.14630v1 Announce Type: new \nAbstract: We adapt the recent theory for unique solvability of perturbed saddle-point problems in Banach spaces to the case of parameter-independent stability bounds. This also constitutes an extension to the Brezzi--Braess theory for parameter-robust stability of perturbed saddle-point problems from the Hilbert to the Banach setting. We apply the new abstract result to the mixed formulation of the advection-diffusion-reaction equation and tackle also its coupling with the Darcy--Forchheimer equations. The complete system is shown to be stable irrespective of the model parameters of permeability, Forchheimer coefficient, and reaction modulation. We discretise the problem with mixed finite element methods and show convergence in appropriately parameter",
-      "pdf_link": "https://arxiv.org/pdf/2606.14630.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14630",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-06-15T12:26:46.011758+00:00"
-    },
-    {
-      "forum_id": "2606.14655",
-      "paper_number": -1,
-      "title": "Discontinuous Galerkin approximations of the Jordan-Moore-Gibson-Thompson equation in the vanishing relaxation limit",
-      "authors": [
-        "Vanja Nikoli\\'c"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2606.14655v1 Announce Type: new \nAbstract: The Jordan-Moore-Gibson-Thompson (JMGT) equation models nonlinear acoustic wave propagation in thermally relaxing media and in the vanishing relaxation limit approaches the damped Westervelt equation. We investigate discontinuous Galerkin spatial discretizations of the JMGT equation on simplicial meshes and analyze their behavior uniformly with respect to the relaxation parameter. Under practically relevant mixed Neumann and absorbing boundary conditions, we derive a priori error estimates independent of the relaxation parameter. These estimates enable a rigorous singular limit analysis, yielding convergence of the semi-discrete JMGT approximations to the corresponding Westervelt pressure profile at a linear rate. This also sheds light on th",
-      "pdf_link": "https://arxiv.org/pdf/2606.14655.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14655",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 35.5,
-      "updated_at": "2026-06-15T12:26:46.011776+00:00"
-    },
-    {
-      "forum_id": "2008.03186",
-      "paper_number": -1,
-      "title": "An integrated numerical model for coupled poro-hydro-mechanics and fracture propagation using embedded meshes",
-      "authors": [
-        "Guotong Ren, Rami M. Younis"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2008.03186v1 Announce Type: cross \nAbstract: Integrated models for fluid-driven fracture propagation and general multiphase flow in porous media are valuable to the study and engineering of several systems, including hydraulic fracturing, underground disposal of waste, and geohazard mitigation across such applications. This work extends the coupled model multiphase flow and poromechanical model of \\cite{ren2018embedded} to admit fracture propagation (FP). The coupled XFEM-EDFM scheme utilizes a separate fracture mesh that is embedded on a static background mesh. The onset and dynamics of fracture propagation (FP) are governed by the equivalent stress intensity factor (SIF) criterion. A domain-integral method (J integral) is applied to compute this information. An adaptive time-marchi",
-      "pdf_link": "https://arxiv.org/pdf/2008.03186.pdf",
-      "forum_link": "https://arxiv.org/abs/2008.03186",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 7.0,
-      "updated_at": "2026-06-15T12:26:46.011795+00:00"
-    },
-    {
-      "forum_id": "2606.13946",
-      "paper_number": -1,
-      "title": "Chosen-Plaintext Attacks of Double Random Phase Encryption with Nonlinear Optical Media",
-      "authors": [
-        "Yan Cheng, Yiwei Chen, Kui Ren, Nathan Soedjak"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2606.13946v1 Announce Type: cross \nAbstract: This paper studies an inverse problem in nonlinear optical encryption. We examine chosen-plaintext attacks (CPA) on a nonlinear optical encryption strategy that integrates double random phase encryption (DRPE) into a nonlinear optical propagation model to enhance the security of the combined system. We first demonstrate that the system's phase information can be decoded from carefully designed differential CPA data. We then demonstrate that the strength of the optical device's nonlinearity can also be recovered from CPA data, indicating that including this parameter as an additional security key does not enhance protection against CPA attacks, although numerical simulations show that strong nonlinearity still poses significant challenges f",
-      "pdf_link": "https://arxiv.org/pdf/2606.13946.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.13946",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-06-15T12:26:46.011813+00:00"
-    },
-    {
-      "forum_id": "2606.14170",
-      "paper_number": -1,
-      "title": "Uniform-in-time error estimates for McKean-Vlasov SDEs with common noise and stochastic algorithms",
-      "authors": [
-        "Yuhang Zhang, Minghui Song"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2606.14170v1 Announce Type: cross \nAbstract: In this work, by construct an asymptotic coupling by reflection, we first explore the uniform-in-time estimate on probability distance for two measure-valued processes induced by a McKean-Vlasov SDE with common noise and an interacting particle system, where the drift terms are dissipative merely in the long distance. As direct applications of this estimate, we establish the uniform-in-time error estimates for the numerical solutions derived via backward/tamed/adaptive Euler-Maruyama methods. Moreover, as another direct application, the uniform-in-time conditional propagation of chaos is quantified.",
-      "pdf_link": "https://arxiv.org/pdf/2606.14170.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14170",
-      "submission_date": "2026-06-15T04:00:00+00:00",
+      "abstract": "arXiv:2606.03654v2 Announce Type: replace-cross \nAbstract: Non-negative reduced biquaternion matrix factorization (NRBMF) uses the product of reduced biquaternion (RB) matrices to incorporate the non-negativity constraints of color image pixels into the factorization process. However, NRBMF mainly focuses on reconstruction accuracy and does not explicitly exploit the local geometric structure of image data, which may limit the discriminative ability of the obtained low-dimensional coefficient representations. To address this issue, we propose a graph regularized non-negative reduced biquaternion matrix factorization (GNRBMF) model for color image recognition. The proposed model incorporates a graph Laplacian regularizer into the reduced biquaternion coefficient matrix, encouraging nearby s",
+      "pdf_link": "https://arxiv.org/pdf/2606.03654.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.03654",
+      "submission_date": "2026-06-16T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-06-15T12:26:46.011828+00:00"
-    },
-    {
-      "forum_id": "2606.14289",
-      "paper_number": -1,
-      "title": "Operator Calculus for Population-Based Optimization: A Mean-Field Convergence Theory",
-      "authors": [
-        "Pekka Malo, Lauri Viitasaari, Patrik Nummi, Antti Suominen, Ankur Sinha, Olli Tahvonen"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2606.14289v1 Announce Type: cross \nAbstract: Population-based and distributional optimization methods, from evolution strategies and consensus-based optimization to covariance-matrix adaptation and stochastic gradient methods viewed as distributional dynamics, are widely used for nonconvex or black-box problems, yet their convergence analyses remain fragmented across algorithm-specific techniques. We introduce an operator calculus in which a broad class of such methods, after choosing an appropriate state space and, where necessary, augmenting the state by memory or strategy variables, is described as a composition of three elementary operators (mutation, selection, and recombination) acting on probability measures. Under explicit stability and regularity conditions, the composite op",
-      "pdf_link": "https://arxiv.org/pdf/2606.14289.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14289",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-06-15T12:26:46.011846+00:00"
-    },
-    {
-      "forum_id": "2412.16317",
-      "paper_number": -1,
-      "title": "Computation and properties of the Epstein zeta function with applications to quantum systems",
-      "authors": [
-        "Andreas A. Buchheit, Jonathan Busse, Ruben Gutendorf"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2412.16317v2 Announce Type: replace \nAbstract: The Epstein zeta function generalises the classical Riemann zeta function to oscillatory lattice sums in higher dimensions and has recently emerged as a key tool in the simulation of long-range interacting classical and quantum many-body systems. Its computation and analytic properties are therefore of significant interest, yet a rigorous and comprehensive treatment has been lacking. We address this gap by introducing a superexponentially convergent algorithm, complete with error bounds, for computing the Epstein zeta function in any dimension with arbitrary real parameters. Our approach is accompanied by a detailed analysis of the analytic properties of the Epstein zeta function. We first present a concise reformulation of its meromorph",
-      "pdf_link": "https://arxiv.org/pdf/2412.16317.pdf",
-      "forum_link": "https://arxiv.org/abs/2412.16317",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-06-15T12:26:46.011885+00:00"
-    },
-    {
-      "forum_id": "2504.11989",
-      "paper_number": -1,
-      "title": "Epstein zeta method for many-body lattice sums",
-      "authors": [
-        "Andreas A. Buchheit, Jonathan K. Busse"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2504.11989v2 Announce Type: replace \nAbstract: Many-body interactions arise naturally in the perturbative treatment of classical and quantum many-body systems and play a crucial role in the description of condensed matter systems. In the case of three-body interactions, the Axilrod-Teller-Muto (ATM) potential is highly relevant for the quantitative prediction of material properties. This work solves the long-standing issue of the numerical computation of the resulting energies in $d$-dimensional lattice systems. We present an efficiently computable representation of many-body lattice sums in terms of singular integrals over products of Epstein zeta functions. For three-body interactions in three dimensions, this approach reduces the runtime for computing the ATM lattice sum from week",
-      "pdf_link": "https://arxiv.org/pdf/2504.11989.pdf",
-      "forum_link": "https://arxiv.org/abs/2504.11989",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-06-15T12:26:46.011904+00:00"
-    },
-    {
-      "forum_id": "2505.09770",
-      "paper_number": -1,
-      "title": "Efficient Multi-Precision Computation of Bessel Functions for Real Orders and Complex Arguments with Fortran Implementation -- Part I: The Modified Bessel Function of the First Kind, $I_\\nu(z)$",
-      "authors": [
-        "Mofreh R. Zaghloul, Steven G. Johnson"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2505.09770v2 Announce Type: replace \nAbstract: This paper is the first in a series devoted to the development of efficient and highly accurate algorithms, with multiprecision \\texttt{Fortran} implementations, for the computation of Bessel functions. In this first part, we present a \\emph{novel, self-contained, efficient,} and \\emph{multiprecision} algorithm for evaluating the modified Bessel function of the first kind, $I_{\\nu}(z)$. The method integrates several analytic representations of $I_{\\nu}(z)$, carefully selected to ensure both high accuracy and suitability for high-precision computation, together with optimally determined transition boundaries between computational regions. This design achieves high efficiency while fully preserving numerical accuracy. Unlike other widely u",
-      "pdf_link": "https://arxiv.org/pdf/2505.09770.pdf",
-      "forum_link": "https://arxiv.org/abs/2505.09770",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-06-15T12:26:46.011925+00:00"
-    },
-    {
-      "forum_id": "2506.03311",
-      "paper_number": -1,
-      "title": "Demystifying Tubal Tensor Algebra",
-      "authors": [
-        "Haim Avron, Uria Mor"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2506.03311v2 Announce Type: replace \nAbstract: Developed in a series of seminal papers in the early 2010s, the tubal tensor framework provides a clean and effective algebraic setting for tensor computations, supporting matrix-mimetic features such as a tensor Singular Value Decomposition and Eckart-Young-like optimality results. It has proven to be a powerful tool for analyzing inherently multilinear data arising in hyperspectral imaging, medical imaging, neural dynamics, scientific simulations, and more. At the heart of tubal tensor algebra lies a special tensor-tensor product: originally the t-product, later generalized into a full family of products via the $\\star_M$-product. Though initially defined through the multiplication of a block-circulant unfolding of one tensor by a matr",
-      "pdf_link": "https://arxiv.org/pdf/2506.03311.pdf",
-      "forum_link": "https://arxiv.org/abs/2506.03311",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-06-15T12:26:46.011943+00:00"
-    },
-    {
-      "forum_id": "2506.12899",
-      "paper_number": -1,
-      "title": "A Geometric Multigrid Preconditioner for Discontinuous Galerkin Shifted Boundary Method",
-      "authors": [
-        "Michal Wichrowski"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2506.12899v3 Announce Type: replace \nAbstract: This paper introduces a geometric multigrid preconditioner for the Shifted Boundary Method (SBM) designed to solve PDEs on complex geometries. While SBM simplifies mesh generation by using a non-conforming background grid, it often results in non-symmetric and potentially ill-conditioned linear systems that are challenging to solve efficiently. Standard multigrid methods with pointwise smoothers prove ineffective for such systems due to the localized perturbations introduced by the shifted boundary conditions. To address this challenge, we introduce a Discontinuous Galerkin (DG) formulation for SBM that enables the design of a cell-wise multiplicative smoother within an $hp$-multigrid framework. The element-local nature of DG methods nat",
-      "pdf_link": "https://arxiv.org/pdf/2506.12899.pdf",
-      "forum_link": "https://arxiv.org/abs/2506.12899",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 97.5,
-      "updated_at": "2026-06-15T12:26:46.011960+00:00"
-    },
-    {
-      "forum_id": "2511.02153",
-      "paper_number": -1,
-      "title": "A Joint Variational Framework for Multimodal X-ray Ptychography and Fluorescence Reconstruction",
-      "authors": [
-        "Chengru Eric Zou, Elle Buser, Zichao Wendy Di, Yuanzhe Xi"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2511.02153v4 Announce Type: replace \nAbstract: Recovering high-resolution structural and compositional information from coherent X-ray measurements involves solving coupled, nonlinear, and ill-posed inverse problems. Ptychography reconstructs a complex transmission function from overlapping diffraction patterns, while X-ray fluorescence provides quantitative, element-specific contrast at lower spatial resolution. We formulate a joint variational framework that integrates these two modalities into a single nonlinear least-squares problem with shared spatial variables. This formulation enforces cross-modal consistency between structural and compositional estimates, improving conditioning and promoting stable convergence. The resulting optimization couples complementary contrast mechani",
-      "pdf_link": "https://arxiv.org/pdf/2511.02153.pdf",
-      "forum_link": "https://arxiv.org/abs/2511.02153",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-06-15T12:26:46.011978+00:00"
-    },
-    {
-      "forum_id": "2601.03971",
-      "paper_number": -1,
-      "title": "Posterior error bounds for prior-driven balancing in linear Gaussian inverse problems",
-      "authors": [
-        "Josie K\\\"onig, Han Cheng Lie"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2601.03971v2 Announce Type: replace \nAbstract: In large-scale Bayesian inverse problems, it is often necessary to apply approximate forward models to reduce the cost of forward model evaluations, while controlling approximation quality. In the context of Bayesian inverse problems with linear forward models, Gaussian priors, and Gaussian noise, we use perturbation theory for inverses to bound the error in the approximate posterior mean and posterior covariance resulting from a linear approximate forward model. We then focus on the smoothing problem of inferring the initial condition of linear time-invariant dynamical systems, using finitely many partial state observations. For such problems, and for a specific model order reduction method based on balanced truncation, we show that the",
-      "pdf_link": "https://arxiv.org/pdf/2601.03971.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.03971",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-06-15T12:26:46.011996+00:00"
-    },
-    {
-      "forum_id": "2601.09337",
-      "paper_number": -1,
-      "title": "On the unmapped tent pitching for the heterogeneous wave equation",
-      "authors": [
-        "Marcella Bonazzoli (IDEFIX), Gabriele Ciaramella (MOX), Ilario Mazzieri (MOX)"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2601.09337v2 Announce Type: replace \nAbstract: The Unmapped Tent Pitching (UTP) algorithm is a space--time domain decomposition method for the parallel solution of hyperbolic problems. It was originally introduced for the homogeneous one-dimensional wave equation in [Ciaramella, Gander, Mazzieri, 2024]. UTP is inspired by the Mapped Tent Pitching (MTP) algorithm [Gopalakrishnan, Sch{\\\"o}berl, Wintersteiger, 2017], which constructs the solution by iteratively building polytopal space--time subdomains, referred to as tents. In MTP, each physical tent is mapped onto a space--time rectangle, where local problems are solved before being mapped back to the original domain. In contrast, UTP avoids the nonlinear and potentially singular mapping step by computing the solution directly on a ph",
-      "pdf_link": "https://arxiv.org/pdf/2601.09337.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.09337",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-06-15T12:26:46.012014+00:00"
-    },
-    {
-      "forum_id": "2601.11626",
-      "paper_number": -1,
-      "title": "Concatenated Matrix SVD: Compression Bounds, Incremental Approximation, and Error-Constrained Clustering",
-      "authors": [
-        "Maksym Shamrai"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2601.11626v2 Announce Type: replace \nAbstract: Large collections of matrices arise throughout modern machine learning, signal processing, and scientific computing, where they are commonly compressed by concatenation followed by truncated singular value decomposition (SVD). This strategy enables parameter sharing and efficient reconstruction and has been widely adopted across domains ranging from multi-view learning and signal processing to neural network compression. However, it leaves a fundamental question unanswered: which matrices can be safely concatenated and compressed together under explicit reconstruction error constraints? Existing approaches rely on heuristic or architecture-specific grouping and provide no principled guarantees on the resulting SVD approximation error. In",
-      "pdf_link": "https://arxiv.org/pdf/2601.11626.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.11626",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.5,
-      "updated_at": "2026-06-15T12:26:46.012032+00:00"
-    },
-    {
-      "forum_id": "2606.13225",
-      "paper_number": -1,
-      "title": "The QR Factorization for Banded-Plus-Semiseparable Matrices Is Computable in Linear Complexity",
-      "authors": [
-        "Tao Chen, Sheehan Olver"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2606.13225v2 Announce Type: replace \nAbstract: We show that the $QR$ factorization of a banded-plus-semiseparable (BPS) matrix is computable in optimal linear complexity with respect to the discretization size by showing that the intermediate stages of a $QR$ factorization as computed using Householder reflection maintain a specific structure which has optimal storage. This theoretical result enables the design of stable, linear-complexity algorithms for solving the associated linear systems. For symmetric BPS matrices, we further show that the $RQ$ product -- central to eigenvalue computations via the $QR$ algorithm -- also preserves the BPS structure, leading to a linear-complexity algorithm for each iteration. Numerical experiments validate the optimal linear complexity, confirm h",
-      "pdf_link": "https://arxiv.org/pdf/2606.13225.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.13225",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.5,
-      "updated_at": "2026-06-15T12:26:46.012049+00:00"
-    },
-    {
-      "forum_id": "2509.24710",
-      "paper_number": -1,
-      "title": "MAD: Manifold Attracted Diffusion",
-      "authors": [
-        "Dennis Elbr\\\"achter, Giovanni S. Alberti, Matteo Santacesaria"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2509.24710v3 Announce Type: replace-cross \nAbstract: Score-based diffusion models are a highly effective method for generating samples from a distribution of images. We consider scenarios where the training data comes from a noisy version of the target distribution, and present an efficiently implementable modification of the inference procedure to generate noiseless samples. Our approach is motivated by the manifold hypothesis, according to which meaningful data is concentrated around some low-dimensional manifold of a high-dimensional ambient space. The central idea is that noise manifests as low magnitude variation in off-manifold directions in contrast to the relevant variation of the desired distribution which is mostly confined to on-manifold directions. We introduce the notion",
-      "pdf_link": "https://arxiv.org/pdf/2509.24710.pdf",
-      "forum_link": "https://arxiv.org/abs/2509.24710",
-      "submission_date": "2026-06-15T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-06-15T12:26:46.012066+00:00"
+      "updated_at": "2026-06-16T11:20:57.653276+00:00"
     }
   ]
 }
