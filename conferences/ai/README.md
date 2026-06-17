@@ -1,6 +1,6 @@
 # AI / AI for Science Papers
 
-- **Last Updated**: 2026-06-16 11:20:57 UTC
+- **Last Updated**: 2026-06-17 03:11:53 UTC
 - **Total Filtered Papers**: 39
 - **Displaying**: 39 (arXiv: 39, OpenReview: 0)
 - **Papers with Ratings**: 0

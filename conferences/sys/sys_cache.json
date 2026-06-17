@@ -1,7 +1,7 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-06-16T11:20:55.591729+00:00",
+  "last_updated": "2026-06-17T03:11:51.195829+00:00",
   "paper_count": 5,
   "papers": [
     {
@@ -25,7 +25,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 33.0,
-      "updated_at": "2026-06-16T11:20:55.057555+00:00"
+      "updated_at": "2026-06-17T03:11:50.766351+00:00"
     },
     {
       "forum_id": "2606.16824",
@@ -48,7 +48,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 23.0,
-      "updated_at": "2026-06-16T11:20:55.057639+00:00"
+      "updated_at": "2026-06-17T03:11:50.766413+00:00"
     },
     {
       "forum_id": "2606.15954",
@@ -71,7 +71,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 31.0,
-      "updated_at": "2026-06-16T11:20:55.200474+00:00"
+      "updated_at": "2026-06-17T03:11:50.906867+00:00"
     },
     {
       "forum_id": "2411.02908",
@@ -94,7 +94,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 45.0,
-      "updated_at": "2026-06-16T11:20:55.201266+00:00"
+      "updated_at": "2026-06-17T03:11:50.907412+00:00"
     },
     {
       "forum_id": "2512.12737",
@@ -117,7 +117,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 64.0,
-      "updated_at": "2026-06-16T11:20:55.201681+00:00"
+      "updated_at": "2026-06-17T03:11:50.907717+00:00"
     }
   ]
 }
