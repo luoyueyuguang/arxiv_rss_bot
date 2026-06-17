@@ -1,31 +1,23 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-06-17 03:11:50 UTC
-- **Total Filtered Papers**: 20
-- **Displaying**: 20 (arXiv: 20, OpenReview: 0)
+- **Last Updated**: 2026-06-17 11:05:24 UTC
+- **Total Filtered Papers**: 12
+- **Displaying**: 12 (arXiv: 12, OpenReview: 0)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Stannic: Systolic STochAstic ONliNe SchedulIng AcCelerator](https://arxiv.org/abs/2507.01113) | `ARXIV` | 67.0 |
-| 2 | [From Detection to Recovery: Operational Analysis on LLM Pre-training with 504 GPUs](https://arxiv.org/abs/2605.09370) | `ARXIV` | 55.5 |
-| 3 | [Solyx AI Grid: Hardware-Telemetry-Aware Routing Across Geographically Distributed GPU Clusters](https://arxiv.org/abs/2606.15050) | `ARXIV` | 45.5 |
-| 4 | [Tangram: Hiding GPU Heterogeneity for Efficient LLM Parallelization](https://arxiv.org/abs/2606.16907) | `ARXIV` | 45.0 |
-| 5 | [Diagonal-Budgeted Trotterization for Efficient Quantum Hamiltonian Simulation](https://arxiv.org/abs/2606.16959) | `ARXIV` | 38.0 |
-| 6 | [Mosaic: Data-Free Knowledge Distillation via Mixture-of-Experts for Heterogeneous Distributed Environments](https://arxiv.org/abs/2505.19699) | `ARXIV` | 34.0 |
-| 7 | [Beyond CPU-GPU Frequency: Memory-Clock and Tail Effects in Edge Inference Latency Estimation](https://arxiv.org/abs/2606.16106) | `ARXIV` | 32.5 |
-| 8 | [Is RISC-V Ready for Massively Parallel Astrophysical Codes?](https://arxiv.org/abs/2606.15490) | `ARXIV` | 14.5 |
-| 9 | [Secure and Low-Latency IoT Analytics Using an Edge-Based Streaming Architecture](https://arxiv.org/abs/2606.14712) | `ARXIV` | 14.0 |
-| 10 | [Evaluating Gemma4 Models as AI Teaching Assistants for Introductory Parallel Programming: A DataRaceBench Study](https://arxiv.org/abs/2606.14881) | `ARXIV` | 13.5 |
-| 11 | [RollArt: Disaggregated Multi-Task Agentic RL Training at Scale](https://arxiv.org/abs/2512.22560) | `ARXIV` | 13.0 |
-| 12 | [EvalStop: Using World Feedback to Detect and Correct Reward Overoptimization in Multi-Tenant RLHF Platforms](https://arxiv.org/abs/2606.04145) | `ARXIV` | 12.0 |
-| 13 | [DRIFT: Risk-Constrained Diffusion with Imitation Priors for Mixed-Autonomy Traffic Generation](https://arxiv.org/abs/2606.16589) | `ARXIV` | 11.0 |
-| 14 | [Communication-Efficient Distributed Training for Collaborative Flat Optima Recovery in Deep Learning](https://arxiv.org/abs/2507.20424) | `ARXIV` | 7.0 |
-| 15 | [Coordinated Scheduling for MoE LLM Serving](https://arxiv.org/abs/2606.15177) | `ARXIV` | 3.5 |
-| 16 | [CoAgent: Concurrency Control for Multi-Agent Systems](https://arxiv.org/abs/2606.15376) | `ARXIV` | 2.0 |
-| 17 | [Incentives and Evidence in Learned Service Orchestration](https://arxiv.org/abs/2606.16555) | `ARXIV` | 2.0 |
-| 18 | [The Essence of Entity Component System](https://arxiv.org/abs/2606.14919) | `ARXIV` | 2.0 |
-| 19 | [SDVDiag: Multimodal Causal Discovery for Online Diagnosis in Software-defined Vehicles](https://arxiv.org/abs/2606.15559) | `ARXIV` | 1.0 |
-| 20 | [Frontier: Towards Comprehensive and Accurate LLM Inference Simulation](https://arxiv.org/abs/2605.21312) | `ARXIV` | 1.0 |
+| 1 | [RouteBalance: Fused Model Routing and Load Balancing for Heterogeneous LLM Serving](https://arxiv.org/abs/2606.17949) | `ARXIV` | 86.0 |
+| 2 | [Prefill/Decode-Aware Evaluation of LLM Inference on Emerging AI Accelerators](https://arxiv.org/abs/2606.17104) | `ARXIV` | 43.5 |
+| 3 | [An O(K)-Approximation Coflow Scheduling in K-Core Optical Circuit Switching Networks](https://arxiv.org/abs/2604.22146) | `ARXIV` | 27.0 |
+| 4 | [LUMEN: Coordinated Failure Recovery for Distributed LLM Serving](https://arxiv.org/abs/2606.17787) | `ARXIV` | 24.5 |
+| 5 | [The Price of Anarchy in Disaggregated Inference](https://arxiv.org/abs/2606.17081) | `ARXIV` | 22.0 |
+| 6 | [When the Next Step Is Not One Step: Distribution-Aware Execution Modeling for Concurrent Go Programs](https://arxiv.org/abs/2606.17508) | `ARXIV` | 21.0 |
+| 7 | [Is RISC-V Ready for Massively Parallel Astrophysical Codes?](https://arxiv.org/abs/2606.15490) | `ARXIV` | 14.5 |
+| 8 | [ITME: Inference Tiered Memory Expansion with Disaggregated CXL-Hybrid Memories](https://arxiv.org/abs/2606.12556) | `ARXIV` | 12.0 |
+| 9 | [Towards Distributed Inference of LLMs on a P2P Network](https://arxiv.org/abs/2606.17059) | `ARXIV` | 4.0 |
+| 10 | [Local Fault Repair of Perfect Resource Placements in Eisenstein--Jacobi Networks](https://arxiv.org/abs/2606.17288) | `ARXIV` | 1.5 |
+| 11 | [Fractional Verkle Trees: A Hypertree Decomposition and Verified Proof Serialization Architecture for High-Performance Blockchain State Accumulators](https://arxiv.org/abs/2606.17111) | `ARXIV` | 1.5 |
+| 12 | [Vulcan: Instance-specialized, Verifiable Systems Heuristics Through LLM-driven Search](https://arxiv.org/abs/2512.25065) | `ARXIV` | 1.0 |

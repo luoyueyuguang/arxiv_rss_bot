@@ -1,123 +1,238 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-06-17T03:11:50.678902+00:00",
-  "paper_count": 20,
+  "last_updated": "2026-06-17T11:05:24.307318+00:00",
+  "paper_count": 12,
   "papers": [
     {
-      "forum_id": "2606.14712",
+      "forum_id": "2606.17059",
       "paper_number": -1,
-      "title": "Secure and Low-Latency IoT Analytics Using an Edge-Based Streaming Architecture",
+      "title": "Towards Distributed Inference of LLMs on a P2P Network",
       "authors": [
-        "Atul, Varun Shukla, Vivek Shukla, Mehul Kumar Das"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.14712v1 Announce Type: new \nAbstract: The rapid growth of Internet of Things (IoT) devices has led to large-scale continuous data streams that require realtime processing. Traditional cloud-centric architectures fail to meet low-latency and bandwidth efficiency requirements due to network delays and high data transmission overhead. This paper proposes EdgeStream, a lightweight edge-based framework for real-time streaming analytics in IoT environments. The system integrates edge nodes for local processing with a cloud backend for coordination and storage, using MQTT-based communication and distributed processing with anomaly detection. Analytical models for latency, throughput, and bandwidth are developed to evaluate performance. Experimental results, compared to cloudbased syste",
-      "pdf_link": "https://arxiv.org/pdf/2606.14712.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14712",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.0,
-      "updated_at": "2026-06-17T03:11:50.341661+00:00"
-    },
-    {
-      "forum_id": "2606.14881",
-      "paper_number": -1,
-      "title": "Evaluating Gemma4 Models as AI Teaching Assistants for Introductory Parallel Programming: A DataRaceBench Study",
-      "authors": [
-        "Sabbir Hussain Meraj, Riham Chowdhury, Shimul Debnath, Wei Wang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.14881v1 Announce Type: new \nAbstract: Debugging data races is a major challenge for students learning parallel programming due to the non-deterministic nature of concurrent execution and the complexity of shared-memory semantics. Recent advances in Large Language Models (LLMs) suggest that they could serve as AI teaching assistants, but the capabilities of lower-cost open-weight models for parallel debugging remain unclear. In this paper, we evaluate two Gemma4 open-weight models, Gemma4-E4B and Gemma4-31B, on their ability to identify, explain, and repair data races in OpenMP programs from the DataRaceBench benchmark suite. We also investigate whether contextual hints, including ThreadSanitizer (TSan) reports and model-generated explanations, improve repair quality. Our results",
-      "pdf_link": "https://arxiv.org/pdf/2606.14881.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14881",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-06-17T03:11:50.341687+00:00"
-    },
-    {
-      "forum_id": "2606.15050",
-      "paper_number": -1,
-      "title": "Solyx AI Grid: Hardware-Telemetry-Aware Routing Across Geographically Distributed GPU Clusters",
-      "authors": [
-        "Aleks Bernhard, Nithin Katla"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.15050v1 Announce Type: new \nAbstract: As GPU capacity fragments across geographically distributed sites, single-cluster LLM inference routing assumptions break down in measurable ways. We present Solyx AI Grid, a cross-site inference routing control plane that integrates GPU hardware telemetry (DCGM), vLLM application metrics, and real-time WAN signals (RTT, jitter) into per-request placement decisions via a 10-signal weighted pressure scorer. Across two empirical campaigns--six H100/H200 SXM GPUs and nine RTX PRO 6000 Blackwell SE GPUs spanning three US datacenters, eight workload classes, and a 216-cell SLO matrix--Solyx AI Grid delivers 1.56--1.75x throughput at tier-2 SLO over round-robin across all eight classes, cuts capability-mismatch leakage to 0.43% (versus 32% for sta",
-      "pdf_link": "https://arxiv.org/pdf/2606.15050.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.15050",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 45.5,
-      "updated_at": "2026-06-17T03:11:50.341729+00:00"
-    },
-    {
-      "forum_id": "2606.15177",
-      "paper_number": -1,
-      "title": "Coordinated Scheduling for MoE LLM Serving",
-      "authors": [
-        "Yifan Sun, Zhexiang Zhang, Jiantong Jiang, Gholamreza Haffari, Minxian Xu, Feng Liu, Rajkumar Buyya, Adel N. Toosi"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.15177v1 Announce Type: new \nAbstract: Serving Mixture-of-Experts (MoE) large language models (LLMs) is challenging because dynamic request workloads interact with sparse expert routing, creating both data-parallel (DP) engine imbalance and expert-level hotspots. Existing LLM serving systems typically make these decisions in isolation: frontend schedulers route requests using coarse request counters, while backend expert balancers rely mainly on aggregate expert activation counts. This separation prevents the serving system from reacting to fine-grained engine pressure, backend MoE pressure, and source-dependent expert traffic. To address this gap, we propose Gimbal, a coordinated cross-level scheduling system for efficient MoE-based LLM serving. First, Gimbal presents a fine-gra",
-      "pdf_link": "https://arxiv.org/pdf/2606.15177.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.15177",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-06-17T03:11:50.341771+00:00"
-    },
-    {
-      "forum_id": "2606.15376",
-      "paper_number": -1,
-      "title": "CoAgent: Concurrency Control for Multi-Agent Systems",
-      "authors": [
-        "Hongtao Lyu, Dingyan Zhang, Mingyu Wu, Xingda Wei, Haibo Chen"
+        "Shabari S Nair, Krishanu Saini"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2606.15376v1 Announce Type: new \nAbstract: Multi-agent LLM systems -- coding agents, devops agents, document agents -- now routinely run several agents in parallel against the same git tree, Kubernetes cluster, or document. As soon as two of them mutate shared state, they enter the regime classical concurrency control has studied for decades, but classical mechanisms fit LLM agents poorly. A single agent transaction spans minutes of inference, read sets are broad and opaque rather than statically inferable, and the live state agents act on admits neither fork nor buffer, so writes take effect the moment they execute. Locks block long inference intervals; OCC abort-and-retry discards minutes of work on every conflict.\n  This paper builds concurrency control on a capability classical t",
-      "pdf_link": "https://arxiv.org/pdf/2606.15376.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.15376",
-      "submission_date": "2026-06-16T04:00:00+00:00",
+      "abstract": "arXiv:2606.17059v1 Announce Type: new \nAbstract: Prefix caching can reduce LLM inference latency by reusing KV caches across requests with shared prompts, but cluster-scale reuse is challenging because caches are partitioned across nodes. We propose a decentralized, prefix-cache-aware routing scheme for peer-to-peer LLM serving. Each node maintains a local radix tree of its own cached prefixes and asynchronously refreshed estimates of peer caches using periodic anti-entropy. Requests are routed to the node with the longest estimated prefix match, without centralized coordination or KV-cache transfer. Stale metadata only causes cache misses, not incorrect outputs, making weak consistency sufficient for correctness. Evaluation on simulated MMLU workloads show that decentralized routing impro",
+      "pdf_link": "https://arxiv.org/pdf/2606.17059.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17059",
+      "submission_date": "2026-06-17T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-06-17T03:11:50.341843+00:00"
+      "score": 4.0,
+      "updated_at": "2026-06-17T11:05:23.779745+00:00"
+    },
+    {
+      "forum_id": "2606.17288",
+      "paper_number": -1,
+      "title": "Local Fault Repair of Perfect Resource Placements in Eisenstein--Jacobi Networks",
+      "authors": [
+        "Bader Albader"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2606.17288v1 Announce Type: new \nAbstract: Perfect resource placements in dense Eisenstein--Jacobi (EJ) networks partition the network into hexagonal radius-$t$ service cells. This paper studies local repair of such placements after resource failures. For one failed resource, we prove that one replacement cannot cover the failed hexagon and two always suffice, giving $\\rho_{\\mathrm{EJ}}(t)=2$ for all $t\\ge1$. Among minimum-size repairs, the sharp minimum-overlap formula $\\Omega_{\\mathrm{EJ}}(t)=t^2$ follows from the three-strip geometry of EJ balls. For two failed resources, independent repair gives a four-replacement upper bound, but unlike the Gaussian case EJ repair is not always additive: two infinite neighboring displacement families admit three-replacement repairs, proved optim",
+      "pdf_link": "https://arxiv.org/pdf/2606.17288.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17288",
+      "submission_date": "2026-06-17T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-06-17T11:05:23.779780+00:00"
+    },
+    {
+      "forum_id": "2606.17787",
+      "paper_number": -1,
+      "title": "LUMEN: Coordinated Failure Recovery for Distributed LLM Serving",
+      "authors": [
+        "Zhang Cao, Shujie Han, Juncheng Zhang, Yuanming Ren, Yongkun Li, Patrick P. C. Lee"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2606.17787v1 Announce Type: new \nAbstract: Modern large language model (LLM) serving clusters distribute inference requests across multiple worker processes on different GPUs, but failures are prevalent at scale. When a worker fails, the cluster simultaneously loses the failed worker's GPU-resident key-value (KV) caches and serving capacity, leaving surviving workers to absorb the redirected traffic while re-running interrupted requests from scratch. Existing fault-tolerant systems either restart interrupted requests from scratch or restore KV caches from checkpoints stored on a fixed neighboring worker, but both approaches route recovery work without considering current cluster load and leave the recovering worker idle during model reload. We present LUMEN, a fault-tolerant LLM serv",
+      "pdf_link": "https://arxiv.org/pdf/2606.17787.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17787",
+      "submission_date": "2026-06-17T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 24.5,
+      "updated_at": "2026-06-17T11:05:23.779961+00:00"
+    },
+    {
+      "forum_id": "2606.17949",
+      "paper_number": -1,
+      "title": "RouteBalance: Fused Model Routing and Load Balancing for Heterogeneous LLM Serving",
+      "authors": [
+        "Wei Da, Evangelia Kalyvianaki"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2606.17949v1 Announce Type: new \nAbstract: Heterogeneous LLM serving stacks split scheduling into two layers that optimize in isolation: model routers pick a model from quality and cost signals while ignoring instance load, and serving load balancers optimize queues while ignoring quality. We present RouteBalance, a serving-aware scheduling layer that fuses both into a single online assignment over concrete model instances, jointly trading off quality, latency, and cost. A batched in-process predictor stack and dead-reckoned instance state keep the joint decision cheap on the request hot path ($\\approx$32 ms at 12 req/s). On a 13-instance, 28-GPU heterogeneous cluster serving four model sizes, a single deployed RouteBalance stack traces the upper region of the three-way quality-cost-",
+      "pdf_link": "https://arxiv.org/pdf/2606.17949.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17949",
+      "submission_date": "2026-06-17T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 86.0,
+      "updated_at": "2026-06-17T11:05:23.780018+00:00"
+    },
+    {
+      "forum_id": "2606.17081",
+      "paper_number": -1,
+      "title": "The Price of Anarchy in Disaggregated Inference",
+      "authors": [
+        "Athos Georgiou (NCA)"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2606.17081v1 Announce Type: cross \nAbstract: Disaggregated inference architectures physically separate prefill and decode phases onto distinct GPU pools, creating competing \"agents\" that share a fixed hardware budget. We provide, to our knowledge, the first formal game-theoretic analysis of this architecture, using NVIDIA Dynamo as a concrete case study. We model disaggregated serving as three coupled games: a two-player resource game between prefill and decode pools, a selfish caching game over the hierarchical KV cache, and a congestion game with positive externalities for request routing. We empirically validate the latter two; the P/D resource game is treated analytically (Section 9.2). We characterize how GPU saturation induces regime transitions that shift the game's payoff str",
+      "pdf_link": "https://arxiv.org/pdf/2606.17081.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17081",
+      "submission_date": "2026-06-17T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 22.0,
+      "updated_at": "2026-06-17T11:05:23.780066+00:00"
+    },
+    {
+      "forum_id": "2606.17104",
+      "paper_number": -1,
+      "title": "Prefill/Decode-Aware Evaluation of LLM Inference on Emerging AI Accelerators",
+      "authors": [
+        "Shun Usami, Venkatram Vishwanath, E. Wes Bethel"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2606.17104v1 Announce Type: cross \nAbstract: As large language models (LLMs) are increasingly deployed in latency- and cost-sensitive settings, inference efficiency has become a central systems challenge. While GPUs dominate current deployments, a growing number of AI accelerators claim advantages for LLM inference, yet it remains unclear under which conditions such accelerators outperform GPUs in practice. Recent inference systems decompose execution into Prefill and Decode phases, which exhibit distinct computational characteristics and latency metrics, commonly captured by time to first token (TTFT) and time per output token (TPOT).\n  This paper presents a phase-aware evaluation of LLM inference performance across GPUs and emerging AI accelerators using a common model, Llama2-7B. ",
+      "pdf_link": "https://arxiv.org/pdf/2606.17104.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17104",
+      "submission_date": "2026-06-17T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 43.5,
+      "updated_at": "2026-06-17T11:05:23.780095+00:00"
+    },
+    {
+      "forum_id": "2606.17111",
+      "paper_number": -1,
+      "title": "Fractional Verkle Trees: A Hypertree Decomposition and Verified Proof Serialization Architecture for High-Performance Blockchain State Accumulators",
+      "authors": [
+        "Ekleen Kaur, Everton Fraga"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2606.17111v1 Announce Type: cross \nAbstract: Modern blockchain state management faces a critical scalability bottleneck: maintaining cryptographic commitments over hundreds of millions of entries becomes computationally prohibitive. Ethereum's transition to Verkle Trees: polynomial commitment accumulators reducing proof sizes from O(width * depth) to O(depth) via constant-size IPA vector commitments, is a critical step toward stateless operation. Yet, current implementations exhibit pathological characteristics that burden home validators.\n  We identify four inefficiencies in the reference go-verkle implementation \\cite{kaur2025goverkle, kaur2025goethereum}: (1) phantom node creation during non-existent account deletion; (2) 64-byte database keys triggering excessive LSM-tree compact",
+      "pdf_link": "https://arxiv.org/pdf/2606.17111.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17111",
+      "submission_date": "2026-06-17T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-06-17T11:05:23.780119+00:00"
+    },
+    {
+      "forum_id": "2606.17508",
+      "paper_number": -1,
+      "title": "When the Next Step Is Not One Step: Distribution-Aware Execution Modeling for Concurrent Go Programs",
+      "authors": [
+        "Kaviru Hapuarachchi"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2606.17508v1 Announce Type: cross \nAbstract: Training a model to predict the next step in a concurrent program is harder than it looks: two runs of the same program from the same trace prefix can produce different next events, both valid, because the scheduler is nondeterministic. A model trained against a single label is learning to guess one outcome of a random process. We turn this around and use the nondeterminism as a training signal. We run each program many times, aggregate the observed next events into an empirical distribution, and fine-tune a 7B model to match that distribution with a KL objective. On 798 held-out predictions drawn from real production Go bugs (CockroachDB, Kubernetes, gRPC, etcd), fine-tuning on fewer than a thousand traces reaches 36.2% accuracy, ahead of",
+      "pdf_link": "https://arxiv.org/pdf/2606.17508.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17508",
+      "submission_date": "2026-06-17T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 21.0,
+      "updated_at": "2026-06-17T11:05:23.780162+00:00"
+    },
+    {
+      "forum_id": "2604.22146",
+      "paper_number": -1,
+      "title": "An O(K)-Approximation Coflow Scheduling in K-Core Optical Circuit Switching Networks",
+      "authors": [
+        "Xin Wang, Hong Shen, Hui Tian, Ye Tao"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2604.22146v3 Announce Type: replace \nAbstract: Coflow has emerged as a fundamental application-layer abstraction in distributed systems, enabling collaborative management of related flows to enhance job completion efficiency. To meet the increasing bandwidth demands of modern data center networks (DCNs), optical circuit switches are widely deployed due to their high capacity and energy efficiency. Simultaneously, DCN deployments are evolving towards heterogeneous parallel architectures, where multiple independent optical circuit switching (OCS) cores operate concurrently to facilitate bandwidth expansion and incremental upgrades. However, existing research on coflow scheduling in multi-core switching fabrics primarily focuses on electrical packet switching (EPS) networks, with a few ",
+      "pdf_link": "https://arxiv.org/pdf/2604.22146.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.22146",
+      "submission_date": "2026-06-17T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 27.0,
+      "updated_at": "2026-06-17T11:05:23.780246+00:00"
+    },
+    {
+      "forum_id": "2606.12556",
+      "paper_number": -1,
+      "title": "ITME: Inference Tiered Memory Expansion with Disaggregated CXL-Hybrid Memories",
+      "authors": [
+        "Hakbeom Jang, Younghoon Min, Sunwoong Kim, Taeyoung Ahn, Hanyee Kim, Youngpyo Joo, Hoshik Kim, Jongryool Kim"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2606.12556v2 Announce Type: replace \nAbstract: The rapid shift toward agentic and long-context workloads in Large Language Models (LLMs) is pushing the industry beyond the capacity of individual servers toward disaggregated shared storage to handle TB-scale context states. This movement has led to the emergence of specialized shared context layers designed to externalize and share cumulative inference states across distributed clusters. While offloading to a data processing unit (DPU) within just-a-bunch-of-flash (JBOF) architectures accelerates NVMe-over-fabrics (NVMe-oF) target processing, the need for sophisticated software-level optimization and cost-efficiency burdens remain significant. Consequently, the ideal architecture for scaling this shared context infrastructure is still",
+      "pdf_link": "https://arxiv.org/pdf/2606.12556.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.12556",
+      "submission_date": "2026-06-17T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-06-17T11:05:23.780271+00:00"
     },
     {
       "forum_id": "2606.15490",
@@ -130,339 +245,40 @@
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2606.15490v1 Announce Type: new \nAbstract: We present a performance and portability evaluation of three well-established astrophysical production codes, namely iPIC3D, PLUTO, and OpenGGCM, on a Sophgo SG2044 RISC-V processor (part of the Monte Cimone cluster), with comparisons to AMD EPYC 9554 (x86) and NVIDIA GH200 Grace (ARM) systems. These applications represent memory-bound, compute-bound, and hybrid workloads, respectively. Numerical correctness is verified across all platforms, confirming portability. RISC-V shows consistently lower performance, with slowdowns of about $3-6\\times$ relative to x86 and $5-9\\times$ relative to ARM. The gap is mainly due to limited memory bandwidth, shared cache constraints, narrower 128-bit vector units, and lower clock frequency, but also less-ma",
+      "abstract": "arXiv:2606.15490v2 Announce Type: replace \nAbstract: We present a performance and portability evaluation of three well-established astrophysical production codes, namely iPIC3D, PLUTO, and OpenGadget3, on a Sophgo SG2044 RISC-V processor (part of the Monte Cimone cluster), with comparisons to AMD EPYC 9554 (x86) and NVIDIA GH200 Grace (ARM) systems. These applications represent memory-bound, compute-bound, and hybrid workloads, respectively. Numerical correctness is verified across all platforms, confirming portability. RISC-V shows consistently lower performance, with slowdowns of about $3-6\\times$ relative to x86 and $5-9\\times$ relative to ARM. The gap is mainly due to limited memory bandwidth, shared cache constraints, narrower 128-bit vector units, and lower clock frequency, but also ",
       "pdf_link": "https://arxiv.org/pdf/2606.15490.pdf",
       "forum_link": "https://arxiv.org/abs/2606.15490",
-      "submission_date": "2026-06-16T04:00:00+00:00",
+      "submission_date": "2026-06-17T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 14.5,
-      "updated_at": "2026-06-17T03:11:50.341866+00:00"
+      "updated_at": "2026-06-17T11:05:23.780295+00:00"
     },
     {
-      "forum_id": "2606.16555",
+      "forum_id": "2512.25065",
       "paper_number": -1,
-      "title": "Incentives and Evidence in Learned Service Orchestration",
+      "title": "Vulcan: Instance-specialized, Verifiable Systems Heuristics Through LLM-driven Search",
       "authors": [
-        "Syed Izhan Khilji, Alireza Furutanpey, Schahram Dustdar"
+        "Rohit Dwivedula, Divyanshu Saxena, Sujay Yadalam, Eric Hayden Campbell, Daehyeok Kim, Aditya Akella"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2606.16555v1 Announce Type: new \nAbstract: Reinforcement learning for service orchestration has been the subject of sustained research for over a decade, yet it is not used in production at scale. The usual explanation is that learned controllers degrade under delayed and noisy telemetry, workload shifts, and uncontrolled tenants. We test whether existing evidence supports that explanation. We evaluate three highly influential RL-based orchestration systems spanning resource allocation, DAG scheduling, and autoscaling, using pre-registered predictions about comparative degradation under production-relevant perturbations and paired inference with family-wise error correction. Across the tests, most predicted performance reversals do not occur. Diagnostic analyses show that these outco",
-      "pdf_link": "https://arxiv.org/pdf/2606.16555.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.16555",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-06-17T03:11:50.342049+00:00"
-    },
-    {
-      "forum_id": "2606.16589",
-      "paper_number": -1,
-      "title": "DRIFT: Risk-Constrained Diffusion with Imitation Priors for Mixed-Autonomy Traffic Generation",
-      "authors": [
-        "Yaoshen Yu, Minghui Liwang, Wenbo Zhu, Xinlei Yi, Yiguang Hong, Yuhan Su, Seyyedali Hosseinalipour"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.16589v1 Announce Type: new \nAbstract: Future intelligent transportation systems are envisioned to evolve toward a long-term mixed-autonomy paradigm, where human-driven vehicles (HVs) and autonomous vehicles (AVs) coexist within highly coupled traffic ecosystems. Such coexistence introduces pronounced heterogeneity, amplified uncertainty, and increasingly intricate interaction dynamics. In this context, it remains fundamentally challenging to simultaneously capture the heterogeneous behavioral distribution shifts arising from dynamic AV penetration, generate diverse yet executable trajectories under strong inter-vehicle coupling, and conduct reliable closed-loop safety and stability diagnostics for rare but high-impact events. To this end, we present risk-constrained diffusion wi",
-      "pdf_link": "https://arxiv.org/pdf/2606.16589.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.16589",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-06-17T03:11:50.342069+00:00"
-    },
-    {
-      "forum_id": "2606.16907",
-      "paper_number": -1,
-      "title": "Tangram: Hiding GPU Heterogeneity for Efficient LLM Parallelization",
-      "authors": [
-        "Yanda Tao, Pedro F. Silvestre, Marcel Wagenl\\\"ander, Peter Pietzuch"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2606.16907v1 Announce Type: new \nAbstract: The scale of LLM training jobs requires parallelization planning over large GPU clusters. Due to different GPU types and interconnects added over time, these GPU clusters are increasingly heterogeneous. Automatic LLM parallelizers can search for parallelization plans but face an exploding search space with heterogeneous GPUs. To make search tractable in heterogeneous GPU clusters, parallelizers often omit types of parallelism (e.g., expert parallelism) or memory-saving techniques (e.g., ZeRO), which results in worse plans.\n  We describe Tangram, a system that enables the use of existing heterogeneity-unaware LLM parallelizers in heterogeneous GPU clusters by decoupling parallelization planning from GPU heterogeneity. For this, Tangram exploi",
-      "pdf_link": "https://arxiv.org/pdf/2606.16907.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.16907",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 45.0,
-      "updated_at": "2026-06-17T03:11:50.342161+00:00"
-    },
-    {
-      "forum_id": "2606.14919",
-      "paper_number": -1,
-      "title": "The Essence of Entity Component System",
-      "authors": [
-        "Anisha Tasnim, Tian Zhao"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.14919v1 Announce Type: cross \nAbstract: Modern game engines increasingly adopt the Entity Component System (ECS) paradigm as a data-oriented alternative to traditional object-oriented architecture. While ECS promotes modularity and performance through the separation of data and behavior, its practical efficiency depends heavily on the underlying data layout. Despite widespread adoption in frameworks, such as Unity DOTS, Bevy, and Flecs, the semantics of the archetype ECS remain informal and implementation-dependent, limiting rigorous reasoning about determinism, system scheduling, and structural mutations.\n  This work formalizes and experimentally evaluates the archetype ECS. The formal model captures entity creation, component composition, system execution, and archetype migrat",
-      "pdf_link": "https://arxiv.org/pdf/2606.14919.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14919",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-06-17T03:11:50.342198+00:00"
-    },
-    {
-      "forum_id": "2606.15559",
-      "paper_number": -1,
-      "title": "SDVDiag: Multimodal Causal Discovery for Online Diagnosis in Software-defined Vehicles",
-      "authors": [
-        "Matthias Wei{\\ss}, Athreya Hosahalli Prakash, Falk Dettinger, Nasser Jazdi, Michael Weyrich"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.15559v1 Announce Type: cross \nAbstract: The transition toward software-defined vehicles concentrates an increasing share of vehicle functionality into distributed software services, where failures propagate through service dependencies and the surface symptom is often several causal hops away from the underlying defect. Existing approaches to causal root-cause analysis in such systems address this only partially: they typically reason over a single observability modality and operate in an offline, operator-driven mode that does not match the demands of continuous vehicle operation. This paper presents SDVDiag, a multimodal causal-discovery pipeline that fuses log-based and metric-based service representations into a shared embedding space before graph construction, coupled with ",
-      "pdf_link": "https://arxiv.org/pdf/2606.15559.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.15559",
-      "submission_date": "2026-06-16T04:00:00+00:00",
+      "abstract": "arXiv:2512.25065v2 Announce Type: replace-cross \nAbstract: Systems resource management tasks rely primarily on hand-designed heuristics. However, growing hardware heterogeneity and workload diversity require heuristics specialized to particular deployment instances, making manual design expensive and difficult to scale. In this paper, we explore how to synthesize systems heuristics using LLMs. The main challenge is ensuring that generated heuristics execute safely, integrate correctly with the surrounding system, and still achieve strong performance. We propose Vulcan, a framework that identifies LLM-friendly interfaces that isolate core decision logic from the rest of the implementation. With Vulcan, LLM-generated code is restricted to simple stateless decision functions, while trusted ru",
+      "pdf_link": "https://arxiv.org/pdf/2512.25065.pdf",
+      "forum_link": "https://arxiv.org/abs/2512.25065",
+      "submission_date": "2026-06-17T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-06-17T03:11:50.342254+00:00"
-    },
-    {
-      "forum_id": "2606.16106",
-      "paper_number": -1,
-      "title": "Beyond CPU-GPU Frequency: Memory-Clock and Tail Effects in Edge Inference Latency Estimation",
-      "authors": [
-        "Jaehoon Kang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2606.16106v1 Announce Type: cross \nAbstract: Frequency-aware latency estimators enable deadline-aware DVFS for edge ML inference by modeling latency over CPU and GPU frequencies. We present a measurement study on an NVIDIA Jetson Orin Nano showing three phenomena outside this modeling scope. (1) The memory clock is a missing axis: across the realistic upper EMC range (2133->3199 MHz) it shifts median latency by +11% to +48% depending on workload, and for a synthetic L2-resident kernel at the top GPU clock we observe a reproducible non-monotonic case (-9%). A GPU-frequency estimator profiled under one power profile and deployed under another consequently underestimates latency by up to 32%; tabulating the four lockable EMC points repairs most workloads, while a parametric 1/f_emc term",
-      "pdf_link": "https://arxiv.org/pdf/2606.16106.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.16106",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-06-17T03:11:50.342294+00:00"
-    },
-    {
-      "forum_id": "2606.16959",
-      "paper_number": -1,
-      "title": "Diagonal-Budgeted Trotterization for Efficient Quantum Hamiltonian Simulation",
-      "authors": [
-        "Srikar Chundury, Blake Burgstahler, Jiajia Li, In-Saeng Suh, Frank Mueller"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.16959v1 Announce Type: cross \nAbstract: Efficient classical simulation of quantum Hamiltonian dynamics is often bottlenecked by exponential state growth and the overhead of generic sparse linear algebra. We introduce diagonal-budgeted Trotterization, a structure-aware strategy that decomposes Hamiltonians into factors preserving diagonal sparsity while tightly controlling fidelity loss.\n  Our implementation, HamSim, utilizes a compact diagonal-sparse data layout and specialized C++/CUDA kernels to bypass the overheads of generic formats like CSR. By leveraging SIMD vectorization, multithreading, and GPU acceleration, HamSim achieves high performance across heterogeneous architectures. Benchmarks on the HamLib suite show that HamSim significantly outperforms Qiskit-Aer. On CPUs, ",
-      "pdf_link": "https://arxiv.org/pdf/2606.16959.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.16959",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 38.0,
-      "updated_at": "2026-06-17T03:11:50.342371+00:00"
-    },
-    {
-      "forum_id": "2507.01113",
-      "paper_number": -1,
-      "title": "Stannic: Systolic STochAstic ONliNe SchedulIng AcCelerator",
-      "authors": [
-        "Adam H. Ross, Vairavan Palaniappan, Debjit Pal"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2507.01113v4 Announce Type: replace \nAbstract: Efficient workload scheduling is a critical challenge in modern heterogeneous computing environments, particularly in high-performance computing (HPC) systems. Traditional software-based schedulers struggle to efficiently balance workloads due to scheduling overhead, lack of adaptability to stochastic workloads, and suboptimal resource utilization. The scheduling problem further compounds in the context of shared HPC clusters, where job arrivals and processing times are inherently stochastic. Prediction of these elements is possible, but it introduces additional overhead. To perform this complex scheduling, we developed two FPGA-assisted hardware accelerator microarchitectures, Hercules and Stannic. Hercules adopts a task-centric abstrac",
-      "pdf_link": "https://arxiv.org/pdf/2507.01113.pdf",
-      "forum_link": "https://arxiv.org/abs/2507.01113",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 67.0,
-      "updated_at": "2026-06-17T03:11:50.342416+00:00"
-    },
-    {
-      "forum_id": "2512.22560",
-      "paper_number": -1,
-      "title": "RollArt: Disaggregated Multi-Task Agentic RL Training at Scale",
-      "authors": [
-        "Wei Gao, Yuheng Zhao, Tianyuan Wu, Shaopan Xiong, Weixun Wang, Dakai An, Lunxi Cao, Dilxat Muhtar, Zichen Liu, Haizhou Zhao, Ju Huang, Siran Yang, Yongbin Li, Wenbo Su, Jiamang Wang, Lin Qu, Bo Zheng, Wei Wang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2512.22560v2 Announce Type: replace \nAbstract: Agentic Reinforcement Learning (RL) trains LLMs through multi-turn interactions with environments, producing workloads that mix compute-bound prefill, bandwidth-bound decoding, CPU-heavy environment execution, and bursty reward evaluation. Existing systems either colocate all stages on a single GPU cluster or decouple them only at a coarse granularity, overlooking hardware heterogeneity and incurring substantial synchronization overhead across stages.\n  We present ROLLART, a system for multi-task agentic RL on disaggregated infrastructure. ROLLART maps each pipeline stage to best-fit hardware, routing prefill-heavy tasks to compute-optimized GPUs, decode-heavy tasks to bandwidth-optimized GPUs, and environments to CPU clusters. It decoup",
-      "pdf_link": "https://arxiv.org/pdf/2512.22560.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.22560",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-06-17T03:11:50.342456+00:00"
-    },
-    {
-      "forum_id": "2605.09370",
-      "paper_number": -1,
-      "title": "From Detection to Recovery: Operational Analysis on LLM Pre-training with 504 GPUs",
-      "authors": [
-        "Daemyung Kang, Eunjin Hwang, Hanjeong Lee, HyeokJin Kim, Hyunhoi Koo, Jeongkyu Shin, Jeongseok Kang, Jihyun Kang, Jinho Heo, Joongi Kim, Junbum Lee, Jungseung Yang, Kyujin Cho, Youngsook Song"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2605.09370v5 Announce Type: replace \nAbstract: Large-scale AI training is fundamentally a distributed systems problem, where hardware failures are routine operating conditions rather than rare exceptions, yet public operational evidence from production training clusters remains limited. This report presents an empirical analysis of a 63-node NVIDIA B200 production cluster (504 GPUs), using 55 days of Prometheus time-series data and 73 days of operational logs covering 224 multi-node training sessions.\n  The environment is cross-organizational: five parties (SKT, Upstage, Lablup, NVIDIA Korea, VAST Data) share a unified monitoring pipeline. This enabled joint diagnosis of a 60-node-scale storage I/O bottleneck absent in 2-4-node tests, a production-scale phenomenon no single team coul",
-      "pdf_link": "https://arxiv.org/pdf/2605.09370.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.09370",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 55.5,
-      "updated_at": "2026-06-17T03:11:50.342516+00:00"
-    },
-    {
-      "forum_id": "2605.21312",
-      "paper_number": -1,
-      "title": "Frontier: Towards Comprehensive and Accurate LLM Inference Simulation",
-      "authors": [
-        "Yicheng Feng, Xin Tan, Yangtao Deng, Yimin Jiang, Yibo Zhu, Hong Xu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2605.21312v2 Announce Type: replace \nAbstract: Modern LLM serving is no longer homogeneous or monolithic. Production systems now combine disaggregated execution, complex parallelism, runtime optimizations, and stateful workloads such as reasoning, agents, and RL rollouts. Simulation is attractive for exploring this growing design space, yet existing simulators lack the architectural completeness and decision-grade fidelity it demands. Their monolithic-replica abstractions are ill-suited to disaggregated serving, while average-case analytical proxies can distort SLA predictions and even reverse optimization conclusions.\n  We present Frontier, a discrete-event simulator for modern LLM inference serving. Frontier features a disaggregated abstraction. It captures the structure and dynami",
-      "pdf_link": "https://arxiv.org/pdf/2605.21312.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.21312",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-06-17T03:11:50.342537+00:00"
-    },
-    {
-      "forum_id": "2505.19699",
-      "paper_number": -1,
-      "title": "Mosaic: Data-Free Knowledge Distillation via Mixture-of-Experts for Heterogeneous Distributed Environments",
-      "authors": [
-        "Junming Liu, Yanting Gao, Yuqi Li, Siyuan Meng, Yifei Sun, Aoqi Wu, Yirong Chen, Ding Wang, Shiping Wen"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2505.19699v2 Announce Type: replace-cross \nAbstract: Federated Learning (FL) is a decentralized machine learning paradigm that enables clients to collaboratively train models while preserving data privacy. However, the coexistence of model and data heterogeneity gives rise to inconsistent representations and divergent optimization dynamics across clients, ultimately hindering robust global performance. To transcend these challenges, we propose Mosaic, a novel data-free knowledge distillation framework tailored for heterogeneous distributed environments. Mosaic first trains local generative models to approximate each client's personalized distribution, enabling synthetic data generation that safeguards privacy through strict separation from real data. Subsequently, Mosaic forms a Mixt",
-      "pdf_link": "https://arxiv.org/pdf/2505.19699.pdf",
-      "forum_link": "https://arxiv.org/abs/2505.19699",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 34.0,
-      "updated_at": "2026-06-17T03:11:50.342627+00:00"
-    },
-    {
-      "forum_id": "2507.20424",
-      "paper_number": -1,
-      "title": "Communication-Efficient Distributed Training for Collaborative Flat Optima Recovery in Deep Learning",
-      "authors": [
-        "Tolga Dimlioglu, Anna Choromanska"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2507.20424v3 Announce Type: replace-cross \nAbstract: We study centralized distributed data parallel training of deep neural networks (DNNs), aiming to improve the trade-off between communication efficiency and model performance of the local gradient methods. To this end, we revisit the flat-minima hypothesis, which suggests that models with better generalization tend to lie in flatter regions of the loss landscape. We introduce a simple, yet effective, sharpness measure, Inverse Mean Valley, and demonstrate its strong correlation with the generalization gap of DNNs. We incorporate an efficient relaxation of this measure into the distributed training objective as a lightweight regularizer that encourages workers to collaboratively seek wide minima. The regularizer exerts a pushing for",
-      "pdf_link": "https://arxiv.org/pdf/2507.20424.pdf",
-      "forum_link": "https://arxiv.org/abs/2507.20424",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 7.0,
-      "updated_at": "2026-06-17T03:11:50.342668+00:00"
-    },
-    {
-      "forum_id": "2606.04145",
-      "paper_number": -1,
-      "title": "EvalStop: Using World Feedback to Detect and Correct Reward Overoptimization in Multi-Tenant RLHF Platforms",
-      "authors": [
-        "Guilin Zhang, Chuanyi Sun, Kai Zhao, Xu Chu, Shahryar Sarkani, John M. Fossaceca"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.04145v3 Announce Type: replace-cross \nAbstract: Cloud LLM fine-tuning platforms increasingly serve RLHF workloads, where a learned reward model is optimized as a proxy for human quality. As Gao et al. (2023) showed, this proxy diverges from world feedback (downstream eval metrics) under sustained optimization pressure, a phenomenon known as reward overoptimization. Existing platform schedulers ignore this divergence: non-clairvoyant schedulers optimize JCT without any quality signal, SLAQ-style quality-aware schedulers use training loss (a weaker proxy that drops monotonically through hacking), and classical per-job early stopping requires human monitoring and does not free shared GPUs. We propose EvalStop, a composable scheduling primitive that terminates jobs on k consecutive ",
-      "pdf_link": "https://arxiv.org/pdf/2606.04145.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.04145",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-06-17T03:11:50.342828+00:00"
+      "updated_at": "2026-06-17T11:05:23.780353+00:00"
     }
   ]
 }

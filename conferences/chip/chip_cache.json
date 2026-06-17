@@ -1,261 +1,123 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-06-17T03:11:51.303651+00:00",
-  "paper_count": 11,
+  "last_updated": "2026-06-17T11:05:24.896552+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2606.14992",
+      "forum_id": "2606.17081",
       "paper_number": -1,
-      "title": "KATANA: A Fast, Low-Power Mapping of Kalman Filters onto Edge NPUs for Real-Time Tracking",
+      "title": "The Price of Anarchy in Disaggregated Inference",
       "authors": [
-        "Bodhisatwa Kundu, Anish Rooj, Sumit Saha, Abhradeep Sarkar, Arghadip Das, Arnab Raha, Mrinal K. Naskar"
+        "Athos Georgiou (NCA)"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2606.14992v1 Announce Type: new \nAbstract: State estimation is the closed-loop core of every real-time tracking system, from radar surveillance and counter-UAV defense to autonomous driving and robotics. These deployments run on edge platforms, where defense systems mount on vehicles and drones, and civilian pipelines live on cars and handheld devices. Here, every additional watt of compute erodes mission duration or operational range. Two hard constraints follow: each new measurement must be fused before the next control cycle, and the total compute must fit within a strict battery and thermal power envelope. The Linear and Extended Kalman Filters (LKF, EKF) are dominant estimators on these systems, but today they execute almost exclusively on CPUs, which serialize multi-object trac",
-      "pdf_link": "https://arxiv.org/pdf/2606.14992.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14992",
-      "submission_date": "2026-06-16T04:00:00+00:00",
+      "abstract": "arXiv:2606.17081v1 Announce Type: new \nAbstract: Disaggregated inference architectures physically separate prefill and decode phases onto distinct GPU pools, creating competing \"agents\" that share a fixed hardware budget. We provide, to our knowledge, the first formal game-theoretic analysis of this architecture, using NVIDIA Dynamo as a concrete case study. We model disaggregated serving as three coupled games: a two-player resource game between prefill and decode pools, a selfish caching game over the hierarchical KV cache, and a congestion game with positive externalities for request routing. We empirically validate the latter two; the P/D resource game is treated analytically (Section 9.2). We characterize how GPU saturation induces regime transitions that shift the game's payoff struc",
+      "pdf_link": "https://arxiv.org/pdf/2606.17081.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17081",
+      "submission_date": "2026-06-17T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-06-17T03:11:51.301506+00:00"
+      "score": 11.0,
+      "updated_at": "2026-06-17T11:05:24.895243+00:00"
     },
     {
-      "forum_id": "2606.15500",
+      "forum_id": "2606.17253",
       "paper_number": -1,
-      "title": "LLM4RTL: Tool-Assisted LLM for RTL Generation",
+      "title": "PDAGENT-BENCH: Characterizing, Grounding, and Architecting LLM Agents for VLSI Physical Design",
       "authors": [
-        "Jing Jin, Robert Chu, Ning Yan, Masood S. Mortazavi"
+        "Qiufeng Li, Rongqian Chen, Quan Cheng, Chengxuan Wang, Sizhe Tang, Wuxi Li, Duo Ding, Chia-Tung Ho, Haoxing Ren, David Z. Pan, Tian Lan, Weidong Cao"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2606.15500v1 Announce Type: new \nAbstract: Large language models (LLMs) have facilitated impressive progress in software engineering, code generation, tooling, and systems. Concurrently, a significant body of research has developed which explores a growing variety of methods and systems for applying LLMs to hardware and chip design (e.g., systems for RTL code generation based on functional description). However, when it comes to open Verilog/RTL code-generation, we need high-quality training samples to build specialized and more effective LLM systems through fine-tuning or low-rank adaptation. Here, we propose a ``judge-renew-check-renew-check'' (JRCRC) pipeline which updates a current public dataset using a hierarchy of state-of-the-art commercial LLM models differing in their costs",
-      "pdf_link": "https://arxiv.org/pdf/2606.15500.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.15500",
-      "submission_date": "2026-06-16T04:00:00+00:00",
+      "abstract": "arXiv:2606.17253v1 Announce Type: new \nAbstract: Large Language Models and vision-language models have shown remarkable success in the front-end design of Very Large-Scale Integrated Circuits, yet their capabilities for VLSI physical design remain significantly underexplored. The primary cause is the lack of standardized benchmarks for evaluating agentic physical design workflows that require high-dimensional, multi-stage optimization under strict design constraints, coordinated interaction with diverse Electronic Design Automation tools, and iterative refinement. This work introduces PDAGENT-BENCH, a comprehensive and multi-dimensional benchmark for evaluating LLM/VLM-based agents across the physical design stack. PDAGENT-BENCH integrates both task-level assessment and workflow-level exec",
+      "pdf_link": "https://arxiv.org/pdf/2606.17253.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17253",
+      "submission_date": "2026-06-17T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 4.5,
-      "updated_at": "2026-06-17T03:11:51.301586+00:00"
+      "score": 35.0,
+      "updated_at": "2026-06-17T11:05:24.895364+00:00"
     },
     {
-      "forum_id": "2606.15870",
+      "forum_id": "2606.17850",
       "paper_number": -1,
-      "title": "Google's Training Supercomputers from TPU v2 to Ironwood: Architectural Stability, Scale, Resilience, Power Efficiency, and Sustainability Across Five Generations",
+      "title": "CUTh-Solver: GPU-Accelerated Sparse Matrix Solver for High-Resolution Thermal Simulation of 3D ICs",
       "authors": [
-        "Norman P. Jouppi, Sridhar Lakshmanamurthy, Cliff Young, David Patterson"
+        "Chenghan Wang, Zhen Zhuang, Shui Jiang, Siyuan Liang, Xiaoman Yang, Kai Zhu, Darong Huang, Luis Costero, Rongmei Chen, Tsung-Wei Huang, David Atienza, Tsung-Yi Ho"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2606.15870v1 Announce Type: new \nAbstract: This paper (to appear in the July/August 2026 issue of IEEE Micro magazine) summarizes five generations of Google s TPUs, from TPU v2 to Ironwood, highlighting their evolution as scalable, resilient, power-efficient, sustainable supercomputers for AI training. It details the TPU s stable architecture, which has surprisingly easily accommodated the rapidly changing deep neural network workloads, such as the rise of Transformers. Key advancements over eight years include 10x increase in HBM capacity and bandwidth per node, a 100x increase in peak node performance, and a 3600x increase in supercomputer performance. The paper also discusses the role of optical circuit switches, built-in self test, and hardware replay in enhancing resilience and ",
-      "pdf_link": "https://arxiv.org/pdf/2606.15870.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.15870",
-      "submission_date": "2026-06-16T04:00:00+00:00",
+      "abstract": "arXiv:2606.17850v1 Announce Type: new \nAbstract: Coarse-grained thermal simulation tends to underestimate localized thermal issues, potentially missing critical hotspots. Accurate analysis, therefore, demands fine-grained information, which dramatically increases grid resolution and thus computational workload. Fortunately, the coefficient matrices are often sparse with regular sparsity patterns, offering optimization opportunities. However, existing general-purpose matrix solvers on GPUs rarely exploit these domain-specific properties, thereby encountering bottlenecks in data storage, memory access, parallelism, computational efficiency, and hardware utilization. Therefore, we propose CUTh-Solver, a co-designed GPU-accelerated Preconditioned Conjugate Gradient (PCG)-based sparse solver fr",
+      "pdf_link": "https://arxiv.org/pdf/2606.17850.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17850",
+      "submission_date": "2026-06-17T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.5,
+      "updated_at": "2026-06-17T11:05:24.895435+00:00"
+    },
+    {
+      "forum_id": "2606.18131",
+      "paper_number": -1,
+      "title": "ComPart: Community-Guided Post-Coarsening for High-Quality Hypergraph Partitioning",
+      "authors": [
+        "Yugao Zhu, Zhicheng Guo, Yuchao Wu, Mengming Li, Jing Wang, Zhiyao Xie"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2606.18131v1 Announce Type: new \nAbstract: Hypergraph partitioning is a critical step in the design of complex embedded systems, essential for optimizing task mapping on heterogeneous MPSoCs and enabling multi-FPGA prototyping. Many existing methods rely on community detection to identify modules with dense internal and sparse external connections, typically utilizing them to constrain the coarsening phase--a widely adopted paradigm. In this work, we propose ComPart, a generalized framework that integrates diverse community detection methods to uncover high-quality clusterings throughout the post-coarsening stages (i.e., initial partitioning and uncoarsening). These discovered clusterings serve as distinct structural guides, enabling the refinement process to identify superior partit",
+      "pdf_link": "https://arxiv.org/pdf/2606.18131.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.18131",
+      "submission_date": "2026-06-17T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 3.0,
-      "updated_at": "2026-06-17T03:11:51.301662+00:00"
+      "updated_at": "2026-06-17T11:05:24.895480+00:00"
     },
     {
-      "forum_id": "2606.16440",
+      "forum_id": "2606.17327",
       "paper_number": -1,
-      "title": "NeuronFabric: A Software Reference Architecture for On-Chip Transformer Training with Local Adam",
+      "title": "Energy-efficient codon optimization on thermodynamic hardware",
       "authors": [
-        "Evgeny Ukladchikov"
+        "Andraz Jelincic, Ross C. Walker"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2606.16440v1 Announce Type: new \nAbstract: Publicly documented accelerator architectures generally separate training computation from optimizer-state updates or rely on external memory and host orchestration. This paper presents NeuronFabric, a software reference architecture intended for future FPGA and ASIC implementations of transformer training with local Adam updates. A complete C# prototype implements forward pass, backpropagation, and Adam optimization without external machine-learning frameworks. The goal is to validate numerical correctness and memory requirements before hardware implementation. The evaluated model is a 334K-parameter autoregressive transformer (d=88, H=4, f=264, L=4, vocab=256) trained on the Shakespeare corpus. The BF16W configuration achieves evaluation l",
-      "pdf_link": "https://arxiv.org/pdf/2606.16440.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.16440",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-06-17T03:11:51.301764+00:00"
-    },
-    {
-      "forum_id": "2606.16516",
-      "paper_number": -1,
-      "title": "Towards Delta Aware Training: Efficient DNN Weight Storage for Resource-Constrained FPGAs",
-      "authors": [
-        "David Peter Federl, Lukas Einhaus, Andreas Erbsl\\\"oh, Gregor Schiele"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2606.16516v1 Announce Type: new \nAbstract: The deployment of embedded deep neural networks on resource-constrained field programmable gate arrays (FPGAs) is challenging due to limited memory and computational capacities. We introduce a new compression technique to reduce the memory footprint by saving weights in deltas with lower bitwidth and training the network to cope with compressed deltas. Two delta schemes are investigated: consecutive deltas and deltas with a fixed-reference value. We evaluate both on the FashionMNIST data set with a multi-layer-perceptron. The results indicate that fixed-reference delta compression outperforms the consecutive variant, achieving a validation accuracy of approximately 78.6 %, with 4 bit weight deltas, representing an accuracy loss of roughly 8.",
-      "pdf_link": "https://arxiv.org/pdf/2606.16516.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.16516",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-06-17T03:11:51.301787+00:00"
-    },
-    {
-      "forum_id": "2606.16889",
-      "paper_number": -1,
-      "title": "Architecture Carbon Tool v3: Enabling Sustainability-aware Silicon System Design Exploration",
-      "authors": [
-        "Vincent T. Lee, Bilge Acun, Zachary Lewis, Carole-Jean Wu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2606.16889v1 Announce Type: new \nAbstract: As the carbon cost of manufacturing and operating semiconductor devices has come into sharper focus, sustainability has gradually emerged as a new system architecture design metric. Like power and performance modeling tools, enabling sustainability-aware silicon systems design and optimizations will require a new generation of electronic design automation and architectural modeling tools. Towards this end, we present an update to the Architecture Carbon Tool v3 (ACT3) which aims to provide an extensible and customizable modeling platform for research and advanced development to pave the path towards sustainability-aware architectural design space exploration. Compared to previous versions of ACT, ACT3 provides significantly richer modeling c",
-      "pdf_link": "https://arxiv.org/pdf/2606.16889.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.16889",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-06-17T03:11:51.301844+00:00"
-    },
-    {
-      "forum_id": "2606.16896",
-      "paper_number": -1,
-      "title": "Neural dynamical systems on ferroelectric compute-in-memory for real-time forecasting",
-      "authors": [
-        "Keshava Katti, Adithya Selvakumar, Pratik Chaudhari, Deep Jariwala"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2606.16896v1 Announce Type: cross \nAbstract: Neural dynamical systems are expressive temporal predictors that capture continuous-time dynamics through fine-grained state updates. However, this sequential structure maps poorly onto digital hardware optimized for dense matrix operations, a mismatch that analog neuromorphic computing, with its native continuous-time dynamics, can resolve. We introduce FerroNDS, a neuromorphic system built from two analog primitives: an integrator for temporal accumulation and an oscillator for frequency-selective filtering. We map this system onto compute-in-memory hardware based on multi-bit ferrodiodes. A 128-neuron instance of FerroNDS computes short-time Fourier transform and forecasts a 500-ms horizon for periodic, quasi-periodic, and chaotic signa",
-      "pdf_link": "https://arxiv.org/pdf/2606.16896.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.16896",
-      "submission_date": "2026-06-16T04:00:00+00:00",
+      "abstract": "arXiv:2606.17327v1 Announce Type: cross \nAbstract: The growing energy demand for computation is becoming increasingly unsustainable. Thermodynamic computing, which harnesses physical thermal fluctuations as a computational resource rather than suppressing them, offers orders-of-magnitude energy savings for probabilistic and combinatorial tasks. Pharmaceutical R&amp;D, heavily reliant on computational optimization and sampling, is a natural application domain. Here we present what is, to our knowledge, the first concrete pharmaceutical application mapped to thermodynamic hardware with energy estimates grounded in prototype measurements. We reduce mRNA codon optimization, a combinatorial problem routinely solved in drug development, to sampling from an Ising model, making it directly executa",
+      "pdf_link": "https://arxiv.org/pdf/2606.17327.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17327",
+      "submission_date": "2026-06-17T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-06-17T03:11:51.301938+00:00"
-    },
-    {
-      "forum_id": "2310.05507",
-      "paper_number": -1,
-      "title": "MEDUSA: Scalable Biometric Sensing in the Wild through Distributed MIMO Radars",
-      "authors": [
-        "Yilong Li, Ramanujan K Sheshadri, Karthik Sundaresan, Eugene Chai, Suman Banerjee"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2310.05507v4 Announce Type: replace \nAbstract: Radar-based techniques for detecting vital signs have shown promise for continuous contactless vital sign sensing and healthcare applications. However, real-world indoor environments face significant challenges for existing vital sign monitoring systems. These include signal blockage in non-line-of-sight (NLOS) situations, movement of human subjects, and alterations in location and orientation. Additionally, these existing systems failed to address the challenge of tracking multiple targets simultaneously. To overcome these challenges, we present MEDUSA, a novel coherent ultra-wideband (UWB) based distributed multiple-input multiple-output (MIMO) radar system, especially it allows users to customize and disperse the $16 \\times 16$ into s",
-      "pdf_link": "https://arxiv.org/pdf/2310.05507.pdf",
-      "forum_link": "https://arxiv.org/abs/2310.05507",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-06-17T03:11:51.301980+00:00"
-    },
-    {
-      "forum_id": "2407.02362",
-      "paper_number": -1,
-      "title": "Mitigating scalability challenges in LUT-based neural networks via pruning optimisations",
-      "authors": [
-        "Xuqi Zhu, Huaizhi Zhang, JunKyu Lee, Jiacheng Zhu, Chandrajit Pal, Sangeet Saha, Klaus D. McDonald-Maier, Xiaojun Zhai"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2407.02362v3 Announce Type: replace \nAbstract: Modern deep neural networks heavily rely on a large number of multiply-accumulate operations, which constitute the predominant computational cost. To address this, Look-Up Table (LUT)-based matrix multiplications have emerged as a promising alternative for reducing the computational cost and time of the multiply-accumulate operations in a neural network. However, the LUT-based neural network still faces the scalability challenge due to the inherent limitations of LUT-based matrix multiplication. To mitigate these scalability limitations, this paper proposes a scalable and energy-efficient LUT-based approximate matrix multiplication unit (LUT-MU) constituting the basic component of the neural networks by integrating a pruning strategy on ",
-      "pdf_link": "https://arxiv.org/pdf/2407.02362.pdf",
-      "forum_link": "https://arxiv.org/abs/2407.02362",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-06-17T03:11:51.302007+00:00"
-    },
-    {
-      "forum_id": "2606.06510",
-      "paper_number": -1,
-      "title": "FP8 is All You Need (Part 1): Debunking Hardware FP64 as the HPC Holy Grail (June 13th version)",
-      "authors": [
-        "Satoshi Matsuoka"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2606.06510v2 Announce Type: replace \nAbstract: Conventional HPC holds that native hardware FP64 is the irreducible foundation of scientific computing. On AI-optimized GPUs of the NVIDIA B300 generation and beyond, native FP64 throughput has collapsed to ~1.3 TFLOPS even as FP8 tensor throughput has grown to multiple PFLOPS. We argue something stronger than that this is survivable: the FP8 tensor-core matrix-multiply is the sole computational primitive on which double-precision scientific computing needs to be built. Every canonical kernel -- dense and sparse linear algebra, spectral transforms, stencils -- and every application composing them reduces, via the Chinese Remainder Theorem-based Ozaki Scheme II, to sequences of FP8 matrix operations; the only non-FP8 arithmetic is a bound",
-      "pdf_link": "https://arxiv.org/pdf/2606.06510.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.06510",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-06-17T03:11:51.302069+00:00"
-    },
-    {
-      "forum_id": "2606.09460",
-      "paper_number": -1,
-      "title": "A 65-nm Privacy-Preserving Neuromorphic Encoder With 7.13-nJ Efficiency, 2.38-Mb/mm^2 Item-Memory Density, and Federated Learning Support",
-      "authors": [
-        "Boyang Cheng, Jianbo Liu, Steven Davis, Zephan M. Enciso, Likai Pei, Xueji Zhao, Muya Chang, Ningyuan Cao"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2606.09460v2 Announce Type: replace \nAbstract: The increasing demand for privacy-preserving personal data analytics in smart assistants, wearable health monitors, and context-aware systems calls for hardware that is both energy-efficient and secure. This work presents a 65-nm privacy-preserving neuromorphic encoder that leverages transistor-level process variation as physically unclonable entropy for hyperdimensional computing. The proposed 2T-2T entropy cell enables compact, device-specific, and write-free item memory, allowing privacy-preserving bio-signal encoding without storing random basis vectors in conventional memory. The fabricated prototype achieves 7.13 nJ per encoding, 2.38 Mb/mm^2 item-memory density, 76.44 nJ per prediction, and 357.32 nJ per training update. It also s",
-      "pdf_link": "https://arxiv.org/pdf/2606.09460.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.09460",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-06-17T03:11:51.302104+00:00"
+      "updated_at": "2026-06-17T11:05:24.895500+00:00"
     }
   ]
 }

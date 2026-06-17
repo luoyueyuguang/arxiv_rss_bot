@@ -1,123 +1,54 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-06-17T03:11:50.198760+00:00",
-  "paper_count": 5,
+  "last_updated": "2026-06-17T11:05:23.674728+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2606.14824",
+      "forum_id": "2606.17249",
       "paper_number": -1,
-      "title": "Running hardware-aware neural architecture search on embedded devices under 512MB of RAM",
+      "title": "From Compression to Deployment: Real-Time and Energy-Efficient FastGRNN on Ultra-Constrained Microcontrollers",
       "authors": [
-        "Andrea Mattia Garavagno, Edoardo Ragusa, Paolo Gastaldo, Antonio Frisoli"
+        "Emre Can Kizilates"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2606.14824v1 Announce Type: new \nAbstract: This document proposes a novel approach to hardware-aware neural architecture search (HW NAS) that considers the resources available on the computing platform running it, enabling its execution on various embedded devices. The presented HW NAS produces tiny convolutional neural networks (CNNs) targeting low-end microcontroller units (MCUs), typically involved in the Internet of Things (IoT) or wearable robotics, opening new use cases. A gateway could run it to tailor CNNs' architecture on the acquired data without using external servers, ensuring privacy. The proposed technique achieves state-of-the-art results in the human-recognition tasks on the Visual Wake Word dataset, a standard TinyML benchmark, on several embedded devices.",
-      "pdf_link": "https://arxiv.org/pdf/2606.14824.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.14824",
-      "submission_date": "2026-06-16T04:00:00+00:00",
+      "abstract": "arXiv:2606.17249v1 Announce Type: new \nAbstract: The dominant trajectory of modern machine learning has been to scale up: larger models, larger accelerators, larger memory budgets. Yet a multi-year global semiconductor supply constraint and the growing energy and carbon cost of always-online inference expose the fragility of this trajectory and motivate the opposite direction: refactoring AI and ML algorithms to fit the small, ubiquitous microcontrollers already in mass production in wearables, sensors, and edge appliances. We present an end-to-end open-source reproduction of FastGRNN, a compact gated recurrent cell, deployed on two bare-metal targets: the 8-bit Arduino (ATmega328P) and the 16-bit MSP430 (no hardware multiplier; 16 KB Flash; 512 B SRAM). Our compression pipeline combines l",
+      "pdf_link": "https://arxiv.org/pdf/2606.17249.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17249",
+      "submission_date": "2026-06-17T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-06-17T03:11:50.196195+00:00"
+      "score": 44.5,
+      "updated_at": "2026-06-17T11:05:23.673451+00:00"
     },
     {
-      "forum_id": "2606.15870",
+      "forum_id": "2606.18122",
       "paper_number": -1,
-      "title": "Google's Training Supercomputers from TPU v2 to Ironwood: Architectural Stability, Scale, Resilience, Power Efficiency, and Sustainability Across Five Generations",
+      "title": "Embedded Machine Learning for Microcontroller-Class Edge Devices: Data, Feature, Evaluation, and Deployment Pipelines",
       "authors": [
-        "Norman P. Jouppi, Sridhar Lakshmanamurthy, Cliff Young, David Patterson"
+        "Mostafa Darvishi"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2606.15870v1 Announce Type: new \nAbstract: This paper (to appear in the July/August 2026 issue of IEEE Micro magazine) summarizes five generations of Google s TPUs, from TPU v2 to Ironwood, highlighting their evolution as scalable, resilient, power-efficient, sustainable supercomputers for AI training. It details the TPU s stable architecture, which has surprisingly easily accommodated the rapidly changing deep neural network workloads, such as the rise of Transformers. Key advancements over eight years include 10x increase in HBM capacity and bandwidth per node, a 100x increase in peak node performance, and a 3600x increase in supercomputer performance. The paper also discusses the role of optical circuit switches, built-in self test, and hardware replay in enhancing resilience and ",
-      "pdf_link": "https://arxiv.org/pdf/2606.15870.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.15870",
-      "submission_date": "2026-06-16T04:00:00+00:00",
+      "abstract": "arXiv:2606.18122v1 Announce Type: cross \nAbstract: Embedded machine learning moves inference from cloud services to resource-constrained devices that must acquire data, preprocess signals, run a model, and act within tight limits on memory, energy, and latency. This paper presents a systems-oriented synthesis of an embedded machine-learning workflow for microcontroller-class platforms. The emphasis is placed on engineering decisions that are often hidden in generic machine-learning introductions: sampling and buffering, feature extraction as dimensionality reduction, validation under class imbalance, model/runtime co-design, and streaming deployment. Two representative signal families are used throughout the paper. The first is inertial motion recognition, where a two-second, three-axis ac",
+      "pdf_link": "https://arxiv.org/pdf/2606.18122.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.18122",
+      "submission_date": "2026-06-17T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 74.0,
-      "updated_at": "2026-06-17T03:11:50.196341+00:00"
-    },
-    {
-      "forum_id": "2606.16190",
-      "paper_number": -1,
-      "title": "Embedded Arena: Iterative Optimization via Hardware Feedback",
-      "authors": [
-        "Zhihan Zhang, Alexander Le Metzger, Jiuyang Lyu, Chun-Cheng Chang, Jiayi Shao, Yujia Liu, Emmanuel Azuh Mensah, Edward Wang, Kurtis Heimerl, Gregory D. Abowd, Shwetak Patel, Natasha Jaques, Vikram Iyer"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2606.16190v1 Announce Type: new \nAbstract: Embedded devices from wildlife monitoring stations to clinical wearables require local AI inference due to latency, communication, or privacy constraints. Optimizing models for heterogeneous microcontrollers (MCUs) requires simultaneously satisfying hard physical constraints on memory, power, and temperature while preserving accuracy, a multidimensional optimization that is today performed manually by experts. We ask whether an LLM agent can autonomously navigate this complex, multi-turn pipeline guided by real hardware feedback, and introduce a hardware-in-the-loop agent arena in which the agent iteratively refines both model and firmware -- compiling, flashing, and measuring on real hardware -- to enable closed-loop optimization. Frontier ",
-      "pdf_link": "https://arxiv.org/pdf/2606.16190.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.16190",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-06-17T03:11:50.196412+00:00"
-    },
-    {
-      "forum_id": "2512.06093",
-      "paper_number": -1,
-      "title": "Compass: Co-Exploration of Mapping and Hardware for Heterogeneous Multi-Chiplet Accelerators Targeting LLM Inference Service Workloads",
-      "authors": [
-        "Boyu Li, Zongwei Zhu, Qianyue Cao, Xi Li, Xuehai Zhou"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2512.06093v3 Announce Type: replace \nAbstract: Large language models (LLMs) bring huge computational demands, which makes multi-chiplet accelerators that can integrate large-scale computing resources a powerful solution. However, existing design space exploration (DSE) efforts for such accelerators primarily focus on traditional CNN/Transformer workloads and fall short in supporting the highly dynamic behavior of real-world LLM inference services. This dynamic nature manifests in two key aspects: 1) Mixed request types: the prefill and decode phases exhibit significantly different computational patterns and are frequently interleaved by modern system-level service schedulers; 2) Variable sequence lengths: the sequence length differences across requests can span several orders of magn",
-      "pdf_link": "https://arxiv.org/pdf/2512.06093.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.06093",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 74.0,
-      "updated_at": "2026-06-17T03:11:50.196706+00:00"
-    },
-    {
-      "forum_id": "2605.19879",
-      "paper_number": -1,
-      "title": "A Hardware-Based Multi-Stage Dynamic Power Management Architecture for Autonomous Low-Light Operation",
-      "authors": [
-        "Charalampos S. Kouzinopoulos, Marcel L. Meli, Martin Schellenberg, Philip J. Poole, Mathieu Bellanger, Matthias Kauer, Julien De Vos, Dimosthenis Ioannidis, Dimitrios Tzovaras"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2605.19879v2 Announce Type: replace \nAbstract: The advance of autonomous Smart Sensor Networks and embedded systems for the Internet of Things, powered by photovoltaic energy harvesting, is severely limited by energy efficiency, especially in low-light environments. While Dynamic Power Management is essential for energy conservation, conventional software-based techniques that rely on processor-managed low-power states incur a persistent quiescent current drain. This current becomes the dominant energy sink in energy-scarce conditions, limiting autonomy. The work of this paper addresses this limitation by introducing a robust, hardware-orchestrated dynamic power management architecture that improves existing configurations for battery-based sensor nodes. The proposed architecture ach",
-      "pdf_link": "https://arxiv.org/pdf/2605.19879.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.19879",
-      "submission_date": "2026-06-16T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 55.0,
-      "updated_at": "2026-06-17T03:11:50.196724+00:00"
+      "score": 12.5,
+      "updated_at": "2026-06-17T11:05:23.673642+00:00"
     }
   ]
 }
