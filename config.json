@@ -22,7 +22,17 @@
         "eBPF", "RDMA", "disaggregated",
         "chiplet", "NoC", "CXL", "HBM", "systolic array",
         "Kernel", "Cluster", "Communication", "Offload",
-        "Hardware", "Accelerator", "Compiler", "Optimization"
+        "Hardware", "Accelerator", "Compiler", "Optimization",
+        "Embodied", "Embodied AI", "Embodied Intelligence",
+        "Robotics", "Robot", "Manipulation", "Navigation",
+        "Sim-to-real", "Simulation",
+        "World Model", "World Models",
+        "Video Generation", "Video Prediction",
+        "Multimodal", "Multi-modal",
+        "Vision-Language", "Vision Language", "VLM",
+        "Image-Text", "Cross-modal", "Cross modal",
+        "Text-to-Image", "Text-to-Video",
+        "Vision Transformer", "Visual Understanding"
     ],
     "exclude_keywords": [
         "survey",
