@@ -9,7 +9,7 @@ You can click this to deploy yours
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/maydomine/arxiv_rss_bot)
 ## 📊 Statistics
 
-- **Last Updated**: 2026-06-16 10:28:51 UTC
+- **Last Updated**: 2026-06-17 03:12:09 UTC
 - **Total Papers Found**: 30
 - **Categories Monitored**: cs.AI, cs.CL, cs.DC, cs.LG, cs.AR
 
@@ -20,7 +20,7 @@ You can click this to deploy yours
 **Authors**: Yaoting Huang, Yifu Yuan, Linqi Han, Chengwen Li, Shuoheng Zhang, Xianze Yao, Hongyao Tang, Yan Zheng, Jianye Hao  
 **Category**: cs.AI  
 **Published**: 2026-06-16  
-**Score**: 112.0  
+**Score**: 114.5  
 **Type**: new  
 **ArXiv ID**: 2606.15753v1  
 
@@ -34,7 +34,7 @@ Embodied reasoning requires models to perceive task-relevant objects and spaces 
 **Authors**: Daniele Mos, Felipe Drummond, Anton Bossenbroek, Soufiane el Khinifri  
 **Category**: cs.LG  
 **Published**: 2026-06-16  
-**Score**: 103.5  
+**Score**: 105.0  
 **Type**: new  
 **ArXiv ID**: 2606.16580v1  
 
@@ -62,7 +62,7 @@ To guarantee service quality in transformer based large language model (LLM) ser
 **Authors**: Jingru Guo, Xiangyuan Xue, Lian Zhang, Wanghan Xu, Siki Chen, Philip Torr, Wanli Ouyang, Lei Bai, Zhenfei Yin  
 **Category**: cs.CL  
 **Published**: 2026-06-16  
-**Score**: 82.5  
+**Score**: 84.0  
 **Type**: new  
 **ArXiv ID**: 2606.15872v1  
 
@@ -146,7 +146,7 @@ Multi-turn conversation is a fundamental scenario in LLM applications, widely us
 **Authors**: Peiyang Xu, Bangzheng Li, Sijia Liu, Karthik R. Narasimhan, Pramod Viswanath, Prateek Mittal, Xingyu Fu  
 **Category**: cs.CL  
 **Published**: 2026-06-16  
-**Score**: 71.5  
+**Score**: 73.0  
 **Type**: new  
 **ArXiv ID**: 2606.17053v1  
 
@@ -197,7 +197,21 @@ In large-model distributed training, especially large language model workloads, 
 
 ---
 
-### 14. [Latent Thought Flow: Efficient Latent Reasoning in Large Language Models](https://arxiv.org/abs/2606.16222)
+### 14. [Visual-Seeker: Towards Visual-Native Multimodal Agentic Search via Active Visual Reasoning](https://arxiv.org/abs/2606.15231)
+
+**Authors**: Zhengbo Zhang, Changtao Miao, Jinbo Su, Zhaowen Zhou, Chunxia Zhang, Xukai Wang, Ruiqi Liu, Kaiyuan Zheng, Jiansheng Cai, Bo Zhang, Zhe Li, Shiming Xiang, Ying Yan  
+**Category**: cs.AI  
+**Published**: 2026-06-16  
+**Score**: 65.5  
+**Type**: new  
+**ArXiv ID**: 2606.15231v1  
+
+#### Abstract
+Multimodal large language models (MLLMs) have demonstrated impressive capabilities in many visual tasks, but they often struggle with factual grounding when confronted with complex, open-world scenarios. While recent multimodal deep search agents attempt to address this issue by utilizing external t...
+
+---
+
+### 15. [Latent Thought Flow: Efficient Latent Reasoning in Large Language Models](https://arxiv.org/abs/2606.16222)
 
 **Authors**: Xiandong Zou, Jing Huang, Jianshu Li, Pan Zhou  
 **Category**: cs.AI  
@@ -211,12 +225,12 @@ Large Language Models (LLMs) increasingly rely on intermediate reasoning, yet ex
 
 ---
 
-### 15. [Diffusion Offline Reinforcement Learning for Fair and Energy-Efficient UAV-Assisted Wireless Networks](https://arxiv.org/abs/2606.16331)
+### 16. [Diffusion Offline Reinforcement Learning for Fair and Energy-Efficient UAV-Assisted Wireless Networks](https://arxiv.org/abs/2606.16331)
 
 **Authors**: Eslam Eldeeb, Hirley Alves  
 **Category**: cs.LG  
 **Published**: 2026-06-16  
-**Score**: 63.5  
+**Score**: 64.5  
 **Type**: new  
 **ArXiv ID**: 2606.16331v1  
 
@@ -225,26 +239,12 @@ The integration of generative artificial intelligence with wireless communicatio
 
 ---
 
-### 16. [Visual-Seeker: Towards Visual-Native Multimodal Agentic Search via Active Visual Reasoning](https://arxiv.org/abs/2606.15231)
-
-**Authors**: Zhengbo Zhang, Changtao Miao, Jinbo Su, Zhaowen Zhou, Chunxia Zhang, Xukai Wang, Ruiqi Liu, Kaiyuan Zheng, Jiansheng Cai, Bo Zhang, Zhe Li, Shiming Xiang, Ying Yan  
-**Category**: cs.AI  
-**Published**: 2026-06-16  
-**Score**: 63.0  
-**Type**: new  
-**ArXiv ID**: 2606.15231v1  
-
-#### Abstract
-Multimodal large language models (MLLMs) have demonstrated impressive capabilities in many visual tasks, but they often struggle with factual grounding when confronted with complex, open-world scenarios. While recent multimodal deep search agents attempt to address this issue by utilizing external t...
-
----
-
 ### 17. [STRIDE: Strategic Trajectory Reasoning via Discriminative Estimation for Verifiable Reinforcement Learning](https://arxiv.org/abs/2606.15866)
 
 **Authors**: Qinjian Zhao, Zhihao Dou, Dinggen Zhang, Xiangyu Li, Chaoda Song, Zhongwei Wan, Xinpeng Li, Yanyan Zhang, Kaijie Chen, Qingtao Pan, Chengcheng Feng, Zhiqiang Gao, Xiaoyu Xia  
 **Category**: cs.AI  
 **Published**: 2026-06-16  
-**Score**: 63.0  
+**Score**: 64.0  
 **Type**: new  
 **ArXiv ID**: 2606.15866v1  
 
@@ -267,7 +267,49 @@ We study inverse reinforcement learning for discrete-time, infinite-horizon mean
 
 ---
 
-### 19. [A Large-Scale Multi-Dimensional Empirical Study of LLMs for Conversation Summarization](https://arxiv.org/abs/2606.15974)
+### 19. [MUNI: Multimodal Unified Latent Diffusion for Coherent Any-to-Any Generation](https://arxiv.org/abs/2606.16408)
+
+**Authors**: Kyeongmin Yeo, Yunhong Min, Minhyuk Sung  
+**Category**: cs.LG  
+**Published**: 2026-06-16  
+**Score**: 57.5  
+**Type**: new  
+**ArXiv ID**: 2606.16408v1  
+
+#### Abstract
+We introduce MUNI, an end-to-end multimodal latent diffusion framework for any-to-any generation that unifies subset-conditioned cross-modal generation and unconditional joint sampling through a shared stochastic latent. Existing multimodal generative models are largely LLM-based, which limits lever...
+
+---
+
+### 20. [Mitigating Visual Hallucinations in Multimodal Systems through Retrieval-Augmented Reliability-Aware Inference](https://arxiv.org/abs/2606.15782)
+
+**Authors**: Pratheswaran Hariharan, Haiping Xu, Donghui Yan  
+**Category**: cs.AI  
+**Published**: 2026-06-16  
+**Score**: 57.0  
+**Type**: new  
+**ArXiv ID**: 2606.15782v1  
+
+#### Abstract
+Multimodal large language models (MLLMs) have demonstrated strong capabilities in vision-language understanding and natural-language response generation. However, these systems can still produce overconfident predictions and hallucination-like outputs, particularly when the visual evidence is weak, ...
+
+---
+
+### 21. [Beyond English: Uncovering the Multilingual Gap in Vision-Language-Action Models](https://arxiv.org/abs/2606.15714)
+
+**Authors**: Hanyang Chen, Hongliang Li, Jiarui Cao, Yang Li, Yang Jiang, Haonan Wen, Kaiyu Huang, Shengnan Guo, Huaiyu Wan  
+**Category**: cs.CL  
+**Published**: 2026-06-16  
+**Score**: 55.5  
+**Type**: new  
+**ArXiv ID**: 2606.15714v1  
+
+#### Abstract
+Vision-Language-Action models have recently demonstrated promising capabilities in learning generalist robot policies from large-scale multimodal data. However, most existing VLA systems are trained and evaluated primarily with English instructions, leaving their ability to understand and execute in...
+
+---
+
+### 22. [A Large-Scale Multi-Dimensional Empirical Study of LLMs for Conversation Summarization](https://arxiv.org/abs/2606.15974)
 
 **Authors**: Weixiao Zhou, Gengyao Li, Xianfu Cheng, Junnan Zhu, Feifei Zhai, Zhoujun Li  
 **Category**: cs.CL  
@@ -281,7 +323,7 @@ Despite the significant advancement of LLMs in conversation summarization, their
 
 ---
 
-### 20. [Exploring Extrinsic and Intrinsic Properties for Effective Reasoning with Code Interpreter](https://arxiv.org/abs/2606.16934)
+### 23. [Exploring Extrinsic and Intrinsic Properties for Effective Reasoning with Code Interpreter](https://arxiv.org/abs/2606.16934)
 
 **Authors**: Patomporn Payoungkhamdee, Napat Laosaengpha, Jenta Wonglertsakul, Pittawat Taveekitworachai, Pume Tuchinda, Panjapong Poobanchuen, Ekapol Chuangsuwanich, Can Udomcharoenchaikit, Samuel Cahyawijaya, Peerat Limkonchotiwat, Sarana Nutanong  
 **Category**: cs.CL  
@@ -295,35 +337,7 @@ Reasoning with a Code Interpreter (CI) has emerged as an effective paradigm for 
 
 ---
 
-### 21. [MUNI: Multimodal Unified Latent Diffusion for Coherent Any-to-Any Generation](https://arxiv.org/abs/2606.16408)
-
-**Authors**: Kyeongmin Yeo, Yunhong Min, Minhyuk Sung  
-**Category**: cs.LG  
-**Published**: 2026-06-16  
-**Score**: 54.0  
-**Type**: new  
-**ArXiv ID**: 2606.16408v1  
-
-#### Abstract
-We introduce MUNI, an end-to-end multimodal latent diffusion framework for any-to-any generation that unifies subset-conditioned cross-modal generation and unconditional joint sampling through a shared stochastic latent. Existing multimodal generative models are largely LLM-based, which limits lever...
-
----
-
-### 22. [Mitigating Visual Hallucinations in Multimodal Systems through Retrieval-Augmented Reliability-Aware Inference](https://arxiv.org/abs/2606.15782)
-
-**Authors**: Pratheswaran Hariharan, Haiping Xu, Donghui Yan  
-**Category**: cs.AI  
-**Published**: 2026-06-16  
-**Score**: 53.5  
-**Type**: new  
-**ArXiv ID**: 2606.15782v1  
-
-#### Abstract
-Multimodal large language models (MLLMs) have demonstrated strong capabilities in vision-language understanding and natural-language response generation. However, these systems can still produce overconfident predictions and hallucination-like outputs, particularly when the visual evidence is weak, ...
-
----
-
-### 23. [DEEPRUBRIC: Evidence-Tree Rubric Supervision for Efficient Reinforcement Learning of Deep Research Agents](https://arxiv.org/abs/2606.17029)
+### 24. [DEEPRUBRIC: Evidence-Tree Rubric Supervision for Efficient Reinforcement Learning of Deep Research Agents](https://arxiv.org/abs/2606.17029)
 
 **Authors**: Minghang Zhu, Chuyang Wei, Junhao Xu, Yilin Cheng, Zhumin Chen, Jiyan He  
 **Category**: cs.CL  
@@ -337,7 +351,7 @@ Deep research agents synthesize long-form reports by searching and reasoning ove
 
 ---
 
-### 24. [VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models](https://arxiv.org/abs/2606.16140)
+### 25. [VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models](https://arxiv.org/abs/2606.16140)
 
 **Authors**: Sen Xu, Shixi Liu, Wei Wang, Jixin Min, Yingwei Dai, Zhibin Yin, Yirong Chen, Xin Zhou, Junlin Zhang  
 **Category**: cs.AI  
@@ -351,7 +365,7 @@ This technical report introduces VibeThinker-3B, a compact dense model with 3B p
 
 ---
 
-### 25. [GRACE: Step-Level Benchmark for Faithful Reasoning over Context](https://arxiv.org/abs/2606.16151)
+### 26. [GRACE: Step-Level Benchmark for Faithful Reasoning over Context](https://arxiv.org/abs/2606.16151)
 
 **Authors**: Hoang Pham, Dong Le, Anh Tuan Luu  
 **Category**: cs.CL  
@@ -365,7 +379,21 @@ Many reasoning tasks require models to reason over input context, from document-
 
 ---
 
-### 26. [Recurrent Reasoning on Symbolic Puzzles with Sequence Models](https://arxiv.org/abs/2606.15686)
+### 27. [How Post-Training Shapes Biological Reasoning Models](https://arxiv.org/abs/2606.16517)
+
+**Authors**: Lukas Fesser, Hanlin Zhang, Michelle M. Li, Eric Wang, Bryan Perozzi, Shekoofeh Azizi, Sham M. Kakade, Marinka Zitnik  
+**Category**: cs.LG  
+**Published**: 2026-06-16  
+**Score**: 52.5  
+**Type**: new  
+**ArXiv ID**: 2606.16517v1  
+
+#### Abstract
+Scientific reasoning models for biology combine language models with foundation models trained on multimodal biological data, including DNA, RNA, and proteins. These models are built through post-training, yet how each stage shapes reasoning and generalization remains poorly understood. We study whe...
+
+---
+
+### 28. [Recurrent Reasoning on Symbolic Puzzles with Sequence Models](https://arxiv.org/abs/2606.15686)
 
 **Authors**: Gowrav Mannem, Chowdhury Marzia Mahjabin, Jason Chen, Shivank Garg, Kevin Zhu  
 **Category**: cs.AI  
@@ -379,7 +407,7 @@ Large language models often appear strong on symbolic and algorithmic tasks, yet
 
 ---
 
-### 27. [Adaptive and Explicit safe: Triggering Latent Safety Awareness in Large Reasoning Models](https://arxiv.org/abs/2606.16808)
+### 29. [Adaptive and Explicit safe: Triggering Latent Safety Awareness in Large Reasoning Models](https://arxiv.org/abs/2606.16808)
 
 **Authors**: Ke Miao, Jiaxin Li, Hongliang Chen, Yuke Hu, Zhan Qin  
 **Category**: cs.AI  
@@ -393,21 +421,7 @@ While Large Reasoning Models (LRMs) excel at complex tasks, they remain highly v
 
 ---
 
-### 28. [How Post-Training Shapes Biological Reasoning Models](https://arxiv.org/abs/2606.16517)
-
-**Authors**: Lukas Fesser, Hanlin Zhang, Michelle M. Li, Eric Wang, Bryan Perozzi, Shekoofeh Azizi, Sham M. Kakade, Marinka Zitnik  
-**Category**: cs.LG  
-**Published**: 2026-06-16  
-**Score**: 51.5  
-**Type**: new  
-**ArXiv ID**: 2606.16517v1  
-
-#### Abstract
-Scientific reasoning models for biology combine language models with foundation models trained on multimodal biological data, including DNA, RNA, and proteins. These models are built through post-training, yet how each stage shapes reasoning and generalization remains poorly understood. We study whe...
-
----
-
-### 29. [Stop When Further Reasoning Won't Help: Attention-State Adaptive Generation in Reasoning Models](https://arxiv.org/abs/2606.15070)
+### 30. [Stop When Further Reasoning Won't Help: Attention-State Adaptive Generation in Reasoning Models](https://arxiv.org/abs/2606.15070)
 
 **Authors**: Jiakai Li, Ke Qin, Rongzheng Wang, Yizhuo Ma, Qizhi Chen, Muquan Li, Shuang Liang  
 **Category**: cs.CL  
@@ -421,24 +435,10 @@ By incorporating test-time compute scaling, large reasoning models (LRMs) can so
 
 ---
 
-### 30. [Beyond English: Uncovering the Multilingual Gap in Vision-Language-Action Models](https://arxiv.org/abs/2606.15714)
-
-**Authors**: Hanyang Chen, Hongliang Li, Jiarui Cao, Yang Li, Yang Jiang, Haonan Wen, Kaiyu Huang, Shengnan Guo, Huaiyu Wan  
-**Category**: cs.CL  
-**Published**: 2026-06-16  
-**Score**: 51.0  
-**Type**: new  
-**ArXiv ID**: 2606.15714v1  
-
-#### Abstract
-Vision-Language-Action models have recently demonstrated promising capabilities in learning generalist robot policies from large-scale multimodal data. However, most existing VLA systems are trained and evaluated primarily with English instructions, leaving their ability to understand and execute in...
-
----
-
 ## 🔧 Configuration
 
 This bot is configured to look for papers containing the following keywords:
-- LLM, Inference, Training, kv cache, Speculative decoding, Prefill, Decode, FlashAttention, PagedAttention, continuous batching, MOE, mixture of experts, Quantization, FP8, FP4, Parallel, Distributed, Pipeline, Sparse, Sparse Attention, State Space, SSM, Throughput, Scalable, Efficient, vLLM, SGLang, DeepSpeed, FSDP, AI compiler, TVM, Triton, MLIR, torch.compile, kernel fusion, polyhedral, RISC-V, RVV, XiangShan, custom instruction, eBPF, RDMA, disaggregated, chiplet, NoC, CXL, HBM, systolic array, Kernel, Cluster, Communication, Offload, Hardware, Accelerator, Compiler, Optimization
+- LLM, Inference, Training, kv cache, Speculative decoding, Prefill, Decode, FlashAttention, PagedAttention, continuous batching, MOE, mixture of experts, Quantization, FP8, FP4, Parallel, Distributed, Pipeline, Sparse, Sparse Attention, State Space, SSM, Throughput, Scalable, Efficient, vLLM, SGLang, DeepSpeed, FSDP, AI compiler, TVM, Triton, MLIR, torch.compile, kernel fusion, polyhedral, RISC-V, RVV, XiangShan, custom instruction, eBPF, RDMA, disaggregated, chiplet, NoC, CXL, HBM, systolic array, Kernel, Cluster, Communication, Offload, Hardware, Accelerator, Compiler, Optimization, Embodied, Embodied AI, Embodied Intelligence, Robotics, Robot, Manipulation, Navigation, Sim-to-real, Simulation, World Model, World Models, Video Generation, Video Prediction, Multimodal, Multi-modal, Vision-Language, Vision Language, VLM, Image-Text, Cross-modal, Cross modal, Text-to-Image, Text-to-Video, Vision Transformer, Visual Understanding
 
 ## 📅 Schedule
 
