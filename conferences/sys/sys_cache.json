@@ -1,54 +1,77 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-06-17T11:05:24.799983+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-06-18T10:27:09.099891+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2606.17111",
+      "forum_id": "2606.18900",
       "paper_number": -1,
-      "title": "Fractional Verkle Trees: A Hypertree Decomposition and Verified Proof Serialization Architecture for High-Performance Blockchain State Accumulators",
+      "title": "Compressed-Resident Genomics: Full-Pipeline Device-Resident GPU LZ77 Decode with Position-Invariant Random Access",
       "authors": [
-        "Ekleen Kaur, Everton Fraga"
+        "Yakiv Shavidze"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2606.17111v1 Announce Type: cross \nAbstract: Modern blockchain state management faces a critical scalability bottleneck: maintaining cryptographic commitments over hundreds of millions of entries becomes computationally prohibitive. Ethereum's transition to Verkle Trees: polynomial commitment accumulators reducing proof sizes from O(width * depth) to O(depth) via constant-size IPA vector commitments, is a critical step toward stateless operation. Yet, current implementations exhibit pathological characteristics that burden home validators.\n  We identify four inefficiencies in the reference go-verkle implementation \\cite{kaur2025goverkle, kaur2025goethereum}: (1) phantom node creation during non-existent account deletion; (2) 64-byte database keys triggering excessive LSM-tree compact",
-      "pdf_link": "https://arxiv.org/pdf/2606.17111.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.17111",
-      "submission_date": "2026-06-17T04:00:00+00:00",
+      "abstract": "arXiv:2606.18900v1 Announce Type: new \nAbstract: Genomic archives grow faster than decompression keeps up: the European Nucleotide Archive holds tens of petabytes of fastq.gz, and gzip is fundamentally sequential. GPU decompressors (nvCOMP DEFLATE at ~50GB/s on A100) decode whole files with no random access; CPU genomic tools (CRAM, samtools) support region seeks but only at CPU speed. We extend ACEAPEX, an absolute-offset parallel LZ77 codec included in the official lzbench 2.3 release, with three contributions absent from our prior work. First, a full device-resident GPU decode pipeline (entropy and match resolution both on-device) reaching up to 260GB/s on FASTQ, closing the match-phase-only gap of the earlier paper. Second, position-invariant random access with a compact coordinate ind",
+      "pdf_link": "https://arxiv.org/pdf/2606.18900.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.18900",
+      "submission_date": "2026-06-18T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 41.0,
-      "updated_at": "2026-06-17T11:05:24.488206+00:00"
+      "score": 24.0,
+      "updated_at": "2026-06-18T10:27:08.853424+00:00"
     },
     {
-      "forum_id": "2606.18220",
+      "forum_id": "2606.19004",
       "paper_number": -1,
-      "title": "Gatling: Rapid-Fire Consensus from Parallel Composition",
+      "title": "Spotlight: Synergizing Seed Exploration and Spot GPUs for DiT RL Post-Training",
       "authors": [
-        "Giulia Scaffino, Max Resnick, Joachim Neu"
+        "Ruiqi Lai, Dakai An, Wei Gao, Ju Huang, Siran Yang, Jiamang Wang, Lin Qu, Dmitrii Ustiugov, Wei Wang"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2606.18220v1 Announce Type: cross \nAbstract: Consensus protocols form the core of blockchains and other replicated state machines, ensuring that all correct nodes process the same totally ordered log of input transactions. In fault-free executions, performance is driven by the good-case transaction latency -- the time between a transaction becoming known to all nodes and its confirmation by the consensus protocol -- which depends on both how frequently proposals are made and, once made, how quickly they are confirmed. While prior work has established tight lower bounds on confirmation latency that modern protocols already achieve, it remains open whether the inter-proposal time can be further reduced below the state-of-the-art of one network delay.\n  We introduce Gatling, an atomic b",
-      "pdf_link": "https://arxiv.org/pdf/2606.18220.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.18220",
-      "submission_date": "2026-06-17T04:00:00+00:00",
+      "abstract": "arXiv:2606.19004v1 Announce Type: new \nAbstract: Reinforcement learning (RL) post-training of Diffusion Transformers (DiTs) is prohibitively expensive, requiring thousands of high-end GPUs. Existing works explore two directions to reduce cost: seed exploration improves training convergence by selecting high-contrast samples, yet adds compute to the critical path; spot GPUs offer 69--77\\% lower cost, yet sit idle during training because DiT rollouts finish nearly simultaneously, which prevents LLM-style pipelining of rollout with training. Spot preemptions further break Sequence Parallelism (SP) groups, fragmenting GPU topology.\n  We present Spotlight, the first system that harvests spot GPUs for DiT RL post-training. Spotlight rests on two key insights we devise: (1)~we show that explorati",
+      "pdf_link": "https://arxiv.org/pdf/2606.19004.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.19004",
+      "submission_date": "2026-06-18T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 46.0,
-      "updated_at": "2026-06-17T11:05:24.488391+00:00"
+      "score": 54.0,
+      "updated_at": "2026-06-18T10:27:08.853664+00:00"
+    },
+    {
+      "forum_id": "2606.19059",
+      "paper_number": -1,
+      "title": "A performance portable fast Ewald summation for Stokes flow",
+      "authors": [
+        "Gabriel Kosmacher, Ziyu Du, Joar Bagge, George Biros"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2606.19059v1 Announce Type: cross \nAbstract: We present GPU algorithms for Ewald summation methods for accelerating N-body Stokes flow problems in periodic domains. Like most N-body codes, Ewald sums use a near-field/far-field decomposition. The near field involves particle-to-particle (P2P) interactions. The far field primarily involves particle-to-grid (P2G) and grid-to-particle (G2P) interactions, as well as Fast Fourier Transforms. For each interaction, we investigate several algorithmic variants. Our implementation uses PyKokkos, a Python interface for the Kokkos C++ parallel programming framework, which supports portability to AMD/NVIDIA GPU and ARM/x86 CPU architectures. Double and single-precision numerical results, alongside analytical performance models, confirm the efficie",
+      "pdf_link": "https://arxiv.org/pdf/2606.19059.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.19059",
+      "submission_date": "2026-06-18T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-06-18T10:27:08.854043+00:00"
     }
   ]
 }

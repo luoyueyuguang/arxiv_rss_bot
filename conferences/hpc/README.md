@@ -1,23 +1,20 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-06-17 11:05:24 UTC
-- **Total Filtered Papers**: 12
-- **Displaying**: 12 (arXiv: 12, OpenReview: 0)
+- **Last Updated**: 2026-06-18 10:27:08 UTC
+- **Total Filtered Papers**: 9
+- **Displaying**: 9 (arXiv: 9, OpenReview: 0)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [RouteBalance: Fused Model Routing and Load Balancing for Heterogeneous LLM Serving](https://arxiv.org/abs/2606.17949) | `ARXIV` | 86.0 |
-| 2 | [Prefill/Decode-Aware Evaluation of LLM Inference on Emerging AI Accelerators](https://arxiv.org/abs/2606.17104) | `ARXIV` | 43.5 |
-| 3 | [An O(K)-Approximation Coflow Scheduling in K-Core Optical Circuit Switching Networks](https://arxiv.org/abs/2604.22146) | `ARXIV` | 27.0 |
-| 4 | [LUMEN: Coordinated Failure Recovery for Distributed LLM Serving](https://arxiv.org/abs/2606.17787) | `ARXIV` | 24.5 |
-| 5 | [The Price of Anarchy in Disaggregated Inference](https://arxiv.org/abs/2606.17081) | `ARXIV` | 22.0 |
-| 6 | [When the Next Step Is Not One Step: Distribution-Aware Execution Modeling for Concurrent Go Programs](https://arxiv.org/abs/2606.17508) | `ARXIV` | 21.0 |
-| 7 | [Is RISC-V Ready for Massively Parallel Astrophysical Codes?](https://arxiv.org/abs/2606.15490) | `ARXIV` | 14.5 |
-| 8 | [ITME: Inference Tiered Memory Expansion with Disaggregated CXL-Hybrid Memories](https://arxiv.org/abs/2606.12556) | `ARXIV` | 12.0 |
-| 9 | [Towards Distributed Inference of LLMs on a P2P Network](https://arxiv.org/abs/2606.17059) | `ARXIV` | 4.0 |
-| 10 | [Local Fault Repair of Perfect Resource Placements in Eisenstein--Jacobi Networks](https://arxiv.org/abs/2606.17288) | `ARXIV` | 1.5 |
-| 11 | [Fractional Verkle Trees: A Hypertree Decomposition and Verified Proof Serialization Architecture for High-Performance Blockchain State Accumulators](https://arxiv.org/abs/2606.17111) | `ARXIV` | 1.5 |
-| 12 | [Vulcan: Instance-specialized, Verifiable Systems Heuristics Through LLM-driven Search](https://arxiv.org/abs/2512.25065) | `ARXIV` | 1.0 |
+| 1 | [ShuntServe: Cost-Efficient LLM Serving on Heterogeneous Spot GPU Clusters](https://arxiv.org/abs/2606.18600) | `ARXIV` | 64.5 |
+| 2 | [Compressed-Resident Genomics: Full-Pipeline Device-Resident GPU LZ77 Decode with Position-Invariant Random Access](https://arxiv.org/abs/2606.18900) | `ARXIV` | 32.5 |
+| 3 | [Pulse: Training Acceleration for Large Diffusion Models with Automatic Pipeline Parallelism](https://arxiv.org/abs/2606.19163) | `ARXIV` | 27.0 |
+| 4 | [Towards a future space-based, highly scalable AI infrastructure system design](https://arxiv.org/abs/2511.19468) | `ARXIV` | 25.5 |
+| 5 | [Beyond Prediction: Tail-Aware Scheduling for LLM Inference](https://arxiv.org/abs/2606.18431) | `ARXIV` | 12.5 |
+| 6 | [Automated Byzantine-Resilient Clustered Decentralized Federated Learning for Battery Intelligence in Connected EVs](https://arxiv.org/abs/2605.21115) | `ARXIV` | 12.5 |
+| 7 | [TurboServe: Serving Streaming Video Generation Efficiently and Economically](https://arxiv.org/abs/2606.19271) | `ARXIV` | 11.0 |
+| 8 | [Scheduling Coflows in Multi-Core OCS Networks with Performance Guarantee](https://arxiv.org/abs/2604.08242) | `ARXIV` | 7.5 |
+| 9 | [LiveStack: OS Support for Cluster-Scale Full-Stack Live Simulation](https://arxiv.org/abs/2606.18958) | `ARXIV` | 4.5 |

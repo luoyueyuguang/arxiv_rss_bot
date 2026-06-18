@@ -1,123 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-06-17T11:05:24.896552+00:00",
-  "paper_count": 5,
+  "last_updated": "2026-06-18T10:27:09.156371+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2606.17081",
+      "forum_id": "2512.12850",
       "paper_number": -1,
-      "title": "The Price of Anarchy in Disaggregated Inference",
+      "title": "KANEL\\'E: Kolmogorov-Arnold Networks for Efficient LUT-based Evaluation",
       "authors": [
-        "Athos Georgiou (NCA)"
+        "Duc Hoang, Aarush Gupta, Philip Harris"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "FPGA"
       ],
-      "abstract": "arXiv:2606.17081v1 Announce Type: new \nAbstract: Disaggregated inference architectures physically separate prefill and decode phases onto distinct GPU pools, creating competing \"agents\" that share a fixed hardware budget. We provide, to our knowledge, the first formal game-theoretic analysis of this architecture, using NVIDIA Dynamo as a concrete case study. We model disaggregated serving as three coupled games: a two-player resource game between prefill and decode pools, a selfish caching game over the hierarchical KV cache, and a congestion game with positive externalities for request routing. We empirically validate the latter two; the P/D resource game is treated analytically (Section 9.2). We characterize how GPU saturation induces regime transitions that shift the game's payoff struc",
-      "pdf_link": "https://arxiv.org/pdf/2606.17081.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.17081",
-      "submission_date": "2026-06-17T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-06-17T11:05:24.895243+00:00"
-    },
-    {
-      "forum_id": "2606.17253",
-      "paper_number": -1,
-      "title": "PDAGENT-BENCH: Characterizing, Grounding, and Architecting LLM Agents for VLSI Physical Design",
-      "authors": [
-        "Qiufeng Li, Rongqian Chen, Quan Cheng, Chengxuan Wang, Sizhe Tang, Wuxi Li, Duo Ding, Chia-Tung Ho, Haoxing Ren, David Z. Pan, Tian Lan, Weidong Cao"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2606.17253v1 Announce Type: new \nAbstract: Large Language Models and vision-language models have shown remarkable success in the front-end design of Very Large-Scale Integrated Circuits, yet their capabilities for VLSI physical design remain significantly underexplored. The primary cause is the lack of standardized benchmarks for evaluating agentic physical design workflows that require high-dimensional, multi-stage optimization under strict design constraints, coordinated interaction with diverse Electronic Design Automation tools, and iterative refinement. This work introduces PDAGENT-BENCH, a comprehensive and multi-dimensional benchmark for evaluating LLM/VLM-based agents across the physical design stack. PDAGENT-BENCH integrates both task-level assessment and workflow-level exec",
-      "pdf_link": "https://arxiv.org/pdf/2606.17253.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.17253",
-      "submission_date": "2026-06-17T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-06-17T11:05:24.895364+00:00"
-    },
-    {
-      "forum_id": "2606.17850",
-      "paper_number": -1,
-      "title": "CUTh-Solver: GPU-Accelerated Sparse Matrix Solver for High-Resolution Thermal Simulation of 3D ICs",
-      "authors": [
-        "Chenghan Wang, Zhen Zhuang, Shui Jiang, Siyuan Liang, Xiaoman Yang, Kai Zhu, Darong Huang, Luis Costero, Rongmei Chen, Tsung-Wei Huang, David Atienza, Tsung-Yi Ho"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2606.17850v1 Announce Type: new \nAbstract: Coarse-grained thermal simulation tends to underestimate localized thermal issues, potentially missing critical hotspots. Accurate analysis, therefore, demands fine-grained information, which dramatically increases grid resolution and thus computational workload. Fortunately, the coefficient matrices are often sparse with regular sparsity patterns, offering optimization opportunities. However, existing general-purpose matrix solvers on GPUs rarely exploit these domain-specific properties, thereby encountering bottlenecks in data storage, memory access, parallelism, computational efficiency, and hardware utilization. Therefore, we propose CUTh-Solver, a co-designed GPU-accelerated Preconditioned Conjugate Gradient (PCG)-based sparse solver fr",
-      "pdf_link": "https://arxiv.org/pdf/2606.17850.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.17850",
-      "submission_date": "2026-06-17T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 34.5,
-      "updated_at": "2026-06-17T11:05:24.895435+00:00"
-    },
-    {
-      "forum_id": "2606.18131",
-      "paper_number": -1,
-      "title": "ComPart: Community-Guided Post-Coarsening for High-Quality Hypergraph Partitioning",
-      "authors": [
-        "Yugao Zhu, Zhicheng Guo, Yuchao Wu, Mengming Li, Jing Wang, Zhiyao Xie"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2606.18131v1 Announce Type: new \nAbstract: Hypergraph partitioning is a critical step in the design of complex embedded systems, essential for optimizing task mapping on heterogeneous MPSoCs and enabling multi-FPGA prototyping. Many existing methods rely on community detection to identify modules with dense internal and sparse external connections, typically utilizing them to constrain the coarsening phase--a widely adopted paradigm. In this work, we propose ComPart, a generalized framework that integrates diverse community detection methods to uncover high-quality clusterings throughout the post-coarsening stages (i.e., initial partitioning and uncoarsening). These discovered clusterings serve as distinct structural guides, enabling the refinement process to identify superior partit",
-      "pdf_link": "https://arxiv.org/pdf/2606.18131.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.18131",
-      "submission_date": "2026-06-17T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2512.12850v3 Announce Type: replace \nAbstract: Low-latency, resource-efficient neural network inference on FPGAs is essential for applications demanding real-time capability and low power. Lookup table (LUT)-based neural networks are a common solution, combining strong representational power with efficient FPGA implementation. In this work, we introduce KANEL\\'E, a framework that exploits the unique properties of Kolmogorov-Arnold Networks (KANs) for FPGA deployment. Unlike traditional multilayer perceptrons (MLPs), KANs employ learnable one-dimensional splines with fixed domains as edge activations, a structure naturally suited to discretization and efficient LUT mapping. We present the first systematic design flow for implementing KANs on FPGAs, co-optimizing training with quantiza",
+      "pdf_link": "https://arxiv.org/pdf/2512.12850.pdf",
+      "forum_link": "https://arxiv.org/abs/2512.12850",
+      "submission_date": "2026-06-18T04:00:00+00:00",
+      "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 3.0,
-      "updated_at": "2026-06-17T11:05:24.895480+00:00"
+      "updated_at": "2026-06-18T10:27:09.155310+00:00"
     },
     {
-      "forum_id": "2606.17327",
+      "forum_id": "2602.02056",
       "paper_number": -1,
-      "title": "Energy-efficient codon optimization on thermodynamic hardware",
+      "title": "Ultrafast On-chip Online Learning via Spline Locality in Kolmogorov-Arnold Networks",
       "authors": [
-        "Andraz Jelincic, Ross C. Walker"
+        "Duc Hoang, Aarush Gupta, Philip Harris"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2606.17327v1 Announce Type: cross \nAbstract: The growing energy demand for computation is becoming increasingly unsustainable. Thermodynamic computing, which harnesses physical thermal fluctuations as a computational resource rather than suppressing them, offers orders-of-magnitude energy savings for probabilistic and combinatorial tasks. Pharmaceutical R&amp;D, heavily reliant on computational optimization and sampling, is a natural application domain. Here we present what is, to our knowledge, the first concrete pharmaceutical application mapped to thermodynamic hardware with energy estimates grounded in prototype measurements. We reduce mRNA codon optimization, a combinatorial problem routinely solved in drug development, to sampling from an Ising model, making it directly executa",
-      "pdf_link": "https://arxiv.org/pdf/2606.17327.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.17327",
-      "submission_date": "2026-06-17T04:00:00+00:00",
+      "abstract": "arXiv:2602.02056v3 Announce Type: replace \nAbstract: Ultrafast online learning is essential for high-frequency systems, such as controls for quantum computing and nuclear fusion, where adaptation must occur on sub-microsecond timescales. Meeting these requirements demands low-latency, fixed-precision computation under strict memory constraints, a regime in which conventional Multi-Layer Perceptrons (MLPs) are both inefficient and numerically unstable. We identify key properties of Kolmogorov-Arnold Networks (KANs) that align with these constraints. Specifically, we show that: (i) KAN updates exploiting B-spline locality are sparse, enabling superior on-chip resource scaling, and (ii) KANs are inherently robust to fixed-point quantization. By implementing fixed-point online training on Fiel",
+      "pdf_link": "https://arxiv.org/pdf/2602.02056.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.02056",
+      "submission_date": "2026-06-18T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-06-17T11:05:24.895500+00:00"
+      "updated_at": "2026-06-18T10:27:09.155330+00:00"
+    },
+    {
+      "forum_id": "2606.09946",
+      "paper_number": -1,
+      "title": "SPARX: Secure and Privacy-Aware Approximate CNN Acceleration with Edge RISC-V SoC",
+      "authors": [
+        "Sonu Kumar, Akash Sankhe, Mukul Lokhande, Santosh Kumar Vishvakarma"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2606.09946v2 Announce Type: replace \nAbstract: Edge-AI systems increasingly require real-time CNN inference under strict energy, performance, security, and privacy constraints. Approximate computing improves hardware efficiency by exploiting the error resilience of neural network workloads; however, most approximate CNN accelerators do not jointly consider secure, privacy-aware edge deployment. This paper presents SPARX, a Secure and Privacy-Aware Approximate CNN Acceleration framework integrated within a heterogeneous RV32IMC RISC-V System-on-Chip (SoC). SPARX combines a custom RISC-V instruction extension, an approximate logarithmic CNN acceleration unit, a lightweight differential-noise-based privacy engine, and a challenge-response authentication mechanism. To guide arithmetic se",
+      "pdf_link": "https://arxiv.org/pdf/2606.09946.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.09946",
+      "submission_date": "2026-06-18T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-18T10:27:09.155354+00:00"
     }
   ]
 }

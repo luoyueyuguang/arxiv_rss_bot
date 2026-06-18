@@ -1,54 +1,77 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-06-17T11:05:23.674728+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-06-18T10:27:08.170143+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2606.17249",
+      "forum_id": "2606.18402",
       "paper_number": -1,
-      "title": "From Compression to Deployment: Real-Time and Energy-Efficient FastGRNN on Ultra-Constrained Microcontrollers",
+      "title": "Deep-Learning-Based Pixelated Microwave Filter Design and Characterization using Electro-Optical Electric-Field Measurements",
       "authors": [
-        "Emre Can Kizilates"
+        "Han Zhou, Richard Bannister, Caspar Pierce, Haojie Chang, David Widen, Ludvig Fornstedt, Gabriel Melin, Alexander Bohlin, Pontus Lindeberg Fredriksson, Dilbagh Singh, Christian Fager, Koen Buisman"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2606.17249v1 Announce Type: new \nAbstract: The dominant trajectory of modern machine learning has been to scale up: larger models, larger accelerators, larger memory budgets. Yet a multi-year global semiconductor supply constraint and the growing energy and carbon cost of always-online inference expose the fragility of this trajectory and motivate the opposite direction: refactoring AI and ML algorithms to fit the small, ubiquitous microcontrollers already in mass production in wearables, sensors, and edge appliances. We present an end-to-end open-source reproduction of FastGRNN, a compact gated recurrent cell, deployed on two bare-metal targets: the 8-bit Arduino (ATmega328P) and the 16-bit MSP430 (no hardware multiplier; 16 KB Flash; 512 B SRAM). Our compression pipeline combines l",
-      "pdf_link": "https://arxiv.org/pdf/2606.17249.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.17249",
-      "submission_date": "2026-06-17T04:00:00+00:00",
+      "abstract": "arXiv:2606.18402v1 Announce Type: cross \nAbstract: Traditional microwave filter design typically relies on iterative parameter tuning and predefined topologies, which limits design space and increases development time. This study uses a deep learning approach combining convolutional neural networks with genetic algorithms to automate pixelated microwave filter synthesis. To validate the approach experimentally, both S-parameter and spatial electric-field measurements were analyzed. The synthesized low-pass filter demonstrated excellent agreement between simulated and measured performance, achieving a 7 GHz passband with over 20 dB suppression beyond 9.5 GHz. Electro-optical measurements, for the first time, revealed electric field patterns that resemble coupled transmission-lines or stub s",
+      "pdf_link": "https://arxiv.org/pdf/2606.18402.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.18402",
+      "submission_date": "2026-06-18T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 44.5,
-      "updated_at": "2026-06-17T11:05:23.673451+00:00"
+      "score": 11.0,
+      "updated_at": "2026-06-18T10:27:08.168589+00:00"
     },
     {
-      "forum_id": "2606.18122",
+      "forum_id": "2606.18978",
       "paper_number": -1,
-      "title": "Embedded Machine Learning for Microcontroller-Class Edge Devices: Data, Feature, Evaluation, and Deployment Pipelines",
+      "title": "Nanoscale memristive devices: Threats and solutions",
       "authors": [
-        "Mostafa Darvishi"
+        "Amir M. Hajisadeghi, Javad Talafy, Hamid R. Zarandi"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2606.18122v1 Announce Type: cross \nAbstract: Embedded machine learning moves inference from cloud services to resource-constrained devices that must acquire data, preprocess signals, run a model, and act within tight limits on memory, energy, and latency. This paper presents a systems-oriented synthesis of an embedded machine-learning workflow for microcontroller-class platforms. The emphasis is placed on engineering decisions that are often hidden in generic machine-learning introductions: sampling and buffering, feature extraction as dimensionality reduction, validation under class imbalance, model/runtime co-design, and streaming deployment. Two representative signal families are used throughout the paper. The first is inertial motion recognition, where a two-second, three-axis ac",
-      "pdf_link": "https://arxiv.org/pdf/2606.18122.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.18122",
-      "submission_date": "2026-06-17T04:00:00+00:00",
+      "abstract": "arXiv:2606.18978v1 Announce Type: cross \nAbstract: Due to their incentivizing features, memristors are a promising candidate for replacing CMOS-based memories, which are faced with various functional challenges in deep submicron process technologies. Memristors are nonvolatile, have low leakage, and are dense in comparison to CMOS-based memories like SRAM. In this regard, resistive RAM (ReRAM) and spin-transfer-torque RAM (STT-RAM) memristors are distinguished among other memristor-based memory technologies, due to their superiority in process maturity and metrics such as memory operation energy, memory latency, and area. Hence, this chapter focuses on these two memristor-based memory technologies. Despite the good features of these types of memory, they suffer from some reliability threat",
+      "pdf_link": "https://arxiv.org/pdf/2606.18978.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.18978",
+      "submission_date": "2026-06-18T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-06-17T11:05:23.673642+00:00"
+      "score": 23.0,
+      "updated_at": "2026-06-18T10:27:08.168612+00:00"
+    },
+    {
+      "forum_id": "2602.02056",
+      "paper_number": -1,
+      "title": "Ultrafast On-chip Online Learning via Spline Locality in Kolmogorov-Arnold Networks",
+      "authors": [
+        "Duc Hoang, Aarush Gupta, Philip Harris"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2602.02056v3 Announce Type: replace \nAbstract: Ultrafast online learning is essential for high-frequency systems, such as controls for quantum computing and nuclear fusion, where adaptation must occur on sub-microsecond timescales. Meeting these requirements demands low-latency, fixed-precision computation under strict memory constraints, a regime in which conventional Multi-Layer Perceptrons (MLPs) are both inefficient and numerically unstable. We identify key properties of Kolmogorov-Arnold Networks (KANs) that align with these constraints. Specifically, we show that: (i) KAN updates exploiting B-spline locality are sparse, enabling superior on-chip resource scaling, and (ii) KANs are inherently robust to fixed-point quantization. By implementing fixed-point online training on Fiel",
+      "pdf_link": "https://arxiv.org/pdf/2602.02056.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.02056",
+      "submission_date": "2026-06-18T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-06-18T10:27:08.168672+00:00"
     }
   ]
 }

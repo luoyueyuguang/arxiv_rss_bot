@@ -1,13 +1,14 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-06-17 11:05:23 UTC
-- **Total Filtered Papers**: 2
-- **Displaying**: 2 (arXiv: 2, OpenReview: 0)
+- **Last Updated**: 2026-06-18 10:27:08 UTC
+- **Total Filtered Papers**: 3
+- **Displaying**: 3 (arXiv: 3, OpenReview: 0)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [From Compression to Deployment: Real-Time and Energy-Efficient FastGRNN on Ultra-Constrained Microcontrollers](https://arxiv.org/abs/2606.17249) | `ARXIV` | 44.5 |
-| 2 | [Embedded Machine Learning for Microcontroller-Class Edge Devices: Data, Feature, Evaluation, and Deployment Pipelines](https://arxiv.org/abs/2606.18122) | `ARXIV` | 12.5 |
+| 1 | [Nanoscale memristive devices: Threats and solutions](https://arxiv.org/abs/2606.18978) | `ARXIV` | 23.0 |
+| 2 | [Deep-Learning-Based Pixelated Microwave Filter Design and Characterization using Electro-Optical Electric-Field Measurements](https://arxiv.org/abs/2606.18402) | `ARXIV` | 11.0 |
+| 3 | [Ultrafast On-chip Online Learning via Spline Locality in Kolmogorov-Arnold Networks](https://arxiv.org/abs/2602.02056) | `ARXIV` | 1.0 |
