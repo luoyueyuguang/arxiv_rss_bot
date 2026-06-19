@@ -1,215 +1,100 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-06-18T10:27:08.728042+00:00",
-  "paper_count": 9,
+  "last_updated": "2026-06-19T10:45:19.890466+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2606.18600",
+      "forum_id": "2606.19746",
       "paper_number": -1,
-      "title": "ShuntServe: Cost-Efficient LLM Serving on Heterogeneous Spot GPU Clusters",
+      "title": "SAC: Disaggregated KV Cache System for Sparse Attention LLMs with CXL",
       "authors": [
-        "Seungwoo Jeong, Moohyun Song, Juhyun Park, Kyungyong Lee"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2606.18600v1 Announce Type: new \nAbstract: As large language model (LLM) services become widely adopted, the cost of GPU resources for serving these models in cloud environments has emerged as a critical concern. Spot instances offer up to 90% cost savings over on-demand instances, but their frequent interruptions and limited availability pose significant challenges for continuous LLM serving. GPU spot instances, in particular, exhibit lower and more volatile availability than CPU-based instances, making homogeneous clusters that depend on a single GPU type vulnerable to correlated failures. Heterogeneous clusters spanning multiple GPU types can address this by leveraging complementary availability patterns across diverse spot pools, yet existing LLM serving systems are designed for ",
-      "pdf_link": "https://arxiv.org/pdf/2606.18600.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.18600",
-      "submission_date": "2026-06-18T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 64.5,
-      "updated_at": "2026-06-18T10:27:08.238691+00:00"
-    },
-    {
-      "forum_id": "2606.18900",
-      "paper_number": -1,
-      "title": "Compressed-Resident Genomics: Full-Pipeline Device-Resident GPU LZ77 Decode with Position-Invariant Random Access",
-      "authors": [
-        "Yakiv Shavidze"
+        "Ruiyang Ma, Teng Ma, Junru Li, Hantian Zha, Xuchun Shang, Qingda Hu, Zheng Liu, Xinjun Yang, Tao Ma, Guojie Luo"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2606.18900v1 Announce Type: new \nAbstract: Genomic archives grow faster than decompression keeps up: the European Nucleotide Archive holds tens of petabytes of fastq.gz, and gzip is fundamentally sequential. GPU decompressors (nvCOMP DEFLATE at ~50GB/s on A100) decode whole files with no random access; CPU genomic tools (CRAM, samtools) support region seeks but only at CPU speed. We extend ACEAPEX, an absolute-offset parallel LZ77 codec included in the official lzbench 2.3 release, with three contributions absent from our prior work. First, a full device-resident GPU decode pipeline (entropy and match resolution both on-device) reaching up to 260GB/s on FASTQ, closing the match-phase-only gap of the earlier paper. Second, position-invariant random access with a compact coordinate ind",
-      "pdf_link": "https://arxiv.org/pdf/2606.18900.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.18900",
-      "submission_date": "2026-06-18T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-06-18T10:27:08.238841+00:00"
-    },
-    {
-      "forum_id": "2606.18958",
-      "paper_number": -1,
-      "title": "LiveStack: OS Support for Cluster-Scale Full-Stack Live Simulation",
-      "authors": [
-        "Yiliang Wan, Haifeng Sun, Yihan Yang, Jonas Kaufmann, Antoine Kaufmann, Jialin Li"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2606.18958v1 Announce Type: new \nAbstract: Cluster-scale full-stack simulation is essential for evaluating distributed software stacks and emerging hardware components before deployment. Such simulation must achieve both full-stack fidelity for the unmodified production stack and the simulation performance required for iterative configuration exploration. However, no existing method achieves both. We present LiveStack, an OS-level approach to cluster-scale full-stack simulation built on top of the Linux virtualization stack. LiveStack comprises four subsystems: simulation-oriented scheduling, live memory hierarchy management, simulation-aware IPC, and distributed simulation orchestration. Together, they coordinate live and modeled components under shared simulated time while controll",
-      "pdf_link": "https://arxiv.org/pdf/2606.18958.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.18958",
-      "submission_date": "2026-06-18T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.5,
-      "updated_at": "2026-06-18T10:27:08.238888+00:00"
-    },
-    {
-      "forum_id": "2606.19163",
-      "paper_number": -1,
-      "title": "Pulse: Training Acceleration for Large Diffusion Models with Automatic Pipeline Parallelism",
-      "authors": [
-        "Boran Sun, Guoyong Jiang, Lin Zhang, Chen Chen, Yuechen Tao, Zhishu Che, Jieling Yu, Shan Chang, Huaxi Gu, Fangming Liu, Bo Li"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2606.19163v1 Announce Type: new \nAbstract: Diffusion models are now a dominant approach for high-fidelity image and video generation, yet scaling their training across GPU clusters remains challenging. Unlike transformer-only architectures, diffusion backbones commonly adopt UNet-style encoder-decoder structures with heterogeneous layers and long-range skip connections. Under conventional pipeline parallelism, these non-local dependencies force large skip activations and their gradients to traverse multiple pipeline boundaries, making peer-to-peer (P2P) communication a dominant bottleneck and substantially reducing pipeline efficiency. In this paper, we present PULSE, an automatic pipeline-parallel training strategy that makes skip locality a first-class optimization objective. PULSE",
-      "pdf_link": "https://arxiv.org/pdf/2606.19163.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.19163",
-      "submission_date": "2026-06-18T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 27.0,
-      "updated_at": "2026-06-18T10:27:08.238989+00:00"
-    },
-    {
-      "forum_id": "2606.19271",
-      "paper_number": -1,
-      "title": "TurboServe: Serving Streaming Video Generation Efficiently and Economically",
-      "authors": [
-        "Youhe Jiang, Haoxu Wang, Haotong Bao, Kai Jiang, Jianfei Chen, Jun Zhu, Fangcheng Fu, Jintao Zhang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2606.19271v1 Announce Type: new \nAbstract: Streaming video generation is emerging as a new serving workload in which users interact with long-lived sessions that generate video progressively, chunk by chunk. Unlike offline video generation or typical LLM serving, streaming video generation must preserve session state across active and idle periods, repeatedly schedule ongoing sessions, and deliver each chunk under a tight latency target. This creates two key serving challenges in multi-user, multi-GPU environments: session duration heterogeneity, where long-running sessions make placement decisions suboptimal over time, and temporal user-demand heterogeneity, where the number of active sessions fluctuates sharply across bursts and idle periods.\n  We present TurboServe, the first serv",
-      "pdf_link": "https://arxiv.org/pdf/2606.19271.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.19271",
-      "submission_date": "2026-06-18T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-06-18T10:27:08.239023+00:00"
-    },
-    {
-      "forum_id": "2606.18431",
-      "paper_number": -1,
-      "title": "Beyond Prediction: Tail-Aware Scheduling for LLM Inference",
-      "authors": [
-        "Yueying Li, Yuanfan Chen, Jiayang Chen, Esha Choukse, Haoran Qiu, G. Edward Suh, Rodrigo Fonseca, Ziv Scully, Udit Gupta"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.18431v1 Announce Type: cross \nAbstract: LLM serving exhibits extreme length variability, making size-based scheduling difficult in practice. Recent LLM schedulers approximate SJF/SRPT using predicted decode lengths or ranks and primarily report mean-centric metrics such as TTFT and TBT. We show that these prediction-driven policies can be fragile under distribution shifts, bursty arrivals, and GPU memory pressure, while offering limited control over the tail latency (P90-P99) that dominates user experience, even with perfect decode-length knowledge. We introduce a distribution-aware, prediction-free scheduling framework that replaces explicit length prediction with soft priority boosting driven by lightweight statistical signals. Our design co-optimizes scheduling and cache-awar",
-      "pdf_link": "https://arxiv.org/pdf/2606.18431.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.18431",
-      "submission_date": "2026-06-18T04:00:00+00:00",
+      "abstract": "arXiv:2606.19746v1 Announce Type: new \nAbstract: The scaling of LLMs toward long-context inference has shifted the primary serving system bottleneck from computation to memory capacity. Traditional solutions for dense attention models rely on RDMA-based disaggregated memory pools, which perform coarse-grained fetching of the entire prefix KV cache from remote storage to local memory before decoding. However, this approach is fundamentally inefficient for emerging sparse attention models. While only a small fraction of KV entries are active during decoding, these systems still fetch the full KV cache locally, leading to severe transmission bottlenecks and local memory wastage. To address this, we propose SAC, the first efficient disaggregated KV cache system optimized for sparse attention m",
+      "pdf_link": "https://arxiv.org/pdf/2606.19746.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.19746",
+      "submission_date": "2026-06-19T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 12.5,
-      "updated_at": "2026-06-18T10:27:08.239111+00:00"
+      "updated_at": "2026-06-19T10:45:19.234592+00:00"
     },
     {
-      "forum_id": "2511.19468",
+      "forum_id": "2606.20374",
       "paper_number": -1,
-      "title": "Towards a future space-based, highly scalable AI infrastructure system design",
+      "title": "ARGUS: Production-Scale Tracing and Performance Diagnosis for over 10,000-GPU Clusters",
       "authors": [
-        "Blaise Ag\\\"uera y Arcas, Travis Beals, Maria Biggs, Jessica V. Bloom, Thomas Fischbacher, Konstantin Gromov, Urs K\\\"oster, Rishiraj Pravahan, James Manyika"
+        "Jiasheng Zhou, Longbin Zeng, Clavis Chen, Ruiming Lu, Qinwei Yang, Leyi Ye, Ray Ying, Key Zhang"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2511.19468v2 Announce Type: replace \nAbstract: If AI is a foundational general-purpose technology, we should anticipate that demand for AI compute -- and energy -- will continue to grow. The Sun is by far the largest energy source in our solar system, and thus it warrants consideration how future AI infrastructure could most efficiently tap into that power. This work explores a scalable compute system for machine learning in space, using fleets of satellites equipped with solar arrays, inter-satellite links using free-space optics, and Google tensor processing unit (TPU) accelerator chips. To facilitate high-bandwidth, low-latency inter-satellite communication, the satellites would be flown in close proximity. We illustrate the basic approach to formation flight via an 81-satellite c",
-      "pdf_link": "https://arxiv.org/pdf/2511.19468.pdf",
-      "forum_link": "https://arxiv.org/abs/2511.19468",
-      "submission_date": "2026-06-18T04:00:00+00:00",
+      "abstract": "arXiv:2606.20374v1 Announce Type: new \nAbstract: Large-scale LLM training requires always-on, fine-grained observability for effective performance diagnosis at scale. Coarse resource monitors alone cannot localize root causes, and fine-grained profilers incur prohibitive (5%-30%) overheads and massive trace volumes, making always-on deployment impractical in large production clusters.\n  We propose ARGUS, a low-overhead, fine-grained, always-on tracing and real-time analysis system for training workloads in 10,000+ GPU-scale production clusters. ARGUS decomposes observation along the training call hierarchy into CPU call stacks, framework semantics, and GPU kernel execution, with always-on collection under a combined overhead of less than 2%. It builds a unified data pipeline and compresses",
+      "pdf_link": "https://arxiv.org/pdf/2606.20374.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.20374",
+      "submission_date": "2026-06-19T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 25.5,
-      "updated_at": "2026-06-18T10:27:08.239227+00:00"
+      "score": 34.5,
+      "updated_at": "2026-06-19T10:45:19.234741+00:00"
     },
     {
-      "forum_id": "2604.08242",
+      "forum_id": "2606.19576",
       "paper_number": -1,
-      "title": "Scheduling Coflows in Multi-Core OCS Networks with Performance Guarantee",
+      "title": "REMOP: REmote-Memory-aware OPerator Optimization",
       "authors": [
-        "Xin Wang, Hong Shen, Hui Tian, Dong Wang"
+        "Shiquan Zhang, Yunhao Mao, Yuqiu Zhang, Gengrui Zhang, Jeyhun Karimov, Hans-Arno Jacobsen"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2604.08242v2 Announce Type: replace \nAbstract: Coflow provides a key application-layer abstraction for capturing communication patterns, enabling the efficient coordination of parallel data flows to reduce job completion times in distributed systems. Modern data center networks (DCNs) are employing multiple independent optical circuit switching (OCS) cores operating concurrently to meet the massive bandwidth demands of application jobs. However, existing coflow scheduling research primarily focuses on the single-core setting, with multi-core fabrics only for EPS (electrical packet switching) networks.\n  To address this gap, this paper studies the coflow scheduling problem in multi-core OCS networks under the \\textit{not-all-stop} reconfiguration model in which one circuit's reconfigu",
-      "pdf_link": "https://arxiv.org/pdf/2604.08242.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.08242",
-      "submission_date": "2026-06-18T04:00:00+00:00",
+      "abstract": "arXiv:2606.19576v1 Announce Type: cross \nAbstract: Remote and disaggregated memory tiers expand the effective memory capacity of analytical database engines, but they also reshape the cost structure of out-of-memory query processing. When an operator spills beyond local DRAM, moving pages to remote memory incurs both data-transfer time and a fixed round-trip latency per transfer. Classical operator analyses and buffer-allocation heuristics primarily target disk spilling by minimizing total I/O volume. Under remote memory, these strategies can be suboptimal because they may trigger excessive transfer rounds. We present REMOP, a remote-memory-aware operator optimization framework that uses transfer-round-aware intra-operator memory policies to improve out-of-memory execution under tight memo",
+      "pdf_link": "https://arxiv.org/pdf/2606.19576.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.19576",
+      "submission_date": "2026-06-19T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 7.5,
-      "updated_at": "2026-06-18T10:27:08.239250+00:00"
+      "score": 21.0,
+      "updated_at": "2026-06-19T10:45:19.234783+00:00"
     },
     {
-      "forum_id": "2605.21115",
+      "forum_id": "2606.16106",
       "paper_number": -1,
-      "title": "Automated Byzantine-Resilient Clustered Decentralized Federated Learning for Battery Intelligence in Connected EVs",
+      "title": "Edge-Inference Governors Need Memory-Clock State",
       "authors": [
-        "Mouhamed Amine Bouchiha, Abdelaziz Amara Korba, Yacine Ghamri-Doudane"
+        "Jaehoon Kang"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2605.21115v2 Announce Type: replace \nAbstract: Federated learning (FL) has emerged as a promising paradigm for managing electric vehicle (EV) battery data in intelligent transportation systems (ITS), enabling privacy-preserving tasks such as anomaly detection and capacity estimation. However, most existing frameworks rely on centralized aggregation schemes, which pose critical limitations in terms of security and trust. To address these challenges, we propose ABC-DFL, an automated Byzantine-resilient clustered decentralized federated learning (C-DFL) framework for connected EVs. The proposed incentive-driven C-DFL system replaces the central server with an open-permissioned blockchain, featuring a new dynamic Quorum Byzantine Fault Tolerance (QBFT) protocol and an oracle-based aggreg",
-      "pdf_link": "https://arxiv.org/pdf/2605.21115.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.21115",
-      "submission_date": "2026-06-18T04:00:00+00:00",
+      "abstract": "arXiv:2606.16106v2 Announce Type: replace-cross \nAbstract: Frequency-aware latency estimators let deadline-aware DVFS governors schedule edge ML inference by modeling latency over CPU and GPU clocks, but they cannot observe the memory clock (EMC) -- a missing deployment state that decides whether a governor meets its deadlines and at what energy. We show this with a deployed, measured governor on a Jetson Orin NX: an EMC-blind GPU-only fit misses 25-28% of cycles at tight deadlines, whereas an EMC-aware refit holds misses to at most 1.3% under a 2% QoS miss budget by selecting a budget-feasible clock -- the energy-minimal one for periodic vision (calibrated module-rail power). The failure generalizes across three workload classes -- MobileNetV2, a ViT transformer, and Qwen2.5 LLM token dec",
+      "pdf_link": "https://arxiv.org/pdf/2606.16106.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16106",
+      "submission_date": "2026-06-19T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-06-18T10:27:08.239278+00:00"
+      "score": 13.0,
+      "updated_at": "2026-06-19T10:45:19.235049+00:00"
     }
   ]
 }

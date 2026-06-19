@@ -1,77 +1,100 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-06-18T10:27:09.099891+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-06-19T10:45:20.421488+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2606.18900",
+      "forum_id": "2606.19989",
       "paper_number": -1,
-      "title": "Compressed-Resident Genomics: Full-Pipeline Device-Resident GPU LZ77 Decode with Position-Invariant Random Access",
+      "title": "Online Dynamic Batching with Formal Guarantees for LLM Training",
       "authors": [
-        "Yakiv Shavidze"
+        "Dian Li, Zekun Wang, Yaoru Wang, Jiahong Yan"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2606.18900v1 Announce Type: new \nAbstract: Genomic archives grow faster than decompression keeps up: the European Nucleotide Archive holds tens of petabytes of fastq.gz, and gzip is fundamentally sequential. GPU decompressors (nvCOMP DEFLATE at ~50GB/s on A100) decode whole files with no random access; CPU genomic tools (CRAM, samtools) support region seeks but only at CPU speed. We extend ACEAPEX, an absolute-offset parallel LZ77 codec included in the official lzbench 2.3 release, with three contributions absent from our prior work. First, a full device-resident GPU decode pipeline (entropy and match resolution both on-device) reaching up to 260GB/s on FASTQ, closing the match-phase-only gap of the earlier paper. Second, position-invariant random access with a compact coordinate ind",
-      "pdf_link": "https://arxiv.org/pdf/2606.18900.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.18900",
-      "submission_date": "2026-06-18T04:00:00+00:00",
+      "abstract": "arXiv:2606.19989v1 Announce Type: new \nAbstract: Modern LLM training breaks a core assumption behind offline batch samplers: the true training cost of a sample is only observable after preprocessing, augmentation, templating, tokenization, and multimodal visual-token expansion. Unless one pays for a preprocessing- and augmentation-dependent length cache, batch construction is therefore blind to the quantity that determines padding, memory use, and GPU saturation. We introduce Online Dynamic Batching (ODB), a DataLoader-side drop-in system that moves batch formation to this point of accurate observability while preserving DDP step alignment. We formalize this synchronization requirement as the Distributed Group Alignment Problem and prove deadlock-free bounded termination with default join-",
+      "pdf_link": "https://arxiv.org/pdf/2606.19989.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.19989",
+      "submission_date": "2026-06-19T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 24.0,
-      "updated_at": "2026-06-18T10:27:08.853424+00:00"
+      "score": 95.0,
+      "updated_at": "2026-06-19T10:45:20.063834+00:00"
     },
     {
-      "forum_id": "2606.19004",
+      "forum_id": "2606.19969",
       "paper_number": -1,
-      "title": "Spotlight: Synergizing Seed Exploration and Spot GPUs for DiT RL Post-Training",
+      "title": "The Bi-Channel Networking Paradigm for Database Systems in the Cloud",
       "authors": [
-        "Ruiqi Lai, Dakai An, Wei Gao, Ju Huang, Siran Yang, Jiamang Wang, Lin Qu, Dmitrii Ustiugov, Wei Wang"
+        "Georg Kreuzmayr, Muhammad El-Hindi, Benjamin Wagner, Tobias Ziegler, Viktor Leis"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2606.19004v1 Announce Type: new \nAbstract: Reinforcement learning (RL) post-training of Diffusion Transformers (DiTs) is prohibitively expensive, requiring thousands of high-end GPUs. Existing works explore two directions to reduce cost: seed exploration improves training convergence by selecting high-contrast samples, yet adds compute to the critical path; spot GPUs offer 69--77\\% lower cost, yet sit idle during training because DiT rollouts finish nearly simultaneously, which prevents LLM-style pipelining of rollout with training. Spot preemptions further break Sequence Parallelism (SP) groups, fragmenting GPU topology.\n  We present Spotlight, the first system that harvests spot GPUs for DiT RL post-training. Spotlight rests on two key insights we devise: (1)~we show that explorati",
-      "pdf_link": "https://arxiv.org/pdf/2606.19004.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.19004",
-      "submission_date": "2026-06-18T04:00:00+00:00",
+      "abstract": "arXiv:2606.19969v1 Announce Type: cross \nAbstract: When network links were slow, cloud and distributed database systems could rely on generic kernel abstractions and treat network communication as a black box. With today's fast cloud networks, this approach breaks down: database performance becomes limited by the CPU overhead of the kernel TCP stack. Replacing TCP with user-space UDP can reduce this overhead, but it requires reimplementing essential guarantees, such as reliability and ordering. To solve this conundrum, database systems should no longer treat networking as a black box but co-design it with database operations. We propose the bi-channel paradigm for database systems, which separates communication into two channels: A high-performance data path for latency- and bandwidth-sens",
+      "pdf_link": "https://arxiv.org/pdf/2606.19969.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.19969",
+      "submission_date": "2026-06-19T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 54.0,
-      "updated_at": "2026-06-18T10:27:08.853664+00:00"
+      "score": 49.5,
+      "updated_at": "2026-06-19T10:45:20.064004+00:00"
     },
     {
-      "forum_id": "2606.19059",
+      "forum_id": "2507.19712",
       "paper_number": -1,
-      "title": "A performance portable fast Ewald summation for Stokes flow",
+      "title": "Oranits: Mission Assignment and Task Offloading in Open RAN-based ITS using Metaheuristic and Deep Reinforcement Learning",
       "authors": [
-        "Gabriel Kosmacher, Ziyu Du, Joar Bagge, George Biros"
+        "Ngoc Hung Nguyen, Nguyen Van Thieu, Quang-Trung Luu, Anh Tuan Nguyen, Senura Wanasekara, Nguyen Cong Luong, Fatemeh Kavehmadavani, Van-Dinh Nguyen"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2606.19059v1 Announce Type: cross \nAbstract: We present GPU algorithms for Ewald summation methods for accelerating N-body Stokes flow problems in periodic domains. Like most N-body codes, Ewald sums use a near-field/far-field decomposition. The near field involves particle-to-particle (P2P) interactions. The far field primarily involves particle-to-grid (P2G) and grid-to-particle (G2P) interactions, as well as Fast Fourier Transforms. For each interaction, we investigate several algorithmic variants. Our implementation uses PyKokkos, a Python interface for the Kokkos C++ parallel programming framework, which supports portability to AMD/NVIDIA GPU and ARM/x86 CPU architectures. Double and single-precision numerical results, alongside analytical performance models, confirm the efficie",
-      "pdf_link": "https://arxiv.org/pdf/2606.19059.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.19059",
-      "submission_date": "2026-06-18T04:00:00+00:00",
+      "abstract": "arXiv:2507.19712v3 Announce Type: replace \nAbstract: In this paper, we explore mission assignment and task offloading in an Open Radio Access Network (Open RAN)-based intelligent transportation system (ITS), where autonomous vehicles leverage mobile edge computing for efficient processing. Existing studies often overlook the intricate interdependencies between missions and the costs associated with offloading tasks to edge servers, leading to suboptimal decision-making. To bridge this gap, we introduce Oranits, a novel system model that explicitly accounts for mission dependencies and offloading costs while optimizing performance through vehicle cooperation. To achieve this, we propose a twofold optimization approach. First, we develop a metaheuristic-based evolutionary computing algorithm",
+      "pdf_link": "https://arxiv.org/pdf/2507.19712.pdf",
+      "forum_link": "https://arxiv.org/abs/2507.19712",
+      "submission_date": "2026-06-19T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-06-18T10:27:08.854043+00:00"
+      "score": 14.0,
+      "updated_at": "2026-06-19T10:45:20.064283+00:00"
+    },
+    {
+      "forum_id": "2606.01183",
+      "paper_number": -1,
+      "title": "The World's Fastest Matching Engine Algorithm",
+      "authors": [
+        "Jake Yoon"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2606.01183v4 Announce Type: replace \nAbstract: A single CPU core sustains 32 million order messages per second at sub-microsecond median end-to-end host-path response latency, 4.7-11 times faster than the best available open-source matching engines on identical hardware. Scaled out, a single 96-core commodity server (~$1,630/month) sustains ~640 million messages per second across 10,000 symbols, over 20 times the provisioned capacity of the U.S. consolidated quote feed. We reach these numbers by attacking the storage layer that sets matching latency. The dominant order-book implementation, linked lists chained through a balanced tree, imposes two costs on every operation: pointer-chased traversal to the insertion point, and root-to-leaf search to locate the target price level. Under ",
+      "pdf_link": "https://arxiv.org/pdf/2606.01183.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.01183",
+      "submission_date": "2026-06-19T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 32.0,
+      "updated_at": "2026-06-19T10:45:20.064356+00:00"
     }
   ]
 }

@@ -1,77 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-06-18T10:27:08.170143+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-06-19T10:45:19.141913+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2606.18402",
+      "forum_id": "2606.19964",
       "paper_number": -1,
-      "title": "Deep-Learning-Based Pixelated Microwave Filter Design and Characterization using Electro-Optical Electric-Field Measurements",
+      "title": "Low-Energy Reduced RISC-V Instruction Subset Processor for Tsetlin Machine Inference at the Edge",
       "authors": [
-        "Han Zhou, Richard Bannister, Caspar Pierce, Haojie Chang, David Widen, Ludvig Fornstedt, Gabriel Melin, Alexander Bohlin, Pontus Lindeberg Fredriksson, Dilbagh Singh, Christian Fager, Koen Buisman"
+        "Chanda Gupta, Sanidhya Bhatia, Shaurya Priyadarshi, Himani Panwar, Rishad Shafik, Sudip Roy"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2606.18402v1 Announce Type: cross \nAbstract: Traditional microwave filter design typically relies on iterative parameter tuning and predefined topologies, which limits design space and increases development time. This study uses a deep learning approach combining convolutional neural networks with genetic algorithms to automate pixelated microwave filter synthesis. To validate the approach experimentally, both S-parameter and spatial electric-field measurements were analyzed. The synthesized low-pass filter demonstrated excellent agreement between simulated and measured performance, achieving a 7 GHz passband with over 20 dB suppression beyond 9.5 GHz. Electro-optical measurements, for the first time, revealed electric field patterns that resemble coupled transmission-lines or stub s",
-      "pdf_link": "https://arxiv.org/pdf/2606.18402.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.18402",
-      "submission_date": "2026-06-18T04:00:00+00:00",
+      "abstract": "arXiv:2606.19964v1 Announce Type: cross \nAbstract: Tsetlin Machine (TM) is a logic-based machine learning approach that relies on simple bitwise operations and finite-state automata, which makes it attractive for edge AI deployments. Recent work has focused on co-processor and accelerator designs based on Tsetlin Machines (TMs). Although these designs achieve high performance, they typically depend on tightly coupled interfaces, microcode-style programming, and external host processors, limiting flexibility and ease of programming. In this work, we present a domain-specific RISC-V microprocessor architecture and design flow tailored for TM inference. Leveraging the modular structure of RISC-V, we design a reduced instruction subset processor that retains programmability while targeting imp",
+      "pdf_link": "https://arxiv.org/pdf/2606.19964.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.19964",
+      "submission_date": "2026-06-19T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-06-18T10:27:08.168589+00:00"
-    },
-    {
-      "forum_id": "2606.18978",
-      "paper_number": -1,
-      "title": "Nanoscale memristive devices: Threats and solutions",
-      "authors": [
-        "Amir M. Hajisadeghi, Javad Talafy, Hamid R. Zarandi"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2606.18978v1 Announce Type: cross \nAbstract: Due to their incentivizing features, memristors are a promising candidate for replacing CMOS-based memories, which are faced with various functional challenges in deep submicron process technologies. Memristors are nonvolatile, have low leakage, and are dense in comparison to CMOS-based memories like SRAM. In this regard, resistive RAM (ReRAM) and spin-transfer-torque RAM (STT-RAM) memristors are distinguished among other memristor-based memory technologies, due to their superiority in process maturity and metrics such as memory operation energy, memory latency, and area. Hence, this chapter focuses on these two memristor-based memory technologies. Despite the good features of these types of memory, they suffer from some reliability threat",
-      "pdf_link": "https://arxiv.org/pdf/2606.18978.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.18978",
-      "submission_date": "2026-06-18T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 23.0,
-      "updated_at": "2026-06-18T10:27:08.168612+00:00"
-    },
-    {
-      "forum_id": "2602.02056",
-      "paper_number": -1,
-      "title": "Ultrafast On-chip Online Learning via Spline Locality in Kolmogorov-Arnold Networks",
-      "authors": [
-        "Duc Hoang, Aarush Gupta, Philip Harris"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2602.02056v3 Announce Type: replace \nAbstract: Ultrafast online learning is essential for high-frequency systems, such as controls for quantum computing and nuclear fusion, where adaptation must occur on sub-microsecond timescales. Meeting these requirements demands low-latency, fixed-precision computation under strict memory constraints, a regime in which conventional Multi-Layer Perceptrons (MLPs) are both inefficient and numerically unstable. We identify key properties of Kolmogorov-Arnold Networks (KANs) that align with these constraints. Specifically, we show that: (i) KAN updates exploiting B-spline locality are sparse, enabling superior on-chip resource scaling, and (ii) KANs are inherently robust to fixed-point quantization. By implementing fixed-point online training on Fiel",
-      "pdf_link": "https://arxiv.org/pdf/2602.02056.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.02056",
-      "submission_date": "2026-06-18T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-06-18T10:27:08.168672+00:00"
+      "score": 89.5,
+      "updated_at": "2026-06-19T10:45:19.141119+00:00"
     }
   ]
 }

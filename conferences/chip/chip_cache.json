@@ -1,77 +1,100 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-06-18T10:27:09.156371+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-06-19T10:45:20.518052+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2512.12850",
+      "forum_id": "2606.19533",
       "paper_number": -1,
-      "title": "KANEL\\'E: Kolmogorov-Arnold Networks for Efficient LUT-based Evaluation",
+      "title": "A Tool for the Synthesis of Adaptive Probabilistic Processors Based on the Ising Model",
       "authors": [
-        "Duc Hoang, Aarush Gupta, Philip Harris"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2512.12850v3 Announce Type: replace \nAbstract: Low-latency, resource-efficient neural network inference on FPGAs is essential for applications demanding real-time capability and low power. Lookup table (LUT)-based neural networks are a common solution, combining strong representational power with efficient FPGA implementation. In this work, we introduce KANEL\\'E, a framework that exploits the unique properties of Kolmogorov-Arnold Networks (KANs) for FPGA deployment. Unlike traditional multilayer perceptrons (MLPs), KANs employ learnable one-dimensional splines with fixed domains as edge activations, a structure naturally suited to discretization and efficient LUT mapping. We present the first systematic design flow for implementing KANs on FPGAs, co-optimizing training with quantiza",
-      "pdf_link": "https://arxiv.org/pdf/2512.12850.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.12850",
-      "submission_date": "2026-06-18T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-06-18T10:27:09.155310+00:00"
-    },
-    {
-      "forum_id": "2602.02056",
-      "paper_number": -1,
-      "title": "Ultrafast On-chip Online Learning via Spline Locality in Kolmogorov-Arnold Networks",
-      "authors": [
-        "Duc Hoang, Aarush Gupta, Philip Harris"
+        "Jonathan Juracy Carneiro da Silva, Leonardo R. Gobatto, Jose Rodrigo Azambuja"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2602.02056v3 Announce Type: replace \nAbstract: Ultrafast online learning is essential for high-frequency systems, such as controls for quantum computing and nuclear fusion, where adaptation must occur on sub-microsecond timescales. Meeting these requirements demands low-latency, fixed-precision computation under strict memory constraints, a regime in which conventional Multi-Layer Perceptrons (MLPs) are both inefficient and numerically unstable. We identify key properties of Kolmogorov-Arnold Networks (KANs) that align with these constraints. Specifically, we show that: (i) KAN updates exploiting B-spline locality are sparse, enabling superior on-chip resource scaling, and (ii) KANs are inherently robust to fixed-point quantization. By implementing fixed-point online training on Fiel",
-      "pdf_link": "https://arxiv.org/pdf/2602.02056.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.02056",
-      "submission_date": "2026-06-18T04:00:00+00:00",
+      "abstract": "arXiv:2606.19533v1 Announce Type: new \nAbstract: This work presents a tool for the synthesis and simulation of probabilistic architectures for solving combinatorial optimization problems by mapping them to the Ising model. The proposed approach automatically constructs the Ising Hamiltonian and determines the number of probabilistic elements (p-bits) based on problem characteristics such as size and topology. Furthermore, the tool introduces an adaptive strategy for selecting the most suitable update algorithm among Gibbs Sampling, Simulated Annealing (SA), Simulated Quantum Annealing (SQA), and cluster-based methods. Experimental results using benchmark problems demonstrate improved convergence behavior and flexibility compared to fixed approaches. The proposed framework enables systemati",
+      "pdf_link": "https://arxiv.org/pdf/2606.19533.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.19533",
+      "submission_date": "2026-06-19T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-06-18T10:27:09.155330+00:00"
+      "updated_at": "2026-06-19T10:45:20.516886+00:00"
     },
     {
-      "forum_id": "2606.09946",
+      "forum_id": "2606.19913",
       "paper_number": -1,
-      "title": "SPARX: Secure and Privacy-Aware Approximate CNN Acceleration with Edge RISC-V SoC",
+      "title": "Design and Evaluation of Energy-Efficient Whisper Dot-Product Kernel Offloading on a CGLA Architecture",
       "authors": [
-        "Sonu Kumar, Akash Sankhe, Mukul Lokhande, Santosh Kumar Vishvakarma"
+        "Takuto Ando, Yu Eto, Ayumu Takeuchi, Yasuhiko Nakashima"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2606.19913v1 Announce Type: new \nAbstract: In this paper, we implement and evaluate Whisper dot-product kernel offloading on IMAX, a programmable Coarse-Grained Linear Arrays (CGLAs) architecture. Whisper-tiny.en profiling on an ARM Cortex-A72 shows that dot-product operations account for 90.6% of FP16 execution time and 87.1% of Q8_0 execution time. To address this kernel bottleneck, we combine kernel mapping, local-memory sizing, and burst scheduling. The implementation uses inline FP16-to-FP32 conversion, 2-way SIMD FMA on a 64-bit datapath, column-wise multithreading, and mixed execution in which aligned vector segments run on IMAX and residual segments run concurrently on the host CPU. We evaluate the design with an FPGA prototype and a 28nm ASIC projection at 840MHz. For Whispe",
+      "pdf_link": "https://arxiv.org/pdf/2606.19913.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.19913",
+      "submission_date": "2026-06-19T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-06-19T10:45:20.516919+00:00"
+    },
+    {
+      "forum_id": "2305.04122",
+      "paper_number": -1,
+      "title": "Performance Analysis of Digital Processing-in-Memory through a Case Study on Convolutional-Neural-Network Acceleration",
+      "authors": [
+        "Orian Leitersdorf, Ronny Ronen, Shahar Kvatinsky"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2606.09946v2 Announce Type: replace \nAbstract: Edge-AI systems increasingly require real-time CNN inference under strict energy, performance, security, and privacy constraints. Approximate computing improves hardware efficiency by exploiting the error resilience of neural network workloads; however, most approximate CNN accelerators do not jointly consider secure, privacy-aware edge deployment. This paper presents SPARX, a Secure and Privacy-Aware Approximate CNN Acceleration framework integrated within a heterogeneous RV32IMC RISC-V System-on-Chip (SoC). SPARX combines a custom RISC-V instruction extension, an approximate logarithmic CNN acceleration unit, a lightweight differential-noise-based privacy engine, and a challenge-response authentication mechanism. To guide arithmetic se",
-      "pdf_link": "https://arxiv.org/pdf/2606.09946.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.09946",
-      "submission_date": "2026-06-18T04:00:00+00:00",
+      "abstract": "arXiv:2305.04122v2 Announce Type: replace \nAbstract: Processing-in-Memory (PIM) architectures are evolving to minimize data movement by leveraging the same physical devices for both memory and logic functionalities. While analog PIM harnesses crossbar arrays for efficient approximate matrix-vector multiplication, digital PIM architectures facilitate massively-parallel bitwise operations for more general workloads. Recent works have extended digital PIM towards the full-precision acceleration of convolutional neural networks (CNNs), yet a comprehensive comparison with GPUs remains a gap in the literature that may illuminate the limitations of digital PIM. This paper aims to fill this void by conducting a thorough examination of CNN acceleration through an updated quantitative comparison wit",
+      "pdf_link": "https://arxiv.org/pdf/2305.04122.pdf",
+      "forum_link": "https://arxiv.org/abs/2305.04122",
+      "submission_date": "2026-06-19T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-06-18T10:27:09.155354+00:00"
+      "score": 2.0,
+      "updated_at": "2026-06-19T10:45:20.516995+00:00"
+    },
+    {
+      "forum_id": "2606.05017",
+      "paper_number": -1,
+      "title": "GoldenFloat: A Phi-Derived Static-Split Floating-Point Family from GF4 to GF256 with a Lucas-Exact Integer Identity",
+      "authors": [
+        "Dmitrii Vasilev"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2606.05017v2 Announce Type: replace \nAbstract: We present a hardware-oriented description of GoldenFloat (GF), a static-split floating-point family generated by a single closed rule, and three concrete artefacts: (i) an open multi-width RTL generator covering GF4-GF256 with a continuous-integration differential sweep against a correctly-rounded reference; (ii) an integer-backed Lucas-exact accumulator path verified at 500-digit precision for n = 1, ..., 256; and (iii) a GF16 FPGA codec passing a 35-of-35 testbench at 323 MHz on Artix-7 (Xilinx XC7A35T). A format-conformance oracle (Corona) ships in the same repository and is used as the blackbox check in our continuous-integration audit.\n  The rule and its scope. For each total width N >= 4, the exponent width is e = round((N-1)/phi^",
+      "pdf_link": "https://arxiv.org/pdf/2606.05017.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.05017",
+      "submission_date": "2026-06-19T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.5,
+      "updated_at": "2026-06-19T10:45:20.517017+00:00"
     }
   ]
 }
