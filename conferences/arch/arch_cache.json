@@ -1,31 +1,7 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-06-19T10:45:19.141913+00:00",
-  "paper_count": 1,
-  "papers": [
-    {
-      "forum_id": "2606.19964",
-      "paper_number": -1,
-      "title": "Low-Energy Reduced RISC-V Instruction Subset Processor for Tsetlin Machine Inference at the Edge",
-      "authors": [
-        "Chanda Gupta, Sanidhya Bhatia, Shaurya Priyadarshi, Himani Panwar, Rishad Shafik, Sudip Roy"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2606.19964v1 Announce Type: cross \nAbstract: Tsetlin Machine (TM) is a logic-based machine learning approach that relies on simple bitwise operations and finite-state automata, which makes it attractive for edge AI deployments. Recent work has focused on co-processor and accelerator designs based on Tsetlin Machines (TMs). Although these designs achieve high performance, they typically depend on tightly coupled interfaces, microcode-style programming, and external host processors, limiting flexibility and ease of programming. In this work, we present a domain-specific RISC-V microprocessor architecture and design flow tailored for TM inference. Leveraging the modular structure of RISC-V, we design a reduced instruction subset processor that retains programmability while targeting imp",
-      "pdf_link": "https://arxiv.org/pdf/2606.19964.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.19964",
-      "submission_date": "2026-06-19T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 89.5,
-      "updated_at": "2026-06-19T10:45:19.141119+00:00"
-    }
-  ]
+  "last_updated": "2026-06-22T12:13:16.198194+00:00",
+  "paper_count": 0,
+  "papers": []
 }
