@@ -1,10 +1,12 @@
 # Systems / AI Infra / AI Compiler / RISC-V Papers
 
-- **Last Updated**: 2026-06-28 06:45:42 UTC
-- **Total Filtered Papers**: 0
-- **Displaying**: 0 (arXiv: 0, OpenReview: 0)
+- **Last Updated**: 2026-06-29 10:52:50 UTC
+- **Total Filtered Papers**: 1
+- **Displaying**: 1 (arXiv: 1, OpenReview: 0)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
-> No papers matched the current keyword filters.
+| # | Title | Source | Score |
+| --- | --- | --- | --- |
+| 1 | [Designing Local Distributed Mechanisms](https://arxiv.org/abs/2411.06788) | `ARXIV` | 31.0 |

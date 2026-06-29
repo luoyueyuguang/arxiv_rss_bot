@@ -1,7 +1,54 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-06-28T06:45:41.440785+00:00",
-  "paper_count": 0,
-  "papers": []
+  "last_updated": "2026-06-29T10:52:50.445217+00:00",
+  "paper_count": 2,
+  "papers": [
+    {
+      "forum_id": "2606.27695",
+      "paper_number": -1,
+      "title": "How far does a random forest generalize from a 54-run LAMMPS+SPICA benchmark?",
+      "authors": [
+        "Dennis Alves Pedersen, Paulo Henrique Leme Ramalho, F\\'abio Andrijauskas"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2606.27695v1 Announce Type: new \nAbstract: Selecting near-optimal hybrid MPI+OpenMP configurations for molecular dynamics workloads on modern HPC clusters has traditionally required exhaustive empirical benchmarking, consuming allocation budget proportional to the number of configurations evaluated. This work investigates whether a cold-start Random Forest surrogate, trained once on a small, structured benchmark dataset, can reliably predict execution performance and recommend high-performing configurations without further cluster runs. The training dataset comprises 54 LAMMPS+SPICA runs of the antimicrobial peptide Tritrpticin on a hydrated DOPC bilayer (4 354 coarse-grained beads), spanning 18 hybrid configurations on 1-8 AMD EPYC 7662 nodes of the Lovelace cluster at CENAPAD-SP, w",
+      "pdf_link": "https://arxiv.org/pdf/2606.27695.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.27695",
+      "submission_date": "2026-06-29T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 36.5,
+      "updated_at": "2026-06-29T10:52:50.053502+00:00"
+    },
+    {
+      "forum_id": "2606.27797",
+      "paper_number": -1,
+      "title": "Optimizing Teacher-Student Partitioning for Scalable Knowledge Distillation on HPC Systems",
+      "authors": [
+        "Adrian P. Dieguez, Victor Conchello Vendrell, Alex Batlle, Vinnam Kim, Jordi Ros-Giralt, Harris Teague"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2606.27797v1 Announce Type: new \nAbstract: Knowledge Distillation (KD) enables training smaller student models under the guidance of larger teacher models, and the widely adopted TRL library implements it. Yet, TRL treats both models symmetrically, missing opportunities to exploit their pronounced asymmetry in memory footprint, and communication requirements. This paper presents an HPC-aware methodology for KD that decouples teacher and student partitioning efficiently. Our approach achieves up to 67% higher samples-per-second than TRL by avoiding unnecessary teacher-model data structures and selecting the best split strategy. We combine vertical and horizontal partitioning of models, deriving an analytical expression that identifies the existence of inflection points between splitti",
+      "pdf_link": "https://arxiv.org/pdf/2606.27797.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.27797",
+      "submission_date": "2026-06-29T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-06-29T10:52:50.053552+00:00"
+    }
+  ]
 }

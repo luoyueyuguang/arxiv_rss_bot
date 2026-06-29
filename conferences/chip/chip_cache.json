@@ -1,7 +1,31 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-06-28T06:45:42.210200+00:00",
-  "paper_count": 0,
-  "papers": []
+  "last_updated": "2026-06-29T10:52:50.897649+00:00",
+  "paper_count": 1,
+  "papers": [
+    {
+      "forum_id": "2606.17253",
+      "paper_number": -1,
+      "title": "PDAGENT-BENCH: Characterizing, Grounding, and Architecting LLM/VLM Agents for VLSI Physical Design",
+      "authors": [
+        "Qiufeng Li, Rongqian Chen, Quan Cheng, Chengxuan Wang, Sizhe Tang, Chia-Tung Ho, David Z. Pan, Tian Lan, Weidong Cao"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2606.17253v2 Announce Type: replace \nAbstract: Large Language Models and vision-language models have shown remarkable success in the front-end design of Very Large-Scale Integrated Circuits, yet their capabilities for VLSI physical design remain significantly underexplored. The primary cause is the lack of standardized benchmarks for evaluating agentic physical design workflows that require high-dimensional, multi-stage optimization under strict design constraints, coordinated interaction with diverse Electronic Design Automation tools, and iterative refinement. This work introduces PDAGENT-BENCH, a comprehensive and multi-dimensional benchmark for evaluating LLM/VLM-based agents across the physical design stack. PDAGENT-BENCH integrates both task-level assessment and workflow-level ",
+      "pdf_link": "https://arxiv.org/pdf/2606.17253.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17253",
+      "submission_date": "2026-06-29T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 36.0,
+      "updated_at": "2026-06-29T10:52:50.897045+00:00"
+    }
+  ]
 }

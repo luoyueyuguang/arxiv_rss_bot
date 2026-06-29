@@ -1,7 +1,31 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-06-28T06:45:42.092636+00:00",
-  "paper_count": 0,
-  "papers": []
+  "last_updated": "2026-06-29T10:52:50.836189+00:00",
+  "paper_count": 1,
+  "papers": [
+    {
+      "forum_id": "2411.06788",
+      "paper_number": -1,
+      "title": "Designing Local Distributed Mechanisms",
+      "authors": [
+        "Juho Hirvonen, Sara Ranjbaran"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2411.06788v2 Announce Type: replace \nAbstract: In this work we introduce a new notion: local mechanisms. These are truthful mechanisms that have an implementation as fast distributed algorithms and non-trivial approximation guarantees. We show how monotone distributed optimisation algorithms can be turned into truthful mechanisms using Myerson's Lemma. We demonstrate mechanisms for four fundamental graph problems: maximum-weight independent set, minimum-weight vertex cover, minimum-weight dominating set, and a variant of weighted colouring.\n  We show how these mechanisms can be implemented in the distributed setting. The key observation is that computing the so-called critical prices of a monotone algorithm can be done with the same time complexity as the original algorithm in the LO",
+      "pdf_link": "https://arxiv.org/pdf/2411.06788.pdf",
+      "forum_link": "https://arxiv.org/abs/2411.06788",
+      "submission_date": "2026-06-29T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.0,
+      "updated_at": "2026-06-29T10:52:50.550439+00:00"
+    }
+  ]
 }
