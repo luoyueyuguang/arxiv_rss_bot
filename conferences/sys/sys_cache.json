@@ -1,31 +1,169 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-06-29T10:52:50.836189+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-06-30T09:29:33.173154+00:00",
+  "paper_count": 7,
   "papers": [
     {
-      "forum_id": "2411.06788",
+      "forum_id": "2606.29052",
       "paper_number": -1,
-      "title": "Designing Local Distributed Mechanisms",
+      "title": "Importance-Aware Resource Allocation for Collaborative Task-Oriented Semantic Communication",
       "authors": [
-        "Juho Hirvonen, Sara Ranjbaran"
+        "Kaiyi Lei, Yuanzhe Peng, Letian Zhang, Jie Xu"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2411.06788v2 Announce Type: replace \nAbstract: In this work we introduce a new notion: local mechanisms. These are truthful mechanisms that have an implementation as fast distributed algorithms and non-trivial approximation guarantees. We show how monotone distributed optimisation algorithms can be turned into truthful mechanisms using Myerson's Lemma. We demonstrate mechanisms for four fundamental graph problems: maximum-weight independent set, minimum-weight vertex cover, minimum-weight dominating set, and a variant of weighted colouring.\n  We show how these mechanisms can be implemented in the distributed setting. The key observation is that computing the so-called critical prices of a monotone algorithm can be done with the same time complexity as the original algorithm in the LO",
-      "pdf_link": "https://arxiv.org/pdf/2411.06788.pdf",
-      "forum_link": "https://arxiv.org/abs/2411.06788",
-      "submission_date": "2026-06-29T04:00:00+00:00",
+      "abstract": "arXiv:2606.29052v1 Announce Type: new \nAbstract: Task-oriented semantic communication must allocate scarce radio resources to semantic features under fast fading wireless conditions and strict end-to-end latency budgets. Existing solutions are either optimization-heavy, leading to prohibitive computational overhead during online operation, or rely on end-to-end retraining procedures together with slowly varying channel assumptions. We propose iCoTASC (importance-aware Collaborative Task-Oriented Semantic Communication), a hybrid offline-online framework designed for collaborative multi-device semantic communication systems. iCoTASC leverages attribution-based importance to guide per-dimension embedding selection as a practical communication control signal, models diminishing semantic retur",
+      "pdf_link": "https://arxiv.org/pdf/2606.29052.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.29052",
+      "submission_date": "2026-06-30T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 31.0,
-      "updated_at": "2026-06-29T10:52:50.550439+00:00"
+      "score": 33.5,
+      "updated_at": "2026-06-30T09:29:32.948772+00:00"
+    },
+    {
+      "forum_id": "2606.29775",
+      "paper_number": -1,
+      "title": "SMART-MIG: A Learning Framework for Scalable and Energy-Efficient GPU Scheduling",
+      "authors": [
+        "Wenqing Yu, Neel Karia, Tanvi Hisaria, Clifford Stein, Olivier Tardieu, Asser Tantawi"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2606.29775v1 Announce Type: new \nAbstract: The emergence of Multi-Instance GPU (MIG) technology enables us to run smaller machine learning models on partitions of a GPU rather than the entire device, thus improving utilization and reducing energy consumption, albeit with potential performance trade-offs. Meanwhile, the growing energy demands of GPU-equipped data centers motivate the development of online partitioning and scheduling schemes that not only ensure fast job processing but also achieve high energy efficiency. However, achieving energy-tardiness efficiency with manageable algorithmic complexity in large-scale scheduling remains a great challenge, due to the dual objectives of deciding on the GPU partitions and scheduling jobs onto the slices of the heterogeneous partitions.",
+      "pdf_link": "https://arxiv.org/pdf/2606.29775.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.29775",
+      "submission_date": "2026-06-30T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 57.5,
+      "updated_at": "2026-06-30T09:29:32.949015+00:00"
+    },
+    {
+      "forum_id": "2606.30391",
+      "paper_number": -1,
+      "title": "Energy-Aware Scheduling for Serverless LLM Serving on Shared GPUs",
+      "authors": [
+        "Tianyu Wang, Gourav Rattihalli, Aditya Dhakal, Longfei Shangguan, Dejan Milojicic"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2606.30391v1 Announce Type: new \nAbstract: As LLM inference becomes a major cloud workload, its growing energy footprint makes cluster-wide energy optimization increasingly important. Serverless LLM serving helps platforms absorb traffic volatility by elastically sharing GPU resources across models, but this sharing also makes energy optimization difficult. Multiple co-resident models run under one device-wide operating point, while their resource demands and latency slack change across execution phases and load conditions. As a result, minimizing energy requires coordinated scheduling across request placement, runtime resource adaptation, and workload consolidation.\n  We present Festina, a profiling-guided, power-aware control plane to minimize cluster-wide energy for serverless LLM",
+      "pdf_link": "https://arxiv.org/pdf/2606.30391.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.30391",
+      "submission_date": "2026-06-30T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 82.0,
+      "updated_at": "2026-06-30T09:29:32.949119+00:00"
+    },
+    {
+      "forum_id": "2606.29129",
+      "paper_number": -1,
+      "title": "Improved Scaling for Fast Mode of Ozaki Scheme II",
+      "authors": [
+        "Shota Kawakami, Daisuke Takahashi"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2606.29129v1 Announce Type: cross \nAbstract: Ozaki scheme II emulates high-precision matrix multiplication using low-precision integer matrix operations based on the Chinese remainder theorem (CRT). It first scales the high-precision matrices to convert them into integer matrices. For this scaling step, Ozaki scheme II provides two modes: accurate mode, which uses INT8 matrix multiplication to estimate scaling factors, and fast mode, which applies the Cauchy--Schwarz inequality at lower computational cost. We show that the existing formula lacks scale invariance; multiplying the input matrices by a constant changes the effective bit width of the integer matrices in the scaling step, causing accuracy degradation or CRT recovery failure. To address this, we propose a revised scaling fo",
+      "pdf_link": "https://arxiv.org/pdf/2606.29129.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.29129",
+      "submission_date": "2026-06-30T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.0,
+      "updated_at": "2026-06-30T09:29:32.949390+00:00"
+    },
+    {
+      "forum_id": "2606.30553",
+      "paper_number": -1,
+      "title": "COSM: A Cooperative Scheduling Framework for Concurrent PIM and CPU Execution on Mobile Devices",
+      "authors": [
+        "Yilong Zhao, Fangxin Liu, Onur Mutlu, Mingyu Gao, Jian Liu, Haibing Guan, Li Jiang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2606.30553v1 Announce Type: cross \nAbstract: The development of on-device large language models (LLMs) is driven by the need for privacy and fast response times. Energy-intensive data transfer on mobile devices makes Processing-in-Memory (PIM) an effective solution. Due to stringent DRAM cost constraints, limited physical footprint on circuit boards, and the interaction between applications and LLMs, it is imperative for the CPU and PIM to operate concurrently within a shared memory space. However, challenges such as bank conflicts and bus congestion can arise, potentially diminishing the performance and energy benefits of PIM. To address this challenge, we introduce COSM, a cooperative scheduling framework designed to facilitate the concurrent operation of PIM and CPU tasks on mobil",
+      "pdf_link": "https://arxiv.org/pdf/2606.30553.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.30553",
+      "submission_date": "2026-06-30T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-06-30T09:29:32.949626+00:00"
+    },
+    {
+      "forum_id": "2601.06903",
+      "paper_number": -1,
+      "title": "Divergence-Based Adaptive Aggregation for Byzantine Robust Federated Learning",
+      "authors": [
+        "Bingnan Xiao, Feng Zhu, Jingjing Zhang, Wei Ni, Xin Wang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2601.06903v2 Announce Type: replace \nAbstract: Inherent client drifts caused by data heterogeneity, as well as vulnerability to Byzantine attacks within the system, hinder effective model training and convergence in federated learning (FL). This paper presents two new frameworks, named DiveRgence-based Adaptive aGgregation (DRAG) and Byzantine-Resilient DRAG (BR-DRAG), to mitigate client drifts and resist attacks while expediting training. DRAG designs a reference direction and a metric named divergence of degree to quantify the deviation of local updates. Accordingly, each worker can align its local update via linear calibration without extra communication cost. BR-DRAG refines DRAG under Byzantine attacks by maintaining a vetted root dataset at the server to produce trusted referen",
+      "pdf_link": "https://arxiv.org/pdf/2601.06903.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.06903",
+      "submission_date": "2026-06-30T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 61.0,
+      "updated_at": "2026-06-30T09:29:32.949826+00:00"
+    },
+    {
+      "forum_id": "2511.15503",
+      "paper_number": -1,
+      "title": "DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures",
+      "authors": [
+        "Peiming Yang, Sankeerth Durvasula, Ivan Fernandez, Mohammad Sadrosadati, Onur Mutlu, Gennady Pekhimenko, Christina Giannoula"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2511.15503v3 Announce Type: replace-cross \nAbstract: High-performance Host processors can integrate Processing-In-Memory (PIM) devices, which can accelerate memory-intensive kernels of Machine Learning (ML) models, including Large Language Models (LLMs), by leveraging the large memory bandwidth available at PIM cores. However, Host processor needs consecutive elements distributed across DRAM banks, while PIM cores need consecutive elements within their local banks. This necessitates data rearrangements in ML kernel execution that pose significant performance and programmability challenges, further exacerbated by the need to support diverse PIM devices. Current compilation approaches lack systematic optimization for diverse ML kernels and multiple PIM devices, and may largely ignore d",
+      "pdf_link": "https://arxiv.org/pdf/2511.15503.pdf",
+      "forum_link": "https://arxiv.org/abs/2511.15503",
+      "submission_date": "2026-06-30T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 62.5,
+      "updated_at": "2026-06-30T09:29:32.950156+00:00"
     }
   ]
 }
