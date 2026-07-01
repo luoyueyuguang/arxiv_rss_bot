@@ -1,31 +1,169 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-06-30T09:29:33.227907+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-07-01T09:41:01.306935+00:00",
+  "paper_count": 7,
   "papers": [
     {
-      "forum_id": "2606.17253",
+      "forum_id": "2606.31490",
       "paper_number": -1,
-      "title": "PDAGENT-BENCH: Characterizing, Grounding, and Architecting LLM/VLM Agents for VLSI Physical Design",
+      "title": "Dynamic Ultrasound Beamforming Using Left-to-Right Arithmetic Adders on FPGA",
       "authors": [
-        "Qiufeng Li, Rongqian Chen, Quan Cheng, Chengxuan Wang, Sizhe Tang, Chia-Tung Ho, David Z. Pan, Tian Lan, Weidong Cao"
+        "Muhammad Usman, Shujaat Khan, Dorit Merhof"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2606.31490v1 Announce Type: new \nAbstract: Adder trees are the computational backbone of delay-and-sum (DAS) ultrasound beamforming, where their implementation directly determines the energy, throughput, and area of a real-time imaging pipeline. Conventional parallel adder trees perform full-precision combinational reduction on every sample, leading to wide critical paths, high LUT consumption, and timing failures on small FPGA devices. This paper presents an alternative adder tree architecture based on \\emph{left-to-right (LR)} or \\emph{most significant digit first (MSDF) arithmetic}. We implement the proposed and conventional adder trees on a Xilinx Zynq XC7Z010 FPGA and evaluate them for DAS beamforming of a 64-channel ultrasound dataset. The proposed design uses 2.5$\\times$ fewer",
+      "pdf_link": "https://arxiv.org/pdf/2606.31490.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.31490",
+      "submission_date": "2026-07-01T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-01T09:41:01.305527+00:00"
+    },
+    {
+      "forum_id": "2606.31514",
+      "paper_number": -1,
+      "title": "MINT: Dynamic-Precision CNN Inference with MSDF Digit-Serial Arithmetic on FPGA",
+      "authors": [
+        "Muhammad Usman, Malik Zohaib Nisar, Florian Aschauer, Dorit Merhof"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2606.31514v1 Announce Type: new \nAbstract: We present MINT, a dynamic-precision CNN inference accelerator based on left-to-right (LR) arithmetic. LR arithmetic computes in most-significant-digit-first manner and exposes useful partial results early so that the computation can be terminated once the desired precision is achieved. At the core, there is a MSDF serial-parallel inner-product unit, which uses redundant signed-digit representation to compute each convolution window. A budget-constrained greedy search profiles all convolution layers from INT2 to INT7 and selects the lowest precision per layer while constraining total accuracy loss to within 2\\% of the INT8 baseline for VGG-16 and ResNet-18 networks. The design is synthesized on a Xilinx Zynq-7020 at \\SI{200}{\\mega\\hertz}, an",
+      "pdf_link": "https://arxiv.org/pdf/2606.31514.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.31514",
+      "submission_date": "2026-07-01T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-01T09:41:01.305556+00:00"
+    },
+    {
+      "forum_id": "2606.31535",
+      "paper_number": -1,
+      "title": "PEERS: A Parallel and Exact Effective Resistance Solver via Implicit Inversion and Augmented Symbolic Analysis",
+      "authors": [
+        "Baiyu Chen, Lin Gan, Guangwen Yang, Wenjian Yu"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2606.17253v2 Announce Type: replace \nAbstract: Large Language Models and vision-language models have shown remarkable success in the front-end design of Very Large-Scale Integrated Circuits, yet their capabilities for VLSI physical design remain significantly underexplored. The primary cause is the lack of standardized benchmarks for evaluating agentic physical design workflows that require high-dimensional, multi-stage optimization under strict design constraints, coordinated interaction with diverse Electronic Design Automation tools, and iterative refinement. This work introduces PDAGENT-BENCH, a comprehensive and multi-dimensional benchmark for evaluating LLM/VLM-based agents across the physical design stack. PDAGENT-BENCH integrates both task-level assessment and workflow-level ",
-      "pdf_link": "https://arxiv.org/pdf/2606.17253.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.17253",
-      "submission_date": "2026-06-30T04:00:00+00:00",
+      "abstract": "arXiv:2606.31535v1 Announce Type: new \nAbstract: High-precision effective resistance computation is a cornerstone of Electronic Design Automation (EDA) sign-off, yet it remains a fundamental bottleneck in large-scale power grid analysis, spectral sparsification, and circuit reliability. Existing approaches face a prohibitive \"precision-memory impasse\": approximate methods lack the stringent accuracy required for high-stakes industrial sign-off, while exact methods either suffer from redundant query overheads or trigger $O(n^2)$ memory explosions. To resolve this, we propose PEERS, a Parallel and Exact Effective Resistance Solver powered by an implicit inverse computing model of the Cholesky factor. By integrating a state-inherited augmented depth-first search (DFS) with a dynamic query upd",
+      "pdf_link": "https://arxiv.org/pdf/2606.31535.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.31535",
+      "submission_date": "2026-07-01T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 36.0,
-      "updated_at": "2026-06-30T09:29:33.227351+00:00"
+      "score": 15.5,
+      "updated_at": "2026-07-01T09:41:01.305577+00:00"
+    },
+    {
+      "forum_id": "2606.31938",
+      "paper_number": -1,
+      "title": "FlexViT: A Flexible FPGA-based Accelerator for Edge Vision Transformers",
+      "authors": [
+        "Hubert Dymarkowski, Xingjian Fu, Rappy Saha, Jude Haris, Jos\\'e Cano"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2606.31938v1 Announce Type: new \nAbstract: Deploying Vision Transformer (ViT) models on edge platforms remains challenging due to their high computational demands and the architectural heterogeneity of modern hybrid ViT models, which incorporate both fully connected and convolutional layers. This heterogeneity leads to significant variation in tensor shapes, requiring flexible and efficient FPGA-based acceleration. In this paper, we present FlexViT, a reconfigurable FPGA accelerator for efficient ViT inference on resource-constrained edge devices. Built on the SECDA-TFLite framework, FlexViT employs a hardware-software co-design approach that maps both fully connected and convolutional layers onto a unified high-throughput INT8 GEMM engine using a runtime im2col transformation. To ef",
+      "pdf_link": "https://arxiv.org/pdf/2606.31938.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.31938",
+      "submission_date": "2026-07-01T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-01T09:41:01.305620+00:00"
+    },
+    {
+      "forum_id": "2606.31681",
+      "paper_number": -1,
+      "title": "Exploring Side-Channel Protections in Hardware Implementations of PQC ML-KEM Verification",
+      "authors": [
+        "Davis Ranney, Yashaswini I Makaram, A. Adam Ding, Yunsi Fei"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2606.31681v1 Announce Type: cross \nAbstract: As ML-KEM is adopted as a post-quantum cryptographic standard, resilience against physical side-channel attacks has become essential. Among the constituent steps, the decapsulation Fujisaki-Okamoto (FO) verification is particularly vulnerable to side-channel power and electromagnetic (EM) analysis. In this work, we focus on common FPGA-based implementations and examine their side-channel vulnerabilities, and compare them with those of microcontroller implementations. Three verification implementations, unprotected, hash-based (first-order), and higher-order masked, are evaluated for side-channel security on both a microcontroller and an FPGA. While FPGAs offer higher speed and parallelism, they often exhibit stronger side-channel leakage, ",
+      "pdf_link": "https://arxiv.org/pdf/2606.31681.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.31681",
+      "submission_date": "2026-07-01T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.5,
+      "updated_at": "2026-07-01T09:41:01.305680+00:00"
+    },
+    {
+      "forum_id": "2310.05507",
+      "paper_number": -1,
+      "title": "MEDUSA: Scalable Biometric Sensing in the Wild through Distributed MIMO Radars",
+      "authors": [
+        "Yilong Li, Ramanujan K Sheshadri, Karthik Sundaresan, Eugene Chai, Suman Banerjee"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2310.05507v5 Announce Type: replace \nAbstract: Radar-based techniques for detecting vital signs have shown promise for continuous contactless vital sign sensing and healthcare applications. However, real-world indoor environments face significant challenges for existing vital sign monitoring systems. These include signal blockage in non-line-of-sight (NLOS) situations, movement of human subjects, and alterations in location and orientation. Additionally, these existing systems failed to address the challenge of tracking multiple targets simultaneously. To overcome these challenges, we present MEDUSA, a novel coherent ultra-wideband (UWB) based distributed multiple-input multiple-output (MIMO) radar system, especially it allows users to customize and disperse the $16 \\times 16$ into s",
+      "pdf_link": "https://arxiv.org/pdf/2310.05507.pdf",
+      "forum_link": "https://arxiv.org/abs/2310.05507",
+      "submission_date": "2026-07-01T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-07-01T09:41:01.305719+00:00"
+    },
+    {
+      "forum_id": "2606.06421",
+      "paper_number": -1,
+      "title": "Modeling, Optimizing and Exploring Multi-Die FPGA Routing Architectures",
+      "authors": [
+        "Amirhossein Poolad, Soheil Gholami Shahrouz, Andrew Boutros, Vaughn Betz"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2606.06421v3 Announce Type: replace \nAbstract: Die stacking has enabled 2.5D FPGAs by integrating multiple active dice on a passive silicon interposer for improved yield and capacity, and paved the way for 3D architectures that stack active dice directly atop one another. In these multi-die devices, the unique electrical and physical characteristics of the underlying die-stacking technology impose limitations on inter-die connection density and latency, necessitating a bespoke inter-die routing architecture. However, the absence of accurate and versatile modeling tools has left most questions about how to best design the inter-die routing architecture unanswered.\n  To address this gap, we enhance the open-source FPGA CAD tool VTR to flexibly model a wide range of multi-die routing ar",
+      "pdf_link": "https://arxiv.org/pdf/2606.06421.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.06421",
+      "submission_date": "2026-07-01T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 35.0,
+      "updated_at": "2026-07-01T09:41:01.305809+00:00"
     }
   ]
 }

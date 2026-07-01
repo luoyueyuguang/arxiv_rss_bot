@@ -1,10 +1,12 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-06-30 09:29:32 UTC
-- **Total Filtered Papers**: 0
-- **Displaying**: 0 (arXiv: 0, OpenReview: 0)
+- **Last Updated**: 2026-07-01 09:41:00 UTC
+- **Total Filtered Papers**: 1
+- **Displaying**: 1 (arXiv: 1, OpenReview: 0)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
-> No papers matched the current keyword filters.
+| # | Title | Source | Score |
+| --- | --- | --- | --- |
+| 1 | [Exploring Side-Channel Protections in Hardware Implementations of PQC ML-KEM Verification](https://arxiv.org/abs/2606.31681) | `ARXIV` | 34.0 |

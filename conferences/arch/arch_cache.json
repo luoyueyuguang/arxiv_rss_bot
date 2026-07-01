@@ -1,7 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-06-30T09:29:32.435054+00:00",
-  "paper_count": 0,
-  "papers": []
+  "last_updated": "2026-07-01T09:41:00.304572+00:00",
+  "paper_count": 1,
+  "papers": [
+    {
+      "forum_id": "2606.31681",
+      "paper_number": -1,
+      "title": "Exploring Side-Channel Protections in Hardware Implementations of PQC ML-KEM Verification",
+      "authors": [
+        "Davis Ranney, Yashaswini I Makaram, A. Adam Ding, Yunsi Fei"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2606.31681v1 Announce Type: cross \nAbstract: As ML-KEM is adopted as a post-quantum cryptographic standard, resilience against physical side-channel attacks has become essential. Among the constituent steps, the decapsulation Fujisaki-Okamoto (FO) verification is particularly vulnerable to side-channel power and electromagnetic (EM) analysis. In this work, we focus on common FPGA-based implementations and examine their side-channel vulnerabilities, and compare them with those of microcontroller implementations. Three verification implementations, unprotected, hash-based (first-order), and higher-order masked, are evaluated for side-channel security on both a microcontroller and an FPGA. While FPGAs offer higher speed and parallelism, they often exhibit stronger side-channel leakage, ",
+      "pdf_link": "https://arxiv.org/pdf/2606.31681.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.31681",
+      "submission_date": "2026-07-01T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.0,
+      "updated_at": "2026-07-01T09:41:00.303634+00:00"
+    }
+  ]
 }

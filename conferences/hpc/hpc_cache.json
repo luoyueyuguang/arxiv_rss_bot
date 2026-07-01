@@ -1,284 +1,192 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-06-30T09:29:32.815316+00:00",
-  "paper_count": 14,
+  "last_updated": "2026-07-01T09:41:00.740240+00:00",
+  "paper_count": 12,
   "papers": [
     {
-      "forum_id": "2606.29651",
+      "forum_id": "2606.30771",
       "paper_number": -1,
-      "title": "NI-ORCA: A Parallel Algorithm for Counting the Orbits of Non-Induced Graphlets up to K4",
+      "title": "Protecting Futures against Silent Data Corruption -- Efficient Task Replication for Dynamic Data Dependencies",
       "authors": [
-        "Syed Ibtisam Tauhidi, Arindam Karmakar, Thai Son Mai, Hans Vandierendonck"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.29651v1 Announce Type: new \nAbstract: Counting the orbits of graphlets in a network is a vital tool for understanding the structural roles of vertices in various graph analytics tasks. While existing algorithms efficiently compute orbits of induced graphlets, many real-world applications require non-induced orbit counts. However, no current method offers exact, scalable, and parallel support for non-induced orbit counting. This paper presents NI-ORCA, a parallel algorithm to efficiently compute the orbits of non-induced graphlets up to size four (4-clique). NI-ORCA extends the ORCA framework for non-induced orbit counting by reformulating a system of linear equations. The algorithm consists of three stages: triangle counting, 4-clique enumeration, and orbit solving. We design an",
-      "pdf_link": "https://arxiv.org/pdf/2606.29651.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.29651",
-      "submission_date": "2026-06-30T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-06-30T09:29:32.531673+00:00"
-    },
-    {
-      "forum_id": "2606.29708",
-      "paper_number": -1,
-      "title": "Demystifying the Design Space and Best Practices for Heterogeneous LLM Inference and Serving",
-      "authors": [
-        "Zhixin Wang, Zhengbo Wang, Fangcheng Fu, Yinhui Lu, Jinlong Hou, Yijie Chen, Xiaowei Shen, He Liu, Xiangbin Li, Jun Chen, Ruya Gu, Dian Wang, Zhou Tan, Yuan Cheng, Hongzhou Zhang, Xiangjun Huang, Ping Zhang, Xiaohe Hu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.29708v1 Announce Type: new \nAbstract: Heterogeneous prefill-decode (PD) inference is now in production: prefill on cost-efficient or supply-available accelerators, decode on bandwidth-strong ones, and KV state crossing mixed interconnects in mixed numerical formats. Each deployment makes these decisions on its own. What is missing is the picture across configurations-which decisions must be made jointly at the PD boundary, and which can be made independently. We propose a design space organized along four design axes-accelerator, precision, interconnect, and KV residency and the workload regime (stage pressure) they respond to. We show that only a subset of interactions among these factors become binding constraints once PD inference becomes heterogeneous. These interactions sur",
-      "pdf_link": "https://arxiv.org/pdf/2606.29708.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.29708",
-      "submission_date": "2026-06-30T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 42.5,
-      "updated_at": "2026-06-30T09:29:32.531701+00:00"
-    },
-    {
-      "forum_id": "2606.30391",
-      "paper_number": -1,
-      "title": "Energy-Aware Scheduling for Serverless LLM Serving on Shared GPUs",
-      "authors": [
-        "Tianyu Wang, Gourav Rattihalli, Aditya Dhakal, Longfei Shangguan, Dejan Milojicic"
+        "R\\\"udiger Nather, Claudia Fohry, Mia Reitz"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2606.30391v1 Announce Type: new \nAbstract: As LLM inference becomes a major cloud workload, its growing energy footprint makes cluster-wide energy optimization increasingly important. Serverless LLM serving helps platforms absorb traffic volatility by elastically sharing GPU resources across models, but this sharing also makes energy optimization difficult. Multiple co-resident models run under one device-wide operating point, while their resource demands and latency slack change across execution phases and load conditions. As a result, minimizing energy requires coordinated scheduling across request placement, runtime resource adaptation, and workload consolidation.\n  We present Festina, a profiling-guided, power-aware control plane to minimize cluster-wide energy for serverless LLM",
-      "pdf_link": "https://arxiv.org/pdf/2606.30391.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.30391",
-      "submission_date": "2026-06-30T04:00:00+00:00",
+      "abstract": "arXiv:2606.30771v1 Announce Type: new \nAbstract: As the size of computational problems grows, so does the likelihood of Silent Data Corruptions (SDCs). A common defense is replication, where the computation is repeated and correct results are determined by majority voting. Asynchronous Many-Task (AMT) runtimes are generally well suited for this approach, since the inputs and outputs of task replicas can be compared, and the tasks can be recomputed if necessary. Most existing SDC protection schemes assume static tasks and dependencies. Dynamic settings are more challenging, especially in clusters, since the tasks/data must be tracked for the comparisons.\n  This paper considers a particularly dynamic setting with task spawning at runtime, task communication through C++11-like promises/future",
+      "pdf_link": "https://arxiv.org/pdf/2606.30771.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.30771",
+      "submission_date": "2026-07-01T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 77.5,
-      "updated_at": "2026-06-30T09:29:32.531784+00:00"
+      "score": 2.0,
+      "updated_at": "2026-07-01T09:41:00.406451+00:00"
     },
     {
-      "forum_id": "2606.30533",
+      "forum_id": "2606.31093",
       "paper_number": -1,
-      "title": "Spandana: Reconciling Strict SLOs with Low Cost under Fine-Grained Load Fluctuations",
+      "title": "Omni-Flow: A Unified Workflow Orchestration and Distributed KV Cache Sharing Framework for Multimodal Inference",
       "authors": [
-        "Dilina Dehigama, Shyam Jesalpura, Zeyu Xu, Marton Nemeth, Shengda Zhu, Marios Kogias, Boris Grot"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2606.30533v1 Announce Type: new \nAbstract: Cloud-based online services face significant sub-second load fluctuations while needing to meet strict Service Level Objectives (SLOs). Cluster operators often over-provision resources to protect SLOs, sacrificing utilization and cost efficiency. Existing reactive and proactive autoscalers, serverless (FaaS) deployments, and VM/FaaS hybrid systems fail to reconcile strict SLO compliance with low cost and high utilization under fine-grained load fluctuation.\n  We introduce Spandana, an architecture that addresses this trade off by decoupling SLO enforcement from cost optimization. A lightweight controller colocated with each application VM enforces SLOs by steering each arriving request between the VM and FaaS. Requests that can meet the SLO ",
-      "pdf_link": "https://arxiv.org/pdf/2606.30533.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.30533",
-      "submission_date": "2026-06-30T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-06-30T09:29:32.531838+00:00"
-    },
-    {
-      "forum_id": "2606.30563",
-      "paper_number": -1,
-      "title": "Data Replication Meets Function Scheduling in the Edge-Cloud Continuum",
-      "authors": [
-        "Matteo Cenzato, Dario d'Abate, Arianna Dragoni, Matteo Briscini, Alessandro Margara"
+        "Bin Xiao, Jingfu Dong, Changran Wang, Yitian Chen, Xiaoyu Zhao, Yuqi Peng, Jianping Lin, Yuchen Xie"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2606.30563v1 Announce Type: new \nAbstract: Serverless computing is an appealing model for the edge-cloud continuum, but its stateless assumption breaks down once functions need persistent data: fetching state from a distant cloud store erases the latency benefit of running at the edge. Keeping data close means replicating it, and replication forces a placement decision that is coupled with where functions execute and with the consistency each application demands. We study this joint problem of function scheduling and data placement under two consistency models, strong and eventual replication. We first formulate it as a Binary Linear Program that yields the optimal placement for a given system snapshot, and use it as a reference point. Because the solver does not scale past a few hun",
-      "pdf_link": "https://arxiv.org/pdf/2606.30563.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.30563",
-      "submission_date": "2026-06-30T04:00:00+00:00",
+      "abstract": "arXiv:2606.31093v1 Announce Type: new \nAbstract: As large language model (LLM) inference evolves from text-only to multimodal paradigms, inference systems face three challenges: (1) flexible orchestration of multimodal workflows, where heterogeneous computing units exhibit complex dependencies and concurrent control; (2) efficient transmission of massive intermediate data across processes and nodes, with tensors flowing at high speed among heterogeneous roles; and (3) efficient sharing of KV caches and model weights across roles to eliminate redundant GPU memory. Existing solutions deploy LLMs and diffusion models independently, lacking a system-level abstraction for multimodal pipelines; this scatters orchestration logic, tightly couples transmission paths to specific models, and incurs h",
+      "pdf_link": "https://arxiv.org/pdf/2606.31093.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.31093",
+      "submission_date": "2026-07-01T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.5,
-      "updated_at": "2026-06-30T09:29:32.531858+00:00"
+      "score": 63.5,
+      "updated_at": "2026-07-01T09:41:00.406512+00:00"
     },
     {
-      "forum_id": "2606.28516",
+      "forum_id": "2606.31300",
       "paper_number": -1,
-      "title": "CLEAR-MoE: Shared-Basis Expert Extraction from Frozen Vision Transformers via Calibration-Driven Layer Selection",
+      "title": "An Empirical Analysis of High-Performance Computing Education in Germany",
       "authors": [
-        "Md Irtiza Hossain, Humaira Ayesha, Junaid Ahmed Sifat"
+        "Anna-Lena Roth, Jonas Posner"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2606.28516v1 Announce Type: cross \nAbstract: We present CLEAR-MoE, a four-phase post-training pipeline that converts a frozen pretrained Vision Transformer (ViT) into a sparse Mixture-of-Experts (MoE) model without updating backbone weights. The pipeline (i) scores feed-forward network (FFN) layers by sparsity, clusterability, and output sensitivity; (ii) decomposes selected layers into a shared low-rank SVD basis and per-cluster residual experts using k-means clustering; (iii) trains lightweight routers supervised by cluster labels; and (iv) dispatches tokens through pluggable CUDA backends. On Imagenette with DeiT-Small, CLEAR-MoE retains 99.9% of the dense model's accuracy (86.70 +/- 0.02% versus 86.73%). Extensive ablation studies reveal a consistent empirical finding: the shared",
-      "pdf_link": "https://arxiv.org/pdf/2606.28516.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.28516",
-      "submission_date": "2026-06-30T04:00:00+00:00",
+      "abstract": "arXiv:2606.31300v1 Announce Type: new \nAbstract: The growing importance of High-Performance Computing (HPC) requires the systematic integration of parallel programming and performance-oriented competencies into computational science curricula. Effective HPC education combines theoretical foundations with practical experience on real cluster infrastructures, enabling students to understand scalability, efficiency, and architectural differences between shared and distributed memory systems. However, cross-institutional evidence on how HPC education is implemented, and how curricula relate to locally available infrastructure, remains limited. We address this gap through a systematic empirical assessment of HPC education at 102 academic institutions in Germany. Based on module handbooks and co",
+      "pdf_link": "https://arxiv.org/pdf/2606.31300.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.31300",
+      "submission_date": "2026-07-01T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 25.0,
-      "updated_at": "2026-06-30T09:29:32.531885+00:00"
+      "score": 37.0,
+      "updated_at": "2026-07-01T09:41:00.406558+00:00"
     },
     {
-      "forum_id": "2606.28534",
+      "forum_id": "2606.31458",
       "paper_number": -1,
-      "title": "High-Performance Resilient Multi-GPU Hybrid Particle-in-Cell Monte Carlo Simulations at Scale",
+      "title": "Performance Analysis in Parallel Programming Education: A Comparative Usability Study",
       "authors": [
-        "Jeremy J. Williams, Stefan Costea, David Tskhakaya, Leon Kos, Ales Podolnik, Jakub Hromadka, Jordy Trilaksono, Yi Ju, Kallia Chronaki, Evangelos Gkolantas, Vassilis Papaefstathiou, Allen D. Malony, Sameer Shende, Frank Jenko, Erwin Laure, Stefano Markidis"
+        "Anna-Lena Roth, David James, Jonas Posner, Michael Kuhn"
       ],
       "keywords": [
         "cs.DC",
-        "ICS"
+        "CLUSTER"
       ],
-      "abstract": "arXiv:2606.28534v1 Announce Type: cross \nAbstract: The increasing demand for high-performance computing in plasma physics has driven scalable and resilient simulation methods capable of efficiently exploiting modern multi-GPU architectures. This work extends a portable hybrid MPI+OpenMP implementation of BIT1, focusing on high-performance resilience for accelerated Particle-in-Cell (PIC) Monte Carlo (MC) simulations under both uniform and non-uniform load conditions. Scalable particle load balancing and robust checkpoint/restart mechanisms across Nvidia and AMD accelerators are integrated with standardized I/O using openPMD and ADIOS2. This leverages BP4 for high-performance file-based checkpointing and SST for in-memory data streaming, enabling efficient data movement, resilient large-sca",
-      "pdf_link": "https://arxiv.org/pdf/2606.28534.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.28534",
-      "submission_date": "2026-06-30T04:00:00+00:00",
-      "conference": "ICS",
+      "abstract": "arXiv:2606.31458v1 Announce Type: new \nAbstract: Parallel programming curricula encompass not only the development of parallel code and algorithm design but also emphasize efficiency, optimization, and performance analysis. To equip students with the skills necessary for writing efficient parallel code using message passing with MPI, practical experience on HPC environments is essential. Performance analysis tools assist in identifying issues such as load imbalances or bottlenecks. Despite their use by experienced developers, these tools' complexity and required knowledge of cluster architectures, resource management, MPI, and common parallel issues hinder their educational integration. To address these barriers, we developed EduMPI, a learning support tool designed to simplify cluster usa",
+      "pdf_link": "https://arxiv.org/pdf/2606.31458.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.31458",
+      "submission_date": "2026-07-01T04:00:00+00:00",
+      "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 110.0,
-      "updated_at": "2026-06-30T09:29:32.531905+00:00"
+      "score": 16.0,
+      "updated_at": "2026-07-01T09:41:00.406581+00:00"
     },
     {
-      "forum_id": "2606.29337",
+      "forum_id": "2606.31817",
       "paper_number": -1,
-      "title": "W4A4 Quantization for Inference on Wan2.2-I2V-A14B",
+      "title": "Interface-Variant Dynamics in Software Ecosystems: Resolver-Induced Selection and Adoption in Package Graphs",
       "authors": [
-        "Yidong Chen, Chengyu Shi, Jiahao Liu"
+        "Faruk Alpay, Baris Basaran"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2606.29337v1 Announce Type: cross \nAbstract: We summarize our submission to Sub-Challenge 1: W4A4 Quantization for Inference (HiF4 / MXFP4) of the ICME 2026 Low-Bit-width Large-Model Quantization Challenge. The sub-challenge targets 4-bit weight and 4-bit activation inference on Wan-AI/Wan2.2-I2V-A14B under HiF4 or MXFP4 numerical formats. We adapt two complementary ideas from LLM quantization, MixQ-style mixed precision for sparse activation outliers and SmoothQuant-style per-channel smoothing, together with block-wise HiF4 packing for Wan2.2 feed-forward linear layers. Calibration on representative OpenS2V-5M batches identifies heavy-tailed activation channels; smoothing rebalances dynamic range before W4A4 rounding; and a dual-branch GEMM preserves outlier columns in higher precis",
-      "pdf_link": "https://arxiv.org/pdf/2606.29337.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.29337",
-      "submission_date": "2026-06-30T04:00:00+00:00",
+      "abstract": "arXiv:2606.31817v1 Announce Type: cross \nAbstract: Compatibility research usually treats an interface change as a local writer-reader decision. Distributed software stacks make that decision population structured: an RPC, telemetry, middleware, or service-contract variant is introduced by one provider release and then spreads, stalls, or is mediated across consumers, transitive dependencies, and resolver rules. This paper asks when that observation is a load-bearing software-engineering estimator rather than evolutionary relabeling. We mine interface histories, audit npm, Maven Central, PyPI, and crates.io package graphs, execute 2100 package-manager resolver probes, estimate an ecosystem-specific selection coefficient $s$ from clean conflict probabilities, and use that measured $s$ to for",
+      "pdf_link": "https://arxiv.org/pdf/2606.31817.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.31817",
+      "submission_date": "2026-07-01T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-06-30T09:29:32.531958+00:00"
+      "updated_at": "2026-07-01T09:41:00.406676+00:00"
     },
     {
-      "forum_id": "2606.30460",
+      "forum_id": "2601.04930",
       "paper_number": -1,
-      "title": "HSAP: A Hierachical Sequence-aware Parallelism for Hybrid-Context Generative Models",
+      "title": "Privacy-Preserving Federated Averaging with Byzantine Aggregators in Asynchronous Networks",
       "authors": [
-        "Songxin Zhang, Zejian Xie, Zhuoyang Song, Cong lin, Junyu Lu, Jiaxing Zhang, Bingyi Jing"
+        "Antonella Del Pozzo, Achille Desreumaux, Mathieu Gestin, Alexandre Rapetti, Sara Tucci-Piergiovanni"
       ],
       "keywords": [
         "cs.DC",
-        "ICS"
+        "CLUSTER"
       ],
-      "abstract": "arXiv:2606.30460v1 Announce Type: cross \nAbstract: In this paper, we aim to combine the advantages of existing sequence parallelism paradigms and overcomes their drawbacks, the most serious of which is the incapability to correctly compute causal attention on the hybrid-context packed sequences, in a stronger sequence parallelism framework. The practical technique of packing sequences for efficiently pretraining and fine-tuning large language models causes cross-contamination problem in attention computation, which can be effectively solved when no parallelism in the sequence length dimension is taken. However, in sequence parallelism, existing approaches either ignore the scenario of hybrid-context sequences or conversely sacrifice and limit parallelism degree for supporting the scenario.",
-      "pdf_link": "https://arxiv.org/pdf/2606.30460.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.30460",
-      "submission_date": "2026-06-30T04:00:00+00:00",
-      "conference": "ICS",
+      "abstract": "arXiv:2601.04930v2 Announce Type: replace \nAbstract: Federated Learning requires secure aggregation to prevent gradient leakage, yet existing protocols suffer from key limitations: they assume synchrony, require heavy peer-to-peer coordination, and do not tolerate aggregators that halt or omit messages. These constraints make current secure aggregation schemes impractical in large-scale, unreliable distributed settings.To overcome these limitations, we introduce a new secure aggregation protocol that operates in fully asynchronous networks, where messages may be arbitrarily delayed, and tolerates fully Byzantine aggregators that are capable of arbitrary deviations including premature halting. Our design combines several key mechanisms: clustering clients under verifiable coordinators, ligh",
+      "pdf_link": "https://arxiv.org/pdf/2601.04930.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.04930",
+      "submission_date": "2026-07-01T04:00:00+00:00",
+      "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-06-30T09:29:32.532041+00:00"
+      "score": 3.5,
+      "updated_at": "2026-07-01T09:41:00.406718+00:00"
     },
     {
-      "forum_id": "2604.08242",
+      "forum_id": "2605.21115",
       "paper_number": -1,
-      "title": "Scheduling Coflows in Multi-Core OCS Networks with Performance Guarantee",
+      "title": "Automated Byzantine-Resilient Clustered Decentralized Federated Learning for Battery Intelligence in Connected EVs",
       "authors": [
-        "Xin Wang, Hong Shen, Hui Tian, Dong Wang"
+        "Mouhamed Amine Bouchiha, Abdelaziz Amara Korba, Yacine Ghamri-Doudane"
       ],
       "keywords": [
         "cs.DC",
-        "ICS"
+        "CLUSTER"
       ],
-      "abstract": "arXiv:2604.08242v4 Announce Type: replace \nAbstract: Coflow provides a key application-layer abstraction for capturing communication patterns, enabling the efficient coordination of parallel data flows to reduce job completion times in distributed systems. Modern data center networks (DCNs) are employing multiple independent optical circuit switching (OCS) cores operating concurrently to meet the massive bandwidth demands of application jobs. However, existing coflow scheduling research primarily focuses on the single-core setting, with multi-core fabrics only for EPS (electrical packet switching) networks.\n  To address this gap, this paper studies the coflow scheduling problem in multi-core OCS networks under the \\textit{not-all-stop} reconfiguration model in which one circuit's reconfigu",
-      "pdf_link": "https://arxiv.org/pdf/2604.08242.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.08242",
-      "submission_date": "2026-06-30T04:00:00+00:00",
-      "conference": "ICS",
+      "abstract": "arXiv:2605.21115v3 Announce Type: replace \nAbstract: Federated learning (FL) has emerged as a promising paradigm for managing electric vehicle (EV) battery data in intelligent transportation systems (ITS), enabling privacy-preserving tasks such as anomaly detection and capacity estimation. However, most existing frameworks rely on centralized aggregation schemes, which pose critical limitations in terms of security and trust. To address these challenges, we propose ABC-DFL, an automated Byzantine-resilient clustered decentralized federated learning (C-DFL) framework for connected EVs. The proposed incentive-driven C-DFL system replaces the central server with an open-permissioned blockchain, featuring a new dynamic Quorum Byzantine Fault Tolerance (QBFT) protocol and an oracle-based aggreg",
+      "pdf_link": "https://arxiv.org/pdf/2605.21115.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.21115",
+      "submission_date": "2026-07-01T04:00:00+00:00",
+      "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 7.5,
-      "updated_at": "2026-06-30T09:29:32.532187+00:00"
+      "score": 12.5,
+      "updated_at": "2026-07-01T09:41:00.406819+00:00"
     },
     {
-      "forum_id": "2606.21401",
+      "forum_id": "2606.26150",
       "paper_number": -1,
-      "title": "SwarmX: Agentic Scheduling for Low-Latency Agentic Systems",
+      "title": "Hot AI in Cold Space: Thermal-Crosstalk-Aware Scheduling for Sustainable Orbital AI Clusters",
       "authors": [
-        "Yeqi Huang, Yanwei Ye, Guomin Chen, Wenhao Su, Bin Gong, Jialian Li, Zhan Lu, Yangshen Deng, Xuan Sun, Le Xu, Luo Mai"
+        "Shuyi Chen, Zhengchang Hua, Nikos Tziritas, Georgios Theodoropoulos"
       ],
       "keywords": [
         "cs.DC",
-        "ICS"
+        "CLUSTER"
       ],
-      "abstract": "arXiv:2606.21401v2 Announce Type: replace \nAbstract: Agentic AI applications compose multiple model calls and tool executions, creating new scheduling challenges for GPU-CPU clusters. Their inference time and model-call structure often depend on prompt semantics, making conventional scheduling approaches ineffective for low-latency serving. This paper presents SwarmX, a system that implements agentic scheduling for low-latency agentic applications. SwarmX uses scheduling-specific neural predictors to capture prompt, device, runtime, and target-model features; exposes distributional predictions to routers and scalers for tail-aware decisions; and provides mechanisms for predictor training and online adaptation. These predictors and mechanisms are integrated into a scheduler-agent framework ",
-      "pdf_link": "https://arxiv.org/pdf/2606.21401.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.21401",
-      "submission_date": "2026-06-30T04:00:00+00:00",
-      "conference": "ICS",
+      "abstract": "arXiv:2606.26150v2 Announce Type: replace \nAbstract: Terrestrial AI training faces an unsustainable energy and water crisis, positioning Orbital Data Centers (ODCs) as a \"zero operational carbon\" alternative. However, the sub-$10\\mu\\text{s}$ communication latency required for synchronized scientific workloads, such as distributed Large Language Model (LLM) training, forces ODCs into extreme physical density, triggering a critical \"Proximity-Thermal Paradox.\" As these high-density systems scale into Monolithic Structures or Proximity Swarms, they suffer from intense thermal-fluid crosstalk (heat traps in shared cooling loops) and thermal-radiative crosstalk (mutual heating that blocks deep-space cooling radiators). If left unmitigated, this persistent heat stagnation not only triggers sever",
+      "pdf_link": "https://arxiv.org/pdf/2606.26150.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.26150",
+      "submission_date": "2026-07-01T04:00:00+00:00",
+      "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-06-30T09:29:32.532256+00:00"
-    },
-    {
-      "forum_id": "2606.21784",
-      "paper_number": -1,
-      "title": "KineticSim: A Lightweight, High-Performance Execution Engine for Real-Time Market Simulators",
-      "authors": [
-        "Shakya Jayakody, Prarthinie Jayakody"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.21784v2 Announce Type: replace \nAbstract: Simulating financial markets at scale with multi-agent (Agent-Based) models is critical for market design, regulatory stress-testing, and reinforcement learning, but traditional CPU simulators are bottlenecked by sequential processing while vectorized GPU frameworks suffer from kernel-launch overhead and redundant global-memory round-trips. We formalize, analyze, and evaluate a reusable parallel design pattern: persistent, state-carrying clearing for iterative multi-agent reductions. By caching mutable simulation state in thread-block shared memory across step boundaries, aggregating agent actions via shared-memory atomics, and resolving the clearing function cooperatively, the pattern reduces the per-step critical-path depth from Theta(",
-      "pdf_link": "https://arxiv.org/pdf/2606.21784.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.21784",
-      "submission_date": "2026-06-30T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 23.5,
-      "updated_at": "2026-06-30T09:29:32.532276+00:00"
+      "score": 6.0,
+      "updated_at": "2026-07-01T09:41:00.406881+00:00"
     },
     {
       "forum_id": "2606.26297",
@@ -291,40 +199,86 @@
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2606.26297v2 Announce Type: replace \nAbstract: This paper presents a Qiskit-compatible distributed quantum approximate optimization algorithm (DQAOA) simulator for quadratic unconstrained binary optimization (QUBO) problems arising in engineering design and decision applications. The open-source simulator is available through the RAISE LAB website and GitHub repository, with README documentation for installation, input formatting, configurable parameters, and example workflows. The package addresses the need for a reusable simulator that can solve and compare QUBO instances across different QAOA execution modes. It supports monolithic QAOA on a single quantum processing unit (QPU) and distributed QAOA across a user-specified number of QPUs with configurable capacities. The workflow c",
+      "abstract": "arXiv:2606.26297v3 Announce Type: replace \nAbstract: This paper presents a Qiskit-compatible distributed quantum approximate optimization algorithm (DQAOA) simulator for quadratic unconstrained binary optimization (QUBO) problems arising in engineering design and decision applications. The open-source simulator is available through the RAISE LAB website and GitHub repository, with README documentation for installation, input formatting, configurable parameters, and example workflows. The package addresses the need for a reusable simulator that can solve and compare QUBO instances across different QAOA execution modes. It supports monolithic QAOA on a single quantum processing unit (QPU) and distributed QAOA across a user-specified number of QPUs with configurable capacities. The workflow c",
       "pdf_link": "https://arxiv.org/pdf/2606.26297.pdf",
       "forum_link": "https://arxiv.org/abs/2606.26297",
-      "submission_date": "2026-06-30T04:00:00+00:00",
+      "submission_date": "2026-07-01T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 21.5,
-      "updated_at": "2026-06-30T09:29:32.532297+00:00"
+      "updated_at": "2026-07-01T09:41:00.406905+00:00"
     },
     {
-      "forum_id": "2605.09708",
+      "forum_id": "2606.29708",
       "paper_number": -1,
-      "title": "Metal-Sci: A Scientific Compute Benchmark for Evolutionary LLM Kernel Search on Apple Silicon",
+      "title": "Demystifying the Design Space and Best Practices for Heterogeneous LLM Inference and Serving",
       "authors": [
-        "V\\'ictor Gallego"
+        "Zhixin Wang, Zhengbo Wang, Fangcheng Fu, Yinhui Lu, Jinlong Hou, Yijie Chen, Xiaowei Shen, He Liu, Xiangbin Li, Jun Chen, Ruya Gu, Dian Wang, Zhou Tan, Yuan Cheng, Hongzhou Zhang, Xiangjun Huang, Ping Zhang, Xiaohe Hu"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2605.09708v2 Announce Type: replace-cross \nAbstract: We present Metal-Sci, a 10-task benchmark of scientific Apple Silicon Metal compute kernels spanning six optimization regimes (stencils, all-pairs in $n$-body problems, multi-field Boltzmann, neighbor-list molecular dynamics, multi-kernel PDE, FFT). Each task ships a CPU reference, a roofline-anchored fitness function, and a held-out generalization size. We pair the benchmark with a lightweight harness for automatic kernel search that runtime-compiles each candidate, scores it against the roofline across multiple sizes, and feeds structured compile and per-size correctness diagnostics back to a frozen LLM driving a $(1{+}1)$ evolutionary loop. We report matched single-model sweeps of Claude Opus 4.7, Gemini 3.1 Pro, and GPT 5.5 on ",
-      "pdf_link": "https://arxiv.org/pdf/2605.09708.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.09708",
-      "submission_date": "2026-06-30T04:00:00+00:00",
+      "abstract": "arXiv:2606.29708v2 Announce Type: replace \nAbstract: Heterogeneous prefill-decode (PD) inference is now in production: prefill on cost-efficient or supply-available accelerators, decode on bandwidth-strong ones, and KV state crossing mixed interconnects in mixed numerical formats. Each deployment makes these decisions on its own. What is missing is the picture across configurations-which decisions must be made jointly at the PD boundary, and which can be made independently. We propose a design space organized along four design axes-accelerator, precision, interconnect, and KV residency and the workload regime (stage pressure) they respond to. We show that only a subset of interactions among these factors become binding constraints once PD inference becomes heterogeneous. These interactions",
+      "pdf_link": "https://arxiv.org/pdf/2606.29708.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.29708",
+      "submission_date": "2026-07-01T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 24.5,
-      "updated_at": "2026-06-30T09:29:32.532386+00:00"
+      "score": 42.5,
+      "updated_at": "2026-07-01T09:41:00.406942+00:00"
+    },
+    {
+      "forum_id": "2602.11688",
+      "paper_number": -1,
+      "title": "GORGO: Online Tuning for Cross-Region Network-Aware LLM Serving",
+      "authors": [
+        "Alessio Ricci Toniolo, Rome Thorstenson, Abinaya Dinesh"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2602.11688v2 Announce Type: replace-cross \nAbstract: Increasingly, LLM inference services proxy client requests to engine replicas distributed globally. Load-balancing policies must jointly account for factors including KV-cache locality, replica load, and variable network latency when optimizing for metrics like latency and TTFT. However, existing systems only evaluate a subset of these factors in their cost model, leading to uneven concentrations of load and KV-cache across replicas. We present GORGO, a proxy architecture that holistically factors network latency, prefill cost, and queueing delay using tunable parameters. Since open-source chat datasets such as LMSYS-Chat1M and WildChat-4.8M lack long-context, high prefix-reuse data, we release a synthetic dataset, ART-Chat-2.5M, f",
+      "pdf_link": "https://arxiv.org/pdf/2602.11688.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.11688",
+      "submission_date": "2026-07-01T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-01T09:41:00.406962+00:00"
+    },
+    {
+      "forum_id": "2606.30460",
+      "paper_number": -1,
+      "title": "HSAP: A Hierarchical Sequence-aware Parallelism for Hybrid-Context Generative Models",
+      "authors": [
+        "Songxin Zhang, Zejian Xie, Zhuoyang Song, Cong lin, Junyu Lu, Jiaxing Zhang, Bingyi Jing"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2606.30460v2 Announce Type: replace-cross \nAbstract: In this paper, we aim to combine the advantages of existing sequence parallelism paradigms and overcomes their drawbacks, the most serious of which is the incapability to correctly compute causal attention on the hybrid-context packed sequences, in a stronger sequence parallelism framework. The practical technique of packing sequences for efficiently pretraining and fine-tuning large language models causes cross-contamination problem in attention computation, which can be effectively solved when no parallelism in the sequence length dimension is taken. However, in sequence parallelism, existing approaches either ignore the scenario of hybrid-context sequences or conversely sacrifice and limit parallelism degree for supporting the s",
+      "pdf_link": "https://arxiv.org/pdf/2606.30460.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.30460",
+      "submission_date": "2026-07-01T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-01T09:41:00.407000+00:00"
     }
   ]
 }

@@ -1,67 +1,42 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-06-30 09:29:34 UTC
-- **Total Filtered Papers**: 56
-- **Displaying**: 56 (arXiv: 56, OpenReview: 0)
+- **Last Updated**: 2026-07-01 09:41:02 UTC
+- **Total Filtered Papers**: 31
+- **Displaying**: 31 (arXiv: 31, OpenReview: 0)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [McMg: A Learned Phase-Space Multi-channel Multigrid Preconditioner for Helmholtz Equation](https://arxiv.org/abs/2606.30495) | `ARXIV` | 64.0 |
-| 2 | [Optimal error estimates for a discontinuous Galerkin method on curved boundaries with polygonal meshes](https://arxiv.org/abs/2601.10474) | `ARXIV` | 44.5 |
-| 3 | [Adjoint-Based Bayesian Uncertainty Quantification for PDE-Constrained Inverse Problems with Application to Semiconductor Imaging](https://arxiv.org/abs/2606.30340) | `ARXIV` | 37.0 |
-| 4 | [Viscosity in error upper bound for a consistent splitting scheme of the Navier-Stokes equations](https://arxiv.org/abs/2606.28800) | `ARXIV` | 35.0 |
-| 5 | [Randomized neural operator for parametric PDEs with fast training and conformal uncertainty quantification](https://arxiv.org/abs/2606.29440) | `ARXIV` | 34.0 |
-| 6 | [A convergent finite element method for two-phase Stokes flow driven by surface tension](https://arxiv.org/abs/2509.20111) | `ARXIV` | 34.0 |
-| 7 | [A positivity preserving and entropy stable nodal discontinuous Galerkin scheme for ideal MHD](https://arxiv.org/abs/2604.23885) | `ARXIV` | 33.5 |
-| 8 | [Implementation of Hyperelastic Physics-Augmented Neural Networks in the Explicit Finite Element Codes Simcenter Radioss and OpenRadioss with Applications to Impact Events](https://arxiv.org/abs/2606.29874) | `ARXIV` | 33.0 |
-| 9 | [A dichotomy of finite element spaces and its application to an energy-conservative scheme for the regularized long wave equation](https://arxiv.org/abs/2512.20737) | `ARXIV` | 31.5 |
-| 10 | [Pressure-robust ALE space-time DG method for the Stokes equations on moving domains](https://arxiv.org/abs/2606.28914) | `ARXIV` | 17.0 |
-| 11 | [$hp$-error analysis of mixed-order hybrid high-order methods for elliptic problems on simplicial meshes](https://arxiv.org/abs/2410.02540) | `ARXIV` | 13.5 |
-| 12 | [Nonconforming Linear Element Method for a Generalized Tensor-Valued Stokes Equation with Application to the Triharmonic Equation](https://arxiv.org/abs/2510.22125) | `ARXIV` | 13.5 |
-| 13 | [Quadrature error estimates on non-matching grids in a fictitious domain framework for fluid-structure interaction problems](https://arxiv.org/abs/2406.03981) | `ARXIV` | 12.5 |
-| 14 | [Hypocoercivity-preserving space-time Galerkin methods for kinetic Fokker-Planck equations](https://arxiv.org/abs/2606.29621) | `ARXIV` | 12.0 |
-| 15 | [Optimizer Memory Makes Shuffle Order a First-Order Source of Fine-Tuning Noise](https://arxiv.org/abs/2606.29554) | `ARXIV` | 11.0 |
-| 16 | [Convergence analysis of two-grid methods for nonsymmetric positive definite systems](https://arxiv.org/abs/2204.07918) | `ARXIV` | 11.0 |
-| 17 | [A Quantum Spectral Solver for Periodic Incompressible Stokes Flow](https://arxiv.org/abs/2606.30447) | `ARXIV` | 7.0 |
-| 18 | [Quantum Eigenvalue Transformation via Linear Combination of Hamiltonian Simulation: A Weyl Calculus Approach](https://arxiv.org/abs/2606.29848) | `ARXIV` | 6.5 |
-| 19 | [Fundamental weak convergence theorem for stochastic Volterra integral equations and its applications](https://arxiv.org/abs/2606.29458) | `ARXIV` | 6.0 |
-| 20 | [Residual-Guided Dictionary Learning for Spectrally Accurate Koopman Approximation](https://arxiv.org/abs/2606.29083) | `ARXIV` | 5.0 |
-| 21 | [Monte Carlo methods on compact complex manifolds using Bergman kernels](https://arxiv.org/abs/2405.09203) | `ARXIV` | 4.5 |
-| 22 | [A Discrete Pr\"ufer Transformation Approach to Sturm--Liouville Difference Equations and Eigenvalue Estimation](https://arxiv.org/abs/2606.28852) | `ARXIV` | 4.0 |
-| 23 | [Analytic solutions and numerical method for a coupled thermo-neutronic problem](https://arxiv.org/abs/2205.05945) | `ARXIV` | 4.0 |
-| 24 | [Quasi-Monte Carlo for Bayesian design of experiment problems governed by parametric PDEs](https://arxiv.org/abs/2405.03529) | `ARXIV` | 4.0 |
-| 25 | [Gregory Nested Picard Iteration Schemes for Open Quantum Systems Governed by the Lindblad Equation](https://arxiv.org/abs/2606.29002) | `ARXIV` | 3.5 |
-| 26 | [Accelerated decomposition of bistochastic kernel matrices by low rank approximation](https://arxiv.org/abs/2510.26574) | `ARXIV` | 3.5 |
-| 27 | [Quantum block encoding for one-pair semiseparable matrices](https://arxiv.org/abs/2603.19130) | `ARXIV` | 3.5 |
-| 28 | [On modified anti-Gaussian rules for Jacobi weight functions](https://arxiv.org/abs/2606.30305) | `ARXIV` | 3.0 |
-| 29 | [On the Numerical Treatment of an Abstract Nonlinear System of Coupled Hyperbolic Equations Associated with the Timoshenko Model](https://arxiv.org/abs/2602.02068) | `ARXIV` | 3.0 |
-| 30 | [An Improved Variational Method for Image Denoising](https://arxiv.org/abs/2410.02587) | `ARXIV` | 3.0 |
-| 31 | [Schr\"odingerization based quantum algorithms for regularized Wasserstein proximal operators](https://arxiv.org/abs/2606.28752) | `ARXIV` | 2.5 |
-| 32 | [Low-Rank Tensor Completion using Tensor Train Decomposition via Riemannian Optimization on the Quotient Geometry](https://arxiv.org/abs/2606.30173) | `ARXIV` | 2.5 |
-| 33 | [Neural Galerkin Normalizing Flow for Transition Probability Density Functions of Diffusion Models](https://arxiv.org/abs/2603.18907) | `ARXIV` | 2.5 |
-| 34 | [A New $L2-1_{\sigma}$-Interior Penalty Method for Variable-Order Time-Fractional Subdiffusion Interface Problem with Curved Interface](https://arxiv.org/abs/2606.28443) | `ARXIV` | 2.0 |
-| 35 | [Stable Positive Integral Deferred Correction Methods for Positive Dynamical Systems](https://arxiv.org/abs/2606.29523) | `ARXIV` | 2.0 |
-| 36 | [Structured Proper Loss Geometries for Multiclass Classification: Theory and Controlled Empirical Evaluation](https://arxiv.org/abs/2606.29471) | `ARXIV` | 2.0 |
-| 37 | [Computing sieve integrals using LattE, and the density of integers with a localized divisor](https://arxiv.org/abs/2606.30428) | `ARXIV` | 2.0 |
-| 38 | [Approximation of viscous transport and conservative equations with one sided Lipschitz velocity fields](https://arxiv.org/abs/2505.08970) | `ARXIV` | 2.0 |
-| 39 | [Walking on Heat Stars for Parabolic Heat Equations with Neumann Boundary Conditions](https://arxiv.org/abs/2606.16578) | `ARXIV` | 2.0 |
-| 40 | [Improved Scaling for Fast Mode of Ozaki Scheme II](https://arxiv.org/abs/2606.29129) | `ARXIV` | 1.5 |
-| 41 | [The Coercivity Gap in Neural PDE Solvers: Parameter Escape and Functional Convergence](https://arxiv.org/abs/2606.04018) | `ARXIV` | 1.5 |
-| 42 | [Fast unified evaluation of layer and volume potentials for the 2D modified Helmholtz equation](https://arxiv.org/abs/2606.28865) | `ARXIV` | 1.0 |
-| 43 | [A Mass, Momentum, and Energy Conserving Semi-Lagrangian Adaptive-Rank (SLAR) Method for the Vlasov-Poisson System](https://arxiv.org/abs/2606.29027) | `ARXIV` | 1.0 |
-| 44 | [A Multi-Level Machine Learning Framework for Inverse Scattering Problems with Multi-Frequency Data](https://arxiv.org/abs/2606.29368) | `ARXIV` | 1.0 |
-| 45 | [Fourier Neural Operators with Least-Squares Readout Refit for Learning Random Obstacle-to-Solution Maps](https://arxiv.org/abs/2606.29436) | `ARXIV` | 1.0 |
-| 46 | [Dirichlet-Neumann waveform relaxation for heterogeneous heat equations: continuous and time discrete L2 analysis](https://arxiv.org/abs/2606.29987) | `ARXIV` | 1.0 |
-| 47 | [Faster than Fast-LTS: Robust Regression and Outlier Detection with DC Programming](https://arxiv.org/abs/2606.28974) | `ARXIV` | 1.0 |
-| 48 | [Two-Dimensional Method-of-Moments Analysis of TMz and TEz Scattering from PEC Cylinders](https://arxiv.org/abs/2606.29000) | `ARXIV` | 1.0 |
-| 49 | [Conserved quantities of discretizations by polarization](https://arxiv.org/abs/2606.29263) | `ARXIV` | 1.0 |
-| 50 | [Dipole Diffusion Error in Thin Geometry: Optical Thickness Laws for Grid-Free Subsurface Scattering](https://arxiv.org/abs/2606.29387) | `ARXIV` | 1.0 |
-| 51 | [A Posteriori Error Analysis for Decoupled Neural Approximations of Fully Coupled FBSDEs with Control Mismatch](https://arxiv.org/abs/2606.29474) | `ARXIV` | 1.0 |
-| 52 | [A Sieve-Accelerated Quadrature Method for Exact Privacy Accounting in the 2020 U.S. Decennial Census](https://arxiv.org/abs/2606.29835) | `ARXIV` | 1.0 |
-| 53 | [Computing the Integral R2 Indicator by Perspective Mapping and Box Decomposition](https://arxiv.org/abs/2606.30530) | `ARXIV` | 1.0 |
-| 54 | [Convergence of Continual Learning in Homogeneous Deep Networks](https://arxiv.org/abs/2606.30559) | `ARXIV` | 1.0 |
-| 55 | [Accelerated implicitization: Robust fixed-point iterations arising from an explicit scheme](https://arxiv.org/abs/2510.16535) | `ARXIV` | 1.0 |
-| 56 | [Data-driven material identification in micromorphic continua](https://arxiv.org/abs/2512.15646) | `ARXIV` | 1.0 |
+| 1 | [Higher-order exponential Runge-Kutta Galerkin finite element method for semilinear parabolic problems with nonsmooth data](https://arxiv.org/abs/2606.31231) | `ARXIV` | 33.5 |
+| 2 | [Variational Principles for the Helmholtz equation: application to Finite Element and Neural Network approximations](https://arxiv.org/abs/2511.13217) | `ARXIV` | 33.5 |
+| 3 | [Isogeometric discretizations for the spectrum of the Laplace operator: outlier-free spline bases](https://arxiv.org/abs/2606.31843) | `ARXIV` | 33.0 |
+| 4 | [Sparse POD Mode Selection and Manifold Dimensionality Reduction with Neural Networks](https://arxiv.org/abs/2605.27756) | `ARXIV` | 33.0 |
+| 5 | [Hidden Accuracy and Superconvergence Analysis of Central Discontinuous Galerkin Methods on Overlapping Meshes](https://arxiv.org/abs/2606.31931) | `ARXIV` | 32.5 |
+| 6 | [Complementary families of approximating polynomials with applications to finite element methods applied to differential equations of arbitrary even spatial order](https://arxiv.org/abs/2606.31829) | `ARXIV` | 31.5 |
+| 7 | [Unveiling the Multiphysics Complexity: An Isogeometric Framework for Inducing Bifurcation and Tracing Post-Buckling Paths in Electroelastic Thin Shells](https://arxiv.org/abs/2606.30674) | `ARXIV` | 31.0 |
+| 8 | [Lattice Rules Meet Kernel Cubature](https://arxiv.org/abs/2501.09500) | `ARXIV` | 15.0 |
+| 9 | [Quasi-Monte Carlo for Bayesian shape inversion governed by the Poisson problem subject to Gevrey regular domain deformations](https://arxiv.org/abs/2502.14661) | `ARXIV` | 14.5 |
+| 10 | [Interface-Aware Neural Newton Preconditioning for Robust Cohesive Zone Model Simulations](https://arxiv.org/abs/2606.31921) | `ARXIV` | 14.0 |
+| 11 | [A consistent-splitting generalized scalar auxiliary variable scheme for the perturbed Boussinesq system](https://arxiv.org/abs/2606.31152) | `ARXIV` | 12.0 |
+| 12 | [BDF2-type integrator for Landau-Lifshitz-Gilbert equation in micromagnetics: a-priori error estimates](https://arxiv.org/abs/2605.05129) | `ARXIV` | 12.0 |
+| 13 | [Quantum Derivative Pricing for SPDEs via BDSDE Representation](https://arxiv.org/abs/2606.31076) | `ARXIV` | 8.0 |
+| 14 | [Ricci-Notation Tensor Framework for Numerical Algebraic Geometry via Any-Degree Unitary-Triangular Factorization](https://arxiv.org/abs/2606.31003) | `ARXIV` | 6.0 |
+| 15 | [Numerical Study of Eigenvector Deflation to Accelerate the WaveHoltz Method](https://arxiv.org/abs/2606.31842) | `ARXIV` | 6.0 |
+| 16 | [GQL-Based Physical-Constraint-Preserving High-Order Finite Difference Schemes for Special Relativistic Hydrodynamics in Arbitrary Dimensions](https://arxiv.org/abs/2606.31992) | `ARXIV` | 4.0 |
+| 17 | [Adaptive singularity swap quadrature for near-singular layer potentials on axisymmetric surfaces](https://arxiv.org/abs/2412.19575) | `ARXIV` | 4.0 |
+| 18 | [PDE Identification Using Noise Adaptive Differentiation in Strong Form (S-IDENT)](https://arxiv.org/abs/2606.31776) | `ARXIV` | 3.5 |
+| 19 | [Local Gevrey regularity and Quasi-Monte Carlo quadrature for PDEs parameterized on non-compact domains](https://arxiv.org/abs/2606.30972) | `ARXIV` | 3.0 |
+| 20 | [Stochastic Analysis of Fade Duration Using Wiener Chaos Expansion and Malliavin Calculus: Optimal Importance Sampling via Adaptive SGD](https://arxiv.org/abs/2606.30692) | `ARXIV` | 2.5 |
+| 21 | [Numerical Analysis of differential equations on weighted Sobolev spaces: beyond classical orthogonal polynomials](https://arxiv.org/abs/2501.13672) | `ARXIV` | 2.5 |
+| 22 | [Efficient and Robust Carath\'{e}odory-Steinitz Pruning of Positive Discrete Measures](https://arxiv.org/abs/2510.14916) | `ARXIV` | 2.0 |
+| 23 | [Spectral scheme for an energetic Fokker-Planck equation with $\kappa$-distribution steady states](https://arxiv.org/abs/2509.04911) | `ARXIV` | 2.0 |
+| 24 | [Domain-Decomposed Randomized Neural Networks for Partial Differential Equations in Unbounded Domains](https://arxiv.org/abs/2606.31342) | `ARXIV` | 1.5 |
+| 25 | [Beyond binary scission: a generalized three-species cascade breakage model for wormlike micellar solutions](https://arxiv.org/abs/2606.31059) | `ARXIV` | 1.5 |
+| 26 | [A Quantum Collocation Approach to One-Dimensional Boundary Value Problems with Coherent Amplitude Amplification](https://arxiv.org/abs/2606.31709) | `ARXIV` | 1.5 |
+| 27 | [Algebraic and FFT-Based Methods for Discrete-Time Matrix Convolutions with Applications to Semi-Markov Models](https://arxiv.org/abs/2605.30379) | `ARXIV` | 1.5 |
+| 28 | [GKB Methods for X-Ray Computed Tomography with an Unmatched Back Projector](https://arxiv.org/abs/2606.31153) | `ARXIV` | 1.0 |
+| 29 | [A Spectral Solver for Acoustic Scattering by Multiple Quasi-Axisymmetric Structures](https://arxiv.org/abs/2606.31380) | `ARXIV` | 1.0 |
+| 30 | [PEERS: A Parallel and Exact Effective Resistance Solver via Implicit Inversion and Augmented Symbolic Analysis](https://arxiv.org/abs/2606.31535) | `ARXIV` | 1.0 |
+| 31 | [Energy Dissipation Analysis of Implicit-Explicit Linear Multistep Methods for Gradient Flows Using General Multipliers](https://arxiv.org/abs/2606.22290) | `ARXIV` | 1.0 |
