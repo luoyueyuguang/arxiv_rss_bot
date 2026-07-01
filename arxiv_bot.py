@@ -27,11 +27,12 @@ logger = logging.getLogger(__name__)
 
 
 class ArxivBot:
-    def __init__(self, config_file: str = "config.json"):
+    def __init__(self, config_file: str = "config.json",
+                 summary_cache_file: str = "summary_cache.json"):
         """Initialize the arXiv bot with configuration."""
         self.config = self.load_config(config_file)
+        self.summary_cache_file = summary_cache_file
         self.papers = []
-
     def load_config(self, config_file: str) -> Dict[str, Any]:
         """Load configuration from JSON file."""
         try:
@@ -610,6 +611,36 @@ class ArxivBot:
 
 请用中文回答，结构清晰，重点突出。"""
 
+    def _load_summary_cache(self) -> Dict[str, str]:
+        """Load existing AI summary cache from disk.
+
+        Returns:
+            Dict mapping arxiv_id -> summary text. Empty dict if no cache exists.
+        """
+        try:
+            cache_path = Path(self.summary_cache_file)
+            if cache_path.exists():
+                with open(cache_path, "r", encoding="utf-8") as f:
+                    cache = json.load(f)
+                logger.info(f"Loaded {len(cache)} cached summaries from {self.summary_cache_file}")
+                return cache
+        except Exception as e:
+            logger.warning(f"Failed to load summary cache: {e}")
+        return {}
+
+    def _save_summary_cache(self, cache: Dict[str, str]) -> None:
+        """Save AI summary cache to disk.
+
+        Args:
+            cache: Dict mapping arxiv_id -> summary text.
+        """
+        try:
+            with open(self.summary_cache_file, "w", encoding="utf-8") as f:
+                json.dump(cache, f, ensure_ascii=False, indent=2)
+            logger.info(f"Saved {len(cache)} summaries to {self.summary_cache_file}")
+        except Exception as e:
+            logger.error(f"Failed to save summary cache: {e}")
+
     def render_readme(self, papers: List[Dict[str, Any]]) -> str:
         """Render papers to README.md format."""
         if not papers:
@@ -747,45 +778,63 @@ The bot runs daily at 12:00 UTC via GitHub Actions to fetch the latest papers.
         ai_config = self.config.get("ai_summary", {})
         ai_enabled = ai_config.get("enabled", False)
         max_summarize = ai_config.get("max_papers_to_summarize", 5)
-        
-        # Prepare papers that need AI summary
-        papers_to_summarize = []
+
+        # Load cached summaries from previous runs
+        summary_cache = self._load_summary_cache() if ai_enabled else {}
+
+        # Split papers into cached (reuse) and new (need AI processing)
+        ai_summaries: Dict[int, str] = {}
+        new_papers: List[Tuple[int, Dict[str, Any]]] = []  # (original_index, paper)
         if ai_enabled:
-            papers_to_summarize = papers[:max_summarize]
-        
+            for i, paper in enumerate(papers[:max_summarize], 1):
+                arxiv_id = paper.get("arxiv_id", "")
+                if arxiv_id and arxiv_id in summary_cache:
+                    ai_summaries[i] = summary_cache[arxiv_id]
+                else:
+                    new_papers.append((i, paper))
+            if len(ai_summaries) > 0:
+                logger.info(
+                    f"Reusing {len(ai_summaries)} cached summaries, "
+                    f"{len(new_papers)} need AI processing"
+                )
+
         # Initialize OpenAI client once if needed
         ai_client = None
-        if ai_enabled and papers_to_summarize:
+        if ai_enabled and new_papers:
             api_key_env = ai_config.get("api_key_env", "ARK_API_KEY")
             api_key = os.environ.get(api_key_env)
             if api_key:
                 base_url = ai_config.get("base_url", "https://ark.cn-beijing.volces.com/api/v3")
-                ai_client = OpenAI(
-                    api_key=api_key,
-                    base_url=base_url,
-                )
-        
-        # Process papers in parallel with progress bar
-        ai_summaries = {}
-        if papers_to_summarize:
-            max_workers = ai_config.get("max_workers", 5)  # Configurable concurrency
-            
+                ai_client = OpenAI(api_key=api_key, base_url=base_url)
+
+        # Process new papers in parallel
+        if new_papers:
+            max_workers = ai_config.get("max_workers", 5)
+
             with ThreadPoolExecutor(max_workers=max_workers) as executor:
-                # Submit all tasks
-                future_to_index = {
-                    executor.submit(self._process_paper_with_ai, paper, i+1, ai_config, ai_client): i+1
-                    for i, paper in enumerate(papers_to_summarize)
-                }
-                
-                # Process with progress bar
-                with tqdm(total=len(papers_to_summarize), desc="Processing papers with AI", unit="paper") as pbar:
-                    for future in as_completed(future_to_index):
-                        index, ai_summary = future.result()
-                        ai_summaries[index] = ai_summary
+                future_to_paper = {}
+                for idx, paper in new_papers:
+                    future = executor.submit(
+                        self._process_paper_with_ai, paper, idx, ai_config, ai_client
+                    )
+                    future_to_paper[future] = paper
+
+                with tqdm(total=len(new_papers), desc="Processing papers with AI", unit="paper") as pbar:
+                    for future in as_completed(future_to_paper):
+                        idx, ai_summary = future.result()
+                        paper = future_to_paper[future]
+                        ai_summaries[idx] = ai_summary
                         pbar.update(1)
                         if ai_summary:
-                            pbar.set_postfix({"status": f"✓ {index}/{len(papers_to_summarize)}"})
-        
+                            pbar.set_postfix({"status": f"✓ {idx}/{max_summarize}"})
+                            # Persist to cache immediately on success
+                            arxiv_id = paper.get("arxiv_id", "")
+                            if arxiv_id:
+                                summary_cache[arxiv_id] = ai_summary
+
+            # Save updated cache to disk
+            self._save_summary_cache(summary_cache)
+
         # Generate papers section
         papers_text = []
         for i, paper in enumerate(papers, 1):
