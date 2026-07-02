@@ -1,54 +1,7 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-07-01T09:41:01.215254+00:00",
-  "paper_count": 2,
-  "papers": [
-    {
-      "forum_id": "2602.13692",
-      "paper_number": -1,
-      "title": "ThunderAgent: A Simple, Fast and Program-Aware Agentic Inference System",
-      "authors": [
-        "Hao Kang, Ziyang Li, Weili Xu, Xinyu Yang, Yinfang Chen, Junxiong Wang, Beidi Chen, Tushar Krishna, Chenfeng Xu, Simran Arora"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2602.13692v3 Announce Type: replace \nAbstract: Large language models(LLMs) are now used to power complex multi-turn agentic workflows. Existing systems run agentic inference by loosely assembling isolated components: an LLM inference engine (e.g., vLLM) and a tool orchestrator (e.g., Kubernetes). Although agentic workflows involve multiple LLM and tool requests, these systems schedule and allocate resources separately on a per-request basis, without end-to-end knowledge of the workflow. This leads to sub-optimal management of KV cache and tool execution environments. To address the challenges, we propose ThunderAgent, a fast, simple, and program-aware agentic inference system. We first abstract agentic workflows as LLM Programs, enabling a unified view of heterogeneous resources, inc",
-      "pdf_link": "https://arxiv.org/pdf/2602.13692.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.13692",
-      "submission_date": "2026-07-01T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 68.5,
-      "updated_at": "2026-07-01T09:41:00.815619+00:00"
-    },
-    {
-      "forum_id": "2606.30553",
-      "paper_number": -1,
-      "title": "COSM: A Cooperative Scheduling Framework for Concurrent PIM and CPU Execution on Mobile Devices",
-      "authors": [
-        "Yilong Zhao, Fangxin Liu, Onur Mutlu, Mingyu Gao, Jian Liu, Haibing Guan, Li Jiang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2606.30553v2 Announce Type: replace-cross \nAbstract: The development of on-device large language models (LLMs) is driven by the need for privacy and fast response times. Energy-intensive data transfer on mobile devices makes Processing-in-Memory (PIM) an effective solution. Due to stringent DRAM cost constraints, limited physical footprint on circuit boards, and the interaction between applications and LLMs, it is imperative for the CPU and PIM to operate concurrently within a shared memory space. However, challenges such as bank conflicts and bus congestion can arise, potentially diminishing the performance and energy benefits of PIM. To address this challenge, we introduce COSM, a cooperative scheduling framework designed to facilitate the concurrent operation of PIM and CPU tasks ",
-      "pdf_link": "https://arxiv.org/pdf/2606.30553.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.30553",
-      "submission_date": "2026-07-01T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-07-01T09:41:00.913182+00:00"
-    }
-  ]
+  "last_updated": "2026-07-02T08:52:26.024370+00:00",
+  "paper_count": 0,
+  "papers": []
 }

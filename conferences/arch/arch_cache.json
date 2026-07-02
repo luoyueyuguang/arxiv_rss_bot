@@ -1,31 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-07-01T09:41:00.304572+00:00",
+  "last_updated": "2026-07-02T08:52:24.404607+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2606.31681",
+      "forum_id": "2607.00621",
       "paper_number": -1,
-      "title": "Exploring Side-Channel Protections in Hardware Implementations of PQC ML-KEM Verification",
+      "title": "High-Performance NTT Accelerators for PQC leveraging Unified Redundant Arithmetic and Fine-Tuned Microarchitecture",
       "authors": [
-        "Davis Ranney, Yashaswini I Makaram, A. Adam Ding, Yunsi Fei"
+        "George Alexakis, Dimitrios Schoinianakis, Giorgos Dimitrakopoulos"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2606.31681v1 Announce Type: cross \nAbstract: As ML-KEM is adopted as a post-quantum cryptographic standard, resilience against physical side-channel attacks has become essential. Among the constituent steps, the decapsulation Fujisaki-Okamoto (FO) verification is particularly vulnerable to side-channel power and electromagnetic (EM) analysis. In this work, we focus on common FPGA-based implementations and examine their side-channel vulnerabilities, and compare them with those of microcontroller implementations. Three verification implementations, unprotected, hash-based (first-order), and higher-order masked, are evaluated for side-channel security on both a microcontroller and an FPGA. While FPGAs offer higher speed and parallelism, they often exhibit stronger side-channel leakage, ",
-      "pdf_link": "https://arxiv.org/pdf/2606.31681.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.31681",
-      "submission_date": "2026-07-01T04:00:00+00:00",
+      "abstract": "arXiv:2607.00621v1 Announce Type: new \nAbstract: Post-quantum cryptography and privacy-preserving technologies are expected to play a central role in future secure communication systems. Lattice-based PQC schemes such as ML-KEM (CRYSTALS-Kyber) and ML-DSA (CRYSTALS-Dilithium) rely heavily on large-degree polynomial arithmetic, making the Number Theoretic Transform (NTT) a key computational primitive. Although existing hardware accelerators exploit parallelism and pipelining to support both NTT and INTT, their efficiency is often limited by the overhead of modular reduction and correction steps, inverse-transform scaling operations, and suboptimal FPGA implementations. This work addresses these limitations by proposing parallel iterative NTT/INTT accelerators based on optimized unified butt",
+      "pdf_link": "https://arxiv.org/pdf/2607.00621.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.00621",
+      "submission_date": "2026-07-02T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 34.0,
-      "updated_at": "2026-07-01T09:41:00.303634+00:00"
+      "score": 56.0,
+      "updated_at": "2026-07-02T08:52:24.403865+00:00"
     }
   ]
 }
