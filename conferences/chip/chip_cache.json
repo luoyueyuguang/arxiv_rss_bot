@@ -1,31 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-07-02T08:52:26.103197+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-07-03T08:58:40.598220+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2607.00621",
+      "forum_id": "2607.01798",
       "paper_number": -1,
-      "title": "High-Performance NTT Accelerators for PQC leveraging Unified Redundant Arithmetic and Fine-Tuned Microarchitecture",
+      "title": "Approximate Attention Weighting for Sustainable FPGA-Based Vision Transformer Inference",
       "authors": [
-        "George Alexakis, Dimitrios Schoinianakis, Giorgos Dimitrakopoulos"
+        "Muhammad Usman, Shujaat Khan, Dorit Merhof"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2607.00621v1 Announce Type: new \nAbstract: Post-quantum cryptography and privacy-preserving technologies are expected to play a central role in future secure communication systems. Lattice-based PQC schemes such as ML-KEM (CRYSTALS-Kyber) and ML-DSA (CRYSTALS-Dilithium) rely heavily on large-degree polynomial arithmetic, making the Number Theoretic Transform (NTT) a key computational primitive. Although existing hardware accelerators exploit parallelism and pipelining to support both NTT and INTT, their efficiency is often limited by the overhead of modular reduction and correction steps, inverse-transform scaling operations, and suboptimal FPGA implementations. This work addresses these limitations by proposing parallel iterative NTT/INTT accelerators based on optimized unified butt",
-      "pdf_link": "https://arxiv.org/pdf/2607.00621.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.00621",
-      "submission_date": "2026-07-02T04:00:00+00:00",
+      "abstract": "arXiv:2607.01798v1 Announce Type: new \nAbstract: Vision Transformers have reshaped computer vision by using self-attention to capture global context across image regions. This makes them attractive for edge visual inspection and monitoring in applications such as renewable-energy infrastructure, industrial quality control, medical imaging, and autonomous-system sensing. However, deploying ViTs on small FPGAs remains challenging because the softmax stage in self-attention requires exponential evaluation and normalization, which are costly in hardware. Existing implementations often rely on CORDIC pipelines or BRAM-based look-up tables, increasing area and power consumption. This paper presents a BRAM-free approximate attention-weighting unit for FPGA-based ViT inference. The proposed design",
+      "pdf_link": "https://arxiv.org/pdf/2607.01798.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.01798",
+      "submission_date": "2026-07-03T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-07-03T08:58:40.597244+00:00"
+    },
+    {
+      "forum_id": "2607.02465",
+      "paper_number": -1,
+      "title": "Probabilistic Memory for Trustworthy Edge Intelligence",
+      "authors": [
+        "Likai Pei, Jiahao Zheng, Xueji Zhao, Emilie Ye, Jianbo Liu, Hanqing Tao, Ming-Yen Lee, Ruiyang Qin, Yiyu Shi, Shimeng Yu, X. Sharon Hu, Ningyuan Cao"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.02465v1 Announce Type: new \nAbstract: Probabilistic computation plays an important role in trustworthy edge intelligence to quantify uncertainty, enhance robustness, reconstruct data, and protect privacy, but its adoption is limited by the orders-of-magnitude data throughput gap between Gaussian random number generation (GRNG) and computation, as well as instruction overhead. This paper introduces probabilistic memory (p-MEM), a unified memory primitive that stores distribution parameters, such as mean and standard deviation, and samples directly at the native memory bandwidth, where deterministic data becomes the zero-variance special case. Using a layout-validated p-MEM simulator, we comprehensively explore device choices, memory specifications, and technology nodes, showing t",
+      "pdf_link": "https://arxiv.org/pdf/2607.02465.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.02465",
+      "submission_date": "2026-07-03T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-07-02T08:52:26.102658+00:00"
+      "updated_at": "2026-07-03T08:58:40.597269+00:00"
+    },
+    {
+      "forum_id": "2607.02429",
+      "paper_number": -1,
+      "title": "APEIRON: composing smart TDAQ systems for high energy physics experiments",
+      "authors": [
+        "Roberto Ammendola, Andrea Biagioni, Carlotta Chiarini, Andrea Ciardiello, Paolo Cretaro, Ottorino Frezza, Francesca Lo Cicero, Alessandro Lonardo, Michele Martinelli, Pier Stanislao Paolucci, Pierpaolo Perticaroli, Cristian Rossi, Francesco Simula, Matteo Turisini, Piero Vicini"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2607.02429v1 Announce Type: cross \nAbstract: We present APEIRON, a distributed heterogeneous processing framework comprising both hardware architecture and software stack for multi-FPGA systems. Targeting smart trigger and data acquisition (TDAQ) systems in high energy physics, APEIRON spans the full software hierarchy: from low-level device drivers to a high-level dataflow programming model based on High-Level Synthesis. We describe the framework design, its core communication infrastructure, and a particle identification application for the NA62 experiment as a representative physics use case.",
+      "pdf_link": "https://arxiv.org/pdf/2607.02429.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.02429",
+      "submission_date": "2026-07-03T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.0,
+      "updated_at": "2026-07-03T08:58:40.597340+00:00"
     }
   ]
 }

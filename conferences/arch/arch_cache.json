@@ -1,31 +1,77 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-07-02T08:52:24.404607+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-07-03T08:58:37.991600+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2607.00621",
+      "forum_id": "2607.02112",
       "paper_number": -1,
-      "title": "High-Performance NTT Accelerators for PQC leveraging Unified Redundant Arithmetic and Fine-Tuned Microarchitecture",
+      "title": "A 2048-spin bulk acoustic wave Ising machine for number partitioning and Sudoku",
       "authors": [
-        "George Alexakis, Dimitrios Schoinianakis, Giorgos Dimitrakopoulos"
+        "Venkatesh Vadde, Roman Ovcharov, Victor H. Gonz\\'alez, Roman Khymyn, Artem Litvinenko, Johan {\\AA}kerman"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2607.00621v1 Announce Type: new \nAbstract: Post-quantum cryptography and privacy-preserving technologies are expected to play a central role in future secure communication systems. Lattice-based PQC schemes such as ML-KEM (CRYSTALS-Kyber) and ML-DSA (CRYSTALS-Dilithium) rely heavily on large-degree polynomial arithmetic, making the Number Theoretic Transform (NTT) a key computational primitive. Although existing hardware accelerators exploit parallelism and pipelining to support both NTT and INTT, their efficiency is often limited by the overhead of modular reduction and correction steps, inverse-transform scaling operations, and suboptimal FPGA implementations. This work addresses these limitations by proposing parallel iterative NTT/INTT accelerators based on optimized unified butt",
-      "pdf_link": "https://arxiv.org/pdf/2607.00621.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.00621",
-      "submission_date": "2026-07-02T04:00:00+00:00",
+      "abstract": "arXiv:2607.02112v1 Announce Type: cross \nAbstract: Optical coherent Ising machines based on time-multiplexing have demonstrated significant progress in terms of connectivity and spin scalability. However, they are constrained by large physical footprints, high power consumption, poor thermal stability, and high cost. Here, we present a time-multiplexed Ising machine leveraging propagating wave packets in solid-state delay lines at microwave frequencies, enabling thermally stable, robust, low-power, tabletop, and affordable design. We use two serially connected 20.5 MHz, 707 {\\mu}s bulk acoustic wave delay lines supporting 2,048 spins. Our design provides all-to-all connectivity with 15-bit coupling resolution and finds approximate MAX-CUT solutions in 341 ms, potentially scalable to sub-ms",
+      "pdf_link": "https://arxiv.org/pdf/2607.02112.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.02112",
+      "submission_date": "2026-07-03T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 56.0,
-      "updated_at": "2026-07-02T08:52:24.403865+00:00"
+      "score": 22.0,
+      "updated_at": "2026-07-03T08:58:37.990174+00:00"
+    },
+    {
+      "forum_id": "2606.11357",
+      "paper_number": -1,
+      "title": "TileFuse: A Fused Mixed-Precision Kernel Library for Efficient Quantized LLM Inference on AMD NPUs",
+      "authors": [
+        "Wesley Pang, Gregory Hyegang Jun, Feiyang Liu, Deming Chen"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2606.11357v2 Announce Type: replace-cross \nAbstract: With the growing demand for on-device LLM inference, edge SoCs increasingly integrate NPUs to improve performance and energy efficiency under tight power and thermal budgets. However, practical LLM deployment on current client NPUs remains difficult: widely used quantization formats such as AWQ do not map cleanly onto many existing NPU software stacks, which are often proprietary and expose limited low-level control. In this work, we present TileFuse, a close-to-metal mixed-precision kernel library for AMD XDNA2 NPUs that targets GEMM/GEMV-based operators in quantized LLM inference. TileFuse brings practical low-bit formats such as AWQ-style W4A16 and W8A16 directly onto XDNA2, rather than forcing the model to be reshaped around an",
+      "pdf_link": "https://arxiv.org/pdf/2606.11357.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.11357",
+      "submission_date": "2026-07-03T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.5,
+      "updated_at": "2026-07-03T08:58:37.990297+00:00"
+    },
+    {
+      "forum_id": "2606.28565",
+      "paper_number": -1,
+      "title": "KernelSight-LM: A Kernel-Level LLM Inference Simulator",
+      "authors": [
+        "Xiteng Yao, Taeho Kim, Hengzhi Pei, Xinle Liu, Kyle Ulrich, Leonard Lausen, Ashish Khetan, Xiang Song, George Karypis, Martin Herbordt"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2606.28565v2 Announce Type: replace-cross \nAbstract: As large language models (LLMs) move into production serving, practitioners must rapidly evaluate inference performance across diverse hardware, models, and serving parameters to meet cost and latency targets. However, the end-to-end behavior of LLMs couples serving-layer policies with low-level GPU kernel execution and rapidly evolving architectures, forcing slow, deployment-specific benchmarking that is hard to generalize.\n  We present KernelSight-LM, a fine-grained inference simulator that models token-level execution and produces kernel-level latency breakdowns. It decomposes each serving step into a roofline kernel model with a learned efficiency term, a communication model, and a host-overhead model, composed through a discre",
+      "pdf_link": "https://arxiv.org/pdf/2606.28565.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.28565",
+      "submission_date": "2026-07-03T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.0,
+      "updated_at": "2026-07-03T08:58:37.990314+00:00"
     }
   ]
 }

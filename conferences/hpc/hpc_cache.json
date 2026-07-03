@@ -1,100 +1,192 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-07-02T08:52:25.330942+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-07-03T08:58:39.898913+00:00",
+  "paper_count": 8,
   "papers": [
     {
-      "forum_id": "2607.00303",
+      "forum_id": "2607.01579",
       "paper_number": -1,
-      "title": "Promise-Future Synchronization for Cluster Asynchronous Many-Task Runtimes via MPI One-Sided Communication",
+      "title": "OmniPilot: An Uncertainty-Aware LLM Inference Advisor for Heterogeneous GPU Clusters",
       "authors": [
-        "Mia Reitz"
+        "D. Balamurugan, Thomas W. Bush"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.00303v1 Announce Type: new \nAbstract: Asynchronous Many-Task (AMT) runtimes use futures as placeholders for values produced by other tasks. In the ItoyoriFBC AMT runtime, the existing future-only model binds each future to its producer at creation time and requires the number of tasks that read each future to be fixed at compile time. This prevents directly expressing algorithms that create dependencies dynamically. We extend ItoyoriFBC with an implementation of a promise-future model that lifts these limitations. Thereby, our ItoyoriFBC variant supports dynamic algorithms such as Hierarchical LU factorization (HLU). We experimentally evaluated our implementation using HLU on up to 16 nodes and observed near-ideal scaling with a 15.6x speedup.",
-      "pdf_link": "https://arxiv.org/pdf/2607.00303.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.00303",
-      "submission_date": "2026-07-02T04:00:00+00:00",
+      "abstract": "arXiv:2607.01579v1 Announce Type: new \nAbstract: Serving large language models (LLMs) on a shared, heterogeneous GPU cluster requires users and operators to select the GPU type, tensor-parallel degree, and precision before committing valuable node-hours. Making these choices is challenging because effective throughput, launch-success rates, and cluster demand and utilization continuously fluctuate. Furthermore, static configuration recipes miss critical interactions: quantization effects depend heavily on the model family, key-value cache pressure creates size-by-precision trade-offs, and failure rates vary by more than twofold across different tensor-parallel degrees. Additionally, cluster resources are frequently constrained by unpredictable hardware failures. To address these challenges",
+      "pdf_link": "https://arxiv.org/pdf/2607.01579.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.01579",
+      "submission_date": "2026-07-03T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 36.0,
-      "updated_at": "2026-07-02T08:52:24.505419+00:00"
+      "score": 65.5,
+      "updated_at": "2026-07-03T08:58:38.121120+00:00"
     },
     {
-      "forum_id": "2607.00819",
+      "forum_id": "2607.01701",
       "paper_number": -1,
-      "title": "Modeling and Chasing the Energy-Efficiency Sweet Spots in Modern GPUs",
+      "title": "Arachne: Orchestrating Cascades for Efficient Text-to-Video Model Training",
       "authors": [
-        "Ayesha Afzal, Markus Manfred Li, Michael Panzlaff"
+        "Peng Yu, Yuankai Fan, Yang Qiu, Tian Li, Bihuan Chen, Yin Chen, Qizhen Weng"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.01701v1 Announce Type: new \nAbstract: The rising demand for AI-generated videos is fueled by advances in large-scale Text-to-Video (T2V) models, trained on extensive datasets of video clips spanning diverse resolutions and durations. To address this data heterogeneity, current training methods often use a bucketing strategy that groups samples into discrete buckets for efficiency. However, this approach struggles to scale with compute and data volumes under static parallelism schemes, such as data and sequence parallelism, leading to significant workload imbalances and hardware under-utilization.\n  In this paper, we present Arachne, a novel training framework for efficient T2V model training at scale. Arachne decomposes the training process into fine-grained computational units,",
+      "pdf_link": "https://arxiv.org/pdf/2607.01701.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.01701",
+      "submission_date": "2026-07-03T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-07-03T08:58:38.121153+00:00"
+    },
+    {
+      "forum_id": "2607.01844",
+      "paper_number": -1,
+      "title": "Mixture-of-Parallelisms: Towards Memory-Efficient Training Stack for Mixture-of-Experts Models",
+      "authors": [
+        "Xuan-Phi Nguyen, Shrey Pandit, Yiran Zhao, Semih Yavuz, Silvio Savarese, Shafiq Joty"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.01844v1 Announce Type: new \nAbstract: This paper showcases a memory-efficient training stack for Mixture-of-Experts (MoE) models. It is a training paradigm that combines and specializes various existing and novel parallelism techniques at different layers and stages of the Mixture-of-Experts (MoE) model training pipeline. It leverages these techniques to achieve maximal efficiency given the physical constraints of CPU, CPU memory, GPU HBM memory, and the CPU-GPU, GPU-GPU, and node-node communication bandwidth of the GPU cluster. It also contains a novel strategy for the optimizer step to achieve high throughput and memory efficiency, enabling practitioners to conduct lossless pre-training/fine-tuning of trillion-parameter scale models, at a million context length, with just unde",
+      "pdf_link": "https://arxiv.org/pdf/2607.01844.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.01844",
+      "submission_date": "2026-07-03T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.5,
+      "updated_at": "2026-07-03T08:58:38.121241+00:00"
+    },
+    {
+      "forum_id": "2607.02043",
+      "paper_number": -1,
+      "title": "Towards Load-Aware Prefill Deflection for Disaggregated LLM Serving",
+      "authors": [
+        "Shrikara Arun, Anjaly Parayil, Srikant Bharadwaj, Renee St. Amant, Victor R\\\"uhle"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.02043v1 Announce Type: new \nAbstract: Disaggregated LLM serving runs prefill and decode on separate GPU pools to keep the two phases from interfering. In practice, this creates a new asymmetry: under bursty, heavy-tailed workloads prefill nodes saturate while decode nodes have compute underutilized, and on a production-style A100 cluster with 2 prefill and 2 decode nodes (2P2D), we find that prefill execution accounts for only 2-23% of P95 Time-to-First-Token (TTFT). Queuing and inter-node GPU-GPU KV-cache transfer account for the rest. We present a proactive prefill-deflecting scheduler that lets decode nodes serve prefill phase of requests as chunked-prefill steps interleaved with their in-flight decode batches. For each queued request, we estimate the TTFT it would see on the",
+      "pdf_link": "https://arxiv.org/pdf/2607.02043.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.02043",
+      "submission_date": "2026-07-03T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-07-03T08:58:38.121266+00:00"
+    },
+    {
+      "forum_id": "2607.01646",
+      "paper_number": -1,
+      "title": "DeadPool: Resilient LLM Training with Hot-Swapping via Zero-Overhead Checkpoint",
+      "authors": [
+        "Haotian Xie, Junlin Chen, Mingkai Zheng, Lishan Yang, Zhao Zhang"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2607.00819v1 Announce Type: new \nAbstract: Energy consumption is a key limitation in high-performance computing on heterogeneous CPU-GPU systems. This work studies how hardware configuration affects energy-to-solution under realistic workloads. We study energy efficiency regimes using molecular dynamics benchmarks (GROMACS and AMBER) and a stress-test benchmark (FIRESTARTER) on systems with A40, A100, H100, and H200 GPUs and Intel Ice Lake CPU, varying frequency scaling and power cap. We show that energy-to-solution exhibits workload- and architecture-dependent transitions between efficient and inefficient regimes, driven by nonlinear GPU power-frequency scaling. We introduce an interpretable analytical model that decomposes GPU power into linear and nonlinear components, identifying",
-      "pdf_link": "https://arxiv.org/pdf/2607.00819.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.00819",
-      "submission_date": "2026-07-02T04:00:00+00:00",
+      "abstract": "arXiv:2607.01646v1 Announce Type: cross \nAbstract: State-of-the-art large language model (LLM) training takes tens of thousands of graphics processing units (GPUs) for months and encounters failures across the software and hardware stack. Existing fault-tolerance mechanisms either impose non-trivial overhead during failure-free execution or suffer from prolonged recovery latency, particularly under scenarios where a small subset of compute nodes experience permanent failures. %The tradeoff between failure-free overhead and recovery latency forms a space forms a Pareto frontier We present DeadPool to simultaneously address both optimization objectives. DeadPool incorporates a fault-tolerance mechanism that restores LLM training via hot-swapping, namely by replacing failed nodes with spare n",
+      "pdf_link": "https://arxiv.org/pdf/2607.01646.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.01646",
+      "submission_date": "2026-07-03T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 57.0,
-      "updated_at": "2026-07-02T08:52:24.505477+00:00"
+      "score": 22.5,
+      "updated_at": "2026-07-03T08:58:38.121492+00:00"
     },
     {
-      "forum_id": "2607.00740",
+      "forum_id": "2607.01678",
       "paper_number": -1,
-      "title": "Stochastic Connectivity as the Foundation of a Runtime Model for Microservice Availability Analysis",
+      "title": "SCAPE: Accurate and Efficient LLM Training with Extreme Sparse Communication",
       "authors": [
-        "Anatoly A. Krasnovsky, Anna Maslovskaya"
+        "Mingkai Zheng, Junlin Chen, Haotian Xie, Zhao Zhang"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2607.00740v1 Announce Type: cross \nAbstract: Microservice availability is commonly assessed by fault injection and chaos experiments, but such experiments are costly, operationally risky, and difficult to repeat for every architectural change. Distributed tracing and deployment metadata provide cheaper evidence, yet they usually remain descriptive: they show which services interacted, not what endpoint-level availability property follows. This paper proposes a formal runtime availability model based on stochastic connectivity for resilience-oriented analysis of microservice endpoints. It treats endpoint availability under explicit fault scenarios as a measurable facet of microservice resilience, combining a typed service-dependency graph, a replication map, a probability measure over",
-      "pdf_link": "https://arxiv.org/pdf/2607.00740.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.00740",
-      "submission_date": "2026-07-02T04:00:00+00:00",
+      "abstract": "arXiv:2607.01678v1 Announce Type: cross \nAbstract: Communication increasingly dominates the cost of Large Language Model (LLM) pre-training, especially under data-parallel and sharded training schemes, where gradient synchronization and parameter reconstruction overhead increase with model size and system scale. Existing communication-reduction methods either sparsify raw gradients, which can be unstable for modern Adam-style optimizers at high sparsity, or quantize communication, whose savings are fundamentally bounded by bit width and often incur additional runtime overhead. We present SCAPE, a communication-efficient distributed optimizer for LLM training that exploits the stability of AdamS's first-moment to enable aggressive sparsification without loss of LLM quality. Instead of const",
+      "pdf_link": "https://arxiv.org/pdf/2607.01678.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.01678",
+      "submission_date": "2026-07-03T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-02T08:52:24.505587+00:00"
+      "score": 6.0,
+      "updated_at": "2026-07-03T08:58:38.121516+00:00"
     },
     {
-      "forum_id": "2607.01088",
+      "forum_id": "2607.01993",
       "paper_number": -1,
-      "title": "ROSA: A Robotics Foundation Model Serving System for Robot Factories",
+      "title": "Scalable and Distributed Silhouette Approximation",
       "authors": [
-        "Wenqi Jiang, Jason Clemons, Rowland O'Flaherty, Hugo Hadfield, Alperen Degirmenci, Shuran Song, Yashraj Narang, Christos Kozyrakis"
+        "Ilie Sarpe, Federico Altieri, Andrea Pietracaprina, Geppino Pucci, Fabio Vandin"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2607.01088v1 Announce Type: cross \nAbstract: Robotics foundation models (RFMs) are making general-purpose robots increasingly practical for factory deployments. While RFM serving systems are central to this vision, existing systems are largely shaped by a single-robot, single-model assumption: inference is treated as an edge-computing problem handled by an on-robot or dedicated nearby GPU, and the serving objective is to minimize the latency of a single action model. In this paper, we propose ROSA, an RFM serving system for robot factories designed around three key principles. First, ROSA adopts shared GPU-pool serving, allowing a fleet of robots to access powerful server-class GPUs over the network in order to improve inference performance, battery duration, and GPU utilization. Sec",
-      "pdf_link": "https://arxiv.org/pdf/2607.01088.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.01088",
-      "submission_date": "2026-07-02T04:00:00+00:00",
+      "abstract": "arXiv:2607.01993v1 Announce Type: cross \nAbstract: The silhouette is one of the most widely used measures to assess the quality of a $k$-clustering of a dataset of $n$ elements. Its evaluation requires no information beyond the clustering assignment. In addition, the silhouette is extremely easy to interpret, providing a score to measure the quality of a clustering as a whole or for each element. The exact computation of the: (i) silhouette of each element of a dataset; and (ii) the global silhouette of the clustering; require $\\Theta(n^2)$ distance calculations, under general metrics. The quadratic complexity $\\Theta(n^2)$ is extremely prohibitive, especially on massive modern datasets. Surprisingly, existing approximate methods using $O(n^2)$ distance calculations are heuristics not offe",
+      "pdf_link": "https://arxiv.org/pdf/2607.01993.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.01993",
+      "submission_date": "2026-07-03T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 14.0,
-      "updated_at": "2026-07-02T08:52:24.505645+00:00"
+      "score": 4.0,
+      "updated_at": "2026-07-03T08:58:38.121539+00:00"
+    },
+    {
+      "forum_id": "2606.26297",
+      "paper_number": -1,
+      "title": "A Distributed Quantum Approximate Optimization Algorithm Simulator for Engineering Design Optimization",
+      "authors": [
+        "Ali Rajabi, Milad Hasanzadeh, Amin Kargarian"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2606.26297v4 Announce Type: replace \nAbstract: This paper presents a Qiskit-compatible distributed quantum approximate optimization algorithm (DQAOA) simulator for quadratic unconstrained binary optimization (QUBO) problems arising in engineering design and decision applications. The open-source simulator is available through the RAISE LAB website and GitHub repository, with README documentation for installation, input formatting, configurable parameters, and example workflows. The package addresses the need for a reusable simulator that can solve and compare QUBO instances across different QAOA execution modes. It supports monolithic QAOA on a single quantum processing unit (QPU) and distributed QAOA across a user-specified number of QPUs with configurable capacities. The workflow c",
+      "pdf_link": "https://arxiv.org/pdf/2606.26297.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.26297",
+      "submission_date": "2026-07-03T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 21.5,
+      "updated_at": "2026-07-03T08:58:38.121678+00:00"
     }
   ]
 }
