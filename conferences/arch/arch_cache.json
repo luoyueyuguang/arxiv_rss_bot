@@ -1,7 +1,54 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-07-06T10:13:48.019047+00:00",
-  "paper_count": 0,
-  "papers": []
+  "last_updated": "2026-07-07T09:36:35.772575+00:00",
+  "paper_count": 2,
+  "papers": [
+    {
+      "forum_id": "2607.03652",
+      "paper_number": -1,
+      "title": "ELiTeFormer: An Efficient Transformer for FPGAs",
+      "authors": [
+        "Victor Agostinelli, Nicolas Bohm Agostini, Antonino Tumeo"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2607.03652v1 Announce Type: new \nAbstract: Transformer blocks are prevalent in large language model (LLM) but present deployment challenges due to their challenging computational and memory demands. While prior work has typically optimized attention mechanisms or feed-forward networks (FFNs) separately, few hardware (HW) architecture have jointly addressed both components with co-designed hardware acceleration. We present ELiTeFormer (Efficient Linear Ternary Transformer), the first Transformer model architecture that unifies hybrid linear attention with ultra-low-precision (ternary) linear projections, specifically co-designed for field-programmable gate array (FPGA) deployment. ELiTeFormer achieves 10x model weight compression and 12.8x key-value (KV) cache compression compared to ",
+      "pdf_link": "https://arxiv.org/pdf/2607.03652.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.03652",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 43.5,
+      "updated_at": "2026-07-07T09:36:35.771170+00:00"
+    },
+    {
+      "forum_id": "2607.05187",
+      "paper_number": -1,
+      "title": "SMART: A Machine Learning and Monte Carlo Framework for Rapid Analysis of Stochastic Transistor Aging and Process Variation in Digital Circuits",
+      "authors": [
+        "Arash Esshaghi, Siavash Es'haghi, Gholamreza Shahabadi, Alireza Moradi"
+      ],
+      "keywords": [
+        "cs.AR",
+        "ISCA"
+      ],
+      "abstract": "arXiv:2607.05187v1 Announce Type: cross \nAbstract: As CMOS technology scales into the deep nanometer regime, digital circuit reliability is increasingly threatened by the combined stochastic effects of Bias Temperature Instability (BTI) and Process Variation (PV). Traditional reliability analysis methods, which rely on computationally intensive simulations or extensive lookup tables, fail to scale efficiently for large designs, creating a critical bottleneck in design space exploration. To address this, we propose SMART, a novel framework that integrates Machine Learning (ML) with Monte Carlo simulation to enable rapid, high-fidelity reliability analysis. SMART employs Random Forest regression to predict gate delay distributions directly, bypassing time-consuming atomic model parameter ext",
+      "pdf_link": "https://arxiv.org/pdf/2607.05187.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.05187",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "ISCA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 52.5,
+      "updated_at": "2026-07-07T09:36:35.771343+00:00"
+    }
+  ]
 }

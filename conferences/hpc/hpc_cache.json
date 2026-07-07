@@ -1,7 +1,514 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-07-06T10:13:49.607460+00:00",
-  "paper_count": 0,
-  "papers": []
+  "last_updated": "2026-07-07T09:36:36.609950+00:00",
+  "paper_count": 22,
+  "papers": [
+    {
+      "forum_id": "2607.02518",
+      "paper_number": -1,
+      "title": "GLM-5 Serving Parameter Tuning for OpenClaw: Single-Deployment MaaS Inference Optimization for Long-Context Agent Workloads",
+      "authors": [
+        "Minjie Hua, Ning Wang, Peijun Yang, Kai Wang, Shiguo Lian"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.02518v1 Announce Type: new \nAbstract: OpenClaw requests are dominated by long, tool-augmented prefixes, including system prompts, conversation history, and tool outputs fed back into the context window. For this workload, with about 28k-30k input tokens and 500 output tokens per request, serving quality is governed by throughput, TTFT, and tail latency rather than short-prompt throughput alone.\n  This report studies GLM-5 serving-parameter tuning within a MaaS multi-model inference optimization architecture. The scope is the Single-Node Optimization block of the inference-optimization layer, where chunked prefill, tensor parallelism (TP), pipeline parallelism (PP), and request concurrency are tuned for one GLM-5 serving deployment; in this report, \"Single-Node Optimization\" deno",
+      "pdf_link": "https://arxiv.org/pdf/2607.02518.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.02518",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-07-07T09:36:35.884079+00:00"
+    },
+    {
+      "forum_id": "2607.02525",
+      "paper_number": -1,
+      "title": "PEEK: Predictive Queue-Informed KV Cache Management for LLM Serving",
+      "authors": [
+        "Bing Xie, Zhipeng Wang, Masahiro Tanaka, Zheng Zhen"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.02525v1 Announce Type: new \nAbstract: We present PEEK, a lightweight scheduling and eviction framework for both online (streaming) and offline (batch) LLM serving; this paper focuses on the online regime. PEEK maintains an incremental radix tree over the pending queue, exposing\n  prefix-sharing clusters no existing engine surfaces. A low-overhead dual-walk matches the tree against the engine's prefix cache to yield longest-prefix-match for every waiting request; PEEK then admits cluster pioneers first so siblings\n  inherit the freshly cached prefix, a co-designed eviction hook protects blocks ancestral to queued demand, and a multi-lane stride scheduler bounds starvation. On SGLang and vLLM across five workloads up to 4$\\times$H100 (DP=2 over TP=2),\n  PEEK delivers up to 3.0$\\ti",
+      "pdf_link": "https://arxiv.org/pdf/2607.02525.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.02525",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-07-07T09:36:35.884188+00:00"
+    },
+    {
+      "forum_id": "2607.02528",
+      "paper_number": -1,
+      "title": "Operational Memory Architecture for Kubernetes: Evidence Horizon Taxonomy and Extended Causal Pattern Preservation",
+      "authors": [
+        "Shamsher Khan"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2607.02528v1 Announce Type: new \nAbstract: Kubernetes clusters generate rich operational events during pod lifecycle transitions, yet the platform's native event retention model systematically discards the most diagnostically valuable context through multiple evidence destruction mechanisms operating on deterministic schedules. We formalize these mechanisms as an evidence horizon taxonomy: five distinct boundaries after which specific categories of diagnostic context become permanently unrecoverable from the Kubernetes API. H1(LastTerminationState rotation, ~90s) destroys container failure forensics; H2 (scheduler event pruning, 1hr/1000-event cluster limit) destroys placement rationale; H3 (ephemeral container exit, immediate) destroys debug session context; H4 (kubelet reconciliati",
+      "pdf_link": "https://arxiv.org/pdf/2607.02528.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.02528",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-07-07T09:36:35.884212+00:00"
+    },
+    {
+      "forum_id": "2607.02541",
+      "paper_number": -1,
+      "title": "Static PTX Metrics Track Structural Kernel Regressions but Miss Semantic Ones",
+      "authors": [
+        "Dipankar Sarkar"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2607.02541v1 Announce Type: new \nAbstract: We pair each GPU kernel's static PTX metrics (registers, spills, instruction count) with CUDA-event-timed runtime on five GPU classes: RTX 3060, A10, L40S, A100 SXM4, and H100 NVL. In this corpus and toolchain the static and measured signals separate cleanly along one axis. Per-pair Delta-regs and Delta-instrs are identical across all five GPUs for any given (correct, buggy) pair. Measured Delta-perf% is not. Structural bugs that change the kernel's work are unambiguous in the static signal. The gelu_triton_buggy variant, which drops a leading 0.5 factor, removes 8 instructions and 8 registers. The corresponding measured Delta-perf% on RTX 3060 is +3.2%, within the run-to-run noise band at the sub-millisecond scale these corpus kernels occup",
+      "pdf_link": "https://arxiv.org/pdf/2607.02541.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.02541",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 22.0,
+      "updated_at": "2026-07-07T09:36:35.884251+00:00"
+    },
+    {
+      "forum_id": "2607.02558",
+      "paper_number": -1,
+      "title": "MLSYSIM: First-Principles Infrastructure Modeling for Machine Learning Systems",
+      "authors": [
+        "Vijay Janapa Reddi"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2607.02558v1 Announce Type: new \nAbstract: As machine learning shifts from laboratory curiosity to critical infrastructure, the systems that sustain it span an extraordinary range, from sub-milliwatt microcontrollers to multi-gigawatt datacenter fleets. Reasoning across this range is hard: empirical profiling requires the target hardware in hand, while cycle-accurate simulation costs hours per configuration, leaving no tool for rapid, full-stack architectural reasoning. We present MLSYSIM (Machine Learning Systems Infrastructure Modeling), a first-principles analytical framework that formalizes the \"physics of systems\" into a dimensionally-strict Python engine. MLSysim is built on a demand-supply abstraction that decouples computational demand from silicon supply and environmental co",
+      "pdf_link": "https://arxiv.org/pdf/2607.02558.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.02558",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-07-07T09:36:35.884307+00:00"
+    },
+    {
+      "forum_id": "2607.03229",
+      "paper_number": -1,
+      "title": "HyperParallel-Mpipe: A Composable Algebra System for Optimizing MLLM Training over Supernode Clusters",
+      "authors": [
+        "Chong Li, Zhengdao Yu, Nelson Lossing, Thibaut Tachon, Pierre Leca, Etienne Filhol, Yujie Yuan, Chong Bao, Teng Su"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.03229v1 Announce Type: new \nAbstract: Modern AI applications have expanded beyond text-only interaction into a wide range of multimodal scenarios, making multimodal large language models (MLLMs) crucial for both research and industry. However, compared with traditional decoder-only LLM training, large-scale MLLM training often shows much lower MFU. We analyze the key pain points in MLLM training and introduce Mpipe, which uses a schedule algebra to derive concrete runtime behavior from a compact schedule specification. From this algebra, Mpipe derives transpose, a multimodal-aware heterogeneous parallel schedule that remaps modality-encoder computation into otherwise idle pipeline regions. On Ascend 910C NPU clusters, Mpipe achieves 2.70x speedup in a small-scale setting and 1.2",
+      "pdf_link": "https://arxiv.org/pdf/2607.03229.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.03229",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 45.5,
+      "updated_at": "2026-07-07T09:36:35.884463+00:00"
+    },
+    {
+      "forum_id": "2607.04181",
+      "paper_number": -1,
+      "title": "CoCoScale: Leveraging Layer-wise Scaling to Unlock the Potential of Online LLM Serving",
+      "authors": [
+        "Jingfeng Wu, Yiyuan He, Minxian Xu, Xitong Gao, Chong Ma, Le Chen, Min Shen, Lin Qu, Kejiang Ye, CHengzhong Xu"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.04181v1 Announce Type: new \nAbstract: Online large language model (LLM) serving has become the backbone of modern AI applications, powering diverse downstream services through shared hardware clusters. However, modern serving systems frequently encounter highly dynamic workloads characterized by severe workload skewness, where a small fraction of model instances receives the vast majority of traffic. Existing instance-level scaling mechanisms are limited by coarse-grained resource adjustment: scaling up requires the cold-start of full-model replicas, incurring substantial latency, while scaling down leaves the system vulnerable to performance degradation during sudden traffic surges. The key insight of this work is that LLM serving offers a unique opportunity for fine-grained sc",
+      "pdf_link": "https://arxiv.org/pdf/2607.04181.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.04181",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-07-07T09:36:35.884540+00:00"
+    },
+    {
+      "forum_id": "2607.04254",
+      "paper_number": -1,
+      "title": "Air-Plan: Query-Optimized Topology Selection for Over-the-Air Decentralized Federated Learning",
+      "authors": [
+        "Kaushal Attaluri, Rebeca P. Diaz-Redondo, Manuel Fernandez Veiga"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2607.04254v1 Announce Type: new \nAbstract: Over-the-air (OTA) aggregation exploits the superposition property of wireless multiple-access channels to aggregate model updates from multiple devices within a single transmission slot, significantly reducing communication latency. While OTA computation has been extensively studied for centralized federated learning (FL), its integration with decentralized federated learning (DFL) remains largely unexplored, and principled communication topology selection is absent from existing work.\n  We present AIRPLAN, a query-optimized topology selection framework for Over-the-Air Decentralized Federated Learning (OTA-DFL). AIRPLAN establishes a formal equivalence between OTA-DFL and distributed query processing, enabling topology selection to be form",
+      "pdf_link": "https://arxiv.org/pdf/2607.04254.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.04254",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-07-07T09:36:35.884582+00:00"
+    },
+    {
+      "forum_id": "2607.04415",
+      "paper_number": -1,
+      "title": "GORIO: GPU-Centered Remote I/O for Graph ANNS over NVMe-oF",
+      "authors": [
+        "Gen Zhang, Wenhao Gu"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2607.04415v1 Announce Type: new \nAbstract: Graph-based approximate nearest neighbor search (ANNS) is increasingly used in vector databases and retrieval-augmented generation services, but large vector indexes often exceed the memory capacity of a single GPU server. NVMe over Fabrics (NVMe-oF) provides an attractive storage-disaggregation substrate, yet existing remote storage paths are still largely CPU-centered: the CPU forms I/O requests, drives transport progress, and determines when GPU computation can resume. This organization is poorly matched to graph ANNS, where the next data access is discovered inside GPU graph traversal.\n  This paper presents GORIO, a system study that extends GPU-centered local I/O to remote storage and specializes the resulting substrate for graph ANNS o",
+      "pdf_link": "https://arxiv.org/pdf/2607.04415.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.04415",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 63.0,
+      "updated_at": "2026-07-07T09:36:35.884602+00:00"
+    },
+    {
+      "forum_id": "2607.04749",
+      "paper_number": -1,
+      "title": "Direct Model State Migration for Elastic Training of Large Language Models",
+      "authors": [
+        "Weijian Liu, Mingzhen Li, Rui Kang, Chen Sun, Guangming Tan, Weile Jia"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.04749v1 Announce Type: new \nAbstract: Large language model (LLM) training shall adapt to dynamic resources in shared clusters to tackle the elasticity, including passive preemption and optimistic scaling. State migration across device sets is required when altering the hybrid-parallel configuration due to dynamic resources. Existing solutions rely on checkpoint-based mechanisms, which persist complete states to storage for resuming with re-assigned resources, forcing all GPUs to stall when transferring model states. Despite optimization efforts, checkpoint-based solutions incur prohibitive latency due to data movement across memory hierarchies.\n  We propose ETC, a checkpoint-free state migration framework for elastic hybrid-parallel LLM training. We exploits the state locality t",
+      "pdf_link": "https://arxiv.org/pdf/2607.04749.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.04749",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.0,
+      "updated_at": "2026-07-07T09:36:35.884640+00:00"
+    },
+    {
+      "forum_id": "2607.03171",
+      "paper_number": -1,
+      "title": "Decentralised Federated Learning over Temporal Networks: The Role of Heterogeneities",
+      "authors": [
+        "Arash Badie-Modiri, Chiara Boldrini, Lorenzo Valerio, J\\'anos Kert\\'esz, M\\'arton Karsai"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2607.03171v1 Announce Type: cross \nAbstract: Decentralised federated learning, based on peer-to-peer communication, is increasingly proposed for on-device training of machine learning models, promising a privacy-preserving, communication-efficient training process with no risk of single-point failure. However, the role of structural and temporal inhomogeneities in such fully decentralised settings remains poorly understood. Here, we investigate their effects when model parameters are locally averaged during aggregation. We show that the decentralised federated learning process is governed, both in the early phase and the late, stationary limit, by the same dynamics as a lazy random-walk diffusion process on temporal networks. Based on this mapping, we demonstrate that the typical exp",
+      "pdf_link": "https://arxiv.org/pdf/2607.03171.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.03171",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.5,
+      "updated_at": "2026-07-07T09:36:35.884925+00:00"
+    },
+    {
+      "forum_id": "2607.05018",
+      "paper_number": -1,
+      "title": "Watts per event: evaluating Sustainability of HEP Event Generators beyond the LHC era",
+      "authors": [
+        "Szabolcs Moln\\'ar, G\\'abor B\\'ir\\'o, G\\'abor Papp, Gergely G\\'abor Barnaf\\\"oldi"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2607.05018v1 Announce Type: cross \nAbstract: The development, tuning and operation of Monte Carlo event generators beyond the LHC era require vast amount of resources. In this study we investigate the sustainability of these software with a containerized set of tools (named 77rev/propripy), by benchmarking the HIJING++ heavy-ion Monte Carlo event generator. We analyze the performance of various CPU architectures and show that by choosing the level of multithreading properly, the cost of event generation can be optimized. The presented approach can reduce the energy footprint of high-energy physics event generators and therefore alleviate the ever-increasing, ubiquitous computational challenges.",
+      "pdf_link": "https://arxiv.org/pdf/2607.05018.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.05018",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.0,
+      "updated_at": "2026-07-07T09:36:35.885044+00:00"
+    },
+    {
+      "forum_id": "2607.05272",
+      "paper_number": -1,
+      "title": "Adaptive Inference Batching using Policy Gradients",
+      "authors": [
+        "Ruslan Sharifullin"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2607.05272v1 Announce Type: cross \nAbstract: Inference serving systems must balance throughput and latency under bursty, heterogeneous workloads, yet the industry standard remains static batching policies that require manual tuning and cannot adapt to shifting traffic. We investigate whether reinforcement learning (RL) can learn adaptive batching and routing policies that outperform these heuristics, training REINFORCE and PPO agents on a discrete-event simulator validated against queuing theory and production traces (Azure Functions, BurstGPT). We formulate the problem as an MDP over queue state, request type and GPU availability, evaluating across standard Poisson traffic, extreme bursts, real-world traces and heterogeneous multi-GPU routing.\n  Our central finding is a clear bounda",
+      "pdf_link": "https://arxiv.org/pdf/2607.05272.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.05272",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 22.0,
+      "updated_at": "2026-07-07T09:36:35.885082+00:00"
+    },
+    {
+      "forum_id": "2406.07925",
+      "paper_number": -1,
+      "title": "FDLoRA: Personalized Federated Learning of Large Language Model via Dual LoRA Tuning",
+      "authors": [
+        "Yao Lu, Jiaxing QI, Zhongzhi Luan, Shaohan Huang, Carol Fung, Hailong Yang, Depei Qian"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2406.07925v2 Announce Type: replace \nAbstract: Large language models (LLMs) have emerged as important components across various fields, yet their training requires substantial computation resources and abundant labeled data. It poses a challenge to robustly training LLMs for individual users (clients). To tackle this challenge, the intuitive idea is to introduce federated learning (FL), which can collaboratively train models on distributed private data. However, existing methods suffer from the challenges of data heterogeneity, system heterogeneity, and model size, resulting in suboptimal performance and high costs. In this work, we proposed a variant of personalized federated learning (PFL) framework, namely FDLoRA, which allows the client to be a single device or a cluster and adop",
+      "pdf_link": "https://arxiv.org/pdf/2406.07925.pdf",
+      "forum_link": "https://arxiv.org/abs/2406.07925",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-07-07T09:36:35.885106+00:00"
+    },
+    {
+      "forum_id": "2504.08791",
+      "paper_number": -1,
+      "title": "Prima.cpp: Fast 30-70B LLM Inference on Heterogeneous and Low-Resource Home Clusters",
+      "authors": [
+        "Zonghang Li, Tao Li, Wenjiao Feng, Rongxing Xiao, Jianshu She, Hong Huang, Mohsen Guizani, Hongfang Yu, Qirong Ho, Wei Xiang, Xue Liu"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2504.08791v3 Announce Type: replace \nAbstract: On-device inference offers privacy, offline use, and instant response, but consumer hardware restricts large language models (LLMs) to low throughput and capability. To overcome this challenge, we present prima.cpp, a distributed on-device inference system that runs 30-70B LLMs on consumer home clusters with mixed CPUs/GPUs, insufficient RAM/VRAM, slow disks, Wi-Fi links, and heterogeneous OSs. We introduce pipelined-ring parallelism (PRP) to overlap disk I/O with compute and communication, and address the prefetch-release conflict in mmap-based offloading. We further propose Halda, a heterogeneity-aware scheduler that co-optimizes per-device CPU/GPU workloads and device selection under RAM/VRAM constraints. On four consumer home devices",
+      "pdf_link": "https://arxiv.org/pdf/2504.08791.pdf",
+      "forum_link": "https://arxiv.org/abs/2504.08791",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 58.0,
+      "updated_at": "2026-07-07T09:36:35.885128+00:00"
+    },
+    {
+      "forum_id": "2509.23722",
+      "paper_number": -1,
+      "title": "OctoPipe: Reducing Pipeline Bubbles for Heterogeneous Models via Co-Optimizing Partitioning, Placement, and Scheduling",
+      "authors": [
+        "Jihu Guo, Tenghui Ma, Wei Gao, Peng Sun, Xun Chen, Jiaxing Li, Zhisheng Ye, Yuyang Jin, Dahua Lin"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2509.23722v2 Announce Type: replace \nAbstract: Pipeline parallelism is widely used to train large language models (LLMs). However, increasing heterogeneity in model architectures exacerbates pipeline bubbles, thereby reducing training efficiency. Prior approaches typically optimize a single phase of the pipeline schedule (i.e., partitioning, placement, or scheduling), leaving substantial pipeline bubbles. While promising, co-optimization poses three key challenges: (1) complex performance modeling, (2) a combinatorial search space, and (3) irregular execution orders. To address these challenges, we propose OctoPipe, a pipeline parallelism system to jointly optimize partitioning, placement, and scheduling. First, we build a graph-based pipeline simulator to model heterogeneous pipelin",
+      "pdf_link": "https://arxiv.org/pdf/2509.23722.pdf",
+      "forum_link": "https://arxiv.org/abs/2509.23722",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 36.0,
+      "updated_at": "2026-07-07T09:36:35.885152+00:00"
+    },
+    {
+      "forum_id": "2602.24044",
+      "paper_number": -1,
+      "title": "Data Driven Optimization of GPU efficiency for Distributed LLM-Adapter Serving",
+      "authors": [
+        "Ferran Agullo, Joan Oliveras, Chen Wang, Alberto Gutierrez-Torre, Olivier Tardieu, Alaa Youssef, Jordi Torres, Josep Ll. Berral"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2602.24044v2 Announce Type: replace \nAbstract: Large Language Model (LLM) adapters enable low-cost model specialization, but introduce complex caching and scheduling challenges in distributed serving systems where hundreds of adapters must be hosted concurrently. While prior work has largely focused on latency and throughput optimization, minimizing GPU resource requirements through near-peak utilization remains largely underexplored. This paper presents a data-driven pipeline that, for a given workload, computes an adapter placement that serves the workload with the minimum number of GPUs while avoiding request starvation and GPU memory errors. To that end, the approach identifies the maximum feasible throughput attainable on each GPU by leveraging accurate performance predictions l",
+      "pdf_link": "https://arxiv.org/pdf/2602.24044.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.24044",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 35.0,
+      "updated_at": "2026-07-07T09:36:35.885219+00:00"
+    },
+    {
+      "forum_id": "2603.20364",
+      "paper_number": -1,
+      "title": "DGNNFlow: A Streaming Dataflow Architecture for Real-Time Edge-based Dynamic GNN Inference in HL-LHC Trigger Systems",
+      "authors": [
+        "Davendra Maharaj, Tu Pham, Peter Meiring, Kyungmin Park, Sena Durgut, Cong Hao, Matteo Cremonesi"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2603.20364v2 Announce Type: replace \nAbstract: Dynamic GNN inference exhibits strong capability to model interactions over time, such as complex particle collision events in High Energy Physics (HEP) experiments at High Luminosity Large Hadron Collider (HL-LHC). With much larger scale of collision data captured in future HEP experiments to help unlocking physics discoveries and limitation in both offline compute capacity and storage, revamped trigger systems require FPGAs to run ultra-low-latency Machine Learning models with low power consumption for online filtering of useful events. Many state-of-the-art GNN accelerators relied on static graph structures, but this assumption breaks down in HL-LHC trigger systems and other edge-based dynamic GNN applications where edge embeddings ca",
+      "pdf_link": "https://arxiv.org/pdf/2603.20364.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.20364",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.0,
+      "updated_at": "2026-07-07T09:36:35.885261+00:00"
+    },
+    {
+      "forum_id": "2412.05894",
+      "paper_number": -1,
+      "title": "Batch effects can impair federated learning in multi-center omics studies",
+      "authors": [
+        "Yuliya Burankova, Julian Klemm, Jens J. G. Lohmann, Anne Hartebrodt, Ahmad Taheri, Niklas Probul, Jan Baumbach, Olga Zolotareva"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2412.05894v2 Announce Type: replace-cross \nAbstract: Federated learning (FL) enables collaborative analysis of biomedical data without exchanging sensitive patient-level information, but its performance in multi-center studies may be compromised by batch effects which can obscure biological signals. Here, we systematically assess the impact of uncorrected batch effects on FL outcomes using four multi-center omics datasets, including transcriptomic, proteomic, and metabolomic data, and two representative algorithms: federated k-means clustering and federated random forest classification. Our results demonstrate that uncorrected batch effects undermine unsupervised FL and can substantially degrade supervised FL performance, indicating that privacy-aware batch-effect correction is essen",
+      "pdf_link": "https://arxiv.org/pdf/2412.05894.pdf",
+      "forum_link": "https://arxiv.org/abs/2412.05894",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-07-07T09:36:35.885358+00:00"
+    },
+    {
+      "forum_id": "2510.15747",
+      "paper_number": -1,
+      "title": "GLP: A Grassroots, Multiagent, Concurrent, Logic Programming Language for AI (Full Version)",
+      "authors": [
+        "Ehud Shapiro"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2510.15747v4 Announce Type: replace-cross \nAbstract: A grassroots platform is a multiagent distributed system in which multiple independent instances can form and operate independently of each other and of any global resource, yet may coalesce into ever larger instances, possibly resulting in a single global instance. Grassroots platforms aim to offer an egalitarian/democratic alternative to centralised/autocratic and decentralised/plutocratic global platforms.\n  Here, we present Grassroots Logic Programs (GLP), a multiagent concurrent logic programming language designed for the implementation of grassroots platforms: we recall the standard operational semantics of logic programs; introduce the concurrent operational semantics of GLP as its restriction; recall multiagent atomic trans",
+      "pdf_link": "https://arxiv.org/pdf/2510.15747.pdf",
+      "forum_link": "https://arxiv.org/abs/2510.15747",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-07T09:36:35.885380+00:00"
+    },
+    {
+      "forum_id": "2602.06934",
+      "paper_number": -1,
+      "title": "Implementing Grassroots Logic Programs with Multiagent Transition Systems and AI (Full Version)",
+      "authors": [
+        "Ehud Shapiro"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2602.06934v5 Announce Type: replace-cross \nAbstract: Grassroots Logic Programs (GLP) is a concurrent logic programming language in which logic variables are partitioned into paired readers and writers. An assignment is produced at most once via a writer and consumed at most once via its paired reader, and may contain additional readers and/or writers. This enables the concise expression of rich multidirectional communication modalities.\n  The language was introduced together with concurrent (cGLP) and multiagent (maGLP) operational semantics. Here, we derive from these (\\ia)~dGLP, a deterministic counterpart of cGLP, and (\\ib)~madGLP, a counterpart of maGLP in which deterministic agents communicate solely by asynchronous message passing, and prove them correct against their abstract ",
+      "pdf_link": "https://arxiv.org/pdf/2602.06934.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.06934",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-07T09:36:35.885420+00:00"
+    },
+    {
+      "forum_id": "2603.02510",
+      "paper_number": -1,
+      "title": "ParEVO: Synthesizing Code for Irregular Data: High-Performance Parallelism through Agentic Evolution",
+      "authors": [
+        "Liu Yang, Zeyu Nie, Andrew Liu, Felix Zou, Deniz Altinb\\\"uken, Amir Yazdanbakhsh, Quanquan C. Liu"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2603.02510v2 Announce Type: replace-cross \nAbstract: The transition from sequential to parallel computing is essential for modern high-performance applications but is hindered by the steep learning curve of concurrent programming. This challenge is magnified for irregular data structures (such as sparse graphs, unbalanced trees, and non-uniform meshes) where static scheduling fails and data dependencies are unpredictable. Current Large Language Models (LLMs) often fail catastrophically on these tasks, generating code plagued by subtle race conditions, deadlocks, and sub-optimal scaling.\n  We bridge this gap with ParEVO, a framework designed to synthesize high-performance parallel algorithms for irregular data. Our contributions include: (1) The Parlay-Instruct Corpus, a curated datas",
+      "pdf_link": "https://arxiv.org/pdf/2603.02510.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.02510",
+      "submission_date": "2026-07-07T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.0,
+      "updated_at": "2026-07-07T09:36:35.885458+00:00"
+    }
+  ]
 }
