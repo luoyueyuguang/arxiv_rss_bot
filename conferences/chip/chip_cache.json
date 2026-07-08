@@ -1,169 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-07-07T09:36:37.240553+00:00",
-  "paper_count": 9,
+  "last_updated": "2026-07-08T08:23:32.792544+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2607.02608",
+      "forum_id": "2607.05756",
       "paper_number": -1,
-      "title": "Towards transferable lightweight neuromorphic computing through a model-free temporal-switch framework",
+      "title": "Boosting FPGA Performance with Direct BRAM-DSP Paths",
       "authors": [
-        "Zefeng Zhang, Chao Li, Siyao Chen, Pei Chen, Bo-Wei Qin, Xumeng Zhang, Wei Lin, Qi Liu"
+        "Jiajun Hu, Ruthwik Reddy Sunketa, Andrew Boutros, Aman Arora"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2607.02608v1 Announce Type: new \nAbstract: Lightweight neuromorphic computing offers a promising route to efficient AI, with particular benefits for resource-constrained edge deployments. However, its scalable deployment that can reliably transfer the expected performance has long been hindered by device-to-device variations, which necessitate costly and repeated re-training on new copies and undermine the practical advantages. To address this issue, we introduce a model-free temporal-switch (TS) framework to improve the direct transfer performance, without post-training calibration or adjustment. The TS framework provides a methodology to incorporate a broader spectrum of devices in the training process. In the validation using memristor-based reservoir computing, it enables high pe",
-      "pdf_link": "https://arxiv.org/pdf/2607.02608.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.02608",
-      "submission_date": "2026-07-07T04:00:00+00:00",
+      "abstract": "arXiv:2607.05756v1 Announce Type: new \nAbstract: Efficient data movement between memory and compute units is a key performance bottleneck in modern FPGA designs, particularly for deep learning (DL) workloads. In typical FPGA architectures, data transfers between block RAMs (BRAMs) and digital signal processing units (DSPs) must traverse the global routing network, leading to increased wirelength, routing congestion, and critical-path delays. Prior work has explored in- and near-BRAM compute architectures to mitigate these issues, but such solutions often require fundamental changes to FPGA architecture and CAD tools, limiting their commercial viability. This paper proposes a lightweight architectural enhancement that introduces a dedicated direct connection between BRAM and DSP blocks, ena",
+      "pdf_link": "https://arxiv.org/pdf/2607.05756.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.05756",
+      "submission_date": "2026-07-08T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-07T09:36:37.238768+00:00"
+      "score": 14.5,
+      "updated_at": "2026-07-08T08:23:32.791358+00:00"
     },
     {
-      "forum_id": "2607.02729",
+      "forum_id": "2607.05985",
       "paper_number": -1,
-      "title": "HyNoC: A Hybrid Circuit-Switch/Wormhole Network-on-Chip for Distributed VLIW Computing on FPGA",
+      "title": "Auto-DSM Under the Lens: A Black-Box Evaluation Framework for LLM-Based DSM Generation",
       "authors": [
-        "Christophe Clienti"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2607.02729v1 Announce Type: new \nAbstract: Network-on-Chip (NoC) architectures have become the standard interconnect fabric for many-core systems, yet most proposals face a fundamental trade-off between latency, area, and congestion management. This paper presents HyNoC (Hybrid Network-on-Chip), an open-source NoC architecture that combines circuit-switch path establishment with wormhole data transfer, targeting distributed computing systems built around VLIW processor cores on FPGA.\n  HyNoC employs source routing, where the complete path through the network is encoded in the packet header by the sender or statically at compile time, enabling both deterministic low-latency transfers and software-level hotspot avoidance without the area overhead of virtual channels. The router feature",
-      "pdf_link": "https://arxiv.org/pdf/2607.02729.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.02729",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 15.5,
-      "updated_at": "2026-07-07T09:36:37.238819+00:00"
-    },
-    {
-      "forum_id": "2607.03191",
-      "paper_number": -1,
-      "title": "AIGOR: A Modular, Event-Driven Neuromorphic Architecture for Configurable SNN Inference",
-      "authors": [
-        "Pierpaolo Perticaroli, Roberto Ammendola, Andrea Biagioni, Ottorino Frezza, Francesca Lo Cicero, Michele Martinelli, Pier Stanislao Paolucci, Elena Pastorelli, Luca Pontisso, Cristian Rossi, Francesco Simula, Piero Vicini, Alessandro Lonardo"
+        "Niels Potters, Theo Hofman"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2607.03191v1 Announce Type: new \nAbstract: Spiking neural networks (SNNs) run today on a fragmented landscape of hardware: dedicated neuromorphic processors, application-specific FPGA accelerators, and large-scale neuroscience simulators, each typically built around a fixed neuron model, execution strategy, or workload class. We present AIGOR, a modular, event-driven neuromorphic architecture for spiking neural network inference. AIGOR organizes neurons into timestep-synchronized processing cores that exchange spikes as packets over a packet-switched communication layer, and it is assembled from a library of parameterized compute, memory, and communication IP blocks rather than as a one-off design for a single network. The neuron model, numeric precision, the folding of neurons onto ",
-      "pdf_link": "https://arxiv.org/pdf/2607.03191.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.03191",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-07T09:36:37.238840+00:00"
-    },
-    {
-      "forum_id": "2607.03652",
-      "paper_number": -1,
-      "title": "ELiTeFormer: An Efficient Transformer for FPGAs",
-      "authors": [
-        "Victor Agostinelli, Nicolas Bohm Agostini, Antonino Tumeo"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2607.03652v1 Announce Type: new \nAbstract: Transformer blocks are prevalent in large language model (LLM) but present deployment challenges due to their challenging computational and memory demands. While prior work has typically optimized attention mechanisms or feed-forward networks (FFNs) separately, few hardware (HW) architecture have jointly addressed both components with co-designed hardware acceleration. We present ELiTeFormer (Efficient Linear Ternary Transformer), the first Transformer model architecture that unifies hybrid linear attention with ultra-low-precision (ternary) linear projections, specifically co-designed for field-programmable gate array (FPGA) deployment. ELiTeFormer achieves 10x model weight compression and 12.8x key-value (KV) cache compression compared to ",
-      "pdf_link": "https://arxiv.org/pdf/2607.03652.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.03652",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-07-07T09:36:37.238913+00:00"
-    },
-    {
-      "forum_id": "2607.02842",
-      "paper_number": -1,
-      "title": "Continuous-time nonlinear closed-loop in-memory computing for high-accuracy massive MIMO detection",
-      "authors": [
-        "Piergiulio Mannocci, Giacomo Pedretti, Fabian B\\\"ohm, Thomas Van Vaerenbergh"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.02842v1 Announce Type: cross \nAbstract: Analog in-memory computing (IMC) has emerged as a promising approach for accelerating matrix operations by exploiting the intrinsic physics of memory arrays. To date, however, most IMC architectures have focused on linear algebra workloads in which computation is encoded in the equilibrium state of a physical system. Extending these principles to nonlinear optimization remains challenging and typically relies on iterative algorithms composed of repeated linear operations. Here, we introduce a continuous-time nonlinear closed-loop IMC architecture for box-constrained zero-forcing (BCZF) decoding in massive multiple-input multiple-output (MIMO) systems. The proposed architecture embeds the decoding problem directly within the dynamics of a n",
-      "pdf_link": "https://arxiv.org/pdf/2607.02842.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.02842",
-      "submission_date": "2026-07-07T04:00:00+00:00",
+      "abstract": "arXiv:2607.05985v1 Announce Type: cross \nAbstract: This paper presents a black-box evaluation framework to systematically assess the ability of Large Language Models (LLMs) to generate Design Structure Matrices (DSMs) from structured technical documentation. Motivated by the closed-source nature of current Auto-DSM pipelines, the framework introduces a reproducible methodology that benchmarks generated DSMs (GEN-DSMs) against manually validated ground-truth matrices (GT-DSMs). The evaluation integrates both single-run and multi-run perspectives, combining structural metrics (Completeness, Correctness, Coupling Density), classification metrics (Selective Accuracy, Abstention Coverage), and stability measures (Entropy, Fleiss' $\\kappa$). To synthesize these aspects, a Composite Quality Score",
+      "pdf_link": "https://arxiv.org/pdf/2607.05985.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.05985",
+      "submission_date": "2026-07-08T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-07-07T09:36:37.239042+00:00"
+      "updated_at": "2026-07-08T08:23:32.791410+00:00"
     },
     {
-      "forum_id": "2607.04302",
+      "forum_id": "2607.05993",
       "paper_number": -1,
-      "title": "HiFA4: Training-Free 4-bit FlashAttention on Ascend HIF4 NPUs for LLM Inference",
+      "title": "Bit2Watt: A Cyber-Physical Vulnerability Exploiting GPU Workloads Across Power and Computing Infrastructures",
       "authors": [
-        "Hui Dong, Yanzhao Li, Jie Gao, Chunlu Li, Zhiyuan Zhang, Yupeng Sun, Zhenyuan Chen, Zhiqiang Zou"
+        "Zhouhao Ji, Kaikai Pan, Wenyuan Xu"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2607.04302v1 Announce Type: cross \nAbstract: We present HiFA4, a post-training operator-level design that executes both QK^T and PV in FlashAttention as 4-bit HIF4 Cube GEMMs for LLM inference on Ascend NPUs, while maintaining the online softmax state in FP16. To our knowledge, HiFA4 is the first Ascend-HIF4-targeted design of this kind evaluated on standard NLP benchmarks.\n  HiFA4 combines two mechanisms. Smooth-QK applies a calibration-static per-channel equivalent rescaling to Q and K after RoPE, transferring quantization difficulty from K to Q without per-tile online reduction at inference. P-Reordering accumulates the softmax normalizer from the same quantized attention weights P_hat used in the PV GEMM, rather than from a higher-precision reconstruction. We show that this incon",
-      "pdf_link": "https://arxiv.org/pdf/2607.04302.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.04302",
-      "submission_date": "2026-07-07T04:00:00+00:00",
+      "abstract": "arXiv:2607.05993v1 Announce Type: cross \nAbstract: Modern data centers increasingly rely on large-scale GPU clusters and on-site renewable energy resources, resulting in a tightly coupled cyber-physical system between computing workloads and power-electronic-dominated grids. In this paper, we reveal Bit2Watt, a previously unexplored vulnerability in which an adversary manipulates GPU workloads to induce controlled, high-frequency power modulations that destabilize local power infrastructure and propagate back to disrupt computing services. Unlike traditional attacks that compromise grid-side devices or communication channels, Bit2Watt operates entirely within the cyber layer as a legal tenant, which could amplify fluctuations, harmonic distortion, and damping degradation, particularly in h",
+      "pdf_link": "https://arxiv.org/pdf/2607.05993.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.05993",
+      "submission_date": "2026-07-08T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-07T09:36:37.239079+00:00"
-    },
-    {
-      "forum_id": "2606.06510",
-      "paper_number": -1,
-      "title": "FP8 is All You Need (Part 1): Debunking Hardware FP64 as the HPC Holy Grail (June 13th version)",
-      "authors": [
-        "Satoshi Matsuoka"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2606.06510v3 Announce Type: replace \nAbstract: Conventional HPC holds that native hardware FP64 is the irreducible foundation of scientific computing. On AI-optimized GPUs of the NVIDIA B300 generation and beyond, native FP64 throughput has collapsed to ~1.3 TFLOPS even as FP8 tensor throughput has grown to multiple PFLOPS. We argue something stronger than that this is survivable: the FP8 tensor-core matrix-multiply is the sole computational primitive on which double-precision scientific computing needs to be built. Every canonical kernel -- dense and sparse linear algebra, spectral transforms, stencils -- and every application composing them reduces, via the Chinese Remainder Theorem-based Ozaki Scheme II, to sequences of FP8 matrix operations; the only non-FP8 arithmetic is a bound",
-      "pdf_link": "https://arxiv.org/pdf/2606.06510.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.06510",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-07T09:36:37.239199+00:00"
+      "score": 2.5,
+      "updated_at": "2026-07-08T08:23:32.791431+00:00"
     },
     {
       "forum_id": "2606.17253",
@@ -176,40 +84,40 @@
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2606.17253v3 Announce Type: replace \nAbstract: Large Language Models and vision-language models have shown remarkable success in the front-end design of Very Large-Scale Integrated Circuits, yet their capabilities for VLSI physical design remain significantly underexplored. The primary cause is the lack of standardized benchmarks for evaluating agentic physical design workflows that require high-dimensional, multi-stage optimization under strict design constraints, coordinated interaction with diverse Electronic Design Automation tools, and iterative refinement. This work introduces PDAGENT-BENCH, a comprehensive and multi-dimensional benchmark for evaluating LLM/VLM-based agents across the physical design stack. PDAGENT-BENCH integrates both task-level assessment and workflow-level ",
+      "abstract": "arXiv:2606.17253v4 Announce Type: replace \nAbstract: Large Language Models and vision-language models have shown remarkable success in the front-end design of Very Large-Scale Integrated Circuits, yet their capabilities for VLSI physical design remain significantly underexplored. The primary cause is the lack of standardized benchmarks for evaluating agentic physical design workflows that require high-dimensional, multi-stage optimization under strict design constraints, coordinated interaction with diverse Electronic Design Automation tools, and iterative refinement. This work introduces PDAGENT-BENCH, a comprehensive and multi-dimensional benchmark for evaluating LLM/VLM-based agents across the physical design stack. PDAGENT-BENCH integrates both task-level assessment and workflow-level ",
       "pdf_link": "https://arxiv.org/pdf/2606.17253.pdf",
       "forum_link": "https://arxiv.org/abs/2606.17253",
-      "submission_date": "2026-07-07T04:00:00+00:00",
+      "submission_date": "2026-07-08T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 36.0,
-      "updated_at": "2026-07-07T09:36:37.239220+00:00"
+      "updated_at": "2026-07-08T08:23:32.791452+00:00"
     },
     {
-      "forum_id": "2607.01798",
+      "forum_id": "2512.23236",
       "paper_number": -1,
-      "title": "Approximate Attention Weighting for Sustainable FPGA-Based Vision Transformer Inference",
+      "title": "KernelEvolve: Scaling Agentic Kernel Coding for Heterogeneous AI Accelerators at Meta",
       "authors": [
-        "Muhammad Usman, Muhammad Akmal Shafique, Shujaat Khan, Dorit Merhof"
+        "Gang Liao, Hongsen Qin, Ying Wang, Alicia Golden, Michael Kuchnik, Yavuz Yetim, Jia Jiunn Ang, Chunli Fu, Yihan He, Samuel Hsia, Zewei Jiang, Dianshi Li, Uladzimir Pashkevich, Varna Puvvada, Feng Shi, Matt Steiner, Ruichao Xiao, Liyuan Li, Nathan Yan, Xiayu Yu, Zhou Fang, Roman Levenstein, Kunming Ho, Haishan Zhu, Alec Hammond, Richard Li, Ajit Mathews, Kaustubh Gondkar, Abdul Zainul-Abedin, Ketan Singh, Hongtao Yu, Wenyuan Chi, Barney Huang, Sean Zhang, Noah Weller, Zach Marine, Wyatt Cook, Carole-Jean Wu, Gaoxiang Liu"
       ],
       "keywords": [
         "cs.AR",
-        "FPGA"
+        "DATE"
       ],
-      "abstract": "arXiv:2607.01798v2 Announce Type: replace \nAbstract: Vision Transformers have reshaped computer vision by using self-attention to capture global context across image regions. This makes them attractive for edge visual inspection and monitoring in applications such as renewable-energy infrastructure, industrial quality control, medical imaging, and autonomous-system sensing. However, deploying ViTs on small FPGAs remains challenging because the softmax stage in self-attention requires exponential evaluation and normalization, which are costly in hardware. Existing implementations often rely on CORDIC pipelines or BRAM-based look-up tables, increasing area and power consumption. This paper presents a BRAM-free approximate attention-weighting unit for FPGA-based ViT inference. The proposed de",
-      "pdf_link": "https://arxiv.org/pdf/2607.01798.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.01798",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FPGA",
+      "abstract": "arXiv:2512.23236v4 Announce Type: replace-cross \nAbstract: Making deep learning recommendation model (DLRM) training and inference fast and efficient is important. However, this presents three key system challenges - model architecture diversity, kernel primitive diversity, and hardware generation and architecture heterogeneity. This paper presents KernelEvolve-an agentic kernel coding framework-to tackle heterogeneity at-scale for DLRM. KernelEvolve is designed to take kernel specifications as input and automate the process of kernel generation and optimization for recommendation model across heterogeneous hardware architectures. KernelEvolve does so by operating at multiple programming abstractions, from Triton and CuTe DSL to low-level hardware agnostic languages, spanning the full hard",
+      "pdf_link": "https://arxiv.org/pdf/2512.23236.pdf",
+      "forum_link": "https://arxiv.org/abs/2512.23236",
+      "submission_date": "2026-07-08T04:00:00+00:00",
+      "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 5.0,
-      "updated_at": "2026-07-07T09:36:37.239268+00:00"
+      "score": 1.0,
+      "updated_at": "2026-07-08T08:23:32.791471+00:00"
     }
   ]
 }

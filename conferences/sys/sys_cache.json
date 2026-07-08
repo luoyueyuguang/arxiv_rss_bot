@@ -1,399 +1,100 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-07-07T09:36:37.167362+00:00",
-  "paper_count": 17,
+  "last_updated": "2026-07-08T08:23:32.693575+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2604.11943",
+      "forum_id": "2607.05596",
       "paper_number": -1,
-      "title": "ProbeLogits: Kernel-Level LLM Inference Primitives for AI-Native Operating Systems",
+      "title": "Bounded-Memory Parallel Image Pulling for Large Container Images",
       "authors": [
-        "Daeyeon Son"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2604.11943v3 Announce Type: replace \nAbstract: An OS kernel that runs LLM inference internally can read the model's own next-token logit distribution before any text is generated, and act on it as a governance primitive. I present ProbeLogits, a kernel-level operation that performs a single forward pass and reads specific token logits to classify an agent's action as safe or dangerous, with zero learned parameters. Because the probe reads a logit from the same base model the agent already runs, it removes the second model a fine-tuned guard requires: the marginal cost of a safety check becomes a single logit read.\n  I evaluate ProbeLogits on three base models (Qwen2.5-7B, Llama-3-8B, Mistral-7B) across three external benchmarks (HarmBench, XSTest, ToxicChat). On HarmBench non-copyrig",
-      "pdf_link": "https://arxiv.org/pdf/2604.11943.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.11943",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 94.0,
-      "updated_at": "2026-07-07T09:36:36.671089+00:00"
-    },
-    {
-      "forum_id": "2604.16870",
-      "paper_number": -1,
-      "title": "Governed MCP: Kernel-Level Tool Governance for AI Agents via Logit-Based Safety Primitives",
-      "authors": [
-        "Daeyeon Son"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2604.16870v2 Announce Type: replace-cross \nAbstract: AI agents increasingly call external tools (file system, network, APIs) through the Model Context Protocol (MCP). These tool calls are the agent's syscalls: privileged operations with side effects on shared state, yet today's safety enforcement lives entirely in userspace, where a 10-line script can bypass it. I propose Governed MCP, a kernel-resident tool governance gateway built on a logit-based safety primitive (ProbeLogits). The gateway interposes on every MCP tool call in a 6-layer pipeline: schema validation, trust tier, rate limit, adversarial pre-filter, a ProbeLogits semantic gate (the load-bearing check), and constitutional policy match, with a Blake3-hashed audit chain.\n  I implement Governed MCP in Anima OS, a bare-meta",
-      "pdf_link": "https://arxiv.org/pdf/2604.16870.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.16870",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 53.5,
-      "updated_at": "2026-07-07T09:36:36.671164+00:00"
-    },
-    {
-      "forum_id": "2607.02543",
-      "paper_number": -1,
-      "title": "ETALE: Evolving Topology with Accelerated Lock-free Execution for Dynamic Graph ANN Search on GPUs",
-      "authors": [
-        "Dongfang Zhao"
+        "Sri Saran Balaji Vellore Rajakumar, Henry Wang, Ankur Singh, James Thompson"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2607.02543v1 Announce Type: new \nAbstract: Graph-based approximate nearest neighbor (ANN) indexes on the GPU are originally built for static collections and must reconstruct the affected window to absorb any update, while the dynamic graph indexes that update incrementally run on the CPU and cannot exploit GPU parallelism. This paper presents a new ANN index, namely ETALE (Evolving Topology with Accelerated Lock-free Execution), which is among the first GPU-native graph ANN indexes to support streaming insertion and deletion without a global rebuild. The core of ETALE is a lock-free copy-on-write slab graph whose deletion state and adjacency share a single atomically published word, which yields a provable deletion-monotonicity invariant together with a bounded reclaim of GPU memory ",
-      "pdf_link": "https://arxiv.org/pdf/2607.02543.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.02543",
-      "submission_date": "2026-07-07T04:00:00+00:00",
+      "abstract": "arXiv:2607.05596v1 Announce Type: new \nAbstract: AI/ML workloads increasingly run as containers, where a container image must be downloaded to the host before the workload can start. This cold image pull lands on the critical path whenever a training or inference job scales up or a host is updated, and for GPU workloads it has become the dominant component of startup time as AI/ML images reach 31--48~GiB compressed. We present Disk-Backed Parallel Pull (DBPP), an alternative to the in-memory ordered reassembly used by containerd~2.2, the upstream container runtime. containerd splits layers into chunks fetched concurrently over HTTP range requests, but chunks that arrive out of order accumulate in the runtime heap until a sequential consumer drains them in order. This backlog grows with ima",
+      "pdf_link": "https://arxiv.org/pdf/2607.05596.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.05596",
+      "submission_date": "2026-07-08T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 33.5,
-      "updated_at": "2026-07-07T09:36:36.791582+00:00"
+      "score": 43.5,
+      "updated_at": "2026-07-08T08:23:32.277224+00:00"
     },
     {
-      "forum_id": "2607.02558",
+      "forum_id": "2607.06034",
       "paper_number": -1,
-      "title": "MLSYSIM: First-Principles Infrastructure Modeling for Machine Learning Systems",
+      "title": "Efficient and Robust Lock-Free Multi-Word Compare-and-Swap via Contention-Aware Helping",
       "authors": [
-        "Vijay Janapa Reddi"
-      ],
-      "keywords": [
-        "cs.DC",
-        "MLSys"
-      ],
-      "abstract": "arXiv:2607.02558v1 Announce Type: new \nAbstract: As machine learning shifts from laboratory curiosity to critical infrastructure, the systems that sustain it span an extraordinary range, from sub-milliwatt microcontrollers to multi-gigawatt datacenter fleets. Reasoning across this range is hard: empirical profiling requires the target hardware in hand, while cycle-accurate simulation costs hours per configuration, leaving no tool for rapid, full-stack architectural reasoning. We present MLSYSIM (Machine Learning Systems Infrastructure Modeling), a first-principles analytical framework that formalizes the \"physics of systems\" into a dimensionally-strict Python engine. MLSysim is built on a demand-supply abstraction that decouples computational demand from silicon supply and environmental co",
-      "pdf_link": "https://arxiv.org/pdf/2607.02558.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.02558",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "MLSys",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 53.0,
-      "updated_at": "2026-07-07T09:36:36.791656+00:00"
-    },
-    {
-      "forum_id": "2607.04206",
-      "paper_number": -1,
-      "title": "Sangam: Efficiently Serving Diffusion LLMs with the AR Stack",
-      "authors": [
-        "Nitin Kedia, Saurabh Agarwal, Myungjin Lee, Aditya Akella"
+        "Motoki Unno, Kento Sugiura, Yoshiharu Ishikawa"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2607.04206v1 Announce Type: new \nAbstract: Diffusion language models (dLLMs) generate text by iteratively denoising a masked response and can commit multiple output positions per model invocation. Their bidirectional attention prevents exact autoregressive-style KV caching, since committing one position shifts the KV activations of all others. Approximate caching techniques such as Fast-dLLM and dKV-Cache refresh KV activations repeatedly and reuse them across intervening decodes, inducing a repeated prefill/decode structure. This makes AR serving mechanisms relevant to dLLMs, but not directly applicable. dLLM decodes are block-sized rather than token-sized, prefills recur, and bidirectional attention precludes the chunked prefill mechanism used for stall-free colocated serving. We p",
-      "pdf_link": "https://arxiv.org/pdf/2607.04206.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.04206",
-      "submission_date": "2026-07-07T04:00:00+00:00",
+      "abstract": "arXiv:2607.06034v1 Announce Type: cross \nAbstract: Efficient concurrent access to shared memory remains a central focus for researchers seeking to enhance data structure performance. Lock-based synchronization often limits scalability and introduces liveness issues such as deadlocks. In contrast, implementing non-blocking structures with single-word compare-and-swap (CAS) instructions increases algorithmic complexity because of unavoidable intermediate states. Multi-word compare-and-swap (MCAS) operations offer a practical primitive for atomically updating multiple discrete memory locations, thereby addressing these challenges. However, under high contention, helping mechanisms designed to guarantee lock-freedom may cause excessive cache invalidations and significant performance degradatio",
+      "pdf_link": "https://arxiv.org/pdf/2607.06034.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.06034",
+      "submission_date": "2026-07-08T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 15.0,
-      "updated_at": "2026-07-07T09:36:36.792162+00:00"
+      "score": 31.0,
+      "updated_at": "2026-07-08T08:23:32.277772+00:00"
+    },
+    {
+      "forum_id": "2607.02275",
+      "paper_number": -1,
+      "title": "Cadence: Extreme Pipelining with Multiple Concurrent Proposers",
+      "authors": [
+        "Kushal Babel, Fatima Elsheimy, Lioba Heimbach, Mohammad Mussadiq Jalalzai, Tobias Klenze, Jovan Komatovic, Jason Milionis, Mike Setrin, Victor Shoup"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.02275v2 Announce Type: replace \nAbstract: We present Cadence, a Byzantine fault-tolerant multi-proposer consensus protocol with arbitrarily low block intervals, optimal resilience, and optimal fast-path latency. Cadence divides time into equally spaced slots, one block per slot, each finalized in its own consensus instance. Blocks do not build directly on their predecessor, so instances run independently and none waits for an earlier block to finish or propagate; we call this extreme pipelining, decoupling the block interval from network latency. Cadence also removes the single-leader monopoly over transaction inclusion and ordering: under multiple concurrent proposers (MCP), several validators propose for each block, and it guarantees that, under synchrony, a transaction a corr",
+      "pdf_link": "https://arxiv.org/pdf/2607.02275.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.02275",
+      "submission_date": "2026-07-08T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 35.0,
+      "updated_at": "2026-07-08T08:23:32.277904+00:00"
     },
     {
       "forum_id": "2607.04415",
       "paper_number": -1,
       "title": "GORIO: GPU-Centered Remote I/O for Graph ANNS over NVMe-oF",
       "authors": [
-        "Gen Zhang, Wenhao Gu"
+        "Gen Zhang, Wenhao Gu, Shan Huang, Xinhai Chen"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2607.04415v1 Announce Type: new \nAbstract: Graph-based approximate nearest neighbor search (ANNS) is increasingly used in vector databases and retrieval-augmented generation services, but large vector indexes often exceed the memory capacity of a single GPU server. NVMe over Fabrics (NVMe-oF) provides an attractive storage-disaggregation substrate, yet existing remote storage paths are still largely CPU-centered: the CPU forms I/O requests, drives transport progress, and determines when GPU computation can resume. This organization is poorly matched to graph ANNS, where the next data access is discovered inside GPU graph traversal.\n  This paper presents GORIO, a system study that extends GPU-centered local I/O to remote storage and specializes the resulting substrate for graph ANNS o",
+      "abstract": "arXiv:2607.04415v2 Announce Type: replace \nAbstract: Graph-based approximate nearest neighbor search (ANNS) is increasingly used in vector databases and retrieval-augmented generation services, but large vector indexes often exceed the memory capacity of a single GPU server. NVMe over Fabrics (NVMe-oF) provides an attractive storage-disaggregation substrate, yet existing remote storage paths are still largely CPU-centered: the CPU forms I/O requests, drives transport progress, and determines when GPU computation can resume. This organization is poorly matched to graph ANNS, where the next data access is discovered inside GPU graph traversal.\n  This paper presents GORIO, a system study that extends GPU-centered local I/O to remote storage and specializes the resulting substrate for graph AN",
       "pdf_link": "https://arxiv.org/pdf/2607.04415.pdf",
       "forum_link": "https://arxiv.org/abs/2607.04415",
-      "submission_date": "2026-07-07T04:00:00+00:00",
+      "submission_date": "2026-07-08T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 75.0,
-      "updated_at": "2026-07-07T09:36:36.792231+00:00"
-    },
-    {
-      "forum_id": "2607.04676",
-      "paper_number": -1,
-      "title": "Adaptive Space-efficient Collectives for Dynamic and Unstructured Sparsity on GPU Platforms",
-      "authors": [
-        "Lannie Dalton Hough, Emir Gencer, Hoffmann Muki, Abhinav Bhatele"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.04676v1 Announce Type: new \nAbstract: High-performance collective communication primitives are necessary for a variety of high performance computing (HPC) and machine learning (ML) workloads. State-of-the-art collective communication libraries such as NCCL optimize exclusively for dense data. However, when sending sparse data, we can reduce communication volume by not sending zeros. Unfortunately, explicitly handling sparsity introduces challenges such as format conversion overheads and densification during collectives that involve reductions. In this paper, we introduce sparsity-exploiting algorithms for three collectives that address these challenges: all-gather, reduce-scatter, and all-reduce. Our collective implementations are backed by a new bitvector-based format, Pici, de",
-      "pdf_link": "https://arxiv.org/pdf/2607.04676.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.04676",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-07-07T09:36:36.792254+00:00"
-    },
-    {
-      "forum_id": "2607.04789",
-      "paper_number": -1,
-      "title": "Orcaella: Hybrid Fault Tolerance with Client-Selectable Finality Latency",
-      "authors": [
-        "Lefteris Kokoris-Kogias, Alberto Sonnino"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.04789v1 Announce Type: new \nAbstract: Classical partially synchronous state machine replication, as in PBFT, tolerates f Byzantine replicas among n at least 3f+1 using three communication steps per request. Recent protocols such as Minimmit achieve two-message-delay decisions under stronger size assumptions, notably n at least 5f+1 when any silent replica must be counted as a potential equivocator. Hydrangea and Kudzu treat mixed Byzantine and crash faults, focusing on providing a fast-path under optimistic conditions while maintaining a fall-back commitment path similar to PBFT. In this paper, we also consider a mixed model, but focus on studying the fault tolerance of the 2-message-delay commit. For this, we prove a tight bound of n at least 5f+3c+1. Extending this result, we ",
-      "pdf_link": "https://arxiv.org/pdf/2607.04789.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.04789",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 56.5,
-      "updated_at": "2026-07-07T09:36:36.792313+00:00"
-    },
-    {
-      "forum_id": "2607.05387",
-      "paper_number": -1,
-      "title": "CATs: Secure Blockchain Interoperability with Cross-chain Atomic Transactions",
-      "authors": [
-        "Andreas Penzkofer, Franck Cassez"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.05387v1 Announce Type: new \nAbstract: We propose a protocol for cross-chain atomic transactions (CATs), enabling composable atomic execution across different blockchains. The protocol addresses the key interoperability challenge of providing atomicity guarantees in the presence of asynchronous communication and Byzantine actors. It preserves chain autonomy by allowing each blockchain to maintain its own execution model while participating in coordinated cross-chain operations. The design introduces a shared coordination layer involving sequencers, transaction processors, a coordinator, and a confirmation layer which together ensure that either all parts of a CAT succeed or none do.\n  To prevent unnecessary blocking, we separate transaction execution into accepted and postponed s",
-      "pdf_link": "https://arxiv.org/pdf/2607.05387.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05387",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 43.5,
-      "updated_at": "2026-07-07T09:36:36.792579+00:00"
-    },
-    {
-      "forum_id": "2607.02552",
-      "paper_number": -1,
-      "title": "Enabling Fast, Efficient, and Low-Cost Genomic and Metagenomic Analyses via Storage-Centric System Designs",
-      "authors": [
-        "Nika Mansouri Ghiasi, Onur Mutlu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.02552v1 Announce Type: cross \nAbstract: Due to the challenges of analyzing and storing massive volumes of genomic and metagenomic sequence data, significant efforts have been made to accelerate (meta)genomic analyses and store sequence data compressed. Despite the benefits of these techniques, we identify two major outstanding problems in accessing stored sequence data and supplying it to the analysis units: (i) the data movement bottleneck due to moving large amounts of low-reuse data from storage and the unnecessary burden on the rest of the system, and (ii) the data preparation bottleneck, where compressed sequence data needs to be first decompressed and formatted before analysis.\n  We present customized storage-centric systems, which efficiently (i) analyze (meta)genomic dat",
-      "pdf_link": "https://arxiv.org/pdf/2607.02552.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.02552",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-07-07T09:36:36.792606+00:00"
-    },
-    {
-      "forum_id": "2607.04857",
-      "paper_number": -1,
-      "title": "Terastate-per-second QUBO Brute-Force on a Single GPU: A Matrix Prefix-Suffix Decomposition",
-      "authors": [
-        "Aleksandr Maltsev, Mikhail Remnev, Alexey Kapranov, Ekaterina Krivtsova"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.04857v1 Announce Type: cross \nAbstract: This paper presents a parallel QUBO exhaustive search algorithm for dense matrices, based on a prefix-suffix decomposition and Gray code ordering. The algorithm achieves O(1) per-state complexity: for the QUBO objective function computation only one arithmetic operation per state is performed. An adjustable energy components cache size enables placement in the fastest available memory tier. This reduces memory bandwidth requirements to a negligible level and transforms the problem from memory-bound to compute-bound. Our CUDA-based implementation achieves a state-of-the-art evaluation rate of $7.5\\times10^{12}$ states per second on a single GPU, setting a new performance benchmark for the full-space-search subclass of exact solvers.",
-      "pdf_link": "https://arxiv.org/pdf/2607.04857.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.04857",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 43.5,
-      "updated_at": "2026-07-07T09:36:36.793006+00:00"
-    },
-    {
-      "forum_id": "2607.05272",
-      "paper_number": -1,
-      "title": "Adaptive Inference Batching using Policy Gradients",
-      "authors": [
-        "Ruslan Sharifullin"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.05272v1 Announce Type: cross \nAbstract: Inference serving systems must balance throughput and latency under bursty, heterogeneous workloads, yet the industry standard remains static batching policies that require manual tuning and cannot adapt to shifting traffic. We investigate whether reinforcement learning (RL) can learn adaptive batching and routing policies that outperform these heuristics, training REINFORCE and PPO agents on a discrete-event simulator validated against queuing theory and production traces (Azure Functions, BurstGPT). We formulate the problem as an MDP over queue state, request type and GPU availability, evaluating across standard Poisson traffic, extreme bursts, real-world traces and heterogeneous multi-GPU routing.\n  Our central finding is a clear bounda",
-      "pdf_link": "https://arxiv.org/pdf/2607.05272.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05272",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 39.0,
-      "updated_at": "2026-07-07T09:36:36.793087+00:00"
-    },
-    {
-      "forum_id": "2504.08791",
-      "paper_number": -1,
-      "title": "Prima.cpp: Fast 30-70B LLM Inference on Heterogeneous and Low-Resource Home Clusters",
-      "authors": [
-        "Zonghang Li, Tao Li, Wenjiao Feng, Rongxing Xiao, Jianshu She, Hong Huang, Mohsen Guizani, Hongfang Yu, Qirong Ho, Wei Xiang, Xue Liu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2504.08791v3 Announce Type: replace \nAbstract: On-device inference offers privacy, offline use, and instant response, but consumer hardware restricts large language models (LLMs) to low throughput and capability. To overcome this challenge, we present prima.cpp, a distributed on-device inference system that runs 30-70B LLMs on consumer home clusters with mixed CPUs/GPUs, insufficient RAM/VRAM, slow disks, Wi-Fi links, and heterogeneous OSs. We introduce pipelined-ring parallelism (PRP) to overlap disk I/O with compute and communication, and address the prefetch-release conflict in mmap-based offloading. We further propose Halda, a heterogeneity-aware scheduler that co-optimizes per-device CPU/GPU workloads and device selection under RAM/VRAM constraints. On four consumer home devices",
-      "pdf_link": "https://arxiv.org/pdf/2504.08791.pdf",
-      "forum_link": "https://arxiv.org/abs/2504.08791",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 38.0,
-      "updated_at": "2026-07-07T09:36:36.793148+00:00"
-    },
-    {
-      "forum_id": "2511.15361",
-      "paper_number": -1,
-      "title": "BlueBottle: Fast and Robust Blockchains through Subsystem Specialization",
-      "authors": [
-        "Preston Vander Vos, Alberto Sonnino, Giorgos Tsimos, Philipp Jovanovic, Lefteris Kokoris-Kogias"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2511.15361v2 Announce Type: replace \nAbstract: Blockchain consensus faces a trilemma of security, latency, and decentralization. High-throughput systems often require a reduction in decentralization or robustness against strong adversaries, while highly decentralized and secure systems tend to have lower performance. We present BlueBottle, a two-layer consensus architecture. The core layer, BB-Core, is an n=5f+1 protocol that trades some fault tolerance for a much lower finality latency with a medium-sized core validator set. Our experiments show that BB-Core reduces latency by 20-25% in comparison to Mysticeti. The guard layer, BB-Guard, provides decentralized timestamping, proactive misbehavior detection in BB-Core, and a synchronous recovery path. When it observes equivocations or",
-      "pdf_link": "https://arxiv.org/pdf/2511.15361.pdf",
-      "forum_link": "https://arxiv.org/abs/2511.15361",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 47.0,
-      "updated_at": "2026-07-07T09:36:36.793235+00:00"
-    },
-    {
-      "forum_id": "2602.24044",
-      "paper_number": -1,
-      "title": "Data Driven Optimization of GPU efficiency for Distributed LLM-Adapter Serving",
-      "authors": [
-        "Ferran Agullo, Joan Oliveras, Chen Wang, Alberto Gutierrez-Torre, Olivier Tardieu, Alaa Youssef, Jordi Torres, Josep Ll. Berral"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2602.24044v2 Announce Type: replace \nAbstract: Large Language Model (LLM) adapters enable low-cost model specialization, but introduce complex caching and scheduling challenges in distributed serving systems where hundreds of adapters must be hosted concurrently. While prior work has largely focused on latency and throughput optimization, minimizing GPU resource requirements through near-peak utilization remains largely underexplored. This paper presents a data-driven pipeline that, for a given workload, computes an adapter placement that serves the workload with the minimum number of GPUs while avoiding request starvation and GPU memory errors. To that end, the approach identifies the maximum feasible throughput attainable on each GPU by leveraging accurate performance predictions l",
-      "pdf_link": "https://arxiv.org/pdf/2602.24044.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.24044",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 48.5,
-      "updated_at": "2026-07-07T09:36:36.793292+00:00"
-    },
-    {
-      "forum_id": "2603.08003",
-      "paper_number": -1,
-      "title": "SafarDB: FPGA-Accelerated Distributed Transactions via Replicated Data Types",
-      "authors": [
-        "Javad Saberlatibari, Prithviraj Yuvaraj, Mohsen Lesani, Philip Brisk, Mohammad Sadoghi"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2603.08003v2 Announce Type: replace \nAbstract: Data replication is a critical aspect of data center design, as it ensures high availability, scalability, and fault tolerance. However, replicas need to be coordinated to maintain convergence and database integrity constraints under transactional workloads. Commutative Replicated Data Types (RDTs) provide convergence for conflict-free objects using relaxed consistency, and Well-coordinated Replicated Data Types (WRDTs) provide convergence and integrity for general objects using a hybrid model, relaxed when possible and strong when necessary. While state-of-the-art hardware acceleration of RDT uses Remote Direct Memory Access (RDMA), we observe that trends towards lower latency and higher throughput have driven recent data center archite",
-      "pdf_link": "https://arxiv.org/pdf/2603.08003.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.08003",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 90.5,
-      "updated_at": "2026-07-07T09:36:36.793320+00:00"
-    },
-    {
-      "forum_id": "2602.08923",
-      "paper_number": -1,
-      "title": "DynamiQ: Accelerating Gradient Synchronization using Compressed Multi-hop All-reduce",
-      "authors": [
-        "Wenchen Han, Shay Vargaftik, Michael Mitzenmacher, Ran Ben Basat"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2602.08923v2 Announce Type: replace-cross \nAbstract: Multi-hop all-reduce is the de facto backbone of large model training. As the training scale increases, the network often becomes a bottleneck, motivating the reduction of the volume of transmitted data. Accordingly, recent systems have demonstrated significant acceleration of the training process using gradient quantization. However, these systems are not optimized for multi-hop aggregation, where entries are partially summed multiple times along their aggregation topology.\n  We present DynamiQ, a quantization framework that bridges the gap between quantization best practices and multi-hop aggregation. DynamiQ introduces novel techniques to better represent partial sums, codesigned with a decompress accumulate recompress fused ker",
-      "pdf_link": "https://arxiv.org/pdf/2602.08923.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.08923",
-      "submission_date": "2026-07-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-07-07T09:36:36.793709+00:00"
+      "updated_at": "2026-07-08T08:23:32.277930+00:00"
     }
   ]
 }
