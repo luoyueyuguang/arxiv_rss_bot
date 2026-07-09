@@ -1,6 +1,6 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-07-08 08:23:30 UTC
+- **Last Updated**: 2026-07-09 09:39:19 UTC
 - **Total Filtered Papers**: 1
 - **Displaying**: 1 (arXiv: 1, OpenReview: 0)
 - **Papers with Ratings**: 0
@@ -9,4 +9,4 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [SMART: A Machine Learning and Monte Carlo Framework for Rapid Analysis of Stochastic Transistor Aging and Process Variation in Digital Circuits](https://arxiv.org/abs/2607.05187) | `ARXIV` | 52.5 |
+| 1 | [ATLAS: Automated HLS for DL-Optimized FPGAs](https://arxiv.org/abs/2607.07643) | `ARXIV` | 53.5 |

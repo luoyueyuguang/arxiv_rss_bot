@@ -1,123 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-07-08T08:23:32.792544+00:00",
-  "paper_count": 5,
+  "last_updated": "2026-07-09T09:39:20.222839+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2607.05756",
+      "forum_id": "2607.07643",
       "paper_number": -1,
-      "title": "Boosting FPGA Performance with Direct BRAM-DSP Paths",
+      "title": "ATLAS: Automated HLS for DL-Optimized FPGAs",
       "authors": [
-        "Jiajun Hu, Ruthwik Reddy Sunketa, Andrew Boutros, Aman Arora"
+        "Ruthwik Reddy Sunketa, Aman Arora"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "FPGA"
       ],
-      "abstract": "arXiv:2607.05756v1 Announce Type: new \nAbstract: Efficient data movement between memory and compute units is a key performance bottleneck in modern FPGA designs, particularly for deep learning (DL) workloads. In typical FPGA architectures, data transfers between block RAMs (BRAMs) and digital signal processing units (DSPs) must traverse the global routing network, leading to increased wirelength, routing congestion, and critical-path delays. Prior work has explored in- and near-BRAM compute architectures to mitigate these issues, but such solutions often require fundamental changes to FPGA architecture and CAD tools, limiting their commercial viability. This paper proposes a lightweight architectural enhancement that introduces a dedicated direct connection between BRAM and DSP blocks, ena",
-      "pdf_link": "https://arxiv.org/pdf/2607.05756.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05756",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2607.07643v1 Announce Type: new \nAbstract: FPGA architectures increasingly incorporate domain-specific in-fabric hardblocks to accelerate DL inference, particularly GEMM, which dominates DL computation. To realize the performance gains of these hardblocks, manual RTL design is required: the programmer must understand the hardblock microarchitecture, instantiate them in RTL, and manage tiling and control logic. While programming in C/C++ and using HLS tools has increased the abstraction level and productivity of FPGA engineers, HLS tools do not support code generation for custom hardblocks natively. Prior work has demonstrated that blackbox mechanisms in HLS tools can be used to target custom hardblocks, but this still requires explicit function calls in user-written HLS C and manual ",
+      "pdf_link": "https://arxiv.org/pdf/2607.07643.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.07643",
+      "submission_date": "2026-07-09T04:00:00+00:00",
+      "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-07-08T08:23:32.791358+00:00"
+      "score": 3.5,
+      "updated_at": "2026-07-09T09:39:20.221714+00:00"
     },
     {
-      "forum_id": "2607.05985",
+      "forum_id": "2603.22149",
       "paper_number": -1,
-      "title": "Auto-DSM Under the Lens: A Black-Box Evaluation Framework for LLM-Based DSM Generation",
+      "title": "Low Latency GNN Accelerator for Quantum Error Correction",
       "authors": [
-        "Niels Potters, Theo Hofman"
+        "Alessio Cicero, Luigi Altamura, Moritz Lange, Mats Granath, Pedro Trancoso"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "FPGA"
       ],
-      "abstract": "arXiv:2607.05985v1 Announce Type: cross \nAbstract: This paper presents a black-box evaluation framework to systematically assess the ability of Large Language Models (LLMs) to generate Design Structure Matrices (DSMs) from structured technical documentation. Motivated by the closed-source nature of current Auto-DSM pipelines, the framework introduces a reproducible methodology that benchmarks generated DSMs (GEN-DSMs) against manually validated ground-truth matrices (GT-DSMs). The evaluation integrates both single-run and multi-run perspectives, combining structural metrics (Completeness, Correctness, Coupling Density), classification metrics (Selective Accuracy, Abstention Coverage), and stability measures (Entropy, Fleiss' $\\kappa$). To synthesize these aspects, a Composite Quality Score",
-      "pdf_link": "https://arxiv.org/pdf/2607.05985.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05985",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2603.22149v3 Announce Type: replace-cross \nAbstract: Quantum computers can solve selected problems more efficiently than classical computers, but current devices are limited by high physical error rates. Quantum Error Correction (QEC) mitigates this by encoding many physical qubits into a logical qubit, with the surface code among the most widely studied approaches. Since syndrome measurements are produced continuously, the decoder must process them fast enough to avoid becoming a system bottleneck, making real-time decoding essential for fault-tolerant quantum computing. While most state-of-the-art real-time decoders rely on Minimum-Weight Perfect Matching (MWPM), we instead use a high-accuracy Graph Neural Network (GNN) that trades higher computational cost for lower logical error ",
+      "pdf_link": "https://arxiv.org/pdf/2603.22149.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.22149",
+      "submission_date": "2026-07-09T04:00:00+00:00",
+      "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-07-08T08:23:32.791410+00:00"
+      "updated_at": "2026-07-09T09:39:20.221886+00:00"
     },
     {
-      "forum_id": "2607.05993",
+      "forum_id": "2606.16106",
       "paper_number": -1,
-      "title": "Bit2Watt: A Cyber-Physical Vulnerability Exploiting GPU Workloads Across Power and Computing Infrastructures",
+      "title": "Edge-Inference Governors Need Memory-Clock State",
       "authors": [
-        "Zhouhao Ji, Kaikai Pan, Wenyuan Xu"
+        "Jaehoon Kang"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2607.05993v1 Announce Type: cross \nAbstract: Modern data centers increasingly rely on large-scale GPU clusters and on-site renewable energy resources, resulting in a tightly coupled cyber-physical system between computing workloads and power-electronic-dominated grids. In this paper, we reveal Bit2Watt, a previously unexplored vulnerability in which an adversary manipulates GPU workloads to induce controlled, high-frequency power modulations that destabilize local power infrastructure and propagate back to disrupt computing services. Unlike traditional attacks that compromise grid-side devices or communication channels, Bit2Watt operates entirely within the cyber layer as a legal tenant, which could amplify fluctuations, harmonic distortion, and damping degradation, particularly in h",
-      "pdf_link": "https://arxiv.org/pdf/2607.05993.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05993",
-      "submission_date": "2026-07-08T04:00:00+00:00",
+      "abstract": "arXiv:2606.16106v3 Announce Type: replace-cross \nAbstract: On integrated edge SoCs whose memory fabric is governed independently of the compute clocks, frequency-aware latency estimators let deadline-aware DVFS governors schedule ML inference by modeling latency over CPU and GPU clocks -- but they do not condition on the memory clock (EMC), a deployment state that decides whether a governor meets its deadlines and at what energy. We show this with a deployed, measured governor on Jetson Orin: an EMC-blind GPU-only fit misses 25-28% of cycles at tight deadlines, whereas an EMC-aware two-cell refit holds misses to <=0.9% under a 2% QoS budget -- selecting a budget-feasible operating point proactively, where latency-only reactive calibration cannot repair memory-clock-dependent slope error. A",
+      "pdf_link": "https://arxiv.org/pdf/2606.16106.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16106",
+      "submission_date": "2026-07-09T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-07-08T08:23:32.791431+00:00"
-    },
-    {
-      "forum_id": "2606.17253",
-      "paper_number": -1,
-      "title": "PDAGENT-BENCH: Characterizing, Grounding, and Architecting LLM/VLM Agents for VLSI Physical Design",
-      "authors": [
-        "Qiufeng Li, Rongqian Chen, Quan Cheng, Chengxuan Wang, Sizhe Tang, Chia-Tung Ho, David Z. Pan, Tian Lan, Weidong Cao"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2606.17253v4 Announce Type: replace \nAbstract: Large Language Models and vision-language models have shown remarkable success in the front-end design of Very Large-Scale Integrated Circuits, yet their capabilities for VLSI physical design remain significantly underexplored. The primary cause is the lack of standardized benchmarks for evaluating agentic physical design workflows that require high-dimensional, multi-stage optimization under strict design constraints, coordinated interaction with diverse Electronic Design Automation tools, and iterative refinement. This work introduces PDAGENT-BENCH, a comprehensive and multi-dimensional benchmark for evaluating LLM/VLM-based agents across the physical design stack. PDAGENT-BENCH integrates both task-level assessment and workflow-level ",
-      "pdf_link": "https://arxiv.org/pdf/2606.17253.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.17253",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 36.0,
-      "updated_at": "2026-07-08T08:23:32.791452+00:00"
-    },
-    {
-      "forum_id": "2512.23236",
-      "paper_number": -1,
-      "title": "KernelEvolve: Scaling Agentic Kernel Coding for Heterogeneous AI Accelerators at Meta",
-      "authors": [
-        "Gang Liao, Hongsen Qin, Ying Wang, Alicia Golden, Michael Kuchnik, Yavuz Yetim, Jia Jiunn Ang, Chunli Fu, Yihan He, Samuel Hsia, Zewei Jiang, Dianshi Li, Uladzimir Pashkevich, Varna Puvvada, Feng Shi, Matt Steiner, Ruichao Xiao, Liyuan Li, Nathan Yan, Xiayu Yu, Zhou Fang, Roman Levenstein, Kunming Ho, Haishan Zhu, Alec Hammond, Richard Li, Ajit Mathews, Kaustubh Gondkar, Abdul Zainul-Abedin, Ketan Singh, Hongtao Yu, Wenyuan Chi, Barney Huang, Sean Zhang, Noah Weller, Zach Marine, Wyatt Cook, Carole-Jean Wu, Gaoxiang Liu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2512.23236v4 Announce Type: replace-cross \nAbstract: Making deep learning recommendation model (DLRM) training and inference fast and efficient is important. However, this presents three key system challenges - model architecture diversity, kernel primitive diversity, and hardware generation and architecture heterogeneity. This paper presents KernelEvolve-an agentic kernel coding framework-to tackle heterogeneity at-scale for DLRM. KernelEvolve is designed to take kernel specifications as input and automate the process of kernel generation and optimization for recommendation model across heterogeneous hardware architectures. KernelEvolve does so by operating at multiple programming abstractions, from Triton and CuTe DSL to low-level hardware agnostic languages, spanning the full hard",
-      "pdf_link": "https://arxiv.org/pdf/2512.23236.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.23236",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-08T08:23:32.791471+00:00"
+      "score": 4.0,
+      "updated_at": "2026-07-09T09:39:20.221907+00:00"
     }
   ]
 }

@@ -1,31 +1,100 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-07-08T08:23:32.074785+00:00",
-  "paper_count": 10,
+  "last_updated": "2026-07-09T09:39:19.795911+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2607.06107",
+      "forum_id": "2607.06804",
       "paper_number": -1,
-      "title": "DDB: Source-Level Interactive Debugging for Distributed Applications",
+      "title": "ECO/CPO-DAG: A Contradiction-Based Accountability Layer for Adversarial Supply Chains",
       "authors": [
-        "Yibo Yan, Junzhou He, Seo Jin Park"
+        "Sebastian Cochinescu"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2607.06107v1 Announce Type: new \nAbstract: Interactive debugging is an effective tool for understanding program behavior at the source level, allowing developers to pause execution, navigate the call stack, and inspect runtime state. However, interactive debuggers are designed for single-process execution, and interactive debugging has been widely considered impractical for distributed systems. Call stacks stop at process boundaries, debugging state fails to survive infrastructure dynamics, and, most critically, debugger-induced execution pauses trigger catastrophic timeout cascades that destroy the intended debug flow. Consequently, developers are forced to abandon live hypothesis testing in favor of unwieldy and iterative log-and-redeploy cycles.\n  We present DDB, a source-level in",
-      "pdf_link": "https://arxiv.org/pdf/2607.06107.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.06107",
-      "submission_date": "2026-07-08T04:00:00+00:00",
+      "abstract": "arXiv:2607.06804v1 Announce Type: cross \nAbstract: We present ECO/CPO-DAG, a domain-specific accountability protocol for adversarial supply chains that formalizes contradiction detection as a supplemental validation layer rather than a consensus or truth-establishing mechanism. Participants publish signed Event Claim Objects (ECOs) into a causally ordered, append-only directed acyclic graph (DAG) whose edges encode happened-before relations. When two claims about the same subject violate a domain constraint, any observer can compile a Contradiction Proof Object (CPO), a self-verifying object binding the two signed claims and the violated rule, which, on public verification, triggers economic slashing of a determinately blamed party. We map constraints to GS1 EPCIS 2.0 event semantics (spat",
+      "pdf_link": "https://arxiv.org/pdf/2607.06804.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.06804",
+      "submission_date": "2026-07-09T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.5,
-      "updated_at": "2026-07-08T08:23:30.726827+00:00"
+      "score": 11.0,
+      "updated_at": "2026-07-09T09:39:19.427381+00:00"
+    },
+    {
+      "forum_id": "2601.06425",
+      "paper_number": -1,
+      "title": "HiDVFS: Hierarchical Multi-Agent DVFS for Real-Time OpenMP DAG Workloads",
+      "authors": [
+        "Mohammad Pivezhandi, Abusayeed Saifullah, Ali Jannesari"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2601.06425v2 Announce Type: replace \nAbstract: Leakage power in multicore embedded systems now rivals dynamic power, so DVFS schedulers must respect deadlines and thermal limits, not just average makespan. Existing heuristics lack per-core, temperature-aware control and overlook the irregular execution of OpenMP DAGs. We propose HiDVFS, a general, extensible hierarchical multi-agent DVFS scheduler: a profiler agent selects cores and frequencies, a thermal agent groups cores by temperature, and a priority agent orders tasks under contention, all trained with a makespan-focused reward using short-horizon future-state shaping for sample efficiency. Deadlines are soft, derived from a measured reference cost; a federated schedulability gate keeps operating points feasible, and a calibrate",
+      "pdf_link": "https://arxiv.org/pdf/2601.06425.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.06425",
+      "submission_date": "2026-07-09T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 32.5,
+      "updated_at": "2026-07-09T09:39:19.427466+00:00"
+    },
+    {
+      "forum_id": "2605.19887",
+      "paper_number": -1,
+      "title": "DAG-Based QoS-Aware Dynamic Task Placement for Networked Multi-Stage Control Pipelines",
+      "authors": [
+        "Thien Tran, Jonathan Kua, Thuong Hoang, Minh Tran, Yuemin Ding, Jiong Jin"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2605.19887v2 Announce Type: replace \nAbstract: Current Physical AI (PAI) relies heavily on closed-loop visual-servoing pipelines, whose perception and planning stages may become computationally intensive onboard due to complex models embedded on robots. In practice, offloading the perception task to on-site edges statically is inappropriate for latency-sensitive, precise industrial settings over a standardized industrial network. This emphasizes the importance of Control-Communication-Computing (3C) co-design in industrial automation: monolithic local execution saturates AI-accelerated machine and robot hardware, while static edge offloading exposes the control loop to network jitter. Existing adaptive task placement (ATP) controllers can partially address the gap by relocating a sin",
+      "pdf_link": "https://arxiv.org/pdf/2605.19887.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.19887",
+      "submission_date": "2026-07-09T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-09T09:39:19.427526+00:00"
+    },
+    {
+      "forum_id": "2606.20374",
+      "paper_number": -1,
+      "title": "ARGUS: Production-Scale Tracing and Performance Diagnosis for over 10,000-GPU Clusters",
+      "authors": [
+        "Jiasheng Zhou, Longbin Zeng, Clavis Chen, Ruiming Lu, Qinwei Yang, Leyi Ye, Ray Ying, Key Zhang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2606.20374v2 Announce Type: replace \nAbstract: Large-scale LLM training requires always-on, fine-grained observability for effective performance diagnosis at scale. Coarse resource monitors alone cannot localize root causes, and fine-grained profilers incur prohibitive (5%-30%) overheads and massive trace volumes, making always-on deployment impractical in large production clusters.\n  We propose ARGUS, a low-overhead, fine-grained, always-on tracing and real-time analysis system for training workloads in 10,000+ GPU-scale production clusters. ARGUS decomposes observation along the training call hierarchy into CPU call stacks, framework semantics, and GPU kernel execution, with always-on collection under a combined overhead of less than 2%. It builds a unified data pipeline and compre",
+      "pdf_link": "https://arxiv.org/pdf/2606.20374.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.20374",
+      "submission_date": "2026-07-09T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.5,
+      "updated_at": "2026-07-09T09:39:19.427548+00:00"
     },
     {
       "forum_id": "2607.06202",
@@ -38,201 +107,17 @@
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2607.06202v1 Announce Type: new \nAbstract: The deployment of Mixture-of-Experts (MoE) models on production high-bandwidth superpods, such as NVIDIA's NVL72/576 and Huawei's CloudMatrix384, introduces critical challenges beyond raw interconnect bandwidth. While these systems provide unified global address spaces and high-bandwidth fabrics, their full potential for sparse MoE communication is hindered by three fundamental bottlenecks: (1) Strict execution serialization imposed by coarse-grained Bulk Synchronous Parallel (BSP) orchestration of interdependent communication phases; (2) Prohibitive synchronization overhead that fails to scale alongside high interconnect bandwidth; and (3) Severe load imbalance resulting from distance-agnostic scheduling of irregular token traffic. To elimi",
+      "abstract": "arXiv:2607.06202v2 Announce Type: replace \nAbstract: The deployment of Mixture-of-Experts (MoE) models on production high-bandwidth superpods, such as NVIDIA's NVL72/576 and Huawei's CloudMatrix384, introduces critical challenges beyond raw interconnect bandwidth. While these systems provide unified global address spaces and high-bandwidth fabrics, their full potential for sparse MoE communication is hindered by three fundamental bottlenecks: (1) Strict execution serialization imposed by coarse-grained Bulk Synchronous Parallel (BSP) orchestration of interdependent communication phases; (2) Prohibitive synchronization overhead that fails to scale alongside high interconnect bandwidth; and (3) Severe load imbalance resulting from distance-agnostic scheduling of irregular token traffic. To e",
       "pdf_link": "https://arxiv.org/pdf/2607.06202.pdf",
       "forum_link": "https://arxiv.org/abs/2607.06202",
-      "submission_date": "2026-07-08T04:00:00+00:00",
+      "submission_date": "2026-07-09T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 6.0,
-      "updated_at": "2026-07-08T08:23:30.726874+00:00"
-    },
-    {
-      "forum_id": "2607.05439",
-      "paper_number": -1,
-      "title": "Design-CP: Context Parallelism for Design of Protein Nanoparticles",
-      "authors": [
-        "Lorenzo Tarricone, Helen E. Eisenach, Aiko Muraishi, Charlotte M. Deane"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.05439v1 Announce Type: cross \nAbstract: Many all-atom generative protein models can in principle design large multimeric complexes by jointly modelling all chains, but their quadratic token- and atom-pair representations quickly exceed single-GPU memory as the number of chains and residues modelled grows. We introduce Design-CP, two context-parallel (CP) inference strategies for RFdiffusion 3 (1D row-sharding and 2D grid sharding with ring attention) that distribute the quadratic activations across a multi-GPU mesh while preserving pretrained weights. We characterise their scaling when sampling icosahedral assemblies, showing that the maximum feasible asymmetric subunit (ASU) size grows with the expected square-root trend in GPU count and that 2D sharding achieves better wall-cl",
-      "pdf_link": "https://arxiv.org/pdf/2607.05439.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05439",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-07-08T08:23:30.726913+00:00"
-    },
-    {
-      "forum_id": "2607.05622",
-      "paper_number": -1,
-      "title": "EOM-CC Excited-State Gradients and Nonadiabatic Couplings on a Consumer GPU from a Contraction-DAG with Laplace-Transform J/K Kernels",
-      "authors": [
-        "Rub\\'en Dar\\'io Guerrero"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2607.05622v1 Announce Type: cross \nAbstract: We present a unified, memory-bounded GPU realization of equation-of-motion coupled-cluster (EOM-CC) excited-state gradients and interstate nonadiabatic couplings (NACMEs) on a single 8\\,GB consumer GPU. Both are built from one contraction directed acyclic graph: the EOM-CC relaxation is the reverse-mode transpose of the forward density build rather than a per-state re-derivation, and an atomic-orbital-direct Laplace-transform $J/K$ kernel, made non-symmetric ($J^x(A,B)\\neq J^x(B,A)$) by the transition densities, resolves every energy denominator with no four-index molecular-orbital tensor; a two-sided Davidson returns both eigenvectors from one device-resident, spin-pure solve. The pipeline is \\emph{validated end to end at small scale}: gr",
-      "pdf_link": "https://arxiv.org/pdf/2607.05622.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05622",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 33.5,
-      "updated_at": "2026-07-08T08:23:30.726938+00:00"
-    },
-    {
-      "forum_id": "2607.05993",
-      "paper_number": -1,
-      "title": "Bit2Watt: A Cyber-Physical Vulnerability Exploiting GPU Workloads Across Power and Computing Infrastructures",
-      "authors": [
-        "Zhouhao Ji, Kaikai Pan, Wenyuan Xu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.05993v1 Announce Type: cross \nAbstract: Modern data centers increasingly rely on large-scale GPU clusters and on-site renewable energy resources, resulting in a tightly coupled cyber-physical system between computing workloads and power-electronic-dominated grids. In this paper, we reveal Bit2Watt, a previously unexplored vulnerability in which an adversary manipulates GPU workloads to induce controlled, high-frequency power modulations that destabilize local power infrastructure and propagate back to disrupt computing services. Unlike traditional attacks that compromise grid-side devices or communication channels, Bit2Watt operates entirely within the cyber layer as a legal tenant, which could amplify fluctuations, harmonic distortion, and damping degradation, particularly in h",
-      "pdf_link": "https://arxiv.org/pdf/2607.05993.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05993",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 47.0,
-      "updated_at": "2026-07-08T08:23:30.726982+00:00"
-    },
-    {
-      "forum_id": "2504.20198",
-      "paper_number": -1,
-      "title": "Leveraging Neural Graph Compilers in Machine Learning Research for Edge-Cloud Systems",
-      "authors": [
-        "Alireza Furutanpey, Carmen Walser, Philipp Raith, Pantelis A. Frangoudis, Schahram Dustdar"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2504.20198v2 Announce Type: replace \nAbstract: This work presents a comprehensive evaluation of neural network graph compilers across heterogeneous hardware platforms, addressing the critical gap between theoretical optimization techniques and practical deployment scenarios. We demonstrate how vendor-specific optimizations can invalidate relative performance comparisons between architectural archetypes, with performance advantages sometimes completely reversing after compilation. Our systematic analysis reveals that graph compilers exhibit performance patterns highly dependent on both neural architecture and batch sizes. Through fine-grained block-level experimentation, we establish that vendor-specific compilers can leverage repeated patterns in simple architectures, yielding dispro",
-      "pdf_link": "https://arxiv.org/pdf/2504.20198.pdf",
-      "forum_link": "https://arxiv.org/abs/2504.20198",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 44.5,
-      "updated_at": "2026-07-08T08:23:30.727024+00:00"
-    },
-    {
-      "forum_id": "2603.20966",
-      "paper_number": -1,
-      "title": "Communication Lower Bounds and Algorithms for Sketching with Random Dense Matrices",
-      "authors": [
-        "Hussam Al Daas, Grey Ballard, Laura Grigori, Md Taufique Hussain, Suraj Kumar, Mohammad Marufur Rahman, Kathryn Rouse"
-      ],
-      "keywords": [
-        "cs.DC",
-        "Supercomputing"
-      ],
-      "abstract": "arXiv:2603.20966v2 Announce Type: replace \nAbstract: Sketching is widely used in randomized linear algebra for low-rank matrix approximation, column subset selection, and many other problems, and it has gained significant traction in machine learning applications. However, sketching large matrices often necessitates distributed memory algorithms, where communication overhead becomes a critical bottleneck on modern supercomputing clusters. Despite its growing relevance, distributed-memory parallel strategies for sketching remain largely unexplored. In this work, we establish communication lower bounds for sketching using dense matrices that determine how much data movement is required to perform it in parallel. One important observation of our lower bounds is that no communication is requir",
-      "pdf_link": "https://arxiv.org/pdf/2603.20966.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.20966",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "Supercomputing",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 5.5,
-      "updated_at": "2026-07-08T08:23:30.727052+00:00"
-    },
-    {
-      "forum_id": "2607.04415",
-      "paper_number": -1,
-      "title": "GORIO: GPU-Centered Remote I/O for Graph ANNS over NVMe-oF",
-      "authors": [
-        "Gen Zhang, Wenhao Gu, Shan Huang, Xinhai Chen"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.04415v2 Announce Type: replace \nAbstract: Graph-based approximate nearest neighbor search (ANNS) is increasingly used in vector databases and retrieval-augmented generation services, but large vector indexes often exceed the memory capacity of a single GPU server. NVMe over Fabrics (NVMe-oF) provides an attractive storage-disaggregation substrate, yet existing remote storage paths are still largely CPU-centered: the CPU forms I/O requests, drives transport progress, and determines when GPU computation can resume. This organization is poorly matched to graph ANNS, where the next data access is discovered inside GPU graph traversal.\n  This paper presents GORIO, a system study that extends GPU-centered local I/O to remote storage and specializes the resulting substrate for graph AN",
-      "pdf_link": "https://arxiv.org/pdf/2607.04415.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.04415",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 63.0,
-      "updated_at": "2026-07-08T08:23:30.727093+00:00"
-    },
-    {
-      "forum_id": "2606.00552",
-      "paper_number": -1,
-      "title": "Edge-Based QoS-Aware Adaptive Task Placement: A Closed-Loop Control in Multi-Robot Systems",
-      "authors": [
-        "Thien Tran, Jonathan Kua, Thuong Hoang, Minh Tran, Honghao Lyu, Jiong Jin"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.00552v2 Announce Type: replace-cross \nAbstract: Multi-robot systems (MRS) increasingly offload compute-intensive perception tasks to edge nodes to meet strict time-sensitive Quality-of-Service (QoS) constraints. However, static task orchestration on a shared edge node can severely degrade QoS due to network latency, jitter, and edge-resource contention. We present a pilot edge-centric MRS testbed using Raspberry Pi nodes to evaluate a camera-to-manipulator pipeline under three modes: local execution, static offloading, and a QoS-aware Adaptive Task Placement (ATP) controller. ATP scores candidate placements using a multi-metric cost (normalized latency, CPU utilization, and switching overhead) over two-second control windows. The closed-loop visual servoing testbed is instrument",
-      "pdf_link": "https://arxiv.org/pdf/2606.00552.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.00552",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-08T08:23:30.727147+00:00"
-    },
-    {
-      "forum_id": "2607.01646",
-      "paper_number": -1,
-      "title": "PHOENIX: Resilient LLM Training with Hot-Swapping via Zero-Overhead Checkpoint",
-      "authors": [
-        "Haotian Xie, Junlin Chen, Mingkai Zheng, Lishan Yang, Zhao Zhang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.01646v2 Announce Type: replace-cross \nAbstract: State-of-the-art large language model (LLM) training takes tens of thousands of graphics processing units (GPUs) for months and encounters failures across the software and hardware stack. Existing fault-tolerance mechanisms either impose non-trivial overhead during failure-free execution or suffer from prolonged recovery latency, particularly under scenarios where a small subset of compute nodes experience permanent failures. %The tradeoff between failure-free overhead and recovery latency forms a space forms a Pareto frontier We present PHOENIX to simultaneously address both optimization objectives. PHOENIX incorporates a fault-tolerance mechanism that restores LLM training via hot-swapping, namely by replacing failed nodes with s",
-      "pdf_link": "https://arxiv.org/pdf/2607.01646.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.01646",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 22.5,
-      "updated_at": "2026-07-08T08:23:30.727168+00:00"
+      "updated_at": "2026-07-09T09:39:19.427582+00:00"
     }
   ]
 }

@@ -1,100 +1,192 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-07-08T08:23:33.784747+00:00",
-  "paper_count": 14,
+  "last_updated": "2026-07-09T09:39:20.952550+00:00",
+  "paper_count": 16,
   "papers": [
     {
-      "forum_id": "2607.05438",
+      "forum_id": "2607.06636",
       "paper_number": -1,
-      "title": "Modality Relevance is not Modality Utility: Post-hoc Selective Modality Escalation for Cost-Aware Multimodal RAG",
+      "title": "Specification Grounding Drives Test Effectiveness for LLM Code",
       "authors": [
-        "Xue Li, Yiming Gai"
+        "Amin Haeri, Mahdi Ghelichi"
       ],
       "keywords": [
         "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2607.05438v1 Announce Type: cross \nAbstract: Multimodal retrieval-augmented generation (RAG) grounds a generator in evidence drawn from heterogeneous modalities -- text, tables, and images. The dominant deployment choice is binary and made before the model has tried to answer: either run a cheap text(+table) pipeline, or pay for an expensive vision-language model (VLM) over every image. Recent adaptive systems improve on this by selecting the modality or fidelity pre-retrieval, from a question-conditioned predictor of which modality will be needed. We show that this is the wrong decision point. Through an oracle headroom analysis on MultiModalQA, we find that the relevance of a modality to a question is a weak predictor of whether that modality is actually needed to answer correctly:",
-      "pdf_link": "https://arxiv.org/pdf/2607.05438.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05438",
-      "submission_date": "2026-07-08T04:00:00+00:00",
+      "abstract": "arXiv:2607.06636v1 Announce Type: cross \nAbstract: Large language models frequently generate code that appears correct on typical inputs yet fails on edge cases, invalid inputs, and other specification-defined corner conditions. A popular fix has the model write its own tests and repair until they pass, but the source of the gain is unclear: does it come from the tests merely existing, or from their grounding in a specification of what the code should do? We isolate this factor. Holding the tester, test budget, and repair loop fixed, we change a single prompt line that controls whether the tester receives the spec as a checklist of rules. The baseline is strong: it is already told to probe invalid inputs and edge cases. Grounding the tests in the spec produces correct code +38 percentage p",
+      "pdf_link": "https://arxiv.org/pdf/2607.06636.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.06636",
+      "submission_date": "2026-07-09T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 76.0,
-      "updated_at": "2026-07-08T08:23:33.121866+00:00"
+      "score": 13.5,
+      "updated_at": "2026-07-09T09:39:20.472611+00:00"
     },
     {
-      "forum_id": "2607.05752",
+      "forum_id": "2607.06882",
       "paper_number": -1,
-      "title": "When Should LLMs Search? Counterfactual Supervision for Search Routing",
+      "title": "GemNav: Discrete-Token Visual Robot Navigation using a Multimodal Large Language Model",
       "authors": [
-        "Minho Kim"
+        "Peter Bohm, Saimunur Rahman, Abdelwahed Khamis, Sagun Man Singh Shrestha, Chris McCool, Peyman Moghadam"
       ],
       "keywords": [
         "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2607.05752v1 Announce Type: cross \nAbstract: Search-augmented language models can use external evidence to compensate for limitations in parametric knowledge, but search is not uniformly beneficial: models may call search for questions they can already answer, or rely on noisy evidence when correction, clarification, or abstention would be more appropriate. We formulate this as an instance-level search-routing problem: deciding whether search is needed to improve task success relative to a no-search execution. To derive supervision, we compare no-search and forced-search outcomes for the same question and construct an oracle over NO SEARCH, SEARCH, and UNSOLVED based on task-specific success. Using this oracle as both an evaluation criterion and a learning signal, we train search-rou",
-      "pdf_link": "https://arxiv.org/pdf/2607.05752.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05752",
-      "submission_date": "2026-07-08T04:00:00+00:00",
+      "abstract": "arXiv:2607.06882v1 Announce Type: cross \nAbstract: Visual navigation policies built on large pretrained models have so far followed a common recipe: a dedicated visual encoder, a bespoke action head, and training on thousands of hours of cross-embodiment datasets. We ask whether this recipe is necessary. In this paper, we introduce GemNav, a visual robot navigation policy that adapts a frozen Multimodal Large Language Model (MLLM) for short-to-medium horizon waypoint navigation using Low-Rank Adaptation (LoRA) on the language tower alone, with no auxiliary visual encoder and no continuous regression head. Waypoints and categorical navigation signals share a single discrete token vocabulary generated by the language-model head, and a soft-decoded auxiliary loss recovers the metric structure",
+      "pdf_link": "https://arxiv.org/pdf/2607.06882.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.06882",
+      "submission_date": "2026-07-09T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-07-08T08:23:33.122961+00:00"
+      "score": 65.0,
+      "updated_at": "2026-07-09T09:39:20.473111+00:00"
     },
     {
-      "forum_id": "2607.05866",
+      "forum_id": "2607.06893",
       "paper_number": -1,
-      "title": "Differentially Private Natural Gradient Descent",
+      "title": "Computing with Stochastic Oracles in AI-Augmented Computation",
       "authors": [
-        "Pan Li, Kai Chen, Shuai Chang, Shengzhi Zhang, Peizhuo Lv, Jinwen He"
+        "Jie Wang"
       ],
       "keywords": [
         "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2607.05866v1 Announce Type: cross \nAbstract: Under a fixed privacy budget, the utility of differentially private (DP) training is ultimately determined by its optimization efficiency. Standard first-order DP optimizers such as DP-SGD rely solely on local gradients and ignore the underlying loss curvature. This geometric blindness causes severe zigzagging in ill-conditioned landscapes, squandering precious privacy budgets on inefficient iterations. Practitioners are thus trapped in a bind: either stop training prematurely or inject massive per-step noise, both of which critically compromise final model utility. Natural Gradient Descent (NGD) resolves this by preconditioning gradients with curvature, aligning updates with the loss geometry and extracting more efficient signal from ever",
-      "pdf_link": "https://arxiv.org/pdf/2607.05866.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05866",
-      "submission_date": "2026-07-08T04:00:00+00:00",
+      "abstract": "arXiv:2607.06893v1 Announce Type: cross \nAbstract: The Stochastic-Oracle Turing Machine (SOTM) framework models AI-augmented computation as the interaction of a probabilistic Turing machine with an oracle whose responses are drawn from context-dependent distributions. This paper studies what an SOTM can achieve under two oracle-response schemes: in a cached-response oracle, each distinct query receives one response that is reused on later calls to the same query, while in a fresh-response oracle, each call returns an independent response. In both schemes, the SOTM first computes from its input and internal random source to generate its first query, then proceeds adaptively, computing from its query-response transcript (the record of queries issued and responses received) to generate each s",
+      "pdf_link": "https://arxiv.org/pdf/2607.06893.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.06893",
+      "submission_date": "2026-07-09T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 5.0,
-      "updated_at": "2026-07-08T08:23:33.123242+00:00"
+      "score": 1.0,
+      "updated_at": "2026-07-09T09:39:20.473173+00:00"
     },
     {
-      "forum_id": "2506.03218",
+      "forum_id": "2607.07196",
       "paper_number": -1,
-      "title": "Position: EU AI Act's Research Exemptions Can Break the Publication Norms of Major AI Conferences",
+      "title": "Validate the Dream Before You Trust Its Verdict: Admissibility for World-Model Simulators",
       "authors": [
-        "Alina Wernick, Kristof Meding"
+        "Christian Oefinger, Finn Rasmus Sch\\\"afer, Korbinian Moller, Mattia Piccinini, Johannes Betz"
       ],
       "keywords": [
         "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2506.03218v2 Announce Type: replace-cross \nAbstract: The EU has become one of the vanguards in regulating the digital age. A particularly important regulation in the Artificial Intelligence (AI) domain is the 2024 enacted EU AI Act. The AI Act specifies -- due to a risk-based approach -- various obligations for providers of AI systems. These obligations, for example, include a cascade of documentation and compliance measures, which represent a potential obstacle to science. But do these obligations also apply to AI researchers? This position paper argues that, indeed, the AI Act's obligations could apply in many more cases than the AI community is aware of. Moreover, we argue that the AI Act is drafted in a manner that may unwillingly disrupt the scientific publication practices of t",
-      "pdf_link": "https://arxiv.org/pdf/2506.03218.pdf",
-      "forum_link": "https://arxiv.org/abs/2506.03218",
-      "submission_date": "2026-07-08T04:00:00+00:00",
+      "abstract": "arXiv:2607.07196v1 Announce Type: cross \nAbstract: Across robotics, World Models (WMs) are increasingly used to evaluate action policies by simulating the consequences of actions in an imagined world, and returning a success or safety verdict. Yet a verdict is only as trustworthy as the WM that produced it, and the WM itself needs to be certified. In video-generation WMs, fidelity metrics such as Fr\\'echet Video Distance (FVD) reward visual realism, but ignore whether the world responds correctly to the policy's actions, including those unseen in training. Classical simulation-based validation assumes a trusted simulator evaluating an untrusted policy, whereas generative WMs are themselves unverified learned artifacts. Hence, we argue that any WM used as a test oracle must first be accredi",
+      "pdf_link": "https://arxiv.org/pdf/2607.07196.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.07196",
+      "submission_date": "2026-07-09T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-07-08T08:23:33.125345+00:00"
+      "score": 3.5,
+      "updated_at": "2026-07-09T09:39:20.473816+00:00"
+    },
+    {
+      "forum_id": "2607.07370",
+      "paper_number": -1,
+      "title": "Behavior Foundations for Quadruped Robots: ABot-C0 Technical Report",
+      "authors": [
+        "Xufeng Zhao, Fuzhi Yang, Jianhui Chen, Li Gao, Zhang Meng, Jie Gao, Yao Zheng, Wenyu Liu, Menglin Yang, Minqi Gu, Yaru Zhao, Honglin Han, Shihui Su, Zixiao Tang, Liu Liu, Mu Xu, Yang Cai, Wenbin Tang"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.07370v1 Announce Type: cross \nAbstract: In embodied intelligence systems, the motion controller serves as the critical bridge between semantic reasoning and physical execution. Humanoid control has progressed rapidly through large-scale human motion-capture data and motion-tracking paradigm. However, producing quadruped robots motion corpora with scalability and physical feasibility faces more fundamental obstacles: animal motion data is scarce, and cross-embodiment retargeting remains fragile. We present ABot-C0, a generalist motion-control system for quadruped robots that establishes three complementary behavior foundations: a scalable multi-source motion-data pipeline, robust policy learning across motion tracking, locomotion, and scene interaction, and a unified deployment s",
+      "pdf_link": "https://arxiv.org/pdf/2607.07370.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.07370",
+      "submission_date": "2026-07-09T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 23.0,
+      "updated_at": "2026-07-09T09:39:20.474247+00:00"
+    },
+    {
+      "forum_id": "2607.07401",
+      "paper_number": -1,
+      "title": "Heterogeneity-Adaptive Diffusion Schrodinger Bridge for PET-Guided Whole-Body MRI Translation",
+      "authors": [
+        "Chengbo Wang, Jiacheng Yu, Linjie Bian, Ming Qi, Xiaosheng Liu, Tongtong Che, Jichang Zhang, Shuyu Li, Shaoli Song, Xiuying Wang"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.07401v1 Announce Type: cross \nAbstract: While whole-body multimodal medical imaging scanners have been increasingly recognized for more effective medical applications, the excessive long acquisition time in PET-MR scanning is a major obstacle in more efficient clinical practice. Deep learning-based MRI translation provides a potential solution to reduce scan duration. However, current models often focus on specific anatomical regions and face challenges for whole-body scans that consists of highly heterogeneous feature distributions mainly due to (1) different anatomical regions across whole-body, and (2) lesions or pathological tissues. This paper tackles the challenges through a novel Heterogeneity-Adaptive Diffusion Schrodinger Bridge (HA-DSB) framework. By explicitly modelin",
+      "pdf_link": "https://arxiv.org/pdf/2607.07401.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.07401",
+      "submission_date": "2026-07-09T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 44.5,
+      "updated_at": "2026-07-09T09:39:20.474317+00:00"
+    },
+    {
+      "forum_id": "2508.16943",
+      "paper_number": -1,
+      "title": "LHM-Humanoid: Long-Horizon Human Motion Control for Continuous Object Transport in Cluttered Scenes",
+      "authors": [
+        "Haozhuo Zhang, Jingkai Sun, Michele Caprio, Angelo Cangelosi, Jian Tang, Shanghang Zhang, Qiang Zhang, Wei Pan"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2508.16943v3 Announce Type: replace-cross \nAbstract: Physics-based human motion control can make a simulated character walk, sit, and manipulate objects with high physical realism. Almost always, though, this happens in short, isolated clips that are re-initialized between interactions. We instead aim for continuous, reset-free long-horizon motion: a physically simulated humanoid that repeatedly walks to a displaced object, lifts it with a balanced whole-body posture, carries it past obstacles, and places it at a goal, over and over within a single uninterrupted take. The hard part is not any individual motion but the transitions between them. Without a reset, each cycle must end in a state that both leaves the object just placed undisturbed and lets the next cycle begin, yet every p",
+      "pdf_link": "https://arxiv.org/pdf/2508.16943.pdf",
+      "forum_link": "https://arxiv.org/abs/2508.16943",
+      "submission_date": "2026-07-09T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-09T09:39:20.475626+00:00"
+    },
+    {
+      "forum_id": "2604.11950",
+      "paper_number": -1,
+      "title": "AnyPoC: Universal Proof-of-Concept Test Generation for Scalable LLM-Based Bug Detection",
+      "authors": [
+        "Zijie Zhao, Chenyuan Yang, Weidong Wang, Yihan Yang, Ziqi Zhang, Lingming Zhang"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2604.11950v2 Announce Type: replace-cross \nAbstract: While recent LLM-based agents can identify many candidate bugs in source code, their reports remain static hypotheses that require manual validation, limiting the practicality of automated bug detection. We frame this challenge as a test generation task: given a candidate report, synthesizing an executable proof-of-concept (PoC) - such as a script, command sequence, or crafted input - to trigger the suspected defect. Automated PoC generation can act as a scalable validation oracle, enabling end-to-end autonomous bug detection by providing concrete execution evidence. However, naive LLM agents are unreliable validators: they are biased toward \"success\" and may reward-hack by producing plausible but non-functional PoCs or even halluc",
+      "pdf_link": "https://arxiv.org/pdf/2604.11950.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.11950",
+      "submission_date": "2026-07-09T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.0,
+      "updated_at": "2026-07-09T09:39:20.476109+00:00"
     },
     {
       "forum_id": "2604.24222",
@@ -107,224 +199,178 @@
         "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2604.24222v2 Announce Type: replace-cross \nAbstract: Large Language Models (LLMs) have achieved strong performance on general code generation, but their effectiveness drops sharply in enterprise settings where software development relies on internal private libraries absent from public pre-training corpora. Existing Retrieval-Augmented Generation (RAG) methods provide a training-free solution by retrieving static API documentation, but our analysis shows that documentation mainly helps models identify what APIs to use and remains insufficient for teaching how to use them correctly. Even with oracle API-document retrieval, LLMs still make recurring errors at the API, cross-API, and task levels, including API misuse or hallucination, flawed API composition, and incorrect solution strat",
+      "abstract": "arXiv:2604.24222v3 Announce Type: replace-cross \nAbstract: Large Language Models (LLMs) have achieved strong performance on general code generation, but their effectiveness drops sharply in enterprise settings where software development relies on internal private libraries absent from public pre-training corpora. Existing Retrieval-Augmented Generation (RAG) methods provide a training-free solution by retrieving static API documentation, but our analysis shows that documentation mainly helps models identify what APIs to use and remains insufficient for teaching how to use them correctly. Even with oracle API-document retrieval, LLMs still make recurring errors at the API, cross-API, and task levels, including API misuse or hallucination, flawed API composition, and incorrect solution strat",
       "pdf_link": "https://arxiv.org/pdf/2604.24222.pdf",
       "forum_link": "https://arxiv.org/abs/2604.24222",
-      "submission_date": "2026-07-08T04:00:00+00:00",
+      "submission_date": "2026-07-09T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 23.0,
-      "updated_at": "2026-07-08T08:23:33.126018+00:00"
+      "updated_at": "2026-07-09T09:39:20.476138+00:00"
     },
     {
-      "forum_id": "2607.05436",
+      "forum_id": "2606.05403",
       "paper_number": -1,
-      "title": "Statistically Meaningful Geometry and Gauge Symmetry Breaking: A Geometric Foundation for Scientific Discovery and Intelligence Emergence",
+      "title": "Trust, but Don't Verify: Epistemic Blind Spots in LLM Source Evaluation",
       "authors": [
-        "Bing Cheng, Yi-Shuai Niu, Howell Tong, Shing-Tung Yau"
+        "Rohan N. Pradhan, Steve Goley"
       ],
       "keywords": [
-        "cs.LG",
-        "AI for Science"
-      ],
-      "abstract": "arXiv:2607.05436v1 Announce Type: new \nAbstract: The rapid scaling of over-parameterized machine learning architectures, particularly LLMs, raises a profound crisis: do these systems exhibit genuine intelligence, or are they merely sophisticated statistical pattern matchers? Classical flat Euclidean statistics cannot differentiate continuous interpolation from the autonomous discovery of novel causal laws. To resolve this, we introduce Statistically Meaningful Geometry (SMG), a framework modeling over-parameterized learning systems as infinite-dimensional non-parametric Orlicz fiber bundles. We prove that under persistent out-of-distribution (OOD) stimuli governed by unmodeled causal mechanisms, continuous optimization fails. Unmodeled variance is rejected by the visible horizontal base ma",
-      "pdf_link": "https://arxiv.org/pdf/2607.05436.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05436",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "AI for Science",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 38.0,
-      "updated_at": "2026-07-08T08:23:33.409193+00:00"
-    },
-    {
-      "forum_id": "2607.05748",
-      "paper_number": -1,
-      "title": "Two Sides of the Same Coin: Learning the Backdoor to Remove the Backdoor",
-      "authors": [
-        "Qi Zhao, Christian Wressnegger"
-      ],
-      "keywords": [
-        "cs.LG",
+        "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2607.05748v1 Announce Type: new \nAbstract: The community has recently developed various training-time defenses to counter neural backdoors introduced through data poisoning. In light of the observation that a model learns poisonous samples responsible for the backdoor easier than benign samples, these approaches either use a fixed threshold of the training loss for splitting or iteratively learn a reference model as an oracle for identifying benign samples. In particular, the latter has proven effective for anti-backdoor learning.\n  Our method, HARVEY, leverages a similar yet crucially different technique: learning an oracle for poisonous rather than benign samples. Learning a backdoored reference model is significantly easier than learning a reference model on benign data. Consequen",
-      "pdf_link": "https://arxiv.org/pdf/2607.05748.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05748",
-      "submission_date": "2026-07-08T04:00:00+00:00",
+      "abstract": "arXiv:2606.05403v2 Announce Type: replace-cross \nAbstract: Language models increasingly act as epistemic proxies, synthesizing evidence from multiple sources to inform decisions. Whether they evaluate the quality of that evidence, or merely aggregate it based on surface presentation, remains poorly understood. We show that models possess the capability to detect fabricated statistics in isolation but do not recruit this capability during multi-source synthesis, producing similar numeric estimates whether the statistics are fabricated or valid. Specifically, source influence is governed by a methodology-register gate that responds to the distributional register of analytical text but not to numeric validity: for example, statistically impossible confidence intervals receive the same weight ",
+      "pdf_link": "https://arxiv.org/pdf/2606.05403.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.05403",
+      "submission_date": "2026-07-09T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-07-08T08:23:33.409868+00:00"
+      "score": 3.5,
+      "updated_at": "2026-07-09T09:39:20.476396+00:00"
     },
     {
-      "forum_id": "2607.05806",
+      "forum_id": "2606.24894",
       "paper_number": -1,
-      "title": "Heckman-Corrected Epistemic Uncertainty: Selection on Unobservables Defeats Importance Weighting",
+      "title": "RWGBench: Evaluating Scholarly Positioning in Related Work Generation",
       "authors": [
-        "Gunner Levi Howe"
+        "Anzhe Xie, Weihang Su, Jiaxin Mao, Yiqun Liu, Shaoping Ma, Qingyao Ai"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.24894v2 Announce Type: replace-cross \nAbstract: Large language models have shown strong fluency in scientific writing, yet the evaluation of related work generation (RWG) remains limited. Existing RWG evaluations largely inherit summarization-oriented metrics, using lexical or semantic similarity to reference sections as proxies for quality. However, related work writing is fundamentally a citation-level scholarly positioning task: it requires selecting, organizing, and framing prior work to clarify how a target paper relates to, differs from, and contributes beyond existing research.As a result, models may generate coherent and semantically-relevant text while exhibiting academically critical failures, such as inappropriate citation selection or misplaced references, that conve",
+      "pdf_link": "https://arxiv.org/pdf/2606.24894.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.24894",
+      "submission_date": "2026-07-09T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.5,
+      "updated_at": "2026-07-09T09:39:20.476597+00:00"
+    },
+    {
+      "forum_id": "2607.06879",
+      "paper_number": -1,
+      "title": "Best-Arm Identification with Generative Proxy",
+      "authors": [
+        "Tianyi Ma, Hanzhang Qin, Ruihao Zhu, Jierui Zuo"
       ],
       "keywords": [
         "cs.LG",
         "ACL"
       ],
-      "abstract": "arXiv:2607.05806v1 Announce Type: new \nAbstract: Training data for machine learning is routinely collected by a selection process the model never sees: loans are observed only when granted, outcomes only when a test was ordered. The standard fixes -- importance weighting, covariate-shift correction, MAR imputation -- assume selection is ignorable given observables. Econometrics solved the harder case in 1979: Heckman's two-equation model jointly fits a probit selection equation and an outcome equation linked through correlated errors, and the inverse-Mills-ratio term corrects for selection on unobservables, where importance weighting is structurally helpless. We instantiate this for deep epistemic uncertainty: a deep outcome network, a linear selection head, and a joint bivariate-normal li",
-      "pdf_link": "https://arxiv.org/pdf/2607.05806.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05806",
-      "submission_date": "2026-07-08T04:00:00+00:00",
+      "abstract": "arXiv:2607.06879v1 Announce Type: new \nAbstract: Best-arm identification is a canonical model for data-driven decision-making, but in many applications each reward observation is costly. Motivated by the growing availability of cheap predictions from machine learning and large language models, we study fixed-confidence best-arm identification in which each costly reward pull is paired with a cheap but correlated proxy score. The marginal mean of the proxy can be estimated offline and is treated as known, whereas its correlation $\\rho$ with the reward, which governs how much the proxy helps, is unknown and must be learned online in pair with real rewards. We show that a control-variate adjustment turns this model into a heteroscedastic identification problem whose oracle sample complexity i",
+      "pdf_link": "https://arxiv.org/pdf/2607.06879.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.06879",
+      "submission_date": "2026-07-09T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.5,
+      "updated_at": "2026-07-09T09:39:20.770194+00:00"
+    },
+    {
+      "forum_id": "2607.06643",
+      "paper_number": -1,
+      "title": "The Power of Backdoor Absorption in Community Training",
+      "authors": [
+        "Issam Seddik, Sami Souihi, Mohamed Tamaazousti, Sara Tucci Piergiovanni"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.06643v1 Announce Type: cross \nAbstract: Backdoor attacks severely threaten large-scale AI models. When model owners delegate training to external compute providers within a decentralized training paradigm, adversaries can craft stealthy, low-frequency triggers to inject malicious behavior while evading standard audits. Traditionally, detecting these attacks requires a full re-computation of the training steps--a prohibitive overhead that directly contradicts the owner's resource constraints. To address this, we investigate the resilience of continuous optimization dynamics under Byzantine perturbations, where adversaries are forced to compete against a continuous influx of honest updates. Under a threat model where an adversary compromises f out of n total trainers, we quantify ",
+      "pdf_link": "https://arxiv.org/pdf/2607.06643.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.06643",
+      "submission_date": "2026-07-09T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-09T09:39:20.772286+00:00"
+    },
+    {
+      "forum_id": "2607.06723",
+      "paper_number": -1,
+      "title": "Optimization Geometrodynamics: A Framework for Dynamic Geometric Optimization",
+      "authors": [
+        "Zavier Li"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.06723v1 Announce Type: cross \nAbstract: Most gradient-based optimization methods move parameters through a fixed background geometry, even when their internal states implicitly define changing notions of length, curvature, and preconditioning. We introduce optimization geometrodynamics, a benchmark language in which optimization is a coupled evolution of a parameter trajectory, a transported distribution of particles, and a controlled time-varying Riemannian metric. The language separates invariant obstructions from improvable geometric mismatch: positive metrics preserve critical points and Morse indices, and cannot remove global geodesic-convexity obstructions, but can alter conditioning, distributional transport, and flux away from exact critical points. We introduce dynamic ",
+      "pdf_link": "https://arxiv.org/pdf/2607.06723.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.06723",
+      "submission_date": "2026-07-09T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-07-08T08:23:33.409902+00:00"
+      "updated_at": "2026-07-09T09:39:20.772501+00:00"
     },
     {
-      "forum_id": "2607.06388",
+      "forum_id": "2607.07085",
       "paper_number": -1,
-      "title": "Learning to Throw Objects Safely in Multi-Obstacle Environments",
+      "title": "Is Randomness Necessary for Adaptive Data Analysis?",
       "authors": [
-        "Mohammadreza Kasaei, Klemen Voncina, Hamidreza Kasaei"
+        "Edith Cohen, Haim Kaplan, Yishay Mansour, Shay Sapir, Uri Stemmer"
       ],
       "keywords": [
         "cs.LG",
         "ACL"
       ],
-      "abstract": "arXiv:2607.06388v1 Announce Type: cross \nAbstract: Robotic throwing enables fast and efficient object placement beyond the robot's immediate workspace, but reliable throwing in cluttered environments remains underexplored. Existing approaches, such as TossingBot, learn throwing strategies from visual input but assume obstacle-free settings. In this paper, we address the problem of throwing objects into a target basket while avoiding obstacles placed randomly in the scene. We introduce a potential field state representation that compactly encodes both basket attraction and obstacle repulsion on a fixed-size grid, enabling reinforcement learning (RL) policies to generalize across arbitrary numbers and configurations of obstacles. The policy is initialized from kinesthetic demonstrations and ",
-      "pdf_link": "https://arxiv.org/pdf/2607.06388.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.06388",
-      "submission_date": "2026-07-08T04:00:00+00:00",
+      "abstract": "arXiv:2607.07085v1 Announce Type: cross \nAbstract: The Adaptive Data Analysis (ADA) problem formalizes the challenge of preventing false discovery and overfitting when a dataset is repeatedly reused. Formally, our input is a dataset containing $n$ i.i.d. samples from an unknown distribution $\\mathcal{P}$ over a domain $\\mathcal{X}$, and our goal is to answer a sequence of $k$ adaptively chosen statistical queries with respect to $\\mathcal{P}$. The main question is how many queries we can support (i.e., how large $k$ can be), primarily as a function of the number of samples $n$. This question has been intensively studied and is relatively well-understood for randomized mechanisms: there are computationally efficient mechanisms that support $k \\approx n^2$ queries, and no computationally eff",
+      "pdf_link": "https://arxiv.org/pdf/2607.07085.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.07085",
+      "submission_date": "2026-07-09T04:00:00+00:00",
       "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-07-08T08:23:33.411763+00:00"
-    },
-    {
-      "forum_id": "2510.18989",
-      "paper_number": -1,
-      "title": "Solver-Integrated Adversarial Attacking and Training of Neural Operators",
-      "authors": [
-        "Yifei Sun"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2510.18989v3 Announce Type: replace \nAbstract: Neural operators are widely used as fast surrogates for numerical PDE solvers, mapping input functions to solution functions. However, their generalizability and robustness are not yet clearly defined in the operator-learning setting, which differs from traditional adversarial robustness definitions. This paper studies the generalizability and robustness of a learned neural operator from a solver-integrated perspective, addressing the challenge that the output of a learned operator and a numerical solver tends to change in tandem under input perturbation. First, we formalize the definition of generalization and robustness through a model-solver error operator, identifying fixed-input model-solver loss as generalization metric, and norm-b",
-      "pdf_link": "https://arxiv.org/pdf/2510.18989.pdf",
-      "forum_link": "https://arxiv.org/abs/2510.18989",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 45.0,
-      "updated_at": "2026-07-08T08:23:33.412362+00:00"
-    },
-    {
-      "forum_id": "2603.10254",
-      "paper_number": -1,
-      "title": "Improving TabPFN's Synthetic Data Generation by Integrating Causal Structure",
-      "authors": [
-        "Davide Tugnoli, Andrea De Lorenzo, Marco Virgolin, Giovanni Cin\\`a"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2603.10254v2 Announce Type: replace \nAbstract: Synthetic tabular data generation addresses data scarcity and privacy constraints in a variety of domains. Tabular Prior-Data Fitted Network (TabPFN), a recent foundation model for tabular data, has been shown capable of generating high-quality synthetic tabular data. However, TabPFN is autoregressive: features are generated sequentially by conditioning on the previous ones, depending on the order in which they appear in the input data. We demonstrate that when the feature order conflicts with causal structure, the model produces spurious correlations that impair its ability to generate synthetic data and preserve causal effects. We address this limitation by integrating causal structure into TabPFN's generation process through two compl",
-      "pdf_link": "https://arxiv.org/pdf/2603.10254.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.10254",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-07-08T08:23:33.412809+00:00"
-    },
-    {
-      "forum_id": "2607.03436",
-      "paper_number": -1,
-      "title": "How Much of the Routing Gap Is Real? Decomposing the Router-to-Oracle Gap into Reproducible Specialist Advantage and Single-Draw Label Noise",
-      "authors": [
-        "Teng-Ruei Chen"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.03436v2 Announce Type: replace \nAbstract: On real open-model pools, 12--36% of the reported router-to-oracle gap is single-draw label noise that no single-commit router can capture, while the majority is genuine, recoverable specialist advantage; this work proves why (a recoverability asymmetry) and releases a protocol to measure it. Routing among large language models (LLMs) trades cost for quality, motivated by the gap between learned routers and a per-instance oracle. But under stochastic decoding that oracle is a single Bernoulli draw, not a reproducible property. We recast the question structurally: the expected oracle decomposes as $O^{\\exp}=O^{\\mathrm{repro}}+\\Delta$, into reproducible single-commit headroom $O^{\\mathrm{repro}}$ and a non-negative single-commit selection ",
-      "pdf_link": "https://arxiv.org/pdf/2607.03436.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.03436",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-07-08T08:23:33.413339+00:00"
-    },
-    {
-      "forum_id": "2511.17240",
-      "paper_number": -1,
-      "title": "A Fast Binary Splitting Approach for Non-Adaptive Learning of Erd\\H{o}s--R\\'enyi Graphs",
-      "authors": [
-        "Hoang Ta, Jonathan Scarlett"
-      ],
-      "keywords": [
-        "cs.LG",
-        "NeurIPS"
-      ],
-      "abstract": "arXiv:2511.17240v3 Announce Type: replace-cross \nAbstract: We study the problem of learning an unknown graph via group queries on node subsets, where each query reports whether at least one edge is present among the queried nodes. In general, learning arbitrary graphs with $n$ nodes and $k$ edges is hard in the non-adaptive setting, requiring $\\Omega\\big(\\min\\{k^2\\log n,\\,n^2\\}\\big)$ tests even when a small error probability is allowed. We focus on learning Erd\\H{o}s--R\\'enyi (ER) graphs $G\\sim\\mathrm{ER}(n,q)$ in the non-adaptive setting, where the expected number of edges is $\\bar{k}=q\\binom{n}{2}$, and we aim to design an efficient testing--decoding scheme, namely, a non-adaptive test design together with a decoding algorithm, achieving asymptotically vanishing error probability. Prior ",
-      "pdf_link": "https://arxiv.org/pdf/2511.17240.pdf",
-      "forum_link": "https://arxiv.org/abs/2511.17240",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "NeurIPS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-07-08T08:23:33.413778+00:00"
+      "updated_at": "2026-07-09T09:39:20.772986+00:00"
     },
     {
-      "forum_id": "2605.17437",
+      "forum_id": "2601.20226",
       "paper_number": -1,
-      "title": "A semantic mutation metric for metamorphic relation adequacy in scientific computing programs",
+      "title": "Parametric and Generative Forecasts of EPEX Day\\char45 Ahead Energy Market Curves",
       "authors": [
-        "Meng Li (School of Computing, University of South China, Hengyang, China, Hunan Engineering Research Center of Software Evaluation and Testing for Intellectual Equipment, Hengyang, China, CNNC Key Laboratory on High Trusted Computing, Hengyang, China), Xiaohua Yang (School of Computing, University of South China, Hengyang, China, Hunan Engineering Research Center of Software Evaluation and Testing for Intellectual Equipment, Hengyang, China, CNNC Key Laboratory on High Trusted Computing, Hengyang, China), Jie Liu (School of Computing, University of South China, Hengyang, China, Hunan Engineering Research Center of Software Evaluation and Testing for Intellectual Equipment, Hengyang, China, CNNC Key Laboratory on High Trusted Computing, Hengyang, China), Shiyu Yan (School of Computing, University of South China, Hengyang, China, Hunan Engineering Research Center of Software Evaluation and Testing for Intellectual Equipment, Hengyang, China, CNNC Key Laboratory on High Trusted Computing, Hengyang, China)"
+        "Julian Gutierrez, Redouane Silvente"
       ],
       "keywords": [
         "cs.LG",
         "ACL"
       ],
-      "abstract": "arXiv:2605.17437v2 Announce Type: replace-cross \nAbstract: Context. Metamorphic Testing addresses the test-oracle problem in scientific computing, but classical Mutation Score operates on syntactic AST mutations and misses domain semantics.\n  Objective. We propose the Semantic Mutation Score (SMS), built on five domain-semantic operators (Conservation Erosion, Operator Substitution, Hyperparameter, Trajectory Flip, Structural Injection). SMS degenerates almost everywhere to MS in a characterised limit, so any SMS-based conclusion remains consistent with prior mutation-testing literature in the classical regime.\n  Method. A 12-PUT x 5-MP design over four single-output float-to-float classes (numeric, probabilistic, surrogate, machine-learning) is paired with a three-layer attribution classi",
-      "pdf_link": "https://arxiv.org/pdf/2605.17437.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.17437",
-      "submission_date": "2026-07-08T04:00:00+00:00",
+      "abstract": "arXiv:2601.20226v2 Announce Type: replace \nAbstract: We propose two methodologies for modelling aggregated supply and demand curves in the EPEX SPOT Day\\char45 Ahead market, emphasizing generative models as a way to recover distributional variability. The first is a low\\char45 dimensional parametric representation that yields deterministic point forecasts; the second is a high\\char45 dimensional order\\char45 level representation that samples from a conditional distribution of plausible curves. Both model the full curve structure, enabling the analysis of price sensitivity, volume sensitivity, and price impact.\n  The parametric representation uses plateau levels, elastic\\char45 region boundaries, and polynomial coefficients, forecast with eXtreme Gradient Boosting. The main contribution is ",
+      "pdf_link": "https://arxiv.org/pdf/2601.20226.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.20226",
+      "submission_date": "2026-07-09T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-07-08T08:23:33.414179+00:00"
+      "updated_at": "2026-07-09T09:39:20.774230+00:00"
     }
   ]
 }

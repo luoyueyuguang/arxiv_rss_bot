@@ -1,100 +1,54 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-07-08T08:23:32.693575+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-07-09T09:39:20.171061+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2607.05596",
+      "forum_id": "2607.06868",
       "paper_number": -1,
-      "title": "Bounded-Memory Parallel Image Pulling for Large Container Images",
+      "title": "Seekable OCI: Lazy-Loading Container Images via Range-Request Indexing",
       "authors": [
-        "Sri Saran Balaji Vellore Rajakumar, Henry Wang, Ankur Singh, James Thompson"
+        "James Thompson, Wayne Mesard, Jesse Butler, Sri Saran Balaji Rajakumar, Henry Wang"
       ],
       "keywords": [
-        "cs.DC",
+        "cs.OS",
         "FAST"
       ],
-      "abstract": "arXiv:2607.05596v1 Announce Type: new \nAbstract: AI/ML workloads increasingly run as containers, where a container image must be downloaded to the host before the workload can start. This cold image pull lands on the critical path whenever a training or inference job scales up or a host is updated, and for GPU workloads it has become the dominant component of startup time as AI/ML images reach 31--48~GiB compressed. We present Disk-Backed Parallel Pull (DBPP), an alternative to the in-memory ordered reassembly used by containerd~2.2, the upstream container runtime. containerd splits layers into chunks fetched concurrently over HTTP range requests, but chunks that arrive out of order accumulate in the runtime heap until a sequential consumer drains them in order. This backlog grows with ima",
-      "pdf_link": "https://arxiv.org/pdf/2607.05596.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05596",
-      "submission_date": "2026-07-08T04:00:00+00:00",
+      "abstract": "arXiv:2607.06868v1 Announce Type: cross \nAbstract: Container image pulling accounts for the majority of pod startup time in Kubernetes environments. Standard pull downloads the entire image before the container can start, even when the application accesses only a fraction of the image content at startup. We present SOCI (Seekable OCI), a lazy-loading architecture that enables containers to start without downloading the full image. SOCI builds an external index over standard OCI images, mapping files to byte ranges within compressed layers. At runtime, a FUSE filesystem intercepts file accesses and serves them via HTTP range requests. Unlike prior approaches that require image format conversion, SOCI works with unmodified images and standard registries. The index is stored as an OCI referre",
+      "pdf_link": "https://arxiv.org/pdf/2607.06868.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.06868",
+      "submission_date": "2026-07-09T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 43.5,
-      "updated_at": "2026-07-08T08:23:32.277224+00:00"
+      "score": 54.5,
+      "updated_at": "2026-07-09T09:39:19.841048+00:00"
     },
     {
-      "forum_id": "2607.06034",
+      "forum_id": "2602.08923",
       "paper_number": -1,
-      "title": "Efficient and Robust Lock-Free Multi-Word Compare-and-Swap via Contention-Aware Helping",
+      "title": "DynamiQ: Accelerating Gradient Synchronization using Compressed Multi-hop All-reduce",
       "authors": [
-        "Motoki Unno, Kento Sugiura, Yoshiharu Ishikawa"
+        "Wenchen Han, Shay Vargaftik, Michael Mitzenmacher, Ran Ben Basat"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2607.06034v1 Announce Type: cross \nAbstract: Efficient concurrent access to shared memory remains a central focus for researchers seeking to enhance data structure performance. Lock-based synchronization often limits scalability and introduces liveness issues such as deadlocks. In contrast, implementing non-blocking structures with single-word compare-and-swap (CAS) instructions increases algorithmic complexity because of unavoidable intermediate states. Multi-word compare-and-swap (MCAS) operations offer a practical primitive for atomically updating multiple discrete memory locations, thereby addressing these challenges. However, under high contention, helping mechanisms designed to guarantee lock-freedom may cause excessive cache invalidations and significant performance degradatio",
-      "pdf_link": "https://arxiv.org/pdf/2607.06034.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.06034",
-      "submission_date": "2026-07-08T04:00:00+00:00",
+      "abstract": "arXiv:2602.08923v3 Announce Type: replace-cross \nAbstract: Multi-hop all-reduce is the de facto backbone of large model training. As the training scale increases, the network often becomes a bottleneck, motivating the reduction of the volume of transmitted data. Accordingly, recent systems have demonstrated significant acceleration of the training process using gradient quantization. However, these systems are not optimized for multi-hop aggregation, where entries are partially summed multiple times along their aggregation topology.\n  We present DynamiQ, a quantization framework that bridges the gap between quantization best practices and multi-hop aggregation. DynamiQ introduces novel techniques to better represent partial sums, codesigned with a decompress accumulate recompress fused ker",
+      "pdf_link": "https://arxiv.org/pdf/2602.08923.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.08923",
+      "submission_date": "2026-07-09T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 31.0,
-      "updated_at": "2026-07-08T08:23:32.277772+00:00"
-    },
-    {
-      "forum_id": "2607.02275",
-      "paper_number": -1,
-      "title": "Cadence: Extreme Pipelining with Multiple Concurrent Proposers",
-      "authors": [
-        "Kushal Babel, Fatima Elsheimy, Lioba Heimbach, Mohammad Mussadiq Jalalzai, Tobias Klenze, Jovan Komatovic, Jason Milionis, Mike Setrin, Victor Shoup"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.02275v2 Announce Type: replace \nAbstract: We present Cadence, a Byzantine fault-tolerant multi-proposer consensus protocol with arbitrarily low block intervals, optimal resilience, and optimal fast-path latency. Cadence divides time into equally spaced slots, one block per slot, each finalized in its own consensus instance. Blocks do not build directly on their predecessor, so instances run independently and none waits for an earlier block to finish or propagate; we call this extreme pipelining, decoupling the block interval from network latency. Cadence also removes the single-leader monopoly over transaction inclusion and ordering: under multiple concurrent proposers (MCP), several validators propose for each block, and it guarantees that, under synchrony, a transaction a corr",
-      "pdf_link": "https://arxiv.org/pdf/2607.02275.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.02275",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-07-08T08:23:32.277904+00:00"
-    },
-    {
-      "forum_id": "2607.04415",
-      "paper_number": -1,
-      "title": "GORIO: GPU-Centered Remote I/O for Graph ANNS over NVMe-oF",
-      "authors": [
-        "Gen Zhang, Wenhao Gu, Shan Huang, Xinhai Chen"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.04415v2 Announce Type: replace \nAbstract: Graph-based approximate nearest neighbor search (ANNS) is increasingly used in vector databases and retrieval-augmented generation services, but large vector indexes often exceed the memory capacity of a single GPU server. NVMe over Fabrics (NVMe-oF) provides an attractive storage-disaggregation substrate, yet existing remote storage paths are still largely CPU-centered: the CPU forms I/O requests, drives transport progress, and determines when GPU computation can resume. This organization is poorly matched to graph ANNS, where the next data access is discovered inside GPU graph traversal.\n  This paper presents GORIO, a system study that extends GPU-centered local I/O to remote storage and specializes the resulting substrate for graph AN",
-      "pdf_link": "https://arxiv.org/pdf/2607.04415.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.04415",
-      "submission_date": "2026-07-08T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 75.0,
-      "updated_at": "2026-07-08T08:23:32.277930+00:00"
+      "score": 13.5,
+      "updated_at": "2026-07-09T09:39:19.894891+00:00"
     }
   ]
 }
