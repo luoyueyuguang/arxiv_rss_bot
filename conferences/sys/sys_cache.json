@@ -1,54 +1,54 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-07-09T09:39:20.171061+00:00",
+  "last_updated": "2026-07-10T09:30:35.885718+00:00",
   "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2607.06868",
+      "forum_id": "2606.15137",
       "paper_number": -1,
-      "title": "Seekable OCI: Lazy-Loading Container Images via Range-Request Indexing",
+      "title": "uringscope: Portable, Low-Overhead Observability for io_uring",
       "authors": [
-        "James Thompson, Wayne Mesard, Jesse Butler, Sri Saran Balaji Rajakumar, Henry Wang"
+        "Rajarshi Chowdhury"
       ],
       "keywords": [
         "cs.OS",
         "FAST"
       ],
-      "abstract": "arXiv:2607.06868v1 Announce Type: cross \nAbstract: Container image pulling accounts for the majority of pod startup time in Kubernetes environments. Standard pull downloads the entire image before the container can start, even when the application accesses only a fraction of the image content at startup. We present SOCI (Seekable OCI), a lazy-loading architecture that enables containers to start without downloading the full image. SOCI builds an external index over standard OCI images, mapping files to byte ranges within compressed layers. At runtime, a FUSE filesystem intercepts file accesses and serves them via HTTP range requests. Unlike prior approaches that require image format conversion, SOCI works with unmodified images and standard registries. The index is stored as an OCI referre",
-      "pdf_link": "https://arxiv.org/pdf/2607.06868.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.06868",
-      "submission_date": "2026-07-09T04:00:00+00:00",
+      "abstract": "arXiv:2606.15137v2 Announce Type: replace \nAbstract: io_uring moves I/O submission and completion into shared-memory rings. This makes it fast, and it also makes it invisible. strace sees only the ring setup, and the kernel tracepoints that expose the request flow are not stable ABI, so the few tools built on them work only on narrow kernel ranges. We present uringscope, a single-binary, language-agnostic observability tool for io_uring built on CO-RE (Compile Once, Run Everywhere) eBPF. uringscope makes four contributions. The first is a precise model of the request lifecycle and a method to reconstruct per-request flows from kernel events. The second is a technique for attaching portably to an unstable tracepoint surface, using BTF-probed program variants, CO-RE field flavors, and positi",
+      "pdf_link": "https://arxiv.org/pdf/2606.15137.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.15137",
+      "submission_date": "2026-07-10T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 54.5,
-      "updated_at": "2026-07-09T09:39:19.841048+00:00"
+      "score": 33.0,
+      "updated_at": "2026-07-10T09:30:35.387681+00:00"
     },
     {
-      "forum_id": "2602.08923",
+      "forum_id": "2509.10757",
       "paper_number": -1,
-      "title": "DynamiQ: Accelerating Gradient Synchronization using Compressed Multi-hop All-reduce",
+      "title": "FastTrack: GPU-Accelerated Tracking for Visual SLAM",
       "authors": [
-        "Wenchen Han, Shay Vargaftik, Michael Mitzenmacher, Ran Ben Basat"
+        "Kimia Khabiri, Parsa Hosseininejad, Shishir Gopinath, Karthik Dantu, Steven Y. Ko"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2602.08923v3 Announce Type: replace-cross \nAbstract: Multi-hop all-reduce is the de facto backbone of large model training. As the training scale increases, the network often becomes a bottleneck, motivating the reduction of the volume of transmitted data. Accordingly, recent systems have demonstrated significant acceleration of the training process using gradient quantization. However, these systems are not optimized for multi-hop aggregation, where entries are partially summed multiple times along their aggregation topology.\n  We present DynamiQ, a quantization framework that bridges the gap between quantization best practices and multi-hop aggregation. DynamiQ introduces novel techniques to better represent partial sums, codesigned with a decompress accumulate recompress fused ker",
-      "pdf_link": "https://arxiv.org/pdf/2602.08923.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.08923",
-      "submission_date": "2026-07-09T04:00:00+00:00",
+      "abstract": "arXiv:2509.10757v2 Announce Type: replace-cross \nAbstract: The tracking module of a visual-inertial SLAM system processes incoming image frames and IMU data to estimate the position of the frame in relation to the map. It is important for the tracking to complete in a timely manner for each frame to avoid poor localization or tracking loss. We therefore present a new approach which leverages GPU computing power to accelerate time-consuming components of tracking in order to improve its performance. These components include stereo feature matching and local map tracking. We implement our design inside the ORB-SLAM3 tracking process using CUDA. Our evaluation demonstrates an overall improvement in tracking performance of up to 2.8x on a desktop and Jetson Xavier NX board in stereo-inertial m",
+      "pdf_link": "https://arxiv.org/pdf/2509.10757.pdf",
+      "forum_link": "https://arxiv.org/abs/2509.10757",
+      "submission_date": "2026-07-10T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-07-09T09:39:19.894891+00:00"
+      "score": 31.5,
+      "updated_at": "2026-07-10T09:30:35.440464+00:00"
     }
   ]
 }

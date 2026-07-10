@@ -1,123 +1,192 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-07-09T09:39:19.795911+00:00",
-  "paper_count": 5,
+  "last_updated": "2026-07-10T09:30:35.299021+00:00",
+  "paper_count": 8,
   "papers": [
     {
-      "forum_id": "2607.06804",
+      "forum_id": "2607.08006",
       "paper_number": -1,
-      "title": "ECO/CPO-DAG: A Contradiction-Based Accountability Layer for Adversarial Supply Chains",
+      "title": "Toward a Unified GPU-Aware OpenSHMEM Specification",
       "authors": [
-        "Sebastian Cochinescu"
+        "Naveen Ravi, Nathan Wichmann, Md. Wasi-ur- Rahman, Aurelien Bouteiller, Y{\\i}ltan Hassan Temu\\c{c}in, Avinash Kethineedi, Johnathan Alsop, Brandon Potter, Shubhendra Pal Singhal, Jun Shirako, Akihiro Hayashi, Vivek Sarkar, Lawrence C. Stewart, Michael Beebe, Benjamin Michalowicz, Jeongnim Kim, Thiago Teixeria, Mark F. Brown, Aaron Welch, Oscar Hernandez, Wendy Poole, Steve Poole"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2607.06804v1 Announce Type: cross \nAbstract: We present ECO/CPO-DAG, a domain-specific accountability protocol for adversarial supply chains that formalizes contradiction detection as a supplemental validation layer rather than a consensus or truth-establishing mechanism. Participants publish signed Event Claim Objects (ECOs) into a causally ordered, append-only directed acyclic graph (DAG) whose edges encode happened-before relations. When two claims about the same subject violate a domain constraint, any observer can compile a Contradiction Proof Object (CPO), a self-verifying object binding the two signed claims and the violated rule, which, on public verification, triggers economic slashing of a determinately blamed party. We map constraints to GS1 EPCIS 2.0 event semantics (spat",
-      "pdf_link": "https://arxiv.org/pdf/2607.06804.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.06804",
-      "submission_date": "2026-07-09T04:00:00+00:00",
+      "abstract": "arXiv:2607.08006v1 Announce Type: new \nAbstract: Leadership-class HPC systems are now accelerator-centric, with GPUs providing most floating-point throughput and memory bandwidth. As next-generation systems increasingly integrate accelerators through high-speed memory fabrics and system interconnects, exposing larger tightly coupled device domains, \\ac{PGAS} models such as OpenSHMEM provide a natural abstraction for expressing fine-grained remote memory operations across these devices. While OpenSHMEM 1.x offers a lean PGAS model for irregular communication, atomics, fine-grained synchronization, and collectives, its memory model lacks portable semantics for accelerator architectures. As a result, existing GPU-enabled OpenSHMEM implementations differ in memory management, capability discov",
+      "pdf_link": "https://arxiv.org/pdf/2607.08006.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08006",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 57.5,
+      "updated_at": "2026-07-10T09:30:34.716083+00:00"
+    },
+    {
+      "forum_id": "2607.08440",
+      "paper_number": -1,
+      "title": "Coded Task Offloading for Fluid Computing: A Privacy-Aware Approach under D2D Networks",
+      "authors": [
+        "Diego Cajaraville-Aboy, Manuel Fern\\'andez-Veiga, Ana Fern\\'andez-Vilas, Rebeca P. D\\'iaz-Redondo"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2607.08440v1 Announce Type: new \nAbstract: Fluid Computing aims to support distributed applications execution across heterogeneous cloud, edge, and device resources, motivating task execution mechanisms that adapt to dynamic and privacy-sensitive environments under runtime conditions. In this context, current task offloading schemes rarely address privacy risks and information leakage under adversarial execution settings; furthermore, most coded computing proposals focus on straggler mitigation without considering system-level objectives such as energy awareness. This paper proposes a coded task offloading scheme for D2D networks under stochastic task arrivals and queue-based dynamics. The proposal combines task offloading techniques with linear secret sharing schemes, where tasks ar",
+      "pdf_link": "https://arxiv.org/pdf/2607.08440.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08440",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.5,
+      "updated_at": "2026-07-10T09:30:34.716198+00:00"
+    },
+    {
+      "forum_id": "2607.08565",
+      "paper_number": -1,
+      "title": "SMetric: Rethink LLM Scheduling for Serving Agents with Balanced Session-centric Scheduling",
+      "authors": [
+        "Jiahao Wang, Kaizhan Lin, Kaixi Zhang, Jinbo Han, Xingda Wei, Sijie Shen, Chenguang Fang, Wenyuan Yu, Rong Chen, Haibo Chen"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.08565v1 Announce Type: new \nAbstract: LLM scheduling is critical to serving, yet it remains unclear how well existing designs fit agentic serving--with LLM requests issued by agents instead of humans. This shifts the workload in two ways: (1) agents act only on complete responses, making the cluster's tokens per second (TPS) the primary goal and relaxing--not eliminating--per-token latency requirements; and (2) requests share much of their KV\\$-reuse exceeds 80% of request tokens in a production trace from BAILIAN, versus 54-62% in chat.\n  This paper first contributes a systematic study of request scheduling for agents on two real-world traces. We find that to increase KV\\$ reuse, existing schedulers overly prioritize routing requests to instances caching their KV\\$, overloading",
+      "pdf_link": "https://arxiv.org/pdf/2607.08565.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08565",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-10T09:30:34.716223+00:00"
+    },
+    {
+      "forum_id": "2607.08386",
+      "paper_number": -1,
+      "title": "Parallel QEC Decoding Applied to Distributed Quantum Computing",
+      "authors": [
+        "Gabriele Incardona, Davide Ferrari, Michele Amoretti"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2607.08386v1 Announce Type: cross \nAbstract: A novel parallel approach is proposed for QEC decoding based on Belief Propagation with Ordered Statistics Decoding. The main idea is to pre-process the error vectors obtained from Belief Propagation by applying Singular Value Decomposition locally to sub-regions of the lattice. The proposed approach is applied to distributed quantum computers and evaluated in terms of complexity, accuracy, and scalability.",
+      "pdf_link": "https://arxiv.org/pdf/2607.08386.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08386",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.0,
+      "updated_at": "2026-07-10T09:30:34.716270+00:00"
+    },
+    {
+      "forum_id": "2607.08407",
+      "paper_number": -1,
+      "title": "Who Needs DRAM? We Have Fiber",
+      "authors": [
+        "Hannah Atmer, Thiemo Voigt, Yuan Yao, Stefanos Kaxiras"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2607.08407v1 Announce Type: cross \nAbstract: The rising pressure on DRAM availability and contract pricing reflects generative AI's massive high-performance memory requirements. This pressure is heavily compounded by hyperscale data center expansion, which now consumes a significant portion of global DRAM output. In this work, we propose a new architecture: Fiber Memory, which reimagines the role of optical fiber in a hyperscale data center, deploying it as an active, recirculating delay-line memory for immutable data, such as large language model (LLM) weights. We present a data-parallel optical broadcast delay-line memory architecture that accounts for fiber's physical realities. By incorporating space-division multiplexed multi-core fibers (MCFs), passive optical tap-and-amplify i",
+      "pdf_link": "https://arxiv.org/pdf/2607.08407.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08407",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-07-10T09:30:34.716286+00:00"
+    },
+    {
+      "forum_id": "2601.21855",
+      "paper_number": -1,
+      "title": "Self-Adaptive Probabilistic Skyline Analytics in Cloud-Edge IoE: A Multi-Objective DRL Approach",
+      "authors": [
+        "Chuan-Chi Lai"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2601.21855v2 Announce Type: replace \nAbstract: The proliferation of the Internet of Everything (IoE) necessitates efficient Probabilistic Skyline (PSKY) query analytics at the network edge, which is severely constrained by the trade-off between limited computational capacity and high-variance communication bandwidth. Conventional static thresholding and heuristic-based approaches fail to adapt to the inherent volatility and non-independent and identically distributed (non-IID) characteristics of edge streams, often triggering network congestion or compromising query fidelity. To address these systemic inefficiencies, this paper introduces SA-PSKY, a self-adaptive framework integrating deep reinforcement learning into a distributed query optimization architecture. We model threshold s",
+      "pdf_link": "https://arxiv.org/pdf/2601.21855.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.21855",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-07-10T09:30:34.716322+00:00"
+    },
+    {
+      "forum_id": "2604.10180",
+      "paper_number": -1,
+      "title": "Tessera: Unlocking Heterogeneous GPUs through Kernel-Granularity Disaggregation",
+      "authors": [
+        "Tiancheng Hu, Jin Qin, Zheng Wang, Junhao Hu, Yuzheng Wang, Lei Chen, Yizhou Shan, Mingxing Zhang, Ting Cao, Chunwei Xia, Huimin Cui, Tao Xie, Chenxi Wang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2604.10180v2 Announce Type: replace \nAbstract: Disaggregation maps parts of an AI workload to different types of GPUs, offering a path to utilize modern heterogeneous GPU clusters. However, existing solutions operate at a coarse granularity and are tightly coupled to specific model architectures, leaving much room for performance improvement. This paper presents Tessera, the first kernel disaggregation system to improve performance and cost efficiency on heterogeneous GPUs for large model inference. Our key insight is that kernels within a single application exhibit diverse resource demands, making them the most suitable granularity for aligning computation with hardware capabilities. Tessera integrates offline analysis with online adaptation by extracting precise inter-kernel depend",
+      "pdf_link": "https://arxiv.org/pdf/2604.10180.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.10180",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 65.0,
+      "updated_at": "2026-07-10T09:30:34.716356+00:00"
+    },
+    {
+      "forum_id": "2606.16589",
+      "paper_number": -1,
+      "title": "DRIFT: Risk-Constrained Diffusion with Imitation Priors for Mixed-Autonomy Traffic Generation",
+      "authors": [
+        "Yaoshen Yu, Minghui Liwang, Wenbo Zhu, Xinlei Yi, Zhang Liu, Yiguang Hong, Xianbin Wang, Seyyedali Hosseinalipour"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2606.16589v2 Announce Type: replace \nAbstract: Future intelligent transportation systems are envisioned to evolve toward a long-term mixed-autonomy paradigm, where human-driven vehicles (HVs) and autonomous vehicles (AVs) coexist within highly coupled traffic ecosystems. Such coexistence introduces pronounced heterogeneity, amplified uncertainty, and increasingly intricate interaction dynamics. In this context, it remains fundamentally challenging to simultaneously capture the heterogeneous behavioral distribution shifts arising from dynamic AV penetration, generate diverse yet executable trajectories under strong inter-vehicle coupling, and conduct reliable closed-loop safety and stability diagnostics for rare but high-impact events. To this end, we present Diffusion with Risk const",
+      "pdf_link": "https://arxiv.org/pdf/2606.16589.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.16589",
+      "submission_date": "2026-07-10T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 11.0,
-      "updated_at": "2026-07-09T09:39:19.427381+00:00"
-    },
-    {
-      "forum_id": "2601.06425",
-      "paper_number": -1,
-      "title": "HiDVFS: Hierarchical Multi-Agent DVFS for Real-Time OpenMP DAG Workloads",
-      "authors": [
-        "Mohammad Pivezhandi, Abusayeed Saifullah, Ali Jannesari"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2601.06425v2 Announce Type: replace \nAbstract: Leakage power in multicore embedded systems now rivals dynamic power, so DVFS schedulers must respect deadlines and thermal limits, not just average makespan. Existing heuristics lack per-core, temperature-aware control and overlook the irregular execution of OpenMP DAGs. We propose HiDVFS, a general, extensible hierarchical multi-agent DVFS scheduler: a profiler agent selects cores and frequencies, a thermal agent groups cores by temperature, and a priority agent orders tasks under contention, all trained with a makespan-focused reward using short-horizon future-state shaping for sample efficiency. Deadlines are soft, derived from a measured reference cost; a federated schedulability gate keeps operating points feasible, and a calibrate",
-      "pdf_link": "https://arxiv.org/pdf/2601.06425.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.06425",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-07-09T09:39:19.427466+00:00"
-    },
-    {
-      "forum_id": "2605.19887",
-      "paper_number": -1,
-      "title": "DAG-Based QoS-Aware Dynamic Task Placement for Networked Multi-Stage Control Pipelines",
-      "authors": [
-        "Thien Tran, Jonathan Kua, Thuong Hoang, Minh Tran, Yuemin Ding, Jiong Jin"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2605.19887v2 Announce Type: replace \nAbstract: Current Physical AI (PAI) relies heavily on closed-loop visual-servoing pipelines, whose perception and planning stages may become computationally intensive onboard due to complex models embedded on robots. In practice, offloading the perception task to on-site edges statically is inappropriate for latency-sensitive, precise industrial settings over a standardized industrial network. This emphasizes the importance of Control-Communication-Computing (3C) co-design in industrial automation: monolithic local execution saturates AI-accelerated machine and robot hardware, while static edge offloading exposes the control loop to network jitter. Existing adaptive task placement (ATP) controllers can partially address the gap by relocating a sin",
-      "pdf_link": "https://arxiv.org/pdf/2605.19887.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.19887",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-07-09T09:39:19.427526+00:00"
-    },
-    {
-      "forum_id": "2606.20374",
-      "paper_number": -1,
-      "title": "ARGUS: Production-Scale Tracing and Performance Diagnosis for over 10,000-GPU Clusters",
-      "authors": [
-        "Jiasheng Zhou, Longbin Zeng, Clavis Chen, Ruiming Lu, Qinwei Yang, Leyi Ye, Ray Ying, Key Zhang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.20374v2 Announce Type: replace \nAbstract: Large-scale LLM training requires always-on, fine-grained observability for effective performance diagnosis at scale. Coarse resource monitors alone cannot localize root causes, and fine-grained profilers incur prohibitive (5%-30%) overheads and massive trace volumes, making always-on deployment impractical in large production clusters.\n  We propose ARGUS, a low-overhead, fine-grained, always-on tracing and real-time analysis system for training workloads in 10,000+ GPU-scale production clusters. ARGUS decomposes observation along the training call hierarchy into CPU call stacks, framework semantics, and GPU kernel execution, with always-on collection under a combined overhead of less than 2%. It builds a unified data pipeline and compre",
-      "pdf_link": "https://arxiv.org/pdf/2606.20374.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.20374",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 34.5,
-      "updated_at": "2026-07-09T09:39:19.427548+00:00"
-    },
-    {
-      "forum_id": "2607.06202",
-      "paper_number": -1,
-      "title": "UBEP: Re-architecting Expert Parallelism Communication Library for Production Superpods",
-      "authors": [
-        "Yipeng Liu, Chang Liu, Si Shen, Jiaqi Zheng, Mingfan Li, Yuyang Yang, Guanhua Li, Yuquan Zhang, Yimeng Xu, Zhongzhe Hu, Zhiyuan Huang, Qihang Duan, Junsong Wang, Wenkai Ling, Baochuan Yang, Xianzhi Yu, Han Bao, Yijie Chen, Guihai Chen"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.06202v2 Announce Type: replace \nAbstract: The deployment of Mixture-of-Experts (MoE) models on production high-bandwidth superpods, such as NVIDIA's NVL72/576 and Huawei's CloudMatrix384, introduces critical challenges beyond raw interconnect bandwidth. While these systems provide unified global address spaces and high-bandwidth fabrics, their full potential for sparse MoE communication is hindered by three fundamental bottlenecks: (1) Strict execution serialization imposed by coarse-grained Bulk Synchronous Parallel (BSP) orchestration of interdependent communication phases; (2) Prohibitive synchronization overhead that fails to scale alongside high interconnect bandwidth; and (3) Severe load imbalance resulting from distance-agnostic scheduling of irregular token traffic. To e",
-      "pdf_link": "https://arxiv.org/pdf/2607.06202.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.06202",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 6.0,
-      "updated_at": "2026-07-09T09:39:19.427582+00:00"
+      "updated_at": "2026-07-10T09:30:34.716389+00:00"
     }
   ]
 }

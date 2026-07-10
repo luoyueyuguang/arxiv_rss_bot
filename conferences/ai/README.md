@@ -1,27 +1,28 @@
 # AI / AI for Science Papers
 
-- **Last Updated**: 2026-07-09 09:39:20 UTC
-- **Total Filtered Papers**: 16
-- **Displaying**: 16 (arXiv: 16, OpenReview: 0)
+- **Last Updated**: 2026-07-10 09:30:36 UTC
+- **Total Filtered Papers**: 17
+- **Displaying**: 17 (arXiv: 17, OpenReview: 0)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [GemNav: Discrete-Token Visual Robot Navigation using a Multimodal Large Language Model](https://arxiv.org/abs/2607.06882) | `ARXIV` | 65.0 |
-| 2 | [Heterogeneity-Adaptive Diffusion Schrodinger Bridge for PET-Guided Whole-Body MRI Translation](https://arxiv.org/abs/2607.07401) | `ARXIV` | 44.5 |
-| 3 | [AnyPoC: Universal Proof-of-Concept Test Generation for Scalable LLM-Based Bug Detection](https://arxiv.org/abs/2604.11950) | `ARXIV` | 34.0 |
-| 4 | [Behavior Foundations for Quadruped Robots: ABot-C0 Technical Report](https://arxiv.org/abs/2607.07370) | `ARXIV` | 23.0 |
-| 5 | [Learning from Execution: Self-Evolving Memory for Private-Library Code Generation](https://arxiv.org/abs/2604.24222) | `ARXIV` | 23.0 |
-| 6 | [RWGBench: Evaluating Scholarly Positioning in Related Work Generation](https://arxiv.org/abs/2606.24894) | `ARXIV` | 14.5 |
-| 7 | [Specification Grounding Drives Test Effectiveness for LLM Code](https://arxiv.org/abs/2607.06636) | `ARXIV` | 13.5 |
-| 8 | [Best-Arm Identification with Generative Proxy](https://arxiv.org/abs/2607.06879) | `ARXIV` | 12.5 |
-| 9 | [Validate the Dream Before You Trust Its Verdict: Admissibility for World-Model Simulators](https://arxiv.org/abs/2607.07196) | `ARXIV` | 3.5 |
-| 10 | [Trust, but Don't Verify: Epistemic Blind Spots in LLM Source Evaluation](https://arxiv.org/abs/2606.05403) | `ARXIV` | 3.5 |
-| 11 | [Parametric and Generative Forecasts of EPEX Day\char45 Ahead Energy Market Curves](https://arxiv.org/abs/2601.20226) | `ARXIV` | 2.5 |
-| 12 | [Optimization Geometrodynamics: A Framework for Dynamic Geometric Optimization](https://arxiv.org/abs/2607.06723) | `ARXIV` | 1.5 |
-| 13 | [Computing with Stochastic Oracles in AI-Augmented Computation](https://arxiv.org/abs/2607.06893) | `ARXIV` | 1.0 |
-| 14 | [LHM-Humanoid: Long-Horizon Human Motion Control for Continuous Object Transport in Cluttered Scenes](https://arxiv.org/abs/2508.16943) | `ARXIV` | 1.0 |
-| 15 | [The Power of Backdoor Absorption in Community Training](https://arxiv.org/abs/2607.06643) | `ARXIV` | 1.0 |
-| 16 | [Is Randomness Necessary for Adaptive Data Analysis?](https://arxiv.org/abs/2607.07085) | `ARXIV` | 1.0 |
+| 1 | [AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding](https://arxiv.org/abs/2607.08745) | `ARXIV` | 67.0 |
+| 2 | [Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in Large Language Model Finetuning](https://arxiv.org/abs/2607.08393) | `ARXIV` | 44.5 |
+| 3 | [XFACTORS: Disentangled Information Bottleneck via Contrastive Supervision](https://arxiv.org/abs/2601.21688) | `ARXIV` | 35.0 |
+| 4 | [Best-of-$N$ TTS Evaluation is Confounded by ASR Family Alignment](https://arxiv.org/abs/2607.08256) | `ARXIV` | 33.5 |
+| 5 | [InvestPhilBench: A Multi-Layer Benchmark for Evaluating Large Language Model Procedural Reasoning in Expert Investment Philosophy](https://arxiv.org/abs/2606.25984) | `ARXIV` | 33.0 |
+| 6 | [Resample or Reroute? Budget-Aware Test-Time Model Selection for Large Language Models](https://arxiv.org/abs/2607.08665) | `ARXIV` | 32.5 |
+| 7 | [The Importance of Encoder Choice:A Tabular-Image Study](https://arxiv.org/abs/2607.07756) | `ARXIV` | 24.5 |
+| 8 | [GenDA: Generative Data Assimilation on Complex Urban Areas via Classifier-Free Diffusion Guidance](https://arxiv.org/abs/2601.11440) | `ARXIV` | 23.0 |
+| 9 | [Time-to-Collision Based Dynamic Obstacle Avoidance Using Pretrained Vision Models for Robots in Unstructured Environments](https://arxiv.org/abs/2607.07885) | `ARXIV` | 15.5 |
+| 10 | [ReCoLoRA: Spectrum-Aware Recursive Consolidation for Continual LLM Fine-Tuning](https://arxiv.org/abs/2607.07719) | `ARXIV` | 14.5 |
+| 11 | [Improving TabPFN's Synthetic Data Generation by Integrating Causal Structure](https://arxiv.org/abs/2603.10254) | `ARXIV` | 13.5 |
+| 12 | [RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realistic Retail Environments](https://arxiv.org/abs/2603.16453) | `ARXIV` | 12.5 |
+| 13 | [Systematic Evaluation of Learning Rate Scheduling Strategies Across Heterogeneous Architectures](https://arxiv.org/abs/2607.08511) | `ARXIV` | 12.0 |
+| 14 | [ImputeViz: A Visual Analytics Dashboard for Diagnosing Missing Data and Comparing Imputation Methods](https://arxiv.org/abs/2607.08579) | `ARXIV` | 3.0 |
+| 15 | [On the Gradient Complexity of Private Optimization with Private Oracles](https://arxiv.org/abs/2511.13999) | `ARXIV` | 2.5 |
+| 16 | [Weak Adversarial Neural Pushforward Method for the Wigner Transport Equation](https://arxiv.org/abs/2604.08763) | `ARXIV` | 2.5 |
+| 17 | [Prediction-Powered Active Testing](https://arxiv.org/abs/2607.08347) | `ARXIV` | 2.0 |

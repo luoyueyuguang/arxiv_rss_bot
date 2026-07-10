@@ -1,34 +1,38 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-07-09 09:39:21 UTC
-- **Total Filtered Papers**: 23
-- **Displaying**: 23 (arXiv: 23, OpenReview: 0)
+- **Last Updated**: 2026-07-10 09:30:36 UTC
+- **Total Filtered Papers**: 27
+- **Displaying**: 27 (arXiv: 27, OpenReview: 0)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [A black-box, multilevel algebraic preconditioning framework for conforming finite elements](https://arxiv.org/abs/2607.07485) | `ARXIV` | 66.0 |
-| 2 | [Iterative finite element approximation of non-monotone semilinear diffusion-reaction equations](https://arxiv.org/abs/2607.07327) | `ARXIV` | 34.5 |
-| 3 | [Numerical solutions of an accurate diffuse interface model of the incompressible resistive MHD free surface flow](https://arxiv.org/abs/2607.07025) | `ARXIV` | 18.0 |
-| 4 | [JAX-FVM: A differentiable, entropy-stable finite volume solver on unstructured meshes for compressible flows](https://arxiv.org/abs/2607.07385) | `ARXIV` | 18.0 |
-| 5 | [Optimized Stencil Strategy for the Generalized Finite Difference Method: Application to Steady-State Non-Linear Problems](https://arxiv.org/abs/2607.07165) | `ARXIV` | 17.5 |
-| 6 | [Compact Rational Krylov for Parametrized Systems with Application to BEM Frequency Sweeping](https://arxiv.org/abs/2607.07440) | `ARXIV` | 16.0 |
-| 7 | [A locking free mixed FEM based on a pure pseudostress based formulation for the elasticity eigenproblem](https://arxiv.org/abs/2607.06890) | `ARXIV` | 15.0 |
-| 8 | [Mixed precision explicit numerical methods for ordinary differential equations](https://arxiv.org/abs/2607.07080) | `ARXIV` | 5.0 |
-| 9 | [Structure-Guided Gauss-Network Method: Linear Advection-Reaction Equation](https://arxiv.org/abs/2607.07506) | `ARXIV` | 5.0 |
-| 10 | [Deep Operator BSDE: a Numerical Scheme to Approximate Solution Operators](https://arxiv.org/abs/2412.03405) | `ARXIV` | 3.5 |
-| 11 | [The Stability of the Backward Problem for Photoacoustic Imaging in Attenuating Media via Carleman Estimates](https://arxiv.org/abs/2607.07244) | `ARXIV` | 3.0 |
-| 12 | [POO-LPSP: Parallel Osprey Optimized Least Penalty-Squared Prioritization Methods for Priority Derivation in the Analytic Hierarchy Process](https://arxiv.org/abs/2607.07313) | `ARXIV` | 3.0 |
-| 13 | [Circuit Depth Reduction of One-Ancilla Quantum Differential Equation Solver via Extrapolation](https://arxiv.org/abs/2607.07389) | `ARXIV` | 2.5 |
-| 14 | [Faster quantum linear system solver beyond the condition number](https://arxiv.org/abs/2607.07691) | `ARXIV` | 2.5 |
-| 15 | [Adaptive, Matrix-Free Low-Rank Approximation](https://arxiv.org/abs/2607.06758) | `ARXIV` | 2.0 |
-| 16 | [Explicit stabilized implementation of singly diagonally implicit Runge-Kutta methods](https://arxiv.org/abs/2607.07497) | `ARXIV` | 2.0 |
-| 17 | [Higher-Order Geometric Updates for Levenberg-Marquardt Method via Riemann Normal Coordinates](https://arxiv.org/abs/2607.07623) | `ARXIV` | 2.0 |
-| 18 | [An LSQR-based algorithm for large-scale null space computations](https://arxiv.org/abs/2607.03341) | `ARXIV` | 2.0 |
-| 19 | [Topological Signatures of Diffusive Release in Porous Media](https://arxiv.org/abs/2607.07061) | `ARXIV` | 1.5 |
-| 20 | [Symmetric-Tensor Distributional Mixed Method for Fourth-Order Elliptic Singular Perturbation Problem](https://arxiv.org/abs/2606.02188) | `ARXIV` | 1.5 |
-| 21 | [On the order of Runge Kutta methods reusing last stage](https://arxiv.org/abs/2607.06788) | `ARXIV` | 1.0 |
-| 22 | [Guidance Breaks the Fitted Operator: A Terminal-Fitted Repair for Classifier-Free Guidance](https://arxiv.org/abs/2607.07665) | `ARXIV` | 1.0 |
-| 23 | [Dynamical Low-Rank Approximations for Kalman Filtering](https://arxiv.org/abs/2509.11210) | `ARXIV` | 1.0 |
+| 1 | [Tree-based solution representations for quadratic bilinear systems and their consequences in model order reduction](https://arxiv.org/abs/2607.07841) | `ARXIV` | 34.0 |
+| 2 | [Off-site enforcement of natural conditions on smooth boundaries for finite elements upon fitted straight-edged triangular meshes](https://arxiv.org/abs/2607.07963) | `ARXIV` | 33.0 |
+| 3 | [An Iterative Method for Transient Finite Element Simulations of Non-Linear Eddy Current Problems](https://arxiv.org/abs/2607.08432) | `ARXIV` | 31.5 |
+| 4 | [Mixed Finite Elements for Geometrically Exact Beams using Discontinuous Rotations and Discrete Curvature](https://arxiv.org/abs/2605.04573) | `ARXIV` | 31.5 |
+| 5 | [A locking free mixed FEM based on a pure pseudostress based formulation for the elasticity eigenproblem](https://arxiv.org/abs/2607.06890) | `ARXIV` | 15.0 |
+| 6 | [High-order complete flux schemes for convection-diffusion equations on arbitrary subdivisions](https://arxiv.org/abs/2607.08422) | `ARXIV` | 5.5 |
+| 7 | [Structure-Guided Gauss-Newton Method: Linear Advection-Reaction Equation](https://arxiv.org/abs/2607.07506) | `ARXIV` | 5.0 |
+| 8 | [Multi-type Sensor Placement for PDE-based Bayesian Inverse Problems](https://arxiv.org/abs/2607.08074) | `ARXIV` | 4.5 |
+| 9 | [Admissible Discrete Linear Propagators for High-Order Time Splittings of Rotational Nonlinear Schr\"odinger Equations with Arbitrary Three-Dimensional Rotation](https://arxiv.org/abs/2607.07923) | `ARXIV` | 3.5 |
+| 10 | [LLT: Local Linear Transformer for PDE Operator Learning](https://arxiv.org/abs/2607.07718) | `ARXIV` | 3.5 |
+| 11 | [Tracking the boundary between absolute/convective instability using adjoint equations](https://arxiv.org/abs/2607.08305) | `ARXIV` | 3.5 |
+| 12 | [Neural and Spectral Operator Surrogates on Gaussian Spaces](https://arxiv.org/abs/2607.08492) | `ARXIV` | 3.0 |
+| 13 | [Sharp Spectral Bounds for Symmetric Positive Definite Tensors via Multiple Algebraic Invariants](https://arxiv.org/abs/2607.08113) | `ARXIV` | 3.0 |
+| 14 | [Coupling-Robust Accuracy in Multiphysics Physics Informed Neural Networks via Kronecker-Preconditioned Optimization](https://arxiv.org/abs/2605.23391) | `ARXIV` | 2.5 |
+| 15 | [Thermodynamic Structure and Composition in Nonlinear Convection-Diffusion](https://arxiv.org/abs/2607.07829) | `ARXIV` | 2.0 |
+| 16 | [Neural non-canonical Hamiltonian dynamics for long-time simulations](https://arxiv.org/abs/2510.01788) | `ARXIV` | 2.0 |
+| 17 | [Weak Adversarial Neural Pushforward Method for the Wigner Transport Equation](https://arxiv.org/abs/2604.08763) | `ARXIV` | 2.0 |
+| 18 | [Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling](https://arxiv.org/abs/2607.08757) | `ARXIV` | 1.5 |
+| 19 | [Transport Quasi-Monte Carlo](https://arxiv.org/abs/2412.16416) | `ARXIV` | 1.5 |
+| 20 | [3D Virtual Element Method for Advection-Diffusion-Reaction Problems with Variable Coefficients on Locally Quasi-Uniform Polytopes](https://arxiv.org/abs/2607.08237) | `ARXIV` | 1.0 |
+| 21 | [Splitting methods for nonlinear Schr\"odinger equation without order reduction](https://arxiv.org/abs/2607.08387) | `ARXIV` | 1.0 |
+| 22 | [Unconstrained Scheme for Geometrically Constrained Gradient Flows](https://arxiv.org/abs/2607.08577) | `ARXIV` | 1.0 |
+| 23 | [Adaptive Row Selection Meets Asynchrony in Randomized Kaczmarz](https://arxiv.org/abs/2607.08313) | `ARXIV` | 1.0 |
+| 24 | [Approaching the optimal closure: equivariance, inductive bias, and Reynolds-number generalization in data-driven LES](https://arxiv.org/abs/2603.05325) | `ARXIV` | 1.0 |
+| 25 | [Parameter-unbounded convergence of Crossed-Secant accelerated Uzawa and penalty-splitted algorithms for frictionless contact](https://arxiv.org/abs/2603.12205) | `ARXIV` | 1.0 |
+| 26 | [Walk on spheres and Array-RQMC](https://arxiv.org/abs/2605.12844) | `ARXIV` | 1.0 |
+| 27 | [Koopman-informed recurrent neural networks](https://arxiv.org/abs/2410.23467) | `ARXIV` | 1.0 |

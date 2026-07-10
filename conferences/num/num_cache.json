@@ -1,54 +1,491 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-07-09T09:39:21.028359+00:00",
-  "paper_count": 23,
+  "last_updated": "2026-07-10T09:30:36.884408+00:00",
+  "paper_count": 27,
   "papers": [
     {
-      "forum_id": "2607.06758",
+      "forum_id": "2607.07829",
       "paper_number": -1,
-      "title": "Adaptive, Matrix-Free Low-Rank Approximation",
+      "title": "Thermodynamic Structure and Composition in Nonlinear Convection-Diffusion",
       "authors": [
-        "Arnel I. Smith, Elly Do, Chao Chen"
+        "J. J. Segura"
       ],
       "keywords": [
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2607.06758v1 Announce Type: new \nAbstract: We study fixed-tolerance low-rank approximation in the matrix-free setting, where a matrix or linear operator $\\mathbf{A}$ is accessible only through matrix-vector products and its rank must be determined adaptively to meet a prescribed error tolerance. We introduce a family of adaptive, matrix-free randomized QB algorithms. A randomized error indicator estimates the residual norm -- in either the Frobenius or the spectral norm -- directly from a random sketch, remaining accurate down to machine precision. A matrix-free rank-pruning step decouples the computational block size from the final rank, so that large, BLAS-3-friendly blocks can be used without over-estimating the rank, and an adjoint-free variant returns the orthonormal basis using",
-      "pdf_link": "https://arxiv.org/pdf/2607.06758.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.06758",
-      "submission_date": "2026-07-09T04:00:00+00:00",
+      "abstract": "arXiv:2607.07829v1 Announce Type: new \nAbstract: Nonlinear convection--diffusion systems play a central role in transport phenomena, including mass transfer, heat transfer, porous-media transport, and coupled continuum processes with source, exchange, and interface effects. In such systems, the key question is often not only which governing partial differential equation is used, but whether the model preserves a consistent thermodynamic balance under the operations that arise naturally in transport analysis: restriction to subdomains, coupling across interfaces, linearization near equilibrium, and discretization for computation.\n  This paper develops a continuum-first framework for open nonlinear convection--diffusion systems in which thermodynamic consistency is formulated as a free-energ",
+      "pdf_link": "https://arxiv.org/pdf/2607.07829.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.07829",
+      "submission_date": "2026-07-10T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-07-09T09:39:21.023402+00:00"
+      "updated_at": "2026-07-10T09:30:36.880323+00:00"
     },
     {
-      "forum_id": "2607.06788",
+      "forum_id": "2607.07923",
       "paper_number": -1,
-      "title": "On the order of Runge Kutta methods reusing last stage",
+      "title": "Admissible Discrete Linear Propagators for High-Order Time Splittings of Rotational Nonlinear Schr\\\"odinger Equations with Arbitrary Three-Dimensional Rotation",
       "authors": [
-        "Manuel Calvo, Juan I. Montijano, Luis R\\'andez"
+        "Tianqi Zhang, Fei Xue"
       ],
       "keywords": [
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2607.06788v1 Announce Type: new \nAbstract: In this paper we consider explicit Runge--Kutta (RK) methods for the numerical solution of Initial Value Problems (IVPs) in differential equations in which the last function evaluation in a step is reused, substituting the first evaluation for the next step. This requirement implies that, except for the first step, the computational cost of an $s$--stage explicit RK method reduces from $s$ to $(s-1)$ function evaluations per step. It will be seen that, in general, if a RK method has order $p$, when introducing this reused stage the new method has in general order $<p$.\n  In this context we study the conditions on the coefficients of an explicit RK method with order $p$ such that the global error of the method reusing the last stage has the s",
-      "pdf_link": "https://arxiv.org/pdf/2607.06788.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.06788",
-      "submission_date": "2026-07-09T04:00:00+00:00",
+      "abstract": "arXiv:2607.07923v1 Announce Type: new \nAbstract: We study robust high-order time splittings for nonlinear Schr\\\"odinger equations whose linear part is defined by the Laplacian and an arbitrary three-dimensional rotation operator. After Fourier pseudospectral discretization, a continuous exact factorization of the linear flow need not yield a method self-adjoint fixed-grid propagator. For the original stage-wise explicit exact integrator, we identify a quadratic even term in the local logarithm and show that its visibility is state-dependent, so the observed temporal order of accuracy can depend on the initial data. We then formulate fixed-grid admissibility for discrete linear propagators and construct two admissible propagators for arbitrary three-dimensional rotation: a symmetrized expli",
+      "pdf_link": "https://arxiv.org/pdf/2607.07923.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.07923",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-07-10T09:30:36.880343+00:00"
+    },
+    {
+      "forum_id": "2607.07963",
+      "paper_number": -1,
+      "title": "Off-site enforcement of natural conditions on smooth boundaries for finite elements upon fitted straight-edged triangular meshes",
+      "authors": [
+        "Vitoriano Ruas"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2607.07963v1 Announce Type: new \nAbstract: A few decades ago some possible remedies to an inaccurate enforcement of Neumann or Robin conditions prescribed on the boundary of a smooth domain, owing to the approximation of a curved domain by the union of straight-edged triangles or tetrahedra in a fitted mesh, were addressed in the literature. By that time authors such as Barrett and Elliott (1988) advocated the use of elements with a single curved edge or face fitting the true boundary not only at two or three vertexes, but also at additional points on those curves or curved surfaces, so as to define a polynomial surface of a certain type compatible with the theoretical approximation order of the method in use. In this work we adopt a different approach, whose main feature is the use ",
+      "pdf_link": "https://arxiv.org/pdf/2607.07963.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.07963",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.0,
+      "updated_at": "2026-07-10T09:30:36.880359+00:00"
+    },
+    {
+      "forum_id": "2607.08074",
+      "paper_number": -1,
+      "title": "Multi-type Sensor Placement for PDE-based Bayesian Inverse Problems",
+      "authors": [
+        "Steven Maio, Alen Alexanderian, Karina Koval, Ruanui Nicholson"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2607.08074v1 Announce Type: new \nAbstract: We address optimal placement of multi-type sensors for Bayesian inverse problems governed by partial differential equations (PDEs). The proposed framework allows for sensors with different accuracies and observation types. We formulate the optimal experimental design (OED) problem as a knapsack-constrained binary optimization problem for maximizing expected information gain (EIG). To approximately solve the resulting optimization problems, we propose a stochastic cost-benefit greedy algorithm, which admits theoretical guarantees for monotone submodular set functions. Specifically, these guarantees apply in the case of linear Gaussian inverse problems with uncorrelated measurement errors, where the EIG admits a convenient closed-form expressi",
+      "pdf_link": "https://arxiv.org/pdf/2607.08074.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08074",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.5,
+      "updated_at": "2026-07-10T09:30:36.880388+00:00"
+    },
+    {
+      "forum_id": "2607.08237",
+      "paper_number": -1,
+      "title": "3D Virtual Element Method for Advection-Diffusion-Reaction Problems with Variable Coefficients on Locally Quasi-Uniform Polytopes",
+      "authors": [
+        "M. Trezzi"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2607.08237v1 Announce Type: new \nAbstract: In this paper, we propose and analyze a Continuous Interior Penalty (CIP) stabilized Virtual Element Method (VEM) for three-dimensional advection-diffusion-reaction equations on general polyhedral meshes. While CIP-VEM schemes have been recently explored in a two-dimensional setting, their analysis heavily relies on global mesh quasi-uniformity and constant physical parameters. We overcome these limitations by introducing a novel three-dimensional variant of the Oswald-type quasi-interpolant. This allows us to establish robust, uniform error estimates in the hyperbolic limit under a realistic local quasi-uniformity assumption and variable coefficients. Finally, we provide a comprehensive set of three-dimensional numerical experiments to vali",
+      "pdf_link": "https://arxiv.org/pdf/2607.08237.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08237",
+      "submission_date": "2026-07-10T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-07-09T09:39:21.023427+00:00"
+      "updated_at": "2026-07-10T09:30:36.880413+00:00"
+    },
+    {
+      "forum_id": "2607.08387",
+      "paper_number": -1,
+      "title": "Splitting methods for nonlinear Schr\\\"odinger equation without order reduction",
+      "authors": [
+        "Carlos Arranz-Sim\\'on, Bego\\~na Cano"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2607.08387v1 Announce Type: new \nAbstract: A technique is provided in this paper to integrate nonlinear Schr\\\"odinger equation with time-dependent Dirichlet boundary conditions with high-order Yoshida splittings which are based on Strang method. For that, a modification of Strang method is required in which the linear and stiff part of the equation is integrated with a rational-like version of midpoint rule for which the required boundary values can be calculated without resorting to any differentiation of data. Although Yoshida splitting (with real coefficients) cannot be applied to parabolic problems to obtain order higher than two because of stability, the modified Strang method is also applicable to such type of problems and local order $3$ and global order $2$ are also obtained ",
+      "pdf_link": "https://arxiv.org/pdf/2607.08387.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08387",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-10T09:30:36.880426+00:00"
+    },
+    {
+      "forum_id": "2607.08422",
+      "paper_number": -1,
+      "title": "High-order complete flux schemes for convection-diffusion equations on arbitrary subdivisions",
+      "authors": [
+        "Peng Yang, Wenyu Lei, Liwei Xu"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2607.08422v1 Announce Type: new \nAbstract: We develop a complete flux finite volume method for convection-diffusion equations that works on arbitrary meshes in two and three dimensions and for discrete spaces of any polynomial degree. Unlike standard finite volume discretizations, where the numerical flux is directly approximated from the flux definition, we derive the exact normal flux across each control volume edge/face from the underlying PDE. This exact flux splits naturally into a homogeneous part (the classical Scharfetter-Gummel flux) and an inhomogeneous part expressed via a Green's function that incorporates the tangential flux and the source term. The resulting formulation is exactly equivalent to the continuous equation and, once the discrete space is chosen, yields high-",
+      "pdf_link": "https://arxiv.org/pdf/2607.08422.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08422",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.5,
+      "updated_at": "2026-07-10T09:30:36.880441+00:00"
+    },
+    {
+      "forum_id": "2607.08432",
+      "paper_number": -1,
+      "title": "An Iterative Method for Transient Finite Element Simulations of Non-Linear Eddy Current Problems",
+      "authors": [
+        "Karl Hollaus, Haik Silm"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2607.08432v1 Announce Type: new \nAbstract: A method is presented to carry out a transient simulation of eddy current problems with nonlinear materials. Coils are voltage-driven. The magnetic field due to currents in coils are considered by their Biot-Savart-fields. The magnetic vector potential is used in the finite element formulation. The time stepping method is based on implicit Euler. The arising nonlinear equation system is split into two parts, the common finite element system and a circuit equation. Each part is solved separately by Newton's method. Additionally, a line search is used to solve the nonlinear field equations. Inrush currents and average magnetic flux densities through cross sections of laminates of a nonlinear benchmark problem consisting of a laminated iron cor",
+      "pdf_link": "https://arxiv.org/pdf/2607.08432.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08432",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.5,
+      "updated_at": "2026-07-10T09:30:36.880456+00:00"
+    },
+    {
+      "forum_id": "2607.08492",
+      "paper_number": -1,
+      "title": "Neural and Spectral Operator Surrogates on Gaussian Spaces",
+      "authors": [
+        "Carlo Marcati, Mario Mari\\'c, Christoph Schwab, Jakob Zech"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2607.08492v1 Announce Type: new \nAbstract: We prove expression rate bounds of finite-parametric, spectral and neural surrogates for holomorphic maps between separable Hilbert spaces. The surrogates have an encoder-approximator-decoder architecture, with Karhunen-Lo\\'{e}ve encoders and frame decoders. We prove expression rate bounds for two classes of finite-parametric surrogates: i) spectral surrogates obtained by N-term truncations of Wiener polynomial chaos expansions and ii) neural surrogates obtained by approximation of parametric maps with deep feedforward neural networks, ReLU and RePU activation functions and uniformly bounded weights. We work under an algebraic decay assumption on the eigenvalues of the covariance of the Gaussian measure on the input space. We obtain converge",
+      "pdf_link": "https://arxiv.org/pdf/2607.08492.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08492",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-07-10T09:30:36.880470+00:00"
+    },
+    {
+      "forum_id": "2607.08577",
+      "paper_number": -1,
+      "title": "Unconstrained Scheme for Geometrically Constrained Gradient Flows",
+      "authors": [
+        "S\\\"oren Bartels, Lucas Bouck, Christian Palus"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2607.08577v1 Announce Type: new \nAbstract: In this paper, we study the approximation of gradient flows of harmonic maps, which serve as model problems for applications in micromagnetics, liquid crystals, and nonlinear plate bending. Harmonic maps are vector fields that are critical points of the Dirichlet energy subject to the constraint that the vector field be unit length pointwise. Most existing time-stepping schemes for gradient flows deal with the constraint by linearizing the unit length constraint at every step, which involves solving for the solution increment in the tangent space of the constraint. These schemes lead to robust control over the violation of the constraint, but require solving degenerate saddle point systems at every step that may be difficult to precondition.",
+      "pdf_link": "https://arxiv.org/pdf/2607.08577.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08577",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-10T09:30:36.880485+00:00"
+    },
+    {
+      "forum_id": "2607.07718",
+      "paper_number": -1,
+      "title": "LLT: Local Linear Transformer for PDE Operator Learning",
+      "authors": [
+        "Oded Ovadia, Eli Turkel"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2607.07718v1 Announce Type: cross \nAbstract: Neural operators have become a common approach for learning PDE solution maps and accelerating numerical simulations. Transformer-based neural operators are of particular interest, since attention can learn long-range dependencies in the computational domain. However, standard attention has two major limitations when applied to PDEs: it scales quadratically with the number of computational nodes, and it lacks an explicit bias toward local interactions. To address these issues, we introduce Local Linear Transformer (LLT) for PDE operator learning. The architecture combines linear global attention with local spatial mixing, and incorporates coordinate and geometry information. We evaluate LLT on several PDE problems, including elasticity, pl",
+      "pdf_link": "https://arxiv.org/pdf/2607.07718.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.07718",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-07-10T09:30:36.880509+00:00"
+    },
+    {
+      "forum_id": "2607.07841",
+      "paper_number": -1,
+      "title": "Tree-based solution representations for quadratic bilinear systems and their consequences in model order reduction",
+      "authors": [
+        "Martin Redmann"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2607.07841v1 Announce Type: cross \nAbstract: We investigate quadratic bilinear systems by developing novel tree-based representations of their solutions. The proposed framework decomposes the solution into a sequence of coupled bilinear subsystems whose components admit explicit expansions indexed by full binary trees. These representations yield sufficient conditions for the existence of global solutions and lead to new output bounds in terms of reachability Gramians. Motivated by these estimates, we introduce time-limited and infinite-horizon reachability and observability Gramians, establish sufficient conditions for their existence, and characterize them through nonlinear matrix equations. The associated Gramians are employed to identify dominant state-spaces and to derive exact ",
+      "pdf_link": "https://arxiv.org/pdf/2607.07841.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.07841",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.0,
+      "updated_at": "2026-07-10T09:30:36.880524+00:00"
+    },
+    {
+      "forum_id": "2607.08113",
+      "paper_number": -1,
+      "title": "Sharp Spectral Bounds for Symmetric Positive Definite Tensors via Multiple Algebraic Invariants",
+      "authors": [
+        "Hemant Sharma, Snigdhashree Nayak, Ankit Singh"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2607.08113v1 Announce Type: cross \nAbstract: We extend the trace--determinant framework of Nayak, Sharma, and Mishra~\\cite{nayak2026} for bounding the H-eigenvalues of symmetric positive definite tensors. First, we replace the Arithmetic--Geometric Mean (AM--GM) relaxation underlying previous bounds by the exact solution of the associated constrained optimization problem, yielding sharp upper and lower bounds that are attained on the admissible spectral variety. Second, we incorporate higher-order power sums as additional spectral invariants and prove a structural theorem showing that any extremizer over a $K$-invariant feasibility region has at most $K$ distinct spectral values. This reduces the problem to a finite collection of low-dimensional polynomial systems and yields a hierar",
+      "pdf_link": "https://arxiv.org/pdf/2607.08113.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08113",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-07-10T09:30:36.880538+00:00"
+    },
+    {
+      "forum_id": "2607.08305",
+      "paper_number": -1,
+      "title": "Tracking the boundary between absolute/convective instability using adjoint equations",
+      "authors": [
+        "Yue Xiao, Hui Li, Zijing Ding"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2607.08305v1 Announce Type: cross \nAbstract: Determining absolute/convective instability boundaries conventionally requires repeated saddle searches in the complex-wavenumber plane and a subsequent scan of the physical parameter space to locate zero absolute growth. Such nested calculations become costly and sensitive to modal branch association for large non-normal eigenvalue problems. This work develops a direct continuation method for neutral stationary-saddle boundaries of frequency-affine generalised eigenvalue problems. The zero-group-velocity condition is expressed as an adjoint solvability residual and solved together with the direct and adjoint eigenproblems, complex gauge constraints and the neutral-growth condition. The resulting one-dimensional solution manifold in the co",
+      "pdf_link": "https://arxiv.org/pdf/2607.08305.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08305",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-07-10T09:30:36.880554+00:00"
+    },
+    {
+      "forum_id": "2607.08313",
+      "paper_number": -1,
+      "title": "Adaptive Row Selection Meets Asynchrony in Randomized Kaczmarz",
+      "authors": [
+        "Evan Coleman"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2607.08313v1 Announce Type: cross \nAbstract: Randomized Kaczmarz is a natural fit for large sparse least-squares and tomographic reconstruction, and adaptive row selection can reduce iteration counts. However, deploying adaptive selection on a shared-memory machine means sampling from a residual that lock-free workers are concurrently modifying, often using stale data. We present the first systematic study of this regime: residual-weighted and greedy Kaczmarz under asynchronous execution, measured across 339 runs on a 96-core node with realized (not injected) delays. Four findings carry directly to practice. (i) Stability is governed by a boundary $\\ell^*(T)$ between sampling aggressiveness and thread count; below it, more aggressive sampling is strictly better, so one should tune to",
+      "pdf_link": "https://arxiv.org/pdf/2607.08313.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08313",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-10T09:30:36.880568+00:00"
+    },
+    {
+      "forum_id": "2607.08757",
+      "paper_number": -1,
+      "title": "Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling",
+      "authors": [
+        "Yiwei Zhou"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2607.08757v1 Announce Type: cross \nAbstract: Score matching controls average error under the forward marginals, but a discretized reverse-time sampler evaluates the learned score along its own trajectory. We show that small forward-marginal error does not guarantee numerical stability. We construct a single smooth score field with arbitrarily small forward-marginal $L^2$ error. The learned reverse-time process is nonexplosive, has moments of every order, and can be arbitrarily close to the exact reverse-time process in path-space total variation. Yet its Euler--Maruyama discretizations converge in probability while every positive moment diverges. Thus weak convergence can hold even though every Wasserstein distance $W_p$, $p\\ge1$, diverges.\n  The same failure can occur within one fix",
+      "pdf_link": "https://arxiv.org/pdf/2607.08757.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08757",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-10T09:30:36.880583+00:00"
+    },
+    {
+      "forum_id": "2412.16416",
+      "paper_number": -1,
+      "title": "Transport Quasi-Monte Carlo",
+      "authors": [
+        "Sifan Liu"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2412.16416v2 Announce Type: replace \nAbstract: Quasi-Monte Carlo (QMC) is a powerful method for evaluating high-dimensional integrals. However, its use is typically limited to distributions where direct sampling is straightforward, such as the uniform distribution on the unit hypercube or the Gaussian distribution. For general target distributions with potentially unnormalized densities, leveraging the low-discrepancy property of QMC to improve accuracy remains challenging. We propose training a transport map to push forward the uniform distribution on the unit hypercube to approximate the target distribution. Inspired by normalizing flows, the transport map is constructed as a composition of simple, invertible transformations. To ensure that QMC achieves its superior error rate, the",
+      "pdf_link": "https://arxiv.org/pdf/2412.16416.pdf",
+      "forum_link": "https://arxiv.org/abs/2412.16416",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-10T09:30:36.880597+00:00"
+    },
+    {
+      "forum_id": "2603.05325",
+      "paper_number": -1,
+      "title": "Approaching the optimal closure: equivariance, inductive bias, and Reynolds-number generalization in data-driven LES",
+      "authors": [
+        "Syver D{\\o}ving Agdestein, Benjamin Sanderse"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2603.05325v2 Announce Type: replace \nAbstract: Data-driven closures for large-eddy simulation (LES) are commonly built to respect the symmetries of the Navier--Stokes equations, on the premise that this improves accuracy and generalization. We test this premise in a controlled comparison of three data-driven LES closures that share a pointwise, Galilean-invariant velocity-gradient construction but span non-equivariant, octahedral-equivariant, and tensor-basis designs: an unconstrained multi-layer perceptron (MLP), a group-convolutional network whose exactly equivariant weights we synthesize in closed form, and a tensor-basis neural network (TBNN). The designs follow from an analysis of which symmetries survive discretization on a uniform grid, where the continuous orthogonal group re",
+      "pdf_link": "https://arxiv.org/pdf/2603.05325.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.05325",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-10T09:30:36.880642+00:00"
+    },
+    {
+      "forum_id": "2603.12205",
+      "paper_number": -1,
+      "title": "Parameter-unbounded convergence of Crossed-Secant accelerated Uzawa and penalty-splitted algorithms for frictionless contact",
+      "authors": [
+        "Daria Koliesnikova, Isabelle Rami\\`ere"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2603.12205v2 Announce Type: replace \nAbstract: We propose a unified iterative framework for the solution of frictionless mechanical contact problems, which relies exclusively on the solution of standard stiffness systems. The framework is built upon a two-step fixed-point algorithm: first, the displacement is computed for given contact forces; second, the contact forces are updated based on the displacement solution. The choice of the dual update scheme depends on the numerical contact formulation under consideration. Specifically, the Uzawa iterative scheme is obtained for the Lagrange multiplier formulation, while a penalty-based operator-splitting strategy is proposed for the penalty contact formulation. The main interest of such displacement-force splitting strategy is to involve",
+      "pdf_link": "https://arxiv.org/pdf/2603.12205.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.12205",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-10T09:30:36.880657+00:00"
+    },
+    {
+      "forum_id": "2605.04573",
+      "paper_number": -1,
+      "title": "Mixed Finite Elements for Geometrically Exact Beams using Discontinuous Rotations and Discrete Curvature",
+      "authors": [
+        "Alexander Humer, Ivo Steinbrecher, Astrid Pechstein"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2605.04573v3 Announce Type: replace \nAbstract: We propose a novel mixed finite-element formulation for geometrically exact (Simo--Reissner) beams that introduces the moment vector as additional independent field. The specific mixed form allows for an element-local, discontinuous approximation of rotations, which is key to a simple and efficient discretization framework. The concept of discrete curvature provides a mathematically consistent treatment of rotation discontinuities. For linear constitutive laws, the mixed form is derived via a Legendre transform of the curvature-related strain energy. Objectivity is retained at the discrete level by interpolating relative rotations through a multiplicative split of the rotation field; path-independence is inherent to the total Lagrangian ",
+      "pdf_link": "https://arxiv.org/pdf/2605.04573.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.04573",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.5,
+      "updated_at": "2026-07-10T09:30:36.880670+00:00"
+    },
+    {
+      "forum_id": "2605.12844",
+      "paper_number": -1,
+      "title": "Walk on spheres and Array-RQMC",
+      "authors": [
+        "Valerie N. P. Ho, Art B. Owen"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2605.12844v3 Announce Type: replace \nAbstract: We use Array-RQMC sampling in a walk on spheres (WoS) algorithm for Dirichlet boundary value problems. On a collection of problems, we find that Array-RQMC-WoS reduces the Monte Carlo MSE or variance by factors ranging from $71$-fold to $3087$-fold at $n=2^{17}$ trajectories. The variance is known to be $o(1/n)$ but attains empirical rates between $n^{-1.4}$ and $n^{-1.8}$ in our examples. A simpler RQMC-WoS algorithm studied in Ho and Owen (2026) has more theoretical support but only reduced variance by 1.8 to 10.7-fold on the same set of examples. In order to explain this improvement, we introduce a column-wise mean dimension of the RQMC error based on Sobol' indices. It matches the usual mean dimension for Monte Carlo and the mean dim",
+      "pdf_link": "https://arxiv.org/pdf/2605.12844.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.12844",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-10T09:30:36.880684+00:00"
     },
     {
       "forum_id": "2607.06890",
@@ -61,206 +498,22 @@
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2607.06890v1 Announce Type: new \nAbstract: We analyze a novel locking-free mixed formulation for the elasticity eigenvalue problem in both two and three dimensions, expressed exclusively in terms of the pseudostress tensor. An important feature of this formulation is that it does not require the enforcement of symmetry, either in a weak or strong sense. The displacement of the structure is recovered via a postprocess of the computed pseudostress. We introduce a mixed finite element method based in the tensorial version of the standard families of finite elements to discretize the space $\\boldsymbol{\\mathcal{H}}(\\bdiv)$. We prove convergence and a priori error estimates under the theory of non-compact operators. Additionally, we perform an a posteriori error analysis for the problem, ",
+      "abstract": "arXiv:2607.06890v2 Announce Type: replace \nAbstract: We analyze a novel locking-free mixed formulation for the elasticity eigenvalue problem in both two and three dimensions, expressed exclusively in terms of the pseudostress tensor. An important feature of this formulation is that it does not require the enforcement of symmetry, either in a weak or strong sense. The displacement of the structure is recovered via a postprocess of the computed pseudostress. We introduce a mixed finite element method based in the tensorial version of the standard families of finite elements to discretize the space $\\boldsymbol{\\mathcal{H}}(\\bdiv)$. We prove convergence and a priori error estimates under the theory of non-compact operators. Additionally, we perform an a posteriori error analysis for the probl",
       "pdf_link": "https://arxiv.org/pdf/2607.06890.pdf",
       "forum_link": "https://arxiv.org/abs/2607.06890",
-      "submission_date": "2026-07-09T04:00:00+00:00",
+      "submission_date": "2026-07-10T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 15.0,
-      "updated_at": "2026-07-09T09:39:21.023445+00:00"
-    },
-    {
-      "forum_id": "2607.07025",
-      "paper_number": -1,
-      "title": "Numerical solutions of an accurate diffuse interface model of the incompressible resistive MHD free surface flow",
-      "authors": [
-        "Maojun Li, Jiancheng Wang, Zeyu Xia, Liwei Xu"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2607.07025v1 Announce Type: new \nAbstract: In this paper, we derive a new model to simulate the incompressible resistive magnetohydrodynamic (MHD) free surface flow. A thermodynamically consistent diffuse interface method is adopted to characterize the moving interface in the modeling process. The formal convergence of the proposed MHD free surface flow model to the sharp interface model is established via a matched asymptotic argument, and the model can be solved without the need for sophisticated free surface capturing schemes. We design a fully decoupled linear finite element scheme that preserves the divergence-free constraint of the magnetic field at a discrete level. The reliability and robustness of the proposed model and algorithm are validated through numerical investigation",
-      "pdf_link": "https://arxiv.org/pdf/2607.07025.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07025",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 18.0,
-      "updated_at": "2026-07-09T09:39:21.023498+00:00"
-    },
-    {
-      "forum_id": "2607.07080",
-      "paper_number": -1,
-      "title": "Mixed precision explicit numerical methods for ordinary differential equations",
-      "authors": [
-        "M Al Sayed Ali (BIOTIC, MUSICS), S Bernard (BIOTIC, MUSICS), A Marzorati (MMCS, MUSICS, ICJ, BIOTIC), J Rouzaud-Cornabas (BIOTIC, MUSICS)"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2607.07080v1 Announce Type: new \nAbstract: Our objective is to solve large systems of ordinary differential equations (ODEs) commonly used to model biological processes. These equations are typically nonlinear, complex, and high-dimensional. In computational biology, such ODEs are generally solved using numerical methods. In this work, we focus on explicit numerical methods because of their flexibility. However, their limited stability regions may result in high computational costs. To mitigate this issue, we investigate mixed precision algorithms designed to reduce computational effort by performing selected parts of the numerical method in lower arithmetic precision. We develop several mixed precision explicit methods and assess their performance on two large scale biological bench",
-      "pdf_link": "https://arxiv.org/pdf/2607.07080.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07080",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 5.0,
-      "updated_at": "2026-07-09T09:39:21.023515+00:00"
-    },
-    {
-      "forum_id": "2607.07165",
-      "paper_number": -1,
-      "title": "Optimized Stencil Strategy for the Generalized Finite Difference Method: Application to Steady-State Non-Linear Problems",
-      "authors": [
-        "St\\'ephane Clain, Jorge Figueiredo"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2607.07165v1 Announce Type: new \nAbstract: We propose an optimized stencil strategy for the Generalized Finite Difference Method (GFDM) applied to non-linear problems. We take advantage of the flexibility of GFDM to engineer specific stencils by agglomerating nodes and balancing size with numerical accuracy. Previous work, focusing on the stencil construction for the linear convection-diffusion problem, showed that optimizing stencils and scaling parameters improves the scheme. The present study aims to investigate similar benefits for non-linear problems such as the Burgers' equations and the weakly compressible Navier-Stokes system.",
-      "pdf_link": "https://arxiv.org/pdf/2607.07165.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07165",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 17.5,
-      "updated_at": "2026-07-09T09:39:21.023531+00:00"
-    },
-    {
-      "forum_id": "2607.07327",
-      "paper_number": -1,
-      "title": "Iterative finite element approximation of non-monotone semilinear diffusion-reaction equations",
-      "authors": [
-        "Florian Spicher, Thomas P. Wihler"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2607.07327v1 Announce Type: new \nAbstract: We study iterative linearized finite element methods for the numerical approximation of semilinear elliptic boundary value problems with nonlinear reaction terms of asymptotically linear growth. Our approach reaches considerably beyond the classical theory by allowing for nonlinearities that are not necessarily monotone. We investigate a stabilized implicit-explicit (IMEX) iteration combined with first-order finite element discretizations on graded meshes that are able to resolve corner singularities in polygonal domains. To account for the reduced regularity of the analytical solutions, we establish regularity estimates in corner-weighted Sobolev spaces. The principal novelty of the paper is a non-standard analysis of the approximation prop",
-      "pdf_link": "https://arxiv.org/pdf/2607.07327.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07327",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 34.5,
-      "updated_at": "2026-07-09T09:39:21.023565+00:00"
-    },
-    {
-      "forum_id": "2607.07385",
-      "paper_number": -1,
-      "title": "JAX-FVM: A differentiable, entropy-stable finite volume solver on unstructured meshes for compressible flows",
-      "authors": [
-        "Guillaume de Rom\\'emont"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2607.07385v1 Announce Type: new \nAbstract: We present JAX-FVM, an open-source, fully differentiable finite volume method (FVM) for the two-dimensional compressible Euler and Navier-Stokes equations on unstructured triangular meshes. The solver is written entirely in JAX, so that every operation : mesh connectivity, flux evaluation, slope limiting, and time integration is just-in-time compiled, vectorised, and end-to-end differentiable through automatic differentiation (AD), and runs transparently on CPU or GPU. On the numerical side, JAX-FVM is built around an entropy-conservative Tadmor/Ismail-Roe two-point flux supplemented with entropy-variable Rusanov or Roe dissipation, second-order MUSCL reconstruction of primitive variables with least-squares gradients and Venkatakrishnan limi",
-      "pdf_link": "https://arxiv.org/pdf/2607.07385.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07385",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 18.0,
-      "updated_at": "2026-07-09T09:39:21.023583+00:00"
-    },
-    {
-      "forum_id": "2607.07440",
-      "paper_number": -1,
-      "title": "Compact Rational Krylov for Parametrized Systems with Application to BEM Frequency Sweeping",
-      "authors": [
-        "Kobe Bruyninckx, Daan Huybrechs, Karl Meerbergen"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2607.07440v1 Announce Type: new \nAbstract: In parametrized linear systems $\\mathsf{P}(\\mu)\\mathsf{x}=\\mathsf{b}$ the system matrix $\\mathsf{P}$ depends nonlinearly on a parameter $\\mu$ and solutions are sought for many values of this parameter. We show that the compact rational Krylov (CORK) framework, originally introduced to solve nonlinear eigenvalue problems, can be used to efficiently produce approximate solutions to such a system for many values of the parameter at once. In this approach the parametrized system is first linearized, resulting in a large shifted linear system $(\\boldsymbol{\\mathsf{A}}-\\mu\\boldsymbol{\\mathsf{B}})\\boldsymbol{\\mathsf{y}}=\\boldsymbol{\\mathsf{d}}$. We formulate a left- and right-preconditioned rational Krylov GMRES method for shifted linear systems an",
-      "pdf_link": "https://arxiv.org/pdf/2607.07440.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07440",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 16.0,
-      "updated_at": "2026-07-09T09:39:21.023601+00:00"
-    },
-    {
-      "forum_id": "2607.07485",
-      "paper_number": -1,
-      "title": "A black-box, multilevel algebraic preconditioning framework for conforming finite elements",
-      "authors": [
-        "O. A. Krzysik, B. S. Southworth, G. A. Wimmer"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2607.07485v1 Announce Type: new \nAbstract: Recently we introduced the least-squares algebraic-multigrid domain-decomposition (LS-AMG-DD) method as a multilevel, algebraic preconditioner for sparse symmetric positive definite (SPD) matrices that admit a Gram representation \\(A=G^{\\top}G\\) \\cite{southworth2026lsamgdd}. The factor \\(G\\) induces a local symmetric positive semidefinite (SPSD) splitting of \\(A\\) used to define local spectral problems from which an interpolation $P$ is built, and a coarse-level Gram operator induced under Galerkin coarsening, \\(A_c=G_c^\\top G_c\\), for \\(G_c:=GP\\). This paper clarifies when this Gram structure arises, showing that, on a prescribed degree-of-freedom cover \\({\\cal C}\\), a \\({\\cal C}\\)-local Gram representation of $A$ exists if and only if \\(A\\",
-      "pdf_link": "https://arxiv.org/pdf/2607.07485.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07485",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 66.0,
-      "updated_at": "2026-07-09T09:39:21.023636+00:00"
-    },
-    {
-      "forum_id": "2607.07497",
-      "paper_number": -1,
-      "title": "Explicit stabilized implementation of singly diagonally implicit Runge-Kutta methods",
-      "authors": [
-        "Ibrahim Almuslimani, Gilles Vilmart, Konstantinos Zygalakis"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2607.07497v1 Announce Type: new \nAbstract: Implicit methods are a natural approach for the integration of stiff differential equations, to avoid time-step restrictions faced by standard explicit integrators. Explicit stabilised integrators are an alternative to implicit methods, which can be particularly efficient in high-dimensional applications with diffusive terms. Towards the best of both worlds, we introduce a new explicit stabilised implementation of a class of diagonally implicit Runge-Kutta methods. This allows us to implement high-order singly-diagonally-implicit Runge-Kutta methods for advection-diffusion-reaction PDEs with a provable computational cost analogous to that of standard explicit stabilised methods. The main ingredient is to recast the implicit Runge-Kutta updat",
-      "pdf_link": "https://arxiv.org/pdf/2607.07497.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07497",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-07-09T09:39:21.023654+00:00"
+      "updated_at": "2026-07-10T09:30:36.880698+00:00"
     },
     {
       "forum_id": "2607.07506",
       "paper_number": -1,
-      "title": "Structure-Guided Gauss-Network Method: Linear Advection-Reaction Equation",
+      "title": "Structure-Guided Gauss-Newton Method: Linear Advection-Reaction Equation",
       "authors": [
         "Zhiqiang Cai, C\\'esar Herrera"
       ],
@@ -268,270 +521,109 @@
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2607.07506v1 Announce Type: new \nAbstract: The least-squares neural network (LSNN) method introduced in [5] for linear advection-reaction equations is capable of accurately approximating discontinuous solutions without a priori knowledge of the interface location. However, the resulting discretization is a non-convex optimization problem that is computationally intensive and complex. In this paper, we propose a structure-guided Gauss-Newton (SgGN) method that alternates between the linear (output) and the nonlinear (hidden layer) parameters. At each outer iteration, the linear parameters are computed by a linear solver, and the nonlinear parameters are updated by a modified Gauss-Newton (GN) method that explicitly removes the singularities of the GN matrix. Numerical experiments for ",
+      "abstract": "arXiv:2607.07506v2 Announce Type: replace \nAbstract: The least-squares neural network (LSNN) method introduced in [5] for linear advection-reaction equations is capable of accurately approximating discontinuous solutions without a priori knowledge of the interface location. However, the resulting discretization is a non-convex optimization problem that is computationally intensive and complex. In this paper, we propose a structure-guided Gauss-Newton (SgGN) method that alternates between the linear (output) and the nonlinear (hidden layer) parameters. At each outer iteration, the linear parameters are computed by a linear solver, and the nonlinear parameters are updated by a modified Gauss-Newton (GN) method that explicitly removes the singularities of the GN matrix. Numerical experiments ",
       "pdf_link": "https://arxiv.org/pdf/2607.07506.pdf",
       "forum_link": "https://arxiv.org/abs/2607.07506",
-      "submission_date": "2026-07-09T04:00:00+00:00",
+      "submission_date": "2026-07-10T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 5.0,
-      "updated_at": "2026-07-09T09:39:21.023671+00:00"
+      "updated_at": "2026-07-10T09:30:36.880712+00:00"
     },
     {
-      "forum_id": "2607.07061",
+      "forum_id": "2410.23467",
       "paper_number": -1,
-      "title": "Topological Signatures of Diffusive Release in Porous Media",
+      "title": "Koopman-informed recurrent neural networks",
       "authors": [
-        "Donghan Kim"
+        "Erik Lien Bolager, Ana \\v{C}ukarska, Iryna Burak, Zahra Monfared, Felix Dietrich"
       ],
       "keywords": [
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2607.07061v1 Announce Type: cross \nAbstract: We used persistent homology to quantify the multiscale topological and geometric organization of porous media, including solid connectivity and the formation of loop-like and cavity-like structures across spatial scales. Through statistical analysis, we show that these topological and geometric features are closely associated with diffusion-driven release behavior in porous media. In particular, even within each target-porosity level, samples with richer topological features tend to exhibit long-tailed release, indicating that release behavior depends not only on the amount of pore space but also on the multiscale organization of the solid phase. We further show that persistent homology-based features can classify release-curve regimes usi",
-      "pdf_link": "https://arxiv.org/pdf/2607.07061.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07061",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-07-09T09:39:21.023713+00:00"
-    },
-    {
-      "forum_id": "2607.07244",
-      "paper_number": -1,
-      "title": "The Stability of the Backward Problem for Photoacoustic Imaging in Attenuating Media via Carleman Estimates",
-      "authors": [
-        "Qihang Chen, Zhiyuan Li, Song Xu"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2607.07244v1 Announce Type: cross \nAbstract: This paper investigates the backward problem in time for photoacoustic tomography (PAT) in attenuating media. It is well-established that photoacoustic imaging in attenuating media can be accurately modeled by spatial fractional-order damping. This inverse problem is ill-posed in the sense of Hadamard. In this work, we construct a novel class of Carleman estimates independent of spatial variables, and by virtue of these estimates, we establish conditional stability estimates for this problem for the first time. Building upon this, we propose a Tikhonov-type regularization functional and derive its associated adjoint system. Furthermore, leveraging the established conditional stability results, we derive the convergence rate of the proposed",
-      "pdf_link": "https://arxiv.org/pdf/2607.07244.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07244",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-07-09T09:39:21.023729+00:00"
-    },
-    {
-      "forum_id": "2607.07313",
-      "paper_number": -1,
-      "title": "POO-LPSP: Parallel Osprey Optimized Least Penalty-Squared Prioritization Methods for Priority Derivation in the Analytic Hierarchy Process",
-      "authors": [
-        "Kevin Kam Fung Yuen"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2607.07313v1 Announce Type: cross \nAbstract: Pairwise comparison (PC) via pairwise reciprocal matrices (PRMs) is central to the Analytic Hierarchy Process (AHP). Although the traditional eigenvector method is widely applied to derive priorities, its theoretical robustness in reflecting true priority vectors remains debated. Building upon a previous iteration of this study, this research develops the revised Least Penalty-Squared Prioritization (LPSP) optimization models, including the revised Least Product of Penalty and Direct Squares (LPPDS) and revised Weighted Squares (LPPWS), to minimize the revised Root Mean Penalty-Squared Variance (RMPSV) and the revised Root Mean Penalty-Weighted Square Variance (RMPSWV). However, solving these non-linear formulations is computationally comp",
-      "pdf_link": "https://arxiv.org/pdf/2607.07313.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07313",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-07-09T09:39:21.023748+00:00"
-    },
-    {
-      "forum_id": "2607.07389",
-      "paper_number": -1,
-      "title": "Circuit Depth Reduction of One-Ancilla Quantum Differential Equation Solver via Extrapolation",
-      "authors": [
-        "Di Fang, Justin Park"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2607.07389v1 Announce Type: cross \nAbstract: Solving linear differential equations is a fundamental task in scientific computing and an important primitive for quantum computing. A recent one-ancilla quantum differential equation solver provides a hardware-friendly and locality-preserving approach with provable performance guarantees, making it highly suitable for the early fault-tolerant and near-term regimes. Its simple circuit structure comes with a natural trade-off: the maximum single-run circuit depth scales as $O (1/\\epsilon)$ in the target accuracy $\\epsilon$. In this work, we reduce this depth by combining the solver with classical step-size postprocessing. By running the one-ancilla solver at a logarithmic number of finite time step sizes and using classical post-processing",
-      "pdf_link": "https://arxiv.org/pdf/2607.07389.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07389",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-07-09T09:39:21.023767+00:00"
-    },
-    {
-      "forum_id": "2607.07623",
-      "paper_number": -1,
-      "title": "Higher-Order Geometric Updates for Levenberg-Marquardt Method via Riemann Normal Coordinates",
-      "authors": [
-        "Jianing Liu, Dong H. Zhang"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2607.07623v1 Announce Type: cross \nAbstract: Nonlinear least-squares optimization is central to regression, physics-informed neural networks, and other machine-learning tasks. Such problems have a natural geometric interpretation, model predictions form a manifold in data space, while the chosen parameterization can introduce parameter-effects curvature that becomes a dominant source of nonlinearity. This exposes a limitation of the Levenberg-Marquardt (LM) method, its tangent-space step is applied as a straight update in parameter coordinates. Geodesic acceleration gives a second-order correction, but its removal of parameter-effect curvature is exact only in the infinitesimal-step limit. We propose a Riemann-normal-coordinate Levenberg-Marquardt method (RNC-LM) to improve this cons",
-      "pdf_link": "https://arxiv.org/pdf/2607.07623.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07623",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-07-09T09:39:21.023785+00:00"
-    },
-    {
-      "forum_id": "2607.07665",
-      "paper_number": -1,
-      "title": "Guidance Breaks the Fitted Operator: A Terminal-Fitted Repair for Classifier-Free Guidance",
-      "authors": [
-        "Shiheng Zhang"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2607.07665v1 Announce Type: cross \nAbstract: Classifier-free guidance (CFG) is the standard way to strengthen class-conditioning in diffusion and flow-matching samplers, yet at large guidance it oversaturates and destabilizes, symptoms practitioners suppress with more steps or limited-interval schedules. We analyze CFG through an asymptotic-preserving, numerical-analysis lens. Building on a recent result that the deterministic DDIM step is the unique fitted operator for the unguided terminal layer, exact on the final small-sigma stretch of sampling, we show that guidance re-stiffens exactly the discriminative subspace to an anomalous exponent 1+w. DDIM is therefore no longer fitted there, and on coarse meshes its guided residual diverges as sigma_min goes to zero. We prove a guided c",
-      "pdf_link": "https://arxiv.org/pdf/2607.07665.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07665",
-      "submission_date": "2026-07-09T04:00:00+00:00",
+      "abstract": "arXiv:2410.23467v3 Announce Type: replace-cross \nAbstract: Recurrent neural networks are a successful neural architecture for many time-dependent problems, including time series analysis, forecasting, and modeling of dynamical systems. In the context of dynamical systems, training with backpropagation through time can lead to challenges arising from exploding or vanishing gradients. In this contribution, we introduce Koopman-informed recurrent neural networks, a computational approach to construct all weights and biases of a recurrent neural network without using gradient-based methods. The approach is based on a combination of random feature networks and Koopman operator theory for dynamical systems. The hidden parameters of a single recurrent block are sampled at random, while the outer ",
+      "pdf_link": "https://arxiv.org/pdf/2410.23467.pdf",
+      "forum_link": "https://arxiv.org/abs/2410.23467",
+      "submission_date": "2026-07-10T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-07-09T09:39:21.023822+00:00"
+      "updated_at": "2026-07-10T09:30:36.880727+00:00"
     },
     {
-      "forum_id": "2607.07691",
+      "forum_id": "2510.01788",
       "paper_number": -1,
-      "title": "Faster quantum linear system solver beyond the condition number",
+      "title": "Neural non-canonical Hamiltonian dynamics for long-time simulations",
       "authors": [
-        "Alexander M. Dalzell, Jianqiang Li, Yuan Su"
+        "Cl\\'ementine Court\\`es (IRMA, MACARON), Emmanuel Franck (MACARON), Michael Kraus (IPP), Laurent Navoret (IRMA, MACARON), L\\'eopold Tr\\'emant (LML)"
       ],
       "keywords": [
         "cs.NA",
         "NA"
       ],
-      "abstract": "arXiv:2607.07691v1 Announce Type: cross \nAbstract: The spectral condition number is a widely adopted measure of worst-case cost for quantum linear system solvers. Yet it can significantly overestimate the actual runtime for a typical problem instance. We present two quantum algorithms that produce the normalized solution $|x\\rangle$ of linear system $Ax=| b \\rangle$ to accuracy $\\epsilon$ with complexity independent of the condition number $\\kappa=\\lVert A^{-1}\\rVert$. We focus on the standard input model where $A$ is accessed through a block encoding and $| b \\rangle$ is prepared by a unitary. But we also introduce an affine dilation model that encodes $A$ and $| b \\rangle$ jointly, allowing further refinements of the query complexity. Our truncation-based solver makes an optimal number o",
-      "pdf_link": "https://arxiv.org/pdf/2607.07691.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07691",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-07-09T09:39:21.023841+00:00"
-    },
-    {
-      "forum_id": "2412.03405",
-      "paper_number": -1,
-      "title": "Deep Operator BSDE: a Numerical Scheme to Approximate Solution Operators",
-      "authors": [
-        "Pere Diaz-Lozano, Giulia Di Nunno"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2412.03405v3 Announce Type: replace \nAbstract: Motivated by dynamic risk measures and conditional $g$-expectations, in this work we propose a numerical method to approximate the solution operator given by a Backward Stochastic Differential Equation (BSDE). The main ingredients for this are the Wiener chaos decomposition and the classical Euler scheme for BSDEs. We show convergence of this scheme under very mild assumptions, and provide a rate of convergence in more restrictive cases. We then implement it using neural networks, and we present several numerical examples where we can check the accuracy of the method.",
-      "pdf_link": "https://arxiv.org/pdf/2412.03405.pdf",
-      "forum_link": "https://arxiv.org/abs/2412.03405",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-07-09T09:39:21.023856+00:00"
-    },
-    {
-      "forum_id": "2509.11210",
-      "paper_number": -1,
-      "title": "Dynamical Low-Rank Approximations for Kalman Filtering",
-      "authors": [
-        "Fabio Nobile, Thomas Trigo Trindade"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2509.11210v2 Announce Type: replace \nAbstract: We propose a dynamical low rank approximation of the Kalman-Bucy process (DLR-KBP), which evolves the filtering distribution of a partially continuously observed linear SDE on a small time-varying subspace at reduced computational cost. This reduction is valid in presence of small noise and when the filtering distribution concentrates around a low dimensional subspace. We further extend this approach to a DLR-ENKF process, where particles are evolved in a low dimensional time-varying subspace at reduced cost. This allows for a significantly larger ensemble size compared to standard EnKF at equivalent cost, thereby lowering the Monte Carlo error and improving filter accuracy. Theoretical properties of the DLR-KBP and DLR-ENKF are investig",
-      "pdf_link": "https://arxiv.org/pdf/2509.11210.pdf",
-      "forum_link": "https://arxiv.org/abs/2509.11210",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-09T09:39:21.023872+00:00"
-    },
-    {
-      "forum_id": "2606.02188",
-      "paper_number": -1,
-      "title": "Symmetric-Tensor Distributional Mixed Method for Fourth-Order Elliptic Singular Perturbation Problem",
-      "authors": [
-        "Xuehai Huang, Xinyue Zhao"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2606.02188v2 Announce Type: replace \nAbstract: A symmetric-tensor distributional mixed method for a fourth-order elliptic singular perturbation problem is developed in this paper. The moment variable is approximated by normal-normal continuous symmetric tensor elements, while the scalar variable is represented by an H^1-nonconforming virtual element space coupled with a polynomial multiplier on interior codimension-two subsimplices. Optimal parameter-uniform error estimates are derived, independent of the presence of boundary layers. A hybridized form is further shown to be equivalent to stabilization-free weak Galerkin and H^2-nonconforming virtual element formulations. In two dimensions, we establish a close connection between the distributional mixed method and the classical Hella",
-      "pdf_link": "https://arxiv.org/pdf/2606.02188.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.02188",
-      "submission_date": "2026-07-09T04:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-07-09T09:39:21.023889+00:00"
-    },
-    {
-      "forum_id": "2607.03341",
-      "paper_number": -1,
-      "title": "An LSQR-based algorithm for large-scale null space computations",
-      "authors": [
-        "Jinzhi Huang"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2607.03341v2 Announce Type: replace \nAbstract: Computing the null space and null vectors of large-scale matrices is a fundamental task in numerical linear algebra and scientific computing. In this paper, an LSQR-based algorithm, termed LSQRNV, is proposed to compute a null vector of a large-scale rank-deficient matrix $A$ from an initial vector. The theoretical convergence properties of the algorithm are analyzed, demonstrating that it converges to a numerical null vector of $A$ at a rate dictated by its numerical condition number, and a rigorous accuracy bound is derived for the resulting approximation. By integrating a deflation technique with a tailored termination criterion, LSQRNV is extended to LSQRNS, which computes an orthonormal basis for the numerical null space of $A$ and ",
-      "pdf_link": "https://arxiv.org/pdf/2607.03341.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.03341",
-      "submission_date": "2026-07-09T04:00:00+00:00",
+      "abstract": "arXiv:2510.01788v2 Announce Type: replace-cross \nAbstract: This work focuses on learning non-canonical Hamiltonian dynamics from data, where long-term predictions require the preservation of structure both in the learned model and in numerical schemes. Previous research focused on either facet, respectively with a potential-based architecture and with degenerate variational integrators, but new issues arise when combining both. In experiments, the learnt model is sometimes numerically unstable due to the gauge dependency of the scheme, rendering long-time simulations impossible. In this paper, we identify this problem and propose two different training strategies to address it, either by directly learning the vector field or by learning a time-discrete dynamics through the scheme. Several ",
+      "pdf_link": "https://arxiv.org/pdf/2510.01788.pdf",
+      "forum_link": "https://arxiv.org/abs/2510.01788",
+      "submission_date": "2026-07-10T04:00:00+00:00",
       "conference": "NA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-07-09T09:39:21.023906+00:00"
+      "updated_at": "2026-07-10T09:30:36.880739+00:00"
+    },
+    {
+      "forum_id": "2604.08763",
+      "paper_number": -1,
+      "title": "Weak Adversarial Neural Pushforward Method for the Wigner Transport Equation",
+      "authors": [
+        "Andrew Qing He, Wei Cai, Sihong Shao"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2604.08763v2 Announce Type: replace-cross \nAbstract: We extend the Weak Adversarial Neural Pushforward Method to the Wigner transport equation governing the phase-space dynamics of quantum systems. The central contribution is a structural observation: integrating the nonlocal pseudo-differential potential operator against plane-wave test functions produces a Dirac delta that exactly inverts the Fourier transform defining the Wigner potential kernel, reducing the operator to a pointwise finite difference of the potential at two shifted arguments. This holds in arbitrary dimension, requires no truncation of the Moyal series, and treats the potential as a black-box function oracle with no derivative information. To handle the negativity of the Wigner quasi-probability distribution, we i",
+      "pdf_link": "https://arxiv.org/pdf/2604.08763.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.08763",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-07-10T09:30:36.880762+00:00"
+    },
+    {
+      "forum_id": "2605.23391",
+      "paper_number": -1,
+      "title": "Coupling-Robust Accuracy in Multiphysics Physics Informed Neural Networks via Kronecker-Preconditioned Optimization",
+      "authors": [
+        "Youngjae Park, Jaemin Kim, Junghwa Hong"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2605.23391v2 Announce Type: replace-cross \nAbstract: Physics-informed neural networks (PINNs) for coupled multiphysics systems suffer systematic accuracy degradation as inter-equation coupling strengthens. We provide a theoretical explanation through neural tangent kernel (NTK) analysis: for linearly coupled systems, the standard NTK's spectral radius grows as $\\Omega(\\gamma^2)$ with coupling strength $\\gamma$, shrinking the stable learning rate, while block-diagonal Gauss--Newton (GN) preconditioning yields a preconditioned NTK $K_P = JH^{+}J^\\top$ whose spectral radius is bounded by $S$ (number of networks), independent of $\\gamma$. Adam's diagonal preconditioning destroys this projector structure -- inflating $\\lambda_{\\max}$ far above $S$ for any coupling type -- and its residual",
+      "pdf_link": "https://arxiv.org/pdf/2605.23391.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.23391",
+      "submission_date": "2026-07-10T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-10T09:30:36.880778+00:00"
     }
   ]
 }
