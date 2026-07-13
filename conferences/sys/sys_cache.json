@@ -1,54 +1,77 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-07-10T09:30:35.885718+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-07-13T09:20:57.400129+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2606.15137",
+      "forum_id": "2607.08797",
       "paper_number": -1,
-      "title": "uringscope: Portable, Low-Overhead Observability for io_uring",
+      "title": "Wireless Decentralized Federated Learning via Device Clustering and Inter-Cluster Link Enhancement",
       "authors": [
-        "Rajarshi Chowdhury"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2606.15137v2 Announce Type: replace \nAbstract: io_uring moves I/O submission and completion into shared-memory rings. This makes it fast, and it also makes it invisible. strace sees only the ring setup, and the kernel tracepoints that expose the request flow are not stable ABI, so the few tools built on them work only on narrow kernel ranges. We present uringscope, a single-binary, language-agnostic observability tool for io_uring built on CO-RE (Compile Once, Run Everywhere) eBPF. uringscope makes four contributions. The first is a precise model of the request lifecycle and a method to reconstruct per-request flows from kernel events. The second is a technique for attaching portably to an unstable tracepoint surface, using BTF-probed program variants, CO-RE field flavors, and positi",
-      "pdf_link": "https://arxiv.org/pdf/2606.15137.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.15137",
-      "submission_date": "2026-07-10T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 33.0,
-      "updated_at": "2026-07-10T09:30:35.387681+00:00"
-    },
-    {
-      "forum_id": "2509.10757",
-      "paper_number": -1,
-      "title": "FastTrack: GPU-Accelerated Tracking for Visual SLAM",
-      "authors": [
-        "Kimia Khabiri, Parsa Hosseininejad, Shishir Gopinath, Karthik Dantu, Steven Y. Ko"
+        "William Weijia Zheng, Hang Liu, Ying-Jun Angela Zhang"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2509.10757v2 Announce Type: replace-cross \nAbstract: The tracking module of a visual-inertial SLAM system processes incoming image frames and IMU data to estimate the position of the frame in relation to the map. It is important for the tracking to complete in a timely manner for each frame to avoid poor localization or tracking loss. We therefore present a new approach which leverages GPU computing power to accelerate time-consuming components of tracking in order to improve its performance. These components include stereo feature matching and local map tracking. We implement our design inside the ORB-SLAM3 tracking process using CUDA. Our evaluation demonstrates an overall improvement in tracking performance of up to 2.8x on a desktop and Jetson Xavier NX board in stereo-inertial m",
-      "pdf_link": "https://arxiv.org/pdf/2509.10757.pdf",
-      "forum_link": "https://arxiv.org/abs/2509.10757",
-      "submission_date": "2026-07-10T04:00:00+00:00",
+      "abstract": "arXiv:2607.08797v1 Announce Type: cross \nAbstract: Decentralized federated learning (DFL) dispenses with the central server of classical FL by utilizing peer-to-peer model exchanges among edge devices. This server-free architecture enables ad-hoc, flexible distributed learning in large device-to-device (D2D) networks. However, wireless DFL converges slowly because peer-to-peer model aggregation incurs high delays and errors. Each DFL training round involves many-to-many gradient sharing over wireless channels, resulting in uncoordinated channel access, large communication errors from stragglers, and slow model consensus, especially in large-scale D2D networks with pronounced clustering structures. We address these aggregation bottlenecks by provisioning a few reliable backhaul links at str",
+      "pdf_link": "https://arxiv.org/pdf/2607.08797.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08797",
+      "submission_date": "2026-07-13T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-07-10T09:30:35.440464+00:00"
+      "score": 43.5,
+      "updated_at": "2026-07-13T09:20:56.983925+00:00"
+    },
+    {
+      "forum_id": "2502.18497",
+      "paper_number": -1,
+      "title": "LD-Leiden: Local Parallel Community Detection in Large Dynamic Networks",
+      "authors": [
+        "Grigoriy Bokov, Aleksandr Konovalov, Anna Uporova, Stanislav Moiseev, Ivan Safonov, Alexander Radionov"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2502.18497v2 Announce Type: replace-cross \nAbstract: Dynamic community detection must update high-quality modularity partitions after edge batches, yet full Leiden reruns make small changes scale with the whole snapshot. Existing dynamic methods reduce work but often alter Leiden refinement, keep limited hierarchy state, or restrict graph support. This paper presents LD-Leiden, a local dynamic Leiden method for weighted directed and undirected graphs that preserves the move-refine-aggregate pipeline and updates only repaired affected regions. Its novelty is the combination of an affected-frontier rule after statistic repair, exact subtract-add aggregate repair, and conflict-filtered parallel local moves; together these mechanisms bound update cost by the visited frontier rather than ",
+      "pdf_link": "https://arxiv.org/pdf/2502.18497.pdf",
+      "forum_link": "https://arxiv.org/abs/2502.18497",
+      "submission_date": "2026-07-13T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.0,
+      "updated_at": "2026-07-13T09:20:56.984222+00:00"
+    },
+    {
+      "forum_id": "2604.14530",
+      "paper_number": -1,
+      "title": "Fast Concurrent Primitives Despite Contention",
+      "authors": [
+        "Michael A. Bender, Guy E. Blelloch, Martin Farach-Colton, Yang Hu, Rob Johnson, Rotem Oshman, Renfei Zhou"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2604.14530v2 Announce Type: replace-cross \nAbstract: We study the problem of constructing concurrent objects in a setting where $P$ processes run in parallel and interact through a shared memory that is subject to write contention. Our goal is to transform hardware primitives that are subject to write contention into ones that handle contention gracefully.\n  We give contention-resolution algorithms for several basic primitives, and analyze them under a relaxed, roughly-synchronous stochastic scheduler, where processes run at roughly the same rate up to a constant factor with high probability. Specifically, we construct read/write registers and CAS registers that have latency $O(\\log P)$ w.h.p. under our scheduler model, using $O(1)$ hardware read/write registers and, in the case of o",
+      "pdf_link": "https://arxiv.org/pdf/2604.14530.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.14530",
+      "submission_date": "2026-07-13T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.0,
+      "updated_at": "2026-07-13T09:20:56.984264+00:00"
     }
   ]
 }

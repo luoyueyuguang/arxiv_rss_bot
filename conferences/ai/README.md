@@ -1,28 +1,24 @@
 # AI / AI for Science Papers
 
-- **Last Updated**: 2026-07-10 09:30:36 UTC
-- **Total Filtered Papers**: 17
-- **Displaying**: 17 (arXiv: 17, OpenReview: 0)
+- **Last Updated**: 2026-07-13 09:20:58 UTC
+- **Total Filtered Papers**: 13
+- **Displaying**: 13 (arXiv: 13, OpenReview: 0)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding](https://arxiv.org/abs/2607.08745) | `ARXIV` | 67.0 |
-| 2 | [Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in Large Language Model Finetuning](https://arxiv.org/abs/2607.08393) | `ARXIV` | 44.5 |
-| 3 | [XFACTORS: Disentangled Information Bottleneck via Contrastive Supervision](https://arxiv.org/abs/2601.21688) | `ARXIV` | 35.0 |
-| 4 | [Best-of-$N$ TTS Evaluation is Confounded by ASR Family Alignment](https://arxiv.org/abs/2607.08256) | `ARXIV` | 33.5 |
-| 5 | [InvestPhilBench: A Multi-Layer Benchmark for Evaluating Large Language Model Procedural Reasoning in Expert Investment Philosophy](https://arxiv.org/abs/2606.25984) | `ARXIV` | 33.0 |
-| 6 | [Resample or Reroute? Budget-Aware Test-Time Model Selection for Large Language Models](https://arxiv.org/abs/2607.08665) | `ARXIV` | 32.5 |
-| 7 | [The Importance of Encoder Choice:A Tabular-Image Study](https://arxiv.org/abs/2607.07756) | `ARXIV` | 24.5 |
-| 8 | [GenDA: Generative Data Assimilation on Complex Urban Areas via Classifier-Free Diffusion Guidance](https://arxiv.org/abs/2601.11440) | `ARXIV` | 23.0 |
-| 9 | [Time-to-Collision Based Dynamic Obstacle Avoidance Using Pretrained Vision Models for Robots in Unstructured Environments](https://arxiv.org/abs/2607.07885) | `ARXIV` | 15.5 |
-| 10 | [ReCoLoRA: Spectrum-Aware Recursive Consolidation for Continual LLM Fine-Tuning](https://arxiv.org/abs/2607.07719) | `ARXIV` | 14.5 |
-| 11 | [Improving TabPFN's Synthetic Data Generation by Integrating Causal Structure](https://arxiv.org/abs/2603.10254) | `ARXIV` | 13.5 |
-| 12 | [RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realistic Retail Environments](https://arxiv.org/abs/2603.16453) | `ARXIV` | 12.5 |
-| 13 | [Systematic Evaluation of Learning Rate Scheduling Strategies Across Heterogeneous Architectures](https://arxiv.org/abs/2607.08511) | `ARXIV` | 12.0 |
-| 14 | [ImputeViz: A Visual Analytics Dashboard for Diagnosing Missing Data and Comparing Imputation Methods](https://arxiv.org/abs/2607.08579) | `ARXIV` | 3.0 |
-| 15 | [On the Gradient Complexity of Private Optimization with Private Oracles](https://arxiv.org/abs/2511.13999) | `ARXIV` | 2.5 |
-| 16 | [Weak Adversarial Neural Pushforward Method for the Wigner Transport Equation](https://arxiv.org/abs/2604.08763) | `ARXIV` | 2.5 |
-| 17 | [Prediction-Powered Active Testing](https://arxiv.org/abs/2607.08347) | `ARXIV` | 2.0 |
+| 1 | [Multimodal Reward Hacking in Reinforcement Learning](https://arxiv.org/abs/2607.09492) | `ARXIV` | 76.0 |
+| 2 | [Reward Transport: Property Control in Flow Matching via Noise-Space Alignment](https://arxiv.org/abs/2607.08781) | `ARXIV` | 64.0 |
+| 3 | [Task-Specific Multimodal Question Answering Agents via Confidence Calibration and Incremental Reasoning for QANTA 2026](https://arxiv.org/abs/2607.09623) | `ARXIV` | 37.5 |
+| 4 | [Resample or Reroute? Budget-Aware Test-Time Model Selection for Large Language Models](https://arxiv.org/abs/2607.08665) | `ARXIV` | 32.5 |
+| 5 | [REFORGE: A Method for Benchmarking LLMs' Reverse Engineering Capabilities in Decompiled Binary Function Naming](https://arxiv.org/abs/2607.07738) | `ARXIV` | 24.5 |
+| 6 | [Variable-Length Generative Protein Design via Generalized Poisson Flow](https://arxiv.org/abs/2607.09039) | `ARXIV` | 15.0 |
+| 7 | [Reduced-Order Models: The Mother of World Models](https://arxiv.org/abs/2607.03198) | `ARXIV` | 13.5 |
+| 8 | [CLAP: Direct VLM-to-VLA Adaptation via Language-Action Grounding](https://arxiv.org/abs/2607.08974) | `ARXIV` | 13.0 |
+| 9 | [Self-Guided Test-Time Training for Long-Context LLMs](https://arxiv.org/abs/2607.09415) | `ARXIV` | 12.5 |
+| 10 | [Accelerated Fully First-Order Methods for Bilevel and Minimax Optimization](https://arxiv.org/abs/2405.00914) | `ARXIV` | 12.5 |
+| 11 | [Interval Certifications for Multilayered Perceptrons via Lattice Traversal](https://arxiv.org/abs/2607.08773) | `ARXIV` | 2.0 |
+| 12 | [AlphaZero in Sparsely Rewarded Games: Limits and Auxiliary Supervision](https://arxiv.org/abs/2607.08984) | `ARXIV` | 1.0 |
+| 13 | [Solving Stochastic Fixed-Point Equations with High Probability](https://arxiv.org/abs/2607.09097) | `ARXIV` | 1.0 |

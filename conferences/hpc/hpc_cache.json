@@ -1,192 +1,77 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-07-10T09:30:35.299021+00:00",
-  "paper_count": 8,
+  "last_updated": "2026-07-13T09:20:56.702826+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2607.08006",
+      "forum_id": "2607.09170",
       "paper_number": -1,
-      "title": "Toward a Unified GPU-Aware OpenSHMEM Specification",
+      "title": "Distributed Symmetry Breaking on Hyperbolic Random Graphs",
       "authors": [
-        "Naveen Ravi, Nathan Wichmann, Md. Wasi-ur- Rahman, Aurelien Bouteiller, Y{\\i}ltan Hassan Temu\\c{c}in, Avinash Kethineedi, Johnathan Alsop, Brandon Potter, Shubhendra Pal Singhal, Jun Shirako, Akihiro Hayashi, Vivek Sarkar, Lawrence C. Stewart, Michael Beebe, Benjamin Michalowicz, Jeongnim Kim, Thiago Teixeria, Mark F. Brown, Aaron Welch, Oscar Hernandez, Wendy Poole, Steve Poole"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.08006v1 Announce Type: new \nAbstract: Leadership-class HPC systems are now accelerator-centric, with GPUs providing most floating-point throughput and memory bandwidth. As next-generation systems increasingly integrate accelerators through high-speed memory fabrics and system interconnects, exposing larger tightly coupled device domains, \\ac{PGAS} models such as OpenSHMEM provide a natural abstraction for expressing fine-grained remote memory operations across these devices. While OpenSHMEM 1.x offers a lean PGAS model for irregular communication, atomics, fine-grained synchronization, and collectives, its memory model lacks portable semantics for accelerator architectures. As a result, existing GPU-enabled OpenSHMEM implementations differ in memory management, capability discov",
-      "pdf_link": "https://arxiv.org/pdf/2607.08006.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.08006",
-      "submission_date": "2026-07-10T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 57.5,
-      "updated_at": "2026-07-10T09:30:34.716083+00:00"
-    },
-    {
-      "forum_id": "2607.08440",
-      "paper_number": -1,
-      "title": "Coded Task Offloading for Fluid Computing: A Privacy-Aware Approach under D2D Networks",
-      "authors": [
-        "Diego Cajaraville-Aboy, Manuel Fern\\'andez-Veiga, Ana Fern\\'andez-Vilas, Rebeca P. D\\'iaz-Redondo"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.08440v1 Announce Type: new \nAbstract: Fluid Computing aims to support distributed applications execution across heterogeneous cloud, edge, and device resources, motivating task execution mechanisms that adapt to dynamic and privacy-sensitive environments under runtime conditions. In this context, current task offloading schemes rarely address privacy risks and information leakage under adversarial execution settings; furthermore, most coded computing proposals focus on straggler mitigation without considering system-level objectives such as energy awareness. This paper proposes a coded task offloading scheme for D2D networks under stochastic task arrivals and queue-based dynamics. The proposal combines task offloading techniques with linear secret sharing schemes, where tasks ar",
-      "pdf_link": "https://arxiv.org/pdf/2607.08440.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.08440",
-      "submission_date": "2026-07-10T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-07-10T09:30:34.716198+00:00"
-    },
-    {
-      "forum_id": "2607.08565",
-      "paper_number": -1,
-      "title": "SMetric: Rethink LLM Scheduling for Serving Agents with Balanced Session-centric Scheduling",
-      "authors": [
-        "Jiahao Wang, Kaizhan Lin, Kaixi Zhang, Jinbo Han, Xingda Wei, Sijie Shen, Chenguang Fang, Wenyuan Yu, Rong Chen, Haibo Chen"
+        "Yannic Maus, Janosch Ruff, Sonia Simons, George Skretas"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.08565v1 Announce Type: new \nAbstract: LLM scheduling is critical to serving, yet it remains unclear how well existing designs fit agentic serving--with LLM requests issued by agents instead of humans. This shifts the workload in two ways: (1) agents act only on complete responses, making the cluster's tokens per second (TPS) the primary goal and relaxing--not eliminating--per-token latency requirements; and (2) requests share much of their KV\\$-reuse exceeds 80% of request tokens in a production trace from BAILIAN, versus 54-62% in chat.\n  This paper first contributes a systematic study of request scheduling for agents on two real-world traces. We find that to increase KV\\$ reuse, existing schedulers overly prioritize routing requests to instances caching their KV\\$, overloading",
-      "pdf_link": "https://arxiv.org/pdf/2607.08565.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.08565",
-      "submission_date": "2026-07-10T04:00:00+00:00",
+      "abstract": "arXiv:2607.09170v1 Announce Type: new \nAbstract: Real-world networks like the internet share patterns like a power law degree distribution and a high clustering coefficient. Many of these properties are captured by the generative model of hyperbolic random graphs (HRGs), which provides a theoretical framework for studying such networks. Motivated by the observation that several algorithms perform better on real-world networks than their worst-case guarantees suggest, we design and analyse distributed algorithms under the assumption that the input graph is an HRG. Indeed, prior work has shown that the classical symmetry-breaking problem of $\\Delta+1$ colouring, where $\\Delta$ is the maximum degree of the graph, can be solved in 2 rounds on HRGs [Maus and Ruff; SODA'26].\n  In stark contrast ",
+      "pdf_link": "https://arxiv.org/pdf/2607.09170.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.09170",
+      "submission_date": "2026-07-13T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-07-10T09:30:34.716223+00:00"
+      "score": 4.5,
+      "updated_at": "2026-07-13T09:20:56.165973+00:00"
     },
     {
-      "forum_id": "2607.08386",
+      "forum_id": "2607.09318",
       "paper_number": -1,
-      "title": "Parallel QEC Decoding Applied to Distributed Quantum Computing",
+      "title": "EcoKube: Simulating Carbon-Aware Scheduling Policies in Heterogeneous Edge-Cloud Environments",
       "authors": [
-        "Gabriele Incardona, Davide Ferrari, Michele Amoretti"
+        "Gon\\c{c}alo Ferreira, Shashikant Ilager"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2607.08386v1 Announce Type: cross \nAbstract: A novel parallel approach is proposed for QEC decoding based on Belief Propagation with Ordered Statistics Decoding. The main idea is to pre-process the error vectors obtained from Belief Propagation by applying Singular Value Decomposition locally to sub-regions of the lattice. The proposed approach is applied to distributed quantum computers and evaluated in terms of complexity, accuracy, and scalability.",
-      "pdf_link": "https://arxiv.org/pdf/2607.08386.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.08386",
-      "submission_date": "2026-07-10T04:00:00+00:00",
+      "abstract": "arXiv:2607.09318v1 Announce Type: new \nAbstract: Energy demand from cloud and edge computing is rising rapidly, with AI workloads further intensifying electricity use and associated carbon emissions. In hybrid edge-cloud settings, sustainability impact depends on time- and location-varying grid Carbon Intensity (CI), site Power Usage Effectiveness (PUE), and heterogeneous hardware characteristics. Existing carbon-aware work explores solutions such as temporal elasticity, spatio-temporal workload shifting, and carbon-aware placement across distributed sites. However, these solutions do not provide a consistent and reproducible workflow for evaluating sustainability-aware scheduling policies on heterogeneous, federated edge-cloud topologies. We present EcoKube: a configurable simulation fram",
+      "pdf_link": "https://arxiv.org/pdf/2607.09318.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.09318",
+      "submission_date": "2026-07-13T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-07-10T09:30:34.716270+00:00"
+      "score": 46.0,
+      "updated_at": "2026-07-13T09:20:56.166009+00:00"
     },
     {
-      "forum_id": "2607.08407",
+      "forum_id": "2607.08797",
       "paper_number": -1,
-      "title": "Who Needs DRAM? We Have Fiber",
+      "title": "Wireless Decentralized Federated Learning via Device Clustering and Inter-Cluster Link Enhancement",
       "authors": [
-        "Hannah Atmer, Thiemo Voigt, Yuan Yao, Stefanos Kaxiras"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.08407v1 Announce Type: cross \nAbstract: The rising pressure on DRAM availability and contract pricing reflects generative AI's massive high-performance memory requirements. This pressure is heavily compounded by hyperscale data center expansion, which now consumes a significant portion of global DRAM output. In this work, we propose a new architecture: Fiber Memory, which reimagines the role of optical fiber in a hyperscale data center, deploying it as an active, recirculating delay-line memory for immutable data, such as large language model (LLM) weights. We present a data-parallel optical broadcast delay-line memory architecture that accounts for fiber's physical realities. By incorporating space-division multiplexed multi-core fibers (MCFs), passive optical tap-and-amplify i",
-      "pdf_link": "https://arxiv.org/pdf/2607.08407.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.08407",
-      "submission_date": "2026-07-10T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-07-10T09:30:34.716286+00:00"
-    },
-    {
-      "forum_id": "2601.21855",
-      "paper_number": -1,
-      "title": "Self-Adaptive Probabilistic Skyline Analytics in Cloud-Edge IoE: A Multi-Objective DRL Approach",
-      "authors": [
-        "Chuan-Chi Lai"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2601.21855v2 Announce Type: replace \nAbstract: The proliferation of the Internet of Everything (IoE) necessitates efficient Probabilistic Skyline (PSKY) query analytics at the network edge, which is severely constrained by the trade-off between limited computational capacity and high-variance communication bandwidth. Conventional static thresholding and heuristic-based approaches fail to adapt to the inherent volatility and non-independent and identically distributed (non-IID) characteristics of edge streams, often triggering network congestion or compromising query fidelity. To address these systemic inefficiencies, this paper introduces SA-PSKY, a self-adaptive framework integrating deep reinforcement learning into a distributed query optimization architecture. We model threshold s",
-      "pdf_link": "https://arxiv.org/pdf/2601.21855.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.21855",
-      "submission_date": "2026-07-10T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-07-10T09:30:34.716322+00:00"
-    },
-    {
-      "forum_id": "2604.10180",
-      "paper_number": -1,
-      "title": "Tessera: Unlocking Heterogeneous GPUs through Kernel-Granularity Disaggregation",
-      "authors": [
-        "Tiancheng Hu, Jin Qin, Zheng Wang, Junhao Hu, Yuzheng Wang, Lei Chen, Yizhou Shan, Mingxing Zhang, Ting Cao, Chunwei Xia, Huimin Cui, Tao Xie, Chenxi Wang"
+        "William Weijia Zheng, Hang Liu, Ying-Jun Angela Zhang"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2604.10180v2 Announce Type: replace \nAbstract: Disaggregation maps parts of an AI workload to different types of GPUs, offering a path to utilize modern heterogeneous GPU clusters. However, existing solutions operate at a coarse granularity and are tightly coupled to specific model architectures, leaving much room for performance improvement. This paper presents Tessera, the first kernel disaggregation system to improve performance and cost efficiency on heterogeneous GPUs for large model inference. Our key insight is that kernels within a single application exhibit diverse resource demands, making them the most suitable granularity for aligning computation with hardware capabilities. Tessera integrates offline analysis with online adaptation by extracting precise inter-kernel depend",
-      "pdf_link": "https://arxiv.org/pdf/2604.10180.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.10180",
-      "submission_date": "2026-07-10T04:00:00+00:00",
+      "abstract": "arXiv:2607.08797v1 Announce Type: cross \nAbstract: Decentralized federated learning (DFL) dispenses with the central server of classical FL by utilizing peer-to-peer model exchanges among edge devices. This server-free architecture enables ad-hoc, flexible distributed learning in large device-to-device (D2D) networks. However, wireless DFL converges slowly because peer-to-peer model aggregation incurs high delays and errors. Each DFL training round involves many-to-many gradient sharing over wireless channels, resulting in uncoordinated channel access, large communication errors from stragglers, and slow model consensus, especially in large-scale D2D networks with pronounced clustering structures. We address these aggregation bottlenecks by provisioning a few reliable backhaul links at str",
+      "pdf_link": "https://arxiv.org/pdf/2607.08797.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08797",
+      "submission_date": "2026-07-13T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 65.0,
-      "updated_at": "2026-07-10T09:30:34.716356+00:00"
-    },
-    {
-      "forum_id": "2606.16589",
-      "paper_number": -1,
-      "title": "DRIFT: Risk-Constrained Diffusion with Imitation Priors for Mixed-Autonomy Traffic Generation",
-      "authors": [
-        "Yaoshen Yu, Minghui Liwang, Wenbo Zhu, Xinlei Yi, Zhang Liu, Yiguang Hong, Xianbin Wang, Seyyedali Hosseinalipour"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.16589v2 Announce Type: replace \nAbstract: Future intelligent transportation systems are envisioned to evolve toward a long-term mixed-autonomy paradigm, where human-driven vehicles (HVs) and autonomous vehicles (AVs) coexist within highly coupled traffic ecosystems. Such coexistence introduces pronounced heterogeneity, amplified uncertainty, and increasingly intricate interaction dynamics. In this context, it remains fundamentally challenging to simultaneously capture the heterogeneous behavioral distribution shifts arising from dynamic AV penetration, generate diverse yet executable trajectories under strong inter-vehicle coupling, and conduct reliable closed-loop safety and stability diagnostics for rare but high-impact events. To this end, we present Diffusion with Risk const",
-      "pdf_link": "https://arxiv.org/pdf/2606.16589.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.16589",
-      "submission_date": "2026-07-10T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-07-10T09:30:34.716389+00:00"
+      "score": 4.5,
+      "updated_at": "2026-07-13T09:20:56.166082+00:00"
     }
   ]
 }

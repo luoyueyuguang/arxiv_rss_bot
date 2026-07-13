@@ -1,54 +1,31 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-07-10T09:30:35.923625+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-07-13T09:20:57.484204+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2607.08427",
+      "forum_id": "2607.08786",
       "paper_number": -1,
-      "title": "FPGN: Redefining Ultra-Fast Programmable Gate-based Neural Acceleration with Differentiable LUTs",
+      "title": "Accelerating GPU Inference of Large Language Models with Moderately Unstructured Sparse Weight Matrices",
       "authors": [
-        "Jiawei Liang, Haotong Qin, Linfeng Du, Xingyu Liu, Shangkun Li, Hui Yu, Michele Magno, Xinyu Chen, Jiang Xu, Wei Zhang"
+        "Tao Lu, Haoyu Wang, Zonghui Wang, Keshen Xiang, Jiaheng Zhang, Wenzhi Chen"
       ],
       "keywords": [
         "cs.AR",
-        "FPGA"
+        "DAC"
       ],
-      "abstract": "arXiv:2607.08427v1 Announce Type: new \nAbstract: Achieving nanosecond-scale inference latency for deep neural networks (DNNs) has become a primary architectural concern for latency-critical applications. While Field-Programmable Gate Arrays (FPGAs) offer a promising substrate for low-latency inference, conventional FPGA accelerators remain arithmetic-centric, using LUTs primarily as building blocks for numerical operators and peripheral logic. In contrast, recent LUT-native neural networks treat LUTs as learnable neurons, revealing promising theoretical potential to exploit their intrinsic logic expressivity. However, existing methods are largely confined to algorithmic optimizations, failing to translate this theoretical potential into high-performance FPGA accelerators. Specifically, the",
-      "pdf_link": "https://arxiv.org/pdf/2607.08427.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.08427",
-      "submission_date": "2026-07-10T04:00:00+00:00",
-      "conference": "FPGA",
+      "abstract": "arXiv:2607.08786v1 Announce Type: cross \nAbstract: With the growing deployment of large language models (LLMs), LLM inference cost has become a key challenge. Pruning techniques that introduce sparsity into weight matrices can accelerate inference. However, maintaining model quality typically limits pruning to moderate unstructured sparsity (around 50\\%). At these sparsity levels, none of the existing GPU kernels for sparse matrix multiplication (SpMM) can outperform their dense counterparts. This paper proposes an efficient GPU inference method for LLMs with moderate sparsity. We propose a three-layer matrix storage format comprising: (i) a Sparse-TC layer enabling sparse tensor cores to accelerate SpMM; (ii) a Slot-Filling layer using parallel differential distance for matrix compression",
+      "pdf_link": "https://arxiv.org/pdf/2607.08786.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08786",
+      "submission_date": "2026-07-13T04:00:00+00:00",
+      "conference": "DAC",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-07-10T09:30:35.923035+00:00"
-    },
-    {
-      "forum_id": "2605.03713",
-      "paper_number": -1,
-      "title": "SPEC CPU2026: Characterization, Representativeness, and Cross-Suite Comparison",
-      "authors": [
-        "Ruihao Li, Andrew Jacob, Neeraja J. Yadwadkar, Lizy K. John"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2605.03713v3 Announce Type: replace \nAbstract: Specialized accelerators dominate AI workloads, but CPUs remain critical for orchestrating accelerators and running daily services. CPU performance therefore shapes end-to-end system efficiency, making benchmarks reflect modern workloads and bottlenecks. Yet it remains unclear whether the newest general-purpose CPU benchmark suite changes the architectural conclusions drawn from prior SPEC CPU generations. We present the first comprehensive characterization of SPEC CPU2026 across nine recent Intel, AMD, Ampere, and Nvidia platforms. Compared with SPEC CPU2017, SPEC CPU2026 increases instruction volume and memory footprint and shifts pressure toward emerging bottlenecks, especially instruction-cache stress.\n  These shifts raise two practi",
-      "pdf_link": "https://arxiv.org/pdf/2605.03713.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.03713",
-      "submission_date": "2026-07-10T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-10T09:30:35.923101+00:00"
+      "updated_at": "2026-07-13T09:20:57.483763+00:00"
     }
   ]
 }
