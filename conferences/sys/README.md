@@ -1,6 +1,6 @@
 # Systems / AI Infra / AI Compiler / RISC-V Papers
 
-- **Last Updated**: 2026-07-13 09:20:57 UTC
+- **Last Updated**: 2026-07-14 07:58:43 UTC
 - **Total Filtered Papers**: 3
 - **Displaying**: 3 (arXiv: 3, OpenReview: 0)
 - **Papers with Ratings**: 0
@@ -9,6 +9,6 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Wireless Decentralized Federated Learning via Device Clustering and Inter-Cluster Link Enhancement](https://arxiv.org/abs/2607.08797) | `ARXIV` | 43.5 |
-| 2 | [LD-Leiden: Local Parallel Community Detection in Large Dynamic Networks](https://arxiv.org/abs/2502.18497) | `ARXIV` | 31.0 |
-| 3 | [Fast Concurrent Primitives Despite Contention](https://arxiv.org/abs/2604.14530) | `ARXIV` | 31.0 |
+| 1 | [Decomposing Runtime, Kernel, and Quantization Speedups via a Matched FP16 Intermediate: A Hardware-Conditioned Case Study on Four NVIDIA RTX A5000 GPUs](https://arxiv.org/abs/2607.11368) | `ARXIV` | 69.0 |
+| 2 | [Stateful Worlds, Stateless Elasticity: Exact-State Serving for Interactive World Models](https://arxiv.org/abs/2607.10389) | `ARXIV` | 34.5 |
+| 3 | [On GPU Implementation for Multi-Precision Integer Division](https://arxiv.org/abs/2606.06386) | `ARXIV` | 31.5 |

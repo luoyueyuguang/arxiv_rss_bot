@@ -1,307 +1,675 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-07-13T09:20:58.457867+00:00",
-  "paper_count": 13,
+  "last_updated": "2026-07-14T07:58:44.566712+00:00",
+  "paper_count": 29,
   "papers": [
     {
-      "forum_id": "2607.08773",
+      "forum_id": "2607.11594",
       "paper_number": -1,
-      "title": "Interval Certifications for Multilayered Perceptrons via Lattice Traversal",
+      "title": "MAGIC: Transition-Aware Generation of Navigable Multi-Scene Game Worlds with Large Language Models",
       "authors": [
-        "Merkouris Papamichail, Konstantinos Varsos, Giorgos Flouris, Jo\\~ao Marques-Silva"
+        "Tsz Hei Fan, Choi Wing Fung, Yuxuan Wan, Shuqing Li, Michael R. Lyu"
       ],
       "keywords": [
         "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2607.08773v1 Announce Type: new \nAbstract: In this work we present a rigorous theoretical framework to a foundational problem of AI safety, namely adversarial robustness. In particular, we show that the adversarial robustness problem can be reduced to a lattice traversal problem. Each element of this lattice corresponds to an interval, i.e., an axis-aligned hyper-rectangle, containing an input point $\\mathbf{x}$. Consider a multilayered perceptron classifier (MLP). An interval $I$ constitutes a sound certification if $\\mathbf{x} \\in I$ and $\\mathbf{x}$ can be freely perturbed in $I$ without changing the MLP's prediction. Complementarily, an interval $I$ constitutes a complete certification if $\\mathbf{x} \\in I$ and when $\\mathbf{x}$ moves outside of $I$ the MLP's prediction is guaran",
-      "pdf_link": "https://arxiv.org/pdf/2607.08773.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.08773",
-      "submission_date": "2026-07-13T04:00:00+00:00",
+      "abstract": "arXiv:2607.11594v1 Announce Type: new \nAbstract: Multi-scene navigation (clearing an objective in one bounded space and then crossing a portal into the next) is a defining feature of contemporary 3D games, but authoring it is laborious: every portal must have consistent endpoints on both sides, each interior must remain navigable once it is furnished, and the resulting connectivity must be kept consistent across many files. Recent large language model (LLM) and multimodal LLM (MLLM) scene generators have made single-interior synthesis dramatically cheaper, yet they produce one scene at a time and cannot, by naive repetition, yield a connected multi-scene world. We identify three obstacles that single-scene methods leave unsolved: cross-scene consistency, in-scene navigability, and the eval",
+      "pdf_link": "https://arxiv.org/pdf/2607.11594.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.11594",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 56.0,
+      "updated_at": "2026-07-14T07:58:43.728127+00:00"
+    },
+    {
+      "forum_id": "2607.11598",
+      "paper_number": -1,
+      "title": "Interaction Scaling: Grounding the Third Axis of Test-Time Compute",
+      "authors": [
+        "Bojie Li, Noah Shi"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.11598v1 Announce Type: new \nAbstract: There are two standard ways to spend more compute at test time: let a model reason longer, or sample more attempts and keep one. Both share a hidden limit: they are internal. Every extra token comes from the same frozen weights and the same prompt, so neither can tell the model anything it does not already know. We study a third way, interaction: the model proposes an artifact, an external instrument observes how it actually behaves, and the model revises. Each cycle imports a real observation, so interaction breaks through the ceiling the other two hit.\n  We argue that a single variable governs this third axis, grounding, and that it must hold on both sides of the loop. The feedback that drives revision must come from an instrument that act",
+      "pdf_link": "https://arxiv.org/pdf/2607.11598.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.11598",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-14T07:58:43.728154+00:00"
+    },
+    {
+      "forum_id": "2607.09795",
+      "paper_number": -1,
+      "title": "Large Multimodal Model-Based Environment-Aware Mobility Management",
+      "authors": [
+        "Seokhyun Jeong, Sangmok Shin, Seungnyun Kim, Jiao Wu, Byonghyo Shim"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.09795v1 Announce Type: cross \nAbstract: Recently, large language models (LLMs) have been successfully adopted in various fields, including wireless communications, robotics, and autonomous vehicles, owing to their outstanding adaptability and reasoning abilities. Despite their huge potential, the application of LLMs for mobility management is relatively scarce since it requires not only analyzing wireless measurements but also predicting dynamic user trajectories and making real-time handover decisions across densely deployed small base stations (SBSs). In this paper, we propose an environment-aware mobility management scheme based on large multimodal models (LMMs), which extend capabilities of LLMs to process multimodal sensing data. By leveraging LMMs, the proposed scheme extr",
+      "pdf_link": "https://arxiv.org/pdf/2607.09795.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.09795",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 55.5,
+      "updated_at": "2026-07-14T07:58:43.728830+00:00"
+    },
+    {
+      "forum_id": "2607.09825",
+      "paper_number": -1,
+      "title": "More Structure, Not More Capacity: Object-Centric Representations for Visuomotor Imitation Learning",
+      "authors": [
+        "Yi Li (TU Darmstadt), Alexandre Chapin (LIRIS), Liming Chen (LIRIS), Jan Peters (TU Darmstadt), Alap Kshirsagar (IIT Delhi, ADU)"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.09825v1 Announce Type: cross \nAbstract: Robotic manipulation policies rely on pre-trained vision models that give either a global scene embedding or a dense patch grid. Both mix task-relevant and task-irrelevant features. Object-centric slot representations are a structured alternative: they group features into a few per-object slots. We test what this structure buys on ManiSkill3 PickCube-v1, with a frozen encoder and a held-out-seed evaluation. Holding the policy, goal token, rendering, and calibration fixed and changing only the encoder, a frozen object-centric SPOT representation (DINO ViT-B/16 + Slot Attention) reaches 55.0$\\pm$2.9% success, 22.4% above a dense DINO global-feature baseline (32.6 $\\pm$ 1.5%), with the same trainable policy and no encoder fine-tuning. More to",
+      "pdf_link": "https://arxiv.org/pdf/2607.09825.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.09825",
+      "submission_date": "2026-07-14T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-07-13T09:20:57.686832+00:00"
+      "updated_at": "2026-07-14T07:58:43.728995+00:00"
     },
     {
-      "forum_id": "2607.09492",
+      "forum_id": "2607.09891",
       "paper_number": -1,
-      "title": "Multimodal Reward Hacking in Reinforcement Learning",
+      "title": "What You Train Is What You Get: Gender Bias, Training Composition, and Post-Hoc Mitigation in Audio Deepfake Detection",
       "authors": [
-        "Jiayu Yao, Yiwei Wang, Anmeng Zhang, Zhe Sun, Songsong Wang, Lingrui Mei, Yuyao Ge, Shenghua Liu"
+        "Aishwarya R. Fursule, Vamshi Nallaguntla, Shruti Kshirsagar, Anderson R. Avila"
       ],
       "keywords": [
         "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2607.09492v1 Announce Type: new \nAbstract: Reinforcement learning (RL) is increasingly used to align multimodal large language models (MLLMs), but higher rewards do not always imply better task performance. This risk is amplified when visual evidence is evaluated by text-only or weakly grounded rewards. We study reward hacking in MLLM RL across safety VQA, chart VQA, and stress-test settings, varying reward design, data ambiguity, model scale (2B-32B), and RL algorithm (GRPO, RLOO, DAPO). We introduce Newly Rewarded Failure Rate (NRFR), which measures failures among samples whose proxy reward improves over the SFT baseline. Outcome-only rewards cause severe hacking, reaching 48.1% Reward Hacking Rate (RHR), while NRFR exceeding RHR shows that RL creates new failures rather than merel",
-      "pdf_link": "https://arxiv.org/pdf/2607.09492.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.09492",
-      "submission_date": "2026-07-13T04:00:00+00:00",
+      "abstract": "arXiv:2607.09891v1 Announce Type: cross \nAbstract: Audio deepfake detection models determine whether speech is genuine or artificially generated, but high overall accuracy can mask substantial performance disparities across demographic groups. In this work, we investigate gender bias in audio deepfake detection using the ASVspoof5 dataset. We use ASVspoof5 under a controlled custom split designed to isolate gender-composition effects. We train attack-specific models on nine training sets with different gender compositions, ranging from female-only to male-only. We use a ResNet18 classifier with LogSpectrogram and WavLM-Base+ features, and we evaluated six post-hoc threshold calibration methods. Experimental results show that training data composition strongly predicts bias direction, with ",
+      "pdf_link": "https://arxiv.org/pdf/2607.09891.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.09891",
+      "submission_date": "2026-07-14T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 76.0,
-      "updated_at": "2026-07-13T09:20:57.687210+00:00"
+      "score": 2.5,
+      "updated_at": "2026-07-14T07:58:43.729140+00:00"
     },
     {
-      "forum_id": "2607.07738",
+      "forum_id": "2607.09993",
       "paper_number": -1,
-      "title": "REFORGE: A Method for Benchmarking LLMs' Reverse Engineering Capabilities in Decompiled Binary Function Naming",
+      "title": "Beyond Bayesian Nash: Learning Minimax-Regret Equilibria for Adversarial Team Games under Asymmetric Information",
       "authors": [
-        "Nicolas Koller, Andreas u. Schmidt"
+        "Naman Aggarwal, Jonathan P. How"
       ],
       "keywords": [
         "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2607.07738v1 Announce Type: cross \nAbstract: Large language models (LLMs) are increasingly applied to reverse-engineering tasks, and recent threat-intelligence reporting shows them operating inside live offensive-security workflows. Claims about their capability, however, outpace our ability to measure it. Existing benchmarks for LLM-assisted binary analysis treat the construction of function-level ground truth as a solved pre-processing step and report accuracy without disclosing how many functions were reliably evaluable. We argue that the principal obstacle to fair evaluation is not model capability but the reliability of binary-to-source alignment under compiler optimization. This paper presents Reforge, a provenance-tracked pipeline that constructs function-level ground truth fr",
-      "pdf_link": "https://arxiv.org/pdf/2607.07738.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07738",
-      "submission_date": "2026-07-13T04:00:00+00:00",
+      "abstract": "arXiv:2607.09993v1 Announce Type: cross \nAbstract: Adversarial team games (ATGs) with asymmetric information, such as adversarial path-finding, goal search, and reachability games on graphs, require strategies that are robust to hidden opponent types, such as a hidden goal flag, and to deception. Under asymmetric information, deception is seen as strategic shifts in the type distribution such that the omniscient opponent can collude with Nature and condition its play on the observed type. Existing risk-neutral solution concepts, such as Bayesian Nash equilibrium (BNE), are sensitive to distribution shifts, while distributionally robust approaches provide guarantees only within a prescribed ambiguity set. To address these limitations, we introduce Probabilistically Robust Minimax-Regret Equ",
+      "pdf_link": "https://arxiv.org/pdf/2607.09993.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.09993",
+      "submission_date": "2026-07-14T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 24.5,
-      "updated_at": "2026-07-13T09:20:57.687381+00:00"
+      "score": 4.0,
+      "updated_at": "2026-07-14T07:58:43.729385+00:00"
     },
     {
-      "forum_id": "2607.08781",
+      "forum_id": "2607.10139",
       "paper_number": -1,
-      "title": "Reward Transport: Property Control in Flow Matching via Noise-Space Alignment",
+      "title": "LLMs as a Jury: Cross-Model Consensus Can Outperform Process Reward Models for LLM Reasoning",
       "authors": [
-        "Kehan Guo, Yili Shen, Yujun Zhou, Yue Huang, Chujie Gao, Shiyi Du, Xiangliang Zhang"
+        "Ning Liu"
       ],
       "keywords": [
         "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2607.08781v1 Announce Type: cross \nAbstract: The coupling in flow matching -- the rule pairing noise vectors with data points -- is typically treated as a computational choice. We show that this coupling can instead serve as an alignment interface: by matching noise and data according to a target molecular property, it embeds controllable structure directly into the learned flow field. Building on this view, we introduce Reward Transport, which uses optimal transport coupling at training time to align a scalar noise-space coordinate with molecular rewards; at inference, varying this coordinate steers the generated distribution without requiring an oracle, reward model, gradient guidance, or additional computation. In the coupling-preserving limit, thresholding this coordinate recover",
-      "pdf_link": "https://arxiv.org/pdf/2607.08781.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.08781",
-      "submission_date": "2026-07-13T04:00:00+00:00",
+      "abstract": "arXiv:2607.10139v1 Announce Type: cross \nAbstract: Selecting the correct answer from a pool of candidate reasoning chains is the engine of test-time scaling, yet the standard selectors each carry a cost: self-consistency inherits the errors of the single model it resamples, and trained reward models need labeled data and transfer poorly off-distribution. We study a third signal, free at inference time: cross-model consensus, the degree to which independently trained models, each solving the problem once, agree on a final answer. We treat the panel as an LLM-jury, in which the structure of agreement, not any model's score of another, is the verification signal. Across seven benchmarks it selects correct answers better than self-consistency and far better than a model scoring its own candida",
+      "pdf_link": "https://arxiv.org/pdf/2607.10139.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.10139",
+      "submission_date": "2026-07-14T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 64.0,
-      "updated_at": "2026-07-13T09:20:57.687472+00:00"
+      "score": 5.0,
+      "updated_at": "2026-07-14T07:58:43.729637+00:00"
     },
     {
-      "forum_id": "2607.08974",
+      "forum_id": "2607.11042",
       "paper_number": -1,
-      "title": "CLAP: Direct VLM-to-VLA Adaptation via Language-Action Grounding",
+      "title": "BackendForge: Benchmarking Agentic End-to-End Code Generation with Backend Services",
       "authors": [
-        "Yuri Ishitoya, Jeremy Siburian, Masashi Hamaya, Kuniaki Saito, Cristian C. Beltran-Hernandez, Mai Nishimura"
+        "Yuzhe Guo, Mengzhou Wu, Yuan Cao, Jialei Wei, Dezhi Ran, Wei Yang, Tao Xie"
       ],
       "keywords": [
         "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2607.08974v1 Announce Type: cross \nAbstract: Vision-language-action models (VLAs) inherit semantic capabilities from pretrained VLMs, yet large-scale post-training on robot data and architectural modifications can reshape the backbone so extensively that it becomes difficult to isolate what the VLM contributes to control. Directly converting pretrained VLMs into VLAs with minimal architectural change offers a more transparent path to understanding how VLM capabilities transfer across model scales. The core obstacle is output-distribution mismatch: predicting actions as bare numeric token sequences moves generation away from the VLM's pretrained language distribution, degrading the capabilities we seek to preserve. To address this, we propose CLAP (Causal Language-Action Prediction), ",
-      "pdf_link": "https://arxiv.org/pdf/2607.08974.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.08974",
-      "submission_date": "2026-07-13T04:00:00+00:00",
+      "abstract": "arXiv:2607.11042v1 Announce Type: cross \nAbstract: Large language models (LLMs) are increasingly used in agentic coding settings, where they can inspect files, execute commands, run tests, observe failures, and iteratively revise code. This shift raises a central evaluation question: can an agentic LLM generate an end-to-end software artifact that is both deployable and behaviorally correct under execution? Backend services provide a controlled but realistic substrate for this evaluation. Their APIs expose application-level executable semantics, and deployed behavior can be checked deterministically against an OpenAPI contract through black-box HTTP interactions. We introduce BackendForge, a benchmark of 56 contract-defined backend generation tasks rewritten from real open-source applicati",
+      "pdf_link": "https://arxiv.org/pdf/2607.11042.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.11042",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-07-14T07:58:43.731483+00:00"
+    },
+    {
+      "forum_id": "2607.11342",
+      "paper_number": -1,
+      "title": "Fail-Aware and Explainable Test Oracle Prediction",
+      "authors": [
+        "Yue Zhao, Binish Tanveer, Jelena Zdravkovic"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.11342v1 Announce Type: cross \nAbstract: Despite their central role in fault detection, test oracles remain challenging to construct effectively. Recent learning based methods address this challenge by automatically generating test assertions, yet even if syntactically correct, they are often ineffective in revealing bugs. Rather than generating assertions, this study explores a different approach by training a model to directly predict whether a given test prefix passes or fails. We present FOCAL, an emerging code LLM-based discriminative oracle predictor. It learns from labeled pairs of test prefixes and methods under test, employs losses that emphasize failing cases during training, and grounds its predictions in statement level behavioral evidence. Compared with the baseline ",
+      "pdf_link": "https://arxiv.org/pdf/2607.11342.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.11342",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-14T07:58:43.732030+00:00"
+    },
+    {
+      "forum_id": "2607.11560",
+      "paper_number": -1,
+      "title": "Technical Report on the CVPR 2026@AdvML Workshop Challenge",
+      "authors": [
+        "Tianyuan Zhang, Zonglei Jing, Jiangfan Liu, Ligong Zhang, Ke Ma, Chengzhi Sun, Xiaohai Xu, Zhirui Zhang, Qianqian Xu, Qingming Huang, Hanyu Fang, Junhua Liu, Zheng Wang, Xiaoliang Liu, Yuanbo Li, Shuai Gui, Bin Wang, Menghe Zheng, Jing Nie, Hanyang Meng, Zeyang Zhang, Xiang Zhang, Yongxuan Zhu, Rui Ding, Hainan Li, Yongkang Zhang, Zhilei Zhu, Xianglong Kong, Jin Hu, Zonghao Ying, Yisong Xiao, Lei Chen, Haotong Qin, Jiakai Wang, Aishan Liu, Ruikai Li, Julia Karbing, Yinpeng Dong, Zhenfei Yin, Shao Jing, Xia Hu, Jingyi Xu, Juntao Dai, Xinyun Chen, Vishal M. Patel, Xianglong Liu, Dawn Song, Alan Yuille, Philip H. S. Torr, Dacheng Tao"
+      ],
+      "keywords": [
+        "cs.AI",
+        "CVPR"
+      ],
+      "abstract": "arXiv:2607.11560v1 Announce Type: cross \nAbstract: Vision-language agents (VLAs) are increasingly used to interpret complex driving scenes and support safety-critical reasoning. This report presents the CVPR 2026@AdvML Workshop Challenge on adversarial multimodal attacks against autonomous-driving VLAs. Built on DriveLM-style multi-view visual question answering, the challenge represents each scene with six synchronized camera images and a structured collection of driving-related question-answer pairs. Participants generate adversarial images and suffix-only textual perturbations that induce model responses to deviate from reference answers while preserving image fidelity and limiting textual cost. The competition comprises two phases, with Phase II adding a hidden black-box model to asses",
+      "pdf_link": "https://arxiv.org/pdf/2607.11560.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.11560",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "CVPR",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 25.0,
+      "updated_at": "2026-07-14T07:58:43.732438+00:00"
+    },
+    {
+      "forum_id": "2606.08098",
+      "paper_number": -1,
+      "title": "When Does Delegation Beat Majority? A Delegation-Based Aggregator for Multi-Sample LLM Inference",
+      "authors": [
+        "Yasushi Sakai, Allen Song, Kent Larson"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.08098v3 Announce Type: replace \nAbstract: Majority voting is the default unsupervised aggregator for multi-sample LLM inference, but it discards two signals: within-group answer entropy and between-group reasoning geometry. We aggregate by delegation instead (Propagational Proxy Voting, PPV): each group of samples keeps weight on its own answer in proportion to its entropy-based confidence (When) and routes the rest to peers by reasoning-embedding similarity (Whom); the stationary distribution of the resulting delegation matrix picks the consensus answer. This requires neither gold labels nor training. On MMLU-Pro with 128 samples per question, delegation beats majority by +1.5 pp overall and +2.24 pp on non-trivial questions (McNemar p ~ 1.0e-14, n = 8,099), overturning wrong m",
+      "pdf_link": "https://arxiv.org/pdf/2606.08098.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.08098",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-07-14T07:58:43.733514+00:00"
+    },
+    {
+      "forum_id": "2607.01674",
+      "paper_number": -1,
+      "title": "Separating Expert Retention from Autonomous Source Inference in Raw-ECG-Replay-Free Continual ECG Deployment",
+      "authors": [
+        "Yufan Lu, Xinhui Liu, Chenyang Xu, Yuxi Zhou, Hao Wang"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.01674v3 Announce Type: replace \nAbstract: In multi-source ECG deployment, models may need to incorporate new data sources when earlier raw ECGs cannot be retained or replayed. Freezing a pretrained backbone and assigning each source an isolated classifier prevents parameter interference, but deployment still requires selecting an expert when source metadata are unavailable. We study this distinction through IRFE-ECG, an incremental expert bank built on frozen 1024-dimensional ECGFounder features. Each arriving domain adds a balanced-softmax linear expert, while a lightweight router is fitted only on retained training features and domain labels from sources observed so far. A validation-calibrated margin rule fuses the two most likely experts instead of committing to a single rou",
+      "pdf_link": "https://arxiv.org/pdf/2607.01674.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.01674",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-07-14T07:58:43.733674+00:00"
+    },
+    {
+      "forum_id": "2506.20893",
+      "paper_number": -1,
+      "title": "On the Necessity of Output Distribution Reweighting for Effective Class Unlearning",
+      "authors": [
+        "Ali Ebrahimpour-Boroojeny, Yian Wang, Hari Sundaram"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ICML"
+      ],
+      "abstract": "arXiv:2506.20893v5 Announce Type: replace-cross \nAbstract: In this paper, we reveal a significant shortcoming in class unlearning evaluations: overlooking the underlying class geometry can cause information leakage about the forgotten class. We further propose a simple unlearning strategy to mitigate this issue. We introduce Class Membership Inference Attack (CMIA) that uses the probabilities assigned by the model to neighboring classes to detect unlearned samples. We find that existing unlearning methods are vulnerable to CMIA across multiple datasets. We then propose a new fine-tuning objective that mitigates this privacy leakage by approximating, for forget-class inputs, the distribution over the remaining classes that a retrained-from-scratch model would produce. To construct this appr",
+      "pdf_link": "https://arxiv.org/pdf/2506.20893.pdf",
+      "forum_link": "https://arxiv.org/abs/2506.20893",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ICML",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-07-14T07:58:43.734072+00:00"
+    },
+    {
+      "forum_id": "2511.22331",
+      "paper_number": -1,
+      "title": "On the Condition Number Dependency in Bilevel Optimization",
+      "authors": [
+        "Lesi Chen, Jingzhao Zhang"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ICML"
+      ],
+      "abstract": "arXiv:2511.22331v3 Announce Type: replace-cross \nAbstract: Bilevel optimization minimizes an objective function, defined by an upper-level problem whose feasible region is the solution of a lower-level problem. We study the oracle complexity of finding an $\\epsilon$-stationary point with first-order methods when the upper-level problem is nonconvex, and the lower-level problem is strongly convex. Recent works (Ji et al., ICML 2021; Arbel and Mairal, ICLR 2022; Chen et al., JMLR 2025) achieve a $\\tilde{\\mathcal{O}}(\\bar \\kappa_y^4 \\epsilon^{-2})$ upper bound that is near-optimal in $\\epsilon$, which can be reduced to $\\tilde{\\mathcal{O}}(\\bar \\kappa_y^{7/2} \\epsilon^{-2})$ by a naive application of Nesterov acceleration in the inner loop, where $\\bar \\kappa_y$ is the global condition number",
+      "pdf_link": "https://arxiv.org/pdf/2511.22331.pdf",
+      "forum_link": "https://arxiv.org/abs/2511.22331",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ICML",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-14T07:58:43.734418+00:00"
+    },
+    {
+      "forum_id": "2601.15995",
+      "paper_number": -1,
+      "title": "PUMA: Perception-driven Unified Foothold Prior for Mobility Augmented Quadruped Parkour",
+      "authors": [
+        "Liang Wang, Kanzhong Yao, Yang Liu, Weikai Qin, Jun Wu, Zhe Sun, Qiuguo Zhu"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2601.15995v2 Announce Type: replace-cross \nAbstract: Parkour tasks for quadrupeds have emerged as a promising benchmark for agile locomotion. While human athletes can effectively perceive environmental characteristics to select appropriate footholds for obstacle traversal, endowing legged robots with similar perceptual reasoning remains a significant challenge. Existing methods often rely on hierarchical controllers that follow pre-computed footholds, thereby constraining the robot's real-time adaptability and the exploratory potential of reinforcement learning. To overcome these challenges, we present PUMA, an end-to-end learning framework that integrates visual perception and foothold priors into a single-stage training process. This approach leverages terrain features to estimate ",
+      "pdf_link": "https://arxiv.org/pdf/2601.15995.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.15995",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 23.0,
+      "updated_at": "2026-07-14T07:58:43.734629+00:00"
+    },
+    {
+      "forum_id": "2606.24894",
+      "paper_number": -1,
+      "title": "RWGBench: Evaluating Scholarly Positioning in Related Work Generation",
+      "authors": [
+        "Anzhe Xie, Weihang Su, Jiaxin Mao, Yiqun Liu, Min Zhang, Shaoping Ma, Qingyao Ai"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.24894v3 Announce Type: replace-cross \nAbstract: Large language models have shown strong fluency in scientific writing, yet the evaluation of related work generation (RWG) remains limited. Existing RWG evaluations largely inherit summarization-oriented metrics, using lexical or semantic similarity to reference sections as proxies for quality. However, related work writing is fundamentally a citation-level scholarly positioning task: it requires selecting, organizing, and framing prior work to clarify how a target paper relates to, differs from, and contributes beyond existing research.As a result, models may generate coherent and semantically-relevant text while exhibiting academically critical failures, such as inappropriate citation selection or misplaced references, that conve",
+      "pdf_link": "https://arxiv.org/pdf/2606.24894.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.24894",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.5,
+      "updated_at": "2026-07-14T07:58:43.735679+00:00"
+    },
+    {
+      "forum_id": "2607.10196",
+      "paper_number": -1,
+      "title": "Generative Augmentation of Raman Spectra for Glioma Classification",
+      "authors": [
+        "Andrei Iu\\c{s}an, Iulian Vasile, Daria Voiculescu, Ion Petre, Andrei P\\u{a}un, Bogdan Oancea, Mihaela P\\u{a}un"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.10196v1 Announce Type: new \nAbstract: Access to sufficiently large biomedical datasets remains a major obstacle for machine learning in Raman spectroscopy-based diagnostics. In particular, for glioma analysis, datasets are typically small and heterogeneous, affected by acquisition-specific variability. This work investigates the utility of deep generative augmentation in such a small-cohort setting. We analyze glioma biopsy spectra acquired from 58 tumor samples and consider both binary IDH-status classification and 6-class methylation subtype classification problems. To address the limited size and imbalance of the dataset, we develop a conditional variational autoencoder ($\\beta$-CVAE) capable of generating class-conditioned synthetic Raman spectra. The generated data are eval",
+      "pdf_link": "https://arxiv.org/pdf/2607.10196.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.10196",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-14T07:58:44.182886+00:00"
+    },
+    {
+      "forum_id": "2607.11555",
+      "paper_number": -1,
+      "title": "Advancing Optimal Subset Oracle via Learning Relaxation of Neural Set Functions",
+      "authors": [
+        "Yongquan Shi, Zijing Ou, Shiping Wang, Yatao Bian"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.11555v1 Announce Type: new \nAbstract: Learning neural set functions is pivotal to a wide range of important applications, including compound selection in AI-driven drug discovery and product recommendation. Recent work has introduced optimal subset oracles to implicitly learn set functions under practical weakly supervised settings, where model parameters are optimized through mean-field variational inference. However, these frameworks rely on Monte Carlo sampling to estimate gradients of the evidence lower bound when updating the variational distribution. Repeated sampling across iterations incurs substantial computational overhead, while the resulting stochasticity can destabilize the optimization trajectory. In this work, we reinterpret the evidence lower bound as a continuou",
+      "pdf_link": "https://arxiv.org/pdf/2607.11555.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.11555",
+      "submission_date": "2026-07-14T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 13.0,
-      "updated_at": "2026-07-13T09:20:57.687756+00:00"
+      "updated_at": "2026-07-14T07:58:44.184920+00:00"
     },
     {
-      "forum_id": "2607.08984",
+      "forum_id": "2607.11796",
       "paper_number": -1,
-      "title": "AlphaZero in Sparsely Rewarded Games: Limits and Auxiliary Supervision",
+      "title": "An Exact Instrument for State Usage in Selective State-Space Models, and the Input-Driven Migration It Reveals",
       "authors": [
-        "Brent Kong, Tejas Ram, Tony Yue Yu"
+        "Raktim Bhattacharya"
       ],
       "keywords": [
-        "cs.AI",
+        "cs.LG",
         "ACL"
       ],
-      "abstract": "arXiv:2607.08984v1 Announce Type: cross \nAbstract: AlphaZero has demonstrated that a neural-guided Monte Carlo Tree Search can achieve superhuman performance, but strong play does not necessarily imply perfect play. We study this gap in two oracle-evaluable domains with contrasting structure: Connect Four, a solved partisan game with exact game-theoretic values, and Chomp, an impartial game whose optimal play is governed by Grundy-number structure. Under a unified self-play $+$ MCTS pipeline, we compare vanilla AlphaZero, a multi-frame variant (limited to Chomp), and an AlphaZero Auxiliary Loss (AZAL) that adds oracle-derived policy supervision. We find that vanilla AlphaZero achieves strong play across both domains but cannot preserve the exact trajectories required for optimal play: in C",
-      "pdf_link": "https://arxiv.org/pdf/2607.08984.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.08984",
-      "submission_date": "2026-07-13T04:00:00+00:00",
+      "abstract": "arXiv:2607.11796v1 Announce Type: new \nAbstract: Selective state-space models such as Mamba route information through a bank of first-order modes whose input coupling is set by a learned selection mechanism. We give an exact instrument for measuring how a trained model uses these modes. Because the state matrix is diagonal, each channel's output decomposes exactly into per-mode contributions, and a per-(layer, channel, window) Gram tensor yields the exact output error of dropping any subset of modes, offline, at any budget. Validated against the reference implementation to a relative error of $2.3\\times10^{-7}$ on the Mamba-1 family where it is exact, the instrument predicts a layer's deployed pruning error to a median relative deviation of $5\\times10^{-7}$ over $4{,}464$ configurations, i",
+      "pdf_link": "https://arxiv.org/pdf/2607.11796.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.11796",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 21.0,
+      "updated_at": "2026-07-14T07:58:44.185248+00:00"
+    },
+    {
+      "forum_id": "2607.09772",
+      "paper_number": -1,
+      "title": "A Risk-Field Enhanced Closed-Loop Digital Twin Framework for Autonomous Driving Safety Validation",
+      "authors": [
+        "Yongzhi Liu"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.09772v1 Announce Type: cross \nAbstract: Autonomous driving systems require reliable safety validation before real-world deployment. However, large-scale road testing is costly, difffcult to reproduce, and inefffcient for exposing rare safety-critical scenarios. Conventional simulation improves repeatability, but an offfine simulator alone cannot continuously connect physical trafffc states, virtual reconstruction, algorithm evaluation, and scenario evolution. This paper proposes a risk-ffeld enhanced closed-loop digital twin framework for autonomous driving safety validation. The framework integrates physical data acquisition, data synchronization, virtual twin reconstruction, risk-aware scenario generation, autonomous driving algorithm evaluation, and safety analysis. A driving",
+      "pdf_link": "https://arxiv.org/pdf/2607.09772.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.09772",
+      "submission_date": "2026-07-14T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-07-13T09:20:57.687815+00:00"
+      "updated_at": "2026-07-14T07:58:44.185745+00:00"
     },
     {
-      "forum_id": "2607.09415",
+      "forum_id": "2607.09906",
       "paper_number": -1,
-      "title": "Self-Guided Test-Time Training for Long-Context LLMs",
+      "title": "Depth-Efficient Quantum Topological Data Analysis for Regime-Specific Detection of Financial Stress",
       "authors": [
-        "Xinyu Zhu, Zhe Xu, Xiaohan Wei, Yunchen Pu, Fei Tian, Chonglin Sun, Kaushik Rangadurai, Hua Zhi, Frank Shyu, Sandeep Pandey, Luke Simon, Yu Meng, Xi Liu"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.09415v1 Announce Type: cross \nAbstract: Long-context processing has become increasingly important for large language models (LLMs), but simply extending the context window does not guarantee effective utilization of long inputs. As input length grows, accuracy often degrades, indicating that models still struggle to identify and use the evidence most relevant to a question. A promising way to improve long-context utilization is test-time training (TTT), which treats the test context as a training example for instance-specific parameter adaptation. However, applying TTT to the entire long context is prohibitively expensive, while adapting on randomly sampled spans introduces severe noise. Because most spans in a long context are irrelevant to the specific question, training on th",
-      "pdf_link": "https://arxiv.org/pdf/2607.09415.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.09415",
-      "submission_date": "2026-07-13T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-07-13T09:20:57.688573+00:00"
-    },
-    {
-      "forum_id": "2607.09623",
-      "paper_number": -1,
-      "title": "Task-Specific Multimodal Question Answering Agents via Confidence Calibration and Incremental Reasoning for QANTA 2026",
-      "authors": [
-        "Nirjhar Das, Md. Al-Mamun Provath"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ICML"
-      ],
-      "abstract": "arXiv:2607.09623v1 Announce Type: cross \nAbstract: We present our submission to the QANTA 2026 shared challenge at the ICML 2026 Workshop on Efficient Multimodal Question Answering (EMM-QA). Quanta evaluates multimodal quizbowl systems that answer pyramid-style questions from incrementally revealed text and accompanying images while operating under realistic efficiency constraints. The challenge consists of two distinct tasks: Tossup questions, which require deciding when to answer under uncertainty, and Bonus questions, which emphasize accurate answer selection and human adoption. To address these differing objectives, we develop a task-specific two-agent architecture. Our Tossup agent utilizes a GPT-4o-mini-class model (referred to as GPT-4.1-mini in the competition logs) with confidence",
-      "pdf_link": "https://arxiv.org/pdf/2607.09623.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.09623",
-      "submission_date": "2026-07-13T04:00:00+00:00",
-      "conference": "ICML",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 37.5,
-      "updated_at": "2026-07-13T09:20:57.688857+00:00"
-    },
-    {
-      "forum_id": "2607.09039",
-      "paper_number": -1,
-      "title": "Variable-Length Generative Protein Design via Generalized Poisson Flow",
-      "authors": [
-        "Chaoran Cheng, Zhanghan Ni, Yanru Qu, Yuxin Chen, Ruihan Guo, Jiajun Fan, Ge Liu"
+        "Arul Rhik Mazumder, Shreyan Ronit Mazumder"
       ],
       "keywords": [
         "cs.LG",
         "ACL"
       ],
-      "abstract": "arXiv:2607.09039v1 Announce Type: new \nAbstract: The ability to generate variable-length proteins is crucial in protein design, where the optimal length is often unknown and tightly coupled to designability. Current diffusion- and flow-based generative models typically require the protein length to be specified before sampling, limiting their flexibility in exploring the feasible design space. To address this limitation, we introduce Generalized Poisson Flow (GPFlow), a variable-length generative framework that learns the rate function of an inhomogeneous generalized Poisson process by minimizing its negative log-likelihood. We establish population-level guarantees for recovering the joint multimodal distribution and derive an upper bound on the KL divergence between the data and generated",
-      "pdf_link": "https://arxiv.org/pdf/2607.09039.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.09039",
-      "submission_date": "2026-07-13T04:00:00+00:00",
+      "abstract": "arXiv:2607.09906v1 Announce Type: cross \nAbstract: We present, to our knowledge, the first adaptation of Pauli Correlation Encoding (PCE) to quantum topological data analysis, reformulating Betti number estimation as a depth-efficient variational optimization over a compressed qubit register. From a Takens embedding and Vietoris--Rips filtration of S&amp;P~500 returns, we extract combinatorial Laplacians and recast null-space counting as a continuous-PCE Rayleigh-quotient minimization with variational deflation, encoding $n_k$ simplex indices into $O(n_k^{1/\\kappa})$ qubits with shallow, ancilla-free circuits. Because the resulting loss is rational rather than bilinear in the correlators, the barren-plateau bound of~\\cite{Sciorilli25} does not transfer; empirically the gradient variance de",
+      "pdf_link": "https://arxiv.org/pdf/2607.09906.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.09906",
+      "submission_date": "2026-07-14T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 15.0,
-      "updated_at": "2026-07-13T09:20:57.912706+00:00"
+      "score": 4.0,
+      "updated_at": "2026-07-14T07:58:44.185980+00:00"
     },
     {
-      "forum_id": "2607.09097",
+      "forum_id": "2607.10391",
       "paper_number": -1,
-      "title": "Solving Stochastic Fixed-Point Equations with High Probability",
+      "title": "Vertical Fusion: Condensing Internal Representations for Robust ViT Classification",
       "authors": [
-        "Jelena Diakonikolas"
+        "Francesco Di Salvo, Shyam Nandan Rai, Hamed Damirchi, Ignacio Meza De la Jara, Sebastian Doerrich, Marco Lents, Christian Ledig"
       ],
       "keywords": [
         "cs.LG",
         "ACL"
       ],
-      "abstract": "arXiv:2607.09097v1 Announce Type: cross \nAbstract: We study stochastic fixed-point equations $\\mathbf{T}(\\mathbf{x}) = \\mathbf{x}$ over normed spaces $(\\mathcal{E}, \\|\\cdot\\|)$, where the operator $\\mathbf{T}$ is nonexpansive or contractive and is accessed only through unbiased stochastic evaluations with bounded second central moment. Given $\\epsilon > 0, \\delta \\in (0, 1)$, the goal is to output $\\mathbf{x} \\in \\mathcal{E}$ such that $\\|\\mathbf{T}(\\mathbf{x}) - \\mathbf{x}\\| \\leq \\epsilon$ with probability at least $1-\\delta$. We introduce VR-GHAL, a variance-reduced gradual Halpern method for quadratically smoothable Banach spaces. The key algorithmic ingredient is a recursive stochastic estimator based on clipped differences of oracle evaluations: instead of clipping $\\tau(\\mathbf{x}; \\",
-      "pdf_link": "https://arxiv.org/pdf/2607.09097.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.09097",
-      "submission_date": "2026-07-13T04:00:00+00:00",
+      "abstract": "arXiv:2607.10391v1 Announce Type: cross \nAbstract: Despite exposing rich intermediate representations, Vision Transformers (ViTs) are almost exclusively utilized as black-box feature extractors, where only the last layer is considered for downstream tasks. We challenge this convention by introducing the notion of recoverability: the capacity of intermediate representations to correct last-layer failures. By evaluating independent classification probes at every model depth across 16 datasets, we observe that intermediate probes correctly classify 18% to 76% of samples that the last-layer probe misclassifies. We show that these gains are not primarily driven by predictive diversity, but by a redundancy-correctness correspondence, where the internal hierarchy acts as a series of stable, redun",
+      "pdf_link": "https://arxiv.org/pdf/2607.10391.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.10391",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-07-14T07:58:44.186565+00:00"
+    },
+    {
+      "forum_id": "2607.10565",
+      "paper_number": -1,
+      "title": "BucketKD: A Safety-Aware Bucket-Based Knowledge Distillation Framework for End-to-End Motion Planning",
+      "authors": [
+        "Md Nahidul Islam, Mohd Hasan Ali, Dipankar Dasgupta, Myounggyu Won"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.10565v1 Announce Type: cross \nAbstract: End-to-end motion planning has emerged as a promising paradigm in autonomous driving, directly mapping raw sensor data to control commands via deep neural networks. Despite its advantages, its large model size hinders deployment in resource-constrained platforms. In this paper, we present BucketKD, a bucket-based knowledge distillation framework that yields compact and safety-aware end-to-end planners. Compared to the state-of-the-art approach, which relies on simplified planning state representations, BucketKD discretizes critical environmental variables into adaptive buckets that capture richer scene semantics while preserving efficiency. In addition, we design a safety-aware waypoint attention mechanism that evaluates each waypoint's ri",
+      "pdf_link": "https://arxiv.org/pdf/2607.10565.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.10565",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.5,
+      "updated_at": "2026-07-14T07:58:44.186922+00:00"
+    },
+    {
+      "forum_id": "2607.11684",
+      "paper_number": -1,
+      "title": "Diversified Multinomial Logit Contextual Bandits",
+      "authors": [
+        "Heesang Ann, Taehyun Hwang, Min-hwan Oh"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.11684v1 Announce Type: cross \nAbstract: Existing contextual multinomial logit (MNL) bandits model relevance-driven choice but ignore the potential benefits of within-assortment diversity, while submodular/combinatorial bandits encode diversity in rewards but lack structured choice probabilities. We bridge this gap with the $\\textit{diversified multinomial logit}$ (DMNL) contextual bandit, which augments MNL choice probabilities with a generally submodular diversity function, thereby formalizing the relevance--diversity trade-off within a single model. Incorporating diversity renders exact MNL assortment optimization intractable. We propose a $\\textit{white-box}$ UCB-based algorithm, $\\texttt{OFU-DMNL}$, that constructs assortments item-wise by maximizing optimistic marginal gain",
+      "pdf_link": "https://arxiv.org/pdf/2607.11684.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.11684",
+      "submission_date": "2026-07-14T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-07-13T09:20:57.913699+00:00"
+      "updated_at": "2026-07-14T07:58:44.188246+00:00"
     },
     {
-      "forum_id": "2607.03198",
+      "forum_id": "2607.11843",
       "paper_number": -1,
-      "title": "Reduced-Order Models: The Mother of World Models",
+      "title": "Input-Aware Dynamic Backdoor Attack Against Quantum Neural Networks",
       "authors": [
-        "Rajat Ghosh"
+        "Junrui Zhang, Zemin Chen, Lusi Li, Mohammad Ghasemigol, Daniel Takabi, Rui Ning"
       ],
       "keywords": [
         "cs.LG",
         "ACL"
       ],
-      "abstract": "arXiv:2607.03198v2 Announce Type: replace \nAbstract: World models -- compressed latent representations of an environment that support action-conditioned prediction and planning -- are typically presented as a product of modern self-supervised learning. This paper argues that the functional anatomy of a world model was independently developed, deployed, and formally analyzed decades earlier in the model-order-reduction (MOR) and control literature, under different names and for a different purpose: the real-time operation of physical systems. We trace the anatomy across three communities. Low-dimensional models of turbulence built on proper orthogonal decomposition (POD) supplied latent dynamics learned from data of a chaotic environment; eigenface methods in early computer vision supplied ",
-      "pdf_link": "https://arxiv.org/pdf/2607.03198.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.03198",
-      "submission_date": "2026-07-13T04:00:00+00:00",
+      "abstract": "arXiv:2607.11843v1 Announce Type: cross \nAbstract: Quantum Neural Networks (QNNs) are a promising framework for quantum machine learning on near-term quantum devices, but their security risks remain insufficiently understood. Studies have shown that QNNs are vulnerable to backdoor attacks, yet existing quantum backdoors mostly rely on a fixed trigger shared by all poisoned inputs. This fixed-trigger design is a major weakness because many defenses detect or weaken the repeated patterns such triggers leave in data representations. Although input-aware dynamic backdoors have been studied in classical neural networks, transferring them to QNNs is difficult because quantum learning introduces new obstacles. In particular, measurement compresses the post-ansatz quantum state into a limited clas",
+      "pdf_link": "https://arxiv.org/pdf/2607.11843.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.11843",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-07-14T07:58:44.188391+00:00"
+    },
+    {
+      "forum_id": "2603.05774",
+      "paper_number": -1,
+      "title": "First-Order Softmax Weighted Switching Gradient Method for Distributed Stochastic Minimax Optimization with Stochastic Constraints",
+      "authors": [
+        "Zhankun Luo, Antesh Upadhyay, Sang Bin Moon, Abolfazl Hashemi"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2603.05774v2 Announce Type: replace \nAbstract: This paper addresses the distributed stochastic minimax optimization problem subject to stochastic constraints. We propose a novel first-order Softmax-Weighted Switching Gradient method tailored for federated learning. Under full client participation, our algorithm achieves the standard $\\tilde{\\mathcal{O}}(\\epsilon^{-4})$ oracle complexity to satisfy a unified bound $\\epsilon$ for both the optimality gap and feasibility tolerance. We extend our theoretical analysis to the practical partial participation regime by quantifying client sampling noise through a stochastic superiority assumption. Furthermore, by relaxing standard boundedness assumptions on the objective functions, we establish a strictly tighter lower bound for the softmax hy",
+      "pdf_link": "https://arxiv.org/pdf/2603.05774.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.05774",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-14T07:58:44.189486+00:00"
+    },
+    {
+      "forum_id": "2604.03922",
+      "paper_number": -1,
+      "title": "ACES: Who Tests the Tests? Leave-One-Out AUC Consistency for Code Generation",
+      "authors": [
+        "Hui Sun, Yun-Ji Zhang, Zheng Xie, Ren-Biao Liu, Yali Du, Xin-Ye Li, Ming Li"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2604.03922v2 Announce Type: replace \nAbstract: Selecting LLM-generated code candidates using LLM-generated tests is challenging because the tests themselves may be incorrect. Existing methods either treat all tests equally or rely on ad-hoc heuristics to filter unreliable tests. Yet determining test correctness requires knowing which codes are correct, creating a \\emph{circular dependency}. Our key insight is that we need not determine test correctness at all: \\emph{test votes should rank, not merely count}. What matters is not how many codes pass a test, but whether the test can \\emph{distinguish} correct from incorrect code. We break the circular dependency via leave-one-out evaluation: hold out one test, rank codes by their aggregate scores on all remaining tests, and measure whet",
+      "pdf_link": "https://arxiv.org/pdf/2604.03922.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.03922",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-14T07:58:44.189653+00:00"
+    },
+    {
+      "forum_id": "2510.21431",
+      "paper_number": -1,
+      "title": "Oracle-Efficient Combinatorial Semi-Bandits",
+      "authors": [
+        "Jung-hun Kim, Milan Vojnovi\\'c, Min-hwan Oh"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2510.21431v2 Announce Type: replace-cross \nAbstract: We study the combinatorial semi-bandit problem where an agent selects a subset of base arms and receives individual feedback. While this generalizes the classical multi-armed bandit and has broad applicability, its scalability is limited by the high cost of combinatorial optimization, requiring oracle queries at every round. To tackle this, we propose oracle-efficient frameworks that significantly reduce oracle calls while maintaining tight regret guarantees. For the worst-case linear reward setting, our algorithms achieve $\\tilde{O}(\\sqrt{T})$ regret using only $O(\\log\\log T)$ oracle queries. We also propose covariance-adaptive algorithms that leverage noise structure for improved regret, and extend our approach to general (non-li",
+      "pdf_link": "https://arxiv.org/pdf/2510.21431.pdf",
+      "forum_link": "https://arxiv.org/abs/2510.21431",
+      "submission_date": "2026-07-14T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 13.5,
-      "updated_at": "2026-07-13T09:20:57.914754+00:00"
+      "updated_at": "2026-07-14T07:58:44.190956+00:00"
     },
     {
-      "forum_id": "2607.08665",
+      "forum_id": "2512.19733",
       "paper_number": -1,
-      "title": "Resample or Reroute? Budget-Aware Test-Time Model Selection for Large Language Models",
+      "title": "NMIRacle: Multi-modal Generative Molecular Elucidation from IR and NMR Spectra",
       "authors": [
-        "Teng-Ruei Chen"
+        "Federico Ottomano, Yingzhen Li, Alex M. Ganose"
       ],
       "keywords": [
         "cs.LG",
         "ACL"
       ],
-      "abstract": "arXiv:2607.08665v2 Announce Type: replace \nAbstract: Routing among large language models (LLMs) trades response quality against serving cost, motivated by the reported gap between deployed routers and a per-instance oracle. Recent analysis shows that test-time resampling can recover per-instance selection headroom that no single-commit router captures; however, that guarantee holds only under an idealized oracle equipped with correctness labels and an unconstrained budget, neither of which a deployed system has. To the best of our knowledge, no previous work treats resampling the committed model and rerouting to an alternative model as competing uses of a single per-query cost budget. Therefore, this work formulates budget-aware test-time model selection: given a per-query budget and an im",
-      "pdf_link": "https://arxiv.org/pdf/2607.08665.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.08665",
-      "submission_date": "2026-07-13T04:00:00+00:00",
+      "abstract": "arXiv:2512.19733v3 Announce Type: replace-cross \nAbstract: Molecular structure elucidation from spectroscopic data is a long-standing challenge in Chemistry, traditionally requiring expert interpretation. We introduce NMIRacle, a two-stage generative framework that builds upon recent paradigms in AI-driven spectroscopy with minimal assumptions. In the first stage, NMIRacle learns to reconstruct molecular structures from count-aware fragment representations, capturing both fragment identities and their occurrences. In the second stage, a spectral encoder maps input spectra (IR, 1H-NMR, 13C-NMR) into a latent embedding used to condition the pre-trained generator, which is fine-tuned for direct spectra-to-molecule generation. This formulation bridges fragment-level chemical modeling with spec",
+      "pdf_link": "https://arxiv.org/pdf/2512.19733.pdf",
+      "forum_link": "https://arxiv.org/abs/2512.19733",
+      "submission_date": "2026-07-14T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-07-13T09:20:57.914850+00:00"
-    },
-    {
-      "forum_id": "2405.00914",
-      "paper_number": -1,
-      "title": "Accelerated Fully First-Order Methods for Bilevel and Minimax Optimization",
-      "authors": [
-        "Chris Junchi Li"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2405.00914v4 Announce Type: replace-cross \nAbstract: We present in this paper novel accelerated fully first-order methods in \\emph{Bilevel Optimization} (BLO). Firstly, for BLO under the assumption that the lower-level functions admit the typical strong convexity assumption, the \\emph{(Perturbed) Restarted Accelerated Fully First-order methods for Bilevel Approximation} (\\texttt{PRAF${}^2$BA}) algorithm leveraging \\emph{fully} first-order oracles is proposed, whereas the algorithm for finding approximate first-order and second-order stationary points with state-of-the-art oracle query complexities in solving complex optimization tasks. Secondly, applying as a special case of BLO the \\emph{nonconvex-strongly-convex} (NCSC) minimax optimization, \\texttt{PRAF${}^2$BA} rediscovers \\emph{",
-      "pdf_link": "https://arxiv.org/pdf/2405.00914.pdf",
-      "forum_link": "https://arxiv.org/abs/2405.00914",
-      "submission_date": "2026-07-13T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-07-13T09:20:57.914922+00:00"
+      "score": 25.0,
+      "updated_at": "2026-07-14T07:58:44.191141+00:00"
     }
   ]
 }

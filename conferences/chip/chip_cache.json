@@ -1,31 +1,146 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-07-13T09:20:57.484204+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-07-14T07:58:43.290919+00:00",
+  "paper_count": 6,
   "papers": [
     {
-      "forum_id": "2607.08786",
+      "forum_id": "2607.09742",
       "paper_number": -1,
-      "title": "Accelerating GPU Inference of Large Language Models with Moderately Unstructured Sparse Weight Matrices",
+      "title": "Chiplet3D: Pin- and Thermal-Aware 3D Chiplet Floorplanning via Convolution-Embedded MILP",
       "authors": [
-        "Tao Lu, Haoyu Wang, Zonghui Wang, Keshen Xiang, Jiaheng Zhang, Wenzhi Chen"
+        "Shuo Ren, Libo Shen, Yaohui Han, Rongliang Fu, Junying Huang, Bei Yu, Tsung-Yi Ho"
       ],
       "keywords": [
         "cs.AR",
-        "DAC"
+        "ICCAD"
       ],
-      "abstract": "arXiv:2607.08786v1 Announce Type: cross \nAbstract: With the growing deployment of large language models (LLMs), LLM inference cost has become a key challenge. Pruning techniques that introduce sparsity into weight matrices can accelerate inference. However, maintaining model quality typically limits pruning to moderate unstructured sparsity (around 50\\%). At these sparsity levels, none of the existing GPU kernels for sparse matrix multiplication (SpMM) can outperform their dense counterparts. This paper proposes an efficient GPU inference method for LLMs with moderate sparsity. We propose a three-layer matrix storage format comprising: (i) a Sparse-TC layer enabling sparse tensor cores to accelerate SpMM; (ii) a Slot-Filling layer using parallel differential distance for matrix compression",
-      "pdf_link": "https://arxiv.org/pdf/2607.08786.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.08786",
-      "submission_date": "2026-07-13T04:00:00+00:00",
-      "conference": "DAC",
+      "abstract": "arXiv:2607.09742v1 Announce Type: new \nAbstract: As traditional Moore's Law scaling slows down, 3D-ICs stack multiple active dies vertically to sustain performance scaling. However, this vertical stacking traps heat inside, making temperature a design concern. Although we can fix thermal issues at different design steps, floorplanning is the earliest and most cost-effective stage to solve it. Previous methods handle this by assuming wires connect to block centers and estimating temperature through simplistic power-based calculations, but these assumptions mislead their wirelength optimization and leave hotspots unresolved. To address these limitations, we present Chiplet3D, a pin- and thermal-aware floorplanner for two-die 3D-ICs. To achieve pin-awareness, it supports all four rotations an",
+      "pdf_link": "https://arxiv.org/pdf/2607.09742.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.09742",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "ICCAD",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-13T09:20:57.483763+00:00"
+      "score": 67.5,
+      "updated_at": "2026-07-14T07:58:43.289709+00:00"
+    },
+    {
+      "forum_id": "2607.10021",
+      "paper_number": -1,
+      "title": "A Symbolic Neural CPU for Quantization-Simulated Writeback and Interpretable Program Execution",
+      "authors": [
+        "Jose Luis Lima de Jesus Silva"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.10021v1 Announce Type: cross \nAbstract: Neural networks can learn algorithmic input-output mappings, but trusting a learned executor requires more than a correct final answer because the state transitions that produce it are usually hidden. To make those transitions visible, we introduce a trace-supervised symbolic neural CPU, a factorized learned execution architecture that combines recurrent control, an explicit operation router over a fixed differentiable arithmetic-logic unit bank, destination-masked register writeback, complete trajectory supervision and matched fixed-point replay. The model exposes the selected operation, source and destination registers, register trajectory, memory signals and writeback semantics at every step. On the principal 16-wide benchmark, the non-",
+      "pdf_link": "https://arxiv.org/pdf/2607.10021.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.10021",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-07-14T07:58:43.289878+00:00"
+    },
+    {
+      "forum_id": "2607.10499",
+      "paper_number": -1,
+      "title": "K-ESBMC: An Executable Formal Semantics of IEC 61131-3 Ladder Diagram for Validating Verifier Translations",
+      "authors": [
+        "Pierre Dantas, Lucas Cordeiro, Waldir Junior"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.10499v1 Announce Type: cross \nAbstract: Automated verifiers for IEC 61131-3 ladder diagrams enhance safety by translating diagrams into model-checker inputs. Still, their unverified front-end translations risk silently returning incorrect results (missing violations or raising false alarms) when they diverge from the standard. We address this gap with K-ESBMC, an executable formal semantics of IEC 61131-3 ladder diagrams built in the K framework. K-ESBMC models contacts, coils, timers, counters, edge blocks, and the retentive scan cycle, generating both an interpreter and a deductive verifier from a single definition. Validated scan-for-scan against OpenPLC/Matiec, K-ESBMC serves as an independent reference oracle to test the ESBMC Programmable Logic Controller (PLC) ladder diag",
+      "pdf_link": "https://arxiv.org/pdf/2607.10499.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.10499",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-07-14T07:58:43.289923+00:00"
+    },
+    {
+      "forum_id": "2607.11490",
+      "paper_number": -1,
+      "title": "AtomFlow: An End-to-End FPGA-Based Control Architecture for Neutral Atom Quantum Computers",
+      "authors": [
+        "Xiaorang Guo, Jonas Winklmann, Vengkeat Chea, Martin Schulz"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.11490v1 Announce Type: cross \nAbstract: Neutral Atom Quantum Computing (NAQC) is an emerging modality for scalable quantum computation, valued for its long coherence times and the naturally identical atomic qubits. However, one of the main drawbacks is its slow execution rate, dominated by lengthy classical processing tasks, such as fluorescence imaging, cooling, and atom rearrangement. We address this bottleneck with AtomFlow, a field-programmable gate array (FPGA)-based control architecture that consolidates fluorescence-image analysis and a newly developed atom-rearrangement algorithm onto a single Zynq UltraScale+ device. By co-locating the two stages on the same board and emitting rearrangement moves in a streaming fashion as soon as they are computed, AtomFlow eliminates t",
+      "pdf_link": "https://arxiv.org/pdf/2607.11490.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.11490",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-14T07:58:43.289953+00:00"
+    },
+    {
+      "forum_id": "2604.13523",
+      "paper_number": -1,
+      "title": "TensorLift: Automatic Extraction of Tensor-Level ISA Semantics from Accelerator RTL via MLIR Semantic Lifting",
+      "authors": [
+        "Ruijie Gao, Haoran Jin, Jirong Yang, Nathaniel Bleier"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2604.13523v2 Announce Type: replace \nAbstract: Numerous tensor accelerator designs have been proposed, yet most lack well-documented ISAs and compiler backends, limiting evaluation to a handful of operators. Recent work has shown that given a tensor-level ISA specification, complete software stacks including compiler backends can be automatically generated--but writing such specifications remains a manual, expert-driven process.\n  We present ATLAAS, the first end-to-end MLIR-based pipeline that lifts RTL-extracted accelerator semantics to tensor ISA specifications. Starting from bit-level LLVM IR produced by prior architecture-level model extraction, ATLAAS applies an 8-pass semantic lifting pipeline that progressively recovers high-level tensor structure--MAC idioms, saturation sema",
+      "pdf_link": "https://arxiv.org/pdf/2604.13523.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.13523",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-07-14T07:58:43.289998+00:00"
+    },
+    {
+      "forum_id": "2605.24017",
+      "paper_number": -1,
+      "title": "CMAX-CAMEL: A Coarse-to-Fine Adaptive, Memory-Efficient, and Low-Power Edge Processor for Contrast Maximization",
+      "authors": [
+        "Kyeongpil Min, Jongin Choi, Kyeongwon Lee, Woojoo Lee"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2605.24017v2 Announce Type: replace \nAbstract: Contrast maximization (CMAX) is a direct geometric framework for event-based motion estimation, but its iterative warp-and-accumulate pipeline incurs input-dependent computation and frequent memory accesses, challenging real-time, low-power edge deployment. We present CMAX-CAMEL, a coarse-to-fine adaptive, memory-efficient, low-power edge processor for CMAX. CMAX-CAMEL combines a runtime-adaptive execution strategy with a memory-centric processor architecture. It adjusts coarse-to-fine execution according to the observed event distribution, prioritizing stages likely to improve estimation accuracy while suppressing low-value iterations and unnecessary stage transitions. Architecturally, a banked parallel memory organization sustains real",
+      "pdf_link": "https://arxiv.org/pdf/2605.24017.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.24017",
+      "submission_date": "2026-07-14T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-07-14T07:58:43.290020+00:00"
     }
   ]
 }
