@@ -1,77 +1,54 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-07-14T07:58:43.188336+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-07-15T08:04:01.187820+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2607.10389",
+      "forum_id": "2607.12074",
       "paper_number": -1,
-      "title": "Stateful Worlds, Stateless Elasticity: Exact-State Serving for Interactive World Models",
+      "title": "HARP-ME: Closure-Driven Exact Induced Motif Enumeration on GPUs",
       "authors": [
-        "Jin Li (Harvard University), Jiawei Chen"
+        "Ashwina Kumar, Rupesh Nasre"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2607.10389v1 Announce Type: new \nAbstract: A persistent interactive world model keeps its running state resident on the GPU that serves it: a multi-gigabyte attention cache, almost all of it rewritten at every generation step. That state cannot be recomputed in interactive time or approximated without changing the world, so a live session pins its device. The pin is a scheduling problem. WorldMove moves a live session under one guarantee: the destination is bit-identical to the source, or nothing is installed. It relocates the cache in 18.8 ms same-node, 101x faster than save/load. It holds a checksum-verified 92.1-94.8 Gb/s on a 100 Gb fabric. At that rate the cache fits inside one interactive block. Migrating an actively generating session, it converges at a block boundary and the ",
-      "pdf_link": "https://arxiv.org/pdf/2607.10389.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.10389",
-      "submission_date": "2026-07-14T04:00:00+00:00",
+      "abstract": "arXiv:2607.12074v1 Announce Type: new \nAbstract: Exact induced motif enumeration is a fundamental operation in graph mining, but it remains challenging on GPUs because candidate expansion is irregular, repeated set intersections dominate execution, and induced counting must consider both the presence and absence of edges. We present HARP-ME, which stands for Hierarchical Anchor-Reuse Partitioned Motif Enumeration. It is a GPU framework for the exact enumeration of connected induced four-node motifs. HARP-ME introduces closure-aware compilation, which selects a set of anchors for explicit enumeration by considering traversal cost, algebraic derivation benefits, expected state reuse, and the additional halo overhead caused by graph partitioning. HARP-ME also introduces induced-signature reus",
+      "pdf_link": "https://arxiv.org/pdf/2607.12074.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.12074",
+      "submission_date": "2026-07-15T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 34.5,
-      "updated_at": "2026-07-14T07:58:42.726826+00:00"
+      "score": 23.5,
+      "updated_at": "2026-07-15T08:04:00.049412+00:00"
     },
     {
-      "forum_id": "2607.11368",
+      "forum_id": "2607.12696",
       "paper_number": -1,
-      "title": "Decomposing Runtime, Kernel, and Quantization Speedups via a Matched FP16 Intermediate: A Hardware-Conditioned Case Study on Four NVIDIA RTX A5000 GPUs",
+      "title": "Less Experts, Faster Decoding: Cost-Aware Speculative Decoding for Mixture-of-Experts",
       "authors": [
-        "Weijia Han, Lisha Qu"
+        "Jincheng Xie, Runheng Liu, Heyan Huang, Yawen Ling, Hanbin Dai, Yu Zheng, Wen Hu"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2607.11368v1 Announce Type: new \nAbstract: Reported serving speedups from quantized kernels typically bundle the weight format, the kernel, and the inference runtime into one number. We present an attribution study on four NVIDIA RTX A5000 GPUs, 24 GiB each, on a single host with NVLink-bridged pairs. A matched intermediate stack that keeps the faster runtime without the quantized kernel splits the full speedup into a runtime part and a kernel and quantization part. Under matched greedy decoding the full stack reaches $2.58\\times$ end to end, with the runtime change accounting for about two thirds of that gain on a logarithmic scale; across three similar model families the kernel and quantization part moves by at most 1.5%. Sharding one instance across all four cards falls well below",
-      "pdf_link": "https://arxiv.org/pdf/2607.11368.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.11368",
-      "submission_date": "2026-07-14T04:00:00+00:00",
+      "abstract": "arXiv:2607.12696v1 Announce Type: cross \nAbstract: Sparse Mixture-of-Experts (MoE) models have become an important approach for scaling Large Language Models (LLMs), but their inference efficiency depends strongly on expert activation patterns. Speculative decoding (SD) accelerates autoregressive generation by verifying multiple draft tokens in parallel, yet existing draft selection strategies primarily optimize acceptance likelihood. In large-scale MoE models, however, selecting draft tokens also determines the union of experts activated during verification. We observe that confidence-driven SD can introduce \\textit{expert scattering}: high-probability draft tokens may route to disjoint experts, increasing expert-weight memory traffic and reducing the speedup from speculation. Motivated b",
+      "pdf_link": "https://arxiv.org/pdf/2607.12696.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.12696",
+      "submission_date": "2026-07-15T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 69.0,
-      "updated_at": "2026-07-14T07:58:42.727135+00:00"
-    },
-    {
-      "forum_id": "2606.06386",
-      "paper_number": -1,
-      "title": "On GPU Implementation for Multi-Precision Integer Division",
-      "authors": [
-        "Martin B. Marchioro, Aske N. Raahauge, Marc I. L{\\o}venskjold, Cosmin E. Oancea, Stephen M. Watt"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2606.06386v2 Announce Type: replace \nAbstract: This paper presents the issues arising in implementing a fast integer division algorithm on general purpose GPUs. The algorithm uses a Newton iteration based on the shifted inverse operation, keeping all arithmetic in the integer domain and relying on data-parallel operators. The principal contribution is an efficient GPU/CUDA implementation for integer precisions from $2^{15}$ to $2^{18}$ -- sizes not supported by \\cgbn{} division. We propose algorithmic refinements, define a cost model in terms of multiplications, build on prefix sums and previous work on multi-precision multiplication, and present an evaluation showing near-optimal performance relative to the model for the target precision.",
-      "pdf_link": "https://arxiv.org/pdf/2606.06386.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.06386",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-07-14T07:58:42.727416+00:00"
+      "score": 86.0,
+      "updated_at": "2026-07-15T08:04:00.049963+00:00"
     }
   ]
 }

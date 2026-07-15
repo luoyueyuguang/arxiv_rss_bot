@@ -1,675 +1,376 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-07-14T07:58:44.566712+00:00",
-  "paper_count": 29,
+  "last_updated": "2026-07-15T08:04:02.440948+00:00",
+  "paper_count": 16,
   "papers": [
     {
-      "forum_id": "2607.11594",
+      "forum_id": "2607.11951",
       "paper_number": -1,
-      "title": "MAGIC: Transition-Aware Generation of Navigable Multi-Scene Game Worlds with Large Language Models",
+      "title": "GRID: Grammar-Railed Decoding for Enterprise SQL Generation",
       "authors": [
-        "Tsz Hei Fan, Choi Wing Fung, Yuxuan Wan, Shuqing Li, Michael R. Lyu"
+        "Mohsen Arjmandi"
       ],
       "keywords": [
         "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2607.11594v1 Announce Type: new \nAbstract: Multi-scene navigation (clearing an objective in one bounded space and then crossing a portal into the next) is a defining feature of contemporary 3D games, but authoring it is laborious: every portal must have consistent endpoints on both sides, each interior must remain navigable once it is furnished, and the resulting connectivity must be kept consistent across many files. Recent large language model (LLM) and multimodal LLM (MLLM) scene generators have made single-interior synthesis dramatically cheaper, yet they produce one scene at a time and cannot, by naive repetition, yield a connected multi-scene world. We identify three obstacles that single-scene methods leave unsolved: cross-scene consistency, in-scene navigability, and the eval",
-      "pdf_link": "https://arxiv.org/pdf/2607.11594.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.11594",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 56.0,
-      "updated_at": "2026-07-14T07:58:43.728127+00:00"
-    },
-    {
-      "forum_id": "2607.11598",
-      "paper_number": -1,
-      "title": "Interaction Scaling: Grounding the Third Axis of Test-Time Compute",
-      "authors": [
-        "Bojie Li, Noah Shi"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.11598v1 Announce Type: new \nAbstract: There are two standard ways to spend more compute at test time: let a model reason longer, or sample more attempts and keep one. Both share a hidden limit: they are internal. Every extra token comes from the same frozen weights and the same prompt, so neither can tell the model anything it does not already know. We study a third way, interaction: the model proposes an artifact, an external instrument observes how it actually behaves, and the model revises. Each cycle imports a real observation, so interaction breaks through the ceiling the other two hit.\n  We argue that a single variable governs this third axis, grounding, and that it must hold on both sides of the loop. The feedback that drives revision must come from an instrument that act",
-      "pdf_link": "https://arxiv.org/pdf/2607.11598.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.11598",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-07-14T07:58:43.728154+00:00"
-    },
-    {
-      "forum_id": "2607.09795",
-      "paper_number": -1,
-      "title": "Large Multimodal Model-Based Environment-Aware Mobility Management",
-      "authors": [
-        "Seokhyun Jeong, Sangmok Shin, Seungnyun Kim, Jiao Wu, Byonghyo Shim"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.09795v1 Announce Type: cross \nAbstract: Recently, large language models (LLMs) have been successfully adopted in various fields, including wireless communications, robotics, and autonomous vehicles, owing to their outstanding adaptability and reasoning abilities. Despite their huge potential, the application of LLMs for mobility management is relatively scarce since it requires not only analyzing wireless measurements but also predicting dynamic user trajectories and making real-time handover decisions across densely deployed small base stations (SBSs). In this paper, we propose an environment-aware mobility management scheme based on large multimodal models (LMMs), which extend capabilities of LLMs to process multimodal sensing data. By leveraging LMMs, the proposed scheme extr",
-      "pdf_link": "https://arxiv.org/pdf/2607.09795.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.09795",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 55.5,
-      "updated_at": "2026-07-14T07:58:43.728830+00:00"
-    },
-    {
-      "forum_id": "2607.09825",
-      "paper_number": -1,
-      "title": "More Structure, Not More Capacity: Object-Centric Representations for Visuomotor Imitation Learning",
-      "authors": [
-        "Yi Li (TU Darmstadt), Alexandre Chapin (LIRIS), Liming Chen (LIRIS), Jan Peters (TU Darmstadt), Alap Kshirsagar (IIT Delhi, ADU)"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.09825v1 Announce Type: cross \nAbstract: Robotic manipulation policies rely on pre-trained vision models that give either a global scene embedding or a dense patch grid. Both mix task-relevant and task-irrelevant features. Object-centric slot representations are a structured alternative: they group features into a few per-object slots. We test what this structure buys on ManiSkill3 PickCube-v1, with a frozen encoder and a held-out-seed evaluation. Holding the policy, goal token, rendering, and calibration fixed and changing only the encoder, a frozen object-centric SPOT representation (DINO ViT-B/16 + Slot Attention) reaches 55.0$\\pm$2.9% success, 22.4% above a dense DINO global-feature baseline (32.6 $\\pm$ 1.5%), with the same trainable policy and no encoder fine-tuning. More to",
-      "pdf_link": "https://arxiv.org/pdf/2607.09825.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.09825",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-07-14T07:58:43.728995+00:00"
-    },
-    {
-      "forum_id": "2607.09891",
-      "paper_number": -1,
-      "title": "What You Train Is What You Get: Gender Bias, Training Composition, and Post-Hoc Mitigation in Audio Deepfake Detection",
-      "authors": [
-        "Aishwarya R. Fursule, Vamshi Nallaguntla, Shruti Kshirsagar, Anderson R. Avila"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.09891v1 Announce Type: cross \nAbstract: Audio deepfake detection models determine whether speech is genuine or artificially generated, but high overall accuracy can mask substantial performance disparities across demographic groups. In this work, we investigate gender bias in audio deepfake detection using the ASVspoof5 dataset. We use ASVspoof5 under a controlled custom split designed to isolate gender-composition effects. We train attack-specific models on nine training sets with different gender compositions, ranging from female-only to male-only. We use a ResNet18 classifier with LogSpectrogram and WavLM-Base+ features, and we evaluated six post-hoc threshold calibration methods. Experimental results show that training data composition strongly predicts bias direction, with ",
-      "pdf_link": "https://arxiv.org/pdf/2607.09891.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.09891",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-07-14T07:58:43.729140+00:00"
-    },
-    {
-      "forum_id": "2607.09993",
-      "paper_number": -1,
-      "title": "Beyond Bayesian Nash: Learning Minimax-Regret Equilibria for Adversarial Team Games under Asymmetric Information",
-      "authors": [
-        "Naman Aggarwal, Jonathan P. How"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.09993v1 Announce Type: cross \nAbstract: Adversarial team games (ATGs) with asymmetric information, such as adversarial path-finding, goal search, and reachability games on graphs, require strategies that are robust to hidden opponent types, such as a hidden goal flag, and to deception. Under asymmetric information, deception is seen as strategic shifts in the type distribution such that the omniscient opponent can collude with Nature and condition its play on the observed type. Existing risk-neutral solution concepts, such as Bayesian Nash equilibrium (BNE), are sensitive to distribution shifts, while distributionally robust approaches provide guarantees only within a prescribed ambiguity set. To address these limitations, we introduce Probabilistically Robust Minimax-Regret Equ",
-      "pdf_link": "https://arxiv.org/pdf/2607.09993.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.09993",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-07-14T07:58:43.729385+00:00"
-    },
-    {
-      "forum_id": "2607.10139",
-      "paper_number": -1,
-      "title": "LLMs as a Jury: Cross-Model Consensus Can Outperform Process Reward Models for LLM Reasoning",
-      "authors": [
-        "Ning Liu"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.10139v1 Announce Type: cross \nAbstract: Selecting the correct answer from a pool of candidate reasoning chains is the engine of test-time scaling, yet the standard selectors each carry a cost: self-consistency inherits the errors of the single model it resamples, and trained reward models need labeled data and transfer poorly off-distribution. We study a third signal, free at inference time: cross-model consensus, the degree to which independently trained models, each solving the problem once, agree on a final answer. We treat the panel as an LLM-jury, in which the structure of agreement, not any model's score of another, is the verification signal. Across seven benchmarks it selects correct answers better than self-consistency and far better than a model scoring its own candida",
-      "pdf_link": "https://arxiv.org/pdf/2607.10139.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.10139",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 5.0,
-      "updated_at": "2026-07-14T07:58:43.729637+00:00"
-    },
-    {
-      "forum_id": "2607.11042",
-      "paper_number": -1,
-      "title": "BackendForge: Benchmarking Agentic End-to-End Code Generation with Backend Services",
-      "authors": [
-        "Yuzhe Guo, Mengzhou Wu, Yuan Cao, Jialei Wei, Dezhi Ran, Wei Yang, Tao Xie"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.11042v1 Announce Type: cross \nAbstract: Large language models (LLMs) are increasingly used in agentic coding settings, where they can inspect files, execute commands, run tests, observe failures, and iteratively revise code. This shift raises a central evaluation question: can an agentic LLM generate an end-to-end software artifact that is both deployable and behaviorally correct under execution? Backend services provide a controlled but realistic substrate for this evaluation. Their APIs expose application-level executable semantics, and deployed behavior can be checked deterministically against an OpenAPI contract through black-box HTTP interactions. We introduce BackendForge, a benchmark of 56 contract-defined backend generation tasks rewritten from real open-source applicati",
-      "pdf_link": "https://arxiv.org/pdf/2607.11042.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.11042",
-      "submission_date": "2026-07-14T04:00:00+00:00",
+      "abstract": "arXiv:2607.11951v1 Announce Type: new \nAbstract: Large language models can write SQL, but enterprise deployment demands more than plausible text: outputs must be syntactically valid, must respect per-role and per-schema policy, must carry provable (not best-effort) guarantees, must not slow down as generations grow, and must leave a compliance-grade record of every decision. We present GRID (Grammar-Railed Decoding), a grammar-constrained decoding engine that keys exact next-token masks on parser configurations (lexer scan state x LALR(1) stack) rather than on token sequences, and uses the incrementally advanced LALR(1) parser itself as a viable-prefix oracle. LLM tokens are bridged to grammar terminals by a byte-level trie walk with a context-independent/context-dependent split that makes",
+      "pdf_link": "https://arxiv.org/pdf/2607.11951.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.11951",
+      "submission_date": "2026-07-15T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 12.0,
-      "updated_at": "2026-07-14T07:58:43.731483+00:00"
+      "updated_at": "2026-07-15T08:04:01.596242+00:00"
     },
     {
-      "forum_id": "2607.11342",
+      "forum_id": "2607.12474",
       "paper_number": -1,
-      "title": "Fail-Aware and Explainable Test Oracle Prediction",
+      "title": "From Observation to Insight: Mechanistic World Models and the Quest for Autonomous Discovery",
       "authors": [
-        "Yue Zhao, Binish Tanveer, Jelena Zdravkovic"
+        "Ingmar Posner, Anson Lei, Bernhard Sch\\\"olkopf"
+      ],
+      "keywords": [
+        "cs.AI",
+        "AI for Science"
+      ],
+      "abstract": "arXiv:2607.12474v1 Announce Type: new \nAbstract: Recent advances in foundation models have transformed AI for Science, enabling remarkably accurate predictive performance across domains ranging from protein folding to weather forecasting. Yet prediction alone does not constitute scientific discovery. Scientific understanding depends on uncovering the reusable explanatory mechanisms that generate observations, whereas contemporary machine learning remains fundamentally organised around predictive mappings rather than explanatory structure. In this paper, we argue that scientific discovery is fundamentally a problem of knowledge organisation. To this end, we introduce Mechanistic World Models, a new design paradigm that places reusable mechanisms at the centre of representation, computation ",
+      "pdf_link": "https://arxiv.org/pdf/2607.12474.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.12474",
+      "submission_date": "2026-07-15T04:00:00+00:00",
+      "conference": "AI for Science",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 57.5,
+      "updated_at": "2026-07-15T08:04:01.596779+00:00"
+    },
+    {
+      "forum_id": "2607.12711",
+      "paper_number": -1,
+      "title": "MaxSAT-Based Feedback for Guiding Vision-Language Models in Sudoku",
+      "authors": [
+        "Pedro Orvalho, Guillem Aleny\\`a, Felip Many\\`a"
       ],
       "keywords": [
         "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2607.11342v1 Announce Type: cross \nAbstract: Despite their central role in fault detection, test oracles remain challenging to construct effectively. Recent learning based methods address this challenge by automatically generating test assertions, yet even if syntactically correct, they are often ineffective in revealing bugs. Rather than generating assertions, this study explores a different approach by training a model to directly predict whether a given test prefix passes or fails. We present FOCAL, an emerging code LLM-based discriminative oracle predictor. It learns from labeled pairs of test prefixes and methods under test, employs losses that emphasize failing cases during training, and grounds its predictions in statement level behavioral evidence. Compared with the baseline ",
-      "pdf_link": "https://arxiv.org/pdf/2607.11342.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.11342",
-      "submission_date": "2026-07-14T04:00:00+00:00",
+      "abstract": "arXiv:2607.12711v1 Announce Type: new \nAbstract: Vision--Language Models (VLMs) have recently demonstrated promising performance on structured visual reasoning tasks, including grid-based puzzles. However, despite strong perceptual capabilities, these models lack explicit mechanisms for enforcing logical consistency and frequently generate assignments that violate underlying constraints. In this paper, we propose a neuro-symbolic approach that integrates formal constraint reasoning into the VLM solving process via a Maximum Satisfiability (MaxSAT) oracle. Rather than computing solutions directly, the symbolic component acts as a consistency validator and refinement engine. Candidate placements generated by the VLM are encoded as soft clauses in a partial MaxSAT formulation, while Sudoku co",
+      "pdf_link": "https://arxiv.org/pdf/2607.12711.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.12711",
+      "submission_date": "2026-07-15T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-14T07:58:43.732030+00:00"
+      "score": 35.0,
+      "updated_at": "2026-07-15T08:04:01.597033+00:00"
     },
     {
-      "forum_id": "2607.11560",
+      "forum_id": "2607.12815",
       "paper_number": -1,
-      "title": "Technical Report on the CVPR 2026@AdvML Workshop Challenge",
+      "title": "Visual Access Boundaries in Vision-Language Model Reasoning",
       "authors": [
-        "Tianyuan Zhang, Zonglei Jing, Jiangfan Liu, Ligong Zhang, Ke Ma, Chengzhi Sun, Xiaohai Xu, Zhirui Zhang, Qianqian Xu, Qingming Huang, Hanyu Fang, Junhua Liu, Zheng Wang, Xiaoliang Liu, Yuanbo Li, Shuai Gui, Bin Wang, Menghe Zheng, Jing Nie, Hanyang Meng, Zeyang Zhang, Xiang Zhang, Yongxuan Zhu, Rui Ding, Hainan Li, Yongkang Zhang, Zhilei Zhu, Xianglong Kong, Jin Hu, Zonghao Ying, Yisong Xiao, Lei Chen, Haotong Qin, Jiakai Wang, Aishan Liu, Ruikai Li, Julia Karbing, Yinpeng Dong, Zhenfei Yin, Shao Jing, Xia Hu, Jingyi Xu, Juntao Dai, Xinyun Chen, Vishal M. Patel, Xianglong Liu, Dawn Song, Alan Yuille, Philip H. S. Torr, Dacheng Tao"
-      ],
-      "keywords": [
-        "cs.AI",
-        "CVPR"
-      ],
-      "abstract": "arXiv:2607.11560v1 Announce Type: cross \nAbstract: Vision-language agents (VLAs) are increasingly used to interpret complex driving scenes and support safety-critical reasoning. This report presents the CVPR 2026@AdvML Workshop Challenge on adversarial multimodal attacks against autonomous-driving VLAs. Built on DriveLM-style multi-view visual question answering, the challenge represents each scene with six synchronized camera images and a structured collection of driving-related question-answer pairs. Participants generate adversarial images and suffix-only textual perturbations that induce model responses to deviate from reference answers while preserving image fidelity and limiting textual cost. The competition comprises two phases, with Phase II adding a hidden black-box model to asses",
-      "pdf_link": "https://arxiv.org/pdf/2607.11560.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.11560",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "CVPR",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 25.0,
-      "updated_at": "2026-07-14T07:58:43.732438+00:00"
-    },
-    {
-      "forum_id": "2606.08098",
-      "paper_number": -1,
-      "title": "When Does Delegation Beat Majority? A Delegation-Based Aggregator for Multi-Sample LLM Inference",
-      "authors": [
-        "Yasushi Sakai, Allen Song, Kent Larson"
+        "Hiroto Osaka, Shohei Taniguchi, Gouki Minegishi, Kai Yamashita, Masahiro Suzuki, Yutaka Matsuo"
       ],
       "keywords": [
         "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2606.08098v3 Announce Type: replace \nAbstract: Majority voting is the default unsupervised aggregator for multi-sample LLM inference, but it discards two signals: within-group answer entropy and between-group reasoning geometry. We aggregate by delegation instead (Propagational Proxy Voting, PPV): each group of samples keeps weight on its own answer in proportion to its entropy-based confidence (When) and routes the rest to peers by reasoning-embedding similarity (Whom); the stationary distribution of the resulting delegation matrix picks the consensus answer. This requires neither gold labels nor training. On MMLU-Pro with 128 samples per question, delegation beats majority by +1.5 pp overall and +2.24 pp on non-trivial questions (McNemar p ~ 1.0e-14, n = 8,099), overturning wrong m",
-      "pdf_link": "https://arxiv.org/pdf/2606.08098.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.08098",
-      "submission_date": "2026-07-14T04:00:00+00:00",
+      "abstract": "arXiv:2607.12815v1 Announce Type: new \nAbstract: Chain-of-Thought (CoT) prompting is widely used as a test-time scaling strategy for Vision-Language Models (VLMs), but it remains unclear what is extended when VLMs generate longer reasoning traces. We ask whether CoT requires continued access to image tokens, or whether it mainly operates over visual information already made available earlier in the forward pass. We introduce Visual Access Sweep, a causal intervention that masks attention from generated-token queries to image-token keys along layer depth and generation time, and define the Visual Access Boundary (VAB) as the minimal access region that preserves task accuracy. Across six model configurations from Qwen2.5-VL and InternVL3, both no-CoT direct answering and CoT prompting exhibi",
+      "pdf_link": "https://arxiv.org/pdf/2607.12815.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.12815",
+      "submission_date": "2026-07-15T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-07-14T07:58:43.733514+00:00"
+      "score": 51.5,
+      "updated_at": "2026-07-15T08:04:01.597179+00:00"
     },
     {
-      "forum_id": "2607.01674",
+      "forum_id": "2607.13034",
       "paper_number": -1,
-      "title": "Separating Expert Retention from Autonomous Source Inference in Raw-ECG-Replay-Free Continual ECG Deployment",
+      "title": "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
       "authors": [
-        "Yufan Lu, Xinhui Liu, Chenyang Xu, Yuxi Zhou, Hao Wang"
+        "Junjie Yin, Xinyu Feng"
       ],
       "keywords": [
         "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2607.01674v3 Announce Type: replace \nAbstract: In multi-source ECG deployment, models may need to incorporate new data sources when earlier raw ECGs cannot be retained or replayed. Freezing a pretrained backbone and assigning each source an isolated classifier prevents parameter interference, but deployment still requires selecting an expert when source metadata are unavailable. We study this distinction through IRFE-ECG, an incremental expert bank built on frozen 1024-dimensional ECGFounder features. Each arriving domain adds a balanced-softmax linear expert, while a lightweight router is fitted only on retained training features and domain labels from sources observed so far. A validation-calibrated margin rule fuses the two most likely experts instead of committing to a single rou",
-      "pdf_link": "https://arxiv.org/pdf/2607.01674.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.01674",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-07-14T07:58:43.733674+00:00"
-    },
-    {
-      "forum_id": "2506.20893",
-      "paper_number": -1,
-      "title": "On the Necessity of Output Distribution Reweighting for Effective Class Unlearning",
-      "authors": [
-        "Ali Ebrahimpour-Boroojeny, Yian Wang, Hari Sundaram"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ICML"
-      ],
-      "abstract": "arXiv:2506.20893v5 Announce Type: replace-cross \nAbstract: In this paper, we reveal a significant shortcoming in class unlearning evaluations: overlooking the underlying class geometry can cause information leakage about the forgotten class. We further propose a simple unlearning strategy to mitigate this issue. We introduce Class Membership Inference Attack (CMIA) that uses the probabilities assigned by the model to neighboring classes to detect unlearned samples. We find that existing unlearning methods are vulnerable to CMIA across multiple datasets. We then propose a new fine-tuning objective that mitigates this privacy leakage by approximating, for forget-class inputs, the distribution over the remaining classes that a retrained-from-scratch model would produce. To construct this appr",
-      "pdf_link": "https://arxiv.org/pdf/2506.20893.pdf",
-      "forum_link": "https://arxiv.org/abs/2506.20893",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ICML",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-07-14T07:58:43.734072+00:00"
-    },
-    {
-      "forum_id": "2511.22331",
-      "paper_number": -1,
-      "title": "On the Condition Number Dependency in Bilevel Optimization",
-      "authors": [
-        "Lesi Chen, Jingzhao Zhang"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ICML"
-      ],
-      "abstract": "arXiv:2511.22331v3 Announce Type: replace-cross \nAbstract: Bilevel optimization minimizes an objective function, defined by an upper-level problem whose feasible region is the solution of a lower-level problem. We study the oracle complexity of finding an $\\epsilon$-stationary point with first-order methods when the upper-level problem is nonconvex, and the lower-level problem is strongly convex. Recent works (Ji et al., ICML 2021; Arbel and Mairal, ICLR 2022; Chen et al., JMLR 2025) achieve a $\\tilde{\\mathcal{O}}(\\bar \\kappa_y^4 \\epsilon^{-2})$ upper bound that is near-optimal in $\\epsilon$, which can be reduced to $\\tilde{\\mathcal{O}}(\\bar \\kappa_y^{7/2} \\epsilon^{-2})$ by a naive application of Nesterov acceleration in the inner loop, where $\\bar \\kappa_y$ is the global condition number",
-      "pdf_link": "https://arxiv.org/pdf/2511.22331.pdf",
-      "forum_link": "https://arxiv.org/abs/2511.22331",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ICML",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-07-14T07:58:43.734418+00:00"
-    },
-    {
-      "forum_id": "2601.15995",
-      "paper_number": -1,
-      "title": "PUMA: Perception-driven Unified Foothold Prior for Mobility Augmented Quadruped Parkour",
-      "authors": [
-        "Liang Wang, Kanzhong Yao, Yang Liu, Weikai Qin, Jun Wu, Zhe Sun, Qiuguo Zhu"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2601.15995v2 Announce Type: replace-cross \nAbstract: Parkour tasks for quadrupeds have emerged as a promising benchmark for agile locomotion. While human athletes can effectively perceive environmental characteristics to select appropriate footholds for obstacle traversal, endowing legged robots with similar perceptual reasoning remains a significant challenge. Existing methods often rely on hierarchical controllers that follow pre-computed footholds, thereby constraining the robot's real-time adaptability and the exploratory potential of reinforcement learning. To overcome these challenges, we present PUMA, an end-to-end learning framework that integrates visual perception and foothold priors into a single-stage training process. This approach leverages terrain features to estimate ",
-      "pdf_link": "https://arxiv.org/pdf/2601.15995.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.15995",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 23.0,
-      "updated_at": "2026-07-14T07:58:43.734629+00:00"
-    },
-    {
-      "forum_id": "2606.24894",
-      "paper_number": -1,
-      "title": "RWGBench: Evaluating Scholarly Positioning in Related Work Generation",
-      "authors": [
-        "Anzhe Xie, Weihang Su, Jiaxin Mao, Yiqun Liu, Min Zhang, Shaoping Ma, Qingyao Ai"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2606.24894v3 Announce Type: replace-cross \nAbstract: Large language models have shown strong fluency in scientific writing, yet the evaluation of related work generation (RWG) remains limited. Existing RWG evaluations largely inherit summarization-oriented metrics, using lexical or semantic similarity to reference sections as proxies for quality. However, related work writing is fundamentally a citation-level scholarly positioning task: it requires selecting, organizing, and framing prior work to clarify how a target paper relates to, differs from, and contributes beyond existing research.As a result, models may generate coherent and semantically-relevant text while exhibiting academically critical failures, such as inappropriate citation selection or misplaced references, that conve",
-      "pdf_link": "https://arxiv.org/pdf/2606.24894.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.24894",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-07-14T07:58:43.735679+00:00"
-    },
-    {
-      "forum_id": "2607.10196",
-      "paper_number": -1,
-      "title": "Generative Augmentation of Raman Spectra for Glioma Classification",
-      "authors": [
-        "Andrei Iu\\c{s}an, Iulian Vasile, Daria Voiculescu, Ion Petre, Andrei P\\u{a}un, Bogdan Oancea, Mihaela P\\u{a}un"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.10196v1 Announce Type: new \nAbstract: Access to sufficiently large biomedical datasets remains a major obstacle for machine learning in Raman spectroscopy-based diagnostics. In particular, for glioma analysis, datasets are typically small and heterogeneous, affected by acquisition-specific variability. This work investigates the utility of deep generative augmentation in such a small-cohort setting. We analyze glioma biopsy spectra acquired from 58 tumor samples and consider both binary IDH-status classification and 6-class methylation subtype classification problems. To address the limited size and imbalance of the dataset, we develop a conditional variational autoencoder ($\\beta$-CVAE) capable of generating class-conditioned synthetic Raman spectra. The generated data are eval",
-      "pdf_link": "https://arxiv.org/pdf/2607.10196.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.10196",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-07-14T07:58:44.182886+00:00"
-    },
-    {
-      "forum_id": "2607.11555",
-      "paper_number": -1,
-      "title": "Advancing Optimal Subset Oracle via Learning Relaxation of Neural Set Functions",
-      "authors": [
-        "Yongquan Shi, Zijing Ou, Shiping Wang, Yatao Bian"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.11555v1 Announce Type: new \nAbstract: Learning neural set functions is pivotal to a wide range of important applications, including compound selection in AI-driven drug discovery and product recommendation. Recent work has introduced optimal subset oracles to implicitly learn set functions under practical weakly supervised settings, where model parameters are optimized through mean-field variational inference. However, these frameworks rely on Monte Carlo sampling to estimate gradients of the evidence lower bound when updating the variational distribution. Repeated sampling across iterations incurs substantial computational overhead, while the resulting stochasticity can destabilize the optimization trajectory. In this work, we reinterpret the evidence lower bound as a continuou",
-      "pdf_link": "https://arxiv.org/pdf/2607.11555.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.11555",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-07-14T07:58:44.184920+00:00"
-    },
-    {
-      "forum_id": "2607.11796",
-      "paper_number": -1,
-      "title": "An Exact Instrument for State Usage in Selective State-Space Models, and the Input-Driven Migration It Reveals",
-      "authors": [
-        "Raktim Bhattacharya"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.11796v1 Announce Type: new \nAbstract: Selective state-space models such as Mamba route information through a bank of first-order modes whose input coupling is set by a learned selection mechanism. We give an exact instrument for measuring how a trained model uses these modes. Because the state matrix is diagonal, each channel's output decomposes exactly into per-mode contributions, and a per-(layer, channel, window) Gram tensor yields the exact output error of dropping any subset of modes, offline, at any budget. Validated against the reference implementation to a relative error of $2.3\\times10^{-7}$ on the Mamba-1 family where it is exact, the instrument predicts a layer's deployed pruning error to a median relative deviation of $5\\times10^{-7}$ over $4{,}464$ configurations, i",
-      "pdf_link": "https://arxiv.org/pdf/2607.11796.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.11796",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 21.0,
-      "updated_at": "2026-07-14T07:58:44.185248+00:00"
-    },
-    {
-      "forum_id": "2607.09772",
-      "paper_number": -1,
-      "title": "A Risk-Field Enhanced Closed-Loop Digital Twin Framework for Autonomous Driving Safety Validation",
-      "authors": [
-        "Yongzhi Liu"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.09772v1 Announce Type: cross \nAbstract: Autonomous driving systems require reliable safety validation before real-world deployment. However, large-scale road testing is costly, difffcult to reproduce, and inefffcient for exposing rare safety-critical scenarios. Conventional simulation improves repeatability, but an offfine simulator alone cannot continuously connect physical trafffc states, virtual reconstruction, algorithm evaluation, and scenario evolution. This paper proposes a risk-ffeld enhanced closed-loop digital twin framework for autonomous driving safety validation. The framework integrates physical data acquisition, data synchronization, virtual twin reconstruction, risk-aware scenario generation, autonomous driving algorithm evaluation, and safety analysis. A driving",
-      "pdf_link": "https://arxiv.org/pdf/2607.09772.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.09772",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-14T07:58:44.185745+00:00"
-    },
-    {
-      "forum_id": "2607.09906",
-      "paper_number": -1,
-      "title": "Depth-Efficient Quantum Topological Data Analysis for Regime-Specific Detection of Financial Stress",
-      "authors": [
-        "Arul Rhik Mazumder, Shreyan Ronit Mazumder"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.09906v1 Announce Type: cross \nAbstract: We present, to our knowledge, the first adaptation of Pauli Correlation Encoding (PCE) to quantum topological data analysis, reformulating Betti number estimation as a depth-efficient variational optimization over a compressed qubit register. From a Takens embedding and Vietoris--Rips filtration of S&amp;P~500 returns, we extract combinatorial Laplacians and recast null-space counting as a continuous-PCE Rayleigh-quotient minimization with variational deflation, encoding $n_k$ simplex indices into $O(n_k^{1/\\kappa})$ qubits with shallow, ancilla-free circuits. Because the resulting loss is rational rather than bilinear in the correlators, the barren-plateau bound of~\\cite{Sciorilli25} does not transfer; empirically the gradient variance de",
-      "pdf_link": "https://arxiv.org/pdf/2607.09906.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.09906",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-07-14T07:58:44.185980+00:00"
-    },
-    {
-      "forum_id": "2607.10391",
-      "paper_number": -1,
-      "title": "Vertical Fusion: Condensing Internal Representations for Robust ViT Classification",
-      "authors": [
-        "Francesco Di Salvo, Shyam Nandan Rai, Hamed Damirchi, Ignacio Meza De la Jara, Sebastian Doerrich, Marco Lents, Christian Ledig"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.10391v1 Announce Type: cross \nAbstract: Despite exposing rich intermediate representations, Vision Transformers (ViTs) are almost exclusively utilized as black-box feature extractors, where only the last layer is considered for downstream tasks. We challenge this convention by introducing the notion of recoverability: the capacity of intermediate representations to correct last-layer failures. By evaluating independent classification probes at every model depth across 16 datasets, we observe that intermediate probes correctly classify 18% to 76% of samples that the last-layer probe misclassifies. We show that these gains are not primarily driven by predictive diversity, but by a redundancy-correctness correspondence, where the internal hierarchy acts as a series of stable, redun",
-      "pdf_link": "https://arxiv.org/pdf/2607.10391.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.10391",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-07-14T07:58:44.186565+00:00"
-    },
-    {
-      "forum_id": "2607.10565",
-      "paper_number": -1,
-      "title": "BucketKD: A Safety-Aware Bucket-Based Knowledge Distillation Framework for End-to-End Motion Planning",
-      "authors": [
-        "Md Nahidul Islam, Mohd Hasan Ali, Dipankar Dasgupta, Myounggyu Won"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.10565v1 Announce Type: cross \nAbstract: End-to-end motion planning has emerged as a promising paradigm in autonomous driving, directly mapping raw sensor data to control commands via deep neural networks. Despite its advantages, its large model size hinders deployment in resource-constrained platforms. In this paper, we present BucketKD, a bucket-based knowledge distillation framework that yields compact and safety-aware end-to-end planners. Compared to the state-of-the-art approach, which relies on simplified planning state representations, BucketKD discretizes critical environmental variables into adaptive buckets that capture richer scene semantics while preserving efficiency. In addition, we design a safety-aware waypoint attention mechanism that evaluates each waypoint's ri",
-      "pdf_link": "https://arxiv.org/pdf/2607.10565.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.10565",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 33.5,
-      "updated_at": "2026-07-14T07:58:44.186922+00:00"
-    },
-    {
-      "forum_id": "2607.11684",
-      "paper_number": -1,
-      "title": "Diversified Multinomial Logit Contextual Bandits",
-      "authors": [
-        "Heesang Ann, Taehyun Hwang, Min-hwan Oh"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.11684v1 Announce Type: cross \nAbstract: Existing contextual multinomial logit (MNL) bandits model relevance-driven choice but ignore the potential benefits of within-assortment diversity, while submodular/combinatorial bandits encode diversity in rewards but lack structured choice probabilities. We bridge this gap with the $\\textit{diversified multinomial logit}$ (DMNL) contextual bandit, which augments MNL choice probabilities with a generally submodular diversity function, thereby formalizing the relevance--diversity trade-off within a single model. Incorporating diversity renders exact MNL assortment optimization intractable. We propose a $\\textit{white-box}$ UCB-based algorithm, $\\texttt{OFU-DMNL}$, that constructs assortments item-wise by maximizing optimistic marginal gain",
-      "pdf_link": "https://arxiv.org/pdf/2607.11684.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.11684",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-14T07:58:44.188246+00:00"
-    },
-    {
-      "forum_id": "2607.11843",
-      "paper_number": -1,
-      "title": "Input-Aware Dynamic Backdoor Attack Against Quantum Neural Networks",
-      "authors": [
-        "Junrui Zhang, Zemin Chen, Lusi Li, Mohammad Ghasemigol, Daniel Takabi, Rui Ning"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.11843v1 Announce Type: cross \nAbstract: Quantum Neural Networks (QNNs) are a promising framework for quantum machine learning on near-term quantum devices, but their security risks remain insufficiently understood. Studies have shown that QNNs are vulnerable to backdoor attacks, yet existing quantum backdoors mostly rely on a fixed trigger shared by all poisoned inputs. This fixed-trigger design is a major weakness because many defenses detect or weaken the repeated patterns such triggers leave in data representations. Although input-aware dynamic backdoors have been studied in classical neural networks, transferring them to QNNs is difficult because quantum learning introduces new obstacles. In particular, measurement compresses the post-ansatz quantum state into a limited clas",
-      "pdf_link": "https://arxiv.org/pdf/2607.11843.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.11843",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-07-14T07:58:44.188391+00:00"
-    },
-    {
-      "forum_id": "2603.05774",
-      "paper_number": -1,
-      "title": "First-Order Softmax Weighted Switching Gradient Method for Distributed Stochastic Minimax Optimization with Stochastic Constraints",
-      "authors": [
-        "Zhankun Luo, Antesh Upadhyay, Sang Bin Moon, Abolfazl Hashemi"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2603.05774v2 Announce Type: replace \nAbstract: This paper addresses the distributed stochastic minimax optimization problem subject to stochastic constraints. We propose a novel first-order Softmax-Weighted Switching Gradient method tailored for federated learning. Under full client participation, our algorithm achieves the standard $\\tilde{\\mathcal{O}}(\\epsilon^{-4})$ oracle complexity to satisfy a unified bound $\\epsilon$ for both the optimality gap and feasibility tolerance. We extend our theoretical analysis to the practical partial participation regime by quantifying client sampling noise through a stochastic superiority assumption. Furthermore, by relaxing standard boundedness assumptions on the objective functions, we establish a strictly tighter lower bound for the softmax hy",
-      "pdf_link": "https://arxiv.org/pdf/2603.05774.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.05774",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-07-14T07:58:44.189486+00:00"
-    },
-    {
-      "forum_id": "2604.03922",
-      "paper_number": -1,
-      "title": "ACES: Who Tests the Tests? Leave-One-Out AUC Consistency for Code Generation",
-      "authors": [
-        "Hui Sun, Yun-Ji Zhang, Zheng Xie, Ren-Biao Liu, Yali Du, Xin-Ye Li, Ming Li"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2604.03922v2 Announce Type: replace \nAbstract: Selecting LLM-generated code candidates using LLM-generated tests is challenging because the tests themselves may be incorrect. Existing methods either treat all tests equally or rely on ad-hoc heuristics to filter unreliable tests. Yet determining test correctness requires knowing which codes are correct, creating a \\emph{circular dependency}. Our key insight is that we need not determine test correctness at all: \\emph{test votes should rank, not merely count}. What matters is not how many codes pass a test, but whether the test can \\emph{distinguish} correct from incorrect code. We break the circular dependency via leave-one-out evaluation: hold out one test, rank codes by their aggregate scores on all remaining tests, and measure whet",
-      "pdf_link": "https://arxiv.org/pdf/2604.03922.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.03922",
-      "submission_date": "2026-07-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-14T07:58:44.189653+00:00"
-    },
-    {
-      "forum_id": "2510.21431",
-      "paper_number": -1,
-      "title": "Oracle-Efficient Combinatorial Semi-Bandits",
-      "authors": [
-        "Jung-hun Kim, Milan Vojnovi\\'c, Min-hwan Oh"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2510.21431v2 Announce Type: replace-cross \nAbstract: We study the combinatorial semi-bandit problem where an agent selects a subset of base arms and receives individual feedback. While this generalizes the classical multi-armed bandit and has broad applicability, its scalability is limited by the high cost of combinatorial optimization, requiring oracle queries at every round. To tackle this, we propose oracle-efficient frameworks that significantly reduce oracle calls while maintaining tight regret guarantees. For the worst-case linear reward setting, our algorithms achieve $\\tilde{O}(\\sqrt{T})$ regret using only $O(\\log\\log T)$ oracle queries. We also propose covariance-adaptive algorithms that leverage noise structure for improved regret, and extend our approach to general (non-li",
-      "pdf_link": "https://arxiv.org/pdf/2510.21431.pdf",
-      "forum_link": "https://arxiv.org/abs/2510.21431",
-      "submission_date": "2026-07-14T04:00:00+00:00",
+      "abstract": "arXiv:2607.13034v1 Announce Type: new \nAbstract: Large language model (LLM) agents increasingly automate multi-step engineering and informatics workflows, yet they rarely ask how much effort a task actually requires. They often follow a maximum-context-first strategy--re-reading files and dependencies they have already seen--turning a one-line edit into a small code-base audit. We argue the missing capability is task-aware execution-scope estimation: judging a task's difficulty, the information it truly needs, and the shortest reliable path before committing budget. We formalize minimum-sufficient execution and the Agent Cognitive Redundancy Ratio (ACRR), and propose E3 (Estimate, Execute, Expand): the agent estimates an initial operating point, executes a minimum viable path, and expands ",
+      "pdf_link": "https://arxiv.org/pdf/2607.13034.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13034",
+      "submission_date": "2026-07-15T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 13.5,
-      "updated_at": "2026-07-14T07:58:44.190956+00:00"
+      "updated_at": "2026-07-15T08:04:01.597466+00:00"
     },
     {
-      "forum_id": "2512.19733",
+      "forum_id": "2607.12112",
       "paper_number": -1,
-      "title": "NMIRacle: Multi-modal Generative Molecular Elucidation from IR and NMR Spectra",
+      "title": "Continual Learning with Elastic Regularization and Synthetic Replay for Federated MLLM Fine-Tuning",
       "authors": [
-        "Federico Ottomano, Yingzhen Li, Alex M. Ganose"
+        "Jing Liu, Chenxuanyin Zou, Jiayang Ren, Gaoyun Fang, Chengfang Li, Yan Wang, Zhenchao Ma, Bo Hu"
       ],
       "keywords": [
-        "cs.LG",
+        "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2512.19733v3 Announce Type: replace-cross \nAbstract: Molecular structure elucidation from spectroscopic data is a long-standing challenge in Chemistry, traditionally requiring expert interpretation. We introduce NMIRacle, a two-stage generative framework that builds upon recent paradigms in AI-driven spectroscopy with minimal assumptions. In the first stage, NMIRacle learns to reconstruct molecular structures from count-aware fragment representations, capturing both fragment identities and their occurrences. In the second stage, a spectral encoder maps input spectra (IR, 1H-NMR, 13C-NMR) into a latent embedding used to condition the pre-trained generator, which is fine-tuned for direct spectra-to-molecule generation. This formulation bridges fragment-level chemical modeling with spec",
-      "pdf_link": "https://arxiv.org/pdf/2512.19733.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.19733",
-      "submission_date": "2026-07-14T04:00:00+00:00",
+      "abstract": "arXiv:2607.12112v1 Announce Type: cross \nAbstract: Federated fine-tuning of Multimodal Large Language Models (MLLMs) across distributed networks enables privacy-sensitive adaptation to evolving data streams, yet a fundamental obstacle prevents robust deployment in dynamic environments: catastrophic forgetting, wherein sequential task updates erase previously acquired knowledge across visual, linguistic, and cross-modal representations. Addressing this challenge is especially critical for autonomous networked AI operating in safety-sensitive domains, such as content moderation, where reliable retention of prior knowledge underpins system integrity. To overcome this, we propose Federated Continual Multimodal Learning (FedCMM), a framework that embeds continual-learning safeguards into the fe",
+      "pdf_link": "https://arxiv.org/pdf/2607.12112.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.12112",
+      "submission_date": "2026-07-15T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 25.0,
-      "updated_at": "2026-07-14T07:58:44.191141+00:00"
+      "score": 26.0,
+      "updated_at": "2026-07-15T08:04:01.598547+00:00"
+    },
+    {
+      "forum_id": "2607.12468",
+      "paper_number": -1,
+      "title": "An Omnilingual-ASR-Based Speech-LLM System for the 2nd MLC-SLM Challenge",
+      "authors": [
+        "Shuming Fang, Shuifei Zeng"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.12468v1 Announce Type: cross \nAbstract: We describe our submission to Task 1 of the 2nd MLCSLM Challenge: a cascaded diarization-then-recognition system that combines DiariZen-Large-s80 (WavLM-Large) segmentation, CAM++ embedding-based two-speaker clustering, and a LoRA-adapted omniASR LLM 7B v2 recognizer, with no oracle segmentation or speaker labels at test time. On the official Development set (150 conversations, 21 language/accent categories) the system attains a macro tcpMER of 29.27%, versus 79.15% for the official baseline; on the Evaluation set it scores 50.23%. We also analyze two engineering choices that substantially affect tcpMER. First, embedding-based speaker clustering outperforms an end-to-end-style alternative that assigns speakers from ASR  turn markers alone.",
+      "pdf_link": "https://arxiv.org/pdf/2607.12468.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.12468",
+      "submission_date": "2026-07-15T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-15T08:04:01.599096+00:00"
+    },
+    {
+      "forum_id": "2607.12962",
+      "paper_number": -1,
+      "title": "Form, Not Content? A Preregistered, Placebo-Controlled Evaluation of Learned Error-Conditioned Self-Repair Through Prompts and Weights in Frozen Small Code Models",
+      "authors": [
+        "Mehmet Iscan"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.12962v1 Announce Type: cross \nAbstract: Frozen small code LLMs are deployed locally, yet the information guiding a retry after a failed attempt is still measured without placebo controls in the self-repair literature. We treat a failed program as a conjecture and an execution counterexample as an oracle-relative refutation, and introduce PoPE (Popperian Placebo-controlled Evaluation): a methodology for measuring whether evidence that falsifies LLM-generated code can be used operationally by that same model. In PoPE, error content is paired with channel-specific placebos that keep the predeclared scaffold while ablating task-relevant content or deranging the task-error assignment. Frozen small code models (0.5-1.5B) are evaluated under preregistered rules through a prompt channel",
+      "pdf_link": "https://arxiv.org/pdf/2607.12962.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.12962",
+      "submission_date": "2026-07-15T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-15T08:04:01.599939+00:00"
+    },
+    {
+      "forum_id": "2508.19186",
+      "paper_number": -1,
+      "title": "Real-Time Model Checking for Closed-Loop Robot Reactive Planning",
+      "authors": [
+        "Christopher Chandler, Bernd Porr, Giulia Lafratta, Alice Miller"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2508.19186v2 Announce Type: replace-cross \nAbstract: Reactive obstacle avoidance methods often cause agents to become trapped in local minima, because they can often only reason one step ahead (i.e., the next action based on the current state). In this paper, we use model checking to achieve reactive multi-step planning and obstacle avoidance on an autonomous robot. Our small, purpose-built model checking algorithm generates plans in situ (within the robot's code) based on ``core'' knowledge and attention as found in biological agents. This is achieved in real-time using no pre-computed data on a low-powered device. Our approach is based on chaining temporary control systems that are spawned to counteract disturbances in the local environment which disrupt an autonomous agent from it",
+      "pdf_link": "https://arxiv.org/pdf/2508.19186.pdf",
+      "forum_link": "https://arxiv.org/abs/2508.19186",
+      "submission_date": "2026-07-15T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-15T08:04:01.600946+00:00"
+    },
+    {
+      "forum_id": "2603.05995",
+      "paper_number": -1,
+      "title": "TADPO: Reinforcement Learning Goes Off-road",
+      "authors": [
+        "Zhouchonghao Wu, Raymond Song, Vedant Mundheda, Luis E. Navarro-Serment, Christof Schoenborn, Jeff Schneider"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2603.05995v2 Announce Type: replace-cross \nAbstract: Off-road autonomous driving poses significant challenges such as navigating unmapped, variable terrain with uncertain and diverse dynamics. Addressing these challenges requires effective long-horizon planning and adaptable control. Reinforcement Learning (RL) offers a promising solution by learning control policies directly from interaction. However, because off-road driving is a long-horizon task with low-signal rewards, standard RL methods are challenging to apply in this setting. We introduce TADPO, a novel policy gradient formulation that extends Proximal Policy Optimization (PPO), leveraging off-policy trajectories for teacher guidance and on-policy trajectories for student exploration. Building on this, we develop a vision-ba",
+      "pdf_link": "https://arxiv.org/pdf/2603.05995.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.05995",
+      "submission_date": "2026-07-15T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 86.0,
+      "updated_at": "2026-07-15T08:04:01.601363+00:00"
+    },
+    {
+      "forum_id": "2603.28583",
+      "paper_number": -1,
+      "title": "Navigating the Mirage: A Dual-Path Agentic Framework for Robust Misleading Chart Question Answering",
+      "authors": [
+        "Yanjie Zhang, Yafei Li, Rui Sheng, Zixin Chen, Yanna Lin, Huamin Qu, Lei Chen, Yushi Sun"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2603.28583v2 Announce Type: replace-cross \nAbstract: Despite the success of Vision-Language Models (VLMs), misleading charts remain a significant challenge due to their deceptive visual structures and distorted data representations. We present ChartCynics, an agentic dual-path framework designed to unmask visual deception via a \"skeptical\" reasoning paradigm. Unlike holistic models, ChartCynics decouples perception from verification: a Diagnostic Vision Path captures structural anomalies (e.g., inverted axes) through strategic ROI cropping, while an OCR-Driven Data Path ensures numerical grounding. To resolve cross-modal conflicts, we introduce an Agentic Summarizer optimized via a two-stage protocol: Oracle-Informed SFT for reasoning distillation and Deception-Aware GRPO for adversa",
+      "pdf_link": "https://arxiv.org/pdf/2603.28583.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.28583",
+      "submission_date": "2026-07-15T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 55.5,
+      "updated_at": "2026-07-15T08:04:01.601440+00:00"
+    },
+    {
+      "forum_id": "2606.27976",
+      "paper_number": -1,
+      "title": "SHARD: cell-keyed residual splitting for alignment-resistant private dense retrieval",
+      "authors": [
+        "Sergey Kurilenko"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2606.27976v3 Announce Type: replace-cross \nAbstract: Dense retrieval systems expose document geometry when vector stores are compromised, and a global protective transform can often be aligned from known pairs. We study SHARD, which splits PCA coordinates into a short routing prefix and a residual protected by independent cell-local orthogonal keys. It supports CKKS ciphertext--plaintext reranking but is evaluated as a leakage trade-off, not a cryptographic document-privacy guarantee.\n  Corrected scoring uses centered document coordinates and an uncentered scoring query, preserving raw ranking up to a query-dependent constant. Across ten BEIR/MIRACL configurations it reproduces raw nDCG@10 and recall, whereas centering both sides loses up to 0.080 nDCG. Cell keys spread diffuse known",
+      "pdf_link": "https://arxiv.org/pdf/2606.27976.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.27976",
+      "submission_date": "2026-07-15T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 32.5,
+      "updated_at": "2026-07-15T08:04:01.601924+00:00"
+    },
+    {
+      "forum_id": "2607.12488",
+      "paper_number": -1,
+      "title": "Sample Efficient Generative Optimization for Molecular Design",
+      "authors": [
+        "Sarina Kopf, Cristina Nevado, Philippe Schwaller"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.12488v1 Announce Type: new \nAbstract: Molecular optimization in drug discovery, materials design, and catalysis requires searching vast chemical spaces under tight evaluation budgets, since high-fidelity oracles and experimental measurements are costly. The practical impact of an optimization method therefore hinges on its sample efficiency: how few evaluations it needs to find strong candidates. We introduce Sample Efficient Generative Optimization (SEGO), a framework for Bayesian optimization on adaptively generated molecules. In SEGO, a probabilistic surrogate model forms a hypothesis about where hits lie in chemical space, a generative model is steered to propose candidates in that region, the most promising candidate is selected via an acquisition function, and the resultin",
+      "pdf_link": "https://arxiv.org/pdf/2607.12488.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.12488",
+      "submission_date": "2026-07-15T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 30.0,
+      "updated_at": "2026-07-15T08:04:01.884842+00:00"
+    },
+    {
+      "forum_id": "2607.13031",
+      "paper_number": -1,
+      "title": "The Seriality Gap in Video Diffusion Models",
+      "authors": [
+        "Jorge Diaz Chao, Konpat Preechakul, Yuxi Liu, Yutong Bai"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.13031v1 Announce Type: new \nAbstract: When one ball strikes another, then another, video models should predict the consequences of each bounce. In controlled experiments on multi-ball hard-sphere dynamics, we find that the performance of standard bidirectional video diffusion degrades as the causal chain lengthens, even when provided more denoising steps. In a length-matched single-ball control, where ball-ball interactions are absent, the degradation largely disappears, isolating dependent-event structure rather than video length as the cause. Across intervention studies, methods that increase effective serial computation improve performance disproportionately, including autoregressive/blockwise generation and architectural depth. We identify this pattern as the seriality gap: ",
+      "pdf_link": "https://arxiv.org/pdf/2607.13031.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13031",
+      "submission_date": "2026-07-15T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 35.5,
+      "updated_at": "2026-07-15T08:04:01.885413+00:00"
+    },
+    {
+      "forum_id": "2607.11985",
+      "paper_number": -1,
+      "title": "VQCSim: When Does Compile-Once Statevector Simulation Beat Generic Quantum Frameworks?",
+      "authors": [
+        "Anton Firc, Martin Pere\\v{s}\\'ini, Vojt\\v{e}ch Mr\\'azek, Kamil Malinka, Vojt\\v{e}ch Stan\\v{e}k, Zbyn\\v{e}k Li\\v{c}ka, Nouhaila Innan, Walid El Maouaki, Alberto Marchisio, Muhammad Shafique"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.11985v1 Announce Type: cross \nAbstract: Hybrid quantum-classical machine learning workflows repeatedly evaluate many small parametrized circuits during training and model exploration. In this regime, framework dispatch and orchestration overhead often dominate runtime. Prior simulators accelerate execution but leave open the question of when compile-once specialization is the right choice for static variational circuits. We answer this question with VQCSim, a compile-once, PyTorch-native statevector execution path with native autograd. In a systematic MQT Bench study, VQCSim compiles all tested static circuits and provides 87.7% end-to-end semantic validation. Across a five-GPU evaluation set, VQCSim delivers pooled median speedups of 4.49x for native inference and 26.78x for na",
+      "pdf_link": "https://arxiv.org/pdf/2607.11985.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.11985",
+      "submission_date": "2026-07-15T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-15T08:04:01.885775+00:00"
+    },
+    {
+      "forum_id": "2512.23043",
+      "paper_number": -1,
+      "title": "Mechanistic Evidence for Preserved-but-Misaligned Representations in Non-IID FedAvg",
+      "authors": [
+        "Muhammad Haseeb, Salaar Masood, Muhammad Abdullah Sohail, Mohammad Fatim Shoaib, Muhammad Tahir"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ICML"
+      ],
+      "abstract": "arXiv:2512.23043v2 Announce Type: replace \nAbstract: Federated Averaging (FedAvg) often degrades under non-IID client data, but it remains unclear whether this degradation reflects the loss of client-learned representations or a failure to use representations that are still present. We study this question mechanistically in sparse client-trained vision models, using dense-model controls to test whether the observed effects depend on sparsity. Our analysis combines class-specific circuit discovery, linear probing of frozen representations, head-only finetuning, and sparse feature dictionaries. Across CNN and ResNet models on CIFAR-10 and Fashion-MNIST, severe label skew can drive some per-class accuracies near zero even when class-specific internal structure remains recoverable. Linear prob",
+      "pdf_link": "https://arxiv.org/pdf/2512.23043.pdf",
+      "forum_link": "https://arxiv.org/abs/2512.23043",
+      "submission_date": "2026-07-15T04:00:00+00:00",
+      "conference": "ICML",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-07-15T08:04:01.887355+00:00"
     }
   ]
 }

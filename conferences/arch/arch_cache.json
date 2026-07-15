@@ -1,7 +1,54 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-07-14T07:58:41.493988+00:00",
-  "paper_count": 0,
-  "papers": []
+  "last_updated": "2026-07-15T08:03:59.219035+00:00",
+  "paper_count": 2,
+  "papers": [
+    {
+      "forum_id": "2607.12505",
+      "paper_number": -1,
+      "title": "Realizable N:M Sparse Transformer Inference via Search-Kernel Co-Design",
+      "authors": [
+        "Yiming Liu, Wenqi Lou, Zhiguang Wang, Zhiwei Ke, Fengrui Zuo, Chao Wang, Xuehai Zhou"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2607.12505v1 Announce Type: new \nAbstract: Vision Transformers (ViTs) achieve strong accuracy but incur high inference latency. Semi-structured N:M sparsity can reduce arithmetic cost, yet its theoretical savings often fail to translate into proportional end-to-end speedups on modern GPUs. This mismatch arises because deployment latency depends not only on arithmetic reduction but also on execution regularity and hardware scheduling under sparsity. Achieving practical acceleration, therefore, requires coordinated design across sparse execution and sparsity configuration. To this end, we propose a hardware-software co-design framework for N:M sparse ViT inference. On the hardware side, we design MD-SpMM, an N:M sparse CUDA kernel that reorganizes sparse GEMM into micro-dense, Tensor-C",
+      "pdf_link": "https://arxiv.org/pdf/2607.12505.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.12505",
+      "submission_date": "2026-07-15T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-07-15T08:03:59.217896+00:00"
+    },
+    {
+      "forum_id": "2607.12839",
+      "paper_number": -1,
+      "title": "HeteroMosaic: Exposing and Exploiting Heterogeneous Execution Opportunities for Energy-Efficient Edge LLM Inference",
+      "authors": [
+        "Gregory Hyegang Jun, Wesley Pang, Eddie Richter, Mehdi Saeedi, Aporva Amarnath, Pallavi Ferrao, Deming Chen"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2607.12839v1 Announce Type: cross \nAbstract: Modern edge system-on-chips (SoCs) combine CPUs, integrated GPUs (iGPUs), and neural processing units (NPUs), yet existing LLM runtimes typically make coarse device-level decisions or optimize operators in isolation. As a result, they underutilize heterogeneous resources, particularly on unified-memory platforms where performance depends on both device placement and task-graph coordination.\n  We present HeteroMosaic, a heterogeneity-first scheduling framework for edge LLM inference. HeteroMosaic first uses a heterogeneous roofline model to identify when combining iGPU and NPU execution is beneficial. It then decomposes inference into dependency-preserving micro-batches that expose cross-accelerator overlap and applies trace-guided co-optim",
+      "pdf_link": "https://arxiv.org/pdf/2607.12839.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.12839",
+      "submission_date": "2026-07-15T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 55.5,
+      "updated_at": "2026-07-15T08:03:59.217959+00:00"
+    }
+  ]
 }
