@@ -1,31 +1,123 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-07-15T08:04:02.440948+00:00",
-  "paper_count": 16,
+  "last_updated": "2026-07-16T10:15:50.632431+00:00",
+  "paper_count": 12,
   "papers": [
     {
-      "forum_id": "2607.11951",
+      "forum_id": "2607.13157",
       "paper_number": -1,
-      "title": "GRID: Grammar-Railed Decoding for Enterprise SQL Generation",
+      "title": "Oracle Agent Memory as an Enterprise Memory Substrate for Long-Horizon AI Agents",
       "authors": [
-        "Mohsen Arjmandi"
+        "Richmond Alake, Cesare Bernardis, Paul Cayet, Luca Engel, Damien Hilloulin, Sungpack Hong, Allen Hosler, Nickolas Kavantzas, Ingo Kossyk, Son Le, Rhicheek Patra, Kartik Talamadupula, Valentin Venzin"
       ],
       "keywords": [
         "cs.AI",
         "ACL"
       ],
-      "abstract": "arXiv:2607.11951v1 Announce Type: new \nAbstract: Large language models can write SQL, but enterprise deployment demands more than plausible text: outputs must be syntactically valid, must respect per-role and per-schema policy, must carry provable (not best-effort) guarantees, must not slow down as generations grow, and must leave a compliance-grade record of every decision. We present GRID (Grammar-Railed Decoding), a grammar-constrained decoding engine that keys exact next-token masks on parser configurations (lexer scan state x LALR(1) stack) rather than on token sequences, and uses the incrementally advanced LALR(1) parser itself as a viable-prefix oracle. LLM tokens are bridged to grammar terminals by a byte-level trie walk with a context-independent/context-dependent split that makes",
-      "pdf_link": "https://arxiv.org/pdf/2607.11951.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.11951",
-      "submission_date": "2026-07-15T04:00:00+00:00",
+      "abstract": "arXiv:2607.13157v1 Announce Type: new \nAbstract: Agent memory is a systems problem for long-horizon agents. Practical deployments require retention of task state across extended conversations, recovery of user-specific facts and preferences across sessions, and accumulation of procedural knowledge from prior outcomes. These requirements extend beyond document retrieval: a memory layer must determine which interactions become durable state, how that state is scoped, how it is retrieved under latency constraints, and how it is revised or removed over time. This report studies Oracle Agent Memory as a database-native memory substrate built on Oracle Database. Three themes organize the discussion: memory as a lifecycle spanning ingestion, extraction, consolidation, retrieval, summarization, an",
+      "pdf_link": "https://arxiv.org/pdf/2607.13157.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13157",
+      "submission_date": "2026-07-16T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-07-15T08:04:01.596242+00:00"
+      "score": 1.0,
+      "updated_at": "2026-07-16T10:15:49.866014+00:00"
+    },
+    {
+      "forum_id": "2607.13618",
+      "paper_number": -1,
+      "title": "STOCKTAKE: Measuring the Gap Between Perception and Action in LLM Agents with a Fair Oracle",
+      "authors": [
+        "Sagar Deb, Ashwanth Krishnan"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.13618v1 Announce Type: new \nAbstract: LLM agents are increasingly evaluated on multi-week decision tasks in which the state that drives cost is never directly observed. On such tasks the final cost cannot say why an agent failed: it may have misread the world, or read it correctly and still failed to act (the knowing-doing gap). Existing evaluations cannot separate these two failures; their reference policies either read privileged information the agent never sees, or are missing altogether. We introduce STOCKTAKE, a 26-week supply-chain replenishment benchmark built as a factored partially observable Markov decision process with six hidden factor processes, designed so that a fair reference policy is computable: an exact Bayes filter per factor drives a rollout policy on the id",
+      "pdf_link": "https://arxiv.org/pdf/2607.13618.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13618",
+      "submission_date": "2026-07-16T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-16T10:15:49.866415+00:00"
+    },
+    {
+      "forum_id": "2607.13393",
+      "paper_number": -1,
+      "title": "The Caf\\'e in Amsterdam: When the Incumbent Becomes the Oracle",
+      "authors": [
+        "Augusto Camargo"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.13393v1 Announce Type: cross \nAbstract: A field can reformulate its computations freely exactly where its demand is stated independently of any incumbent implementation, and finds itself unable to when the incumbent's own output has quietly become the specification. This note offers that observation as a lens on computational reformulation for modern accelerators, where posing a problem in a hardware-friendly form can yield large speed and energy gains, but only if a replacement can be judged at all. Building on the test-oracle problem (Weyuker; Barr et al.), on requirements engineering's notion of implementation bias (Zave and Jackson), and on the roofline performance model, it names the pathology \"baseline capture\" -- the moment an incumbent stops being evidence that a demand ",
+      "pdf_link": "https://arxiv.org/pdf/2607.13393.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13393",
+      "submission_date": "2026-07-16T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-16T10:15:49.868021+00:00"
+    },
+    {
+      "forum_id": "2607.13579",
+      "paper_number": -1,
+      "title": "Agile perceptive multi-skill locomotion for quadrupedal robots in the wild",
+      "authors": [
+        "Jun-Gill Kang, Jaehyun Park, Tae-Gyu Song, Joon-Ha Kim, Seungwoo Hong, Hae-Won Park"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.13579v1 Announce Type: cross \nAbstract: Enabling quadrupedal robots to traverse complex terrains-from rugged outdoor environments to urban landscapes-requires seamless integration of multiple motor skills, smooth transitions between gaits, and high-speed perceptive locomotion using only onboard sensors. We present APT-RL (Action Pretrained Transformer-based Reinforcement Learning), a unified framework that enables multi-skill locomotion to achieve high-speed traversal in complex environments through autonomous skill transitions utilizing only onboard perception and computation. Our approach generates large-scale, feature-rich 2D motion datasets through trajectory optimization with simplified dynamics. These datasets enable training of diverse, reusable locomotion skills that tra",
+      "pdf_link": "https://arxiv.org/pdf/2607.13579.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13579",
+      "submission_date": "2026-07-16T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 25.0,
+      "updated_at": "2026-07-16T10:15:49.868545+00:00"
+    },
+    {
+      "forum_id": "2607.14041",
+      "paper_number": -1,
+      "title": "Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study",
+      "authors": [
+        "Zhan Chen, Jiqiao Ma, Chih-wen Kuo"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2607.14041v1 Announce Type: cross \nAbstract: Historical Manchu OCR must accommodate various visually distinct writing styles, including regular script, running script, and the semi-cursive chancery hand used in palace memorials, despite limited labeled data. We study a multi-expert system that reuses checkpoints from an iterative fine-tuning process as domain specialists and uses a lightweight page-level image classifier to dispatch pages by visual style. When the checkpoint pool lacks a suitable specialist, we train an additional expert for that domain. On three frozen test sets, the routed system matches the selected specialist for each style at two-decimal precision: 0.30 percent CER on regular script, 1.57 percent on memorials, and 4.83 percent on running script. The router achie",
+      "pdf_link": "https://arxiv.org/pdf/2607.14041.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.14041",
+      "submission_date": "2026-07-16T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-16T10:15:49.869340+00:00"
     },
     {
       "forum_id": "2607.12474",
@@ -38,293 +130,132 @@
         "cs.AI",
         "AI for Science"
       ],
-      "abstract": "arXiv:2607.12474v1 Announce Type: new \nAbstract: Recent advances in foundation models have transformed AI for Science, enabling remarkably accurate predictive performance across domains ranging from protein folding to weather forecasting. Yet prediction alone does not constitute scientific discovery. Scientific understanding depends on uncovering the reusable explanatory mechanisms that generate observations, whereas contemporary machine learning remains fundamentally organised around predictive mappings rather than explanatory structure. In this paper, we argue that scientific discovery is fundamentally a problem of knowledge organisation. To this end, we introduce Mechanistic World Models, a new design paradigm that places reusable mechanisms at the centre of representation, computation ",
+      "abstract": "arXiv:2607.12474v2 Announce Type: replace \nAbstract: Recent advances in foundation models have transformed AI for Science, enabling remarkably accurate predictive performance across domains ranging from protein folding to weather forecasting. Yet prediction alone does not constitute scientific discovery. Scientific understanding depends on uncovering the reusable explanatory mechanisms that generate observations, whereas contemporary machine learning remains fundamentally organised around predictive mappings rather than explanatory structure. In this paper, we argue that scientific discovery is fundamentally a problem of knowledge organisation. To this end, we introduce Mechanistic World Models, a new design paradigm that places reusable mechanisms at the centre of representation, computat",
       "pdf_link": "https://arxiv.org/pdf/2607.12474.pdf",
       "forum_link": "https://arxiv.org/abs/2607.12474",
-      "submission_date": "2026-07-15T04:00:00+00:00",
+      "submission_date": "2026-07-16T04:00:00+00:00",
       "conference": "AI for Science",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 57.5,
-      "updated_at": "2026-07-15T08:04:01.596779+00:00"
+      "updated_at": "2026-07-16T10:15:49.869774+00:00"
     },
     {
-      "forum_id": "2607.12711",
+      "forum_id": "2607.13423",
       "paper_number": -1,
-      "title": "MaxSAT-Based Feedback for Guiding Vision-Language Models in Sudoku",
+      "title": "Temperature Scaling Is Not Enough: Calibration Gaps Under Human Label Distributions",
       "authors": [
-        "Pedro Orvalho, Guillem Aleny\\`a, Felip Many\\`a"
+        "Wisdom Dogah"
       ],
       "keywords": [
-        "cs.AI",
+        "cs.LG",
         "ACL"
       ],
-      "abstract": "arXiv:2607.12711v1 Announce Type: new \nAbstract: Vision--Language Models (VLMs) have recently demonstrated promising performance on structured visual reasoning tasks, including grid-based puzzles. However, despite strong perceptual capabilities, these models lack explicit mechanisms for enforcing logical consistency and frequently generate assignments that violate underlying constraints. In this paper, we propose a neuro-symbolic approach that integrates formal constraint reasoning into the VLM solving process via a Maximum Satisfiability (MaxSAT) oracle. Rather than computing solutions directly, the symbolic component acts as a consistency validator and refinement engine. Candidate placements generated by the VLM are encoded as soft clauses in a partial MaxSAT formulation, while Sudoku co",
-      "pdf_link": "https://arxiv.org/pdf/2607.12711.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12711",
-      "submission_date": "2026-07-15T04:00:00+00:00",
+      "abstract": "arXiv:2607.13423v1 Announce Type: new \nAbstract: Temperature scaling is the dominant post-hoc calibration method in modern deep learning. Its theoretical justification rests on an assumption that is rarely stated explicitly: that ground-truth labels are one-hot and deterministic. In practice, labels are frequently soft, crowd-sourced, or genuinely distributional, reflecting real disagreement among human annotators rather than annotation noise. We study whether temperature scaling retains its calibration properties when this assumption is violated, and whether any resulting degradation depends on model scale. Using CIFAR-10H and ChaosNLI, two publicly available datasets with human-annotated soft label distributions, we evaluate three model scales per modality under both hard one-hot and sof",
+      "pdf_link": "https://arxiv.org/pdf/2607.13423.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13423",
+      "submission_date": "2026-07-16T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-07-15T08:04:01.597033+00:00"
+      "score": 4.0,
+      "updated_at": "2026-07-16T10:15:50.187444+00:00"
     },
     {
-      "forum_id": "2607.12815",
+      "forum_id": "2607.13414",
       "paper_number": -1,
-      "title": "Visual Access Boundaries in Vision-Language Model Reasoning",
+      "title": "Non-Expansive Two-Time-Scale Stochastic Approximation: A Fixed-Schedule One-Quarter Barrier and Bias-Corrected Acceleration",
       "authors": [
-        "Hiroto Osaka, Shohei Taniguchi, Gouki Minegishi, Kai Yamashita, Masahiro Suzuki, Yutaka Matsuo"
+        "Dhruv Sarkar, Vaneet Aggarwal"
       ],
       "keywords": [
-        "cs.AI",
+        "cs.LG",
         "ACL"
       ],
-      "abstract": "arXiv:2607.12815v1 Announce Type: new \nAbstract: Chain-of-Thought (CoT) prompting is widely used as a test-time scaling strategy for Vision-Language Models (VLMs), but it remains unclear what is extended when VLMs generate longer reasoning traces. We ask whether CoT requires continued access to image tokens, or whether it mainly operates over visual information already made available earlier in the forward pass. We introduce Visual Access Sweep, a causal intervention that masks attention from generated-token queries to image-token keys along layer depth and generation time, and define the Visual Access Boundary (VAB) as the minimal access region that preserves task accuracy. Across six model configurations from Qwen2.5-VL and InternVL3, both no-CoT direct answering and CoT prompting exhibi",
-      "pdf_link": "https://arxiv.org/pdf/2607.12815.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12815",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 51.5,
-      "updated_at": "2026-07-15T08:04:01.597179+00:00"
-    },
-    {
-      "forum_id": "2607.13034",
-      "paper_number": -1,
-      "title": "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
-      "authors": [
-        "Junjie Yin, Xinyu Feng"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.13034v1 Announce Type: new \nAbstract: Large language model (LLM) agents increasingly automate multi-step engineering and informatics workflows, yet they rarely ask how much effort a task actually requires. They often follow a maximum-context-first strategy--re-reading files and dependencies they have already seen--turning a one-line edit into a small code-base audit. We argue the missing capability is task-aware execution-scope estimation: judging a task's difficulty, the information it truly needs, and the shortest reliable path before committing budget. We formalize minimum-sufficient execution and the Agent Cognitive Redundancy Ratio (ACRR), and propose E3 (Estimate, Execute, Expand): the agent estimates an initial operating point, executes a minimum viable path, and expands ",
-      "pdf_link": "https://arxiv.org/pdf/2607.13034.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.13034",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-07-15T08:04:01.597466+00:00"
-    },
-    {
-      "forum_id": "2607.12112",
-      "paper_number": -1,
-      "title": "Continual Learning with Elastic Regularization and Synthetic Replay for Federated MLLM Fine-Tuning",
-      "authors": [
-        "Jing Liu, Chenxuanyin Zou, Jiayang Ren, Gaoyun Fang, Chengfang Li, Yan Wang, Zhenchao Ma, Bo Hu"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.12112v1 Announce Type: cross \nAbstract: Federated fine-tuning of Multimodal Large Language Models (MLLMs) across distributed networks enables privacy-sensitive adaptation to evolving data streams, yet a fundamental obstacle prevents robust deployment in dynamic environments: catastrophic forgetting, wherein sequential task updates erase previously acquired knowledge across visual, linguistic, and cross-modal representations. Addressing this challenge is especially critical for autonomous networked AI operating in safety-sensitive domains, such as content moderation, where reliable retention of prior knowledge underpins system integrity. To overcome this, we propose Federated Continual Multimodal Learning (FedCMM), a framework that embeds continual-learning safeguards into the fe",
-      "pdf_link": "https://arxiv.org/pdf/2607.12112.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12112",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 26.0,
-      "updated_at": "2026-07-15T08:04:01.598547+00:00"
-    },
-    {
-      "forum_id": "2607.12468",
-      "paper_number": -1,
-      "title": "An Omnilingual-ASR-Based Speech-LLM System for the 2nd MLC-SLM Challenge",
-      "authors": [
-        "Shuming Fang, Shuifei Zeng"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.12468v1 Announce Type: cross \nAbstract: We describe our submission to Task 1 of the 2nd MLCSLM Challenge: a cascaded diarization-then-recognition system that combines DiariZen-Large-s80 (WavLM-Large) segmentation, CAM++ embedding-based two-speaker clustering, and a LoRA-adapted omniASR LLM 7B v2 recognizer, with no oracle segmentation or speaker labels at test time. On the official Development set (150 conversations, 21 language/accent categories) the system attains a macro tcpMER of 29.27%, versus 79.15% for the official baseline; on the Evaluation set it scores 50.23%. We also analyze two engineering choices that substantially affect tcpMER. First, embedding-based speaker clustering outperforms an end-to-end-style alternative that assigns speakers from ASR  turn markers alone.",
-      "pdf_link": "https://arxiv.org/pdf/2607.12468.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12468",
-      "submission_date": "2026-07-15T04:00:00+00:00",
+      "abstract": "arXiv:2607.13414v1 Announce Type: cross \nAbstract: Non-expansive two-time-scale stochastic approximation is governed by a slow stochastic Krasnoselskii--Mann fixed-point iteration rather than by contraction to a unique equilibrium. We study this regime under a contractive fast map and a non-expansive reduced slow map. We first prove a finite-horizon lower bound showing that, for any prescribed slow stepsize schedule $(\\beta_k)$, the classical KM residual scale $(\\sum_{i<N}\\beta_i(1-\\beta_i))^{-1}$ is worst-case sharp for the corresponding unregularized KM update. Combined with the raw fast-tracking leakage scale, this explains the previously observed $k^{-1/4+o(1)}$ last-iterate mean-square residual exponent.\n  We then introduce a residual-preconditioned slow oracle that cancels the first-",
+      "pdf_link": "https://arxiv.org/pdf/2607.13414.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13414",
+      "submission_date": "2026-07-16T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-07-15T08:04:01.599096+00:00"
+      "updated_at": "2026-07-16T10:15:50.189401+00:00"
     },
     {
-      "forum_id": "2607.12962",
+      "forum_id": "2607.13475",
       "paper_number": -1,
-      "title": "Form, Not Content? A Preregistered, Placebo-Controlled Evaluation of Learned Error-Conditioned Self-Repair Through Prompts and Weights in Frozen Small Code Models",
+      "title": "Deformable State Estimation for Autonomous Surgical Tissue Retraction Under Partial Observability",
       "authors": [
-        "Mehmet Iscan"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2607.12962v1 Announce Type: cross \nAbstract: Frozen small code LLMs are deployed locally, yet the information guiding a retry after a failed attempt is still measured without placebo controls in the self-repair literature. We treat a failed program as a conjecture and an execution counterexample as an oracle-relative refutation, and introduce PoPE (Popperian Placebo-controlled Evaluation): a methodology for measuring whether evidence that falsifies LLM-generated code can be used operationally by that same model. In PoPE, error content is paired with channel-specific placebos that keep the predeclared scaffold while ablating task-relevant content or deranging the task-error assignment. Frozen small code models (0.5-1.5B) are evaluated under preregistered rules through a prompt channel",
-      "pdf_link": "https://arxiv.org/pdf/2607.12962.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12962",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-07-15T08:04:01.599939+00:00"
-    },
-    {
-      "forum_id": "2508.19186",
-      "paper_number": -1,
-      "title": "Real-Time Model Checking for Closed-Loop Robot Reactive Planning",
-      "authors": [
-        "Christopher Chandler, Bernd Porr, Giulia Lafratta, Alice Miller"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2508.19186v2 Announce Type: replace-cross \nAbstract: Reactive obstacle avoidance methods often cause agents to become trapped in local minima, because they can often only reason one step ahead (i.e., the next action based on the current state). In this paper, we use model checking to achieve reactive multi-step planning and obstacle avoidance on an autonomous robot. Our small, purpose-built model checking algorithm generates plans in situ (within the robot's code) based on ``core'' knowledge and attention as found in biological agents. This is achieved in real-time using no pre-computed data on a low-powered device. Our approach is based on chaining temporary control systems that are spawned to counteract disturbances in the local environment which disrupt an autonomous agent from it",
-      "pdf_link": "https://arxiv.org/pdf/2508.19186.pdf",
-      "forum_link": "https://arxiv.org/abs/2508.19186",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-15T08:04:01.600946+00:00"
-    },
-    {
-      "forum_id": "2603.05995",
-      "paper_number": -1,
-      "title": "TADPO: Reinforcement Learning Goes Off-road",
-      "authors": [
-        "Zhouchonghao Wu, Raymond Song, Vedant Mundheda, Luis E. Navarro-Serment, Christof Schoenborn, Jeff Schneider"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2603.05995v2 Announce Type: replace-cross \nAbstract: Off-road autonomous driving poses significant challenges such as navigating unmapped, variable terrain with uncertain and diverse dynamics. Addressing these challenges requires effective long-horizon planning and adaptable control. Reinforcement Learning (RL) offers a promising solution by learning control policies directly from interaction. However, because off-road driving is a long-horizon task with low-signal rewards, standard RL methods are challenging to apply in this setting. We introduce TADPO, a novel policy gradient formulation that extends Proximal Policy Optimization (PPO), leveraging off-policy trajectories for teacher guidance and on-policy trajectories for student exploration. Building on this, we develop a vision-ba",
-      "pdf_link": "https://arxiv.org/pdf/2603.05995.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.05995",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 86.0,
-      "updated_at": "2026-07-15T08:04:01.601363+00:00"
-    },
-    {
-      "forum_id": "2603.28583",
-      "paper_number": -1,
-      "title": "Navigating the Mirage: A Dual-Path Agentic Framework for Robust Misleading Chart Question Answering",
-      "authors": [
-        "Yanjie Zhang, Yafei Li, Rui Sheng, Zixin Chen, Yanna Lin, Huamin Qu, Lei Chen, Yushi Sun"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2603.28583v2 Announce Type: replace-cross \nAbstract: Despite the success of Vision-Language Models (VLMs), misleading charts remain a significant challenge due to their deceptive visual structures and distorted data representations. We present ChartCynics, an agentic dual-path framework designed to unmask visual deception via a \"skeptical\" reasoning paradigm. Unlike holistic models, ChartCynics decouples perception from verification: a Diagnostic Vision Path captures structural anomalies (e.g., inverted axes) through strategic ROI cropping, while an OCR-Driven Data Path ensures numerical grounding. To resolve cross-modal conflicts, we introduce an Agentic Summarizer optimized via a two-stage protocol: Oracle-Informed SFT for reasoning distillation and Deception-Aware GRPO for adversa",
-      "pdf_link": "https://arxiv.org/pdf/2603.28583.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.28583",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 55.5,
-      "updated_at": "2026-07-15T08:04:01.601440+00:00"
-    },
-    {
-      "forum_id": "2606.27976",
-      "paper_number": -1,
-      "title": "SHARD: cell-keyed residual splitting for alignment-resistant private dense retrieval",
-      "authors": [
-        "Sergey Kurilenko"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2606.27976v3 Announce Type: replace-cross \nAbstract: Dense retrieval systems expose document geometry when vector stores are compromised, and a global protective transform can often be aligned from known pairs. We study SHARD, which splits PCA coordinates into a short routing prefix and a residual protected by independent cell-local orthogonal keys. It supports CKKS ciphertext--plaintext reranking but is evaluated as a leakage trade-off, not a cryptographic document-privacy guarantee.\n  Corrected scoring uses centered document coordinates and an uncentered scoring query, preserving raw ranking up to a query-dependent constant. Across ten BEIR/MIRACL configurations it reproduces raw nDCG@10 and recall, whereas centering both sides loses up to 0.080 nDCG. Cell keys spread diffuse known",
-      "pdf_link": "https://arxiv.org/pdf/2606.27976.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.27976",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-07-15T08:04:01.601924+00:00"
-    },
-    {
-      "forum_id": "2607.12488",
-      "paper_number": -1,
-      "title": "Sample Efficient Generative Optimization for Molecular Design",
-      "authors": [
-        "Sarina Kopf, Cristina Nevado, Philippe Schwaller"
+        "Everest Yang, Skye Thompson, George D. Konidaris"
       ],
       "keywords": [
         "cs.LG",
         "ACL"
       ],
-      "abstract": "arXiv:2607.12488v1 Announce Type: new \nAbstract: Molecular optimization in drug discovery, materials design, and catalysis requires searching vast chemical spaces under tight evaluation budgets, since high-fidelity oracles and experimental measurements are costly. The practical impact of an optimization method therefore hinges on its sample efficiency: how few evaluations it needs to find strong candidates. We introduce Sample Efficient Generative Optimization (SEGO), a framework for Bayesian optimization on adaptively generated molecules. In SEGO, a probabilistic surrogate model forms a hypothesis about where hits lie in chemical space, a generative model is steered to propose candidates in that region, the most promising candidate is selected via an acquisition function, and the resultin",
-      "pdf_link": "https://arxiv.org/pdf/2607.12488.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12488",
-      "submission_date": "2026-07-15T04:00:00+00:00",
+      "abstract": "arXiv:2607.13475v1 Announce Type: cross \nAbstract: Surgical tissue retraction requires effective manipulation planning under partial and noisy perception. We study state estimation for deformable tissue retraction, where only sparse observations of the tissue surface are available at decision time. We propose a learned state estimator that reconstructs the full deformable mesh state from 40 noisy vertex observations. The estimator combines a multilayer perceptron with a low-dimensional PCA latent representation and is trained using geometry-aware regularization that encourages smooth and physically plausible deformations. We evaluate the approach in a 2D deformable sheet simulation using single-step and multi-step retraction planning. Results show that the learned estimator achieves 98.1% ",
+      "pdf_link": "https://arxiv.org/pdf/2607.13475.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13475",
+      "submission_date": "2026-07-16T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 30.0,
-      "updated_at": "2026-07-15T08:04:01.884842+00:00"
+      "score": 11.0,
+      "updated_at": "2026-07-16T10:15:50.189469+00:00"
     },
     {
-      "forum_id": "2607.13031",
+      "forum_id": "2607.13602",
       "paper_number": -1,
-      "title": "The Seriality Gap in Video Diffusion Models",
+      "title": "Analogical Deep Research: Retrieving and Integrating Historical Analogies for Foresight Analysis",
       "authors": [
-        "Jorge Diaz Chao, Konpat Preechakul, Yuxi Liu, Yutong Bai"
+        "Yongqiang Chen, Guangyi Chen, Yuewen Sun, Kun Zhang"
       ],
       "keywords": [
         "cs.LG",
         "ACL"
       ],
-      "abstract": "arXiv:2607.13031v1 Announce Type: new \nAbstract: When one ball strikes another, then another, video models should predict the consequences of each bounce. In controlled experiments on multi-ball hard-sphere dynamics, we find that the performance of standard bidirectional video diffusion degrades as the causal chain lengthens, even when provided more denoising steps. In a length-matched single-ball control, where ball-ball interactions are absent, the degradation largely disappears, isolating dependent-event structure rather than video length as the cause. Across intervention studies, methods that increase effective serial computation improve performance disproportionately, including autoregressive/blockwise generation and architectural depth. We identify this pattern as the seriality gap: ",
-      "pdf_link": "https://arxiv.org/pdf/2607.13031.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.13031",
-      "submission_date": "2026-07-15T04:00:00+00:00",
+      "abstract": "arXiv:2607.13602v1 Announce Type: cross \nAbstract: Systematic comparisons between current situations and structurally similar past events in the historical, i.e., historical analogies, is among the most powerful tools for foresight analysis. In this work, we present a new task called Analogical Deep Research (ADR) to Large Language Model (LLM) agents and construct the first ADR benchmark ADR-bench to study whether LLM agents are able to find and leverage historical analogies when doing foresight analysis. Our investigation reveals a key obstacle: LLM agents are poor at finding analogies because they match on surface features rather than underlying mechanisms. We argue that ADR is inherently a causal question as it requires understanding why the event occurred. Based on our theoretical anal",
+      "pdf_link": "https://arxiv.org/pdf/2607.13602.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13602",
+      "submission_date": "2026-07-16T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 35.5,
-      "updated_at": "2026-07-15T08:04:01.885413+00:00"
+      "score": 25.0,
+      "updated_at": "2026-07-16T10:15:50.189689+00:00"
+    },
+    {
+      "forum_id": "2507.09473",
+      "paper_number": -1,
+      "title": "Efficiency, Feasibility, and Incentive-Awareness in Constrained Online Resource Allocation",
+      "authors": [
+        "Yan Dai, Negin Golrezaei, Patrick Jaillet"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ACL"
+      ],
+      "abstract": "arXiv:2507.09473v2 Announce Type: replace-cross \nAbstract: We study the dynamic allocation of indivisible resources to strategic agents under long-term constraints, where the planner aims to maximize social welfare, satisfy multiple constraints, and elicit near-truthful reports. We find standard primal-dual methods fragile in this setting: agents easily manipulate their reports to distort dual variables, sacrificing social efficiency for individual utility. To address this, we propose the Incentive-Aware Primal-Dual (IAPD) framework. On the primal side, we integrate three components to suppress manipulation: a VCG-based payment neutralizes immediate misreporting benefits, while epoch-based lazy updates and random exploration together ensure potential future gains are outweighed by immediat",
+      "pdf_link": "https://arxiv.org/pdf/2507.09473.pdf",
+      "forum_link": "https://arxiv.org/abs/2507.09473",
+      "submission_date": "2026-07-16T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-07-16T10:15:50.191351+00:00"
     },
     {
       "forum_id": "2607.11985",
@@ -337,40 +268,17 @@
         "cs.LG",
         "ACL"
       ],
-      "abstract": "arXiv:2607.11985v1 Announce Type: cross \nAbstract: Hybrid quantum-classical machine learning workflows repeatedly evaluate many small parametrized circuits during training and model exploration. In this regime, framework dispatch and orchestration overhead often dominate runtime. Prior simulators accelerate execution but leave open the question of when compile-once specialization is the right choice for static variational circuits. We answer this question with VQCSim, a compile-once, PyTorch-native statevector execution path with native autograd. In a systematic MQT Bench study, VQCSim compiles all tested static circuits and provides 87.7% end-to-end semantic validation. Across a five-GPU evaluation set, VQCSim delivers pooled median speedups of 4.49x for native inference and 26.78x for na",
+      "abstract": "arXiv:2607.11985v2 Announce Type: replace-cross \nAbstract: Hybrid quantum-classical machine learning workflows repeatedly evaluate many small parametrized circuits during training and model exploration. In this regime, framework dispatch and orchestration overhead often dominate runtime. Prior simulators accelerate execution but leave open the question of when compile-once specialization is the right choice for static variational circuits. We answer this question with VQCSim, a compile-once, PyTorch-native statevector execution path with native autograd. In a systematic MQT Bench study, VQCSim compiles all tested static circuits and provides 87.7% end-to-end semantic validation. Across a five-GPU evaluation set, VQCSim delivers pooled median speedups of 4.49x for native inference and 26.78",
       "pdf_link": "https://arxiv.org/pdf/2607.11985.pdf",
       "forum_link": "https://arxiv.org/abs/2607.11985",
-      "submission_date": "2026-07-15T04:00:00+00:00",
+      "submission_date": "2026-07-16T04:00:00+00:00",
       "conference": "ACL",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-07-15T08:04:01.885775+00:00"
-    },
-    {
-      "forum_id": "2512.23043",
-      "paper_number": -1,
-      "title": "Mechanistic Evidence for Preserved-but-Misaligned Representations in Non-IID FedAvg",
-      "authors": [
-        "Muhammad Haseeb, Salaar Masood, Muhammad Abdullah Sohail, Mohammad Fatim Shoaib, Muhammad Tahir"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ICML"
-      ],
-      "abstract": "arXiv:2512.23043v2 Announce Type: replace \nAbstract: Federated Averaging (FedAvg) often degrades under non-IID client data, but it remains unclear whether this degradation reflects the loss of client-learned representations or a failure to use representations that are still present. We study this question mechanistically in sparse client-trained vision models, using dense-model controls to test whether the observed effects depend on sparsity. Our analysis combines class-specific circuit discovery, linear probing of frozen representations, head-only finetuning, and sparse feature dictionaries. Across CNN and ResNet models on CIFAR-10 and Fashion-MNIST, severe label skew can drive some per-class accuracies near zero even when class-specific internal structure remains recoverable. Linear prob",
-      "pdf_link": "https://arxiv.org/pdf/2512.23043.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.23043",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ICML",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-07-15T08:04:01.887355+00:00"
+      "updated_at": "2026-07-16T10:15:50.192246+00:00"
     }
   ]
 }

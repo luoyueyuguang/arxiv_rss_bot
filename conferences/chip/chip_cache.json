@@ -1,100 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-07-15T08:04:01.284124+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-07-16T10:15:49.546204+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2607.12126",
+      "forum_id": "2607.13079",
       "paper_number": -1,
-      "title": "FPGA-Based Mini X-Ray Detector Front-End",
+      "title": "ChipVerilog: A Large-Scale OpenCores-Derived Benchmark for LLM-Based Verilog RTL Generation",
       "authors": [
-        "Kris Paetow, D. G. Perera"
+        "Yan Tan, Jiping Du, Xiangchen Meng, Yangdi Lyu"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.13079v1 Announce Type: new \nAbstract: Large language models have shown strong potential for Verilog RTL generation. However, many existing benchmarks are built from short, self-contained module-level tasks. These tasks are useful for controlled evaluation, but they do not fully capture the code scale, hierarchy, and module interactions found in practical IP and processor-core RTL. We present ChipVerilog, a description-to-Verilog generation benchmark built from OpenCores IP/core designs. The benchmark contains 64 generation targets from five design families: OR1200, double-precision FPU, MIPS-16, I2C, and CORDIC. It includes both single-module targets and cross-module targets that instantiate or interact with other RTL modules. Several targets exceed 1,000 lines of Verilog, makin",
+      "pdf_link": "https://arxiv.org/pdf/2607.13079.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13079",
+      "submission_date": "2026-07-16T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-07-16T10:15:49.545196+00:00"
+    },
+    {
+      "forum_id": "2607.13106",
+      "paper_number": -1,
+      "title": "No Attention, No Problem: DPU-Aware Attention Approximation in Modern YOLO on FPGA",
+      "authors": [
+        "Suraj Karki, Qazi Arbab Ahmed, Thorsten Jungeblut"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2607.12126v1 Announce Type: new \nAbstract: Medical imaging systems require reliable front-end electronics that can acquire sensor data, process image information, identify errors, and communicate results to other parts of the system. In applications such as X-ray imaging, CT, PET, ultrasound, and other diagnostic imaging systems, the electronics must often handle large amounts of data while maintaining predictable timing and low-latency operation. Because of these requirements, FPGAs (Field Programmable Gate Arrays) are commonly useful for medical imaging and signal-processing applications. In this project, the medical imaging concept is simplified into a small FPGA-based frontend demonstration.",
-      "pdf_link": "https://arxiv.org/pdf/2607.12126.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12126",
-      "submission_date": "2026-07-15T04:00:00+00:00",
+      "abstract": "arXiv:2607.13106v1 Announce Type: new \nAbstract: Edge-based Artificial Intelligence (AI) acceleration has recently improved progress in real-time object detection. Object detection on edge devices requires a balance between accuracy, speed, and power efficiency. This paper proposes a customized Deep Learning Processor Unit (DPU)-aware architecture for attention-based YOLO variants deployed on AMD FPGAs. Specifically, we evaluate and benchmark YOLOv26 and YOLOv11, two modern attention-based YOLO variants, on the Xilinx ZCU104 across both standard and oriented object detection tasks. We replace unsupported activation functions, substitute split operations with 1x1 convolutions, and approximate the spatial attention mechanism in a DPU-compatible way. All models are then trained and evaluated ",
+      "pdf_link": "https://arxiv.org/pdf/2607.13106.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13106",
+      "submission_date": "2026-07-16T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.5,
+      "updated_at": "2026-07-16T10:15:49.545245+00:00"
+    },
+    {
+      "forum_id": "2607.13898",
+      "paper_number": -1,
+      "title": "Jack of All Scales: A Versatile FPGA Tensor Block for MXFP Precisions",
+      "authors": [
+        "Marwan Mekhemer, Ahmed Elsousy, Balaji Venkatesh, Raphael Rowley, Vaughn Betz, Nachiket Kapre, Andrew Boutros"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2607.13898v1 Announce Type: new \nAbstract: Modern deep learning workloads increasingly rely on narrow numerical formats to improve efficiency and reduce memory footprint. The recently standardized microscaling floating-point (MXFP) family of formats, including MXFP8, MXFP6, and MXFP4, offers a practical approach to low-precision inference, yet the digital signal processing (DSP) blocks in current FPGA architectures offer limited native support for these formats. In this work, we first present a comprehensive characterization of MXFP dot product implementations on Altera Agilex-5 FPGAs, exploring a range of strategies spanning pure soft logic, DSP blocks in fixed-point, floating-point, and tensor modes. Our results show that while the tensor mode delivers the highest arithmetic densit",
+      "pdf_link": "https://arxiv.org/pdf/2607.13898.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13898",
+      "submission_date": "2026-07-16T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-07-15T08:04:01.283174+00:00"
-    },
-    {
-      "forum_id": "2607.12298",
-      "paper_number": -1,
-      "title": "Emulated Integrity Replica: Enabling Self-Healing on FPGA SoCs via Hierarchical Twins",
-      "authors": [
-        "Arsalan Ali Malik, Ali Suvizi, Guru Venkataramani, Aydin Aysu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2607.12298v1 Announce Type: new \nAbstract: Convolutional neural networks (CNNs) are increasingly being deployed on system-on-chip (SoC) platforms, where hardware-accelerated inference enables low-latency edge computing. Achieving fault tolerance on these devices remains challenging because conventional redundancy (dual/triple modular redundancy, DMR/TMR) incurs high resource cost, while software-centric methods (e.g., algorithm-based fault tolerance (ABFT), checkpoint-restart, instruction-level duplication, and software watchdogs/assertions) introduce nontrivial latency/energy overheads, reduce model accuracy, or provide inadequate coverage for accelerator-induced faults.\n  In this paper, we propose Emulated Integrity Replica (EIR), a hierarchical digital-twin framework for FPGA SoCs",
-      "pdf_link": "https://arxiv.org/pdf/2607.12298.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12298",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-07-15T08:04:01.283228+00:00"
-    },
-    {
-      "forum_id": "2607.12788",
-      "paper_number": -1,
-      "title": "CLIP-3D: Closed-Loop Evaluation of Performance and Physical Constraints for 3D ICs",
-      "authors": [
-        "Shuo Ren, Libo Shen, Yaohui Han, Leilei Jin, Chenghan Wang, Zhen Zhuang, Rongliang Fu, Bei Yu, Tsung-Yi Ho"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.12788v1 Announce Type: new \nAbstract: 3D integration packs more power into a smaller footprint, so a candidate design's actual throughput depends on its layout: which macro sits on which tier, where the hot spot lands, and how cache geometry maps to access cycles. Architectural simulators like gem5 report IPC under idealized timing. They do not produce the per-block power map, the cache cycle counts, or the 3D layout that decide the realized billion-instructions-per-second (BIPS), so early-stage 3D-IC exploration selects designs without accounting for the effects that decide whether they throttle on silicon. We present CLIP-3D, a shift-left flow that exposes 3D layout-driven thermal, wire, and cache effects to early-stage architectural exploration before any sign-off tool is inv",
-      "pdf_link": "https://arxiv.org/pdf/2607.12788.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12788",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 37.5,
-      "updated_at": "2026-07-15T08:04:01.283285+00:00"
-    },
-    {
-      "forum_id": "2606.17253",
-      "paper_number": -1,
-      "title": "PDAGENT-BENCH: Characterizing, Grounding, and Architecting LLM/VLM Agents for VLSI Physical Design",
-      "authors": [
-        "Qiufeng Li, Rongqian Chen, Quan Cheng, Chengxuan Wang, Sizhe Tang, Chia-Tung Ho, David Z. Pan, Tian Lan, Weidong Cao"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2606.17253v5 Announce Type: replace \nAbstract: Large Language Models and vision-language models have shown remarkable success in the front-end design of Very Large-Scale Integrated Circuits, yet their capabilities for VLSI physical design remain significantly underexplored. The primary cause is the lack of standardized benchmarks for evaluating agentic physical design workflows that require high-dimensional, multi-stage optimization under strict design constraints, coordinated interaction with diverse Electronic Design Automation tools, and iterative refinement. This work introduces PDAGENT-BENCH, a comprehensive and multi-dimensional benchmark for evaluating LLM/VLM-based agents across the physical design stack. PDAGENT-BENCH integrates both task-level assessment and workflow-level ",
-      "pdf_link": "https://arxiv.org/pdf/2606.17253.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.17253",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 36.0,
-      "updated_at": "2026-07-15T08:04:01.283340+00:00"
+      "updated_at": "2026-07-16T10:15:49.545365+00:00"
     }
   ]
 }

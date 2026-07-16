@@ -1,54 +1,31 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-07-15T08:04:01.187820+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-07-16T10:15:49.447749+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2607.12074",
+      "forum_id": "2605.15026",
       "paper_number": -1,
-      "title": "HARP-ME: Closure-Driven Exact Induced Motif Enumeration on GPUs",
+      "title": "TuxBot: Semantic-Aware Online OS Tuning with Large Language Models",
       "authors": [
-        "Ashwina Kumar, Rupesh Nasre"
+        "Georgios Liargkovas, Mihir Nitin Joshi, Hubertus Franke, Kostis Kaffes"
       ],
       "keywords": [
-        "cs.DC",
+        "cs.OS",
         "FAST"
       ],
-      "abstract": "arXiv:2607.12074v1 Announce Type: new \nAbstract: Exact induced motif enumeration is a fundamental operation in graph mining, but it remains challenging on GPUs because candidate expansion is irregular, repeated set intersections dominate execution, and induced counting must consider both the presence and absence of edges. We present HARP-ME, which stands for Hierarchical Anchor-Reuse Partitioned Motif Enumeration. It is a GPU framework for the exact enumeration of connected induced four-node motifs. HARP-ME introduces closure-aware compilation, which selects a set of anchors for explicit enumeration by considering traversal cost, algebraic derivation benefits, expected state reuse, and the additional halo overhead caused by graph partitioning. HARP-ME also introduces induced-signature reus",
-      "pdf_link": "https://arxiv.org/pdf/2607.12074.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12074",
-      "submission_date": "2026-07-15T04:00:00+00:00",
+      "abstract": "arXiv:2605.15026v2 Announce Type: replace \nAbstract: Online OS tuning can improve long-running services, but existing controllers are poorly matched to live hosts. They treat scheduler, power, memory, and I/O controls as black-box variables and optimize a scalar reward. This view ignores cross-knob policy structure, breaks down when application metrics are unavailable, and can send a running service into degraded regions that persist after the bad setting is removed. We present TuxBot, a host-side framework for steady-state OS tuning with bounded language-model guidance. TuxBot turns knob schemas, telemetry, current configuration, recent action--response history, and retrieved prior runs into a compact decision context. A fast loop proposes low-latency updates, a slower loop periodically r",
+      "pdf_link": "https://arxiv.org/pdf/2605.15026.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.15026",
+      "submission_date": "2026-07-16T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 23.5,
-      "updated_at": "2026-07-15T08:04:00.049412+00:00"
-    },
-    {
-      "forum_id": "2607.12696",
-      "paper_number": -1,
-      "title": "Less Experts, Faster Decoding: Cost-Aware Speculative Decoding for Mixture-of-Experts",
-      "authors": [
-        "Jincheng Xie, Runheng Liu, Heyan Huang, Yawen Ling, Hanbin Dai, Yu Zheng, Wen Hu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.12696v1 Announce Type: cross \nAbstract: Sparse Mixture-of-Experts (MoE) models have become an important approach for scaling Large Language Models (LLMs), but their inference efficiency depends strongly on expert activation patterns. Speculative decoding (SD) accelerates autoregressive generation by verifying multiple draft tokens in parallel, yet existing draft selection strategies primarily optimize acceptance likelihood. In large-scale MoE models, however, selecting draft tokens also determines the union of experts activated during verification. We observe that confidence-driven SD can introduce \\textit{expert scattering}: high-probability draft tokens may route to disjoint experts, increasing expert-weight memory traffic and reducing the speedup from speculation. Motivated b",
-      "pdf_link": "https://arxiv.org/pdf/2607.12696.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12696",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 86.0,
-      "updated_at": "2026-07-15T08:04:00.049963+00:00"
+      "score": 21.0,
+      "updated_at": "2026-07-16T10:15:48.977901+00:00"
     }
   ]
 }

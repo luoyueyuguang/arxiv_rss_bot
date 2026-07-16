@@ -1,215 +1,100 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-07-15T08:03:59.858759+00:00",
-  "paper_count": 9,
+  "last_updated": "2026-07-16T10:15:48.878551+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2607.12172",
+      "forum_id": "2607.13332",
       "paper_number": -1,
-      "title": "Decentralized Gradient Descent: Bottleneck Regimes and Budget Complexity",
+      "title": "Agora: Collective and Permissionless Internet-Scale Pretraining of Large Language Models",
       "authors": [
-        "Nicol\\`o Michelusi"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.12172v1 Announce Type: new \nAbstract: Decentralized gradient descent (DGD) is widely used for solving distributed optimization problems over networks of agents. While its convergence properties are well understood, less is known about the communication and computation resources required to attain a prescribed accuracy. In this paper, we study DGD from a resource-aware perspective and characterize the communication-computation budget required to attain a target error level. We develop a bottleneck-centric framework in which different factors dominate the optimization dynamics at different error scales. Specifically, we identify operating regimes governed by initialization, objective heterogeneity and network connectivity, gradient noise, and communication noise. To capture these ",
-      "pdf_link": "https://arxiv.org/pdf/2607.12172.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12172",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-07-15T08:03:59.341155+00:00"
-    },
-    {
-      "forum_id": "2607.12211",
-      "paper_number": -1,
-      "title": "Overcoming Orchestration Bottlenecks at Exascale: A Decentralized, Policy-Driven Approach for Sim-AI Ensembles",
-      "authors": [
-        "Harikrishna Tummalapalli, Christine M. Simpson, Riccardo Balin, Vitali A. Morozov, Thang D. Pham, Murat Keceli, Thomas D. Uram"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.12211v1 Announce Type: new \nAbstract: Scientific computing is increasingly shifting from monolithic applications to coupled simulation-AI workflows composed of highly heterogeneous tasks with diverse hardware, scale, and runtime requirements. As these workflows scale to leadership-class systems, the resulting extreme ensemble sizes and task variability can create orchestration bottlenecks. System-level schedulers are often configured for limited throughput, while workflow tools face scalability issues due to rigid control-plane topologies and static scheduling heuristics. We introduce EnsembleLauncher, a recursively hierarchical workflow orchestrator for exascale systems, featuring a fully decentralized control plane and a programmable scheduling policy interface. On the Aurora ",
-      "pdf_link": "https://arxiv.org/pdf/2607.12211.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12211",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 53.5,
-      "updated_at": "2026-07-15T08:03:59.341180+00:00"
-    },
-    {
-      "forum_id": "2607.12230",
-      "paper_number": -1,
-      "title": "Profiling and Scheduling Complex O-RAN Applications Across the 5G Edge and Cloud",
-      "authors": [
-        "Yoonjae Hwang, Bhaskar Krishnamachari"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.12230v1 Announce Type: new \nAbstract: The O-RAN paradigm decomposes intelligent RAN control into pipelines of interdependent AI/ML functions, including traffic prediction, signal quality estimation, and slice scheduling, that must execute across a dispersed continuum of far-edge, near-edge, and cloud resources under heterogeneous latency and bandwidth constraints. Despite the natural expression of these pipelines as Directed Acyclic Graphs (DAGs), no integrated methodology exists to profile their execution costs, map them onto dispersed infrastructure via scheduling heuristics, and validate the resulting placement under 5G cellular conditions. We present O-DAG, an end-to-end framework that closes this gap through four tightly coupled stages: (1) DagProfiler, a new open-source to",
-      "pdf_link": "https://arxiv.org/pdf/2607.12230.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12230",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.0,
-      "updated_at": "2026-07-15T08:03:59.341203+00:00"
-    },
-    {
-      "forum_id": "2607.12111",
-      "paper_number": -1,
-      "title": "PFAdapter: Hierarchical LoRA Decomposition for Personalized Federated MLLMs",
-      "authors": [
-        "Jing Liu, Kun Yang, Yan Wang, Dingkang Yang, Xiaoshuai Hao, Wei Zhang, Yang Liu, Wei Zhou"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.12111v1 Announce Type: cross \nAbstract: Agentic AI systems are reshaping communications and networking by deploying autonomous intelligent agents capable of collaborative learning while maintaining data privacy at network edges. Within distributed network environments, Multimodal Large Language Models (MLLMs) serve as cognitive engines for edge devices, yet federated fine-tuning faces substantial challenges in balancing global knowledge aggregation with local adaptation under heterogeneous network conditions. Conventional federated protocols typically rely on uniform parameter aggregation, which conflates domain-invariant features with client-specific nuances, thereby resulting in suboptimal personalization and excessive communication overhead. To address these challenges, we pr",
-      "pdf_link": "https://arxiv.org/pdf/2607.12111.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12111",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.0,
-      "updated_at": "2026-07-15T08:03:59.341315+00:00"
-    },
-    {
-      "forum_id": "2607.12348",
-      "paper_number": -1,
-      "title": "Parallel Sampling from the Ising $p$-Spin Model",
-      "authors": [
-        "Nima Anari, Aniket Das, Alireza Haqi"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.12348v1 Announce Type: cross \nAbstract: We study the parallel complexity of sampling from the high-temperature Ising mixed $p$-spin Gibbs measure, a canonical instance of a mean-field spin glass on the hypercube $\\{\\pm 1\\}^n$. We propose two different algorithms for this problem, corresponding to two different regimes of accuracy.\n  Our first algorithm is a parallel implementation of a Markov chain known as block dynamics, combined with an approximate rejection sampling step that uses an Ising model in a novel way as a proposal distribution to approximate the quadratic interaction terms of the $p$-spin Hamiltonian. For any $\\varepsilon > 0$, this algorithm runs in $n^{\\tfrac{1}{3}}\\operatorname{polylog}(\\tfrac{n}{\\varepsilon})$ parallel time with $\\operatorname{poly}(n, \\log(\\tf",
-      "pdf_link": "https://arxiv.org/pdf/2607.12348.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12348",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-07-15T08:03:59.341354+00:00"
-    },
-    {
-      "forum_id": "2505.07417",
-      "paper_number": -1,
-      "title": "LA-IMR: Latency-Aware, Predictive In-Memory Routing and Proactive Autoscaling for Tail-Latency-Sensitive Cloud Robotics",
-      "authors": [
-        "Eunil Seo, Chanh Nguyen, Erik Elmroth"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2505.07417v3 Announce Type: replace \nAbstract: Hybrid cloud-edge infrastructures now support latency-critical workloads ranging from autonomous vehicles and surgical robotics to immersive AR/VR. However, they continue to experience crippling long-tail latency spikes whenever bursty request streams exceed the capacity of heterogeneous edge and cloud tiers. To address these long-tail latency issues, we present Latency-Aware, Predictive In-Memory Routing and Proactive Autoscaling (LA-IMR). This control layer integrates a closed-form, utilization-driven latency model with event-driven scheduling, replica autoscaling, and edge-to-cloud offloading to mitigate 99th-percentile (P99) delays. Our analytic model decomposes end-to-end latency into processing, network, and queuing components, exp",
-      "pdf_link": "https://arxiv.org/pdf/2505.07417.pdf",
-      "forum_link": "https://arxiv.org/abs/2505.07417",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 23.0,
-      "updated_at": "2026-07-15T08:03:59.341430+00:00"
-    },
-    {
-      "forum_id": "2606.30563",
-      "paper_number": -1,
-      "title": "Data Replication Meets Function Scheduling in the Edge-Cloud Continuum",
-      "authors": [
-        "Matteo Cenzato, Dario d'Abate, Arianna Dragoni, Matteo Briscini, Alessandro Margara"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2606.30563v2 Announce Type: replace \nAbstract: Serverless computing is an appealing model for the edge-cloud continuum, but its stateless assumption breaks down once functions need persistent data: fetching state from a distant cloud store erases the latency benefit of running at the edge. Keeping data close means replicating it, and replication forces a placement decision that is coupled with where functions execute and with the consistency each application demands. We study this joint problem of function scheduling and data placement under two consistency models, strong and eventual replication. We first formulate it as a Binary Linear Program that yields the optimal placement for a given system snapshot, and use it as a reference point. Because the solver does not scale past a few",
-      "pdf_link": "https://arxiv.org/pdf/2606.30563.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.30563",
-      "submission_date": "2026-07-15T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.5,
-      "updated_at": "2026-07-15T08:03:59.341487+00:00"
-    },
-    {
-      "forum_id": "2607.11579",
-      "paper_number": -1,
-      "title": "MemExchange: Utility-Driven Distributed Memory Reallocation for Multi-Tenant Datacenters",
-      "authors": [
-        "AmirHossein Seyri, Abhisek Pan, Balajee Vamanan"
+        "Gil Avraham, Violetta Shevchenko, Hadi Mohaghegh Dolatabadi, Karol Pajak, James Snewin, Harry Xi, Rodney O'Donnell, Thalaiyasingam Ajanthan, Sameera Ramasinghe, Chamin Hewa Koneputugodage, Shamane Siriwardhana, Alexander Long"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.11579v2 Announce Type: replace \nAbstract: To handle unpredictable workloads, cloud providers typically over-provision memory to meet peak demand, resulting in substantial underutilization across datacenter clusters. At the same time, memory-constrained tenants may suffer elevated cache miss rates, even when idle capacity remains stranded elsewhere in the infrastructure. MemExchange is a cluster-wide, multi-tenant memory management system that dynamically right-sizes in-memory caching tenants according to workload demand. Leveraging marginal-utility-based allocation derived from online Miss Ratio Curve (MRC) estimation, MemExchange redistributes idle memory between tenants across physical nodes using RDMA. This approach transforms the dedicated caching memory scattered across ser",
-      "pdf_link": "https://arxiv.org/pdf/2607.11579.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.11579",
-      "submission_date": "2026-07-15T04:00:00+00:00",
+      "abstract": "arXiv:2607.13332v1 Announce Type: cross \nAbstract: Training large language models at the multi-billion to trillion parameter scale is confined to datacenters, where data-parallel (DP) and model-parallel (MP) techniques presume homogeneous accelerators, high-speed interconnects, and a single orchestrating entity. Frontier model development is thereby concentrated among the few groups able to assemble such clusters. Meanwhile, an enormous pool of compute remains unusable for training: consumer and professional GPUs that are heterogeneous, preemptible, individually owned, and connected only by the internet. We present Agora, a system that makes efficient use of this compute. Agora combines bandwidth-efficient pipeline-parallel model sharding over internet-grade links with multi-party, fault-t",
+      "pdf_link": "https://arxiv.org/pdf/2607.13332.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13332",
+      "submission_date": "2026-07-16T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 35.0,
+      "updated_at": "2026-07-16T10:15:48.376462+00:00"
+    },
+    {
+      "forum_id": "2607.13443",
+      "paper_number": -1,
+      "title": "The Environmental Cost of Digital Sovereignty: Water, Energy, and Emissions Impacts of Sovereign AI Infrastructure in the Global South",
+      "authors": [
+        "Muntaser Syed, Marius C. Silaghi, Sheikh Abujar, Sharun Akter Khushbu, Amal El Ahmad"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.13443v1 Announce Type: cross \nAbstract: Sovereign AI has become a strategic priority across the Global South, with over \\$200 billion in state-led commitments announced between 2024 and 2026. Yet the physical infrastructure that compute sovereignty demands, above all data centers, imposes water, energy, and carbon costs that fall hardest on countries least equipped to absorb them. This paper presents a comparative environmental stress analysis across four cases: the United Arab Emirates, Bangladesh, India, and Africa (with a focus on Kenya). Using publicly available water stress data, grid carbon intensity factors, and GPU power specifications, we model the water consumption, energy demand, and carbon emissions of hypothetical sovereign AI deployments under multiple cooling tech",
+      "pdf_link": "https://arxiv.org/pdf/2607.13443.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13443",
+      "submission_date": "2026-07-16T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 13.5,
-      "updated_at": "2026-07-15T08:03:59.341526+00:00"
+      "updated_at": "2026-07-16T10:15:48.376493+00:00"
     },
     {
-      "forum_id": "2105.12663",
+      "forum_id": "2607.13531",
       "paper_number": -1,
-      "title": "EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects",
+      "title": "Ripple: An Open, AI-Formalized Lean 4 Framework for Computing with CRNs",
       "authors": [
-        "Maciej Besta, Patrick Iff, Marcel Schneider, Nils Blach, Alessandro Maissen, Salvatore Di Girolamo, Jens Domke, Jascha Krattenmacher, Kartik Lakhotia, Laura Monroe, Fabrizio Petrini, Robert Gerstenberger, Torsten Hoefler"
+        "Ho-Lin Chen, Xiang Huang"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2105.12663v5 Announce Type: replace-cross \nAbstract: The diversity of communication paths in a network, especially non-minimal paths, is a key enabler of performance at extreme scales. We present EvalNet, a toolchain for scalable generation and analysis of over 25 important network topologies, such as Slim Fly, PolarFly, and Orthogonal Fat Trees, with a strong focus on path diversity metrics. EvalNet provides an extensive and fine-grained analysis of shortest and non-shortest paths, including their multiplicities, lengths, and interference. It supports exact measurement and visualization of bandwidth and throughput between every router pair, enabling unprecedented insight into routing potential. EvalNet also includes detailed models for construction cost and power consumption, and in",
-      "pdf_link": "https://arxiv.org/pdf/2105.12663.pdf",
-      "forum_link": "https://arxiv.org/abs/2105.12663",
-      "submission_date": "2026-07-15T04:00:00+00:00",
+      "abstract": "arXiv:2607.13531v1 Announce Type: cross \nAbstract: We present Ripple, an open, AI-formalized Lean 4 framework for the mathematics of computing real numbers with chemical reaction networks (CRNs). Ripple formalizes the full ladder of models -- the GPAC / CRN continuum and the CRN-computable reals, the large-population-protocol (LPP) compilation pipeline, and a continuous-time Markov chain (CTMC) layer bridged to the deterministic mean-field limit by three machine-checked versions of Kurtz's theorem, and two Turing-completeness results -- the Bournez-Gra\\c{c}a-Pouly GPAC Turing-completeness construction and the Soloveichik-Cook-Winfree-Bruck stochastic-CRN universality theorem. The development is reliable (its core constructions are verified to depend on exactly the three Mathlib foundationa",
+      "pdf_link": "https://arxiv.org/pdf/2607.13531.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13531",
+      "submission_date": "2026-07-16T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 5.0,
-      "updated_at": "2026-07-15T08:03:59.341543+00:00"
+      "score": 12.0,
+      "updated_at": "2026-07-16T10:15:48.376514+00:00"
+    },
+    {
+      "forum_id": "2507.01224",
+      "paper_number": -1,
+      "title": "FLARE: A Dataflow-Aware and Scalable Hardware Architecture for Neural-Hybrid Scientific Lossy Compression",
+      "authors": [
+        "Wenqi Jia, Zhewen Hu, Baixi Sun, Yafan Huang, Jiannan Tian, Boyuan Zhang, Daoce Wang, Sian Jin, Luanzheng Guo, Sheng Di, Yuede Ji, Miao Yin"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2507.01224v2 Announce Type: replace \nAbstract: Scientific simulation leveraging high-performance computing (HPC) systems is crucial for modeling complex systems and phenomena in fields such as astrophysics, climate science, and fluid dynamics, generating massive datasets that often reach petabyte to exabyte scales. However, managing these vast data volumes introduces significant I/O and network bottlenecks, limiting practical performance and scalability. While cutting-edge lossy compression frameworks powered by deep neural networks (DNNs) have demonstrated superior compression ratios by capturing complex data correlations, their integration into HPC workflows poses substantial challenges due to the hybrid non-neural and neural computation patterns, causing excessive memory access ov",
+      "pdf_link": "https://arxiv.org/pdf/2507.01224.pdf",
+      "forum_link": "https://arxiv.org/abs/2507.01224",
+      "submission_date": "2026-07-16T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 26.5,
+      "updated_at": "2026-07-16T10:15:48.376556+00:00"
     }
   ]
 }
