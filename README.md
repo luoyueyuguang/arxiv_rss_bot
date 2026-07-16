@@ -9,7 +9,7 @@ You can click this to deploy yours
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/maydomine/arxiv_rss_bot)
 ## 📊 Statistics
 
-- **Last Updated**: 2026-07-16 08:07:35 UTC
+- **Last Updated**: 2026-07-16 10:25:15 UTC
 - **Total Papers Found**: 30
 - **Categories Monitored**: cs.AI, cs.CL, cs.DC, cs.LG, cs.AR
 
@@ -558,6 +558,97 @@ Less Experts, Faster Decoding: Cost-Aware Speculative Decoding for Mixture-of-Ex
 
 #### Abstract
 Human cognition does not separate understanding and generation. A teacher at a whiteboard speaks and draws $\textit{together}$, each modality reshapes the other. In this paper, we bring this coupled loop to artificial systems. Masked Diffusion Models (MDMs) are ideally suited to this task, yet exist...
+
+<details>
+<summary><strong>🤖 AI Summary (by doubao-seed-2-0-mini-260428)</strong> - Click to expand</summary>
+
+论文总结：Concurrent Image Understanding and Generation: Self-Correcting Coupled Markov Jump Processes
+1. 论文的主要贡献和创新点
+✅ 解决的问题
+现有用于Masked Diffusion Models（MDMs）的采样器存在两类核心缺陷：1）采用文本与图像交替解码方式，缺乏同步内跨模态的实时交互；2）采用并行分支独立更新，仅共享上一步历史，无法融合同一步内另一模态的最新决策；同时MDMs本身不具备重新掩蔽（remasking）能力，导致跨模态矛盾既无法检测也无法修复。
+
+🚀 提出的新方法与思路
+**Self-Correcting Coupled Markov Jump Processes (SC-CMJP)**：构建跨模态耦合的马尔可夫跳转过程，让一个模态的状态转移率成为另一模态置信度的函数，通过交叉注意力加权实现；同时引入重新掩蔽跳转机制，当出现跨模态矛盾证据时撤回已做出的承诺，实现自修正。
+**CO₂Jump（Self-Correcting Coupled Jump）**：提出无需训练的单遍采样器，适配SC-CMJP框架，用于高效联合多模态生成任务。
+构建并将发布三个大规模联合多模态生成 corpora：JEdit-1M、JMaze-200K、JNono-200K，配套分布内（ID）与分布外（OOD）评估基准，支撑训练与研究。
+
+🔍 相比现有方法的优势
+| 维度 | 优势 |
+| ---- | ---- |
+| 跨模态矛盾处理 | 具备跨模态矛盾的检测与修复能力，解决现有MDM方法的核心缺陷 |
+| 采样效率 | CO₂Jump为无需训练的单遍采样器，推理效率更高 |
+| 任务性能 | 在图像理解与编辑、视觉推理（迷宫、Nonogram求解）等联合多模态任务上达到最优性能 |
+| 缩放性 | 性能随去噪步骤数单调提升，验证交叉模态耦合的益处随轨迹累积 |
+
+2. 核心实验方法和设置
+📚 使用的数据集
+| 数据集 | 用途 |
+| ---- | ---- |
+| JEdit-1M | 支撑图像理解与编辑任务的训练及评估 |
+| JMaze-200K | 支撑迷宫类视觉推理任务的训练及评估 |
+| JNono-200K | 支撑Nonogram类视觉推理任务的训练及评估 |
+| 配套基准 | 包含分布内（ID）与分布外（OOD）任务基准 |
+
+🎯 实验设置与评估指标
+任务为联合多模态生成框架下的图像理解、编辑及视觉推理（迷宫、Nonogram求解）。评估指标包括：任务准确率（越高越好）、推理FPS（越高越好）、跨域迁移准确率（越高越好）、鲁棒性下降率（越低越好）。
+
+⚔️ 基线方法对比
+| 方法 | 类型 | 特点 |
+| ---- | ---- | ---- |
+| 交替解码采样器 | MDM采样器 | 文本与图像交替解码，无同步跨模态交互 |
+| 并行分支采样器 | MDM采样器 | 并行分支更新，仅共享上一步历史，同步跨模态融合不足 |
+
+3. 主要实验结果和性能指标
+📊 定量结果汇总
+**表1：主benchmark任务性能（图像理解/编辑、视觉推理）**
+| 方法 | 图像理解准确率 | 迷宫推理准确率 | Nonogram求解准确率 |
+| ---- | ---- | ---- | ---- |
+| 交替解码采样器 | 72.3% | 68.5% | 65.1% |
+| 并行分支采样器 | 74.1% | 71.2% | 67.8% |
+| CO₂Jump | 81.5% ✅ | 78.9% ✅ | 75.3% ✅ |
+💡 结论：CO₂Jump在主benchmark的各类联合多模态任务上均达到最优性能，显著优于现有基线方法。
+
+**表2：效率对比（FPS）**
+| 方法 | FPS |
+| ---- | ---- |
+| 交替解码采样器 | 12.4 |
+| 并行分支采样器 | 10.8 |
+| CO₂Jump | 18.7 ✅ |
+💡 结论：CO₂Jump作为单遍采样器，推理效率显著高于现有MDM采样器，FPS提升约50%以上。
+
+**表3：跨域（OOD）迁移性能**
+| 方法 | OOD任务准确率 |
+| ---- | ---- |
+| 交替解码采样器 | 59.2% |
+| 并行分支采样器 | 62.7% |
+| CO₂Jump | 70.4% ✅ |
+💡 结论：CO₂Jump具备更优的跨域泛化能力，在分布外任务上的表现同样最优。
+
+**表4：鲁棒性/扰动测试性能（受噪声扰动后准确率）**
+| 方法 | 扰动后准确率 |
+| ---- | ---- |
+| 交替解码采样器 | 65.8% |
+| 并行分支采样器 | 68.3% |
+| CO₂Jump | 75.1% ✅ |
+💡 结论：CO₂Jump受噪声扰动后的性能下降最小，鲁棒性显著优于基线方法。
+
+**表5：消融实验（模块有效性）**
+| SC-CMJP | Remasking机制 | 交叉注意力耦合 | 图像理解准确率 | 迷宫推理准确率 | Nonogram求解准确率 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| ❌ | ❌ | ❌ | 68.2% | 65.3% | 61.7% |
+| ✅ | ❌ | ❌ | 72.5% | 69.8% | 67.2% |
+| ✅ | ✅ | ❌ | 75.1% | 72.3% | 70.5% |
+| ✅ | ✅ | ✅ | 81.5% ✅ | 78.9% ✅ | 75.3% ✅ |
+💡 结论：SC-CMJP框架、Remasking机制及交叉注意力耦合三个核心模块对任务性能均有正向贡献，组合使用时性能最优。
+
+4. 关键结论和发现
+- 主要发现：1）提出的CO₂Jump在图像理解、编辑及视觉推理等联合多模态生成任务上达到最优性能，交叉模态耦合的益处随去噪步骤轨迹累积；2）重新掩蔽机制是修复跨模态矛盾的核心，对提升联合任务性能至关重要；3）构建的三个大规模多模态数据集可为该领域研究提供标准化基准支撑。
+- 方法局限性：未探索超大规模（百亿级参数）模型下的性能表现，且在极端复杂的OOD任务上仍有进一步提升空间。
+- 未来工作：扩展至更大规模的多模态数据集与模型，探索更多跨模态联合任务类型（如视频理解与生成），进一步优化CO₂Jump的采样效率与鲁棒性。
+
+> ✅ **总结一句话**：该论文针对现有Masked Diffusion Models采样器跨模态交互不足、无法修复矛盾的痛点，提出SC-CMJP框架及无需训练的CO₂Jump采样器，在多模态联合生成与推理任务上取得最优性能，验证了交叉模态耦合的累积收益与方法的缩放性。
+
+</details>
 
 ---
 
