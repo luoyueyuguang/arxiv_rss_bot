@@ -15,12 +15,12 @@ from bots.sys_bot import SysBot
 from bots.chip_bot import ChipBot
 from bots.ai_bot import AIBot
 from bots.num_bot import NumBot
+from bots.iclr_bot import ICLRBot
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
-
 BOT_CLASSES = {
     "arch": ArchBot,
     "hpc": HPCBot,
@@ -28,6 +28,7 @@ BOT_CLASSES = {
     "chip": ChipBot,
     "ai": AIBot,
     "num": NumBot,
+    "iclr": ICLRBot,
 }
 
 

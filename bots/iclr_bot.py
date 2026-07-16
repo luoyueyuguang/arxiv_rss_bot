@@ -125,7 +125,7 @@ class ICLRBot:
         config_file: str = "config.json",
     ) -> None:
         self.year = year
-        self.output_dir = output_dir or Path("iclr")
+        self.output_dir = output_dir or Path("conferences/iclr")
         self.max_papers = max_papers
         self.display_limit = display_limit
         self.session = session or requests.Session()
