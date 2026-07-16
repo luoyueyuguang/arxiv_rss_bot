@@ -49,6 +49,10 @@ jobs:
             python run_all_bots.py all
           fi
 
+      - name: Run ICLR bot (manual only)
+        if: github.event_name == 'workflow_dispatch'
+        run: python -m iclr_bot
+
       - name: Commit changes
         run: |
           if git diff --quiet && git diff --cached --quiet; then
@@ -58,7 +62,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add conferences/arch/ conferences/hpc/ conferences/sys/ conferences/chip/ conferences/ai/ conferences/num/
-          git commit -m "Update conference papers (arch/hpc/sys/chip/ai/num)"
+          git add iclr/README.md iclr/iclr_cache.json 2>/dev/null || true
+          git commit -m "Update conference papers"
 
       - name: Push changes
         run: |
