@@ -136,6 +136,11 @@ class SysBot(BaseConferenceBot):
         ("NSDI '26", "https://www.usenix.org/conference/nsdi26/technical-sessions"),
         ("FAST '26", "https://www.usenix.org/conference/fast26/technical-sessions"),
     ]
+
+    DBLP_VENUES = [
+        ("EuroSys '26", "https://dblp.org/db/conf/eurosys/eurosys2026"),
+        ("SOSP '25", "https://dblp.org/db/conf/sosp/sosp2025"),
+    ]
     def _fetch_usenix_papers(self) -> list:
         """Fetch papers from USENIX conference proceedings pages."""
         try:

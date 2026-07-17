@@ -393,6 +393,79 @@ class BaseConferenceBot(ABC):
         Override in subclass and return a list of USENIX_URLS to enable.
         """
         return []
+
+    DBLP_VENUES: list = []  # Override in subclass: [(conf_name, dblp_url), ...]
+
+    def _fetch_dblp_papers(self) -> List[ConferencePaper]:
+        """Fetch papers from DBLP conference proceedings (XML)."""
+        if not self.DBLP_VENUES:
+            return []
+
+        try:
+            from bs4 import BeautifulSoup
+        except ImportError:
+            logger.warning("beautifulsoup4 not installed, skipping DBLP")
+            return []
+
+        papers = []
+        for conf_name, url in self.DBLP_VENUES:
+            try:
+                xml_url = url.rstrip("/") + ".xml" if not url.endswith(".xml") else url
+                logger.info("DBLP: %s from %s", conf_name, xml_url)
+                resp = self.session.get(xml_url, timeout=30)
+                if resp.status_code != 200:
+                    logger.warning("  %s returned %d", conf_name, resp.status_code)
+                    continue
+
+                soup = BeautifulSoup(resp.text, "xml")
+                # DBLP XML: <inproceedings>, <article>, etc. with <title>, <author>, <pages>
+                entries = soup.find_all(["inproceedings", "article"])
+                if not entries:
+                    logger.info("  %s: no entries found", conf_name)
+                    continue
+
+                conf_papers = []
+                for idx, entry in enumerate(entries, 1):
+                    title_el = entry.find("title")
+                    if not title_el:
+                        continue
+                    title = title_el.get_text(strip=True)
+
+                    authors = []
+                    for author_el in entry.find_all("author"):
+                        name = author_el.get_text(strip=True)
+                        if name:
+                            authors.append(name)
+
+                    # DBLP often links to an open-access PDF via <ee> element
+                    pdf_link = None
+                    ee_el = entry.find("ee")
+                    if ee_el:
+                        pdf_link = ee_el.get_text(strip=True)
+
+                    forum_link = url.rstrip(".xml")
+
+                    conf_papers.append(ConferencePaper(
+                        forum_id=f"dblp-{re.sub(r'[^a-zA-Z0-9]', '', conf_name).lower()}-{idx}",
+                        paper_number=idx,
+                        title=title,
+                        authors=authors if authors else ["Unknown"],
+                        keywords=[],
+                        abstract=f"DBLP entry. {conf_name}.",
+                        pdf_link=pdf_link or forum_link,
+                        forum_link=forum_link,
+                        submission_date=None,
+                        conference=conf_name,
+                        source="dblp",
+                    ))
+
+                papers.extend(conf_papers)
+                logger.info("  %s: %d papers", conf_name, len(conf_papers))
+            except Exception as exc:
+                logger.error("DBLP %s failed: %s", conf_name, exc)
+
+        logger.info("DBLP total: %d papers", len(papers))
+        return papers
     # === Unified fetch ===
 
     def fetch_papers(self) -> List[ConferencePaper]:
@@ -411,7 +484,9 @@ class BaseConferenceBot(ABC):
         usenix_papers = self._fetch_usenix_papers()
         papers.extend(usenix_papers)
 
-        # Deduplicate by title
+        # 4. DBLP proceedings (universal CS conference coverage)
+        dblp_papers = self._fetch_dblp_papers()
+        papers.extend(dblp_papers)
         seen = set()
         unique: List[ConferencePaper] = []
         for p in papers:
