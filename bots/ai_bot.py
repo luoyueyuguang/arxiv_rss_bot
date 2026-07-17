@@ -79,14 +79,14 @@ class AIBot(BaseConferenceBot):
         "Quantization", "Pruning", "Distillation",
         "Scalable", "Efficient training",
     ]
-
-    # MLR Press proceedings to scrape (volume URL, conference name)
+    # Venue proceedings to scrape
     MLR_URLS: list = [
         ("ICML '25", "https://proceedings.mlr.press/v274/"),
     ]
+    NEURIPS_URL = "https://proceedings.neurips.cc/paper_files/paper/2025"
 
     def _fetch_usenix_papers(self) -> list:
-        """Fetch papers from MLR Press proceedings (ICML, etc.)."""
+        """Fetch papers from MLR Press and NeurIPS proceedings."""
         try:
             from bs4 import BeautifulSoup
         except ImportError:
@@ -172,7 +172,59 @@ class AIBot(BaseConferenceBot):
             except Exception as exc:
                 logger.error("MLR %s failed: %s", conf_name, exc)
 
-        logger.info("MLR total: %d papers", len(papers))
+
+        # --- NeurIPS proceedings ---
+        if self.NEURIPS_URL:
+            try:
+                logger.info("NeurIPS: from %s", self.NEURIPS_URL)
+                resp = self.session.get(self.NEURIPS_URL, timeout=30)
+                if resp.status_code == 200:
+                    soup = BeautifulSoup(resp.text, "lxml")
+                    # Papers are in <li> elements with links to abstract pages
+                    paper_links = soup.select("a[href*='-Abstract-Conference.html']")
+                    if not paper_links:
+                        paper_links = soup.select("a[href*='-Abstract-Datasets_and_Benchmarks_Track.html']")
+                    conf_papers = []
+                    seen_titles = set()
+                    for link in paper_links:
+                        title = link.get_text(strip=True)
+                        href = link.get("href", "")
+                        if not title or title in seen_titles:
+                            continue
+                        seen_titles.add(title)
+                        forum_link = f"https://proceedings.neurips.cc{href}" if href.startswith("/") else href
+                        # Authors: text nodes after the link before the next tag
+                        parent = link.parent
+                        authors_text = ""
+                        if parent:
+                            full_text = parent.get_text(" ", strip=True)
+                            # Remove the title from the beginning
+                            if full_text.startswith(title):
+                                authors_text = full_text[len(title):].strip()
+                        authors = [a.strip() for a in authors_text.split(",") if a.strip() and len(a.strip()) > 1]
+
+                        conf_papers.append(ConferencePaper(
+                            forum_id=f"neurips25-{len(conf_papers)+1}",
+                            paper_number=len(conf_papers) + 1,
+                            title=title,
+                            authors=authors[:10] if authors else ["Unknown"],
+                            keywords=[],
+                            abstract="",
+                            pdf_link=forum_link,
+                            forum_link=forum_link,
+                            submission_date=None,
+                            conference="NeurIPS '25",
+                            source="neurips",
+                        ))
+
+                    papers.extend(conf_papers)
+                    logger.info("  NeurIPS '25: %d papers", len(conf_papers))
+                else:
+                    logger.warning("  NeurIPS returned %d", resp.status_code)
+            except Exception as exc:
+                logger.error("NeurIPS failed: %s", exc)
+
+        logger.info("Venue total: %d papers", len(papers))
         return papers
 
     @property

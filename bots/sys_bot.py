@@ -131,11 +131,9 @@ class SysBot(BaseConferenceBot):
         "RISC-V verification", "RISC-V formal",
     ]
 
-    # USENIX conference proceedings to scrape
     USENIX_URLS = [
         ("OSDI '26", "https://www.usenix.org/conference/osdi26/technical-sessions"),
         ("NSDI '26", "https://www.usenix.org/conference/nsdi26/technical-sessions"),
-        ("USENIX ATC '26", "https://www.usenix.org/conference/atc26/technical-sessions"),
         ("FAST '26", "https://www.usenix.org/conference/fast26/technical-sessions"),
     ]
     def _fetch_usenix_papers(self) -> list:
