@@ -1,7 +1,7 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-07-17T02:38:52.298391+00:00",
+  "last_updated": "2026-07-17T02:57:00.003465+00:00",
   "paper_count": 4,
   "papers": [
     {
@@ -25,7 +25,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 22.0,
-      "updated_at": "2026-07-17T02:38:52.296679+00:00"
+      "updated_at": "2026-07-17T02:57:00.001729+00:00"
     },
     {
       "forum_id": "2607.13898",
@@ -48,7 +48,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 32.5,
-      "updated_at": "2026-07-17T02:38:52.296746+00:00"
+      "updated_at": "2026-07-17T02:57:00.001795+00:00"
     },
     {
       "forum_id": "2607.12505",
@@ -71,7 +71,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 12.0,
-      "updated_at": "2026-07-17T02:38:52.296850+00:00"
+      "updated_at": "2026-07-17T02:57:00.001897+00:00"
     },
     {
       "forum_id": "2607.12839",
@@ -94,7 +94,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 55.5,
-      "updated_at": "2026-07-17T02:38:52.296866+00:00"
+      "updated_at": "2026-07-17T02:57:00.001914+00:00"
     }
   ]
 }

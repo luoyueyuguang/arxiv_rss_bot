@@ -1,6 +1,6 @@
 # Systems / AI Infra / AI Compiler / RISC-V Papers
 
-- **Last Updated**: 2026-07-17 02:38:54 UTC
+- **Last Updated**: 2026-07-17 02:57:01 UTC
 - **Total Filtered Papers**: 1
 - **Displaying**: 1 (arXiv: 1, OpenReview: 0)
 - **Papers with Ratings**: 0
