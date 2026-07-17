@@ -9,12 +9,13 @@ OpenReview: EuroSys, MLSys (when available)
 
 import sys
 from pathlib import Path
+import re
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-import logging
-from base_conference_bot import BaseConferenceBot
+from base_conference_bot import BaseConferenceBot, ConferencePaper
 
+import logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
@@ -129,6 +130,85 @@ class SysBot(BaseConferenceBot):
         "CHERI", "CHERI-RISC-V",
         "RISC-V verification", "RISC-V formal",
     ]
+
+    # USENIX conference proceedings to scrape
+    USENIX_URLS = [
+        ("OSDI '26", "https://www.usenix.org/conference/osdi26/technical-sessions"),
+        ("NSDI '26", "https://www.usenix.org/conference/nsdi26/technical-sessions"),
+        ("USENIX ATC '26", "https://www.usenix.org/conference/atc26/technical-sessions"),
+        ("FAST '26", "https://www.usenix.org/conference/fast26/technical-sessions"),
+    ]
+    def _fetch_usenix_papers(self) -> list:
+        """Fetch papers from USENIX conference proceedings pages."""
+        try:
+            from bs4 import BeautifulSoup
+        except ImportError:
+            logger.warning("beautifulsoup4 not installed, skipping USENIX")
+            return []
+
+        papers = []
+        for conf_name, url in self.USENIX_URLS:
+            try:
+                logger.info("USENIX: %s from %s", conf_name, url)
+                resp = self.session.get(url, timeout=30)
+                if resp.status_code != 200:
+                    logger.warning("  %s returned %d, skipping", conf_name, resp.status_code)
+                    continue
+                soup = BeautifulSoup(resp.text, "lxml")
+
+                # Each paper is an <article class="node node-paper">
+                articles = soup.select("article.node-paper")
+                if not articles:
+                    logger.info("  %s: no papers found (proceedings not posted yet?)", conf_name)
+                    continue
+
+                for idx, article in enumerate(articles, 1):
+                    # Title
+                    title_el = article.select_one("h2 a")
+                    if not title_el:
+                        continue
+                    title = title_el.get_text(strip=True)
+                    forum_link = title_el["href"]
+                    if forum_link.startswith("/"):
+                        forum_link = "https://www.usenix.org" + forum_link
+                    authors_el = article.select_one(".field-name-field-paper-people-text p")
+                    if not authors_el:
+                        continue
+
+                    # Authors
+                    author_text = authors_el.get_text(" ", strip=True)
+                    # Split on semicolons (USENIX format: "Name, <em>Affiliation;</em> ...")
+                    authors = [p.strip().rstrip(",") for p in author_text.split(";") if p.strip()]
+
+                    # Abstract
+                    abstract_el = article.select_one(".field-name-field-paper-description-long")
+                    abstract = abstract_el.get_text(" ", strip=True) if abstract_el else ""
+
+                    if not title or not abstract:
+                        continue
+
+                    forum_id = f"usenix-{re.sub(r'[^a-zA-Z0-9]', '', conf_name).lower()}-{idx}"
+                    paper = ConferencePaper(
+                        forum_id=forum_id,
+                        paper_number=idx,
+                        title=title,
+                        authors=authors if authors else ["Unknown"],
+                        keywords=[],
+                        abstract=abstract[:2000] if abstract else "",
+                        pdf_link=forum_link,
+                        forum_link=forum_link,
+                        submission_date=None,
+                        conference=conf_name,
+                        source="usenix",
+                    )
+                    papers.append(paper)
+                conf_count = len([p for p in papers if p.conference == conf_name])
+                logger.info("  %s: %d papers", conf_name, conf_count)
+            except Exception as exc:
+                logger.error("USENIX %s failed: %s", conf_name, exc)
+
+        logger.info("USENIX total: %d papers", len(papers))
+        return papers
 
     @property
     def conference_keywords(self) -> list:

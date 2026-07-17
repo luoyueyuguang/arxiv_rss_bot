@@ -386,6 +386,13 @@ class BaseConferenceBot(ABC):
                     logger.error("Build paper: %s", exc)
         return all_papers
 
+
+    def _fetch_usenix_papers(self) -> List[ConferencePaper]:
+        """Fetch papers from USENIX conference proceedings.
+
+        Override in subclass and return a list of USENIX_URLS to enable.
+        """
+        return []
     # === Unified fetch ===
 
     def fetch_papers(self) -> List[ConferencePaper]:
@@ -399,6 +406,10 @@ class BaseConferenceBot(ABC):
         if self.OPENREVIEW_DOMAINS:
             or_papers = self.fetch_papers_openreview()
             papers.extend(or_papers)
+
+        # 3. USENIX proceedings (conference-specific)
+        usenix_papers = self._fetch_usenix_papers()
+        papers.extend(usenix_papers)
 
         # Deduplicate by title
         seen = set()
