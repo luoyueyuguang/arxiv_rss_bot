@@ -10,9 +10,10 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+import re
 
 import logging
-from base_conference_bot import BaseConferenceBot
+from base_conference_bot import BaseConferenceBot, ConferencePaper
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
@@ -78,6 +79,101 @@ class AIBot(BaseConferenceBot):
         "Quantization", "Pruning", "Distillation",
         "Scalable", "Efficient training",
     ]
+
+    # MLR Press proceedings to scrape (volume URL, conference name)
+    MLR_URLS: list = [
+        ("ICML '25", "https://proceedings.mlr.press/v274/"),
+    ]
+
+    def _fetch_usenix_papers(self) -> list:
+        """Fetch papers from MLR Press proceedings (ICML, etc.)."""
+        try:
+            from bs4 import BeautifulSoup
+        except ImportError:
+            logger.warning("beautifulsoup4 not installed, skipping MLR")
+            return []
+
+        papers = []
+        for conf_name, url in self.MLR_URLS:
+            try:
+                logger.info("MLR: %s from %s", conf_name, url)
+                resp = self.session.get(url, timeout=30)
+                if resp.status_code != 200:
+                    logger.warning("  %s returned %d, skipping", conf_name, resp.status_code)
+                    continue
+                soup = BeautifulSoup(resp.text, "lxml")
+
+                paper_divs = soup.select("div.paper")
+                if not paper_divs:
+                    logger.info("  %s: no papers found", conf_name)
+                    continue
+
+                conf_papers = []
+                for paper_div in paper_divs:
+                    title_el = paper_div.select_one("p.title")
+                    if not title_el:
+                        continue
+                    title = title_el.get_text(strip=True)
+
+                    authors_el = paper_div.select_one("span.authors")
+                    authors_text = authors_el.get_text(strip=True) if authors_el else ""
+                    authors = [a.strip() for a in authors_text.split(",") if a.strip()]
+
+                    # Get info line for pages/venue
+                    info_el = paper_div.select_one("span.info")
+                    info_text = info_el.get_text(strip=True) if info_el else ""
+
+                    # Get abs link for abstract and PDF
+                    abs_link = None
+                    pdf_link = None
+                    links_el = paper_div.select_one("p.links")
+                    if links_el:
+                        for a in links_el.select("a"):
+                            href = a.get("href", "")
+                            text = a.get_text(strip=True)
+                            if text == "abs" and href:
+                                abs_link = href if href.startswith("http") else f"https://proceedings.mlr.press{href}" if href.startswith("/") else f"{url}{href}"
+                            elif "Download PDF" in text and href:
+                                pdf_link = href
+
+                    if not title or not authors:
+                        continue
+
+                    # Try to fetch abstract from paper page
+                    abstract = ""
+                    if abs_link:
+                        try:
+                            abs_resp = self.session.get(abs_link, timeout=15)
+                            abs_soup = BeautifulSoup(abs_resp.text, "lxml")
+                            abstract_el = abs_soup.select_one("meta[property='og:description']")
+                            if abstract_el:
+                                abstract = abstract_el.get("content", "")
+                        except Exception:
+                            pass
+
+                    clean_name = re.sub(r"[^a-zA-Z0-9]", "", conf_name).lower()
+                    forum_id = f"mlr-{clean_name}-{len(conf_papers)+1}"
+                    conf_papers.append(ConferencePaper(
+                        forum_id=forum_id,
+                        paper_number=len(conf_papers) + 1,
+                        title=title,
+                        authors=authors if authors else ["Unknown"],
+                        keywords=[],
+                        abstract=abstract[:2000] if abstract else info_text[:500],
+                        pdf_link=pdf_link or abs_link or url,
+                        forum_link=abs_link or url,
+                        submission_date=None,
+                        conference=conf_name,
+                        source="mlr",
+                    ))
+
+                papers.extend(conf_papers)
+                logger.info("  %s: %d papers", conf_name, len(conf_papers))
+            except Exception as exc:
+                logger.error("MLR %s failed: %s", conf_name, exc)
+
+        logger.info("MLR total: %d papers", len(papers))
+        return papers
 
     @property
     def conference_keywords(self) -> list:
