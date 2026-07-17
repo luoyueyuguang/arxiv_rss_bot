@@ -1,77 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-07-17T03:07:55.120600+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-07-17T08:05:09.065463+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2607.13184",
+      "forum_id": "2607.14789",
       "paper_number": -1,
-      "title": "Microflow: Microarchitectural Causal Observability for Deep Cross-Layer Analysis and Optimization",
+      "title": "Valinor: Architectural Support for Fast, Energy-Efficient and Programmable Physical Memory Allocation",
       "authors": [
-        "Saber Ganjisaffar, Chengyu Song, Nael Abu-Ghazaleh"
+        "Konstantinos Kanellopoulos, Spiros Galanopoulos, Konstantinos Sgouras, Vlad-Petru Nitu, Ilias Papalamprou, Andreas Kosmas Kakolyris, Rahul Bera, Dimosthenis Masouros, Dimitrios Soudris, Onur Mutlu"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2607.13184v1 Announce Type: new \nAbstract: Existing architectural simulators expose aggregate metrics or raw traces, but fail to reveal complex interactions among microarchitectural events and their relationship to program execution. Consequently, architects observe performance symptoms but cannot systematically attribute them to root causes across abstraction layers. This paper introduces Microflow, an observability framework elevating causality to a first-class analytical object. Microflow transforms execution traces into the Microflow Intermediate Representation (MFIR), explicitly capturing dependencies across software semantics, instructions, microarchitectural events, and hardware resources. By unifying these elements, MFIR enables direct traversal from observed stalls to their ",
-      "pdf_link": "https://arxiv.org/pdf/2607.13184.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.13184",
-      "submission_date": "2026-07-16T04:00:00+00:00",
+      "abstract": "arXiv:2607.14789v1 Announce Type: new \nAbstract: Physical memory allocation establishes virtual-to-physical mappings on demand. In current systems, each minor page fault traps into the kernel and triggers pipeline flushes, stalls, and a long sequence of allocation steps that can cost tens of thousands of cycles. These overheads are increasingly significant for short-lived workloads such as serverless functions and microservices, where minor faults can account for up to 54% of runtime and up to 40% of system energy. Prior hardware allocation proposals avoid traps and context switches, but either sacrifice useful placement optimizations or rely on fixed-function logic that cannot adapt to new policies or changing hardware conditions.\n  We present Valinor, a hardware-OS cooperative memory all",
+      "pdf_link": "https://arxiv.org/pdf/2607.14789.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.14789",
+      "submission_date": "2026-07-17T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 22.0,
-      "updated_at": "2026-07-17T03:07:55.118797+00:00"
-    },
-    {
-      "forum_id": "2607.13898",
-      "paper_number": -1,
-      "title": "Jack of All Scales: A Versatile FPGA Tensor Block for MXFP Precisions",
-      "authors": [
-        "Marwan Mekhemer, Ahmed Elsousy, Balaji Venkatesh, Raphael Rowley, Vaughn Betz, Nachiket Kapre, Andrew Boutros"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2607.13898v1 Announce Type: new \nAbstract: Modern deep learning workloads increasingly rely on narrow numerical formats to improve efficiency and reduce memory footprint. The recently standardized microscaling floating-point (MXFP) family of formats, including MXFP8, MXFP6, and MXFP4, offers a practical approach to low-precision inference, yet the digital signal processing (DSP) blocks in current FPGA architectures offer limited native support for these formats. In this work, we first present a comprehensive characterization of MXFP dot product implementations on Altera Agilex-5 FPGAs, exploring a range of strategies spanning pure soft logic, DSP blocks in fixed-point, floating-point, and tensor modes. Our results show that while the tensor mode delivers the highest arithmetic densit",
-      "pdf_link": "https://arxiv.org/pdf/2607.13898.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.13898",
-      "submission_date": "2026-07-16T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-07-17T03:07:55.118870+00:00"
-    },
-    {
-      "forum_id": "2607.12505",
-      "paper_number": -1,
-      "title": "Realizable N:M Sparse Transformer Inference via Search-Kernel Co-Design",
-      "authors": [
-        "Yiming Liu, Wenqi Lou, Zhiguang Wang, Zhiwei Ke, Fengrui Zuo, Chao Wang, Xuehai Zhou"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2607.12505v2 Announce Type: replace \nAbstract: Vision Transformers (ViTs) achieve strong accuracy but incur high inference latency. Semi-structured N:M sparsity can reduce arithmetic cost, yet its theoretical savings often fail to translate into proportional end-to-end speedups on modern GPUs. This mismatch arises because deployment latency depends not only on arithmetic reduction but also on execution regularity and hardware scheduling under sparsity. Achieving practical acceleration, therefore, requires coordinated design across sparse execution and sparsity configuration. To this end, we propose a hardware-software co-design framework for N:M sparse ViT inference. On the hardware side, we design MD-SpMM, an N:M sparse CUDA kernel that reorganizes sparse GEMM into micro-dense, Tens",
-      "pdf_link": "https://arxiv.org/pdf/2607.12505.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12505",
-      "submission_date": "2026-07-16T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-07-17T03:07:55.118986+00:00"
+      "score": 33.5,
+      "updated_at": "2026-07-17T08:05:09.064203+00:00"
     },
     {
       "forum_id": "2607.12839",
@@ -84,17 +38,17 @@
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2607.12839v2 Announce Type: replace-cross \nAbstract: Modern edge system-on-chips (SoCs) combine CPUs, integrated GPUs (iGPUs), and neural processing units (NPUs), yet existing LLM runtimes typically make coarse device-level decisions or optimize operators in isolation. As a result, they underutilize heterogeneous resources, particularly on unified-memory platforms where performance depends on both device placement and task-graph coordination. We present HeteroMosaic, a heterogeneity-first scheduling framework for edge LLM inference. HeteroMosaic first uses a heterogeneous roofline model to identify when combining iGPU and NPU execution is beneficial. It then decomposes inference into dependency-preserving micro-batches that expose cross-accelerator overlap and applies trace-guided co",
+      "abstract": "arXiv:2607.12839v3 Announce Type: replace-cross \nAbstract: Modern edge system-on-chips (SoCs) combine CPUs, integrated GPUs (iGPUs), and neural processing units (NPUs), yet existing LLM runtimes typically make coarse device-level decisions or optimize operators in isolation. As a result, they underutilize heterogeneous resources, particularly on unified-memory platforms where performance depends on both device placement and task-graph coordination. We present HeteroMosaic, a heterogeneity-first scheduling framework for edge LLM inference. HeteroMosaic first uses a heterogeneous roofline model to identify when combining iGPU and NPU execution is beneficial. It then decomposes inference into dependency-preserving micro-batches that expose cross-accelerator overlap and applies trace-guided co",
       "pdf_link": "https://arxiv.org/pdf/2607.12839.pdf",
       "forum_link": "https://arxiv.org/abs/2607.12839",
-      "submission_date": "2026-07-16T04:00:00+00:00",
+      "submission_date": "2026-07-17T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 55.5,
-      "updated_at": "2026-07-17T03:07:55.119002+00:00"
+      "updated_at": "2026-07-17T08:05:09.064386+00:00"
     }
   ]
 }

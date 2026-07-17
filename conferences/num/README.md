@@ -1,46 +1,52 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-07-17 03:08:35 UTC
-- **Total Filtered Papers**: 35
-- **Displaying**: 35 (arXiv: 35, OpenReview: 0)
+- **Last Updated**: 2026-07-17 08:05:53 UTC
+- **Total Filtered Papers**: 41
+- **Displaying**: 41 (arXiv: 41, OpenReview: 0)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Quasi-Monte Carlo methods for uncertainty quantification of tumor growth modeled by a parametric semi-linear parabolic reaction-diffusion equation](https://arxiv.org/abs/2509.25753) | `ARXIV` | 35.5 |
-| 2 | [Data driven non-equilibrium moist phase exchanges for atmospheric convection within a discontinuous Galerkin model of the compressible Euler equations](https://arxiv.org/abs/2607.13360) | `ARXIV` | 34.5 |
-| 3 | [Tensor-Network Finite Elements for Analytic Operator Equations](https://arxiv.org/abs/2607.13129) | `ARXIV` | 33.5 |
-| 4 | [QAFE$^2$: Quantum accelerated multiscale finite element analysis](https://arxiv.org/abs/2604.06130) | `ARXIV` | 33.0 |
-| 5 | [An Order-One Lower Bound on the Error of Scalable Generalized Multiscale Finite Element Space Constructions](https://arxiv.org/abs/2607.13888) | `ARXIV` | 32.5 |
-| 6 | [Can Explicit Subgrid Models Enhance Implicit LES Simulations? A Very High-Order Solver Perspective](https://arxiv.org/abs/2512.04574) | `ARXIV` | 18.0 |
-| 7 | [When can a neural operator replace a coarse solve? Architectural principles for two-level preconditioning](https://arxiv.org/abs/2605.19867) | `ARXIV` | 17.5 |
-| 8 | [A linear, fully decoupled, and unconditionally energy-stable SAV-FEM for the Cahn--Hilliard--Navier--Stokes model](https://arxiv.org/abs/2607.13253) | `ARXIV` | 15.5 |
-| 9 | [Error Analysis of a Fully-Discrete Implicit $\theta$-Scheme with WG-FEM for Parabolic Singularly Perturbed Boundary Turning Point Problems](https://arxiv.org/abs/2607.13611) | `ARXIV` | 15.0 |
-| 10 | [Hybrid GKB Methods for X-Ray Tomography Problems with Unmatched Back Projector](https://arxiv.org/abs/2607.13381) | `ARXIV` | 13.0 |
-| 11 | [Modeling and Simulation of Open Membranes in Stokes Flow with Mixed-Dimensional Coupling](https://arxiv.org/abs/2504.16823) | `ARXIV` | 8.0 |
-| 12 | [A Weighted Integral-Regularized Finite Difference Scheme for the Tempered Fractional Laplacian](https://arxiv.org/abs/2607.13317) | `ARXIV` | 4.5 |
-| 13 | [Adaptive space-time BEM for the heat equation with Neumann boundary conditions](https://arxiv.org/abs/2607.13578) | `ARXIV` | 4.5 |
-| 14 | [Filon Methods for Highly Oscillatory Controlled Quantum Systems](https://arxiv.org/abs/2607.13580) | `ARXIV` | 4.5 |
-| 15 | [Gaussian FSBP operators: Comparison and application to numerical methods for hyperbolic conservation laws](https://arxiv.org/abs/2607.13224) | `ARXIV` | 4.0 |
-| 16 | [A Generative Model-Free Form Deformation Approach for the Generation of Mesh Motions with Applications to PDE](https://arxiv.org/abs/2607.13202) | `ARXIV` | 3.0 |
-| 17 | [Spectral-Informed Neural Networks Outperform Spectral Methods in High-dimensional PDEs](https://arxiv.org/abs/2607.13566) | `ARXIV` | 3.0 |
-| 18 | [Microstructure-Conditioned Surrogate Models for Graded Multiscale Optimization of Mycelium Composites](https://arxiv.org/abs/2607.13688) | `ARXIV` | 3.0 |
-| 19 | [A Full-Density Approach to Simulating Random Iteration Equations with Applications](https://arxiv.org/abs/2603.17466) | `ARXIV` | 3.0 |
-| 20 | [Duality Framework for Flux Constrained Flow in Porous Media: Analysis and Numerics](https://arxiv.org/abs/2607.13256) | `ARXIV` | 2.5 |
-| 21 | [Computing Strong Rank-Revealing Factorizations for Matrices with Orthonormal Rows](https://arxiv.org/abs/2607.13532) | `ARXIV` | 2.5 |
-| 22 | [MCMC Methods for Parameter Inference in Structurally Nonidentifiable Models](https://arxiv.org/abs/2607.13243) | `ARXIV` | 2.5 |
-| 23 | [Reconstruct the ambient noise source from the multi-frequency sparse correlation data](https://arxiv.org/abs/2607.13509) | `ARXIV` | 2.0 |
-| 24 | [Automatic Differentiation from Scratch: How PyTorch Computes Gradients in Physics-Informed Neural Networks](https://arxiv.org/abs/2607.13042) | `ARXIV` | 2.0 |
-| 25 | [Convergence of the Markovian Iteration for Coupled FBSDEs via a Differentiation Approach](https://arxiv.org/abs/2504.02814) | `ARXIV` | 2.0 |
-| 26 | [An improved estimate of the intermediate internal energy in the energy-consistent HLLD scheme](https://arxiv.org/abs/2607.10293) | `ARXIV` | 2.0 |
-| 27 | [Asymptotic Preservation and Uniform Accuracy of Diffusion and Flow-Matching Samplers](https://arxiv.org/abs/2607.04113) | `ARXIV` | 2.0 |
-| 28 | [Residual-Christoffel Sampling for Random Feature Collocation of Linear PDEs](https://arxiv.org/abs/2607.13382) | `ARXIV` | 1.5 |
-| 29 | [Graph-Based ECG Synthesis with Activation-Consistency Certification and Diagnostics-Aware Morphology Curation](https://arxiv.org/abs/2606.26580) | `ARXIV` | 1.5 |
-| 30 | [Continuum granular flow model with restitution-derived viscoelastic damping](https://arxiv.org/abs/2604.21448) | `ARXIV` | 1.5 |
-| 31 | [Inverse scattering for three-dimensional random obstacles with multi-frequency data](https://arxiv.org/abs/2607.13473) | `ARXIV` | 1.0 |
-| 32 | [A Spectrally Damped Tensor Randomized Kaczmarz Method for Doubly Noisy Tensor Systems](https://arxiv.org/abs/2607.13552) | `ARXIV` | 1.0 |
-| 33 | [Revisiting column subset selection through the lens of submodularity](https://arxiv.org/abs/2607.13823) | `ARXIV` | 1.0 |
-| 34 | [Adaptivity in Local Kernel Based Methods for Approximating Solutions to the Poisson Equation](https://arxiv.org/abs/2607.14057) | `ARXIV` | 1.0 |
-| 35 | [Uniform Approximation of Functions with Asymmetric Growth and Decay by Deep Weighted Polynomials](https://arxiv.org/abs/2506.21306) | `ARXIV` | 1.0 |
+| 1 | [An agglomeration-based multigrid solver for the discontinuous Galerkin discretization of cardiac electrophysiology](https://arxiv.org/abs/2602.16312) | `ARXIV` | 77.0 |
+| 2 | [A hybrid reduced-order and high-fidelity discontinuous Galerkin Spectral Element framework for large-scale PMUT array simulations](https://arxiv.org/abs/2603.06267) | `ARXIV` | 76.0 |
+| 3 | [Multiscale Mixed-Dimensional Simulation via Domain Decomposition and Non-Intrusive Neural Model Order Reduction](https://arxiv.org/abs/2607.15171) | `ARXIV` | 64.5 |
+| 4 | [Comparison of Structure Preserving Schemes for the Cahn-Hilliard-Navier-Stokes Equations with Degenerate Mobility and Adaptive Mesh Refinement](https://arxiv.org/abs/2602.08639) | `ARXIV` | 47.5 |
+| 5 | [NGMRES convergence analysis and proof of acceleration for contractive and noncontractive iterations](https://arxiv.org/abs/2607.14268) | `ARXIV` | 33.5 |
+| 6 | [Gradient-enhanced spline dimensional decomposition for uncertainty quantification with limited training samples](https://arxiv.org/abs/2607.14615) | `ARXIV` | 33.5 |
+| 7 | [Accounting for Hysteresis and Eddy Currents in Finite Element Simulations of Ferromagnetic Laminated Cores using a Recurrent Neural Network](https://arxiv.org/abs/2607.14321) | `ARXIV` | 32.5 |
+| 8 | [Fully discrete least-squares splitting scheme for the Monge-Amp\`ere equation: finite element analysis and convergence](https://arxiv.org/abs/2607.15024) | `ARXIV` | 31.5 |
+| 9 | [Second order reduced model via incremental projection for Navier Stokes](https://arxiv.org/abs/2512.10473) | `ARXIV` | 28.0 |
+| 10 | [A structure-preserving Numerical Method for the Compressible Resistive-Hall-MHD System](https://arxiv.org/abs/2607.14286) | `ARXIV` | 16.5 |
+| 11 | [On the optimality of dimension truncation error rates for a class of parametric partial differential equations](https://arxiv.org/abs/2511.01492) | `ARXIV` | 15.5 |
+| 12 | [An Adaptive and Physics-Preserving Multiscale Method for Two-Phase Flow Simulations in High-Contrast Heterogeneous Porous Media](https://arxiv.org/abs/2607.15063) | `ARXIV` | 14.5 |
+| 13 | [Efficient higher-order local time integration for Friedrichs' systems](https://arxiv.org/abs/2607.15192) | `ARXIV` | 14.5 |
+| 14 | [Optimal complexity of adaptive FEM for second-order linear elliptic PDEs driven by non-residual estimators, Part I: Symmetric PDEs](https://arxiv.org/abs/2607.14820) | `ARXIV` | 14.0 |
+| 15 | [A new strategy for physics-informed neural networks based on hierarchical collocation point refinement](https://arxiv.org/abs/2607.14665) | `ARXIV` | 13.0 |
+| 16 | [Trajectory-Aware Flow Matching for Topology Optimisation](https://arxiv.org/abs/2607.14652) | `ARXIV` | 13.0 |
+| 17 | [Structure-preserving Lagrange-multiplier methods for mean curvature flow and their error bounds](https://arxiv.org/abs/2607.14787) | `ARXIV` | 11.0 |
+| 18 | [Tensor Network Methods for Advection-Diffusion-Reaction Systems Using Quantum-Inspired Representations](https://arxiv.org/abs/2607.14150) | `ARXIV` | 5.5 |
+| 19 | [FORCE-$\alpha$ Numerical Fluxes within the Arbitrary High Order Semidiscrete WENO-DeC Framework: A Competitive Alternative to Upwind Fluxes](https://arxiv.org/abs/2512.21306) | `ARXIV` | 5.5 |
+| 20 | [A quasi-Grassmannian gradient flow model for eigenvalue problems](https://arxiv.org/abs/2506.20195) | `ARXIV` | 4.5 |
+| 21 | [Tamed Stochastic Gradient Hamiltonian Monte Carlo](https://arxiv.org/abs/2607.14862) | `ARXIV` | 4.0 |
+| 22 | [Quasi-Monte Carlo for Bayesian design of experiment problems governed by parametric PDEs](https://arxiv.org/abs/2405.03529) | `ARXIV` | 4.0 |
+| 23 | [Neural Very Weak Formulations enabling Hardware-Oriented deep PDE solvers](https://arxiv.org/abs/2607.14498) | `ARXIV` | 2.5 |
+| 24 | [A low-rank hierarchical framework for the non-Markovian stochastic Schr\"odinger equation with convergence analysis](https://arxiv.org/abs/2607.14689) | `ARXIV` | 2.5 |
+| 25 | [On Hyperbolic Stochastic Galerkin Projections of Shallow Water Linearised Moment Equations](https://arxiv.org/abs/2607.14750) | `ARXIV` | 2.5 |
+| 26 | [Finite-Dimensional Feedback Stabilization of Nonautonomous Stochastic Parabolic Equations](https://arxiv.org/abs/2607.14911) | `ARXIV` | 2.5 |
+| 27 | [Perfectly equidistributed Quasi-Monte Carlo sequences from Artin-Schreier polynomials](https://arxiv.org/abs/2607.15141) | `ARXIV` | 2.5 |
+| 28 | [Steering dynamic network centrality via control theory](https://arxiv.org/abs/2607.14610) | `ARXIV` | 2.0 |
+| 29 | [An unfitted boundary algebraic equation method with static-dynamic reduction for evolving implicit geometries](https://arxiv.org/abs/2607.14808) | `ARXIV` | 2.0 |
+| 30 | [Micro-macro kinetic flux-vector splitting schemes for the multidimensional Boltzmann-ES-BGK equation](https://arxiv.org/abs/2509.21832) | `ARXIV` | 2.0 |
+| 31 | [Allure of Craquelure: A Variational-Generative Approach to Crack Detection in Paintings](https://arxiv.org/abs/2602.09730) | `ARXIV` | 2.0 |
+| 32 | [Strong error analysis of a temporal approximation for stochastic Korteweg-de Vries equation with small additive noise](https://arxiv.org/abs/2607.14813) | `ARXIV` | 1.5 |
+| 33 | [Upwind embedded boundary SBP operators: New high order numerical schemes for arbitrarily shaped domains with Cartesian grids](https://arxiv.org/abs/2607.14403) | `ARXIV` | 1.5 |
+| 34 | [SciPhy Reinforcement Learning for Portfolio Optimization](https://arxiv.org/abs/2607.15195) | `ARXIV` | 1.5 |
+| 35 | [Multiscale Methods for Discretized Continuous Optimization: Convergence and Cost Analysis](https://arxiv.org/abs/2512.13993) | `ARXIV` | 1.5 |
+| 36 | [Walk based Laplacians for Modeling Diffusion on Complex Networks](https://arxiv.org/abs/2601.11338) | `ARXIV` | 1.5 |
+| 37 | [Subgrid-Scale Parameterization in Burgers' Equation Using Structure-Preserving Neural Networks and Entropy Variables](https://arxiv.org/abs/2607.14855) | `ARXIV` | 1.0 |
+| 38 | [Operator-Informed Gaussian Processes for Complex Helmholtz Wavefields: From Synthetic Benchmarks to In Vivo Brain Elastography](https://arxiv.org/abs/2607.14193) | `ARXIV` | 1.0 |
+| 39 | [Computing Barycentres of Measures for Generic Transport Costs](https://arxiv.org/abs/2501.04016) | `ARXIV` | 1.0 |
+| 40 | [Second-order optimally stable IMEX (pseudo-)staggered Galerkin discretization with application to depth-integrated lava flow simulations](https://arxiv.org/abs/2509.09460) | `ARXIV` | 1.0 |
+| 41 | [A residual-iteration framework for alternating projections between affine subspaces](https://arxiv.org/abs/2505.03982) | `ARXIV` | 1.0 |

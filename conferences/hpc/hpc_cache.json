@@ -1,100 +1,169 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-07-17T03:07:57.925703+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-07-17T08:05:10.452677+00:00",
+  "paper_count": 7,
   "papers": [
     {
-      "forum_id": "2607.13332",
+      "forum_id": "2607.14394",
       "paper_number": -1,
-      "title": "Agora: Collective and Permissionless Internet-Scale Pretraining of Large Language Models",
+      "title": "DRIFT: Direct Reduced Fourier Transforms for Distributed Spectral Neural Operators",
       "authors": [
-        "Gil Avraham, Violetta Shevchenko, Hadi Mohaghegh Dolatabadi, Karol Pajak, James Snewin, Harry Xi, Rodney O'Donnell, Thalaiyasingam Ajanthan, Sameera Ramasinghe, Chamin Hewa Koneputugodage, Shamane Siriwardhana, Alexander Long"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2607.13332v1 Announce Type: cross \nAbstract: Training large language models at the multi-billion to trillion parameter scale is confined to datacenters, where data-parallel (DP) and model-parallel (MP) techniques presume homogeneous accelerators, high-speed interconnects, and a single orchestrating entity. Frontier model development is thereby concentrated among the few groups able to assemble such clusters. Meanwhile, an enormous pool of compute remains unusable for training: consumer and professional GPUs that are heterogeneous, preemptible, individually owned, and connected only by the internet. We present Agora, a system that makes efficient use of this compute. Agora combines bandwidth-efficient pipeline-parallel model sharding over internet-grade links with multi-party, fault-t",
-      "pdf_link": "https://arxiv.org/pdf/2607.13332.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.13332",
-      "submission_date": "2026-07-16T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-07-17T03:07:55.170816+00:00"
-    },
-    {
-      "forum_id": "2607.13443",
-      "paper_number": -1,
-      "title": "The Environmental Cost of Digital Sovereignty: Water, Energy, and Emissions Impacts of Sovereign AI Infrastructure in the Global South",
-      "authors": [
-        "Muntaser Syed, Marius C. Silaghi, Sheikh Abujar, Sharun Akter Khushbu, Amal El Ahmad"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2607.13443v1 Announce Type: cross \nAbstract: Sovereign AI has become a strategic priority across the Global South, with over \\$200 billion in state-led commitments announced between 2024 and 2026. Yet the physical infrastructure that compute sovereignty demands, above all data centers, imposes water, energy, and carbon costs that fall hardest on countries least equipped to absorb them. This paper presents a comparative environmental stress analysis across four cases: the United Arab Emirates, Bangladesh, India, and Africa (with a focus on Kenya). Using publicly available water stress data, grid carbon intensity factors, and GPU power specifications, we model the water consumption, energy demand, and carbon emissions of hypothetical sovereign AI deployments under multiple cooling tech",
-      "pdf_link": "https://arxiv.org/pdf/2607.13443.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.13443",
-      "submission_date": "2026-07-16T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-07-17T03:07:55.170852+00:00"
-    },
-    {
-      "forum_id": "2607.13531",
-      "paper_number": -1,
-      "title": "Ripple: An Open, AI-Formalized Lean 4 Framework for Computing with CRNs",
-      "authors": [
-        "Ho-Lin Chen, Xiang Huang"
+        "Sana Taghipour Anvari, David Kaeli"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2607.13531v1 Announce Type: cross \nAbstract: We present Ripple, an open, AI-formalized Lean 4 framework for the mathematics of computing real numbers with chemical reaction networks (CRNs). Ripple formalizes the full ladder of models -- the GPAC / CRN continuum and the CRN-computable reals, the large-population-protocol (LPP) compilation pipeline, and a continuous-time Markov chain (CTMC) layer bridged to the deterministic mean-field limit by three machine-checked versions of Kurtz's theorem, and two Turing-completeness results -- the Bournez-Gra\\c{c}a-Pouly GPAC Turing-completeness construction and the Soloveichik-Cook-Winfree-Bruck stochastic-CRN universality theorem. The development is reliable (its core constructions are verified to depend on exactly the three Mathlib foundationa",
-      "pdf_link": "https://arxiv.org/pdf/2607.13531.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.13531",
-      "submission_date": "2026-07-16T04:00:00+00:00",
+      "abstract": "arXiv:2607.14394v1 Announce Type: new \nAbstract: Fourier Neural Operators (FNOs) learn solution operators for partial differential equations and offer orders of magnitude speedup over traditional numerical solvers at inference time, which makes them attractive surrogates for high-resolution computational physics. Scaling FNOs to high-resolution spatial grids requires distributing the data across GPUs, but the distributed FFT at the core of each spectral layer requires multiple dense all-to-all collectives that communicate the full spatial tensor, only for most coefficients to be discarded immediately. We introduce the Distributed Truncated Spectral Transform (DTST), which reverses this order. Each GPU computes only a small subset of frequency modes used by the spectral convolution locally ",
+      "pdf_link": "https://arxiv.org/pdf/2607.14394.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.14394",
+      "submission_date": "2026-07-17T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.5,
+      "updated_at": "2026-07-17T08:05:09.117984+00:00"
+    },
+    {
+      "forum_id": "2607.14489",
+      "paper_number": -1,
+      "title": "EdgeFaaS: A Function-based Framework for Edge Computing",
+      "authors": [
+        "Neha Vadnere, Yu-Ting Wang, Yitao Chen, Sreehari Sadesh, Ming Zhao"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2607.14489v1 Announce Type: new \nAbstract: Edge computing brings unique challenges as the resources on the edge are highly diverse in capabilities and capacities, and highly distributed across many users and the physical world. Existing distributed computing frameworks cannot adequately handle this level of heterogeneity and distribution. This paper proposes EdgeFaaS, a novel function-based edge computing framework to enable edge applications to effectively utilize heterogeneous resources distributed across the Internet of Things (IoT), edge, and cloud for computing. It proposes function virtualization and storage virtualization to abstract distributed and heterogeneous physical resources and provides consistent virtual interfaces for deploying and executing functions and storing and",
+      "pdf_link": "https://arxiv.org/pdf/2607.14489.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.14489",
+      "submission_date": "2026-07-17T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 12.0,
-      "updated_at": "2026-07-17T03:07:55.170874+00:00"
+      "updated_at": "2026-07-17T08:05:09.118029+00:00"
     },
     {
-      "forum_id": "2507.01224",
+      "forum_id": "2607.14798",
       "paper_number": -1,
-      "title": "FLARE: A Dataflow-Aware and Scalable Hardware Architecture for Neural-Hybrid Scientific Lossy Compression",
+      "title": "Ground-Side Mission Plan Compilation with Policy-as-Code Guardrails for Cloud-Native Satellite Platforms",
       "authors": [
-        "Wenqi Jia, Zhewen Hu, Baixi Sun, Yafan Huang, Jiannan Tian, Boyuan Zhang, Daoce Wang, Sian Jin, Luanzheng Guo, Sheng Di, Yuede Ji, Miao Yin"
+        "Hsiu-Chi Tsai, Chia-Tung Chung"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.14798v1 Announce Type: new \nAbstract: Onboard cloud-native runtimes for satellites are emerging on multiple tracks (ORCHIDE, Axiom Space's AxDCU-1, Kepler's Jetson nodes), but each assumes that the workflow artifacts it executes arrive from the ground. ORCHIDE's architecture document D3.1 states explicitly that \"only the Deferred Phase is part of the ORCHIDE scope,\" and no open-source ground-side toolchain has been released by the consortium. We present Satellite Mission Compiler, a four-stage pipeline that addresses this gap: it takes a human-authored mission plan, checks it against machine-checkable structural and policy rules, and compiles it into the container-workflow artifacts that cloud-native satellite runtimes consume. The pipeline parses the plan against a Pydantic sch",
+      "pdf_link": "https://arxiv.org/pdf/2607.14798.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.14798",
+      "submission_date": "2026-07-17T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 51.5,
+      "updated_at": "2026-07-17T08:05:09.118058+00:00"
+    },
+    {
+      "forum_id": "2607.15115",
+      "paper_number": -1,
+      "title": "Don't Predict, Prioritize: Rethinking GPU Reliability Assessment",
+      "authors": [
+        "Difeng Ma, Changhua Pei, Yuanwei Lu, Quan Zhou, Zexin Wang, Yibo Zhu, Daxin Jiang, Dan Pei, Jingjing Li, Gaogang Xie"
       ],
       "keywords": [
         "cs.DC",
         "ICS"
       ],
-      "abstract": "arXiv:2507.01224v2 Announce Type: replace \nAbstract: Scientific simulation leveraging high-performance computing (HPC) systems is crucial for modeling complex systems and phenomena in fields such as astrophysics, climate science, and fluid dynamics, generating massive datasets that often reach petabyte to exabyte scales. However, managing these vast data volumes introduces significant I/O and network bottlenecks, limiting practical performance and scalability. While cutting-edge lossy compression frameworks powered by deep neural networks (DNNs) have demonstrated superior compression ratios by capturing complex data correlations, their integration into HPC workflows poses substantial challenges due to the hybrid non-neural and neural computation patterns, causing excessive memory access ov",
-      "pdf_link": "https://arxiv.org/pdf/2507.01224.pdf",
-      "forum_link": "https://arxiv.org/abs/2507.01224",
-      "submission_date": "2026-07-16T04:00:00+00:00",
+      "abstract": "arXiv:2607.15115v1 Announce Type: new \nAbstract: The reliability of Graphics Processing Units (GPUs) is a criticalbottleneck for modern large-scale AI infrastructure, where a sin-gle node failure can disrupt synchronous training jobs and causesignificant financial losses. While predictive maintenance is widelyused in other hardware domains, we demonstrate that accuratelypredicting the exact timing of GPU failures is inherently difficult.Through an in-depth analysis of telemetry data from a productioncluster, we find that major GPU failures, including Double Bit Er-rors (DBEs) and GPU Lost events, exhibit strong stochasticity andlow signal-to-noise ratios in time-series telemetry, which makesconventional time-based prediction ineffective.\n  This insight motivates a paradigm shift: instead o",
+      "pdf_link": "https://arxiv.org/pdf/2607.15115.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.15115",
+      "submission_date": "2026-07-17T04:00:00+00:00",
       "conference": "ICS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 26.5,
-      "updated_at": "2026-07-17T03:07:55.170922+00:00"
+      "score": 42.5,
+      "updated_at": "2026-07-17T08:05:09.118080+00:00"
+    },
+    {
+      "forum_id": "2607.14138",
+      "paper_number": -1,
+      "title": "Volition Elicitation: Operational Semantics for People and Their Machines",
+      "authors": [
+        "Ehud Shapiro"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2607.14138v1 Announce Type: cross \nAbstract: The most prevalent distributed systems today include people and their personal machines (smartphones). In such systems, computations are driven by people's volitions: a payment when a person wishes to pay someone, befriending when two people wish to become friends, etc. Volition-Guarded Multiagent Atomic Transactions were proposed as an abstract specification language for such systems, in which each agent consists of a person and their machine, and a transaction can be guarded by both the machine states and the personal volitions of its participating agents. Here, we define the programming language volition-guarded GLP (vGLP), which extends GLP with volition-guarded clauses, and define its operational semantics as an instance of Communicat",
+      "pdf_link": "https://arxiv.org/pdf/2607.14138.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.14138",
+      "submission_date": "2026-07-17T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-17T08:05:09.118118+00:00"
+    },
+    {
+      "forum_id": "2604.20032",
+      "paper_number": -1,
+      "title": "LEO: Tracing GPU Stall Root Causes via Cross-Vendor Backward Slicing",
+      "authors": [
+        "Yuning Xia, John Mellor-Crummey"
+      ],
+      "keywords": [
+        "cs.DC",
+        "ICS"
+      ],
+      "abstract": "arXiv:2604.20032v2 Announce Type: replace \nAbstract: More than half of the Top 500 supercomputers employ GPUs as accelerators. On GPU-accelerated platforms, developers face a key diagnostic gap: profilers show source lines where stalls occur, but not why they occur. Furthermore, the same kernel may have different stalls and underlying causes on different GPUs. This paper presents LEO, a root-cause analyzer for NVIDIA, AMD, and Intel GPUs that performs backward slicing from stalled instructions, considering dependencies arising from registers as well as vendor-specific synchronization mechanisms. LEO attributes GPU stalls to source instructions with the goal of explaining root causes of these inefficiencies. Across 21 workloads on three GPU platforms, LEO-guided optimizations deliver geomet",
+      "pdf_link": "https://arxiv.org/pdf/2604.20032.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.20032",
+      "submission_date": "2026-07-17T04:00:00+00:00",
+      "conference": "ICS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 44.5,
+      "updated_at": "2026-07-17T08:05:09.118232+00:00"
+    },
+    {
+      "forum_id": "2606.17288",
+      "paper_number": -1,
+      "title": "Local Fault Repair of Perfect Resource Placements in Eisenstein--Jacobi Networks",
+      "authors": [
+        "Bader Albader"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2606.17288v2 Announce Type: replace \nAbstract: Perfect resource placements in dense Eisenstein--Jacobi (EJ) networks partition the network into hexagonal radius-$t$ service cells. This paper studies local repair of such placements after resource failures. For one failed resource, we prove that one replacement cannot cover the failed hexagon and two always suffice, giving $\\rho_{\\mathrm{EJ}}(t)=2$ for all $t\\ge1$. Among minimum-size repairs, the sharp minimum-overlap formula $\\Omega_{\\mathrm{EJ}}(t)=t^2$ follows from the three-strip geometry of EJ balls. For two failed resources, independent repair gives a four-replacement upper bound, but unlike the Gaussian case EJ repair is not always additive: two infinite neighboring displacement families admit three-replacement repairs, proved o",
+      "pdf_link": "https://arxiv.org/pdf/2606.17288.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.17288",
+      "submission_date": "2026-07-17T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-17T08:05:09.118257+00:00"
     }
   ]
 }

@@ -1,77 +1,100 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-07-17T03:07:59.797766+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-07-17T08:05:12.988842+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2607.13079",
+      "forum_id": "2607.14747",
       "paper_number": -1,
-      "title": "ChipVerilog: A Large-Scale OpenCores-Derived Benchmark for LLM-Based Verilog RTL Generation",
+      "title": "Toward Energy-Efficient and Low-Power Arrhythmia Detection for Wearable Devices",
       "authors": [
-        "Yan Tan, Jiping Du, Xiangchen Meng, Yangdi Lyu"
+        "Floriaan Bulten, Yawar Rasheed, Arlene John, Vincenzo Stoico, Ghayoor Gillani"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2607.13079v1 Announce Type: new \nAbstract: Large language models have shown strong potential for Verilog RTL generation. However, many existing benchmarks are built from short, self-contained module-level tasks. These tasks are useful for controlled evaluation, but they do not fully capture the code scale, hierarchy, and module interactions found in practical IP and processor-core RTL. We present ChipVerilog, a description-to-Verilog generation benchmark built from OpenCores IP/core designs. The benchmark contains 64 generation targets from five design families: OR1200, double-precision FPU, MIPS-16, I2C, and CORDIC. It includes both single-module targets and cross-module targets that instantiate or interact with other RTL modules. Several targets exceed 1,000 lines of Verilog, makin",
-      "pdf_link": "https://arxiv.org/pdf/2607.13079.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.13079",
-      "submission_date": "2026-07-16T04:00:00+00:00",
+      "abstract": "arXiv:2607.14747v1 Announce Type: new \nAbstract: Cardiovascular diseases are the leading cause of death worldwide, and conditions such as arrhythmia often require long-term monitoring for effective detection and diagnosis. However, current wearable monitoring devices are bulky, uncomfortable, and typically rely on clinicians to manually evaluate electrocardiograms (ECGs). While Deep Learning (DL) algorithms have shown superior performance in arrhythmia detection and classification, their computational complexity coupled with high power consumption limit deployment in wearable devices. To address this challenge, this paper investigates the use of approximation techniques to reduce the power and energy consumption of DL architectures while maintaining acceptable classification performance. S",
+      "pdf_link": "https://arxiv.org/pdf/2607.14747.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.14747",
+      "submission_date": "2026-07-17T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-07-17T03:07:59.796527+00:00"
-    },
-    {
-      "forum_id": "2607.13106",
-      "paper_number": -1,
-      "title": "No Attention, No Problem: DPU-Aware Attention Approximation in Modern YOLO on FPGA",
-      "authors": [
-        "Suraj Karki, Qazi Arbab Ahmed, Thorsten Jungeblut"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2607.13106v1 Announce Type: new \nAbstract: Edge-based Artificial Intelligence (AI) acceleration has recently improved progress in real-time object detection. Object detection on edge devices requires a balance between accuracy, speed, and power efficiency. This paper proposes a customized Deep Learning Processor Unit (DPU)-aware architecture for attention-based YOLO variants deployed on AMD FPGAs. Specifically, we evaluate and benchmark YOLOv26 and YOLOv11, two modern attention-based YOLO variants, on the Xilinx ZCU104 across both standard and oriented object detection tasks. We replace unsupported activation functions, substitute split operations with 1x1 convolutions, and approximate the spatial attention mechanism in a DPU-compatible way. All models are then trained and evaluated ",
-      "pdf_link": "https://arxiv.org/pdf/2607.13106.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.13106",
-      "submission_date": "2026-07-16T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.5,
-      "updated_at": "2026-07-17T03:07:59.796582+00:00"
-    },
-    {
-      "forum_id": "2607.13898",
-      "paper_number": -1,
-      "title": "Jack of All Scales: A Versatile FPGA Tensor Block for MXFP Precisions",
-      "authors": [
-        "Marwan Mekhemer, Ahmed Elsousy, Balaji Venkatesh, Raphael Rowley, Vaughn Betz, Nachiket Kapre, Andrew Boutros"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2607.13898v1 Announce Type: new \nAbstract: Modern deep learning workloads increasingly rely on narrow numerical formats to improve efficiency and reduce memory footprint. The recently standardized microscaling floating-point (MXFP) family of formats, including MXFP8, MXFP6, and MXFP4, offers a practical approach to low-precision inference, yet the digital signal processing (DSP) blocks in current FPGA architectures offer limited native support for these formats. In this work, we first present a comprehensive characterization of MXFP dot product implementations on Altera Agilex-5 FPGAs, exploring a range of strategies spanning pure soft logic, DSP blocks in fixed-point, floating-point, and tensor modes. Our results show that while the tensor mode delivers the highest arithmetic densit",
-      "pdf_link": "https://arxiv.org/pdf/2607.13898.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.13898",
-      "submission_date": "2026-07-16T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-07-17T03:07:59.796696+00:00"
+      "updated_at": "2026-07-17T08:05:12.987717+00:00"
+    },
+    {
+      "forum_id": "2607.15068",
+      "paper_number": -1,
+      "title": "Pattern-Guided Design Space Exploration for FPGA Accelerator Design",
+      "authors": [
+        "Jialiang Zhang, Weiman Yan, Yuelin Zou"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.15068v1 Announce Type: new \nAbstract: High-level synthesis (HLS) raises the abstraction level of FPGA accelerator design from hardware description languages to C/C++, but high-quality results still depend on schedule decisions such as pipelining, unrolling, tiling, reordering, and buffering. These decisions create a combinatorial design space, while many numerical kernels exhibit recurring computation patterns that suggest different optimization strategies. This paper presents PATTERNDSE, a lightweight pattern-guided design space exploration (DSE) framework for FPGA kernels written in Allo, a scheduling-oriented HLS programming system. PATTERNDSE maps recurring computation patterns, including elementwise maps, reductions, matrix-vector operations, matrix-matrix operations, and s",
+      "pdf_link": "https://arxiv.org/pdf/2607.15068.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.15068",
+      "submission_date": "2026-07-17T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.5,
+      "updated_at": "2026-07-17T08:05:12.987807+00:00"
+    },
+    {
+      "forum_id": "2607.15123",
+      "paper_number": -1,
+      "title": "NIFA: Nonlinear IMC enhanced FPGA for efficient ML inference",
+      "authors": [
+        "Jiajun Hu, Ruthwik Reddy Sunketa, Lei Zhao, Archit Gajjar, Luca Buonanno, Aman Arora"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2607.15123v1 Announce Type: new \nAbstract: Recent FPGAs have improved deep learning (DL) inference efficiency through dedicated tensor blocks and in-BRAM computation. ReRAM-based analog in-memory computing (IMC) pushes efficiency further, offering an order-of-magnitude improvement in compute density and energy efficiency over conventional digital logic by performing vector-matrix multiplication (VMM) directly within the ReRAM crossbar; prior work has integrated such IMC blocks into FPGAs for DL inference. However, conventional IMC designs support only static-weight VMM, leaving nonlinear operations and dynamic matrix-matrix multiplication (DIMM) to the FPGA fabric. As a result, the benefits of IMC are largely confined to static-weight models, whereas Transformer-based models, which r",
+      "pdf_link": "https://arxiv.org/pdf/2607.15123.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.15123",
+      "submission_date": "2026-07-17T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-07-17T08:05:12.987838+00:00"
+    },
+    {
+      "forum_id": "2507.05876",
+      "paper_number": -1,
+      "title": "Olaf: Programmable Data Plane Acceleration for Asynchronous Distributed Reinforcement Learning",
+      "authors": [
+        "Nehal Baganal Krishna, Anam Tahir, Firas Khamis, Mina Tahmasbi Arashloo, Michael Zink, Amr Rizk"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2507.05876v2 Announce Type: replace-cross \nAbstract: Asynchronous Distributed Reinforcement Learning (DRL) can suffer from degraded convergence when model updates become stale, often the result of network congestion and packet loss during large-scale training. This paper presents \\textit{Olaf}, an in-network DRL accelerator engine, which \\textit{opportunistically aggregates} asynchronously generated model updates \\textit{on the fly} while they traverse the data plane queue. This aggregation operation motivates an alternative queue design, which we prototype and envision for future Top-of-Rack switches. We further present corresponding host-side transmission control in the face of possible congestion, taking advantage of in-network accelerator feedback. A quantification of model stale",
+      "pdf_link": "https://arxiv.org/pdf/2507.05876.pdf",
+      "forum_link": "https://arxiv.org/abs/2507.05876",
+      "submission_date": "2026-07-17T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-07-17T08:05:12.987927+00:00"
     }
   ]
 }

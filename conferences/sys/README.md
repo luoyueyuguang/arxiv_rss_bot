@@ -1,6 +1,6 @@
 # Systems / AI Infra / AI Compiler / RISC-V Papers
 
-- **Last Updated**: 2026-07-17 03:07:59 UTC
+- **Last Updated**: 2026-07-17 08:05:12 UTC
 - **Total Filtered Papers**: 141
 - **Displaying**: 141 (arXiv: 1, OpenReview: 0)
 - **Papers with Ratings**: 0
@@ -57,67 +57,67 @@
 | 46 | [Ghost in the Android Shell: Pragmatic Test-oracle Specification of a Production Hypervisor.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 61.5 |
 | 47 | [Prove It to the Kernel: Precise Extension Analysis via Proof-Guided Abstraction Refinement.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 61.5 |
 | 48 | [Rearchitecting the Thread Model of In-Memory Key-Value Stores with μTPS.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 61.5 |
-| 49 | [Serverless Replication of Object Storage across Multi-Vendor Clouds and Regions.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 36.0 |
-| 50 | [Demeter: A Scalable and Elastic Tiered Memory Solution for Virtualized Cloud via Guest Delegation.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 34.5 |
-| 51 | [Managing Scalable Direct Storage Accesses for GPUs with GoFS.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 34.5 |
-| 52 | [CofferOS: Hardening OS-level Virtualization with Rust.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
-| 53 | [Practical and Efficient x86-64 Emulation on RISC-V.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
-| 54 | [Federated Fine-Tuning of Sparsely-Activated Large Language Models on Resource-Constrained Devices.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
-| 55 | [LoRAFusion: Efficient LoRA Fine-Tuning for LLMs.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
-| 56 | [Efficient Data Passing for Serverless Inference Workflows: A GPU-Centric Approach.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
-| 57 | [AEP: Achieving Hierarchical Fault Tolerance in DSM Through Atomic Execution Protection.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
-| 58 | [DROPS: Managing Serverless Resource Pools in Microsoft Azure Functions.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
-| 59 | [Everything You Need to Know About Virtual Machine Live Migration Between Heterogeneous Processors.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
-| 60 | [FlexiWalker: Extensible GPU Framework for Efficient Dynamic Random Walks with Runtime Adaptation.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
-| 61 | [MTTM: Dynamic Fast Memory Partitioning with Bandwidth Optimization for Multi-tenant Cloud.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
-| 62 | [ASIC-based Compression Accelerators for Storage Systems: Design, Placement, and Profiling Insights.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
-| 63 | [Lessons Learned from Incorporating Formal Methods in Huawei Cloud Reliability.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
-| 64 | [Orthrus: Efficient and Timely Detection of Silent User Data Corruption in the Cloud with Resource-Adaptive Computation Validation.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 33.0 |
-| 65 | [Moirai: Optimizing Placement of Data and Compute in Hybrid Clouds.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 33.0 |
-| 66 | [Quilt: Resource-aware Merging of Serverless Workflows.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 33.0 |
-| 67 | [PhoenixOS: Concurrent OS-level GPU Checkpoint and Restore with Validated Speculation.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 33.0 |
-| 68 | [KTransformers: Unleashing the Full Potential of CPU/GPU Hybrid Inference for MoE Models.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 33.0 |
-| 69 | [Aegaeon: Effective GPU Pooling for Concurrent LLM Serving on the Market.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 33.0 |
-| 70 | [On-device Semantic Selection Made Low Latency and Memory Efficient with Monolithic Forwarding.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 71 | [REPS: Recycled Entropy Packet Spraying for Adaptive Load Balancing and Failure Mitigation.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 72 | [Chimera: Transparent and High-Performance ISAX Heterogeneous Computing via Binary Rewriting.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 73 | [GeDES: GPU-Driven Discrete Event Network Simulator.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 74 | [TokenFlow: Responsive LLM Text Streaming Serving under Request Burst via Preemptive Scheduling.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 75 | [TrustWeave: Integrity Measurement and Attestation For Multi-Cloud LLMs.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 76 | [Enabling Packet Spraying over Commodity RNICs with In-Network Support.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 77 | [PatternSketch: General and Runtime Reconfigurable Time-series Network Traffic Pattern Detection.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 78 | [Low-Compilation-Cost Register Allocation in LLVM-Based Binary Translation.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 79 | [TCO-driven Storage Provisioning for Exascale Data Centers.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 80 | [FicusDB: Scalable Multi-Versioned Authenticated Archival Storage.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 81 | [swKokkos: An Athread Backend for Enhanced Kokkos with the Sunway Heterogeneous Architecture.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 82 | [Five Minutes of DDoS Brings down Tor: DDoS Attacks on the Tor Directory Protocol and Mitigations.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 83 | [Squeezy: Rapid VM Memory Reclamation for Serverless Functions.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 84 | [TAO: Tolerance-Aware Optimistic Verification for Floating-Point Neural Networks.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 85 | [PaCaR: Improved Buffered I/O Locality on NUMA Systems with Page Cache Replication.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 86 | [Proactive Change Risk Detection in Production Cloud Systems: ByteDance's Experience.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 87 | [Towards Improving Throughput and Scalability of DAG-based BFT SMR.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 88 | [RoPeerTo: A Datacenter-Scale Architecture for Peer-To-Peer DMA between GPUs and FPGAs.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 89 | [Suika: Efficient and High-quality Re-scheduling of 3D-parallelized LLM Training Jobs in Shared Clusters.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 90 | [LifeFuzz: Lifecycle-Guided Fuzzing for Windows Driver Cross-Handler Vulnerabilities.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 91 | [Rose: Reproducing External-Fault-Induced Failures in Distributed Systems with Lightweight Instrumentation.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 92 | [Scaling LLM Test-Time Compute with Mobile NPU on Smartphones.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 93 | [CHARM: Chiplet Heterogeneity-Aware Runtime Mapping System.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 94 | [2DIO: Configurable and Cache-Accurate Trace Generation for Storage Benchmarking.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 95 | [CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
-| 96 | [DCP: Addressing Input Dynamism In Long-Context Training via Dynamic Context Parallelism.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
-| 97 | [Mitigating Application Resource Overload with Targeted Task Cancellation.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
-| 98 | [Optimistic Recovery for High-Availability Software via Partial Process State Preservation.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
-| 99 | [COpter: Efficient Large-Scale Resource-Allocation via Continual Optimization.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
-| 100 | [Characterizing Mobile SoC for Accelerating Heterogeneous LLM Inference.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
-| 101 | [cache_ext: Customizing the Page Cache with eBPF.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
-| 102 | [Aeolia: A Fast and Secure Userspace Interrupt-Based Storage Stack.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
-| 103 | [HedraRAG: Co-Optimizing Generation and Retrieval for Heterogeneous RAG Workflows.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
-| 104 | [WASIT: Deep and Continuous Differential Testing of WebAssembly System Interface Implementations.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
-| 105 | [Atmosphere: Practical Verified Kernels with Rust and Verus.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
-| 106 | [ORQ: Complex Analytics on Private Data with Strong Security Guarantees.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
-| 107 | [Running Consistent Applications Closer to Users with Radical for Lower Latency.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
-| 108 | [How to Copy Memory? Coordinated Asynchronous Copy as a First-Class OS Service.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
-| 109 | [TuxBot: Semantic-Aware Online OS Tuning with Large Language Models](https://arxiv.org/abs/2605.15026) | `ARXIV` | 21.0 |
+| 49 | [A Fast Confirmation Rule for the Ethereum Consensus Protocol](https://arxiv.org/abs/2405.00549) | `ARXIV` | 44.0 |
+| 50 | [Serverless Replication of Object Storage across Multi-Vendor Clouds and Regions.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 36.0 |
+| 51 | [Demeter: A Scalable and Elastic Tiered Memory Solution for Virtualized Cloud via Guest Delegation.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 34.5 |
+| 52 | [Managing Scalable Direct Storage Accesses for GPUs with GoFS.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 34.5 |
+| 53 | [CofferOS: Hardening OS-level Virtualization with Rust.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
+| 54 | [Practical and Efficient x86-64 Emulation on RISC-V.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
+| 55 | [Federated Fine-Tuning of Sparsely-Activated Large Language Models on Resource-Constrained Devices.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
+| 56 | [LoRAFusion: Efficient LoRA Fine-Tuning for LLMs.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
+| 57 | [Efficient Data Passing for Serverless Inference Workflows: A GPU-Centric Approach.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
+| 58 | [AEP: Achieving Hierarchical Fault Tolerance in DSM Through Atomic Execution Protection.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
+| 59 | [DROPS: Managing Serverless Resource Pools in Microsoft Azure Functions.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
+| 60 | [Everything You Need to Know About Virtual Machine Live Migration Between Heterogeneous Processors.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
+| 61 | [FlexiWalker: Extensible GPU Framework for Efficient Dynamic Random Walks with Runtime Adaptation.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
+| 62 | [MTTM: Dynamic Fast Memory Partitioning with Bandwidth Optimization for Multi-tenant Cloud.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
+| 63 | [ASIC-based Compression Accelerators for Storage Systems: Design, Placement, and Profiling Insights.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
+| 64 | [Lessons Learned from Incorporating Formal Methods in Huawei Cloud Reliability.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
+| 65 | [Orthrus: Efficient and Timely Detection of Silent User Data Corruption in the Cloud with Resource-Adaptive Computation Validation.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 33.0 |
+| 66 | [Moirai: Optimizing Placement of Data and Compute in Hybrid Clouds.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 33.0 |
+| 67 | [Quilt: Resource-aware Merging of Serverless Workflows.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 33.0 |
+| 68 | [PhoenixOS: Concurrent OS-level GPU Checkpoint and Restore with Validated Speculation.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 33.0 |
+| 69 | [KTransformers: Unleashing the Full Potential of CPU/GPU Hybrid Inference for MoE Models.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 33.0 |
+| 70 | [Aegaeon: Effective GPU Pooling for Concurrent LLM Serving on the Market.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 33.0 |
+| 71 | [On-device Semantic Selection Made Low Latency and Memory Efficient with Monolithic Forwarding.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 72 | [REPS: Recycled Entropy Packet Spraying for Adaptive Load Balancing and Failure Mitigation.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 73 | [Chimera: Transparent and High-Performance ISAX Heterogeneous Computing via Binary Rewriting.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 74 | [GeDES: GPU-Driven Discrete Event Network Simulator.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 75 | [TokenFlow: Responsive LLM Text Streaming Serving under Request Burst via Preemptive Scheduling.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 76 | [TrustWeave: Integrity Measurement and Attestation For Multi-Cloud LLMs.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 77 | [Enabling Packet Spraying over Commodity RNICs with In-Network Support.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 78 | [PatternSketch: General and Runtime Reconfigurable Time-series Network Traffic Pattern Detection.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 79 | [Low-Compilation-Cost Register Allocation in LLVM-Based Binary Translation.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 80 | [TCO-driven Storage Provisioning for Exascale Data Centers.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 81 | [FicusDB: Scalable Multi-Versioned Authenticated Archival Storage.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 82 | [swKokkos: An Athread Backend for Enhanced Kokkos with the Sunway Heterogeneous Architecture.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 83 | [Five Minutes of DDoS Brings down Tor: DDoS Attacks on the Tor Directory Protocol and Mitigations.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 84 | [Squeezy: Rapid VM Memory Reclamation for Serverless Functions.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 85 | [TAO: Tolerance-Aware Optimistic Verification for Floating-Point Neural Networks.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 86 | [PaCaR: Improved Buffered I/O Locality on NUMA Systems with Page Cache Replication.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 87 | [Proactive Change Risk Detection in Production Cloud Systems: ByteDance's Experience.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 88 | [Towards Improving Throughput and Scalability of DAG-based BFT SMR.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 89 | [RoPeerTo: A Datacenter-Scale Architecture for Peer-To-Peer DMA between GPUs and FPGAs.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 90 | [Suika: Efficient and High-quality Re-scheduling of 3D-parallelized LLM Training Jobs in Shared Clusters.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 91 | [LifeFuzz: Lifecycle-Guided Fuzzing for Windows Driver Cross-Handler Vulnerabilities.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 92 | [Rose: Reproducing External-Fault-Induced Failures in Distributed Systems with Lightweight Instrumentation.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 93 | [Scaling LLM Test-Time Compute with Mobile NPU on Smartphones.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 94 | [CHARM: Chiplet Heterogeneity-Aware Runtime Mapping System.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 95 | [2DIO: Configurable and Cache-Accurate Trace Generation for Storage Benchmarking.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 96 | [CHERIoT RTOS: An OS for Fine-Grained Memory-Safe Compartments on Low-Cost Embedded Devices.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
+| 97 | [DCP: Addressing Input Dynamism In Long-Context Training via Dynamic Context Parallelism.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
+| 98 | [Mitigating Application Resource Overload with Targeted Task Cancellation.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
+| 99 | [Optimistic Recovery for High-Availability Software via Partial Process State Preservation.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
+| 100 | [COpter: Efficient Large-Scale Resource-Allocation via Continual Optimization.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
+| 101 | [Characterizing Mobile SoC for Accelerating Heterogeneous LLM Inference.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
+| 102 | [cache_ext: Customizing the Page Cache with eBPF.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
+| 103 | [Aeolia: A Fast and Secure Userspace Interrupt-Based Storage Stack.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
+| 104 | [HedraRAG: Co-Optimizing Generation and Retrieval for Heterogeneous RAG Workflows.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
+| 105 | [WASIT: Deep and Continuous Differential Testing of WebAssembly System Interface Implementations.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
+| 106 | [Atmosphere: Practical Verified Kernels with Rust and Verus.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
+| 107 | [ORQ: Complex Analytics on Private Data with Strong Security Guarantees.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
+| 108 | [Running Consistent Applications Closer to Users with Radical for Lower Latency.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
+| 109 | [How to Copy Memory? Coordinated Asynchronous Copy as a First-Class OS Service.](https://dblp.org/db/conf/sosp/sosp2025) | `DBLP` | 31.5 |
 | 110 | [Bridging the GPU Utilization Gap: Predictive Multi-Dimensional Resource Scheduling for AI Workloads.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 4.5 |
 | 111 | [Multipath Collective Communication Beyond Scale-up Networks in GPU Clouds.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 4.5 |
 | 112 | [Scheduling Cloud Block Storage Proactively and Reactively with Omar.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 4.5 |
