@@ -145,6 +145,9 @@ class BaseConferenceBot(ABC):
         self.max_papers = max_papers or 20000
         self.display_limit = display_limit
         self.session = session or requests.Session()
+        self.session.headers.update({
+            "User-Agent": "arxiv-rss-bot/1.0 (arXiv paper tracker; academic research)"
+        })
         self.config_file = config_file
         self.days_back = days_back or self.DAYS_BACK
 

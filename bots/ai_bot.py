@@ -139,18 +139,23 @@ class AIBot(BaseConferenceBot):
                     if not title or not authors:
                         continue
 
-                    # Try to fetch abstract from paper page
+                    # Fetch abstract from paper page (rate-limited: 0.5s delay)
                     abstract = ""
                     if abs_link:
                         try:
+                            import time
+                            time.sleep(0.5)  # Be respectful to MLR Press
                             abs_resp = self.session.get(abs_link, timeout=15)
+                            if abs_resp.status_code == 429:
+                                logger.warning("  MLR rate limited, waiting 5s...")
+                                time.sleep(5)
+                                abs_resp = self.session.get(abs_link, timeout=15)
                             abs_soup = BeautifulSoup(abs_resp.text, "lxml")
                             abstract_el = abs_soup.select_one("meta[property='og:description']")
                             if abstract_el:
                                 abstract = abstract_el.get("content", "")
                         except Exception:
                             pass
-
                     clean_name = re.sub(r"[^a-zA-Z0-9]", "", conf_name).lower()
                     forum_id = f"mlr-{clean_name}-{len(conf_papers)+1}"
                     conf_papers.append(ConferencePaper(
