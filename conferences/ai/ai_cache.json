@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-07-16T10:15:50.632431+00:00",
-  "paper_count": 12,
+  "last_updated": "2026-07-17T02:39:00.369030+00:00",
+  "paper_count": 58,
   "papers": [
     {
       "forum_id": "2607.13157",
@@ -25,7 +25,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-07-16T10:15:49.866014+00:00"
+      "updated_at": "2026-07-17T02:38:54.430016+00:00"
     },
     {
       "forum_id": "2607.13618",
@@ -48,7 +48,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-07-16T10:15:49.866415+00:00"
+      "updated_at": "2026-07-17T02:38:54.430429+00:00"
     },
     {
       "forum_id": "2607.13393",
@@ -71,7 +71,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-07-16T10:15:49.868021+00:00"
+      "updated_at": "2026-07-17T02:38:54.432083+00:00"
     },
     {
       "forum_id": "2607.13579",
@@ -94,7 +94,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 25.0,
-      "updated_at": "2026-07-16T10:15:49.868545+00:00"
+      "updated_at": "2026-07-17T02:38:54.432595+00:00"
     },
     {
       "forum_id": "2607.14041",
@@ -117,7 +117,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-07-16T10:15:49.869340+00:00"
+      "updated_at": "2026-07-17T02:38:54.433398+00:00"
     },
     {
       "forum_id": "2607.12474",
@@ -140,7 +140,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 57.5,
-      "updated_at": "2026-07-16T10:15:49.869774+00:00"
+      "updated_at": "2026-07-17T02:38:54.433835+00:00"
     },
     {
       "forum_id": "2607.13423",
@@ -163,7 +163,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 4.0,
-      "updated_at": "2026-07-16T10:15:50.187444+00:00"
+      "updated_at": "2026-07-17T02:38:54.728206+00:00"
     },
     {
       "forum_id": "2607.13414",
@@ -186,7 +186,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-07-16T10:15:50.189401+00:00"
+      "updated_at": "2026-07-17T02:38:54.730210+00:00"
     },
     {
       "forum_id": "2607.13475",
@@ -209,7 +209,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 11.0,
-      "updated_at": "2026-07-16T10:15:50.189469+00:00"
+      "updated_at": "2026-07-17T02:38:54.730278+00:00"
     },
     {
       "forum_id": "2607.13602",
@@ -232,7 +232,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 25.0,
-      "updated_at": "2026-07-16T10:15:50.189689+00:00"
+      "updated_at": "2026-07-17T02:38:54.730503+00:00"
     },
     {
       "forum_id": "2507.09473",
@@ -255,7 +255,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 11.0,
-      "updated_at": "2026-07-16T10:15:50.191351+00:00"
+      "updated_at": "2026-07-17T02:38:54.732194+00:00"
     },
     {
       "forum_id": "2607.11985",
@@ -278,7 +278,1077 @@
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-07-16T10:15:50.192246+00:00"
+      "updated_at": "2026-07-17T02:38:54.733112+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-1",
+      "paper_number": 1,
+      "title": "Automatic Pruning of Fine-tuning Datasets for Transformer-based Language Models",
+      "authors": [
+        "Sayed Mohammadreza Tayaranian Hosseini",
+        "Seyyed Hasan Mozafari",
+        "Brett H. Meyer",
+        "James J. Clark",
+        "Warren J. Gross"
+      ],
+      "keywords": [],
+      "abstract": "Transformer-based language models have shown state-of-the-art performance on a variety of natural language understanding tasks. To achieve this performance, these models are first pre-trained on ge...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/hosseini25a/hosseini25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/hosseini25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 64.5,
+      "updated_at": "2026-07-17T02:38:55.539432+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-3",
+      "paper_number": 3,
+      "title": "A Contrastive Symmetric Forward-Forward Algorithm (SFFA) for Continual Learning Tasks",
+      "authors": [
+        "Erik B Terres-Escudero",
+        "Javier Del Ser",
+        "Pablo Garcia-Bringas"
+      ],
+      "keywords": [],
+      "abstract": "The so-called Forward-Forward Algorithm (FFA) has recently gained momentum as an alternative to the conventional back-propagation algorithm for neural network learning, yielding competitive perform...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/terres-escudero25a/terres-escudero25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/terres-escudero25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.0,
+      "updated_at": "2026-07-17T02:38:55.728865+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-4",
+      "paper_number": 4,
+      "title": "Masked Autoencoders are Efficient Continual Federated Learners",
+      "authors": [
+        "Subarnaduti Paul",
+        "Lars-Joel Frey",
+        "Roshni Ramanna Kamath",
+        "Kristian Kersting",
+        "Martin Mundt"
+      ],
+      "keywords": [],
+      "abstract": "Machine learning is typically framed from a perspective of i.i.d., and more importantly, isolated data. In parts, federated learning lifts this assumption, as it sets out to solve the real-world ch...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/paul25a/paul25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/paul25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-07-17T02:38:55.835659+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-5",
+      "paper_number": 5,
+      "title": "Towards More Diverse Evaluation of Class Incremental Learning: Representation Learning Perspective",
+      "authors": [
+        "Sungmin Cha",
+        "Jihwan Kwak",
+        "Dongsub Shim",
+        "Hyunwoo Kim",
+        "Moontae Lee",
+        "Honglak Lee",
+        "Taesup Moon"
+      ],
+      "keywords": [],
+      "abstract": "Class incremental learning (CIL) algorithms aim to continually learn new object classes from incrementally arriving data while not forgetting past learned classes. The common evaluation protocol fo...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/cha25a/cha25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/cha25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-17T02:38:55.929619+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-6",
+      "paper_number": 6,
+      "title": "Beyond Unimodal Learning: The Importance of Integrating Multiple Modalities for Lifelong Learning",
+      "authors": [
+        "Fahad Sarfraz",
+        "Bahram Zonooz",
+        "Elahe Arani"
+      ],
+      "keywords": [],
+      "abstract": "While humans excel at continual learning (CL), deep neural networks (DNNs) exhibit catastrophic forgetting. A salient feature of the brain that allows effective CL is that it utilizes multiple moda...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/sarfraz25a/sarfraz25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/sarfraz25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-17T02:38:56.012603+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-8",
+      "paper_number": 8,
+      "title": "Mitigating Interference in the Knowledge Continuum through Attention-Guided Incremental Learning",
+      "authors": [
+        "Prashant Shivaram Bhat",
+        "Bharath Chennamkulam Renjith",
+        "Elahe Arani",
+        "Bahram Zonooz"
+      ],
+      "keywords": [],
+      "abstract": "Continual learning (CL) remains a significant challenge for deep neural networks, as it is prone to forgetting previously acquired knowledge. Several approaches have been proposed in the literature...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/bhat25a/bhat25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/bhat25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-17T02:38:56.179780+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-9",
+      "paper_number": 9,
+      "title": "Replaying with Realistic Latent Vectors in Generative Continual Learning",
+      "authors": [
+        "Hyemin Jeong",
+        "Seong-Woong Kim",
+        "Dong-Wan Choi"
+      ],
+      "keywords": [],
+      "abstract": "In generative continual learning for GANs, replay-based methods mitigate forgetting of past knowledge by retraining either synthesised images from the previous generator (generative replay) or real...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/jeong25a/jeong25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/jeong25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-07-17T02:38:56.258136+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-11",
+      "paper_number": 11,
+      "title": "Hadamard Domain Training with Integers for Class Incremental Quantized Learning",
+      "authors": [
+        "Martin Schiemer",
+        "Clemens JS Schaefer",
+        "Mark James Horeni",
+        "Yu Emma Wang",
+        "Juan Ye",
+        "Siddharth Joshi"
+      ],
+      "keywords": [],
+      "abstract": "Continual learning (CL) implemented directly on-device is crucial for practical deployment of applications to battery powered devices, where privacy needs must be balanced with personalization, and...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/schiemer25a/schiemer25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/schiemer25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-17T02:38:56.442336+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-12",
+      "paper_number": 12,
+      "title": "Subspace-Configurable Networks",
+      "authors": [
+        "Dong Wang",
+        "Olga Saukh",
+        "Xiaoxi He",
+        "Lothar Thiele"
+      ],
+      "keywords": [],
+      "abstract": "While the deployment of deep learning models on edge devices is increasing, these models often lack robustness when faced with dynamic changes in sensed data. This can be attributed to sensor drift...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/wang25a/wang25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/wang25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-07-17T02:38:56.537740+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-13",
+      "paper_number": 13,
+      "title": "Adaptive Action Advising with Different Rewards",
+      "authors": [
+        "Yue Guo",
+        "Xijia Zhang",
+        "Simon Stepputtis",
+        "Joseph Campbell",
+        "Katia P. Sycara"
+      ],
+      "keywords": [],
+      "abstract": "Action advising is a critical aspect of reinforcement learning, involving a teacher-student paradigm wherein the teacher, possessing a pre-trained policy, advises the student with the actions calcu...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/guo25a/guo25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/guo25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-07-17T02:38:56.631379+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-14",
+      "paper_number": 14,
+      "title": "Diffusion Augmented Agents: A Framework for Efficient Exploration and Transfer Learning",
+      "authors": [
+        "Norman Di Palo",
+        "Leonard Hasenclever",
+        "Jan Humplik",
+        "Arunkumar Byravan"
+      ],
+      "keywords": [],
+      "abstract": "We address the problem of sample-efficiency when training instruction-following embodied agents using reinforcement learning in a lifelong setting, where rewards may be sparse or absent. Our framew...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/palo25a/palo25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/palo25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 16.5,
+      "updated_at": "2026-07-17T02:38:56.714494+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-15",
+      "paper_number": 15,
+      "title": "Learning to learn without forgetting using attention",
+      "authors": [
+        "Anna Vettoruzzo",
+        "Joaquin Vanschoren",
+        "Mohamed-Rafik Bouguelia",
+        "Thorsteinn S. Rögnvaldsson"
+      ],
+      "keywords": [],
+      "abstract": "Continual learning (CL) refers to the ability to continually learn over time by accommodating new knowledge while retaining previously learned experience. While this concept is inherent in human le...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/vettoruzzo25a/vettoruzzo25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/vettoruzzo25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-17T02:38:56.809105+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-16",
+      "paper_number": 16,
+      "title": "Cross-Domain Policy Transfer by Representation Alignment via Multi-Domain Behavioral Cloning",
+      "authors": [
+        "Hayato Watahiki",
+        "Ryo Iwase",
+        "Ryosuke Unno",
+        "Yoshimasa Tsuruoka"
+      ],
+      "keywords": [],
+      "abstract": "Transferring learned skills across diverse situations remains a fundamental challenge for autonomous agents, particularly when agents are not allowed to interact with an exact target setup. While p...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/watahiki25a/watahiki25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/watahiki25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 32.5,
+      "updated_at": "2026-07-17T02:38:56.887571+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-17",
+      "paper_number": 17,
+      "title": "Gradual Fine-Tuning with Graph Routing for Multi-Source Unsupervised Domain Adaptation",
+      "authors": [
+        "Yao Ma",
+        "Samuel Louvan",
+        "Zhunxuan Wang"
+      ],
+      "keywords": [],
+      "abstract": "Multi-source unsupervised domain adaptation aims to leverage labeled data from multiple source domains for training a machine learning model to generalize well on a target domain without labels. So...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/ma25a/ma25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/ma25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.0,
+      "updated_at": "2026-07-17T02:38:56.972220+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-18",
+      "paper_number": 18,
+      "title": "On the Limitation and Experience Replay for GNNs in Continual Learning",
+      "authors": [
+        "Junwei Su",
+        "Difan Zou",
+        "Chuan Wu"
+      ],
+      "keywords": [],
+      "abstract": "Continual learning seeks to empower models to progressively acquire information from a sequence of tasks. This approach is crucial for many real-world systems, which are dynamic and evolve over tim...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/su25a/su25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/su25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 32.5,
+      "updated_at": "2026-07-17T02:38:57.077946+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-19",
+      "paper_number": 19,
+      "title": "PANDAS: Prototype-based Novel Class Discovery and Detection",
+      "authors": [
+        "Tyler L. Hayes",
+        "César Roberto de Souza",
+        "Namil Kim",
+        "Jiwon Kim",
+        "Riccardo Volpi",
+        "Diane Larlus"
+      ],
+      "keywords": [],
+      "abstract": "Object detectors are typically trained once and for all on a fixed set of classes. However, this closed-world assumption is unrealistic in practice, as new classes will inevitably emerge after the ...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/hayes25a/hayes25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/hayes25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-17T02:38:57.188117+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-20",
+      "paper_number": 20,
+      "title": "Integrating Present and Past in Unsupervised Continual Learning",
+      "authors": [
+        "Yipeng Zhang",
+        "Laurent Charlin",
+        "Richard Zemel",
+        "Mengye Ren"
+      ],
+      "keywords": [],
+      "abstract": "We formulate a unifying framework for *unsupervised continual learning (UCL)*, which disentangles learning objectives that are specific to the present and the past data, encompassing *stability*, *...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/zhang25a/zhang25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/zhang25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-17T02:38:57.291704+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-21",
+      "paper_number": 21,
+      "title": "Maintaining Plasticity in Continual Learning via Regenerative Regularization",
+      "authors": [
+        "Saurabh Kumar",
+        "Henrik Marklund",
+        "Benjamin Van Roy"
+      ],
+      "keywords": [],
+      "abstract": "In continual learning, plasticity refers to the ability of an agent to quickly adapt to new information. Neural networks are known to lose plasticity when processing non-stationary data streams. In...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/kumar25a/kumar25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/kumar25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-17T02:38:57.375503+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-22",
+      "paper_number": 22,
+      "title": "Continual Learning of Diffusion Models with Generative Distillation",
+      "authors": [
+        "Sergi Masip",
+        "Pau Rodriguez",
+        "Tinne Tuytelaars",
+        "Gido M van de Ven"
+      ],
+      "keywords": [],
+      "abstract": "Diffusion models are powerful generative models that achieve state-of-the-art performance in image synthesis. However, training them demands substantial amounts of data and computational resources....",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/masip25a/masip25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/masip25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 67.0,
+      "updated_at": "2026-07-17T02:38:57.465606+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-23",
+      "paper_number": 23,
+      "title": "iWISDM: Assessing instruction following in multimodal models at scale",
+      "authors": [
+        "Xiaoxuan Lei",
+        "Lucas Gomez",
+        "Hao Yuan Bai",
+        "Pouya Bashivan"
+      ],
+      "keywords": [],
+      "abstract": "The ability to perform complex tasks from detailed instructions is a key to the remarkable achievements of our species. As humans, we are not only capable of performing a wide variety of tasks but ...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/lei25a/lei25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/lei25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.0,
+      "updated_at": "2026-07-17T02:38:57.556816+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-24",
+      "paper_number": 24,
+      "title": "t-DGR: A Trajectory-Based Deep Generative Replay Method for Continual Learning in Decision Making",
+      "authors": [
+        "William Yue",
+        "Bo Liu",
+        "Peter Stone"
+      ],
+      "keywords": [],
+      "abstract": "Deep generative replay has emerged as a promising approach for continual learning in decision-making tasks. This approach addresses the problem of catastrophic forgetting by leveraging the generati...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/yue25a/yue25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/yue25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.5,
+      "updated_at": "2026-07-17T02:38:57.642013+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-25",
+      "paper_number": 25,
+      "title": "Infinite dSprites for Disentangled Continual Learning: Separating Memory Edits from Generalization",
+      "authors": [
+        "Sebastian Dziadzio",
+        "Çagatay Yildiz",
+        "Gido M. van de Ven",
+        "Tomasz Trzcinski",
+        "Tinne Tuytelaars",
+        "Matthias Bethge"
+      ],
+      "keywords": [],
+      "abstract": "The ability of machine learning systems to learn continually is hindered by catastrophic forgetting, the tendency of neural networks to overwrite existing knowledge when learning a new task. Existi...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/dziadzio25a/dziadzio25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/dziadzio25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-17T02:38:57.761451+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-26",
+      "paper_number": 26,
+      "title": "Channel-Selective Normalization for Label-Shift Robust Test-Time Adaptation",
+      "authors": [
+        "Pedro Vianna",
+        "Muawiz Sajjad Chaudhary",
+        "Paria Mehrbod",
+        "An Tang",
+        "Guy Cloutier",
+        "Guy Wolf",
+        "Michael Eickenberg",
+        "Eugene Belilovsky"
+      ],
+      "keywords": [],
+      "abstract": "Deep neural networks have useful applications in many different tasks, however their performance can be severely affected by changes in the input distribution. For example, in the biomedical field,...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/vianna25a/vianna25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/vianna25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-17T02:38:57.860360+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-28",
+      "paper_number": 28,
+      "title": "Tomorrow Brings Greater Knowledge: Large Language Models Join Dynamic Temporal Knowledge Graphs",
+      "authors": [
+        "Christian Di Maio",
+        "Andrea Zugarini",
+        "Francesco Giannini",
+        "Marco Maggini",
+        "Stefano Melacci"
+      ],
+      "keywords": [],
+      "abstract": "Large Language Models (LLMs) have demonstrated exceptional capabilities in understanding and generating human-like text. In this paper, we leverage their powerful skills in the scope of lifelong le...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/maio25a/maio25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/maio25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 43.5,
+      "updated_at": "2026-07-17T02:38:58.032531+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-29",
+      "paper_number": 29,
+      "title": "Consistency Regularisation for Unsupervised Domain Adaptation in Monocular Depth Estimation",
+      "authors": [
+        "Amir El-Ghoussani",
+        "Julia Hornauer",
+        "Gustavo Carneiro",
+        "Vasileios Belagiannis"
+      ],
+      "keywords": [],
+      "abstract": "In monocular depth estimation, unsupervised domain adaptation has recently been explored to relax the dependence on large annotated image-based depth datasets. However, this comes at the cost of tr...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/el-ghoussani25a/el-ghoussani25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/el-ghoussani25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-07-17T02:38:58.141725+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-30",
+      "paper_number": 30,
+      "title": "Continual Learning for Unsupervised Concept Bottleneck Discovery",
+      "authors": [
+        "Luca Salvatore Lorello",
+        "Marco Lippi",
+        "Stefano Melacci"
+      ],
+      "keywords": [],
+      "abstract": "In the context of continual learning, little attention is dedicated to the problem of developing a layer of “concepts’‘, also known as “concept bottleneck”, to support the discrimination of higher-...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/lorello25a/lorello25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/lorello25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-17T02:38:58.233234+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-31",
+      "paper_number": 31,
+      "title": "Label Augmentation for Neural Networks Robustness",
+      "authors": [
+        "Fatemeh Amerehi",
+        "Patrick Healy"
+      ],
+      "keywords": [],
+      "abstract": "Out-of-distribution generalization can be categorized into two types: common perturbations arising from natural variations in the real world and adversarial perturbations that are intentionally cra...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/amerehi25a/amerehi25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/amerehi25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.0,
+      "updated_at": "2026-07-17T02:38:58.325456+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-33",
+      "paper_number": 33,
+      "title": "Towards realistic incremental scenario in class incremental semantic segmentation",
+      "authors": [
+        "Jihwan Kwak",
+        "Sungmin Cha",
+        "Taesup Moon"
+      ],
+      "keywords": [],
+      "abstract": "This paper addresses the unrealistic aspect of the overlapped scenario, a commonly adopted incremental learning scenario in Class Incremental Semantic Segmentation (CISS). We highlight that the ove...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/kwak25a/kwak25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/kwak25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-17T02:38:58.492574+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-34",
+      "paper_number": 34,
+      "title": "POWN: Prototypical Open-World Node Classification",
+      "authors": [
+        "Marcel Hoffmann",
+        "Lukas Galke",
+        "Ansgar Scherp"
+      ],
+      "keywords": [],
+      "abstract": "We consider the problem of true open-world semi-supervised node classification, in which nodes in a graph either belong to known or new classes, with the latter not present during training. Existin...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/hoffmann25a/hoffmann25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/hoffmann25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-17T02:38:58.581206+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-35",
+      "paper_number": 35,
+      "title": "Compositional Interfaces for Compositional Generalization",
+      "authors": [
+        "Jelena Luketina",
+        "Jack Lanchantin",
+        "Sainbayar Sukhbaatar",
+        "Arthur Szlam"
+      ],
+      "keywords": [],
+      "abstract": "With recent work such as GATO (Reed et al., 2022) we see the development of agents that can accomplish a variety of tasks, while perceiving the world and acting in multiple observation and action s...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/luketina25a/luketina25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/luketina25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-17T02:38:58.675928+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-36",
+      "paper_number": 36,
+      "title": "ARCLE: The Abstraction and Reasoning Corpus Learning Environment for Reinforcement Learning",
+      "authors": [
+        "Hosung Lee",
+        "Sejin Kim",
+        "Seungpil Lee",
+        "Sanha Hwang",
+        "Jihwan Lee",
+        "Byung-Jun Lee",
+        "Sundong Kim"
+      ],
+      "keywords": [],
+      "abstract": "This paper introduces ARCLE, an environment designed to facilitate reinforcement learning research on the Abstraction and Reasoning Corpus (ARC). Addressing this inductive reasoning benchmark with ...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/lee25a/lee25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/lee25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.0,
+      "updated_at": "2026-07-17T02:38:58.759763+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-37",
+      "paper_number": 37,
+      "title": "Enhanced Label Propagation through Affinity Matrix Fusion for Source-Free Domain Adaptation",
+      "authors": [
+        "Li Guo",
+        "Yuxuan Xia",
+        "Shengjie Wang"
+      ],
+      "keywords": [],
+      "abstract": "Source-free domain adaptation (SFDA) has gained significant attention as a method to transfer knowledge from a pre-trained model on source domains toward target domains without accessing the source...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/guo25b/guo25b.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/guo25b.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-17T02:38:58.852942+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-38",
+      "paper_number": 38,
+      "title": "Disentangling the Causes of Plasticity Loss in Neural Networks",
+      "authors": [
+        "Clare Lyle",
+        "Zeyu Zheng",
+        "Khimya Khetarpal",
+        "Hado van Hasselt",
+        "Razvan Pascanu",
+        "James Martens",
+        "Will Dabney"
+      ],
+      "keywords": [],
+      "abstract": "Underpinning the past decades of work on the design, initialization, and optimization of neural networks is a seemingly innocuous assumption: that the network is trained on a stationary data distri...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/lyle25a/lyle25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/lyle25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-07-17T02:38:58.945945+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-39",
+      "paper_number": 39,
+      "title": "Decoupled Prompt-Adapter Tuning for Continual Activity Recognition",
+      "authors": [
+        "Di Fu",
+        "Thanh Vinh Vo",
+        "Haozhe Ma",
+        "Tze-Yun Leong"
+      ],
+      "keywords": [],
+      "abstract": "Action recognition technology plays a vital role in enhancing security through surveillance systems, enabling better patient monitoring in healthcare, providing in-depth performance analysis in spo...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/fu25a/fu25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/fu25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-17T02:38:59.041487+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-40",
+      "paper_number": 40,
+      "title": "Optimizing the Learning Rate for the Online Training of Neural Networks",
+      "authors": [
+        "Lucas Cazzonelli",
+        "Cedric Kulbach",
+        "Steffen Thoma"
+      ],
+      "keywords": [],
+      "abstract": "Efficient training via gradient-based optimization techniques is an essential building block to the success of artificial neural networks. Extensive research on the impact and the effective estimat...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/cazzonelli25a/cazzonelli25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/cazzonelli25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-07-17T02:38:59.134125+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-42",
+      "paper_number": 42,
+      "title": "Probabilistic Test-Time Generalization by Variational Neighbor-Labeling",
+      "authors": [
+        "Sameer Ambekar",
+        "Zehao Xiao",
+        "Jiayi Shen",
+        "Xiantong Zhen",
+        "Cees G. M. Snoek"
+      ],
+      "keywords": [],
+      "abstract": "This paper strives for domain generalization, where models are trained exclusively on source domains before being deployed on unseen target domains. We follow the strict separation of source traini...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/ambekar25a/ambekar25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/ambekar25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-17T02:38:59.335951+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-43",
+      "paper_number": 43,
+      "title": "Less is more: Summarizing Patch Tokens for efficient Multi-Label Class-Incremental Learning",
+      "authors": [
+        "Thomas De Min",
+        "Massimiliano Mancini",
+        "Stéphane Lathuilière",
+        "Subhankar Roy",
+        "Elisa Ricci"
+      ],
+      "keywords": [],
+      "abstract": "Prompt tuning has emerged as an effective rehearsal-free technique for class-incremental learning (CIL) that learns a tiny set of task-specific parameters (or prompts) to instruct a pre-trained tra...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/min25a/min25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/min25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-17T02:38:59.434224+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-44",
+      "paper_number": 44,
+      "title": "SymbolicAI: A framework for logic-based approaches combining generative models and solvers",
+      "authors": [
+        "Marius-Constantin Dinu",
+        "Claudiu Leoveanu-Condrei",
+        "Markus Holzleitner",
+        "Werner Zellinger",
+        "Sepp Hochreiter"
+      ],
+      "keywords": [],
+      "abstract": "We introduce _SymbolicAI_, a versatile and modular framework employing a logic-based approach to concept learning and flow management in generative processes. SymbolicAI enables the seamless integr...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/dinu25a/dinu25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/dinu25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-17T02:38:59.529888+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-46",
+      "paper_number": 46,
+      "title": "Patch-Based Contrastive Learning and Memory Consolidation for Online Unsupervised Continual Learning",
+      "authors": [
+        "Cameron Ethan Taylor",
+        "Vassilis Vassiliades",
+        "Constantine Dovrolis"
+      ],
+      "keywords": [],
+      "abstract": "In this study, we delve into a learning paradigm known as Online Unsupervised Continual Learning (O-UCL) which involves a learner observing an evolving, unlabeled data stream and progressively lear...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/taylor25a/taylor25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/taylor25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.5,
+      "updated_at": "2026-07-17T02:38:59.714840+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-47",
+      "paper_number": 47,
+      "title": "Partial Models for Building Adaptive Model-Based Reinforcement Learning Agents",
+      "authors": [
+        "Safa Alver",
+        "Ali Rahimi-Kalahroudi",
+        "Doina Precup"
+      ],
+      "keywords": [],
+      "abstract": "In neuroscience, one of the key behavioral tests for determining whether a subject of study exhibits model-based behavior is to study its adaptiveness to local changes in the environment. In reinfo...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/alver25a/alver25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/alver25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.5,
+      "updated_at": "2026-07-17T02:38:59.798557+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-48",
+      "paper_number": 48,
+      "title": "The Empirical Impact of Forgetting and Transfer in Continual Visual Odometry",
+      "authors": [
+        "Paolo Cudrano",
+        "Xiaoyu Luo",
+        "Matteo Matteucci"
+      ],
+      "keywords": [],
+      "abstract": "As robotics continues to advance, the need for adaptive and continuously-learning embodied agents increases, particularly in the realm of assistance robotics. Quick adaptability and long-term infor...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/cudrano25a/cudrano25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/cudrano25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-17T02:38:59.905546+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-49",
+      "paper_number": 49,
+      "title": "An Empirical Analysis of Forgetting in Pre-trained Models with Incremental Low-Rank Updates",
+      "authors": [
+        "Albin Soutif",
+        "Simone Magistri",
+        "Joost van de Weijer",
+        "Andrew D. Bagdanov"
+      ],
+      "keywords": [],
+      "abstract": "Broad, open source availability of large pretrained foundation models on the internet through platforms such as HuggingFace has taken the world of practical deep learning by storm. A classical pipe...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/soutif25a/soutif25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/soutif25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.0,
+      "updated_at": "2026-07-17T02:38:59.986949+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-50",
+      "paper_number": 50,
+      "title": "Statistical Context Detection for Deep Lifelong Reinforcement Learning",
+      "authors": [
+        "Jeffery Dick",
+        "Saptarshi Nath",
+        "Christos Peridis",
+        "Eseoghene Ben-Iwhiwhu",
+        "Soheil Kolouri",
+        "Andrea Soltoggio"
+      ],
+      "keywords": [],
+      "abstract": "Context detection involves labeling segments of an online stream of data as belonging to different tasks. Task labels are used in lifelong learning algorithms to perform consolidation or other proc...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/dick25a/dick25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/dick25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.5,
+      "updated_at": "2026-07-17T02:39:00.071527+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-51",
+      "paper_number": 51,
+      "title": "GRASP: A Rehearsal Policy for Efficient Online Continual Learning",
+      "authors": [
+        "Md Yousuf Harun",
+        "Jhair Gallardo",
+        "Junyu Chen",
+        "Christopher Kanan"
+      ],
+      "keywords": [],
+      "abstract": "Continual learning (CL) in deep neural networks (DNNs) involves incrementally accumulating knowledge in a DNN from a growing data stream. A major challenge in CL is that non-stationary data streams...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/harun25a/harun25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/harun25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-17T02:39:00.165728+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-52",
+      "paper_number": 52,
+      "title": "Sub-goal Distillation: A Method to Improve Small Language Agents",
+      "authors": [
+        "Maryam Hashemzadeh",
+        "Elias Stengel-Eskin",
+        "Sarath Chandar",
+        "Marc-Alexandre Côté"
+      ],
+      "keywords": [],
+      "abstract": "While Large Language Models (LLMs) have demonstrated significant promise as agents in interactive tasks, their substantial computational requirements and restricted number of calls constrain their ...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/hashemzadeh25a/hashemzadeh25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/hashemzadeh25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 43.5,
+      "updated_at": "2026-07-17T02:39:00.252123+00:00"
+    },
+    {
+      "forum_id": "mlr-icml25-53",
+      "paper_number": 53,
+      "title": "Reflecting on the State of Rehearsal-Free Continual Learning with Pretrained Models",
+      "authors": [
+        "Lukas Thede",
+        "Karsten Roth",
+        "Olivier J Henaff",
+        "Matthias Bethge",
+        "Zeynep Akata"
+      ],
+      "keywords": [],
+      "abstract": "With the advent and recent ubiquity of foundation models, continual learning (CL) has recently shifted from continual training from scratch to the continual adaptation of pretrained models, seeing ...",
+      "pdf_link": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/thede25a/thede25a.pdf",
+      "forum_link": "https://proceedings.mlr.press/v274/thede25a.html",
+      "submission_date": null,
+      "conference": "ICML '25",
+      "source": "mlr",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.5,
+      "updated_at": "2026-07-17T02:39:00.363076+00:00"
     }
   ]
 }
