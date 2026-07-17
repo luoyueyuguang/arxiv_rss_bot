@@ -94,6 +94,7 @@ class AIBot(BaseConferenceBot):
             return []
 
         papers = []
+        successful_pages = 0
         for conf_name, url in self.MLR_URLS:
             try:
                 logger.info("MLR: %s from %s", conf_name, url)
@@ -101,6 +102,7 @@ class AIBot(BaseConferenceBot):
                 if resp.status_code != 200:
                     logger.warning("  %s returned %d, skipping", conf_name, resp.status_code)
                     continue
+                successful_pages += 1
                 soup = BeautifulSoup(resp.text, "lxml")
 
                 paper_divs = soup.select("div.paper")
@@ -184,6 +186,7 @@ class AIBot(BaseConferenceBot):
                 logger.info("NeurIPS: from %s", self.NEURIPS_URL)
                 resp = self.session.get(self.NEURIPS_URL, timeout=30)
                 if resp.status_code == 200:
+                    successful_pages += 1
                     soup = BeautifulSoup(resp.text, "lxml")
                     # Papers are in <li> elements with links to abstract pages
                     paper_links = soup.select("a[href*='-Abstract-Conference.html']")
@@ -229,6 +232,8 @@ class AIBot(BaseConferenceBot):
             except Exception as exc:
                 logger.error("NeurIPS failed: %s", exc)
 
+        if (self.MLR_URLS or self.NEURIPS_URL) and successful_pages == 0:
+            raise RuntimeError("All configured AI proceedings pages failed")
         logger.info("Venue total: %d papers", len(papers))
         return papers
 

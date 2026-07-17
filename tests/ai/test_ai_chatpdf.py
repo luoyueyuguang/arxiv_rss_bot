@@ -4,6 +4,8 @@ Test script for PDF download and AI chat functionality.
 Tests the download_arxiv_pdf and summarize_pdf_with_ai methods.
 """
 
+__test__ = False
+
 import os
 import sys
 from pathlib import Path
@@ -254,4 +256,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

@@ -150,6 +150,7 @@ class SysBot(BaseConferenceBot):
             return []
 
         papers = []
+        successful_pages = 0
         for conf_name, url in self.USENIX_URLS:
             try:
                 logger.info("USENIX: %s from %s", conf_name, url)
@@ -157,6 +158,7 @@ class SysBot(BaseConferenceBot):
                 if resp.status_code != 200:
                     logger.warning("  %s returned %d, skipping", conf_name, resp.status_code)
                     continue
+                successful_pages += 1
                 soup = BeautifulSoup(resp.text, "lxml")
 
                 # Each paper is an <article class="node node-paper">
@@ -210,6 +212,8 @@ class SysBot(BaseConferenceBot):
             except Exception as exc:
                 logger.error("USENIX %s failed: %s", conf_name, exc)
 
+        if self.USENIX_URLS and successful_pages == 0:
+            raise RuntimeError("All configured USENIX pages failed")
         logger.info("USENIX total: %d papers", len(papers))
         return papers
 

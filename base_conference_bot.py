@@ -14,6 +14,7 @@ import json
 import logging
 import os
 import re
+import tempfile
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
@@ -22,6 +23,8 @@ from typing import Any, Dict, Iterable, List, Optional, Tuple
 from tqdm import tqdm
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
@@ -68,6 +71,27 @@ def _extract_numeric_rating(raw_rating: Any) -> Optional[float]:
 
 def _normalize_title(title: str) -> str:
     return re.sub(r"\s+", " ", title).lower().strip()
+
+
+def _keyword_matches(text: str, keyword: str) -> bool:
+    """Match short identifiers as tokens and longer phrases as substrings."""
+    normalized = keyword.strip().lower()
+    if not normalized:
+        return False
+    if len(normalized) <= 3 and normalized.isalnum():
+        pattern = rf"(?<![a-z0-9]){re.escape(normalized)}(?![a-z0-9])"
+        return re.search(pattern, text.lower()) is not None
+    return normalized in text.lower()
+
+
+def _atomic_write_text(path: Path, content: str) -> None:
+    _ensure_directory(path)
+    with tempfile.NamedTemporaryFile(
+        "w", encoding="utf-8", dir=path.parent, delete=False
+    ) as temp_file:
+        temp_file.write(content)
+        temp_path = Path(temp_file.name)
+    os.replace(temp_path, path)
 
 
 @dataclass
@@ -132,32 +156,64 @@ class BaseConferenceBot(ABC):
 
     def __init__(
         self,
-        year: int = 2026,
+        year: Optional[int] = None,
         output_dir: Optional[Path] = None,
         max_papers: Optional[int] = None,
-        display_limit: int = 100,
+        display_limit: Optional[int] = None,
         session: Optional[requests.Session] = None,
         config_file: str = "config.json",
         days_back: Optional[int] = None,
     ):
-        self.year = year
+        self.config_file = config_file
+        self.config = self._load_config()
+        conf_config = self.config.get("conferences", {}).get(self.NAME, {})
+
+        self.year = year if year is not None else conf_config.get("year", 2026)
         self.output_dir = output_dir or Path(self.OUTPUT_DIR)
-        self.max_papers = max_papers or 20000
-        self.display_limit = display_limit
+        self.max_papers = (
+            max_papers
+            if max_papers is not None
+            else conf_config.get("max_papers", 20000)
+        )
+        self.display_limit = (
+            display_limit
+            if display_limit is not None
+            else conf_config.get("display_limit", self.config.get("display_limit", 100))
+        )
+        self.cache_limit = conf_config.get(
+            "cache_limit", max(self.display_limit, 1000)
+        )
+        self.fetch_ratings = conf_config.get(
+            "fetch_ratings", self.config.get("fetch_ratings", True)
+        )
+        self.min_score = conf_config.get(
+            "min_score", self.config.get("min_score", 0.0)
+        )
+        self.allow_empty_result = conf_config.get("allow_empty_result", False)
         self.session = session or requests.Session()
         self.session.headers.update({
             "User-Agent": "arxiv-rss-bot/1.0 (arXiv paper tracker; academic research)"
         })
-        self.config_file = config_file
-        self.days_back = days_back or self.DAYS_BACK
+        if session is None:
+            retry = Retry(
+                total=3,
+                connect=3,
+                read=3,
+                backoff_factor=0.5,
+                status_forcelist=(429, 500, 502, 503, 504),
+                allowed_methods=frozenset({"GET"}),
+                respect_retry_after_header=True,
+            )
+            adapter = HTTPAdapter(max_retries=retry)
+            self.session.mount("https://", adapter)
+        self.days_back = (
+            days_back
+            if days_back is not None
+            else conf_config.get("days_back", self.DAYS_BACK)
+        )
 
         self.cache_path = self.output_dir / f"{self.NAME}_cache.json"
         self.readme_path = self.output_dir / "README.md"
-
-        self.config = self._load_config()
-        if display_limit == 100:
-            conf_section = self.config.get("conferences", {}).get(self.NAME, {})
-            self.display_limit = conf_section.get("display_limit", self.display_limit)
 
     @property
     @abstractmethod
@@ -170,7 +226,7 @@ class BaseConferenceBot(ABC):
                 config = json.load(f)
             logger.info("Loaded config from %s for %s", self.config_file, self.CONFERENCE_NAME)
             return config
-        except (FileNotFoundError, json.JSONDecodeError) as e:
+        except (OSError, json.JSONDecodeError) as e:
             logger.warning("Config load failed: %s, using defaults", e)
             return {}
 
@@ -182,11 +238,11 @@ class BaseConferenceBot(ABC):
         text = f"{paper.title} {paper.abstract}".lower()
         keywords = self._get_config_keywords()
         if keywords:
-            if not any(kw.lower() in text for kw in keywords):
+            if not any(_keyword_matches(text, kw) for kw in keywords):
                 return False
         exclude_keywords = self.config.get("exclude_keywords", [])
         if exclude_keywords:
-            if any(kw.lower() in text for kw in exclude_keywords):
+            if any(_keyword_matches(text, kw) for kw in exclude_keywords):
                 return False
         return True
 
@@ -196,14 +252,14 @@ class BaseConferenceBot(ABC):
         title_lower = paper.title.lower()
         keywords = self._get_config_keywords()
         for kw in keywords:
-            if kw.lower() in text:
+            if _keyword_matches(text, kw):
                 score += 1.0
-            if kw.lower() in title_lower:
+            if _keyword_matches(title_lower, kw):
                 score += 0.5
         for kw in self.HIGH_SCORE_KEYWORDS:
-            if kw.lower() in text:
+            if _keyword_matches(text, kw):
                 score += 10
-            if kw.lower() in title_lower:
+            if _keyword_matches(title_lower, kw):
                 score += 20
         return score
 
@@ -213,21 +269,24 @@ class BaseConferenceBot(ABC):
         """Return matched conference name if paper text references target conferences, else None."""
         if not self.CONFERENCE_NAME_KEYWORDS:
             return self.ARXIV_CATEGORIES[0]
-        text_lower = text.lower()
         for kw in self.CONFERENCE_NAME_KEYWORDS:
-            if kw.lower() in text_lower:
+            if _keyword_matches(text, kw):
                 return kw
         return None
 
     def fetch_papers_arxiv(self) -> List[ConferencePaper]:
         papers: List[ConferencePaper] = []
         cutoff = datetime.now(tz=timezone.utc) - timedelta(days=self.days_back)
+        successful_feeds = 0
 
         for cat in self.ARXIV_CATEGORIES:
             try:
-                url = f"http://export.arxiv.org/rss/{cat}"
+                url = f"https://export.arxiv.org/rss/{cat}"
                 logger.info("arXiv RSS: %s", url)
                 feed = feedparser.parse(url)
+                if feed.bozo and not feed.entries:
+                    raise RuntimeError(str(feed.bozo_exception))
+                successful_feeds += 1
                 for entry in feed.entries:
                     try:
                         pub_date = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
@@ -266,6 +325,9 @@ class BaseConferenceBot(ABC):
                 logger.info("arXiv %s: %d papers (in window)", cat, len(feed.entries))
             except Exception as exc:
                 logger.warning("arXiv fetch %s: %s", cat, exc)
+
+        if self.ARXIV_CATEGORIES and successful_feeds == 0:
+            raise RuntimeError("All configured arXiv conference feeds failed")
 
         unique: List[ConferencePaper] = []
         seen = set()
@@ -306,8 +368,9 @@ class BaseConferenceBot(ABC):
                 if len(notes) >= self.max_papers:
                     notes = notes[: self.max_papers]
                     break
-        except requests.HTTPError as exc:
+        except requests.RequestException as exc:
             logger.error("OR fetch domain=%s: %s", domain, exc)
+            raise
         return notes
 
     def _build_paper_from_openreview(
@@ -343,13 +406,13 @@ class BaseConferenceBot(ABC):
     ) -> Dict[str, Dict[str, Any]]:
         if not paper_data_list:
             return {}
-        batch_size = 20
+        batch_size = 5
         results: Dict[str, Dict[str, Any]] = {}
         for i in tqdm(range(0, len(paper_data_list), batch_size), desc="Ratings"):
             batch = paper_data_list[i : i + batch_size]
             forum_ids = [fid for _, fid in batch]
             try:
-                params = {"forum": forum_ids, "limit": 100}
+                params = {"forum": forum_ids, "limit": 1000}
                 resp = self.session.get(f"{OPENREVIEW_API}/notes", params=params, timeout=60)
                 resp.raise_for_status()
                 data = resp.json()
@@ -377,9 +440,14 @@ class BaseConferenceBot(ABC):
 
     def fetch_papers_openreview(self) -> List[ConferencePaper]:
         all_papers: List[ConferencePaper] = []
+        successful_domains = 0
         for domain in self.OPENREVIEW_DOMAINS:
             logger.info("OpenReview: %s", domain)
-            subs = self._fetch_openreview_notes(domain)
+            try:
+                subs = self._fetch_openreview_notes(domain)
+                successful_domains += 1
+            except requests.RequestException:
+                continue
             logger.info("  %d submissions", len(subs))
             conf = domain.split("/")[0] if "/" in domain else domain
             for sub in subs:
@@ -387,6 +455,8 @@ class BaseConferenceBot(ABC):
                     all_papers.append(self._build_paper_from_openreview(sub, conf))
                 except Exception as exc:
                     logger.error("Build paper: %s", exc)
+        if self.OPENREVIEW_DOMAINS and successful_domains == 0:
+            raise RuntimeError("All configured OpenReview domains failed")
         return all_papers
 
 
@@ -411,6 +481,7 @@ class BaseConferenceBot(ABC):
             return []
 
         papers = []
+        successful_venues = 0
         for conf_name, url in self.DBLP_VENUES:
             try:
                 xml_url = url.rstrip("/") + ".xml" if not url.endswith(".xml") else url
@@ -419,6 +490,7 @@ class BaseConferenceBot(ABC):
                 if resp.status_code != 200:
                     logger.warning("  %s returned %d", conf_name, resp.status_code)
                     continue
+                successful_venues += 1
 
                 soup = BeautifulSoup(resp.text, "xml")
                 # DBLP XML: <inproceedings>, <article>, etc. with <title>, <author>, <pages>
@@ -446,7 +518,7 @@ class BaseConferenceBot(ABC):
                     if ee_el:
                         pdf_link = ee_el.get_text(strip=True)
 
-                    forum_link = url.rstrip(".xml")
+                    forum_link = url.removesuffix(".xml")
 
                     conf_papers.append(ConferencePaper(
                         forum_id=f"dblp-{re.sub(r'[^a-zA-Z0-9]', '', conf_name).lower()}-{idx}",
@@ -467,49 +539,82 @@ class BaseConferenceBot(ABC):
             except Exception as exc:
                 logger.error("DBLP %s failed: %s", conf_name, exc)
 
+        if self.DBLP_VENUES and successful_venues == 0:
+            raise RuntimeError("All configured DBLP venues failed")
         logger.info("DBLP total: %d papers", len(papers))
         return papers
     # === Unified fetch ===
 
     def fetch_papers(self) -> List[ConferencePaper]:
         papers: List[ConferencePaper] = []
+        failed_sources = set()
+        successful_backends = 0
 
         # 1. arXiv (primary, works for all)
-        arxiv_papers = self.fetch_papers_arxiv()
-        papers.extend(arxiv_papers)
+        if self.ARXIV_CATEGORIES:
+            try:
+                papers.extend(self.fetch_papers_arxiv())
+                successful_backends += 1
+            except Exception as exc:
+                failed_sources.add("arxiv")
+                logger.warning("arXiv backend failed: %s", exc)
 
         # 2. OpenReview (secondary, only for conferences that use it)
         if self.OPENREVIEW_DOMAINS:
-            or_papers = self.fetch_papers_openreview()
-            papers.extend(or_papers)
+            try:
+                papers.extend(self.fetch_papers_openreview())
+                successful_backends += 1
+            except Exception as exc:
+                failed_sources.add("openreview")
+                logger.warning("OpenReview backend failed: %s", exc)
 
         # 3. USENIX proceedings (conference-specific)
-        usenix_papers = self._fetch_usenix_papers()
-        papers.extend(usenix_papers)
+        has_venue_backend = (
+            type(self)._fetch_usenix_papers is not BaseConferenceBot._fetch_usenix_papers
+        )
+        if has_venue_backend:
+            try:
+                papers.extend(self._fetch_usenix_papers())
+                successful_backends += 1
+            except Exception as exc:
+                failed_sources.update({"usenix", "mlr", "neurips"})
+                logger.warning("Venue backend failed: %s", exc)
 
         # 4. DBLP proceedings (universal CS conference coverage)
-        dblp_papers = self._fetch_dblp_papers()
-        papers.extend(dblp_papers)
-        seen = set()
-        unique: List[ConferencePaper] = []
-        for p in papers:
-            key = _normalize_title(p.title)
-            if key not in seen:
-                seen.add(key)
-                unique.append(p)
+        if self.DBLP_VENUES:
+            try:
+                papers.extend(self._fetch_dblp_papers())
+                successful_backends += 1
+            except Exception as exc:
+                failed_sources.add("dblp")
+                logger.warning("DBLP backend failed: %s", exc)
+
+        if successful_backends == 0:
+            raise RuntimeError(f"All data sources failed for {self.CONFERENCE_NAME}")
+
+        if failed_sources:
+            fresh_keys = {(paper.source, _normalize_title(paper.title)) for paper in papers}
+            for cached in self.load_papers_from_cache():
+                source = cached.source
+                key = (source, _normalize_title(cached.title))
+                if source in failed_sources and key not in fresh_keys:
+                    papers.append(cached)
+
+        unique = self._merge_papers_by_title(papers)
 
         # Filter & score
         filtered = []
         for paper in unique:
             if self.matches_criteria(paper):
                 paper.score = self.calculate_score(paper)
-                filtered.append(paper)
+                if paper.score >= self.min_score:
+                    filtered.append(paper)
 
         logger.info("Total: %d papers (from %d raw)", len(filtered), len(unique))
 
         # Fetch ratings for top OpenReview papers
         or_top = [p for p in filtered if p.source == "openreview"]
-        if or_top and self.config.get("fetch_ratings", True):
+        if or_top and self.fetch_ratings:
             sorted_or = sorted(or_top, key=lambda p: p.score, reverse=True)[: self.display_limit]
             pd_list = [(i + 1, p.forum_id) for i, p in enumerate(sorted_or)]
             ratings = self._fetch_ratings_batch(pd_list)
@@ -522,27 +627,90 @@ class BaseConferenceBot(ABC):
             rated = sum(1 for p in sorted_or if p.average_rating is not None)
             logger.info("Ratings: %d/%d OR papers", rated, len(sorted_or))
 
-        return filtered
+        filtered.sort(key=lambda paper: paper.score, reverse=True)
+        return filtered[: self.cache_limit]
+
+    @staticmethod
+    def _merge_papers_by_title(
+        papers: Iterable[ConferencePaper],
+    ) -> List[ConferencePaper]:
+        source_priority = {
+            "openreview": 50,
+            "usenix": 45,
+            "mlr": 45,
+            "neurips": 45,
+            "dblp": 30,
+            "arxiv": 10,
+        }
+        grouped: Dict[str, List[ConferencePaper]] = {}
+        for paper in papers:
+            grouped.setdefault(_normalize_title(paper.title), []).append(paper)
+
+        merged: List[ConferencePaper] = []
+        for candidates in grouped.values():
+            candidates.sort(
+                key=lambda paper: source_priority.get(paper.source, 20),
+                reverse=True,
+            )
+            preferred = candidates[0]
+            for fallback in candidates[1:]:
+                if not preferred.abstract and fallback.abstract:
+                    preferred.abstract = fallback.abstract
+                if not preferred.authors and fallback.authors:
+                    preferred.authors = fallback.authors
+                if not preferred.pdf_link and fallback.pdf_link:
+                    preferred.pdf_link = fallback.pdf_link
+                if not preferred.submission_date and fallback.submission_date:
+                    preferred.submission_date = fallback.submission_date
+                preferred.keywords = list(
+                    dict.fromkeys(preferred.keywords + fallback.keywords)
+                )
+            merged.append(preferred)
+        return merged
 
     # === Caching ===
 
     def save_cache(self, papers: Iterable[ConferencePaper]) -> None:
         plist = [p.to_dict() for p in papers]
-        _ensure_directory(self.cache_path)
-        with self.cache_path.open("w", encoding="utf-8") as f:
-            json.dump(
-                {
-                    "name": self.NAME,
-                    "conference": self.CONFERENCE_NAME,
-                    "last_updated": datetime.now(timezone.utc).isoformat(),
-                    "paper_count": len(plist),
-                    "papers": plist,
-                },
-                f,
-                indent=2,
-                ensure_ascii=False,
-            )
+        cached_by_key = {
+            self._cache_record_key(record): record
+            for record in self.load_cached_papers()
+        }
+        for record in plist:
+            cached = cached_by_key.get(self._cache_record_key(record))
+            if cached and self._same_cached_content(cached, record):
+                record["updated_at"] = cached.get("updated_at", record["updated_at"])
+
+        payload = {
+            "name": self.NAME,
+            "conference": self.CONFERENCE_NAME,
+            "last_updated": datetime.now(timezone.utc).isoformat(),
+            "paper_count": len(plist),
+            "papers": plist,
+        }
+        _atomic_write_text(
+            self.cache_path,
+            json.dumps(payload, indent=2, ensure_ascii=False),
+        )
         logger.info("Saved %d papers to %s", len(plist), self.cache_path)
+
+    @staticmethod
+    def _cache_record_key(record: Dict[str, Any]) -> Tuple[str, str]:
+        return (
+            str(record.get("source", "")),
+            str(record.get("forum_id") or _normalize_title(record.get("title", ""))),
+        )
+
+    @staticmethod
+    def _same_cached_content(
+        old_record: Dict[str, Any], new_record: Dict[str, Any]
+    ) -> bool:
+        ignored = {"updated_at"}
+        return {
+            key: value for key, value in old_record.items() if key not in ignored
+        } == {
+            key: value for key, value in new_record.items() if key not in ignored
+        }
 
     def load_cached_papers(self) -> List[Dict[str, Any]]:
         if not self.cache_path.exists():
@@ -575,6 +743,9 @@ class BaseConferenceBot(ABC):
                     rating_count=d.get("rating_count", 0),
                     ratings=d.get("ratings", []),
                     score=d.get("score", 0.0),
+                    updated_at=datetime.fromisoformat(d["updated_at"])
+                    if d.get("updated_at")
+                    else datetime.now(timezone.utc),
                 ))
             except Exception:
                 continue
@@ -589,15 +760,19 @@ class BaseConferenceBot(ABC):
         sorted_papers = sorted(papers, key=lambda p: p.score, reverse=True)
         display = sorted_papers[: self.display_limit]
         rated = sum(1 for p in papers if p.average_rating is not None)
-        arxiv_count = sum(1 for p in display if p.source == "arxiv")
-        or_count = sum(1 for p in display if p.source == "openreview")
+        source_counts: Dict[str, int] = {}
+        for paper in display:
+            source_counts[paper.source] = source_counts.get(paper.source, 0) + 1
+        source_summary = ", ".join(
+            f"{source}: {count}" for source, count in sorted(source_counts.items())
+        )
 
         lines = [
             f"# {self.CONFERENCE_NAME} Papers",
             "",
             f"- **Last Updated**: {ts}",
             f"- **Total Filtered Papers**: {total}",
-            f"- **Displaying**: {len(display)} (arXiv: {arxiv_count}, OpenReview: {or_count})",
+            f"- **Displaying**: {len(display)} ({source_summary or 'no sources'})",
             f"- **Papers with Ratings**: {rated}",
             f"- **Lookback**: {self.days_back} days",
             "",
@@ -617,7 +792,7 @@ class BaseConferenceBot(ABC):
 
         rows: List[str] = []
         for idx, paper in enumerate(display, 1):
-            title = paper.title.replace("\n", " ").strip()
+            title = paper.title.replace("\n", " ").replace("|", "\\|").strip()
             source_tag = f"`{paper.source.upper()}`"
             if has_ratings:
                 avg = f"{paper.average_rating:.2f}" if paper.average_rating else "N/A"
@@ -635,14 +810,18 @@ class BaseConferenceBot(ABC):
 
     def update_readme(self, papers: List[ConferencePaper]) -> None:
         content = self.render_readme(papers)
-        _ensure_directory(self.readme_path)
-        with self.readme_path.open("w", encoding="utf-8") as f:
-            f.write(content)
+        _atomic_write_text(self.readme_path, content)
         logger.info("Updated %s", self.readme_path)
 
     def run(self) -> List[ConferencePaper]:
         logger.info("=== Running %s Bot ===", self.CONFERENCE_NAME)
         papers = self.fetch_papers()
+        if not papers and not self.allow_empty_result:
+            cached_count = len(self.load_cached_papers())
+            raise RuntimeError(
+                f"{self.CONFERENCE_NAME} produced no papers; "
+                f"preserved {cached_count} cached records"
+            )
         self.save_cache(papers)
         self.update_readme(papers)
         logger.info("%s Bot done: %d papers", self.CONFERENCE_NAME, len(papers))

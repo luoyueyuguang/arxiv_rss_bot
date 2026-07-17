@@ -1,275 +1,161 @@
-#!/usr/bin/env python3
-"""
-Test suite for AI summary caching across runs.
-"""
-
 import json
-import os
-import sys
-import tempfile
-from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-from arxiv_bot import ArxivBot
 
 
-# ── helpers ────────────────────────────────────────────────────────────────
-
-def _make_paper(arxiv_id, title="Test Paper"):
-    return {
-        "arxiv_id": arxiv_id,
-        "id": arxiv_id,
-        "title": title,
-        "authors": ["Author A"],
-        "link": f"http://arxiv.org/abs/{arxiv_id}",
-        "category": "cs.AI",
-        "published_date": "2026-07-01",
-        "score": 90.0,
-        "type": "new",
-        "summary": "Short abstract for testing.",
-    }
-
-
-def _make_bot(summary_cache_file=None):
-    """Create an ArxivBot with AI enabled but no real API key."""
-    bot = ArxivBot()
+def _enable_ai(bot):
     bot.config["ai_summary"] = {
         "enabled": True,
-        "api_key_env": "ARK_API_KEY",
-        "base_url": "https://ark.cn-beijing.volces.com/api/v3",
-        "model": "doubao-seed-2-0-mini-260428",
+        "api_key_env": "TEST_AI_API_KEY",
+        "base_url": "https://example.invalid/v1",
+        "model": "test-model",
         "prompt_file": "ai_summary_prompt.txt",
         "max_papers_to_summarize": 10,
         "max_workers": 1,
         "use_pdf": False,
     }
-    # Remove API key so we don't hit the real API
-    os.environ.pop("ARK_API_KEY", None)
-    if summary_cache_file:
-        bot.summary_cache_file = summary_cache_file
-    return bot
 
 
-# ── tests ──────────────────────────────────────────────────────────────────
-
-def test_cache_hit_reuses_summary():
-    """Paper already in cache → reused, no API call attempted."""
-    print("Testing cache hit...")
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as f:
-        json.dump({"2606.10001v1": "Cached summary!"}, f)
-        cache_path = f.name
-
-    try:
-        bot = _make_bot(cache_path)
-        papers = [_make_paper("2606.10001v1")]
-        section = bot.generate_papers_section(papers)
-        assert "Cached summary!" in section, "Cached summary NOT reused"
-        print("  ✅ Cache hit: summary reused correctly")
-    finally:
-        os.unlink(cache_path)
+def _cache_entry(bot, summary):
+    return {
+        **bot._summary_cache_identity(bot.config["ai_summary"]),
+        "summary": summary,
+        "generated_at": "2026-07-01T00:00:00+00:00",
+    }
 
 
-def test_cache_miss_does_not_crash():
-    """Paper not in cache → no crash, AI skipped gracefully when no key."""
-    print("Testing cache miss...")
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as f:
-        json.dump({}, f)
-        cache_path = f.name
+def test_cache_hit_reuses_summary_without_processing(
+    monkeypatch, bot_factory, paper_factory
+):
+    bot = bot_factory()
+    _enable_ai(bot)
+    cache_path = bot.summary_cache_file
+    with open(cache_path, "w", encoding="utf-8") as cache_file:
+        json.dump({"2607.00001v1": _cache_entry(bot, "Cached summary")}, cache_file)
 
-    try:
-        bot = _make_bot(cache_path)
-        papers = [_make_paper("2606.99999v1")]
-        section = bot.generate_papers_section(papers)
-        # No AI summary in output (API key not set), but no crash either
-        assert "2606.99999v1" in section, "Paper should appear in output"
-        assert "AI Summary" not in section, "Should not have AI summary without API key"
-        print("  ✅ Cache miss: no crash, paper rendered without AI summary")
-    finally:
-        os.unlink(cache_path)
+    def fail_if_called(*_args, **_kwargs):
+        raise AssertionError("cached paper should not be processed")
 
+    monkeypatch.setattr(bot, "_process_paper_with_ai", fail_if_called)
 
-def test_mixed_cache_hit_and_miss():
-    """2 of 3 papers cached → only 1 needs processing."""
-    print("Testing mixed cache hit/miss...")
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as f:
-        json.dump({
-            "2606.10001v1": "Cached A",
-            "2606.10002v1": "Cached B",
-        }, f)
-        cache_path = f.name
+    section = bot.generate_papers_section([paper_factory()])
 
-    try:
-        bot = _make_bot(cache_path)
-        papers = [
-            _make_paper("2606.10001v1", "Paper A"),
-            _make_paper("2606.10002v1", "Paper B"),
-            _make_paper("2606.10003v1", "Paper C"),
-        ]
-        section = bot.generate_papers_section(papers)
-        assert "Cached A" in section, "Paper A cache missed"
-        assert "Cached B" in section, "Paper B cache missed"
-        assert "Cached A" not in section.replace("Cached B", "").replace("Cached A", ""), "Should not duplicate"
-        print("  ✅ Mixed: 2 cached reused, 1 skipped (no API key)")
-    finally:
-        os.unlink(cache_path)
+    assert "Cached summary" in section
 
 
-def test_missing_cache_file():
-    """No cache file on disk → treated as empty, no crash."""
-    print("Testing missing cache file...")
-    bot = _make_bot("/tmp/nonexistent_summary_cache.json")
-    papers = [_make_paper("2606.10001v1")]
-    section = bot.generate_papers_section(papers)
-    assert "2606.10001v1" in section, "Paper should appear"
-    print("  ✅ Missing cache file: no crash, all papers rendered")
+def test_cache_miss_processes_and_persists_summary(
+    monkeypatch, bot_factory, paper_factory
+):
+    bot = bot_factory()
+    _enable_ai(bot)
+
+    def summarize(_paper, index, _config, _client):
+        return index, "New summary"
+
+    monkeypatch.setattr(bot, "_process_paper_with_ai", summarize)
+
+    section = bot.generate_papers_section([paper_factory()])
+
+    assert "New summary" in section
+    with open(bot.summary_cache_file, encoding="utf-8") as cache_file:
+        saved = json.load(cache_file)["2607.00001v1"]
+    assert saved["summary"] == "New summary"
+    assert saved["model"] == "test-model"
+    assert saved["mode"] == "abstract"
+    assert len(saved["prompt_hash"]) == 64
 
 
-def test_empty_cache_dict():
-    """Empty JSON `{}` → same as no cache."""
-    print("Testing empty cache dict...")
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as f:
-        json.dump({}, f)
-        cache_path = f.name
+def test_mixed_cache_only_processes_missing_paper(
+    monkeypatch, bot_factory, paper_factory
+):
+    bot = bot_factory()
+    _enable_ai(bot)
+    with open(bot.summary_cache_file, "w", encoding="utf-8") as cache_file:
+        json.dump({"one": _cache_entry(bot, "Cached one")}, cache_file)
+    processed = []
 
-    try:
-        bot = _make_bot(cache_path)
-        papers = [_make_paper("2606.10001v1"), _make_paper("2606.10002v1")]
-        section = bot.generate_papers_section(papers)
-        assert "2606.10001v1" in section
-        assert "2606.10002v1" in section
-        # No AI summaries (no key), but no crash
-        assert "AI Summary" not in section
-        print("  ✅ Empty cache: no crash, all rendered")
-    finally:
-        os.unlink(cache_path)
+    def summarize(paper, index, _config, _client):
+        processed.append(paper["arxiv_id"])
+        return index, "Fresh two"
 
-
-def test_cache_saved_after_processing():
-    """After processing, new summaries are persisted to cache file."""
-    print("Testing cache save after processing...")
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as f:
-        json.dump({}, f)
-        cache_path = f.name
-
-    try:
-        bot = _make_bot(cache_path)
-        papers = [_make_paper("2606.10001v1")]
-        bot.generate_papers_section(papers)
-
-        # Cache should still exist and be valid JSON
-        with open(cache_path, "r") as f:
-            saved = json.load(f)
-        assert isinstance(saved, dict), "Cache should be a dict"
-        # No summaries saved because API key was missing → all summaries were None
-        print(f"  ✅ Cache saved: {len(saved)} entries (expected 0 — no API key)")
-    finally:
-        os.unlink(cache_path)
-
-
-def test_cache_not_corrupted_by_empty_run():
-    """Empty paper list does not corrupt existing cache."""
-    print("Testing cache integrity with empty paper list...")
-    existing = {"2606.10001v1": "Existing summary"}
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as f:
-        json.dump(existing, f)
-        cache_path = f.name
-
-    try:
-        bot = _make_bot(cache_path)
-        section = bot.generate_papers_section([])
-        assert section == "No papers found matching the criteria."
-        # Cache should be untouched
-        with open(cache_path, "r") as f:
-            saved = json.load(f)
-        assert saved == existing, "Cache should NOT be modified on empty run"
-        print("  ✅ Empty paper list: cache untouched")
-    finally:
-        os.unlink(cache_path)
-
-
-def test_different_arxiv_version_is_new():
-    """v1 cached, v2 in feed → treated as new paper (not cached)."""
-    print("Testing version-differentiated caching...")
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as f:
-        json.dump({"2606.10001v1": "Summary for v1"}, f)
-        cache_path = f.name
-
-    try:
-        bot = _make_bot(cache_path)
-        papers = [
-            _make_paper("2606.10001v1", "Paper v1"),
-            _make_paper("2606.10001v2", "Paper v2"),
-        ]
-        section = bot.generate_papers_section(papers)
-        assert "Summary for v1" in section, "v1 cache should be reused"
-        assert "Paper v2" in section, "v2 should appear"
-        # v2 should not have cached summary
-        assert "AI Summary" not in section.split("Paper v2")[1].split("---")[0], \
-            "v2 should NOT reuse v1's cached summary"
-        print("  ✅ Version-differentiated: v1 cached reused, v2 treated as new")
-    finally:
-        os.unlink(cache_path)
-
-
-def test_no_ai_when_disabled():
-    """When ai_summary.enabled = False, cache is never loaded or saved."""
-    print("Testing AI disabled mode...")
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as f:
-        json.dump({"2606.10001v1": "Should not appear"}, f)
-        cache_path = f.name
-
-    try:
-        bot = _make_bot(cache_path)
-        bot.config["ai_summary"]["enabled"] = False
-        papers = [_make_paper("2606.10001v1")]
-        section = bot.generate_papers_section(papers)
-        assert "Should not appear" not in section, "Cached summary leaked when AI disabled"
-        assert "AI Summary" not in section
-        print("  ✅ AI disabled: cache not used, no AI summary in output")
-    finally:
-        os.unlink(cache_path)
-
-
-# ── main ───────────────────────────────────────────────────────────────────
-
-def main():
-    print("=" * 60)
-    print("🧪 Summary Cache Test Suite")
-    print("=" * 60)
-
-    tests = [
-        test_cache_hit_reuses_summary,
-        test_cache_miss_does_not_crash,
-        test_mixed_cache_hit_and_miss,
-        test_missing_cache_file,
-        test_empty_cache_dict,
-        test_cache_saved_after_processing,
-        test_cache_not_corrupted_by_empty_run,
-        test_different_arxiv_version_is_new,
-        test_no_ai_when_disabled,
+    monkeypatch.setattr(bot, "_process_paper_with_ai", summarize)
+    papers = [
+        paper_factory(paper_id="one", title="Paper One"),
+        paper_factory(paper_id="two", title="Paper Two"),
     ]
 
-    passed = 0
-    failed = 0
-    for test in tests:
-        try:
-            test()
-            passed += 1
-        except AssertionError as e:
-            print(f"  ❌ FAILED: {e}")
-            failed += 1
-        except Exception as e:
-            print(f"  💥 ERROR: {e}")
-            failed += 1
+    section = bot.generate_papers_section(papers)
 
-    print()
-    print("=" * 60)
-    print(f"Results: {passed} passed, {failed} failed out of {len(tests)}")
-    print("=" * 60)
-
-    if failed > 0:
-        sys.exit(1)
+    assert processed == ["two"]
+    assert "Cached one" in section
+    assert "Fresh two" in section
 
 
-if __name__ == "__main__":
-    main()
+def test_legacy_cache_is_invalidated(monkeypatch, bot_factory, paper_factory):
+    bot = bot_factory()
+    _enable_ai(bot)
+    with open(bot.summary_cache_file, "w", encoding="utf-8") as cache_file:
+        json.dump({"2607.00001v1": "legacy summary"}, cache_file)
+    processed = []
+
+    def summarize(paper, index, _config, _client):
+        processed.append(paper["arxiv_id"])
+        return index, "regenerated"
+
+    monkeypatch.setattr(bot, "_process_paper_with_ai", summarize)
+
+    section = bot.generate_papers_section([paper_factory()])
+
+    assert processed == ["2607.00001v1"]
+    assert "regenerated" in section
+    assert "legacy summary" not in section
+
+
+def test_model_change_invalidates_structured_cache(
+    monkeypatch, bot_factory, paper_factory
+):
+    bot = bot_factory()
+    _enable_ai(bot)
+    old_entry = _cache_entry(bot, "old model summary")
+    old_entry["model"] = "old-model"
+    with open(bot.summary_cache_file, "w", encoding="utf-8") as cache_file:
+        json.dump({"2607.00001v1": old_entry}, cache_file)
+    monkeypatch.setattr(
+        bot,
+        "_process_paper_with_ai",
+        lambda _paper, index, _config, _client: (index, "new model summary"),
+    )
+
+    section = bot.generate_papers_section([paper_factory()])
+
+    assert "new model summary" in section
+    assert "old model summary" not in section
+
+
+def test_disabled_ai_does_not_read_cache(bot_factory, paper_factory):
+    bot = bot_factory()
+    with open(bot.summary_cache_file, "w", encoding="utf-8") as cache_file:
+        json.dump({"2607.00001v1": "Must not appear"}, cache_file)
+
+    section = bot.generate_papers_section([paper_factory()])
+
+    assert "Must not appear" not in section
+    assert "AI Summary" not in section
+
+
+def test_corrupt_cache_is_treated_as_empty(
+    monkeypatch, bot_factory, paper_factory
+):
+    bot = bot_factory()
+    _enable_ai(bot)
+    with open(bot.summary_cache_file, "w", encoding="utf-8") as cache_file:
+        cache_file.write("not-json")
+    monkeypatch.setattr(
+        bot,
+        "_process_paper_with_ai",
+        lambda _paper, index, _config, _client: (index, None),
+    )
+
+    section = bot.generate_papers_section([paper_factory()])
+
+    assert "A Transformer for Machine Learning" in section
+    with open(bot.summary_cache_file, encoding="utf-8") as cache_file:
+        assert json.load(cache_file) == {}

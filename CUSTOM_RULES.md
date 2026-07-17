@@ -1,5 +1,8 @@
 # 🎯 Custom Rules Configuration Guide
 
+> 本文档描述的是可选的手动扩展示例。`example_custom_rules.py` 不会被主程序自动加载；
+> 若要启用其中的规则，需要按照“Integration with Main Bot”一节显式接入并补充测试。
+
 Learn how to customize your arXiv spider to filter papers exactly the way you want. This guide shows you how to define your own rules, scoring algorithms, and filtering criteria.
 
 ## 🔧 Basic Configuration

@@ -24,7 +24,7 @@ This bot is configured to look for papers containing the following keywords:
 
 ## 📅 Schedule
 
-The bot runs daily at 12:00 UTC via GitHub Actions to fetch the latest papers.
+The bot runs on weekdays at 05:40 UTC via GitHub Actions to fetch the latest papers.
 
 ## 🚀 How to Use
 
@@ -34,7 +34,7 @@ The bot runs daily at 12:00 UTC via GitHub Actions to fetch the latest papers.
    - Modify keywords to match your research interests
    - Adjust `max_papers` and `days_back` settings
 3. **Enable GitHub Actions** in your repository settings
-4. **The bot will automatically run daily** and update the README.md
+4. **The bot will automatically run on weekdays** and update the README.md
 
 ## 📝 Customization
 

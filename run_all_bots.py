@@ -32,7 +32,7 @@ BOT_CLASSES = {
 }
 
 
-def run_all(bots: list = None) -> dict:
+def run_all(bots: list = None, display_limit: int = None) -> dict:
     results = {}
     names = bots if bots else list(BOT_CLASSES.keys())
 
@@ -44,7 +44,8 @@ def run_all(bots: list = None) -> dict:
         logger.info("=" * 60)
         logger.info("Running %s bot...", name)
         try:
-            bot_instance = cls()
+            kwargs = {"display_limit": display_limit} if display_limit is not None else {}
+            bot_instance = cls(**kwargs)
             papers = bot_instance.run()
             results[name] = {"status": "ok", "count": len(papers)}
             logger.info("%s bot done: %d papers", name, len(papers))
@@ -54,7 +55,7 @@ def run_all(bots: list = None) -> dict:
     return results
 
 
-def main():
+def main() -> int:
     import argparse
 
     parser = argparse.ArgumentParser(description="Run conference bots")
@@ -68,8 +69,8 @@ def main():
     parser.add_argument(
         "--display-limit",
         type=int,
-        default=100,
-        help="Max papers to display per conference",
+        default=None,
+        help="Max papers to display per conference (defaults to config.json)",
     )
     args = parser.parse_args()
 
@@ -78,7 +79,7 @@ def main():
     else:
         selected = args.bots
 
-    results = run_all(selected)
+    results = run_all(selected, display_limit=args.display_limit)
 
     total = sum(r.get("count", 0) for r in results.values())
     errors = sum(1 for r in results.values() if r["status"] != "ok")
@@ -90,6 +91,8 @@ def main():
         else:
             logger.info("  ✗ %s: %s", name, r.get("error", "unknown"))
 
+    return 1 if errors else 0
+
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

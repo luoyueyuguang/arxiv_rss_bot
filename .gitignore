@@ -46,6 +46,9 @@ Thumbs.db
 
 # Logs
 *.log
+.coverage
+.pytest_cache/
+htmlcov/
 
 # Temporary files
 *.tmp

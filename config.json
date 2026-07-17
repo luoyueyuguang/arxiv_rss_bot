@@ -83,32 +83,51 @@
     "conferences": {
         "arch": {
             "display_limit": 200,
+            "cache_limit": 500,
+            "min_score": 1.0,
             "fetch_ratings": true,
             "year": 2026
         },
         "hpc": {
             "display_limit": 200,
+            "cache_limit": 500,
+            "min_score": 1.0,
             "fetch_ratings": true,
             "year": 2026
         },
         "sys": {
             "display_limit": 200,
+            "cache_limit": 500,
+            "min_score": 1.0,
             "fetch_ratings": true,
             "year": 2026
         },
         "chip": {
             "display_limit": 200,
+            "cache_limit": 500,
+            "min_score": 1.0,
             "fetch_ratings": true,
             "year": 2026
         },
         "ai": {
             "display_limit": 200,
+            "cache_limit": 500,
+            "min_score": 1.0,
             "fetch_ratings": true,
             "year": 2026
         },
         "num": {
             "display_limit": 200,
+            "cache_limit": 500,
+            "min_score": 1.0,
             "fetch_ratings": false,
+            "year": 2026
+        },
+        "iclr": {
+            "display_limit": 200,
+            "cache_limit": 500,
+            "min_score": 1.0,
+            "fetch_ratings": true,
             "year": 2026
         }
     }
