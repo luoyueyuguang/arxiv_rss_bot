@@ -1,169 +1,146 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-07-17T08:05:10.452677+00:00",
-  "paper_count": 7,
+  "last_updated": "2026-07-21T08:42:35.995227+00:00",
+  "paper_count": 6,
   "papers": [
     {
-      "forum_id": "2607.14394",
+      "forum_id": "2607.16578",
       "paper_number": -1,
-      "title": "DRIFT: Direct Reduced Fourier Transforms for Distributed Spectral Neural Operators",
+      "title": "Hardware-Transparent I/O Governance in Disaggregated Heterogeneous Storage",
       "authors": [
-        "Sana Taghipour Anvari, David Kaeli"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.14394v1 Announce Type: new \nAbstract: Fourier Neural Operators (FNOs) learn solution operators for partial differential equations and offer orders of magnitude speedup over traditional numerical solvers at inference time, which makes them attractive surrogates for high-resolution computational physics. Scaling FNOs to high-resolution spatial grids requires distributing the data across GPUs, but the distributed FFT at the core of each spectral layer requires multiple dense all-to-all collectives that communicate the full spatial tensor, only for most coefficients to be discarded immediately. We introduce the Distributed Truncated Spectral Transform (DTST), which reverses this order. Each GPU computes only a small subset of frequency modes used by the spectral convolution locally ",
-      "pdf_link": "https://arxiv.org/pdf/2607.14394.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.14394",
-      "submission_date": "2026-07-17T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-07-17T08:05:09.117984+00:00"
-    },
-    {
-      "forum_id": "2607.14489",
-      "paper_number": -1,
-      "title": "EdgeFaaS: A Function-based Framework for Edge Computing",
-      "authors": [
-        "Neha Vadnere, Yu-Ting Wang, Yitao Chen, Sreehari Sadesh, Ming Zhao"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.14489v1 Announce Type: new \nAbstract: Edge computing brings unique challenges as the resources on the edge are highly diverse in capabilities and capacities, and highly distributed across many users and the physical world. Existing distributed computing frameworks cannot adequately handle this level of heterogeneity and distribution. This paper proposes EdgeFaaS, a novel function-based edge computing framework to enable edge applications to effectively utilize heterogeneous resources distributed across the Internet of Things (IoT), edge, and cloud for computing. It proposes function virtualization and storage virtualization to abstract distributed and heterogeneous physical resources and provides consistent virtual interfaces for deploying and executing functions and storing and",
-      "pdf_link": "https://arxiv.org/pdf/2607.14489.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.14489",
-      "submission_date": "2026-07-17T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-07-17T08:05:09.118029+00:00"
-    },
-    {
-      "forum_id": "2607.14798",
-      "paper_number": -1,
-      "title": "Ground-Side Mission Plan Compilation with Policy-as-Code Guardrails for Cloud-Native Satellite Platforms",
-      "authors": [
-        "Hsiu-Chi Tsai, Chia-Tung Chung"
+        "Rajarshi Chowdhury, Akshay Shah, Sue K. Lee"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.14798v1 Announce Type: new \nAbstract: Onboard cloud-native runtimes for satellites are emerging on multiple tracks (ORCHIDE, Axiom Space's AxDCU-1, Kepler's Jetson nodes), but each assumes that the workflow artifacts it executes arrive from the ground. ORCHIDE's architecture document D3.1 states explicitly that \"only the Deferred Phase is part of the ORCHIDE scope,\" and no open-source ground-side toolchain has been released by the consortium. We present Satellite Mission Compiler, a four-stage pipeline that addresses this gap: it takes a human-authored mission plan, checks it against machine-checkable structural and policy rules, and compiles it into the container-workflow artifacts that cloud-native satellite runtimes consume. The pipeline parses the plan against a Pydantic sch",
-      "pdf_link": "https://arxiv.org/pdf/2607.14798.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.14798",
-      "submission_date": "2026-07-17T04:00:00+00:00",
+      "abstract": "arXiv:2607.16578v1 Announce Type: new \nAbstract: Shared-nothing disaggregated storage clusters that serve both latency-sensitive databases and opaque block-volume workloads face two governance problems unsolved by existing schedulers: maintaining consistent performance across heterogeneous hardware generations, and enforcing global I/O limits when access patterns skew to a subset of storage nodes. We present the I/O Resource Manager (IORM), a multi-stage distributed scheduler deployed in production within Oracle Exadata Exascale. IORM combines three mechanisms: a hardware-aware cost modeler that normalizes I/O accounting using datasheet-derived fixed costs to make limits invariant across hardware generations; a quantum-based rate limiter with bounded carry-forward credits that accommodates",
+      "pdf_link": "https://arxiv.org/pdf/2607.16578.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.16578",
+      "submission_date": "2026-07-21T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 51.5,
-      "updated_at": "2026-07-17T08:05:09.118058+00:00"
+      "score": 77.0,
+      "updated_at": "2026-07-21T08:42:35.654782+00:00"
     },
     {
-      "forum_id": "2607.15115",
+      "forum_id": "2607.18141",
       "paper_number": -1,
-      "title": "Don't Predict, Prioritize: Rethinking GPU Reliability Assessment",
+      "title": "HyMCache: A KV Cache Framework for Multi-Turn LLM Serving with CXL-Hybrid Memory",
       "authors": [
-        "Difeng Ma, Changhua Pei, Yuanwei Lu, Quan Zhou, Zexin Wang, Yibo Zhu, Daxin Jiang, Dan Pei, Jingjing Li, Gaogang Xie"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.15115v1 Announce Type: new \nAbstract: The reliability of Graphics Processing Units (GPUs) is a criticalbottleneck for modern large-scale AI infrastructure, where a sin-gle node failure can disrupt synchronous training jobs and causesignificant financial losses. While predictive maintenance is widelyused in other hardware domains, we demonstrate that accuratelypredicting the exact timing of GPU failures is inherently difficult.Through an in-depth analysis of telemetry data from a productioncluster, we find that major GPU failures, including Double Bit Er-rors (DBEs) and GPU Lost events, exhibit strong stochasticity andlow signal-to-noise ratios in time-series telemetry, which makesconventional time-based prediction ineffective.\n  This insight motivates a paradigm shift: instead o",
-      "pdf_link": "https://arxiv.org/pdf/2607.15115.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.15115",
-      "submission_date": "2026-07-17T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 42.5,
-      "updated_at": "2026-07-17T08:05:09.118080+00:00"
-    },
-    {
-      "forum_id": "2607.14138",
-      "paper_number": -1,
-      "title": "Volition Elicitation: Operational Semantics for People and Their Machines",
-      "authors": [
-        "Ehud Shapiro"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2607.14138v1 Announce Type: cross \nAbstract: The most prevalent distributed systems today include people and their personal machines (smartphones). In such systems, computations are driven by people's volitions: a payment when a person wishes to pay someone, befriending when two people wish to become friends, etc. Volition-Guarded Multiagent Atomic Transactions were proposed as an abstract specification language for such systems, in which each agent consists of a person and their machine, and a transaction can be guarded by both the machine states and the personal volitions of its participating agents. Here, we define the programming language volition-guarded GLP (vGLP), which extends GLP with volition-guarded clauses, and define its operational semantics as an instance of Communicat",
-      "pdf_link": "https://arxiv.org/pdf/2607.14138.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.14138",
-      "submission_date": "2026-07-17T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-17T08:05:09.118118+00:00"
-    },
-    {
-      "forum_id": "2604.20032",
-      "paper_number": -1,
-      "title": "LEO: Tracing GPU Stall Root Causes via Cross-Vendor Backward Slicing",
-      "authors": [
-        "Yuning Xia, John Mellor-Crummey"
-      ],
-      "keywords": [
-        "cs.DC",
-        "ICS"
-      ],
-      "abstract": "arXiv:2604.20032v2 Announce Type: replace \nAbstract: More than half of the Top 500 supercomputers employ GPUs as accelerators. On GPU-accelerated platforms, developers face a key diagnostic gap: profilers show source lines where stalls occur, but not why they occur. Furthermore, the same kernel may have different stalls and underlying causes on different GPUs. This paper presents LEO, a root-cause analyzer for NVIDIA, AMD, and Intel GPUs that performs backward slicing from stalled instructions, considering dependencies arising from registers as well as vendor-specific synchronization mechanisms. LEO attributes GPU stalls to source instructions with the goal of explaining root causes of these inefficiencies. Across 21 workloads on three GPU platforms, LEO-guided optimizations deliver geomet",
-      "pdf_link": "https://arxiv.org/pdf/2604.20032.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.20032",
-      "submission_date": "2026-07-17T04:00:00+00:00",
-      "conference": "ICS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 44.5,
-      "updated_at": "2026-07-17T08:05:09.118232+00:00"
-    },
-    {
-      "forum_id": "2606.17288",
-      "paper_number": -1,
-      "title": "Local Fault Repair of Perfect Resource Placements in Eisenstein--Jacobi Networks",
-      "authors": [
-        "Bader Albader"
+        "Hakbeom Jang, Inho Song, Sam H. Noh, Jongryool Kim"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2606.17288v2 Announce Type: replace \nAbstract: Perfect resource placements in dense Eisenstein--Jacobi (EJ) networks partition the network into hexagonal radius-$t$ service cells. This paper studies local repair of such placements after resource failures. For one failed resource, we prove that one replacement cannot cover the failed hexagon and two always suffice, giving $\\rho_{\\mathrm{EJ}}(t)=2$ for all $t\\ge1$. Among minimum-size repairs, the sharp minimum-overlap formula $\\Omega_{\\mathrm{EJ}}(t)=t^2$ follows from the three-strip geometry of EJ balls. For two failed resources, independent repair gives a four-replacement upper bound, but unlike the Gaussian case EJ repair is not always additive: two infinite neighboring displacement families admit three-replacement repairs, proved o",
-      "pdf_link": "https://arxiv.org/pdf/2606.17288.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.17288",
-      "submission_date": "2026-07-17T04:00:00+00:00",
+      "abstract": "arXiv:2607.18141v1 Announce Type: new \nAbstract: Long-context, multi-turn, and agentic LLM workloads increasingly reuse previously processed context, making KV-cache reuse essential for reducing redundant computation. However, this reuse shifts the bottleneck to the memory tier that stores and serves reusable KV states at cluster scale. GPU HBM and host DRAM are too costly to scale to TB-scale shared context capacity, motivating remote tiers built from lower-cost, higher-capacity media. This paper presents HyMCache, a KV-cache framework that integrates CXL-hybrid memory (CXL-HM) for multi-turn LLM serving. CXL-HM combines a small amount of in-device DRAM with large SSD-backed capacity behind a CXL interface. By exploiting the read-dominant, predictable, and append-only nature of multi-turn",
+      "pdf_link": "https://arxiv.org/pdf/2607.18141.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.18141",
+      "submission_date": "2026-07-21T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 22.0,
+      "updated_at": "2026-07-21T08:42:35.655522+00:00"
+    },
+    {
+      "forum_id": "2607.17175",
+      "paper_number": -1,
+      "title": "LMEdge: QoS-Aware LLM Inference Orchestration on Edge Clusters",
+      "authors": [
+        "Reza Farahani, Zoha Azimi, Mario Colosi, Schahram Dustdar"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.17175v1 Announce Type: new \nAbstract: Large language model (LLM) services increasingly operate on edge infrastructure, enabling low-latency and privacy-preserving AI services. However, efficiently serving LLM requests across heterogeneous and resource-constrained edge devices require orchestration mechanisms that jointly determine model configuration (family, size, and quantization level) and execution placement while satisfying user- and system-level quality of service (QoS) requirements. This paper introduces LMEdge, a QoS-aware orchestration service that dynamically makes these decisions across heterogeneous edge devices. We formulate the problem as a binary integer linear programming (BILP) optimization that minimizes response time under accuracy, network, and resource const",
+      "pdf_link": "https://arxiv.org/pdf/2607.17175.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.17175",
+      "submission_date": "2026-07-21T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-07-21T08:42:35.655106+00:00"
+    },
+    {
+      "forum_id": "2607.16784",
+      "paper_number": -1,
+      "title": "Roomie: Interference-Aware Colocation for Efficient Model Serving",
+      "authors": [
+        "Youssouph Faye, Francescomaria Faticanti, Shubham Jain, Francesco Bronzino"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.16784v1 Announce Type: new \nAbstract: As demand for DNN inference grows, GPU capacity is increasingly oversubscribed, forcing operators to colocate multiple models on the same device in both cloud and edge deployments. Whether colocation succeeds or violates SLOs depends on the temporal overlap of kernels from concurrently executing models -- an effect that existing serving systems either ignore or approximate using aggregate resource profiles that fail to capture temporal dynamics. This paper presents Roomie, a model serving orchestration architecture that predicts and avoids kernel-level interference between colocated DNNs. Roomie decouples offline kernel profiling from online interference prediction. It uses profiling only to extract per-kernel resource configurations, and pr",
+      "pdf_link": "https://arxiv.org/pdf/2607.16784.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.16784",
+      "submission_date": "2026-07-21T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-07-21T08:42:35.654921+00:00"
+    },
+    {
+      "forum_id": "2607.18002",
+      "paper_number": -1,
+      "title": "ExpertPlex: A High-Goodput Disaggregated Serving System for MoE LLMs with Adaptive Persistent Kernels",
+      "authors": [
+        "Bingyang Wu, Chao Jin, Zili Zhang, Xinming Wei, Yinmin Zhong, Ruidong Zhu, Chengxu Yang, Xin Jin, Yuliang Liu"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.18002v1 Announce Type: new \nAbstract: LLMs scale Mixture-of-Experts (MoE) parameters for superior intelligence, but massive weights and dynamic computation impede efficient serving. Existing instance-level prefill-decode disaggregation isolates the phases on separate full-model replicas. As MoE weights grow, each instance may span tens to hundreds of GPUs, making resource allocation increasingly coarse. Configured prefill-to-decode ratios thus often mismatch demand, overprovisioning one phase while overloading the other. Prefill-decode colocation avoids this duplication, but existing Green Context solutions partition each GPU by phase and fix phase resources during a kernel. They cannot track resource changes across operations or layerwise variation in routed expert load, causin",
+      "pdf_link": "https://arxiv.org/pdf/2607.18002.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.18002",
+      "submission_date": "2026-07-21T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-07-21T08:42:35.655466+00:00"
+    },
+    {
+      "forum_id": "2604.18801",
+      "paper_number": -1,
+      "title": "Preserving Clusters in Error-Bounded Lossy Compression of Scientific Particle Data",
+      "authors": [
+        "Congrong Ren, Sheng Di, Katrin Heitmann, Franck Cappello, Hanqi Guo"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2604.18801v2 Announce Type: replace-cross \nAbstract: Scientific particle simulations in cosmology, molecular dynamics, and fluid dynamics produce large-scale datasets whose storage, movement, and analysis increasingly rely on lossy compression. However, existing compressors typically bound only pointwise position errors, providing no guarantee on the fidelity of structures derived from particle coordinates, such as single-linkage clustering (also known as Friends-of-Friends algorithm), where clusters are connected components of a proximity graph formed by linking particle pairs within a distance threshold. Even small coordinate perturbations near this threshold can break true links or create false links, thereby splitting or merging entire clusters. We propose a compressor-independen",
+      "pdf_link": "https://arxiv.org/pdf/2604.18801.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.18801",
+      "submission_date": "2026-07-21T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-07-17T08:05:09.118257+00:00"
+      "updated_at": "2026-07-21T08:42:35.656393+00:00"
     }
   ]
 }
