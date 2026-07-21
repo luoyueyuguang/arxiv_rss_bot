@@ -1,6 +1,6 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-07-21 08:56:13 UTC
+- **Last Updated**: 2026-07-21 09:27:22 UTC
 - **Total Filtered Papers**: 6
 - **Displaying**: 6 (arxiv: 6)
 - **Papers with Ratings**: 0
