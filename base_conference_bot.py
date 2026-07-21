@@ -456,7 +456,7 @@ class BaseConferenceBot(ABC):
                 except Exception as exc:
                     logger.error("Build paper: %s", exc)
         if self.OPENREVIEW_DOMAINS and successful_domains == 0:
-            raise RuntimeError("All configured OpenReview domains failed")
+            logger.warning("All OpenReview domains failed; continuing without OpenReview data")
         return all_papers
 
 
