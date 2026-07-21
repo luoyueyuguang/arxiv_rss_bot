@@ -59,6 +59,7 @@ class ICLRBot(BaseConferenceBot):
         )
         self.allow_empty_result = True  # OpenReview may be unavailable
         self.CONFERENCE_NAME = f"ICLR {self.year}"
+        self.OPENREVIEW_DOMAINS = [f"ICLR.cc/{self.year}/Conference"]
 
     @property
     def conference_keywords(self) -> list[str]:
