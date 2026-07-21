@@ -590,6 +590,9 @@ class BaseConferenceBot(ABC):
                 logger.warning("DBLP backend failed: %s", exc)
 
         if successful_backends == 0:
+            if self.allow_empty_result:
+                logger.warning("All data sources failed for %s; returning empty (allow_empty_result=True)", self.CONFERENCE_NAME)
+                return []
             raise RuntimeError(f"All data sources failed for {self.CONFERENCE_NAME}")
 
         if failed_sources:
