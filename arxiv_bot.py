@@ -313,6 +313,15 @@ class ArxivBot:
             if keyword.lower() in title_lower:
                 score += 20.0
 
+
+        # Penalty for low-score keywords (-10 text, -20 title)
+        low_score_keywords = self.config.get("low_score_keywords", [])
+        for keyword in low_score_keywords:
+            if keyword.lower() in text_to_check:
+                score -= 10.0
+        for keyword in low_score_keywords:
+            if keyword.lower() in title_lower:
+                score -= 20.0
         return score
 
     def _canonical_arxiv_id(self, paper: Dict[str, Any]) -> str:

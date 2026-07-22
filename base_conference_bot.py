@@ -152,6 +152,7 @@ class BaseConferenceBot(ABC):
     ARXIV_CATEGORIES: List[str] = ["cs.AI", "cs.LG"]
     CONFERENCE_NAME_KEYWORDS: List[str] = []
     HIGH_SCORE_KEYWORDS: List[str] = []
+    LOW_SCORE_KEYWORDS: List[str] = []
     DAYS_BACK: int = 90
 
     def __init__(
@@ -261,6 +262,11 @@ class BaseConferenceBot(ABC):
                 score += 10
             if _keyword_matches(title_lower, kw):
                 score += 20
+        for kw in self.LOW_SCORE_KEYWORDS:
+            if _keyword_matches(text, kw):
+                score -= 10
+            if _keyword_matches(title_lower, kw):
+                score -= 20
         return score
 
     # === arXiv Backend ===

@@ -78,7 +78,46 @@ class AIBot(BaseConferenceBot):
         "Retrieval augmented", "RAG",
         "Quantization", "Pruning", "Distillation",
         "Scalable", "Efficient training",
+        # AI Agent keywords
+        "AI agent", "LLM agent", "autonomous agent", "multi-agent",
+        "agentic", "tool use", "function calling",
+        "agent planning", "task decomposition",
+        "agent memory", "agent reflection",
+        "self-improvement", "reinforcement learning",
+        "RLHF", "DPO", "GRPO",
+        # LLM principles keywords
+        "pretraining", "pre-training",
+        "scaling law", "scaling laws",
+        "emergent ability", "emergent behavior",
+        "attention mechanism", "transformer architecture",
+        "tokenization", "positional encoding",
+        "next-token prediction", "language modeling",
+        "in-context learning", "mechanistic interpretability",
+        "circuit analysis", "probing",
+        "representation engineering",
+        "knowledge distillation", "model compression",
+        "model merging", "weight averaging",
     ]
+    LOW_SCORE_KEYWORDS = [
+        # Medical applications
+        "medical", "clinical", "diagnosis", "diagnostic",
+        "disease", "patient", "healthcare", "hospital",
+        "cancer", "tumor", "tumour", "lesion", "nodule",
+        "radiology", "radiographic", "pathology", "histopathology",
+        "surgery", "surgical", "treatment", "therapy",
+        "drug", "pharmaceutical", "medication", "pharmacology",
+        "biomarker", "prognosis", "survival analysis",
+        "gene", "genomic", "genome", "proteomic",
+        "biomedical", "bioinformatics",
+        "dermatology", "ophthalmology", "cardiology", "oncology", "neurology",
+        "EEG", "ECG", "fMRI", "MRI", "CT scan", "X-ray", "ultrasound", "endoscopy",
+        # General application patterns
+        "applying", "application of",
+        "case study", "real-world application", "in the wild",
+        "fine-tuned", "fine-tune", "finetune",
+        "downstream task", "downstream application",
+    ]
+
     # Venue proceedings to scrape
     MLR_URLS: list = [
         ("ICML '25", "https://proceedings.mlr.press/v274/"),

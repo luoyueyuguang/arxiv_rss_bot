@@ -80,6 +80,25 @@
         "neural operator", "PINN",
         "mixture of experts", "sparse attention"
     ],
+    "low_score_keywords": [
+        "medical", "clinical", "diagnosis", "diagnostic",
+        "disease", "patient", "healthcare", "hospital",
+        "cancer", "tumor", "tumour", "lesion", "nodule",
+        "radiology", "radiographic", "pathology", "histopathology",
+        "surgery", "surgical", "treatment", "therapy",
+        "drug", "pharmaceutical", "medication", "pharmacology",
+        "biomarker", "prognosis", "survival analysis",
+        "gene", "genomic", "genome", "proteomic",
+        "biomedical", "bioinformatics", "cell",
+        "dermatology", "ophthalmology", "cardiology",
+        "oncology", "neurology",
+        "EEG", "ECG", "fMRI", "MRI", "CT scan", "X-ray",
+        "ultrasound", "endoscopy",
+        "applying", "application of", "case study",
+        "real-world application", "in the wild",
+        "fine-tuned", "fine-tune", "finetune",
+        "downstream task", "downstream application"
+    ],
     "conferences": {
         "arch": {
             "display_limit": 200,

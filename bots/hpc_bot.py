@@ -65,6 +65,28 @@ class HPCBot(BaseConferenceBot):
         "I/O", "Lustre", "DAOS", "burst buffer",
         "Workflow", "Jupyter", "Container",
         "Cloud HPC", "Serverless",
+        # More HPC/parallel
+        "GPU-aware MPI", "CUDA-aware MPI", "MPI+CUDA",
+        "one-sided communication", "RMA", "active messages",
+        "partitioned communication", "non-blocking collective",
+        "neighborhood collective", "topology-aware", "process mapping",
+        "multi-GPU", "multi-node", "GPU Direct RDMA", "GPUDirect",
+        "MPS", "MIG", "CUDA stream", "CUDA graph",
+        "async compute", "overlap", "pipelining",
+        "double buffering", "tiling", "blocking",
+        "wavefront", "stencil computation", "halo exchange", "ghost cell",
+        "particle method", "N-body", "Barnes-Hut", "fast multipole",
+        "FFT", "FFTW", "cuFFT", "cuBLAS", "cuSPARSE", "CUTLASS", "TensorRT",
+        "OpenCL", "SYCL", "oneAPI", "Kokkos", "RAJA",
+        "HPX", "Charm++", "UPC++", "Legion", "Regent",
+        "Task-based", "dataflow", "DAG scheduling",
+        "async task", "futures", "continuation",
+        # HPC AI
+        "HPC AI", "AI for HPC",
+        "surrogate model", "learned solver", "neural PDE",
+        "scientific ML", "SciML", "physics-ML",
+        "operator learning", "DeepONet", "FNO", "neural operator",
+        "PINN", "physics-informed",
     ]
 
     @property
