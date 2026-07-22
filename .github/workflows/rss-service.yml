@@ -41,7 +41,8 @@ jobs:
         python -c "
         from rss_service import update_rss_cache
         success = update_rss_cache()
-        print(f'Cache update status: {\'success\' if success else \'failed\'}')
+        status = 'success' if success else 'failed'
+        print(f'Cache update status: {status}')
         "
         
     - name: Commit RSS updates
