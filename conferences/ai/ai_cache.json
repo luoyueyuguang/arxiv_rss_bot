@@ -1,7 +1,7 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-07-21T09:28:00.568660+00:00",
+  "last_updated": "2026-07-22T08:30:17.690319+00:00",
   "paper_count": 500,
   "papers": [
     {
@@ -5155,29 +5155,6 @@
       "ratings": [],
       "score": 61.5,
       "updated_at": "2026-07-17T08:05:52.868925+00:00"
-    },
-    {
-      "forum_id": "2601.10922",
-      "paper_number": -1,
-      "title": "Data-Efficient Curation for Multimodal Reasoning under Fixed Training Protocols",
-      "authors": [
-        "Yosub Shin, Michael Buriek, Boris Sobolev, Pavel Bushuyeu, Vikas Kumar, Haoyang Xu, Samuel Watson, Igor Molybog"
-      ],
-      "keywords": [
-        "cs.AI",
-        "NeurIPS"
-      ],
-      "abstract": "arXiv:2601.10922v2 Announce Type: replace \nAbstract: We study data curation for multimodal reasoning in a fixed-protocol fine-tuning regime, where the base model, optimizer, training schedule, and evaluation pipeline are held constant and the main degree of freedom is the training data. Using the NeurIPS 2025 Data Curation for Vision--Language Reasoning (DCVLR) challenge as a controlled testbed, we analyze how source-dataset alignment, model-relative difficulty, dataset size, diversity heuristics, and rewritten synthetic mixtures affect downstream reasoning accuracy. Among the tested interventions, difficulty filtering on an aligned source corpus provides the strongest gains at matched scale. The effect is not explained only by LiveXivTQA weighting: a per-benchmark decomposition shows that",
-      "pdf_link": "https://arxiv.org/pdf/2601.10922.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.10922",
-      "submission_date": "2026-07-21T04:00:00+00:00",
-      "conference": "NeurIPS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 45.5,
-      "updated_at": "2026-07-21T08:42:42.833293+00:00"
     },
     {
       "forum_id": "mlr-icml25-52",
@@ -12418,6 +12395,34 @@
       "ratings": [],
       "score": 33.0,
       "updated_at": "2026-07-17T08:05:52.798756+00:00"
+    },
+    {
+      "forum_id": "neurips25-797",
+      "paper_number": 797,
+      "title": "Boosting Adversarial Transferability with Spatial Adversarial Alignment",
+      "authors": [
+        "Zhaoyu Chen",
+        "HaiJing Guo",
+        "Kaixun Jiang",
+        "Jiyuan Fu",
+        "Xinyu Zhou",
+        "Dingkang Yang",
+        "Hao Tang",
+        "Bo Li",
+        "Wenqiang Zhang"
+      ],
+      "keywords": [],
+      "abstract": "",
+      "pdf_link": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/26004a9463f8cd8bb2fc31d1737b15e5-Abstract-Conference.html",
+      "forum_link": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/26004a9463f8cd8bb2fc31d1737b15e5-Abstract-Conference.html",
+      "submission_date": null,
+      "conference": "NeurIPS '25",
+      "source": "neurips",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.0,
+      "updated_at": "2026-07-22T08:30:16.721825+00:00"
     }
   ]
 }

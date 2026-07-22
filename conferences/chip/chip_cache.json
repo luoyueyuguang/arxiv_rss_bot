@@ -1,146 +1,100 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-07-21T09:27:24.960448+00:00",
-  "paper_count": 6,
+  "last_updated": "2026-07-22T08:29:42.455437+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2607.16855",
+      "forum_id": "2510.22087",
       "paper_number": -1,
-      "title": "Rtl2lean: Automated RTL-to-Lean Translation with Hierarchical Theorem Generation and Lemma Reuse",
+      "title": "QuArch: A Benchmark for Evaluating LLM Reasoning in Computer Architecture",
       "authors": [
-        "Hongqin Lyu, Junxing Dong, Yonghao Wang, Zhiteng Chao, Tiancheng Wang, Huawei Li"
+        "Shvetank Prakash, Andrew Cheng, Mark Mazumder, Arya Tschand, Varun Gohil, Jeffrey Ma, Jason Yik, Zishen Wan, Jessica Quaye, Elisavet Lydia Alvanaki, Avinash Kumar, Chandrashis Mazumdar, Tuhin Khare, Alexander Ingare, Ikechukwu Uchendu, Radhika Ghosal, Abhishek Tyagi, Chenyu Wang, Andrea Mattia Garavagno, Sarah Gu, Alice Guo, Grace Hur, Luca P. Carloni, Tushar Krishna, Ankita Nayak, Amir Yazdanbakhsh, Vijay Janapa Reddi"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2607.16855v1 Announce Type: new \nAbstract: Formal verification with interactive theorem provers can provide strong correctness guarantees for register transfer level designs, but applying it to existing SystemVerilog code requires substantial manual effort in semantic modeling and proof construction. This paper presents Rtl2lean, a framework that automatically translates RTL designs into executable Lean 4 models and builds a hierarchical theorem library for subsequent verification. The generated model represents hardware execution as a pure state transition function, while a four layer theorem framework captures combinational semantics, sequential updates, single cycle behavior, and reachability and invariants. When a high level property cannot be discharged by the existing theorem b",
-      "pdf_link": "https://arxiv.org/pdf/2607.16855.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.16855",
-      "submission_date": "2026-07-21T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 6.5,
-      "updated_at": "2026-07-21T08:42:42.460745+00:00"
-    },
-    {
-      "forum_id": "2607.13079",
-      "paper_number": -1,
-      "title": "ChipVerilog: A Large-Scale OpenCores-Derived Benchmark for LLM-Based Verilog RTL Generation",
-      "authors": [
-        "Yan Tan, Jiping Du, Xiangchen Meng, Yangdi Lyu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.13079v2 Announce Type: replace \nAbstract: Large language models have shown strong potential for Verilog RTL generation. However, many existing benchmarks are built from short, self-contained module-level tasks. These tasks are useful for controlled evaluation, but they do not fully capture the code scale, hierarchy, and module interactions found in practical IP and processor-core RTL. We present ChipVerilog, a description-to-Verilog generation benchmark built from OpenCores IP/core designs. The benchmark contains 64 generation targets from five design families: OR1200, double-precision FPU, MIPS-16, I2C, and CORDIC. It includes both single-module targets and cross-module targets that instantiate or interact with other RTL modules. Several targets exceed 1,000 lines of Verilog, m",
-      "pdf_link": "https://arxiv.org/pdf/2607.13079.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.13079",
-      "submission_date": "2026-07-21T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-07-21T08:42:42.461965+00:00"
-    },
-    {
-      "forum_id": "2607.02608",
-      "paper_number": -1,
-      "title": "Towards transferable lightweight neuromorphic computing through a model-free temporal-switch framework",
-      "authors": [
-        "Zefeng Zhang, Chao Li, Siyao Chen, Pei Chen, Bo-Wei Qin, Xumeng Zhang, Wei Lin, Qi Liu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.02608v2 Announce Type: replace \nAbstract: Lightweight neuromorphic computing offers a promising route to efficient AI, with particular benefits for resource-constrained edge deployments. However, its scalable deployment that can reliably transfer the expected performance has long been hindered by device-to-device variations, which necessitate costly and repeated re-training on new copies and undermine the practical advantages. To address this issue, we introduce a model-free temporal-switch (TS) framework to improve the direct transfer performance, without post-training calibration or adjustment. The TS framework provides a methodology to incorporate a broader spectrum of devices in the training process. In the validation using memristor-based reservoir computing, it enables hig",
-      "pdf_link": "https://arxiv.org/pdf/2607.02608.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.02608",
-      "submission_date": "2026-07-21T04:00:00+00:00",
+      "abstract": "arXiv:2510.22087v2 Announce Type: replace \nAbstract: The field of computer architecture, which bridges high-level software abstractions and low-level hardware implementations, remains absent from current large language model (LLM) evaluations. To this end, we present QuArch (pronounced 'quark'), the first benchmark designed to facilitate the development and evaluation of LLM knowledge and reasoning capabilities specifically in computer architecture. QuArch v1.0 provides a comprehensive collection of 2,671 expert-validated question-answer (QA) pairs covering various aspects of computer architecture, including processor design, memory systems, and interconnection networks. Our evaluation reveals that while frontier models possess domain-specific knowledge, they struggle with skills that requ",
+      "pdf_link": "https://arxiv.org/pdf/2510.22087.pdf",
+      "forum_link": "https://arxiv.org/abs/2510.22087",
+      "submission_date": "2026-07-22T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-07-21T08:42:42.461925+00:00"
+      "updated_at": "2026-07-22T08:29:42.452113+00:00"
     },
     {
-      "forum_id": "2607.18101",
+      "forum_id": "2607.19248",
       "paper_number": -1,
-      "title": "Empowering On-Device Model Adaptation with an Edge AI Inference Accelerator",
+      "title": "A Flexible Sparsity-Aware FPGA Accelerator with Column-Wise Compression for Efficient CNN Inference",
       "authors": [
-        "Mateusz Piechocki, Alessandro Capotondi, Marek Kraft"
+        "Amirhossein Zarei, Shervin Vakili"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "FPGA"
       ],
-      "abstract": "arXiv:2607.18101v1 Announce Type: cross \nAbstract: On-device model adaptation is essential to enable lifelong personalization on resource-constrained hardware, but compute, power, and memory limitations of such devices make end-to-end backpropagation impractical for modern deep neural networks. This work proposes a heterogeneous adaptation pipeline that repurposes a commercial edge AI inference accelerator, Hailo-8L, for frozen-backbone feature extraction during on-device training. The computational graph is partitioned so that the pre-trained backbone is quantized to INT8 and run on the accelerator, while only a lightweight FP32 classification head is fine-tuned on the host CPU, enabling frequent, energy-efficient in-field updates with most weights remaining fixed. Across multiple archite",
-      "pdf_link": "https://arxiv.org/pdf/2607.18101.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.18101",
-      "submission_date": "2026-07-21T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2607.19248v1 Announce Type: new \nAbstract: Efficient acceleration of convolutional neural networks (CNNs) on resource-constrained platforms remains challenging due to the irregularity of sparsity patterns and the associated hardware overhead. While unstructured sparsity offers high model accuracy, it introduces significant inefficiencies in hardware mapping, whereas structured sparsity simplifies execution at the cost of reduced flexibility. This paper presents SparHiXcel-v2, a cost-effective and highly configurable FPGA-based CNN accelerator that achieves an improved balance between sparsity flexibility and hardware efficiency. The proposed architecture is built around a scalable two-dimensional MAC array and introduces a column-wise kernel compression technique that enables efficie",
+      "pdf_link": "https://arxiv.org/pdf/2607.19248.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.19248",
+      "submission_date": "2026-07-22T04:00:00+00:00",
+      "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-07-21T08:42:42.461774+00:00"
+      "updated_at": "2026-07-22T08:29:42.451772+00:00"
     },
     {
-      "forum_id": "2607.16473",
+      "forum_id": "2508.10303",
       "paper_number": -1,
-      "title": "Enabling Spatially Fine-Grained DVFS in Neural Processing Units for Energy-Efficient LLM Serving",
+      "title": "DiffAxE: Diffusion-driven Hardware Accelerator Generation and Design Space Exploration",
       "authors": [
-        "Yuqi Xue, Jerry Wu, Corey Yu, Jian Huang"
+        "Arkapravo Ghosh, Abhishek Moitra, Abhiroop Bhattacharjee, Ruokai Yin, Priyadarshini Panda"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2508.10303v2 Announce Type: replace \nAbstract: Design space exploration (DSE) is critical for developing optimized hardware architectures, especially for AI workloads such as deep neural networks (DNNs) and large language models (LLMs), which require specialized acceleration. As model complexity grows, accelerator design spaces have expanded to O(10^17), becoming highly irregular, non-convex, and exhibiting many-to-one mappings from design configurations to performance metrics. This complexity renders direct inverse derivation infeasible and necessitates heuristic or sampling-based optimization. Conventional methods - including Bayesian optimization, gradient descent, reinforcement learning, and genetic algorithms - depend on iterative sampling, resulting in long runtimes and sensiti",
+      "pdf_link": "https://arxiv.org/pdf/2508.10303.pdf",
+      "forum_link": "https://arxiv.org/abs/2508.10303",
+      "submission_date": "2026-07-22T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-22T08:29:42.452067+00:00"
+    },
+    {
+      "forum_id": "2605.00555",
+      "paper_number": -1,
+      "title": "Sim-FA: A GPGPU Simulator Framework for Fine-Grained Asynchronous Pipeline Analysis",
+      "authors": [
+        "Zhongchun Zhou, Yuhang Gu, Chengtao Lai, Ya Wang, Zeyu Han, Wei Zhang, Jun Liu"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2607.16473v1 Announce Type: new \nAbstract: As neural processing units (NPUs) evolve rapidly to accommodate the ever-increasing compute demand of large language models (LLMs), their power consumption is becoming a limiting factor. Our study shows that using dynamic voltage and frequency scaling (DVFS) to exploit the service-level objective (SLO) slacks is a promising way to improve NPU energy efficiency for LLM services. And as tensor operators in LLMs exhibit diverse bottlenecks across NPU components, it is desirable to configure the frequency separately for each component to maximize their energy efficiency.\n  In this paper, we develop eNPU that enables hardware and software support for spatially fine-grained, component-level DVFS on NPUs. eNPU refactors the NPU core pipeline to par",
-      "pdf_link": "https://arxiv.org/pdf/2607.16473.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.16473",
-      "submission_date": "2026-07-21T04:00:00+00:00",
+      "abstract": "arXiv:2605.00555v3 Announce Type: replace \nAbstract: To efficiently support Large Language Models (LLMs), modern GPGPU architectures have introduced new features and programming paradigms, such as warp specialization. These features enable temporal overlap between the producer and consumer, as well as between matrix multiplication and activation function operations, substantially improving performance. To conduct effective AI infrastructure and computer architecture research, cycle-accurate simulators that support these new features, together with analytical models that faithfully capture workload characteristics, are essential.\n  However, existing academic tools provide limited support for these emerging requirements. Existing cycle-accurate simulators do not incorporate new NVIDIA GPU fe",
+      "pdf_link": "https://arxiv.org/pdf/2605.00555.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.00555",
+      "submission_date": "2026-07-22T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-07-21T08:42:42.460572+00:00"
-    },
-    {
-      "forum_id": "2507.05876",
-      "paper_number": -1,
-      "title": "Shesha: Opportunistic In-network Acceleration of Asynchronous Distributed Reinforcement Learning",
-      "authors": [
-        "Nehal Baganal Krishna, Anam Tahir, Firas Khamis, Mina Tahmasbi Arashloo, Michael Zink, Amr Rizk"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2507.05876v3 Announce Type: replace-cross \nAbstract: Large-scale training for distributed Machine Learning can cause congestion at bottleneck switch ports, leading to model staleness through update losses. This is particularly detrimental for asynchronous Distributed Reinforcement Learning (DRL) training, as stale updates are known to degrade convergence performance in asynchronous settings. This paper presents \\textit{Shesha}, an in-network DRL accelerator engine, which \\textit{opportunistically aggregates} asynchronously generated model updates \\textit{on the fly} while they traverse the data plane queue. This aggregation operation motivates an alternative queue design, which we prototype and envision for future Top-of-Rack switches. We further present corresponding host-side trans",
-      "pdf_link": "https://arxiv.org/pdf/2507.05876.pdf",
-      "forum_link": "https://arxiv.org/abs/2507.05876",
-      "submission_date": "2026-07-21T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-21T08:42:42.462000+00:00"
+      "updated_at": "2026-07-22T08:29:42.452290+00:00"
     }
   ]
 }

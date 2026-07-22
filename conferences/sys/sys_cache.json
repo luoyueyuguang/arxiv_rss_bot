@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-07-21T09:27:24.845981+00:00",
-  "paper_count": 441,
+  "last_updated": "2026-07-22T08:29:42.376496+00:00",
+  "paper_count": 442,
   "papers": [
     {
       "forum_id": "usenix-nsdi26-111",
@@ -1556,6 +1556,29 @@
       "ratings": [],
       "score": 52.0,
       "updated_at": "2026-07-21T08:54:22.932392+00:00"
+    },
+    {
+      "forum_id": "2502.20692",
+      "paper_number": -1,
+      "title": "MonadBFT: Fast, Responsive, Fork-Resistant Streamlined Consensus",
+      "authors": [
+        "Mohammad Mussadiq Jalalzai, Kushal Babel, Jovan Komatovic, Tobias Klenze, Sourav Das, Fatima Elsheimy, Mike Setrin, John Bergschneider, Babak Gilkalaye"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2502.20692v4 Announce Type: replace \nAbstract: This paper introduces MonadBFT, a novel Byzantine Fault Tolerant (BFT) consensus protocol that advances both performance and robustness. MonadBFT is implemented as the consensus protocol in the Monad blockchain. As a HotStuff-family protocol, MonadBFT has linear message complexity in the common case and is optimistically responsive, operating as quickly as the network allows. A central feature of MonadBFT is its tail-forking resistance. In pipelined BFT protocols, when a leader goes offline, the previous proposal is abandoned. Malicious leaders can exploit this tail-forking behavior as a form of Maximal Extractable Value (MEV) attack by deliberately discarding their predecessor's block, depriving that proposer of rewards and enabling tra",
+      "pdf_link": "https://arxiv.org/pdf/2502.20692.pdf",
+      "forum_link": "https://arxiv.org/abs/2502.20692",
+      "submission_date": "2026-07-22T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 51.5,
+      "updated_at": "2026-07-22T08:29:39.370360+00:00"
     },
     {
       "forum_id": "usenix-osdi26-135",
@@ -4092,7 +4115,7 @@
       "paper_number": 62,
       "title": "CortenMM: Efficient Memory Management with Strong Correctness Guarantees.",
       "authors": [
-        "Junyang Zhang",
+        "Junyang Zhang 0003",
         "Xiangcan Xu",
         "Yonghao Zou",
         "Zhe Tang",
@@ -4123,7 +4146,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 31.5,
-      "updated_at": "2026-07-21T08:42:42.331330+00:00"
+      "updated_at": "2026-07-22T08:29:41.165581+00:00"
     },
     {
       "forum_id": "dblp-sosp25-63",
@@ -5072,6 +5095,29 @@
       "updated_at": "2026-07-21T08:54:22.935344+00:00"
     },
     {
+      "forum_id": "2607.18541",
+      "paper_number": -1,
+      "title": "What Governs Decode Throughput in Absolute-Offset GPU LZ77? A Work-Granularity Mechanism and an Encode-Time Min-Match-Length Lever",
+      "authors": [
+        "Yakiv Shavidze"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.18541v1 Announce Type: new \nAbstract: The ACEAPEX line of work established a lossless LZ77 format whose back-references are absolute output positions, giving parallel, compressed-resident GPU decode with sub-millisecond region seek. What it did not establish is what governs the decode throughput of such a format, or how to improve it. This paper answers both. Through controlled ablations on an NVIDIA H100 we show that decode throughput is governed not by occupancy, compute, address scatter, or launch parallelism, but by work granularity: throughput is a function of the average match length, because a short match leaves most lanes of a cooperating warp idle. A synthetic copy kernel confirms a 3.5x throughput span (212 to 744 GB/s) as average match length grows from 32 to 1024 byt",
+      "pdf_link": "https://arxiv.org/pdf/2607.18541.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.18541",
+      "submission_date": "2026-07-22T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 15.5,
+      "updated_at": "2026-07-22T08:29:39.368688+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-116",
       "paper_number": 116,
       "title": "Heterogeneity at Hyperscale: Characterization and Scheduling of Large Production AI Clusters at Alibaba (Operational Systems)",
@@ -5145,29 +5191,6 @@
       "ratings": [],
       "score": 15.5,
       "updated_at": "2026-07-21T08:54:22.934219+00:00"
-    },
-    {
-      "forum_id": "2607.16831",
-      "paper_number": -1,
-      "title": "Technical Report: AI-Assisted Gated DeltaNet Optimization on NVIDIA Blackwell",
-      "authors": [
-        "Hyunjun Shin, Jiseung Jang, Jaewoo Maeng, Hyunjun Kim"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.16831v1 Announce Type: new \nAbstract: AI-assisted GPU programming is often framed as a kernel-generation loop: ask a model to produce faster CUDA code, benchmark the result, and repeat. This case study argues that contest-grade optimization involves more than improving the kernel body. We examine the Agent-Assisted submission by our team, MSInfer, to the MLSys 2026 FlashInfer Contest. The submission optimized Gated DeltaNet decode and prefill on NVIDIA B200/Blackwell and achieved an official $1.58\\times$ speedup, with approximate average latencies of $9.315\\,\\mu\\mathrm{s}$ for decode and $239.48\\,\\mu\\mathrm{s}$ for prefill. Our experience shows that even effective local kernel improvements can plateau when a workload requires structural reformulation and evaluator-aligned measur",
-      "pdf_link": "https://arxiv.org/pdf/2607.16831.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.16831",
-      "submission_date": "2026-07-21T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 15.0,
-      "updated_at": "2026-07-21T08:42:36.100832+00:00"
     },
     {
       "forum_id": "usenix-osdi26-111",
@@ -6342,29 +6365,6 @@
       "ratings": [],
       "score": 11.5,
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
-    },
-    {
-      "forum_id": "2607.18161",
-      "paper_number": -1,
-      "title": "TRIM: Reducing AI-Generated CodeSlop via Agent Trajectory Minimization",
-      "authors": [
-        "Alex Mathai, Shobini Iyer, Aleksandr Nogikh, Petros Maniatis, Franjo Ivancic, Junfeng Yang, Baishakhi Ray"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.18161v1 Announce Type: cross \nAbstract: Coding agents are increasingly used to accelerate code generation in many downstream tasks, such as fixing bugs, building applications, and prototyping. However, despite their value as coding assistants, agent-generated code tends to be larger and more verbose than the corresponding human-written implementation. In this work, we show that the cause lies in the agent's own search process: while iterating toward a passing solution, an agent accumulates speculative edits, abandoned hypotheses, and temporary changes that persist into the final patch. This may seem harmless for a single patch, but the problem compounds as agents take responsibility for ever-larger portions of a codebase-a codebase that was once minimal and well-maintained slowl",
-      "pdf_link": "https://arxiv.org/pdf/2607.18161.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.18161",
-      "submission_date": "2026-07-21T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-07-21T08:42:36.045414+00:00"
     },
     {
       "forum_id": "usenix-osdi26-63",
@@ -10220,17 +10220,40 @@
         "cs.OS",
         "FAST"
       ],
-      "abstract": "arXiv:2607.18097v1 Announce Type: new \nAbstract: Priority inversion occurs when a high-priority thread is delayed by a lower-priority one. Although well studied in real-time systems, its impact in general-purpose OSes (e.g., Android) remains underexplored.On Android, we find that priority inversions happen frequently and can delay latency-critical threads, degrading user experience.For example, the foreground app's UI thread is frequently blocked by low-priority threads, with blocking durations of up to 210 ms, enough to cause dropped frames.Existing solutions designed for real-time systems fail to eliminate long priority-inversion blockings on latency-critical threads and may introduce high overhead on Android.\n  To solve this problem, we uncover two insights on Android: 1) long blockings",
+      "abstract": "arXiv:2607.18097v2 Announce Type: replace \nAbstract: Priority inversion occurs when a high-priority thread is delayed by a lower-priority one. Although well studied in real-time systems, its impact in general-purpose OSes (e.g., Android) remains underexplored. On Android, we find that priority inversions happen frequently and can delay latency-critical threads, degrading user experience. For example, the foreground app's UI thread is frequently blocked by low-priority threads, with blocking durations of up to 210 ms, enough to cause dropped frames. Existing solutions designed for real-time systems fail to eliminate long priority-inversion blockings on latency-critical threads and may introduce high overhead on Android. To solve this problem, we uncover two insights on Android: 1) long bloc",
       "pdf_link": "https://arxiv.org/pdf/2607.18097.pdf",
       "forum_link": "https://arxiv.org/abs/2607.18097",
-      "submission_date": "2026-07-21T04:00:00+00:00",
+      "submission_date": "2026-07-22T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-07-21T08:42:36.044814+00:00"
+      "updated_at": "2026-07-22T08:29:39.274253+00:00"
+    },
+    {
+      "forum_id": "2607.18957",
+      "paper_number": -1,
+      "title": "InstantInfer: Enabling Fast LLM Cold Start with Communicating Finite Automata",
+      "authors": [
+        "Yitao Yuan (Peking University, Scitix AI), Yongchao He (Scitix AI), Shaoke Fang (Peking University), Wenfei Wu (Peking University)"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.18957v1 Announce Type: new \nAbstract: Cold starts in large language model (LLM) inference services significantly affect user experience, yet they remain inefficient due to sequential initialization and a massive number of fine-grained I/O requests issued by complex software components. Although refactoring the program can yield advantages such as concurrent execution and I/O merging, this approach is error-prone and carries correctness risks when dealing with massive, heterogeneous components. We propose the Communicating Finite Automata (CFA) abstraction to systematically analyze cross-component optimization opportunities, and design a programming framework to enable CFA-based component program refactoring. This framework preserves the original sequential program structure whil",
+      "pdf_link": "https://arxiv.org/pdf/2607.18957.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.18957",
+      "submission_date": "2026-07-22T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-22T08:29:39.369186+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

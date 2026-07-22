@@ -1,6 +1,6 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-07-21 09:27:22 UTC
+- **Last Updated**: 2026-07-22 08:29:39 UTC
 - **Total Filtered Papers**: 6
 - **Displaying**: 6 (arxiv: 6)
 - **Papers with Ratings**: 0
@@ -9,9 +9,9 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Hardware-Transparent I/O Governance in Disaggregated Heterogeneous Storage](https://arxiv.org/abs/2607.16578) | `ARXIV` | 77.0 |
-| 2 | [HyMCache: A KV Cache Framework for Multi-Turn LLM Serving with CXL-Hybrid Memory](https://arxiv.org/abs/2607.18141) | `ARXIV` | 22.0 |
-| 3 | [LMEdge: QoS-Aware LLM Inference Orchestration on Edge Clusters](https://arxiv.org/abs/2607.17175) | `ARXIV` | 13.5 |
-| 4 | [Roomie: Interference-Aware Colocation for Efficient Model Serving](https://arxiv.org/abs/2607.16784) | `ARXIV` | 12.0 |
-| 5 | [ExpertPlex: A High-Goodput Disaggregated Serving System for MoE LLMs with Adaptive Persistent Kernels](https://arxiv.org/abs/2607.18002) | `ARXIV` | 11.0 |
-| 6 | [Preserving Clusters in Error-Bounded Lossy Compression of Scientific Particle Data](https://arxiv.org/abs/2604.18801) | `ARXIV` | 1.5 |
+| 1 | [A Scalable Pattern Mining Workflow for Interpretable Machine Log Analysis in High-Performance Computing Environments](https://arxiv.org/abs/2607.19143) | `ARXIV` | 47.0 |
+| 2 | [Seamless Execution of Malleable Applications in Controlled and Production HPC Environments](https://arxiv.org/abs/2606.13266) | `ARXIV` | 15.5 |
+| 3 | [Breaking the MoE LLM Trilemma: Dynamic Expert Clustering with Structured Compression](https://arxiv.org/abs/2510.02345) | `ARXIV` | 12.5 |
+| 4 | [ExpertPlex: A High-Goodput Disaggregated Serving System for MoE LLMs with Adaptive Persistent Kernels](https://arxiv.org/abs/2607.18002) | `ARXIV` | 11.0 |
+| 5 | [The Missing Adapter Layer for Research Computing](https://arxiv.org/abs/2603.23942) | `ARXIV` | 11.0 |
+| 6 | [ARBITER: Guarded Agentic Control for SLO-Oriented Kubernetes Remediation](https://arxiv.org/abs/2607.19182) | `ARXIV` | 1.0 |

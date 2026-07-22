@@ -1,100 +1,77 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-07-21T09:27:22.008138+00:00",
+  "last_updated": "2026-07-22T08:29:39.223983+00:00",
   "paper_count": 6,
   "papers": [
     {
-      "forum_id": "2607.16578",
+      "forum_id": "2607.19143",
       "paper_number": -1,
-      "title": "Hardware-Transparent I/O Governance in Disaggregated Heterogeneous Storage",
+      "title": "A Scalable Pattern Mining Workflow for Interpretable Machine Log Analysis in High-Performance Computing Environments",
       "authors": [
-        "Rajarshi Chowdhury, Akshay Shah, Sue K. Lee"
+        "Shilpika Shilpika, Bethany Lusch, Eric Pershey, Carlo Graziani, Venkatram Vishwanath, Michael E. Papka"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.16578v1 Announce Type: new \nAbstract: Shared-nothing disaggregated storage clusters that serve both latency-sensitive databases and opaque block-volume workloads face two governance problems unsolved by existing schedulers: maintaining consistent performance across heterogeneous hardware generations, and enforcing global I/O limits when access patterns skew to a subset of storage nodes. We present the I/O Resource Manager (IORM), a multi-stage distributed scheduler deployed in production within Oracle Exadata Exascale. IORM combines three mechanisms: a hardware-aware cost modeler that normalizes I/O accounting using datasheet-derived fixed costs to make limits invariant across hardware generations; a quantum-based rate limiter with bounded carry-forward credits that accommodates",
-      "pdf_link": "https://arxiv.org/pdf/2607.16578.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.16578",
-      "submission_date": "2026-07-21T04:00:00+00:00",
+      "abstract": "arXiv:2607.19143v1 Announce Type: new \nAbstract: Modern supercomputers housed in High Performance Computing (HPC) environments generate massive volumes of log data daily, revealing intricate information and performance metrics about these complex systems. The sheer size and heterogeneous nature of HPC logs, especially text data, pose significant challenges for traditional analytical techniques. Consequently, more complex workflows are necessary for pattern extraction when analyzing these logs, enabling the discovery of underlying patterns and anomalies that may indicate system faults and help predict future failures and inefficiencies. Our log analysis workflow investigates a combination of advanced pattern-matching and mining techniques applied to HPC log analysis. By systematically ident",
+      "pdf_link": "https://arxiv.org/pdf/2607.19143.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.19143",
+      "submission_date": "2026-07-22T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 77.0,
-      "updated_at": "2026-07-21T08:42:35.654782+00:00"
+      "score": 47.0,
+      "updated_at": "2026-07-22T08:29:38.871594+00:00"
     },
     {
-      "forum_id": "2607.18141",
+      "forum_id": "2606.13266",
       "paper_number": -1,
-      "title": "HyMCache: A KV Cache Framework for Multi-Turn LLM Serving with CXL-Hybrid Memory",
+      "title": "Seamless Execution of Malleable Applications in Controlled and Production HPC Environments",
       "authors": [
-        "Hakbeom Jang, Inho Song, Sam H. Noh, Jongryool Kim"
+        "Petter Sand{\\aa}s, Sergio Iserte, Guillaume Houzeaux, Antonio J. Pe\\~na"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.18141v1 Announce Type: new \nAbstract: Long-context, multi-turn, and agentic LLM workloads increasingly reuse previously processed context, making KV-cache reuse essential for reducing redundant computation. However, this reuse shifts the bottleneck to the memory tier that stores and serves reusable KV states at cluster scale. GPU HBM and host DRAM are too costly to scale to TB-scale shared context capacity, motivating remote tiers built from lower-cost, higher-capacity media. This paper presents HyMCache, a KV-cache framework that integrates CXL-hybrid memory (CXL-HM) for multi-turn LLM serving. CXL-HM combines a small amount of in-device DRAM with large SSD-backed capacity behind a CXL interface. By exploiting the read-dominant, predictable, and append-only nature of multi-turn",
-      "pdf_link": "https://arxiv.org/pdf/2607.18141.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.18141",
-      "submission_date": "2026-07-21T04:00:00+00:00",
+      "abstract": "arXiv:2606.13266v2 Announce Type: replace \nAbstract: Many large-scale scientific applications exhibit time-varying behavior, yet production HPC clusters still rely on rigid, fixed-size allocations, and most dynamic techniques remain confined to laboratory prototypes. This work presents a practical MPI malleability methodology that integrates with state-of-the-art high-performance computing (HPC) software stacks and operational practices. The methodology is implemented in the Dynamic Management of Resources (DMR) framework and is designed to ease adoption by existing applications without requiring intrusive code changes or scheduler modifications. We evaluate our approach by integrating the DMR API into two large-scale scientific applications and deploying them on three TOP500 supercomputer",
+      "pdf_link": "https://arxiv.org/pdf/2606.13266.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.13266",
+      "submission_date": "2026-07-22T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 22.0,
-      "updated_at": "2026-07-21T08:42:35.655522+00:00"
+      "score": 15.5,
+      "updated_at": "2026-07-22T08:29:38.872169+00:00"
     },
     {
-      "forum_id": "2607.17175",
+      "forum_id": "2510.02345",
       "paper_number": -1,
-      "title": "LMEdge: QoS-Aware LLM Inference Orchestration on Edge Clusters",
+      "title": "Breaking the MoE LLM Trilemma: Dynamic Expert Clustering with Structured Compression",
       "authors": [
-        "Reza Farahani, Zoha Azimi, Mario Colosi, Schahram Dustdar"
+        "Peijun Zhu, Ning Yang, Baoliang Tian, Jiayu Wei, Weihao Zhang, Haijun Zhang, Pin Lv"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.17175v1 Announce Type: new \nAbstract: Large language model (LLM) services increasingly operate on edge infrastructure, enabling low-latency and privacy-preserving AI services. However, efficiently serving LLM requests across heterogeneous and resource-constrained edge devices require orchestration mechanisms that jointly determine model configuration (family, size, and quantization level) and execution placement while satisfying user- and system-level quality of service (QoS) requirements. This paper introduces LMEdge, a QoS-aware orchestration service that dynamically makes these decisions across heterogeneous edge devices. We formulate the problem as a binary integer linear programming (BILP) optimization that minimizes response time under accuracy, network, and resource const",
-      "pdf_link": "https://arxiv.org/pdf/2607.17175.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.17175",
-      "submission_date": "2026-07-21T04:00:00+00:00",
+      "abstract": "arXiv:2510.02345v4 Announce Type: replace-cross \nAbstract: Mixture-of-Experts (MoE) Large Language Models (LLMs) face a trilemma of load imbalance, parameter redundancy, and communication overhead. We introduce a unified framework based on dynamic expert clustering and structured compression to address these issues cohesively. Our method employs an online clustering procedure that periodically regroups experts using a fused metric of parameter and activation similarity, which stabilizes expert utilization. To our knowledge, this is one of the first frameworks to leverage the semantic embedding capability of the router to dynamically reconfigure the model's architecture during training for substantial efficiency gains. Within each cluster, we decompose expert weights into a shared base matr",
+      "pdf_link": "https://arxiv.org/pdf/2510.02345.pdf",
+      "forum_link": "https://arxiv.org/abs/2510.02345",
+      "submission_date": "2026-07-22T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-07-21T08:42:35.655106+00:00"
-    },
-    {
-      "forum_id": "2607.16784",
-      "paper_number": -1,
-      "title": "Roomie: Interference-Aware Colocation for Efficient Model Serving",
-      "authors": [
-        "Youssouph Faye, Francescomaria Faticanti, Shubham Jain, Francesco Bronzino"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2607.16784v1 Announce Type: new \nAbstract: As demand for DNN inference grows, GPU capacity is increasingly oversubscribed, forcing operators to colocate multiple models on the same device in both cloud and edge deployments. Whether colocation succeeds or violates SLOs depends on the temporal overlap of kernels from concurrently executing models -- an effect that existing serving systems either ignore or approximate using aggregate resource profiles that fail to capture temporal dynamics. This paper presents Roomie, a model serving orchestration architecture that predicts and avoids kernel-level interference between colocated DNNs. Roomie decouples offline kernel profiling from online interference prediction. It uses profiling only to extract per-kernel resource configurations, and pr",
-      "pdf_link": "https://arxiv.org/pdf/2607.16784.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.16784",
-      "submission_date": "2026-07-21T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-07-21T08:42:35.654921+00:00"
+      "score": 12.5,
+      "updated_at": "2026-07-22T08:29:38.872354+00:00"
     },
     {
       "forum_id": "2607.18002",
@@ -107,40 +84,63 @@
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.18002v1 Announce Type: new \nAbstract: LLMs scale Mixture-of-Experts (MoE) parameters for superior intelligence, but massive weights and dynamic computation impede efficient serving. Existing instance-level prefill-decode disaggregation isolates the phases on separate full-model replicas. As MoE weights grow, each instance may span tens to hundreds of GPUs, making resource allocation increasingly coarse. Configured prefill-to-decode ratios thus often mismatch demand, overprovisioning one phase while overloading the other. Prefill-decode colocation avoids this duplication, but existing Green Context solutions partition each GPU by phase and fix phase resources during a kernel. They cannot track resource changes across operations or layerwise variation in routed expert load, causin",
+      "abstract": "arXiv:2607.18002v2 Announce Type: replace \nAbstract: LLMs scale Mixture-of-Experts (MoE) parameters for superior intelligence, but massive weights and dynamic computation impede efficient serving. Existing instance-level prefill-decode disaggregation isolates the phases on separate full-model replicas. As MoE weights grow, each instance may span tens to hundreds of GPUs, making resource allocation increasingly coarse. Configured prefill-to-decode ratios thus often mismatch demand, overprovisioning one phase while overloading the other. Prefill-decode colocation avoids this duplication, but existing Green Context solutions partition each GPU by phase and fix phase resources during a kernel. They cannot track resource changes across operations or layerwise variation in routed expert load, ca",
       "pdf_link": "https://arxiv.org/pdf/2607.18002.pdf",
       "forum_link": "https://arxiv.org/abs/2607.18002",
-      "submission_date": "2026-07-21T04:00:00+00:00",
+      "submission_date": "2026-07-22T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 11.0,
-      "updated_at": "2026-07-21T08:42:35.655466+00:00"
+      "updated_at": "2026-07-22T08:29:38.872288+00:00"
     },
     {
-      "forum_id": "2604.18801",
+      "forum_id": "2603.23942",
       "paper_number": -1,
-      "title": "Preserving Clusters in Error-Bounded Lossy Compression of Scientific Particle Data",
+      "title": "The Missing Adapter Layer for Research Computing",
       "authors": [
-        "Congrong Ren, Sheng Di, Katrin Heitmann, Franck Cappello, Hanqi Guo"
+        "Bowen Li, Jiazhu Xie, Chelsea Wang, Alessandro Umberto D'Aloia, Ziqi Xu, Fengling Han"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2604.18801v2 Announce Type: replace-cross \nAbstract: Scientific particle simulations in cosmology, molecular dynamics, and fluid dynamics produce large-scale datasets whose storage, movement, and analysis increasingly rely on lossy compression. However, existing compressors typically bound only pointwise position errors, providing no guarantee on the fidelity of structures derived from particle coordinates, such as single-linkage clustering (also known as Friends-of-Friends algorithm), where clusters are connected components of a proximity graph formed by linking particle pairs within a distance threshold. Even small coordinate perturbations near this threshold can break true links or create false links, thereby splitting or merging entire clusters. We propose a compressor-independen",
-      "pdf_link": "https://arxiv.org/pdf/2604.18801.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.18801",
-      "submission_date": "2026-07-21T04:00:00+00:00",
+      "abstract": "arXiv:2603.23942v3 Announce Type: replace-cross \nAbstract: Higher Degree by Research (HDR) candidates increasingly depend on cloud-provisioned virtual machines and local GPU hardware for their computational experiments, yet a persistent and under-addressed gap separates having compute resources from using them productively. Cloud and infrastructure teams can provision a virtual machine in minutes, but the path from a raw VM to a reproducible, GPU-ready research environment remains a significant barrier for researchers who are domain experts, not systems engineers. We argue that this gap is not a shortcoming of any particular tool but a missing architectural layer: an adapter layer that bridges cloud provisioning and interactive research work. We present a lightweight, open-source implement",
+      "pdf_link": "https://arxiv.org/pdf/2603.23942.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.23942",
+      "submission_date": "2026-07-22T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-07-21T08:42:35.656393+00:00"
+      "score": 11.0,
+      "updated_at": "2026-07-22T08:29:38.872406+00:00"
+    },
+    {
+      "forum_id": "2607.19182",
+      "paper_number": -1,
+      "title": "ARBITER: Guarded Agentic Control for SLO-Oriented Kubernetes Remediation",
+      "authors": [
+        "Pooyan Habibi, Alberto Leon-Garcia"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.19182v1 Announce Type: new \nAbstract: Maintaining service-level objectives (SLOs) on Kubernetes microservices remains difficult because autoscalers observe coarse resource metrics, recent SLO controllers often depend on custom telemetry, and unconstrained agentic operators cannot safely mutate production clusters. We present ARBITER, a guarded control plane for SLO-oriented Kubernetes remediation. ARBITER builds an OpenTelemetry-native causal resource graph, assembles bounded DiagnosisContext objects, and exposes a finite typed-action interface that separates planning from execution. The same interface supports deterministic planners and an LLM-backed planning harness, with deterministic schema checks, policy gates, resource/disruption budgets, approval, and bounded execution fo",
+      "pdf_link": "https://arxiv.org/pdf/2607.19182.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.19182",
+      "submission_date": "2026-07-22T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-07-22T08:29:38.871737+00:00"
     }
   ]
 }
