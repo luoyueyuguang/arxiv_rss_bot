@@ -1,146 +1,31 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-07-22T08:29:39.223983+00:00",
-  "paper_count": 6,
+  "last_updated": "2026-07-23T08:28:19.834164+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2607.19143",
+      "forum_id": "2407.20212",
       "paper_number": -1,
-      "title": "A Scalable Pattern Mining Workflow for Interpretable Machine Log Analysis in High-Performance Computing Environments",
+      "title": "Distributed Quantum Approximate Optimization Algorithm on a Quantum-Centric Supercomputing Architecture",
       "authors": [
-        "Shilpika Shilpika, Bethany Lusch, Eric Pershey, Carlo Graziani, Venkatram Vishwanath, Michael E. Papka"
+        "Seongmin Kim, Vincent R. Pascuzzi, Zhihao Xu, Tengfei Luo, Eungkyu Lee, In-Saeng Suh"
       ],
       "keywords": [
         "cs.DC",
-        "CLUSTER"
+        "Supercomputing"
       ],
-      "abstract": "arXiv:2607.19143v1 Announce Type: new \nAbstract: Modern supercomputers housed in High Performance Computing (HPC) environments generate massive volumes of log data daily, revealing intricate information and performance metrics about these complex systems. The sheer size and heterogeneous nature of HPC logs, especially text data, pose significant challenges for traditional analytical techniques. Consequently, more complex workflows are necessary for pattern extraction when analyzing these logs, enabling the discovery of underlying patterns and anomalies that may indicate system faults and help predict future failures and inefficiencies. Our log analysis workflow investigates a combination of advanced pattern-matching and mining techniques applied to HPC log analysis. By systematically ident",
-      "pdf_link": "https://arxiv.org/pdf/2607.19143.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.19143",
-      "submission_date": "2026-07-22T04:00:00+00:00",
-      "conference": "CLUSTER",
+      "abstract": "arXiv:2407.20212v3 Announce Type: replace \nAbstract: Quantum approximate optimization algorithm (QAOA) has shown promise in solving combinatorial optimization problems by providing quantum speedup on near-term gate-based quantum computing systems. However, QAOA faces challenges for high-dimensional problems due to the large number of qubits required and the complexity of deep circuits, limiting its scalability for real-world applications. In this study, we present a distributed QAOA (DQAOA), which leverages distributed computing strategies to decompose a large computational workload into smaller tasks that require fewer qubits and shallower circuits than necessitated to solve the original problem. These sub-problems are processed using a combination of high-performance and quantum computin",
+      "pdf_link": "https://arxiv.org/pdf/2407.20212.pdf",
+      "forum_link": "https://arxiv.org/abs/2407.20212",
+      "submission_date": "2026-07-23T04:00:00+00:00",
+      "conference": "Supercomputing",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 47.0,
-      "updated_at": "2026-07-22T08:29:38.871594+00:00"
-    },
-    {
-      "forum_id": "2606.13266",
-      "paper_number": -1,
-      "title": "Seamless Execution of Malleable Applications in Controlled and Production HPC Environments",
-      "authors": [
-        "Petter Sand{\\aa}s, Sergio Iserte, Guillaume Houzeaux, Antonio J. Pe\\~na"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2606.13266v2 Announce Type: replace \nAbstract: Many large-scale scientific applications exhibit time-varying behavior, yet production HPC clusters still rely on rigid, fixed-size allocations, and most dynamic techniques remain confined to laboratory prototypes. This work presents a practical MPI malleability methodology that integrates with state-of-the-art high-performance computing (HPC) software stacks and operational practices. The methodology is implemented in the Dynamic Management of Resources (DMR) framework and is designed to ease adoption by existing applications without requiring intrusive code changes or scheduler modifications. We evaluate our approach by integrating the DMR API into two large-scale scientific applications and deploying them on three TOP500 supercomputer",
-      "pdf_link": "https://arxiv.org/pdf/2606.13266.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.13266",
-      "submission_date": "2026-07-22T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 15.5,
-      "updated_at": "2026-07-22T08:29:38.872169+00:00"
-    },
-    {
-      "forum_id": "2510.02345",
-      "paper_number": -1,
-      "title": "Breaking the MoE LLM Trilemma: Dynamic Expert Clustering with Structured Compression",
-      "authors": [
-        "Peijun Zhu, Ning Yang, Baoliang Tian, Jiayu Wei, Weihao Zhang, Haijun Zhang, Pin Lv"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2510.02345v4 Announce Type: replace-cross \nAbstract: Mixture-of-Experts (MoE) Large Language Models (LLMs) face a trilemma of load imbalance, parameter redundancy, and communication overhead. We introduce a unified framework based on dynamic expert clustering and structured compression to address these issues cohesively. Our method employs an online clustering procedure that periodically regroups experts using a fused metric of parameter and activation similarity, which stabilizes expert utilization. To our knowledge, this is one of the first frameworks to leverage the semantic embedding capability of the router to dynamically reconfigure the model's architecture during training for substantial efficiency gains. Within each cluster, we decompose expert weights into a shared base matr",
-      "pdf_link": "https://arxiv.org/pdf/2510.02345.pdf",
-      "forum_link": "https://arxiv.org/abs/2510.02345",
-      "submission_date": "2026-07-22T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-07-22T08:29:38.872354+00:00"
-    },
-    {
-      "forum_id": "2607.18002",
-      "paper_number": -1,
-      "title": "ExpertPlex: A High-Goodput Disaggregated Serving System for MoE LLMs with Adaptive Persistent Kernels",
-      "authors": [
-        "Bingyang Wu, Chao Jin, Zili Zhang, Xinming Wei, Yinmin Zhong, Ruidong Zhu, Chengxu Yang, Xin Jin, Yuliang Liu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2607.18002v2 Announce Type: replace \nAbstract: LLMs scale Mixture-of-Experts (MoE) parameters for superior intelligence, but massive weights and dynamic computation impede efficient serving. Existing instance-level prefill-decode disaggregation isolates the phases on separate full-model replicas. As MoE weights grow, each instance may span tens to hundreds of GPUs, making resource allocation increasingly coarse. Configured prefill-to-decode ratios thus often mismatch demand, overprovisioning one phase while overloading the other. Prefill-decode colocation avoids this duplication, but existing Green Context solutions partition each GPU by phase and fix phase resources during a kernel. They cannot track resource changes across operations or layerwise variation in routed expert load, ca",
-      "pdf_link": "https://arxiv.org/pdf/2607.18002.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.18002",
-      "submission_date": "2026-07-22T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-07-22T08:29:38.872288+00:00"
-    },
-    {
-      "forum_id": "2603.23942",
-      "paper_number": -1,
-      "title": "The Missing Adapter Layer for Research Computing",
-      "authors": [
-        "Bowen Li, Jiazhu Xie, Chelsea Wang, Alessandro Umberto D'Aloia, Ziqi Xu, Fengling Han"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2603.23942v3 Announce Type: replace-cross \nAbstract: Higher Degree by Research (HDR) candidates increasingly depend on cloud-provisioned virtual machines and local GPU hardware for their computational experiments, yet a persistent and under-addressed gap separates having compute resources from using them productively. Cloud and infrastructure teams can provision a virtual machine in minutes, but the path from a raw VM to a reproducible, GPU-ready research environment remains a significant barrier for researchers who are domain experts, not systems engineers. We argue that this gap is not a shortcoming of any particular tool but a missing architectural layer: an adapter layer that bridges cloud provisioning and interactive research work. We present a lightweight, open-source implement",
-      "pdf_link": "https://arxiv.org/pdf/2603.23942.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.23942",
-      "submission_date": "2026-07-22T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-07-22T08:29:38.872406+00:00"
-    },
-    {
-      "forum_id": "2607.19182",
-      "paper_number": -1,
-      "title": "ARBITER: Guarded Agentic Control for SLO-Oriented Kubernetes Remediation",
-      "authors": [
-        "Pooyan Habibi, Alberto Leon-Garcia"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2607.19182v1 Announce Type: new \nAbstract: Maintaining service-level objectives (SLOs) on Kubernetes microservices remains difficult because autoscalers observe coarse resource metrics, recent SLO controllers often depend on custom telemetry, and unconstrained agentic operators cannot safely mutate production clusters. We present ARBITER, a guarded control plane for SLO-oriented Kubernetes remediation. ARBITER builds an OpenTelemetry-native causal resource graph, assembles bounded DiagnosisContext objects, and exposes a finite typed-action interface that separates planning from execution. The same interface supports deterministic planners and an LLM-backed planning harness, with deterministic schema checks, policy gates, resource/disruption budgets, approval, and bounded execution fo",
-      "pdf_link": "https://arxiv.org/pdf/2607.19182.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.19182",
-      "submission_date": "2026-07-22T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-22T08:29:38.871737+00:00"
+      "score": 14.0,
+      "updated_at": "2026-07-23T08:28:19.367498+00:00"
     }
   ]
 }

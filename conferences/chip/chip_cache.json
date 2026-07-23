@@ -1,100 +1,31 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-07-22T08:29:42.455437+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-07-23T08:28:23.090107+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2510.22087",
+      "forum_id": "2607.19768",
       "paper_number": -1,
-      "title": "QuArch: A Benchmark for Evaluating LLM Reasoning in Computer Architecture",
+      "title": "AlphaRoute: Large Language Models as Semantic Optimizers for Multi-Objective Routing",
       "authors": [
-        "Shvetank Prakash, Andrew Cheng, Mark Mazumder, Arya Tschand, Varun Gohil, Jeffrey Ma, Jason Yik, Zishen Wan, Jessica Quaye, Elisavet Lydia Alvanaki, Avinash Kumar, Chandrashis Mazumdar, Tuhin Khare, Alexander Ingare, Ikechukwu Uchendu, Radhika Ghosal, Abhishek Tyagi, Chenyu Wang, Andrea Mattia Garavagno, Sarah Gu, Alice Guo, Grace Hur, Luca P. Carloni, Tushar Krishna, Ankita Nayak, Amir Yazdanbakhsh, Vijay Janapa Reddi"
+        "Kabir Murjani, Mishri Bhavsar, Manish I. Patel, Jonti Talukdar"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "ISPD"
       ],
-      "abstract": "arXiv:2510.22087v2 Announce Type: replace \nAbstract: The field of computer architecture, which bridges high-level software abstractions and low-level hardware implementations, remains absent from current large language model (LLM) evaluations. To this end, we present QuArch (pronounced 'quark'), the first benchmark designed to facilitate the development and evaluation of LLM knowledge and reasoning capabilities specifically in computer architecture. QuArch v1.0 provides a comprehensive collection of 2,671 expert-validated question-answer (QA) pairs covering various aspects of computer architecture, including processor design, memory systems, and interconnection networks. Our evaluation reveals that while frontier models possess domain-specific knowledge, they struggle with skills that requ",
-      "pdf_link": "https://arxiv.org/pdf/2510.22087.pdf",
-      "forum_link": "https://arxiv.org/abs/2510.22087",
-      "submission_date": "2026-07-22T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2607.19768v1 Announce Type: cross \nAbstract: Very Large Scale Integration (VLSI) global routing is an NP-hard combinatorial optimization problem requiring signal net assignment across capacity-constrained 3D grids while minimizing congestion, wirelength, and via transitions. Because traditional heuristics rely on static penalty schedules that fail on complex congestion topologies, we present AlphaRoute: a multi-objective adaptive search framework reformulating rip-up and reroute (R&amp;R) into a dynamic optimization system. We introduce SHAP-based overflow decomposition to isolate per-net congestion, driving targeted subgraph extraction via 3D Dijkstra maze routing and an adaptive PathFinder policy. Crucially, AlphaRoute employs Large Language Models (LLMs) as semantic policy optimiz",
+      "pdf_link": "https://arxiv.org/pdf/2607.19768.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.19768",
+      "submission_date": "2026-07-23T04:00:00+00:00",
+      "conference": "ISPD",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-07-22T08:29:42.452113+00:00"
-    },
-    {
-      "forum_id": "2607.19248",
-      "paper_number": -1,
-      "title": "A Flexible Sparsity-Aware FPGA Accelerator with Column-Wise Compression for Efficient CNN Inference",
-      "authors": [
-        "Amirhossein Zarei, Shervin Vakili"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2607.19248v1 Announce Type: new \nAbstract: Efficient acceleration of convolutional neural networks (CNNs) on resource-constrained platforms remains challenging due to the irregularity of sparsity patterns and the associated hardware overhead. While unstructured sparsity offers high model accuracy, it introduces significant inefficiencies in hardware mapping, whereas structured sparsity simplifies execution at the cost of reduced flexibility. This paper presents SparHiXcel-v2, a cost-effective and highly configurable FPGA-based CNN accelerator that achieves an improved balance between sparsity flexibility and hardware efficiency. The proposed architecture is built around a scalable two-dimensional MAC array and introduces a column-wise kernel compression technique that enables efficie",
-      "pdf_link": "https://arxiv.org/pdf/2607.19248.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.19248",
-      "submission_date": "2026-07-22T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-07-22T08:29:42.451772+00:00"
-    },
-    {
-      "forum_id": "2508.10303",
-      "paper_number": -1,
-      "title": "DiffAxE: Diffusion-driven Hardware Accelerator Generation and Design Space Exploration",
-      "authors": [
-        "Arkapravo Ghosh, Abhishek Moitra, Abhiroop Bhattacharjee, Ruokai Yin, Priyadarshini Panda"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2508.10303v2 Announce Type: replace \nAbstract: Design space exploration (DSE) is critical for developing optimized hardware architectures, especially for AI workloads such as deep neural networks (DNNs) and large language models (LLMs), which require specialized acceleration. As model complexity grows, accelerator design spaces have expanded to O(10^17), becoming highly irregular, non-convex, and exhibiting many-to-one mappings from design configurations to performance metrics. This complexity renders direct inverse derivation infeasible and necessitates heuristic or sampling-based optimization. Conventional methods - including Bayesian optimization, gradient descent, reinforcement learning, and genetic algorithms - depend on iterative sampling, resulting in long runtimes and sensiti",
-      "pdf_link": "https://arxiv.org/pdf/2508.10303.pdf",
-      "forum_link": "https://arxiv.org/abs/2508.10303",
-      "submission_date": "2026-07-22T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-22T08:29:42.452067+00:00"
-    },
-    {
-      "forum_id": "2605.00555",
-      "paper_number": -1,
-      "title": "Sim-FA: A GPGPU Simulator Framework for Fine-Grained Asynchronous Pipeline Analysis",
-      "authors": [
-        "Zhongchun Zhou, Yuhang Gu, Chengtao Lai, Ya Wang, Zeyu Han, Wei Zhang, Jun Liu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2605.00555v3 Announce Type: replace \nAbstract: To efficiently support Large Language Models (LLMs), modern GPGPU architectures have introduced new features and programming paradigms, such as warp specialization. These features enable temporal overlap between the producer and consumer, as well as between matrix multiplication and activation function operations, substantially improving performance. To conduct effective AI infrastructure and computer architecture research, cycle-accurate simulators that support these new features, together with analytical models that faithfully capture workload characteristics, are essential.\n  However, existing academic tools provide limited support for these emerging requirements. Existing cycle-accurate simulators do not incorporate new NVIDIA GPU fe",
-      "pdf_link": "https://arxiv.org/pdf/2605.00555.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.00555",
-      "submission_date": "2026-07-22T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-22T08:29:42.452290+00:00"
+      "score": 35.0,
+      "updated_at": "2026-07-23T08:28:23.087718+00:00"
     }
   ]
 }

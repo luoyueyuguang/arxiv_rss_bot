@@ -1,9 +1,32 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-07-22T08:29:42.376496+00:00",
-  "paper_count": 442,
+  "last_updated": "2026-07-23T08:28:23.031282+00:00",
+  "paper_count": 438,
   "papers": [
+    {
+      "forum_id": "usenix-osdi26-3",
+      "paper_number": 3,
+      "title": "ECHO: Efficient KV Cache Offloading with Lossless Prefetching for Serving Native Sparse Attention LLMs",
+      "authors": [
+        "Guangda Liu, Wenhao Chen, Chengwei Li, and Zhenyu Ning, Shanghai Jiao Tong University",
+        "Jing Lin and Yiwu Yao, Huawei",
+        "Quan Chen, Shixuan Sun, and Jieru Zhao, Shanghai Jiao Tong University",
+        "Minyi Guo, Guizhou University and Shanghai Jiao Tong University"
+      ],
+      "keywords": [],
+      "abstract": "Native sparse attention has emerged as a promising approach for efficient long-context LLM inference without compromising accuracy. While it significantly reduces the attention computation and KV cache access costs, the KV cache size exhibits steeper linear growth with the context length. As a result, GPU HBM capacity becomes the bottleneck, limiting the concurrency of long-context requests and leading to poor hardware utilization and low generation throughput. We introduce ECHO, a serving system designed for native sparse-attention LLMs that employs KV cache offloading to overcome GPU HBM capacity limits. ECHO incorporates a graph-friendly cache manager that enables efficient dynamic KV cache eviction and recall entirely within GPU graphs, minimizing management overhead. Furthermore, by exploiting the numerical predictability of index scores and the sequential processing of queries, ECHO enables lossless intra-query prefetching for decoding and inter-query prefetching for prefill. By applying a fully pipelined fused GPU kernel, ECHO overlaps the recall overhead with indexer computation. Experiments show that ECHO delivers up to 2.1× higher generation throughput than state-of-the-art systems such as SGLang and vLLM under long-context workloads, while maintaining comparable latency under light load.",
+      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/liu-guangda",
+      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/liu-guangda",
+      "submission_date": null,
+      "conference": "OSDI '26",
+      "source": "usenix",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 154.0,
+      "updated_at": "2026-07-21T08:54:17.392848+00:00"
+    },
     {
       "forum_id": "usenix-nsdi26-111",
       "paper_number": 111,
@@ -26,6 +49,66 @@
       "ratings": [],
       "score": 151.5,
       "updated_at": "2026-07-21T08:54:22.937424+00:00"
+    },
+    {
+      "forum_id": "usenix-osdi26-4",
+      "paper_number": 4,
+      "title": "No Buffer, No Bottleneck: Efficient Zero-Copy KV Cache Offloading for Long-Context LLMs",
+      "authors": [
+        "Shutian Luo and Haiying Shen, University of Virginia"
+      ],
+      "keywords": [],
+      "abstract": "Long-context large language models (LLMs) store computed attention key and value (KV) matrices from previous decoding steps to avoid full-sequence recomputation. While this reuse reduces computation, the KV cache grows linearly with sequence length, exerting significant pressure on GPU memory capacity. Existing offloading stores KV blocks in CPU memory but requires extra GPU buffers, wasting GPU memory and doubling CPU–GPU transfers, which creates capacity and bandwidth bottlenecks. We present DirectKV, to our knowledge, the first zero-copy KV cache offloading system for modern heterogeneous CPU–GPU platforms such as NVIDIA GH200/GB200 with high-bandwidth NVLink-C2C interconnects. By leveraging NVLink-C2C instead of PCIe, DirectKV makes CPU memory a practical extension of GPU KV-cache capacity during long-context inference. DirectKV eliminates the GPU staging buffer (no buffer) by enabling GPU kernels to directly access CPU-resident KV cache, and substantially reduces the CPU– GPU data-movement bottleneck (no bottleneck) through CPU-memory-aware CUDA kernels tailored for heterogeneous CPU–GPU platforms. It further fuses KV generation with attention computation into a single CUDA kernel and employs warp-level pipelining to overlap KV fetching, computation, and write-back, thereby hiding stalls caused by CPU memory access. On GH200, DirectKV reduces CPU–GPU transfer volume by up to 50%, cuts GPU memory usage by 43%, and improves end-to-end performance by up to 1.2× compared to existing solutions.",
+      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/luo",
+      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/luo",
+      "submission_date": null,
+      "conference": "OSDI '26",
+      "source": "usenix",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 132.0,
+      "updated_at": "2026-07-21T08:54:17.392951+00:00"
+    },
+    {
+      "forum_id": "usenix-osdi26-96",
+      "paper_number": 96,
+      "title": "Revisiting Pipeline Parallelism for LLM Serving",
+      "authors": [
+        "Soonjae Hwang and Jeongseob Ahn, Korea University"
+      ],
+      "keywords": [],
+      "abstract": "As the memory capacity of a single GPU is insufficient to accommodate large language models (LLMs), model parallelism has become the standard approach for serving LLMs across multiple GPUs. In online serving environments, tensor parallelism has become the de facto way in single-node multi-GPU systems because it can reduce the computation latency through parallel execution. Although pipeline parallelism can offer higher throughput, it suffers from pipeline imbalance that is exacerbated under online workloads, leading to resource underutilization and performance degradation. In this study, we revisit pipeline parallelism for serving LLMs. Our analysis shows that computational imbalance between pipeline stages becomes exacerbated in online serving. To address these pipeline inefficiencies, we propose three techniques: two mechanisms, greedy and predictive schemes, that dynamically adjust the chunk size to mitigate prefill-induced bubbles, and a delay scheduling technique that dynamically rebalances decode workloads across pipeline stages to further reduce pipeline bubbles. We implement our techniques on top of SGLang and demonstrate that, for Qwen2.5 32B and 14B on four NVIDIA A100 40GB GPUs, pipeline parallelism with our mechanisms outperforms tensor parallelism.",
+      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/hwang",
+      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/hwang",
+      "submission_date": null,
+      "conference": "OSDI '26",
+      "source": "usenix",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 124.0,
+      "updated_at": "2026-07-21T08:54:17.403047+00:00"
+    },
+    {
+      "forum_id": "usenix-osdi26-95",
+      "paper_number": 95,
+      "title": "Efficient LLM Serving on Commodity GPU Clusters with Data-Reduced Cross-Instance Orchestration",
+      "authors": [
+        "Jiangsu Du, Hongbin Zhang, Taosheng Wei, Zhenyi Zheng, Jiazhi Jiang, Kaiyi Wu, Zhiguang Chen, and Yutong Lu, School of Computer Science and Engineering, Sun Yat-Sen University"
+      ],
+      "keywords": [],
+      "abstract": "Existing LLM serving strategies can be categorized by whether prefill and decode phases are disaggregated: non-disaggregated (NoDG) or fully disaggregated (FuDG). However, they neither fit commodity GPU clusters, which remain widely deployed as mainstream AI infrastructure. NoDG suffers from severe prefill–decode interference, while FuDG depends heavily on high-performance interconnects that such clusters lack. We present EcoServe, an LLM serving system tailored to commodity GPU clusters. It enables a data-reduced collaboration among inference instances to mitigate prefill-decode interference, termed the partially disaggregated (PaDG) strategy. Particularly, within a single instance, PaDG disaggregates the prefill and decode phases along the time dimension to mitigate interference and enhance throughput. Next, it coordinates multiple instances and cyclically activates them to ensure the continuous availability of prefill processing, thereby rescuing latency. Thus, EcoServe’s basic serving unit is the macro instance, within which multiple instances collaborate. It further incorporates an adaptive scheduling algorithm to route requests in a macro instance and a mitosis scaling approach for fine-grained capacity adjustments in online scenario. On a 32-GPU NVIDIA L20 cluster over Ethernet, EcoServe improves goodput by 1.96×, 1.99×, 2.51×, and 2.40× when serving 30B- and 70B-scale LLMs, compared to four representative NoDG and FuDG systems, vLLM, Sarathi, DistServe, and MoonCake. EcoServe remains competitive even on an NVIDIA H100 cluster with NVLink and InfiniBand. Our code is released at https://github.com/MLSysU/EcoServe .",
+      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/du",
+      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/du",
+      "submission_date": null,
+      "conference": "OSDI '26",
+      "source": "usenix",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 121.5,
+      "updated_at": "2026-07-21T08:54:17.402942+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-3",
@@ -70,24 +153,28 @@
       "updated_at": "2026-07-21T08:54:17.396959+00:00"
     },
     {
-      "forum_id": "usenix-osdi26-95",
-      "paper_number": 95,
-      "title": "Efficient LLM Serving on Commodity GPU Clusters with Data-Reduced Cross-Instance Orchestration",
+      "forum_id": "usenix-fast26-6",
+      "paper_number": 6,
+      "title": "CacheSlide: Unlocking Cross Position-Aware KV Cache Reuse for Accelerating LLM Serving",
       "authors": [
-        "Jiangsu Du, Hongbin Zhang, Taosheng Wei, Zhenyi Zheng, Jiazhi Jiang, Kaiyi Wu, Zhiguang Chen, and Yutong Lu, School of Computer Science and Engineering, Sun Yat-Sen University"
+        "Yang Liu and Yunfei Gu, Shanghai Jiao Tong University",
+        "Liqiang Zhang, Jinan Inspur Data Technology Co., Ltd",
+        "Chentao Wu, Guangtao Xue, Jie Li, and Minyi Guo, Shanghai Jiao Tong University",
+        "Junhao Hu, Peking University",
+        "Jie Meng, Huawei Cloud"
       ],
       "keywords": [],
-      "abstract": "Existing LLM serving strategies can be categorized by whether prefill and decode phases are disaggregated: non-disaggregated (NoDG) or fully disaggregated (FuDG). However, they neither fit commodity GPU clusters, which remain widely deployed as mainstream AI infrastructure. NoDG suffers from severe prefill–decode interference, while FuDG depends heavily on high-performance interconnects that such clusters lack. We present EcoServe, an LLM serving system tailored to commodity GPU clusters. It enables a data-reduced collaboration among inference instances to mitigate prefill-decode interference, termed the partially disaggregated (PaDG) strategy. Particularly, within a single instance, PaDG disaggregates the prefill and decode phases along the time dimension to mitigate interference and enhance throughput. Next, it coordinates multiple instances and cyclically activates them to ensure the continuous availability of prefill processing, thereby rescuing latency. Thus, EcoServe’s basic serving unit is the macro instance, within which multiple instances collaborate. It further incorporates an adaptive scheduling algorithm to route requests in a macro instance and a mitosis scaling approach for fine-grained capacity adjustments in online scenario. On a 32-GPU NVIDIA L20 cluster over Ethernet, EcoServe improves goodput by 1.96×, 1.99×, 2.51×, and 2.40× when serving 30B- and 70B-scale LLMs, compared to four representative NoDG and FuDG systems, vLLM, Sarathi, DistServe, and MoonCake. EcoServe remains competitive even on an NVIDIA H100 cluster with NVLink and InfiniBand. Our code is released at https://github.com/MLSysU/EcoServe .",
-      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/du",
-      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/du",
+      "abstract": "Large Language Models (LLMs) are increasingly deployed in agent-based applications with complex prompt structures comprising both invariant and dynamic segments. Existing KV cache reuse strategies—Position\u0002Dependent Caching (PDC) and Position-Independent Caching (PIC)—inadequately address these scenarios, imposing either strict positional constraints or introducing significant computational overhead due to Positionally Misaligned KV Drift (PMKD) and window padding problems. We identify a distinct pattern in agent workflows termed Relative-Position-Dependent Caching (RPDC), where reusable segments maintain consistent relative ordering despite absolute position shifts. To address this pattern, we propose CacheSlide, a novel KV cache management system that enhances positional-encoding similarity for fixed segments, computes attention for only a minimal subset of tokens, combines new and cached KVs using learned weights, and implements layer-wise and spill-aware KV-cache optimizations. Our implementation extends vLLM’s KV cache management with Chunked Contextual Position Encoding and Weighted Correction Attention. Experimental evaluation across multiple LLMs and agent benchmarks demonstrates that CacheSlide significantly outperforms state-of-the-art baselines, achieving 3.11-4.3× reduction in latency and 3.5-5.8× improvement in throughput, establishing a new efficiency frontier for agent-based LLM applications.",
+      "pdf_link": "https://www.usenix.org/conference/fast26/presentation/liu-yang",
+      "forum_link": "https://www.usenix.org/conference/fast26/presentation/liu-yang",
       "submission_date": null,
-      "conference": "OSDI '26",
+      "conference": "FAST '26",
       "source": "usenix",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 101.5,
-      "updated_at": "2026-07-21T08:54:17.402942+00:00"
+      "score": 98.5,
+      "updated_at": "2026-07-21T08:54:26.738243+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-147",
@@ -158,24 +245,24 @@
       "updated_at": "2026-07-21T08:42:40.013517+00:00"
     },
     {
-      "forum_id": "usenix-osdi26-96",
-      "paper_number": 96,
-      "title": "Revisiting Pipeline Parallelism for LLM Serving",
+      "forum_id": "usenix-fast26-20",
+      "paper_number": 20,
+      "title": "Sharpen the Spec, Cut the Code: A Case for Generative File System with SYSSPEC",
       "authors": [
-        "Soonjae Hwang and Jeongseob Ahn, Korea University"
+        "Qingyuan Liu, Mo Zou, Hengbin Zhang, Dong Du, Yubin Xia, and Haibo Chen, Shanghai Jiao Tong University"
       ],
       "keywords": [],
-      "abstract": "As the memory capacity of a single GPU is insufficient to accommodate large language models (LLMs), model parallelism has become the standard approach for serving LLMs across multiple GPUs. In online serving environments, tensor parallelism has become the de facto way in single-node multi-GPU systems because it can reduce the computation latency through parallel execution. Although pipeline parallelism can offer higher throughput, it suffers from pipeline imbalance that is exacerbated under online workloads, leading to resource underutilization and performance degradation. In this study, we revisit pipeline parallelism for serving LLMs. Our analysis shows that computational imbalance between pipeline stages becomes exacerbated in online serving. To address these pipeline inefficiencies, we propose three techniques: two mechanisms, greedy and predictive schemes, that dynamically adjust the chunk size to mitigate prefill-induced bubbles, and a delay scheduling technique that dynamically rebalances decode workloads across pipeline stages to further reduce pipeline bubbles. We implement our techniques on top of SGLang and demonstrate that, for Qwen2.5 32B and 14B on four NVIDIA A100 40GB GPUs, pipeline parallelism with our mechanisms outperforms tensor parallelism.",
-      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/hwang",
-      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/hwang",
+      "abstract": "File systems are critical OS components that require constant evolution to support new hardware and emerging application needs. However, the traditional paradigm of developing features, fixing bugs, and maintaining the system incurs significant overhead, especially as systems grow in complexity. This paper proposes a new paradigm, generative file systems , which leverages Large Language Models (LLMs) to generate and evolve a file system from prompts, effectively addressing the need for robust evolution. Despite the widespread success of LLMs in code generation, attempts to create a functional file system have thus far been unsuccessful, mainly due to the ambiguity of natural language prompts. This paper introduces SYSSPEC, a framework for developing generative file systems. Its key insight is to replace ambiguous natural language with principles adapted from formal methods . Instead of imprecise prompts, SYSSPEC employs a multi-part specification that accurately describes a file system's functionality, modularity, and concurrency. The specification acts as an unambiguous blueprint, guiding LLMs to generate expected code flexibly. To manage evolution, we develop a DAG-structured patch that operates on the specification itself, enabling new features to be added without violating existing invariants. Moreover, the SYSSPEC toolchain features a set of LLM-based agents with mechanisms to mitigate hallucination during construction and evolution. We demonstrate our approach by generating SPECFS, a concurrent file system. SPECFS demonstrates equivalent level of correctness to that of a manually-coded baseline across hundreds of regression tests. We further confirm its evolvability by seamlessly integrating 10 real-world features from Ext4. Our work shows that a specification-guided approach makes generating and evolving complex systems not only feasible but also highly effective.",
+      "pdf_link": "https://www.usenix.org/conference/fast26/presentation/liu-qingyuan",
+      "forum_link": "https://www.usenix.org/conference/fast26/presentation/liu-qingyuan",
       "submission_date": null,
-      "conference": "OSDI '26",
+      "conference": "FAST '26",
       "source": "usenix",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 94.0,
-      "updated_at": "2026-07-21T08:54:17.403047+00:00"
+      "score": 93.5,
+      "updated_at": "2026-07-21T08:54:26.741388+00:00"
     },
     {
       "forum_id": "usenix-fast26-42",
@@ -197,53 +284,6 @@
       "ratings": [],
       "score": 93.0,
       "updated_at": "2026-07-21T08:54:26.745136+00:00"
-    },
-    {
-      "forum_id": "usenix-fast26-6",
-      "paper_number": 6,
-      "title": "CacheSlide: Unlocking Cross Position-Aware KV Cache Reuse for Accelerating LLM Serving",
-      "authors": [
-        "Yang Liu and Yunfei Gu, Shanghai Jiao Tong University",
-        "Liqiang Zhang, Jinan Inspur Data Technology Co., Ltd",
-        "Chentao Wu, Guangtao Xue, Jie Li, and Minyi Guo, Shanghai Jiao Tong University",
-        "Junhao Hu, Peking University",
-        "Jie Meng, Huawei Cloud"
-      ],
-      "keywords": [],
-      "abstract": "Large Language Models (LLMs) are increasingly deployed in agent-based applications with complex prompt structures comprising both invariant and dynamic segments. Existing KV cache reuse strategies—Position\u0002Dependent Caching (PDC) and Position-Independent Caching (PIC)—inadequately address these scenarios, imposing either strict positional constraints or introducing significant computational overhead due to Positionally Misaligned KV Drift (PMKD) and window padding problems. We identify a distinct pattern in agent workflows termed Relative-Position-Dependent Caching (RPDC), where reusable segments maintain consistent relative ordering despite absolute position shifts. To address this pattern, we propose CacheSlide, a novel KV cache management system that enhances positional-encoding similarity for fixed segments, computes attention for only a minimal subset of tokens, combines new and cached KVs using learned weights, and implements layer-wise and spill-aware KV-cache optimizations. Our implementation extends vLLM’s KV cache management with Chunked Contextual Position Encoding and Weighted Correction Attention. Experimental evaluation across multiple LLMs and agent benchmarks demonstrates that CacheSlide significantly outperforms state-of-the-art baselines, achieving 3.11-4.3× reduction in latency and 3.5-5.8× improvement in throughput, establishing a new efficiency frontier for agent-based LLM applications.",
-      "pdf_link": "https://www.usenix.org/conference/fast26/presentation/liu-yang",
-      "forum_link": "https://www.usenix.org/conference/fast26/presentation/liu-yang",
-      "submission_date": null,
-      "conference": "FAST '26",
-      "source": "usenix",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 88.5,
-      "updated_at": "2026-07-21T08:54:26.738243+00:00"
-    },
-    {
-      "forum_id": "usenix-osdi26-3",
-      "paper_number": 3,
-      "title": "ECHO: Efficient KV Cache Offloading with Lossless Prefetching for Serving Native Sparse Attention LLMs",
-      "authors": [
-        "Guangda Liu, Wenhao Chen, Chengwei Li, and Zhenyu Ning, Shanghai Jiao Tong University",
-        "Jing Lin and Yiwu Yao, Huawei",
-        "Quan Chen, Shixuan Sun, and Jieru Zhao, Shanghai Jiao Tong University",
-        "Minyi Guo, Guizhou University and Shanghai Jiao Tong University"
-      ],
-      "keywords": [],
-      "abstract": "Native sparse attention has emerged as a promising approach for efficient long-context LLM inference without compromising accuracy. While it significantly reduces the attention computation and KV cache access costs, the KV cache size exhibits steeper linear growth with the context length. As a result, GPU HBM capacity becomes the bottleneck, limiting the concurrency of long-context requests and leading to poor hardware utilization and low generation throughput. We introduce ECHO, a serving system designed for native sparse-attention LLMs that employs KV cache offloading to overcome GPU HBM capacity limits. ECHO incorporates a graph-friendly cache manager that enables efficient dynamic KV cache eviction and recall entirely within GPU graphs, minimizing management overhead. Furthermore, by exploiting the numerical predictability of index scores and the sequential processing of queries, ECHO enables lossless intra-query prefetching for decoding and inter-query prefetching for prefill. By applying a fully pipelined fused GPU kernel, ECHO overlaps the recall overhead with indexer computation. Experiments show that ECHO delivers up to 2.1× higher generation throughput than state-of-the-art systems such as SGLang and vLLM under long-context workloads, while maintaining comparable latency under light load.",
-      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/liu-guangda",
-      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/liu-guangda",
-      "submission_date": null,
-      "conference": "OSDI '26",
-      "source": "usenix",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 84.0,
-      "updated_at": "2026-07-21T08:54:17.392848+00:00"
     },
     {
       "forum_id": "usenix-osdi26-2",
@@ -458,6 +498,31 @@
       "ratings": [],
       "score": 74.0,
       "updated_at": "2026-07-21T08:54:17.395824+00:00"
+    },
+    {
+      "forum_id": "usenix-nsdi26-59",
+      "paper_number": 59,
+      "title": "SwiftEP: Accelerating MoE Inference with Buffer Fusion and TMA Offloading",
+      "authors": [
+        "Xingyi Li, unaffiliated",
+        "Yadong Liu and Xiaojie Huang, Tencent",
+        "Yiran Zhang, Shuai Wang, and Shangguang Wang, unaffiliated",
+        "Zhehao Lin and Yinben Xia, Tencent",
+        "Chang Yu, Nanjing University",
+        "Qihang Liu, Xuan Zhang, Hao Lu, Xiang Li, Zekun He, Yachen Wang, and Xianneng Zou, Tencent"
+      ],
+      "keywords": [],
+      "abstract": "Large Language Models (LLMs) increasingly rely on Mixture-of-Experts (MoE) architectures to scale computation efficiently. Expert Parallelism (EP), which distributes experts across GPUs, introduces all-to-all communication overhead during the dispatch and combine phases, especially in the prefill stage, which dominates the inference performance. Existing communication libraries, such as DeepEP, suffer from excessive GPU SM utilization and underutilized interconnect bandwidth, limiting prefill performance. In this paper, we identify two root causes: redundant buffer copies and inefficient intra-server transfers over NVLink. To address these, we propose SwiftEP, an all-to-all communication library tailored for MoE prefill, combining buffer fusion and Tensor Memory Accelerator (TMA) offloading . Buffer fusion eliminates redundant staging copies, enabling true zero-copy communication, while TMA offloading maximizes NVLink utilization and supports efficient multicast/reduce operations. SwiftEP further incorporates RDMA scatter-gather lists, QP transmission parallelization, and CUDA IPC to handle dynamic token placement and inter-GPU memory access. Evaluation on 16- and 32-GPU clusters shows that SwiftEP achieves up to 119.7% higher algorithm bandwidth, reduces SM occupancy by up to 66.7%, and improves request serving capacity by 21.2% compared to DeepEP.",
+      "pdf_link": "https://www.usenix.org/conference/nsdi26/presentation/li-xingyi",
+      "forum_link": "https://www.usenix.org/conference/nsdi26/presentation/li-xingyi",
+      "submission_date": null,
+      "conference": "NSDI '26",
+      "source": "usenix",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 71.5,
+      "updated_at": "2026-07-21T08:54:22.931349+00:00"
     },
     {
       "forum_id": "usenix-osdi26-102",
@@ -735,26 +800,6 @@
       "updated_at": "2026-07-21T08:54:26.745021+00:00"
     },
     {
-      "forum_id": "usenix-fast26-20",
-      "paper_number": 20,
-      "title": "Sharpen the Spec, Cut the Code: A Case for Generative File System with SYSSPEC",
-      "authors": [
-        "Qingyuan Liu, Mo Zou, Hengbin Zhang, Dong Du, Yubin Xia, and Haibo Chen, Shanghai Jiao Tong University"
-      ],
-      "keywords": [],
-      "abstract": "File systems are critical OS components that require constant evolution to support new hardware and emerging application needs. However, the traditional paradigm of developing features, fixing bugs, and maintaining the system incurs significant overhead, especially as systems grow in complexity. This paper proposes a new paradigm, generative file systems , which leverages Large Language Models (LLMs) to generate and evolve a file system from prompts, effectively addressing the need for robust evolution. Despite the widespread success of LLMs in code generation, attempts to create a functional file system have thus far been unsuccessful, mainly due to the ambiguity of natural language prompts. This paper introduces SYSSPEC, a framework for developing generative file systems. Its key insight is to replace ambiguous natural language with principles adapted from formal methods . Instead of imprecise prompts, SYSSPEC employs a multi-part specification that accurately describes a file system's functionality, modularity, and concurrency. The specification acts as an unambiguous blueprint, guiding LLMs to generate expected code flexibly. To manage evolution, we develop a DAG-structured patch that operates on the specification itself, enabling new features to be added without violating existing invariants. Moreover, the SYSSPEC toolchain features a set of LLM-based agents with mechanisms to mitigate hallucination during construction and evolution. We demonstrate our approach by generating SPECFS, a concurrent file system. SPECFS demonstrates equivalent level of correctness to that of a manually-coded baseline across hundreds of regression tests. We further confirm its evolvability by seamlessly integrating 10 real-world features from Ext4. Our work shows that a specification-guided approach makes generating and evolving complex systems not only feasible but also highly effective.",
-      "pdf_link": "https://www.usenix.org/conference/fast26/presentation/liu-qingyuan",
-      "forum_link": "https://www.usenix.org/conference/fast26/presentation/liu-qingyuan",
-      "submission_date": null,
-      "conference": "FAST '26",
-      "source": "usenix",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 63.5,
-      "updated_at": "2026-07-21T08:54:26.741388+00:00"
-    },
-    {
       "forum_id": "dblp-eurosys26-5",
       "paper_number": 5,
       "title": "FlexPipe: Adapting Dynamic LLM Serving Through Inflight Pipeline Refactoring in Fragmented Serverless Clusters.",
@@ -932,26 +977,6 @@
       "ratings": [],
       "score": 63.0,
       "updated_at": "2026-07-21T08:42:42.331191+00:00"
-    },
-    {
-      "forum_id": "usenix-osdi26-4",
-      "paper_number": 4,
-      "title": "No Buffer, No Bottleneck: Efficient Zero-Copy KV Cache Offloading for Long-Context LLMs",
-      "authors": [
-        "Shutian Luo and Haiying Shen, University of Virginia"
-      ],
-      "keywords": [],
-      "abstract": "Long-context large language models (LLMs) store computed attention key and value (KV) matrices from previous decoding steps to avoid full-sequence recomputation. While this reuse reduces computation, the KV cache grows linearly with sequence length, exerting significant pressure on GPU memory capacity. Existing offloading stores KV blocks in CPU memory but requires extra GPU buffers, wasting GPU memory and doubling CPU–GPU transfers, which creates capacity and bandwidth bottlenecks. We present DirectKV, to our knowledge, the first zero-copy KV cache offloading system for modern heterogeneous CPU–GPU platforms such as NVIDIA GH200/GB200 with high-bandwidth NVLink-C2C interconnects. By leveraging NVLink-C2C instead of PCIe, DirectKV makes CPU memory a practical extension of GPU KV-cache capacity during long-context inference. DirectKV eliminates the GPU staging buffer (no buffer) by enabling GPU kernels to directly access CPU-resident KV cache, and substantially reduces the CPU– GPU data-movement bottleneck (no bottleneck) through CPU-memory-aware CUDA kernels tailored for heterogeneous CPU–GPU platforms. It further fuses KV generation with attention computation into a single CUDA kernel and employs warp-level pipelining to overlap KV fetching, computation, and write-back, thereby hiding stalls caused by CPU memory access. On GH200, DirectKV reduces CPU–GPU transfer volume by up to 50%, cuts GPU memory usage by 43%, and improves end-to-end performance by up to 1.2× compared to existing solutions.",
-      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/luo",
-      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/luo",
-      "submission_date": null,
-      "conference": "OSDI '26",
-      "source": "usenix",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 62.0,
-      "updated_at": "2026-07-21T08:54:17.392951+00:00"
     },
     {
       "forum_id": "dblp-eurosys26-51",
@@ -1180,6 +1205,31 @@
       "ratings": [],
       "score": 59.0,
       "updated_at": "2026-07-21T08:54:22.939178+00:00"
+    },
+    {
+      "forum_id": "usenix-nsdi26-138",
+      "paper_number": 138,
+      "title": "HeteCCL: Synthesizing Near-Optimal Collective Communication Schedules for Heterogeneous GPU Clusters",
+      "authors": [
+        "Chenyang Hei, Fuliang Li, and Jiayi Li, Northeastern University",
+        "Jiamin Cao, Alibaba Cloud",
+        "Chengxi Gao, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences",
+        "Xiuzhu Sha, Tongrui Liu, and Dengke Zhang, Northeastern University",
+        "Ennan Zhai, Alibaba Cloud",
+        "Xingwei Wang, Northeastern University"
+      ],
+      "keywords": [],
+      "abstract": "Training large language models demands massive computing and networking resources. However, existing clusters often face shortages of homogeneous resources and vendor lock-in, forcing the use of heterogeneous hardware, which makes synchronizing training across nodes highly challenging. Current solutions to cluster heterogeneity suffer from low collective communication efficiency, with suboptimal scheduling and slow algorithm synthesis. We present HeteCCL, a unified method for generating near-optimal collective communication schedules on heterogeneous clusters. HeteCCL models the cluster topology and link bandwidth in detail, quantizes data chunks at the schedule-step level, and formulates the scheduling problem as a maximum parallel transfer problem on a weighted directed graph. To accelerate synthesis, HeteCCL encodes bandwidth and routing constraints as SMT formulas and applies counterexample-guided inductive synthesis to refine constraints and prune the search space iteratively. Experiments on heterogeneous testbeds, each consisting of 32 H20 and V100 GPUs, show that HeteCCL outperforms NCCL, TACCL, and TE-CCL, achieving up to 2.8×, 4.4×, and 2.6× higher bandwidth. It also accelerates synthesis by up to 2 orders of magnitude compared to state-of-the-art efforts, and improves end-to-end training efficiency by 23%–37%.",
+      "pdf_link": "https://www.usenix.org/conference/nsdi26/presentation/hei",
+      "forum_link": "https://www.usenix.org/conference/nsdi26/presentation/hei",
+      "submission_date": null,
+      "conference": "NSDI '26",
+      "source": "usenix",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 59.0,
+      "updated_at": "2026-07-21T08:54:22.940807+00:00"
     },
     {
       "forum_id": "usenix-osdi26-60",
@@ -1447,6 +1497,31 @@
       "updated_at": "2026-07-21T08:54:26.742454+00:00"
     },
     {
+      "forum_id": "usenix-nsdi26-45",
+      "paper_number": 45,
+      "title": "JITServe: SLO-aware LLM Serving with Imprecise Request Information",
+      "authors": [
+        "Wei Zhang, Zhiyu Wu, and Yi Mu, University of Illinois, Urbana-Champaign",
+        "Rui Ning, unaffiliated",
+        "Banruo Liu, University of Illinois Urbana-Champaign",
+        "Nikhil Sarda, Google",
+        "Myungjin Lee, Cisco Research",
+        "Fan Lai, University of Illinois Urbana-Champaign"
+      ],
+      "keywords": [],
+      "abstract": "The integration of Large Language Models (LLMs) into applications ranging from interactive chatbots to multi-agent systems has introduced a wide spectrum of service-level objectives (SLOs) for responsiveness. These include latency-sensitive requests emphasizing per-token latency in streaming chat, deadline-sensitive requests requiring rapid full responses to trigger external tools, and compound requests with evolving dependencies across multiple LLM calls. Despite—or perhaps, because of—this workload diversity and unpredictable request information (e.g., response lengths and dependencies), existing request schedulers have focused on aggregate performance, unable to ensure application-level SLO needs. This paper presents JITServe, the first SLO-aware LLM serving system designed to maximize service goodput (e.g., the number of tokens meeting request SLOs) across diverse workloads . JITServe novelly schedules requests using imprecise request information and gradually relaxes this conservatism by refining request information estimates as generation progresses. It applies a grouped margin goodput maximization algorithm to allocate just enough serving bandwidth to satisfy each request's SLO just-in-time (JIT), maximizing residual capacity for others, while deciding the composition of requests in a batch to maximize efficiency and goodput with provable guarantees. Our evaluation across diverse realistic workloads, including chat, deep research, and agentic pipelines, shows that JITServe improves service goodput by 1.4×–6.3×, alternatively achieving 28.5%–83.2% resource savings, compared to state-of-the-art designs.",
+      "pdf_link": "https://www.usenix.org/conference/nsdi26/presentation/zhang-wei",
+      "forum_link": "https://www.usenix.org/conference/nsdi26/presentation/zhang-wei",
+      "submission_date": null,
+      "conference": "NSDI '26",
+      "source": "usenix",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 55.5,
+      "updated_at": "2026-07-21T08:54:22.929569+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-78",
       "paper_number": 78,
       "title": "In Link We Trust: BFT at the Speed of CFT using Switches",
@@ -1558,27 +1633,29 @@
       "updated_at": "2026-07-21T08:54:22.932392+00:00"
     },
     {
-      "forum_id": "2502.20692",
-      "paper_number": -1,
-      "title": "MonadBFT: Fast, Responsive, Fork-Resistant Streamlined Consensus",
+      "forum_id": "usenix-nsdi26-36",
+      "paper_number": 36,
+      "title": "CrossCheck: Input Validation for WAN Control Systems",
       "authors": [
-        "Mohammad Mussadiq Jalalzai, Kushal Babel, Jovan Komatovic, Tobias Klenze, Sourav Das, Fatima Elsheimy, Mike Setrin, John Bergschneider, Babak Gilkalaye"
+        "Alexander Krentsel, UC Berkeley and Google",
+        "Rishabh Iyer, UC Berkeley",
+        "Isaac Keslassy, Technion and UC Berkeley",
+        "Bharath Modhipalli, Google",
+        "Sylvia Ratnasamy, UC Berkeley and Google",
+        "Anees Shaikh and Rob Shakir, Google"
       ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2502.20692v4 Announce Type: replace \nAbstract: This paper introduces MonadBFT, a novel Byzantine Fault Tolerant (BFT) consensus protocol that advances both performance and robustness. MonadBFT is implemented as the consensus protocol in the Monad blockchain. As a HotStuff-family protocol, MonadBFT has linear message complexity in the common case and is optimistically responsive, operating as quickly as the network allows. A central feature of MonadBFT is its tail-forking resistance. In pipelined BFT protocols, when a leader goes offline, the previous proposal is abandoned. Malicious leaders can exploit this tail-forking behavior as a form of Maximal Extractable Value (MEV) attack by deliberately discarding their predecessor's block, depriving that proposer of rewards and enabling tra",
-      "pdf_link": "https://arxiv.org/pdf/2502.20692.pdf",
-      "forum_link": "https://arxiv.org/abs/2502.20692",
-      "submission_date": "2026-07-22T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
+      "keywords": [],
+      "abstract": "We present CrossCheck, a system that validates inputs to the Software-Defined Networking (SDN) controller in a Wide Area Network (WAN). By detecting incorrect inputs—often stemming from bugs in the SDN control infrastructure—CrossCheck alerts operators before they trigger network outages. Our analysis at a large-scale WAN operator identifies invalid inputs as a leading cause of major outages, and we show how CrossCheck would have prevented those incidents. We deployed CrossCheck as a shadow validation system for four weeks in a production WAN, during which it accurately detected the single incident of invalid inputs that occurred while sustaining a 0% false positive rate under normal operation, hence imposing little additional burden on operators. In addition, we show through simulation that CrossCheck reliably detects a wide range of invalid inputs (e.g., detecting demand perturbations as small as 5% with 100% accuracy) and maintains a near-zero false positive rate for realistic levels of noisy, missing, or buggy telemetry data (e.g., sustaining zero false positives with up to 30% of corrupted telemetry data).",
+      "pdf_link": "https://www.usenix.org/conference/nsdi26/presentation/krentsel",
+      "forum_link": "https://www.usenix.org/conference/nsdi26/presentation/krentsel",
+      "submission_date": null,
+      "conference": "NSDI '26",
+      "source": "usenix",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 51.5,
-      "updated_at": "2026-07-22T08:29:39.370360+00:00"
+      "score": 52.0,
+      "updated_at": "2026-07-21T08:54:22.928090+00:00"
     },
     {
       "forum_id": "usenix-osdi26-135",
@@ -1606,29 +1683,26 @@
       "updated_at": "2026-07-21T08:54:17.407310+00:00"
     },
     {
-      "forum_id": "usenix-nsdi26-59",
+      "forum_id": "usenix-osdi26-59",
       "paper_number": 59,
-      "title": "SwiftEP: Accelerating MoE Inference with Buffer Fusion and TMA Offloading",
+      "title": "Achieving Cloud-Grade SLOs for Local Mixture-of-Experts Inference through CPU–GPU Hybrid Design",
       "authors": [
-        "Xingyi Li, unaffiliated",
-        "Yadong Liu and Xiaojie Huang, Tencent",
-        "Yiran Zhang, Shuai Wang, and Shangguang Wang, unaffiliated",
-        "Zhehao Lin and Yinben Xia, Tencent",
-        "Chang Yu, Nanjing University",
-        "Qihang Liu, Xuan Zhang, Hao Lu, Xiang Li, Zekun He, Yachen Wang, and Xianneng Zou, Tencent"
+        "Wenxin Wang, Tsinghua University",
+        "Yule Hou and Yu Ji, Xingyun Integrated Circuits Co., Ltd.",
+        "Peng Qu and Youhui Zhang, Tsinghua University and Beijing National Research Center for Information Science and Technology"
       ],
       "keywords": [],
-      "abstract": "Large Language Models (LLMs) increasingly rely on Mixture-of-Experts (MoE) architectures to scale computation efficiently. Expert Parallelism (EP), which distributes experts across GPUs, introduces all-to-all communication overhead during the dispatch and combine phases, especially in the prefill stage, which dominates the inference performance. Existing communication libraries, such as DeepEP, suffer from excessive GPU SM utilization and underutilized interconnect bandwidth, limiting prefill performance. In this paper, we identify two root causes: redundant buffer copies and inefficient intra-server transfers over NVLink. To address these, we propose SwiftEP, an all-to-all communication library tailored for MoE prefill, combining buffer fusion and Tensor Memory Accelerator (TMA) offloading . Buffer fusion eliminates redundant staging copies, enabling true zero-copy communication, while TMA offloading maximizes NVLink utilization and supports efficient multicast/reduce operations. SwiftEP further incorporates RDMA scatter-gather lists, QP transmission parallelization, and CUDA IPC to handle dynamic token placement and inter-GPU memory access. Evaluation on 16- and 32-GPU clusters shows that SwiftEP achieves up to 119.7% higher algorithm bandwidth, reduces SM occupancy by up to 66.7%, and improves request serving capacity by 21.2% compared to DeepEP.",
-      "pdf_link": "https://www.usenix.org/conference/nsdi26/presentation/li-xingyi",
-      "forum_link": "https://www.usenix.org/conference/nsdi26/presentation/li-xingyi",
+      "abstract": "Local deployment of large Mixture-of-Experts (MoE) models falls short of the service quality achieved in cloud-scale environments, even under low-concurrency workloads. We identify four key gaps in local MoE inference: reliance on capacity-reduced models (quantized, distilled, rerouted), inability to meet 30-second TTFT for long prefills (>12K), sub-baseline decode throughput (<20 tokens/s), and poor concurrency under mixed prefill–decode and batched decode workloads. We present a CPU–GPU hybrid system that achieves cloud-level SLOs on dual-socket commodity CPUs and consumer GPUs by (1) stream-loading prefill (SLP), boosting prefill throughput to 1,200 tokens/s and enabling 32K prompts within 30 seconds; (2) distributed SLP (DSLP) with SmallEP expert parallelism, reaching 1,800 tokens/s and 45K prompts in 30 seconds on two RTX 5090s; (3) intra-node prefill–decode disaggregation with zero-copy shared weights and a dual-batch attention–MoE overlap scheme, sustaining concurrency with <15% latency increase and 50% throughput gains; (4) an AVX-512–optimized FP8 GEMV kernel, enabling native CPU FP8 inference while delivering 4–5× lower CPU latency; and (5) fine-grained CPU parallelism that attains 28 tokens/s on INT4 DeepSeek-V3 and 21.5 tokens/s on intact FP8 V3. Evaluations show our system delivers cloud-level QoS for flagship MoE models on consumer CPU–GPU platforms, reshaping local deployment with intact, original-precision inference and enabling high-quality, cost-effective access without datacenter infrastructure.",
+      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/wang-wenxin",
+      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/wang-wenxin",
       "submission_date": null,
-      "conference": "NSDI '26",
+      "conference": "OSDI '26",
       "source": "usenix",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 51.5,
-      "updated_at": "2026-07-21T08:54:22.931349+00:00"
+      "score": 50.0,
+      "updated_at": "2026-07-21T08:54:17.398727+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-5",
@@ -1649,31 +1723,6 @@
       "ratings": [],
       "score": 49.5,
       "updated_at": "2026-07-21T08:54:22.924377+00:00"
-    },
-    {
-      "forum_id": "usenix-nsdi26-138",
-      "paper_number": 138,
-      "title": "HeteCCL: Synthesizing Near-Optimal Collective Communication Schedules for Heterogeneous GPU Clusters",
-      "authors": [
-        "Chenyang Hei, Fuliang Li, and Jiayi Li, Northeastern University",
-        "Jiamin Cao, Alibaba Cloud",
-        "Chengxi Gao, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences",
-        "Xiuzhu Sha, Tongrui Liu, and Dengke Zhang, Northeastern University",
-        "Ennan Zhai, Alibaba Cloud",
-        "Xingwei Wang, Northeastern University"
-      ],
-      "keywords": [],
-      "abstract": "Training large language models demands massive computing and networking resources. However, existing clusters often face shortages of homogeneous resources and vendor lock-in, forcing the use of heterogeneous hardware, which makes synchronizing training across nodes highly challenging. Current solutions to cluster heterogeneity suffer from low collective communication efficiency, with suboptimal scheduling and slow algorithm synthesis. We present HeteCCL, a unified method for generating near-optimal collective communication schedules on heterogeneous clusters. HeteCCL models the cluster topology and link bandwidth in detail, quantizes data chunks at the schedule-step level, and formulates the scheduling problem as a maximum parallel transfer problem on a weighted directed graph. To accelerate synthesis, HeteCCL encodes bandwidth and routing constraints as SMT formulas and applies counterexample-guided inductive synthesis to refine constraints and prune the search space iteratively. Experiments on heterogeneous testbeds, each consisting of 32 H20 and V100 GPUs, show that HeteCCL outperforms NCCL, TACCL, and TE-CCL, achieving up to 2.8×, 4.4×, and 2.6× higher bandwidth. It also accelerates synthesis by up to 2 orders of magnitude compared to state-of-the-art efforts, and improves end-to-end training efficiency by 23%–37%.",
-      "pdf_link": "https://www.usenix.org/conference/nsdi26/presentation/hei",
-      "forum_link": "https://www.usenix.org/conference/nsdi26/presentation/hei",
-      "submission_date": null,
-      "conference": "NSDI '26",
-      "source": "usenix",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 49.0,
-      "updated_at": "2026-07-21T08:54:22.940807+00:00"
     },
     {
       "forum_id": "usenix-osdi26-131",
@@ -1855,29 +1904,28 @@
       "updated_at": "2026-07-21T08:54:26.744507+00:00"
     },
     {
-      "forum_id": "usenix-nsdi26-45",
-      "paper_number": 45,
-      "title": "JITServe: SLO-aware LLM Serving with Imprecise Request Information",
+      "forum_id": "usenix-nsdi26-133",
+      "paper_number": 133,
+      "title": "Agentix: An Efficient Serving Engine for LLM Agents as General Programs",
       "authors": [
-        "Wei Zhang, Zhiyu Wu, and Yi Mu, University of Illinois, Urbana-Champaign",
-        "Rui Ning, unaffiliated",
-        "Banruo Liu, University of Illinois Urbana-Champaign",
-        "Nikhil Sarda, Google",
-        "Myungjin Lee, Cisco Research",
-        "Fan Lai, University of Illinois Urbana-Champaign"
+        "Michael Luo, University of California, Berkeley, and Google DeepMind",
+        "Xiaoxiang Shi, Shanghai Jiao Tong University",
+        "Colin Cai, Tianjun Zhang, Justin Wong, and Yichuan Wang, University of California, Berkeley",
+        "Chi Wang, Yanping Huang, and Zhifeng Chen, Google DeepMind",
+        "Joseph E. Gonzalez and Ion Stoica, University of California, Berkeley"
       ],
       "keywords": [],
-      "abstract": "The integration of Large Language Models (LLMs) into applications ranging from interactive chatbots to multi-agent systems has introduced a wide spectrum of service-level objectives (SLOs) for responsiveness. These include latency-sensitive requests emphasizing per-token latency in streaming chat, deadline-sensitive requests requiring rapid full responses to trigger external tools, and compound requests with evolving dependencies across multiple LLM calls. Despite—or perhaps, because of—this workload diversity and unpredictable request information (e.g., response lengths and dependencies), existing request schedulers have focused on aggregate performance, unable to ensure application-level SLO needs. This paper presents JITServe, the first SLO-aware LLM serving system designed to maximize service goodput (e.g., the number of tokens meeting request SLOs) across diverse workloads . JITServe novelly schedules requests using imprecise request information and gradually relaxes this conservatism by refining request information estimates as generation progresses. It applies a grouped margin goodput maximization algorithm to allocate just enough serving bandwidth to satisfy each request's SLO just-in-time (JIT), maximizing residual capacity for others, while deciding the composition of requests in a batch to maximize efficiency and goodput with provable guarantees. Our evaluation across diverse realistic workloads, including chat, deep research, and agentic pipelines, shows that JITServe improves service goodput by 1.4×–6.3×, alternatively achieving 28.5%–83.2% resource savings, compared to state-of-the-art designs.",
-      "pdf_link": "https://www.usenix.org/conference/nsdi26/presentation/zhang-wei",
-      "forum_link": "https://www.usenix.org/conference/nsdi26/presentation/zhang-wei",
+      "abstract": "Large language model (LLM) applications are evolving beyond simple chatbots into dynamic, general-purpose agentic programs, which scale LLM calls and output tokens to help AI agents reason, explore, and solve complex tasks. However, existing LLM serving systems ignore dependencies between programs and calls, missing significant opportunities for optimization. Our analysis reveals that programs submitted to LLM serving engines experience long cumulative wait times, primarily due to head-of-line blocking at both the individual LLM request and the program. To address this, we introduce Agentix, an LLM serving system that treats programs as first-class citizens to minimize their end-to-end latencies. Agentix intercepts LLM calls submitted by programs, enriching schedulers with program-level context. We propose two scheduling algorithms—for single-threaded and distributed programs—that preempt and prioritize LLM calls based on their programs' previously completed calls. Our evaluation demonstrates that across diverse LLMs and agentic workloads, Agentix improves throughput of programs by 4-15× at the same latency compared to state-of-the-art systems, such as vLLM.",
+      "pdf_link": "https://www.usenix.org/conference/nsdi26/presentation/luo",
+      "forum_link": "https://www.usenix.org/conference/nsdi26/presentation/luo",
       "submission_date": null,
       "conference": "NSDI '26",
       "source": "usenix",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 45.5,
-      "updated_at": "2026-07-21T08:54:22.929569+00:00"
+      "score": 45.0,
+      "updated_at": "2026-07-21T08:54:22.940225+00:00"
     },
     {
       "forum_id": "usenix-osdi26-68",
@@ -2157,31 +2205,6 @@
       "updated_at": "2026-07-21T08:54:17.399583+00:00"
     },
     {
-      "forum_id": "usenix-nsdi26-36",
-      "paper_number": 36,
-      "title": "CrossCheck: Input Validation for WAN Control Systems",
-      "authors": [
-        "Alexander Krentsel, UC Berkeley and Google",
-        "Rishabh Iyer, UC Berkeley",
-        "Isaac Keslassy, Technion and UC Berkeley",
-        "Bharath Modhipalli, Google",
-        "Sylvia Ratnasamy, UC Berkeley and Google",
-        "Anees Shaikh and Rob Shakir, Google"
-      ],
-      "keywords": [],
-      "abstract": "We present CrossCheck, a system that validates inputs to the Software-Defined Networking (SDN) controller in a Wide Area Network (WAN). By detecting incorrect inputs—often stemming from bugs in the SDN control infrastructure—CrossCheck alerts operators before they trigger network outages. Our analysis at a large-scale WAN operator identifies invalid inputs as a leading cause of major outages, and we show how CrossCheck would have prevented those incidents. We deployed CrossCheck as a shadow validation system for four weeks in a production WAN, during which it accurately detected the single incident of invalid inputs that occurred while sustaining a 0% false positive rate under normal operation, hence imposing little additional burden on operators. In addition, we show through simulation that CrossCheck reliably detects a wide range of invalid inputs (e.g., detecting demand perturbations as small as 5% with 100% accuracy) and maintains a near-zero false positive rate for realistic levels of noisy, missing, or buggy telemetry data (e.g., sustaining zero false positives with up to 30% of corrupted telemetry data).",
-      "pdf_link": "https://www.usenix.org/conference/nsdi26/presentation/krentsel",
-      "forum_link": "https://www.usenix.org/conference/nsdi26/presentation/krentsel",
-      "submission_date": null,
-      "conference": "NSDI '26",
-      "source": "usenix",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 42.0,
-      "updated_at": "2026-07-21T08:54:22.928090+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-150",
       "paper_number": 150,
       "title": "Net-P4ct: Enhanced WAN Bandwidth Fair Sharing Using P4 Programmable Switches",
@@ -2226,28 +2249,6 @@
       "ratings": [],
       "score": 40.5,
       "updated_at": "2026-07-21T08:54:17.394352+00:00"
-    },
-    {
-      "forum_id": "usenix-osdi26-59",
-      "paper_number": 59,
-      "title": "Achieving Cloud-Grade SLOs for Local Mixture-of-Experts Inference through CPU–GPU Hybrid Design",
-      "authors": [
-        "Wenxin Wang, Tsinghua University",
-        "Yule Hou and Yu Ji, Xingyun Integrated Circuits Co., Ltd.",
-        "Peng Qu and Youhui Zhang, Tsinghua University and Beijing National Research Center for Information Science and Technology"
-      ],
-      "keywords": [],
-      "abstract": "Local deployment of large Mixture-of-Experts (MoE) models falls short of the service quality achieved in cloud-scale environments, even under low-concurrency workloads. We identify four key gaps in local MoE inference: reliance on capacity-reduced models (quantized, distilled, rerouted), inability to meet 30-second TTFT for long prefills (>12K), sub-baseline decode throughput (<20 tokens/s), and poor concurrency under mixed prefill–decode and batched decode workloads. We present a CPU–GPU hybrid system that achieves cloud-level SLOs on dual-socket commodity CPUs and consumer GPUs by (1) stream-loading prefill (SLP), boosting prefill throughput to 1,200 tokens/s and enabling 32K prompts within 30 seconds; (2) distributed SLP (DSLP) with SmallEP expert parallelism, reaching 1,800 tokens/s and 45K prompts in 30 seconds on two RTX 5090s; (3) intra-node prefill–decode disaggregation with zero-copy shared weights and a dual-batch attention–MoE overlap scheme, sustaining concurrency with <15% latency increase and 50% throughput gains; (4) an AVX-512–optimized FP8 GEMV kernel, enabling native CPU FP8 inference while delivering 4–5× lower CPU latency; and (5) fine-grained CPU parallelism that attains 28 tokens/s on INT4 DeepSeek-V3 and 21.5 tokens/s on intact FP8 V3. Evaluations show our system delivers cloud-level QoS for flagship MoE models on consumer CPU–GPU platforms, reshaping local deployment with intact, original-precision inference and enabling high-quality, cost-effective access without datacenter infrastructure.",
-      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/wang-wenxin",
-      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/wang-wenxin",
-      "submission_date": null,
-      "conference": "OSDI '26",
-      "source": "usenix",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 40.0,
-      "updated_at": "2026-07-21T08:54:17.398727+00:00"
     },
     {
       "forum_id": "usenix-fast26-7",
@@ -2387,6 +2388,27 @@
       "ratings": [],
       "score": 37.0,
       "updated_at": "2026-07-21T08:54:22.939070+00:00"
+    },
+    {
+      "forum_id": "usenix-nsdi26-20",
+      "paper_number": 20,
+      "title": "Checkmate: Zero Performance Overhead Model Checkpointing via Network Gradient Replication",
+      "authors": [
+        "Ankit Bhardwaj, Tufts University",
+        "Weiyang Wang, Jeremy Carin, Adam Belay, and Manya Ghobadi, Massachusetts Institute of Technology"
+      ],
+      "keywords": [],
+      "abstract": "This paper presents Checkmate, a system that enables per-iteration checkpointing in DNN training without any training slowdown. The traditional approach to checkpointing requires a pause in training to copy model states to a separate location, allowing the state to be restored in the event of failure. This approach fundamentally has a tradeoff between the frequency of checkpoints and the cost of a failure. We avoid this tradeoff; our key insight is that in data-parallel training, all information necessary to create a checkpoint already exists in the network as gradients. Our core contribution is a new multicast abstraction that simultaneously delivers gradients to a separate CPU-based shadow cluster. The shadow maintains a checkpoint by applying those gradients to a copy of the model. Our evaluation shows that Checkmate performs per-iteration checkpointing with training throughput comparable to an ideal no-checkpoint baseline. Checkmate achieves 5 to 34.5× more frequent checkpointing compared to state-of-the-art checkpointing systems, resulting in 80% to 97.1% reduction in repeated work per failure. At the same checkpointing frequency, Checkmate delivers 1.3× to 6.5× throughput compared to other systems.",
+      "pdf_link": "https://www.usenix.org/conference/nsdi26/presentation/bhardwaj",
+      "forum_link": "https://www.usenix.org/conference/nsdi26/presentation/bhardwaj",
+      "submission_date": null,
+      "conference": "NSDI '26",
+      "source": "usenix",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 37.0,
+      "updated_at": "2026-07-21T08:54:22.926166+00:00"
     },
     {
       "forum_id": "usenix-osdi26-6",
@@ -2729,30 +2751,6 @@
       "ratings": [],
       "score": 35.0,
       "updated_at": "2026-07-21T08:54:22.928440+00:00"
-    },
-    {
-      "forum_id": "usenix-nsdi26-133",
-      "paper_number": 133,
-      "title": "Agentix: An Efficient Serving Engine for LLM Agents as General Programs",
-      "authors": [
-        "Michael Luo, University of California, Berkeley, and Google DeepMind",
-        "Xiaoxiang Shi, Shanghai Jiao Tong University",
-        "Colin Cai, Tianjun Zhang, Justin Wong, and Yichuan Wang, University of California, Berkeley",
-        "Chi Wang, Yanping Huang, and Zhifeng Chen, Google DeepMind",
-        "Joseph E. Gonzalez and Ion Stoica, University of California, Berkeley"
-      ],
-      "keywords": [],
-      "abstract": "Large language model (LLM) applications are evolving beyond simple chatbots into dynamic, general-purpose agentic programs, which scale LLM calls and output tokens to help AI agents reason, explore, and solve complex tasks. However, existing LLM serving systems ignore dependencies between programs and calls, missing significant opportunities for optimization. Our analysis reveals that programs submitted to LLM serving engines experience long cumulative wait times, primarily due to head-of-line blocking at both the individual LLM request and the program. To address this, we introduce Agentix, an LLM serving system that treats programs as first-class citizens to minimize their end-to-end latencies. Agentix intercepts LLM calls submitted by programs, enriching schedulers with program-level context. We propose two scheduling algorithms—for single-threaded and distributed programs—that preempt and prioritize LLM calls based on their programs' previously completed calls. Our evaluation demonstrates that across diverse LLMs and agentic workloads, Agentix improves throughput of programs by 4-15× at the same latency compared to state-of-the-art systems, such as vLLM.",
-      "pdf_link": "https://www.usenix.org/conference/nsdi26/presentation/luo",
-      "forum_link": "https://www.usenix.org/conference/nsdi26/presentation/luo",
-      "submission_date": null,
-      "conference": "NSDI '26",
-      "source": "usenix",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-07-21T08:54:22.940225+00:00"
     },
     {
       "forum_id": "dblp-eurosys26-68",
@@ -4235,6 +4233,48 @@
       "updated_at": "2026-07-21T08:54:26.742068+00:00"
     },
     {
+      "forum_id": "usenix-osdi26-124",
+      "paper_number": 124,
+      "title": "Unleash All Cores: Asymmetry-Aware Scalable DNN Inference on Mobile CPUs",
+      "authors": [
+        "Qianlong Sang, Puyi He, Huanghuang Liang, and Yili Gong, Wuhan University",
+        "Chuang Hu and Xiaobo Zhou, University of Macau",
+        "Dazhao Cheng, Wuhan University"
+      ],
+      "keywords": [],
+      "abstract": "Asymmetric Multiprocessing (AMP) CPUs are now central to mobile devices, but exploiting them for efficient Deep Neural Network (DNN) inference remains challenging. Naive scheduling across heterogeneous cores often triggers a performance-collapse paradox: adding LITTLE cores degrades throughput due to workload imbalance. Existing approaches rely on static partitioning, which partially mitigates imbalance but fails to adapt to runtime interference, incurs extra task acquisition overhead, and ignores core–kernel affinities—leaving substantial performance untapped. We present SANI, a scalable, asymmetry-aware inference framework that unleashes the full potential of AMP architectures. SANI introduces three key mechanisms: (1) an affinity-aware kernel issuer that selects cluster-optimal kernels to exploit core–kernel efficiency from the outset; (2) an adaptive granularity scheduler that dynamically merges or splits tasks, balancing load under runtime interference by mapping smaller tasks to slower cores and larger ones to faster cores; and (3) an on-demand kernel switcher that efficiently transforms kernels during workload migration, preserving affinity across clusters. We implement SANI atop Arm-CL and evaluate it on five mobile SoCs. SANI reduces DNN inference latency by 17.6%–23.7% on average (up to 29.5% on some models) while lowering energy consumption by up to 39% compared to state-of-the-art baselines, scaling efficiently across both symmetric and asymmetric CPU configurations.",
+      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/sang",
+      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/sang",
+      "submission_date": null,
+      "conference": "OSDI '26",
+      "source": "usenix",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 27.0,
+      "updated_at": "2026-07-21T08:54:17.406057+00:00"
+    },
+    {
+      "forum_id": "usenix-fast26-5",
+      "paper_number": 5,
+      "title": "SolidAttention: Low-Latency SSD-based Serving on Memory-Constrained PCs",
+      "authors": [
+        "Xinrui Zheng, Dongliang Wei, Jianxiang Gao, Yixin Song, Zeyu Mi, and Haibo Chen, Shanghai Jiao Tong University"
+      ],
+      "keywords": [],
+      "abstract": "AI personal computers (AIPCs) enable the local deployment of large language model (LLM) inference, offering enhanced privacy guarantees and customizable serving. However, such deployments are constrained by limited memory capacity, primarily due to the substantial key-value (KV) cache overhead. This paper introduces SolidAttention, an LLM inference engine which addresses these limitations through a tight co-design of dynamic attention sparsity algorithms and SSD-based storage management. Specifically, to maximize SSD bandwidth utilization, SolidAttention consolidates multiple KV pairs into coarse-grained blocks and implements speculative prefetching mechanisms that exploit temporal locality in sparse attention. By fine-grained orchestration of computation and I/O operations while reusing synchronization points, SolidAttention further minimizes SSD-induced blocking latency. With a 128k-token context, SolidAttention improves the inference speed by up to 3.1× and reduces the KV cache memory footprint by up to 98% without compromising inference accuracy.",
+      "pdf_link": "https://www.usenix.org/conference/fast26/presentation/zheng",
+      "forum_link": "https://www.usenix.org/conference/fast26/presentation/zheng",
+      "submission_date": null,
+      "conference": "FAST '26",
+      "source": "usenix",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 27.0,
+      "updated_at": "2026-07-21T08:54:26.738134+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-4",
       "paper_number": 4,
       "title": "PolicyCache: Intra-flow Learning in Congestion Control",
@@ -4540,6 +4580,55 @@
       "ratings": [],
       "score": 23.0,
       "updated_at": "2026-07-21T08:54:22.936633+00:00"
+    },
+    {
+      "forum_id": "usenix-osdi26-123",
+      "paper_number": 123,
+      "title": "LifeLine: An Object-Page Lifetime Alignment GC Enabling Minimal Memory Copying for Mobile Devices",
+      "authors": [
+        "Jiacheng Huang and Yunmo Zhang, City University of Hong Kong",
+        "Qingan Li, Wuhan University",
+        "Junqiao Qiu, City University of Hong Kong",
+        "Chun Jason Xue, Mohamed bin Zayed University of Artificial Intelligence"
+      ],
+      "keywords": [],
+      "abstract": "LifeLine is a garbage collection (GC) framework for Android that tackles the fundamental object–page lifetime mismatch. Existing copying collectors move objects, while the OS manages pages; mixed lifetimes within a page force excessive object copying instead of efficient page remapping. LifeLine explicitly aligns object lifetimes with physical pages via three components. First, lifetime-based graph partitioning monitors reference updates and partitions the object graph into subgraphs with strong lifetime affinity. Second, lifetime-aligned GC packs these subgraphs into pages so that each page contains almost entirely live or dead objects, enabling effective page-level management. Third, near-zero-copy GC exploits this bimodal per-page liveness by remapping mostly-live pages and copying only the few surviving objects from mostly-dead pages in cooperation with the OS. Implemented in the Android Runtime and evaluated on real smartphones and popular mobile applications, LifeLine significantly cuts GC copy volume by 57.4%, reduces GC time by 22.7% on average, and improves user-visible responsiveness with modest CPU and memory overhead.",
+      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/huang-jiacheng",
+      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/huang-jiacheng",
+      "submission_date": null,
+      "conference": "OSDI '26",
+      "source": "usenix",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 23.0,
+      "updated_at": "2026-07-21T08:54:17.405934+00:00"
+    },
+    {
+      "forum_id": "usenix-nsdi26-17",
+      "paper_number": 17,
+      "title": "SPLIDT: Partitioned Decision Trees for Scalable Stateful Inference at Line Rate",
+      "authors": [
+        "Murayyiam Parvez, Purdue University",
+        "Annus Zulfiqar, University of Michigan",
+        "Roman Beltiukov, UCSB",
+        "Shir Landau Feibish, University of Haifa",
+        "Walter Willinger, Northwestern University",
+        "Arpit Gupta, UCSB",
+        "Muhammad Shahbaz, University of Michigan"
+      ],
+      "keywords": [],
+      "abstract": "Machine learning (ML) is increasingly being deployed in programmable data planes (switches and SmartNICs) to enable real-time traffic analysis, security monitoring, and in-network decision-making. Decision trees (DTs) are particularly well-suited for these tasks due to their interpretability and compatibility with data-plane architectures, i.e., match-action tables (MATs). However, existing in-network DT implementations are constrained by the need to compute all input features upfront, forcing models to rely on a small, fixed set of features per flow. This significantly limits model accuracy and scalability under stringent hardware resource constraints. We present SPLIDT, a system that rethinks DT deployment in the data plane by enabling partitioned inference over sliding windows of packets. SPLIDT introduces two key innovations: (1) it groups individual subtrees of a DT into partitions and allows each subtree to have its own feature set, and (2) it leverages an in-band control channel (via recirculation) to reuse data-plane resources (both stateful registers and match keys) across partitions at line rate. These insights allow SPLIDT to scale the number of stateful features a model can use without exceeding hardware limits. To support this architecture, SPLIDT incorporates a custom training and design-space exploration (DSE) framework that jointly optimizes feature allocation, tree partitioning, and DT model depth. Evaluation across multiple real-world datasets shows that SPLIDT achieves higher accuracy while supporting up to 5x more stateful features than prior approaches (e.g., NetBeacon and Leo). It maintains the same low time-to-detection (TTD) as these systems, while scaling to millions of flows with minimal recirculation overhead (≤ 0.05%).",
+      "pdf_link": "https://www.usenix.org/conference/nsdi26/presentation/parvez",
+      "forum_link": "https://www.usenix.org/conference/nsdi26/presentation/parvez",
+      "submission_date": null,
+      "conference": "NSDI '26",
+      "source": "usenix",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 23.0,
+      "updated_at": "2026-07-21T08:54:22.925838+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-134",
@@ -4864,28 +4953,6 @@
       "updated_at": "2026-07-21T08:54:17.401723+00:00"
     },
     {
-      "forum_id": "usenix-osdi26-124",
-      "paper_number": 124,
-      "title": "Unleash All Cores: Asymmetry-Aware Scalable DNN Inference on Mobile CPUs",
-      "authors": [
-        "Qianlong Sang, Puyi He, Huanghuang Liang, and Yili Gong, Wuhan University",
-        "Chuang Hu and Xiaobo Zhou, University of Macau",
-        "Dazhao Cheng, Wuhan University"
-      ],
-      "keywords": [],
-      "abstract": "Asymmetric Multiprocessing (AMP) CPUs are now central to mobile devices, but exploiting them for efficient Deep Neural Network (DNN) inference remains challenging. Naive scheduling across heterogeneous cores often triggers a performance-collapse paradox: adding LITTLE cores degrades throughput due to workload imbalance. Existing approaches rely on static partitioning, which partially mitigates imbalance but fails to adapt to runtime interference, incurs extra task acquisition overhead, and ignores core–kernel affinities—leaving substantial performance untapped. We present SANI, a scalable, asymmetry-aware inference framework that unleashes the full potential of AMP architectures. SANI introduces three key mechanisms: (1) an affinity-aware kernel issuer that selects cluster-optimal kernels to exploit core–kernel efficiency from the outset; (2) an adaptive granularity scheduler that dynamically merges or splits tasks, balancing load under runtime interference by mapping smaller tasks to slower cores and larger ones to faster cores; and (3) an on-demand kernel switcher that efficiently transforms kernels during workload migration, preserving affinity across clusters. We implement SANI atop Arm-CL and evaluate it on five mobile SoCs. SANI reduces DNN inference latency by 17.6%–23.7% on average (up to 29.5% on some models) while lowering energy consumption by up to 39% compared to state-of-the-art baselines, scaling efficiently across both symmetric and asymmetric CPU configurations.",
-      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/sang",
-      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/sang",
-      "submission_date": null,
-      "conference": "OSDI '26",
-      "source": "usenix",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 17.0,
-      "updated_at": "2026-07-21T08:54:17.406057+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-126",
       "paper_number": 126,
       "title": "qTPU: Hybrid Tensor Networks for Quantum-Classical Acceleration",
@@ -4933,26 +5000,6 @@
       "updated_at": "2026-07-21T08:54:22.932875+00:00"
     },
     {
-      "forum_id": "usenix-fast26-5",
-      "paper_number": 5,
-      "title": "SolidAttention: Low-Latency SSD-based Serving on Memory-Constrained PCs",
-      "authors": [
-        "Xinrui Zheng, Dongliang Wei, Jianxiang Gao, Yixin Song, Zeyu Mi, and Haibo Chen, Shanghai Jiao Tong University"
-      ],
-      "keywords": [],
-      "abstract": "AI personal computers (AIPCs) enable the local deployment of large language model (LLM) inference, offering enhanced privacy guarantees and customizable serving. However, such deployments are constrained by limited memory capacity, primarily due to the substantial key-value (KV) cache overhead. This paper introduces SolidAttention, an LLM inference engine which addresses these limitations through a tight co-design of dynamic attention sparsity algorithms and SSD-based storage management. Specifically, to maximize SSD bandwidth utilization, SolidAttention consolidates multiple KV pairs into coarse-grained blocks and implements speculative prefetching mechanisms that exploit temporal locality in sparse attention. By fine-grained orchestration of computation and I/O operations while reusing synchronization points, SolidAttention further minimizes SSD-induced blocking latency. With a 128k-token context, SolidAttention improves the inference speed by up to 3.1× and reduces the KV cache memory footprint by up to 98% without compromising inference accuracy.",
-      "pdf_link": "https://www.usenix.org/conference/fast26/presentation/zheng",
-      "forum_link": "https://www.usenix.org/conference/fast26/presentation/zheng",
-      "submission_date": null,
-      "conference": "FAST '26",
-      "source": "usenix",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 17.0,
-      "updated_at": "2026-07-21T08:54:26.738134+00:00"
-    },
-    {
       "forum_id": "usenix-fast26-18",
       "paper_number": 18,
       "title": "Fast Cloud Storage for AI Jobs via Grouped I/O API with Transparent Read/Write Optimizations",
@@ -4975,6 +5022,30 @@
       "ratings": [],
       "score": 17.0,
       "updated_at": "2026-07-21T08:54:26.740162+00:00"
+    },
+    {
+      "forum_id": "usenix-osdi26-109",
+      "paper_number": 109,
+      "title": "TrainMover: An Interruption-Resilient Runtime for ML Training",
+      "authors": [
+        "ChonLam Lao, Harvard University and Alibaba Group",
+        "Jiaqi Gao, Jiamin Cao, Zhipeng Zhang, Pengcheng Zhang, Jiangfei Duan, Zhilong Zheng, Yu Guan, Yichi Xu, Yong Li, and Zhengping Qian, Alibaba Group",
+        "Aditya Akella, The University of Texas at Austin",
+        "Minlan Yu, Harvard University",
+        "Ennan Zhai, Dennis Cai, and Jingren Zhou, Alibaba Group"
+      ],
+      "keywords": [],
+      "abstract": "Large-scale ML training jobs are frequently interrupted by hardware and software anomalies, failures, and management events. Existing solutions like checkpoint-restart or runtime reconfiguration suffer from long downtimes and degraded performance. We present TrainMover, a resilient LLM training runtime that leverages elastic and standby machines to handle interruptions with minimal downtime and zero memory overhead. To achieve these goals, TrainMover introduces three key techniques: two-phase, delta-based communication group setup; communication-free sandboxed warmup; and general standby design that enables failure recovery from any role. Our evaluation shows that TrainMover consistently achieves around 20 seconds of downtime when handling various interruptions at the 1024-GPU scale. TrainMover is projected to reduce wasted GPU hours by 55% compared to the best alternative, saving 1.4 million GPU-hours per week at the 64K-GPU scale.",
+      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/lao",
+      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/lao",
+      "submission_date": null,
+      "conference": "OSDI '26",
+      "source": "usenix",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 16.5,
+      "updated_at": "2026-07-21T08:54:17.404486+00:00"
     },
     {
       "forum_id": "usenix-osdi26-18",
@@ -5093,29 +5164,6 @@
       "ratings": [],
       "score": 16.0,
       "updated_at": "2026-07-21T08:54:22.935344+00:00"
-    },
-    {
-      "forum_id": "2607.18541",
-      "paper_number": -1,
-      "title": "What Governs Decode Throughput in Absolute-Offset GPU LZ77? A Work-Granularity Mechanism and an Encode-Time Min-Match-Length Lever",
-      "authors": [
-        "Yakiv Shavidze"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.18541v1 Announce Type: new \nAbstract: The ACEAPEX line of work established a lossless LZ77 format whose back-references are absolute output positions, giving parallel, compressed-resident GPU decode with sub-millisecond region seek. What it did not establish is what governs the decode throughput of such a format, or how to improve it. This paper answers both. Through controlled ablations on an NVIDIA H100 we show that decode throughput is governed not by occupancy, compute, address scatter, or launch parallelism, but by work granularity: throughput is a function of the average match length, because a short match leaves most lanes of a cooperating warp idle. A synthetic copy kernel confirms a 3.5x throughput span (212 to 744 GB/s) as average match length grows from 32 to 1024 byt",
-      "pdf_link": "https://arxiv.org/pdf/2607.18541.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.18541",
-      "submission_date": "2026-07-22T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 15.5,
-      "updated_at": "2026-07-22T08:29:39.368688+00:00"
     },
     {
       "forum_id": "usenix-osdi26-116",
@@ -5783,29 +5831,6 @@
       "updated_at": "2026-07-21T08:54:17.402713+00:00"
     },
     {
-      "forum_id": "usenix-osdi26-123",
-      "paper_number": 123,
-      "title": "LifeLine: An Object-Page Lifetime Alignment GC Enabling Minimal Memory Copying for Mobile Devices",
-      "authors": [
-        "Jiacheng Huang and Yunmo Zhang, City University of Hong Kong",
-        "Qingan Li, Wuhan University",
-        "Junqiao Qiu, City University of Hong Kong",
-        "Chun Jason Xue, Mohamed bin Zayed University of Artificial Intelligence"
-      ],
-      "keywords": [],
-      "abstract": "LifeLine is a garbage collection (GC) framework for Android that tackles the fundamental object–page lifetime mismatch. Existing copying collectors move objects, while the OS manages pages; mixed lifetimes within a page force excessive object copying instead of efficient page remapping. LifeLine explicitly aligns object lifetimes with physical pages via three components. First, lifetime-based graph partitioning monitors reference updates and partitions the object graph into subgraphs with strong lifetime affinity. Second, lifetime-aligned GC packs these subgraphs into pages so that each page contains almost entirely live or dead objects, enabling effective page-level management. Third, near-zero-copy GC exploits this bimodal per-page liveness by remapping mostly-live pages and copying only the few surviving objects from mostly-dead pages in cooperation with the OS. Implemented in the Android Runtime and evaluated on real smartphones and popular mobile applications, LifeLine significantly cuts GC copy volume by 57.4%, reduces GC time by 22.7% on average, and improves user-visible responsiveness with modest CPU and memory overhead.",
-      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/huang-jiacheng",
-      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/huang-jiacheng",
-      "submission_date": null,
-      "conference": "OSDI '26",
-      "source": "usenix",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-07-21T08:54:17.405934+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-127",
       "paper_number": 127,
       "title": "Acumen: A Platform for Encrypted and Accountable Collaborative Editing",
@@ -5825,32 +5850,6 @@
       "ratings": [],
       "score": 13.0,
       "updated_at": "2026-07-21T08:54:17.406493+00:00"
-    },
-    {
-      "forum_id": "usenix-nsdi26-17",
-      "paper_number": 17,
-      "title": "SPLIDT: Partitioned Decision Trees for Scalable Stateful Inference at Line Rate",
-      "authors": [
-        "Murayyiam Parvez, Purdue University",
-        "Annus Zulfiqar, University of Michigan",
-        "Roman Beltiukov, UCSB",
-        "Shir Landau Feibish, University of Haifa",
-        "Walter Willinger, Northwestern University",
-        "Arpit Gupta, UCSB",
-        "Muhammad Shahbaz, University of Michigan"
-      ],
-      "keywords": [],
-      "abstract": "Machine learning (ML) is increasingly being deployed in programmable data planes (switches and SmartNICs) to enable real-time traffic analysis, security monitoring, and in-network decision-making. Decision trees (DTs) are particularly well-suited for these tasks due to their interpretability and compatibility with data-plane architectures, i.e., match-action tables (MATs). However, existing in-network DT implementations are constrained by the need to compute all input features upfront, forcing models to rely on a small, fixed set of features per flow. This significantly limits model accuracy and scalability under stringent hardware resource constraints. We present SPLIDT, a system that rethinks DT deployment in the data plane by enabling partitioned inference over sliding windows of packets. SPLIDT introduces two key innovations: (1) it groups individual subtrees of a DT into partitions and allows each subtree to have its own feature set, and (2) it leverages an in-band control channel (via recirculation) to reuse data-plane resources (both stateful registers and match keys) across partitions at line rate. These insights allow SPLIDT to scale the number of stateful features a model can use without exceeding hardware limits. To support this architecture, SPLIDT incorporates a custom training and design-space exploration (DSE) framework that jointly optimizes feature allocation, tree partitioning, and DT model depth. Evaluation across multiple real-world datasets shows that SPLIDT achieves higher accuracy while supporting up to 5x more stateful features than prior approaches (e.g., NetBeacon and Leo). It maintains the same low time-to-detection (TTD) as these systems, while scaling to millions of flows with minimal recirculation overhead (≤ 0.05%).",
-      "pdf_link": "https://www.usenix.org/conference/nsdi26/presentation/parvez",
-      "forum_link": "https://www.usenix.org/conference/nsdi26/presentation/parvez",
-      "submission_date": null,
-      "conference": "NSDI '26",
-      "source": "usenix",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-07-21T08:54:22.925838+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-55",
@@ -6610,27 +6609,6 @@
       "updated_at": "2026-07-21T08:54:22.941047+00:00"
     },
     {
-      "forum_id": "usenix-nsdi26-20",
-      "paper_number": 20,
-      "title": "Checkmate: Zero Performance Overhead Model Checkpointing via Network Gradient Replication",
-      "authors": [
-        "Ankit Bhardwaj, Tufts University",
-        "Weiyang Wang, Jeremy Carin, Adam Belay, and Manya Ghobadi, Massachusetts Institute of Technology"
-      ],
-      "keywords": [],
-      "abstract": "This paper presents Checkmate, a system that enables per-iteration checkpointing in DNN training without any training slowdown. The traditional approach to checkpointing requires a pause in training to copy model states to a separate location, allowing the state to be restored in the event of failure. This approach fundamentally has a tradeoff between the frequency of checkpoints and the cost of a failure. We avoid this tradeoff; our key insight is that in data-parallel training, all information necessary to create a checkpoint already exists in the network as gradients. Our core contribution is a new multicast abstraction that simultaneously delivers gradients to a separate CPU-based shadow cluster. The shadow maintains a checkpoint by applying those gradients to a copy of the model. Our evaluation shows that Checkmate performs per-iteration checkpointing with training throughput comparable to an ideal no-checkpoint baseline. Checkmate achieves 5 to 34.5× more frequent checkpointing compared to state-of-the-art checkpointing systems, resulting in 80% to 97.1% reduction in repeated work per failure. At the same checkpointing frequency, Checkmate delivers 1.3× to 6.5× throughput compared to other systems.",
-      "pdf_link": "https://www.usenix.org/conference/nsdi26/presentation/bhardwaj",
-      "forum_link": "https://www.usenix.org/conference/nsdi26/presentation/bhardwaj",
-      "submission_date": null,
-      "conference": "NSDI '26",
-      "source": "usenix",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 7.0,
-      "updated_at": "2026-07-21T08:54:22.926166+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-69",
       "paper_number": 69,
       "title": "Come Hell or Still Water: Alleviating Tail Latency in Cloud Block Store",
@@ -6699,30 +6677,6 @@
       "ratings": [],
       "score": 6.5,
       "updated_at": "2026-07-21T08:54:17.403311+00:00"
-    },
-    {
-      "forum_id": "usenix-osdi26-109",
-      "paper_number": 109,
-      "title": "TrainMover: An Interruption-Resilient Runtime for ML Training",
-      "authors": [
-        "ChonLam Lao, Harvard University and Alibaba Group",
-        "Jiaqi Gao, Jiamin Cao, Zhipeng Zhang, Pengcheng Zhang, Jiangfei Duan, Zhilong Zheng, Yu Guan, Yichi Xu, Yong Li, and Zhengping Qian, Alibaba Group",
-        "Aditya Akella, The University of Texas at Austin",
-        "Minlan Yu, Harvard University",
-        "Ennan Zhai, Dennis Cai, and Jingren Zhou, Alibaba Group"
-      ],
-      "keywords": [],
-      "abstract": "Large-scale ML training jobs are frequently interrupted by hardware and software anomalies, failures, and management events. Existing solutions like checkpoint-restart or runtime reconfiguration suffer from long downtimes and degraded performance. We present TrainMover, a resilient LLM training runtime that leverages elastic and standby machines to handle interruptions with minimal downtime and zero memory overhead. To achieve these goals, TrainMover introduces three key techniques: two-phase, delta-based communication group setup; communication-free sandboxed warmup; and general standby design that enables failure recovery from any role. Our evaluation shows that TrainMover consistently achieves around 20 seconds of downtime when handling various interruptions at the 1024-GPU scale. TrainMover is projected to reduce wasted GPU hours by 55% compared to the best alternative, saving 1.4 million GPU-hours per week at the 64K-GPU scale.",
-      "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/lao",
-      "forum_link": "https://www.usenix.org/conference/osdi26/presentation/lao",
-      "submission_date": null,
-      "conference": "OSDI '26",
-      "source": "usenix",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 6.5,
-      "updated_at": "2026-07-21T08:54:17.404486+00:00"
     },
     {
       "forum_id": "usenix-osdi26-133",
@@ -10208,52 +10162,6 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
-    },
-    {
-      "forum_id": "2607.18097",
-      "paper_number": -1,
-      "title": "SuperPass: Fast-Tracking Blocking Threads to Mitigate Priority Inversion on Mobile Devices",
-      "authors": [
-        "Lei Li, Yu Liang, Riwei Pan, Youcheng Sun, Nan Guan, Tei-Wei Kuo, Chun Jason Xue"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.18097v2 Announce Type: replace \nAbstract: Priority inversion occurs when a high-priority thread is delayed by a lower-priority one. Although well studied in real-time systems, its impact in general-purpose OSes (e.g., Android) remains underexplored. On Android, we find that priority inversions happen frequently and can delay latency-critical threads, degrading user experience. For example, the foreground app's UI thread is frequently blocked by low-priority threads, with blocking durations of up to 210 ms, enough to cause dropped frames. Existing solutions designed for real-time systems fail to eliminate long priority-inversion blockings on latency-critical threads and may introduce high overhead on Android. To solve this problem, we uncover two insights on Android: 1) long bloc",
-      "pdf_link": "https://arxiv.org/pdf/2607.18097.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.18097",
-      "submission_date": "2026-07-22T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-22T08:29:39.274253+00:00"
-    },
-    {
-      "forum_id": "2607.18957",
-      "paper_number": -1,
-      "title": "InstantInfer: Enabling Fast LLM Cold Start with Communicating Finite Automata",
-      "authors": [
-        "Yitao Yuan (Peking University, Scitix AI), Yongchao He (Scitix AI), Shaoke Fang (Peking University), Wenfei Wu (Peking University)"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.18957v1 Announce Type: new \nAbstract: Cold starts in large language model (LLM) inference services significantly affect user experience, yet they remain inefficient due to sequential initialization and a massive number of fine-grained I/O requests issued by complex software components. Although refactoring the program can yield advantages such as concurrent execution and I/O merging, this approach is error-prone and carries correctness risks when dealing with massive, heterogeneous components. We propose the Communicating Finite Automata (CFA) abstraction to systematically analyze cross-component optimization opportunities, and design a programming framework to enable CFA-based component program refactoring. This framework preserves the original sequential program structure whil",
-      "pdf_link": "https://arxiv.org/pdf/2607.18957.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.18957",
-      "submission_date": "2026-07-22T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-22T08:29:39.369186+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",
