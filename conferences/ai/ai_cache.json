@@ -1,7 +1,7 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-07-23T08:28:59.826507+00:00",
+  "last_updated": "2026-07-24T08:23:54.299499+00:00",
   "paper_count": 500,
   "papers": [
     {
@@ -1912,6 +1912,29 @@
       "ratings": [],
       "score": 91.5,
       "updated_at": "2026-07-23T08:28:58.699643+00:00"
+    },
+    {
+      "forum_id": "2607.20557",
+      "paper_number": -1,
+      "title": "Monkey King Bang: A Unified Scientific Multimodal Foundation Model",
+      "authors": [
+        "Hesen Chen, Xinyu Su, Xiaomeng Yang, Yuetan Lin, Zixiong Yang, Junyi An, Fenglei Cao, Yifeng Jiao, Yunqi Zhang, Yuan Cheng, Zhiyu Tan, Hao Li, Libo Wu, Yuan Qi"
+      ],
+      "keywords": [
+        "cs.AI",
+        "AI for Science"
+      ],
+      "abstract": "arXiv:2607.20557v1 Announce Type: cross \nAbstract: Scientific discovery is increasingly shifting from isolated disciplines to multi-domain reasoning, and AI for science faces a similar transition. Existing systems are either specialised for individual domains or unify scientific data mainly through text tokenisation and prompt-based interfaces, limiting their ability to handle diverse scientific inputs, produce modality-native outputs, and support joint understanding, reasoning, and generation across scientific domains. We introduce MKB, a unified scientific multimodal model for both understanding and generation, built around a shared Transformer backbone and modality-tailored encoders, adapters, and decoders. MKB covers six scientific branches, including DNA, RNA, proteins, small molecule",
+      "pdf_link": "https://arxiv.org/pdf/2607.20557.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.20557",
+      "submission_date": "2026-07-24T04:00:00+00:00",
+      "conference": "AI for Science",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 89.5,
+      "updated_at": "2026-07-24T08:23:15.444199+00:00"
     },
     {
       "forum_id": "neurips25-18",
@@ -12327,32 +12350,6 @@
       "ratings": [],
       "score": 34.5,
       "updated_at": "2026-07-17T08:05:52.793918+00:00"
-    },
-    {
-      "forum_id": "neurips25-526",
-      "paper_number": 526,
-      "title": "Activation Control for Efficiently Eliciting Long Chain-of-thought Ability of Language Models",
-      "authors": [
-        "Zekai Zhao",
-        "Qi Liu",
-        "Kun Zhou",
-        "Zihan Liu",
-        "Yifei Shao",
-        "Zhiting Hu",
-        "Biwei Huang"
-      ],
-      "keywords": [],
-      "abstract": "",
-      "pdf_link": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/1951d443ea67f8fbcfe56622734a2edf-Abstract-Conference.html",
-      "forum_link": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/1951d443ea67f8fbcfe56622734a2edf-Abstract-Conference.html",
-      "submission_date": null,
-      "conference": "NeurIPS '25",
-      "source": "neurips",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 34.5,
-      "updated_at": "2026-07-17T08:05:52.794662+00:00"
     }
   ]
 }

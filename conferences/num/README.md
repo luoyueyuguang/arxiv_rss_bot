@@ -1,6 +1,6 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-07-23 08:28:59 UTC
+- **Last Updated**: 2026-07-24 08:23:54 UTC
 - **Total Filtered Papers**: 1
 - **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
@@ -9,4 +9,4 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [On unconventional discretisations](https://arxiv.org/abs/2607.19413) | `ARXIV` | 1.0 |
+| 1 | [On Global Rates for Regularization Methods based on Secant Derivative Approximations](https://arxiv.org/abs/2509.07580) | `ARXIV` | 2.0 |

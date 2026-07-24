@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-07-23T08:28:23.031282+00:00",
-  "paper_count": 438,
+  "last_updated": "2026-07-24T08:23:15.035775+00:00",
+  "paper_count": 442,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -498,6 +498,29 @@
       "ratings": [],
       "score": 74.0,
       "updated_at": "2026-07-21T08:54:17.395824+00:00"
+    },
+    {
+      "forum_id": "2607.20639",
+      "paper_number": -1,
+      "title": "STORM: RDMA-based Monte Carlo Transport Scheme for Distributed-Memory Particle Simulations",
+      "authors": [
+        "Maor Mizrachi, Barak Raveh, Elad Steinberg"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.20639v1 Announce Type: cross \nAbstract: Monte Carlo particle transport enables high-fidelity astrophysical radiation and neutrino simulations - from core-collapse supernovae and neutron-star mergers to accretion flows - by handling multidimensional geometries, frequency dependence, and moving media without angular discretization. However, inter-rank communication limits scalability on unstructured meshes: standard two-sided MPI requires receivers to post receives and poll completions, creating per-iteration progress overhead that grows with the number of communication partners. Such problems have not demonstrated high scaling efficiency at $O(10^4)$ cores. We present STORM (Scalable Transport via One-sided Remote Memory), an open-source library for Monte Carlo transport on gener",
+      "pdf_link": "https://arxiv.org/pdf/2607.20639.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.20639",
+      "submission_date": "2026-07-24T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 71.5,
+      "updated_at": "2026-07-24T08:23:10.802705+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-59",
@@ -3475,6 +3498,29 @@
       "updated_at": "2026-07-21T08:54:22.930905+00:00"
     },
     {
+      "forum_id": "2607.20881",
+      "paper_number": -1,
+      "title": "DMG: A Scalable and Efficient Memory-Disaggregated Graph Processing System",
+      "authors": [
+        "Yizou Chen, Tsun-Yu Yang, Zhisheng Hu, Baotong Lu, Ming-Chang Yang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.20881v1 Announce Type: cross \nAbstract: Traditional graph processing systems are built on monolithic servers, which couple a fixed ratio of compute and memory resources but often result in resource under-utilization in data centers. Although the disaggregated memory (DM) architecture has emerged to address this inefficiency, we identify that existing graph processing systems on DM remain highly impractical. They rely on unscalable architectures that fail to scale beyond a single memory node and a single compute node, and they require compute-side caches that are orders of magnitude larger than conventional practice in DM. To this end, this paper presents DMG, the first practical graph processing system on DM, which demonstrates superior system scalability and cache efficiency wh",
+      "pdf_link": "https://arxiv.org/pdf/2607.20881.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.20881",
+      "submission_date": "2026-07-24T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 32.5,
+      "updated_at": "2026-07-24T08:23:10.802741+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-41",
       "paper_number": 41,
       "title": "Count-Based Abstractions for Performance Verification of Contention Points",
@@ -5434,6 +5480,52 @@
       "ratings": [],
       "score": 14.5,
       "updated_at": "2026-07-21T08:54:26.739010+00:00"
+    },
+    {
+      "forum_id": "2607.21021",
+      "paper_number": -1,
+      "title": "Multimmit: Extending Blocks for Faster Finality",
+      "authors": [
+        "Andrew Lewis-Pye, Patrick O'Grady"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.21021v1 Announce Type: new \nAbstract: To meet the throughput demands of modern blockchain systems, protocols for State Machine Replication (SMR) increasingly have many processors disseminate blocks of transactions in parallel, with consensus then establishing a total ordering on the blocks of all producers. Such designs face a choice as to when a block may enter the ordering. Certified approaches wait for a quorum to attest a block's availability, which is robust but adds message delays to every transaction. Uncertified approaches let proposals reference blocks immediately, which is fast but degrades rapidly when referenced data must be fetched on the critical path. Raptr, the state of the art, takes a middle course, finalising the longest prefix of the leader's proposal that a ",
+      "pdf_link": "https://arxiv.org/pdf/2607.21021.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.21021",
+      "submission_date": "2026-07-24T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.0,
+      "updated_at": "2026-07-24T08:23:10.802245+00:00"
+    },
+    {
+      "forum_id": "2607.21224",
+      "paper_number": -1,
+      "title": "Controlled Periodic Synchronization for Efficient Data-Parallel Training",
+      "authors": [
+        "Imane Ettifouri, Mostapha Zbakh, Claude Tadonki"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.21224v1 Announce Type: new \nAbstract: Data-parallel training relies on frequent gradient synchronization across workers. Standard DDP synchronizes gradients at every iteration, which is effective on fast local-area networks but increasingly sensitive to communication latency and network variability in geographically distributed environments. Periodic methods such as LocalSGD reduce synchronization frequency but rely mainly on parameter averaging, which may be insufficient when worker trajectories diverge. This paper studies synchronization frequency as a systems parameter for communication-constrained distributed training. We evaluate Controlled Periodic Data Parallelism (CPDP), a PyTorch-DDP-compatible strategy that alternates local updates with a reconciliation step combining ",
+      "pdf_link": "https://arxiv.org/pdf/2607.21224.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.21224",
+      "submission_date": "2026-07-24T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.0,
+      "updated_at": "2026-07-24T08:23:10.802409+00:00"
     },
     {
       "forum_id": "usenix-osdi26-45",

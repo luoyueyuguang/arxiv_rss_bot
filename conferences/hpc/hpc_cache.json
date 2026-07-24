@@ -1,31 +1,77 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-07-23T08:28:19.834164+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-07-24T08:23:10.694135+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2407.20212",
+      "forum_id": "2607.21182",
       "paper_number": -1,
-      "title": "Distributed Quantum Approximate Optimization Algorithm on a Quantum-Centric Supercomputing Architecture",
+      "title": "Solving Large Traveling Salesman Problems (TSPs) by a Recursive Clustering Algorithm and a Scalable FPGA-Based Implementation",
       "authors": [
-        "Seongmin Kim, Vincent R. Pascuzzi, Zhihao Xu, Tengfei Luo, Eungkyu Lee, In-Saeng Suh"
+        "Junqi Huang, Hawraa Abbas Almurieb, T. Nandha Kumar, Haider A. F. Almurib, Fabrizio Lombardi"
       ],
       "keywords": [
         "cs.DC",
-        "Supercomputing"
+        "CLUSTER"
       ],
-      "abstract": "arXiv:2407.20212v3 Announce Type: replace \nAbstract: Quantum approximate optimization algorithm (QAOA) has shown promise in solving combinatorial optimization problems by providing quantum speedup on near-term gate-based quantum computing systems. However, QAOA faces challenges for high-dimensional problems due to the large number of qubits required and the complexity of deep circuits, limiting its scalability for real-world applications. In this study, we present a distributed QAOA (DQAOA), which leverages distributed computing strategies to decompose a large computational workload into smaller tasks that require fewer qubits and shallower circuits than necessitated to solve the original problem. These sub-problems are processed using a combination of high-performance and quantum computin",
-      "pdf_link": "https://arxiv.org/pdf/2407.20212.pdf",
-      "forum_link": "https://arxiv.org/abs/2407.20212",
-      "submission_date": "2026-07-23T04:00:00+00:00",
-      "conference": "Supercomputing",
+      "abstract": "arXiv:2607.21182v1 Announce Type: new \nAbstract: The Traveling Salesman Problem (TSP) continues to attract significant research interest due to its critical role in various applications. This paper introduces a recursive clustering approach that divides cities into a limited number of clusters, each containing up to five cities and its own centroid. Constrained TSP and simulated annealing techniques are employed to route cities within each cluster, using the centroids of neighboring clusters as entry and exit points for the routing process. This method offers the benefit of producing accurate and cost-effective routing solutions, due to the reduced number of cities in each cluster. The connections between cluster centroids are established using simulated annealing. The FPGA-based proposed ",
+      "pdf_link": "https://arxiv.org/pdf/2607.21182.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.21182",
+      "submission_date": "2026-07-24T04:00:00+00:00",
+      "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 14.0,
-      "updated_at": "2026-07-23T08:28:19.367498+00:00"
+      "score": 43.0,
+      "updated_at": "2026-07-24T08:23:09.982194+00:00"
+    },
+    {
+      "forum_id": "2607.20937",
+      "paper_number": -1,
+      "title": "Clustered Edge Intelligence: Beyond Just Convergence of Edge Computing and AI",
+      "authors": [
+        "Chinmaya Kumar Dehury, Boris Sedlak, Alaa Saleh, Ilir Murturi, Lauri Loven, Satish Narayana Srirama, Praveen Kumar Donta"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.20937v1 Announce Type: cross \nAbstract: We are moving from an information age to the age of intelligence. A decade, or possibly less than that, data will not be the gold anymore rather the derived intelligence out of the data and the information we posses from the edge of the network. Existing Edge Intelligence research focuses mainly on two directions: using AI for edge resource management and deploying lightweight AI models on edge devices. However, existing edge computing research lacks an intelligence-centric framework in which derived intelligence is treated as a first-class, independently manageable entity that can be described, discovered, observed, shared, reused, and dynamically clustered across heterogeneous edge devices and applications. To address these research gaps",
+      "pdf_link": "https://arxiv.org/pdf/2607.20937.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.20937",
+      "submission_date": "2026-07-24T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-07-24T08:23:09.982582+00:00"
+    },
+    {
+      "forum_id": "2607.21224",
+      "paper_number": -1,
+      "title": "Controlled Periodic Synchronization for Efficient Data-Parallel Training",
+      "authors": [
+        "Imane Ettifouri, Mostapha Zbakh, Claude Tadonki"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.21224v1 Announce Type: new \nAbstract: Data-parallel training relies on frequent gradient synchronization across workers. Standard DDP synchronizes gradients at every iteration, which is effective on fast local-area networks but increasingly sensitive to communication latency and network variability in geographically distributed environments. Periodic methods such as LocalSGD reduce synchronization frequency but rely mainly on parameter averaging, which may be insufficient when worker trajectories diverge. This paper studies synchronization frequency as a systems parameter for communication-constrained distributed training. We evaluate Controlled Periodic Data Parallelism (CPDP), a PyTorch-DDP-compatible strategy that alternates local updates with a reconciliation step combining ",
+      "pdf_link": "https://arxiv.org/pdf/2607.21224.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.21224",
+      "submission_date": "2026-07-24T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 7.0,
+      "updated_at": "2026-07-24T08:23:09.982270+00:00"
     }
   ]
 }

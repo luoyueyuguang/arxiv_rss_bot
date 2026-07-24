@@ -1,31 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-07-23T08:28:59.910947+00:00",
+  "last_updated": "2026-07-24T08:23:54.386666+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2607.19413",
+      "forum_id": "2509.07580",
       "paper_number": -1,
-      "title": "On unconventional discretisations",
+      "title": "On Global Rates for Regularization Methods based on Secant Derivative Approximations",
       "authors": [
-        "Basil Grammaticos, Thamizharasi Tamizhmani, Ralph Willox"
+        "Coralia Cartis, Sadok Jerad, Karl Welzel"
       ],
       "keywords": [
         "cs.NA",
-        "numerical analysis"
+        "SIAM"
       ],
-      "abstract": "arXiv:2607.19413v1 Announce Type: new \nAbstract: We present various discretisation techniques that mark a departure from the classical algorithms of numerical analysis, in the aim of preserving the physical behaviour of the solutions to the differential systems we are discretising, even for discretisation steps that are not very small. These techniques are inspired by the principles laid down by Mickens and are close to those proposed by Hirota and Kahan. Detailed applications of these methods are presented for the logistic equation and for the Lotka-Volterra system. We discuss the importance of preserving positivity whenever the latter is an expected property of the solution and give a practical rule for achieving this. Possible problems arising from the discretisations we propose are als",
-      "pdf_link": "https://arxiv.org/pdf/2607.19413.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.19413",
-      "submission_date": "2026-07-23T04:00:00+00:00",
-      "conference": "numerical analysis",
+      "abstract": "arXiv:2509.07580v2 Announce Type: replace-cross \nAbstract: An inexact and globally convergent framework for high-order adaptive regularization methods is presented, in which approximations may be used for the $p$th-order tensor, based on lower-order derivatives. Between each recalculation of the $p$th-order derivative approximation, a high-order secant equation can be used to update the $p$th-order tensor as proposed in (Karl Welzel and Raphael A Hauser, Approximating higher-order derivative tensors using secant updates, SIAM J.Optim, 34(1), 2024) or the approximation can be kept constant in a lazy manner. When refreshing the $p$th-order tensor approximation after $m$ steps, an exact evaluation of the tensor or a finite difference approximation can be used with an explicit discretization s",
+      "pdf_link": "https://arxiv.org/pdf/2509.07580.pdf",
+      "forum_link": "https://arxiv.org/abs/2509.07580",
+      "submission_date": "2026-07-24T04:00:00+00:00",
+      "conference": "SIAM",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-23T08:28:59.907781+00:00"
+      "score": 2.0,
+      "updated_at": "2026-07-24T08:23:54.384864+00:00"
     }
   ]
 }
