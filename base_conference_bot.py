@@ -826,10 +826,17 @@ class BaseConferenceBot(ABC):
         logger.info("=== Running %s Bot ===", self.CONFERENCE_NAME)
         papers = self.fetch_papers()
         if not papers and not self.allow_empty_result:
-            cached_count = len(self.load_cached_papers())
+            cached_papers = self.load_cached_papers()
+            if cached_papers:
+                logger.warning(
+                    "%s produced no new papers; returning %d cached records",
+                    self.CONFERENCE_NAME, len(cached_papers)
+                )
+                papers = cached_papers
+                self.update_readme(papers)
+                return papers
             raise RuntimeError(
-                f"{self.CONFERENCE_NAME} produced no papers; "
-                f"preserved {cached_count} cached records"
+                "%s produced no papers and has no cached records" % self.CONFERENCE_NAME
             )
         self.save_cache(papers)
         self.update_readme(papers)
