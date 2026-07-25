@@ -133,6 +133,27 @@ class ConferencePaper:
             "updated_at": self.updated_at.isoformat(),
         }
 
+    @classmethod
+    def from_dict(cls, d: Dict[str, Any]) -> "ConferencePaper":
+        return cls(
+            forum_id=d["forum_id"],
+            paper_number=d["paper_number"],
+            title=d["title"],
+            authors=d.get("authors", []),
+            keywords=d.get("keywords", []),
+            abstract=d.get("abstract", ""),
+            pdf_link=d.get("pdf_link"),
+            forum_link=d.get("forum_link", ""),
+            submission_date=datetime.fromisoformat(d["submission_date"]) if d.get("submission_date") else None,
+            conference=d.get("conference", ""),
+            source=d.get("source", "arxiv"),
+            average_rating=d.get("average_rating"),
+            rating_count=d.get("rating_count", 0),
+            ratings=d.get("ratings", []),
+            score=d.get("score", 0.0),
+            updated_at=datetime.fromisoformat(d["updated_at"]) if d.get("updated_at") else datetime.now(timezone.utc),
+        )
+
 
 class BaseConferenceBot(ABC):
     """Base class for conference paper bots.
@@ -832,7 +853,7 @@ class BaseConferenceBot(ABC):
                     "%s produced no new papers; returning %d cached records",
                     self.CONFERENCE_NAME, len(cached_papers)
                 )
-                papers = cached_papers
+                papers = [ConferencePaper.from_dict(p) for p in cached_papers]
                 self.update_readme(papers)
                 return papers
             raise RuntimeError(

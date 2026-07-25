@@ -141,9 +141,10 @@ def test_empty_fetch_preserves_existing_cache(monkeypatch, tmp_path):
     bot.save_cache([make_paper("Existing System Paper", "system")])
     monkeypatch.setattr(bot, "fetch_papers", lambda: [])
 
-    with pytest.raises(RuntimeError, match="produced no papers"):
-        bot.run()
+    papers = bot.run()
 
+    assert len(papers) == 1
+    assert papers[0].title == "Existing System Paper"
     cached = json.loads(bot.cache_path.read_text(encoding="utf-8"))
     assert cached["paper_count"] == 1
     assert cached["papers"][0]["title"] == "Existing System Paper"
