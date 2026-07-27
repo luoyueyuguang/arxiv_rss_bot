@@ -1,6 +1,6 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-07-25 05:42:42 UTC
+- **Last Updated**: 2026-07-27 09:45:55 UTC
 - **Total Filtered Papers**: 1
 - **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
@@ -9,4 +9,4 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [On Global Rates for Regularization Methods based on Secant Derivative Approximations](https://arxiv.org/abs/2509.07580) | `ARXIV` | 2.0 |
+| 1 | [Unconditional full linear convergence and quasi-optimal complexity of smoothed adaptive finite element methods](https://arxiv.org/abs/2601.20677) | `ARXIV` | 32.5 |

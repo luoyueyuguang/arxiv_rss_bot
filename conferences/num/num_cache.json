@@ -1,31 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-07-24T08:23:54.386666+00:00",
+  "last_updated": "2026-07-27T09:45:55.390877+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2509.07580",
+      "forum_id": "2601.20677",
       "paper_number": -1,
-      "title": "On Global Rates for Regularization Methods based on Secant Derivative Approximations",
+      "title": "Unconditional full linear convergence and quasi-optimal complexity of smoothed adaptive finite element methods",
       "authors": [
-        "Coralia Cartis, Sadok Jerad, Karl Welzel"
+        "Philipp Bringmann, Christoph Lietz, Dirk Praetorius"
       ],
       "keywords": [
         "cs.NA",
         "SIAM"
       ],
-      "abstract": "arXiv:2509.07580v2 Announce Type: replace-cross \nAbstract: An inexact and globally convergent framework for high-order adaptive regularization methods is presented, in which approximations may be used for the $p$th-order tensor, based on lower-order derivatives. Between each recalculation of the $p$th-order derivative approximation, a high-order secant equation can be used to update the $p$th-order tensor as proposed in (Karl Welzel and Raphael A Hauser, Approximating higher-order derivative tensors using secant updates, SIAM J.Optim, 34(1), 2024) or the approximation can be kept constant in a lazy manner. When refreshing the $p$th-order tensor approximation after $m$ steps, an exact evaluation of the tensor or a finite difference approximation can be used with an explicit discretization s",
-      "pdf_link": "https://arxiv.org/pdf/2509.07580.pdf",
-      "forum_link": "https://arxiv.org/abs/2509.07580",
-      "submission_date": "2026-07-24T04:00:00+00:00",
+      "abstract": "arXiv:2601.20677v2 Announce Type: replace \nAbstract: We present the first rigorous convergence analysis of the smoothed adaptive finite element method (S-AFEM) proposed in [Mulita, Giani, Heltai: SIAM J. Sci. Comput. 43, 2021]. S-AFEM modifies the classical adaptive finite element method (AFEM) by performing accurate discrete solves only on periodically determined mesh levels, while the intermediate levels employ a fixed number of cheap smoothing iterations. Numerical experiments in that work showed that this strategy generates adapted meshes comparable to those of AFEM at substantially lower computational cost. In this paper, we prove unconditional full R-linear convergence of a suitable quasi-error quantity and, for sufficiently small adaptivity parameters, optimal convergence rates with",
+      "pdf_link": "https://arxiv.org/pdf/2601.20677.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.20677",
+      "submission_date": "2026-07-27T04:00:00+00:00",
       "conference": "SIAM",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-07-24T08:23:54.384864+00:00"
+      "score": 32.5,
+      "updated_at": "2026-07-27T09:45:55.388640+00:00"
     }
   ]
 }
