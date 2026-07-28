@@ -1,6 +1,6 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-07-27 09:44:50 UTC
+- **Last Updated**: 2026-07-28 08:46:48 UTC
 - **Total Filtered Papers**: 3
 - **Displaying**: 3 (arxiv: 3)
 - **Papers with Ratings**: 0
@@ -9,6 +9,6 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Opto-ViT-v2: Noise-Resilient On-Chip Fine-Tuning for Photonic Near-Sensor Vision Transformer Accelerators](https://arxiv.org/abs/2607.19421) | `ARXIV` | 53.5 |
-| 2 | [DGNA: Dissecting GPU NUMA Architecture through Microbenchmarking and Data Analysis](https://arxiv.org/abs/2607.19922) | `ARXIV` | 25.0 |
-| 3 | [Isolation Failure From Shared Storage: Characterizing and Exploiting Page-Cache SCA Leakage Across Containers and VMs](https://arxiv.org/abs/2607.17518) | `ARXIV` | 3.5 |
+| 1 | [HeteroMosaic: Exposing and Exploiting Heterogeneous Execution Opportunities for Energy-Efficient Edge LLM Inference](https://arxiv.org/abs/2607.12839) | `ARXIV` | 43.5 |
+| 2 | [SPARC: Automated Root-Cause Analysis of Pre-Silicon Power Side-Channel Leakage in the Processor Design Flow](https://arxiv.org/abs/2607.23218) | `ARXIV` | 34.0 |
+| 3 | [Machine Learning on Heterogeneous, Edge, and Quantum Hardware for Particle Physics (ML-HEQUPP)](https://arxiv.org/abs/2602.22248) | `ARXIV` | 13.5 |

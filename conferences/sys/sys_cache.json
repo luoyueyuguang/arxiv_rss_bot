@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-07-27T09:45:04.281065+00:00",
-  "paper_count": 437,
+  "last_updated": "2026-07-28T08:46:55.041798+00:00",
+  "paper_count": 440,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -6967,6 +6967,29 @@
       "updated_at": "2026-07-21T08:54:26.740416+00:00"
     },
     {
+      "forum_id": "2607.22785",
+      "paper_number": -1,
+      "title": "FusionML: Prefill, Not Decode - Mechanism and Boundaries of CPU+GPU Co-Execution on Unified-Memory Apple Silicon",
+      "authors": [
+        "Om Mohite"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.22785v1 Announce Type: cross \nAbstract: Apple-Silicon SoCs share CPU, GPU, and Neural Engine over one unified memory system, raising the question of whether transformer inference can be accelerated by splitting single operators across units. Prior attempts, including our own, failed or produced precision-confounded wins. We identify the cause: MLX's lazy-graph scheduler \\emph{serializes} cross-stream work whenever a CPU-stream operation consumes an unmaterialized GPU result inside one evaluation graph, so a row-split matmul that runs \\x{1.38} faster with materialized inputs runs \\x{0.66} slower than GPU-only inside a lazy graph; an eager materialization boundary restores concurrency (\\x{1.34}). \\sys{} implements a per-layer, contention-aware CPU+GPU row split for transformer pre",
+      "pdf_link": "https://arxiv.org/pdf/2607.22785.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.22785",
+      "submission_date": "2026-07-28T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.5,
+      "updated_at": "2026-07-28T08:46:49.448188+00:00"
+    },
+    {
       "forum_id": "dblp-eurosys26-23",
       "paper_number": 23,
       "title": "Bridging the GPU Utilization Gap: Predictive Multi-Dimensional Resource Scheduling for AI Workloads.",
@@ -7510,6 +7533,29 @@
       "ratings": [],
       "score": 3.5,
       "updated_at": "2026-07-21T08:54:22.933403+00:00"
+    },
+    {
+      "forum_id": "2607.24692",
+      "paper_number": -1,
+      "title": "Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines",
+      "authors": [
+        "Jhonatan Tavori, Gur-Eyal Sela, Ion Stoica, Gil Zussman"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.24692v1 Announce Type: cross \nAbstract: Inference systems increasingly combine a fast path that returns predictions within the application's latency deadline together with a higher-accuracy slow path that runs higher-compute methods on stronger, remote hardware, so its results can be returned on time and combined with the fast path predictions. Across several application domains, we abstract this inference architecture as a fast path, a slow path, and a coordination layer with two functions: a router that invokes the slow path and a merger that decides whether to incorporate its returned predictions. In this work, we show that this new coordination layer exposes a new attack surface: shaped workload attacks, e.g., Yo-Yo bursts, can exploit contention at shared resources along th",
+      "pdf_link": "https://arxiv.org/pdf/2607.24692.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.24692",
+      "submission_date": "2026-07-28T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-07-28T08:46:49.449417+00:00"
     },
     {
       "forum_id": "dblp-eurosys26-31",
@@ -8473,6 +8519,29 @@
       "ratings": [],
       "score": 2.5,
       "updated_at": "2026-07-21T08:54:26.744870+00:00"
+    },
+    {
+      "forum_id": "2607.22956",
+      "paper_number": -1,
+      "title": "3D Gaussian Splatting for Scientific Particle Data Compression and Rendering",
+      "authors": [
+        "Bo Jiang, Youyuan Liu, Taolue Yang, Sheng Di, Sian Jin"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.22956v1 Announce Type: cross \nAbstract: Large-scale particle simulations produce hundreds of millions of particles, straining storage, transfer, and interactive visualization. Existing lossy compressors such as SZ3 operate in data space and provide no guarantees on downstream visualization fidelity. We propose ParticleGS, a visualization-aware framework based on 3D Gaussian Splatting (3DGS) that learns a compact representation directly optimized for rendered image quality, combining (1) a multi-stage, multi-orbit training pipeline, (2) VizMapper, a lightweight network that adapts a single trained model to user-specified visualization parameters at inference time, and (3) spatial block training with KD-tree decomposition and global fine-tuning. On a 281-million-particle HACC cosm",
+      "pdf_link": "https://arxiv.org/pdf/2607.22956.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.22956",
+      "submission_date": "2026-07-28T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-07-28T08:46:49.448488+00:00"
     },
     {
       "forum_id": "usenix-osdi26-10",

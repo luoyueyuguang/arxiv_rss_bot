@@ -1,31 +1,77 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-07-27T09:45:55.390877+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-07-28T08:47:36.962847+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2601.20677",
+      "forum_id": "2509.20111",
       "paper_number": -1,
-      "title": "Unconditional full linear convergence and quasi-optimal complexity of smoothed adaptive finite element methods",
+      "title": "A convergent finite element method for two-phase Stokes flow driven by surface tension",
       "authors": [
-        "Philipp Bringmann, Christoph Lietz, Dirk Praetorius"
+        "Genming Bai, Harald Garcke, Shravan Veerapaneni"
       ],
       "keywords": [
         "cs.NA",
-        "SIAM"
+        "numerical analysis"
       ],
-      "abstract": "arXiv:2601.20677v2 Announce Type: replace \nAbstract: We present the first rigorous convergence analysis of the smoothed adaptive finite element method (S-AFEM) proposed in [Mulita, Giani, Heltai: SIAM J. Sci. Comput. 43, 2021]. S-AFEM modifies the classical adaptive finite element method (AFEM) by performing accurate discrete solves only on periodically determined mesh levels, while the intermediate levels employ a fixed number of cheap smoothing iterations. Numerical experiments in that work showed that this strategy generates adapted meshes comparable to those of AFEM at substantially lower computational cost. In this paper, we prove unconditional full R-linear convergence of a suitable quasi-error quantity and, for sufficiently small adaptivity parameters, optimal convergence rates with",
-      "pdf_link": "https://arxiv.org/pdf/2601.20677.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.20677",
-      "submission_date": "2026-07-27T04:00:00+00:00",
-      "conference": "SIAM",
+      "abstract": "arXiv:2509.20111v3 Announce Type: replace \nAbstract: We present the first convergence proof for an iso-parametric finite element discretization of two-phase Stokes flow in $\\Omega \\subset \\mathbb{R}^d$, $d=2,3$, with interface dynamics governed by mean curvature. The proof relies on a crucial discrete coupled parabolicity structure of the error system and a powerful iso-parametric framework of convergence analysis where we do not really discriminate consistency and stability. This new mixing idea leads to a non-trivial construction of the bulk mesh in the consistency analysis. The techniques and analysis developed in this paper provide fundamental numerical analysis tools for general curvature-driven free boundary problems.",
+      "pdf_link": "https://arxiv.org/pdf/2509.20111.pdf",
+      "forum_link": "https://arxiv.org/abs/2509.20111",
+      "submission_date": "2026-07-28T04:00:00+00:00",
+      "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-07-27T09:45:55.388640+00:00"
+      "score": 34.0,
+      "updated_at": "2026-07-28T08:47:36.958836+00:00"
+    },
+    {
+      "forum_id": "2601.16734",
+      "paper_number": -1,
+      "title": "SeeMPS: A Python-based Matrix Product State and Tensor Train Library",
+      "authors": [
+        "Paula Garc\\'ia-Molina, Juan Jos\\'e Rodr\\'iguez-Aldavero, Jorge Gidi, Juan Jos\\'e Garc\\'ia-Ripoll"
+      ],
+      "keywords": [
+        "cs.NA",
+        "numerical analysis"
+      ],
+      "abstract": "arXiv:2601.16734v2 Announce Type: replace-cross \nAbstract: We introduce SeeMPS, a Python library dedicated to implementing tensor network algorithms based on the well-known Matrix Product States (MPS) and Quantized Tensor Train (QTT) formalisms. SeeMPS is implemented as a complete finite precision linear algebra package where exponentially large vector spaces are compressed using the MPS/TT formalism. It enables both low-level operations, such as vector addition, linear transformations, and Hadamard products, as well as high-level algorithms, including the approximation of linear equations, eigenvalue computations, and exponentially efficient Fourier transforms. This library can be used for traditional quantum many-body physics applications and also for quantum-inspired numerical analysis ",
+      "pdf_link": "https://arxiv.org/pdf/2601.16734.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.16734",
+      "submission_date": "2026-07-28T04:00:00+00:00",
+      "conference": "numerical analysis",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-07-28T08:47:36.959375+00:00"
+    },
+    {
+      "forum_id": "2607.23699",
+      "paper_number": -1,
+      "title": "Explicit Runge approximation for Helmholtz equation with cylindrical harmonics",
+      "authors": [
+        "Yu Chen, Jin Cheng, Tingyue Li"
+      ],
+      "keywords": [
+        "cs.NA",
+        "numerical analysis"
+      ],
+      "abstract": "arXiv:2607.23699v1 Announce Type: new \nAbstract: Originating from the complex approximation of holomorphic functions, the Runge approximation for elliptic equations has evolved into a fundamental tool for inverse problems and even learning-based numerical methods since its proposition by Lax, Malgrange, with quantitative characterizations further established by R\\\"uland and Salo. It should be remarked here that Runge approximation is ill-posed. In numerical analysis, explicit quantitative estimates are required to characterize the dependence of the approximant's growth on the outward continuation distance of the original solution. This paper investigates the spatial dependent quantitative Runge approximation for the Helmholtz equation using cylindrical harmonics, considering both interior ",
+      "pdf_link": "https://arxiv.org/pdf/2607.23699.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.23699",
+      "submission_date": "2026-07-28T04:00:00+00:00",
+      "conference": "numerical analysis",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-07-28T08:47:36.957469+00:00"
     }
   ]
 }
