@@ -1,146 +1,54 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-07-28T08:46:49.281575+00:00",
-  "paper_count": 6,
+  "last_updated": "2026-07-29T08:35:43.783636+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2607.23042",
+      "forum_id": "2607.25650",
       "paper_number": -1,
-      "title": "Application-Driven Architecture Exploration for Cross-Layer Heterogeneous Systems",
+      "title": "PowerScale: Energy-Efficient Geo-Distributed Model Training with Federated Datacenter Power",
       "authors": [
-        "Yuchen Fan (Tsinghua University), Minghong Sun (Tsinghua University), Jikui Ma (Tsinghua University), Yunpeng Xu (Tsinghua University), Shunyu Mao (Tsinghua University), Liu He (Tsinghua University), Shunan Dong (Tsinghua University), Jiahao Yang (Tsinghua University), Yu Zhu (Tsinghua University), Xinhao Yang (Tsinghua University), Tianyan Zhong (Tsinghua University), Haoran Sun (Tsinghua University), Daoqi Liu (Tsinghua University), Zongle Huang (Tsinghua University), Xinyuan Lin (Tsinghua University), Huazhong Yang (Tsinghua University), Maokun Li (Tsinghua University), Yongpan Liu (Tsinghua University), Yu Wang (Tsinghua University), Zhenhua Zhu (Tsinghua University), Hongyang Jia (Tsinghua University), Shuwen Deng (Tsinghua University)"
+        "Talha Mehboob, Zhe Xu, Michael Zink, David Irwin"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.23042v1 Announce Type: new \nAbstract: AI and HPC infrastructure increasingly serves workload portfolios that combine dense tensor computation, sparse kernels, large memory footprints, and communication-intensive collectives. Supporting these portfolios requires coordinated choices across accelerators, memory tiers, scale-up fabrics, and cluster networks. The resulting Cross-layer Heterogeneous System (XHS) design space is difficult to explore: hardware choices change legal task mappings, while rack power, switch radix, cabling, and cost constraints invalidate many candidates. We present CHASE, an application-driven framework that searches physically feasible XHS architectures through the workloads they must execute. CHASE represents candidates as hierarchical typed graphs and re",
-      "pdf_link": "https://arxiv.org/pdf/2607.23042.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.23042",
-      "submission_date": "2026-07-28T04:00:00+00:00",
+      "abstract": "arXiv:2607.25650v1 Announce Type: new \nAbstract: The power demands of large-scale AI training increasingly exceed the capacity of any single data center, making geo-distributed training across power-constrained sites a practical necessity. Prior work optimizes such training mainly for time-to-accuracy using single-tier aggregation, where every site exchanges model updates directly with a central aggregator over the WAN each synchronization round, without accounting for the energy required to reach convergence. Single-tier aggregation is fundamentally energy-inefficient because synchronization barriers force faster sites to idle, full WAN updates dominate communication energy at scale, and fixed synchronization frequency keeps paying the same communication cost even when updates shrink late",
+      "pdf_link": "https://arxiv.org/pdf/2607.25650.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.25650",
+      "submission_date": "2026-07-29T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 48.5,
-      "updated_at": "2026-07-28T08:46:48.691417+00:00"
+      "score": 6.5,
+      "updated_at": "2026-07-29T08:35:43.176783+00:00"
     },
     {
-      "forum_id": "2606.27217",
+      "forum_id": "2607.25059",
       "paper_number": -1,
-      "title": "CHAMB-GA: A Containerized HPC Scalable Microservice-Based Framework for Genetic Algorithms",
+      "title": "Parallel Spectral Graph Sparsification via Low Diameter Decompositions",
       "authors": [
-        "Felix Bonhoff, Thiemo Pesch, Andrea Benigni, Alexander Mitsos, Manuel Dahmen"
+        "Yves Baumann, Gernot Z\\\"ocklein"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2606.27217v2 Announce Type: replace \nAbstract: Metaheuristic-based global optimization with embedded, long-running simulations is a computationally expensive process. To support various stages of development and execution, a seamless transition from personal computers to distributed clusters is desired, enabling execution across all computational scales. However, existing tool chains are often characterized by rigidity and hardware-bound constraints, which impede scalability and the integration of complex simulations. Bridging this gap, we present a containerized HPC scalable microservice-based framework for genetic algorithms with embedded simulations (CHAMB-GA). The deployment of the framework scales consistently across cloud infrastructure via container orchestration and HPC clust",
-      "pdf_link": "https://arxiv.org/pdf/2606.27217.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.27217",
-      "submission_date": "2026-07-28T04:00:00+00:00",
+      "abstract": "arXiv:2607.25059v1 Announce Type: cross \nAbstract: We present a new solver-free parallel spectral sparsification algorithm for weighted graphs that relies only on parallel low-diameter decompositions and independent sampling. This yields the first algorithmic improvement over prior, solver-free parallel sparsification approaches since Koutis (2014) and, for the first time for a practical algorithm, eliminates any dependence on the target approximation accuracy $\\epsilon$ in the algorithm's work and depth.\n  Our algorithm works by sub-sampling edges according to their robust connectivity, as introduced by Kapralov and Panigrahy (2012). We show how to estimate the robust connectivities of $G$ in an extremely simple manner: we create multiple random sub graphs $G_p$, where each edge in $G$ is",
+      "pdf_link": "https://arxiv.org/pdf/2607.25059.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.25059",
+      "submission_date": "2026-07-29T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 45.0,
-      "updated_at": "2026-07-28T08:46:48.692947+00:00"
-    },
-    {
-      "forum_id": "2602.01404",
-      "paper_number": -1,
-      "title": "BOA Constrictor: Squeezing Performance out of GPUs in the Cloud via Budget-Optimal Allocation",
-      "authors": [
-        "Zhouzi Li, Cindy Zhu, Arpan Mukhopadhyay, Mor Harchol-Balter, Benjamin Berg"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2602.01404v2 Announce Type: replace \nAbstract: The past decade has seen a dramatic increase in demand for GPUs to train Machine Learning (ML) models. Because it is prohibitively expensive for most organizations to build and maintain a large GPU cluster, organizations instead choose to rent GPUs from cloud providers. The customer is responsible for devising a policy for (i) deciding how many GPUs to rent at every moment in time to process a stream of ML training jobs and (ii) allocating the rented GPUs among the currently active jobs in the system. Because ML training jobs can be parallelized across different numbers of GPUs, the customer generally has many options for how many GPUs to use for each job. Allocating more GPUs to a single training job will cause the job to complete more ",
-      "pdf_link": "https://arxiv.org/pdf/2602.01404.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.01404",
-      "submission_date": "2026-07-28T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 24.5,
-      "updated_at": "2026-07-28T08:46:48.692820+00:00"
-    },
-    {
-      "forum_id": "2607.18141",
-      "paper_number": -1,
-      "title": "HyMCache: A KV Cache Framework for Multi-Turn LLM Serving with CXL-Hybrid Memory",
-      "authors": [
-        "Hakbeom Jang, Inho Song, Sam H. Noh, Jongryool Kim"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2607.18141v2 Announce Type: replace \nAbstract: Long-context, multi-turn, and agentic LLM workloads increasingly reuse previously processed context, making KV-cache reuse essential for reducing redundant computation. However, this reuse shifts the bottleneck to the memory tier that stores and serves reusable KV states at cluster scale. GPU HBM and host DRAM are too costly to scale to TB-scale shared context capacity, motivating remote tiers built from lower-cost, higher-capacity media. This paper presents HyMCache, a KV-cache framework that integrates CXL-hybrid memory (CXL-HM) for multi-turn LLM serving. CXL-HM combines a small amount of in-device DRAM with large SSD-backed capacity behind a CXL interface. By exploiting the read-dominant, predictable, and append-only nature of multi-",
-      "pdf_link": "https://arxiv.org/pdf/2607.18141.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.18141",
-      "submission_date": "2026-07-28T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 22.0,
-      "updated_at": "2026-07-28T08:46:48.693093+00:00"
-    },
-    {
-      "forum_id": "2607.23120",
-      "paper_number": -1,
-      "title": "A scalable online machine learning approach for Stock Recommendation",
-      "authors": [
-        "Harsh Nagarkar"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2607.23120v1 Announce Type: cross \nAbstract: Stock recommendation systems face the dual challenge of adapting to rapidly changing market conditions while maintaining low-latency predictions for end users. Traditional batch-trained models fail to capture concept drift, and monolithic architectures struggle to provide fault tolerance under load. This paper presents a scalable online deep learning-based stock recommendation system built on a distributed microservices architecture using Kubernetes, Docker, and RabbitMQ. The system employs a hybrid leader-follower architecture where a primary model continuously trains on streaming financial data, including EPS, MACD, and price, from the Alpha Vantage API while multiple replica models serve user-facing recommendations in parallel. A multil",
-      "pdf_link": "https://arxiv.org/pdf/2607.23120.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.23120",
-      "submission_date": "2026-07-28T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-07-28T08:46:48.692232+00:00"
-    },
-    {
-      "forum_id": "2607.19182",
-      "paper_number": -1,
-      "title": "ARBITER: Guarded Agentic Control for SLO-Oriented Kubernetes Remediation",
-      "authors": [
-        "Pooyan Habibi, Alberto Leon-Garcia"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2607.19182v2 Announce Type: replace \nAbstract: Maintaining service-level objectives (SLOs) on Kubernetes microservices remains difficult because autoscalers observe coarse resource metrics, recent SLO controllers often depend on custom telemetry, and unconstrained agentic operators cannot safely mutate production clusters. We present ARBITER, a guarded control plane for SLO-oriented Kubernetes remediation. ARBITER builds an OpenTelemetry-native causal resource graph, assembles bounded DiagnosisContext objects, and exposes a finite typed-action interface that separates planning from execution. The same interface supports deterministic planners and an LLM-backed planning harness, with deterministic schema checks, policy gates, resource/disruption budgets, approval, and bounded executio",
-      "pdf_link": "https://arxiv.org/pdf/2607.19182.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.19182",
-      "submission_date": "2026-07-28T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-07-28T08:46:48.693183+00:00"
+      "score": 1.5,
+      "updated_at": "2026-07-29T08:35:43.177029+00:00"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-07-28T08:47:36.852085+00:00",
+  "last_updated": "2026-07-29T08:36:30.243982+00:00",
   "paper_count": 500,
   "papers": [
     {
@@ -8155,7 +8155,7 @@
       "authors": [
         "Yixiu Mao",
         "Yun Qu",
-        "Qi (Cheems) Wang",
+        "Qi Wang",
         "Xiangyang Ji"
       ],
       "keywords": [],
@@ -8169,7 +8169,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 61.5,
-      "updated_at": "2026-07-23T08:28:58.555416+00:00"
+      "updated_at": "2026-07-29T08:36:29.008442+00:00"
     },
     {
       "forum_id": "neurips25-815",

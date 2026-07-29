@@ -1,77 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-07-28T08:46:48.622033+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-07-29T08:35:43.113645+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2607.12839",
+      "forum_id": "2602.22229",
       "paper_number": -1,
-      "title": "HeteroMosaic: Exposing and Exploiting Heterogeneous Execution Opportunities for Energy-Efficient Edge LLM Inference",
+      "title": "FHECore: Rethinking GPU Microarchitecture for Fully Homomorphic Encryption",
       "authors": [
-        "Gregory Hyegang Jun, Wesley Pang, Eddie Richter, Mehdi Saeedi, Aporva Amarnath, Pallavi Ferrao, Deming Chen"
+        "Lohit Daksha, Seyda Guzelhan, Kaustubh Shivdikar, Carlos Agull\\'o Domingo, \\'Oscar Vera Lopez, Gilbert Jonatan, Hubert Dymarkowski, Aymane El Jerari, Jos\\'e Cano, Jos\\'e L. Abell\\'an, John Kim, David Kaeli, Ajay Joshi"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2607.12839v4 Announce Type: replace-cross \nAbstract: Modern edge system-on-chips (SoCs) combine CPUs, integrated GPUs (iGPUs), and neural processing units (NPUs), yet existing LLM runtimes typically make coarse device-level decisions or optimize operators in isolation. As a result, they underutilize heterogeneous resources, particularly on unified-memory platforms where performance depends on both device placement and task-graph coordination. We present HeteroMosaic, a heterogeneity-first scheduling framework for edge LLM inference. HeteroMosaic first uses a heterogeneous roofline model to identify when combining iGPU and NPU execution is beneficial. It then decomposes inference into dependency-preserving micro-batches that expose cross-accelerator overlap and applies trace-guided co",
-      "pdf_link": "https://arxiv.org/pdf/2607.12839.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.12839",
-      "submission_date": "2026-07-28T04:00:00+00:00",
+      "abstract": "arXiv:2602.22229v2 Announce Type: replace \nAbstract: Fully Homomorphic Encryption (FHE) enables computation directly on encrypted data but incurs massive computational and memory overheads, often exceeding plaintext execution by several orders of magnitude. While custom ASIC accelerators can mitigate these costs, their long time-to-market and the rapid evolution of FHE algorithms threaten their long-term relevance. GPUs, by contrast, offer scalability, programmability, and widespread availability, making them an attractive platform for FHE. However, modern GPUs are increasingly specialized for machine learning workloads, emphasizing low-precision datatypes (e.g., INT$8$, FP$8$) that are fundamentally mismatched to the wide-precision modulo arithmetic required by FHE. Essentially, while GPU",
+      "pdf_link": "https://arxiv.org/pdf/2602.22229.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.22229",
+      "submission_date": "2026-07-29T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 43.5,
-      "updated_at": "2026-07-28T08:46:48.615963+00:00"
-    },
-    {
-      "forum_id": "2607.23218",
-      "paper_number": -1,
-      "title": "SPARC: Automated Root-Cause Analysis of Pre-Silicon Power Side-Channel Leakage in the Processor Design Flow",
-      "authors": [
-        "Andrija Ne\\v{s}kovi\\'c, Christian Ewert, Mladen Berekovic, Saleh Mulhem"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2607.23218v1 Announce Type: cross \nAbstract: Power-Side-Channel Leakage (PSCL) originates from architectural and micro-architectural artifacts in a processor and poses a severe threat to the confidentiality of cryptographic software. Consequently, pre-silicon PSCL evaluation is indispensable for secure hardware design. Existing frameworks are either limited by poor simulation scalability or fail to attribute leakage to the correct hardware signals and software instructions, thereby impeding a comprehensive root-cause analysis. This paper presents SPARC, an automated framework for pre-silicon PSCL evaluation and root-cause analysis. SPARC leverages macro-cell-level Information Flow Tracking (IFT) augmented with enhanced shadow logic that tags switching activity originating from secret",
-      "pdf_link": "https://arxiv.org/pdf/2607.23218.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.23218",
-      "submission_date": "2026-07-28T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 34.0,
-      "updated_at": "2026-07-28T08:46:48.615812+00:00"
-    },
-    {
-      "forum_id": "2602.22248",
-      "paper_number": -1,
-      "title": "Machine Learning on Heterogeneous, Edge, and Quantum Hardware for Particle Physics (ML-HEQUPP)",
-      "authors": [
-        "Julia Gonski (Sunny), Jenni Ott (Sunny), Shiva Abbaszadeh (Sunny), Sagar Addepalli (Sunny), Matteo Cremonesi (Sunny), Jennet Dickinson (Sunny), Giuseppe Di Guglielmo (Sunny), Erdem Yigit Ertorer (Sunny), Lindsey Gray (Sunny), Ryan Herbst (Sunny), Christian Herwig (Sunny), Tae Min Hong (Sunny), Benedikt Maier (Sunny), Maryam Bayat Makou (Sunny), David Miller (Sunny), Mark S. Neubauer (Sunny), Cristi\\'an Pe\\~na (Sunny), Dylan Rankin (Sunny),  Seon-Hee (Sunny),  Seo, Giordon Stark, Alexander Tapper, Audrey Corbeil Therrien, Ioannis Xiotidis, Keisuke Yoshihara, G Abarajithan, Sagar Addepalli, Nural Akchurin, Carlos Arg\\\"uelles, Saptaparna Bhattacharya, Lorenzo Borella, Christian Boutan, Tom Braine, James Brau, Marco Carminati, Antonio Chahine, Talal Ahmed Chowdhury, Yuan-Tang Chou, Seokju Chung, Ryan Coffee, Alberto Coppi, Mariarosaria D'Alfonso, Abhilasha Dave, Chance Desmet, Angela Di Fulvio, Karri DiPetrillo, Javier Duarte, Auralee Edelen, Jan Eysermans, Yongbin Feng, Emmett Forrestel, Dolores Garcia, Loredana Gastaldo, Juli\\'an Garc\\'ia Pardi\\~nas, Lino Gerlach, Loukas Gouskos, Katya Govorkova, Carl Grace, Christopher Grant, Philip Harris, Ciaran Hasnip, Timon Heim, Abraham Holtermann, Tae Min Hong, Gian Michele Innocenti, Koji Ishidoshiro, Miaochen Jin, Jyothisraj Johnson, Stephen Jones, Andreas Jung, Georgia Karagiorgi, Ryan Kastner, Nicholas Kamp, Doojin Kim, Kyoungchul Kong, Katie Kudela, Jelena Lalic, Bo-Cheng Lai, Yun-Tsung Lai, Tommy Lam, Jeffrey Lazar, Aobo Li, Zepeng Li, Haoyun Liu, Vladimir Lon\\v{c}ar, Luca Macchiarulo, Christopher Madrid, Benedikt Maier, Zhenghua Ma, Prashansa Mukim, Mark S. Neubauer, Victoria Nguyen, Sungbin Oh, Isobel Ojalvo, Hideyoshi Ozaki, Simone Pagan Griso, Myeonghun Park, Christoph Paus, Santosh Parajuli, Benjamin Parpillon, Sara Pozzi, Ema Puljak, Benjamin Ramhorst, Amy Roberts, Larry Ruckman, Kate Scholberg, Sebastian Schmitt, Noah Singer, Eluned Anne Smith, Alexandre Sousa, Michael Spannowsky, Sioni Summers, Yanwen Sun, Daniel Tapia Takaki, Antonino Tumeo, Caterina Vernieri, Belina von Krosigk, Yash Vora, Linyan Wan, Michael H. L. S. Wang, Amanda Weinstein, Andy White, Simon Williams, Felix Yu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2602.22248v3 Announce Type: replace-cross \nAbstract: The next generation of particle physics experiments will face a new era of challenges in data acquisition, due to unprecedented data rates and volumes along with extreme environments and operational constraints. Harnessing this data for scientific discovery demands real-time inference and decision-making, intelligent data reduction, and efficient processing architectures beyond current capabilities. Crucial to the success of this experimental paradigm are several emerging technologies, such as artificial intelligence and machine learning (AI/ML), silicon microelectronics, and the advent of quantum algorithms and processing. Their intersection includes areas of research such as low-power and low-latency devices for edge computing, h",
-      "pdf_link": "https://arxiv.org/pdf/2602.22248.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.22248",
-      "submission_date": "2026-07-28T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-07-28T08:46:48.615918+00:00"
+      "score": 15.0,
+      "updated_at": "2026-07-29T08:35:43.110535+00:00"
     }
   ]
 }
