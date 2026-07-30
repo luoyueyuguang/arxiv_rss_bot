@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-07-29T08:35:47.593544+00:00",
-  "paper_count": 438,
+  "last_updated": "2026-07-30T08:21:12.205498+00:00",
+  "paper_count": 437,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1681,29 +1681,6 @@
       "ratings": [],
       "score": 51.5,
       "updated_at": "2026-07-21T08:54:17.407310+00:00"
-    },
-    {
-      "forum_id": "2607.25650",
-      "paper_number": -1,
-      "title": "PowerScale: Energy-Efficient Geo-Distributed Model Training with Federated Datacenter Power",
-      "authors": [
-        "Talha Mehboob, Zhe Xu, Michael Zink, David Irwin"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.25650v1 Announce Type: new \nAbstract: The power demands of large-scale AI training increasingly exceed the capacity of any single data center, making geo-distributed training across power-constrained sites a practical necessity. Prior work optimizes such training mainly for time-to-accuracy using single-tier aggregation, where every site exchanges model updates directly with a central aggregator over the WAN each synchronization round, without accounting for the energy required to reach convergence. Single-tier aggregation is fundamentally energy-inefficient because synchronization barriers force faster sites to idle, full WAN updates dominate communication energy at scale, and fixed synchronization frequency keeps paying the same communication cost even when updates shrink late",
-      "pdf_link": "https://arxiv.org/pdf/2607.25650.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.25650",
-      "submission_date": "2026-07-29T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 51.0,
-      "updated_at": "2026-07-29T08:35:43.908777+00:00"
     },
     {
       "forum_id": "usenix-osdi26-59",

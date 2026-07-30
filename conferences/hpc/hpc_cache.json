@@ -1,54 +1,100 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-07-29T08:35:43.783636+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-07-30T08:21:09.153562+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2607.25650",
+      "forum_id": "2607.26566",
       "paper_number": -1,
-      "title": "PowerScale: Energy-Efficient Geo-Distributed Model Training with Federated Datacenter Power",
+      "title": "ServerlessT2I: Efficient Text-to-Image Workflow Serving on a Serverless Platform",
       "authors": [
-        "Talha Mehboob, Zhe Xu, Michael Zink, David Irwin"
+        "Xiaoxiao Jiang, Suyi Li, Sheng Yao, Tianyu Feng, Lingyun Yang, Dapeng Nie, Haoran Yang, Wei Wang"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.25650v1 Announce Type: new \nAbstract: The power demands of large-scale AI training increasingly exceed the capacity of any single data center, making geo-distributed training across power-constrained sites a practical necessity. Prior work optimizes such training mainly for time-to-accuracy using single-tier aggregation, where every site exchanges model updates directly with a central aggregator over the WAN each synchronization round, without accounting for the energy required to reach convergence. Single-tier aggregation is fundamentally energy-inefficient because synchronization barriers force faster sites to idle, full WAN updates dominate communication energy at scale, and fixed synchronization frequency keeps paying the same communication cost even when updates shrink late",
-      "pdf_link": "https://arxiv.org/pdf/2607.25650.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.25650",
-      "submission_date": "2026-07-29T04:00:00+00:00",
+      "abstract": "arXiv:2607.26566v1 Announce Type: new \nAbstract: Text-to-image (T2I) workflows are increasingly deployed on serverless platforms because users often compose customized workflows and invoke them intermittently. Existing platforms typically deploy each workflow as an opaque GPU function, provisioning, placing, and scaling all constituent models in the workflow together. This monolithic design obscures workflow structure, inflates scaling overhead, forces users to manage low-level GPU coordination, and limits fine-grained fairness in multi-tenant clusters. In this paper, we present ServerlessT2I, a serverless-native system that decomposes a T2I workflow into loosely coupled model functions that can be independently managed and scheduled. By explicitly managing individual model execution, Serv",
+      "pdf_link": "https://arxiv.org/pdf/2607.26566.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.26566",
+      "submission_date": "2026-07-30T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 6.5,
-      "updated_at": "2026-07-29T08:35:43.176783+00:00"
+      "score": 72.0,
+      "updated_at": "2026-07-30T08:21:08.819108+00:00"
     },
     {
-      "forum_id": "2607.25059",
+      "forum_id": "2607.26688",
       "paper_number": -1,
-      "title": "Parallel Spectral Graph Sparsification via Low Diameter Decompositions",
+      "title": "Nix to the Rescue for a Reproducible HPC-AI Software Stack",
       "authors": [
-        "Yves Baumann, Gernot Z\\\"ocklein"
+        "Wenke Du (DATAMOVE), Jean-Marc Gratien (IFPEN), Raphael Gayno (IFPEN), Bruno Raffin (DATAMOVE)"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.25059v1 Announce Type: cross \nAbstract: We present a new solver-free parallel spectral sparsification algorithm for weighted graphs that relies only on parallel low-diameter decompositions and independent sampling. This yields the first algorithmic improvement over prior, solver-free parallel sparsification approaches since Koutis (2014) and, for the first time for a practical algorithm, eliminates any dependence on the target approximation accuracy $\\epsilon$ in the algorithm's work and depth.\n  Our algorithm works by sub-sampling edges according to their robust connectivity, as introduced by Kapralov and Panigrahy (2012). We show how to estimate the robust connectivities of $G$ in an extremely simple manner: we create multiple random sub graphs $G_p$, where each edge in $G$ is",
-      "pdf_link": "https://arxiv.org/pdf/2607.25059.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.25059",
-      "submission_date": "2026-07-29T04:00:00+00:00",
+      "abstract": "arXiv:2607.26688v1 Announce Type: new \nAbstract: Reproducibility in HPC remains difficult under the constraints of production supercomputers: no root access, limited internet, and software stacks that increasingly span C/C++, Fortran, Python, MPI, and GPU runtimes. Traditional approaches based on environment modules and Conda require manual intervention to locate dependencies, leak system libraries into builds, and fail to compose across projects. Containers help with deployment but do not by themselves guarantee reproducibility. We report on our experience building a hybrid HPC/AI software stack with Nix, covering local development on a workstation without root and remote deployment as an Apptainer image on a production cluster. Nix's consistent package layout, full environment isolation,",
+      "pdf_link": "https://arxiv.org/pdf/2607.26688.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.26688",
+      "submission_date": "2026-07-30T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-07-29T08:35:43.177029+00:00"
+      "score": 35.5,
+      "updated_at": "2026-07-30T08:21:08.819158+00:00"
+    },
+    {
+      "forum_id": "2607.26335",
+      "paper_number": -1,
+      "title": "The Fabric Is the Cluster Driver: Cross-Layer eBPF Policies for GPU-CXL Fabrics",
+      "authors": [
+        "Yiwei Yang, Andi Quinn"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.26335v1 Announce Type: new \nAbstract: We present fabric_ext, an eBPF middleware compiler and runtime for extensible OS policies over GPU--CXL fabrics. fabric_ext lets one policy program execute across GPU hooks, driver/runtime hooks, DPU/NIC hooks, and CXL switch or near-memory hooks. The key abstraction is a semantic movement graph: edges describe bytes, stride, reuse distance, read/write ratio, source and destination, ordering requirement, alias set, ownership, and transformations such as Move, Quantize, Compress, Checksum, Filter, Reduce, Scatter/Gather, Replicate, and Persist. The compiler lowers this graph into per-device eBPF programs, verifier obligations, consistency-classed BPF maps, and artifacts for bpftime and dputime. At the fabric edge, fabric_ext treats a near-Typ",
+      "pdf_link": "https://arxiv.org/pdf/2607.26335.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.26335",
+      "submission_date": "2026-07-30T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.0,
+      "updated_at": "2026-07-30T08:21:08.818836+00:00"
+    },
+    {
+      "forum_id": "2607.26503",
+      "paper_number": -1,
+      "title": "Safety-Gated Autoscaling: A Multi-Layered Defense Architecture for Kubernetes Vertical Resource Optimization",
+      "authors": [
+        "Azra Karakaya, Erva \\c{S}eng\\\"ul, Ahmet Kaplan"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.26503v1 Announce Type: new \nAbstract: Kubernetes is the standard platform for orchestrating containerized applications, yet resource management remains difficult. To stay safe, engineers over-provision CPU and memory, leaving reserved but unused capacity that is the main source of wasted cost. The built-in Horizontal and Vertical Pod Autoscalers are reactive: they act only after a threshold is crossed, which causes lag, over-provisioning, and can mask software defects by granting a leaking workload more memory. Predictive autoscalers focus on improving forecasting accuracy or run inside proprietary infrastructure, and anomaly detection is used only to alert, never to block a harmful action. The Intelligent Cluster Optimizer is an open-source Kubernetes operator that right-sizes ",
+      "pdf_link": "https://arxiv.org/pdf/2607.26503.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.26503",
+      "submission_date": "2026-07-30T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-07-30T08:21:08.819046+00:00"
     }
   ]
 }

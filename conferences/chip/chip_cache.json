@@ -1,54 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-07-29T08:35:47.673671+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-07-30T08:21:12.261168+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2607.24998",
+      "forum_id": "2607.26633",
       "paper_number": -1,
-      "title": "VPR-Evolve: Multi-Agent-Driven Algorithm Evolution for FPGA Place and Route",
+      "title": "NELSSA: A GPU-PNM Heterogeneous System for Mixed-Length LLM Serving via Length-based Request Placement",
       "authors": [
-        "Qihang Wu, Taizun Jafri, Aman Arora, Vidya A. Chhabria"
+        "Sookyung Choi, Seungyong Lee, Kangkyu Park, Yunseo Chun, Junseok Lee, Hyeongseok Gwak, Myunghyun Rhee, Euiseok Kim, Donguk Moon, Kwangsik Shin, Guseul Heo, Youngpyo Joo, Hoshik Kim, Jongse Park"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2607.24998v1 Announce Type: new \nAbstract: CAD tools typically apply the same fixed, hand-designed algorithms across circuits with widely different structural and timing characteristics. A common way to specialize these one-size-fits-all flows to a target design is to tune the CAD tool's hyperparameters. However, hyperparameter tuning can only select among behaviors already implemented by the fixed algorithm, limiting the achievable quality of results while requiring many expensive place-and-route evaluations. We present VPR-Evolve, a multi-agent framework that specializes Versatile Place and Route (VPR), the open-source FPGA pack-place-and-route engine in the Verilog-to-Routing (VTR) flow, by evolving its source code for each design. VPR-Evolve uses LLM agents to propose, implement,",
-      "pdf_link": "https://arxiv.org/pdf/2607.24998.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.24998",
-      "submission_date": "2026-07-29T04:00:00+00:00",
+      "abstract": "arXiv:2607.26633v1 Announce Type: new \nAbstract: Modern LLMs and their agentic applications are broadening the range of serving workloads, spanning context lengths from a few hundred tokens to hundreds of thousands. As these requests frequently interleave within the same serving window, LLM serving systems must handle highly heterogeneous mixed-length workloads. Such mixed-length workloads expose fundamental inefficiencies in GPU-centric serving architectures, whose throughput depends on large, memory-constrained batches. In this paper, we present NELSSA, an LLM serving system that integrates GPUs with real-world Processing-near-Memory (PNM) accelerator devices to efficiently support mixed-length workloads. NELSSA employs length-based request placement to route short-context requests to GP",
+      "pdf_link": "https://arxiv.org/pdf/2607.26633.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.26633",
+      "submission_date": "2026-07-30T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 47.5,
-      "updated_at": "2026-07-29T08:35:47.670996+00:00"
+      "score": 34.0,
+      "updated_at": "2026-07-30T08:21:12.258467+00:00"
     },
     {
-      "forum_id": "2607.25283",
+      "forum_id": "2607.26491",
       "paper_number": -1,
-      "title": "ContractHIL-HLS: Contract-Aligned Multi-Agent Workflow with Hardware-in-the-Loop Feedback for HLS Design",
+      "title": "LLMET: Enabling Cross-Layer Evaluation of Emerging M3D Memories for Energy-Efficient LLM Serving",
       "authors": [
-        "Jingbo Zhang, Haoxiang Sun, Wenbo Wang, Wenbo Zhang"
+        "Ming-Yen Lee, Hanchen Yang, Faaiq Waqar, Harsono Simka, Tushar Krishna, Muhammed Ahosan Ul Karim, Shimeng Yu"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2607.25283v1 Announce Type: cross \nAbstract: This paper presents ContractHIL-HLS, a contract-aligned multi-agent workflow for practical high-level synthesis (HLS) engineering. The workflow makes three contributions. First, it introduces a structured contract as the semantic-alignment and task-execution artifact that translates natural language requirements into explicit interfaces, constraints, validation checks, and rollback rules. Second, it incorporates hardware information into the feedback loop by feeding HLS, Vivado, PYNQ runtime, power, and failure evidence back into generation, thereby extending LLM-assisted HLS from kernel code toward system- and board-level closure. Third, it decomposes agents by semantic lowering and execution tasks rather than by conversational roles: a C",
-      "pdf_link": "https://arxiv.org/pdf/2607.25283.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.25283",
-      "submission_date": "2026-07-29T04:00:00+00:00",
+      "abstract": "arXiv:2607.26491v1 Announce Type: new \nAbstract: The energy consumption of Large Language Model (LLM) serving is becoming a major system challenge as deployment scales, driven by hardware power and thermal constraints and rising electricity costs. A key contributor to chip energy dissipation is data movement between limited on-chip cache and off-chip High Bandwidth Memory (HBM). Meanwhile, emerging memory technologies such as monolithic 3D (M3D) integration of cache memories at the Back-End-Of-Line (BEOL) of logic chips enable larger and denser on-chip memories, creating new opportunities to reduce costly off-chip traffic. However, it remains unclear whether continuously scaling on-chip memory using emerging technologies can effectively improve the energy efficiency of LLM serving. To addr",
+      "pdf_link": "https://arxiv.org/pdf/2607.26491.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.26491",
+      "submission_date": "2026-07-30T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-07-29T08:35:47.671420+00:00"
+      "score": 2.0,
+      "updated_at": "2026-07-30T08:21:12.258408+00:00"
+    },
+    {
+      "forum_id": "2607.26835",
+      "paper_number": -1,
+      "title": "A Low-Power Sparse Convolution Accelerator with Idle-First-Task-Assignment for Edge Vision",
+      "authors": [
+        "Jingyue Zhuge (Chair of Highly-Parallel VLSI-Systems and Neuro-Microelectronics, TUD Dresden University of Technology, Center for Scalable Data Analytics and Artificial Intelligence), Johannes Partzsch (Chair of Highly-Parallel VLSI-Systems and Neuro-Microelectronics, TUD Dresden University of Technology), Christian Mayr (Chair of Highly-Parallel VLSI-Systems and Neuro-Microelectronics, TUD Dresden University of Technology, Centre for Tactile Internet with Human-in-the-loop)"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.26835v1 Announce Type: new \nAbstract: In recent years, edge-vision monitoring systems for applications such as smart animal husbandry have faced strict tripartite constraints: maintaining input resolution under extremely limited transmission bandwidth and strict power budgets. Conventional dense convolutional neural networks (CNNs) cannot satisfy the resource limits of such constrained IoT nodes. To address this challenge, this paper presents a low-power sparse convolution accelerator for edge devices, fabricated and validated in a 16 nm process. First, the accelerator adopts a bitmap-based format for compression in both data transmission and computation, effectively reducing memory and bandwidth overhead. Second, to mitigate load imbalance in sparse computation, an Idle-First-T",
+      "pdf_link": "https://arxiv.org/pdf/2607.26835.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.26835",
+      "submission_date": "2026-07-30T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-07-30T08:21:12.258517+00:00"
     }
   ]
 }
