@@ -1,77 +1,54 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-07-30T08:21:12.261168+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-07-31T08:46:22.823098+00:00",
+  "paper_count": 2,
   "papers": [
-    {
-      "forum_id": "2607.26633",
-      "paper_number": -1,
-      "title": "NELSSA: A GPU-PNM Heterogeneous System for Mixed-Length LLM Serving via Length-based Request Placement",
-      "authors": [
-        "Sookyung Choi, Seungyong Lee, Kangkyu Park, Yunseo Chun, Junseok Lee, Hyeongseok Gwak, Myunghyun Rhee, Euiseok Kim, Donguk Moon, Kwangsik Shin, Guseul Heo, Youngpyo Joo, Hoshik Kim, Jongse Park"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.26633v1 Announce Type: new \nAbstract: Modern LLMs and their agentic applications are broadening the range of serving workloads, spanning context lengths from a few hundred tokens to hundreds of thousands. As these requests frequently interleave within the same serving window, LLM serving systems must handle highly heterogeneous mixed-length workloads. Such mixed-length workloads expose fundamental inefficiencies in GPU-centric serving architectures, whose throughput depends on large, memory-constrained batches. In this paper, we present NELSSA, an LLM serving system that integrates GPUs with real-world Processing-near-Memory (PNM) accelerator devices to efficiently support mixed-length workloads. NELSSA employs length-based request placement to route short-context requests to GP",
-      "pdf_link": "https://arxiv.org/pdf/2607.26633.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.26633",
-      "submission_date": "2026-07-30T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 34.0,
-      "updated_at": "2026-07-30T08:21:12.258467+00:00"
-    },
-    {
-      "forum_id": "2607.26491",
-      "paper_number": -1,
-      "title": "LLMET: Enabling Cross-Layer Evaluation of Emerging M3D Memories for Energy-Efficient LLM Serving",
-      "authors": [
-        "Ming-Yen Lee, Hanchen Yang, Faaiq Waqar, Harsono Simka, Tushar Krishna, Muhammed Ahosan Ul Karim, Shimeng Yu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.26491v1 Announce Type: new \nAbstract: The energy consumption of Large Language Model (LLM) serving is becoming a major system challenge as deployment scales, driven by hardware power and thermal constraints and rising electricity costs. A key contributor to chip energy dissipation is data movement between limited on-chip cache and off-chip High Bandwidth Memory (HBM). Meanwhile, emerging memory technologies such as monolithic 3D (M3D) integration of cache memories at the Back-End-Of-Line (BEOL) of logic chips enable larger and denser on-chip memories, creating new opportunities to reduce costly off-chip traffic. However, it remains unclear whether continuously scaling on-chip memory using emerging technologies can effectively improve the energy efficiency of LLM serving. To addr",
-      "pdf_link": "https://arxiv.org/pdf/2607.26491.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.26491",
-      "submission_date": "2026-07-30T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-07-30T08:21:12.258408+00:00"
-    },
     {
       "forum_id": "2607.26835",
       "paper_number": -1,
       "title": "A Low-Power Sparse Convolution Accelerator with Idle-First-Task-Assignment for Edge Vision",
       "authors": [
-        "Jingyue Zhuge (Chair of Highly-Parallel VLSI-Systems and Neuro-Microelectronics, TUD Dresden University of Technology, Center for Scalable Data Analytics and Artificial Intelligence), Johannes Partzsch (Chair of Highly-Parallel VLSI-Systems and Neuro-Microelectronics, TUD Dresden University of Technology), Christian Mayr (Chair of Highly-Parallel VLSI-Systems and Neuro-Microelectronics, TUD Dresden University of Technology, Centre for Tactile Internet with Human-in-the-loop)"
+        "Jingyue Zhuge, Johannes Partzsch, Christian Mayr"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2607.26835v1 Announce Type: new \nAbstract: In recent years, edge-vision monitoring systems for applications such as smart animal husbandry have faced strict tripartite constraints: maintaining input resolution under extremely limited transmission bandwidth and strict power budgets. Conventional dense convolutional neural networks (CNNs) cannot satisfy the resource limits of such constrained IoT nodes. To address this challenge, this paper presents a low-power sparse convolution accelerator for edge devices, fabricated and validated in a 16 nm process. First, the accelerator adopts a bitmap-based format for compression in both data transmission and computation, effectively reducing memory and bandwidth overhead. Second, to mitigate load imbalance in sparse computation, an Idle-First-T",
+      "abstract": "arXiv:2607.26835v2 Announce Type: replace \nAbstract: In recent years, edge-vision monitoring systems for applications such as smart animal husbandry have faced strict tripartite constraints: maintaining input resolution under extremely limited transmission bandwidth and strict power budgets. Conventional dense convolutional neural networks (CNNs) cannot satisfy the resource limits of such constrained IoT nodes. To address this challenge, this paper presents a low-power sparse convolution accelerator for edge devices, fabricated and validated in a 16 nm process. First, the accelerator adopts a bitmap-based format for compression in both data transmission and computation, effectively reducing memory and bandwidth overhead. Second, to mitigate load imbalance in sparse computation, an Idle-Fir",
       "pdf_link": "https://arxiv.org/pdf/2607.26835.pdf",
       "forum_link": "https://arxiv.org/abs/2607.26835",
-      "submission_date": "2026-07-30T04:00:00+00:00",
+      "submission_date": "2026-07-31T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-07-31T08:46:22.819913+00:00"
+    },
+    {
+      "forum_id": "2607.27609",
+      "paper_number": -1,
+      "title": "Analog Courant Numbers and their Role in Analog Computing",
+      "authors": [
+        "Arash Ghasemi"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.27609v1 Announce Type: new \nAbstract: This paper identifies a dynamical constraint on analog-computing approaches in which a row of the matrix is represented by an impedance network. It shows that the fastest normalized mode is no more than $2\\pi$ times the largest combined unity-gain bandwidth (CUGBW) among all the circuit rows. The CUGBW of a row equals its finite-gain-adjusted unity-gain bandwidth plus the contributions of all rows coupled to it. Each contribution is the square root of the product of the two rows' unity-gain bandwidths multiplied by their coupling conductance and divided by the square root of the product of their total conductance loadings. This bound plays a role analogous to the Courant-number restriction in time-stepping methods by limiting the operator ra",
+      "pdf_link": "https://arxiv.org/pdf/2607.27609.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.27609",
+      "submission_date": "2026-07-31T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-07-30T08:21:12.258517+00:00"
+      "updated_at": "2026-07-31T08:46:22.819430+00:00"
     }
   ]
 }

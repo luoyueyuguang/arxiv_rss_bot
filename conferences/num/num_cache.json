@@ -1,77 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-07-28T08:47:36.962847+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-07-31T08:47:04.457257+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2509.20111",
+      "forum_id": "2607.28456",
       "paper_number": -1,
-      "title": "A convergent finite element method for two-phase Stokes flow driven by surface tension",
+      "title": "Graph Neural Multilevel Preconditioners for Iterative Solvers",
       "authors": [
-        "Genming Bai, Harald Garcke, Shravan Veerapaneni"
+        "Zechen Zhang, Rui Peng Li, Yousef Saad"
       ],
       "keywords": [
         "cs.NA",
-        "numerical analysis"
+        "scientific computing"
       ],
-      "abstract": "arXiv:2509.20111v3 Announce Type: replace \nAbstract: We present the first convergence proof for an iso-parametric finite element discretization of two-phase Stokes flow in $\\Omega \\subset \\mathbb{R}^d$, $d=2,3$, with interface dynamics governed by mean curvature. The proof relies on a crucial discrete coupled parabolicity structure of the error system and a powerful iso-parametric framework of convergence analysis where we do not really discriminate consistency and stability. This new mixing idea leads to a non-trivial construction of the bulk mesh in the consistency analysis. The techniques and analysis developed in this paper provide fundamental numerical analysis tools for general curvature-driven free boundary problems.",
-      "pdf_link": "https://arxiv.org/pdf/2509.20111.pdf",
-      "forum_link": "https://arxiv.org/abs/2509.20111",
-      "submission_date": "2026-07-28T04:00:00+00:00",
-      "conference": "numerical analysis",
+      "abstract": "arXiv:2607.28456v1 Announce Type: new \nAbstract: Solving large, sparse linear systems is a core task in scientific computing, and efficient iterative solvers rely critically on effective and robust preconditioning. While classical methods such as algebraic multigrid (AMG) are highly scalable, their robustness can degrade on indefinite or nonsymmetric systems where heuristics originally developed for elliptic PDEs are less reliable. Recently, Graph Neural Networks (GNNs) have emerged as data-driven preconditioners; yet, the practical impact of imposing an AMG-style hierarchy remains underexplored for general sparse matrices. In this work, we propose a Graph Neural Multilevel Preconditioner (GMP) that adopts an AMG hierarchy as a structural prior and learns smoothing, restriction, and interp",
+      "pdf_link": "https://arxiv.org/pdf/2607.28456.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.28456",
+      "submission_date": "2026-07-31T04:00:00+00:00",
+      "conference": "scientific computing",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 34.0,
-      "updated_at": "2026-07-28T08:47:36.958836+00:00"
-    },
-    {
-      "forum_id": "2601.16734",
-      "paper_number": -1,
-      "title": "SeeMPS: A Python-based Matrix Product State and Tensor Train Library",
-      "authors": [
-        "Paula Garc\\'ia-Molina, Juan Jos\\'e Rodr\\'iguez-Aldavero, Jorge Gidi, Juan Jos\\'e Garc\\'ia-Ripoll"
-      ],
-      "keywords": [
-        "cs.NA",
-        "numerical analysis"
-      ],
-      "abstract": "arXiv:2601.16734v2 Announce Type: replace-cross \nAbstract: We introduce SeeMPS, a Python library dedicated to implementing tensor network algorithms based on the well-known Matrix Product States (MPS) and Quantized Tensor Train (QTT) formalisms. SeeMPS is implemented as a complete finite precision linear algebra package where exponentially large vector spaces are compressed using the MPS/TT formalism. It enables both low-level operations, such as vector addition, linear transformations, and Hadamard products, as well as high-level algorithms, including the approximation of linear equations, eigenvalue computations, and exponentially efficient Fourier transforms. This library can be used for traditional quantum many-body physics applications and also for quantum-inspired numerical analysis ",
-      "pdf_link": "https://arxiv.org/pdf/2601.16734.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.16734",
-      "submission_date": "2026-07-28T04:00:00+00:00",
-      "conference": "numerical analysis",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-07-28T08:47:36.959375+00:00"
-    },
-    {
-      "forum_id": "2607.23699",
-      "paper_number": -1,
-      "title": "Explicit Runge approximation for Helmholtz equation with cylindrical harmonics",
-      "authors": [
-        "Yu Chen, Jin Cheng, Tingyue Li"
-      ],
-      "keywords": [
-        "cs.NA",
-        "numerical analysis"
-      ],
-      "abstract": "arXiv:2607.23699v1 Announce Type: new \nAbstract: Originating from the complex approximation of holomorphic functions, the Runge approximation for elliptic equations has evolved into a fundamental tool for inverse problems and even learning-based numerical methods since its proposition by Lax, Malgrange, with quantitative characterizations further established by R\\\"uland and Salo. It should be remarked here that Runge approximation is ill-posed. In numerical analysis, explicit quantitative estimates are required to characterize the dependence of the approximant's growth on the outward continuation distance of the original solution. This paper investigates the spatial dependent quantitative Runge approximation for the Helmholtz equation using cylindrical harmonics, considering both interior ",
-      "pdf_link": "https://arxiv.org/pdf/2607.23699.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.23699",
-      "submission_date": "2026-07-28T04:00:00+00:00",
-      "conference": "numerical analysis",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-07-28T08:47:36.957469+00:00"
+      "score": 57.0,
+      "updated_at": "2026-07-31T08:47:04.454801+00:00"
     }
   ]
 }

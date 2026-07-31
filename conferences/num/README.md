@@ -1,14 +1,12 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-07-30 08:21:49 UTC
-- **Total Filtered Papers**: 3
-- **Displaying**: 3 (arxiv: 3)
+- **Last Updated**: 2026-07-31 08:47:04 UTC
+- **Total Filtered Papers**: 1
+- **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [A convergent finite element method for two-phase Stokes flow driven by surface tension](https://arxiv.org/abs/2509.20111) | `ARXIV` | 34.0 |
-| 2 | [SeeMPS: A Python-based Matrix Product State and Tensor Train Library](https://arxiv.org/abs/2601.16734) | `ARXIV` | 4.0 |
-| 3 | [Explicit Runge approximation for Helmholtz equation with cylindrical harmonics](https://arxiv.org/abs/2607.23699) | `ARXIV` | 2.0 |
+| 1 | [Graph Neural Multilevel Preconditioners for Iterative Solvers](https://arxiv.org/abs/2607.28456) | `ARXIV` | 57.0 |

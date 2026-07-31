@@ -1,100 +1,100 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-07-30T08:21:09.153562+00:00",
+  "last_updated": "2026-07-31T08:46:19.697544+00:00",
   "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2607.26566",
+      "forum_id": "2607.27947",
       "paper_number": -1,
-      "title": "ServerlessT2I: Efficient Text-to-Image Workflow Serving on a Serverless Platform",
+      "title": "A CPU+DCU Heterogeneous Parallel Framework for Post-Processing Reconstruction in Quantum Circuit Cutting",
       "authors": [
-        "Xiaoxiao Jiang, Suyi Li, Sheng Yao, Tianyu Feng, Lingyun Yang, Dapeng Nie, Haoran Yang, Wei Wang"
+        "Qingqing Jiang, Weidong Liu, Yufu Liu, Ruiqing He, Jiandong Shang, Hengliang Guo, Qiang Chen"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.26566v1 Announce Type: new \nAbstract: Text-to-image (T2I) workflows are increasingly deployed on serverless platforms because users often compose customized workflows and invoke them intermittently. Existing platforms typically deploy each workflow as an opaque GPU function, provisioning, placing, and scaling all constituent models in the workflow together. This monolithic design obscures workflow structure, inflates scaling overhead, forces users to manage low-level GPU coordination, and limits fine-grained fairness in multi-tenant clusters. In this paper, we present ServerlessT2I, a serverless-native system that decomposes a T2I workflow into loosely coupled model functions that can be independently managed and scheduled. By explicitly managing individual model execution, Serv",
-      "pdf_link": "https://arxiv.org/pdf/2607.26566.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.26566",
-      "submission_date": "2026-07-30T04:00:00+00:00",
+      "abstract": "arXiv:2607.27947v1 Announce Type: cross \nAbstract: In the NISQ era, limited qubit resources make it difficult to execute large quantum circuits directly on real hardware. Quantum circuit cutting mitigates this limitation by decomposing a large circuit into smaller subcircuits, but it shifts substantial overhead to classical post-processing. As circuit size, complexity, and cut count increase, reconstruction becomes a major computational and storage bottleneck. This paper presents a CPU+DCU heterogeneous parallel framework for circuit-cutting post-processing reconstruction. Instead of constructing a dense $2^n$-dimensional probability vector or returning only high-probability states, the framework reconstructs the nonzero-probability states in the original output distribution from subcircui",
+      "pdf_link": "https://arxiv.org/pdf/2607.27947.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.27947",
+      "submission_date": "2026-07-31T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 72.0,
-      "updated_at": "2026-07-30T08:21:08.819108+00:00"
+      "score": 63.0,
+      "updated_at": "2026-07-31T08:46:19.303206+00:00"
     },
     {
-      "forum_id": "2607.26688",
+      "forum_id": "2607.28223",
       "paper_number": -1,
-      "title": "Nix to the Rescue for a Reproducible HPC-AI Software Stack",
+      "title": "Queue-Theoretic Admission Control for Multi-Tenant GPU Clusters",
       "authors": [
-        "Wenke Du (DATAMOVE), Jean-Marc Gratien (IFPEN), Raphael Gayno (IFPEN), Bruno Raffin (DATAMOVE)"
+        "Sohan Kunkerkar"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.26688v1 Announce Type: new \nAbstract: Reproducibility in HPC remains difficult under the constraints of production supercomputers: no root access, limited internet, and software stacks that increasingly span C/C++, Fortran, Python, MPI, and GPU runtimes. Traditional approaches based on environment modules and Conda require manual intervention to locate dependencies, leak system libraries into builds, and fail to compose across projects. Containers help with deployment but do not by themselves guarantee reproducibility. We report on our experience building a hybrid HPC/AI software stack with Nix, covering local development on a workstation without root and remote deployment as an Apptainer image on a production cluster. Nix's consistent package layout, full environment isolation,",
-      "pdf_link": "https://arxiv.org/pdf/2607.26688.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.26688",
-      "submission_date": "2026-07-30T04:00:00+00:00",
+      "abstract": "arXiv:2607.28223v1 Announce Type: new \nAbstract: GPU cluster operators cannot predict how long pending workloads will wait for admission. Existing systems use greedy heuristics with no formal wait time guarantees. We formalize GPU cluster admission as a multi-class, multi-resource queueing network and prove a structural decomposition: the pending queue partitions into quotable workloads (bounded wait time under stability) and unfeasible workloads (no finite bound without reconfiguration). For quotable workloads, we model each cluster queue as an M/G/k system where the effective server count k is determined by a vector packing reduction; under an explicit stochastic domination assumption, we establish O(1/(1-rho)) wait time scaling. We prove that optimal admission ordering is NP-hard under ",
+      "pdf_link": "https://arxiv.org/pdf/2607.28223.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.28223",
+      "submission_date": "2026-07-31T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 35.5,
-      "updated_at": "2026-07-30T08:21:08.819158+00:00"
+      "score": 34.0,
+      "updated_at": "2026-07-31T08:46:19.302796+00:00"
     },
     {
-      "forum_id": "2607.26335",
+      "forum_id": "2607.28377",
       "paper_number": -1,
-      "title": "The Fabric Is the Cluster Driver: Cross-Layer eBPF Policies for GPU-CXL Fabrics",
+      "title": "Anonymous sharing is pairwise phase-blind",
       "authors": [
-        "Yiwei Yang, Andi Quinn"
+        "Brieuc Le roux tardif"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.26335v1 Announce Type: new \nAbstract: We present fabric_ext, an eBPF middleware compiler and runtime for extensible OS policies over GPU--CXL fabrics. fabric_ext lets one policy program execute across GPU hooks, driver/runtime hooks, DPU/NIC hooks, and CXL switch or near-memory hooks. The key abstraction is a semantic movement graph: edges describe bytes, stride, reuse distance, read/write ratio, source and destination, ordering requirement, alias set, ownership, and transformations such as Move, Quantize, Compress, Checksum, Filter, Reduce, Scatter/Gather, Replicate, and Persist. The compiler lowers this graph into per-device eBPF programs, verifier obligations, consistency-classed BPF maps, and artifacts for bpftime and dputime. At the fabric edge, fabric_ext treats a near-Typ",
-      "pdf_link": "https://arxiv.org/pdf/2607.26335.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.26335",
-      "submission_date": "2026-07-30T04:00:00+00:00",
+      "abstract": "arXiv:2607.28377v1 Announce Type: cross \nAbstract: Independent training jobs sharing a storage system write their checkpoints through the same finite bandwidth, and the resulting bursts of correlated I/O are commonly described as a self-reinforcing \"checkpoint storm\". We formalise the self-reinforcement as phase locking in a population of integrate-and-fire oscillators coupled through a shared resource, and show that within that model it fails. Call a resource anonymous if the rate it delivers to an active user depends on how many users are active and not on which. For identical jobs whose write is shorter than their compute interval, an anonymous resource produces no pairwise coupling at all: the two-job return map of the phase gap is the identity, under storage contention, under a shared",
+      "pdf_link": "https://arxiv.org/pdf/2607.28377.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.28377",
+      "submission_date": "2026-07-31T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 33.0,
-      "updated_at": "2026-07-30T08:21:08.818836+00:00"
+      "score": 12.0,
+      "updated_at": "2026-07-31T08:46:19.303396+00:00"
     },
     {
-      "forum_id": "2607.26503",
+      "forum_id": "2607.28338",
       "paper_number": -1,
-      "title": "Safety-Gated Autoscaling: A Multi-Layered Defense Architecture for Kubernetes Vertical Resource Optimization",
+      "title": "Encryption-Compatible Clustered Federated Learning via Distributed Expectation-Maximization over Metadata",
       "authors": [
-        "Azra Karakaya, Erva \\c{S}eng\\\"ul, Ahmet Kaplan"
+        "Michael Ben Ali, Imen Megdiche, Andr\\'e P\\'eninou, Olivier Teste"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.26503v1 Announce Type: new \nAbstract: Kubernetes is the standard platform for orchestrating containerized applications, yet resource management remains difficult. To stay safe, engineers over-provision CPU and memory, leaving reserved but unused capacity that is the main source of wasted cost. The built-in Horizontal and Vertical Pod Autoscalers are reactive: they act only after a threshold is crossed, which causes lag, over-provisioning, and can mask software defects by granting a leaking workload more memory. Predictive autoscalers focus on improving forecasting accuracy or run inside proprietary infrastructure, and anomaly detection is used only to alert, never to block a harmful action. The Intelligent Cluster Optimizer is an open-source Kubernetes operator that right-sizes ",
-      "pdf_link": "https://arxiv.org/pdf/2607.26503.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.26503",
-      "submission_date": "2026-07-30T04:00:00+00:00",
+      "abstract": "arXiv:2607.28338v1 Announce Type: cross \nAbstract: Clustered Federated Learning (CFL) addresses data heterogeneity in federated settings by grouping clients with similar data distributions to enable effective training. Existing methods face a trade-off between privacy preservation, communication cost, and computational efficiency. We formalize this as the CFL trilemma, according to which improving two of these dimensions comes at the expense of the third. A prominent paradigm relies on metadata (i.e., low-dimensional representations of client datasets shared with the server) to enable communication- and computation-efficient clustering. However, such approaches are not compatible with standard FL privacy-preserving mechanisms. To address this limitation, we propose FLAMECHE, which reformul",
+      "pdf_link": "https://arxiv.org/pdf/2607.28338.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.28338",
+      "submission_date": "2026-07-31T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-07-30T08:21:08.819046+00:00"
+      "score": 4.0,
+      "updated_at": "2026-07-31T08:46:19.303322+00:00"
     }
   ]
 }

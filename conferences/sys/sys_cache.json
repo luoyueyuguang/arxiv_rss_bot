@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-07-30T08:21:12.205498+00:00",
-  "paper_count": 437,
+  "last_updated": "2026-07-31T08:46:22.758413+00:00",
+  "paper_count": 438,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -8473,6 +8473,29 @@
       "ratings": [],
       "score": 2.5,
       "updated_at": "2026-07-21T08:54:26.744870+00:00"
+    },
+    {
+      "forum_id": "2607.27659",
+      "paper_number": -1,
+      "title": "Learning Color Grading, No Photo Sharing: Federated Aesthetic Preference Learning for Personalized Image Enhancement",
+      "authors": [
+        "Chuanzhi Xu, Ziyuan Tao, Jean Julien KNell, Yanrong Chen, Haolan Guo, Xuanhua Yin, Adnan Mahmood, Weidong Cai"
+      ],
+      "keywords": [
+        "cs.DC",
+        "HotOS"
+      ],
+      "abstract": "arXiv:2607.27659v1 Announce Type: cross \nAbstract: Personalized image enhancement should reflect individual aesthetic taste, yet learning such preferences commonly depends on private photos and ratings that are unsuitable for centralized collection. The task must infer preference from sparse, heterogeneous feedback and translate it into natural-looking color transformations on resource-constrained user devices. We introduce FedPAIE, a federated personalized aesthetic image enhancement framework for user-adaptive color grading without centralizing raw photos or ratings. FedPAIE trains a lightweight dual-cue aesthetic scorer, calibrates it into a personalized scorer on a small local support set, and freezes it to guide regularized adaptation of a lightweight CLUT enhancer from unpaired local",
+      "pdf_link": "https://arxiv.org/pdf/2607.27659.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.27659",
+      "submission_date": "2026-07-31T04:00:00+00:00",
+      "conference": "HotOS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-07-31T08:46:19.799502+00:00"
     },
     {
       "forum_id": "usenix-osdi26-10",
