@@ -1,6 +1,6 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-07-31 08:46:19 UTC
+- **Last Updated**: 2026-08-03 09:38:20 UTC
 - **Total Filtered Papers**: 1
 - **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
@@ -9,4 +9,4 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [FHECore: Rethinking GPU Microarchitecture for Fully Homomorphic Encryption](https://arxiv.org/abs/2602.22229) | `ARXIV` | 15.0 |
+| 1 | [Optical Flow Sensor: A Direction-Selective Bionic Retina Design](https://arxiv.org/abs/2607.28686) | `ARXIV` | 11.0 |

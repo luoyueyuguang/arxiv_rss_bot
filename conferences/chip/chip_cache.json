@@ -1,54 +1,169 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-07-31T08:46:22.823098+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-08-03T09:39:18.863832+00:00",
+  "paper_count": 7,
   "papers": [
     {
-      "forum_id": "2607.26835",
+      "forum_id": "2607.28877",
       "paper_number": -1,
-      "title": "A Low-Power Sparse Convolution Accelerator with Idle-First-Task-Assignment for Edge Vision",
+      "title": "Open-Source LLM-Driven Formal Verification: A Multi-Agent Pipeline for RTL Repair",
       "authors": [
-        "Jingyue Zhuge, Johannes Partzsch, Christian Mayr"
+        "Ha Trung Tran"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2607.26835v2 Announce Type: replace \nAbstract: In recent years, edge-vision monitoring systems for applications such as smart animal husbandry have faced strict tripartite constraints: maintaining input resolution under extremely limited transmission bandwidth and strict power budgets. Conventional dense convolutional neural networks (CNNs) cannot satisfy the resource limits of such constrained IoT nodes. To address this challenge, this paper presents a low-power sparse convolution accelerator for edge devices, fabricated and validated in a 16 nm process. First, the accelerator adopts a bitmap-based format for compression in both data transmission and computation, effectively reducing memory and bandwidth overhead. Second, to mitigate load imbalance in sparse computation, an Idle-Fir",
-      "pdf_link": "https://arxiv.org/pdf/2607.26835.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.26835",
-      "submission_date": "2026-07-31T04:00:00+00:00",
+      "abstract": "arXiv:2607.28877v1 Announce Type: new \nAbstract: Verification consumes the majority of modern chip design effort, yet the formal verification tools that provide mathematical guarantees of correctness remain expensive and restrictively licensed. While large language models (LLMs) have shown promise for hardware design, existing approaches to RTL repair validate their results through simulation - which exercises only a subset of inputs - or rely on commercial tools, and few combine formal proof with an entirely open-source toolchain. In this paper, we present a multi-agent pipeline that couples an LLM with an open-source formal backend (Yosys, SymbiYosys, and Z3) to repair RTL through counterexample-guided iteration: the framework generates formal properties, verifies the design, and feeds c",
+      "pdf_link": "https://arxiv.org/pdf/2607.28877.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.28877",
+      "submission_date": "2026-08-03T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-07-31T08:46:22.819913+00:00"
+      "score": 17.5,
+      "updated_at": "2026-08-03T09:39:18.859977+00:00"
     },
     {
-      "forum_id": "2607.27609",
+      "forum_id": "2603.29268",
       "paper_number": -1,
-      "title": "Analog Courant Numbers and their Role in Analog Computing",
+      "title": "From Physics to Surrogate Intelligence: A Unified Electro-Thermo-Optimization Framework for TSV Networks",
       "authors": [
-        "Arash Ghasemi"
+        "Mohamed Gharib, Leonid Popryho, Inna Partin-Vaisband"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2607.27609v1 Announce Type: new \nAbstract: This paper identifies a dynamical constraint on analog-computing approaches in which a row of the matrix is represented by an impedance network. It shows that the fastest normalized mode is no more than $2\\pi$ times the largest combined unity-gain bandwidth (CUGBW) among all the circuit rows. The CUGBW of a row equals its finite-gain-adjusted unity-gain bandwidth plus the contributions of all rows coupled to it. Each contribution is the square root of the product of the two rows' unity-gain bandwidths multiplied by their coupling conductance and divided by the square root of the product of their total conductance loadings. This bound plays a role analogous to the Courant-number restriction in time-stepping methods by limiting the operator ra",
-      "pdf_link": "https://arxiv.org/pdf/2607.27609.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.27609",
-      "submission_date": "2026-07-31T04:00:00+00:00",
+      "abstract": "arXiv:2603.29268v3 Announce Type: replace-cross \nAbstract: High-density through-substrate vias (TSVs) enable 2.5D/3D heterogeneous integration but introduce significant signal-integrity and thermal-reliability challenges due to electrical coupling, insertion loss, and self-heating. Conventional full-wave finite-element method (FEM) simulations provide high accuracy but become computationally prohibitive for large design-space exploration. This work presents a scalable electro--thermal modeling and optimization framework that combines physics-informed analytical modeling, graph neural network (GNN) surrogates, and full-wave sign-off validation. A multi-conductor analytical model computes broadband S-parameters and effective anisotropic thermal conductivities of TSV arrays, achieving $5\\%$--",
+      "pdf_link": "https://arxiv.org/pdf/2603.29268.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.29268",
+      "submission_date": "2026-08-03T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 15.5,
+      "updated_at": "2026-08-03T09:39:18.860270+00:00"
+    },
+    {
+      "forum_id": "2607.29357",
+      "paper_number": -1,
+      "title": "Low-Power PLL-Based Clock Stabilization for Flexible IGZO AMS Systems",
+      "authors": [
+        "Paula Carolina Lozano Duarte, Georgios Zervakis, Mehdi Tahoori"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.29357v1 Announce Type: new \nAbstract: Flexible electronics (FE) platforms rely on analog and mixed-signal (AMS) circuits - biosensors, readout front-ends, and analog-to-digital converters - that dominate both functionality and energy consumption, making on-chip clock generation an essential yet power-critical function. Existing oscillator-based solutions suffer from unbounded process, voltage, and temperature (PVT) drift that degrades signal integrity, while alternative clock sources can consume up to 90% of the total system power budget, rendering them inapplicable to FE platforms and elevating clock generation to a primary power and energy-efficiency design constraint. This paper presents the first phase-locked loop (PLL) architecture designed for n-type-only amorphous indium-",
+      "pdf_link": "https://arxiv.org/pdf/2607.29357.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.29357",
+      "submission_date": "2026-08-03T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 6.5,
+      "updated_at": "2026-08-03T09:39:18.860098+00:00"
+    },
+    {
+      "forum_id": "2607.23000",
+      "paper_number": -1,
+      "title": "Magnetic Tunnel Junctions for Timekeeping in Intermittent Computing Systems",
+      "authors": [
+        "Nikola Vuk Maruszewski, Jordan Athas, Allison Fleming, Christian Duffee, Eren Yildiz, Saad Ahmed, Yaman Sangar, Pedram Khalili, Josiah Hester"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.23000v2 Announce Type: replace \nAbstract: Batteryless intermittent systems run unattended for years, but power failures erase timekeeping state, corrupting sensing, scheduling, and coordination. State-of-the-art timekeepers infer elapsed time from capacitor discharge; however, the capacitor must be sized for the longest interval measured (so range, energy, and area grow together), and repeated charge-discharge cycling lowers capacitance over time, biasing every estimate further as the deployment ages. We present FLINT, a timekeeper that reads elapsed time from the stochastic retention loss of an array of \"broken\" Magnetic Tunnel Junctions (MTJs)---spintronic memory cells engineered to lose state predictably. Because the decay timescale is fixed by device geometry, the energy to ",
+      "pdf_link": "https://arxiv.org/pdf/2607.23000.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.23000",
+      "submission_date": "2026-08-03T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-08-03T09:39:18.860179+00:00"
+    },
+    {
+      "forum_id": "2607.29076",
+      "paper_number": -1,
+      "title": "Selective KV Cache Protection for Noise-Resilient LLM Inference on Analog Compute-In-Memory Systems",
+      "authors": [
+        "Yuannuo Feng, Wenyong Zhou, Yuang Ma, Yizhe Chen, Wenshuai Yao, Yuxin Xie, Ngai Wong, Wang Kang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.29076v1 Announce Type: new \nAbstract: Analog compute-in-memory (CIM) arrays have emerged as a promising substrate for energy-efficient LLM inference, particularly for weight-stationary computations in linear layers. However, extending analog CIM to attention mechanisms introduces a fundamental challenge: KV cache operations demand repeated in-situ weight updates, and the resulting mismatch with the weight-stationary paradigm exposes dynamic computations to significant hardware noise, a critical problem that remains largely unexplored. In this paper, we present the first systematic study of dynamic attention computation on analog CIM arrays, revealing that initial and recent tokens exhibit disproportionate vulnerability to hardware noise. Motivated by this token-level insight, we",
+      "pdf_link": "https://arxiv.org/pdf/2607.29076.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.29076",
+      "submission_date": "2026-08-03T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-07-31T08:46:22.819430+00:00"
+      "updated_at": "2026-08-03T09:39:18.860013+00:00"
+    },
+    {
+      "forum_id": "2607.29283",
+      "paper_number": -1,
+      "title": "RTLCurator: Label-Efficient Data Curation for RTL Generation",
+      "authors": [
+        "Siyang Cai, Cangyuan Li, Wenjing Chang, Kun Wang, Haoyu Gao, Yinhe Han, Ying Wang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.29283v1 Announce Type: new \nAbstract: Training large language models (LLMs) to write register-transfer level (RTL) requires large corpora of paired specifications and code, and such data is scarce enough that most public corpora are now synthesized. Synthesis provides scale but not correctness, and in two widely used RTL datasets only 24.4% and 53.5% of pairs pass generated functional tests. This raises the question of how much of such a corpus to keep and which part of it. Correctness alone is a poor answer. A pair that misbehaves in one corner case still shows valid syntax and interface conventions, and complex sequential designs are both harder to generate and harder to validate, so filtering by correctness leaves a corpus of short and simple modules. Correctness is also hard",
+      "pdf_link": "https://arxiv.org/pdf/2607.29283.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.29283",
+      "submission_date": "2026-08-03T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-08-03T09:39:18.860052+00:00"
+    },
+    {
+      "forum_id": "2607.28686",
+      "paper_number": -1,
+      "title": "Optical Flow Sensor: A Direction-Selective Bionic Retina Design",
+      "authors": [
+        "Juchen Zhou, Bonan Yan, Yuchao Yang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2607.28686v1 Announce Type: new \nAbstract: Optical flow characterizes motion in the visual field and is fundamental to motion perception and tracking in biological and artificial vision systems. Biological retinas extract motion efficiently through local ON/OFF pathways and parallel processing, while conventional frame-based optical flow relies on dense sampling and global computation, resulting in high latency and power consumption. To overcome these limitations, we present a pixel-level Optical Flow Sensor (OFS) integrated circuit. The design combines Dynamic Vision Sensor (DVS) ON/OFF event comparison with time-difference measurement to enable fully parallel optical flow computation on-chip. An optical-flow-specific Address-Event Representation (OF-AER) interface supports low-powe",
+      "pdf_link": "https://arxiv.org/pdf/2607.28686.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.28686",
+      "submission_date": "2026-08-03T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-08-03T09:39:18.859824+00:00"
     }
   ]
 }
