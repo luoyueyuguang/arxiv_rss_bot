@@ -1,18 +1,15 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-08-03 09:39:18 UTC
-- **Total Filtered Papers**: 7
-- **Displaying**: 7 (arxiv: 7)
+- **Last Updated**: 2026-08-04 08:32:45 UTC
+- **Total Filtered Papers**: 4
+- **Displaying**: 4 (arxiv: 4)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Open-Source LLM-Driven Formal Verification: A Multi-Agent Pipeline for RTL Repair](https://arxiv.org/abs/2607.28877) | `ARXIV` | 17.5 |
-| 2 | [From Physics to Surrogate Intelligence: A Unified Electro-Thermo-Optimization Framework for TSV Networks](https://arxiv.org/abs/2603.29268) | `ARXIV` | 15.5 |
-| 3 | [Low-Power PLL-Based Clock Stabilization for Flexible IGZO AMS Systems](https://arxiv.org/abs/2607.29357) | `ARXIV` | 6.5 |
-| 4 | [Magnetic Tunnel Junctions for Timekeeping in Intermittent Computing Systems](https://arxiv.org/abs/2607.23000) | `ARXIV` | 2.0 |
-| 5 | [Selective KV Cache Protection for Noise-Resilient LLM Inference on Analog Compute-In-Memory Systems](https://arxiv.org/abs/2607.29076) | `ARXIV` | 1.5 |
-| 6 | [RTLCurator: Label-Efficient Data Curation for RTL Generation](https://arxiv.org/abs/2607.29283) | `ARXIV` | 1.5 |
-| 7 | [Optical Flow Sensor: A Direction-Selective Bionic Retina Design](https://arxiv.org/abs/2607.28686) | `ARXIV` | 1.0 |
+| 1 | [A Time-Multiplexed Spiking Neural Network Accelerator with Pipelined Readout for FPGA Inference](https://arxiv.org/abs/2608.00595) | `ARXIV` | 14.5 |
+| 2 | [FinHardBench: Can LLMs Generate Latency-Aware Hardware for Financial Computing?](https://arxiv.org/abs/2608.00909) | `ARXIV` | 2.0 |
+| 3 | [CascadeLUT: Information-Ordered Streaming Inference for Bandwidth-Constrained FPGAs](https://arxiv.org/abs/2608.00720) | `ARXIV` | 1.5 |
+| 4 | [Rethinking Agentic Kernel Generation for Emerging Accelerators](https://arxiv.org/abs/2608.00894) | `ARXIV` | 1.0 |

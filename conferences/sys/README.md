@@ -1,8 +1,8 @@
 # Systems / AI Infra / AI Compiler / RISC-V Papers
 
-- **Last Updated**: 2026-08-03 09:39:18 UTC
-- **Total Filtered Papers**: 397
-- **Displaying**: 200 (arxiv: 2, dblp: 41, usenix: 157)
+- **Last Updated**: 2026-08-04 08:32:45 UTC
+- **Total Filtered Papers**: 403
+- **Displaying**: 200 (arxiv: 3, dblp: 41, usenix: 156)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
@@ -98,36 +98,36 @@
 | 87 | [Jetpack: Consensus Made Generally Fast](https://www.usenix.org/conference/osdi26/presentation/tang) | `USENIX` | 42.5 |
 | 88 | [Bodega: Localized Linearizable Reads at Anywhere Anytime via Roster Leases](https://www.usenix.org/conference/osdi26/presentation/hu-guanzhou) | `USENIX` | 42.0 |
 | 89 | [Net-P4ct: Enhanced WAN Bandwidth Fair Sharing Using P4 Programmable Switches](https://www.usenix.org/conference/nsdi26/presentation/chen) | `USENIX` | 42.0 |
-| 90 | [TokTier: Exact Stateful Tokenization for Agentic LLM Serving](https://arxiv.org/abs/2607.29678) | `ARXIV` | 41.5 |
-| 91 | [Tessera: A Holistic Pipeline Parallelism Framework for Trillion-Parameter Heterogeneous MoE Training (Operational Systems)](https://www.usenix.org/conference/osdi26/presentation/hu-weifang) | `USENIX` | 40.5 |
-| 92 | [Bidaw: Enhancing Key-Value Caching for Interactive LLM Serving via Bidirectional Computation–Storage Awareness](https://www.usenix.org/conference/fast26/presentation/hu-shipeng) | `USENIX` | 38.0 |
-| 93 | [Cache-Centric Multi-Resource Allocation for Storage Services](https://www.usenix.org/conference/fast26/presentation/ye) | `USENIX` | 38.0 |
-| 94 | [Taming Latency-Memory Trade-Off in MoE-Based LLM Serving via Fine-Grained Expert Offloading.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 37.5 |
-| 95 | [GraCE: Unlocking CUDA Graphs with Compiler Support for ML Workloads](https://www.usenix.org/conference/osdi26/presentation/ghosh) | `USENIX` | 37.5 |
-| 96 | [CStar Gateway: Augmenting Public Cloud Infrastructure for Heterogeneous Network Function Virtualization](https://www.usenix.org/conference/nsdi26/presentation/li-haonan) | `USENIX` | 37.5 |
-| 97 | [Checkmate: Zero Performance Overhead Model Checkpointing via Network Gradient Replication](https://www.usenix.org/conference/nsdi26/presentation/bhardwaj) | `USENIX` | 37.0 |
-| 98 | [Mortise: Auto-tuning Congestion Control to Optimize QoE via Network-Aware Parameter Optimization](https://www.usenix.org/conference/nsdi26/presentation/shen-yixin) | `USENIX` | 37.0 |
-| 99 | [Prism: Cost-Efficient Multi-LLM Serving via GPU Memory Ballooning](https://www.usenix.org/conference/osdi26/presentation/yu-shan) | `USENIX` | 36.5 |
-| 100 | [Stop Pretending to Be Busy: A Case for Serverless Paradigms in Co-Located Batch Workloads (Operational Systems)](https://www.usenix.org/conference/osdi26/presentation/chai) | `USENIX` | 36.5 |
-| 101 | [High Throughput and Low Latency LLM Serving via Adaptive KV Caching.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 36.0 |
-| 102 | [Serverless Replication of Object Storage across Multi-Vendor Clouds and Regions.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 36.0 |
-| 103 | [DroidSpeak: KV Cache Sharing Across Fine-tuned Model Variants](https://www.usenix.org/conference/nsdi26/presentation/liu-yuhan) | `USENIX` | 36.0 |
-| 104 | [Holistic and Automated Task Scheduling for Distributed LSM-tree-based Storage](https://www.usenix.org/conference/fast26/presentation/ren) | `USENIX` | 36.0 |
-| 105 | [UnICom: A Universally High-Performant I/O Completion Mechanism for Modern Computer Systems](https://www.usenix.org/conference/fast26/presentation/pan) | `USENIX` | 36.0 |
-| 106 | [What Are You (M)Waiting For: The Hidden Cost of Idle in the Hyperscale Cloud (Operational Systems)](https://www.usenix.org/conference/osdi26/presentation/wang-yun) | `USENIX` | 35.5 |
-| 107 | [FalconFS: Distributed File System for Large-Scale Deep Learning Pipeline](https://www.usenix.org/conference/nsdi26/presentation/xu) | `USENIX` | 35.5 |
-| 108 | [DistRS: Disaggregated Reward Service for RLVR with Batch-Level Constraint](https://www.usenix.org/conference/nsdi26/presentation/zhu-ruidong) | `USENIX` | 35.5 |
-| 109 | [FRCC: Towards Provably Fair and Robust Congestion Control](https://www.usenix.org/conference/nsdi26/presentation/agarwal-anup) | `USENIX` | 35.5 |
-| 110 | [A Compilation-Based Under-Constrained Execution Engine](https://www.usenix.org/conference/osdi26/presentation/yin) | `USENIX` | 35.0 |
-| 111 | [vBOIDs: Taming Chaos via Coarse-Grained Scheduling Abstraction for Containers](https://www.usenix.org/conference/osdi26/presentation/manakkal) | `USENIX` | 35.0 |
-| 112 | [Feedback-guided Adaptive Testing of Distributed Systems Designs](https://www.usenix.org/conference/nsdi26/presentation/li) | `USENIX` | 35.0 |
-| 113 | [HARP: Orchestrating Automated Parallel Training on Heterogeneous GPU Clusters.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 34.5 |
-| 114 | [VTC: DNN Compilation with Virtual Tensors for Data Movement Elimination](https://www.usenix.org/conference/osdi26/presentation/hu-muyan) | `USENIX` | 34.0 |
-| 115 | [Iceberg: Automated Verification of DNS Authoritative Engines via Just-in-Time Summarization](https://www.usenix.org/conference/nsdi26/presentation/xiang-iceberg) | `USENIX` | 34.0 |
-| 116 | [ACOS: Apple’s Geo-Distributed Object Store at Exabyte Scale](https://www.usenix.org/conference/fast26/presentation/baron) | `USENIX` | 34.0 |
-| 117 | [Discard-Based Garbage Collection for Distributed Log-Structured Storage Systems in ByteDance](https://www.usenix.org/conference/fast26/presentation/bian) | `USENIX` | 34.0 |
-| 118 | [Compaction-Free Memory Defragmentation for Virtualization via Infinite Guest Physical Address Space](https://www.usenix.org/conference/osdi26/presentation/zeng) | `USENIX` | 33.5 |
-| 119 | [Xerxes: Extensive Exploration of Scalable Hardware Systems with CXL-Based Simulation Framework](https://www.usenix.org/conference/fast26/presentation/an) | `USENIX` | 33.5 |
+| 90 | [Tessera: A Holistic Pipeline Parallelism Framework for Trillion-Parameter Heterogeneous MoE Training (Operational Systems)](https://www.usenix.org/conference/osdi26/presentation/hu-weifang) | `USENIX` | 40.5 |
+| 91 | [Bidaw: Enhancing Key-Value Caching for Interactive LLM Serving via Bidirectional Computation–Storage Awareness](https://www.usenix.org/conference/fast26/presentation/hu-shipeng) | `USENIX` | 38.0 |
+| 92 | [Cache-Centric Multi-Resource Allocation for Storage Services](https://www.usenix.org/conference/fast26/presentation/ye) | `USENIX` | 38.0 |
+| 93 | [Taming Latency-Memory Trade-Off in MoE-Based LLM Serving via Fine-Grained Expert Offloading.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 37.5 |
+| 94 | [GraCE: Unlocking CUDA Graphs with Compiler Support for ML Workloads](https://www.usenix.org/conference/osdi26/presentation/ghosh) | `USENIX` | 37.5 |
+| 95 | [CStar Gateway: Augmenting Public Cloud Infrastructure for Heterogeneous Network Function Virtualization](https://www.usenix.org/conference/nsdi26/presentation/li-haonan) | `USENIX` | 37.5 |
+| 96 | [Checkmate: Zero Performance Overhead Model Checkpointing via Network Gradient Replication](https://www.usenix.org/conference/nsdi26/presentation/bhardwaj) | `USENIX` | 37.0 |
+| 97 | [Mortise: Auto-tuning Congestion Control to Optimize QoE via Network-Aware Parameter Optimization](https://www.usenix.org/conference/nsdi26/presentation/shen-yixin) | `USENIX` | 37.0 |
+| 98 | [Prism: Cost-Efficient Multi-LLM Serving via GPU Memory Ballooning](https://www.usenix.org/conference/osdi26/presentation/yu-shan) | `USENIX` | 36.5 |
+| 99 | [Stop Pretending to Be Busy: A Case for Serverless Paradigms in Co-Located Batch Workloads (Operational Systems)](https://www.usenix.org/conference/osdi26/presentation/chai) | `USENIX` | 36.5 |
+| 100 | [High Throughput and Low Latency LLM Serving via Adaptive KV Caching.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 36.0 |
+| 101 | [Serverless Replication of Object Storage across Multi-Vendor Clouds and Regions.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 36.0 |
+| 102 | [DroidSpeak: KV Cache Sharing Across Fine-tuned Model Variants](https://www.usenix.org/conference/nsdi26/presentation/liu-yuhan) | `USENIX` | 36.0 |
+| 103 | [Holistic and Automated Task Scheduling for Distributed LSM-tree-based Storage](https://www.usenix.org/conference/fast26/presentation/ren) | `USENIX` | 36.0 |
+| 104 | [UnICom: A Universally High-Performant I/O Completion Mechanism for Modern Computer Systems](https://www.usenix.org/conference/fast26/presentation/pan) | `USENIX` | 36.0 |
+| 105 | [What Are You (M)Waiting For: The Hidden Cost of Idle in the Hyperscale Cloud (Operational Systems)](https://www.usenix.org/conference/osdi26/presentation/wang-yun) | `USENIX` | 35.5 |
+| 106 | [FalconFS: Distributed File System for Large-Scale Deep Learning Pipeline](https://www.usenix.org/conference/nsdi26/presentation/xu) | `USENIX` | 35.5 |
+| 107 | [DistRS: Disaggregated Reward Service for RLVR with Batch-Level Constraint](https://www.usenix.org/conference/nsdi26/presentation/zhu-ruidong) | `USENIX` | 35.5 |
+| 108 | [FRCC: Towards Provably Fair and Robust Congestion Control](https://www.usenix.org/conference/nsdi26/presentation/agarwal-anup) | `USENIX` | 35.5 |
+| 109 | [A Compilation-Based Under-Constrained Execution Engine](https://www.usenix.org/conference/osdi26/presentation/yin) | `USENIX` | 35.0 |
+| 110 | [vBOIDs: Taming Chaos via Coarse-Grained Scheduling Abstraction for Containers](https://www.usenix.org/conference/osdi26/presentation/manakkal) | `USENIX` | 35.0 |
+| 111 | [Feedback-guided Adaptive Testing of Distributed Systems Designs](https://www.usenix.org/conference/nsdi26/presentation/li) | `USENIX` | 35.0 |
+| 112 | [HARP: Orchestrating Automated Parallel Training on Heterogeneous GPU Clusters.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 34.5 |
+| 113 | [VTC: DNN Compilation with Virtual Tensors for Data Movement Elimination](https://www.usenix.org/conference/osdi26/presentation/hu-muyan) | `USENIX` | 34.0 |
+| 114 | [Iceberg: Automated Verification of DNS Authoritative Engines via Just-in-Time Summarization](https://www.usenix.org/conference/nsdi26/presentation/xiang-iceberg) | `USENIX` | 34.0 |
+| 115 | [ACOS: Apple’s Geo-Distributed Object Store at Exabyte Scale](https://www.usenix.org/conference/fast26/presentation/baron) | `USENIX` | 34.0 |
+| 116 | [Discard-Based Garbage Collection for Distributed Log-Structured Storage Systems in ByteDance](https://www.usenix.org/conference/fast26/presentation/bian) | `USENIX` | 34.0 |
+| 117 | [Compaction-Free Memory Defragmentation for Virtualization via Infinite Guest Physical Address Space](https://www.usenix.org/conference/osdi26/presentation/zeng) | `USENIX` | 33.5 |
+| 118 | [Xerxes: Extensive Exploration of Scalable Hardware Systems with CXL-Based Simulation Framework](https://www.usenix.org/conference/fast26/presentation/an) | `USENIX` | 33.5 |
+| 119 | [TokTier: Exact Stateful CPU+GPU Tokenization for Agentic LLM Serving](https://arxiv.org/abs/2607.29678) | `ARXIV` | 33.0 |
 | 120 | [Practical and Efficient x86-64 Emulation on RISC-V.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
 | 121 | [Pyramid: A Secure, Resource-Efficient, and Pluggable Kubernetes for Multi-Tenancy.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
 | 122 | [Proteus: Heterogeneous FPGA Virtualization.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 33.0 |
@@ -148,64 +148,64 @@
 | 137 | [Count-Based Abstractions for Performance Verification of Contention Points](https://www.usenix.org/conference/nsdi26/presentation/seyhani) | `USENIX` | 32.5 |
 | 138 | [Themis: Detecting Distributed Concurrency Bugs through RPC-Driven Race-Directed Test Generation and Fuzzing](https://www.usenix.org/conference/nsdi26/presentation/cao) | `USENIX` | 32.5 |
 | 139 | [Syntra: Synthesizing Cross-Layer Controllers for Low-Latency Video Streaming](https://www.usenix.org/conference/nsdi26/presentation/pan) | `USENIX` | 32.5 |
-| 140 | [CofferOS: Hardening OS-level Virtualization with Rust.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 141 | [iRoute: Local Routing Table-based Workflow Management in Serverless Computing.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 142 | [MesaFS: An I/O-Efficient Metadata Service for Distributed File Systems.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 143 | [Fuzzing Enterprise-Grade Blockchain Systems: Industrial Practice and Solutions.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 144 | [Wayfinder: Automated Operating System Specialization.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 145 | [Squeezy: Rapid VM Memory Reclamation for Serverless Functions.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 146 | [TAO: Tolerance-Aware Optimistic Verification for Floating-Point Neural Networks.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 147 | [Towards Improving Throughput and Scalability of DAG-based BFT SMR.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 148 | [LifeFuzz: Lifecycle-Guided Fuzzing for Windows Driver Cross-Handler Vulnerabilities.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 149 | [In-Production Characterization of an Open Source Serverless Platform and New Scaling Strategies.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 150 | [Fix: externalizing network I/O in serverless computing.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
-| 151 | [ADAngel: Accelerating Arbitrary-Precision Quantized LLMs with Adaptive Computing Mapping](https://www.usenix.org/conference/osdi26/presentation/liu-yao) | `USENIX` | 28.0 |
-| 152 | [Unleashing The Potential of Datacenter SSDs by Taming Performance Variability](https://www.usenix.org/conference/nsdi26/presentation/chaudhry) | `USENIX` | 28.0 |
-| 153 | [ScaleSwap: A Scalable OS Swap System for All-Flash Swap Arrays](https://www.usenix.org/conference/fast26/presentation/ahn) | `USENIX` | 27.5 |
-| 154 | [Unleash All Cores: Asymmetry-Aware Scalable DNN Inference on Mobile CPUs](https://www.usenix.org/conference/osdi26/presentation/sang) | `USENIX` | 27.0 |
-| 155 | [SolidAttention: Low-Latency SSD-based Serving on Memory-Constrained PCs](https://www.usenix.org/conference/fast26/presentation/zheng) | `USENIX` | 27.0 |
-| 156 | [PolicyCache: Intra-flow Learning in Congestion Control](https://www.usenix.org/conference/nsdi26/presentation/tian) | `USENIX` | 26.5 |
-| 157 | [Accelerating Model Loading in LLM Inference by Programmable Page Cache](https://www.usenix.org/conference/fast26/presentation/liu-yubo) | `USENIX` | 26.0 |
-| 158 | [Phantora: Maximizing Code Reuse in Simulation-based Machine Learning System Performance Estimation](https://www.usenix.org/conference/nsdi26/presentation/qin) | `USENIX` | 25.5 |
-| 159 | [UCCL-Tran: An Extensible Software Transport Layer for GPU Networking](https://www.usenix.org/conference/osdi26/presentation/zhou-yang) | `USENIX` | 25.0 |
-| 160 | [SYMI: Efficient Mixture-of-Experts Training via Model and Optimizer State Decoupling](https://www.usenix.org/conference/nsdi26/presentation/skiadopoulos) | `USENIX` | 25.0 |
-| 161 | [EROICA: Online Performance Troubleshooting for Large-scale Model Training](https://www.usenix.org/conference/nsdi26/presentation/guan-yu) | `USENIX` | 25.0 |
-| 162 | [Mohabi: Disaggregating and Sandboxing the Firefox JavaScript Engine](https://www.usenix.org/conference/osdi26/presentation/sharma) | `USENIX` | 24.5 |
-| 163 | [From C to Idiomatic Rust: A Ship-of-Theseus Agentic Translation](https://arxiv.org/abs/2607.28835) | `ARXIV` | 24.0 |
-| 164 | [Osprey: Transparent and Efficient Virtual Memory for Secure Computation](https://www.usenix.org/conference/osdi26/presentation/liu-yicheng) | `USENIX` | 24.0 |
-| 165 | [Kareus: Joint Reduction of Dynamic and Static Energy in Large Model Training](https://www.usenix.org/conference/osdi26/presentation/wu-ruofan) | `USENIX` | 24.0 |
-| 166 | [R-TCP: A Framework to Optimize TCP Performance Over Rate-Limiting Networks](https://www.usenix.org/conference/nsdi26/presentation/zhu) | `USENIX` | 23.5 |
-| 167 | [When DDIO Meets Page Coloring: Revisiting DDIO Performance with Sepia](https://www.usenix.org/conference/osdi26/presentation/song) | `USENIX` | 23.0 |
-| 168 | [Continuation-Centric Computing with Arca](https://www.usenix.org/conference/osdi26/presentation/srivatsan) | `USENIX` | 23.0 |
-| 169 | [LifeLine: An Object-Page Lifetime Alignment GC Enabling Minimal Memory Copying for Mobile Devices](https://www.usenix.org/conference/osdi26/presentation/huang-jiacheng) | `USENIX` | 23.0 |
-| 170 | [SPLIDT: Partitioned Decision Trees for Scalable Stateful Inference at Line Rate](https://www.usenix.org/conference/nsdi26/presentation/parvez) | `USENIX` | 23.0 |
-| 171 | [SLATE: Service Layer Traffic Engineering](https://www.usenix.org/conference/nsdi26/presentation/lim) | `USENIX` | 23.0 |
-| 172 | [Queue-Mem: Energy-Efficient Hardware Storage for Advanced Network Function Acceleration](https://www.usenix.org/conference/nsdi26/presentation/scazzariello) | `USENIX` | 22.5 |
-| 173 | [MAC: Metadata Acceleration for Sustainable Performance in Big-Data Systems with CXL DRAM](https://www.usenix.org/conference/osdi26/presentation/lee) | `USENIX` | 22.0 |
-| 174 | [Octopus: Enhancing CXL Memory Pods via Sparse Topology](https://www.usenix.org/conference/nsdi26/presentation/zhong) | `USENIX` | 22.0 |
-| 175 | [Geminet: Learning the Duality-based Topology-Agnostic Update Operator for Lightweight Traffic Engineering in Changing Topologies](https://www.usenix.org/conference/nsdi26/presentation/liu-ximeng) | `USENIX` | 21.0 |
-| 176 | [Predict, Prune, Play: Efficient Video Playback Optimization Under Device Diversity and Drift](https://www.usenix.org/conference/nsdi26/presentation/sharma) | `USENIX` | 21.0 |
-| 177 | [The LogDrive: Composable Durability for Cloud-Based Shared Logs](https://www.usenix.org/conference/osdi26/presentation/vickers) | `USENIX` | 19.5 |
-| 178 | [FlexLLM: Token-Level Co-Serving of LLM Inference and Finetuning with SLO Guarantees](https://www.usenix.org/conference/nsdi26/presentation/oliaro) | `USENIX` | 18.5 |
-| 179 | [RobustRL: Role-Based Fault Tolerance System for RL Post-Training](https://www.usenix.org/conference/osdi26/presentation/chen-zhenqian) | `USENIX` | 18.0 |
-| 180 | [Inference in the Shadows: Taming Memory Bandwidth Contention in Mobile LLM Inference with Sereno](https://www.usenix.org/conference/osdi26/presentation/xin) | `USENIX` | 18.0 |
-| 181 | [Cortex: Achieving Low-Latency, Cost-Efficient Remote Data Access For LLM via Semantic-Aware Knowledge Caching](https://www.usenix.org/conference/nsdi26/presentation/ruan-cortex) | `USENIX` | 18.0 |
-| 182 | [PolarStore: High-Performance Data Compression for Large-Scale Cloud-Native Databases](https://www.usenix.org/conference/fast26/presentation/hu) | `USENIX` | 18.0 |
-| 183 | [CoPilotIO: CPU as a Co-Pilot for GPU I/O to Free GPU Compute](https://www.usenix.org/conference/osdi26/presentation/chen-guanyi) | `USENIX` | 17.5 |
-| 184 | [BatchGen: An Architecture for Scalable and Efficient Batch Inference](https://www.usenix.org/conference/osdi26/presentation/xu-tairan) | `USENIX` | 17.0 |
-| 185 | [The Clustering Strikes Back: Building Cost-Effective and High-Performance ANNS at Scale with Helmsman (Operational Systems)](https://www.usenix.org/conference/osdi26/presentation/huang-yuchen) | `USENIX` | 17.0 |
-| 186 | [qTPU: Hybrid Tensor Networks for Quantum-Classical Acceleration](https://www.usenix.org/conference/osdi26/presentation/tornow) | `USENIX` | 17.0 |
-| 187 | [RLBoost: Harvesting Preemptible Cloud Resources for Cost-Efficient Reinforcement Learning on LLMs](https://www.usenix.org/conference/nsdi26/presentation/wu-yongji) | `USENIX` | 17.0 |
-| 188 | [Fast Cloud Storage for AI Jobs via Grouped I/O API with Transparent Read/Write Optimizations](https://www.usenix.org/conference/fast26/presentation/hao) | `USENIX` | 17.0 |
-| 189 | [TrainMover: An Interruption-Resilient Runtime for ML Training](https://www.usenix.org/conference/osdi26/presentation/lao) | `USENIX` | 16.5 |
-| 190 | [Hetu v2: A General and Scalable Deep Learning System with Hierarchical and Heterogeneous Single Program Multiple Data Annotations](https://www.usenix.org/conference/osdi26/presentation/li-haoyang) | `USENIX` | 16.0 |
-| 191 | [Murakkab: Resource-Efficient Agentic Workflow Orchestration in Cloud Platforms](https://www.usenix.org/conference/osdi26/presentation/chaudhry) | `USENIX` | 16.0 |
-| 192 | [Seer: Online Context Learning for Fast Synchronous LLM Reinforcement Learning](https://www.usenix.org/conference/osdi26/presentation/qin) | `USENIX` | 16.0 |
-| 193 | [MoonBright: A GPU Memory Allocator with Device-Side Page Table Materialization and Deferred TLB Coherence](https://www.usenix.org/conference/osdi26/presentation/zhang-yangyu) | `USENIX` | 16.0 |
-| 194 | [QCON: Seamless QoE-Aware 5G Streaming via Multi-Connectivity](https://www.usenix.org/conference/nsdi26/presentation/lee) | `USENIX` | 16.0 |
-| 195 | [Heterogeneity at Hyperscale: Characterization and Scheduling of Large Production AI Clusters at Alibaba (Operational Systems)](https://www.usenix.org/conference/osdi26/presentation/li-suyi) | `USENIX` | 15.5 |
-| 196 | [Di-PS: System-Algorithm Co-Design for Asynchronous and Heterogeneous Cross-cluster LLM Training at Scale](https://www.usenix.org/conference/nsdi26/presentation/li-shengwei) | `USENIX` | 15.5 |
-| 197 | [MuxTune: Efficient Multi-Task LLM Fine-Tuning in Multi-Tenant Datacenters via Spatial-Temporal Backbone Multiplexing](https://www.usenix.org/conference/nsdi26/presentation/xue-chunyu) | `USENIX` | 15.5 |
-| 198 | [Nixie: Efficient, Transparent Temporal Multiplexing for Consumer GPUs](https://www.usenix.org/conference/osdi26/presentation/xu-yechen) | `USENIX` | 15.0 |
-| 199 | [Supercharging Packet-level Network Simulation of Large Model Training via Memoization and Fast-Forwarding](https://www.usenix.org/conference/nsdi26/presentation/long) | `USENIX` | 15.0 |
-| 200 | [Cylon: Fast and Accurate Full-System Emulation of CXL-SSDs](https://www.usenix.org/conference/fast26/presentation/yoon) | `USENIX` | 15.0 |
+| 140 | [GPU-Accelerated Multilevel Graph Clustering: A Parallel Perspective on Louvain and Leiden](https://arxiv.org/abs/2608.01503) | `ARXIV` | 31.5 |
+| 141 | [DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures](https://arxiv.org/abs/2511.15503) | `ARXIV` | 31.5 |
+| 142 | [CofferOS: Hardening OS-level Virtualization with Rust.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 143 | [iRoute: Local Routing Table-based Workflow Management in Serverless Computing.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 144 | [MesaFS: An I/O-Efficient Metadata Service for Distributed File Systems.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 145 | [Fuzzing Enterprise-Grade Blockchain Systems: Industrial Practice and Solutions.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 146 | [Wayfinder: Automated Operating System Specialization.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 147 | [Squeezy: Rapid VM Memory Reclamation for Serverless Functions.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 148 | [TAO: Tolerance-Aware Optimistic Verification for Floating-Point Neural Networks.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 149 | [Towards Improving Throughput and Scalability of DAG-based BFT SMR.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 150 | [LifeFuzz: Lifecycle-Guided Fuzzing for Windows Driver Cross-Handler Vulnerabilities.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 151 | [In-Production Characterization of an Open Source Serverless Platform and New Scaling Strategies.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 152 | [Fix: externalizing network I/O in serverless computing.](https://dblp.org/db/conf/eurosys/eurosys2026) | `DBLP` | 31.5 |
+| 153 | [ADAngel: Accelerating Arbitrary-Precision Quantized LLMs with Adaptive Computing Mapping](https://www.usenix.org/conference/osdi26/presentation/liu-yao) | `USENIX` | 28.0 |
+| 154 | [Unleashing The Potential of Datacenter SSDs by Taming Performance Variability](https://www.usenix.org/conference/nsdi26/presentation/chaudhry) | `USENIX` | 28.0 |
+| 155 | [ScaleSwap: A Scalable OS Swap System for All-Flash Swap Arrays](https://www.usenix.org/conference/fast26/presentation/ahn) | `USENIX` | 27.5 |
+| 156 | [Unleash All Cores: Asymmetry-Aware Scalable DNN Inference on Mobile CPUs](https://www.usenix.org/conference/osdi26/presentation/sang) | `USENIX` | 27.0 |
+| 157 | [SolidAttention: Low-Latency SSD-based Serving on Memory-Constrained PCs](https://www.usenix.org/conference/fast26/presentation/zheng) | `USENIX` | 27.0 |
+| 158 | [PolicyCache: Intra-flow Learning in Congestion Control](https://www.usenix.org/conference/nsdi26/presentation/tian) | `USENIX` | 26.5 |
+| 159 | [Accelerating Model Loading in LLM Inference by Programmable Page Cache](https://www.usenix.org/conference/fast26/presentation/liu-yubo) | `USENIX` | 26.0 |
+| 160 | [Phantora: Maximizing Code Reuse in Simulation-based Machine Learning System Performance Estimation](https://www.usenix.org/conference/nsdi26/presentation/qin) | `USENIX` | 25.5 |
+| 161 | [UCCL-Tran: An Extensible Software Transport Layer for GPU Networking](https://www.usenix.org/conference/osdi26/presentation/zhou-yang) | `USENIX` | 25.0 |
+| 162 | [SYMI: Efficient Mixture-of-Experts Training via Model and Optimizer State Decoupling](https://www.usenix.org/conference/nsdi26/presentation/skiadopoulos) | `USENIX` | 25.0 |
+| 163 | [EROICA: Online Performance Troubleshooting for Large-scale Model Training](https://www.usenix.org/conference/nsdi26/presentation/guan-yu) | `USENIX` | 25.0 |
+| 164 | [Mohabi: Disaggregating and Sandboxing the Firefox JavaScript Engine](https://www.usenix.org/conference/osdi26/presentation/sharma) | `USENIX` | 24.5 |
+| 165 | [Osprey: Transparent and Efficient Virtual Memory for Secure Computation](https://www.usenix.org/conference/osdi26/presentation/liu-yicheng) | `USENIX` | 24.0 |
+| 166 | [Kareus: Joint Reduction of Dynamic and Static Energy in Large Model Training](https://www.usenix.org/conference/osdi26/presentation/wu-ruofan) | `USENIX` | 24.0 |
+| 167 | [R-TCP: A Framework to Optimize TCP Performance Over Rate-Limiting Networks](https://www.usenix.org/conference/nsdi26/presentation/zhu) | `USENIX` | 23.5 |
+| 168 | [When DDIO Meets Page Coloring: Revisiting DDIO Performance with Sepia](https://www.usenix.org/conference/osdi26/presentation/song) | `USENIX` | 23.0 |
+| 169 | [Continuation-Centric Computing with Arca](https://www.usenix.org/conference/osdi26/presentation/srivatsan) | `USENIX` | 23.0 |
+| 170 | [LifeLine: An Object-Page Lifetime Alignment GC Enabling Minimal Memory Copying for Mobile Devices](https://www.usenix.org/conference/osdi26/presentation/huang-jiacheng) | `USENIX` | 23.0 |
+| 171 | [SPLIDT: Partitioned Decision Trees for Scalable Stateful Inference at Line Rate](https://www.usenix.org/conference/nsdi26/presentation/parvez) | `USENIX` | 23.0 |
+| 172 | [SLATE: Service Layer Traffic Engineering](https://www.usenix.org/conference/nsdi26/presentation/lim) | `USENIX` | 23.0 |
+| 173 | [Queue-Mem: Energy-Efficient Hardware Storage for Advanced Network Function Acceleration](https://www.usenix.org/conference/nsdi26/presentation/scazzariello) | `USENIX` | 22.5 |
+| 174 | [MAC: Metadata Acceleration for Sustainable Performance in Big-Data Systems with CXL DRAM](https://www.usenix.org/conference/osdi26/presentation/lee) | `USENIX` | 22.0 |
+| 175 | [Octopus: Enhancing CXL Memory Pods via Sparse Topology](https://www.usenix.org/conference/nsdi26/presentation/zhong) | `USENIX` | 22.0 |
+| 176 | [Geminet: Learning the Duality-based Topology-Agnostic Update Operator for Lightweight Traffic Engineering in Changing Topologies](https://www.usenix.org/conference/nsdi26/presentation/liu-ximeng) | `USENIX` | 21.0 |
+| 177 | [Predict, Prune, Play: Efficient Video Playback Optimization Under Device Diversity and Drift](https://www.usenix.org/conference/nsdi26/presentation/sharma) | `USENIX` | 21.0 |
+| 178 | [The LogDrive: Composable Durability for Cloud-Based Shared Logs](https://www.usenix.org/conference/osdi26/presentation/vickers) | `USENIX` | 19.5 |
+| 179 | [FlexLLM: Token-Level Co-Serving of LLM Inference and Finetuning with SLO Guarantees](https://www.usenix.org/conference/nsdi26/presentation/oliaro) | `USENIX` | 18.5 |
+| 180 | [RobustRL: Role-Based Fault Tolerance System for RL Post-Training](https://www.usenix.org/conference/osdi26/presentation/chen-zhenqian) | `USENIX` | 18.0 |
+| 181 | [Inference in the Shadows: Taming Memory Bandwidth Contention in Mobile LLM Inference with Sereno](https://www.usenix.org/conference/osdi26/presentation/xin) | `USENIX` | 18.0 |
+| 182 | [Cortex: Achieving Low-Latency, Cost-Efficient Remote Data Access For LLM via Semantic-Aware Knowledge Caching](https://www.usenix.org/conference/nsdi26/presentation/ruan-cortex) | `USENIX` | 18.0 |
+| 183 | [PolarStore: High-Performance Data Compression for Large-Scale Cloud-Native Databases](https://www.usenix.org/conference/fast26/presentation/hu) | `USENIX` | 18.0 |
+| 184 | [CoPilotIO: CPU as a Co-Pilot for GPU I/O to Free GPU Compute](https://www.usenix.org/conference/osdi26/presentation/chen-guanyi) | `USENIX` | 17.5 |
+| 185 | [BatchGen: An Architecture for Scalable and Efficient Batch Inference](https://www.usenix.org/conference/osdi26/presentation/xu-tairan) | `USENIX` | 17.0 |
+| 186 | [The Clustering Strikes Back: Building Cost-Effective and High-Performance ANNS at Scale with Helmsman (Operational Systems)](https://www.usenix.org/conference/osdi26/presentation/huang-yuchen) | `USENIX` | 17.0 |
+| 187 | [qTPU: Hybrid Tensor Networks for Quantum-Classical Acceleration](https://www.usenix.org/conference/osdi26/presentation/tornow) | `USENIX` | 17.0 |
+| 188 | [RLBoost: Harvesting Preemptible Cloud Resources for Cost-Efficient Reinforcement Learning on LLMs](https://www.usenix.org/conference/nsdi26/presentation/wu-yongji) | `USENIX` | 17.0 |
+| 189 | [Fast Cloud Storage for AI Jobs via Grouped I/O API with Transparent Read/Write Optimizations](https://www.usenix.org/conference/fast26/presentation/hao) | `USENIX` | 17.0 |
+| 190 | [TrainMover: An Interruption-Resilient Runtime for ML Training](https://www.usenix.org/conference/osdi26/presentation/lao) | `USENIX` | 16.5 |
+| 191 | [Hetu v2: A General and Scalable Deep Learning System with Hierarchical and Heterogeneous Single Program Multiple Data Annotations](https://www.usenix.org/conference/osdi26/presentation/li-haoyang) | `USENIX` | 16.0 |
+| 192 | [Murakkab: Resource-Efficient Agentic Workflow Orchestration in Cloud Platforms](https://www.usenix.org/conference/osdi26/presentation/chaudhry) | `USENIX` | 16.0 |
+| 193 | [Seer: Online Context Learning for Fast Synchronous LLM Reinforcement Learning](https://www.usenix.org/conference/osdi26/presentation/qin) | `USENIX` | 16.0 |
+| 194 | [MoonBright: A GPU Memory Allocator with Device-Side Page Table Materialization and Deferred TLB Coherence](https://www.usenix.org/conference/osdi26/presentation/zhang-yangyu) | `USENIX` | 16.0 |
+| 195 | [QCON: Seamless QoE-Aware 5G Streaming via Multi-Connectivity](https://www.usenix.org/conference/nsdi26/presentation/lee) | `USENIX` | 16.0 |
+| 196 | [Heterogeneity at Hyperscale: Characterization and Scheduling of Large Production AI Clusters at Alibaba (Operational Systems)](https://www.usenix.org/conference/osdi26/presentation/li-suyi) | `USENIX` | 15.5 |
+| 197 | [Di-PS: System-Algorithm Co-Design for Asynchronous and Heterogeneous Cross-cluster LLM Training at Scale](https://www.usenix.org/conference/nsdi26/presentation/li-shengwei) | `USENIX` | 15.5 |
+| 198 | [MuxTune: Efficient Multi-Task LLM Fine-Tuning in Multi-Tenant Datacenters via Spatial-Temporal Backbone Multiplexing](https://www.usenix.org/conference/nsdi26/presentation/xue-chunyu) | `USENIX` | 15.5 |
+| 199 | [Nixie: Efficient, Transparent Temporal Multiplexing for Consumer GPUs](https://www.usenix.org/conference/osdi26/presentation/xu-yechen) | `USENIX` | 15.0 |
+| 200 | [Supercharging Packet-level Network Simulation of Large Model Training via Memoization and Fast-Forwarding](https://www.usenix.org/conference/nsdi26/presentation/long) | `USENIX` | 15.0 |

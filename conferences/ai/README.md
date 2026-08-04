@@ -1,8 +1,8 @@
 # AI / AI for Science Papers
 
-- **Last Updated**: 2026-08-03 09:39:57 UTC
+- **Last Updated**: 2026-08-04 08:33:21 UTC
 - **Total Filtered Papers**: 500
-- **Displaying**: 200 (mlr: 2, neurips: 198)
+- **Displaying**: 200 (arxiv: 1, mlr: 2, neurips: 197)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
@@ -176,36 +176,36 @@
 | 165 | [Understanding Prompt Tuning and In-Context Learning via Meta-Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/f3cc8a0447d07de412f6bc97a0d7d32b-Abstract-Conference.html) | `NEURIPS` | 64.5 |
 | 166 | [Fast-Slow Thinking GRPO for Large Vision-Language Model Reasoning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/fa9259a773e85c49624aea9de2ff9146-Abstract-Conference.html) | `NEURIPS` | 64.5 |
 | 167 | [OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales](https://proceedings.neurips.cc/paper_files/paper/2025/hash/fb0b57dfb8686c357f96e41b880ce7ed-Abstract-Conference.html) | `NEURIPS` | 64.5 |
-| 168 | [ARCLE: The Abstraction and Reasoning Corpus Learning Environment for Reinforcement Learning](https://proceedings.mlr.press/v274/lee25a.html) | `MLR` | 63.0 |
-| 169 | [RSAVQ: Riemannian Sensitivity-Aware Vector Quantization for Large Language Models](https://proceedings.neurips.cc/paper_files/paper/2025/hash/022a921af644da887f5930377f9d53d6-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 170 | [Variational Uncertainty Decomposition for In-Context Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0343104ddbfc48f35f06aaae88980e48-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 171 | [Rebalancing Contrastive Alignment with Bottlenecked Semantic Increments in Text-Video Retrieval](https://proceedings.neurips.cc/paper_files/paper/2025/hash/045da2b279b3efaf344d488c7da2aba6-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 172 | [RoMA: Scaling up Mamba-based Foundation Models for Remote Sensing](https://proceedings.neurips.cc/paper_files/paper/2025/hash/065c00e902f3f0117d1a4da0a9b0e497-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 173 | [Hybrid Latent Reasoning via Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/087f7678af2abbe0c37ecc30bd7d1adf-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 174 | [Co-Reinforcement Learning for Unified Multimodal Understanding and Generation](https://proceedings.neurips.cc/paper_files/paper/2025/hash/08f6f963e993ee81625adb5aaac9403c-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 175 | [Doubly Robust Alignment for Large Language Models](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0a226473989931ec6f6ced7343542f86-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 176 | [Agentic RL Scaling Law: Spontaneous Code Execution for Mathematical Problem Solving](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0adea62f2f98c5035aded00d4b2064e6-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 177 | [FairDICE: Fairness-Driven Offline Multi-Objective Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0b42dd45aa4c23d3a307980c87fd87f0-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 178 | [HyperET: Efficient Training in Hyperbolic Space for Multi-modal Large Language Models](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0bcd8d153b8c548629eca53f4ebdeb42-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 179 | [Pixel Reasoner: Incentivizing Pixel Space Reasoning via Curiosity-Driven Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0c38f54740062529aa4117a04b583f3c-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 180 | [Afterburner: Reinforcement Learning Facilitates Self-Improving Code Efficiency Optimization](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0d1d415fb1a14ba3bb56b831d1eecbe7-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 181 | [Value Gradient Guidance for Flow Matching Alignment](https://proceedings.neurips.cc/paper_files/paper/2025/hash/10b7e27c8eb9571fbbd2ae6a9f8c3855-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 182 | [Efficient Preference-Based Reinforcement Learning: Randomized Exploration meets Experimental Design](https://proceedings.neurips.cc/paper_files/paper/2025/hash/11f3fe998aed32d771dd4a4a25d3dd57-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 183 | [Continuous Q-Score Matching: Diffusion Guided Reinforcement Learning for Continuous-Time Control](https://proceedings.neurips.cc/paper_files/paper/2025/hash/1286e85106eb9c52eb77f617596dd917-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 184 | [Exploring Data Scaling Trends and Effects in Reinforcement Learning from Human Feedback](https://proceedings.neurips.cc/paper_files/paper/2025/hash/164687cb815daae754d33364716e65e6-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 185 | [DeepDiver: Adaptive Web-Search Intensity Scaling via Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/180d4373aca26bd86bf45fc50d1a709f-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 186 | [ReplaceMe: Network Simplification via Depth Pruning and Transformer Block Linearization](https://proceedings.neurips.cc/paper_files/paper/2025/hash/1c10d0c087c14689628124bbc8fa69f6-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 187 | [Scalable Best-of-N Selection for Large Language Models via Self-Certainty](https://proceedings.neurips.cc/paper_files/paper/2025/hash/1c7eff166a8e345f664f0faa8f4e4d2e-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 188 | [Complexity Scaling Laws for Neural Models using Combinatorial Optimization](https://proceedings.neurips.cc/paper_files/paper/2025/hash/1c9dbe4d49fa0ac833959230a9895c06-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 189 | [Unifying Attention Heads and Task Vectors via Hidden State Geometry in In-Context Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/1f3e9dddea1df5b3049192172f2e163f-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 190 | [LEDiT:  Your Length-Extrapolatable Diffusion Transformer without Positional Encoding](https://proceedings.neurips.cc/paper_files/paper/2025/hash/20c31fffbf2a88b9a749abc8cd9dd88c-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 191 | [LaRes: Evolutionary Reinforcement Learning with LLM-based Adaptive Reward Search](https://proceedings.neurips.cc/paper_files/paper/2025/hash/21b5d3a17aa5525f30bfd2bc59ac3a48-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 192 | [ACT as Human: Multimodal Large Language Model Data Annotation with Critical Thinking](https://proceedings.neurips.cc/paper_files/paper/2025/hash/22bbfc36cb32d0baf7cd1c832da6f5e9-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 193 | [Mixture-of-Experts Meets In-Context Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/233cbc888ef01917d8d895e471e80a01-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 194 | [Towards Provable Emergence of In-Context Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/24e07a062e1043fbf360c6933ad201da-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 195 | [SATURN: SAT-based Reinforcement Learning to Unleash LLMs Reasoning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/281970ef377580ab9ec3c7d3781110d4-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 196 | [Alignment of Large Language Models with Constrained Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/2c9b48ed0dd0252ea3ea14182956341b-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 197 | [Efficient Safe Meta-Reinforcement Learning: Provable Near-Optimality and Anytime Safety](https://proceedings.neurips.cc/paper_files/paper/2025/hash/2d025936bae21d2c2d4cc74779aa77c7-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 198 | [FOCUS: Unified Vision-Language Modeling for Interactive Editing Driven by Referential Segmentation](https://proceedings.neurips.cc/paper_files/paper/2025/hash/3028874b502e8f088f7f5c47baa6d36b-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 199 | [4D-VLA:  Spatiotemporal Vision-Language-Action Pretraining with Cross-Scene Calibration](https://proceedings.neurips.cc/paper_files/paper/2025/hash/30b9c38b9ebeee281cd2bc41d39bf0e7-Abstract-Conference.html) | `NEURIPS` | 63.0 |
-| 200 | [DKDR: Dynamic Knowledge Distillation for Reliability in Federated Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/3181db351fd3ced43cd589b0b572675d-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 168 | [Function-Vector Heads Are Two Populations: Writers and Cancellers in In-Context Learning](https://arxiv.org/abs/2606.07560) | `ARXIV` | 63.5 |
+| 169 | [ARCLE: The Abstraction and Reasoning Corpus Learning Environment for Reinforcement Learning](https://proceedings.mlr.press/v274/lee25a.html) | `MLR` | 63.0 |
+| 170 | [RSAVQ: Riemannian Sensitivity-Aware Vector Quantization for Large Language Models](https://proceedings.neurips.cc/paper_files/paper/2025/hash/022a921af644da887f5930377f9d53d6-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 171 | [Variational Uncertainty Decomposition for In-Context Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0343104ddbfc48f35f06aaae88980e48-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 172 | [Rebalancing Contrastive Alignment with Bottlenecked Semantic Increments in Text-Video Retrieval](https://proceedings.neurips.cc/paper_files/paper/2025/hash/045da2b279b3efaf344d488c7da2aba6-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 173 | [RoMA: Scaling up Mamba-based Foundation Models for Remote Sensing](https://proceedings.neurips.cc/paper_files/paper/2025/hash/065c00e902f3f0117d1a4da0a9b0e497-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 174 | [Hybrid Latent Reasoning via Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/087f7678af2abbe0c37ecc30bd7d1adf-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 175 | [Co-Reinforcement Learning for Unified Multimodal Understanding and Generation](https://proceedings.neurips.cc/paper_files/paper/2025/hash/08f6f963e993ee81625adb5aaac9403c-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 176 | [Doubly Robust Alignment for Large Language Models](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0a226473989931ec6f6ced7343542f86-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 177 | [Agentic RL Scaling Law: Spontaneous Code Execution for Mathematical Problem Solving](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0adea62f2f98c5035aded00d4b2064e6-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 178 | [FairDICE: Fairness-Driven Offline Multi-Objective Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0b42dd45aa4c23d3a307980c87fd87f0-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 179 | [HyperET: Efficient Training in Hyperbolic Space for Multi-modal Large Language Models](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0bcd8d153b8c548629eca53f4ebdeb42-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 180 | [Pixel Reasoner: Incentivizing Pixel Space Reasoning via Curiosity-Driven Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0c38f54740062529aa4117a04b583f3c-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 181 | [Afterburner: Reinforcement Learning Facilitates Self-Improving Code Efficiency Optimization](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0d1d415fb1a14ba3bb56b831d1eecbe7-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 182 | [Value Gradient Guidance for Flow Matching Alignment](https://proceedings.neurips.cc/paper_files/paper/2025/hash/10b7e27c8eb9571fbbd2ae6a9f8c3855-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 183 | [Efficient Preference-Based Reinforcement Learning: Randomized Exploration meets Experimental Design](https://proceedings.neurips.cc/paper_files/paper/2025/hash/11f3fe998aed32d771dd4a4a25d3dd57-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 184 | [Continuous Q-Score Matching: Diffusion Guided Reinforcement Learning for Continuous-Time Control](https://proceedings.neurips.cc/paper_files/paper/2025/hash/1286e85106eb9c52eb77f617596dd917-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 185 | [Exploring Data Scaling Trends and Effects in Reinforcement Learning from Human Feedback](https://proceedings.neurips.cc/paper_files/paper/2025/hash/164687cb815daae754d33364716e65e6-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 186 | [DeepDiver: Adaptive Web-Search Intensity Scaling via Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/180d4373aca26bd86bf45fc50d1a709f-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 187 | [ReplaceMe: Network Simplification via Depth Pruning and Transformer Block Linearization](https://proceedings.neurips.cc/paper_files/paper/2025/hash/1c10d0c087c14689628124bbc8fa69f6-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 188 | [Scalable Best-of-N Selection for Large Language Models via Self-Certainty](https://proceedings.neurips.cc/paper_files/paper/2025/hash/1c7eff166a8e345f664f0faa8f4e4d2e-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 189 | [Complexity Scaling Laws for Neural Models using Combinatorial Optimization](https://proceedings.neurips.cc/paper_files/paper/2025/hash/1c9dbe4d49fa0ac833959230a9895c06-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 190 | [Unifying Attention Heads and Task Vectors via Hidden State Geometry in In-Context Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/1f3e9dddea1df5b3049192172f2e163f-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 191 | [LEDiT:  Your Length-Extrapolatable Diffusion Transformer without Positional Encoding](https://proceedings.neurips.cc/paper_files/paper/2025/hash/20c31fffbf2a88b9a749abc8cd9dd88c-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 192 | [LaRes: Evolutionary Reinforcement Learning with LLM-based Adaptive Reward Search](https://proceedings.neurips.cc/paper_files/paper/2025/hash/21b5d3a17aa5525f30bfd2bc59ac3a48-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 193 | [ACT as Human: Multimodal Large Language Model Data Annotation with Critical Thinking](https://proceedings.neurips.cc/paper_files/paper/2025/hash/22bbfc36cb32d0baf7cd1c832da6f5e9-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 194 | [Mixture-of-Experts Meets In-Context Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/233cbc888ef01917d8d895e471e80a01-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 195 | [Towards Provable Emergence of In-Context Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/24e07a062e1043fbf360c6933ad201da-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 196 | [SATURN: SAT-based Reinforcement Learning to Unleash LLMs Reasoning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/281970ef377580ab9ec3c7d3781110d4-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 197 | [Alignment of Large Language Models with Constrained Learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/2c9b48ed0dd0252ea3ea14182956341b-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 198 | [Efficient Safe Meta-Reinforcement Learning: Provable Near-Optimality and Anytime Safety](https://proceedings.neurips.cc/paper_files/paper/2025/hash/2d025936bae21d2c2d4cc74779aa77c7-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 199 | [FOCUS: Unified Vision-Language Modeling for Interactive Editing Driven by Referential Segmentation](https://proceedings.neurips.cc/paper_files/paper/2025/hash/3028874b502e8f088f7f5c47baa6d36b-Abstract-Conference.html) | `NEURIPS` | 63.0 |
+| 200 | [4D-VLA:  Spatiotemporal Vision-Language-Action Pretraining with Cross-Scene Calibration](https://proceedings.neurips.cc/paper_files/paper/2025/hash/30b9c38b9ebeee281cd2bc41d39bf0e7-Abstract-Conference.html) | `NEURIPS` | 63.0 |

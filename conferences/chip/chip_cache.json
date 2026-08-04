@@ -1,169 +1,100 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-08-03T09:39:18.863832+00:00",
-  "paper_count": 7,
+  "last_updated": "2026-08-04T08:32:45.099744+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2607.28877",
+      "forum_id": "2608.00595",
       "paper_number": -1,
-      "title": "Open-Source LLM-Driven Formal Verification: A Multi-Agent Pipeline for RTL Repair",
+      "title": "A Time-Multiplexed Spiking Neural Network Accelerator with Pipelined Readout for FPGA Inference",
       "authors": [
-        "Ha Trung Tran"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.28877v1 Announce Type: new \nAbstract: Verification consumes the majority of modern chip design effort, yet the formal verification tools that provide mathematical guarantees of correctness remain expensive and restrictively licensed. While large language models (LLMs) have shown promise for hardware design, existing approaches to RTL repair validate their results through simulation - which exercises only a subset of inputs - or rely on commercial tools, and few combine formal proof with an entirely open-source toolchain. In this paper, we present a multi-agent pipeline that couples an LLM with an open-source formal backend (Yosys, SymbiYosys, and Z3) to repair RTL through counterexample-guided iteration: the framework generates formal properties, verifies the design, and feeds c",
-      "pdf_link": "https://arxiv.org/pdf/2607.28877.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.28877",
-      "submission_date": "2026-08-03T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 17.5,
-      "updated_at": "2026-08-03T09:39:18.859977+00:00"
-    },
-    {
-      "forum_id": "2603.29268",
-      "paper_number": -1,
-      "title": "From Physics to Surrogate Intelligence: A Unified Electro-Thermo-Optimization Framework for TSV Networks",
-      "authors": [
-        "Mohamed Gharib, Leonid Popryho, Inna Partin-Vaisband"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2603.29268v3 Announce Type: replace-cross \nAbstract: High-density through-substrate vias (TSVs) enable 2.5D/3D heterogeneous integration but introduce significant signal-integrity and thermal-reliability challenges due to electrical coupling, insertion loss, and self-heating. Conventional full-wave finite-element method (FEM) simulations provide high accuracy but become computationally prohibitive for large design-space exploration. This work presents a scalable electro--thermal modeling and optimization framework that combines physics-informed analytical modeling, graph neural network (GNN) surrogates, and full-wave sign-off validation. A multi-conductor analytical model computes broadband S-parameters and effective anisotropic thermal conductivities of TSV arrays, achieving $5\\%$--",
-      "pdf_link": "https://arxiv.org/pdf/2603.29268.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.29268",
-      "submission_date": "2026-08-03T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 15.5,
-      "updated_at": "2026-08-03T09:39:18.860270+00:00"
-    },
-    {
-      "forum_id": "2607.29357",
-      "paper_number": -1,
-      "title": "Low-Power PLL-Based Clock Stabilization for Flexible IGZO AMS Systems",
-      "authors": [
-        "Paula Carolina Lozano Duarte, Georgios Zervakis, Mehdi Tahoori"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.29357v1 Announce Type: new \nAbstract: Flexible electronics (FE) platforms rely on analog and mixed-signal (AMS) circuits - biosensors, readout front-ends, and analog-to-digital converters - that dominate both functionality and energy consumption, making on-chip clock generation an essential yet power-critical function. Existing oscillator-based solutions suffer from unbounded process, voltage, and temperature (PVT) drift that degrades signal integrity, while alternative clock sources can consume up to 90% of the total system power budget, rendering them inapplicable to FE platforms and elevating clock generation to a primary power and energy-efficiency design constraint. This paper presents the first phase-locked loop (PLL) architecture designed for n-type-only amorphous indium-",
-      "pdf_link": "https://arxiv.org/pdf/2607.29357.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.29357",
-      "submission_date": "2026-08-03T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 6.5,
-      "updated_at": "2026-08-03T09:39:18.860098+00:00"
-    },
-    {
-      "forum_id": "2607.23000",
-      "paper_number": -1,
-      "title": "Magnetic Tunnel Junctions for Timekeeping in Intermittent Computing Systems",
-      "authors": [
-        "Nikola Vuk Maruszewski, Jordan Athas, Allison Fleming, Christian Duffee, Eren Yildiz, Saad Ahmed, Yaman Sangar, Pedram Khalili, Josiah Hester"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.23000v2 Announce Type: replace \nAbstract: Batteryless intermittent systems run unattended for years, but power failures erase timekeeping state, corrupting sensing, scheduling, and coordination. State-of-the-art timekeepers infer elapsed time from capacitor discharge; however, the capacitor must be sized for the longest interval measured (so range, energy, and area grow together), and repeated charge-discharge cycling lowers capacitance over time, biasing every estimate further as the deployment ages. We present FLINT, a timekeeper that reads elapsed time from the stochastic retention loss of an array of \"broken\" Magnetic Tunnel Junctions (MTJs)---spintronic memory cells engineered to lose state predictably. Because the decay timescale is fixed by device geometry, the energy to ",
-      "pdf_link": "https://arxiv.org/pdf/2607.23000.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.23000",
-      "submission_date": "2026-08-03T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-08-03T09:39:18.860179+00:00"
-    },
-    {
-      "forum_id": "2607.29076",
-      "paper_number": -1,
-      "title": "Selective KV Cache Protection for Noise-Resilient LLM Inference on Analog Compute-In-Memory Systems",
-      "authors": [
-        "Yuannuo Feng, Wenyong Zhou, Yuang Ma, Yizhe Chen, Wenshuai Yao, Yuxin Xie, Ngai Wong, Wang Kang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.29076v1 Announce Type: new \nAbstract: Analog compute-in-memory (CIM) arrays have emerged as a promising substrate for energy-efficient LLM inference, particularly for weight-stationary computations in linear layers. However, extending analog CIM to attention mechanisms introduces a fundamental challenge: KV cache operations demand repeated in-situ weight updates, and the resulting mismatch with the weight-stationary paradigm exposes dynamic computations to significant hardware noise, a critical problem that remains largely unexplored. In this paper, we present the first systematic study of dynamic attention computation on analog CIM arrays, revealing that initial and recent tokens exhibit disproportionate vulnerability to hardware noise. Motivated by this token-level insight, we",
-      "pdf_link": "https://arxiv.org/pdf/2607.29076.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.29076",
-      "submission_date": "2026-08-03T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-08-03T09:39:18.860013+00:00"
-    },
-    {
-      "forum_id": "2607.29283",
-      "paper_number": -1,
-      "title": "RTLCurator: Label-Efficient Data Curation for RTL Generation",
-      "authors": [
-        "Siyang Cai, Cangyuan Li, Wenjing Chang, Kun Wang, Haoyu Gao, Yinhe Han, Ying Wang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.29283v1 Announce Type: new \nAbstract: Training large language models (LLMs) to write register-transfer level (RTL) requires large corpora of paired specifications and code, and such data is scarce enough that most public corpora are now synthesized. Synthesis provides scale but not correctness, and in two widely used RTL datasets only 24.4% and 53.5% of pairs pass generated functional tests. This raises the question of how much of such a corpus to keep and which part of it. Correctness alone is a poor answer. A pair that misbehaves in one corner case still shows valid syntax and interface conventions, and complex sequential designs are both harder to generate and harder to validate, so filtering by correctness leaves a corpus of short and simple modules. Correctness is also hard",
-      "pdf_link": "https://arxiv.org/pdf/2607.29283.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.29283",
-      "submission_date": "2026-08-03T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-08-03T09:39:18.860052+00:00"
-    },
-    {
-      "forum_id": "2607.28686",
-      "paper_number": -1,
-      "title": "Optical Flow Sensor: A Direction-Selective Bionic Retina Design",
-      "authors": [
-        "Juchen Zhou, Bonan Yan, Yuchao Yang"
+        "Reza Ansari, Maciej Wielgosz"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2607.28686v1 Announce Type: new \nAbstract: Optical flow characterizes motion in the visual field and is fundamental to motion perception and tracking in biological and artificial vision systems. Biological retinas extract motion efficiently through local ON/OFF pathways and parallel processing, while conventional frame-based optical flow relies on dense sampling and global computation, resulting in high latency and power consumption. To overcome these limitations, we present a pixel-level Optical Flow Sensor (OFS) integrated circuit. The design combines Dynamic Vision Sensor (DVS) ON/OFF event comparison with time-difference measurement to enable fully parallel optical flow computation on-chip. An optical-flow-specific Address-Event Representation (OF-AER) interface supports low-powe",
-      "pdf_link": "https://arxiv.org/pdf/2607.28686.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.28686",
-      "submission_date": "2026-08-03T04:00:00+00:00",
+      "abstract": "arXiv:2608.00595v1 Announce Type: new \nAbstract: Spiking Neural Networks (SNNs) provide a power-efficient neuromorphic alternative to traditional artificial neural networks by processing information through discrete temporal events. This paper presents the design and Field-Programmable Gate Array (FPGA) implementation of an inference-only SNN accelerator optimized for MNIST digit classification. To address the physical routing constraints and timing bottlenecks inherent in low-cost devices, we propose an optimized hardware microarchitecture featuring a time-multiplexed 1-bit spike-feeding mechanism governed by a finite state machine (FSM), localized distributed memory for weight storage, and an integer-based Leaky Integrate-and-Fire (LIF) neuron model with register widths selected to preve",
+      "pdf_link": "https://arxiv.org/pdf/2608.00595.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.00595",
+      "submission_date": "2026-08-04T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
+      "score": 14.5,
+      "updated_at": "2026-08-04T08:32:45.095342+00:00"
+    },
+    {
+      "forum_id": "2608.00909",
+      "paper_number": -1,
+      "title": "FinHardBench: Can LLMs Generate Latency-Aware Hardware for Financial Computing?",
+      "authors": [
+        "Weimin Fu, Hejia Zhang, Minghao Shao, Zeng Wang, Johann Knechtel, Ozgur Sinanoglu, Muhammad Shafique, Ramesh Karri, Xiaolong Guo"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2608.00909v1 Announce Type: cross \nAbstract: Can large language models generate not just correct, but fast hardware? This paper investigates the question in financial FPGA design, where 5-10 nanoseconds of latency determines competitive advantage and designs iterate continuously as protocols, strategies, and regulations evolve. FinHardBench, a benchmark of 33 financial computing tasks, is presented together with three experiments that mirror the real-world FPGA iteration cycle: generating new modules from specifications, tuning system-level configurations across a 6-stage trading pipeline, and adapting existing modules to specification changes. Evaluation of six LLMs on 1530+ experiment rounds yields three findings: (1) models achieve 19-61% functional correctness with timing degrada",
+      "pdf_link": "https://arxiv.org/pdf/2608.00909.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.00909",
+      "submission_date": "2026-08-04T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-08-04T08:32:45.096055+00:00"
+    },
+    {
+      "forum_id": "2608.00720",
+      "paper_number": -1,
+      "title": "CascadeLUT: Information-Ordered Streaming Inference for Bandwidth-Constrained FPGAs",
+      "authors": [
+        "Oliver Cassidy, Marta Andronic, George A. Constantinides"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2608.00720v1 Announce Type: new \nAbstract: Mapping neural networks to FPGAs enables low-latency, energy-efficient inference, particularly for lookup table (LUT)-based models that eliminate multipliers and map directly to reconfigurable fabric. While prior work achieves high compute efficiency, it typically assumes full-sample availability, causing pipeline stalls in bandwidth-limited streaming scenarios. Here, the bottleneck shifts from computation to data movement, as large input transfers limit throughput and energy efficiency. We present CascadeLUT, an information-structured inference framework organized around bandwidth constraints. Instead of buffering the full input, features are partitioned into ordered subsets and predictions are progressively refined as subsets arrive. The c",
+      "pdf_link": "https://arxiv.org/pdf/2608.00720.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.00720",
+      "submission_date": "2026-08-04T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-08-04T08:32:45.095408+00:00"
+    },
+    {
+      "forum_id": "2608.00894",
+      "paper_number": -1,
+      "title": "Rethinking Agentic Kernel Generation for Emerging Accelerators",
+      "authors": [
+        "Ruijie Gao, Jirong Yang, Barry Lyu, Haoran Jin, Nathan Bleier"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2608.00894v1 Announce Type: new \nAbstract: Emerging accelerators often lack mature compiler backends, motivating neural agents that generate and repair kernels from architectural documentation and simulator feedback. This approach repeatedly reconstructs workload-invariant machine semantics--including instruction behavior, legality constraints, synchronization rules, and memory protocols--for every workload. We argue that these semantics should be compiled once into a persistent symbolic artifact, while neural reasoning should focus on workload-dependent mapping decisions.\n  We present Zomboss, a compiler-mediated agentic framework for kernel generation that places neural search within a verified compiler boundary. Zomboss compiles machine semantics and legality constraints into a re",
+      "pdf_link": "https://arxiv.org/pdf/2608.00894.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.00894",
+      "submission_date": "2026-08-04T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-08-03T09:39:18.859824+00:00"
+      "updated_at": "2026-08-04T08:32:45.095458+00:00"
     }
   ]
 }

@@ -1,31 +1,123 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-08-03T09:38:20.190627+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-08-04T08:32:03.393956+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2607.28686",
+      "forum_id": "2608.00353",
       "paper_number": -1,
-      "title": "Optical Flow Sensor: A Direction-Selective Bionic Retina Design",
+      "title": "Analyzing RV32/RV64 Trade-offs for FreeRTOS Latency on 8-Stage RISC-V Soft Processors",
       "authors": [
-        "Juchen Zhou, Bonan Yan, Yuchao Yang"
+        "Hyunwoo Kang, Geonwoo Yu, Jongwon Kim, Seungwoo You, Minchan Gil"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2607.28686v1 Announce Type: new \nAbstract: Optical flow characterizes motion in the visual field and is fundamental to motion perception and tracking in biological and artificial vision systems. Biological retinas extract motion efficiently through local ON/OFF pathways and parallel processing, while conventional frame-based optical flow relies on dense sampling and global computation, resulting in high latency and power consumption. To overcome these limitations, we present a pixel-level Optical Flow Sensor (OFS) integrated circuit. The design combines Dynamic Vision Sensor (DVS) ON/OFF event comparison with time-difference measurement to enable fully parallel optical flow computation on-chip. An optical-flow-specific Address-Event Representation (OF-AER) interface supports low-powe",
-      "pdf_link": "https://arxiv.org/pdf/2607.28686.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.28686",
-      "submission_date": "2026-08-03T04:00:00+00:00",
+      "abstract": "arXiv:2608.00353v1 Announce Type: new \nAbstract: Although many commercial RISC-V platforms provide real-time operating system support, practical examples that explain how to enable a preemptive RTOS on a custom bare-metal RISC-V soft processor remain limited, leaving the interaction between processor microarchitecture, interrupt handling, and RTOS context switching difficult to understand from simple hardware implementation examples. This paper presents the design and evaluation of FreeRTOS on custom 8-stage RV32/RV64 RISC-V soft processors with machine-mode CSRs, a CLINT timer, trap and exception control logic, and the required context-switch path. Using this platform, we compare RV32 and RV64 under the same microarchitectural organization and firmware structure using two Rhealstone-deriv",
+      "pdf_link": "https://arxiv.org/pdf/2608.00353.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.00353",
+      "submission_date": "2026-08-04T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-08-03T09:38:20.188201+00:00"
+      "score": 100.0,
+      "updated_at": "2026-08-04T08:32:03.386105+00:00"
+    },
+    {
+      "forum_id": "2608.00595",
+      "paper_number": -1,
+      "title": "A Time-Multiplexed Spiking Neural Network Accelerator with Pipelined Readout for FPGA Inference",
+      "authors": [
+        "Reza Ansari, Maciej Wielgosz"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2608.00595v1 Announce Type: new \nAbstract: Spiking Neural Networks (SNNs) provide a power-efficient neuromorphic alternative to traditional artificial neural networks by processing information through discrete temporal events. This paper presents the design and Field-Programmable Gate Array (FPGA) implementation of an inference-only SNN accelerator optimized for MNIST digit classification. To address the physical routing constraints and timing bottlenecks inherent in low-cost devices, we propose an optimized hardware microarchitecture featuring a time-multiplexed 1-bit spike-feeding mechanism governed by a finite state machine (FSM), localized distributed memory for weight storage, and an integer-based Leaky Integrate-and-Fire (LIF) neuron model with register widths selected to preve",
+      "pdf_link": "https://arxiv.org/pdf/2608.00595.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.00595",
+      "submission_date": "2026-08-04T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 78.5,
+      "updated_at": "2026-08-04T08:32:03.386187+00:00"
+    },
+    {
+      "forum_id": "2608.01536",
+      "paper_number": -1,
+      "title": "Celty: SpMspV GPU Kernel and SIMT Co-Design for Efficient Dual-Sparse LLM Inference",
+      "authors": [
+        "Ruokai Yin, Priyadarshini Panda"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2608.01536v1 Announce Type: new \nAbstract: Large Language Models (LLMs) increasingly rely on sparsity to reduce inference cost, but most prior work targets a single sparsity source-either weight or activation-and optimizes for batched multi-user inference. Dual-sparsity, which combines unstructured weight pruning with runtime activation sparsity, offers a compelling tradeoff among model size, accuracy, and latency for single-user decoding, but formulates as a Sparse Matrix-Sparse Vector (spMspV) workload that existing GPU kernels handle poorly. We propose Celty, a co-designed sparse format, GPU kernel, and SIMT microarchitecture for efficient spMspV in LLM inference. At the kernel level, Celty introduces a Run-Length Compressed CSC (RLC-CSC) format that enables vectorized loading of ",
+      "pdf_link": "https://arxiv.org/pdf/2608.01536.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.01536",
+      "submission_date": "2026-08-04T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 35.0,
+      "updated_at": "2026-08-04T08:32:03.386324+00:00"
+    },
+    {
+      "forum_id": "2608.01038",
+      "paper_number": -1,
+      "title": "Beyond Static Policies: Dynamic Selection Among Modern Microarchitectural Policies",
+      "authors": [
+        "Yanxin Zhang, Ian McDougall, Junnan Li, Shayne Wadle, Vikas Singh, Karthikeyan Sankaralingam"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2608.01038v1 Announce Type: new \nAbstract: Modern processors gain performance from interacting policies: prefetchers, predictors, replacement rules, and schedulers. These policies are often evaluated one at a time, yet a policy that wins in one stack may lose in another. To study these effects, we present the first systematic composition study of two L1D prefetchers, two L1I prefetchers, and two L2 replacement policies across 490 phases from 49 SPEC CPU2006 and SPEC CPU 2017 traces. We define the best global static policy (BGSP) by phase-level oracle-win frequency. Gaze/Entangling/Mockingjay is the BGSP, winning 33.47% of phases, yet it remains 1.33% below the phase oracle on average, with 52 phases across eight benchmarks losing more than 2.5%. The opportunity is highly compressible",
+      "pdf_link": "https://arxiv.org/pdf/2608.01038.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.01038",
+      "submission_date": "2026-08-04T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-08-04T08:32:03.386264+00:00"
+    },
+    {
+      "forum_id": "2608.01041",
+      "paper_number": -1,
+      "title": "On the Limits of Machine-Learned Ranking for Modern Microarchitectural Policies",
+      "authors": [
+        "Yanxin Zhang, Shayne Wadle, Yuxuan Xiong, Zheyu Fu, Trivikram Krishnamurthy, Karu Sankaralingam"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2608.01041v1 Announce Type: new \nAbstract: Machine-learning predictors estimate processor performance far faster than cycle-level simulation. For design-space exploration, however, the valuable test is not merely reproducing the usual hardware ordering, but identifying how different hardware configurations rank on individual program phases. We evaluate four ML-predictors in two design regimes: \\emph{Structural Parameters} (SP), varying hardware resources such as issue width, ROB size, and cache capacity; and \\emph{Behavioral Policies} (BP), varying prefetching and replacement algorithms. In the SP regime, aggregate ranking is strong, yet counter-intuitive windows(CIW)---where the configuration expected to be slower is faster---constitute $22.4\\%$ of non-tied windows across five pairs",
+      "pdf_link": "https://arxiv.org/pdf/2608.01041.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.01041",
+      "submission_date": "2026-08-04T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-08-04T08:32:03.386279+00:00"
     }
   ]
 }

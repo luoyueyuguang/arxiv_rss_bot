@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-08-03T09:39:18.816762+00:00",
-  "paper_count": 397,
+  "last_updated": "2026-08-04T08:32:44.998436+00:00",
+  "paper_count": 403,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -2095,29 +2095,6 @@
       "updated_at": "2026-07-21T08:54:22.942248+00:00"
     },
     {
-      "forum_id": "2607.29678",
-      "paper_number": -1,
-      "title": "TokTier: Exact Stateful Tokenization for Agentic LLM Serving",
-      "authors": [
-        "Zhenyu Zhang, Zhichao Cao"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.29678v1 Announce Type: cross \nAbstract: LLM serving systems cache prompt KV state, yet most front ends still re-tokenize the full request text on every call. The cost lands on coding agents, which resubmit a long transcript after each small tool result, and reuse is hard because even a short append can change token boundaries near the end of the previous sequence. Across 153,951 calls from two agent ecosystems, the median call appends about 1.4K characters, and only 1.0-3.6% of calls start or rebuild a session with contexts of millions of characters. At a 94.1% fleet prompt-cache hit rate, tokenization reaches up to 64% of time to first token.\n  TokTier is a stateful tokenization service with one contract: emitted token IDs are always identical to full reference tokenization of ",
-      "pdf_link": "https://arxiv.org/pdf/2607.29678.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.29678",
-      "submission_date": "2026-08-03T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 41.5,
-      "updated_at": "2026-08-03T09:38:20.932179+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-17",
       "paper_number": 17,
       "title": "Tessera: A Holistic Pipeline Parallelism Framework for Trillion-Parameter Heterogeneous MoE Training (Operational Systems)",
@@ -2808,6 +2785,29 @@
       "updated_at": "2026-07-21T08:54:26.741832+00:00"
     },
     {
+      "forum_id": "2607.29678",
+      "paper_number": -1,
+      "title": "TokTier: Exact Stateful CPU+GPU Tokenization for Agentic LLM Serving",
+      "authors": [
+        "Zhenyu Zhang, Zhichao Cao"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.29678v2 Announce Type: replace-cross \nAbstract: LLM serving stacks cache prompt KV state, yet the front end still re-tokenizes the full request text on every call. Coding agents pay the most: each call resubmits a long transcript after a small append, and reuse is hard because a short append can move token boundaries near the end of the prior sequence. Across 153,951 agent calls, the median append is 1.4K characters; only 1.0-3.6% of calls start or rebuild a session, but those carry multi-million-character contexts. At the fleet's 94.1% prompt-cache hit rate approaching 0.99, tokenization grows from 10% to 64% of time to first token.\n  TokTier is a stateful CPU+GPU tokenization service for this two-mode workload with one contract: emitted token IDs are always identical to full r",
+      "pdf_link": "https://arxiv.org/pdf/2607.29678.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.29678",
+      "submission_date": "2026-08-04T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.0,
+      "updated_at": "2026-08-04T08:32:04.557057+00:00"
+    },
+    {
       "forum_id": "dblp-eurosys26-12",
       "paper_number": 12,
       "title": "Practical and Efficient x86-64 Emulation on RISC-V.",
@@ -3306,6 +3306,52 @@
       "ratings": [],
       "score": 32.5,
       "updated_at": "2026-07-21T08:54:22.942128+00:00"
+    },
+    {
+      "forum_id": "2608.01503",
+      "paper_number": -1,
+      "title": "GPU-Accelerated Multilevel Graph Clustering: A Parallel Perspective on Louvain and Leiden",
+      "authors": [
+        "Michael S. Gilbert, Kamesh Madduri"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.01503v1 Announce Type: new \nAbstract: The sequential Louvain and Leiden algorithms are widely used techniques for modularity-optimizing clustering (or community detection) in large graphs. We present pLouvain and pLeiden, two new GPU parallelizations. pLouvain is based on the Louvain+ extension. pLeiden is the first parallel implementation to provably preserve all quality guarantees of sequential Leiden. We achieve this through a novel spanning-tree-based refinement approach. Both pLouvain and pLeiden use a lightweight symmetry-breaking technique that emulates an ordered traversal of vertices. For pLouvain, we develop an alternative iteration strategy to rectify the weak internal cluster connectivity observed in Louvain/Louvain+. Further, both pLouvain and pLeiden optimize the L",
+      "pdf_link": "https://arxiv.org/pdf/2608.01503.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.01503",
+      "submission_date": "2026-08-04T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.5,
+      "updated_at": "2026-08-04T08:32:04.552496+00:00"
+    },
+    {
+      "forum_id": "2511.15503",
+      "paper_number": -1,
+      "title": "DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures",
+      "authors": [
+        "Peiming Yang, Sankeerth Durvasula, Ivan Fernandez, Mohammad Sadrosadati, Onur Mutlu, Gennady Pekhimenko, Christina Giannoula"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2511.15503v4 Announce Type: replace-cross \nAbstract: High-performance Host processors can integrate Processing-In-Memory (PIM) devices, which can accelerate memory-intensive kernels of Machine Learning (ML) models, including Large Language Models (LLMs), by leveraging the large memory bandwidth available at PIM cores. However, Host processor needs consecutive elements distributed across DRAM banks, while PIM cores need consecutive elements within their local banks. This necessitates data rearrangements in ML kernel execution that pose significant performance and programmability challenges, further exacerbated by the need to support diverse PIM devices. Current compilation approaches lack systematic optimization for diverse ML kernels and multiple PIM devices, and may largely ignore d",
+      "pdf_link": "https://arxiv.org/pdf/2511.15503.pdf",
+      "forum_link": "https://arxiv.org/abs/2511.15503",
+      "submission_date": "2026-08-04T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.5,
+      "updated_at": "2026-08-04T08:32:04.556481+00:00"
     },
     {
       "forum_id": "dblp-eurosys26-2",
@@ -3871,29 +3917,6 @@
       "ratings": [],
       "score": 24.5,
       "updated_at": "2026-07-21T08:54:17.393948+00:00"
-    },
-    {
-      "forum_id": "2607.28835",
-      "paper_number": -1,
-      "title": "From C to Idiomatic Rust: A Ship-of-Theseus Agentic Translation",
-      "authors": [
-        "Vasily A. Sartakov"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.28835v1 Announce Type: cross \nAbstract: C underpins operating systems, embedded platforms, and network infrastructure because its abstractions map directly to machine behaviour. Its explicit memory model, predictable data representations, and minimal runtime allow compilers to generate fast, deterministic code. These properties also leave correctness and memory safety entirely to the programmer, making undefined behaviour, pointer misuse, and lifetime errors persistent sources of defects and security vulnerabilities in long-lived C codebases. Rust eliminates most of failure modes through a static ownership and borrowing model that enforces memory safety and aliasing constraints at compile time. However, mature C systems cannot be translated directly: implicit layout assumptions,",
-      "pdf_link": "https://arxiv.org/pdf/2607.28835.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.28835",
-      "submission_date": "2026-08-03T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 24.0,
-      "updated_at": "2026-08-03T09:38:20.896352+00:00"
     },
     {
       "forum_id": "usenix-osdi26-56",
@@ -4880,6 +4903,29 @@
       "updated_at": "2026-07-21T08:54:26.739010+00:00"
     },
     {
+      "forum_id": "2607.21021",
+      "paper_number": -1,
+      "title": "Multimmit: Extending Blocks for Faster Finality",
+      "authors": [
+        "Andrew Lewis-Pye, Patrick O'Grady"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.21021v2 Announce Type: replace \nAbstract: To meet the throughput demands of modern blockchain systems, protocols for State Machine Replication (SMR) increasingly have many processors disseminate blocks of transactions in parallel, with consensus then establishing a total ordering on the blocks of all producers. Such designs face a choice as to when a block may enter the ordering. Certified approaches wait for a quorum to attest a block's availability, which is robust but adds message delays to every transaction. Uncertified approaches let proposals reference blocks immediately, which is fast but degrades rapidly when referenced data must be fetched on the critical path. Raptr, the state of the art, takes a middle course, finalising the longest prefix of the leader's proposal tha",
+      "pdf_link": "https://arxiv.org/pdf/2607.21021.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.21021",
+      "submission_date": "2026-08-04T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.0,
+      "updated_at": "2026-08-04T08:32:04.556178+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-45",
       "paper_number": 45,
       "title": "RLinf: Flexible and Efficient Large-Scale Reinforcement Learning via Macro-to-Micro Flow Transformation",
@@ -5810,6 +5856,29 @@
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
     },
     {
+      "forum_id": "2608.01150",
+      "paper_number": -1,
+      "title": "Zellige: Moldable Sequence Placement for Mixed Image-Video DiT Training",
+      "authors": [
+        "Guangyu Xiang, Xueze Kang, Minwei Zhao, Yuxin Wang, Shaohuai Shi, Lin Zhang, Xiaowen Chu"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.01150v1 Announce Type: new \nAbstract: High-quality video generation requires training Diffusion Transformers (DiTs) jointly on image and video data, posing a mixed-length sequence training problem across GPUs. Existing systems rely on data parallelism (DP), context parallelism (CP), or their combination; we model these designs as disjoint-group placement and prove that they face a fundamental tradeoff between inter-group load imbalance and intra-group communication redundancy. We present Zellige, a moldable sequence placement system that jointly selects each sequence's parallelism configuration and participating ranks. Zellige consists of three components: a hardware profiler that estimates the execution time and memory consumption of candidate placements, a two-stage planner th",
+      "pdf_link": "https://arxiv.org/pdf/2608.01150.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.01150",
+      "submission_date": "2026-08-04T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-08-04T08:32:04.552358+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-63",
       "paper_number": 63,
       "title": "Hardware Lifecycle-Aware Power Planning in Commercial Hyperscale Datacenters (Operational Systems)",
@@ -6431,6 +6500,29 @@
       "updated_at": "2026-07-21T08:54:26.740416+00:00"
     },
     {
+      "forum_id": "2608.01563",
+      "paper_number": -1,
+      "title": "Meganeura: Portable GPU Training and Inference through Vulkan and Metal",
+      "authors": [
+        "Dzmitry Malyshau"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.01563v1 Announce Type: cross \nAbstract: Training and deployed inference often cross export, conversion, and platform-specific runtime boundaries. Meganeura asks whether one compact native compiler can span both phases on consumer GPUs. Its typed static graph, automatic differentiation, optimizer, checkpoint, memory planner, and runtime lower specialized programs through Vulkan and Metal.\n  We compare five matched workloads with PyTorch on NVIDIA and AMD discrete GPUs, an AMD APU, Apple silicon, and an Intel iGPU. The protocol separates strict f32 from validated fast paths and gates forward and backward independently. Forty-eight of 50 device-workload-mode cells pass both gates; the other two share one unresolved backward-reference disagreement on a newly supported APU. In strict",
+      "pdf_link": "https://arxiv.org/pdf/2608.01563.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.01563",
+      "submission_date": "2026-08-04T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.5,
+      "updated_at": "2026-08-04T08:32:04.555604+00:00"
+    },
+    {
       "forum_id": "dblp-eurosys26-23",
       "paper_number": 23,
       "title": "Bridging the GPU Utilization Gap: Predictive Multi-Dimensional Resource Scheduling for AI Workloads.",
@@ -6662,27 +6754,50 @@
       "updated_at": "2026-07-21T08:54:26.744753+00:00"
     },
     {
-      "forum_id": "2607.28880",
+      "forum_id": "2608.02122",
       "paper_number": -1,
-      "title": "LayoutBench: Performance Benchmarking of Cloud Storage Layouts for Multimedia Data",
+      "title": "DEFT: Joint Task Placement and DVFS for Energy-Efficient Multi-GPU Runtimes",
       "authors": [
-        "Debopam Sanyal, Hongjie Chen, Alexey Tumanov, Joshua Kimball"
+        "Jing Chen, Miquel Pericas"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2607.28880v1 Announce Type: new \nAbstract: Modern multimedia machine learning workloads increasingly store large-scale datasets in cloud object storage services such as AWS S3. How these samples are physically organized in storage (i.e.,storage layout) directly affects how quickly and cheaply they can be retrieved. Yet the benchmarks used to guide storage decisions today focus on database engines and query processing, and none systematically evaluates how different storage layouts perform for multimedia data retrieval. We present LayoutBench, the first benchmark designed to fill this gap. It evaluates three representative layout strategies: storing each sample as an individual object (L1), sequentially packing samples into tar archives (L2), and organizing samples as columns in Parqu",
-      "pdf_link": "https://arxiv.org/pdf/2607.28880.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.28880",
-      "submission_date": "2026-08-03T04:00:00+00:00",
+      "abstract": "arXiv:2608.02122v1 Announce Type: new \nAbstract: Energy efficiency has become a first-order concern in modern high-performance computing systems, as it directly determines achievable throughput under fixed power budgets. Although Dynamic Voltage and Frequency Scaling (DVFS) provides an effective mechanism for reducing GPU energy consumption, existing runtime systems decouple DVFS from task placement and inter-GPU communication, focus on single-GPU execution, or cannot adapt frequency to task granularity and runtime contention in multi-GPU environments. Consequently, current schedulers fail to capture the tight coupling between task placement, frequency selection, and inter-GPU data movement that fundamentally governs energy-performance trade-offs on multi-GPU systems.\n  This paper presents",
+      "pdf_link": "https://arxiv.org/pdf/2608.02122.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.02122",
+      "submission_date": "2026-08-04T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 4.0,
-      "updated_at": "2026-08-03T09:38:20.931094+00:00"
+      "updated_at": "2026-08-04T08:32:04.553854+00:00"
+    },
+    {
+      "forum_id": "2608.00495",
+      "paper_number": -1,
+      "title": "Error-bounded Point Cloud Compression Using Truncated Octahedron Quantization",
+      "authors": [
+        "Youyuan Liu, Longtao Zhang, Ruoyu Li, Bo Jiang, Taolue Yang, Kai Zhao, Sheng Di, Eduard Dragut, Sian Jin"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.00495v1 Announce Type: cross \nAbstract: With the rapid advancement of large-scale scientific simulations, the massive volume of point cloud data generated has increasingly become a critical bottleneck for scientific storage systems and data management pipelines. Existing point cloud compression techniques integrated into scientific storage systems are designed for sparse geometry and rely on quantization schemes whose optimality assumptions do not hold for dense data. When applied at the compression layer to point clouds, this representation mismatch leads to fundamentally sub-optimal rate-distortion trade-offs that cannot be addressed through parameter tuning or framework-level adaptations. This mismatch increases storage overhead and limits efficient movement and downstream an",
+      "pdf_link": "https://arxiv.org/pdf/2608.00495.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.00495",
+      "submission_date": "2026-08-04T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-08-04T08:32:04.554599+00:00"
     },
     {
       "forum_id": "usenix-osdi26-87",
@@ -6872,6 +6987,29 @@
       "ratings": [],
       "score": 4.0,
       "updated_at": "2026-07-21T08:54:26.742343+00:00"
+    },
+    {
+      "forum_id": "2608.00867",
+      "paper_number": -1,
+      "title": "NUNA: Characterizing and Mitigating Non-Uniform Network Access in Multi-Die GPU Scale-Up Systems",
+      "authors": [
+        "Conor James Green, William Won, Tuan Ta, Bradford M. Beckmann"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.00867v1 Announce Type: new \nAbstract: Graphics processing unit (GPU) architectures are growing in size to meet the increasing compute and memory requirements. As GPU sizes increase, intra-socket wire transfer delay increases significantly. While previous research has optimized for compute and memory locality within a socket, the spatial impact on inter-GPU communication has not been well-studied. We introduce the term non-uniform network access (NUNA) to describe this emerging optimization dimension in multi-GPU systems. We specifically focus on latency-sensitive collective communication, common in machine learning inference. First, we highlight the need for NUNA-aware routing (NAR), choosing optimized, spatially-aware inter-GPU paths in large scale-up network topologies. Second",
+      "pdf_link": "https://arxiv.org/pdf/2608.00867.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.00867",
+      "submission_date": "2026-08-04T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-08-04T08:32:04.552043+00:00"
     },
     {
       "forum_id": "usenix-osdi26-83",
