@@ -1,6 +1,6 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-08-04 08:33:21 UTC
+- **Last Updated**: 2026-08-05 08:31:38 UTC
 - **Total Filtered Papers**: 1
 - **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
@@ -9,4 +9,4 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Graph Neural Multilevel Preconditioners for Iterative Solvers](https://arxiv.org/abs/2607.28456) | `ARXIV` | 57.0 |
+| 1 | [A semi-smooth Newton method for efficient evaluation of the inverse hysteresis operator](https://arxiv.org/abs/2608.03191) | `ARXIV` | 13.0 |

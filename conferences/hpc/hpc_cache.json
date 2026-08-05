@@ -1,151 +1,82 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-08-04T08:32:04.391371+00:00",
-  "paper_count": 7,
+  "last_updated": "2026-08-05T08:30:55.036772+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2608.01503",
+      "forum_id": "2608.03695",
       "paper_number": -1,
-      "title": "GPU-Accelerated Multilevel Graph Clustering: A Parallel Perspective on Louvain and Leiden",
+      "title": "Accelerating Dynamic Graph Clustering on GPU Architectures with cuGraph",
       "authors": [
-        "Michael S. Gilbert, Kamesh Madduri"
+        "Nelson Aloysio Reis de Almeida Passos, Emanuele Carlini, Salvatore Trani"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.01503v1 Announce Type: new \nAbstract: The sequential Louvain and Leiden algorithms are widely used techniques for modularity-optimizing clustering (or community detection) in large graphs. We present pLouvain and pLeiden, two new GPU parallelizations. pLouvain is based on the Louvain+ extension. pLeiden is the first parallel implementation to provably preserve all quality guarantees of sequential Leiden. We achieve this through a novel spanning-tree-based refinement approach. Both pLouvain and pLeiden use a lightweight symmetry-breaking technique that emulates an ordered traversal of vertices. For pLouvain, we develop an alternative iteration strategy to rectify the weak internal cluster connectivity observed in Louvain/Louvain+. Further, both pLouvain and pLeiden optimize the L",
-      "pdf_link": "https://arxiv.org/pdf/2608.01503.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.01503",
-      "submission_date": "2026-08-04T04:00:00+00:00",
+      "abstract": "arXiv:2608.03695v1 Announce Type: new \nAbstract: This work addresses community detection in temporal networks through GPU-accelerated extensions of spectral clustering and modularity-based algorithms originally designed for static graphs. Built on the NVIDIA RAPIDS ecosystem, the framework enables the characterization and tracking of communities in snapshot-based dynamic graphs, either by Leiden greedy optimization with multi-GPU support via Dask-based workload distribution, or eigendecomposition of a symmetric Bethe-Hessian operator. Our multislice modularity backend achieves up to roughly three orders of magnitude speedup over the CPU reference under an equal-work budget, depending on graph density and snapshot count, while preserving compatibility with existing graph analytics pipelines",
+      "pdf_link": "https://arxiv.org/pdf/2608.03695.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.03695",
+      "submission_date": "2026-08-05T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 34.5,
-      "updated_at": "2026-08-04T08:32:03.499199+00:00"
+      "score": 44.0,
+      "updated_at": "2026-08-05T08:30:54.307742+00:00"
     },
     {
-      "forum_id": "2608.00454",
+      "forum_id": "2602.11456",
       "paper_number": -1,
-      "title": "Cache-Consistent Dynamic Load Balancing for Kubernetes Controllers",
+      "title": "AuroraRL: Fast, Fault-Tolerant, and Cost-Efficient Reinforcement Learning over Decentralized Network",
       "authors": [
-        "Shoma Ansai, Yasuo Okabe, Daisuke Kotani"
+        "Chaoyi Ruan, Geng Luo, Xinyi Wan, Long Zhao, Qinghe Wang, Jiaan Zhu, Duling Xu, Guanbin Xu, Dehui Wei, Xiang Liu, Cheng Li, Haifeng Sun, Liang Luo, Congcong Miao, Jialin Li"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.00454v1 Announce Type: new \nAbstract: As Kubernetes clusters grow, the scalability of controllers can become a bottleneck for the performance of the system. Distributing the load dynamically across multiple controller instances, however, raises the following two problems, and a controller can therefore be run only as a single instance today. The first problem is the cost of reassignment. A controller retrieves objects on the basis of the Labels attached to them, so in a naive design in which the assigned instance is recorded in a Label on every object, the Labels must be rewritten in proportion to the total number of objects whenever instances are added or removed. The second problem is cache consistency. A controller consults only its own cache when it reads an object and never",
-      "pdf_link": "https://arxiv.org/pdf/2608.00454.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.00454",
-      "submission_date": "2026-08-04T04:00:00+00:00",
+      "abstract": "arXiv:2602.11456v2 Announce Type: replace \nAbstract: LLM reinforcement learning (RL) requires frequent synchronization of large model parameters between the trainer and distributed rollout actors. High-throughput RL post-training therefore relies on dedicated RDMA HPC/cloud clusters, an infrastructure cost most organizations cannot absorb. A natural alternative is to aggregate loosely-coupled GPUs over standard Ethernet and WAN links, but this commodity connectivity cannot sustain full-weight broadcasts: synchronizing an 8B model can take over 100~seconds on bandwidth-limited links, while rollout generation typically takes tens of seconds.\n  Toward making RL practical in this regime, we observe that RL fine-tuning yields highly sparse per-step updates, with only around 1\\% of parameter ele",
+      "pdf_link": "https://arxiv.org/pdf/2602.11456.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.11456",
+      "submission_date": "2026-08-05T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 33.5,
-      "updated_at": "2026-08-04T08:32:03.498689+00:00"
+      "score": 17.5,
+      "updated_at": "2026-08-05T08:30:54.308811+00:00"
     },
     {
-      "forum_id": "2608.01449",
+      "forum_id": "2608.03026",
       "paper_number": -1,
-      "title": "NIXT: A NCCL Inspector Exporter Tool for Observability of Collective Communication in Large Model Training",
+      "title": "Pruning-Aware Multi-Cluster Co-Inference for Large AI Models in AI-RANs",
       "authors": [
-        "Ziyang Jia, Sirshak Das, Jason Sewall, Laxmi Bhuyan, Pasha Shamis, Daniel Wong"
+        "Xiaowen Cao, Zhonghao Lyu, Shicheng Chu, Zezhong Zhang, Dingzhu Wen, Guangxu Zhu, Kaibin Huang, Shuguang Cui, Jie Xu"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.01449v1 Announce Type: new \nAbstract: As machine learning workloads scale, it is increasingly important to gain more observability into the performance of collective communication to easily identify performance vari- ations and accelerate root cause identification. Towards this goal, the Nvidia Collective Communication Library (NCCL) introduced NCCL Inspector, a profiler plugin that provides lightweight and continuous reporting of NCCL communication performance statistics. However, the large volume of data collected by NCCL Inspector can be difficult to assess and to extract actionable insights from. This paper presents NIXT, a NCCL Inspector Exporter Tool that improves the observability of collective communication by providing readily accessible analysis and actionable insights",
-      "pdf_link": "https://arxiv.org/pdf/2608.01449.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.01449",
-      "submission_date": "2026-08-04T04:00:00+00:00",
+      "abstract": "arXiv:2608.03026v1 Announce Type: new \nAbstract: The increasing scale and computational demands of large artificial intelligence models (LAIMs) present significant challenges for efficient inference in resource-constrained distributed environments. In this paper, we propose a multi-cluster LAIM co-inference framework, where an edge server equipped with multiple graphics processing units (GPUs) coordinates multiple user clusters to execute inference tasks collaboratively. Within each cluster, devices capture data from diverse perspectives and employ lightweight on-device LAIMs to extract local features. These features are then transmitted to the edge server, where they are aggregated and fused to generate a more accurate inference outcome. To reveal the fundamental trade-off between model p",
+      "pdf_link": "https://arxiv.org/pdf/2608.03026.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.03026",
+      "submission_date": "2026-08-05T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-08-04T08:32:03.499143+00:00"
+      "score": 12.5,
+      "updated_at": "2026-08-05T08:30:54.307457+00:00"
     },
     {
-      "forum_id": "2608.00742",
+      "forum_id": "2304.09666",
       "paper_number": -1,
-      "title": "Multi-tenant Kubernetes Use Cases for AI, Secure Computing and Data Services, and More",
-      "authors": [
-        "Jake Watson, Sadaf R Alam, Christopher Woods, Abdelwahab Kawafi, Thomas Green, Ian Johnson, Ellis Pires, Jessica R. Jones, Utz-Uwe Haus"
-      ],
-      "keywords": [
-        "cs.DC",
-        "Supercomputing"
-      ],
-      "abstract": "arXiv:2608.00742v1 Announce Type: new \nAbstract: Kubernetes, as a container orchestration engine, has been widely used in cloud-native ecosystems for several years. In supercomputing ecosystems, especially where bare-metal performance for compute and network devices are considered, the adoption is somewhat limited. However, with the increasing diversity of use cases such as AI, secure and confidential computing for sensitive data, and mixed workload orchestration, a traditional, single-tenant batch computing system does not offer the flexibility and reproducibility to which public cloud users are accustomed. Note that Kubernetes is not considered a replacement for batch scheduling systems, which have powerful features for large-scale MPI jobs with thousands of network end points. Rather, i",
-      "pdf_link": "https://arxiv.org/pdf/2608.00742.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.00742",
-      "submission_date": "2026-08-04T04:00:00+00:00",
-      "conference": "Supercomputing",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 26.0,
-      "updated_at": "2026-08-04T08:32:03.498863+00:00"
-    },
-    {
-      "forum_id": "2608.01426",
-      "paper_number": -1,
-      "title": "Cluster-Aware Over-the-Air Federated Learning with Energy-Harvesting Devices: From Global Training to Model Personalization",
-      "authors": [
-        "Furkan Bagci, Busra Tegin, Mohammad Kazemi, Tolga M. Duman"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2608.01426v1 Announce Type: cross \nAbstract: Federated learning (FL) enables distributed optimization and learning across decentralized edge devices while preserving data privacy, but its performance is fundamentally constrained by heterogeneous data distributions, limited communication resources, and energy availability. In practical wireless networks, mobile devices (MDs) often exhibit diverse data and learning objectives, naturally forming clusters of users with jointly trainable models. When devices rely on energy harvesting (EH), stochastic energy arrivals further complicate participation and scheduling under communication constraints. In this work, we study over-the-air (OTA) FL with EH MDs under heterogeneous data distributions, and investigate two closely related learning obj",
-      "pdf_link": "https://arxiv.org/pdf/2608.01426.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.01426",
-      "submission_date": "2026-08-04T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 19.0,
-      "updated_at": "2026-08-04T08:32:03.500616+00:00"
-    },
-    {
-      "forum_id": "2608.00455",
-      "paper_number": -1,
-      "title": "AReaL-DTE: Sparse Policy-Weight Transfer for Online Agentic Reinforcement Learning",
-      "authors": [
-        "Yingqi Peng, Jiawei Zhang, Wenhao Zhou, Ruida Xu, Ran Yan, Wei Dong, Yi Gao, Zhiqiang Ding, Tongkai Yang, Binhang Yuan"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2608.00455v1 Announce Type: new \nAbstract: Online agentic reinforcement learning implemented with micro-services separates policy training from rollout generation, improving scalability and modularity while potentially making frequent policy-weight synchronization a critical systems overhead. Shared storage naturally connects these services across clusters, but vanilla dense policy weight synchronization could incur model-scale construction, transfer, and application costs. Sparse synchronization reduces transferred data, yet checkpoint-oriented approaches can still retain a previous model and materialize complete intermediates to bridge heterogeneous training and inference layouts. We present AReaL-DTE, a snapshot-free Delta Transfer Engine that translates inference-visible weight s",
-      "pdf_link": "https://arxiv.org/pdf/2608.00455.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.00455",
-      "submission_date": "2026-08-04T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 15.5,
-      "updated_at": "2026-08-04T08:32:03.498764+00:00"
-    },
-    {
-      "forum_id": "2608.02386",
-      "paper_number": -1,
-      "title": "Greedy-Like Defective Coloring: Distributed Algorithms and Applications",
+      "title": "List Defective Colorings: Distributed Algorithms and Applications",
       "authors": [
         "Marc Fuchs, Fabian Kuhn"
       ],
@@ -153,17 +84,17 @@
         "cs.DC",
         "SC '"
       ],
-      "abstract": "arXiv:2608.02386v1 Announce Type: new \nAbstract: A $d$-defective $c$-coloring of a graph $G=(V,E)$ is a coloring of the nodes $V$ with $c$ colors such that every node has at most $d$ neighbors of the same color. Distributed algorithms for computing different variants of defective coloring are at the core of most deterministic state-of-the-art distributed coloring algorithms, and they are also an important tool in many other distributed graph algorithms. In several cases, the overall complexity could be improved if some version of defective coloring could be solved more efficiently. Barenboim and Elkin [STOC '09] introduced a two-pass greedy algorithm that uses $p^2$ colors with defect $\\lfloor \\Delta/p\\rfloor$ in $O(\\Delta+\\log^{\\ast} n)$ rounds. This remains the best defect/color tradeoff",
-      "pdf_link": "https://arxiv.org/pdf/2608.02386.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.02386",
-      "submission_date": "2026-08-04T04:00:00+00:00",
+      "abstract": "arXiv:2304.09666v3 Announce Type: replace \nAbstract: The distributed coloring problem is at the core of the area of distributed graph algorithms and it is a problem that has seen tremendous progress over the last few years. Much of the remarkable recent progress on deterministic distributed coloring algorithms is based on two main tools: a) defective colorings in which every node of a given color can have a limited number of neighbors of the same color and b) list coloring, a natural generalization of the standard coloring problem that naturally appears when colorings are computed in different stages and one has to extend a previously computed partial coloring to a full coloring.\n  In this paper, we introduce 'list defective colorings', which can be seen as a generalization of these two co",
+      "pdf_link": "https://arxiv.org/pdf/2304.09666.pdf",
+      "forum_link": "https://arxiv.org/abs/2304.09666",
+      "submission_date": "2026-08-05T04:00:00+00:00",
       "conference": "SC '",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-08-04T08:32:03.499965+00:00"
+      "updated_at": "2026-08-05T08:30:54.308473+00:00"
     }
   ]
 }

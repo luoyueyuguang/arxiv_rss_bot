@@ -1,31 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-07-31T08:47:04.457257+00:00",
+  "last_updated": "2026-08-05T08:31:38.580910+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2607.28456",
+      "forum_id": "2608.03191",
       "paper_number": -1,
-      "title": "Graph Neural Multilevel Preconditioners for Iterative Solvers",
+      "title": "A semi-smooth Newton method for efficient evaluation of the inverse hysteresis operator",
       "authors": [
-        "Zechen Zhang, Rui Peng Li, Yousef Saad"
+        "Herbert Egger, Felix Engertsberger"
       ],
       "keywords": [
         "cs.NA",
-        "scientific computing"
+        "numerical analysis"
       ],
-      "abstract": "arXiv:2607.28456v1 Announce Type: new \nAbstract: Solving large, sparse linear systems is a core task in scientific computing, and efficient iterative solvers rely critically on effective and robust preconditioning. While classical methods such as algebraic multigrid (AMG) are highly scalable, their robustness can degrade on indefinite or nonsymmetric systems where heuristics originally developed for elliptic PDEs are less reliable. Recently, Graph Neural Networks (GNNs) have emerged as data-driven preconditioners; yet, the practical impact of imposing an AMG-style hierarchy remains underexplored for general sparse matrices. In this work, we propose a Graph Neural Multilevel Preconditioner (GMP) that adopts an AMG hierarchy as a structural prior and learns smoothing, restriction, and interp",
-      "pdf_link": "https://arxiv.org/pdf/2607.28456.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.28456",
-      "submission_date": "2026-07-31T04:00:00+00:00",
-      "conference": "scientific computing",
+      "abstract": "arXiv:2608.03191v1 Announce Type: new \nAbstract: We study the numerical evaluation of an energy-based vector hysteresis model and its incorporation into finite element simulations based on a vector potential formulation. The inherent non-smoothness of the hysteresis model poses challenges for both numerical analysis and implementation. Using tools from convex analysis, we characterize the forward and inverse hysteresis operators in terms of energy densities. This characterization yields well-posedness of the resulting models and leads to robust algorithms for their evaluation based on generalized semi-smooth Newton methods. It furthermore enables a seamless integration into magnetic field simulations, leading to nonlinear and non-smooth optimization problems at every load step. We discuss ",
+      "pdf_link": "https://arxiv.org/pdf/2608.03191.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.03191",
+      "submission_date": "2026-08-05T04:00:00+00:00",
+      "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 57.0,
-      "updated_at": "2026-07-31T08:47:04.454801+00:00"
+      "score": 13.0,
+      "updated_at": "2026-08-05T08:31:38.577447+00:00"
     }
   ]
 }

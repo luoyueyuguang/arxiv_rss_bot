@@ -1,123 +1,77 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-08-04T08:32:03.393956+00:00",
-  "paper_count": 5,
+  "last_updated": "2026-08-05T08:30:54.224188+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2608.00353",
+      "forum_id": "2608.02915",
       "paper_number": -1,
-      "title": "Analyzing RV32/RV64 Trade-offs for FreeRTOS Latency on 8-Stage RISC-V Soft Processors",
+      "title": "LACE: Large Language Model Aided Multi-Agent Framework for Agile RISC-V Instruction Extension",
       "authors": [
-        "Hyunwoo Kang, Geonwoo Yu, Jongwon Kim, Seungwoo You, Minchan Gil"
+        "Pingqing Zheng, Jiayin Qin, Fuqi Zhang, Zishen Wan, Shang Wu, Yu Cao, Caiwen Ding, Yang Katie Zhao"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2608.00353v1 Announce Type: new \nAbstract: Although many commercial RISC-V platforms provide real-time operating system support, practical examples that explain how to enable a preemptive RTOS on a custom bare-metal RISC-V soft processor remain limited, leaving the interaction between processor microarchitecture, interrupt handling, and RTOS context switching difficult to understand from simple hardware implementation examples. This paper presents the design and evaluation of FreeRTOS on custom 8-stage RV32/RV64 RISC-V soft processors with machine-mode CSRs, a CLINT timer, trap and exception control logic, and the required context-switch path. Using this platform, we compare RV32 and RV64 under the same microarchitectural organization and firmware structure using two Rhealstone-deriv",
-      "pdf_link": "https://arxiv.org/pdf/2608.00353.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.00353",
-      "submission_date": "2026-08-04T04:00:00+00:00",
+      "abstract": "arXiv:2608.02915v1 Announce Type: new \nAbstract: Domain-specific Instruction Set Architecture eXtensions (ISAX) are widely adopted in the RISC-V ecosystem to accelerate emerging workloads, but implementing and validating ISAXes across different cores remains slow and fragmented. Existing frameworks still require per-core interface adaptation, and differential testing often breaks once either the microarchitecture or the ISAX changes. We present LACE, an LLM-aided multi-agent workflow that translates natural-language ISAX intents into a compact two-level IR (operation-level and HDL task-level), performs retrieval-guided localized RTL edits over large repositories, and closes the loop with a compiler-agnostic riscv-formal checking flow (assuming RVFI availability or instrumentation). Across ",
+      "pdf_link": "https://arxiv.org/pdf/2608.02915.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.02915",
+      "submission_date": "2026-08-05T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 100.0,
-      "updated_at": "2026-08-04T08:32:03.386105+00:00"
+      "score": 47.5,
+      "updated_at": "2026-08-05T08:30:54.218391+00:00"
     },
     {
-      "forum_id": "2608.00595",
+      "forum_id": "2608.03555",
       "paper_number": -1,
-      "title": "A Time-Multiplexed Spiking Neural Network Accelerator with Pipelined Readout for FPGA Inference",
+      "title": "Heterogeneous LLM Serving with General-Purpose Processing-Near-Memory for Retrieval-Based Sparse Attention",
       "authors": [
-        "Reza Ansari, Maciej Wielgosz"
+        "Hyungkyu Ham, Junhyeong Bae, Seungheon Lee, Myeongjae Jeon, Gwangsun Kim"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2608.00595v1 Announce Type: new \nAbstract: Spiking Neural Networks (SNNs) provide a power-efficient neuromorphic alternative to traditional artificial neural networks by processing information through discrete temporal events. This paper presents the design and Field-Programmable Gate Array (FPGA) implementation of an inference-only SNN accelerator optimized for MNIST digit classification. To address the physical routing constraints and timing bottlenecks inherent in low-cost devices, we propose an optimized hardware microarchitecture featuring a time-multiplexed 1-bit spike-feeding mechanism governed by a finite state machine (FSM), localized distributed memory for weight storage, and an integer-based Leaky Integrate-and-Fire (LIF) neuron model with register widths selected to preve",
-      "pdf_link": "https://arxiv.org/pdf/2608.00595.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.00595",
-      "submission_date": "2026-08-04T04:00:00+00:00",
+      "abstract": "arXiv:2608.03555v1 Announce Type: new \nAbstract: This paper presents a heterogeneous decode-phase serving system that relocates the KV cache out of GPU memory, motivated by the retrieval-based sparse attention that recent frontier LLMs adopt to serve million-token contexts. It partitions a decode step by operation type: GPU nodes hold the model weights and execute the projections and MoE layers, while processing-near-memory (PNM) nodes hold the KV cache and index keys and execute every operation that reads them. We first show that the assumptions behind prior PIM and PNM designs no longer hold for these operations, and derive four design requirements for such a node. From these requirements, we propose KARAT (KV-cache-resident Accelerator for Retrieval-based ATtention), a general-purpose P",
+      "pdf_link": "https://arxiv.org/pdf/2608.03555.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.03555",
+      "submission_date": "2026-08-05T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 78.5,
-      "updated_at": "2026-08-04T08:32:03.386187+00:00"
+      "score": 44.0,
+      "updated_at": "2026-08-05T08:30:54.218632+00:00"
     },
     {
-      "forum_id": "2608.01536",
+      "forum_id": "2608.03867",
       "paper_number": -1,
-      "title": "Celty: SpMspV GPU Kernel and SIMT Co-Design for Efficient Dual-Sparse LLM Inference",
+      "title": "Heterogeneity-Aware Microscaling for Efficient Low-Bit LLM Inference",
       "authors": [
-        "Ruokai Yin, Priyadarshini Panda"
+        "Junyi Luo, Xinting Jiang, Tai-Hao Wen, Ruichen Qi, Minxing Chu, Hongyi Wu, Gregory Kielian, Ben Laurie, Qirui Zhang, Quan Cheng, Dennis Sylvester, Mehdi Saligane"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2608.01536v1 Announce Type: new \nAbstract: Large Language Models (LLMs) increasingly rely on sparsity to reduce inference cost, but most prior work targets a single sparsity source-either weight or activation-and optimizes for batched multi-user inference. Dual-sparsity, which combines unstructured weight pruning with runtime activation sparsity, offers a compelling tradeoff among model size, accuracy, and latency for single-user decoding, but formulates as a Sparse Matrix-Sparse Vector (spMspV) workload that existing GPU kernels handle poorly. We propose Celty, a co-designed sparse format, GPU kernel, and SIMT microarchitecture for efficient spMspV in LLM inference. At the kernel level, Celty introduces a Run-Length Compressed CSC (RLC-CSC) format that enables vectorized loading of ",
-      "pdf_link": "https://arxiv.org/pdf/2608.01536.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.01536",
-      "submission_date": "2026-08-04T04:00:00+00:00",
+      "abstract": "arXiv:2608.03867v1 Announce Type: new \nAbstract: Microscaling (MX) is now the standard for low-bit large language model (LLM) inference. Its 4-bit form MXFP4 still loses substantial accuracy, because existing MX formats fix either the element format or the precision-recovery scheme across blocks, and thus capture only limited quantization heterogeneity. Quantization heterogeneity appears at two levels: 1) across blocks, the preferred element format and precision-recovery scheme vary; 2) across operands, weights and activations require different encoding. We introduce AdaMX (Adaptive Microscaling), a heterogeneity-aware format and accelerator. It selects the precision-recovery scheme per block and the representation per operand, at no increase in equivalent bit width (EBW). One design cover",
+      "pdf_link": "https://arxiv.org/pdf/2608.03867.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.03867",
+      "submission_date": "2026-08-05T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-08-04T08:32:03.386324+00:00"
-    },
-    {
-      "forum_id": "2608.01038",
-      "paper_number": -1,
-      "title": "Beyond Static Policies: Dynamic Selection Among Modern Microarchitectural Policies",
-      "authors": [
-        "Yanxin Zhang, Ian McDougall, Junnan Li, Shayne Wadle, Vikas Singh, Karthikeyan Sankaralingam"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2608.01038v1 Announce Type: new \nAbstract: Modern processors gain performance from interacting policies: prefetchers, predictors, replacement rules, and schedulers. These policies are often evaluated one at a time, yet a policy that wins in one stack may lose in another. To study these effects, we present the first systematic composition study of two L1D prefetchers, two L1I prefetchers, and two L2 replacement policies across 490 phases from 49 SPEC CPU2006 and SPEC CPU 2017 traces. We define the best global static policy (BGSP) by phase-level oracle-win frequency. Gaze/Entangling/Mockingjay is the BGSP, winning 33.47% of phases, yet it remains 1.33% below the phase oracle on average, with 52 phases across eight benchmarks losing more than 2.5%. The opportunity is highly compressible",
-      "pdf_link": "https://arxiv.org/pdf/2608.01038.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.01038",
-      "submission_date": "2026-08-04T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-08-04T08:32:03.386264+00:00"
-    },
-    {
-      "forum_id": "2608.01041",
-      "paper_number": -1,
-      "title": "On the Limits of Machine-Learned Ranking for Modern Microarchitectural Policies",
-      "authors": [
-        "Yanxin Zhang, Shayne Wadle, Yuxuan Xiong, Zheyu Fu, Trivikram Krishnamurthy, Karu Sankaralingam"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2608.01041v1 Announce Type: new \nAbstract: Machine-learning predictors estimate processor performance far faster than cycle-level simulation. For design-space exploration, however, the valuable test is not merely reproducing the usual hardware ordering, but identifying how different hardware configurations rank on individual program phases. We evaluate four ML-predictors in two design regimes: \\emph{Structural Parameters} (SP), varying hardware resources such as issue width, ROB size, and cache capacity; and \\emph{Behavioral Policies} (BP), varying prefetching and replacement algorithms. In the SP regime, aggregate ranking is strong, yet counter-intuitive windows(CIW)---where the configuration expected to be slower is faster---constitute $22.4\\%$ of non-tied windows across five pairs",
-      "pdf_link": "https://arxiv.org/pdf/2608.01041.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.01041",
-      "submission_date": "2026-08-04T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-08-04T08:32:03.386279+00:00"
+      "score": 11.0,
+      "updated_at": "2026-08-05T08:30:54.218675+00:00"
     }
   ]
 }
