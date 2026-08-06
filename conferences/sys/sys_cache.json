@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-08-05T08:30:58.806631+00:00",
-  "paper_count": 443,
+  "last_updated": "2026-08-06T08:31:07.038928+00:00",
+  "paper_count": 437,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -2781,29 +2781,6 @@
       "updated_at": "2026-07-21T08:42:40.010391+00:00"
     },
     {
-      "forum_id": "2602.11456",
-      "paper_number": -1,
-      "title": "AuroraRL: Fast, Fault-Tolerant, and Cost-Efficient Reinforcement Learning over Decentralized Network",
-      "authors": [
-        "Chaoyi Ruan, Geng Luo, Xinyi Wan, Long Zhao, Qinghe Wang, Jiaan Zhu, Duling Xu, Guanbin Xu, Dehui Wei, Xiang Liu, Cheng Li, Haifeng Sun, Liang Luo, Congcong Miao, Jialin Li"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2602.11456v2 Announce Type: replace \nAbstract: LLM reinforcement learning (RL) requires frequent synchronization of large model parameters between the trainer and distributed rollout actors. High-throughput RL post-training therefore relies on dedicated RDMA HPC/cloud clusters, an infrastructure cost most organizations cannot absorb. A natural alternative is to aggregate loosely-coupled GPUs over standard Ethernet and WAN links, but this commodity connectivity cannot sustain full-weight broadcasts: synchronizing an 8B model can take over 100~seconds on bandwidth-limited links, while rollout generation typically takes tens of seconds.\n  Toward making RL practical in this regime, we observe that RL fine-tuning yields highly sparse per-step updates, with only around 1\\% of parameter ele",
-      "pdf_link": "https://arxiv.org/pdf/2602.11456.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.11456",
-      "submission_date": "2026-08-05T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 34.0,
-      "updated_at": "2026-08-05T08:30:55.174794+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-104",
       "paper_number": 104,
       "title": "VTC: DNN Compilation with Virtual Tensors for Data Movement Elimination",
@@ -4276,29 +4253,6 @@
       "ratings": [],
       "score": 27.0,
       "updated_at": "2026-07-21T08:54:26.738134+00:00"
-    },
-    {
-      "forum_id": "2608.03051",
-      "paper_number": -1,
-      "title": "CUDA MPC: A GPU-Native Solver for Model Predictive Control",
-      "authors": [
-        "Babak Akbari, Melissa Greeff"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.03051v1 Announce Type: cross \nAbstract: Model Predictive Control (MPC) delivers constraint-aware control, but its reliance on online optimization limits its use on systems with fast dynamics, high-dimensional models, or long horizons. Existing GPU implementations typically treat the device as a linear-algebra accelerator, leaving the optimization loop dependent on repeated kernel launches and high-latency memory transfers. This paper introduces CUDA MPC, a GPU-native MPC framework that co-designs the optimization algorithm, execution model, and memory architecture for CUDA hardware. CUDA MPC pairs a parallel-in-horizon alternating direction method of multipliers (ADMM) splitting with a fused CUDA kernel that runs the entire iterative solve on the device. Intermediate optimizatio",
-      "pdf_link": "https://arxiv.org/pdf/2608.03051.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.03051",
-      "submission_date": "2026-08-05T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 26.5,
-      "updated_at": "2026-08-05T08:30:55.173324+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-4",
@@ -5926,29 +5880,6 @@
       "updated_at": "2026-07-21T08:54:26.742179+00:00"
     },
     {
-      "forum_id": "2607.24741",
-      "paper_number": -1,
-      "title": "ForgettingOT: Certified Speculative Batching from Sinkhorn's Projective Forgetting",
-      "authors": [
-        "Xinyang Wen"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.24741v2 Announce Type: replace \nAbstract: Positive two-marginal entropic optimal transport is solved by a nonlinear, positive, order-preserving, homogeneous Sinkhorn map. After quotienting the dual scaling gauge, we show that the active eigenmode of the fixed-point Jacobian $J_t^\\star=QP=P^\\star P$, generically $\\lambda_2(QP)$, controls the strict correction tail. The projective-residual ratio converges to this mode, and the additional certified cycles required for tolerance $\\theta_\\tau$ scale as $\\log(\\rho/\\theta_\\tau)/[-\\log\\lambda_2]+O(1)$.\n  ForgettingOT turns this nonlinear Perron--Frobenius fact into a certified executor for streams of related Sinkhorn problems. A computable projective variation $\\Omega_t$ in the marginals and kernel bounds the carry residual, while a ver",
-      "pdf_link": "https://arxiv.org/pdf/2607.24741.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.24741",
-      "submission_date": "2026-08-05T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-08-05T08:30:55.174955+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-72",
       "paper_number": 72,
       "title": "Safeguarding LLM Training at Scale: Online SDC Detection and Insights from 35 Million GPU Hours",
@@ -6413,29 +6344,6 @@
       "ratings": [],
       "score": 11.5,
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
-    },
-    {
-      "forum_id": "2511.19192",
-      "paper_number": -1,
-      "title": "MUSE: A Heterogeneity-Aware Multimedia Search Engine for Mobile SoCs",
-      "authors": [
-        "Xinkui Zhao, Qingyu Ma, Yifan Zhang, Hengxuan Lou, Sai Liu, Chang Liu, Guanjie Cheng, Naibo Wang, Yueshen Xu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2511.19192v2 Announce Type: replace \nAbstract: On-device multimedia retrieval is vital for smartphones, enabling applications like cross-modal semantic search and multimodal personal AI agents. However, realizing efficient retrieval on mobile SoCs remains a critical systems challenge. Unlike text-based search, multimedia applications depend on high-dimensional cross-modal embeddings (often exceeding 1024 dimensions) and continuously expanding media streams (e.g., video lifelogs and ambient audio). Mobile devices must process these intensive workloads under strict latency, energy, and memory constraints. Existing vector retrieval systems, designed primarily for static server datasets, are poorly suited for the dynamic execution models of mobile SoCs, where interactive queries must coe",
-      "pdf_link": "https://arxiv.org/pdf/2511.19192.pdf",
-      "forum_link": "https://arxiv.org/abs/2511.19192",
-      "submission_date": "2026-08-05T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-08-05T08:30:55.174637+00:00"
     },
     {
       "forum_id": "usenix-osdi26-63",
@@ -7604,29 +7512,6 @@
       "updated_at": "2026-07-21T08:54:22.933403+00:00"
     },
     {
-      "forum_id": "2510.06387",
-      "paper_number": -1,
-      "title": "Lock-free Asynchronously Distributed Linked Lists",
-      "authors": [
-        "Raaghav Ravishankar, Sandeep Kulkarni, Sathya Peri, Gokarna Sharma"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2510.06387v3 Announce Type: replace \nAbstract: Modern databases use dynamic search structures that store an enormous amount of data, and often serve them using multi-threaded algorithms to support the ever-increasing throughput needs. When this throughput need exceeds the capacity of the machine hosting the structure, one either needs to replace the underlying hardware (an option that is typically not viable and introduces a long down time) or make the data structure distributed. Static partitioning of the data structure for distribution is not desirable, as it is prone to uneven load distribution over time, and having to change the partitioning scheme later will require downtime.\n  The goal of this paper is to extend a concurrent data structure to distributed data structures that pr",
-      "pdf_link": "https://arxiv.org/pdf/2510.06387.pdf",
-      "forum_link": "https://arxiv.org/abs/2510.06387",
-      "submission_date": "2026-08-05T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-08-05T08:30:55.174448+00:00"
-    },
-    {
       "forum_id": "dblp-eurosys26-31",
       "paper_number": 31,
       "title": "A Case for Elastic Quantum Error Correction Decoders.",
@@ -7971,7 +7856,7 @@
         "Naixuan Guan",
         "Dongdong Huang",
         "Jinhu Li",
-        "Yi Wang",
+        "Yi Wang 0004",
         "Yifang Yang",
         "Jintao Li",
         "Hang Yang",
@@ -7993,7 +7878,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 3.0,
-      "updated_at": "2026-08-05T08:30:57.427524+00:00"
+      "updated_at": "2026-08-06T08:31:05.796825+00:00"
     },
     {
       "forum_id": "dblp-sosp25-53",
@@ -8297,29 +8182,6 @@
       "ratings": [],
       "score": 3.0,
       "updated_at": "2026-07-21T08:54:22.938822+00:00"
-    },
-    {
-      "forum_id": "2608.03778",
-      "paper_number": -1,
-      "title": "DiffPower: GPU-Accelerated Differentiable Switching Power Analysis and Optimization",
-      "authors": [
-        "Isaac Jacobson, Zheng Zhao, Rashmi Mehrotra, Guanglei Zhou, Vineet Rashingkar, Yiran Chen"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.03778v1 Announce Type: cross \nAbstract: Accurate and scalable switching power analysis remains a critical bottleneck in modern physical design, often forcing a trade-off between computational speed and modeling fidelity. We present DiffPower, a GPU-accelerated framework for differentiable power analysis and optimization. DiffPower translates design netlists into a PDK-agnostic bytecode representation, enabling analytical gradient computation via reverse-mode automatic differentiation, achieving up to a $1{,}002\\times$ speedup over single-threaded CPU propagation on the largest evaluated design, with the GPU advantage growing with design scale. A hybrid propagation methodology fusing analytical modeling with parallel simulation achieves a median toggle-rate correlation of $r{=}0.",
-      "pdf_link": "https://arxiv.org/pdf/2608.03778.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.03778",
-      "submission_date": "2026-08-05T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-08-05T08:30:55.173969+00:00"
     },
     {
       "forum_id": "usenix-osdi26-22",

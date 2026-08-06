@@ -1,146 +1,31 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-08-05T08:30:58.892719+00:00",
-  "paper_count": 6,
+  "last_updated": "2026-08-06T08:31:07.138733+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2608.03285",
+      "forum_id": "2608.04036",
       "paper_number": -1,
-      "title": "Fovea: Physical-Implication-Aware Wafer-Scale DSE with Decision-Domain-Guided Cross-Fidelity Refinement",
+      "title": "A Symbolic Execution Framework for Symbolic Timing Analysis of Digital Integrated Circuits",
       "authors": [
-        "Jinxi Li, Huizheng Wang, Jinyi Deng, Yang Hu, Shouyi Yin"
+        "Dennis Eigner, Arman Ferdowsi, Ulrich Schmid"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.03285v1 Announce Type: new \nAbstract: Modern pre-silicon design-space exploration (DSE) follows a coarse-to-fine workflow: low-cost evaluators screen candidate spaces, while detailed evaluation is reserved for a shortlist. Wafer-scale systems strain both stages. Architecture choices induce coupled physical implications for reticle compliance, wafer tiling, die area, D2D capability, boundary access, and placement, so the design space cannot be treated as an unconstrained Cartesian product. Meanwhile, detailed evaluation is too expensive to cover the resulting space, whereas analytical-to-reference ranking inversions make a fixed shortlist unreliable. We present Fovea, a reusable methodology for workload-specific wafer architecture selection rather than a fixed wafer template. Fov",
-      "pdf_link": "https://arxiv.org/pdf/2608.03285.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.03285",
-      "submission_date": "2026-08-05T04:00:00+00:00",
+      "abstract": "arXiv:2608.04036v1 Announce Type: new \nAbstract: Simulation-based dynamic timing analysis of digital integrated circuits (DDTA) offers a faster alternative to traditional analog SPICE simulations. To achieve timing predictions that are reasonably competitive in terms of accuracy, however, DDTA mandates gate delay models that go beyond the standard pure or inertial delay models used in state-of-the-art tools. Recent advances in analytic gate delay models, which now also capture effects like drafting and multi-input switching, unlock new possibilities for timing analysis, which go way beyond simulation-based approaches towards an exhaustive exploration. In this paper, we present the cornerstones of a novel symbolic execution framework, which utilizes such analytic delay models for automatica",
+      "pdf_link": "https://arxiv.org/pdf/2608.04036.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.04036",
+      "submission_date": "2026-08-06T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-08-05T08:30:58.888113+00:00"
-    },
-    {
-      "forum_id": "2608.02988",
-      "paper_number": -1,
-      "title": "CAMTA: A Reconfigurable Multi-Region Activation Unit for Nonlinear Function Approximation",
-      "authors": [
-        "Carlos Soto-Porras, Jose Fonseca-Cruz, Pablo Ramirez-Morera, Erick Obregon-Fonseca, Luis G. Leon-Vega, Jorge Castro-Godinez"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2608.02988v1 Announce Type: new \nAbstract: Nonlinear activation functions are widely used in machine learning workloads, but their direct hardware implementation is often costly, function-specific, or difficult to reuse across different models. This work introduces CAMTA, a 16-bit reconfigurable multi-region activation unit for nonlinear function approximation in FPGA and ASIC accelerators. CAMTA combines independent region thresholds, per-region polynomial degrees, coefficient sets, and execution modes over a shared Horner-based datapath. Unlike conventional polynomial or piecewise approximation units that mainly reconfigure coefficients or segment selection, CAMTA also reconfigures the computational behavior of each region through HORNER, CONST, ZERO, and IDENTITY modes, enabling t",
-      "pdf_link": "https://arxiv.org/pdf/2608.02988.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.02988",
-      "submission_date": "2026-08-05T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-08-05T08:30:58.887949+00:00"
-    },
-    {
-      "forum_id": "2608.02954",
-      "paper_number": -1,
-      "title": "LowRank-SSM: Hardware-Software Co-Design for Rank-Reduced Mamba Acceleration on FPGA",
-      "authors": [
-        "Haocheng Xu, Bhardwaj Bhat, Yu-an Chou, Zhiheng Chen, Leyao Han, Yifan Zhang, Ye Qiao, Saptarshi Mitra, Sitao Huang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2608.02954v1 Announce Type: new \nAbstract: State Space Models(SSMs) such as Mamba and Mamba-2 achieve linear-time autoregressive inference, making them attractive for latency-sensitive and resource-constrained deployment. Yet their large input and output projection layers impose quadratic weight memory and off-chip bandwidth costs that bottleneck practical FPGA deployment, accounting for over 60% per-token runtime at sequence lengths of 1,024 and beyond. Existing accelerators reduce this overhead through quantization or activation sparsity, but none treat projection rank as an explicit hardware design variable, leaving a systematic accuracy-throughput trade-off unexplored.\n  We present LowRank-SSM, a hardware-software co-design framework that closes this gap. On the software side, we",
-      "pdf_link": "https://arxiv.org/pdf/2608.02954.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.02954",
-      "submission_date": "2026-08-05T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-08-05T08:30:58.887874+00:00"
-    },
-    {
-      "forum_id": "2608.03033",
-      "paper_number": -1,
-      "title": "Interpolation of Non-Linear Functions for LLMs using Partial Reconfiguration in FPGAs",
-      "authors": [
-        "Roger Morales-Monge, Nazareth Jimenez-Chacon, Jose Gabriel Villalobos-Alvarado, Luis G. Leon-Vega, Jorge Castro-Godinez"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2608.03033v1 Announce Type: new \nAbstract: Non-linear functions such as exponential and sigmoid are essential in AI and LLM acceleration, although implementing them efficiently on FPGAs is still costly. This paper proposes a PWL interpolation framework based on partial reconfiguration to reduce hardware cost while preserving flexibility. The architecture separates the design into a static region for communication and control, and a reconfigurable region where different interpolation modules can be dynamically loaded. Uniform and non-uniform segmentation strategies are evaluated for exponential and sigmoid functions using FP16 and FP32 arithmetic. Results show that non-uniform segmentation can improve accuracy in high-curvature regions, while uniform segmentation offers lower hardware",
-      "pdf_link": "https://arxiv.org/pdf/2608.03033.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.03033",
-      "submission_date": "2026-08-05T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-08-05T08:30:58.888009+00:00"
-    },
-    {
-      "forum_id": "2603.28239",
-      "paper_number": -1,
-      "title": "A Switch-Centric In-Network Architecture for Accelerating LLM Inference in Shared-Memory Network",
-      "authors": [
-        "Aojie Jiang, Kang Zhu, Zhiheng Zhang, Zhengxu Su, Juntao Liu, Yuan Du, Li Du"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2603.28239v4 Announce Type: replace \nAbstract: Tensor parallelism (TP) has become a key technique for latency-sensitive LLM inference, but it introduces frequent, tightly synchronized All-Reduce operations that lie directly on the inference critical path, making inter-GPU communication a major performance bottleneck. In-network computing offers a promising approach to mitigating this bottleneck. However, we observe that the existing solution, NVLink SHARP (NVLS), is fundamentally constrained by its GPU-driven execution model that exposes in-network computing as GPU-issued, element-granular memory operations rather than a switch-orchestrated collective. This design forces redundant switch-GPU-switch data movement and cannot perform scale-aware quantized All-Reduce due to its lack of c",
-      "pdf_link": "https://arxiv.org/pdf/2603.28239.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.28239",
-      "submission_date": "2026-08-05T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-05T08:30:58.888569+00:00"
-    },
-    {
-      "forum_id": "2605.03180",
-      "paper_number": -1,
-      "title": "Mitigating Classical Resource Costs in Quantum Error Correction via Generalized qLDPC Predecoding",
-      "authors": [
-        "Alexander Knapen, Junyi Luo, Guanchen Tao, Yuxuan Wang, Tomas Bruno, Qirui Zhang, Dennis Sylvester, Mehdi Saligane, Gokul Subramanian Ravi"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2605.03180v2 Announce Type: replace-cross \nAbstract: Large-scale fault-tolerant quantum computing (FTQC) will require quantum-classical interfaces (QCIs) that orchestrate real-time decoding over thousands to millions of logical qubits simultaneously. To scale FTQC systems, complex decoding resources must be shared between logical qubits, creating resource contention bottlenecks in the QCI. Mitigating this contention via optimal resource allocation remains an open problem. Lightweight predecoding techniques can reduce decoder utilization and average latency, both of which ease contention for shared decoding resources. To date, both decoder allocation and predecoding work is limited to the surface code. As focus shifts towards general qLDPC codes, slower decoding exacerbates resource c",
-      "pdf_link": "https://arxiv.org/pdf/2605.03180.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.03180",
-      "submission_date": "2026-08-05T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-05T08:30:58.888770+00:00"
+      "score": 3.5,
+      "updated_at": "2026-08-06T08:31:07.136275+00:00"
     }
   ]
 }

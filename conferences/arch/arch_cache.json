@@ -1,77 +1,54 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-08-05T08:30:54.224188+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-08-06T08:31:03.006101+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2608.02915",
+      "forum_id": "2608.04247",
       "paper_number": -1,
-      "title": "LACE: Large Language Model Aided Multi-Agent Framework for Agile RISC-V Instruction Extension",
+      "title": "A Centralized Performance Monitoring Architecture for Heterogeneous Multicore SoCs",
       "authors": [
-        "Pingqing Zheng, Jiayin Qin, Fuqi Zhang, Zishen Wan, Shang Wu, Yu Cao, Caiwen Ding, Yang Katie Zhao"
+        "Mohammed Sajjad Jafri, Abdur Rahman, Emon Sarkar, Mahdi Hassen, Gopishankar Thayyil, Ashwin Krishna Mani, Rodolfo Pellizzoni"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2608.02915v1 Announce Type: new \nAbstract: Domain-specific Instruction Set Architecture eXtensions (ISAX) are widely adopted in the RISC-V ecosystem to accelerate emerging workloads, but implementing and validating ISAXes across different cores remains slow and fragmented. Existing frameworks still require per-core interface adaptation, and differential testing often breaks once either the microarchitecture or the ISAX changes. We present LACE, an LLM-aided multi-agent workflow that translates natural-language ISAX intents into a compact two-level IR (operation-level and HDL task-level), performs retrieval-guided localized RTL edits over large repositories, and closes the loop with a compiler-agnostic riscv-formal checking flow (assuming RVFI availability or instrumentation). Across ",
-      "pdf_link": "https://arxiv.org/pdf/2608.02915.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.02915",
-      "submission_date": "2026-08-05T04:00:00+00:00",
+      "abstract": "arXiv:2608.04247v1 Announce Type: new \nAbstract: Hardware Performance Counters (HPCs) are widely used to enable event-driven software mechanisms such as profile guided optimization, performance analysis, and dynamic resource management in real-time systems. However, in modern embedded System-on-a-Chip (SoCs), different components - including processors, accelerators, interconnects, and memory controllers - typically implement separate and heterogeneous HPC modules. This distributed monitoring infrastructure requires multiple software interfaces and complicates the collection, synchronization, and correlation of performance data across the system. In this work, we propose a centralized performance monitoring architecture to efficiently collect, correlate, and process architectural events ac",
+      "pdf_link": "https://arxiv.org/pdf/2608.04247.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.04247",
+      "submission_date": "2026-08-06T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 47.5,
-      "updated_at": "2026-08-05T08:30:54.218391+00:00"
+      "score": 37.0,
+      "updated_at": "2026-08-06T08:31:03.002278+00:00"
     },
     {
-      "forum_id": "2608.03555",
+      "forum_id": "2608.04458",
       "paper_number": -1,
-      "title": "Heterogeneous LLM Serving with General-Purpose Processing-Near-Memory for Retrieval-Based Sparse Attention",
+      "title": "Architectural Implications of Agentic AI Workflows",
       "authors": [
-        "Hyungkyu Ham, Junhyeong Bae, Seungheon Lee, Myeongjae Jeon, Gwangsun Kim"
+        "Jirong Yang, Peizhe Liu, Chaojie Zhang, Jovan Stojkovic"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2608.03555v1 Announce Type: new \nAbstract: This paper presents a heterogeneous decode-phase serving system that relocates the KV cache out of GPU memory, motivated by the retrieval-based sparse attention that recent frontier LLMs adopt to serve million-token contexts. It partitions a decode step by operation type: GPU nodes hold the model weights and execute the projections and MoE layers, while processing-near-memory (PNM) nodes hold the KV cache and index keys and execute every operation that reads them. We first show that the assumptions behind prior PIM and PNM designs no longer hold for these operations, and derive four design requirements for such a node. From these requirements, we propose KARAT (KV-cache-resident Accelerator for Retrieval-based ATtention), a general-purpose P",
-      "pdf_link": "https://arxiv.org/pdf/2608.03555.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.03555",
-      "submission_date": "2026-08-05T04:00:00+00:00",
+      "abstract": "arXiv:2608.04458v1 Announce Type: cross \nAbstract: Agentic AI is emerging in datacenters, but its architectural implications remain unexplored. We organize agentic workflows in a taxonomy and present its first architectural characterization with a production study at Microsoft Azure and a controlled study of open-source frameworks. We show that agentic execution is fragmented and heterogeneous. Requests expand into a workflow of LLM inferences, tool invocations, and orchestration decisions that repeatedly cross the CPU-GPU boundary. Our taxonomy explains how this fragmentation turns into resource demand. As orchestration and tools run on the host, the CPU sits on the critical path. Execution structure sets the load over time, which stays low with sudden spikes. Model composition sets how e",
+      "pdf_link": "https://arxiv.org/pdf/2608.04458.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.04458",
+      "submission_date": "2026-08-06T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 44.0,
-      "updated_at": "2026-08-05T08:30:54.218632+00:00"
-    },
-    {
-      "forum_id": "2608.03867",
-      "paper_number": -1,
-      "title": "Heterogeneity-Aware Microscaling for Efficient Low-Bit LLM Inference",
-      "authors": [
-        "Junyi Luo, Xinting Jiang, Tai-Hao Wen, Ruichen Qi, Minxing Chu, Hongyi Wu, Gregory Kielian, Ben Laurie, Qirui Zhang, Quan Cheng, Dennis Sylvester, Mehdi Saligane"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2608.03867v1 Announce Type: new \nAbstract: Microscaling (MX) is now the standard for low-bit large language model (LLM) inference. Its 4-bit form MXFP4 still loses substantial accuracy, because existing MX formats fix either the element format or the precision-recovery scheme across blocks, and thus capture only limited quantization heterogeneity. Quantization heterogeneity appears at two levels: 1) across blocks, the preferred element format and precision-recovery scheme vary; 2) across operands, weights and activations require different encoding. We introduce AdaMX (Adaptive Microscaling), a heterogeneity-aware format and accelerator. It selects the precision-recovery scheme per block and the representation per operand, at no increase in equivalent bit width (EBW). One design cover",
-      "pdf_link": "https://arxiv.org/pdf/2608.03867.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.03867",
-      "submission_date": "2026-08-05T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-08-05T08:30:54.218675+00:00"
+      "score": 33.5,
+      "updated_at": "2026-08-06T08:31:03.002372+00:00"
     }
   ]
 }

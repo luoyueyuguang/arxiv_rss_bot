@@ -1,100 +1,31 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-08-05T08:30:55.036772+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-08-06T08:31:03.584531+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2608.03695",
+      "forum_id": "2608.04413",
       "paper_number": -1,
-      "title": "Accelerating Dynamic Graph Clustering on GPU Architectures with cuGraph",
+      "title": "Zero-Instrumentation Dependency Discovery for Guided Microservice Migration Using eBPF",
       "authors": [
-        "Nelson Aloysio Reis de Almeida Passos, Emanuele Carlini, Salvatore Trani"
+        "Eshan Trivedi, Chandrahasa Pranava"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.03695v1 Announce Type: new \nAbstract: This work addresses community detection in temporal networks through GPU-accelerated extensions of spectral clustering and modularity-based algorithms originally designed for static graphs. Built on the NVIDIA RAPIDS ecosystem, the framework enables the characterization and tracking of communities in snapshot-based dynamic graphs, either by Leiden greedy optimization with multi-GPU support via Dask-based workload distribution, or eigendecomposition of a symmetric Bethe-Hessian operator. Our multislice modularity backend achieves up to roughly three orders of magnitude speedup over the CPU reference under an equal-work budget, depending on graph density and snapshot count, while preserving compatibility with existing graph analytics pipelines",
-      "pdf_link": "https://arxiv.org/pdf/2608.03695.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.03695",
-      "submission_date": "2026-08-05T04:00:00+00:00",
+      "abstract": "arXiv:2608.04413v1 Announce Type: new \nAbstract: Migrating microservices across virtual machines (VMs) without knowledge of their runtime communication patterns risks creating cross-VM hotspots and latency spikes that are difficult to predict from static analysis alone. We use extended Berkeley Packet Filter (eBPF) kernel-level network tracing to automatically discover inter-service dependencies at runtime, with no application instrumentation, and use the resulting dependency graph to produce a traffic-aware migration plan ranked by return on investment (ROI). A two-pass process-identifier (PID) to port correlation algorithm recovers the identity of all 20 services in a shared-runtime testbed where processes are otherwise indistinguishable, matching the known ground-truth topology. The sys",
+      "pdf_link": "https://arxiv.org/pdf/2608.04413.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.04413",
+      "submission_date": "2026-08-06T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 44.0,
-      "updated_at": "2026-08-05T08:30:54.307742+00:00"
-    },
-    {
-      "forum_id": "2602.11456",
-      "paper_number": -1,
-      "title": "AuroraRL: Fast, Fault-Tolerant, and Cost-Efficient Reinforcement Learning over Decentralized Network",
-      "authors": [
-        "Chaoyi Ruan, Geng Luo, Xinyi Wan, Long Zhao, Qinghe Wang, Jiaan Zhu, Duling Xu, Guanbin Xu, Dehui Wei, Xiang Liu, Cheng Li, Haifeng Sun, Liang Luo, Congcong Miao, Jialin Li"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2602.11456v2 Announce Type: replace \nAbstract: LLM reinforcement learning (RL) requires frequent synchronization of large model parameters between the trainer and distributed rollout actors. High-throughput RL post-training therefore relies on dedicated RDMA HPC/cloud clusters, an infrastructure cost most organizations cannot absorb. A natural alternative is to aggregate loosely-coupled GPUs over standard Ethernet and WAN links, but this commodity connectivity cannot sustain full-weight broadcasts: synchronizing an 8B model can take over 100~seconds on bandwidth-limited links, while rollout generation typically takes tens of seconds.\n  Toward making RL practical in this regime, we observe that RL fine-tuning yields highly sparse per-step updates, with only around 1\\% of parameter ele",
-      "pdf_link": "https://arxiv.org/pdf/2602.11456.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.11456",
-      "submission_date": "2026-08-05T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 17.5,
-      "updated_at": "2026-08-05T08:30:54.308811+00:00"
-    },
-    {
-      "forum_id": "2608.03026",
-      "paper_number": -1,
-      "title": "Pruning-Aware Multi-Cluster Co-Inference for Large AI Models in AI-RANs",
-      "authors": [
-        "Xiaowen Cao, Zhonghao Lyu, Shicheng Chu, Zezhong Zhang, Dingzhu Wen, Guangxu Zhu, Kaibin Huang, Shuguang Cui, Jie Xu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2608.03026v1 Announce Type: new \nAbstract: The increasing scale and computational demands of large artificial intelligence models (LAIMs) present significant challenges for efficient inference in resource-constrained distributed environments. In this paper, we propose a multi-cluster LAIM co-inference framework, where an edge server equipped with multiple graphics processing units (GPUs) coordinates multiple user clusters to execute inference tasks collaboratively. Within each cluster, devices capture data from diverse perspectives and employ lightweight on-device LAIMs to extract local features. These features are then transmitted to the edge server, where they are aggregated and fused to generate a more accurate inference outcome. To reveal the fundamental trade-off between model p",
-      "pdf_link": "https://arxiv.org/pdf/2608.03026.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.03026",
-      "submission_date": "2026-08-05T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-08-05T08:30:54.307457+00:00"
-    },
-    {
-      "forum_id": "2304.09666",
-      "paper_number": -1,
-      "title": "List Defective Colorings: Distributed Algorithms and Applications",
-      "authors": [
-        "Marc Fuchs, Fabian Kuhn"
-      ],
-      "keywords": [
-        "cs.DC",
-        "SC '"
-      ],
-      "abstract": "arXiv:2304.09666v3 Announce Type: replace \nAbstract: The distributed coloring problem is at the core of the area of distributed graph algorithms and it is a problem that has seen tremendous progress over the last few years. Much of the remarkable recent progress on deterministic distributed coloring algorithms is based on two main tools: a) defective colorings in which every node of a given color can have a limited number of neighbors of the same color and b) list coloring, a natural generalization of the standard coloring problem that naturally appears when colorings are computed in different stages and one has to extend a previously computed partial coloring to a full coloring.\n  In this paper, we introduce 'list defective colorings', which can be seen as a generalization of these two co",
-      "pdf_link": "https://arxiv.org/pdf/2304.09666.pdf",
-      "forum_link": "https://arxiv.org/abs/2304.09666",
-      "submission_date": "2026-08-05T04:00:00+00:00",
-      "conference": "SC '",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-08-05T08:30:54.308473+00:00"
+      "score": 13.0,
+      "updated_at": "2026-08-06T08:31:03.089137+00:00"
     }
   ]
 }
