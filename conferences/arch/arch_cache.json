@@ -1,54 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-08-06T08:31:03.006101+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-08-07T07:11:29.866106+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2608.04247",
+      "forum_id": "2608.05888",
       "paper_number": -1,
-      "title": "A Centralized Performance Monitoring Architecture for Heterogeneous Multicore SoCs",
+      "title": "An Open-Source Power Measurement Platform for System-Level Semiconductor Testing",
       "authors": [
-        "Mohammed Sajjad Jafri, Abdur Rahman, Emon Sarkar, Mahdi Hassen, Gopishankar Thayyil, Ashwin Krishna Mani, Rodolfo Pellizzoni"
+        "Linus Bantel, Sarah Rottacker, Dirk Pfl\\\"uger"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2608.04247v1 Announce Type: new \nAbstract: Hardware Performance Counters (HPCs) are widely used to enable event-driven software mechanisms such as profile guided optimization, performance analysis, and dynamic resource management in real-time systems. However, in modern embedded System-on-a-Chip (SoCs), different components - including processors, accelerators, interconnects, and memory controllers - typically implement separate and heterogeneous HPC modules. This distributed monitoring infrastructure requires multiple software interfaces and complicates the collection, synchronization, and correlation of performance data across the system. In this work, we propose a centralized performance monitoring architecture to efficiently collect, correlate, and process architectural events ac",
-      "pdf_link": "https://arxiv.org/pdf/2608.04247.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.04247",
-      "submission_date": "2026-08-06T04:00:00+00:00",
+      "abstract": "arXiv:2608.05888v1 Announce Type: new \nAbstract: Accurate power measurement is not only essential for evaluating the energy efficiency of modern embedded and semiconductor systems, but power draw is an important proxy during stress testing. Industrial semiconductor test equipment, however, is often expensive and difficult to integrate into flexible experimental workflows.\n  This paper presents a compact and extensible hardware platform for automated system-level power measurement of embedded devices. The proposed setup integrates a Raspberry Pi controller, a precision current measurement device, and a microcontroller-based Device-under-Test (DUT). The system supports automated firmware deployment, synchronized device execution, and high-resolution current acquisition.\n  A lightweight HTTP-",
+      "pdf_link": "https://arxiv.org/pdf/2608.05888.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.05888",
+      "submission_date": "2026-08-07T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 37.0,
-      "updated_at": "2026-08-06T08:31:03.002278+00:00"
-    },
-    {
-      "forum_id": "2608.04458",
-      "paper_number": -1,
-      "title": "Architectural Implications of Agentic AI Workflows",
-      "authors": [
-        "Jirong Yang, Peizhe Liu, Chaojie Zhang, Jovan Stojkovic"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2608.04458v1 Announce Type: cross \nAbstract: Agentic AI is emerging in datacenters, but its architectural implications remain unexplored. We organize agentic workflows in a taxonomy and present its first architectural characterization with a production study at Microsoft Azure and a controlled study of open-source frameworks. We show that agentic execution is fragmented and heterogeneous. Requests expand into a workflow of LLM inferences, tool invocations, and orchestration decisions that repeatedly cross the CPU-GPU boundary. Our taxonomy explains how this fragmentation turns into resource demand. As orchestration and tools run on the host, the CPU sits on the critical path. Execution structure sets the load over time, which stays low with sudden spikes. Model composition sets how e",
-      "pdf_link": "https://arxiv.org/pdf/2608.04458.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.04458",
-      "submission_date": "2026-08-06T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 33.5,
-      "updated_at": "2026-08-06T08:31:03.002372+00:00"
+      "score": 42.5,
+      "updated_at": "2026-08-07T07:11:29.862819+00:00"
     }
   ]
 }

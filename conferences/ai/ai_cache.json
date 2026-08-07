@@ -1,7 +1,7 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-08-06T08:31:47.496965+00:00",
+  "last_updated": "2026-08-07T07:12:15.865786+00:00",
   "paper_count": 500,
   "papers": [
     {
@@ -5301,8 +5301,8 @@
       "paper_number": 1742,
       "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
       "authors": [
-        "Zhiqi Chen",
         "Yang Yue",
+        "Zhiqi Chen",
         "Rui Lu",
         "Andrew Zhao",
         "Zhaokai Wang",
@@ -5321,7 +5321,7 @@
       "rating_count": 0,
       "ratings": [],
       "score": 63.0,
-      "updated_at": "2026-07-23T08:28:58.569277+00:00"
+      "updated_at": "2026-08-07T07:12:14.644282+00:00"
     },
     {
       "forum_id": "neurips25-1805",

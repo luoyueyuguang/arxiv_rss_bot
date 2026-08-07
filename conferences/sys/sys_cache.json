@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-08-06T08:31:07.038928+00:00",
-  "paper_count": 437,
+  "last_updated": "2026-08-07T07:11:35.116181+00:00",
+  "paper_count": 441,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -3453,6 +3453,29 @@
       "ratings": [],
       "score": 33.0,
       "updated_at": "2026-07-21T08:54:22.930905+00:00"
+    },
+    {
+      "forum_id": "2608.05441",
+      "paper_number": -1,
+      "title": "Filtered Vector Search in a Disaggregated Lakehouse: Composing Table-Format Pruning with Per-File ANN",
+      "authors": [
+        "Rakesh Jain (IBM Research), Thomas Griffin (IBM Research), Syed Zawad (IBM Research)"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.05441v1 Announce Type: cross \nAbstract: Approximate nearest-neighbor (ANN) search increasingly runs alongside structured data - \"find the 10 nearest documents where tenant='acme' AND lang='en'\" - yet similarity and filtering are usually bolted together: a specialized vector index for one, a separate filter step for the other. We ask what happens when both live inside an open lakehouse table (Apache Iceberg over Parquet on object storage), where the engine already owns a mature file-pruning stack (partition pruning, zone-maps, a bitmap index). We embed an IVF index in place in each Parquet file's footer and make filtered vector queries fast not with a new filtering algorithm but by composing the table's existing file pruning with per-file ANN: the planner prunes data files by the",
+      "pdf_link": "https://arxiv.org/pdf/2608.05441.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.05441",
+      "submission_date": "2026-08-07T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 32.5,
+      "updated_at": "2026-08-07T07:11:31.399208+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-41",
@@ -7198,6 +7221,29 @@
       "updated_at": "2026-07-21T08:54:26.744753+00:00"
     },
     {
+      "forum_id": "2608.06046",
+      "paper_number": -1,
+      "title": "ML-for-ML",
+      "authors": [
+        "Yutong Zhao, Noga H. Rotman, Gianni Antichi, Ran Ben Basat"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.06046v1 Announce Type: cross \nAbstract: AI training workloads are growing rapidly, making their time, energy, and infrastructure costs increasingly important. In shared cloud clusters, training and fine-tuning jobs compete with co-running workloads for network resources, while network mechanisms and ML training choices are typically optimized separately: networking controls how bytes move, whereas ML systems control when and how much communication occurs. We argue that this separation leaves end-to-end performance on the table.\n  We present ML-for-ML, a cross-layer perspective in which network-side and ML-side knobs are selected jointly under a shared time-to-target-loss objective. Our preliminary prototype shows that by co-optimizing the ML and network parameters, we reach the ",
+      "pdf_link": "https://arxiv.org/pdf/2608.06046.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.06046",
+      "submission_date": "2026-08-07T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-08-07T07:11:31.400002+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-87",
       "paper_number": 87,
       "title": "WiseCode: Breaking the Scalability Barriers of Wide-Stripe Vector Codes",
@@ -8814,6 +8860,29 @@
       "updated_at": "2026-07-21T08:54:26.743211+00:00"
     },
     {
+      "forum_id": "2608.05358",
+      "paper_number": -1,
+      "title": "DG-FedReuse: Proxy-Gradient-Gated Cached-Update Reuse with Matched Sparse Uplink Accounting",
+      "authors": [
+        "Rahil Aftab, Vineet Kumar Rakesh, Soumya Mazumdar, Tapas Samanta"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.05358v1 Announce Type: cross \nAbstract: Federated learning repeatedly incurs local optimization and model-update transmission. We study DG-FedReuse, a simulator-level mechanism that allows selected clients to contribute age-decayed cached updates when a stochastic head-gradient discrepancy proxy remains below a round-dependent threshold. A hard cache-age limit and minimum fresh-client quota constrain reuse, while fresh updates use an adaptive per-tensor Top-K numerical-field representation. Experiments cover six image-classification datasets, 50 virtual clients, Dirichlet label heterogeneity ({\\alpha}=0.5), and three seeds. At a common 90-round budget, DG-FedReuse yields 83.36-85.42% modeled update-data-field uplink saving, compared with 76.88% for matched Top-K FedAvg; the seed",
+      "pdf_link": "https://arxiv.org/pdf/2608.05358.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.05358",
+      "submission_date": "2026-08-07T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-08-07T07:11:31.399170+00:00"
+    },
+    {
       "forum_id": "dblp-eurosys26-6",
       "paper_number": 6,
       "title": "Arena: Efficiently Training Large Models via Dynamic Scheduling and Adaptive Parallelism Co-Design.",
@@ -10142,6 +10211,29 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
+    },
+    {
+      "forum_id": "2608.06188",
+      "paper_number": -1,
+      "title": "Routing LLM Inference to the Cleanest Grid in Real Time",
+      "authors": [
+        "Aleks Bernhard, Arif Baran Yardimci"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.06188v1 Announce Type: new \nAbstract: Large-language-model inference is a fast-growing electricity load whose marginal carbon intensity varies by more than an order of magnitude across grid regions and across the day, making request placement an attractive lever: no retraining, no hardware change. We report a live validation of carbon-aware inference routing on multi-region GPU testbeds driven by marginal operating emissions rate (MOER) signals, with three properties uncommon in prior work: a blind baseline that is an actual production pressure-based router rather than uniform placement; per-request energy attributed from GPU telemetry (NVIDIA DCGM) via measured concurrency curves rather than nameplate TDP; and carbon settlement of every request against historical MOER, not only",
+      "pdf_link": "https://arxiv.org/pdf/2608.06188.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.06188",
+      "submission_date": "2026-08-07T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-08-07T07:11:31.398996+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

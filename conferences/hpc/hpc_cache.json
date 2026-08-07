@@ -1,31 +1,100 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-08-06T08:31:03.584531+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-08-07T07:11:31.307126+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2608.04413",
+      "forum_id": "2608.03695",
       "paper_number": -1,
-      "title": "Zero-Instrumentation Dependency Discovery for Guided Microservice Migration Using eBPF",
+      "title": "Accelerating Dynamic Graph Clustering on GPU Architectures with cuGraph",
       "authors": [
-        "Eshan Trivedi, Chandrahasa Pranava"
+        "Nelson Aloysio Reis de Almeida Passos, Emanuele Carlini, Salvatore Trani"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.04413v1 Announce Type: new \nAbstract: Migrating microservices across virtual machines (VMs) without knowledge of their runtime communication patterns risks creating cross-VM hotspots and latency spikes that are difficult to predict from static analysis alone. We use extended Berkeley Packet Filter (eBPF) kernel-level network tracing to automatically discover inter-service dependencies at runtime, with no application instrumentation, and use the resulting dependency graph to produce a traffic-aware migration plan ranked by return on investment (ROI). A two-pass process-identifier (PID) to port correlation algorithm recovers the identity of all 20 services in a shared-runtime testbed where processes are otherwise indistinguishable, matching the known ground-truth topology. The sys",
-      "pdf_link": "https://arxiv.org/pdf/2608.04413.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.04413",
-      "submission_date": "2026-08-06T04:00:00+00:00",
+      "abstract": "arXiv:2608.03695v2 Announce Type: replace \nAbstract: This work addresses community detection in temporal networks through GPU-accelerated extensions of spectral clustering and modularity-based algorithms originally designed for static graphs. Built on the NVIDIA RAPIDS ecosystem, the framework enables the characterization and tracking of communities in snapshot-based dynamic graphs, either by Leiden greedy optimization with multi-GPU support via Dask-based workload distribution, or eigendecomposition of a symmetric Bethe-Hessian operator. Our multislice modularity backend achieves up to roughly three orders of magnitude speedup over the CPU reference under an equal-work budget, depending on graph density and snapshot count, while preserving compatibility with existing graph analytics pipel",
+      "pdf_link": "https://arxiv.org/pdf/2608.03695.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.03695",
+      "submission_date": "2026-08-07T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-08-06T08:31:03.089137+00:00"
+      "score": 44.0,
+      "updated_at": "2026-08-07T07:11:29.916397+00:00"
+    },
+    {
+      "forum_id": "2608.06140",
+      "paper_number": -1,
+      "title": "PLB: Priority-Aware Load Balancing for Replicated Databases under Constrained Resources",
+      "authors": [
+        "Belkis Djeffal, Pierre Bourhis, Romain Rouvoy"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2608.06140v1 Announce Type: cross \nAbstract: Priority-differentiated services are a standard way for applications to offer different levels of performance, but database systems still often treat all sessions the same way. When database capacity is fixed, meaning replicas cannot be added on demand, and the workload becomes contended, this creates a difficult trade-off between over-provisioning resources and letting lower-priority users experience much larger slowdowns. In such settings, we propose enforcing priority by controlling how client sessions are assigned to database replicas.\n  We present PLB, a priority-aware load balancer implemented as a JDBC driver that enforces priority differentiation through replica assignment under fixed resources. PLB partitions replicas by user grou",
+      "pdf_link": "https://arxiv.org/pdf/2608.06140.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.06140",
+      "submission_date": "2026-08-07T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 32.5,
+      "updated_at": "2026-08-07T07:11:29.916230+00:00"
+    },
+    {
+      "forum_id": "2607.18141",
+      "paper_number": -1,
+      "title": "A CXL Memory Rack for Multi-Turn LLM Serving",
+      "authors": [
+        "Hakbeom Jang, Inho Song, Hoshik Kim, Sam H. Noh, Jongryool Kim"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2607.18141v3 Announce Type: replace \nAbstract: Long-context, multi-turn, and agentic LLM workloads increasingly reuse previously processed context, making KV-cache reuse essential for reducing redundant computation. However, this reuse shifts the bottleneck to the memory tier that stores and serves reusable KV states at cluster scale. GPU HBM and host DRAM are too costly to scale to TB-scale shared context capacity, motivating remote tiers built from lower-cost, higher-capacity media. This paper presents HyMCache, a CXL memory rack for multi-turn LLM serving. We build the memory rack using cost-efficient CXL-hybrid memory (CXL-HM), which combines a small amount of in-device DRAM with large SSD-backed capacity behind a CXL interface. By exploiting the read-dominant, predictable, and a",
+      "pdf_link": "https://arxiv.org/pdf/2607.18141.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.18141",
+      "submission_date": "2026-08-07T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 22.0,
+      "updated_at": "2026-08-07T07:11:29.916343+00:00"
+    },
+    {
+      "forum_id": "2608.06046",
+      "paper_number": -1,
+      "title": "ML-for-ML",
+      "authors": [
+        "Yutong Zhao, Noga H. Rotman, Gianni Antichi, Ran Ben Basat"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2608.06046v1 Announce Type: cross \nAbstract: AI training workloads are growing rapidly, making their time, energy, and infrastructure costs increasingly important. In shared cloud clusters, training and fine-tuning jobs compete with co-running workloads for network resources, while network mechanisms and ML training choices are typically optimized separately: networking controls how bytes move, whereas ML systems control when and how much communication occurs. We argue that this separation leaves end-to-end performance on the table.\n  We present ML-for-ML, a cross-layer perspective in which network-side and ML-side knobs are selected jointly under a shared time-to-target-loss objective. Our preliminary prototype shows that by co-optimizing the ML and network parameters, we reach the ",
+      "pdf_link": "https://arxiv.org/pdf/2608.06046.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.06046",
+      "submission_date": "2026-08-07T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.0,
+      "updated_at": "2026-08-07T07:11:29.916159+00:00"
     }
   ]
 }

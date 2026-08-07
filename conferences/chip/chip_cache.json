@@ -1,31 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-08-06T08:31:07.138733+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-08-07T07:11:35.173056+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2608.04036",
+      "forum_id": "2608.05303",
       "paper_number": -1,
-      "title": "A Symbolic Execution Framework for Symbolic Timing Analysis of Digital Integrated Circuits",
+      "title": "EdgeXpert: An Edge Device for Memory-Efficient LLM Inference with Mixture-of-Experts and Speculative Decoding",
       "authors": [
-        "Dennis Eigner, Arman Ferdowsi, Ulrich Schmid"
+        "Sangwoo Ha, Hyunwoo Seo, Yurim Jo, Youngjin Moon, Hoi-Jun Yoo"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.04036v1 Announce Type: new \nAbstract: Simulation-based dynamic timing analysis of digital integrated circuits (DDTA) offers a faster alternative to traditional analog SPICE simulations. To achieve timing predictions that are reasonably competitive in terms of accuracy, however, DDTA mandates gate delay models that go beyond the standard pure or inertial delay models used in state-of-the-art tools. Recent advances in analytic gate delay models, which now also capture effects like drafting and multi-input switching, unlock new possibilities for timing analysis, which go way beyond simulation-based approaches towards an exhaustive exploration. In this paper, we present the cornerstones of a novel symbolic execution framework, which utilizes such analytic delay models for automatica",
-      "pdf_link": "https://arxiv.org/pdf/2608.04036.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.04036",
-      "submission_date": "2026-08-06T04:00:00+00:00",
+      "abstract": "arXiv:2608.05303v1 Announce Type: new \nAbstract: On-device deployment of Large Language Models (LLMs) has become essential for personalized edge applications. A primary bottleneck is external memory access (EMA) in feed-forward network (FFN) layers. Speculative decoding and mixture-of-experts (MoE) are promising solutions. Speculative decoding reduces the number of decoding stages by generating multiple tokens per stage, and MoE minimizes per-stage cost through sparse expert activation. However, there is an incompatibility when combining these two techniques. We propose EdgeXpert, a software-hardware co-designed LLM accelerator that resolves this incompatibility. In the prefill stage, the prompt-wise expert reuse reformulates routing as prompt-level expert reuse rather than independent per",
+      "pdf_link": "https://arxiv.org/pdf/2608.05303.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.05303",
+      "submission_date": "2026-08-07T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-08-06T08:31:07.136275+00:00"
+      "score": 11.0,
+      "updated_at": "2026-08-07T07:11:35.169921+00:00"
+    },
+    {
+      "forum_id": "2608.06318",
+      "paper_number": -1,
+      "title": "Breaking Memory Bottlenecks in Quantum Control Systems for More Precise Experiments and Higher Throughput Computing",
+      "authors": [
+        "Yicheng Guang, Neel Vora, Yilun Xu, Yueqi Chen, Gang Huang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2608.06318v1 Announce Type: new \nAbstract: As quantum computing continues to demonstrate promise and attract growing attention, there is an increasing need for more precise experiments to advance the development of quantum devices, as well as higher circuit throughput to validate more domain applications. However, this need is hindered by a memory bottleneck at the quantum control system layer, arising from limited on-chip BRAM capacity and the non-deterministic latency of DRAM. To break this bottleneck, we present Ant-Q, a memory hierarchy design that integrates DRAM with BRAM to support pipelined quantum circuit execution while ensuring deterministic inter-circuit timing. We evaluated Ant-Q using 26 real-world experimental and computing circuits. The results show that Ant-Q support",
+      "pdf_link": "https://arxiv.org/pdf/2608.06318.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.06318",
+      "submission_date": "2026-08-07T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-08-07T07:11:35.170275+00:00"
+    },
+    {
+      "forum_id": "2607.28699",
+      "paper_number": -1,
+      "title": "WitCert: Sound Runtime Risk Observability and Gating for KV-Cache Quantization",
+      "authors": [
+        "Fanzhe Wei (Metask Lab), Li Liu (Metask Lab), Ziyang Wang (Metask Lab), Chenyu Wang (Metask Lab)"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.28699v2 Announce Type: replace \nAbstract: KV-cache quantization is validated today by offline benchmark averages; a deployed system cannot tell whether compression is damaging the request it is serving right now. We give it a provably sound runtime meter -- a \"DTrace for KV quantization\": a per-(layer, head, step) upper bound on the total variation between exact and compressed attention. The meter has two tiers: a deterministic band-norm-witness bound, sound for any cache-preserving black-box quantizer and for any query (adaptive-safe, worst-case Cauchy--Schwarz plus RoPE band-unitarity), and a tighter probabilistic certificate for a controlled subtractively-dithered INT8 quantizer under an explicit request-level failure budget (stated for non-adaptive queries; core theorems mac",
+      "pdf_link": "https://arxiv.org/pdf/2607.28699.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.28699",
+      "submission_date": "2026-08-07T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-08-07T07:11:35.170385+00:00"
     }
   ]
 }
