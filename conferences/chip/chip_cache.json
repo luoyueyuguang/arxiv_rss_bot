@@ -1,77 +1,123 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-08-07T07:11:35.173056+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-08-10T07:26:25.280631+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2608.05303",
+      "forum_id": "2608.06791",
       "paper_number": -1,
-      "title": "EdgeXpert: An Edge Device for Memory-Efficient LLM Inference with Mixture-of-Experts and Speculative Decoding",
+      "title": "HLSmith: An Expert-Guided Agentic Framework for C/C++-to-HLS Translation",
       "authors": [
-        "Sangwoo Ha, Hyunwoo Seo, Yurim Jo, Youngjin Moon, Hoi-Jun Yoo"
+        "Yuebo Luo, Ahmad Sedigh Baroughi, Philip Stachura, Le Chen, Venkatram Vishwanath, Zhenman Fang, Caiwen Ding"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2608.06791v1 Announce Type: new \nAbstract: Application-specific FPGA accelerators offer substantial performance and energy-efficiency gains across many application domains, but developing them is costly, often requiring months of specialized effort. Even with high-level synthesis (HLS), designers still need extensive hardware expertise to build high-performance accelerators. Although large language models (LLMs) have demonstrated strong software-generation capabilities, even frontier models lack the hardware intuition and procedural knowledge needed to reliably translate baseline C/C++ programs into high-performance HLS designs: they struggle to identify effective architectures, follow the optimization processes used by HLS experts, and apply hardware transformations consistently acr",
+      "pdf_link": "https://arxiv.org/pdf/2608.06791.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.06791",
+      "submission_date": "2026-08-10T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-08-10T07:26:25.277402+00:00"
+    },
+    {
+      "forum_id": "2608.06875",
+      "paper_number": -1,
+      "title": "QCORE: A Quantum-Control-Oriented Real-Time Execution Architecture with Extensible Closed-Loop Services and Shared AI Acceleration",
+      "authors": [
+        "Heyue Li, Yanshu Guo, Qichun Liu, Tiefu Li, Zhihua Wang, Hanjun Jiang"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.05303v1 Announce Type: new \nAbstract: On-device deployment of Large Language Models (LLMs) has become essential for personalized edge applications. A primary bottleneck is external memory access (EMA) in feed-forward network (FFN) layers. Speculative decoding and mixture-of-experts (MoE) are promising solutions. Speculative decoding reduces the number of decoding stages by generating multiple tokens per stage, and MoE minimizes per-stage cost through sparse expert activation. However, there is an incompatibility when combining these two techniques. We propose EdgeXpert, a software-hardware co-designed LLM accelerator that resolves this incompatibility. In the prefill stage, the prompt-wise expert reuse reformulates routing as prompt-level expert reuse rather than independent per",
-      "pdf_link": "https://arxiv.org/pdf/2608.05303.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.05303",
-      "submission_date": "2026-08-07T04:00:00+00:00",
+      "abstract": "arXiv:2608.06875v1 Announce Type: cross \nAbstract: Scalable quantum processors require control, readout, feedback, calibration, and error correction to coexist under bounded latency and shared-resource constraints, whereas existing platforms typically optimize only a subset of these capabilities. This article presents QCORE (Quantum-Control-Oriented Real-Time Execution), a QPU-side digital control reference architecture positioned between the Host and a platform-specific analog/mixed-signal front end. QCORE separates task management, shared resources, hard-real-time execution, and long-timescale services into four hardware partitions. A fast-result sideband closes same-round feedback, a Measurement Packet provides a traceable measurement and service interface, and a common service-control ",
+      "pdf_link": "https://arxiv.org/pdf/2608.06875.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.06875",
+      "submission_date": "2026-08-10T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-08-07T07:11:35.169921+00:00"
+      "score": 2.0,
+      "updated_at": "2026-08-10T07:26:25.277687+00:00"
     },
     {
-      "forum_id": "2608.06318",
+      "forum_id": "2608.06725",
       "paper_number": -1,
-      "title": "Breaking Memory Bottlenecks in Quantum Control Systems for More Precise Experiments and Higher Throughput Computing",
+      "title": "Retention-Aware RISC-V ISA Extension and Memory Controller on FPGA for MLC NVM",
       "authors": [
-        "Yicheng Guang, Neel Vora, Yilun Xu, Yueqi Chen, Gang Huang"
+        "Mina Ibrahim, Martel Shokry, Lokesh Siddhu, Lars Bauer, Hassan Nassar, Joerg Henkel"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.06318v1 Announce Type: new \nAbstract: As quantum computing continues to demonstrate promise and attract growing attention, there is an increasing need for more precise experiments to advance the development of quantum devices, as well as higher circuit throughput to validate more domain applications. However, this need is hindered by a memory bottleneck at the quantum control system layer, arising from limited on-chip BRAM capacity and the non-deterministic latency of DRAM. To break this bottleneck, we present Ant-Q, a memory hierarchy design that integrates DRAM with BRAM to support pipelined quantum circuit execution while ensuring deterministic inter-circuit timing. We evaluated Ant-Q using 26 real-world experimental and computing circuits. The results show that Ant-Q support",
-      "pdf_link": "https://arxiv.org/pdf/2608.06318.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.06318",
-      "submission_date": "2026-08-07T04:00:00+00:00",
+      "abstract": "arXiv:2608.06725v1 Announce Type: new \nAbstract: Non-volatile memory (NVM) technologies, particularly Multi-Level Cell (MLC) NVMs, offer significant potential for increasing memory density. MLC NVMs provide a tradeoff between write latency and retention time, where faster writes/stores result in lower retention and slower writes yield higher retention. However, limited work has been done to validate and prototype NVM-based systems in hardware, leveraging this tradeoff at the system level. In this paper, we present a novel memory controller architecture and a RISC-V instruction set extension to optimize MLC NVM write operations by balancing speed and retention time. Our custom NVM controller, built around a finite state machine with an AXI memory-mapped interface, efficiently manages read/w",
+      "pdf_link": "https://arxiv.org/pdf/2608.06725.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.06725",
+      "submission_date": "2026-08-10T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-08-10T07:26:25.277333+00:00"
+    },
+    {
+      "forum_id": "2604.26968",
+      "paper_number": -1,
+      "title": "Predictive Multi-Tier Memory Management for KV Cache in Large-Scale GPU Inference",
+      "authors": [
+        "Sanjeev Rao Ganjihal"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2604.26968v2 Announce Type: replace \nAbstract: Key-value (KV) cache memory management is the primary bottleneck limiting throughput and cost-efficiency in large-scale GPU inference serving. Current systems suffer from three compounding inefficiencies: (1) the absence of unified KV cache sizing across all attention architectures--particularly multi-head latent attention (MLA), which is unsupported in general-purpose frameworks, resulting in up to 57x memory over-provisioning; (2) confinement of KV cache to a single memory tier (GPU HBM) despite the availability of a rich hierarchy spanning CPU DRAM, CXL-attached memory, NVMe via GPUDirect Storage, RDMA fabric, and parallel filesystems; and (3) reactive eviction policies that discard reusable state, forcing redundant recomputation. We ",
+      "pdf_link": "https://arxiv.org/pdf/2604.26968.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.26968",
+      "submission_date": "2026-08-10T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-08-07T07:11:35.170275+00:00"
+      "updated_at": "2026-08-10T07:26:25.277829+00:00"
     },
     {
-      "forum_id": "2607.28699",
+      "forum_id": "2605.03713",
       "paper_number": -1,
-      "title": "WitCert: Sound Runtime Risk Observability and Gating for KV-Cache Quantization",
+      "title": "SPEC CPU2026: Characterization, Representativeness, and Cross-Suite Comparison",
       "authors": [
-        "Fanzhe Wei (Metask Lab), Li Liu (Metask Lab), Ziyang Wang (Metask Lab), Chenyu Wang (Metask Lab)"
+        "Ruihao Li, Andrew Jacob, Neeraja J. Yadwadkar, Lizy K. John"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2607.28699v2 Announce Type: replace \nAbstract: KV-cache quantization is validated today by offline benchmark averages; a deployed system cannot tell whether compression is damaging the request it is serving right now. We give it a provably sound runtime meter -- a \"DTrace for KV quantization\": a per-(layer, head, step) upper bound on the total variation between exact and compressed attention. The meter has two tiers: a deterministic band-norm-witness bound, sound for any cache-preserving black-box quantizer and for any query (adaptive-safe, worst-case Cauchy--Schwarz plus RoPE band-unitarity), and a tighter probabilistic certificate for a controlled subtractively-dithered INT8 quantizer under an explicit request-level failure budget (stated for non-adaptive queries; core theorems mac",
-      "pdf_link": "https://arxiv.org/pdf/2607.28699.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.28699",
-      "submission_date": "2026-08-07T04:00:00+00:00",
+      "abstract": "arXiv:2605.03713v4 Announce Type: replace \nAbstract: Specialized accelerators dominate AI workloads, but CPUs remain critical for latency-sensitive workloads, agentic AI, and many other everyday services. Their performance therefore shapes end-to-end system efficiency, raising the question of whether the latest SPEC CPU benchmarks change the architectural conclusions drawn from prior generations. We comprehensively characterize SPEC CPU2026 across nine recent Intel, AMD, Ampere, and Nvidia platforms to understand how the new suite differs from its predecessors and what new capabilities it introduces. We observe that compared with SPEC CPU2017, SPEC CPU2026 increases instruction volume, memory footprint, and instruction-cache stress.\n  We also compare SPEC CPU2026 with SPEC CPU2017, recent ",
+      "pdf_link": "https://arxiv.org/pdf/2605.03713.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.03713",
+      "submission_date": "2026-08-10T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-08-07T07:11:35.170385+00:00"
+      "updated_at": "2026-08-10T07:26:25.277875+00:00"
     }
   ]
 }

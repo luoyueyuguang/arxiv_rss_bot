@@ -1,100 +1,100 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-08-07T07:11:31.307126+00:00",
+  "last_updated": "2026-08-10T07:26:21.575708+00:00",
   "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2608.03695",
+      "forum_id": "2604.26968",
       "paper_number": -1,
-      "title": "Accelerating Dynamic Graph Clustering on GPU Architectures with cuGraph",
+      "title": "Predictive Multi-Tier Memory Management for KV Cache in Large-Scale GPU Inference",
       "authors": [
-        "Nelson Aloysio Reis de Almeida Passos, Emanuele Carlini, Salvatore Trani"
+        "Sanjeev Rao Ganjihal"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.03695v2 Announce Type: replace \nAbstract: This work addresses community detection in temporal networks through GPU-accelerated extensions of spectral clustering and modularity-based algorithms originally designed for static graphs. Built on the NVIDIA RAPIDS ecosystem, the framework enables the characterization and tracking of communities in snapshot-based dynamic graphs, either by Leiden greedy optimization with multi-GPU support via Dask-based workload distribution, or eigendecomposition of a symmetric Bethe-Hessian operator. Our multislice modularity backend achieves up to roughly three orders of magnitude speedup over the CPU reference under an equal-work budget, depending on graph density and snapshot count, while preserving compatibility with existing graph analytics pipel",
-      "pdf_link": "https://arxiv.org/pdf/2608.03695.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.03695",
-      "submission_date": "2026-08-07T04:00:00+00:00",
+      "abstract": "arXiv:2604.26968v2 Announce Type: replace-cross \nAbstract: Key-value (KV) cache memory management is the primary bottleneck limiting throughput and cost-efficiency in large-scale GPU inference serving. Current systems suffer from three compounding inefficiencies: (1) the absence of unified KV cache sizing across all attention architectures--particularly multi-head latent attention (MLA), which is unsupported in general-purpose frameworks, resulting in up to 57x memory over-provisioning; (2) confinement of KV cache to a single memory tier (GPU HBM) despite the availability of a rich hierarchy spanning CPU DRAM, CXL-attached memory, NVMe via GPUDirect Storage, RDMA fabric, and parallel filesystems; and (3) reactive eviction policies that discard reusable state, forcing redundant recomputatio",
+      "pdf_link": "https://arxiv.org/pdf/2604.26968.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.26968",
+      "submission_date": "2026-08-10T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 44.0,
-      "updated_at": "2026-08-07T07:11:29.916397+00:00"
+      "score": 53.5,
+      "updated_at": "2026-08-10T07:26:21.228776+00:00"
     },
     {
-      "forum_id": "2608.06140",
+      "forum_id": "2608.06441",
       "paper_number": -1,
-      "title": "PLB: Priority-Aware Load Balancing for Replicated Databases under Constrained Resources",
+      "title": "SNI-GNN: SmartNIC-Assisted Full-Graph GNN Training with In-Network Embedding Prediction",
       "authors": [
-        "Belkis Djeffal, Pierre Bourhis, Romain Rouvoy"
+        "Guofan Yu, Sitian Chen, Zhenheng Tang, Xiaowen Chu, Amelie Chi Zhou"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.06140v1 Announce Type: cross \nAbstract: Priority-differentiated services are a standard way for applications to offer different levels of performance, but database systems still often treat all sessions the same way. When database capacity is fixed, meaning replicas cannot be added on demand, and the workload becomes contended, this creates a difficult trade-off between over-provisioning resources and letting lower-priority users experience much larger slowdowns. In such settings, we propose enforcing priority by controlling how client sessions are assigned to database replicas.\n  We present PLB, a priority-aware load balancer implemented as a JDBC driver that enforces priority differentiation through replica assignment under fixed resources. PLB partitions replicas by user grou",
-      "pdf_link": "https://arxiv.org/pdf/2608.06140.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.06140",
-      "submission_date": "2026-08-07T04:00:00+00:00",
+      "abstract": "arXiv:2608.06441v1 Announce Type: cross \nAbstract: Full-graph GNN training delivers high accuracy but scales poorly on multi-server clusters due to heavy, irregular inter-node embedding exchanges. We present SNI-GNN, a SmartNIC-assisted full-graph training system that reduces communication while preserving accuracy by predicting remote embeddings in-network. SNI-GNN deploys a lightweight linear-trend predictor on SmartNICs to refine cached historical embeddings, coupled with an importance-based boundary-node sampling policy and an asynchronous DPU--GPU data pipeline with intermediate-result reuse. We provide error and convergence bounds showing that predictor bias remains controlled under bounded second-order dynamics and yields standard non-convex convergence with inexact gradients. Imple",
+      "pdf_link": "https://arxiv.org/pdf/2608.06441.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.06441",
+      "submission_date": "2026-08-10T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-08-07T07:11:29.916230+00:00"
+      "score": 14.5,
+      "updated_at": "2026-08-10T07:26:21.228165+00:00"
     },
     {
-      "forum_id": "2607.18141",
+      "forum_id": "2608.06987",
       "paper_number": -1,
-      "title": "A CXL Memory Rack for Multi-Turn LLM Serving",
+      "title": "A Kubernetes Scheduler Plugin for Cluster-Wide Placement Optimisation",
       "authors": [
-        "Hakbeom Jang, Inho Song, Hoshik Kim, Sam H. Noh, Jongryool Kim"
+        "Henrik Daniel Christensen, Saverio Giallorenzo, Jacopo Mauro"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2607.18141v3 Announce Type: replace \nAbstract: Long-context, multi-turn, and agentic LLM workloads increasingly reuse previously processed context, making KV-cache reuse essential for reducing redundant computation. However, this reuse shifts the bottleneck to the memory tier that stores and serves reusable KV states at cluster scale. GPU HBM and host DRAM are too costly to scale to TB-scale shared context capacity, motivating remote tiers built from lower-cost, higher-capacity media. This paper presents HyMCache, a CXL memory rack for multi-turn LLM serving. We build the memory rack using cost-efficient CXL-hybrid memory (CXL-HM), which combines a small amount of in-device DRAM with large SSD-backed capacity behind a CXL interface. By exploiting the read-dominant, predictable, and a",
-      "pdf_link": "https://arxiv.org/pdf/2607.18141.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.18141",
-      "submission_date": "2026-08-07T04:00:00+00:00",
+      "abstract": "arXiv:2608.06987v1 Announce Type: new \nAbstract: The default scheduler of Kubernetes, the state-of-the-art container orchestrator, uses fast, local placement decisions. Unfortunately, this design leads to resource fragmentation, reduced cluster usage, and overprovisioning. External solvers can compute global placement plans, but enforcing these plans in upstream clusters is hard. Kubernetes provides no native cross-node preemption, uncoordinated concurrent scheduling leads to inconsistencies, and replacing the default scheduler would sever deployments from upstream cycles. We present OPSche, an open-source Kubernetes Scheduling Framework plugin where external solvers can drive cluster-wide placement decisions in concert with the default scheduler. OPSche atomically validates and enforces s",
+      "pdf_link": "https://arxiv.org/pdf/2608.06987.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.06987",
+      "submission_date": "2026-08-10T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 22.0,
-      "updated_at": "2026-08-07T07:11:29.916343+00:00"
+      "score": 12.5,
+      "updated_at": "2026-08-10T07:26:21.227981+00:00"
     },
     {
-      "forum_id": "2608.06046",
+      "forum_id": "2511.22481",
       "paper_number": -1,
-      "title": "ML-for-ML",
+      "title": "OmniInfer: System-Wide Acceleration Techniques for Optimizing LLM Serving Throughput and Latency",
       "authors": [
-        "Yutong Zhao, Noga H. Rotman, Gianni Antichi, Ran Ben Basat"
+        "Jun Wang, Yunxiang Yao, Wenwei Kuang, Runze Mao, Zhenhao Sun, Zhuang Tao, Ziyang Zhang, Dengyu Li, Jiajun Chen, Zhili Wang, Kai Cui, Congzhi Cai, Longwen Lan, Ken Zhang"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.06046v1 Announce Type: cross \nAbstract: AI training workloads are growing rapidly, making their time, energy, and infrastructure costs increasingly important. In shared cloud clusters, training and fine-tuning jobs compete with co-running workloads for network resources, while network mechanisms and ML training choices are typically optimized separately: networking controls how bytes move, whereas ML systems control when and how much communication occurs. We argue that this separation leaves end-to-end performance on the table.\n  We present ML-for-ML, a cross-layer perspective in which network-side and ML-side knobs are selected jointly under a shared time-to-target-loss objective. Our preliminary prototype shows that by co-optimizing the ML and network parameters, we reach the ",
-      "pdf_link": "https://arxiv.org/pdf/2608.06046.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.06046",
-      "submission_date": "2026-08-07T04:00:00+00:00",
+      "abstract": "arXiv:2511.22481v2 Announce Type: replace \nAbstract: Large Language Models drive a wide range of modern AI applications but impose substantial challenges on large-scale serving systems due to intensive computation, strict latency constraints, and throughput bottlenecks. We introduce OmniInfer, a unified system-level acceleration framework designed to maximize end-to-end serving efficiency through fine-grained optimization of expert placement, cache compression, and scheduling. OmniInfer integrates three complementary components: OmniPlacement for load-aware Mixture-of-Experts scheduling, OmniAttn for sparse attention acceleration, and OmniProxy for disaggregation-aware request scheduling. Built atop vLLM, OmniInfer delivers system-wide performance gains through adaptive resource disaggrega",
+      "pdf_link": "https://arxiv.org/pdf/2511.22481.pdf",
+      "forum_link": "https://arxiv.org/abs/2511.22481",
+      "submission_date": "2026-08-10T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 5.0,
-      "updated_at": "2026-08-07T07:11:29.916159+00:00"
+      "score": 3.0,
+      "updated_at": "2026-08-10T07:26:21.228658+00:00"
     }
   ]
 }

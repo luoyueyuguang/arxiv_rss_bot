@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-08-07T07:11:35.116181+00:00",
-  "paper_count": 441,
+  "last_updated": "2026-08-10T07:26:25.189786+00:00",
+  "paper_count": 442,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1928,6 +1928,29 @@
       "updated_at": "2026-07-21T08:54:22.940225+00:00"
     },
     {
+      "forum_id": "2608.06987",
+      "paper_number": -1,
+      "title": "A Kubernetes Scheduler Plugin for Cluster-Wide Placement Optimisation",
+      "authors": [
+        "Henrik Daniel Christensen, Saverio Giallorenzo, Jacopo Mauro"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.06987v1 Announce Type: new \nAbstract: The default scheduler of Kubernetes, the state-of-the-art container orchestrator, uses fast, local placement decisions. Unfortunately, this design leads to resource fragmentation, reduced cluster usage, and overprovisioning. External solvers can compute global placement plans, but enforcing these plans in upstream clusters is hard. Kubernetes provides no native cross-node preemption, uncoordinated concurrent scheduling leads to inconsistencies, and replacing the default scheduler would sever deployments from upstream cycles. We present OPSche, an open-source Kubernetes Scheduling Framework plugin where external solvers can drive cluster-wide placement decisions in concert with the default scheduler. OPSche atomically validates and enforces s",
+      "pdf_link": "https://arxiv.org/pdf/2608.06987.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.06987",
+      "submission_date": "2026-08-10T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 44.5,
+      "updated_at": "2026-08-10T07:26:21.662222+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-68",
       "paper_number": 68,
       "title": "Equal Opportunity: A Correctness Condition for Ordered Consensus",
@@ -2918,6 +2941,29 @@
       "updated_at": "2026-07-21T08:54:26.741832+00:00"
     },
     {
+      "forum_id": "2607.29678",
+      "paper_number": -1,
+      "title": "TokTier: Exact Stateful CPU+GPU Tokenization for Agentic LLM Serving",
+      "authors": [
+        "Zhenyu Zhang, Zhichao Cao"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.29678v3 Announce Type: replace-cross \nAbstract: LLM serving caches prompt KV state, yet most front ends still re-tokenize the full request on every call. Coding agents pay most: sessions repeatedly submit a long transcript after a small append, which can shift token boundaries near the end of the prior sequence. Across 153,951 calls the median append is ~1.4K characters; only 1.0-3.6% of calls start or rebuild a session, yet those carrymulti-million-character contexts. Fleet prompt-cache hit rate is 94.1%, and as it approaches 0.99, tokenization grows from 10% to 64% of time to first token (TTFT) in component measurements.\n  TokTier is a stateful CPU+GPU tokenization service for this two-mode workload, under one contract: emitted token IDs are always identical to full reference ",
+      "pdf_link": "https://arxiv.org/pdf/2607.29678.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.29678",
+      "submission_date": "2026-08-10T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.0,
+      "updated_at": "2026-08-10T07:26:21.663556+00:00"
+    },
+    {
       "forum_id": "dblp-eurosys26-12",
       "paper_number": 12,
       "title": "Practical and Efficient x86-64 Emulation on RISC-V.",
@@ -3453,29 +3499,6 @@
       "ratings": [],
       "score": 33.0,
       "updated_at": "2026-07-21T08:54:22.930905+00:00"
-    },
-    {
-      "forum_id": "2608.05441",
-      "paper_number": -1,
-      "title": "Filtered Vector Search in a Disaggregated Lakehouse: Composing Table-Format Pruning with Per-File ANN",
-      "authors": [
-        "Rakesh Jain (IBM Research), Thomas Griffin (IBM Research), Syed Zawad (IBM Research)"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.05441v1 Announce Type: cross \nAbstract: Approximate nearest-neighbor (ANN) search increasingly runs alongside structured data - \"find the 10 nearest documents where tenant='acme' AND lang='en'\" - yet similarity and filtering are usually bolted together: a specialized vector index for one, a separate filter step for the other. We ask what happens when both live inside an open lakehouse table (Apache Iceberg over Parquet on object storage), where the engine already owns a mature file-pruning stack (partition pruning, zone-maps, a bitmap index). We embed an IVF index in place in each Parquet file's footer and make filtered vector queries fast not with a new filtering algorithm but by composing the table's existing file pruning with per-file ANN: the planner prunes data files by the",
-      "pdf_link": "https://arxiv.org/pdf/2608.05441.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.05441",
-      "submission_date": "2026-08-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-08-07T07:11:31.399208+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-41",
@@ -5308,6 +5331,29 @@
       "updated_at": "2026-07-21T08:54:26.741587+00:00"
     },
     {
+      "forum_id": "2608.06763",
+      "paper_number": -1,
+      "title": "CubicQuant: Parametric Non-Uniform Codebooks for High-Throughput LLM Inference with 1-8-Bit Weights",
+      "authors": [
+        "Xuetian Gao"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.06763v1 Announce Type: cross \nAbstract: Weight quantization for large-language-model inference must balance adaptive reconstruction levels with representations regular enough for efficient GPU execution. Uniform integers constrain each group to a linear grid. Low-bit floating-point formats use a fixed exponent-mantissa structure, while learned codebooks gain flexibility at the cost of irregular decoding and additional metadata.\n  We introduce CubicQuant, a parametric non-uniform scalar format that preserves a dense integer code stream while adapting reconstruction levels within each weight group. A monotonic cubic curve, specified by two shape parameters and one scale, maps uniformly spaced magnitude codes to non-uniform levels. The family spans 1-8-bit weight payloads, contains",
+      "pdf_link": "https://arxiv.org/pdf/2608.06763.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.06763",
+      "submission_date": "2026-08-10T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.5,
+      "updated_at": "2026-08-10T07:26:21.662593+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-41",
       "paper_number": 41,
       "title": "Efficient and Scalable Synchronization via Generalized Cache Coherence",
@@ -5575,6 +5621,29 @@
       "ratings": [],
       "score": 14.0,
       "updated_at": "2026-07-21T08:54:22.936410+00:00"
+    },
+    {
+      "forum_id": "2608.07358",
+      "paper_number": -1,
+      "title": "Fast end-to-end cloud application cold-start with initscripts",
+      "authors": [
+        "Ariel Szekely, Robert Morris, M. Frans Kaashoek"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.07358v1 Announce Type: cross \nAbstract: Serverless functions are a popular way of deploying cloud applications. Because many of these functions are short- running and experience frequent cold-starts, start latencies often dominate their execution latency. Start latency can be broken down into two components: setup and initialization. Setup involves steps the cloud platform takes when starting an application, such as downloading its binary and creating an isolated execution environment. Initialization involves steps the application takes after it has started running but before it can do useful work, such as connecting to other services, coordinating to claim work, and downloading inputs.\n  This paper contributes initscripts, which provide a script- able interface for developers t",
+      "pdf_link": "https://arxiv.org/pdf/2608.07358.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.07358",
+      "submission_date": "2026-08-10T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-08-10T07:26:21.620280+00:00"
     },
     {
       "forum_id": "usenix-osdi26-5",
@@ -7221,29 +7290,6 @@
       "updated_at": "2026-07-21T08:54:26.744753+00:00"
     },
     {
-      "forum_id": "2608.06046",
-      "paper_number": -1,
-      "title": "ML-for-ML",
-      "authors": [
-        "Yutong Zhao, Noga H. Rotman, Gianni Antichi, Ran Ben Basat"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.06046v1 Announce Type: cross \nAbstract: AI training workloads are growing rapidly, making their time, energy, and infrastructure costs increasingly important. In shared cloud clusters, training and fine-tuning jobs compete with co-running workloads for network resources, while network mechanisms and ML training choices are typically optimized separately: networking controls how bytes move, whereas ML systems control when and how much communication occurs. We argue that this separation leaves end-to-end performance on the table.\n  We present ML-for-ML, a cross-layer perspective in which network-side and ML-side knobs are selected jointly under a shared time-to-target-loss objective. Our preliminary prototype shows that by co-optimizing the ML and network parameters, we reach the ",
-      "pdf_link": "https://arxiv.org/pdf/2608.06046.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.06046",
-      "submission_date": "2026-08-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-08-07T07:11:31.400002+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-87",
       "paper_number": 87,
       "title": "WiseCode: Breaking the Scalability Barriers of Wide-Stripe Vector Codes",
@@ -8521,6 +8567,29 @@
       "updated_at": "2026-07-21T08:54:26.744870+00:00"
     },
     {
+      "forum_id": "2511.07885",
+      "paper_number": -1,
+      "title": "Intelligence per Watt: Measuring Intelligence Efficiency of Local AI",
+      "authors": [
+        "Jon Saad-Falcon, Avanika Narayan, Hakki Orhun Akengin, J. Wes Griffin, Herumb Shandilya, Adrian Gamarra Lafuente, Medhya Goel, Rebecca Joseph, Shlok Natarajan, Etash Kumar Guha, Shang Zhu, Ben Athiwaratkun, John Hennessy, Azalia Mirhoseini, Christopher R\\'e"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2511.07885v5 Announce Type: replace \nAbstract: Large language model (LLM) queries are predominantly processed by frontier models in centralized cloud infrastructure. Demand growth strains this paradigm faster than providers can scale. Two advances create an opportunity to rethink it: small, local LMs (<=20B active parameters) now achieve competitive performance to frontier models on many tasks, and local accelerators (e.g., Apple M4 Max) can host these models at interactive latencies. This raises the question: can local inference viably redistribute demand from centralized infrastructure? This requires measuring both whether local LMs can accurately answer real-world queries and whether they can do so efficiently on power-constrained devices (e.g., laptops). We propose intelligence p",
+      "pdf_link": "https://arxiv.org/pdf/2511.07885.pdf",
+      "forum_link": "https://arxiv.org/abs/2511.07885",
+      "submission_date": "2026-08-10T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-08-10T07:26:21.663179+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-10",
       "paper_number": 10,
       "title": "OBASE: Object-Based Address-Space Engineering to Improve Memory Tiering",
@@ -8858,29 +8927,6 @@
       "ratings": [],
       "score": 2.0,
       "updated_at": "2026-07-21T08:54:26.743211+00:00"
-    },
-    {
-      "forum_id": "2608.05358",
-      "paper_number": -1,
-      "title": "DG-FedReuse: Proxy-Gradient-Gated Cached-Update Reuse with Matched Sparse Uplink Accounting",
-      "authors": [
-        "Rahil Aftab, Vineet Kumar Rakesh, Soumya Mazumdar, Tapas Samanta"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.05358v1 Announce Type: cross \nAbstract: Federated learning repeatedly incurs local optimization and model-update transmission. We study DG-FedReuse, a simulator-level mechanism that allows selected clients to contribute age-decayed cached updates when a stochastic head-gradient discrepancy proxy remains below a round-dependent threshold. A hard cache-age limit and minimum fresh-client quota constrain reuse, while fresh updates use an adaptive per-tensor Top-K numerical-field representation. Experiments cover six image-classification datasets, 50 virtual clients, Dirichlet label heterogeneity ({\\alpha}=0.5), and three seeds. At a common 90-round budget, DG-FedReuse yields 83.36-85.42% modeled update-data-field uplink saving, compared with 76.88% for matched Top-K FedAvg; the seed",
-      "pdf_link": "https://arxiv.org/pdf/2608.05358.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.05358",
-      "submission_date": "2026-08-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-08-07T07:11:31.399170+00:00"
     },
     {
       "forum_id": "dblp-eurosys26-6",
@@ -10211,29 +10257,6 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
-    },
-    {
-      "forum_id": "2608.06188",
-      "paper_number": -1,
-      "title": "Routing LLM Inference to the Cleanest Grid in Real Time",
-      "authors": [
-        "Aleks Bernhard, Arif Baran Yardimci"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.06188v1 Announce Type: new \nAbstract: Large-language-model inference is a fast-growing electricity load whose marginal carbon intensity varies by more than an order of magnitude across grid regions and across the day, making request placement an attractive lever: no retraining, no hardware change. We report a live validation of carbon-aware inference routing on multi-region GPU testbeds driven by marginal operating emissions rate (MOER) signals, with three properties uncommon in prior work: a blind baseline that is an actual production pressure-based router rather than uniform placement; per-request energy attributed from GPU telemetry (NVIDIA DCGM) via measured concurrency curves rather than nameplate TDP; and carbon settlement of every request against historical MOER, not only",
-      "pdf_link": "https://arxiv.org/pdf/2608.06188.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.06188",
-      "submission_date": "2026-08-07T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-07T07:11:31.398996+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",
