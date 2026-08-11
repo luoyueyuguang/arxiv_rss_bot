@@ -1,16 +1,18 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-08-10 07:26:25 UTC
-- **Total Filtered Papers**: 5
-- **Displaying**: 5 (arxiv: 5)
+- **Last Updated**: 2026-08-11 07:02:22 UTC
+- **Total Filtered Papers**: 7
+- **Displaying**: 7 (arxiv: 7)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [HLSmith: An Expert-Guided Agentic Framework for C/C++-to-HLS Translation](https://arxiv.org/abs/2608.06791) | `ARXIV` | 12.0 |
-| 2 | [QCORE: A Quantum-Control-Oriented Real-Time Execution Architecture with Extensible Closed-Loop Services and Shared AI Acceleration](https://arxiv.org/abs/2608.06875) | `ARXIV` | 2.0 |
-| 3 | [Retention-Aware RISC-V ISA Extension and Memory Controller on FPGA for MLC NVM](https://arxiv.org/abs/2608.06725) | `ARXIV` | 1.5 |
-| 4 | [Predictive Multi-Tier Memory Management for KV Cache in Large-Scale GPU Inference](https://arxiv.org/abs/2604.26968) | `ARXIV` | 1.0 |
-| 5 | [SPEC CPU2026: Characterization, Representativeness, and Cross-Suite Comparison](https://arxiv.org/abs/2605.03713) | `ARXIV` | 1.0 |
+| 1 | [ArchAgent v2: A Case Study with the Data Prefetching Championship](https://arxiv.org/abs/2608.09874) | `ARXIV` | 13.0 |
+| 2 | [Arcal\'{\i}s: Accelerating Remote Procedure Calls Using a L\'{i}ghtweight Near-Cache Solution](https://arxiv.org/abs/2602.12596) | `ARXIV` | 3.0 |
+| 3 | [LUTstructions: Fast-Reconfigurable FPGA-Based Instructions](https://arxiv.org/abs/2602.20802) | `ARXIV` | 2.5 |
+| 4 | [QuArch: A Benchmark for Evaluating LLM Reasoning in Computer Architecture](https://arxiv.org/abs/2510.22087) | `ARXIV` | 2.0 |
+| 5 | [Breaking Memory Bottlenecks in Quantum Control Systems for More Precise Experiments and Higher Throughput Computing](https://arxiv.org/abs/2608.06318) | `ARXIV` | 2.0 |
+| 6 | [C2C-Explorer: An Exploration Framework for Chip-to-Chip Interconnect Architectures in LLM Cloud Computing Systems](https://arxiv.org/abs/2608.08611) | `ARXIV` | 1.5 |
+| 7 | [MCHA: A Memory-Centric Hierarchical Architecture for Parallel-Sequential Computing](https://arxiv.org/abs/2608.04443) | `ARXIV` | 1.0 |

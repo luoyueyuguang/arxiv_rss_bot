@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-08-10T07:26:25.189786+00:00",
-  "paper_count": 442,
+  "last_updated": "2026-08-11T07:02:22.587998+00:00",
+  "paper_count": 445,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -473,6 +473,29 @@
       "ratings": [],
       "score": 76.0,
       "updated_at": "2026-07-21T08:54:22.941642+00:00"
+    },
+    {
+      "forum_id": "2608.09160",
+      "paper_number": -1,
+      "title": "SwiftQK: Fast and Communication-Efficient Tensor Parallelism for Query-Key Normalization",
+      "authors": [
+        "Gyudong Kim, Wonjun Han, Young Geun Kim"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.09160v1 Announce Type: cross \nAbstract: Query-Key Normalization (QK-Norm) improves the training stability and quality of modern Large Language Models (LLMs). However, under Tensor Parallelism (TP), layerwise QK-Norm introduces additional cross-GPU communication because the normalization factor depends on the full hidden vector. We present SwiftQK, a multi-GPU RMSNorm kernel that exchanges only scalar normalization statistics and overlaps the remaining Peer-to-Peer reduction with independent element-wise computation in a deadlock-safe persistent kernel. Evaluations on recent LLMs show that SwiftQK reduces QK-Norm latency by 81.4--93.9% relative to the standard TP QK-Norm using full-vector All-Gather. In end-to-end serving, SwiftQK reduces TPOT on average by 29.5% over the All-Gat",
+      "pdf_link": "https://arxiv.org/pdf/2608.09160.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.09160",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 74.5,
+      "updated_at": "2026-08-11T07:01:42.799183+00:00"
     },
     {
       "forum_id": "usenix-osdi26-31",
@@ -1928,29 +1951,6 @@
       "updated_at": "2026-07-21T08:54:22.940225+00:00"
     },
     {
-      "forum_id": "2608.06987",
-      "paper_number": -1,
-      "title": "A Kubernetes Scheduler Plugin for Cluster-Wide Placement Optimisation",
-      "authors": [
-        "Henrik Daniel Christensen, Saverio Giallorenzo, Jacopo Mauro"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.06987v1 Announce Type: new \nAbstract: The default scheduler of Kubernetes, the state-of-the-art container orchestrator, uses fast, local placement decisions. Unfortunately, this design leads to resource fragmentation, reduced cluster usage, and overprovisioning. External solvers can compute global placement plans, but enforcing these plans in upstream clusters is hard. Kubernetes provides no native cross-node preemption, uncoordinated concurrent scheduling leads to inconsistencies, and replacing the default scheduler would sever deployments from upstream cycles. We present OPSche, an open-source Kubernetes Scheduling Framework plugin where external solvers can drive cluster-wide placement decisions in concert with the default scheduler. OPSche atomically validates and enforces s",
-      "pdf_link": "https://arxiv.org/pdf/2608.06987.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.06987",
-      "submission_date": "2026-08-10T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 44.5,
-      "updated_at": "2026-08-10T07:26:21.662222+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-68",
       "paper_number": 68,
       "title": "Equal Opportunity: A Correctness Condition for Ordered Consensus",
@@ -2939,29 +2939,6 @@
       "ratings": [],
       "score": 33.5,
       "updated_at": "2026-07-21T08:54:26.741832+00:00"
-    },
-    {
-      "forum_id": "2607.29678",
-      "paper_number": -1,
-      "title": "TokTier: Exact Stateful CPU+GPU Tokenization for Agentic LLM Serving",
-      "authors": [
-        "Zhenyu Zhang, Zhichao Cao"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.29678v3 Announce Type: replace-cross \nAbstract: LLM serving caches prompt KV state, yet most front ends still re-tokenize the full request on every call. Coding agents pay most: sessions repeatedly submit a long transcript after a small append, which can shift token boundaries near the end of the prior sequence. Across 153,951 calls the median append is ~1.4K characters; only 1.0-3.6% of calls start or rebuild a session, yet those carrymulti-million-character contexts. Fleet prompt-cache hit rate is 94.1%, and as it approaches 0.99, tokenization grows from 10% to 64% of time to first token (TTFT) in component measurements.\n  TokTier is a stateful CPU+GPU tokenization service for this two-mode workload, under one contract: emitted token IDs are always identical to full reference ",
-      "pdf_link": "https://arxiv.org/pdf/2607.29678.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.29678",
-      "submission_date": "2026-08-10T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 33.0,
-      "updated_at": "2026-08-10T07:26:21.663556+00:00"
     },
     {
       "forum_id": "dblp-eurosys26-12",
@@ -5050,6 +5027,52 @@
       "updated_at": "2026-07-21T08:54:26.740162+00:00"
     },
     {
+      "forum_id": "2608.08482",
+      "paper_number": -1,
+      "title": "FlashBoot: Sub-Second Weight Loading for Large Models at Rack Scale",
+      "authors": [
+        "Issac Zhu, Hscos Zhang, Keith Jiang, Jack Li, Hugh Yin, Jason Zhao"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.08482v1 Announce Type: new \nAbstract: Flagship Mixture-of-Experts (MoE) models are growing fast along two axes at once: total parameter count and the number of experts. In elastic deployment scenarios, many GPUs across many nodes must become serving-ready quickly, and this growth makes weight loading a noticeable part of the latency budget. Even on NVIDIA's GB300 NVL72, today's state-of-the-art loaders leave most of that bandwidth unused. The losses are structural: (C1) weight memory is fragmented into tens of thousands of per-tensor objects, so transfers run far below link bandwidth; (C2) cross-node replication is gated by NCCL communicator setup, which costs 10-110 s before a single weight byte moves; and (C3) the existing cross-node GPU->GPU clone path is serial and scales po",
+      "pdf_link": "https://arxiv.org/pdf/2608.08482.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.08482",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 16.5,
+      "updated_at": "2026-08-11T07:01:42.795928+00:00"
+    },
+    {
+      "forum_id": "2607.04789",
+      "paper_number": -1,
+      "title": "Orcaella: Hybrid Fault Tolerance with Client-Selectable Finality Latency",
+      "authors": [
+        "Lefteris Kokoris-Kogias, Alberto Sonnino"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.04789v2 Announce Type: replace \nAbstract: Classical partially synchronous state machine replication, as in PBFT, tolerates f Byzantine replicas among n at least 3f+1 using three communication steps per request. Recent protocols such as Minimmit achieve two-message-delay decisions under stronger size assumptions, notably n at least 5f+1 when any silent replica must be counted as a potential equivocator. Hydrangea and Kudzu treat mixed Byzantine and crash faults, focusing on providing a fast-path under optimistic conditions while maintaining a fall-back commitment path similar to PBFT. In this paper, we also consider a mixed model, but focus on studying the fault tolerance of the 2-message-delay commit. For this, we prove a tight bound of n at least 5f+3c+1. Extending this result,",
+      "pdf_link": "https://arxiv.org/pdf/2607.04789.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.04789",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 16.5,
+      "updated_at": "2026-08-11T07:01:42.801085+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-109",
       "paper_number": 109,
       "title": "TrainMover: An Interruption-Resilient Runtime for ML Training",
@@ -5331,29 +5354,6 @@
       "updated_at": "2026-07-21T08:54:26.741587+00:00"
     },
     {
-      "forum_id": "2608.06763",
-      "paper_number": -1,
-      "title": "CubicQuant: Parametric Non-Uniform Codebooks for High-Throughput LLM Inference with 1-8-Bit Weights",
-      "authors": [
-        "Xuetian Gao"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.06763v1 Announce Type: cross \nAbstract: Weight quantization for large-language-model inference must balance adaptive reconstruction levels with representations regular enough for efficient GPU execution. Uniform integers constrain each group to a linear grid. Low-bit floating-point formats use a fixed exponent-mantissa structure, while learned codebooks gain flexibility at the cost of irregular decoding and additional metadata.\n  We introduce CubicQuant, a parametric non-uniform scalar format that preserves a dense integer code stream while adapting reconstruction levels within each weight group. A monotonic cubic curve, specified by two shape parameters and one scale, maps uniformly spaced magnitude codes to non-uniform levels. The family spans 1-8-bit weight payloads, contains",
-      "pdf_link": "https://arxiv.org/pdf/2608.06763.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.06763",
-      "submission_date": "2026-08-10T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-08-10T07:26:21.662593+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-41",
       "paper_number": 41,
       "title": "Efficient and Scalable Synchronization via Generalized Cache Coherence",
@@ -5623,29 +5623,6 @@
       "updated_at": "2026-07-21T08:54:22.936410+00:00"
     },
     {
-      "forum_id": "2608.07358",
-      "paper_number": -1,
-      "title": "Fast end-to-end cloud application cold-start with initscripts",
-      "authors": [
-        "Ariel Szekely, Robert Morris, M. Frans Kaashoek"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.07358v1 Announce Type: cross \nAbstract: Serverless functions are a popular way of deploying cloud applications. Because many of these functions are short- running and experience frequent cold-starts, start latencies often dominate their execution latency. Start latency can be broken down into two components: setup and initialization. Setup involves steps the cloud platform takes when starting an application, such as downloading its binary and creating an isolated execution environment. Initialization involves steps the application takes after it has started running but before it can do useful work, such as connecting to other services, coordinating to claim work, and downloading inputs.\n  This paper contributes initscripts, which provide a script- able interface for developers t",
-      "pdf_link": "https://arxiv.org/pdf/2608.07358.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.07358",
-      "submission_date": "2026-08-10T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-08-10T07:26:21.620280+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-5",
       "paper_number": 5,
       "title": "Simple Is Better: Multiplication May Be All You Need for LLM Request Scheduling",
@@ -5807,6 +5784,29 @@
       "ratings": [],
       "score": 13.5,
       "updated_at": "2026-07-21T08:54:26.743933+00:00"
+    },
+    {
+      "forum_id": "2608.09208",
+      "paper_number": -1,
+      "title": "FedA2L: Adaptive layer-wise learning rate adjustment in decentralized federated learning",
+      "authors": [
+        "Van Truong Vo, Khoa Nguyen, Taehong Kim"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.09208v1 Announce Type: cross \nAbstract: Decentralized intelligence systems with heterogeneous devices and limited coordination increasingly rely on decentralized federated learning (DFL). However, DFL suffers from convergence inefficiency under data heterogeneity due to the use of a uniform learning rate (LR) that ignores layer-specific optimization needs. Foundational layers are responsible for maintaining network consensus, while specialized layers adapt to local data characteristics, leading to conflicting gradients and degraded performance under non-IID conditions. To address this fundamental tension, this work introduces FedA2L, a method that dynamically adjusts layer-wise LRs based on model divergence signals. By leveraging local update intensity and network consensus cons",
+      "pdf_link": "https://arxiv.org/pdf/2608.09208.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.09208",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.0,
+      "updated_at": "2026-08-11T07:01:42.799221+00:00"
     },
     {
       "forum_id": "usenix-osdi26-37",
@@ -6606,6 +6606,29 @@
       "ratings": [],
       "score": 8.0,
       "updated_at": "2026-07-21T08:54:26.739921+00:00"
+    },
+    {
+      "forum_id": "2608.08340",
+      "paper_number": -1,
+      "title": "OpRAG: A Resource-Deterministic Runtime for GPU-Backed Multi-Stage RAG Workflows",
+      "authors": [
+        "Arup Kumar Sarker, Mills Staylor, Aymen Alsaadi, Gregor von Laszewski, Shantenu Jha, Geoffrey Fox"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.08340v1 Announce Type: new \nAbstract: Agentic retrieval-augmented generation (RAG) systems combine preprocessing, embedding, retrieval, memory access, context construction, generation, and vector-index updates. Although LLM decoding is GPU-bound, the surrounding orchestration layer can still limit end-to-end performance through serialization overhead, fragmented scheduling, inefficient batching, and CPU--GPU pipeline stalls. Existing frameworks provide flexible control flow, while distributed runtimes provide scalable task parallelism, but neither exposes RAG stages as resource-aware operators with deterministic execution semantics. We present OpRAG, a resource-deterministic distributed runtime for GPU-backed multi-stage RAG workflows. OpRAG models embedding, retrieval, reasonin",
+      "pdf_link": "https://arxiv.org/pdf/2608.08340.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.08340",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 7.5,
+      "updated_at": "2026-08-11T07:01:42.795746+00:00"
     },
     {
       "forum_id": "usenix-osdi26-7",
@@ -7477,6 +7500,29 @@
       "ratings": [],
       "score": 4.0,
       "updated_at": "2026-07-21T08:54:26.742343+00:00"
+    },
+    {
+      "forum_id": "2608.09175",
+      "paper_number": -1,
+      "title": "Beyond Fast Contractions: Attenuation and Recovery of Matrix-Engine Speedups in High-Order Finite Elements",
+      "authors": [
+        "Yinuo Wang, Lin Gan, Tianqi Mao, Zeyu Song, Wubing Wan, Jiayu Fu, Zekun Yin, Yuyang Jin, Xiaohui Duan, Wei Xue, Guangwen Yang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.09175v1 Announce Type: new \nAbstract: Modern processors increasingly provide matrix engines whose peak arithmetic throughput greatly exceeds conventional SIMD, but scientific applications rarely realize this advantage end to end. We examine this gap in SPECFEM3D's dominant stiffness operator on the Arm LX2 CPUs that power the flagship Lineshine supercomputer. Against a matched, high-performance SVE baseline on the same cores, SME's $4\\times$ single-precision peak advantage falls to $2.2\\times$ for isolated tensor contractions and $1.1\\times$ for the complete operator. Our factorized diagnostic attributes the loss to pointwise computation, indirect field movement and synchronization, and irregular coefficient delivery. Explicit SIMD mitigates pointwise work, raising the full-oper",
+      "pdf_link": "https://arxiv.org/pdf/2608.09175.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.09175",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-08-11T07:01:42.796482+00:00"
     },
     {
       "forum_id": "usenix-osdi26-83",
@@ -8565,29 +8611,6 @@
       "ratings": [],
       "score": 2.5,
       "updated_at": "2026-07-21T08:54:26.744870+00:00"
-    },
-    {
-      "forum_id": "2511.07885",
-      "paper_number": -1,
-      "title": "Intelligence per Watt: Measuring Intelligence Efficiency of Local AI",
-      "authors": [
-        "Jon Saad-Falcon, Avanika Narayan, Hakki Orhun Akengin, J. Wes Griffin, Herumb Shandilya, Adrian Gamarra Lafuente, Medhya Goel, Rebecca Joseph, Shlok Natarajan, Etash Kumar Guha, Shang Zhu, Ben Athiwaratkun, John Hennessy, Azalia Mirhoseini, Christopher R\\'e"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2511.07885v5 Announce Type: replace \nAbstract: Large language model (LLM) queries are predominantly processed by frontier models in centralized cloud infrastructure. Demand growth strains this paradigm faster than providers can scale. Two advances create an opportunity to rethink it: small, local LMs (<=20B active parameters) now achieve competitive performance to frontier models on many tasks, and local accelerators (e.g., Apple M4 Max) can host these models at interactive latencies. This raises the question: can local inference viably redistribute demand from centralized infrastructure? This requires measuring both whether local LMs can accurately answer real-world queries and whether they can do so efficiently on power-constrained devices (e.g., laptops). We propose intelligence p",
-      "pdf_link": "https://arxiv.org/pdf/2511.07885.pdf",
-      "forum_link": "https://arxiv.org/abs/2511.07885",
-      "submission_date": "2026-08-10T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-08-10T07:26:21.663179+00:00"
     },
     {
       "forum_id": "usenix-osdi26-10",
@@ -10257,6 +10280,52 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
+    },
+    {
+      "forum_id": "2608.08085",
+      "paper_number": -1,
+      "title": "Effect of Abstractions and Prompting Strategies on LLM-Guided High-Performance Optimizations",
+      "authors": [
+        "Ji\\v{r}\\'i Klepl, Maty'a\\v{s} Brabec, Martin Kruli\\v{s}"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.08085v1 Announce Type: new \nAbstract: Code performance optimization is a vital aspect of modern software development, as it enables faster response times and reduced resource usage. These optimizations require a deep understanding of low-level hardware details and the intricacies of parallel processing, making them challenging even for experienced developers. With the advent of Large Language Models (LLMs), which are increasingly capable of generating and understanding code, there is growing interest in incorporating these models into automated code optimization processes. Traditionally, this automation involves transcribing the source code into a domain-specific representation that can be auto-tuned using grid search or machine learning algorithms, while adhering to strict rule",
+      "pdf_link": "https://arxiv.org/pdf/2608.08085.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.08085",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-08-11T07:01:42.795420+00:00"
+    },
+    {
+      "forum_id": "2606.00501",
+      "paper_number": -1,
+      "title": "Joint Optimization of Qubit Leasing and Quantum Circuit Distribution",
+      "authors": [
+        "Anoushka Dey, Gaurav S. Kasbekar"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2606.00501v2 Announce Type: replace-cross \nAbstract: We consider an agent, who would like to execute a given quantum circuit using resources leased from a set of quantum computers (QCs) connected by a quantum network. For this purpose, the agent needs to make the following four key decisions: (i) how many qubits to lease from each QC, (ii) at which QCs to store different circuit qubits in different time slots, (iii) at which QC to execute each gate in the circuit, and (iv) when to teleport qubits between different pairs of QCs. We refer to this problem facing the agent as the joint qubit leasing and quantum circuit distribution (JQLQCD) problem, and provide a comprehensive integer linear programming (ILP) formulation for it. We show that the JQLQCD problem is NP-complete. Next, we id",
+      "pdf_link": "https://arxiv.org/pdf/2606.00501.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.00501",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-08-11T07:01:42.801854+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

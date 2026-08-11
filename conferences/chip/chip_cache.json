@@ -1,123 +1,169 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-08-10T07:26:25.280631+00:00",
-  "paper_count": 5,
+  "last_updated": "2026-08-11T07:02:22.656096+00:00",
+  "paper_count": 7,
   "papers": [
     {
-      "forum_id": "2608.06791",
+      "forum_id": "2608.09874",
       "paper_number": -1,
-      "title": "HLSmith: An Expert-Guided Agentic Framework for C/C++-to-HLS Translation",
+      "title": "ArchAgent v2: A Case Study with the Data Prefetching Championship",
       "authors": [
-        "Yuebo Luo, Ahmad Sedigh Baroughi, Philip Stachura, Le Chen, Venkatram Vishwanath, Zhenman Fang, Caiwen Ding"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2608.06791v1 Announce Type: new \nAbstract: Application-specific FPGA accelerators offer substantial performance and energy-efficiency gains across many application domains, but developing them is costly, often requiring months of specialized effort. Even with high-level synthesis (HLS), designers still need extensive hardware expertise to build high-performance accelerators. Although large language models (LLMs) have demonstrated strong software-generation capabilities, even frontier models lack the hardware intuition and procedural knowledge needed to reliably translate baseline C/C++ programs into high-performance HLS designs: they struggle to identify effective architectures, follow the optimization processes used by HLS experts, and apply hardware transformations consistently acr",
-      "pdf_link": "https://arxiv.org/pdf/2608.06791.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.06791",
-      "submission_date": "2026-08-10T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-08-10T07:26:25.277402+00:00"
-    },
-    {
-      "forum_id": "2608.06875",
-      "paper_number": -1,
-      "title": "QCORE: A Quantum-Control-Oriented Real-Time Execution Architecture with Extensible Closed-Loop Services and Shared AI Acceleration",
-      "authors": [
-        "Heyue Li, Yanshu Guo, Qichun Liu, Tiefu Li, Zhihua Wang, Hanjun Jiang"
+        "Abraham Gonzalez, Raghav Gupta, Akanksha Jain, Hanna Alam, Alexander Novikov, Po-Sen Huang, Matej Balog, Marvin Eisenberger, Sergey Shirobokov, Ng\\^an V\\~u, Hank Levy, Borivoje Nikoli\\'c, Sagar Karandikar, Martin Dixon, Parthasarathy Ranganathan"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.06875v1 Announce Type: cross \nAbstract: Scalable quantum processors require control, readout, feedback, calibration, and error correction to coexist under bounded latency and shared-resource constraints, whereas existing platforms typically optimize only a subset of these capabilities. This article presents QCORE (Quantum-Control-Oriented Real-Time Execution), a QPU-side digital control reference architecture positioned between the Host and a platform-specific analog/mixed-signal front end. QCORE separates task management, shared resources, hard-real-time execution, and long-timescale services into four hardware partitions. A fast-result sideband closes same-round feedback, a Measurement Packet provides a traceable measurement and service interface, and a common service-control ",
-      "pdf_link": "https://arxiv.org/pdf/2608.06875.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.06875",
-      "submission_date": "2026-08-10T04:00:00+00:00",
+      "abstract": "arXiv:2608.09874v1 Announce Type: cross \nAbstract: Agentic artificial intelligence has shown great promise in automating algorithm design, but scaling similar techniques to computer microarchitecture discovery remains challenging due to vast search spaces, strict hardware budgets, and long simulation times. In this work, we present ArchAgent v2, a framework which scales automated microarchitecture search to multi-level data prefetching. While the original ArchAgent successfully discovered single-level cache replacement policies in competition settings, it does not scale to multi-level prefetching where the design space and degrees of freedom are larger. To overcome this, we introduce two new additions to ArchAgent: a cascaded evolutionary search that subdivides the design space by sequenti",
+      "pdf_link": "https://arxiv.org/pdf/2608.09874.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.09874",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.0,
+      "updated_at": "2026-08-11T07:02:22.651695+00:00"
+    },
+    {
+      "forum_id": "2602.12596",
+      "paper_number": -1,
+      "title": "Arcal\\'{\\i}s: Accelerating Remote Procedure Calls Using a L\\'{i}ghtweight Near-Cache Solution",
+      "authors": [
+        "Johnson Umeike (University of Maryland, College Park), Pongstorn Maidee (AMD Research,Advanced Development), Bahar Asgari (University of Maryland, College Park)"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2602.12596v2 Announce Type: replace \nAbstract: Modern microservices increasingly depend on high-performance remote procedure calls (RPCs) to coordinate fine-grained, distributed computation. As network bandwidths continue to scale, the CPU overhead associated with RPC processing, particularly serialization, deserialization, and protocol handling, has become a critical bottleneck. This challenge is exacerbated by fast user-space networking stacks such as DPDK, which expose RPC processing as the dominant performance limiter. While prior hardware accelerators have explored NIC-attached and FPGA-based offload, these approaches remain farther from the cache hierarchy, so the frequent data accesses during RPC processing each pay an extra interconnect traversal cost that inflates RPC time. ",
+      "pdf_link": "https://arxiv.org/pdf/2602.12596.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.12596",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-08-11T07:02:22.651825+00:00"
+    },
+    {
+      "forum_id": "2602.20802",
+      "paper_number": -1,
+      "title": "LUTstructions: Fast-Reconfigurable FPGA-Based Instructions",
+      "authors": [
+        "Philippos Papaphilippou"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2602.20802v4 Announce Type: replace \nAbstract: General-purpose processors feature a limited number of instructions based on an instruction set. They can be numerous, such as with vector extensions that include hundreds or thousands of instructions, but this comes at a cost; they are often unable to express arbitrary tasks efficiently. This paper explores the concept of having reconfigurable instructions by incorporating reconfigurable areas in a softcore. It follows a relatively new computing paradigm for seamlessly loading instruction implementation-carrying bitstreams from main memory. The resulting softcore is entirely evaluated on an FPGA, essentially having an FPGA-on-FPGA for the instruction implementations, with no notable operating frequency overhead. This is achieved with a ",
+      "pdf_link": "https://arxiv.org/pdf/2602.20802.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.20802",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-08-11T07:02:22.651877+00:00"
+    },
+    {
+      "forum_id": "2510.22087",
+      "paper_number": -1,
+      "title": "QuArch: A Benchmark for Evaluating LLM Reasoning in Computer Architecture",
+      "authors": [
+        "Shvetank Prakash, Andrew Cheng, Mark Mazumder, Arya Tschand, Varun Gohil, Jeffrey Ma, Jason Yik, Zishen Wan, Jessica Quaye, Elisavet Lydia Alvanaki, Avinash Kumar, Chandrashis Mazumdar, Tuhin Khare, Alexander Ingare, Ikechukwu Uchendu, Radhika Ghosal, Abhishek Tyagi, Chenyu Wang, Andrea Mattia Garavagno, Sarah Gu, Alice Guo, Grace Hur, Luca P. Carloni, Tushar Krishna, Ankita Nayak, Amir Yazdanbakhsh, Vijay Janapa Reddi"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2510.22087v3 Announce Type: replace \nAbstract: The field of computer architecture, which bridges high-level software abstractions and low-level hardware implementations, remains absent from current large language model (LLM) evaluations. To this end, we present QuArch (pronounced 'quark'), the first benchmark designed to facilitate the development and evaluation of LLM knowledge and reasoning capabilities specifically in computer architecture. QuArch v1.0 provides a comprehensive collection of 2,671 expert-validated question-answer (QA) pairs covering various aspects of computer architecture, including processor design, memory systems, and interconnection networks. Our evaluation reveals that while frontier models possess domain-specific knowledge, they struggle with skills that requ",
+      "pdf_link": "https://arxiv.org/pdf/2510.22087.pdf",
+      "forum_link": "https://arxiv.org/abs/2510.22087",
+      "submission_date": "2026-08-11T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-08-10T07:26:25.277687+00:00"
+      "updated_at": "2026-08-11T07:02:22.651745+00:00"
     },
     {
-      "forum_id": "2608.06725",
+      "forum_id": "2608.06318",
       "paper_number": -1,
-      "title": "Retention-Aware RISC-V ISA Extension and Memory Controller on FPGA for MLC NVM",
+      "title": "Breaking Memory Bottlenecks in Quantum Control Systems for More Precise Experiments and Higher Throughput Computing",
       "authors": [
-        "Mina Ibrahim, Martel Shokry, Lokesh Siddhu, Lars Bauer, Hassan Nassar, Joerg Henkel"
+        "Yicheng Guang, Neel Vora, Yilun Xu, Yueqi Chen, Gang Huang"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.06725v1 Announce Type: new \nAbstract: Non-volatile memory (NVM) technologies, particularly Multi-Level Cell (MLC) NVMs, offer significant potential for increasing memory density. MLC NVMs provide a tradeoff between write latency and retention time, where faster writes/stores result in lower retention and slower writes yield higher retention. However, limited work has been done to validate and prototype NVM-based systems in hardware, leveraging this tradeoff at the system level. In this paper, we present a novel memory controller architecture and a RISC-V instruction set extension to optimize MLC NVM write operations by balancing speed and retention time. Our custom NVM controller, built around a finite state machine with an AXI memory-mapped interface, efficiently manages read/w",
-      "pdf_link": "https://arxiv.org/pdf/2608.06725.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.06725",
-      "submission_date": "2026-08-10T04:00:00+00:00",
+      "abstract": "arXiv:2608.06318v2 Announce Type: replace \nAbstract: As quantum computing continues to demonstrate promise and attract growing attention, there is an increasing need for more precise experiments to advance the development of quantum devices, as well as higher circuit throughput to validate more domain applications. However, this need is hindered by a memory bottleneck at the quantum control system layer, arising from limited on-chip BRAM capacity and the non-deterministic latency of DRAM. To break this bottleneck, we present Ant-Q, a memory hierarchy design that integrates DRAM with BRAM to support pipelined quantum circuit execution while ensuring deterministic inter-circuit timing. We evaluated Ant-Q using 26 real-world experimental and computing circuits. The results show that Ant-Q sup",
+      "pdf_link": "https://arxiv.org/pdf/2608.06318.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.06318",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-08-11T07:02:22.652037+00:00"
+    },
+    {
+      "forum_id": "2608.08611",
+      "paper_number": -1,
+      "title": "C2C-Explorer: An Exploration Framework for Chip-to-Chip Interconnect Architectures in LLM Cloud Computing Systems",
+      "authors": [
+        "Jiayi Li, Di Wu, Qingxu Li, Hongxiao Zhao, Jiaqi Yang, Anjunyi Fan, Wenbin Zhang, Boqiang Wu, Shuting Liu, Shifeng Fang, Jianbo Dong, Dimin Niu, Bonan Yan"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2608.08611v1 Announce Type: cross \nAbstract: The scaling-up of large language models (LLMs) necessitates computing systems to have multi-processor-chip architectures, elevating the importance of chip-to-chip (C2C) communication. However, designing efficient C2C hardware architectures for LLM workloads faces three key challenges: generating realistic LLM-specific C2C traffic, accurately simulating hardware-level communication at scale, and efficiently exploring the exponentially large C2C design space. We propose C2C-Explorer, an adaptive Bayesian DSE framework that integrates a LLM-workload-driven traffic generator, a scalable interconnect simulator (switch/full-mesh, up to 512 chips), and a metric-guided evaluator into a workload-to-hardware optimization pipeline, enabling systemati",
+      "pdf_link": "https://arxiv.org/pdf/2608.08611.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.08611",
+      "submission_date": "2026-08-11T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-08-10T07:26:25.277333+00:00"
+      "updated_at": "2026-08-11T07:02:22.651496+00:00"
     },
     {
-      "forum_id": "2604.26968",
+      "forum_id": "2608.04443",
       "paper_number": -1,
-      "title": "Predictive Multi-Tier Memory Management for KV Cache in Large-Scale GPU Inference",
+      "title": "MCHA: A Memory-Centric Hierarchical Architecture for Parallel-Sequential Computing",
       "authors": [
-        "Sanjeev Rao Ganjihal"
+        "Daijing Shi, Hongxiao Zhao, Yihan Fu, Zhan Chen, Jiayi Li, Yihang Zhu, Anjunyi Fan, Yaoyu Tao, Yuchao Yang, Bonan Yan"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2604.26968v2 Announce Type: replace \nAbstract: Key-value (KV) cache memory management is the primary bottleneck limiting throughput and cost-efficiency in large-scale GPU inference serving. Current systems suffer from three compounding inefficiencies: (1) the absence of unified KV cache sizing across all attention architectures--particularly multi-head latent attention (MLA), which is unsupported in general-purpose frameworks, resulting in up to 57x memory over-provisioning; (2) confinement of KV cache to a single memory tier (GPU HBM) despite the availability of a rich hierarchy spanning CPU DRAM, CXL-attached memory, NVMe via GPUDirect Storage, RDMA fabric, and parallel filesystems; and (3) reactive eviction policies that discard reusable state, forcing redundant recomputation. We ",
-      "pdf_link": "https://arxiv.org/pdf/2604.26968.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.26968",
-      "submission_date": "2026-08-10T04:00:00+00:00",
+      "abstract": "arXiv:2608.04443v2 Announce Type: replace \nAbstract: Emerging workloads, such as Multi-Agent Reinforcement Learning (MARL), large-scale neuromorphic computing, and probabilistic graphical models, intrinsically exhibit parallel-sequential computing patterns. While these tasks demand massive parallelism to achieve high throughput, they are severely bottlenecked by irregular data access patterns centralized to main memory. Consequently, conventional architectures face fundamental limitations when executing these workloads, primarily manifesting as global buffer saturation and memory-bound bottlenecks. To address these challenges, we propose the Memory-Centric Hierarchical Architecture (MCHA), a reconfigurable hardware solution tailored for parallel-sequential execution. MCHA leverages a hiera",
+      "pdf_link": "https://arxiv.org/pdf/2608.04443.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.04443",
+      "submission_date": "2026-08-11T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-08-10T07:26:25.277829+00:00"
-    },
-    {
-      "forum_id": "2605.03713",
-      "paper_number": -1,
-      "title": "SPEC CPU2026: Characterization, Representativeness, and Cross-Suite Comparison",
-      "authors": [
-        "Ruihao Li, Andrew Jacob, Neeraja J. Yadwadkar, Lizy K. John"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2605.03713v4 Announce Type: replace \nAbstract: Specialized accelerators dominate AI workloads, but CPUs remain critical for latency-sensitive workloads, agentic AI, and many other everyday services. Their performance therefore shapes end-to-end system efficiency, raising the question of whether the latest SPEC CPU benchmarks change the architectural conclusions drawn from prior generations. We comprehensively characterize SPEC CPU2026 across nine recent Intel, AMD, Ampere, and Nvidia platforms to understand how the new suite differs from its predecessors and what new capabilities it introduces. We observe that compared with SPEC CPU2017, SPEC CPU2026 increases instruction volume, memory footprint, and instruction-cache stress.\n  We also compare SPEC CPU2026 with SPEC CPU2017, recent ",
-      "pdf_link": "https://arxiv.org/pdf/2605.03713.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.03713",
-      "submission_date": "2026-08-10T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-10T07:26:25.277875+00:00"
+      "updated_at": "2026-08-11T07:02:22.651999+00:00"
     }
   ]
 }

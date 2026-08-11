@@ -1,100 +1,192 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-08-10T07:26:21.575708+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-08-11T07:01:42.674755+00:00",
+  "paper_count": 8,
   "papers": [
     {
-      "forum_id": "2604.26968",
+      "forum_id": "2608.07971",
       "paper_number": -1,
-      "title": "Predictive Multi-Tier Memory Management for KV Cache in Large-Scale GPU Inference",
+      "title": "ElastiCo: Elastic Configuration and Interference-Aware Orchestration for GPU Clusters",
       "authors": [
-        "Sanjeev Rao Ganjihal"
+        "Jinghao Wang, Yihang Zhou, Xiaoyang Sun, Chunming Hu, Tianyu Wo, Xu Wang, Albert Y. Zomaya, Renyu Yang"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2604.26968v2 Announce Type: replace-cross \nAbstract: Key-value (KV) cache memory management is the primary bottleneck limiting throughput and cost-efficiency in large-scale GPU inference serving. Current systems suffer from three compounding inefficiencies: (1) the absence of unified KV cache sizing across all attention architectures--particularly multi-head latent attention (MLA), which is unsupported in general-purpose frameworks, resulting in up to 57x memory over-provisioning; (2) confinement of KV cache to a single memory tier (GPU HBM) despite the availability of a rich hierarchy spanning CPU DRAM, CXL-attached memory, NVMe via GPUDirect Storage, RDMA fabric, and parallel filesystems; and (3) reactive eviction policies that discard reusable state, forcing redundant recomputatio",
-      "pdf_link": "https://arxiv.org/pdf/2604.26968.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.26968",
-      "submission_date": "2026-08-10T04:00:00+00:00",
+      "abstract": "arXiv:2608.07971v1 Announce Type: new \nAbstract: Modern GPU clusters must simultaneously serve deep learning training and offline large language model inference workloads, yet existing schedulers treat these as isolated resource consumers with rigid, static allocations. This leaves substantial GPU capacity underutilized: training jobs reserve entire devices despite periodic idle phases, while offline inference tasks over-provision GPUs despite bursty demand patterns. We present ElastiCo, an elastic co-location framework that enables training and inference workloads to safely share GPUs through three integrated mechanisms. First, Resource Shape Transformation exposes each job as a family of feasible resource-performance configurations. Second, Elastic Shadow Pricing decomposes the resulting",
+      "pdf_link": "https://arxiv.org/pdf/2608.07971.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.07971",
+      "submission_date": "2026-08-11T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 53.5,
-      "updated_at": "2026-08-10T07:26:21.228776+00:00"
+      "score": 34.0,
+      "updated_at": "2026-08-11T07:01:42.304309+00:00"
     },
     {
-      "forum_id": "2608.06441",
+      "forum_id": "2607.15511",
       "paper_number": -1,
-      "title": "SNI-GNN: SmartNIC-Assisted Full-Graph GNN Training with In-Network Embedding Prediction",
+      "title": "An Auto-Scaling Approach for Serverless Environments Based on a Multi-Expert Consensus Mechanism",
       "authors": [
-        "Guofan Yu, Sitian Chen, Zhenheng Tang, Xiaowen Chu, Amelie Chi Zhou"
+        "Mobina Kashaniyan, Mehrdad Ashtiani, Amirhossein Ghassemi"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.06441v1 Announce Type: cross \nAbstract: Full-graph GNN training delivers high accuracy but scales poorly on multi-server clusters due to heavy, irregular inter-node embedding exchanges. We present SNI-GNN, a SmartNIC-assisted full-graph training system that reduces communication while preserving accuracy by predicting remote embeddings in-network. SNI-GNN deploys a lightweight linear-trend predictor on SmartNICs to refine cached historical embeddings, coupled with an importance-based boundary-node sampling policy and an asynchronous DPU--GPU data pipeline with intermediate-result reuse. We provide error and convergence bounds showing that predictor bias remains controlled under bounded second-order dynamics and yields standard non-convex convergence with inexact gradients. Imple",
-      "pdf_link": "https://arxiv.org/pdf/2608.06441.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.06441",
-      "submission_date": "2026-08-10T04:00:00+00:00",
+      "abstract": "arXiv:2607.15511v2 Announce Type: replace-cross \nAbstract: Serverless computing provides automatic resource management and pay-per-use execution, but effective autoscaling remains challenging because of dynamic workloads, cold-start latency, and dependencies among functions. We present a dependency-aware autoscaling framework that integrates graph-based bottleneck identification, short-term workload forecasting, multi-model consensus, and cost-aware scaling control. Serverless applications are represented as directed dependency graphs, and structurally important functions are identified using weighted degree centrality. Resource demand is predicted using lightweight MLP, LSTM, and CNN models. Their outputs are combined through a performance-weighted probabilistic ensemble inspired by Bayes",
+      "pdf_link": "https://arxiv.org/pdf/2607.15511.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.15511",
+      "submission_date": "2026-08-11T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-08-10T07:26:21.228165+00:00"
+      "score": 31.0,
+      "updated_at": "2026-08-11T07:01:42.307695+00:00"
     },
     {
-      "forum_id": "2608.06987",
+      "forum_id": "2608.08382",
       "paper_number": -1,
-      "title": "A Kubernetes Scheduler Plugin for Cluster-Wide Placement Optimisation",
+      "title": "LLMVisor: A Real-Time Latency Attribution Model for Multi-Tenant LLM Serving",
       "authors": [
-        "Henrik Daniel Christensen, Saverio Giallorenzo, Jacopo Mauro"
+        "Shuowei Jin, Xueshen Liu, Jiaxin Shan, Le Xu, Tieying Zhang, Liguang Xie, Z. Morley Mao"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.06987v1 Announce Type: new \nAbstract: The default scheduler of Kubernetes, the state-of-the-art container orchestrator, uses fast, local placement decisions. Unfortunately, this design leads to resource fragmentation, reduced cluster usage, and overprovisioning. External solvers can compute global placement plans, but enforcing these plans in upstream clusters is hard. Kubernetes provides no native cross-node preemption, uncoordinated concurrent scheduling leads to inconsistencies, and replacing the default scheduler would sever deployments from upstream cycles. We present OPSche, an open-source Kubernetes Scheduling Framework plugin where external solvers can drive cluster-wide placement decisions in concert with the default scheduler. OPSche atomically validates and enforces s",
-      "pdf_link": "https://arxiv.org/pdf/2608.06987.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.06987",
-      "submission_date": "2026-08-10T04:00:00+00:00",
+      "abstract": "arXiv:2608.08382v1 Announce Type: cross \nAbstract: As LLM inference shifts to multi-tenant GPU clusters, co-batching improves throughput but obscures per-tenant usage and limits control. Enabling fractional sharing of the inference engine requires a real-time, per-request attribution primitive that is accurate and light enough to run inside the scheduling loop. We present LLMVisor, a roofline-guided latency attribution model that captures the memory-bound and compute-bound phases via a concise piecewise-linear form over features proportional to FLOPs and memory I/O traffic. LLMVisor decomposes batch latency into additive, per-request shares and runs efficiently at microsecond scale. We evaluate LLMVisor across Llama 3.1-8B and Qwen 2.5-14B/32B on A100/H100 GPUs under varying tensor paralle",
+      "pdf_link": "https://arxiv.org/pdf/2608.08382.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.08382",
+      "submission_date": "2026-08-11T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-08-10T07:26:21.227981+00:00"
+      "score": 25.0,
+      "updated_at": "2026-08-11T07:01:42.306018+00:00"
     },
     {
-      "forum_id": "2511.22481",
+      "forum_id": "2608.09359",
       "paper_number": -1,
-      "title": "OmniInfer: System-Wide Acceleration Techniques for Optimizing LLM Serving Throughput and Latency",
+      "title": "How Accurately Can the Energy Use of Spark Applications Be Estimated Based on Resource Utilisation?",
       "authors": [
-        "Jun Wang, Yunxiang Yao, Wenwei Kuang, Runze Mao, Zhenhao Sun, Zhuang Tao, Ziyang Zhang, Dengyu Li, Jiajun Chen, Zhili Wang, Kai Cui, Congzhi Cai, Longwen Lan, Ken Zhang"
+        "Youssef Moawad, Kathleen West, Vasilis Bountris, Philipp Thamm, Yehia Elkhatib, Lauritz Thamsen"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2511.22481v2 Announce Type: replace \nAbstract: Large Language Models drive a wide range of modern AI applications but impose substantial challenges on large-scale serving systems due to intensive computation, strict latency constraints, and throughput bottlenecks. We introduce OmniInfer, a unified system-level acceleration framework designed to maximize end-to-end serving efficiency through fine-grained optimization of expert placement, cache compression, and scheduling. OmniInfer integrates three complementary components: OmniPlacement for load-aware Mixture-of-Experts scheduling, OmniAttn for sparse attention acceleration, and OmniProxy for disaggregation-aware request scheduling. Built atop vLLM, OmniInfer delivers system-wide performance gains through adaptive resource disaggrega",
-      "pdf_link": "https://arxiv.org/pdf/2511.22481.pdf",
-      "forum_link": "https://arxiv.org/abs/2511.22481",
-      "submission_date": "2026-08-10T04:00:00+00:00",
+      "abstract": "arXiv:2608.09359v1 Announce Type: new \nAbstract: Distributed batch data processing applications are widely executed on cloud-based resources where restricted user access to node-level hardware energy counters hinders transparent sustainability accounting. Energy and carbon attribution methodologies therefore depend on power models and available resource utilisation traces, yet the accuracy of these estimates has to be validated while direct counters are available. In this work, we use Apache Spark running on Kubernetes as a case-study dataflow runtime and cluster resource manager to compare model-based energy estimates to Intel RAPL package and DRAM energy on an AWS bare-metal cloud and an on-premises cluster, comparing different CPU usage signals and memory coefficients. We show that exte",
+      "pdf_link": "https://arxiv.org/pdf/2608.09359.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.09359",
+      "submission_date": "2026-08-11T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-08-10T07:26:21.228658+00:00"
+      "score": 24.5,
+      "updated_at": "2026-08-11T07:01:42.305195+00:00"
+    },
+    {
+      "forum_id": "2608.09308",
+      "paper_number": -1,
+      "title": "Beyond the Limits: Flexible and Congestion-Aware Cluster Scheduling for the Cloud",
+      "authors": [
+        "Oliver Larsson (Ume{\\aa} University), Thijs Metsch (Unaffiliated), Cristian Klein (Ume{\\aa} University), Erik Elmroth (Ume{\\aa} University)"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2608.09308v1 Announce Type: new \nAbstract: Workload scheduling in cloud environments often relies on simplistic assumptions about application resource needs and hardware utilization. Overlooking application-level performance objectives and hardware resource contention that leads to inefficient resource usage and degraded performance. This paper addresses two key limitations of current approaches. First, unnecessarily strict enforcement of service level objectives (SLOs) often leads to resource underutilization and poor energy efficiency. Second, lack of congestion awareness in shared resources such as last-level cache (LLC) and memory bandwidth. In this paper, we propose two complementary strategies to address these limitations: (i) integrating soft SLO limits that allow controlled o",
+      "pdf_link": "https://arxiv.org/pdf/2608.09308.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.09308",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 16.0,
+      "updated_at": "2026-08-11T07:01:42.305150+00:00"
+    },
+    {
+      "forum_id": "2608.08111",
+      "paper_number": -1,
+      "title": "Hierarchical Multi-Task Federated Learning in VANETs",
+      "authors": [
+        "M. Saeid HaghighiFard, Sinem Coleri"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2608.08111v1 Announce Type: cross \nAbstract: Vehicular Ad hoc Networks (VANETs) increasingly rely on federated learning (FL) to enable collaborative intelligence without sharing raw sensory data. However, most existing vehicular FL frameworks assume that all vehicles train a single global model for a common task, which limits their applicability in practical vehicular environments where vehicles may perform heterogeneous learning tasks under non-independent and identically distributed (non-IID) data, intermittent connectivity, and high mobility. To address these challenges, this paper proposes an AutoEncoder-based Reliability-Optimized Hierarchical Multi-Task Federated Learning (AERO-HMTFL) framework for dynamic multi-hop clustered VANETs. The proposed framework introduces a tri-weig",
+      "pdf_link": "https://arxiv.org/pdf/2608.08111.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.08111",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.0,
+      "updated_at": "2026-08-11T07:01:42.305825+00:00"
+    },
+    {
+      "forum_id": "2604.12673",
+      "paper_number": -1,
+      "title": "Intelligent resource prediction for SAP HANA continuous integration build workloads",
+      "authors": [
+        "Torsten Mandel, Jonathan Bader, Hanyoung Yoo, Stephan Kraft"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2604.12673v2 Announce Type: replace \nAbstract: Large enterprises often operate extensive Continuous Integration (CI) pipelines on large, heterogeneous compute clusters, where conservative, statically defined resource requirements are used to ensure build reliability. This practice leads to substantial system memory over-allocation, reduced cluster utilization, and increased operational costs. In this paper, we motivate the need for intelligent resource prediction by analyzing over 300,000 historical build executions from a production CI environment with more than one thousand compute nodes. Our analysis shows that, on average, more than 60% of allocated system memory remains unused. We then compare multiple machine learning approaches for predicting build task memory usage, including",
+      "pdf_link": "https://arxiv.org/pdf/2604.12673.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.12673",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-08-11T07:01:42.307061+00:00"
+    },
+    {
+      "forum_id": "2608.09173",
+      "paper_number": -1,
+      "title": "A Resource-centric Analysis and Optimization of NoSQL Workloads using Distressed Resource Volume Metric",
+      "authors": [
+        "Gunika Verma, Aashutosh A V, Pooja Srinivas, Yogesh Simmhan, Ayush Choure, Harshit Shah, Mayukh Das, Prashant Sasatte, Chetan Bansal, Abhijit Pai, Suraj Dixit, Achint Agrawal"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2608.09173v1 Announce Type: new \nAbstract: Large-scale managed cloud databases leverage sophisticated load Packing and Migration (PAM) algorithms, which provide the efficiencies necessary for running these services at scale on cloud resources. Research into optimizing the resources and reliability of cloud databases at massive scales is limited by a lack of public NoSQL workloads. We address this in the context of Cosmos DB, Microsoft's flagship cloud-hosted NoSQL database. We first propose open-source NoSQL workloads from real Cosmos DB clusters, and analyze these traces to derive a novel reliability metric, Distressed Resource Volume (DRV), which captures the quality of service experienced by the end user. We then develop an open-source policy simulation framework, LoadStar, powere",
+      "pdf_link": "https://arxiv.org/pdf/2608.09173.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.09173",
+      "submission_date": "2026-08-11T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-08-11T07:01:42.304990+00:00"
     }
   ]
 }
