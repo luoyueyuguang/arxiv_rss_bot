@@ -1,36 +1,13 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-08-11T07:01:42.231986+00:00",
-  "paper_count": 6,
+  "last_updated": "2026-08-12T07:24:05.661115+00:00",
+  "paper_count": 1,
   "papers": [
-    {
-      "forum_id": "2607.18727",
-      "paper_number": -1,
-      "title": "Formal Verification of an Out-of-Order Multiprocessor against an In-Order Weak-Memory ISA",
-      "authors": [
-        "Janggun Lee, Jeehoon Kang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "ISCA"
-      ],
-      "abstract": "arXiv:2607.18727v1 Announce Type: cross \nAbstract: Out-of-order multiprocessor is a critical piece of modern hardware, and their verification must solve the following challenges. First, inter-core interleaving, in which the order their reads and writes reach shared memory is unrestricted. Second, intra-core out-of-order execution, in which instructions fire out of program order. The combination of the two yields weak outcomes, which no sequential execution explains, and modern ISA allows such behaviors to account for them. However, the microarchitecture even exhibits excess out-of-order executions, temporarily entering states forbidden by the ISA. While discarded later, such states complicate reasoning about the core in full-system verification. Prior works verify a range of processor desi",
-      "pdf_link": "https://arxiv.org/pdf/2607.18727.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.18727",
-      "submission_date": "2026-08-11T04:00:00+00:00",
-      "conference": "ISCA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 46.5,
-      "updated_at": "2026-08-11T07:01:42.224010+00:00"
-    },
     {
       "forum_id": "2602.12596",
       "paper_number": -1,
-      "title": "Arcal\\'{\\i}s: Accelerating Remote Procedure Calls Using a L\\'{i}ghtweight Near-Cache Solution",
+      "title": "Arcal\\'{i}s: Accelerating Remote Procedure Calls Using a L\\'{i}ghtweight Near-Cache Solution",
       "authors": [
         "Johnson Umeike (University of Maryland, College Park), Pongstorn Maidee (AMD Research,Advanced Development), Bahar Asgari (University of Maryland, College Park)"
       ],
@@ -38,109 +15,17 @@
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2602.12596v2 Announce Type: replace \nAbstract: Modern microservices increasingly depend on high-performance remote procedure calls (RPCs) to coordinate fine-grained, distributed computation. As network bandwidths continue to scale, the CPU overhead associated with RPC processing, particularly serialization, deserialization, and protocol handling, has become a critical bottleneck. This challenge is exacerbated by fast user-space networking stacks such as DPDK, which expose RPC processing as the dominant performance limiter. While prior hardware accelerators have explored NIC-attached and FPGA-based offload, these approaches remain farther from the cache hierarchy, so the frequent data accesses during RPC processing each pay an extra interconnect traversal cost that inflates RPC time. ",
+      "abstract": "arXiv:2602.12596v3 Announce Type: replace \nAbstract: Modern microservices increasingly depend on high-performance remote procedure calls (RPCs) to coordinate fine-grained, distributed computation. As network bandwidths continue to scale, the CPU overhead associated with RPC processing, particularly serialization, deserialization, and protocol handling, has become a critical bottleneck. This challenge is exacerbated by fast user-space networking stacks such as DPDK, which expose RPC processing as the dominant performance limiter. While prior hardware accelerators have explored NIC-attached and FPGA-based offload, these approaches remain farther from the cache hierarchy, so the frequent data accesses during RPC processing each pay an extra interconnect traversal cost that inflates RPC time. ",
       "pdf_link": "https://arxiv.org/pdf/2602.12596.pdf",
       "forum_link": "https://arxiv.org/abs/2602.12596",
-      "submission_date": "2026-08-11T04:00:00+00:00",
+      "submission_date": "2026-08-12T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 34.5,
-      "updated_at": "2026-08-11T07:01:42.224241+00:00"
-    },
-    {
-      "forum_id": "2608.07625",
-      "paper_number": -1,
-      "title": "HINT: Toward an Executable Hardware-Intent Representation Layer for LLM-Driven RTL Generation",
-      "authors": [
-        "Tairan Cheng, Yi Liu, Dongsheng Zuo, Zhengyuan Shi, Hongji Zhang, Xiangfei Hu, Maoshuo He, Hao Yan, Qiang Xu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2608.07625v1 Announce Type: new \nAbstract: Generating implementation-quality RTL with large language models (LLMs) remains difficult because direct generation must resolve microarchitecture while simultaneously producing and debugging low-level code. We present HINT, an executable hardware-intent intermediate representation layer between behavioral specifications or executable oracles and RTL. HINT makes RTL-relevant microarchitecture explicit, supports pre-RTL checking, and supplies explicit RTL-lowering obligations. We evaluate HINT using both a minimal single-agent flow and a full staged workflow. Across seven operator cases, the HINT-mediated route, with no post-synthesis QoR refinement, produces contract-compliant synthesizable RTL on 7/7 cases; Direct C2RTL and C2HLSC apply to ",
-      "pdf_link": "https://arxiv.org/pdf/2608.07625.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.07625",
-      "submission_date": "2026-08-11T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-08-11T07:01:42.223816+00:00"
-    },
-    {
-      "forum_id": "2608.09874",
-      "paper_number": -1,
-      "title": "ArchAgent v2: A Case Study with the Data Prefetching Championship",
-      "authors": [
-        "Abraham Gonzalez, Raghav Gupta, Akanksha Jain, Hanna Alam, Alexander Novikov, Po-Sen Huang, Matej Balog, Marvin Eisenberger, Sergey Shirobokov, Ng\\^an V\\~u, Hank Levy, Borivoje Nikoli\\'c, Sagar Karandikar, Martin Dixon, Parthasarathy Ranganathan"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2608.09874v1 Announce Type: cross \nAbstract: Agentic artificial intelligence has shown great promise in automating algorithm design, but scaling similar techniques to computer microarchitecture discovery remains challenging due to vast search spaces, strict hardware budgets, and long simulation times. In this work, we present ArchAgent v2, a framework which scales automated microarchitecture search to multi-level data prefetching. While the original ArchAgent successfully discovered single-level cache replacement policies in competition settings, it does not scale to multi-level prefetching where the design space and degrees of freedom are larger. To overcome this, we introduce two new additions to ArchAgent: a cascaded evolutionary search that subdivides the design space by sequenti",
-      "pdf_link": "https://arxiv.org/pdf/2608.09874.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.09874",
-      "submission_date": "2026-08-11T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-08-11T07:01:42.224194+00:00"
-    },
-    {
-      "forum_id": "2608.09075",
-      "paper_number": -1,
-      "title": "SLAC: Access-Driven CPU-to-GPU Side-channel Attacks via System-Level Cache on Apple Silicon",
-      "authors": [
-        "Tianhong Xu, Saion K. Roy, Ruyi Ding, Aidong Adam Ding, Yunsi Fei"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2608.09075v1 Announce Type: cross \nAbstract: Modern heterogeneous System-on-Chip designs integrate CPU cores and a GPU that share a last-level cache (LLC) or system-level cache (SLC). This sharing exposes a new cross-domain attack surface, and existing attacks on integrated platforms either exploit coarse-grained cache-occupancy contention or require the adversary to co-reside on the GPU with the victim to obtain accurate timing measurements. In this work, we target Apple Silicon heterogeneous SoCs and discover that GPU memory accesses leave set-level footprints in the shared SLC, observable to an unprivileged CPU process. This keen observation enables the first fine-grained, access-driven, Prime+Probe-style CPU-to-GPU cache side-channel attacks against GPU workloads. We first revers",
-      "pdf_link": "https://arxiv.org/pdf/2608.09075.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.09075",
-      "submission_date": "2026-08-11T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-08-11T07:01:42.224180+00:00"
-    },
-    {
-      "forum_id": "2608.08285",
-      "paper_number": -1,
-      "title": "Ego-OSCAR: Egocentric Open source Stereo CAptuRe System",
-      "authors": [
-        "Gunjan Paul, Senthil Palanisamy, Satpal Singh Rathore, Pratyush Kumar Patnaik, Shubhanshu Khatana, Abhishek Anand"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2608.08285v1 Announce Type: cross \nAbstract: We present Ego-OSCAR, an open-hardware, low-cost, head-mounted stereo-inertial capture device for egocentric data collection in the wild. EgoOSCAR pairs a hardware-synchronized global-shutter stereo camera with a 6- axis IMU, an embedded Linux SBC for on-device video encoding, and a realtime microcontroller for user feedback and watchdog functions. The complete bill of materials is under USD 200 per unit, using only commercially available components and 3D-printed parts. Alongside the device, we release a complete software stack (hardware-accelerated recording pipeline, IMU sampling daemon, time-synchronization tooling, and watchdog firmware) and roughly 550 hours of egocentric stereo video per camera with synchronized IMU, collected by a ",
-      "pdf_link": "https://arxiv.org/pdf/2608.08285.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.08285",
-      "submission_date": "2026-08-11T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-11T07:01:42.224102+00:00"
+      "updated_at": "2026-08-12T07:24:05.658006+00:00"
     }
   ]
 }
