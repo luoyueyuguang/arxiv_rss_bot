@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-08-12T07:24:11.334276+00:00",
-  "paper_count": 441,
+  "last_updated": "2026-08-13T07:46:16.868358+00:00",
+  "paper_count": 438,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -4680,6 +4680,29 @@
       "updated_at": "2026-07-21T08:54:22.932752+00:00"
     },
     {
+      "forum_id": "2608.12123",
+      "paper_number": -1,
+      "title": "Ready Cohorts: Bounding GPU Opportunity and Avoiding Host Round Trips in LLM-Agent Control",
+      "authors": [
+        "Josef Liyanjun Chen"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.12123v1 Announce Type: cross \nAbstract: LLM-agent services repeatedly execute small deterministic transitions between model and tool calls: route an outcome, update state, and emit the next effect. We ask when this control path exposes enough concurrent work for GPU execution, and what changes when a GPU-computed route decision remains on device. We formalize the ready-cohort boundary using fixed-partition share F, exact offline share P*, local upper bound U, and online achieved share A. Under zero service time, unlimited capacity, and equal relative launch deadlines, a specialized dynamic program computes P* exactly. In a stationary Poisson replay of one pinned 851-session public trace panel, the primary condition at 100,000 target active sessions, K=256, and a 50 ms launch dea",
+      "pdf_link": "https://arxiv.org/pdf/2608.12123.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.12123",
+      "submission_date": "2026-08-13T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 21.5,
+      "updated_at": "2026-08-13T07:46:13.926048+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-60",
       "paper_number": 60,
       "title": "Geminet: Learning the Duality-based Topology-Agnostic Update Operator for Lightweight Traffic Engineering in Changing Topologies",
@@ -6751,29 +6774,6 @@
       "updated_at": "2026-07-21T08:54:26.737683+00:00"
     },
     {
-      "forum_id": "2608.10576",
-      "paper_number": -1,
-      "title": "Stream Decoding with Confidence Scores at Room and Cryogenic Temperatures",
-      "authors": [
-        "Maries Tahaab, Tim Chan, James Kirkman, Simon C. Benjamin"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.10576v1 Announce Type: cross \nAbstract: In fault-tolerant quantum computing, fast and accurate decoding is crucial. Snowflake is a decoder for the surface code that runs in a streaming fashion. In this paper, we implement Snowflake on commercial FPGAs and validate them at room and cryogenic temperatures. Our results demonstrate high decoding throughput for small code distances that, when extrapolated, remains within acceptable limits for larger distances. Further, we incorporate the calculation of certain decoder confidence scores with negligible overhead both in terms of latency and physical resource utilisation. We note that implementing a large-scale system would require either a large FPGA beyond today's technology or clusters of FPGAs connected via a high-speed bus. Thus, w",
-      "pdf_link": "https://arxiv.org/pdf/2608.10576.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.10576",
-      "submission_date": "2026-08-12T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 5.5,
-      "updated_at": "2026-08-12T07:24:06.440426+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-46",
       "paper_number": 46,
       "title": "RollPacker: Taming Long-Tail Rollouts for RL Post-Training with Tail Batching",
@@ -6845,29 +6845,6 @@
       "ratings": [],
       "score": 5.5,
       "updated_at": "2026-07-21T08:54:22.940695+00:00"
-    },
-    {
-      "forum_id": "2608.10188",
-      "paper_number": -1,
-      "title": "What Actually Serializes GPU LZ77 Decode: Three Decoders, Three Mechanisms, and an Encode-Time Lever That Removes the Last One",
-      "authors": [
-        "Yakiv Shavidze"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.10188v1 Announce Type: new \nAbstract: The sequential part of GPU LZ77 decode is not where the field assumes it is. Across three decoder architectures on an H100 we measure that parse, not copy, holds 64-72% of device-resident decode time; that bounding back-reference chain depth - provable, and costing 0.006% in ratio - moves latency by at most 2.8% and, for the file's own latency spike, provably by nothing at all, since a byte-level comparison of all 15,499 blocks shows the cap alters none of the 181 blocks involved; that self-overlapping matches are periodic fills rather than dependency chains, which makes them fully parallel and speeds the match layer by 2.75-8.42x bit-perfect; and that the last genuinely sequential element, a four-entry distance history, can be removed by th",
-      "pdf_link": "https://arxiv.org/pdf/2608.10188.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.10188",
-      "submission_date": "2026-08-12T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 5.0,
-      "updated_at": "2026-08-12T07:24:06.439283+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-8",
@@ -8230,29 +8207,6 @@
       "updated_at": "2026-07-21T08:54:22.938822+00:00"
     },
     {
-      "forum_id": "2608.10586",
-      "paper_number": -1,
-      "title": "FaCTz: Fast Critical-Point and Topology-Aware GPU Compression for Scientific Vector Fields",
-      "authors": [
-        "Mingze Xia, Yuxiao Li, Sheng Di, Jiannan Tian, Baixi Sun, Boyi Zhang, Bei Wang, Hanqi Guo, Xin Liang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.10586v1 Announce Type: new \nAbstract: Error-bounded lossy compression is essential for storing and transferring the vector-field data produced by large-scale scientific simulations. Although it enforces a user-specified error bound to limit numerical distortion, it does not preserve the field's topology: small admissible perturbations can create or eliminate critical points on which downstream feature analysis depends. Existing GPU compressors achieve high throughput but are topology-agnostic, whereas the only compressor with provable critical-point preservation (cpSZ) runs on the CPU at throughput far below the data-generation rates of modern GPU-based systems. We observe that, although preserving critical points is inherently a coupled and sequential constraint, it can be refo",
-      "pdf_link": "https://arxiv.org/pdf/2608.10586.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.10586",
-      "submission_date": "2026-08-12T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-08-12T07:24:06.439321+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-22",
       "paper_number": 22,
       "title": "ValScope: Value-Semantics-Aware Metamorphic Testing for Detecting Logical Bugs in DBMSs",
@@ -8542,29 +8496,6 @@
       "ratings": [],
       "score": 2.5,
       "updated_at": "2026-07-21T08:54:26.744870+00:00"
-    },
-    {
-      "forum_id": "2608.10714",
-      "paper_number": -1,
-      "title": "Conversational Orchestration for Organic 6G",
-      "authors": [
-        "Masoud Shokrnezhad, Tarik Taleb"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.10714v1 Announce Type: cross \nAbstract: The Organic 6G vision of a network of networks spanning an edge-cloud continuum complemented by non-terrestrial resources requires, to realize its promise, service provisioning that is simple to operate, scalable across independently administered domains, and agile under domain churn (i.e., domains dynamically joining and leaving). Despite advances in cross-domain orchestration, many proposals rely on heavy integration fabrics, multi-layer coordinators, and deep telemetry pipelines that hinder deployability and amplify coordination overhead. We propose a lightweight, decentralized conversational orchestration framework based on Large Language Model (LLM)-driven domain agents. Each domain remains autonomous: an agent observes local state vi",
-      "pdf_link": "https://arxiv.org/pdf/2608.10714.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.10714",
-      "submission_date": "2026-08-12T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-08-12T07:24:06.440461+00:00"
     },
     {
       "forum_id": "usenix-osdi26-10",

@@ -1,6 +1,6 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-08-12 07:24:06 UTC
+- **Last Updated**: 2026-08-13 07:46:13 UTC
 - **Total Filtered Papers**: 2
 - **Displaying**: 2 (arxiv: 2)
 - **Papers with Ratings**: 0
@@ -9,5 +9,5 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [ClusterBench: A Framework for Cluster-Wide Continuous Benchmarking and Regression Testing](https://arxiv.org/abs/2608.10956) | `ARXIV` | 27.0 |
-| 2 | [Stream Decoding with Confidence Scores at Room and Cryogenic Temperatures](https://arxiv.org/abs/2608.10576) | `ARXIV` | 22.0 |
+| 1 | [Descriptive Dispatch of Computational Work](https://arxiv.org/abs/2608.11524) | `ARXIV` | 23.0 |
+| 2 | [An Event-Driven Cloud-Native Wearable Analytics Framework for Real-Time Clinical Workloads](https://arxiv.org/abs/2608.11402) | `ARXIV` | 1.0 |

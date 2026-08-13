@@ -1,7 +1,7 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-08-12T07:24:50.870667+00:00",
+  "last_updated": "2026-08-13T07:47:00.353913+00:00",
   "paper_count": 500,
   "papers": [
     {
@@ -11258,6 +11258,29 @@
       "updated_at": "2026-07-23T08:28:58.706199+00:00"
     },
     {
+      "forum_id": "2608.11274",
+      "paper_number": -1,
+      "title": "Agent Safety Should Be a Runtime Contract",
+      "authors": [
+        "Albus W. Ng, Yi Han, Jusheng Zhang, Wenhao Wang"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ICML"
+      ],
+      "abstract": "arXiv:2608.11274v1 Announce Type: cross \nAbstract: The dominant paradigm treats AI safety as a property to be instilled during model training via RLHF, DPO, or Constitutional AI. We argue this is structurally insufficient for autonomous agents that execute code, mutate files, send messages, and modify databases. Agent safety should be a runtime contract enforced by the harness, and the contract has two complementary faces. The preventive face blocks dangerous actions before they happen via sandboxes, permission gates, output filters, and trajectory monitors. The evidential face requires verifiable proof that good actions actually happened, gating task submission on hard evidence such as test runs, log captures, file diffs, and citation grounding. We ground the position in four lines of pub",
+      "pdf_link": "https://arxiv.org/pdf/2608.11274.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.11274",
+      "submission_date": "2026-08-13T04:00:00+00:00",
+      "conference": "ICML",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 52.0,
+      "updated_at": "2026-08-13T07:46:17.224368+00:00"
+    },
+    {
       "forum_id": "mlr-icml25-52",
       "paper_number": 52,
       "title": "Sub-goal Distillation: A Method to Improve Small Language Agents",
@@ -12327,32 +12350,6 @@
       "ratings": [],
       "score": 34.5,
       "updated_at": "2026-07-17T08:05:52.793918+00:00"
-    },
-    {
-      "forum_id": "neurips25-526",
-      "paper_number": 526,
-      "title": "Activation Control for Efficiently Eliciting Long Chain-of-thought Ability of Language Models",
-      "authors": [
-        "Zekai Zhao",
-        "Qi Liu",
-        "Kun Zhou",
-        "Zihan Liu",
-        "Yifei Shao",
-        "Zhiting Hu",
-        "Biwei Huang"
-      ],
-      "keywords": [],
-      "abstract": "",
-      "pdf_link": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/1951d443ea67f8fbcfe56622734a2edf-Abstract-Conference.html",
-      "forum_link": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/1951d443ea67f8fbcfe56622734a2edf-Abstract-Conference.html",
-      "submission_date": null,
-      "conference": "NeurIPS '25",
-      "source": "neurips",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 34.5,
-      "updated_at": "2026-08-05T08:31:37.134745+00:00"
     }
   ]
 }

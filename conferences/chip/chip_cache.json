@@ -1,54 +1,54 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-08-12T07:24:11.391345+00:00",
+  "last_updated": "2026-08-13T07:46:16.938845+00:00",
   "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2608.10116",
+      "forum_id": "2608.11688",
       "paper_number": -1,
-      "title": "Monophonic Audio Synthesizer Using FPGAs",
+      "title": "APEX: Adaptive Expert Prefetching for Memory-Efficient Edge MoE Inference",
       "authors": [
-        "Michael Smith, D. G. Perera"
+        "Alish Kanani, Layan Badawi, Umit Y. Ogras"
       ],
       "keywords": [
         "cs.AR",
-        "FPGA"
+        "DATE"
       ],
-      "abstract": "arXiv:2608.10116v1 Announce Type: new \nAbstract: Signal synthesis is used in every aspect of the electronics world, where sinusoidal waveforms are used to perform functions such as clocking, signal transmission, feedback controls, and other applications. Digital synthesis is the method of approximating sinusoidal waveforms using digital logic, where the waveform is approximated to an accurate degree at a specific frequency which can be either implemented digitally or converted into the analog domain for use elsewhere. This project details the creation of a digital synthesizer commonly used for professional audio applications through the implementation of hardware in an FPGA.",
-      "pdf_link": "https://arxiv.org/pdf/2608.10116.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.10116",
-      "submission_date": "2026-08-12T04:00:00+00:00",
-      "conference": "FPGA",
+      "abstract": "arXiv:2608.11688v1 Announce Type: new \nAbstract: Mixture-of-Experts (MoE) models are attractive for edge deployment because they provide high model capacity while activating only a small subset of parameters per token, improving compute efficiency. However, MoE inference at the edge is fundamentally limited by memory. Expert parameters are large and often reside in off-chip memory due to capacity, cost, and power constraints, putting expert loading to the critical path. We present APEX: Adaptive Expert Prefetching, a predictive resource management framework that overlaps expert loading with useful computation. APEX introduces a lightweight prefetch router that predicts candidate experts before the attention block to dynamically fetch additional experts using a learned confidence model. Thi",
+      "pdf_link": "https://arxiv.org/pdf/2608.11688.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.11688",
+      "submission_date": "2026-08-13T04:00:00+00:00",
+      "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-08-12T07:24:11.388252+00:00"
+      "score": 2.0,
+      "updated_at": "2026-08-13T07:46:16.935942+00:00"
     },
     {
-      "forum_id": "2602.12596",
+      "forum_id": "2608.11577",
       "paper_number": -1,
-      "title": "Arcal\\'{i}s: Accelerating Remote Procedure Calls Using a L\\'{i}ghtweight Near-Cache Solution",
+      "title": "Uni-SFU: Algorithm-HW Co-Design for Universal SFUs via Mixed-Degree Piecewise Approximation",
       "authors": [
-        "Johnson Umeike (University of Maryland, College Park), Pongstorn Maidee (AMD Research,Advanced Development), Bahar Asgari (University of Maryland, College Park)"
+        "Miao Sun, Yucheng Huang, Mingcong Cao, Jaehyun Park, Partha Pratim Pande, Umit Y. Ogras"
       ],
       "keywords": [
         "cs.AR",
-        "FPGA"
+        "DATE"
       ],
-      "abstract": "arXiv:2602.12596v3 Announce Type: replace \nAbstract: Modern microservices increasingly depend on high-performance remote procedure calls (RPCs) to coordinate fine-grained, distributed computation. As network bandwidths continue to scale, the CPU overhead associated with RPC processing, particularly serialization, deserialization, and protocol handling, has become a critical bottleneck. This challenge is exacerbated by fast user-space networking stacks such as DPDK, which expose RPC processing as the dominant performance limiter. While prior hardware accelerators have explored NIC-attached and FPGA-based offload, these approaches remain farther from the cache hierarchy, so the frequent data accesses during RPC processing each pay an extra interconnect traversal cost that inflates RPC time. ",
-      "pdf_link": "https://arxiv.org/pdf/2602.12596.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.12596",
-      "submission_date": "2026-08-12T04:00:00+00:00",
-      "conference": "FPGA",
+      "abstract": "arXiv:2608.11577v1 Announce Type: new \nAbstract: Nonlinear activation functions are essential to modern deep neural networks (DNNs), but their hardware evaluation places significant pressure on the special-function units (SFUs) of GPUs and custom accelerators. Therefore, piecewise polynomial approximations are commonly used within allowed error bounds to improve computational efficiency. However, existing techniques often approximate each activation function in isolation using fixed-degree polynomials and uniform segments, leading to hardware redundancy and sub-optimal precision. To address these limitations, we present Uni-SFU, an algorithm-hardware co-design framework that jointly optimizes approximation accuracy and silicon area for a diverse set of activation functions. Uni-SFU leverag",
+      "pdf_link": "https://arxiv.org/pdf/2608.11577.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.11577",
+      "submission_date": "2026-08-13T04:00:00+00:00",
+      "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-08-12T07:24:11.388611+00:00"
+      "score": 1.0,
+      "updated_at": "2026-08-13T07:46:16.935786+00:00"
     }
   ]
 }

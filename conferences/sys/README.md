@@ -1,8 +1,8 @@
 # Systems / AI Infra / AI Compiler / RISC-V Papers
 
-- **Last Updated**: 2026-08-12 07:24:11 UTC
-- **Total Filtered Papers**: 441
-- **Displaying**: 200 (dblp: 63, usenix: 137)
+- **Last Updated**: 2026-08-13 07:46:16 UTC
+- **Total Filtered Papers**: 438
+- **Displaying**: 200 (arxiv: 1, dblp: 63, usenix: 136)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
@@ -203,9 +203,9 @@
 | 192 | [Queue-Mem: Energy-Efficient Hardware Storage for Advanced Network Function Acceleration](https://www.usenix.org/conference/nsdi26/presentation/scazzariello) | `USENIX` | 22.5 |
 | 193 | [MAC: Metadata Acceleration for Sustainable Performance in Big-Data Systems with CXL DRAM](https://www.usenix.org/conference/osdi26/presentation/lee) | `USENIX` | 22.0 |
 | 194 | [Octopus: Enhancing CXL Memory Pods via Sparse Topology](https://www.usenix.org/conference/nsdi26/presentation/zhong) | `USENIX` | 22.0 |
-| 195 | [Geminet: Learning the Duality-based Topology-Agnostic Update Operator for Lightweight Traffic Engineering in Changing Topologies](https://www.usenix.org/conference/nsdi26/presentation/liu-ximeng) | `USENIX` | 21.0 |
-| 196 | [Predict, Prune, Play: Efficient Video Playback Optimization Under Device Diversity and Drift](https://www.usenix.org/conference/nsdi26/presentation/sharma) | `USENIX` | 21.0 |
-| 197 | [The LogDrive: Composable Durability for Cloud-Based Shared Logs](https://www.usenix.org/conference/osdi26/presentation/vickers) | `USENIX` | 19.5 |
-| 198 | [FlexLLM: Token-Level Co-Serving of LLM Inference and Finetuning with SLO Guarantees](https://www.usenix.org/conference/nsdi26/presentation/oliaro) | `USENIX` | 18.5 |
-| 199 | [RobustRL: Role-Based Fault Tolerance System for RL Post-Training](https://www.usenix.org/conference/osdi26/presentation/chen-zhenqian) | `USENIX` | 18.0 |
-| 200 | [Inference in the Shadows: Taming Memory Bandwidth Contention in Mobile LLM Inference with Sereno](https://www.usenix.org/conference/osdi26/presentation/xin) | `USENIX` | 18.0 |
+| 195 | [Ready Cohorts: Bounding GPU Opportunity and Avoiding Host Round Trips in LLM-Agent Control](https://arxiv.org/abs/2608.12123) | `ARXIV` | 21.5 |
+| 196 | [Geminet: Learning the Duality-based Topology-Agnostic Update Operator for Lightweight Traffic Engineering in Changing Topologies](https://www.usenix.org/conference/nsdi26/presentation/liu-ximeng) | `USENIX` | 21.0 |
+| 197 | [Predict, Prune, Play: Efficient Video Playback Optimization Under Device Diversity and Drift](https://www.usenix.org/conference/nsdi26/presentation/sharma) | `USENIX` | 21.0 |
+| 198 | [The LogDrive: Composable Durability for Cloud-Based Shared Logs](https://www.usenix.org/conference/osdi26/presentation/vickers) | `USENIX` | 19.5 |
+| 199 | [FlexLLM: Token-Level Co-Serving of LLM Inference and Finetuning with SLO Guarantees](https://www.usenix.org/conference/nsdi26/presentation/oliaro) | `USENIX` | 18.5 |
+| 200 | [RobustRL: Role-Based Fault Tolerance System for RL Post-Training](https://www.usenix.org/conference/osdi26/presentation/chen-zhenqian) | `USENIX` | 18.0 |

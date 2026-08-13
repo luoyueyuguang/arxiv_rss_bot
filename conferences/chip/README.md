@@ -1,6 +1,6 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-08-12 07:24:11 UTC
+- **Last Updated**: 2026-08-13 07:46:16 UTC
 - **Total Filtered Papers**: 2
 - **Displaying**: 2 (arxiv: 2)
 - **Papers with Ratings**: 0
@@ -9,5 +9,5 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Monophonic Audio Synthesizer Using FPGAs](https://arxiv.org/abs/2608.10116) | `ARXIV` | 3.5 |
-| 2 | [Arcal\'{i}s: Accelerating Remote Procedure Calls Using a L\'{i}ghtweight Near-Cache Solution](https://arxiv.org/abs/2602.12596) | `ARXIV` | 3.0 |
+| 1 | [APEX: Adaptive Expert Prefetching for Memory-Efficient Edge MoE Inference](https://arxiv.org/abs/2608.11688) | `ARXIV` | 2.0 |
+| 2 | [Uni-SFU: Algorithm-HW Co-Design for Universal SFUs via Mixed-Degree Piecewise Approximation](https://arxiv.org/abs/2608.11577) | `ARXIV` | 1.0 |

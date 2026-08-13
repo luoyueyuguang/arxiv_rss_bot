@@ -1,54 +1,54 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-08-12T07:24:06.356524+00:00",
+  "last_updated": "2026-08-13T07:46:13.874611+00:00",
   "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2608.10956",
+      "forum_id": "2608.11524",
       "paper_number": -1,
-      "title": "ClusterBench: A Framework for Cluster-Wide Continuous Benchmarking and Regression Testing",
+      "title": "Descriptive Dispatch of Computational Work",
       "authors": [
-        "Aditya Ujeniya, Jan Eitzinger, Thomas Gruber, Georg Hager, Gerhard Wellein"
+        "Vanessa Sochat, Daniel Milroy"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.10956v1 Announce Type: new \nAbstract: Data centers need tooling that validates an entire installation rather than individual nodes, at acceptance and at regular intervals thereafter. This requires dispatching identical benchmarks to every node in a single submission, and therefore cluster-aware scheduling. This paper presents ClusterBench, a framework for cluster-wide continuous benchmarking. It ships with a benchmark collection targeting each component: CPU, GPU, memory, interconnect, and I/O. Because measurements are repeated throughout the cluster's lifetime, ClusterBench collects data across space and time. Comparison against earlier runs detects performance regressions introduced by software changes, such as kernel updates or new library versions. The measurements also form",
-      "pdf_link": "https://arxiv.org/pdf/2608.10956.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.10956",
-      "submission_date": "2026-08-12T04:00:00+00:00",
+      "abstract": "arXiv:2608.11524v1 Announce Type: new \nAbstract: Agents powered by AI/ML are becoming ingrained in orchestration. Dispatch of work is the task of receiving a request, transforming it for a workload manager, and successfully submitting it. Running scientific workflows across multi-cluster environments introduces substantial challenges of dynamic job transformation, dispatch, and submission to heterogeneous clusters. These tasks are well-suited to agents, which can receive textual instructions for work, prepare job specifications, and dispatch. In this work, we assess the reliability of a dispatch agent across 432 runs, testing all possible combinations of five feature dimensions across four prompt styles. The agent is highly reliable (97.9% success). We test a full orchestration to submit, ",
+      "pdf_link": "https://arxiv.org/pdf/2608.11524.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.11524",
+      "submission_date": "2026-08-13T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 27.0,
-      "updated_at": "2026-08-12T07:24:05.712614+00:00"
+      "score": 23.0,
+      "updated_at": "2026-08-13T07:46:13.477355+00:00"
     },
     {
-      "forum_id": "2608.10576",
+      "forum_id": "2608.11402",
       "paper_number": -1,
-      "title": "Stream Decoding with Confidence Scores at Room and Cryogenic Temperatures",
+      "title": "An Event-Driven Cloud-Native Wearable Analytics Framework for Real-Time Clinical Workloads",
       "authors": [
-        "Maries Tahaab, Tim Chan, James Kirkman, Simon C. Benjamin"
+        "Elias Gr\\\"unewald, Daniil Cherepko, Linus Gustafsson, Jakob M\\\"ohler, Oskar Rabe, Paul Robin Reichelt, Constantin Stahl, Lukasz Sztukiewicz, Louis Agha-Mir-Salim, Felix Balzer"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.10576v1 Announce Type: cross \nAbstract: In fault-tolerant quantum computing, fast and accurate decoding is crucial. Snowflake is a decoder for the surface code that runs in a streaming fashion. In this paper, we implement Snowflake on commercial FPGAs and validate them at room and cryogenic temperatures. Our results demonstrate high decoding throughput for small code distances that, when extrapolated, remains within acceptable limits for larger distances. Further, we incorporate the calculation of certain decoder confidence scores with negligible overhead both in terms of latency and physical resource utilisation. We note that implementing a large-scale system would require either a large FPGA beyond today's technology or clusters of FPGAs connected via a high-speed bus. Thus, w",
-      "pdf_link": "https://arxiv.org/pdf/2608.10576.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.10576",
-      "submission_date": "2026-08-12T04:00:00+00:00",
+      "abstract": "arXiv:2608.11402v1 Announce Type: new \nAbstract: Continuous physiological monitoring using consumer-grade wearables offers a transformative opportunity for clinical care and research, yet integration remains hindered by device heterogeneity, proprietary data formats, and strict regulatory requirements. We present an event-driven, cloud-native system designed to ingest, normalize, and analyze high-frequency vital signs from wearables at scale and without vendor lock-in. The system design proposes a multi-layered microservice architecture using cluster orchestration. Data acquisition is handled via a cross-platform mobile application that leverages native health frameworks, ensuring compatibility across fragmented device ecosystems. To address interoperability, we implement an event-driven t",
+      "pdf_link": "https://arxiv.org/pdf/2608.11402.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.11402",
+      "submission_date": "2026-08-13T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 22.0,
-      "updated_at": "2026-08-12T07:24:05.713111+00:00"
+      "score": 1.0,
+      "updated_at": "2026-08-13T07:46:13.477296+00:00"
     }
   ]
 }
