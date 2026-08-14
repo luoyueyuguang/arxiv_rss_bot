@@ -1,31 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-08-13T07:47:00.433071+00:00",
+  "last_updated": "2026-08-14T07:42:43.745184+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2608.11915",
+      "forum_id": "2604.11356",
       "paper_number": -1,
-      "title": "Positive quadrature and mobile sampling of multivariate trigonometric polynomials",
+      "title": "Numerical analysis for the Stokes problem with non-homogeneous Dirichlet boundary condition",
       "authors": [
-        "Stefan Kunis"
+        "Thomas Apel, Katharina Lorenz, Johannes Pfefferer"
       ],
       "keywords": [
         "cs.NA",
         "numerical analysis"
       ],
-      "abstract": "arXiv:2608.11915v1 Announce Type: new \nAbstract: The geometric properties of quadrature points in one and multiple dimensions are a classical topic in numerical analysis. Recently, generalized quadrature methods, where discrete points and weights are replaced by integration along curves, have attracted growing interest. This paper focuses on positive generalized quadratures that are exact for multivariate trigonometric polynomials. We derive upper bounds on the covering radius of such quadratures using sign-localized test functions, a technique that also extends naturally to algebraic polynomials on intervals, spherical polynomials, and hyperbolic cross trigonometric polynomials. For lower bounds on the length of quadrature curves, we compare two recent approaches in the context of multiva",
-      "pdf_link": "https://arxiv.org/pdf/2608.11915.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.11915",
-      "submission_date": "2026-08-13T04:00:00+00:00",
+      "abstract": "arXiv:2604.11356v2 Announce Type: replace \nAbstract: The Stokes problem with non-homogeneous Dirichlet boundary condition is solved numerically using conforming discretizations and an approximation of the boundary datum in the corresponding trace space. Optimal discretization error estimates in various norms are derived. In the case of a homogeneous differential equation, all estimates of the velocity error are uniformly valid in the viscosity parameter for all conforming inf-sup stable discretizations. The theory accounts for the influence of corner singularities in the case of a non-convex domain. Several variants of the boundary data approximation are discussed. Moreover, the case of boundary data with very low regularity is studied, where a weak solution does not exist. The well-posedn",
+      "pdf_link": "https://arxiv.org/pdf/2604.11356.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.11356",
+      "submission_date": "2026-08-14T04:00:00+00:00",
       "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-13T07:47:00.430087+00:00"
+      "score": 4.0,
+      "updated_at": "2026-08-14T07:42:43.742803+00:00"
     }
   ]
 }

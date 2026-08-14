@@ -1,54 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-08-13T07:46:16.938845+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-08-14T07:42:09.683623+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2608.11688",
+      "forum_id": "2608.12635",
       "paper_number": -1,
-      "title": "APEX: Adaptive Expert Prefetching for Memory-Efficient Edge MoE Inference",
+      "title": "GateTruth: Auditing the Rigor of RTL Design Benchmarks via Mutation Testing",
       "authors": [
-        "Alish Kanani, Layan Badawi, Umit Y. Ogras"
+        "Meet Bhadra"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.11688v1 Announce Type: new \nAbstract: Mixture-of-Experts (MoE) models are attractive for edge deployment because they provide high model capacity while activating only a small subset of parameters per token, improving compute efficiency. However, MoE inference at the edge is fundamentally limited by memory. Expert parameters are large and often reside in off-chip memory due to capacity, cost, and power constraints, putting expert loading to the critical path. We present APEX: Adaptive Expert Prefetching, a predictive resource management framework that overlaps expert loading with useful computation. APEX introduces a lightweight prefetch router that predicts candidate experts before the attention block to dynamically fetch additional experts using a learned confidence model. Thi",
-      "pdf_link": "https://arxiv.org/pdf/2608.11688.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.11688",
-      "submission_date": "2026-08-13T04:00:00+00:00",
+      "abstract": "arXiv:2608.12635v1 Announce Type: new \nAbstract: Benchmarks for evaluating large language models on register-transfer-level (RTL) hardware design have proliferated rapidly, yet none reports having applied mutation testing, an established hardware-verification technique for quantifying testbench quality, to ask whether its own testbenches are trustworthy. A testbench that never fails is not evidence of a correct design; it may simply never stimulate the logic that is actually broken. We introduce GateTruth, a mutation-testing engine and methodology for auditing RTL benchmark testbench rigor: inject a deterministic, seeded set of semantic mutants into a reference design and measure what fraction the testbench catches.\n  We validate the methodology against our own 68-task, dual-track referenc",
+      "pdf_link": "https://arxiv.org/pdf/2608.12635.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.12635",
+      "submission_date": "2026-08-14T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-08-13T07:46:16.935942+00:00"
+      "score": 2.5,
+      "updated_at": "2026-08-14T07:42:09.680077+00:00"
     },
     {
-      "forum_id": "2608.11577",
+      "forum_id": "2608.12934",
       "paper_number": -1,
-      "title": "Uni-SFU: Algorithm-HW Co-Design for Universal SFUs via Mixed-Degree Piecewise Approximation",
+      "title": "Dryas: A Reprogrammable Engine for High-Speed Interconnect Tracing and Analysis",
       "authors": [
-        "Miao Sun, Yucheng Huang, Mingcong Cao, Jaehyun Park, Partha Pratim Pande, Umit Y. Ogras"
+        "Manuel Br\\\"ochin, Tom Kuchler, Michael Giardino, David Cock, Timothy Roscoe"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2608.12934v1 Announce Type: new \nAbstract: The proliferation of heterogeneous components in modern computing systems has been accompanied by new higher bandwidth and lower latency interconnects. These interfaces and protocols are enormously complex and the process of developing, debugging, and analyzing FPGA-based implementations requires significant engineering work. Moreover, once a functional implementation is completed, optimization of the controller and associated software requires processing potentially hundreds of gigabytes of trace data.\n  In this paper, we present Dryas, an open source tool for analyzing such an interconnect. We developed our tool, using minimal hardware resources, alongside an FPGA implementation of a very high speed, low latency (30~GiB/s, 200~ns) intercon",
+      "pdf_link": "https://arxiv.org/pdf/2608.12934.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.12934",
+      "submission_date": "2026-08-14T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-08-14T07:42:09.680256+00:00"
+    },
+    {
+      "forum_id": "2608.13027",
+      "paper_number": -1,
+      "title": "Why Do Prefetchers Fail? Let Agents Answer",
+      "authors": [
+        "Xiangfeng Sun, Ceyu Xu, Ningzhi Ai, Zeyu Zhu, Yiyang Yuan, Yuan Xie"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.11577v1 Announce Type: new \nAbstract: Nonlinear activation functions are essential to modern deep neural networks (DNNs), but their hardware evaluation places significant pressure on the special-function units (SFUs) of GPUs and custom accelerators. Therefore, piecewise polynomial approximations are commonly used within allowed error bounds to improve computational efficiency. However, existing techniques often approximate each activation function in isolation using fixed-degree polynomials and uniform segments, leading to hardware redundancy and sub-optimal precision. To address these limitations, we present Uni-SFU, an algorithm-hardware co-design framework that jointly optimizes approximation accuracy and silicon area for a diverse set of activation functions. Uni-SFU leverag",
-      "pdf_link": "https://arxiv.org/pdf/2608.11577.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.11577",
-      "submission_date": "2026-08-13T04:00:00+00:00",
+      "abstract": "arXiv:2608.13027v1 Announce Type: new \nAbstract: Hardware prefetchers are crucial to processor performance, yet their design remains labor-intensive and expert-driven. Architects inspect execution and memory-access traces, identify patterns, translate them into online hardware heuristics, and evaluate them in simulation, often with no guarantee of improvement. Human experts cannot systematically inspect billion-instruction traces across diverse real-world workloads.\n  We present a performance-anomaly-driven autoresearch flow that repeatedly asks why a deployed prefetcher fails and uses the diagnoses to construct the Mixture of Prefetchers (MoP). Each iteration localizes high-impact unexplained misses to program counters, gives agents hardware logs, source code, and sliced traces, validates",
+      "pdf_link": "https://arxiv.org/pdf/2608.13027.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.13027",
+      "submission_date": "2026-08-14T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-08-13T07:46:16.935786+00:00"
+      "updated_at": "2026-08-14T07:42:09.680306+00:00"
     }
   ]
 }

@@ -1,13 +1,12 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-08-13 07:46:13 UTC
-- **Total Filtered Papers**: 2
-- **Displaying**: 2 (arxiv: 2)
+- **Last Updated**: 2026-08-14 07:42:05 UTC
+- **Total Filtered Papers**: 1
+- **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Descriptive Dispatch of Computational Work](https://arxiv.org/abs/2608.11524) | `ARXIV` | 23.0 |
-| 2 | [An Event-Driven Cloud-Native Wearable Analytics Framework for Real-Time Clinical Workloads](https://arxiv.org/abs/2608.11402) | `ARXIV` | 1.0 |
+| 1 | [OpScale: Operator-level Provisioning and Autoscaling for LLM Serving](https://arxiv.org/abs/2608.13499) | `ARXIV` | 12.0 |
