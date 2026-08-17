@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-08-14T07:42:09.624199+00:00",
-  "paper_count": 440,
+  "last_updated": "2026-08-17T06:48:14.408635+00:00",
+  "paper_count": 439,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -575,6 +575,29 @@
       "ratings": [],
       "score": 70.5,
       "updated_at": "2026-07-21T08:54:17.404872+00:00"
+    },
+    {
+      "forum_id": "2509.04084",
+      "paper_number": -1,
+      "title": "Optimizing Frequent Checkpointing via Low-Cost Differential for Distributed Training Systems",
+      "authors": [
+        "Chenxuan Yao, Yuchong Hu, Feifan Liu, Zhengyu Liu, Lin Wang, Mingqi Li, Dan Feng"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2509.04084v4 Announce Type: replace \nAbstract: Distributed training of large deep-learning models often leads to failures, so checkpointing is commonly employed for recovery. State-of-the-art studies focus on frequent checkpointing for fast recovery from failures. However, frequent checkpointing generates numerous checkpoints, incurring substantial costs and thus degrading training performance. Recently, differential checkpointing has been proposed to reduce costs, but it is limited to recommendation systems, so its application to general distributed training systems remains unexplored.\n  In this paper, we find that gradients generated during distributed training can be reused to construct differential checkpoints, while the former's size is smaller than the latter's, motivating us t",
+      "pdf_link": "https://arxiv.org/pdf/2509.04084.pdf",
+      "forum_link": "https://arxiv.org/abs/2509.04084",
+      "submission_date": "2026-08-17T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 68.0,
+      "updated_at": "2026-08-17T06:47:55.955705+00:00"
     },
     {
       "forum_id": "usenix-osdi26-112",
@@ -1585,29 +1608,6 @@
       "ratings": [],
       "score": 53.5,
       "updated_at": "2026-07-21T08:54:17.397052+00:00"
-    },
-    {
-      "forum_id": "2608.13434",
-      "paper_number": -1,
-      "title": "Fast Tendermint: Speeding Up a Foundational Consensus Protocol",
-      "authors": [
-        "Preston Vander Vos, Daniel Cason"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.13434v1 Announce Type: new \nAbstract: Tendermint is among the most widely studied and deployed Byzantine fault-tolerant (BFT) consensus protocols, owing in part to its native leader-rotation mechanism that subsumes complex view changes. Like most partially-synchronous BFT protocols, Tendermint tolerates $f < n/3$ Byzantine processes and decides in three communication steps. Motivated by the push for lower-latency blockchains, a recent line of work shows that consensus can be solved in two communication steps when $f < n/5$. We present Fast Tendermint, an adaptation of Tendermint to the $n > 5f$ setting that decides in two communication steps in the good case, while preserving Tendermint's leader-rotation structure. Fast Tendermint collapses Tendermint's prevote and precommit ste",
-      "pdf_link": "https://arxiv.org/pdf/2608.13434.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.13434",
-      "submission_date": "2026-08-14T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 52.5,
-      "updated_at": "2026-08-14T07:42:05.927454+00:00"
     },
     {
       "forum_id": "usenix-osdi26-132",
@@ -5577,29 +5577,6 @@
       "updated_at": "2026-07-21T08:54:22.936410+00:00"
     },
     {
-      "forum_id": "2608.07358",
-      "paper_number": -1,
-      "title": "Fast end-to-end cloud application cold-start with initscripts",
-      "authors": [
-        "Ariel Szekely, Hannah Gross, Robert Morris, M. Frans Kaashoek"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.07358v2 Announce Type: replace-cross \nAbstract: Serverless functions are a popular way of deploying cloud applications. Because many of these functions are short- running and experience frequent cold-starts, start latencies often dominate their execution latency. Start latency can be broken down into two components: setup and initialization. Setup involves steps the cloud platform takes when starting an application, such as downloading its binary and creating an isolated execution environment. Initialization involves steps the application takes after it has started running but before it can do useful work, such as connecting to other services, coordinating to claim work, and downloading inputs.\n  This paper contributes initscripts, which provide a script- able interface for deve",
-      "pdf_link": "https://arxiv.org/pdf/2608.07358.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.07358",
-      "submission_date": "2026-08-14T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-08-14T07:42:05.878438+00:00"
-    },
-    {
       "forum_id": "2608.12633",
       "paper_number": -1,
       "title": "Offering Microsecond-Scale Cross-VM Core Elasticity on Colocated Lightweight Virtual Machines",
@@ -5607,20 +5584,20 @@
         "Yibo Yan, Seo Jin Park"
       ],
       "keywords": [
-        "cs.DC",
+        "cs.OS",
         "FAST"
       ],
-      "abstract": "arXiv:2608.12633v1 Announce Type: new \nAbstract: Serverless platforms commonly colocate many diverse workloads, each in a fast-booting, memory-lean virtual machine (VM), to improve deployment density. Overprovisioning each VM for its peak protects tail latency during traffic bursts but hurts density; maintaining high density while effectively protecting tail latency requires the infrastructure to be able to shift physical cores, at a microsecond timescale, to whichever latency-sensitive VM is bursting and reclaim them as the burst subsides. No VM substrate delivers this: conventional VMs resize a guest's cores only through a millisecond-scale vCPU hot-plug path, Firecracker fixes a VM's core count at boot, and the ultralight VMs that boot fastest drop multicore execution entirely.\n  We pre",
+      "abstract": "arXiv:2608.12633v1 Announce Type: cross \nAbstract: Serverless platforms commonly colocate many diverse workloads, each in a fast-booting, memory-lean virtual machine (VM), to improve deployment density. Overprovisioning each VM for its peak protects tail latency during traffic bursts but hurts density; maintaining high density while effectively protecting tail latency requires the infrastructure to be able to shift physical cores, at a microsecond timescale, to whichever latency-sensitive VM is bursting and reclaim them as the burst subsides. No VM substrate delivers this: conventional VMs resize a guest's cores only through a millisecond-scale vCPU hot-plug path, Firecracker fixes a VM's core count at boot, and the ultralight VMs that boot fastest drop multicore execution entirely.\n  We p",
       "pdf_link": "https://arxiv.org/pdf/2608.12633.pdf",
       "forum_link": "https://arxiv.org/abs/2608.12633",
-      "submission_date": "2026-08-14T04:00:00+00:00",
+      "submission_date": "2026-08-17T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 13.5,
-      "updated_at": "2026-08-14T07:42:05.926470+00:00"
+      "updated_at": "2026-08-17T06:47:55.893677+00:00"
     },
     {
       "forum_id": "usenix-osdi26-5",

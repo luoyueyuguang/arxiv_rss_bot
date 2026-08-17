@@ -1,12 +1,13 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-08-14 07:42:05 UTC
-- **Total Filtered Papers**: 1
-- **Displaying**: 1 (arxiv: 1)
+- **Last Updated**: 2026-08-17 06:47:55 UTC
+- **Total Filtered Papers**: 2
+- **Displaying**: 2 (arxiv: 2)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [OpScale: Operator-level Provisioning and Autoscaling for LLM Serving](https://arxiv.org/abs/2608.13499) | `ARXIV` | 12.0 |
+| 1 | [MLCC: A Congestion Control Technique to Accelerate ML Training](https://arxiv.org/abs/2402.09589) | `ARXIV` | 15.0 |
+| 2 | [Balancing Workload Performance and Slurm Stress: Four Nextflow Deployment Strategies](https://arxiv.org/abs/2608.13824) | `ARXIV` | 12.5 |

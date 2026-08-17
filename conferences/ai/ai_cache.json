@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-08-14T07:42:43.684880+00:00",
-  "paper_count": 32,
+  "last_updated": "2026-08-17T06:48:47.602003+00:00",
+  "paper_count": 30,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -100,29 +100,6 @@
       "ratings": [],
       "score": 61.5,
       "updated_at": "2026-07-23T08:28:51.358970+00:00"
-    },
-    {
-      "forum_id": "2605.17985",
-      "paper_number": -1,
-      "title": "SAFE-SVD: Sensitivity-Aware Fidelity-Enforcing SVD for Physics Foundation Models",
-      "authors": [
-        "Chengjie Hong, Feixiang He, Yiheng Zeng, Lulu Kang, He Wang"
-      ],
-      "keywords": [
-        "cs.AI",
-        "AI for Science"
-      ],
-      "abstract": "arXiv:2605.17985v2 Announce Type: replace-cross \nAbstract: We propose a new method for compressing physics foundation models (PFMs) which is a new trend in AI for Science. While model compression is essential for reducing memory use and accelerating inference in large foundation models, it remains under-explored for PFMs, where preserving physical fidelity is crucial. The challenge lies in the functional nature of physics data, where partial derivatives encode spatiotemporal dynamics and exhibit high sensitivity to compression. Conventional compression methods ignore this structure, often causing severe performance degradation or failure. To address this, we introduce a sensitivity-aware fidelity-enforcing compression framework that explicitly models loss-aware layer sensitivity in the out",
-      "pdf_link": "https://arxiv.org/pdf/2605.17985.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.17985",
-      "submission_date": "2026-08-14T04:00:00+00:00",
-      "conference": "AI for Science",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 54.0,
-      "updated_at": "2026-08-14T07:42:09.955919+00:00"
     },
     {
       "forum_id": "mlr-icml25-52",
@@ -706,29 +683,6 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-08-14T07:42:23.150427+00:00"
-    },
-    {
-      "forum_id": "2608.13389",
-      "paper_number": -1,
-      "title": "TopoIntent: Compiling Security Intent into Executable, Compliance-Checked Network Topologies",
-      "authors": [
-        "Xiaokang Qu, Jianliang Ma, Zao Fan, Tianshu Chu, Tianlong Fan, Linyuan L\\\"u"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2608.13389v1 Announce Type: new \nAbstract: Enterprise security topology design requires translating business intent, regulatory requirements, and risk assumptions into zones, boundary devices, inter-zone paths, and access-control policies. Existing NetOps automation tools mainly operate after this design is fixed, providing limited support for generating structured security topologies from underspecified natural-language requirements. We present TopoIntent, a system that compiles security intent into executable, compliance-checked network topologies. It uses a schema contract to constrain generation, retrieves reference architectures from a curated template library via dense-vector search, and applies staged fusion for intent-template alignment and security completion. The generated ",
-      "pdf_link": "https://arxiv.org/pdf/2608.13389.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.13389",
-      "submission_date": "2026-08-14T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-14T07:42:09.942543+00:00"
     },
     {
       "forum_id": "mlr-icml25-6",

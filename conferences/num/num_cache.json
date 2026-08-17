@@ -1,31 +1,54 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-08-14T07:42:43.745184+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-08-17T06:48:47.712055+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2604.11356",
+      "forum_id": "2608.14123",
       "paper_number": -1,
-      "title": "Numerical analysis for the Stokes problem with non-homogeneous Dirichlet boundary condition",
+      "title": "Adaptive multigrid for high-order discontinuous Galerkin methods based on the full approximation scheme",
       "authors": [
-        "Thomas Apel, Katharina Lorenz, Johannes Pfefferer"
+        "J\\\"org Stiller"
       ],
       "keywords": [
         "cs.NA",
-        "numerical analysis"
+        "SIAM"
       ],
-      "abstract": "arXiv:2604.11356v2 Announce Type: replace \nAbstract: The Stokes problem with non-homogeneous Dirichlet boundary condition is solved numerically using conforming discretizations and an approximation of the boundary datum in the corresponding trace space. Optimal discretization error estimates in various norms are derived. In the case of a homogeneous differential equation, all estimates of the velocity error are uniformly valid in the viscosity parameter for all conforming inf-sup stable discretizations. The theory accounts for the influence of corner singularities in the case of a non-convex domain. Several variants of the boundary data approximation are discussed. Moreover, the case of boundary data with very low regularity is studied, where a weak solution does not exist. The well-posedn",
-      "pdf_link": "https://arxiv.org/pdf/2604.11356.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.11356",
-      "submission_date": "2026-08-14T04:00:00+00:00",
-      "conference": "numerical analysis",
+      "abstract": "arXiv:2608.14123v1 Announce Type: new \nAbstract: We propose an adaptive multigrid (MG) method for discontinuous Galerkin formulations of elliptic problems using Brandt's full approximation scheme (FAS). Unlike common approaches, this method achieves local $hp$-refinement of hexahedral meshes without the need for hanging nodes. The core component of the FAS-MG method is an overlapping Schwarz smoother, which is optionally accelerated by a Krylov method. This smoother is designed for unstructured curvilinear meshes but maintains a tensor-product structure for fast diagonalization. Numerical experiments demonstrate the exceptional efficiency of the FAS-MG method. Dedicated studies confirm its robustness against high aspect ratios, element deformation, and irregular mesh topology. We also veri",
+      "pdf_link": "https://arxiv.org/pdf/2608.14123.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.14123",
+      "submission_date": "2026-08-17T04:00:00+00:00",
+      "conference": "SIAM",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-08-14T07:42:43.742803+00:00"
+      "score": 66.5,
+      "updated_at": "2026-08-17T06:48:47.707652+00:00"
+    },
+    {
+      "forum_id": "2608.14520",
+      "paper_number": -1,
+      "title": "Comment on arXiv:2106.08363v3 [math.NA], E. Abreu, A. Espirito Santo, W. Lambert, and J. Perez, Convergence of a Lagrangian--Eulerian scheme by a weak asymptotic analysis for one-dimensional hyperbolic problems",
+      "authors": [
+        "Frederico Furtado (University of Wyoming), Felipe Pereira (The University of Texas at Dallas), Li-Ming Yeh (National Yang Ming Chiao Tung University)"
+      ],
+      "keywords": [
+        "cs.NA",
+        "NA"
+      ],
+      "abstract": "arXiv:2608.14520v1 Announce Type: new \nAbstract: This Comment concerns arXiv:2106.08363v3 [math.NA] by E. Abreu, A. Espirito Santo, W. Lambert and J. Perez, published in Numer. Methods Partial Differential Equations 39 (2023) 2400-2443. That article builds its scheme on space-time control volumes whose lateral boundaries, called \"no-flow curves\", solve dsigma/dt = H(u)/u and are presented as new. We show, equation by equation, that this object is the space-time integral curve of the locally conservative Eulerian-Lagrangian method of Douglas, Pereira and Yeh [Comput. Geosci. 4 (2000) 1-40], that the no-flow region is the tube those curves bound, and that its scalar forward-tracked form appears in Mancuso, Pereira and de Souza [TEMA 8 (2007) 269-276, 277-286]. At issue is not moving a contro",
+      "pdf_link": "https://arxiv.org/pdf/2608.14520.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.14520",
+      "submission_date": "2026-08-17T04:00:00+00:00",
+      "conference": "NA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-08-17T06:48:47.707991+00:00"
     }
   ]
 }

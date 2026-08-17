@@ -1,31 +1,54 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-08-13T07:46:13.429046+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-08-17T06:47:55.182832+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2608.08285",
+      "forum_id": "2608.13920",
       "paper_number": -1,
-      "title": "Ego-OSCAR: Egocentric Open source Stereo CAptuRe System",
+      "title": "Characterizing the Variance Envelope: A Multi-Dimensional Analysis of Spectre Telemetry Across Architectures and Workloads",
       "authors": [
-        "Gunjan Paul, Senthil Palanisamy, Satpal Singh Rathore, Pratyush Kumar Patnaik, Shubhanshu Khatana, Abhishek Anand"
+        "Jaya Keshava Chandra Kotha, Jean-Luc Gaudiot"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2608.08285v2 Announce Type: replace-cross \nAbstract: We present Ego-OSCAR, an open-hardware, low-cost, head-mounted stereo-inertial capture device for egocentric data collection in the wild. EgoOSCAR pairs a hardware-synchronized global-shutter stereo camera with a 6- axis IMU, an embedded Linux SBC for on-device video encoding, and a realtime microcontroller for user feedback and watchdog functions. The complete bill of materials is under USD 200 per unit, using only commercially available components and 3D-printed parts. Alongside the device, we release a complete software stack (hardware-accelerated recording pipeline, IMU sampling daemon, time-synchronization tooling, and watchdog firmware) and roughly 550 hours of egocentric stereo video per camera with synchronized IMU, collect",
-      "pdf_link": "https://arxiv.org/pdf/2608.08285.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.08285",
-      "submission_date": "2026-08-13T04:00:00+00:00",
+      "abstract": "arXiv:2608.13920v1 Announce Type: cross \nAbstract: Hardware attacks like Spectre exploit built-in processor vulnerabilities, leaving anomalous footprints in Hardware Performance Counter (HPC) metrics. While machine learning can detect these footprints in controlled settings, static models fail in the real world when confronted with background system noise, diverse attack variants, and adversarial traffic pacing. To close this gap, this paper characterizes the \"variance envelope\"-the full range of how attack signatures shift- across Intel, ARM, and AMD architectures. We evaluate an extensive experimental matrix encompassing three attack variants, four pacing modes, and four background-noise conditions. Our analysis proves that HPC signatures are highly fragile and easily warped by their exe",
+      "pdf_link": "https://arxiv.org/pdf/2608.13920.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.13920",
+      "submission_date": "2026-08-17T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-13T07:46:13.426045+00:00"
+      "score": 22.5,
+      "updated_at": "2026-08-17T06:47:55.178705+00:00"
+    },
+    {
+      "forum_id": "2608.09075",
+      "paper_number": -1,
+      "title": "SLAC: Access-Driven CPU-to-GPU Side-channel Attacks via System-Level Cache on Apple Silicon",
+      "authors": [
+        "Tianhong Xu, Saion K. Roy, Ruyi Ding, Aidong Adam Ding, Yunsi Fei"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2608.09075v2 Announce Type: replace-cross \nAbstract: Modern heterogeneous System-on-Chip designs integrate CPU cores and a GPU that share a last-level cache (LLC) or system-level cache (SLC). This sharing exposes a new cross-domain attack surface, and existing attacks on integrated platforms either exploit coarse-grained cache-occupancy contention or require the adversary to co-reside on the GPU with the victim to obtain accurate timing measurements. In this work, we target Apple Silicon heterogeneous SoCs and discover that GPU memory accesses leave set-level footprints in the shared SLC, observable to an unprivileged CPU process. This keen observation enables the first fine-grained, access-driven, Prime+Probe-style CPU-to-GPU cache side-channel attacks against GPU workloads. We firs",
+      "pdf_link": "https://arxiv.org/pdf/2608.09075.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.09075",
+      "submission_date": "2026-08-17T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-08-17T06:47:55.178864+00:00"
     }
   ]
 }

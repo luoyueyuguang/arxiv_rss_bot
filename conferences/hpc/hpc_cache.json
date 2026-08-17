@@ -1,31 +1,54 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-08-14T07:42:05.775212+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-08-17T06:47:55.839962+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2608.13499",
+      "forum_id": "2402.09589",
       "paper_number": -1,
-      "title": "OpScale: Operator-level Provisioning and Autoscaling for LLM Serving",
+      "title": "MLCC: A Congestion Control Technique to Accelerate ML Training",
       "authors": [
-        "Xingqi Cui, Chieh-Jan Mike Liang, Ziang Tang, Jiarong Xing, Haoran Qiu"
+        "Anton A. Zabreyko, Sanjoli Narang, Sudarsanan Rajasekaran, Manya Ghobadi"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.13499v1 Announce Type: new \nAbstract: Achieving cost efficiency while meeting strict user-facing SLOs (e.g., time-to-first-token) remains a fundamental challenge for cloud GPU clusters serving large language models (LLMs). Autoscaling is the key mechanism for cluster resource management, yet a basic system design question is open for serving LLMs: what should be the unit of scaling? Existing approaches primarily treat the entire model as a monolithic scaling unit--simple but unable to capture the fine-grained dynamics of inference workloads. As a result, such coarse-grained scaling often leads to either SLO violations under bursty demand or significant GPU under-utilization.\n  Our characterization reveals substantial operator heterogeneity, exposing operator-level elasticity as ",
-      "pdf_link": "https://arxiv.org/pdf/2608.13499.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.13499",
-      "submission_date": "2026-08-14T04:00:00+00:00",
+      "abstract": "arXiv:2402.09589v2 Announce Type: replace-cross \nAbstract: We present MLCC, a novel technique to augment today's congestion control algorithms to accelerate DNN training jobs in shared GPU clusters in a fully distributed manner. At the heart of MLCC lies a straightforward principle: DNN training flows should scale their sending rate to shift other flows' communication into their compute periods, achieving interleaving. We show that integrating this principle into today's congestion control protocols is simple (requiring less than 60 lines of code for a given protocol) and enables DNN jobs to interleave within a few training iterations, thereby reducing network contention and improving job completion times. Our testbed demonstrates that MLCC accelerates the average and 99th percentile train",
+      "pdf_link": "https://arxiv.org/pdf/2402.09589.pdf",
+      "forum_link": "https://arxiv.org/abs/2402.09589",
+      "submission_date": "2026-08-17T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-08-14T07:42:04.748374+00:00"
+      "score": 15.0,
+      "updated_at": "2026-08-17T06:47:55.253631+00:00"
+    },
+    {
+      "forum_id": "2608.13824",
+      "paper_number": -1,
+      "title": "Balancing Workload Performance and Slurm Stress: Four Nextflow Deployment Strategies",
+      "authors": [
+        "Nil Tianchen Mu, William Dizon, Glen Otero, Torey Battelle"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2608.13824v1 Announce Type: new \nAbstract: Wide Nextflow fan-outs on shared Slurm clusters can submit tens of thousands of short tasks. Deployment choices - individual jobs, arrays, or nested schedulers within allocations - affect both workflow turnaround and RPC volume, a shared cost that can degrade scheduler responsiveness. Existing studies compare whole workflow systems, while per-task queueing metrics do not span architectures that dispatch inside an existing allocation. We present a reproducible measurement protocol and bench harness with two key elements. First, a clean-start clock begins before any backend service or allocation request, placing different architectures on a common time axis. Second, per-user Slurm sdiag counters measure attributable RPC demand, with controller",
+      "pdf_link": "https://arxiv.org/pdf/2608.13824.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.13824",
+      "submission_date": "2026-08-17T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.5,
+      "updated_at": "2026-08-17T06:47:55.252945+00:00"
     }
   ]
 }
