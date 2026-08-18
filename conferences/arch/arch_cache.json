@@ -1,54 +1,54 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-08-17T06:47:55.182832+00:00",
+  "last_updated": "2026-08-18T06:37:38.732903+00:00",
   "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2608.13920",
+      "forum_id": "2608.15764",
       "paper_number": -1,
-      "title": "Characterizing the Variance Envelope: A Multi-Dimensional Analysis of Spectre Telemetry Across Architectures and Workloads",
+      "title": "Concurrency Response of Plain Global Loads on the NVIDIA H100",
       "authors": [
-        "Jaya Keshava Chandra Kotha, Jean-Luc Gaudiot"
+        "Somashekar Manjunath, Rahul Ramachandra M"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2608.13920v1 Announce Type: cross \nAbstract: Hardware attacks like Spectre exploit built-in processor vulnerabilities, leaving anomalous footprints in Hardware Performance Counter (HPC) metrics. While machine learning can detect these footprints in controlled settings, static models fail in the real world when confronted with background system noise, diverse attack variants, and adversarial traffic pacing. To close this gap, this paper characterizes the \"variance envelope\"-the full range of how attack signatures shift- across Intel, ARM, and AMD architectures. We evaluate an extensive experimental matrix encompassing three attack variants, four pacing modes, and four background-noise conditions. Our analysis proves that HPC signatures are highly fragile and easily warped by their exe",
-      "pdf_link": "https://arxiv.org/pdf/2608.13920.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.13920",
-      "submission_date": "2026-08-17T04:00:00+00:00",
+      "abstract": "arXiv:2608.15764v1 Announce Type: new \nAbstract: The bandwidth a memory-bound GPU kernel sustains is set by how many bytes it keeps in flight. We use Little's Law here as throughput accounting, not as a measured hardware pool. CUDA fills that budget on Hopper through plain loads (ld.global) and asynchronous copies (cp.async), among other paths; we characterize their concurrency response with clean-room microbenchmarks on three H100 SXM5 dies. Our main result concerns the plain-load path: attained LDG bandwidth peaks at a small offered per-thread load (K ~ 2) and then declines, by about 35% from K=2 to K=8 at our primary configuration. The decline survives a fixed-work control matching total issued logical loads across K, ascending and reversed sweep orders, and replication on two dies with",
+      "pdf_link": "https://arxiv.org/pdf/2608.15764.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.15764",
+      "submission_date": "2026-08-18T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 22.5,
-      "updated_at": "2026-08-17T06:47:55.178705+00:00"
+      "score": 12.0,
+      "updated_at": "2026-08-18T06:37:38.728385+00:00"
     },
     {
-      "forum_id": "2608.09075",
+      "forum_id": "2608.16542",
       "paper_number": -1,
-      "title": "SLAC: Access-Driven CPU-to-GPU Side-channel Attacks via System-Level Cache on Apple Silicon",
+      "title": "One Residual with Three Reuses: A Wristband Front End for Gesture Sensing",
       "authors": [
-        "Tianhong Xu, Saion K. Roy, Ruyi Ding, Aidong Adam Ding, Yunsi Fei"
+        "Sam Rifaki"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2608.09075v2 Announce Type: replace-cross \nAbstract: Modern heterogeneous System-on-Chip designs integrate CPU cores and a GPU that share a last-level cache (LLC) or system-level cache (SLC). This sharing exposes a new cross-domain attack surface, and existing attacks on integrated platforms either exploit coarse-grained cache-occupancy contention or require the adversary to co-reside on the GPU with the victim to obtain accurate timing measurements. In this work, we target Apple Silicon heterogeneous SoCs and discover that GPU memory accesses leave set-level footprints in the shared SLC, observable to an unprivileged CPU process. This keen observation enables the first fine-grained, access-driven, Prime+Probe-style CPU-to-GPU cache side-channel attacks against GPU workloads. We firs",
-      "pdf_link": "https://arxiv.org/pdf/2608.09075.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.09075",
-      "submission_date": "2026-08-17T04:00:00+00:00",
+      "abstract": "arXiv:2608.16542v1 Announce Type: cross \nAbstract: Continuous wrist-worn hand sensing for gesture interfaces and motor symptom monitoring needs an always-on front end that fits inside a coin-cell power budget while pairing a micro-electro-mechanical-systems (MEMS) inertial measurement unit (IMU) with a 60 GHz frequency-modulated continuous-wave (FMCW) radar to stay robust under occlusion and on-body drift. We present a design study of such a wristband front end in which classifier wake-up gating, mmWave versus IMU routing, and innovation-based EKF measurement reweighting share a single on-chip residual generator. The shared generator occupies 14.4 KB of program memory and 278 B of state and runs at 110K multiply-accumulates (MACs) per frame on an Ambiq Apollo4 Blue Plus class edge microcon",
+      "pdf_link": "https://arxiv.org/pdf/2608.16542.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.16542",
+      "submission_date": "2026-08-18T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-08-17T06:47:55.178864+00:00"
+      "score": 11.0,
+      "updated_at": "2026-08-18T06:37:38.728601+00:00"
     }
   ]
 }

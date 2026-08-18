@@ -1,13 +1,14 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-08-17 06:48:47 UTC
-- **Total Filtered Papers**: 2
-- **Displaying**: 2 (arxiv: 2)
+- **Last Updated**: 2026-08-18 06:38:24 UTC
+- **Total Filtered Papers**: 3
+- **Displaying**: 3 (arxiv: 3)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Adaptive multigrid for high-order discontinuous Galerkin methods based on the full approximation scheme](https://arxiv.org/abs/2608.14123) | `ARXIV` | 66.5 |
-| 2 | [Comment on arXiv:2106.08363v3 [math.NA], E. Abreu, A. Espirito Santo, W. Lambert, and J. Perez, Convergence of a Lagrangian--Eulerian scheme by a weak asymptotic analysis for one-dimensional hyperbolic problems](https://arxiv.org/abs/2608.14520) | `ARXIV` | 1.0 |
+| 1 | [Mathematical modeling of the mechanical behavior of three-layer plates with a tetrachiral honeycomb core](https://arxiv.org/abs/2401.04781) | `ARXIV` | 12.0 |
+| 2 | [A weak order 2 Runge-Kutta method for It\^o stochastic delay differential equations](https://arxiv.org/abs/2608.16396) | `ARXIV` | 3.5 |
+| 3 | [Torus computed tomography for experimental data](https://arxiv.org/abs/2608.16453) | `ARXIV` | 1.0 |

@@ -1,6 +1,6 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-08-17 06:47:55 UTC
+- **Last Updated**: 2026-08-18 06:37:38 UTC
 - **Total Filtered Papers**: 2
 - **Displaying**: 2 (arxiv: 2)
 - **Papers with Ratings**: 0
@@ -9,5 +9,5 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Characterizing the Variance Envelope: A Multi-Dimensional Analysis of Spectre Telemetry Across Architectures and Workloads](https://arxiv.org/abs/2608.13920) | `ARXIV` | 22.5 |
-| 2 | [SLAC: Access-Driven CPU-to-GPU Side-channel Attacks via System-Level Cache on Apple Silicon](https://arxiv.org/abs/2608.09075) | `ARXIV` | 3.0 |
+| 1 | [Concurrency Response of Plain Global Loads on the NVIDIA H100](https://arxiv.org/abs/2608.15764) | `ARXIV` | 12.0 |
+| 2 | [One Residual with Three Reuses: A Wristband Front End for Gesture Sensing](https://arxiv.org/abs/2608.16542) | `ARXIV` | 11.0 |

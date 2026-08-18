@@ -1,54 +1,77 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-08-17T06:48:47.712055+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-08-18T06:38:24.126470+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2608.14123",
+      "forum_id": "2401.04781",
       "paper_number": -1,
-      "title": "Adaptive multigrid for high-order discontinuous Galerkin methods based on the full approximation scheme",
+      "title": "Mathematical modeling of the mechanical behavior of three-layer plates with a tetrachiral honeycomb core",
       "authors": [
-        "J\\\"org Stiller"
+        "A. V. Mazaev"
+      ],
+      "keywords": [
+        "cs.NA",
+        "numerical analysis"
+      ],
+      "abstract": "arXiv:2401.04781v3 Announce Type: replace \nAbstract: This work examines the mechanical behavior of three-layer plates with a tetrachiral honeycomb core and solid face layers under static bending conditions. The influence of discretization, relative density, and thickness of the honeycomb core on the stress state of the composite plates is investigated under two boundary conditions: rigid clamping and elastic rotational support. The first numerical experiment setup involves a constant thickness of each composite layer while varying the core relative density. The second experiment setup maintains a constant volume of the honeycomb core solid body, which causes its thickness to change as the relative density varies. Mathematical modeling is performed using the finite element method within the",
+      "pdf_link": "https://arxiv.org/pdf/2401.04781.pdf",
+      "forum_link": "https://arxiv.org/abs/2401.04781",
+      "submission_date": "2026-08-18T04:00:00+00:00",
+      "conference": "numerical analysis",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-08-18T06:38:24.122232+00:00"
+    },
+    {
+      "forum_id": "2608.16396",
+      "paper_number": -1,
+      "title": "A weak order 2 Runge-Kutta method for It\\^o stochastic delay differential equations",
+      "authors": [
+        "Alessia and\\`o, Dimitri Breda, Faraz William"
       ],
       "keywords": [
         "cs.NA",
         "SIAM"
       ],
-      "abstract": "arXiv:2608.14123v1 Announce Type: new \nAbstract: We propose an adaptive multigrid (MG) method for discontinuous Galerkin formulations of elliptic problems using Brandt's full approximation scheme (FAS). Unlike common approaches, this method achieves local $hp$-refinement of hexahedral meshes without the need for hanging nodes. The core component of the FAS-MG method is an overlapping Schwarz smoother, which is optionally accelerated by a Krylov method. This smoother is designed for unstructured curvilinear meshes but maintains a tensor-product structure for fast diagonalization. Numerical experiments demonstrate the exceptional efficiency of the FAS-MG method. Dedicated studies confirm its robustness against high aspect ratios, element deformation, and irregular mesh topology. We also veri",
-      "pdf_link": "https://arxiv.org/pdf/2608.14123.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.14123",
-      "submission_date": "2026-08-17T04:00:00+00:00",
+      "abstract": "arXiv:2608.16396v1 Announce Type: new \nAbstract: We present a Runge-Kutta method of weak order 2 for the numerical time integration of stochastic delay differential equations. This scheme extends the class of second order Runge-Kutta methods introduced by A. R\\\"o{\\ss}ler in [SIAM J. Numer. Anal., 47(3):1713-1738, 2009] for stochastic ordinary differential equations. The proposed integrator is applicable to equations with discrete commensurable delays and is particularly efficient for problems involving multiple noise terms. Experimental confirmation of the weak order 2 is provided and MATLAB codes are freely available.",
+      "pdf_link": "https://arxiv.org/pdf/2608.16396.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.16396",
+      "submission_date": "2026-08-18T04:00:00+00:00",
       "conference": "SIAM",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 66.5,
-      "updated_at": "2026-08-17T06:48:47.707652+00:00"
+      "score": 3.5,
+      "updated_at": "2026-08-18T06:38:24.121456+00:00"
     },
     {
-      "forum_id": "2608.14520",
+      "forum_id": "2608.16453",
       "paper_number": -1,
-      "title": "Comment on arXiv:2106.08363v3 [math.NA], E. Abreu, A. Espirito Santo, W. Lambert, and J. Perez, Convergence of a Lagrangian--Eulerian scheme by a weak asymptotic analysis for one-dimensional hyperbolic problems",
+      "title": "Torus computed tomography for experimental data",
       "authors": [
-        "Frederico Furtado (University of Wyoming), Felipe Pereira (The University of Texas at Dallas), Li-Ming Yeh (National Yang Ming Chiao Tung University)"
+        "Ella Salo, Alexander Meaney, Olli Koskela, Jesse Railo"
       ],
       "keywords": [
         "cs.NA",
-        "NA"
+        "SIAM"
       ],
-      "abstract": "arXiv:2608.14520v1 Announce Type: new \nAbstract: This Comment concerns arXiv:2106.08363v3 [math.NA] by E. Abreu, A. Espirito Santo, W. Lambert and J. Perez, published in Numer. Methods Partial Differential Equations 39 (2023) 2400-2443. That article builds its scheme on space-time control volumes whose lateral boundaries, called \"no-flow curves\", solve dsigma/dt = H(u)/u and are presented as new. We show, equation by equation, that this object is the space-time integral curve of the locally conservative Eulerian-Lagrangian method of Douglas, Pereira and Yeh [Comput. Geosci. 4 (2000) 1-40], that the no-flow region is the tube those curves bound, and that its scalar forward-tracked form appears in Mancuso, Pereira and de Souza [TEMA 8 (2007) 269-276, 277-286]. At issue is not moving a contro",
-      "pdf_link": "https://arxiv.org/pdf/2608.14520.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.14520",
-      "submission_date": "2026-08-17T04:00:00+00:00",
-      "conference": "NA",
+      "abstract": "arXiv:2608.16453v1 Announce Type: new \nAbstract: We implement the torus-based X-ray tomography method introduced by Ilmavirta, Koskela, and Railo in \"Torus computed tomography\", SIAM J. Appl. Math., 80(4):1947--1976, 2020, for experimental X-ray tomographic data. The numerical implementation is extended to accommodate fan-beam measurements by converting the data to a parallel-beam format and mapping the projection angles to the closed-geodesic directions on the torus. In addition, we consider two extensions of the original framework: the Star TCT method which extends the frequency coverage of the reconstruction, and a numerical implementation of torus backprojection developed by Railo in \"Fourier analysis of periodic Radon transforms\", J. Fourier Anal. Appl., 26(4):64, 2020, for which we a",
+      "pdf_link": "https://arxiv.org/pdf/2608.16453.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.16453",
+      "submission_date": "2026-08-18T04:00:00+00:00",
+      "conference": "SIAM",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-08-17T06:48:47.707991+00:00"
+      "updated_at": "2026-08-18T06:38:24.121509+00:00"
     }
   ]
 }
