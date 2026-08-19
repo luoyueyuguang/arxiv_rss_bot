@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-08-18T06:37:50.331970+00:00",
-  "paper_count": 442,
+  "last_updated": "2026-08-19T06:38:26.043520+00:00",
+  "paper_count": 441,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1882,29 +1882,6 @@
       "updated_at": "2026-07-21T08:54:17.404293+00:00"
     },
     {
-      "forum_id": "2608.14560",
-      "paper_number": -1,
-      "title": "Agentic Kernel Optimization: Generating State-of-the-Art GPU Kernels Without Hand-Written CUDA",
-      "authors": [
-        "Mao Luo, Hongbin Li, Feng Lin, Hanling Yi, Zhe Huang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "MLSys"
-      ],
-      "abstract": "arXiv:2608.14560v1 Announce Type: new \nAbstract: We study whether general-purpose code agents can produce state-of-the-art GPU kernels without any manually written CUDA code. We investigate this question using representative workloads from FlashInfer-Bench, focusing on the Fused MoE, DSA TopK Indexer, and DSA Sparse Attention, and evaluate all generated kernels under the correctness-gated FlashInfer-Bench protocol on NVIDIA B200 GPUs. Starting from the PyTorch implementations, workload definitions, benchmark commands, and a compact set of CUDA optimization skills, we build a kernel optimization workflow in Houmao, a multi-agent orchestration framework for heterogeneous coding agents, to generate, debug, profile, and optimize the kernels. Humans remain strictly in an orchestration role: def",
-      "pdf_link": "https://arxiv.org/pdf/2608.14560.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.14560",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "MLSys",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 46.0,
-      "updated_at": "2026-08-18T06:37:39.539756+00:00"
-    },
-    {
       "forum_id": "usenix-fast26-37",
       "paper_number": 37,
       "title": "Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs",
@@ -3544,6 +3521,29 @@
       "updated_at": "2026-07-21T08:54:22.942128+00:00"
     },
     {
+      "forum_id": "2504.04046",
+      "paper_number": -1,
+      "title": "Obfuscated Consensus",
+      "authors": [
+        "James Aspnes, Shlomi Dolev, Amit Hendin"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2504.04046v3 Announce Type: replace \nAbstract: The classic Fischer, Lynch, and Paterson impossibility proof demonstrates that any deterministic protocol for consensus in either a message-passing or shared-memory system must violate at least one of termination, validity, or agreement in some execution. But it does not provide an efficient procedure to find such a bad execution.\n  We show that for wait-free shared memory consensus, given a protocol in which each process performs at most $s$ steps computed with total time complexity at most $t$, there exists an adversary algorithm that takes the process's programs as input and computes within $O(st)$ time a schedule that violates agreement. We argue that this bound is tight assuming the random oracle hypothesis: there exists a determini",
+      "pdf_link": "https://arxiv.org/pdf/2504.04046.pdf",
+      "forum_link": "https://arxiv.org/abs/2504.04046",
+      "submission_date": "2026-08-19T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.5,
+      "updated_at": "2026-08-19T06:38:22.930101+00:00"
+    },
+    {
       "forum_id": "dblp-eurosys26-2",
       "paper_number": 2,
       "title": "CofferOS: Hardening OS-level Virtualization with Rust.",
@@ -4455,29 +4455,6 @@
       "updated_at": "2026-07-21T08:54:17.393948+00:00"
     },
     {
-      "forum_id": "2512.19606",
-      "paper_number": -1,
-      "title": "RAPID-LLM: Resilience-Aware Performance analysis of Infrastructure for Distributed LLM Training and Inference",
-      "authors": [
-        "George Karfakis, Lime Yao, Binglu Chen, Faraz Tahmasebi, Saptarshi Mitra, Tianyue Pan, Hyoukjun Kwon, Puneet Gupta"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2512.19606v2 Announce Type: replace-cross \nAbstract: RAPID-LLM is a unified performance modeling framework for distributed large language model (LLM) training and inference on GPU clusters, without relying on deployment-specific traces or expensive cycle-level simulation for exploration. From a workload and hardware specification, it builds hardware-aware operator-level execution models that capture tiling, memory-hierarchy effects, communication, and memory feasibility under hybrid parallelism. Its backend simulates explicit multidimensional interconnects with congestion-aware routing and support for degraded and failed links, enabling scalable what-if analysis across topology, mapping, and hardware design choices. Across 124 evaluation cases spanning inference and dense, fully shar",
-      "pdf_link": "https://arxiv.org/pdf/2512.19606.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.19606",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 24.0,
-      "updated_at": "2026-08-18T06:37:39.546247+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-56",
       "paper_number": 56,
       "title": "Osprey: Transparent and Efficient Virtual Memory for Secure Computation",
@@ -4677,6 +4654,29 @@
       "ratings": [],
       "score": 22.5,
       "updated_at": "2026-07-21T08:54:22.940355+00:00"
+    },
+    {
+      "forum_id": "2606.26292",
+      "paper_number": -1,
+      "title": "FinWhale: An Optimally Resilient Two-Round Terminating DAG Protocol",
+      "authors": [
+        "Razya Ladelsky, Roy Friedman"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2606.26292v2 Announce Type: replace \nAbstract: DAG based Byzantine Fault Tolerant protocols provide high throughput consensus under partial synchrony but existing DAG protocols still require at least three message delays to commit decisions. In contrast fast path Byzantine Fault Tolerant protocols can achieve optimal two message delay termination under favorable conditions though they do not naturally extend to DAGs.\n  We present FinWhale the first DAG based Byzantine Fault Tolerant protocol with a two message delay fast path. FinWhale extends Mysticeti with a novel fast path commit mechanism that safely coexists with the protocol's original slow path rules. To preserve safety across different local DAG views we introduce new commit structures based on fast path evidence blocks enabl",
+      "pdf_link": "https://arxiv.org/pdf/2606.26292.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.26292",
+      "submission_date": "2026-08-19T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 22.0,
+      "updated_at": "2026-08-19T06:38:22.930504+00:00"
     },
     {
       "forum_id": "usenix-osdi26-8",
@@ -4944,17 +4944,17 @@
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2608.14635v1 Announce Type: new \nAbstract: Large language model (LLM) agents are increasingly trained with reinforcement learning in long-horizon, sandboxed environments. Unlike conventional RL, agentic RL couples GPU-intensive rollout engines with stateful environment containers whose actions may produce visible side effects, such as file edits, command execution, and dependency installation. A single trajectory can span many rounds of gen- eration and environment interaction, so a component failure can discard completed work or expose the model to an environment state that is inconsistent with its context. However, existing systems lack efficient and correct recovery mechanisms for this distributed execution model. This paper presents Belayer, an efficient fault-tolerant system for",
+      "abstract": "arXiv:2608.14635v2 Announce Type: replace \nAbstract: Large language model (LLM) agents are increasingly trained with reinforcement learning in long-horizon, sandboxed environments. Unlike conventional RL, agentic RL couples GPU-intensive rollout engines with stateful environment containers whose actions may produce visible side effects, such as file edits, command execution, and dependency installation. A single trajectory can span many rounds of gen- eration and environment interaction, so a component failure can discard completed work or expose the model to an environment state that is inconsistent with its context. However, existing systems lack efficient and correct recovery mechanisms for this distributed execution model. This paper presents Belayer, an efficient fault-tolerant system",
       "pdf_link": "https://arxiv.org/pdf/2608.14635.pdf",
       "forum_link": "https://arxiv.org/abs/2608.14635",
-      "submission_date": "2026-08-18T04:00:00+00:00",
+      "submission_date": "2026-08-19T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 17.0,
-      "updated_at": "2026-08-18T06:37:39.540227+00:00"
+      "updated_at": "2026-08-19T06:38:22.930542+00:00"
     },
     {
       "forum_id": "usenix-osdi26-61",
@@ -5213,6 +5213,29 @@
       "ratings": [],
       "score": 16.0,
       "updated_at": "2026-07-21T08:54:22.935344+00:00"
+    },
+    {
+      "forum_id": "2608.17388",
+      "paper_number": -1,
+      "title": "Generalizing and accelerating consistency checking for non-transactional distributed storage systems",
+      "authors": [
+        "Kotikala Raghav, Aman Hassan, Brian Sajeev Kattikat, Patel Jay, RSRS Santhosh, Abhilash Jindal"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.17388v1 Announce Type: new \nAbstract: Linearizability checkers check if an operation history, observed by concurrent clients, is linearizable. They are used in testing distributed storage systems, and use the classic Wing-Gong (WG) linearizability checking algorithm.\n  In this paper, we generalize the WG algorithm to make linearizability checkers more versatile: we can check other non-transactional consistency guarantees, like ordered sequential consistency provided by Zookeeper. Equipped with this generalization, we can also check for system-specific consistency guarantees that introduce additional ordering constraints over operations in a history, as per the system's specification.\n  Our experiments with 8 distributed storage systems show that checking for system-specific cons",
+      "pdf_link": "https://arxiv.org/pdf/2608.17388.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.17388",
+      "submission_date": "2026-08-19T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 15.5,
+      "updated_at": "2026-08-19T06:38:22.928816+00:00"
     },
     {
       "forum_id": "usenix-osdi26-116",
@@ -7454,29 +7477,6 @@
       "ratings": [],
       "score": 4.0,
       "updated_at": "2026-07-21T08:54:26.742343+00:00"
-    },
-    {
-      "forum_id": "2506.15595",
-      "paper_number": -1,
-      "title": "BandPilot: Toward Performance- and Contention-Aware GPU Dispatching in AI Clusters",
-      "authors": [
-        "Kunming Zhang, Hanlong Liao, Junyu Xue, Deke Guo, Guoming Tang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2506.15595v5 Announce Type: replace \nAbstract: Modern multi-tenant AI clusters are increasingly communication-bound, driven by high-volume and multi-round GPU-to-GPU collective communication. Consequently, the GPU dispatcher's choice of a physical GPU subset for each tenant largely determines the job's effective collective bandwidth and thus its performance ceiling. Existing dispatchers predominantly rely on static, topology-aware heuristics that prioritize GPU resource compactness, assuming that minimizing physical distance maximizes communication bandwidth.\n  However, we reveal that this assumption often fails due to complex system-level bottlenecks, such as non-linear NIC saturation and inter-node link heterogeneity. This paper presents BandPilot, a performance- and contention-awa",
-      "pdf_link": "https://arxiv.org/pdf/2506.15595.pdf",
-      "forum_link": "https://arxiv.org/abs/2506.15595",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-08-18T06:37:39.544953+00:00"
     },
     {
       "forum_id": "usenix-osdi26-83",
@@ -10234,29 +10234,6 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
-    },
-    {
-      "forum_id": "2608.08085",
-      "paper_number": -1,
-      "title": "Effect of Abstractions and Prompting Strategies on LLM-Guided High-Performance Optimizations",
-      "authors": [
-        "Ji\\v{r}\\'i Klepl, Maty\\'a\\v{s} Brabec, Martin Kruli\\v{s}"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.08085v2 Announce Type: replace \nAbstract: Code performance optimization is a vital aspect of modern software development, as it enables faster response times and reduced resource usage. These optimizations require a deep understanding of low-level hardware details and the intricacies of parallel processing, making them challenging even for experienced developers. With the advent of Large Language Models (LLMs), which are increasingly capable of generating and understanding code, there is growing interest in incorporating these models into automated code optimization processes. Traditionally, this automation involves transcribing the source code into a domain-specific representation that can be auto-tuned using grid search or machine learning algorithms, while adhering to strict ",
-      "pdf_link": "https://arxiv.org/pdf/2608.08085.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.08085",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-18T06:37:39.545650+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

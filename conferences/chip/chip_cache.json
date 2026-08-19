@@ -1,146 +1,100 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-08-18T06:37:50.394229+00:00",
-  "paper_count": 6,
+  "last_updated": "2026-08-19T06:38:26.120642+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2608.16733",
+      "forum_id": "2608.17266",
       "paper_number": -1,
-      "title": "GoalEvolve: From Handcrafted Algorithm Priors to Goal-Driven Evolution of Physical Design Algorithms",
+      "title": "The Road Less Traveled: Congestion-Aware NoC Placement and Packet Routing for FPGAs",
       "authors": [
-        "Haixu Liu, Lei Zhou, Yuhao Ren, Yumao Wu, Zhiang Wang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2608.16733v1 Announce Type: new \nAbstract: Physical design algorithms operate within tightly coupled, multi-stage optimization flows, where stage-local gains may vanish or induce downstream degradation. Existing program-evolution frameworks often rely on stage-local objectives or undifferentiated multi-metric feedback, which neither guarantee better final results nor identify which unmet requirement should guide the next iteration. We present GoalEvolve, a goal-driven framework that makes physical design algorithm evolution accountable for the final quality of results (QoR) of the complete flow. Given a multi-objective QoR target region, GoalEvolve converts unmet requirements into normalized target gaps, identifies the dominant bottleneck, and uses stage-resolved checkpoint evidence ",
-      "pdf_link": "https://arxiv.org/pdf/2608.16733.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.16733",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-08-18T06:37:50.389985+00:00"
-    },
-    {
-      "forum_id": "2608.15173",
-      "paper_number": -1,
-      "title": "TIDE: An FPGA quantum-control processor for deterministic adaptive execution with guarded runtime program revision",
-      "authors": [
-        "Xiaoqin Luo, Jiayun Song, Xiaolu Su"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2608.15173v1 Announce Type: cross \nAbstract: Measurement-responsive quantum experiments require control programs that can revise future operations after execution has begun without disturbing events already committed to precise timing. We present Time-Deterministic and Instruction-Dynamic Execution (TIDE), an FPGA quantum-control processor that separates a runtime-revisable future from a hardware-timed committed-event stream. TIDE provides two complementary update paths: Dynamic Instruction Parameter Update (DIPU) applies a one-shot patch to the next matching event before parameter capture, while Dynamic Instruction Stream Overwrite (DISO) performs guarded replacement, logical deletion, and out-of-line insertion in future resident-program regions. Per-channel committed-event FIFOs is",
-      "pdf_link": "https://arxiv.org/pdf/2608.15173.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.15173",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-08-18T06:37:50.390208+00:00"
-    },
-    {
-      "forum_id": "2607.13079",
-      "paper_number": -1,
-      "title": "ChipVerilog: A Large-Scale OpenCores-Derived Benchmark for LLM-Based Verilog RTL Generation",
-      "authors": [
-        "Yan Tan, Jiping Du, Xiangchen Meng, Yangdi Lyu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.13079v3 Announce Type: replace \nAbstract: Large language models have shown strong potential for Verilog RTL generation. However, many existing benchmarks are built from short, self-contained module-level tasks. These tasks are useful for controlled evaluation, but they do not fully capture the code scale, hierarchy, and module interactions found in practical IP and processor-core RTL. We present ChipVerilog, a description-to-Verilog generation benchmark built from OpenCores IP/core designs. The benchmark contains 64 generation targets from five design families: OR1200, double-precision FPU, MIPS-16, I2C, and CORDIC. It includes both single-module targets and cross-module targets that instantiate or interact with other RTL modules. Several targets exceed 1,000 lines of Verilog, m",
-      "pdf_link": "https://arxiv.org/pdf/2607.13079.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.13079",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-08-18T06:37:50.390465+00:00"
-    },
-    {
-      "forum_id": "2506.19067",
-      "paper_number": -1,
-      "title": "MEDEA: A Design-Time Multi-Objective Manager for Energy-Efficient DNN Inference on Heterogeneous Ultra-Low Power Platforms",
-      "authors": [
-        "Hossein Taji, Jos\\'e Miranda, Miguel Pe\\'on-Quir\\'os, David Atienza"
+        "Soheil Gholami Shahrouz, Vaughn Betz"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2506.19067v3 Announce Type: replace \nAbstract: The growing demand for on-device AI necessitates energy-efficient execution of DNN based applications on resource-constrained ultra-low power (ULP) platforms. Heterogeneous architectures, combining specialized processing elements (PEs), have emerged as a key solution for achieving the required performance and energy efficiency. However, optimizing energy while executing applications on these platforms requires efficiently managing platform resources like PEs, power features, and memory footprint, all while adhering to critical application deadlines. This paper presents MEDEA, a novel design-time multi-objective manager for energy-efficient DNN inference on Heterogeneous ULP (HULP) platforms. MEDEA uniquely integrates: kernel-level dynami",
-      "pdf_link": "https://arxiv.org/pdf/2506.19067.pdf",
-      "forum_link": "https://arxiv.org/abs/2506.19067",
-      "submission_date": "2026-08-18T04:00:00+00:00",
+      "abstract": "arXiv:2608.17266v1 Announce Type: new \nAbstract: To help scale to ever-larger and more complex designs, recent FPGA architectures now integrate network-on-chips (NoCs). NoCs help transfer high-bandwidth data over long distances within the chip without using scarce low-delay long routing wire segments. While NoC-enhanced FPGAs aid system integration and design reuse, they also complicate FPGA computer-aided design (CAD) flows by introducing new constraints and metrics. Placement and routing need to optimize NoC metrics like latency and bandwidth utilization and avoid link oversubscription (congestion), while simultaneously optimizing the programmable routing resource usage of the design modules attached to NoC routers.\n  In this work, we develop several new approaches to reduce NoC congesti",
+      "pdf_link": "https://arxiv.org/pdf/2608.17266.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.17266",
+      "submission_date": "2026-08-19T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 68.0,
+      "updated_at": "2026-08-19T06:38:26.116835+00:00"
+    },
+    {
+      "forum_id": "2512.06208",
+      "paper_number": -1,
+      "title": "SparsePixels: Efficient Convolution for Sparse Data on FPGAs",
+      "authors": [
+        "Ho Fung Tsoi, Dylan Rankin, Vladimir Loncar, Philip Harris"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2512.06208v4 Announce Type: replace \nAbstract: Inference of standard convolutional neural networks (CNNs) on FPGAs often incurs high latency and a long initiation interval due to the deep nested loops required to densely convolve every input pixel regardless of its feature value. However, input features can be spatially sparse in some image data, where semantic information may occupy only a small fraction of the pixels and most computation would be wasted on empty regions. In this work, we introduce SparsePixels, a framework that implements sparse convolution on FPGAs by selectively retaining and computing on a small subset of active input pixels while ignoring the rest, reducing the per-layer compute from $O(HWK^2C_{\\text{in}}C_{\\text{out}})$ to $O(n^2C_{\\text{in}}C_{\\text{out}})$ a",
+      "pdf_link": "https://arxiv.org/pdf/2512.06208.pdf",
+      "forum_link": "https://arxiv.org/abs/2512.06208",
+      "submission_date": "2026-08-19T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-08-18T06:37:50.390418+00:00"
+      "updated_at": "2026-08-19T06:38:26.117142+00:00"
     },
     {
-      "forum_id": "2607.27609",
+      "forum_id": "2505.03771",
       "paper_number": -1,
-      "title": "Row-Local Spectral Certificates and Analog Courant Metrics for Finite-Bandwidth Feedback-Coupled Solvers",
+      "title": "OneDSE: Metric-Conditioned Inverse Modeling and Active Search for Sample-Efficient DSE",
       "authors": [
-        "Arash Ghasemi"
+        "Ritik Raj, Akshat Ramachandran, Danny Samuel, Jeff Nye, Shashank Nemawarkar, Tushar Krishna"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2607.27609v2 Announce Type: replace \nAbstract: This paper identifies a dynamical constraint on analog-computing approaches in which a row of the matrix is represented by an impedance network. It shows that the fastest normalized mode is no more than 2$\\pi$ times the largest combined unity-gain bandwidth (CUGBW) among all the circuit rows. The CUGBW of a row equals its finite-gain-adjusted unity-gain bandwidth plus the contributions of all rows coupled to it. Each contribution is the square root of the product of the two rows' unity-gain bandwidths multiplied by their coupling conductance and divided by the square root of the product of their total conductance loadings. This bound plays a role analogous to the Courant-number restriction in time-stepping methods by limiting the operato",
-      "pdf_link": "https://arxiv.org/pdf/2607.27609.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.27609",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-08-18T06:37:50.390508+00:00"
-    },
-    {
-      "forum_id": "2607.28699",
-      "paper_number": -1,
-      "title": "WitCert: Sound Runtime Risk Observability and Gating for KV-Cache Quantization",
-      "authors": [
-        "Fanzhe Wei (Metask Lab), Li Liu (Metask Lab), Ziyang Wang (Metask Lab), Chenyu Wang (Metask Lab)"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.28699v3 Announce Type: replace \nAbstract: KV-cache quantization is validated today by offline benchmark averages; a deployed system cannot tell whether compression is damaging the request it is serving right now. We give it a provably sound runtime meter -- a \"DTrace for KV quantization\": a per-(layer, head, step) upper bound on the total variation between exact and compressed attention. The meter has two tiers: a deterministic band-norm-witness bound, sound for any cache-preserving black-box quantizer and for any query (adaptive-safe, worst-case Cauchy--Schwarz plus RoPE band-unitarity), and a tighter probabilistic certificate for a controlled subtractively-dithered INT8 quantizer under an explicit request-level failure budget (stated for non-adaptive queries; core theorems mac",
-      "pdf_link": "https://arxiv.org/pdf/2607.28699.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.28699",
-      "submission_date": "2026-08-18T04:00:00+00:00",
+      "abstract": "arXiv:2505.03771v3 Announce Type: replace \nAbstract: We identify two key challenges in prior CPU design space exploration (DSE) approaches: (a) short-horizon prediction is forward-only: modeling PPA metrics from design parameters while designers start from metric targets, and (b) long-horizon exploration is slow: evaluating thousands of candidates on cycle-accurate simulators. This work presents OneDSE, which unifies short-horizon design prediction and long-horizon design optimization through Metric-conditioned INverse Design (MIND) and a Surrogate-Assisted Inverse Loop (SAIL). First, OneDSE-MIND inverts the prevailing recipe: conditioned on the workload, it predicts the design that achieves target metrics, finding strong design points in a handful of validations. An information-theoretic ",
+      "pdf_link": "https://arxiv.org/pdf/2505.03771.pdf",
+      "forum_link": "https://arxiv.org/abs/2505.03771",
+      "submission_date": "2026-08-19T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-08-18T06:37:50.390560+00:00"
+      "updated_at": "2026-08-19T06:38:26.117074+00:00"
+    },
+    {
+      "forum_id": "2607.07372",
+      "paper_number": -1,
+      "title": "Vectorizing Quantum Control: A RISC-V Vector Extension Architecture for Scalable Qubit Systems",
+      "authors": [
+        "Xiaorang Guo, Kun Qin, Yanbin Chen, Carsten Trinitis, Martin Schulz"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2607.07372v2 Announce Type: replace \nAbstract: The Quantum Control Processor (QCP) bridges the gap between compiler toolchains and control electronics, and is responsible for translating compiled quantum circuits into executable instructions that directly manipulate qubits and handle measurement feedback. However, existing designs rely primarily on customized instruction sets, limiting design reuse and requiring significant effort to build supporting toolchains. Furthermore, efficiently addressing qubits and scheduling operations in highly scalable scenarios remains a critical challenge. In this work, we present a vectorized quantum control approach built upon the RISC-V Vector (RVV) engine with a quantum-oriented extension. Leveraging the high parallelism of RVV, our approach can ad",
+      "pdf_link": "https://arxiv.org/pdf/2607.07372.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.07372",
+      "submission_date": "2026-08-19T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-08-19T06:38:26.117201+00:00"
     }
   ]
 }

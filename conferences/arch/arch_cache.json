@@ -1,54 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-08-18T06:37:38.732903+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-08-19T06:38:22.391179+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2608.15764",
+      "forum_id": "2512.06208",
       "paper_number": -1,
-      "title": "Concurrency Response of Plain Global Loads on the NVIDIA H100",
+      "title": "SparsePixels: Efficient Convolution for Sparse Data on FPGAs",
       "authors": [
-        "Somashekar Manjunath, Rahul Ramachandra M"
+        "Ho Fung Tsoi, Dylan Rankin, Vladimir Loncar, Philip Harris"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2608.15764v1 Announce Type: new \nAbstract: The bandwidth a memory-bound GPU kernel sustains is set by how many bytes it keeps in flight. We use Little's Law here as throughput accounting, not as a measured hardware pool. CUDA fills that budget on Hopper through plain loads (ld.global) and asynchronous copies (cp.async), among other paths; we characterize their concurrency response with clean-room microbenchmarks on three H100 SXM5 dies. Our main result concerns the plain-load path: attained LDG bandwidth peaks at a small offered per-thread load (K ~ 2) and then declines, by about 35% from K=2 to K=8 at our primary configuration. The decline survives a fixed-work control matching total issued logical loads across K, ascending and reversed sweep orders, and replication on two dies with",
-      "pdf_link": "https://arxiv.org/pdf/2608.15764.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.15764",
-      "submission_date": "2026-08-18T04:00:00+00:00",
+      "abstract": "arXiv:2512.06208v4 Announce Type: replace \nAbstract: Inference of standard convolutional neural networks (CNNs) on FPGAs often incurs high latency and a long initiation interval due to the deep nested loops required to densely convolve every input pixel regardless of its feature value. However, input features can be spatially sparse in some image data, where semantic information may occupy only a small fraction of the pixels and most computation would be wasted on empty regions. In this work, we introduce SparsePixels, a framework that implements sparse convolution on FPGAs by selectively retaining and computing on a small subset of active input pixels while ignoring the rest, reducing the per-layer compute from $O(HWK^2C_{\\text{in}}C_{\\text{out}})$ to $O(n^2C_{\\text{in}}C_{\\text{out}})$ a",
+      "pdf_link": "https://arxiv.org/pdf/2512.06208.pdf",
+      "forum_link": "https://arxiv.org/abs/2512.06208",
+      "submission_date": "2026-08-19T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-08-18T06:37:38.728385+00:00"
-    },
-    {
-      "forum_id": "2608.16542",
-      "paper_number": -1,
-      "title": "One Residual with Three Reuses: A Wristband Front End for Gesture Sensing",
-      "authors": [
-        "Sam Rifaki"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2608.16542v1 Announce Type: cross \nAbstract: Continuous wrist-worn hand sensing for gesture interfaces and motor symptom monitoring needs an always-on front end that fits inside a coin-cell power budget while pairing a micro-electro-mechanical-systems (MEMS) inertial measurement unit (IMU) with a 60 GHz frequency-modulated continuous-wave (FMCW) radar to stay robust under occlusion and on-body drift. We present a design study of such a wristband front end in which classifier wake-up gating, mmWave versus IMU routing, and innovation-based EKF measurement reweighting share a single on-chip residual generator. The shared generator occupies 14.4 KB of program memory and 278 B of state and runs at 110K multiply-accumulates (MACs) per frame on an Ambiq Apollo4 Blue Plus class edge microcon",
-      "pdf_link": "https://arxiv.org/pdf/2608.16542.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.16542",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-08-18T06:37:38.728601+00:00"
+      "score": 31.5,
+      "updated_at": "2026-08-19T06:38:22.387894+00:00"
     }
   ]
 }

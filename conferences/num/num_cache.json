@@ -1,77 +1,54 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-08-18T06:38:24.126470+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-08-19T06:38:55.320980+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2401.04781",
+      "forum_id": "2410.11090",
       "paper_number": -1,
-      "title": "Mathematical modeling of the mechanical behavior of three-layer plates with a tetrachiral honeycomb core",
+      "title": "The Lanczos algorithm for matrix functions: a handbook for scientists",
       "authors": [
-        "A. V. Mazaev"
+        "Tyler Chen"
       ],
       "keywords": [
         "cs.NA",
         "numerical analysis"
       ],
-      "abstract": "arXiv:2401.04781v3 Announce Type: replace \nAbstract: This work examines the mechanical behavior of three-layer plates with a tetrachiral honeycomb core and solid face layers under static bending conditions. The influence of discretization, relative density, and thickness of the honeycomb core on the stress state of the composite plates is investigated under two boundary conditions: rigid clamping and elastic rotational support. The first numerical experiment setup involves a constant thickness of each composite layer while varying the core relative density. The second experiment setup maintains a constant volume of the honeycomb core solid body, which causes its thickness to change as the relative density varies. Mathematical modeling is performed using the finite element method within the",
-      "pdf_link": "https://arxiv.org/pdf/2401.04781.pdf",
-      "forum_link": "https://arxiv.org/abs/2401.04781",
-      "submission_date": "2026-08-18T04:00:00+00:00",
+      "abstract": "arXiv:2410.11090v2 Announce Type: replace \nAbstract: Lanczos-based methods have become standard tools for tasks involving matrix functions. Progress on these algorithms has been driven by several largely disjoint communities, resulting many innovative and important advancements which would not have been possible otherwise. However, this also has resulted in a somewhat fragmented state of knowledge and the propagation of a number of incorrect beliefs about the behavior of Lanczos-based methods in finite precision arithmetic.\n  This monograph aims to provide an accessible introduction to Lanczos-based methods for matrix functions. The intended audience is scientists outside of numerical analysis, graduate students, and researchers wishing to begin work in this area. Our emphasis is on concep",
+      "pdf_link": "https://arxiv.org/pdf/2410.11090.pdf",
+      "forum_link": "https://arxiv.org/abs/2410.11090",
+      "submission_date": "2026-08-19T04:00:00+00:00",
       "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-08-18T06:38:24.122232+00:00"
+      "score": 1.0,
+      "updated_at": "2026-08-19T06:38:55.317540+00:00"
     },
     {
-      "forum_id": "2608.16396",
+      "forum_id": "2603.25691",
       "paper_number": -1,
-      "title": "A weak order 2 Runge-Kutta method for It\\^o stochastic delay differential equations",
+      "title": "Fast and Accurate CP-HIFI Tensor Decompositions: Exploiting Kronecker Structure",
       "authors": [
-        "Alessia and\\`o, Dimitri Breda, Faraz William"
+        "Johannes J. Brust, Tamara G. Kolda"
       ],
       "keywords": [
         "cs.NA",
-        "SIAM"
+        "scientific computing"
       ],
-      "abstract": "arXiv:2608.16396v1 Announce Type: new \nAbstract: We present a Runge-Kutta method of weak order 2 for the numerical time integration of stochastic delay differential equations. This scheme extends the class of second order Runge-Kutta methods introduced by A. R\\\"o{\\ss}ler in [SIAM J. Numer. Anal., 47(3):1713-1738, 2009] for stochastic ordinary differential equations. The proposed integrator is applicable to equations with discrete commensurable delays and is particularly efficient for problems involving multiple noise terms. Experimental confirmation of the weak order 2 is provided and MATLAB codes are freely available.",
-      "pdf_link": "https://arxiv.org/pdf/2608.16396.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.16396",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "SIAM",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-08-18T06:38:24.121456+00:00"
-    },
-    {
-      "forum_id": "2608.16453",
-      "paper_number": -1,
-      "title": "Torus computed tomography for experimental data",
-      "authors": [
-        "Ella Salo, Alexander Meaney, Olli Koskela, Jesse Railo"
-      ],
-      "keywords": [
-        "cs.NA",
-        "SIAM"
-      ],
-      "abstract": "arXiv:2608.16453v1 Announce Type: new \nAbstract: We implement the torus-based X-ray tomography method introduced by Ilmavirta, Koskela, and Railo in \"Torus computed tomography\", SIAM J. Appl. Math., 80(4):1947--1976, 2020, for experimental X-ray tomographic data. The numerical implementation is extended to accommodate fan-beam measurements by converting the data to a parallel-beam format and mapping the projection angles to the closed-geodesic directions on the torus. In addition, we consider two extensions of the original framework: the Star TCT method which extends the frequency coverage of the reconstruction, and a numerical implementation of torus backprojection developed by Railo in \"Fourier analysis of periodic Radon transforms\", J. Fourier Anal. Appl., 26(4):64, 2020, for which we a",
-      "pdf_link": "https://arxiv.org/pdf/2608.16453.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.16453",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "SIAM",
+      "abstract": "arXiv:2603.25691v2 Announce Type: replace \nAbstract: Tensor decompositions are a fundamental tool in scientific computing and data analysis. In many applications -- such as simulation data on irregular grids, surrogate modeling for parameterized PDEs, or spectroscopic measurements -- the data has both discrete and continuous structure, and may only be observed at scattered sample points. The CP-HIFI (hybrid infinite-finite) decomposition generalizes the Canonical Polyadic (CP) tensor decomposition to settings where some factors are finite-dimensional vectors and others are functions drawn from infinite-dimensional spaces. The decomposition can be applied to a fully observed tensor (aligned) or, when only scattered observations are available, to a sparsely sampled tensor (unaligned). Curren",
+      "pdf_link": "https://arxiv.org/pdf/2603.25691.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.25691",
+      "submission_date": "2026-08-19T04:00:00+00:00",
+      "conference": "scientific computing",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-08-18T06:38:24.121509+00:00"
+      "updated_at": "2026-08-19T06:38:55.317720+00:00"
     }
   ]
 }
