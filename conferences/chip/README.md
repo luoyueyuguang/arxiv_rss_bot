@@ -1,6 +1,6 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-08-19 06:38:26 UTC
+- **Last Updated**: 2026-08-20 06:40:07 UTC
 - **Total Filtered Papers**: 4
 - **Displaying**: 4 (arxiv: 4)
 - **Papers with Ratings**: 0
@@ -9,7 +9,7 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [The Road Less Traveled: Congestion-Aware NoC Placement and Packet Routing for FPGAs](https://arxiv.org/abs/2608.17266) | `ARXIV` | 68.0 |
-| 2 | [SparsePixels: Efficient Convolution for Sparse Data on FPGAs](https://arxiv.org/abs/2512.06208) | `ARXIV` | 2.5 |
-| 3 | [OneDSE: Metric-Conditioned Inverse Modeling and Active Search for Sample-Efficient DSE](https://arxiv.org/abs/2505.03771) | `ARXIV` | 1.0 |
-| 4 | [Vectorizing Quantum Control: A RISC-V Vector Extension Architecture for Scalable Qubit Systems](https://arxiv.org/abs/2607.07372) | `ARXIV` | 1.0 |
+| 1 | [Coverage-Driven RTL Assertion Generation with Formal Exploration and Neuro-Symbolic Refinement](https://arxiv.org/abs/2608.18482) | `ARXIV` | 3.5 |
+| 2 | [Selective KV Cache Protection for Noise-Resilient LLM Inference on Analog Compute-In-Memory Systems](https://arxiv.org/abs/2607.29076) | `ARXIV` | 2.5 |
+| 3 | [FPGA Lifecycle Management for RISC-V Systems](https://arxiv.org/abs/2608.18156) | `ARXIV` | 1.5 |
+| 4 | [MAGMA: Mixture-Model Adaptive Gaussian Model Acceleration](https://arxiv.org/abs/2608.18366) | `ARXIV` | 1.0 |

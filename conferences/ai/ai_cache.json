@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-08-19T06:38:55.246650+00:00",
-  "paper_count": 30,
+  "last_updated": "2026-08-20T06:40:39.990285+00:00",
+  "paper_count": 31,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -100,6 +100,29 @@
       "ratings": [],
       "score": 61.5,
       "updated_at": "2026-07-23T08:28:51.358970+00:00"
+    },
+    {
+      "forum_id": "2606.14870",
+      "paper_number": -1,
+      "title": "Pre-Training for Simulation-Based Science: A Study on Jet Foundation Model Training Objectives",
+      "authors": [
+        "Ibrahim Elsharkawy, Joschka Birk, Vinicius Mikuni, Wahid Bhimji, Gregor Kasieczka, Benjamin Nachman"
+      ],
+      "keywords": [
+        "cs.LG",
+        "AI for Science"
+      ],
+      "abstract": "arXiv:2606.14870v2 Announce Type: replace-cross \nAbstract: Foundation models (FMs) trained on large datasets and fine-tuned on downstream tasks have emerged as a powerful paradigm in AI for science. Industrial FMs are typically trained using self-supervision with masking due to the lack of labels. In many scientific domains, accurate simulations are plentiful and facilitate large, labeled datasets. This opens up new possibilities for pre-training. We present a systematic comparison of pre-training methods using the OmniLearned High Energy Physics FM framework. We test supervised classification, flow-matching generation, and self-supervised masked particle modeling. All models are pre-trained on the JetClass dataset and fine-tuned on two representative downstream tasks, top jet classificati",
+      "pdf_link": "https://arxiv.org/pdf/2606.14870.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.14870",
+      "submission_date": "2026-08-20T04:00:00+00:00",
+      "conference": "AI for Science",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 45.5,
+      "updated_at": "2026-08-20T06:40:07.578686+00:00"
     },
     {
       "forum_id": "mlr-icml25-52",

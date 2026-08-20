@@ -1,100 +1,100 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-08-19T06:38:26.120642+00:00",
+  "last_updated": "2026-08-20T06:40:07.124693+00:00",
   "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2608.17266",
+      "forum_id": "2608.18482",
       "paper_number": -1,
-      "title": "The Road Less Traveled: Congestion-Aware NoC Placement and Packet Routing for FPGAs",
+      "title": "Coverage-Driven RTL Assertion Generation with Formal Exploration and Neuro-Symbolic Refinement",
       "authors": [
-        "Soheil Gholami Shahrouz, Vaughn Betz"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2608.17266v1 Announce Type: new \nAbstract: To help scale to ever-larger and more complex designs, recent FPGA architectures now integrate network-on-chips (NoCs). NoCs help transfer high-bandwidth data over long distances within the chip without using scarce low-delay long routing wire segments. While NoC-enhanced FPGAs aid system integration and design reuse, they also complicate FPGA computer-aided design (CAD) flows by introducing new constraints and metrics. Placement and routing need to optimize NoC metrics like latency and bandwidth utilization and avoid link oversubscription (congestion), while simultaneously optimizing the programmable routing resource usage of the design modules attached to NoC routers.\n  In this work, we develop several new approaches to reduce NoC congesti",
-      "pdf_link": "https://arxiv.org/pdf/2608.17266.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.17266",
-      "submission_date": "2026-08-19T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 68.0,
-      "updated_at": "2026-08-19T06:38:26.116835+00:00"
-    },
-    {
-      "forum_id": "2512.06208",
-      "paper_number": -1,
-      "title": "SparsePixels: Efficient Convolution for Sparse Data on FPGAs",
-      "authors": [
-        "Ho Fung Tsoi, Dylan Rankin, Vladimir Loncar, Philip Harris"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2512.06208v4 Announce Type: replace \nAbstract: Inference of standard convolutional neural networks (CNNs) on FPGAs often incurs high latency and a long initiation interval due to the deep nested loops required to densely convolve every input pixel regardless of its feature value. However, input features can be spatially sparse in some image data, where semantic information may occupy only a small fraction of the pixels and most computation would be wasted on empty regions. In this work, we introduce SparsePixels, a framework that implements sparse convolution on FPGAs by selectively retaining and computing on a small subset of active input pixels while ignoring the rest, reducing the per-layer compute from $O(HWK^2C_{\\text{in}}C_{\\text{out}})$ to $O(n^2C_{\\text{in}}C_{\\text{out}})$ a",
-      "pdf_link": "https://arxiv.org/pdf/2512.06208.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.06208",
-      "submission_date": "2026-08-19T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-08-19T06:38:26.117142+00:00"
-    },
-    {
-      "forum_id": "2505.03771",
-      "paper_number": -1,
-      "title": "OneDSE: Metric-Conditioned Inverse Modeling and Active Search for Sample-Efficient DSE",
-      "authors": [
-        "Ritik Raj, Akshat Ramachandran, Danny Samuel, Jeff Nye, Shashank Nemawarkar, Tushar Krishna"
+        "Zhiyuan Yan, Ziyue Zheng, Hongce Zhang"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2505.03771v3 Announce Type: replace \nAbstract: We identify two key challenges in prior CPU design space exploration (DSE) approaches: (a) short-horizon prediction is forward-only: modeling PPA metrics from design parameters while designers start from metric targets, and (b) long-horizon exploration is slow: evaluating thousands of candidates on cycle-accurate simulators. This work presents OneDSE, which unifies short-horizon design prediction and long-horizon design optimization through Metric-conditioned INverse Design (MIND) and a Surrogate-Assisted Inverse Loop (SAIL). First, OneDSE-MIND inverts the prevailing recipe: conditioned on the workload, it predicts the design that achieves target metrics, finding strong design points in a handful of validations. An information-theoretic ",
-      "pdf_link": "https://arxiv.org/pdf/2505.03771.pdf",
-      "forum_link": "https://arxiv.org/abs/2505.03771",
-      "submission_date": "2026-08-19T04:00:00+00:00",
+      "abstract": "arXiv:2608.18482v1 Announce Type: new \nAbstract: Hardware functional verification relies on high-quality assertions to expose design bugs and establish confidence in Register Transfer Level (RTL) designs. Yet existing assertion mining methods still struggle to produce complete and reliable assertion sets: random or limited traces fail to cover hard-to-reach behaviors, and one-shot generation provides little feedback about what remains unverified or how the assertion set should be improved. As a result, critical design behaviors can remain uncovered even when many assertions are generated. We present NeuroAssertion, a coverage-driven assertion generation framework that combines formal trace generation, syntax-guided synthesis (SyGuS), and an agent-inspired refinement process within a unifie",
+      "pdf_link": "https://arxiv.org/pdf/2608.18482.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.18482",
+      "submission_date": "2026-08-20T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-08-20T06:40:07.121479+00:00"
+    },
+    {
+      "forum_id": "2607.29076",
+      "paper_number": -1,
+      "title": "Selective KV Cache Protection for Noise-Resilient LLM Inference on Analog Compute-In-Memory Systems",
+      "authors": [
+        "Yuannuo Feng, Wenyong Zhou, Yuang Ma, Yizhe Chen, Wenshuai Yao, Yuxin Xie, Ngai Wong, Wang Kang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.29076v2 Announce Type: replace \nAbstract: Analog compute-in-memory (CIM) arrays have emerged as a promising substrate for energy-efficient LLM inference, particularly for weight-stationary computations in linear layers. However, extending analog CIM to attention mechanisms introduces a fundamental challenge: KV cache operations demand repeated in-situ weight updates, and the resulting mismatch with the weight-stationary paradigm exposes dynamic computations to significant hardware noise, a critical problem that remains largely unexplored. In this paper, we present the first systematic study of dynamic attention computation on analog CIM arrays, revealing that initial and recent tokens exhibit disproportionate vulnerability to hardware noise. Motivated by this token-level insight",
+      "pdf_link": "https://arxiv.org/pdf/2607.29076.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.29076",
+      "submission_date": "2026-08-20T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-08-20T06:40:07.121648+00:00"
+    },
+    {
+      "forum_id": "2608.18156",
+      "paper_number": -1,
+      "title": "FPGA Lifecycle Management for RISC-V Systems",
+      "authors": [
+        "Tianhai Liu, James J. Hunt"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2608.18156v1 Announce Type: new \nAbstract: FPGA lifecycle management remains tied to proprietary toolchains and host architectures, leaving RISC-V without a vendor-neutral model for scalable bitstream deployment. A host-agnostic control-plane architecture is presented that shifts lifecycle management to the operating-system layer by leveraging standard Linux capabilities, thereby decoupling deployment from specific ISAs and vendor stacks. This enables Linux-capable RISC-V processors to serve as control hosts in heterogeneous FPGA systems. Prototyped on a Zynq-7000 SoC and generalizable to RISC-V platforms, the architecture provides a portable foundation for fleet-scale FPGA management.",
+      "pdf_link": "https://arxiv.org/pdf/2608.18156.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.18156",
+      "submission_date": "2026-08-20T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-08-20T06:40:07.121324+00:00"
+    },
+    {
+      "forum_id": "2608.18366",
+      "paper_number": -1,
+      "title": "MAGMA: Mixture-Model Adaptive Gaussian Model Acceleration",
+      "authors": [
+        "Peter Forcha, Harshitha Kajekusumadhar, Mbua Peter, Muhammed Kawser, Audrey Cyriell Mo"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2608.18366v1 Announce Type: new \nAbstract: Conventional FPGA-based Gaussian Mixture Model (GMM) accelerators use offline-trained, fixed parameters, limiting their ability to adapt to evolving scene statistics in long-lived edge systems. We present MAGMA, a fully synthesizable fixed-point FPGA architecture that performs concurrent GMM inference and online Expectation-Maximization (EM) parameter adaptation from a streaming RGB pixel input. MAGMA combines a pipelined inference datapath with a background update engine using hardware-friendly transcendental approximations---a range-reduced Chebyshev exponential, a CLZ-based logarithm, and a shift-and-subtract divider---alongside guards against variance collapse and cluster death that stabilize online fixed-point EM. Implemented on an AMD ",
+      "pdf_link": "https://arxiv.org/pdf/2608.18366.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.18366",
+      "submission_date": "2026-08-20T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-08-19T06:38:26.117074+00:00"
-    },
-    {
-      "forum_id": "2607.07372",
-      "paper_number": -1,
-      "title": "Vectorizing Quantum Control: A RISC-V Vector Extension Architecture for Scalable Qubit Systems",
-      "authors": [
-        "Xiaorang Guo, Kun Qin, Yanbin Chen, Carsten Trinitis, Martin Schulz"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2607.07372v2 Announce Type: replace \nAbstract: The Quantum Control Processor (QCP) bridges the gap between compiler toolchains and control electronics, and is responsible for translating compiled quantum circuits into executable instructions that directly manipulate qubits and handle measurement feedback. However, existing designs rely primarily on customized instruction sets, limiting design reuse and requiring significant effort to build supporting toolchains. Furthermore, efficiently addressing qubits and scheduling operations in highly scalable scenarios remains a critical challenge. In this work, we present a vectorized quantum control approach built upon the RISC-V Vector (RVV) engine with a quantum-oriented extension. Leveraging the high parallelism of RVV, our approach can ad",
-      "pdf_link": "https://arxiv.org/pdf/2607.07372.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.07372",
-      "submission_date": "2026-08-19T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-19T06:38:26.117201+00:00"
+      "updated_at": "2026-08-20T06:40:07.121432+00:00"
     }
   ]
 }

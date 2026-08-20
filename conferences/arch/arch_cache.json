@@ -1,31 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-08-19T06:38:22.391179+00:00",
+  "last_updated": "2026-08-20T06:40:02.913916+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2512.06208",
+      "forum_id": "2608.07625",
       "paper_number": -1,
-      "title": "SparsePixels: Efficient Convolution for Sparse Data on FPGAs",
+      "title": "HINT: Toward an Executable Hardware-Intent Representation Layer for LLM-Driven RTL Generation",
       "authors": [
-        "Ho Fung Tsoi, Dylan Rankin, Vladimir Loncar, Philip Harris"
+        "Tairan Cheng, Yi Liu, Dongsheng Zuo, Zhengyuan Shi, Hongji Zhang, Xiangfei Hu, Maoshuo He, Hao Yan, Qiang Xu"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2512.06208v4 Announce Type: replace \nAbstract: Inference of standard convolutional neural networks (CNNs) on FPGAs often incurs high latency and a long initiation interval due to the deep nested loops required to densely convolve every input pixel regardless of its feature value. However, input features can be spatially sparse in some image data, where semantic information may occupy only a small fraction of the pixels and most computation would be wasted on empty regions. In this work, we introduce SparsePixels, a framework that implements sparse convolution on FPGAs by selectively retaining and computing on a small subset of active input pixels while ignoring the rest, reducing the per-layer compute from $O(HWK^2C_{\\text{in}}C_{\\text{out}})$ to $O(n^2C_{\\text{in}}C_{\\text{out}})$ a",
-      "pdf_link": "https://arxiv.org/pdf/2512.06208.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.06208",
-      "submission_date": "2026-08-19T04:00:00+00:00",
+      "abstract": "arXiv:2608.07625v2 Announce Type: replace \nAbstract: Generating implementation-quality RTL with large language models (LLMs) remains difficult because direct generation must resolve microarchitecture while simultaneously producing and debugging low-level code. We present HINT, an executable hardware-intent intermediate representation layer between behavioral specifications or executable oracles and RTL. HINT makes RTL-relevant microarchitecture explicit, supports pre-RTL checking, and supplies explicit RTL-lowering obligations. We evaluate HINT using both a minimal single-agent flow and a full staged workflow. Across seven operator cases, the HINT-mediated route, with no post-synthesis QoR refinement, produces contract-compliant synthesizable RTL on 7/7 cases; Direct C2RTL and C2HLSC apply",
+      "pdf_link": "https://arxiv.org/pdf/2608.07625.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.07625",
+      "submission_date": "2026-08-20T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-08-19T06:38:22.387894+00:00"
+      "score": 12.0,
+      "updated_at": "2026-08-20T06:40:02.911029+00:00"
     }
   ]
 }

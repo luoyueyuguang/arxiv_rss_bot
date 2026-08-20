@@ -1,146 +1,31 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-08-18T06:37:39.423797+00:00",
-  "paper_count": 6,
+  "last_updated": "2026-08-20T06:40:03.662337+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2608.14827",
+      "forum_id": "2608.13824",
       "paper_number": -1,
-      "title": "Enabling Hybrid HPCQC Workflows with a Heterogeneous Software Stack",
+      "title": "Balancing Workload Performance and Slurm Stress: Four Nextflow Deployment Strategies",
       "authors": [
-        "Muhammad Nufail Farooqi, Minh Chung, Burak Mete, Eric Mansfield, Bernd Hoffmann, Teemu Mattsson, Laura Schulz, Jorge Echavarria"
-      ],
-      "keywords": [
-        "cs.DC",
-        "Supercomputing"
-      ],
-      "abstract": "arXiv:2608.14827v1 Announce Type: cross \nAbstract: In this work, we demonstrate hybrid High Performance Computing-Quantum Computing (HPCQC) workflows on a production petascale system. The demonstration combines three components: the SuperMUC-NG supercomputer at the Leibniz Supercomputing Centre (LRZ), a 20-qubit superconducting quantum processor provided by IQM Quantum Computers (IQM), and Munich Quantum Valley (MQV)'s Munich Quantum Software Stack (MQSS).\n  Integrating quantum processors into High Performance Computing (HPC) systems requires a heterogeneous software stack capable of orchestrating classical and quantum resources within established supercomputing workflows. MQSS treats Quantum Processing Units (QPUs) as scheduler-managed accelerators and it performs resource coordination fo",
-      "pdf_link": "https://arxiv.org/pdf/2608.14827.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.14827",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "Supercomputing",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 98.5,
-      "updated_at": "2026-08-18T06:37:38.811400+00:00"
-    },
-    {
-      "forum_id": "2506.15595",
-      "paper_number": -1,
-      "title": "BandPilot: Toward Performance- and Contention-Aware GPU Dispatching in AI Clusters",
-      "authors": [
-        "Kunming Zhang, Hanlong Liao, Junyu Xue, Deke Guo, Guoming Tang"
+        "Nil Tianchen Mu, William Dizon, Glen Otero, Torey Battelle"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2506.15595v5 Announce Type: replace \nAbstract: Modern multi-tenant AI clusters are increasingly communication-bound, driven by high-volume and multi-round GPU-to-GPU collective communication. Consequently, the GPU dispatcher's choice of a physical GPU subset for each tenant largely determines the job's effective collective bandwidth and thus its performance ceiling. Existing dispatchers predominantly rely on static, topology-aware heuristics that prioritize GPU resource compactness, assuming that minimizing physical distance maximizes communication bandwidth.\n  However, we reveal that this assumption often fails due to complex system-level bottlenecks, such as non-linear NIC saturation and inter-node link heterogeneity. This paper presents BandPilot, a performance- and contention-awa",
-      "pdf_link": "https://arxiv.org/pdf/2506.15595.pdf",
-      "forum_link": "https://arxiv.org/abs/2506.15595",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 46.5,
-      "updated_at": "2026-08-18T06:37:38.812176+00:00"
-    },
-    {
-      "forum_id": "2606.03770",
-      "paper_number": -1,
-      "title": "E2LLM: Towards Efficient LLM Serving in Heterogeneous Edge/Fog Environments",
-      "authors": [
-        "Truong-Thanh Le, Amir Taherkordi, Hoang-Loc La, Frank Eliassen, Phuong Hoai Ha, Peiyuan Guan"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2606.03770v2 Announce Type: replace \nAbstract: Large Language Models (LLMs) have become integral to modern applications, yet their deployment remains challenging. Beyond executing the models themselves, practical deployment must address cost efficiency, low latency, and optimal resource utilization. Conventional approaches typically assume that an entire model can be hosted on a single device, which does not hold in many real-world scenarios, particularly in Edge and Fog environments where device resources are constrained. In this paper, we introduce E2LLM, a framework designed to enable efficient LLM deployment in such resource limited settings. Rather than simply partitioning a single model across all available devices, E2LLM replicates the full model across multiple groups of devi",
-      "pdf_link": "https://arxiv.org/pdf/2606.03770.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.03770",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-08-18T06:37:38.812377+00:00"
-    },
-    {
-      "forum_id": "2512.19606",
-      "paper_number": -1,
-      "title": "RAPID-LLM: Resilience-Aware Performance analysis of Infrastructure for Distributed LLM Training and Inference",
-      "authors": [
-        "George Karfakis, Lime Yao, Binglu Chen, Faraz Tahmasebi, Saptarshi Mitra, Tianyue Pan, Hyoukjun Kwon, Puneet Gupta"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2512.19606v2 Announce Type: replace-cross \nAbstract: RAPID-LLM is a unified performance modeling framework for distributed large language model (LLM) training and inference on GPU clusters, without relying on deployment-specific traces or expensive cycle-level simulation for exploration. From a workload and hardware specification, it builds hardware-aware operator-level execution models that capture tiling, memory-hierarchy effects, communication, and memory feasibility under hybrid parallelism. Its backend simulates explicit multidimensional interconnects with congestion-aware routing and support for degraded and failed links, enabling scalable what-if analysis across topology, mapping, and hardware design choices. Across 124 evaluation cases spanning inference and dense, fully shar",
-      "pdf_link": "https://arxiv.org/pdf/2512.19606.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.19606",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 29.0,
-      "updated_at": "2026-08-18T06:37:38.812817+00:00"
-    },
-    {
-      "forum_id": "2608.14863",
-      "paper_number": -1,
-      "title": "Evaluating Agentic Code Repair Capabilities in Distributed Systems",
-      "authors": [
-        "Yibo Yan, Huijuan Wang, Junzhou He, Yizhuo Liang, Shaoyu Wang, Huanchen Sun, Seo Jin Park"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2608.14863v1 Announce Type: cross \nAbstract: LLM-based coding agents have advanced rapidly on single-process SWE tasks, with frontier models now clustering in the high-70s on SWE-bench Verified. Distributed-system debugging, however, remains an under-explored regime: bugs span processes, nodes, and protocol interactions, with root causes rarely recoverable from source alone and brute-force exploration intractable across non-deterministic interleavings. This leaves two gaps in LLM and agent evaluation: no code-repair benchmark targets distributed-system bugs, and no controlled study isolates how much externally provided debugging context changes agent success on them. We introduce DDBench, a code-repair benchmark of 60 historical bugs mined from 13 open-source distributed systems, par",
-      "pdf_link": "https://arxiv.org/pdf/2608.14863.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.14863",
-      "submission_date": "2026-08-18T04:00:00+00:00",
+      "abstract": "arXiv:2608.13824v2 Announce Type: replace \nAbstract: Wide Nextflow fan-outs on shared Slurm clusters can submit tens of thousands of short tasks. Deployment settings route them through individual jobs, arrays, or nested schedulers inside enclosing allocations. These settings determine workflow turnaround and RPC volume, a shared cost that can degrade scheduler responsiveness. Existing comparisons evaluate whole workflow systems, while per-task queueing metrics cannot span architectures that dispatch inside existing allocations. We contribute a reproducible measurement protocol and benchmark harness. A clean-start clock begins before backend startup or allocation requests, placing architecturally different backends on a common time axis. Per-user Slurm sdiag counters attribute request count",
+      "pdf_link": "https://arxiv.org/pdf/2608.13824.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.13824",
+      "submission_date": "2026-08-20T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 13.5,
-      "updated_at": "2026-08-18T06:37:38.811468+00:00"
-    },
-    {
-      "forum_id": "2608.15762",
-      "paper_number": -1,
-      "title": "Global Simulation-Guided Dynamic Operator Scheduling for Efficient Multi-Tenant Model Serving",
-      "authors": [
-        "Weinan Liu, Zeyuan Ding, Dian Ding, Chengcheng Wan, Lu Tang, Guangtao Xue, Jiwu Shu, Yiming Zhang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2608.15762v1 Announce Type: cross \nAbstract: Container-granularity scheduling leaves abundant short-lived idle slices within containers unexploited. Reallocating containers is too heavyweight to utilize such fine-grained opportunities under SLA constraints, and operator-level scheduling requires reasoning about dependencies, memory safety, and cluster-wide execution dynamics in real time.\n  In this paper, we present SliceScheduler, a dynamic operator-level scheduling system for multi-tenant model serving. The key idea is to expose cluster-wide operator execution state and enable what-if reasoning over scheduling decisions. SliceScheduler consists of four key components. First, we introduce the Global Mapping Graph (GMG), a unified abstraction that captures operator dependencies, tens",
-      "pdf_link": "https://arxiv.org/pdf/2608.15762.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.15762",
-      "submission_date": "2026-08-18T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-08-18T06:37:38.811848+00:00"
+      "updated_at": "2026-08-20T06:40:02.959964+00:00"
     }
   ]
 }

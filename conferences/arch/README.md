@@ -1,6 +1,6 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-08-19 06:38:22 UTC
+- **Last Updated**: 2026-08-20 06:40:02 UTC
 - **Total Filtered Papers**: 1
 - **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
@@ -9,4 +9,4 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [SparsePixels: Efficient Convolution for Sparse Data on FPGAs](https://arxiv.org/abs/2512.06208) | `ARXIV` | 31.5 |
+| 1 | [HINT: Toward an Executable Hardware-Intent Representation Layer for LLM-Driven RTL Generation](https://arxiv.org/abs/2608.07625) | `ARXIV` | 12.0 |

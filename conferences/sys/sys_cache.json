@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-08-19T06:38:26.043520+00:00",
-  "paper_count": 441,
+  "last_updated": "2026-08-20T06:40:07.064946+00:00",
+  "paper_count": 439,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -3521,29 +3521,6 @@
       "updated_at": "2026-07-21T08:54:22.942128+00:00"
     },
     {
-      "forum_id": "2504.04046",
-      "paper_number": -1,
-      "title": "Obfuscated Consensus",
-      "authors": [
-        "James Aspnes, Shlomi Dolev, Amit Hendin"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2504.04046v3 Announce Type: replace \nAbstract: The classic Fischer, Lynch, and Paterson impossibility proof demonstrates that any deterministic protocol for consensus in either a message-passing or shared-memory system must violate at least one of termination, validity, or agreement in some execution. But it does not provide an efficient procedure to find such a bad execution.\n  We show that for wait-free shared memory consensus, given a protocol in which each process performs at most $s$ steps computed with total time complexity at most $t$, there exists an adversary algorithm that takes the process's programs as input and computes within $O(st)$ time a schedule that violates agreement. We argue that this bound is tight assuming the random oracle hypothesis: there exists a determini",
-      "pdf_link": "https://arxiv.org/pdf/2504.04046.pdf",
-      "forum_link": "https://arxiv.org/abs/2504.04046",
-      "submission_date": "2026-08-19T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-08-19T06:38:22.930101+00:00"
-    },
-    {
       "forum_id": "dblp-eurosys26-2",
       "paper_number": 2,
       "title": "CofferOS: Hardening OS-level Virtualization with Rust.",
@@ -4656,29 +4633,6 @@
       "updated_at": "2026-07-21T08:54:22.940355+00:00"
     },
     {
-      "forum_id": "2606.26292",
-      "paper_number": -1,
-      "title": "FinWhale: An Optimally Resilient Two-Round Terminating DAG Protocol",
-      "authors": [
-        "Razya Ladelsky, Roy Friedman"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2606.26292v2 Announce Type: replace \nAbstract: DAG based Byzantine Fault Tolerant protocols provide high throughput consensus under partial synchrony but existing DAG protocols still require at least three message delays to commit decisions. In contrast fast path Byzantine Fault Tolerant protocols can achieve optimal two message delay termination under favorable conditions though they do not naturally extend to DAGs.\n  We present FinWhale the first DAG based Byzantine Fault Tolerant protocol with a two message delay fast path. FinWhale extends Mysticeti with a novel fast path commit mechanism that safely coexists with the protocol's original slow path rules. To preserve safety across different local DAG views we introduce new commit structures based on fast path evidence blocks enabl",
-      "pdf_link": "https://arxiv.org/pdf/2606.26292.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.26292",
-      "submission_date": "2026-08-19T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 22.0,
-      "updated_at": "2026-08-19T06:38:22.930504+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-8",
       "paper_number": 8,
       "title": "MAC: Metadata Acceleration for Sustainable Performance in Big-Data Systems with CXL DRAM",
@@ -4932,29 +4886,6 @@
       "ratings": [],
       "score": 17.5,
       "updated_at": "2026-07-21T08:54:17.400855+00:00"
-    },
-    {
-      "forum_id": "2608.14635",
-      "paper_number": -1,
-      "title": "Belayer: Efficient Fault Tolerance for LLM Agentic RL Training",
-      "authors": [
-        "Jiecheng Zhou, Qinghao Hu, Peng Sun, Xingcheng Zhang, Weiming Zhang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.14635v2 Announce Type: replace \nAbstract: Large language model (LLM) agents are increasingly trained with reinforcement learning in long-horizon, sandboxed environments. Unlike conventional RL, agentic RL couples GPU-intensive rollout engines with stateful environment containers whose actions may produce visible side effects, such as file edits, command execution, and dependency installation. A single trajectory can span many rounds of gen- eration and environment interaction, so a component failure can discard completed work or expose the model to an environment state that is inconsistent with its context. However, existing systems lack efficient and correct recovery mechanisms for this distributed execution model. This paper presents Belayer, an efficient fault-tolerant system",
-      "pdf_link": "https://arxiv.org/pdf/2608.14635.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.14635",
-      "submission_date": "2026-08-19T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 17.0,
-      "updated_at": "2026-08-19T06:38:22.930542+00:00"
     },
     {
       "forum_id": "usenix-osdi26-61",
@@ -5213,29 +5144,6 @@
       "ratings": [],
       "score": 16.0,
       "updated_at": "2026-07-21T08:54:22.935344+00:00"
-    },
-    {
-      "forum_id": "2608.17388",
-      "paper_number": -1,
-      "title": "Generalizing and accelerating consistency checking for non-transactional distributed storage systems",
-      "authors": [
-        "Kotikala Raghav, Aman Hassan, Brian Sajeev Kattikat, Patel Jay, RSRS Santhosh, Abhilash Jindal"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.17388v1 Announce Type: new \nAbstract: Linearizability checkers check if an operation history, observed by concurrent clients, is linearizable. They are used in testing distributed storage systems, and use the classic Wing-Gong (WG) linearizability checking algorithm.\n  In this paper, we generalize the WG algorithm to make linearizability checkers more versatile: we can check other non-transactional consistency guarantees, like ordered sequential consistency provided by Zookeeper. Equipped with this generalization, we can also check for system-specific consistency guarantees that introduce additional ordering constraints over operations in a history, as per the system's specification.\n  Our experiments with 8 distributed storage systems show that checking for system-specific cons",
-      "pdf_link": "https://arxiv.org/pdf/2608.17388.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.17388",
-      "submission_date": "2026-08-19T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 15.5,
-      "updated_at": "2026-08-19T06:38:22.928816+00:00"
     },
     {
       "forum_id": "usenix-osdi26-116",
@@ -6062,6 +5970,29 @@
       "ratings": [],
       "score": 12.5,
       "updated_at": "2026-07-21T08:54:22.934320+00:00"
+    },
+    {
+      "forum_id": "2608.19147",
+      "paper_number": -1,
+      "title": "Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets",
+      "authors": [
+        "Tate Berenbaum, Muthaiah Venkatachalam"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.19147v1 Announce Type: new \nAbstract: Modern Intel AI PCs ship capable integrated GPUs and NPUs with 16+ GB of unified memory, and they spend considerable time idle. That is not enough memory to fit a large model such as a 70B-parameter LLM. We show that a handful of AIPCs, working together over an ordinary network, can serve models beyond the capability of any single one. We use pipeline parallelism: a model is split by layer into per-stage shards, each pre-compiled into an OpenVINO graph, so that every machine runs one shard and passes activations to the next. Three techniques make this fast enough to be useful. First, we recover the speed of the unsplit model: a naive per-stage export runs well below monolithic inference because it misses an OpenVINO GPU optimization, and inj",
+      "pdf_link": "https://arxiv.org/pdf/2608.19147.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.19147",
+      "submission_date": "2026-08-20T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-08-20T06:40:03.740381+00:00"
     },
     {
       "forum_id": "usenix-osdi26-11",
@@ -10234,6 +10165,29 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
+    },
+    {
+      "forum_id": "2608.19184",
+      "paper_number": -1,
+      "title": "A Fast Deterministic Algorithm for $(\\Delta+1)$-edge coloring in CONGEST",
+      "authors": [
+        "Sebastian Brandt, Ananth Narayanan, Alexandre Nolin"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.19184v1 Announce Type: new \nAbstract: Vizing's theorem states that any graph of maximum degree $\\Delta$ can be properly edge-colored with $\\Delta + 1$ colors (which is optimal in general). A recent breakthrough result by Bernshteyn showed that such a $(\\Delta + 1)$-edge coloring can be found deterministically in $poly(\\Delta,\\log n)$ rounds in the LOCAL model of distributed computing, where $n$ denotes the number of vertices of the input graph [J. Comb. Theory 2022]. Since then, the exponent in the $poly(\\log n)$-part of the runtime has been improved by Christiansen [STOC 2023] and Bernshteyn and Dhawan [J. Comb. Theory, Series B, 2025]. However, the algorithms used in all of these works use large messages, leaving open the question for efficient algorithms in the more restricti",
+      "pdf_link": "https://arxiv.org/pdf/2608.19184.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.19184",
+      "submission_date": "2026-08-20T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-08-20T06:40:03.740543+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",
