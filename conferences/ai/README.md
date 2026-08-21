@@ -1,6 +1,6 @@
 # AI / AI for Science Papers
 
-- **Last Updated**: 2026-08-20 06:40:39 UTC
+- **Last Updated**: 2026-08-21 06:40:46 UTC
 - **Total Filtered Papers**: 31
 - **Displaying**: 31 (arxiv: 1, mlr: 30)
 - **Papers with Ratings**: 0
@@ -9,11 +9,11 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Automatic Pruning of Fine-tuning Datasets for Transformer-based Language Models](https://proceedings.mlr.press/v274/hosseini25a.html) | `MLR` | 64.5 |
-| 2 | [ARCLE: The Abstraction and Reasoning Corpus Learning Environment for Reinforcement Learning](https://proceedings.mlr.press/v274/lee25a.html) | `MLR` | 63.0 |
-| 3 | [Partial Models for Building Adaptive Model-Based Reinforcement Learning Agents](https://proceedings.mlr.press/v274/alver25a.html) | `MLR` | 61.5 |
-| 4 | [Statistical Context Detection for Deep Lifelong Reinforcement Learning](https://proceedings.mlr.press/v274/dick25a.html) | `MLR` | 61.5 |
-| 5 | [Pre-Training for Simulation-Based Science: A Study on Jet Foundation Model Training Objectives](https://arxiv.org/abs/2606.14870) | `ARXIV` | 45.5 |
+| 1 | [Bringing analytic rigor to agentic AI for science: The Brain Researcher platform for neuroimaging data analysis](https://arxiv.org/abs/2608.19902) | `ARXIV` | 73.5 |
+| 2 | [Automatic Pruning of Fine-tuning Datasets for Transformer-based Language Models](https://proceedings.mlr.press/v274/hosseini25a.html) | `MLR` | 64.5 |
+| 3 | [ARCLE: The Abstraction and Reasoning Corpus Learning Environment for Reinforcement Learning](https://proceedings.mlr.press/v274/lee25a.html) | `MLR` | 63.0 |
+| 4 | [Partial Models for Building Adaptive Model-Based Reinforcement Learning Agents](https://proceedings.mlr.press/v274/alver25a.html) | `MLR` | 61.5 |
+| 5 | [Statistical Context Detection for Deep Lifelong Reinforcement Learning](https://proceedings.mlr.press/v274/dick25a.html) | `MLR` | 61.5 |
 | 6 | [Sub-goal Distillation: A Method to Improve Small Language Agents](https://proceedings.mlr.press/v274/hashemzadeh25a.html) | `MLR` | 42.5 |
 | 7 | [Cross-Domain Policy Transfer by Representation Alignment via Multi-Domain Behavioral Cloning](https://proceedings.mlr.press/v274/watahiki25a.html) | `MLR` | 41.5 |
 | 8 | [Continual Learning of Diffusion Models with Generative Distillation](https://proceedings.mlr.press/v274/masip25a.html) | `MLR` | 37.0 |

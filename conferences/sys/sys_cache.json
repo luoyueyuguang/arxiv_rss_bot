@@ -1,7 +1,7 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-08-20T06:40:07.064946+00:00",
+  "last_updated": "2026-08-21T06:40:14.170160+00:00",
   "paper_count": 439,
   "papers": [
     {
@@ -1902,6 +1902,29 @@
       "ratings": [],
       "score": 46.0,
       "updated_at": "2026-07-21T08:54:26.744507+00:00"
+    },
+    {
+      "forum_id": "2608.19629",
+      "paper_number": -1,
+      "title": "Optimality and Trade-offs in Fast BFT SMR (Extended Version)",
+      "authors": [
+        "Neil Giridharan, Minh Tung Nguyen, Ittai Abraham, Allen Clement, Natacha Crooks, Pierre Sutra"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.19629v1 Announce Type: new \nAbstract: Fast state-machine replication (SMR) protocols in the crash-fault setting have attracted significant interest in both academia and industry. This interest stems from their advantages over leader-based protocols, including low execution latency for non-conflicting commands, high throughput, improved availability, and increased fairness. While Fast SMR is well studied in the crash-fault setting, the Byzantine fault-tolerant (BFT) setting remains much less understood, with only a small number of existing Fast BFT SMR protocols. In this paper, we present tight upper and lower bounds on the replication factor required for Fast BFT SMR. We also present a suboptimal protocol that illustrates a trade-off between replication factor and recovery effic",
+      "pdf_link": "https://arxiv.org/pdf/2608.19629.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.19629",
+      "submission_date": "2026-08-21T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 45.0,
+      "updated_at": "2026-08-21T06:40:11.953831+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-133",
@@ -5416,6 +5439,29 @@
       "updated_at": "2026-07-21T08:54:26.739010+00:00"
     },
     {
+      "forum_id": "2607.21021",
+      "paper_number": -1,
+      "title": "Multimmit: Extending Blocks for Faster Finality",
+      "authors": [
+        "Andrew Lewis-Pye, Patrick O'Grady"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.21021v3 Announce Type: replace \nAbstract: To meet the throughput demands of modern blockchain systems, protocols for State Machine Replication (SMR) increasingly have many processors disseminate blocks of transactions in parallel, with consensus then establishing a total ordering on the blocks of all producers. Such designs face a choice as to when a block may enter the ordering. Certified approaches wait for a quorum to attest a block's availability, which is robust but adds message delays to every transaction. Uncertified approaches let proposals reference blocks immediately, which is fast but degrades rapidly when referenced data must be fetched on the critical path. Raptr, the state of the art, takes a middle course, finalising the longest prefix of the leader's proposal tha",
+      "pdf_link": "https://arxiv.org/pdf/2607.21021.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.21021",
+      "submission_date": "2026-08-21T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.0,
+      "updated_at": "2026-08-21T06:40:11.954566+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-45",
       "paper_number": 45,
       "title": "RLinf: Flexible and Efficient Large-Scale Reinforcement Learning via Macro-to-Micro Flow Transformation",
@@ -5970,29 +6016,6 @@
       "ratings": [],
       "score": 12.5,
       "updated_at": "2026-07-21T08:54:22.934320+00:00"
-    },
-    {
-      "forum_id": "2608.19147",
-      "paper_number": -1,
-      "title": "Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets",
-      "authors": [
-        "Tate Berenbaum, Muthaiah Venkatachalam"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.19147v1 Announce Type: new \nAbstract: Modern Intel AI PCs ship capable integrated GPUs and NPUs with 16+ GB of unified memory, and they spend considerable time idle. That is not enough memory to fit a large model such as a 70B-parameter LLM. We show that a handful of AIPCs, working together over an ordinary network, can serve models beyond the capability of any single one. We use pipeline parallelism: a model is split by layer into per-stage shards, each pre-compiled into an OpenVINO graph, so that every machine runs one shard and passes activations to the next. Three techniques make this fast enough to be useful. First, we recover the speed of the unsplit model: a naive per-stage export runs well below monolithic inference because it misses an OpenVINO GPU optimization, and inj",
-      "pdf_link": "https://arxiv.org/pdf/2608.19147.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.19147",
-      "submission_date": "2026-08-20T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-08-20T06:40:03.740381+00:00"
     },
     {
       "forum_id": "usenix-osdi26-11",
@@ -10165,29 +10188,6 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
-    },
-    {
-      "forum_id": "2608.19184",
-      "paper_number": -1,
-      "title": "A Fast Deterministic Algorithm for $(\\Delta+1)$-edge coloring in CONGEST",
-      "authors": [
-        "Sebastian Brandt, Ananth Narayanan, Alexandre Nolin"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.19184v1 Announce Type: new \nAbstract: Vizing's theorem states that any graph of maximum degree $\\Delta$ can be properly edge-colored with $\\Delta + 1$ colors (which is optimal in general). A recent breakthrough result by Bernshteyn showed that such a $(\\Delta + 1)$-edge coloring can be found deterministically in $poly(\\Delta,\\log n)$ rounds in the LOCAL model of distributed computing, where $n$ denotes the number of vertices of the input graph [J. Comb. Theory 2022]. Since then, the exponent in the $poly(\\log n)$-part of the runtime has been improved by Christiansen [STOC 2023] and Bernshteyn and Dhawan [J. Comb. Theory, Series B, 2025]. However, the algorithms used in all of these works use large messages, leaving open the question for efficient algorithms in the more restricti",
-      "pdf_link": "https://arxiv.org/pdf/2608.19184.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.19184",
-      "submission_date": "2026-08-20T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-20T06:40:03.740543+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

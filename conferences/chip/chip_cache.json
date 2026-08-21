@@ -1,100 +1,54 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-08-20T06:40:07.124693+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-08-21T06:40:14.235446+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2608.18482",
+      "forum_id": "2608.19954",
       "paper_number": -1,
-      "title": "Coverage-Driven RTL Assertion Generation with Formal Exploration and Neuro-Symbolic Refinement",
+      "title": "Experimental Verification of Fast Voltage Droop Correction Circuits",
       "authors": [
-        "Zhiyuan Yan, Ziyue Zheng, Hongce Zhang"
+        "Shreyas Srinivas, Ian W. Jones, Carsten Schulze, Milos Krstic, Christoph Lenzen"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.18482v1 Announce Type: new \nAbstract: Hardware functional verification relies on high-quality assertions to expose design bugs and establish confidence in Register Transfer Level (RTL) designs. Yet existing assertion mining methods still struggle to produce complete and reliable assertion sets: random or limited traces fail to cover hard-to-reach behaviors, and one-shot generation provides little feedback about what remains unverified or how the assertion set should be improved. As a result, critical design behaviors can remain uncovered even when many assertions are generated. We present NeuroAssertion, a coverage-driven assertion generation framework that combines formal trace generation, syntax-guided synthesis (SyGuS), and an agent-inspired refinement process within a unifie",
-      "pdf_link": "https://arxiv.org/pdf/2608.18482.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.18482",
-      "submission_date": "2026-08-20T04:00:00+00:00",
+      "abstract": "arXiv:2608.19954v1 Announce Type: new \nAbstract: Due to the trend towards minimizing guard bands for energy saving purposes, voltage droops are a key limiting factor for the operational frequency of today's VLSI circuits. Adapting clock frequencies dynamically presents the challenge of metastability in the device that detects and stores the existence of voltage droops. We present an implementation of a fast all-digital circuit for adaptive response to droops using the IHP 130 nm process. The description of the design is presented in an accompanying paper. We experimentally validate the functionality of the design on a test chip.",
+      "pdf_link": "https://arxiv.org/pdf/2608.19954.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.19954",
+      "submission_date": "2026-08-21T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 3.5,
-      "updated_at": "2026-08-20T06:40:07.121479+00:00"
+      "updated_at": "2026-08-21T06:40:14.233810+00:00"
     },
     {
-      "forum_id": "2607.29076",
+      "forum_id": "2608.19837",
       "paper_number": -1,
-      "title": "Selective KV Cache Protection for Noise-Resilient LLM Inference on Analog Compute-In-Memory Systems",
+      "title": "Energy-Efficient Visual Inspection with FFT-Based CNNs and Adaptive Floating-Point Quantization",
       "authors": [
-        "Yuannuo Feng, Wenyong Zhou, Yuang Ma, Yizhe Chen, Wenshuai Yao, Yuxin Xie, Ngai Wong, Wang Kang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.29076v2 Announce Type: replace \nAbstract: Analog compute-in-memory (CIM) arrays have emerged as a promising substrate for energy-efficient LLM inference, particularly for weight-stationary computations in linear layers. However, extending analog CIM to attention mechanisms introduces a fundamental challenge: KV cache operations demand repeated in-situ weight updates, and the resulting mismatch with the weight-stationary paradigm exposes dynamic computations to significant hardware noise, a critical problem that remains largely unexplored. In this paper, we present the first systematic study of dynamic attention computation on analog CIM arrays, revealing that initial and recent tokens exhibit disproportionate vulnerability to hardware noise. Motivated by this token-level insight",
-      "pdf_link": "https://arxiv.org/pdf/2607.29076.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.29076",
-      "submission_date": "2026-08-20T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-08-20T06:40:07.121648+00:00"
-    },
-    {
-      "forum_id": "2608.18156",
-      "paper_number": -1,
-      "title": "FPGA Lifecycle Management for RISC-V Systems",
-      "authors": [
-        "Tianhai Liu, James J. Hunt"
+        "Lukas Krupp, Marco Gro{\\ss}, Michael Graichen, Kim Ulrich, Norbert Wehn"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2608.18156v1 Announce Type: new \nAbstract: FPGA lifecycle management remains tied to proprietary toolchains and host architectures, leaving RISC-V without a vendor-neutral model for scalable bitstream deployment. A host-agnostic control-plane architecture is presented that shifts lifecycle management to the operating-system layer by leveraging standard Linux capabilities, thereby decoupling deployment from specific ISAs and vendor stacks. This enables Linux-capable RISC-V processors to serve as control hosts in heterogeneous FPGA systems. Prototyped on a Zynq-7000 SoC and generalizable to RISC-V platforms, the architecture provides a portable foundation for fleet-scale FPGA management.",
-      "pdf_link": "https://arxiv.org/pdf/2608.18156.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.18156",
-      "submission_date": "2026-08-20T04:00:00+00:00",
+      "abstract": "arXiv:2608.19837v1 Announce Type: new \nAbstract: This paper investigates reduced-precision floating-point arithmetic for FFT-based CNN inference on an industrial CPU-FPGA platform. We combine FFT-based convolution with adaptive post-training FP8 quantization and evaluate two FPGA-oriented optimization methods: progressive bias adjustment (PBA) within the FFT and layer-wise exponent-bias selection across the CNN. The methods are implemented in a LeNet-5 accelerator using serial radix-$2^2$ SDF FFT modules and evaluated on an industrial fault detection dataset. Results show that weight scaling outperforms PBA, while layer-wise bias optimization increases the accuracy from 80.33% to 84.13% without modifying the datapath width. Compared with CPU-only inference, the FPGA achieves approximately ",
+      "pdf_link": "https://arxiv.org/pdf/2608.19837.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.19837",
+      "submission_date": "2026-08-21T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-08-20T06:40:07.121324+00:00"
-    },
-    {
-      "forum_id": "2608.18366",
-      "paper_number": -1,
-      "title": "MAGMA: Mixture-Model Adaptive Gaussian Model Acceleration",
-      "authors": [
-        "Peter Forcha, Harshitha Kajekusumadhar, Mbua Peter, Muhammed Kawser, Audrey Cyriell Mo"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2608.18366v1 Announce Type: new \nAbstract: Conventional FPGA-based Gaussian Mixture Model (GMM) accelerators use offline-trained, fixed parameters, limiting their ability to adapt to evolving scene statistics in long-lived edge systems. We present MAGMA, a fully synthesizable fixed-point FPGA architecture that performs concurrent GMM inference and online Expectation-Maximization (EM) parameter adaptation from a streaming RGB pixel input. MAGMA combines a pipelined inference datapath with a background update engine using hardware-friendly transcendental approximations---a range-reduced Chebyshev exponential, a CLZ-based logarithm, and a shift-and-subtract divider---alongside guards against variance collapse and cluster death that stabilize online fixed-point EM. Implemented on an AMD ",
-      "pdf_link": "https://arxiv.org/pdf/2608.18366.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.18366",
-      "submission_date": "2026-08-20T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-08-20T06:40:07.121432+00:00"
+      "updated_at": "2026-08-21T06:40:14.233795+00:00"
     }
   ]
 }

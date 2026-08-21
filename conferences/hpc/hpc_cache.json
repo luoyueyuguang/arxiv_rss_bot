@@ -1,31 +1,54 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-08-20T06:40:03.662337+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-08-21T06:40:11.835745+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2608.13824",
+      "forum_id": "2608.19822",
       "paper_number": -1,
-      "title": "Balancing Workload Performance and Slurm Stress: Four Nextflow Deployment Strategies",
+      "title": "Pod-Deployability in Kubernetes with Inter-Pod Affinity Constraints is PSPACE-Complete",
       "authors": [
-        "Nil Tianchen Mu, William Dizon, Glen Otero, Torey Battelle"
+        "Saverio Giallorenzo, Jacopo Mauro, Gianluigi Zavattaro"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.13824v2 Announce Type: replace \nAbstract: Wide Nextflow fan-outs on shared Slurm clusters can submit tens of thousands of short tasks. Deployment settings route them through individual jobs, arrays, or nested schedulers inside enclosing allocations. These settings determine workflow turnaround and RPC volume, a shared cost that can degrade scheduler responsiveness. Existing comparisons evaluate whole workflow systems, while per-task queueing metrics cannot span architectures that dispatch inside existing allocations. We contribute a reproducible measurement protocol and benchmark harness. A clean-start clock begins before backend startup or allocation requests, placing architecturally different backends on a common time axis. Per-user Slurm sdiag counters attribute request count",
-      "pdf_link": "https://arxiv.org/pdf/2608.13824.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.13824",
-      "submission_date": "2026-08-20T04:00:00+00:00",
+      "abstract": "arXiv:2608.19822v1 Announce Type: cross \nAbstract: Kubernetes is the de-facto platform for container orchestration. Its scheduler combines resource capacities with label-based affinity and anti-affinity rules, and the interaction of these features can make the eventual placement of a pod. In this paper, we study the pod-deployability problem: given an initial cluster, a pod type, and a designated node, does some legal sequence of pod deployments and deletions cover the target pair? We give three complexity results. First, when dynamic constraints contain no affinity (anti-affinity is allowed), pod-deployability is decidable in polynomial time. Second, required affinity together with required anti-affinity makes the problem PSPACE-complete. Third, required affinity alone is already enough f",
+      "pdf_link": "https://arxiv.org/pdf/2608.19822.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.19822",
+      "submission_date": "2026-08-21T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-08-20T06:40:02.959964+00:00"
+      "score": 12.5,
+      "updated_at": "2026-08-21T06:40:11.339347+00:00"
+    },
+    {
+      "forum_id": "2608.20283",
+      "paper_number": -1,
+      "title": "Design and Empirical Evaluation of a Network-Centric, On-Premises Architecture for Earth Observation Data Access",
+      "authors": [
+        "Jo\\~ao Pinelo, Jo\\~ao Gon\\c{c}alves, Denis Willett, Amit Ruhela, Derek Steinmoeller, Uriel Mendoza, Pelumi S. Alao, Ronald Soares Lopes, Rogerio Atem de Carvalho, Pedro Mattos"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2608.20283v1 Announce Type: new \nAbstract: Earth observation (EO) programmes generate data at volumes that exceed the transfer and storage capacity of most institutional networks. Public cloud platforms address this for well-resourced organisations, but institutions across the Atlantic basin face constraints in connectivity, sovereignty and funding that make on-premises infrastructure the only viable path. Cloud-native data formats enable efficient partial reads, yet their performance depends on the bandwidth of the underlying network fabric, a dependency rarely measured in isolation. This paper presents a replicable, network-centric architecture for on-premises EO data access, evaluated at its first operational deployment: the AIR Data Centre, founding node of the Atlantic Cloud. Th",
+      "pdf_link": "https://arxiv.org/pdf/2608.20283.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.20283",
+      "submission_date": "2026-08-21T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-08-21T06:40:11.339253+00:00"
     }
   ]
 }
