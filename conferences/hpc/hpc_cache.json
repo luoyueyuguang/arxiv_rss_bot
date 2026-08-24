@@ -1,54 +1,77 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-08-21T06:40:11.835745+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-08-24T06:52:03.129013+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2608.19822",
+      "forum_id": "2510.12889",
       "paper_number": -1,
-      "title": "Pod-Deployability in Kubernetes with Inter-Pod Affinity Constraints is PSPACE-Complete",
+      "title": "Dodoor: Efficient Randomized Decentralized Scheduling with Load Caching for Heterogeneous Tasks and Clusters",
       "authors": [
-        "Saverio Giallorenzo, Jacopo Mauro, Gianluigi Zavattaro"
+        "Wei Da, Evangelia Kalyvianaki"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.19822v1 Announce Type: cross \nAbstract: Kubernetes is the de-facto platform for container orchestration. Its scheduler combines resource capacities with label-based affinity and anti-affinity rules, and the interaction of these features can make the eventual placement of a pod. In this paper, we study the pod-deployability problem: given an initial cluster, a pod type, and a designated node, does some legal sequence of pod deployments and deletions cover the target pair? We give three complexity results. First, when dynamic constraints contain no affinity (anti-affinity is allowed), pod-deployability is decidable in polynomial time. Second, required affinity together with required anti-affinity makes the problem PSPACE-complete. Third, required affinity alone is already enough f",
-      "pdf_link": "https://arxiv.org/pdf/2608.19822.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.19822",
-      "submission_date": "2026-08-21T04:00:00+00:00",
+      "abstract": "arXiv:2510.12889v2 Announce Type: replace \nAbstract: This paper presents Dodoor, a randomized decentralized scheduler for heterogeneous clusters. Dodoor removes hot-path probing via batched cache refreshes and introduces a heterogeneity-aware resource-load score that ranks sampled candidates using multidimensional fit and queued-duration pressure. On a 101-node CloudLab cluster, Dodoor cuts scheduler messages by 55-66% while improving throughput by up to 33.2% (Azure) and 21.5% (FunctionBench) compared with decentralized baseline schedulers. Dodoor also reduces mean makespan latency by up to 12.1% and 7.2%, and tail latency by up to 21.9% and 24.6%.",
+      "pdf_link": "https://arxiv.org/pdf/2510.12889.pdf",
+      "forum_link": "https://arxiv.org/abs/2510.12889",
+      "submission_date": "2026-08-24T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-08-21T06:40:11.339347+00:00"
+      "score": 34.5,
+      "updated_at": "2026-08-24T06:52:02.560311+00:00"
     },
     {
-      "forum_id": "2608.20283",
+      "forum_id": "2502.02581",
       "paper_number": -1,
-      "title": "Design and Empirical Evaluation of a Network-Centric, On-Premises Architecture for Earth Observation Data Access",
+      "title": "Themis: Efficient Sparse Model Training Through Fully Sharded Sparse Data Parallelism",
       "authors": [
-        "Jo\\~ao Pinelo, Jo\\~ao Gon\\c{c}alves, Denis Willett, Amit Ruhela, Derek Steinmoeller, Uriel Mendoza, Pelumi S. Alao, Ronald Soares Lopes, Rogerio Atem de Carvalho, Pedro Mattos"
+        "Yuhao Qing, Guichao Zhu, Lintian Lei, Fanxin Li, Shixiong Zhao, Zekai Sun, Xiuxian Guan, Xusheng Chen, Dong Huang, Ping Luo, Yiming Qiu, Heming Cui"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.20283v1 Announce Type: new \nAbstract: Earth observation (EO) programmes generate data at volumes that exceed the transfer and storage capacity of most institutional networks. Public cloud platforms address this for well-resourced organisations, but institutions across the Atlantic basin face constraints in connectivity, sovereignty and funding that make on-premises infrastructure the only viable path. Cloud-native data formats enable efficient partial reads, yet their performance depends on the bandwidth of the underlying network fabric, a dependency rarely measured in isolation. This paper presents a replicable, network-centric architecture for on-premises EO data access, evaluated at its first operational deployment: the AIR Data Centre, founding node of the Atlantic Cloud. Th",
-      "pdf_link": "https://arxiv.org/pdf/2608.20283.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.20283",
-      "submission_date": "2026-08-21T04:00:00+00:00",
+      "abstract": "arXiv:2502.02581v2 Announce Type: replace \nAbstract: Mixture-of-Experts (MoE) scales large language models cost-effectively, but expert-parallel training suffers severe straggler effects from skewed expert loads. Current systems frequently rearrange expert placement to mitigate stragglers, inflating memory footprint and migration overhead, potentially negating the benefits of load balancing. We present Fully Sharded Sparse Data Parallelism (FSSDP), a sparse-native MoE training approach that enables in-situ load balancing on every training iteration, overlapping the balancing with computation and eliminating explicit expert rearrangement together with its migration traffic and memory reserves. FSSDP keeps MoE layers sharded and sparsely materializes an ephemeral, load-balancing placement ea",
+      "pdf_link": "https://arxiv.org/pdf/2502.02581.pdf",
+      "forum_link": "https://arxiv.org/abs/2502.02581",
+      "submission_date": "2026-08-24T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-08-21T06:40:11.339253+00:00"
+      "score": 25.5,
+      "updated_at": "2026-08-24T06:52:02.560277+00:00"
+    },
+    {
+      "forum_id": "2608.20352",
+      "paper_number": -1,
+      "title": "Ghost Echoes: Semantic Erasure Failure in Retrieval-Backed Applications",
+      "authors": [
+        "Allan Mukkuzhi, Noella Uwayisenga, Yeabsira Bizualem, Jacob Kammerzell, Chandranil Chakraborttii"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2608.20352v1 Announce Type: cross \nAbstract: Although vector databases correctly implement API-visible deletion, this does not guarantee complete semantic erasure for retrieval-backed applications. We present Ghost Echoes, a black-box attack framework showing that deleted records can leave measurable residual influence on downstream retrieval contexts. Our primary finding is the RAG retrieval-context drift effect where even when a target record is correctly excluded from query results, its prior presence perturbs the semantic centroid and textual composition of the Top-K evidence base. We approximate the unobservable never-inserted counterfactual using a same-cluster non-target deletion control that preserves local neighborhood structure while isolating target-specific effects from g",
+      "pdf_link": "https://arxiv.org/pdf/2608.20352.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.20352",
+      "submission_date": "2026-08-24T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-08-24T06:52:02.559923+00:00"
     }
   ]
 }

@@ -1,32 +1,9 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-08-21T06:40:46.377191+00:00",
-  "paper_count": 31,
+  "last_updated": "2026-08-24T06:52:39.528991+00:00",
+  "paper_count": 30,
   "papers": [
-    {
-      "forum_id": "2608.19902",
-      "paper_number": -1,
-      "title": "Bringing analytic rigor to agentic AI for science: The Brain Researcher platform for neuroimaging data analysis",
-      "authors": [
-        "Zijiao Chen, Nicholas Lu, Xinhui Li, Jocelyn A. Ricard, Ce Ju, Huan H. Wang, Christian Kindermann, Jeanette A. Mumford, Steven Dillmann, James Kent, Alejandro de la Vega, Sanmi Koyejo, Vince D. Calhoun, Joshua W. Buckholtz, Juan Helen Zhou, Steffen Bollmann, Russell A. Poldrack"
-      ],
-      "keywords": [
-        "cs.AI",
-        "AI for Science"
-      ],
-      "abstract": "arXiv:2608.19902v1 Announce Type: new \nAbstract: AI agents can execute scientific analyses, but an analytic output becomes a defensible claim only after alternatives are weighed and the claim is limited to what the evidence supports. Agents may reproduce failures including selective analysis, premature declarations of success and optimization of imperfect criteria. We present Brain Researcher, an agentic research harness operating in a neuroimaging researcher's computational environment under rules for admissible analyses, required checks and claim scope. In benchmarks, Brain Researcher increased first-choice tool-selection accuracy across seven models by 70.2 percentage points (23.3% without it versus 93.6% with it) and verifiable grounding from 4.6% to 22.0%. In collaborator-led and self",
-      "pdf_link": "https://arxiv.org/pdf/2608.19902.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.19902",
-      "submission_date": "2026-08-21T04:00:00+00:00",
-      "conference": "AI for Science",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 73.5,
-      "updated_at": "2026-08-21T06:40:14.395983+00:00"
-    },
     {
       "forum_id": "mlr-icml25-1",
       "paper_number": 1,

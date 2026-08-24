@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-08-21T06:40:14.170160+00:00",
-  "paper_count": 439,
+  "last_updated": "2026-08-24T06:52:06.394791+00:00",
+  "paper_count": 440,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1904,29 +1904,6 @@
       "updated_at": "2026-07-21T08:54:26.744507+00:00"
     },
     {
-      "forum_id": "2608.19629",
-      "paper_number": -1,
-      "title": "Optimality and Trade-offs in Fast BFT SMR (Extended Version)",
-      "authors": [
-        "Neil Giridharan, Minh Tung Nguyen, Ittai Abraham, Allen Clement, Natacha Crooks, Pierre Sutra"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.19629v1 Announce Type: new \nAbstract: Fast state-machine replication (SMR) protocols in the crash-fault setting have attracted significant interest in both academia and industry. This interest stems from their advantages over leader-based protocols, including low execution latency for non-conflicting commands, high throughput, improved availability, and increased fairness. While Fast SMR is well studied in the crash-fault setting, the Byzantine fault-tolerant (BFT) setting remains much less understood, with only a small number of existing Fast BFT SMR protocols. In this paper, we present tight upper and lower bounds on the replication factor required for Fast BFT SMR. We also present a suboptimal protocol that illustrates a trade-off between replication factor and recovery effic",
-      "pdf_link": "https://arxiv.org/pdf/2608.19629.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.19629",
-      "submission_date": "2026-08-21T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 45.0,
-      "updated_at": "2026-08-21T06:40:11.953831+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-133",
       "paper_number": 133,
       "title": "Agentix: An Efficient Serving Engine for LLM Agents as General Programs",
@@ -2708,6 +2685,29 @@
       "ratings": [],
       "score": 35.5,
       "updated_at": "2026-07-21T08:54:22.942367+00:00"
+    },
+    {
+      "forum_id": "2604.04750",
+      "paper_number": -1,
+      "title": "DeepStack: Facilitating Co-Design Exploration of 3D DRAM-Stacked Accelerators for Distributed LLM Inference",
+      "authors": [
+        "Zhiwen Mo, Guoyu Li, Hao Mark Chen, Yu Cheng, Zhengju Tang, Qianzhou Wang, Lei Wang, Shuang Liang, Lingxiao Ma, Xianqi Zhou, Yuxiao Guo, Wayne Luk, Jilong Xue, Hongxiang Fan"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2604.04750v3 Announce Type: replace-cross \nAbstract: Advances in hybrid bonding and packaging have driven growing interest in 3D DRAM-stacked AI accelerators. As large language models (LLMs) scale to hundreds of billions or trillions of parameters, distributed inference across multiple 3D chips has become essential for AI serving. This trend makes cross-stack co-design critical because system-level parallelization and scheduling choices are tightly coupled with hardware characteristics such as memory organization, interconnects, and thermal constraints. We present DeepStack, an accurate performance model and efficient design space exploration (DSE) framework for distributed 3D-stacked LLM inference. At the hardware level, DeepStack captures transaction-aware memory bandwidth, bank ac",
+      "pdf_link": "https://arxiv.org/pdf/2604.04750.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.04750",
+      "submission_date": "2026-08-24T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 35.0,
+      "updated_at": "2026-08-24T06:52:03.255835+00:00"
     },
     {
       "forum_id": "usenix-osdi26-38",
@@ -5439,29 +5439,6 @@
       "updated_at": "2026-07-21T08:54:26.739010+00:00"
     },
     {
-      "forum_id": "2607.21021",
-      "paper_number": -1,
-      "title": "Multimmit: Extending Blocks for Faster Finality",
-      "authors": [
-        "Andrew Lewis-Pye, Patrick O'Grady"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.21021v3 Announce Type: replace \nAbstract: To meet the throughput demands of modern blockchain systems, protocols for State Machine Replication (SMR) increasingly have many processors disseminate blocks of transactions in parallel, with consensus then establishing a total ordering on the blocks of all producers. Such designs face a choice as to when a block may enter the ordering. Certified approaches wait for a quorum to attest a block's availability, which is robust but adds message delays to every transaction. Uncertified approaches let proposals reference blocks immediately, which is fast but degrades rapidly when referenced data must be fetched on the critical path. Raptr, the state of the art, takes a middle course, finalising the longest prefix of the leader's proposal tha",
-      "pdf_link": "https://arxiv.org/pdf/2607.21021.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.21021",
-      "submission_date": "2026-08-21T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.0,
-      "updated_at": "2026-08-21T06:40:11.954566+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-45",
       "paper_number": 45,
       "title": "RLinf: Flexible and Efficient Large-Scale Reinforcement Learning via Macro-to-Micro Flow Transformation",
@@ -5598,6 +5575,29 @@
       "ratings": [],
       "score": 14.0,
       "updated_at": "2026-07-21T08:54:22.936410+00:00"
+    },
+    {
+      "forum_id": "2608.20363",
+      "paper_number": -1,
+      "title": "Scalpel3: A High-Performance Data Carving Architecture for Recovery of Fragmented Files",
+      "authors": [
+        "Karley Waguespack, Samuel Goodwin, George Hendrick, Samuel Hildebrand, Thomas Landaiche III, Mingyang Li, Joshua McCain, Tyler Saizan, Jacob Tucker, James M. Ghawaly, Golden G. Richard III"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.20363v1 Announce Type: new \nAbstract: File carving recovers files from raw storage media without relying on filesystem metadata, a key  capability in digital forensics, data recovery, and digital exploration. Traditional tools such as Foremost, Scalpel v1/2, and PhotoRec handle contiguous files effectively, and some support  fragmented recovery for specific formats under simplifying assumptions, but no publicly available tool provides a general-purpose, high-performance framework for developing and deploying  fragmented recovery strategies across many file types at scale. This paper presents Scalpel3, the first general-purpose, open source, massively parallel file carving framework designed to support  both contiguous and fragmented recovery at scale. Its primary contribution is",
+      "pdf_link": "https://arxiv.org/pdf/2608.20363.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.20363",
+      "submission_date": "2026-08-24T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-08-24T06:52:03.253340+00:00"
     },
     {
       "forum_id": "usenix-osdi26-5",
@@ -6560,6 +6560,29 @@
       "ratings": [],
       "score": 8.0,
       "updated_at": "2026-07-21T08:54:26.739921+00:00"
+    },
+    {
+      "forum_id": "2501.10375",
+      "paper_number": -1,
+      "title": "DAOP: Data-Aware Offloading and Predictive Pre-Calculation for Efficient MoE Inference",
+      "authors": [
+        "Yujie Zhang, Shivam Aggarwal, Tulika Mitra"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2501.10375v3 Announce Type: replace \nAbstract: Mixture-of-Experts (MoE) models, though highly effective for various machine learning tasks, face significant deployment challenges on memory-constrained devices. While GPUs offer fast inference, their limited memory compared to CPUs means not all experts can be stored on the GPU simultaneously, necessitating frequent, costly data transfers from CPU memory, often negating GPU speed advantages. To address this, we present DAOP, an on-device MoE inference engine to optimize parallel GPU-CPU execution. DAOP dynamically allocates experts between CPU and GPU based on per-sequence activation patterns, and selectively pre-calculates predicted experts on CPUs to minimize transfer latency. This approach enables efficient resource utilization acro",
+      "pdf_link": "https://arxiv.org/pdf/2501.10375.pdf",
+      "forum_link": "https://arxiv.org/abs/2501.10375",
+      "submission_date": "2026-08-24T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 7.5,
+      "updated_at": "2026-08-24T06:52:03.255069+00:00"
     },
     {
       "forum_id": "usenix-osdi26-7",

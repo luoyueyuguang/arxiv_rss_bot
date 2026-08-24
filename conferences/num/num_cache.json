@@ -1,31 +1,54 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-08-21T06:40:46.530660+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-08-24T06:52:39.678951+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2608.19189",
+      "forum_id": "2507.19290",
       "paper_number": -1,
-      "title": "Entry growth in Gaussian elimination",
+      "title": "Query Efficient Structured Matrix Learning",
       "authors": [
-        "Rikhav Shah, John Urschel"
+        "Noah Amsel, Pratyush Avi, Tyler Chen, Feyza Duman Keles, Chinmay Hegde, Cameron Musco, Christopher Musco, David Persson"
+      ],
+      "keywords": [
+        "cs.NA",
+        "scientific computing"
+      ],
+      "abstract": "arXiv:2507.19290v2 Announce Type: replace-cross \nAbstract: We study the problem of learning a structured approximation (low-rank, sparse, banded, etc.) to an unknown matrix $A$ given access to matrix-vector product (matvec) queries of the form $x \\rightarrow Ax$ and $x \\rightarrow A^Tx$. This problem is of central importance to algorithms across scientific computing and machine learning, with applications to fast multiplication and inversion for structured matrices, building preconditioners for first-order optimization, and as a model for differential operator learning. Prior work focuses on obtaining query complexity upper and lower bounds for learning specific structured matrix families that commonly arise in applications.\n  We initiate the study of the problem in greater generality, aim",
+      "pdf_link": "https://arxiv.org/pdf/2507.19290.pdf",
+      "forum_link": "https://arxiv.org/abs/2507.19290",
+      "submission_date": "2026-08-24T04:00:00+00:00",
+      "conference": "scientific computing",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.0,
+      "updated_at": "2026-08-24T06:52:39.676398+00:00"
+    },
+    {
+      "forum_id": "2602.05394",
+      "paper_number": -1,
+      "title": "Linear Systems and Eigenvalue Problems: Open Questions from a Simons Workshop",
+      "authors": [
+        "Noah Amsel, Yves Baumann, Paul Beckman, Peter B\\\"urgisser, Chris Cama\\~no, Tyler Chen, Edmond Chow, Anil Damle, Michal Derezinski, Mark Embree, Ethan N. Epperly, Robert Falgout, Mark Fornace, Anne Greenbaum, Chen Greif, Diana Halikias, Zhen Huang, Elias Jarlebring, Yiannis Koutis, Daniel Kressner, Rasmus Kyng, J\\\"org Liesen, Jackie Lok, Raphael A. Meyer, Yuji Nakatsukasa, Kate Pearce, Richard Peng, David Persson, Eliza Rebrova, Ryan Schneider, Rikhav Shah, Edgar Solomonik, Nikhil Srivastava, Alex Townsend, Robert J. Webber, Jess Williams"
       ],
       "keywords": [
         "cs.NA",
         "numerical analysis"
       ],
-      "abstract": "arXiv:2608.19189v2 Announce Type: replace \nAbstract: Gaussian elimination is one of the oldest algorithms in mathematics, and the most popular method for solving an unstructured linear system. Its stability in finite precision is controlled by its growth factor, which measures how large the entries produced during elimination can become. Understanding the worst-case behavior of this quantity has been a central problem in numerical analysis since the 1940s.\n  Here we make a significant leap in that understanding, settling several open problems. In particular, we determine the asymptotic behavior of the maximum growth factor under complete and rook pivoting, proving that both are quasi-polynomial in dimension. We also show that the exponential growth under partial pivoting persists for spars",
-      "pdf_link": "https://arxiv.org/pdf/2608.19189.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.19189",
-      "submission_date": "2026-08-21T04:00:00+00:00",
+      "abstract": "arXiv:2602.05394v3 Announce Type: replace \nAbstract: This document presents a series of open questions arising in matrix computations, i.e., the numerical solution of linear algebra problems. It is a result of working groups at the workshop Linear Systems and Eigenvalue Problems, which was organized at the Simons Institute for the Theory of Computing program on Complexity and Linear Algebra in Fall 2025. The complexity and numerical solution of linear algebra problems is a crosscutting area between theoretical computer science and numerical analysis. The value of the particular problem formulations here is that they were produced via discussions between researchers from both groups. The open questions are organized in five categories: iterative solvers for linear systems, eigenvalue comput",
+      "pdf_link": "https://arxiv.org/pdf/2602.05394.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.05394",
+      "submission_date": "2026-08-24T04:00:00+00:00",
       "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-21T06:40:46.529654+00:00"
+      "score": 5.0,
+      "updated_at": "2026-08-24T06:52:39.676133+00:00"
     }
   ]
 }

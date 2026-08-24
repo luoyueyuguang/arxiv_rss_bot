@@ -1,54 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-08-21T06:40:11.280232+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-08-24T06:52:02.476657+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2608.19628",
+      "forum_id": "2605.24817",
       "paper_number": -1,
-      "title": "A Thread-Register Decoupled GPU Execution Model for Efficient Tensor Computation",
+      "title": "RouteScan: A Non-Intrusive Approach to Auditing MoE LLMs Safety via Expert Routing Telemetry",
       "authors": [
-        "Zihan Liu, Jingwen Leng, Yangjie Zhou, Yitong Ding, Guanlin Zhu, Yilu Huang, Chiheng Jin, Chen Zhang, Shixuan Sun, Yu Feng, Anbang Wu, Minyi Guo, Jian Weng, Jiajin Tu, Junsong Wang"
+        "Bo Lv, Zhiheng Xu, KeDong Xiu, Ruyi Ding, Tianhang Zheng, Zhibo Wang, Kui Ren"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2608.19628v1 Announce Type: new \nAbstract: Modern GPUs increasingly integrate Tensor Cores into the execution pipeline. Although aggregate tensor throughput continues to grow, aided by an operand supply that has evolved from register-based in Ampere to redundancy-free, memory-based in Hopper and Blackwell, efficiently orchestrating the complete tensor compute pipeline for the modern AI workloads remains challenging. We identify the fundamental bottlenecks as fixed parallelism and coarse-grained scheduling, both of which are exposed by modern AI workloads that interleave diverse non-GEMM operations with GEMM. To orchestrate tensor computation efficiently, we propose FIBER, a new architecture that extends the GPU SIMT (single instruction, multiple thread) model. Its basic execution ins",
-      "pdf_link": "https://arxiv.org/pdf/2608.19628.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.19628",
-      "submission_date": "2026-08-21T04:00:00+00:00",
+      "abstract": "arXiv:2605.24817v2 Announce Type: replace-cross \nAbstract: As Mixture-of-Experts (MoE) architectures are increasingly adopted for scaling Large Language Models (LLMs), safety auditing becomes necessary to verify whether these models produce or facilitate harmful behaviors during operation. However, existing content-based auditing methods typically require access to user prompts, model internals, or outputs, potentially exposing sensitive user information and creating a tension between LLM safety and user privacy. On the other hand, we observe that, in MoE models, different inputs induce different sparse expert-routing patterns, which produce measurable footprints in low-level GPU execution telemetry. We refer to these hardware-observable signals induced by expert-routing decisions as exper",
+      "pdf_link": "https://arxiv.org/pdf/2605.24817.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.24817",
+      "submission_date": "2026-08-24T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 26.5,
-      "updated_at": "2026-08-21T06:40:11.278073+00:00"
-    },
-    {
-      "forum_id": "2608.19300",
-      "paper_number": -1,
-      "title": "Performance Verification of the AmpereOne CPU Core",
-      "authors": [
-        "Doa'a Al-Otoom, Nicholas Kelly, Aaron Lindsay, Agreen Ahmadi, Ananth Kumar, Anthony Faubert, Benjamin Chaffin, Bret Toll, Eric Wallace, Lucas Crowthers, Mark Charney, Michael Chin, Michael Spradling, Scott Witscher, Sriyash Caculo, Syed Fakhri, Vivek Kothapalli, William Freelove, Mahesh Madhav"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2608.19300v1 Announce Type: new \nAbstract: As process technology scaling slows, microarchitectural innovation has become the primary driver of performance gains, making pre-silicon Performance Verification (PV) more critical than ever. This paper presents the industrial-scale PV methodology applied across four generations of the AmpereOne custom CPU core, centered on the cycle-accurate correlation of the RTL design against a trace-driven performance model. The methodology integrates data-driven workload curation, a high-frequency daily regression system, and a unified event-stream framework for analysis. We demonstrate this methodology through case studies of the Branch Prediction Unit and L2 Prefetcher, highlighting a hierarchical strategy that first isolates individual units for fo",
-      "pdf_link": "https://arxiv.org/pdf/2608.19300.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.19300",
-      "submission_date": "2026-08-21T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-08-21T06:40:11.278022+00:00"
+      "score": 2.0,
+      "updated_at": "2026-08-24T06:52:02.473791+00:00"
     }
   ]
 }

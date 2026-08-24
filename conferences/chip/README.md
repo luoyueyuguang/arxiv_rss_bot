@@ -1,13 +1,12 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-08-21 06:40:14 UTC
-- **Total Filtered Papers**: 2
-- **Displaying**: 2 (arxiv: 2)
+- **Last Updated**: 2026-08-24 06:52:06 UTC
+- **Total Filtered Papers**: 1
+- **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Experimental Verification of Fast Voltage Droop Correction Circuits](https://arxiv.org/abs/2608.19954) | `ARXIV` | 3.5 |
-| 2 | [Energy-Efficient Visual Inspection with FFT-Based CNNs and Adaptive Floating-Point Quantization](https://arxiv.org/abs/2608.19837) | `ARXIV` | 1.0 |
+| 1 | [DeepStack: Facilitating Co-Design Exploration of 3D DRAM-Stacked Accelerators for Distributed LLM Inference](https://arxiv.org/abs/2604.04750) | `ARXIV` | 3.0 |

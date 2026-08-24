@@ -1,13 +1,12 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-08-21 06:40:11 UTC
-- **Total Filtered Papers**: 2
-- **Displaying**: 2 (arxiv: 2)
+- **Last Updated**: 2026-08-24 06:52:02 UTC
+- **Total Filtered Papers**: 1
+- **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [A Thread-Register Decoupled GPU Execution Model for Efficient Tensor Computation](https://arxiv.org/abs/2608.19628) | `ARXIV` | 26.5 |
-| 2 | [Performance Verification of the AmpereOne CPU Core](https://arxiv.org/abs/2608.19300) | `ARXIV` | 12.0 |
+| 1 | [RouteScan: A Non-Intrusive Approach to Auditing MoE LLMs Safety via Expert Routing Telemetry](https://arxiv.org/abs/2605.24817) | `ARXIV` | 2.0 |

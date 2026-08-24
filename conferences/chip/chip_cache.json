@@ -1,54 +1,31 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-08-21T06:40:14.235446+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-08-24T06:52:06.472832+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2608.19954",
+      "forum_id": "2604.04750",
       "paper_number": -1,
-      "title": "Experimental Verification of Fast Voltage Droop Correction Circuits",
+      "title": "DeepStack: Facilitating Co-Design Exploration of 3D DRAM-Stacked Accelerators for Distributed LLM Inference",
       "authors": [
-        "Shreyas Srinivas, Ian W. Jones, Carsten Schulze, Milos Krstic, Christoph Lenzen"
+        "Zhiwen Mo, Guoyu Li, Hao Mark Chen, Yu Cheng, Zhengju Tang, Qianzhou Wang, Lei Wang, Shuang Liang, Lingxiao Ma, Xianqi Zhou, Yuxiao Guo, Wayne Luk, Jilong Xue, Hongxiang Fan"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.19954v1 Announce Type: new \nAbstract: Due to the trend towards minimizing guard bands for energy saving purposes, voltage droops are a key limiting factor for the operational frequency of today's VLSI circuits. Adapting clock frequencies dynamically presents the challenge of metastability in the device that detects and stores the existence of voltage droops. We present an implementation of a fast all-digital circuit for adaptive response to droops using the IHP 130 nm process. The description of the design is presented in an accompanying paper. We experimentally validate the functionality of the design on a test chip.",
-      "pdf_link": "https://arxiv.org/pdf/2608.19954.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.19954",
-      "submission_date": "2026-08-21T04:00:00+00:00",
+      "abstract": "arXiv:2604.04750v3 Announce Type: replace \nAbstract: Advances in hybrid bonding and packaging have driven growing interest in 3D DRAM-stacked AI accelerators. As large language models (LLMs) scale to hundreds of billions or trillions of parameters, distributed inference across multiple 3D chips has become essential for AI serving. This trend makes cross-stack co-design critical because system-level parallelization and scheduling choices are tightly coupled with hardware characteristics such as memory organization, interconnects, and thermal constraints. We present DeepStack, an accurate performance model and efficient design space exploration (DSE) framework for distributed 3D-stacked LLM inference. At the hardware level, DeepStack captures transaction-aware memory bandwidth, bank activati",
+      "pdf_link": "https://arxiv.org/pdf/2604.04750.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.04750",
+      "submission_date": "2026-08-24T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-08-21T06:40:14.233810+00:00"
-    },
-    {
-      "forum_id": "2608.19837",
-      "paper_number": -1,
-      "title": "Energy-Efficient Visual Inspection with FFT-Based CNNs and Adaptive Floating-Point Quantization",
-      "authors": [
-        "Lukas Krupp, Marco Gro{\\ss}, Michael Graichen, Kim Ulrich, Norbert Wehn"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2608.19837v1 Announce Type: new \nAbstract: This paper investigates reduced-precision floating-point arithmetic for FFT-based CNN inference on an industrial CPU-FPGA platform. We combine FFT-based convolution with adaptive post-training FP8 quantization and evaluate two FPGA-oriented optimization methods: progressive bias adjustment (PBA) within the FFT and layer-wise exponent-bias selection across the CNN. The methods are implemented in a LeNet-5 accelerator using serial radix-$2^2$ SDF FFT modules and evaluated on an industrial fault detection dataset. Results show that weight scaling outperforms PBA, while layer-wise bias optimization increases the accuracy from 80.33% to 84.13% without modifying the datapath width. Compared with CPU-only inference, the FPGA achieves approximately ",
-      "pdf_link": "https://arxiv.org/pdf/2608.19837.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.19837",
-      "submission_date": "2026-08-21T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-21T06:40:14.233795+00:00"
+      "score": 3.0,
+      "updated_at": "2026-08-24T06:52:06.470865+00:00"
     }
   ]
 }
