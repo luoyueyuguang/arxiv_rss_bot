@@ -1,77 +1,146 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-08-24T06:52:03.129013+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-08-25T06:40:37.103676+00:00",
+  "paper_count": 6,
   "papers": [
     {
-      "forum_id": "2510.12889",
+      "forum_id": "2509.04719",
       "paper_number": -1,
-      "title": "Dodoor: Efficient Randomized Decentralized Scheduling with Load Caching for Heterogeneous Tasks and Clusters",
+      "title": "Spatio-Temporal Parallelism for Diffusion Model Inference on Heterogeneous Multi-GPU Systems",
       "authors": [
-        "Wei Da, Evangelia Kalyvianaki"
+        "Han Liang, Jiahui Zhou, Zicheng Zhou, Xiaoxi Zhang, Xu Chen"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2510.12889v2 Announce Type: replace \nAbstract: This paper presents Dodoor, a randomized decentralized scheduler for heterogeneous clusters. Dodoor removes hot-path probing via batched cache refreshes and introduces a heterogeneity-aware resource-load score that ranks sampled candidates using multidimensional fit and queued-duration pressure. On a 101-node CloudLab cluster, Dodoor cuts scheduler messages by 55-66% while improving throughput by up to 33.2% (Azure) and 21.5% (FunctionBench) compared with decentralized baseline schedulers. Dodoor also reduces mean makespan latency by up to 12.1% and 7.2%, and tail latency by up to 21.9% and 24.6%.",
-      "pdf_link": "https://arxiv.org/pdf/2510.12889.pdf",
-      "forum_link": "https://arxiv.org/abs/2510.12889",
-      "submission_date": "2026-08-24T04:00:00+00:00",
+      "abstract": "arXiv:2509.04719v3 Announce Type: replace \nAbstract: The widespread adoption of diffusion models for image generation necessitates efficient parallel inference to manage their substantial computational overhead. However, current parallel inference paradigms primarily target homogeneous clusters, often failing to maintain high efficiency in realistic, heterogeneous multi-GPU environments where hardware disparities and fluctuating background workloads cause severe straggler effects. This paper introduces Orchestra, a robust framework that orchestrates fine-grained parallelism across both temporal and spatial dimensions to harmonize computational loads in such settings. Temporally, Orchestra employs a novel computation-aware step allocator using a tiered step reduction strategy, intelligently",
+      "pdf_link": "https://arxiv.org/pdf/2509.04719.pdf",
+      "forum_link": "https://arxiv.org/abs/2509.04719",
+      "submission_date": "2026-08-25T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 34.5,
-      "updated_at": "2026-08-24T06:52:02.560311+00:00"
+      "score": 95.5,
+      "updated_at": "2026-08-25T06:40:36.753636+00:00"
     },
     {
-      "forum_id": "2502.02581",
+      "forum_id": "2605.04450",
       "paper_number": -1,
-      "title": "Themis: Efficient Sparse Model Training Through Fully Sharded Sparse Data Parallelism",
+      "title": "When KV Meets Embeddings: Dynamic GPU Memory Allocation for Accelerating Generative Recommender Serving",
       "authors": [
-        "Yuhao Qing, Guichao Zhu, Lintian Lei, Fanxin Li, Shixiong Zhao, Zekai Sun, Xiuxian Guan, Xusheng Chen, Dong Huang, Ping Luo, Yiming Qiu, Heming Cui"
+        "Wenjun Yu, Shuguang Han, Amelie Chi Zhou"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2502.02581v2 Announce Type: replace \nAbstract: Mixture-of-Experts (MoE) scales large language models cost-effectively, but expert-parallel training suffers severe straggler effects from skewed expert loads. Current systems frequently rearrange expert placement to mitigate stragglers, inflating memory footprint and migration overhead, potentially negating the benefits of load balancing. We present Fully Sharded Sparse Data Parallelism (FSSDP), a sparse-native MoE training approach that enables in-situ load balancing on every training iteration, overlapping the balancing with computation and eliminating explicit expert rearrangement together with its migration traffic and memory reserves. FSSDP keeps MoE layers sharded and sparsely materializes an ephemeral, load-balancing placement ea",
-      "pdf_link": "https://arxiv.org/pdf/2502.02581.pdf",
-      "forum_link": "https://arxiv.org/abs/2502.02581",
-      "submission_date": "2026-08-24T04:00:00+00:00",
+      "abstract": "arXiv:2605.04450v2 Announce Type: replace \nAbstract: Generative Recommender (GR) inference places embedding hot caches (EMB) and KV caches in direct competition for limited GPU HBM: allocating more memory to one improves its efficiency but degrades the other. Existing systems optimize them in isolation, overlooking that the optimal EMB-KV allocation ratio can shift by up to 0.35 across workload regimes, leaving 20-30\\% latency improvement unrealized. While online reallocation is required to close this gap, naive approaches introduce H2D refill traffic on the critical path, causing P99 SLO violations.\n  To address this, we present RACER, which jointly manages HBM allocation and request routing at runtime through two key components: (1) Adaptive Memory Allocation, a three-layer PPO-based con",
+      "pdf_link": "https://arxiv.org/pdf/2605.04450.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.04450",
+      "submission_date": "2026-08-25T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 25.5,
-      "updated_at": "2026-08-24T06:52:02.560277+00:00"
+      "score": 31.5,
+      "updated_at": "2026-08-25T06:40:36.754057+00:00"
     },
     {
-      "forum_id": "2608.20352",
+      "forum_id": "2606.03770",
       "paper_number": -1,
-      "title": "Ghost Echoes: Semantic Erasure Failure in Retrieval-Backed Applications",
+      "title": "E2LLM: Towards Efficient LLM Serving in Heterogeneous Edge/Fog Environments",
       "authors": [
-        "Allan Mukkuzhi, Noella Uwayisenga, Yeabsira Bizualem, Jacob Kammerzell, Chandranil Chakraborttii"
+        "Truong-Thanh Le, Amir Taherkordi, Hoang-Loc La, Frank Eliassen, Phuong Hoai Ha, Peiyuan Guan"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.20352v1 Announce Type: cross \nAbstract: Although vector databases correctly implement API-visible deletion, this does not guarantee complete semantic erasure for retrieval-backed applications. We present Ghost Echoes, a black-box attack framework showing that deleted records can leave measurable residual influence on downstream retrieval contexts. Our primary finding is the RAG retrieval-context drift effect where even when a target record is correctly excluded from query results, its prior presence perturbs the semantic centroid and textual composition of the Top-K evidence base. We approximate the unobservable never-inserted counterfactual using a same-cluster non-target deletion control that preserves local neighborhood structure while isolating target-specific effects from g",
-      "pdf_link": "https://arxiv.org/pdf/2608.20352.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.20352",
-      "submission_date": "2026-08-24T04:00:00+00:00",
+      "abstract": "arXiv:2606.03770v3 Announce Type: replace \nAbstract: Large Language Models (LLMs) have become integral to modern applications, yet their deployment remains challenging. Beyond executing the models themselves, practical deployment must address cost efficiency, low latency, and optimal resource utilization. Conventional approaches typically assume that an entire model can be hosted on a single device, which does not hold in many real-world scenarios, particularly in Edge and Fog environments where device resources are constrained. In this paper, we introduce E2LLM, a framework designed to enable efficient LLM deployment in such resource limited settings. Rather than simply partitioning a single model across all available devices, E2LLM replicates the full model across multiple groups of devi",
+      "pdf_link": "https://arxiv.org/pdf/2606.03770.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.03770",
+      "submission_date": "2026-08-25T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-24T06:52:02.559923+00:00"
+      "score": 31.5,
+      "updated_at": "2026-08-25T06:40:36.754117+00:00"
+    },
+    {
+      "forum_id": "2603.12031",
+      "paper_number": -1,
+      "title": "Agentic-Kube: A Graph-Enhanced Multi-Agent Reinforcement Learning Framework for Multi-Objective Kubernetes Scheduling",
+      "authors": [
+        "Hamed Hamzeh"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2603.12031v3 Announce Type: replace \nAbstract: Cloud-native container orchestration requires resource schedulers capable of balancing infrastructure expenditure, fault resilience, and node utilisation. Conventional reinforcement learning approaches typically rely on monolithic single-agent models that suffer from gradient interference and reward dilution when mapping conflicting operational goals into a single scalar reward. We present Agentic-Kube, a cooperative multi-agent reinforcement learning framework designed for real-time Kubernetes pod placement. The architecture decomposes multi-objective scheduling into a tripartite optimisation space managed by dedicated sub-agents for cost minimisation, anti-affinity fault tolerance, and vector resource balancing. Agentic-Kube integrates",
+      "pdf_link": "https://arxiv.org/pdf/2603.12031.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.12031",
+      "submission_date": "2026-08-25T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 23.5,
+      "updated_at": "2026-08-25T06:40:36.753805+00:00"
+    },
+    {
+      "forum_id": "2608.21719",
+      "paper_number": -1,
+      "title": "PowerSlider: Exploiting Phase Asymmetry for LLM Serving under Demand Response",
+      "authors": [
+        "Yueying Li, Jiayang Chen, Yuanfan Chen, Leo Han, Haoran Qiu, Esha Choukse, Rodrigo Fonseca, Udit Gupta"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2608.21719v1 Announce Type: new \nAbstract: AI inference clusters are increasingly constrained by instantaneous power, not just energy: grid operators condition new capacity on demand response, imposing time-varying power caps. Existing LLM serving systems optimize a static energy objective or shed fixed priority tiers under load; either way, goodput collapses when the power envelope moves. An LLM pipeline is not a uniform load: compute-bound prefill loses throughput almost linearly with GPU frequency, memory-bound answer decode sustains it down to $0.57\\times$ nominal, and reasoning's thinking phase couples KV-cache capacity to scheduling -- so a cap should be steered to where each watt costs the least performance. \\sys{} does so with a new Flex SLO contract that turns bounded user s",
+      "pdf_link": "https://arxiv.org/pdf/2608.21719.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.21719",
+      "submission_date": "2026-08-25T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 16.5,
+      "updated_at": "2026-08-25T06:40:36.752457+00:00"
+    },
+    {
+      "forum_id": "2608.22593",
+      "paper_number": -1,
+      "title": "GCA: Global Centroid Alignment in Federated Learning",
+      "authors": [
+        "Jong-Ik Park, Harry Jiang, Logan Blakely, Georgios Fragkos, Shamina Hossain-McKenzie, Carlee Joe-Wong"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2608.22593v1 Announce Type: cross \nAbstract: Autoencoder (AE)-based federated learning (FL) is attractive for anomaly detection when clients have limited local data. However, conventional FL exchanges AE parameters or gradients, incurring substantial communication overhead and potentially exposing input training data information, since AEs are explicitly optimized to reconstruct their inputs. We introduce \\emph{Global Centroid Alignment (GCA)}, a latent-code-mediated FL protocol that coordinates clients without transmitting AE parameters or gradients. In each round, (1) clients first train their local AEs using a \\emph{reconstruction} update and upload a small subset of encoder latent codes to the FL server. (2) The server pools these codes, fits a clustering model, and broadcasts on",
+      "pdf_link": "https://arxiv.org/pdf/2608.22593.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.22593",
+      "submission_date": "2026-08-25T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-08-25T06:40:36.753480+00:00"
     }
   ]
 }
