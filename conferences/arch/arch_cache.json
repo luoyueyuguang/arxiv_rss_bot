@@ -1,31 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-08-24T06:52:02.476657+00:00",
+  "last_updated": "2026-08-26T06:42:33.396341+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2605.24817",
+      "forum_id": "2608.24637",
       "paper_number": -1,
-      "title": "RouteScan: A Non-Intrusive Approach to Auditing MoE LLMs Safety via Expert Routing Telemetry",
+      "title": "Thermal Tuning Overhead in Wafer-Scale Optical Interconnects for LLM MoE Training: A Cross-Layer Analysis and Ferroelectric-Based Mitigation",
       "authors": [
-        "Bo Lv, Zhiheng Xu, KeDong Xiu, Ruyi Ding, Tianhang Zheng, Zhibo Wang, Kui Ren"
+        "Seongwon Yoon, Pin-Jun Chen, Shimeng Yu"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2605.24817v2 Announce Type: replace-cross \nAbstract: As Mixture-of-Experts (MoE) architectures are increasingly adopted for scaling Large Language Models (LLMs), safety auditing becomes necessary to verify whether these models produce or facilitate harmful behaviors during operation. However, existing content-based auditing methods typically require access to user prompts, model internals, or outputs, potentially exposing sensitive user information and creating a tension between LLM safety and user privacy. On the other hand, we observe that, in MoE models, different inputs induce different sparse expert-routing patterns, which produce measurable footprints in low-level GPU execution telemetry. We refer to these hardware-observable signals induced by expert-routing decisions as exper",
-      "pdf_link": "https://arxiv.org/pdf/2605.24817.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.24817",
-      "submission_date": "2026-08-24T04:00:00+00:00",
+      "abstract": "arXiv:2608.24637v1 Announce Type: new \nAbstract: The rapid scaling of large language models (LLMs), particularly mixture-of-experts (MoE) architectures, has intensified interconnect demands because expert-parallel execution is communication-intensive. Wafer-scale optical interconnects based on dense wavelength-division multiplexing (DWDM) offer a promising path to higher bandwidth; however, conventional microring-resonator (MRR)-based links rely on thermo-optic tuning and are therefore vulnerable to workload-induced thermal fluctuations. In this work, we present a cross-layer analysis of wafer-scale optical interconnects for MoE workloads that combines workload profiling, packet-level network simulation, and transient thermal analysis. We implement a wafer-scale topology in the ht-sim simu",
+      "pdf_link": "https://arxiv.org/pdf/2608.24637.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.24637",
+      "submission_date": "2026-08-26T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-08-24T06:52:02.473791+00:00"
+      "score": 64.0,
+      "updated_at": "2026-08-26T06:42:33.393117+00:00"
     }
   ]
 }

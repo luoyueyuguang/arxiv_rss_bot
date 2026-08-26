@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-08-25T06:40:40.462298+00:00",
-  "paper_count": 442,
+  "last_updated": "2026-08-26T06:42:38.648606+00:00",
+  "paper_count": 439,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -2687,29 +2687,6 @@
       "updated_at": "2026-07-21T08:54:22.942367+00:00"
     },
     {
-      "forum_id": "2608.22210",
-      "paper_number": -1,
-      "title": "Fleet-Scale Pod Deployment with VPC-Native Networking in Managed Kubernetes",
-      "authors": [
-        "Sri Saran Balaji Vellore Rajakumar, Jayanth Varavani, Murat Parlakisik, Pavani Panakanti"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.22210v1 Announce Type: cross \nAbstract: Managed Kubernetes pod deployment is often presented as a choice between VPC-native and overlay networking. Public EKS documentation describes prefix-mode capacity and configuration, while prior CNI studies primarily measure steady-state throughput and latency. This paper presents an operational measurement study of fleet-scale pod deployment across three VPC-native modes on Amazon EKS: individual secondary-IP allocation, ENI preallocation, and IPv4 prefix delegation, using Cilium and Calico as overlay baselines. We compare representative mode-specific warm-pool settings, so the results describe combined operating points. At 400 nodes, the tested three-address secondary-IP warm pool required 7,403 seconds to place 80,000 pods. With the tes",
-      "pdf_link": "https://arxiv.org/pdf/2608.22210.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.22210",
-      "submission_date": "2026-08-25T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-08-25T06:40:37.209217+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-38",
       "paper_number": 38,
       "title": "A Compilation-Based Under-Constrained Execution Engine",
@@ -4634,29 +4611,6 @@
       "updated_at": "2026-07-21T08:54:22.936633+00:00"
     },
     {
-      "forum_id": "2604.05982",
-      "paper_number": -1,
-      "title": "GTaP: A GPU-Resident Fork-Join Task-Parallel System with a Pragma-Based Interface",
-      "authors": [
-        "Yuki Maeda, Kenjiro Taura"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2604.05982v2 Announce Type: replace \nAbstract: Graphics Processing Units (GPUs) excel at regular data-parallel workloads. In contrast, many irregular workloads are naturally expressed using fork-join task parallelism, which is well supported on CPUs but remains difficult to execute efficiently on GPUs. We present GTaP, a task-parallel programming system that executes fine-grained fork-join entirely within a persistent GPU kernel. Programmers annotate fork and join points in task functions with OpenMP-like pragmas, and a Clang extension generates the suspension and resumption logic required at joins. GTaP exposes a block mode, which maps each task to one thread block for cooperative parallel execution within the task, and a thread mode, which maps each task to one GPU thread for finer",
-      "pdf_link": "https://arxiv.org/pdf/2604.05982.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.05982",
-      "submission_date": "2026-08-25T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 22.5,
-      "updated_at": "2026-08-25T06:40:37.210094+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-134",
       "paper_number": 134,
       "title": "Queue-Mem: Energy-Efficient Hardware Storage for Advanced Network Function Acceleration",
@@ -5048,29 +5002,6 @@
       "ratings": [],
       "score": 17.0,
       "updated_at": "2026-07-21T08:54:26.740162+00:00"
-    },
-    {
-      "forum_id": "2608.20363",
-      "paper_number": -1,
-      "title": "Scalpel3: A High-Performance Data Carving Architecture for Recovery of Fragmented Files",
-      "authors": [
-        "Karley Waguespack, Samuel Goodwin, George Hendrick, Samuel Hildebrand, Thomas Landaiche III, Mingyang Li, Joshua McCain, Tyler Saizan, Jacob Tucker, James M. Ghawaly, Golden G. Richard III"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.20363v2 Announce Type: replace \nAbstract: File carving recovers files from raw storage without filesystem metadata, a key capability in digital forensics, data recovery, and digital exploration. Existing tools recover contiguous files effectively, but, to our knowledge, no publicly available, format-agnostic, high-performance framework exists in which researchers can develop and deploy new fragmented recovery strategies. Scalpel3 fills this gap with a massively threaded architecture for contiguous and fragmented recovery. Researchers need only write single-threaded validation and reassembly code for a new file type; Scalpel3 supplies worker scheduling, synchronization, checkpointing, and I/O. This separation allows new recovery methods to be added without modifying the backend i",
-      "pdf_link": "https://arxiv.org/pdf/2608.20363.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.20363",
-      "submission_date": "2026-08-25T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 16.5,
-      "updated_at": "2026-08-25T06:40:37.211448+00:00"
     },
     {
       "forum_id": "usenix-osdi26-109",
@@ -6041,29 +5972,6 @@
       "updated_at": "2026-07-21T08:54:22.934320+00:00"
     },
     {
-      "forum_id": "2608.23228",
-      "paper_number": -1,
-      "title": "mold: A Massively Parallel Linker",
-      "authors": [
-        "Rui Ueyama"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.23228v1 Announce Type: new \nAbstract: Linking is a critical step in the software build process that combines compiled object files into a single executable or shared library. Despite decades of engineering effort, link times remain a significant bottleneck in the edit-compile-debug cycle, particularly for large C++ programs. Existing linkers exploit limited parallelism, leaving most CPU cores idle during linking. We present mold, a Unix/Linux linker that applies data parallelism systematically across the entire linking pipeline. We first analyze the architectural constraints that prevent existing linkers from scaling, including entangled symbol resolution and archive processing, and then show how a clean-slate design that decouples them overcomes these limitations. On large real",
-      "pdf_link": "https://arxiv.org/pdf/2608.23228.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.23228",
-      "submission_date": "2026-08-25T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-08-25T06:40:37.142081+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-11",
       "paper_number": 11,
       "title": "MDK: Rethinking the Data Center Memory Reclamation Problem",
@@ -6389,6 +6297,29 @@
       "ratings": [],
       "score": 12.0,
       "updated_at": "2026-07-21T08:54:26.744089+00:00"
+    },
+    {
+      "forum_id": "2608.24067",
+      "paper_number": -1,
+      "title": "A Feature-Major Codebook for Memory-Efficient Sparse-Binary Self-Organizing Maps: Scaling a MEDLINE Atlas to 1.05 Million Neurons on a Single Consumer GPU",
+      "authors": [
+        "Andrew James Amos"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.24067v1 Announce Type: cross \nAbstract: A self-organising map turns a large corpus into a browsable two-dimensional atlas, but building one at MEDLINE scale has been impractical: the best-matching-unit (BMU) search that dominates training is bound by the bandwidth needed to read the codebook every epoch. I show that this bottleneck is largely an artefact of codebook layout. Storing it feature-major with each feature's weights contiguous, W[v.M+i], recasts the search as a tiled sparse-dense product in which every loaded weight column is reused across a tile of samples. Varying only the layout, with implementation, precision and update rule held fixed, accelerates the BMU search by 4.5-8.5x. Because an exact-argmin BMU is invariant to how the codebook is stored, this gain costs no",
+      "pdf_link": "https://arxiv.org/pdf/2608.24067.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.24067",
+      "submission_date": "2026-08-26T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.5,
+      "updated_at": "2026-08-26T06:42:34.921564+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-43",
@@ -7057,29 +6988,6 @@
       "ratings": [],
       "score": 5.0,
       "updated_at": "2026-07-21T08:54:26.740416+00:00"
-    },
-    {
-      "forum_id": "2608.21804",
-      "paper_number": -1,
-      "title": "FlashReg: GPU-Accelerated 3-Clique Point Cloud Registration for Real-Time Correspondence-to-Pose Estimation",
-      "authors": [
-        "Ziyang Yu, Xiang Li, Qiong Chang, Jun Miyazaki"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.21804v1 Announce Type: cross \nAbstract: Graph-based point cloud registration achieves high robustness by identifying geometrically consistent correspondence sets, but constructing second-order compatibility graphs and enumerating candidate cliques remain compute- and memory-intensive. This work presents FlashReg, a GPU-oriented correspondence-to-pose estimator that avoids materializing the dense scored second-order graph. Its Fast First- and Second-Order Graph (FFSOG) construction builds a capacity-bounded sparse second-order graph directly from the binary first-order graph. A dataflow-optimized three-node clique (3-clique) search then selects pivots from compact per-row candidate pools and enumerates triples through sorted sparse-neighborhood intersections. Across indoor and ou",
-      "pdf_link": "https://arxiv.org/pdf/2608.21804.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.21804",
-      "submission_date": "2026-08-25T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.5,
-      "updated_at": "2026-08-25T06:40:37.208915+00:00"
     },
     {
       "forum_id": "dblp-eurosys26-23",
@@ -10257,6 +10165,29 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
+    },
+    {
+      "forum_id": "2608.24153",
+      "paper_number": -1,
+      "title": "pigzpp: Fast, Parallel, Portable Compression for the Whole Stack",
+      "authors": [
+        "Thamme Gowda"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.24153v1 Announce Type: new \nAbstract: pigz is a widely deployed parallel gzip utility, but its process-global mutable state means that it was not designed as a reentrant, directly embeddable library. pigzpp is a from-scratch C++23 rewrite that turns the design into a thread-safe library with one accelerated DEFLATE core exposed to C++, Python, WebAssembly, Go, and Rust. As application-level conveniences built on that same core, it also provides multi-entry ZIP archives and a fast PNG codec. Its portable zlib-ng backend preserves gzip/zlib's ratio; its Intel ISA-L backend is an x86-64-only fast path that produces about 10% larger output at level 6 on our text corpus. In that configuration, zlib-ng reaches 2.1 times the CLI throughput of pigz and 16 times that of Python's in-memor",
+      "pdf_link": "https://arxiv.org/pdf/2608.24153.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.24153",
+      "submission_date": "2026-08-26T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-08-26T06:42:34.920722+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",
