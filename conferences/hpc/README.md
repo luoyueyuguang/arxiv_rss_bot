@@ -1,6 +1,6 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-08-26 06:42:34 UTC
+- **Last Updated**: 2026-08-27 17:17:59 UTC
 - **Total Filtered Papers**: 2
 - **Displaying**: 2 (arxiv: 2)
 - **Papers with Ratings**: 0
@@ -9,5 +9,5 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Trust, but Verify: Rigorously Profiling Best-Effort High-Performance Computing for Digital Evolution](https://arxiv.org/abs/2608.23955) | `ARXIV` | 26.0 |
-| 2 | [ShardMeter: Sharded and Geo-Distributed Training Without the Guesswork](https://arxiv.org/abs/2608.23840) | `ARXIV` | 16.5 |
+| 1 | [Adaptive Peer Clustering with Hierarchical Random Linear Network Coding for Resilient Decentralized Wireless Networks](https://arxiv.org/abs/2608.26040) | `ARXIV` | 16.0 |
+| 2 | [An Oversubscription and Service Pricing Exploitation-Based Profit Maximization Framework for Industry Cloud Resource Management](https://arxiv.org/abs/2608.25712) | `ARXIV` | 12.0 |

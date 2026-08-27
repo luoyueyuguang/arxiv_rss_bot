@@ -1,8 +1,8 @@
 # AI / AI for Science Papers
 
-- **Last Updated**: 2026-08-26 06:43:13 UTC
-- **Total Filtered Papers**: 34
-- **Displaying**: 34 (arxiv: 4, mlr: 30)
+- **Last Updated**: 2026-08-27 17:18:41 UTC
+- **Total Filtered Papers**: 33
+- **Displaying**: 33 (arxiv: 3, mlr: 30)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
@@ -41,5 +41,4 @@
 | 30 | [Towards More Diverse Evaluation of Class Incremental Learning: Representation Learning Perspective](https://proceedings.mlr.press/v274/cha25a.html) | `MLR` | 1.5 |
 | 31 | [Learning to learn without forgetting using attention](https://proceedings.mlr.press/v274/vettoruzzo25a.html) | `MLR` | 1.5 |
 | 32 | [Integrating Present and Past in Unsupervised Continual Learning](https://proceedings.mlr.press/v274/zhang25a.html) | `MLR` | 1.5 |
-| 33 | [Optimal Alternating Regret for Online Learning and Games](https://arxiv.org/abs/2608.24731) | `ARXIV` | 1.0 |
-| 34 | [Beyond Unimodal Learning: The Importance of Integrating Multiple Modalities for Lifelong Learning](https://proceedings.mlr.press/v274/sarfraz25a.html) | `MLR` | 1.0 |
+| 33 | [Beyond Unimodal Learning: The Importance of Integrating Multiple Modalities for Lifelong Learning](https://proceedings.mlr.press/v274/sarfraz25a.html) | `MLR` | 1.0 |

@@ -1,54 +1,54 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-08-26T06:42:34.771376+00:00",
+  "last_updated": "2026-08-27T17:17:59.914558+00:00",
   "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2608.23955",
+      "forum_id": "2608.26040",
       "paper_number": -1,
-      "title": "Trust, but Verify: Rigorously Profiling Best-Effort High-Performance Computing for Digital Evolution",
+      "title": "Adaptive Peer Clustering with Hierarchical Random Linear Network Coding for Resilient Decentralized Wireless Networks",
       "authors": [
-        "Matthew Andres Moreno, Santiago Rodriguez Papa, Charles Ofria, Luis Zaman, Emily Dolson"
+        "Navaneetha Krishnan Kamalakannan, Harinisri Velmurugan"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.23955v1 Announce Type: cross \nAbstract: Developments in high-performance computing (HPC) technology continue to drastically increase quantities of available processing power. In the context of digital evolution, this explosive growth offers opportunities to advance both hypothesis-driven explorations of multi-scale biological phenomena and application-driven evolutionary optimization targeting hard problem domains. A particular opportunity arises from emerging next-generation AI/ML hardware accelerator platforms, such as the 880,000-processor Cerebras Wafer-Scale Engine (WSE). Such hardware, however, constrains on-device data storage and movement --- a challenge compounded by vulnerability to failures arising over numerous device components. Best-effort relaxations that depart f",
-      "pdf_link": "https://arxiv.org/pdf/2608.23955.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.23955",
-      "submission_date": "2026-08-26T04:00:00+00:00",
+      "abstract": "arXiv:2608.26040v1 Announce Type: cross \nAbstract: Decentralized wireless collectives including vehicular swarms, IoT clusters, and edge AI networks require communication protocols that maintain robustness under dynamic topologies and heterogeneous link quality. While Random Linear Network Coding (RLNC) provides algebraic resilience against packet erasures, its performance degrades significantly when peers exhibit diverse channel conditions. This paper presents Adaptive Peer Clustering with Hierarchical RLNC (APC-RLNC), a system that dynamically groups peers by exponentially weighted moving average (EWMA) reliability metrics and applies multi-tier network coding within and across clusters. We formalize the clustering optimization problem, derive closed-form decoding probability bounds for ",
+      "pdf_link": "https://arxiv.org/pdf/2608.26040.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.26040",
+      "submission_date": "2026-08-27T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 26.0,
-      "updated_at": "2026-08-26T06:42:33.455151+00:00"
+      "score": 16.0,
+      "updated_at": "2026-08-27T17:17:59.526134+00:00"
     },
     {
-      "forum_id": "2608.23840",
+      "forum_id": "2608.25712",
       "paper_number": -1,
-      "title": "ShardMeter: Sharded and Geo-Distributed Training Without the Guesswork",
+      "title": "An Oversubscription and Service Pricing Exploitation-Based Profit Maximization Framework for Industry Cloud Resource Management",
       "authors": [
-        "Tim Beringer (Technical University of Darmstadt), Patrick Diem (Technical University of Darmstadt), Felix Wolf (Technical University of Darmstadt), Arya Mazaheri (Technical University of Darmstadt, PanocularAI)"
+        "Deepika Saxena, Ashutosh Kumar Singh"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.23840v1 Announce Type: new \nAbstract: Training large-scale AI models often outgrows a single data center, demanding sharded, multi-cluster, and decentralized training. However, the huge space of resource allocations makes exhaustive benchmarking and manual tuning impractical, while performance depends on tightly coupled factors like model size, GPU memory, batch size, bandwidth, and sharding strategy. We introduce ShardMeter, a lightweight analytical performance model that predicts the end-to-end runtime of transformer-based workloads across arbitrary sharded, distributed, and even decentralized training. Given a model's characteristics and a target hardware topology, ShardMeter estimates per-GPU and per-island throughput, training cost, total wall-clock time, and identifies per",
-      "pdf_link": "https://arxiv.org/pdf/2608.23840.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.23840",
-      "submission_date": "2026-08-26T04:00:00+00:00",
+      "abstract": "arXiv:2608.25712v1 Announce Type: new \nAbstract: This article proposed a novel industry cloud resource management framework that exploits resource oversubscription and heterogeneous service pricing models to maximize profitability and operational efficiency for industry cloud providers. The framework proposes an adaptive ensemble machine learning driven prediction model for proactive estimation of resource utilization of Virtual Machines (VM)s based on previous resource utilization of respective users' VMs to minimize resource wastage due to oversubscription by them. Accordingly, the VMs having similar predicted resource usage are grouped using Fuzzy C means clustering. This helps to determine the required number of VMs with specific configuration to be deployed before executing user reque",
+      "pdf_link": "https://arxiv.org/pdf/2608.25712.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.25712",
+      "submission_date": "2026-08-27T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 16.5,
-      "updated_at": "2026-08-26T06:42:33.454697+00:00"
+      "score": 12.0,
+      "updated_at": "2026-08-27T17:17:59.525487+00:00"
     }
   ]
 }

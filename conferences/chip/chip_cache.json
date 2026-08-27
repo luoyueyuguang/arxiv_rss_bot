@@ -1,146 +1,123 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-08-26T06:42:38.708755+00:00",
-  "paper_count": 6,
+  "last_updated": "2026-08-27T17:18:11.577519+00:00",
+  "paper_count": 5,
   "papers": [
     {
       "forum_id": "2608.23602",
       "paper_number": -1,
       "title": "PACT: Post-route Agentic Checkpoint Tuning for FPGA Timing Closure",
       "authors": [
-        "Huan Lin, Kunlong Li, Lingli Wang, Zhiang Zhang"
+        "Huan Lin, Kunlong Li, Lingli Wang, Zhiang Wang"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.23602v1 Announce Type: new \nAbstract: Late-stage FPGA timing closure often starts from an implemented design whose remaining violations are visible in timing reports. Engineering change order (ECO) optimization is a standard mechanism for applying localized changes to such designs without restarting the full implementation flow. Automating post-route ECO optimization remains challenging. A post-route change must improve timing without violating routing legality, hold or pulse-width timing constraints, checkpoint replayability or functional equivalence. This paper presents PACT, a Post-route Agentic Checkpoint Tuning framework for Vivado design checkpoints (DCP). PACT represents post-route tuning as validation-gated transitions between accepted and candidate checkpoints. From che",
+      "abstract": "arXiv:2608.23602v2 Announce Type: replace \nAbstract: Late-stage FPGA timing closure often starts from an implemented design whose remaining violations are visible in timing reports. Engineering change order (ECO) optimization is a standard mechanism for applying localized changes to such designs without restarting the full implementation flow. Automating post-route ECO optimization remains challenging. A post-route change must improve timing without violating routing legality, hold or pulse-width timing constraints, checkpoint replayability or functional equivalence. This paper presents PACT, a Post-route Agentic Checkpoint Tuning framework for Vivado design checkpoints (DCP). PACT represents post-route tuning as validation-gated transitions between accepted and candidate checkpoints. From",
       "pdf_link": "https://arxiv.org/pdf/2608.23602.pdf",
       "forum_link": "https://arxiv.org/abs/2608.23602",
-      "submission_date": "2026-08-26T04:00:00+00:00",
+      "submission_date": "2026-08-27T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 15.5,
-      "updated_at": "2026-08-26T06:42:38.704293+00:00"
+      "score": 16.5,
+      "updated_at": "2026-08-27T17:18:11.574226+00:00"
     },
     {
-      "forum_id": "2608.13027",
+      "forum_id": "2608.25536",
       "paper_number": -1,
-      "title": "Why Do Prefetchers Fail? Let Agents Answer",
+      "title": "Syn2Logic: End-to-End Neuromorphic Design Automation",
       "authors": [
-        "Xiangfeng Sun, Ceyu Xu, Ningzhi Ai, Zeyu Zhu, Yiyang Yuan, Yuan Xie"
+        "Artur Podobas"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2608.25536v1 Announce Type: new \nAbstract: In this work, we propose a view on electronic Neuromorphic Design Automation (eNDA), which we see as a design automation flow that bridges computational neuroscience modeling with traditional Electronic Design Automation (EDA) flow. We introduce the term, give examples of how it can be implemented, and design a prototype implementation: Syn2Logic. Syn2Logic is an entire eNDA framework, that allows neuroscientists to model neural behavior using a custom DSL and a compiler that takes the same model description down to synthesizable RTL hardware. We end the paper by applying the eNDA-flow through Syn2Logic to show how to -- without writing a single line of hardware description language (HDL) code-- (i) generate what we believe is the fastest C.",
+      "pdf_link": "https://arxiv.org/pdf/2608.25536.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.25536",
+      "submission_date": "2026-08-27T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-08-27T17:18:11.573767+00:00"
+    },
+    {
+      "forum_id": "2604.13523",
+      "paper_number": -1,
+      "title": "TensorLift: Automatic Extraction of Tensor-Level ISA Semantics from Accelerator RTL via MLIR Semantic Lifting",
+      "authors": [
+        "Ruijie Gao, Haoran Jin, Jirong Yang, Nathaniel Bleier"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.13027v2 Announce Type: replace \nAbstract: Hardware prefetchers are crucial to processor performance, yet their design remains labor-intensive and expert-driven. Architects inspect execution and memory-access traces, identify patterns, translate them into online hardware heuristics, and evaluate them in simulation, often with no guarantee of improvement. Human experts cannot systematically inspect billion-instruction traces across diverse real-world workloads.\n  We present a performance-anomaly-driven autoresearch flow that repeatedly asks why a deployed prefetcher fails and uses the diagnoses to construct the Mixture of Prefetchers (MoP). Each iteration localizes high-impact unexplained misses to program counters, gives agents hardware logs, source code, and sliced traces, valid",
-      "pdf_link": "https://arxiv.org/pdf/2608.13027.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.13027",
-      "submission_date": "2026-08-26T04:00:00+00:00",
+      "abstract": "arXiv:2604.13523v3 Announce Type: replace \nAbstract: Most proposed tensor accelerators lack well-documented ISAs and compiler backends, and are exercised only through hand-written kernels covering a handful of operators. Recent work (TAIDL, ACT) shows that a tensor-level ISA specification is enough to generate complete software stacks automatically. Writing that specification, however, remains a manual, expert-driven process.\n  We present TensorLift, the first end-to-end MLIR-based pipeline that lifts RTL-extracted accelerator semantics to TAIDL-like tensor ISA specifications. Building on prior architecture-level model extraction that yields bit-level IR, an 8-pass MLIR pipeline progressively recovers tensor structure (MAC idioms, saturation semantics, multi-dimensional buffer organization",
+      "pdf_link": "https://arxiv.org/pdf/2604.13523.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.13523",
+      "submission_date": "2026-08-27T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-08-26T06:42:38.704747+00:00"
+      "score": 2.5,
+      "updated_at": "2026-08-27T17:18:11.574060+00:00"
     },
     {
-      "forum_id": "2603.13092",
+      "forum_id": "2608.25346",
       "paper_number": -1,
-      "title": "Breaking the Tuning Barrier: Zero-Hyperparameters Yield Multi-Corner Analysis Via Learned Priors",
+      "title": "BOOSTEDSOSA: Accelerated Inferencing for Low Variance Stochastic Online Scheduling",
       "authors": [
-        "Wei W. Xing, Kaiqi Huang, Jiazhan Liu, Hong Qiu, Shan Shen"
+        "Adam H. Ross, Riccardo Revalor, Aryan Singh, Ayush Jain, Debjit Pal"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "FPGA"
       ],
-      "abstract": "arXiv:2603.13092v3 Announce Type: replace-cross \nAbstract: Yield Multi-Corner Analysis validates circuits across 25+ Process-Voltage-Temperature corners, resulting in a combinatorial simulation cost of $O(K \\times N)$ where $K$ denotes corners and $N$ exceeds $10^4$ samples per corner. Existing methods face a fundamental trade-off: simple models achieve automation but fail on nonlinear circuits, while advanced AI models capture complex behaviors but require hours of hyperparameter tuning per design iteration, forming the Tuning Barrier. We break this barrier by replacing engineered priors (i.e., model specifications) with learned priors from a foundation model pre-trained on millions of regression tasks. This model performs in-context learning, instantly adapting to each circuit without tu",
-      "pdf_link": "https://arxiv.org/pdf/2603.13092.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.13092",
-      "submission_date": "2026-08-26T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2608.25346v1 Announce Type: new \nAbstract: Heterogeneous scheduling in stochastic, online envi- ronments, such as high-performance computing (HPC) systems, presents a significant challenge. Stochastic Online Scheduling Accelerators (SOSAs) offer a promising solution, but their effectiveness is compromised by a reliance on runtime estimates provided by users. These estimates introduce substantial vari- ance into the scheduling process (mean MAE in hundreds of Core-Days), thereby weakening the competitiveness of Stochastic Online Scheduling algorithms as their competitive-ratio bound increases with runtime variability.\n  To address this limitation, we introduce BOOSTEDSOSA, a dual-FPGA ML-assisted Scheduling architecture that integrates a Machine Learning predictor for expected process",
+      "pdf_link": "https://arxiv.org/pdf/2608.25346.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.25346",
+      "submission_date": "2026-08-27T04:00:00+00:00",
+      "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-08-26T06:42:38.704786+00:00"
+      "score": 1.0,
+      "updated_at": "2026-08-27T17:18:11.573629+00:00"
     },
     {
-      "forum_id": "2608.23601",
+      "forum_id": "2608.00894",
       "paper_number": -1,
-      "title": "StateTune: Transforming LLM-Assisted EDA Flow Tuning into a Stateful, Closed-Loop Process",
+      "title": "Rethinking Agentic Kernel Generation for Emerging Accelerators",
       "authors": [
-        "Kunlong Li, Shangshang Yao, Su Zheng, Lingli Wang"
+        "Ruijie Gao, Jirong Yang, Barry Lyu, Haoran Jin, Nathan Bleier"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.23601v1 Announce Type: new \nAbstract: EDA flow parameter tuning is critical for quality-of-results~(QoR), yet the parameter space is large, tightly coupled, and full evaluations are prohibitively expensive. Prior LLM-assisted tuners mainly use the LLM as an external proposer with transient working context; we instead present \\textbf{StateTune}, which reformulates LLM-assisted EDA tuning as a closed-loop, state-carrying process. Its optimizer state is a typed, evidence-gated \\emph{persistent optimization memory} that is updated by every evaluation and shared between candidate generation and budget allocation. On top of this optimizer state, an expected hypervolume improvement (EHVI)-guided, runtime-aware promotion policy ranks quick-stage candidates by expected Pareto frontier ga",
-      "pdf_link": "https://arxiv.org/pdf/2608.23601.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.23601",
-      "submission_date": "2026-08-26T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-08-26T06:42:38.704241+00:00"
-    },
-    {
-      "forum_id": "2608.23582",
-      "paper_number": -1,
-      "title": "Transformer Accelerator (TFA): A Macro-Op INT8 Hardware Chip for Transformer Inference and Machine Translation",
-      "authors": [
-        "Shashank"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2608.23582v1 Announce Type: new \nAbstract: We present the Transformer Accelerator (TFA), a synthesizable, parameterizable INT8 memory-to-memory engine for transformer inference. One time-multiplexed datapath handles prompt processing and autoregressive generation. TFA implements matrix multiplication, softmax, RMSNorm, elementwise, and copy/gather operations through eight 512-bit macro-op descriptors. Offline-compiled programs are fetched, validated, and dispatched through AXI interfaces, supporting encoder, decoder, and encoder-decoder models.\n  The RTL combines an output-stationary multiply-accumulate array with ping-pong buffers that overlap DMA and compute, bit-exact reciprocal-square-root and divide units, key-value-cache and embedding addressing, and an abort-safe zero-padding ",
-      "pdf_link": "https://arxiv.org/pdf/2608.23582.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.23582",
-      "submission_date": "2026-08-26T04:00:00+00:00",
+      "abstract": "arXiv:2608.00894v2 Announce Type: replace \nAbstract: Emerging accelerators often lack mature compiler backends, motivating neural agents that generate and repair kernels from architectural documentation and simulator feedback. This approach repeatedly reconstructs workload-invariant machine semantics--including instruction behavior, legality constraints, synchronization rules, and memory protocols--for every workload. We argue that these semantics should be compiled once into a persistent symbolic artifact, while neural reasoning should focus on workload-dependent mapping decisions.\n  We present Zomboss, a compiler-mediated agentic framework for kernel generation that places neural search within a verified compiler boundary. Zomboss compiles machine semantics and legality constraints into ",
+      "pdf_link": "https://arxiv.org/pdf/2608.00894.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.00894",
+      "submission_date": "2026-08-27T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-08-26T06:42:38.704128+00:00"
-    },
-    {
-      "forum_id": "2601.21584",
-      "paper_number": -1,
-      "title": "Task-Aware Identifiability: Observation Quotients, Statistical Geometry, and Representation Accessibility",
-      "authors": [
-        "Yan Jiao, Pin-Han Ho, Limei Peng, Yiming Miao"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2601.21584v2 Announce Type: replace \nAbstract: Intelligent systems often assume observations contain the information required for a task. This fails struc- turally when a declared mechanism assigns identical ob- servation laws to latent states the task must distin- guish. We develop a unified diagnostic framework con- necting observation-induced equivalence, task identifia- bility, local statistical geometry, representation accessi- bility, and achievable risk. Its organizing condition is a standard factorization property: the observation parti- tion refines the task partition, and conditionally iid rep- etitions of that fixed channel cannot recover an exactly collapsed distinction. On regular quotient strata, Fisher geometry and nuisance-efficient Fisher information char- acterize f",
-      "pdf_link": "https://arxiv.org/pdf/2601.21584.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.21584",
-      "submission_date": "2026-08-26T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-26T06:42:38.704616+00:00"
+      "updated_at": "2026-08-27T17:18:11.574108+00:00"
     }
   ]
 }

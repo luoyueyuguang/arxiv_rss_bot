@@ -1,8 +1,8 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-08-26T06:42:33.396341+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-08-27T17:17:59.458838+00:00",
+  "paper_count": 3,
   "papers": [
     {
       "forum_id": "2608.24637",
@@ -15,17 +15,63 @@
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2608.24637v1 Announce Type: new \nAbstract: The rapid scaling of large language models (LLMs), particularly mixture-of-experts (MoE) architectures, has intensified interconnect demands because expert-parallel execution is communication-intensive. Wafer-scale optical interconnects based on dense wavelength-division multiplexing (DWDM) offer a promising path to higher bandwidth; however, conventional microring-resonator (MRR)-based links rely on thermo-optic tuning and are therefore vulnerable to workload-induced thermal fluctuations. In this work, we present a cross-layer analysis of wafer-scale optical interconnects for MoE workloads that combines workload profiling, packet-level network simulation, and transient thermal analysis. We implement a wafer-scale topology in the ht-sim simu",
+      "abstract": "arXiv:2608.24637v2 Announce Type: replace \nAbstract: The rapid scaling of large language models (LLMs), particularly mixture-of-experts (MoE) architectures, has intensified interconnect demands because expert-parallel execution is communication-intensive. Wafer-scale optical interconnects based on dense wavelength-division multiplexing (DWDM) offer a promising path to higher bandwidth; however, conventional microring-resonator (MRR)-based links rely on thermo-optic tuning and are therefore vulnerable to workload-induced thermal fluctuations. In this work, we present a cross-layer analysis of wafer-scale optical interconnects for MoE workloads that combines workload profiling, packet-level network simulation, and transient thermal analysis. We implement a wafer-scale topology in the ht-sim ",
       "pdf_link": "https://arxiv.org/pdf/2608.24637.pdf",
       "forum_link": "https://arxiv.org/abs/2608.24637",
-      "submission_date": "2026-08-26T04:00:00+00:00",
+      "submission_date": "2026-08-27T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 64.0,
-      "updated_at": "2026-08-26T06:42:33.393117+00:00"
+      "updated_at": "2026-08-27T17:17:59.453944+00:00"
+    },
+    {
+      "forum_id": "2608.26072",
+      "paper_number": -1,
+      "title": "From Fleet to Lab: Revisiting the Security and Complexity of Industrial Rowhammer Mitigation",
+      "authors": [
+        "Hritvik Taneja, Moinuddin Qureshi"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2608.26072v1 Announce Type: cross \nAbstract: This paper studies efficient and secure Rowhammer mitigation at the Memory-Controller (MC). Rowhammer mitigation faces a fundamental tradeoff between tracking storage and mitigation rate: precise trackers (such as Misra-Gries) avoid unnecessary mitigations but require large CAM structures, whereas sampling-based schemes (such as PARA) require no storage but incur frequent mitigations even when not under attack. Microsoft recently deployed Sigries, an MC-side Rowhammer defense that combines an under-provisioned Misra-Gries tracker with a row-sampling fallback, in its Azure Cobalt 200 SoC. Sigries observed that the tracker-to-sampling transition can be insecure, and claimed the reverse transition is always safe. Our analysis shows that this ",
+      "pdf_link": "https://arxiv.org/pdf/2608.26072.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.26072",
+      "submission_date": "2026-08-27T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.0,
+      "updated_at": "2026-08-27T17:17:59.453821+00:00"
+    },
+    {
+      "forum_id": "2608.25062",
+      "paper_number": -1,
+      "title": "FLINT: Efficiently Leveraging High Bandwidth Flash for Capacity-Scalable LLM Inference Acceleration",
+      "authors": [
+        "Geraldo F. Oliveira, Arash Tavakkol, Xiangyu Zhu, Ahmet Caner Y\\\"uz\\\"ug\\\"uler, Vamanan Arulchelvan, Lukas Cavigelli, Renzo Andri, Mohammad Sadrosadati, Jia Xinglei, Onur Mutlu, Zhou Ke, Shai Bergman, Ji Zhang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2608.25062v1 Announce Type: new \nAbstract: LLM inference is increasingly constrained by accelerator memory capacity rather than compute throughput. This constraint is especially acute in single-accelerator and small-node inference systems, where limited on-package memory capacity restricts the size of deployable models. HBF is an emerging 3D-stacked NAND flash technology that provides multi-terabyte near-accelerator capacity, making it a promising capacity tier for storing LLM weights. However, existing HBF-based proposals face three adoption challenges: they (1) rely on coarse-grained static prefetching for LLM weights aiming to hide the microsecond-level read latency of the NAND flash device while maximizing HBF's read throughput, (2) expose NAND flash management tasks (e.g., refre",
+      "pdf_link": "https://arxiv.org/pdf/2608.25062.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.25062",
+      "submission_date": "2026-08-27T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-08-27T17:17:59.453626+00:00"
     }
   ]
 }

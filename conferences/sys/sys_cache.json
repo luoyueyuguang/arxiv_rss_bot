@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-08-26T06:42:38.648606+00:00",
-  "paper_count": 439,
+  "last_updated": "2026-08-27T17:18:11.489655+00:00",
+  "paper_count": 437,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -6299,29 +6299,6 @@
       "updated_at": "2026-07-21T08:54:26.744089+00:00"
     },
     {
-      "forum_id": "2608.24067",
-      "paper_number": -1,
-      "title": "A Feature-Major Codebook for Memory-Efficient Sparse-Binary Self-Organizing Maps: Scaling a MEDLINE Atlas to 1.05 Million Neurons on a Single Consumer GPU",
-      "authors": [
-        "Andrew James Amos"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.24067v1 Announce Type: cross \nAbstract: A self-organising map turns a large corpus into a browsable two-dimensional atlas, but building one at MEDLINE scale has been impractical: the best-matching-unit (BMU) search that dominates training is bound by the bandwidth needed to read the codebook every epoch. I show that this bottleneck is largely an artefact of codebook layout. Storing it feature-major with each feature's weights contiguous, W[v.M+i], recasts the search as a tiled sparse-dense product in which every loaded weight column is reused across a tile of samples. Varying only the layout, with implementation, precision and update rule held fixed, accelerates the BMU search by 4.5-8.5x. Because an exact-argmin BMU is invariant to how the codebook is stored, this gain costs no",
-      "pdf_link": "https://arxiv.org/pdf/2608.24067.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.24067",
-      "submission_date": "2026-08-26T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.5,
-      "updated_at": "2026-08-26T06:42:34.921564+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-43",
       "paper_number": 43,
       "title": "Eywa: Automating Model-Based Testing using LLMs",
@@ -10165,29 +10142,6 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
-    },
-    {
-      "forum_id": "2608.24153",
-      "paper_number": -1,
-      "title": "pigzpp: Fast, Parallel, Portable Compression for the Whole Stack",
-      "authors": [
-        "Thamme Gowda"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.24153v1 Announce Type: new \nAbstract: pigz is a widely deployed parallel gzip utility, but its process-global mutable state means that it was not designed as a reentrant, directly embeddable library. pigzpp is a from-scratch C++23 rewrite that turns the design into a thread-safe library with one accelerated DEFLATE core exposed to C++, Python, WebAssembly, Go, and Rust. As application-level conveniences built on that same core, it also provides multi-entry ZIP archives and a fast PNG codec. Its portable zlib-ng backend preserves gzip/zlib's ratio; its Intel ISA-L backend is an x86-64-only fast path that produces about 10% larger output at level 6 on our text corpus. In that configuration, zlib-ng reaches 2.1 times the CLI throughput of pigz and 16 times that of Python's in-memor",
-      "pdf_link": "https://arxiv.org/pdf/2608.24153.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.24153",
-      "submission_date": "2026-08-26T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-26T06:42:34.920722+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",
