@@ -1,123 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-08-27T17:18:11.577519+00:00",
-  "paper_count": 5,
+  "last_updated": "2026-08-28T18:10:37.067340+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2608.23602",
+      "forum_id": "2608.26223",
       "paper_number": -1,
-      "title": "PACT: Post-route Agentic Checkpoint Tuning for FPGA Timing Closure",
+      "title": "Beyond Edge Cuts: Activity-Weighted Multicast Hypergraph Mapping for Spiking Neural Networks on Mesh NoCs",
       "authors": [
-        "Huan Lin, Kunlong Li, Lingli Wang, Zhiang Wang"
+        "Amirreza Khorasanian"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.23602v2 Announce Type: replace \nAbstract: Late-stage FPGA timing closure often starts from an implemented design whose remaining violations are visible in timing reports. Engineering change order (ECO) optimization is a standard mechanism for applying localized changes to such designs without restarting the full implementation flow. Automating post-route ECO optimization remains challenging. A post-route change must improve timing without violating routing legality, hold or pulse-width timing constraints, checkpoint replayability or functional equivalence. This paper presents PACT, a Post-route Agentic Checkpoint Tuning framework for Vivado design checkpoints (DCP). PACT represents post-route tuning as validation-gated transitions between accepted and candidate checkpoints. From",
-      "pdf_link": "https://arxiv.org/pdf/2608.23602.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.23602",
-      "submission_date": "2026-08-27T04:00:00+00:00",
+      "abstract": "arXiv:2608.26223v1 Announce Type: new \nAbstract: Mapping spiking neural networks (SNNs) onto neuromorphic many-core platforms is often formulated with graph partitioning and pairwise placement costs. That abstraction is convenient, but it does not match the physical communication event: one spike from a source neuron is delivered to a set of postsynaptic destinations, and routes to several destinations can share mesh links. We present M-HySMap, a route-aware, activity-weighted multicast hypergraph mapping framework. Each source neuron induces a directed hyperedge to its postsynaptic fanout, weighted by profiled activity. The mapper starts from strong activity-aware graph/QAP seeds and then optimizes distinct destination-core fanout, the union of deterministic mesh routes, and link congesti",
+      "pdf_link": "https://arxiv.org/pdf/2608.26223.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.26223",
+      "submission_date": "2026-08-28T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 16.5,
-      "updated_at": "2026-08-27T17:18:11.574226+00:00"
+      "score": 13.0,
+      "updated_at": "2026-08-28T18:10:37.063666+00:00"
     },
     {
-      "forum_id": "2608.25536",
+      "forum_id": "2608.26206",
       "paper_number": -1,
-      "title": "Syn2Logic: End-to-End Neuromorphic Design Automation",
+      "title": "Ankhdjet: An Open-Source Compiler for Mask-Programmed Ternary Compute-in-ROM on an Open PDK",
       "authors": [
-        "Artur Podobas"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2608.25536v1 Announce Type: new \nAbstract: In this work, we propose a view on electronic Neuromorphic Design Automation (eNDA), which we see as a design automation flow that bridges computational neuroscience modeling with traditional Electronic Design Automation (EDA) flow. We introduce the term, give examples of how it can be implemented, and design a prototype implementation: Syn2Logic. Syn2Logic is an entire eNDA framework, that allows neuroscientists to model neural behavior using a custom DSL and a compiler that takes the same model description down to synthesizable RTL hardware. We end the paper by applying the eNDA-flow through Syn2Logic to show how to -- without writing a single line of hardware description language (HDL) code-- (i) generate what we believe is the fastest C.",
-      "pdf_link": "https://arxiv.org/pdf/2608.25536.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.25536",
-      "submission_date": "2026-08-27T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-08-27T17:18:11.573767+00:00"
-    },
-    {
-      "forum_id": "2604.13523",
-      "paper_number": -1,
-      "title": "TensorLift: Automatic Extraction of Tensor-Level ISA Semantics from Accelerator RTL via MLIR Semantic Lifting",
-      "authors": [
-        "Ruijie Gao, Haoran Jin, Jirong Yang, Nathaniel Bleier"
+        "Mohnish Pai"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2604.13523v3 Announce Type: replace \nAbstract: Most proposed tensor accelerators lack well-documented ISAs and compiler backends, and are exercised only through hand-written kernels covering a handful of operators. Recent work (TAIDL, ACT) shows that a tensor-level ISA specification is enough to generate complete software stacks automatically. Writing that specification, however, remains a manual, expert-driven process.\n  We present TensorLift, the first end-to-end MLIR-based pipeline that lifts RTL-extracted accelerator semantics to TAIDL-like tensor ISA specifications. Building on prior architecture-level model extraction that yields bit-level IR, an 8-pass MLIR pipeline progressively recovers tensor structure (MAC idioms, saturation semantics, multi-dimensional buffer organization",
-      "pdf_link": "https://arxiv.org/pdf/2604.13523.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.13523",
-      "submission_date": "2026-08-27T04:00:00+00:00",
+      "abstract": "arXiv:2608.26206v1 Announce Type: new \nAbstract: Large-language-model inference is dominated by weight movement: every generated token re-reads every weight. Ternary quantization (BitNet b1.58) shrinks each weight to 1.58 bits with reported parity at the 2B-parameter scale, small enough that hardwiring the weights into a read-only mask becomes plausible, and a commercial chip (Taalas HC1) has validated hardwired weights on an advanced node behind closed tooling. This paper asks whether model-specific silicon can be made reproducible with entirely open infrastructure. We present Ankhdjet, an open-source compiler that lowers a HuggingFace ternary checkpoint (BitNet b1.58 and its kin) to a via-mask program of a fixed compute-in-ROM macro on the open SKY130 PDK, verified end to end with open t",
+      "pdf_link": "https://arxiv.org/pdf/2608.26206.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.26206",
+      "submission_date": "2026-08-28T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-08-27T17:18:11.574060+00:00"
+      "updated_at": "2026-08-28T18:10:37.063551+00:00"
     },
     {
-      "forum_id": "2608.25346",
+      "forum_id": "2604.12420",
       "paper_number": -1,
-      "title": "BOOSTEDSOSA: Accelerated Inferencing for Low Variance Stochastic Online Scheduling",
+      "title": "HARP: Hadamard-Domain Write-and-Verify for Noise-Robust RRAM Programming",
       "authors": [
-        "Adam H. Ross, Riccardo Revalor, Aryan Singh, Ayush Jain, Debjit Pal"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2608.25346v1 Announce Type: new \nAbstract: Heterogeneous scheduling in stochastic, online envi- ronments, such as high-performance computing (HPC) systems, presents a significant challenge. Stochastic Online Scheduling Accelerators (SOSAs) offer a promising solution, but their effectiveness is compromised by a reliance on runtime estimates provided by users. These estimates introduce substantial vari- ance into the scheduling process (mean MAE in hundreds of Core-Days), thereby weakening the competitiveness of Stochastic Online Scheduling algorithms as their competitive-ratio bound increases with runtime variability.\n  To address this limitation, we introduce BOOSTEDSOSA, a dual-FPGA ML-assisted Scheduling architecture that integrates a Machine Learning predictor for expected process",
-      "pdf_link": "https://arxiv.org/pdf/2608.25346.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.25346",
-      "submission_date": "2026-08-27T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-27T17:18:11.573629+00:00"
-    },
-    {
-      "forum_id": "2608.00894",
-      "paper_number": -1,
-      "title": "Rethinking Agentic Kernel Generation for Emerging Accelerators",
-      "authors": [
-        "Ruijie Gao, Jirong Yang, Barry Lyu, Haoran Jin, Nathan Bleier"
+        "Ilhuan Choi, Jiwon Yoo, Yoona Lee, Yewon Jeong, Jason Jaesung Lee, Woo-Seok Choi"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.00894v2 Announce Type: replace \nAbstract: Emerging accelerators often lack mature compiler backends, motivating neural agents that generate and repair kernels from architectural documentation and simulator feedback. This approach repeatedly reconstructs workload-invariant machine semantics--including instruction behavior, legality constraints, synchronization rules, and memory protocols--for every workload. We argue that these semantics should be compiled once into a persistent symbolic artifact, while neural reasoning should focus on workload-dependent mapping decisions.\n  We present Zomboss, a compiler-mediated agentic framework for kernel generation that places neural search within a verified compiler boundary. Zomboss compiles machine semantics and legality constraints into ",
-      "pdf_link": "https://arxiv.org/pdf/2608.00894.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.00894",
-      "submission_date": "2026-08-27T04:00:00+00:00",
+      "abstract": "arXiv:2604.12420v2 Announce Type: replace \nAbstract: Write-and-verify (WV) is essential for programming multi-level RRAM weights, yet under scaled-voltage and low-SNR conditions the verify read increasingly limits mapping accuracy, convergence speed and energy. We propose a Hadamard-domain WV framework that improves verify reliability without adding analog hardware. % without introducing additional analog blocks % while leveraging the existing analog front-end \\emph{HD-PV} (Hadamard-Encoded Parallel-Verify) replaces conventional one-hot verify reads with $N$ orthogonal Hadamard patterns for an $N$-cell column. Changing the read basis without increasing the column-level read count, inverse Hadamard decoding reduces uncorrelated read-noise variance by a factor of $N$ and cancels common-mode ",
+      "pdf_link": "https://arxiv.org/pdf/2604.12420.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.12420",
+      "submission_date": "2026-08-28T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-27T17:18:11.574108+00:00"
+      "score": 2.0,
+      "updated_at": "2026-08-28T18:10:37.064120+00:00"
     }
   ]
 }

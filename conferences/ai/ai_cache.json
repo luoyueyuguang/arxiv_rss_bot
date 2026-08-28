@@ -1,9 +1,32 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-08-27T17:18:41.246731+00:00",
-  "paper_count": 33,
+  "last_updated": "2026-08-28T18:11:13.467172+00:00",
+  "paper_count": 31,
   "papers": [
+    {
+      "forum_id": "2601.08139",
+      "paper_number": -1,
+      "title": "Subspace Alignment for Vision-Language Model Test-time Adaptation",
+      "authors": [
+        "Zhichen Zeng, Wenxuan Bao, Xiao Lin, Ruizhong Qiu, Tianxin Wei, Xuying Ning, Yuchen Yan, Chen Luo, Monica Xiao Cheng, Jingrui He, Hanghang Tong"
+      ],
+      "keywords": [
+        "cs.AI",
+        "EMNLP"
+      ],
+      "abstract": "arXiv:2601.08139v2 Announce Type: replace-cross \nAbstract: Vision-language models (VLMs), despite their extraordinary zero-shot capabilities, are vulnerable to distribution shifts. Test-time adaptation (TTA) emerges as a predominant strategy to adapt VLMs to unlabeled test data on the fly. However, existing TTA methods heavily rely on zero-shot predictions as pseudo-labels for self-training, which can be unreliable under distribution shifts and misguide adaptation due to two fundamental limitations.First (Modality Gap), distribution shifts induce gaps between visual and textual modalities, making cross-modal relations inaccurate. Second (Visual Nuisance), visual embeddings encode rich but task-irrelevant noise that often overwhelms task-specific semantics under distribution shifts. To addr",
+      "pdf_link": "https://arxiv.org/pdf/2601.08139.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.08139",
+      "submission_date": "2026-08-28T04:00:00+00:00",
+      "conference": "EMNLP",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 65.5,
+      "updated_at": "2026-08-28T18:10:37.344924+00:00"
+    },
     {
       "forum_id": "mlr-icml25-1",
       "paper_number": 1,
@@ -238,29 +261,6 @@
       "updated_at": "2026-08-14T07:42:12.705579+00:00"
     },
     {
-      "forum_id": "2608.24574",
-      "paper_number": -1,
-      "title": "PhysMLLMs: Spatial Priors for Unified Referring Segmentation and Grounded Reasoning of Images and Videos",
-      "authors": [
-        "Siyao Yan, Bo Han, Jisheng Dang, Bimei Wang, Shude Wang, Hong Peng, Yulan Guo, Jianhuang Lai, Bin Hu,  Tat-SengChua"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ICML"
-      ],
-      "abstract": "arXiv:2608.24574v1 Announce Type: new \nAbstract: Video multimodal large language models support language guided video segmentation, but they often show spatio temporal inconsistencies, e.g., jitter, drift, and identity switches. These failures are more common when targets are partly hidden or when similar objects appear nearby.One likely reason is that current training lacks explicit spatial priors, which makes it difficult to maintain stable spatial identity and shape over time. We present PhysMLLMs, a training-stage prior injection architecture that injects physics-inspired spatial continuity priors into Video MLLMs. PhysMLLMs is designed to encourage more stable object-centered representations by aligning the student global visual representation with a frozen teacher model during traini",
-      "pdf_link": "https://arxiv.org/pdf/2608.24574.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.24574",
-      "submission_date": "2026-08-27T04:00:00+00:00",
-      "conference": "ICML",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 27.5,
-      "updated_at": "2026-08-27T17:18:11.870329+00:00"
-    },
-    {
       "forum_id": "mlr-icml25-14",
       "paper_number": 14,
       "title": "Diffusion Augmented Agents: A Framework for Efficient Exploration and Transfer Learning",
@@ -282,29 +282,6 @@
       "ratings": [],
       "score": 26.5,
       "updated_at": "2026-08-14T07:42:19.495345+00:00"
-    },
-    {
-      "forum_id": "2608.24252",
-      "paper_number": -1,
-      "title": "SA-Bench: Evaluating Semantic Alignment in LLM-Based Paper Reproduction",
-      "authors": [
-        "Xue Hu, Zewei Pan, Zeli Su, Zhou Liu, Wentao Zhang"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ICML"
-      ],
-      "abstract": "arXiv:2608.24252v1 Announce Type: new \nAbstract: LLM agents can generate paper reproduction code, yet often produce scientifically unfaithful implementations. We define this failure mode as semantic drift, where generated code silently diverges from the paper's specifications. We introduce SemanticAlign-Bench(SA-Bench), a diagnostic benchmark covering 30 papers from ICLR, ICML and NeurIPS 2025. For each paper, we decompose its specifications into atomic and verifiable implementation claims, which we call Semantic Alignment Units (SAUs) and evaluate repositories along four diagnostic dimensions spanning numerical, methodological, protocol and ordering drift. In total, we construct 1,491 SAUs across five ML domains and evaluate 12 generator configurations (4 models $\\times$ 3 scaffolds). Eve",
-      "pdf_link": "https://arxiv.org/pdf/2608.24252.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.24252",
-      "submission_date": "2026-08-27T04:00:00+00:00",
-      "conference": "ICML",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 24.0,
-      "updated_at": "2026-08-27T17:18:11.868406+00:00"
     },
     {
       "forum_id": "mlr-icml25-28",
@@ -424,29 +401,6 @@
       "ratings": [],
       "score": 13.0,
       "updated_at": "2026-08-14T07:42:40.890330+00:00"
-    },
-    {
-      "forum_id": "2608.24191",
-      "paper_number": -1,
-      "title": "'Ghaib in Translation' aka Unseen Harm: Measuring Cross-Script Safety Inconsistency with 'Missed-in-Urdu' Scores in LLM Hate Speech Detection",
-      "authors": [
-        "Fawzia Zehra (Fuzzy),  Kara-Isitt, Sonal Khosla, Stephen Swift"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2608.24191v1 Announce Type: cross \nAbstract: Urdu, the world's tenth most spoken language with 246 million speakers, remains almost entirely absent from mainstream LLM safety evaluation and nine years of WOAH proceedings. To investigate whether this absence has measurable consequences for content moderation reliability, five large language models, GPT-4o, Claude Sonnet 4.5, Gemini 2.5 Flash, Qwen-2.5, and Llama-3.1, were tested across six datasets spanning Nastaliq Urdu, Roman Urdu, English, and code-switched Urdu-English. Across the five Urdu-script datasets, label instability between original-script and English-translation classification ranged from 15.9% (Gemini 2.5 Flash) to 31.6% (Qwen-2.5), with a 'Missed-in-Urdu' rate, content flagged as harmful in English translation but pass",
-      "pdf_link": "https://arxiv.org/pdf/2608.24191.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.24191",
-      "submission_date": "2026-08-27T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-08-27T17:18:11.876320+00:00"
     },
     {
       "forum_id": "mlr-icml25-53",

@@ -1,31 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-08-26T06:43:13.374613+00:00",
+  "last_updated": "2026-08-28T18:11:13.553952+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2608.24205",
+      "forum_id": "2506.17366",
       "paper_number": -1,
-      "title": "Robust training and rigorous error analysis of physics-informed neural networks for the $p$-Laplace equation",
+      "title": "Gaussian Processes and Reproducing Kernel Hilbert Spaces: Connections and Equivalences",
       "authors": [
-        "Kyueon Choi, Seungchan Ko, Dohyun Kwon"
+        "Motonobu Kanagawa, Philipp Hennig, Dino Sejdinovic, Bharath K. Sriperumbudur"
       ],
       "keywords": [
         "cs.NA",
         "numerical analysis"
       ],
-      "abstract": "arXiv:2608.24205v1 Announce Type: new \nAbstract: With the rise of scientific machine learning, physics-informed neural networks (PINNs) have been extensively applied to a wide range of problems. Nevertheless, most theoretical analyses of PINNs remain confined to linear equations, and a substantial gap persists between PINNs and classical numerical analysis for nonlinear problems. To address this issue, we propose a robust training framework for PINNs solving nonlinear partial differential equations, together with a rigorous error analysis. Specifically, for the $p$-Laplace equation, we introduce a novel loss formulation that combines a dual residual loss measured in $W^{-1,p'}$ with a boundary loss measured in a fractional Sobolev norm $W^{1-\\frac{1}{p},p}$. This formulation is designed to",
-      "pdf_link": "https://arxiv.org/pdf/2608.24205.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.24205",
-      "submission_date": "2026-08-26T04:00:00+00:00",
+      "abstract": "arXiv:2506.17366v2 Announce Type: replace-cross \nAbstract: This monograph studies the relations between two approaches using positive definite kernels: probabilistic methods using Gaussian processes, and non-probabilistic methods using reproducing kernel Hilbert spaces (RKHS). They are widely studied and used in machine learning, statistics, and numerical analysis. We study connections and equivalences for fundamental topics such as regression, interpolation, numerical integration, distributional discrepancies, and statistical dependence, as well as sample path properties of Gaussian processes. A unifying perspective for these equivalences is established, based on the equivalence between the Gaussian Hilbert space and the RKHS. The monograph serves as a basis to bridge many other methods b",
+      "pdf_link": "https://arxiv.org/pdf/2506.17366.pdf",
+      "forum_link": "https://arxiv.org/abs/2506.17366",
+      "submission_date": "2026-08-28T04:00:00+00:00",
       "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-08-26T06:43:13.371043+00:00"
+      "score": 1.0,
+      "updated_at": "2026-08-28T18:11:13.551976+00:00"
     }
   ]
 }

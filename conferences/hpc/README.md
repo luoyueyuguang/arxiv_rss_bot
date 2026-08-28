@@ -1,6 +1,6 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-08-27 17:17:59 UTC
+- **Last Updated**: 2026-08-28 18:10:33 UTC
 - **Total Filtered Papers**: 2
 - **Displaying**: 2 (arxiv: 2)
 - **Papers with Ratings**: 0
@@ -9,5 +9,5 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Adaptive Peer Clustering with Hierarchical Random Linear Network Coding for Resilient Decentralized Wireless Networks](https://arxiv.org/abs/2608.26040) | `ARXIV` | 16.0 |
-| 2 | [An Oversubscription and Service Pricing Exploitation-Based Profit Maximization Framework for Industry Cloud Resource Management](https://arxiv.org/abs/2608.25712) | `ARXIV` | 12.0 |
+| 1 | [SCALE-TRACK: Asynchronous Euler-Lagrange particle tracking on heterogeneous computing architecture](https://arxiv.org/abs/2603.26691) | `ARXIV` | 43.5 |
+| 2 | [Optimizing API Gateway Placement in Multi-Cloud Kubernetes](https://arxiv.org/abs/2608.26573) | `ARXIV` | 13.0 |

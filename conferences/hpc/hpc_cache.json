@@ -1,54 +1,54 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-08-27T17:17:59.914558+00:00",
+  "last_updated": "2026-08-28T18:10:33.918800+00:00",
   "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2608.26040",
+      "forum_id": "2603.26691",
       "paper_number": -1,
-      "title": "Adaptive Peer Clustering with Hierarchical Random Linear Network Coding for Resilient Decentralized Wireless Networks",
+      "title": "SCALE-TRACK: Asynchronous Euler-Lagrange particle tracking on heterogeneous computing architecture",
       "authors": [
-        "Navaneetha Krishnan Kamalakannan, Harinisri Velmurugan"
+        "Silvio Schmalfu{\\ss}, Sergey Lesnik, Henrik Rusche, Dennis Niedermeier"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.26040v1 Announce Type: cross \nAbstract: Decentralized wireless collectives including vehicular swarms, IoT clusters, and edge AI networks require communication protocols that maintain robustness under dynamic topologies and heterogeneous link quality. While Random Linear Network Coding (RLNC) provides algebraic resilience against packet erasures, its performance degrades significantly when peers exhibit diverse channel conditions. This paper presents Adaptive Peer Clustering with Hierarchical RLNC (APC-RLNC), a system that dynamically groups peers by exponentially weighted moving average (EWMA) reliability metrics and applies multi-tier network coding within and across clusters. We formalize the clustering optimization problem, derive closed-form decoding probability bounds for ",
-      "pdf_link": "https://arxiv.org/pdf/2608.26040.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.26040",
-      "submission_date": "2026-08-27T04:00:00+00:00",
+      "abstract": "arXiv:2603.26691v2 Announce Type: replace-cross \nAbstract: Euler-Lagrange (EL) simulations provide a direct and robust framework for modeling disperse multiphase flows. However, they are computationally expensive. While various approaches have attempted to leverage heterogeneous computing architectures, they have encountered scalability limitations. We present SCALE-TRACK, a scalable two-way coupled EL particle tracking algorithm, designed to exploit heterogeneous exascale computing environments. With asynchronous coupling, cache-friendly data structures, and chunk-based partitioning, we address key limitations of existing EL implementations. Validations against an analytical solution and a conventional EL implementation demonstrate the accuracy of the proposed algorithms. On a local works",
+      "pdf_link": "https://arxiv.org/pdf/2603.26691.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.26691",
+      "submission_date": "2026-08-28T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 16.0,
-      "updated_at": "2026-08-27T17:17:59.526134+00:00"
+      "score": 43.5,
+      "updated_at": "2026-08-28T18:10:33.479659+00:00"
     },
     {
-      "forum_id": "2608.25712",
+      "forum_id": "2608.26573",
       "paper_number": -1,
-      "title": "An Oversubscription and Service Pricing Exploitation-Based Profit Maximization Framework for Industry Cloud Resource Management",
+      "title": "Optimizing API Gateway Placement in Multi-Cloud Kubernetes",
       "authors": [
-        "Deepika Saxena, Ashutosh Kumar Singh"
+        "Vinoth Punniyamoorthy, Murali Shankar Dulam, Aswathnarayan Muthukrishnan Kirubakaran, Akshay Deshpande, Nachiappan Chockalingam, Bikesh Kumar, Naga Surya Pasupuleti, Narender Reddy Bitla"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.25712v1 Announce Type: new \nAbstract: This article proposed a novel industry cloud resource management framework that exploits resource oversubscription and heterogeneous service pricing models to maximize profitability and operational efficiency for industry cloud providers. The framework proposes an adaptive ensemble machine learning driven prediction model for proactive estimation of resource utilization of Virtual Machines (VM)s based on previous resource utilization of respective users' VMs to minimize resource wastage due to oversubscription by them. Accordingly, the VMs having similar predicted resource usage are grouped using Fuzzy C means clustering. This helps to determine the required number of VMs with specific configuration to be deployed before executing user reque",
-      "pdf_link": "https://arxiv.org/pdf/2608.25712.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.25712",
-      "submission_date": "2026-08-27T04:00:00+00:00",
+      "abstract": "arXiv:2608.26573v1 Announce Type: new \nAbstract: The use of API gateways within geographically distributed multi-cloud Kubernetes clusters poses a tradeoff between infrastructure cost, computational resources, and network latencies. We present an optimization formulation that addresses API gateway placement as a capacitated facility location problem that jointly determines which candidate clusters to activate, how many gateway replicas to deploy, and how regional traffic should be distributed across the selected clusters. The formulation imposes an upper bound on estimated client-to-cluster network round-trip latency, excluding gateway processing, queuing, and backendservice latency, and incorporates a utilization headroom factor for gateway replica capacity. We present both a mixed-intege",
+      "pdf_link": "https://arxiv.org/pdf/2608.26573.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.26573",
+      "submission_date": "2026-08-28T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-08-27T17:17:59.525487+00:00"
+      "score": 13.0,
+      "updated_at": "2026-08-28T18:10:33.478896+00:00"
     }
   ]
 }
