@@ -1,77 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-08-28T18:10:37.067340+00:00",
+  "last_updated": "2026-08-31T12:38:39.141236+00:00",
   "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2608.26223",
+      "forum_id": "2604.22179",
       "paper_number": -1,
-      "title": "Beyond Edge Cuts: Activity-Weighted Multicast Hypergraph Mapping for Spiking Neural Networks on Mesh NoCs",
+      "title": "Hardware-Software Co-Design for Event-Driven SNN Deployment on Low-Cost Neuromorphic FPGAs",
       "authors": [
-        "Amirreza Khorasanian"
+        "Jiwoon Lee, Souvik Chakraborty, Syed Bahauddin Alam, Cheolsoo Park"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "FPGA"
       ],
-      "abstract": "arXiv:2608.26223v1 Announce Type: new \nAbstract: Mapping spiking neural networks (SNNs) onto neuromorphic many-core platforms is often formulated with graph partitioning and pairwise placement costs. That abstraction is convenient, but it does not match the physical communication event: one spike from a source neuron is delivered to a set of postsynaptic destinations, and routes to several destinations can share mesh links. We present M-HySMap, a route-aware, activity-weighted multicast hypergraph mapping framework. Each source neuron induces a directed hyperedge to its postsynaptic fanout, weighted by profiled activity. The mapper starts from strong activity-aware graph/QAP seeds and then optimizes distinct destination-core fanout, the union of deterministic mesh routes, and link congesti",
-      "pdf_link": "https://arxiv.org/pdf/2608.26223.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.26223",
-      "submission_date": "2026-08-28T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2604.22179v2 Announce Type: replace \nAbstract: Low-cost FPGA platforms can broaden access to neuromorphic systems research, but current spiking neural network (SNN) workflows remain divided between hardware-first implementations, which are difficult to integrate with PyTorch-style development, and software-first frameworks, which often stop at simulation or GPU execution. This paper presents a semantics-preserving hardware-software co-design framework for the deterministic deployment of PyTorch-defined SNNs to event-driven FPGA execution. A single exported artifact carries weights, thresholds, connectivity descriptors, and grouped time-to-first-spike (TTFS) decoding metadata from software definition to board execution and is reused unchanged by both the software reference and the boa",
+      "pdf_link": "https://arxiv.org/pdf/2604.22179.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.22179",
+      "submission_date": "2026-08-31T04:00:00+00:00",
+      "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-08-28T18:10:37.063666+00:00"
+      "score": 3.5,
+      "updated_at": "2026-08-31T12:38:39.138976+00:00"
     },
     {
-      "forum_id": "2608.26206",
+      "forum_id": "2608.28160",
       "paper_number": -1,
-      "title": "Ankhdjet: An Open-Source Compiler for Mask-Programmed Ternary Compute-in-ROM on an Open PDK",
+      "title": "Gen-TAS: A Generative AI-Aided Hardware-Software Task Allocation Framework for FPGA-GPP Heterogeneous Systems",
       "authors": [
-        "Mohnish Pai"
+        "Mary Kong, Yuqin Zhao, Semih Vazgecen, Cristian Sestito, Themis Prodromakis"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "FPGA"
       ],
-      "abstract": "arXiv:2608.26206v1 Announce Type: new \nAbstract: Large-language-model inference is dominated by weight movement: every generated token re-reads every weight. Ternary quantization (BitNet b1.58) shrinks each weight to 1.58 bits with reported parity at the 2B-parameter scale, small enough that hardwiring the weights into a read-only mask becomes plausible, and a commercial chip (Taalas HC1) has validated hardwired weights on an advanced node behind closed tooling. This paper asks whether model-specific silicon can be made reproducible with entirely open infrastructure. We present Ankhdjet, an open-source compiler that lowers a HuggingFace ternary checkpoint (BitNet b1.58 and its kin) to a via-mask program of a fixed compute-in-ROM macro on the open SKY130 PDK, verified end to end with open t",
-      "pdf_link": "https://arxiv.org/pdf/2608.26206.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.26206",
-      "submission_date": "2026-08-28T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2608.28160v1 Announce Type: new \nAbstract: FPGA-GPP heterogeneous systems combine software flexibility with the performance and energy efficiency of reconfigurable hardware. However, determining which application tasks should execute on the GPP or FPGA requires extensive expertise and design-space exploration, particularly when user objectives vary across latency, communication, resource utilisation, and power. This paper proposes Gen-TAS, a knowledge-grounded LLM framework for user-specific FPGA-GPP task allocation. By combining task-graph analysis with RAG, Gen-TAS grounds LLM reasoning in historical implementation knowledge and generates multiple explainable strategies tailored to the specified objectives. Human-in-the-loop selection and a deterministic backend connect LLM-generat",
+      "pdf_link": "https://arxiv.org/pdf/2608.28160.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.28160",
+      "submission_date": "2026-08-31T04:00:00+00:00",
+      "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-08-28T18:10:37.063551+00:00"
+      "updated_at": "2026-08-31T12:38:39.138769+00:00"
     },
     {
-      "forum_id": "2604.12420",
+      "forum_id": "2608.26418",
       "paper_number": -1,
-      "title": "HARP: Hadamard-Domain Write-and-Verify for Noise-Robust RRAM Programming",
+      "title": "Redwood: A Frontier AI Accelerator Designed, Verified, and Deployed from Scratch in 2 Weeks by AI",
       "authors": [
-        "Ilhuan Choi, Jiwon Yoo, Yoona Lee, Yewon Jeong, Jason Jaesung Lee, Woo-Seok Choi"
+        "Architect Labs"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "FPGA"
       ],
-      "abstract": "arXiv:2604.12420v2 Announce Type: replace \nAbstract: Write-and-verify (WV) is essential for programming multi-level RRAM weights, yet under scaled-voltage and low-SNR conditions the verify read increasingly limits mapping accuracy, convergence speed and energy. We propose a Hadamard-domain WV framework that improves verify reliability without adding analog hardware. % without introducing additional analog blocks % while leveraging the existing analog front-end \\emph{HD-PV} (Hadamard-Encoded Parallel-Verify) replaces conventional one-hot verify reads with $N$ orthogonal Hadamard patterns for an $N$-cell column. Changing the read basis without increasing the column-level read count, inverse Hadamard decoding reduces uncorrelated read-noise variance by a factor of $N$ and cancels common-mode ",
-      "pdf_link": "https://arxiv.org/pdf/2604.12420.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.12420",
-      "submission_date": "2026-08-28T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2608.26418v2 Announce Type: replace \nAbstract: Modern AI workloads and the hardware that runs them evolve on different timescales: architectural definition precedes volume silicon by years, while target workloads shift in months. Design decisions are therefore committed under deep uncertainty and paid for twice, once in the generality added as a hedge, and again when new workloads map poorly onto frozen silicon. As Moore's Law stagnates, specialization is the main remaining source of performance-per-watt and demands a design cycle that runs at the cadence of the workloads. We present an end-to-end AI system that collapses the software-to-silicon stack into a single optimization loop, where hardware and software are co-designed and verified under one objective. Its first demonstration",
+      "pdf_link": "https://arxiv.org/pdf/2608.26418.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.26418",
+      "submission_date": "2026-08-31T04:00:00+00:00",
+      "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-08-28T18:10:37.064120+00:00"
+      "score": 1.0,
+      "updated_at": "2026-08-31T12:38:39.139051+00:00"
     }
   ]
 }

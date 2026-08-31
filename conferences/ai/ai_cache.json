@@ -1,32 +1,9 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-08-28T18:11:13.467172+00:00",
-  "paper_count": 31,
+  "last_updated": "2026-08-31T12:39:11.209506+00:00",
+  "paper_count": 30,
   "papers": [
-    {
-      "forum_id": "2601.08139",
-      "paper_number": -1,
-      "title": "Subspace Alignment for Vision-Language Model Test-time Adaptation",
-      "authors": [
-        "Zhichen Zeng, Wenxuan Bao, Xiao Lin, Ruizhong Qiu, Tianxin Wei, Xuying Ning, Yuchen Yan, Chen Luo, Monica Xiao Cheng, Jingrui He, Hanghang Tong"
-      ],
-      "keywords": [
-        "cs.AI",
-        "EMNLP"
-      ],
-      "abstract": "arXiv:2601.08139v2 Announce Type: replace-cross \nAbstract: Vision-language models (VLMs), despite their extraordinary zero-shot capabilities, are vulnerable to distribution shifts. Test-time adaptation (TTA) emerges as a predominant strategy to adapt VLMs to unlabeled test data on the fly. However, existing TTA methods heavily rely on zero-shot predictions as pseudo-labels for self-training, which can be unreliable under distribution shifts and misguide adaptation due to two fundamental limitations.First (Modality Gap), distribution shifts induce gaps between visual and textual modalities, making cross-modal relations inaccurate. Second (Visual Nuisance), visual embeddings encode rich but task-irrelevant noise that often overwhelms task-specific semantics under distribution shifts. To addr",
-      "pdf_link": "https://arxiv.org/pdf/2601.08139.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.08139",
-      "submission_date": "2026-08-28T04:00:00+00:00",
-      "conference": "EMNLP",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 65.5,
-      "updated_at": "2026-08-28T18:10:37.344924+00:00"
-    },
     {
       "forum_id": "mlr-icml25-1",
       "paper_number": 1,

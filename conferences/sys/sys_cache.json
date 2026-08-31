@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-08-28T18:10:36.994293+00:00",
-  "paper_count": 438,
+  "last_updated": "2026-08-31T12:38:39.007958+00:00",
+  "paper_count": 443,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -175,6 +175,29 @@
       "ratings": [],
       "score": 98.5,
       "updated_at": "2026-07-21T08:54:26.738243+00:00"
+    },
+    {
+      "forum_id": "2608.28076",
+      "paper_number": -1,
+      "title": "Performance Evaluation of Fast Fourier Transforms on Emerging RISC-V Hardware with Vector Extension Support",
+      "authors": [
+        "Daniel Seibel, Kaveh Haghighi Mood, Jayesh Badwaik, Prateek Chawla, Stepan Nassyr, Andreas Herten"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.28076v1 Announce Type: cross \nAbstract: This manuscript presents a performance evaluation of Fast Fourier Transform (FFT) implementations on emerging processors supporting the RISC-V Vector Extension (RVV 1.0). By introducing juFFTe, a light-weight high-performance library for discrete Fourier transforms, it is demonstrated how effective vectorization of performance-critical FFT kernels can be achieved on RVV-enabled hardware. Comprehensive benchmarks on three RVV 1.0-ready processors, the SiFive X280, the X100 core of the SpacemiT K3 and the C920v2 core of the Sophon SG2044, reveal substantial performance improvements of juFFTe (https://github.com/FZJ-JSC/juFFTe) over the widely used FFTW3 library. Although RVV-enabled platforms show promising results at this stage of developme",
+      "pdf_link": "https://arxiv.org/pdf/2608.28076.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.28076",
+      "submission_date": "2026-08-31T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 98.0,
+      "updated_at": "2026-08-31T12:38:29.185939+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-147",
@@ -5285,6 +5308,29 @@
       "updated_at": "2026-07-21T08:54:26.741587+00:00"
     },
     {
+      "forum_id": "2608.28183",
+      "paper_number": -1,
+      "title": "Memory-efficient GPU pipelines for real-time non-line-of-sight reconstruction",
+      "authors": [
+        "Alfonso L\\'opez-Ruiz, Diego Royo"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.28183v1 Announce Type: new \nAbstract: Non-line-of-sight (NLOS) imaging reconstructs scenes hidden around a corner from indirect light recorded by a single-photon avalanche diode (SPAD). A single reconstruction is a large inverse problem: billions of photon timestamps must be binned, moved through memory, transformed and inverted. As SPAD arrays raise acquisition throughput, reconstruction becomes the limiting stage. We rebuild the GPU execution of two established wave-based algorithms, f-k migration and phasor-fields, for both streaming and offline processing. On the phasor-fields side we assemble the ring-and-radius kernels of previous work once and offline, using the analytic Fourier transform of a ring, so the propagation kernel never exists in dense form at runtime, reducing",
+      "pdf_link": "https://arxiv.org/pdf/2608.28183.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.28183",
+      "submission_date": "2026-08-31T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.5,
+      "updated_at": "2026-08-31T12:38:29.185500+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-41",
       "paper_number": 41,
       "title": "Efficient and Scalable Synchronization via Generalized Cache Coherence",
@@ -5414,6 +5460,52 @@
       "ratings": [],
       "score": 14.5,
       "updated_at": "2026-07-21T08:54:26.739010+00:00"
+    },
+    {
+      "forum_id": "2507.07130",
+      "paper_number": -1,
+      "title": "Ampere: Communication-Efficient and High-Accuracy Split Federated Learning",
+      "authors": [
+        "Zihan Zhang, Leon Wong, Blesson Varghese"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2507.07130v2 Announce Type: replace \nAbstract: A Federated Learning (FL) system collaboratively trains neural networks across devices and a server but is limited by significant on-device computation costs. Split Federated Learning (SFL) systems mitigate this by offloading a block of layers of the network from the device to a server. However, in doing so, it introduces large communication overheads due to frequent exchanges of intermediate activations and gradients between devices and the server and reduces model accuracy for non-IID data. We propose Ampere, a novel collaborative training system that simultaneously minimizes on-device computation and device-server communication while improving model accuracy. Unlike SFL, which uses a global loss by iterative end-to-end training, Amper",
+      "pdf_link": "https://arxiv.org/pdf/2507.07130.pdf",
+      "forum_link": "https://arxiv.org/abs/2507.07130",
+      "submission_date": "2026-08-31T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.0,
+      "updated_at": "2026-08-31T12:38:29.186296+00:00"
+    },
+    {
+      "forum_id": "2607.21021",
+      "paper_number": -1,
+      "title": "Multimmit: Extending Blocks for Faster Finality",
+      "authors": [
+        "Andrew Lewis-Pye, Patrick O'Grady"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.21021v4 Announce Type: replace \nAbstract: To meet the throughput demands of modern blockchain systems, protocols for State Machine Replication (SMR) increasingly have many processors disseminate blocks of transactions in parallel, with consensus then establishing a total ordering on the blocks of all producers. Such designs face a choice as to when a block may enter the ordering. Certified approaches wait for a quorum to attest a block's availability, which is robust but adds message delays to every transaction. Uncertified approaches let proposals reference blocks immediately, which is fast but degrades rapidly when referenced data must be fetched on the critical path. Raptr, the state of the art, takes a middle course, finalising the longest prefix of the leader's proposal tha",
+      "pdf_link": "https://arxiv.org/pdf/2607.21021.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.21021",
+      "submission_date": "2026-08-31T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.0,
+      "updated_at": "2026-08-31T12:38:29.186495+00:00"
     },
     {
       "forum_id": "usenix-osdi26-45",
@@ -6299,6 +6391,29 @@
       "updated_at": "2026-07-21T08:54:26.744089+00:00"
     },
     {
+      "forum_id": "2608.27874",
+      "paper_number": -1,
+      "title": "TerraceMoE: A Cost Model for Hierarchical MoE All-to-All Communication",
+      "authors": [
+        "Weicheng Xue, Bingqiang Wang, Li Yuan, Huihui Zhou, Yonghong Tian"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.27874v1 Announce Type: new \nAbstract: Hierarchical two-hop dispatch can reduce slow-fabric traffic in expert-parallel Mixture-of-Experts training, but it adds a second collective and an arrival-side operator chain. We present a cost model for screening that trade at the communication-call level, bounded by validation gates that withdraw a capability in code when they fail rather than reporting a caveat. At a reference geometry with 16 groups of 8 ranks, $q=3$, $H=2048$, and 4096 tokens per rank, the corrected effective breakeven hierarchy ratio is 3.98 for the measured PyTorch arrival chain, 1.49 for a hypothetical fused target, and 1.10 at zero implementation overhead. These are ratio-only sensitivity results, not deployment predictions: platform A measures 1.03, platform B has",
+      "pdf_link": "https://arxiv.org/pdf/2608.27874.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.27874",
+      "submission_date": "2026-08-31T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.5,
+      "updated_at": "2026-08-31T12:38:29.185234+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-43",
       "paper_number": 43,
       "title": "Eywa: Automating Model-Based Testing using LLMs",
@@ -6344,6 +6459,29 @@
       "ratings": [],
       "score": 11.5,
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
+    },
+    {
+      "forum_id": "2608.28352",
+      "paper_number": -1,
+      "title": "No Silver Bullet: Boosting GaussDB Performance on the 30TB TPC-H Workload",
+      "authors": [
+        "Tim Zeyl, Jason Lam, Shu Lin, Reza Pournaghi, Qi Cheng, Calvin Wong, Kaixiang Du, Yuliang He, Yang Sun, Weicheng Wang, Paul Lee, Chen Ruo, Yang Xinyi, Li Qunan, Wang Junjie, Hu Dongxing, Chong Chen, Per-Ake Larson"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.28352v1 Announce Type: cross \nAbstract: GaussDB is Huawei's premier database system, designed for large-scale deployments and the most demanding workloads. It is a distributed shared-nothing system, capable of handling all types of workloads. This paper outlines a series of modifications to GaussDB aimed at improving its performance on large-scale and complex analytical workloads. After these changes, its performance on the TPC-H workload exceeded the best published result by 40% at 30 TB.\n  The key enhancements to achieve this elite performance include adopting a pipeline execution model, a faster and more scalable inter-node data shuffle, exploiting a unified bus and unified remote memory access. We also expanded the support of cost-based Bloom filter placement and implemented",
+      "pdf_link": "https://arxiv.org/pdf/2608.28352.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.28352",
+      "submission_date": "2026-08-31T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-08-31T12:38:29.186119+00:00"
     },
     {
       "forum_id": "usenix-osdi26-63",
@@ -8473,29 +8611,6 @@
       "ratings": [],
       "score": 2.5,
       "updated_at": "2026-07-21T08:54:26.744870+00:00"
-    },
-    {
-      "forum_id": "2608.27046",
-      "paper_number": -1,
-      "title": "Performance Foundations of Parallel & Distributed Reasoning Language Models",
-      "authors": [
-        "Maciej Besta, Leonard Schmidt, Lara Nonino, Robert Gerstenberger, Pierre Pang, Patrik Okanovic, Ales Kubicek, Tiancheng Chen, Baraq Lipshitz, Torsten Hoefler"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.27046v1 Announce Type: cross \nAbstract: Reinforcement Learning with Verifiable Rewards (RLVR) and other RL-style post-training paradigms have been used for aligning large language models (LLMs) with reasoning standards. The resulting recent Reasoning Language Models (RLMs) such as DeepSeek-R1, o3, and Kimi k1.5 show that such RL-style post-training (\"RL-for-LLMs\") can substantially improve chain-of-thought reasoning, long-horizon planning, and self-correction. However, the computational footprint of these systems is massive: state-of-the-art RLM training requires millions of GPU-hours and tightly coupled multi-model pipelines that stress modern hardware far beyond classical supervised LLM training. This makes RLM training as much a parallel and distributed systems problem as an ",
-      "pdf_link": "https://arxiv.org/pdf/2608.27046.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.27046",
-      "submission_date": "2026-08-28T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-08-28T18:10:34.033936+00:00"
     },
     {
       "forum_id": "usenix-osdi26-10",

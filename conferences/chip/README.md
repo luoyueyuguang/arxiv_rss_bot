@@ -1,6 +1,6 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-08-28 18:10:37 UTC
+- **Last Updated**: 2026-08-31 12:38:39 UTC
 - **Total Filtered Papers**: 3
 - **Displaying**: 3 (arxiv: 3)
 - **Papers with Ratings**: 0
@@ -9,6 +9,6 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Beyond Edge Cuts: Activity-Weighted Multicast Hypergraph Mapping for Spiking Neural Networks on Mesh NoCs](https://arxiv.org/abs/2608.26223) | `ARXIV` | 13.0 |
-| 2 | [Ankhdjet: An Open-Source Compiler for Mask-Programmed Ternary Compute-in-ROM on an Open PDK](https://arxiv.org/abs/2608.26206) | `ARXIV` | 2.5 |
-| 3 | [HARP: Hadamard-Domain Write-and-Verify for Noise-Robust RRAM Programming](https://arxiv.org/abs/2604.12420) | `ARXIV` | 2.0 |
+| 1 | [Hardware-Software Co-Design for Event-Driven SNN Deployment on Low-Cost Neuromorphic FPGAs](https://arxiv.org/abs/2604.22179) | `ARXIV` | 3.5 |
+| 2 | [Gen-TAS: A Generative AI-Aided Hardware-Software Task Allocation Framework for FPGA-GPP Heterogeneous Systems](https://arxiv.org/abs/2608.28160) | `ARXIV` | 2.5 |
+| 3 | [Redwood: A Frontier AI Accelerator Designed, Verified, and Deployed from Scratch in 2 Weeks by AI](https://arxiv.org/abs/2608.26418) | `ARXIV` | 1.0 |

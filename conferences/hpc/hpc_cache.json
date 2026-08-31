@@ -1,54 +1,31 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-08-28T18:10:33.918800+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-08-31T12:38:28.967121+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2603.26691",
+      "forum_id": "2603.12031",
       "paper_number": -1,
-      "title": "SCALE-TRACK: Asynchronous Euler-Lagrange particle tracking on heterogeneous computing architecture",
+      "title": "Agentic-Kube: A Graph-Enhanced Multi-Agent Reinforcement Learning Framework for Multi-Objective Kubernetes Scheduling",
       "authors": [
-        "Silvio Schmalfu{\\ss}, Sergey Lesnik, Henrik Rusche, Dennis Niedermeier"
+        "Hamed Hamzeh"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2603.26691v2 Announce Type: replace-cross \nAbstract: Euler-Lagrange (EL) simulations provide a direct and robust framework for modeling disperse multiphase flows. However, they are computationally expensive. While various approaches have attempted to leverage heterogeneous computing architectures, they have encountered scalability limitations. We present SCALE-TRACK, a scalable two-way coupled EL particle tracking algorithm, designed to exploit heterogeneous exascale computing environments. With asynchronous coupling, cache-friendly data structures, and chunk-based partitioning, we address key limitations of existing EL implementations. Validations against an analytical solution and a conventional EL implementation demonstrate the accuracy of the proposed algorithms. On a local works",
-      "pdf_link": "https://arxiv.org/pdf/2603.26691.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.26691",
-      "submission_date": "2026-08-28T04:00:00+00:00",
+      "abstract": "arXiv:2603.12031v4 Announce Type: replace \nAbstract: Cloud-native container orchestration requires resource schedulers capable of balancing infrastructure expenditure, fault resilience, and node utilisation. Conventional reinforcement learning approaches typically rely on monolithic single-agent models that suffer from gradient interference and reward dilution when mapping conflicting operational goals into a single scalar reward. We present Agentic-Kube, a cooperative multi-agent reinforcement learning framework designed for real-time Kubernetes pod placement. The architecture decomposes multi-objective scheduling into a tripartite optimisation space managed by dedicated sub-agents for cost minimisation, anti-affinity fault tolerance, and vector resource balancing. Agentic-Kube integrates",
+      "pdf_link": "https://arxiv.org/pdf/2603.12031.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.12031",
+      "submission_date": "2026-08-31T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 43.5,
-      "updated_at": "2026-08-28T18:10:33.479659+00:00"
-    },
-    {
-      "forum_id": "2608.26573",
-      "paper_number": -1,
-      "title": "Optimizing API Gateway Placement in Multi-Cloud Kubernetes",
-      "authors": [
-        "Vinoth Punniyamoorthy, Murali Shankar Dulam, Aswathnarayan Muthukrishnan Kirubakaran, Akshay Deshpande, Nachiappan Chockalingam, Bikesh Kumar, Naga Surya Pasupuleti, Narender Reddy Bitla"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2608.26573v1 Announce Type: new \nAbstract: The use of API gateways within geographically distributed multi-cloud Kubernetes clusters poses a tradeoff between infrastructure cost, computational resources, and network latencies. We present an optimization formulation that addresses API gateway placement as a capacitated facility location problem that jointly determines which candidate clusters to activate, how many gateway replicas to deploy, and how regional traffic should be distributed across the selected clusters. The formulation imposes an upper bound on estimated client-to-cluster network round-trip latency, excluding gateway processing, queuing, and backendservice latency, and incorporates a utilization headroom factor for gateway replica capacity. We present both a mixed-intege",
-      "pdf_link": "https://arxiv.org/pdf/2608.26573.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.26573",
-      "submission_date": "2026-08-28T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-08-28T18:10:33.478896+00:00"
+      "score": 23.5,
+      "updated_at": "2026-08-31T12:38:28.506134+00:00"
     }
   ]
 }

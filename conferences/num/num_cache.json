@@ -1,31 +1,54 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-08-28T18:11:13.553952+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-08-31T12:39:11.358194+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2506.17366",
+      "forum_id": "2608.14123",
       "paper_number": -1,
-      "title": "Gaussian Processes and Reproducing Kernel Hilbert Spaces: Connections and Equivalences",
+      "title": "Adaptive multigrid for high-order discontinuous Galerkin methods based on the full approximation scheme",
       "authors": [
-        "Motonobu Kanagawa, Philipp Hennig, Dino Sejdinovic, Bharath K. Sriperumbudur"
+        "J\\\"org Stiller"
+      ],
+      "keywords": [
+        "cs.NA",
+        "SIAM"
+      ],
+      "abstract": "arXiv:2608.14123v2 Announce Type: replace \nAbstract: We propose an adaptive multigrid (MG) method for discontinuous Galerkin formulations of elliptic problems using Brandt's full approximation scheme (FAS). Unlike common approaches, this method achieves local $hp$-refinement of hexahedral meshes without the need for hanging nodes. The core component of the FAS-MG method is an overlapping Schwarz smoother, which is optionally accelerated by a Krylov method. This smoother is designed for unstructured curvilinear meshes but maintains a tensor-product structure for fast diagonalization. Numerical experiments demonstrate the exceptional efficiency of the FAS-MG method. Dedicated studies confirm its robustness against high aspect ratios, element deformation, and irregular mesh topology. We also ",
+      "pdf_link": "https://arxiv.org/pdf/2608.14123.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.14123",
+      "submission_date": "2026-08-31T04:00:00+00:00",
+      "conference": "SIAM",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 66.5,
+      "updated_at": "2026-08-31T12:39:11.355141+00:00"
+    },
+    {
+      "forum_id": "2608.27647",
+      "paper_number": -1,
+      "title": "Numerical analysis of data assimilation for slightly compressible flow",
+      "authors": [
+        "Aytekin \\c{C}{\\i}b{\\i}k, Rui Fang"
       ],
       "keywords": [
         "cs.NA",
         "numerical analysis"
       ],
-      "abstract": "arXiv:2506.17366v2 Announce Type: replace-cross \nAbstract: This monograph studies the relations between two approaches using positive definite kernels: probabilistic methods using Gaussian processes, and non-probabilistic methods using reproducing kernel Hilbert spaces (RKHS). They are widely studied and used in machine learning, statistics, and numerical analysis. We study connections and equivalences for fundamental topics such as regression, interpolation, numerical integration, distributional discrepancies, and statistical dependence, as well as sample path properties of Gaussian processes. A unifying perspective for these equivalences is established, based on the equivalence between the Gaussian Hilbert space and the RKHS. The monograph serves as a basis to bridge many other methods b",
-      "pdf_link": "https://arxiv.org/pdf/2506.17366.pdf",
-      "forum_link": "https://arxiv.org/abs/2506.17366",
-      "submission_date": "2026-08-28T04:00:00+00:00",
+      "abstract": "arXiv:2608.27647v1 Announce Type: new \nAbstract: Continuous data assimilation improves flow predictions by continually nudging a model toward available observational data. For slightly compressible flow, a recent model addresses the limitations of velocity-only nudging by assimilating both velocity and pressure data and nudging both quantities into the incompressible Navier-Stokes equations [5]; continuous-in-time error estimates and preliminary experiments show that this joint nudging is effective and substantially reduces the model error relative to velocity-only nudging. Motivated by these results, we carry out the numerical analysis of the model and its finite element discretizations. We establish stability and error estimates for the semi-discrete scheme and for the fully discrete, li",
+      "pdf_link": "https://arxiv.org/pdf/2608.27647.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.27647",
+      "submission_date": "2026-08-31T04:00:00+00:00",
       "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-28T18:11:13.551976+00:00"
+      "score": 27.0,
+      "updated_at": "2026-08-31T12:39:11.354049+00:00"
     }
   ]
 }
