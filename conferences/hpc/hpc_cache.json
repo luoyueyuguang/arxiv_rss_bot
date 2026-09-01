@@ -1,31 +1,77 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-08-31T12:38:28.967121+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-09-01T11:03:48.637956+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2603.12031",
+      "forum_id": "2608.29103",
       "paper_number": -1,
-      "title": "Agentic-Kube: A Graph-Enhanced Multi-Agent Reinforcement Learning Framework for Multi-Objective Kubernetes Scheduling",
+      "title": "CLASP: Chained-Request-Aware Scaling and Operator Placement for Serverless Stream Processing",
       "authors": [
-        "Hamed Hamzeh"
+        "Tianyu Qi, Maria A. Rodriguez, Rajkumar Buyya"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2603.12031v4 Announce Type: replace \nAbstract: Cloud-native container orchestration requires resource schedulers capable of balancing infrastructure expenditure, fault resilience, and node utilisation. Conventional reinforcement learning approaches typically rely on monolithic single-agent models that suffer from gradient interference and reward dilution when mapping conflicting operational goals into a single scalar reward. We present Agentic-Kube, a cooperative multi-agent reinforcement learning framework designed for real-time Kubernetes pod placement. The architecture decomposes multi-objective scheduling into a tripartite optimisation space managed by dedicated sub-agents for cost minimisation, anti-affinity fault tolerance, and vector resource balancing. Agentic-Kube integrates",
-      "pdf_link": "https://arxiv.org/pdf/2603.12031.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.12031",
-      "submission_date": "2026-08-31T04:00:00+00:00",
+      "abstract": "arXiv:2608.29103v1 Announce Type: new \nAbstract: Stateful serverless (Function-as-a-Service) environments, whose workers host state servers, are increasingly used for stream processing. A stream application is a pipeline of operators, where each operator forwards intermediate data downstream through a chained request. As input rates fluctuate, the system should adjust operator parallelism and place instances across workers to sustain the incoming rate. Existing approaches do so without fully accounting for chained-request overhead, leading them to misestimate the required number of workers. Too few leave the cluster unable to keep up with the input rate, while too many route a larger fraction of chained requests across worker boundaries, increasing end-to-end latency.\n  We propose CLASP, a",
+      "pdf_link": "https://arxiv.org/pdf/2608.29103.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.29103",
+      "submission_date": "2026-09-01T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 23.5,
-      "updated_at": "2026-08-31T12:38:28.506134+00:00"
+      "score": 62.0,
+      "updated_at": "2026-09-01T11:03:48.217040+00:00"
+    },
+    {
+      "forum_id": "2606.07491",
+      "paper_number": -1,
+      "title": "Twelve quick tips for designing AI-driven HPC workflows",
+      "authors": [
+        "Jamie J. Alnasir"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2606.07491v2 Announce Type: replace \nAbstract: High-performance computing (HPC) clusters remain the backbone of large-scale scientific computation, traditionally executing deterministic, linear pipelines optimised for predictable performance. However, the pervasive integration of artificial intelligence (AI) and foundation models into scientific research has introduced a fundamentally new computational paradigm. AI-driven workflows are characteristically iterative, data-driven, and probabilistic, introducing unique challenges regarding data gravity, heterogeneous resource management, and complex workflow orchestration.\n  This guide provides twelve practical tips designed to help researchers design efficient, scalable, and reproducible AI-driven HPC workflows. By addressing critical s",
+      "pdf_link": "https://arxiv.org/pdf/2606.07491.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.07491",
+      "submission_date": "2026-09-01T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 45.5,
+      "updated_at": "2026-09-01T11:03:48.217779+00:00"
+    },
+    {
+      "forum_id": "2608.29656",
+      "paper_number": -1,
+      "title": "A Smallest-Need-First Job Scheduling Framework with Adaptive Optimization of Idle Node Counts for Energy-Efficient HPC Systems",
+      "authors": [
+        "Reza Pulungan, Raka Satya Prasasta, Santana Yuda Pradata,  Mursalim, Hiroyuki Takizawa, Muhammad Alfian Amrizal"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2608.29656v1 Announce Type: new \nAbstract: Power-state management in high-performance computing (HPC) clusters must reduce idle energy without excessive wake-up delays for rigid parallel jobs. This paper presents SNF-ICON, an event-driven controller combining smallest-need-first (SNF) gang scheduling, predictive wake timing, and adaptive warm-spare control. At each scheduler invocation, recent interarrival and completed-service samples are screened for sufficiency, exponential-like variability, low lag-one autocorrelation, and acceptable Kolmogorov-Smirnov distance. Rejected or data-sparse windows use SNF+IPM (Intelligent Power Manager), whereas accepted windows activate release prediction and an exponential next-event model. Warm-spare optimization is applied only when queue, event,",
+      "pdf_link": "https://arxiv.org/pdf/2608.29656.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.29656",
+      "submission_date": "2026-09-01T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 9.5,
+      "updated_at": "2026-09-01T11:03:48.217158+00:00"
     }
   ]
 }

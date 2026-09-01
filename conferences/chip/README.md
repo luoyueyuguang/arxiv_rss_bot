@@ -1,14 +1,15 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-08-31 12:38:39 UTC
-- **Total Filtered Papers**: 3
-- **Displaying**: 3 (arxiv: 3)
+- **Last Updated**: 2026-09-01 11:04:28 UTC
+- **Total Filtered Papers**: 4
+- **Displaying**: 4 (arxiv: 4)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Hardware-Software Co-Design for Event-Driven SNN Deployment on Low-Cost Neuromorphic FPGAs](https://arxiv.org/abs/2604.22179) | `ARXIV` | 3.5 |
-| 2 | [Gen-TAS: A Generative AI-Aided Hardware-Software Task Allocation Framework for FPGA-GPP Heterogeneous Systems](https://arxiv.org/abs/2608.28160) | `ARXIV` | 2.5 |
-| 3 | [Redwood: A Frontier AI Accelerator Designed, Verified, and Deployed from Scratch in 2 Weeks by AI](https://arxiv.org/abs/2608.26418) | `ARXIV` | 1.0 |
+| 1 | [FABO: Agent-Guided Discovery of Joint Breakpoint Optimization for Timing-Driven Routing Trees](https://arxiv.org/abs/2608.30268) | `ARXIV` | 34.0 |
+| 2 | [Beacon: LLM Multi-Agent Driven Hardware Design Space Exploration for Heterogeneous Multi-Chiplet Deep Learning Accelerators](https://arxiv.org/abs/2608.30932) | `ARXIV` | 31.5 |
+| 3 | [ITP-STDP: A Hardware-Efficient Intrinsic-Timing Power-of-Two Synaptic Learning Engine for On-Chip SNNs](https://arxiv.org/abs/2606.06159) | `ARXIV` | 4.0 |
+| 4 | [Neural 3D Object Reconstruction with Small-Scale Unmanned Aerial Vehicles](https://arxiv.org/abs/2509.12458) | `ARXIV` | 2.0 |

@@ -1,12 +1,13 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-08-31 12:38:28 UTC
-- **Total Filtered Papers**: 1
-- **Displaying**: 1 (arxiv: 1)
+- **Last Updated**: 2026-09-01 11:03:48 UTC
+- **Total Filtered Papers**: 2
+- **Displaying**: 2 (arxiv: 2)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Predictive Software Scheduling as an Early-Warning Hint Layer for Optical Engine Thermal Drift in Heterogeneous SoIC Packaging](https://arxiv.org/abs/2605.18612) | `ARXIV` | 32.5 |
+| 1 | [Clock-Gating Insertion Strategies on an Open-Source MSP430 Core: A Reproducible PPA Study and a Gate-Level Simulation Caveat](https://arxiv.org/abs/2608.30954) | `ARXIV` | 11.0 |
+| 2 | [Neural 3D Object Reconstruction with Small-Scale Unmanned Aerial Vehicles](https://arxiv.org/abs/2509.12458) | `ARXIV` | 2.0 |

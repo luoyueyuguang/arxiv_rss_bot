@@ -1,77 +1,100 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-08-31T12:38:39.141236+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-09-01T11:04:28.723327+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2604.22179",
+      "forum_id": "2608.30268",
       "paper_number": -1,
-      "title": "Hardware-Software Co-Design for Event-Driven SNN Deployment on Low-Cost Neuromorphic FPGAs",
+      "title": "FABO: Agent-Guided Discovery of Joint Breakpoint Optimization for Timing-Driven Routing Trees",
       "authors": [
-        "Jiwoon Lee, Souvik Chakraborty, Syed Bahauddin Alam, Cheolsoo Park"
+        "Shang Liu, Wenji Fang, Jing Wang, Hongxin Kong, Yao Lu, Zhiyao Xie"
       ],
       "keywords": [
         "cs.AR",
-        "FPGA"
+        "ICCAD"
       ],
-      "abstract": "arXiv:2604.22179v2 Announce Type: replace \nAbstract: Low-cost FPGA platforms can broaden access to neuromorphic systems research, but current spiking neural network (SNN) workflows remain divided between hardware-first implementations, which are difficult to integrate with PyTorch-style development, and software-first frameworks, which often stop at simulation or GPU execution. This paper presents a semantics-preserving hardware-software co-design framework for the deterministic deployment of PyTorch-defined SNNs to event-driven FPGA execution. A single exported artifact carries weights, thresholds, connectivity descriptors, and grouped time-to-first-spike (TTFS) decoding metadata from software definition to board execution and is reused unchanged by both the software reference and the boa",
-      "pdf_link": "https://arxiv.org/pdf/2604.22179.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.22179",
-      "submission_date": "2026-08-31T04:00:00+00:00",
-      "conference": "FPGA",
+      "abstract": "arXiv:2608.30268v1 Announce Type: new \nAbstract: The topology of a routing tree determines how a multi-pin net branches and shares physical wire, directly affecting wirelength, congestion, capacitance, and delay. We study a central early-stage routing problem: minimizing wirelength while bounding the root-to-sink path stretch for every sink. SALT is the state-of-the-art constructive algorithm for this problem. We ask whether language-model-guided search can discover a constructive algorithm that improves on SALT. To make this search reliable, we develop an agent framework that combines parallel exploration with independent checking. Applied to SALT, the framework discovers a structural limitation: SALT repairs one sink path at a time and therefore never jointly decides where paths sharing ",
+      "pdf_link": "https://arxiv.org/pdf/2608.30268.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.30268",
+      "submission_date": "2026-09-01T04:00:00+00:00",
+      "conference": "ICCAD",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-08-31T12:38:39.138976+00:00"
+      "score": 34.0,
+      "updated_at": "2026-09-01T11:04:28.719850+00:00"
     },
     {
-      "forum_id": "2608.28160",
+      "forum_id": "2608.30932",
       "paper_number": -1,
-      "title": "Gen-TAS: A Generative AI-Aided Hardware-Software Task Allocation Framework for FPGA-GPP Heterogeneous Systems",
+      "title": "Beacon: LLM Multi-Agent Driven Hardware Design Space Exploration for Heterogeneous Multi-Chiplet Deep Learning Accelerators",
       "authors": [
-        "Mary Kong, Yuqin Zhao, Semih Vazgecen, Cristian Sestito, Themis Prodromakis"
+        "Boyu Li, Zongwei Zhu, Qianyue Cao, Xi Li, Xuehai Zhou"
       ],
       "keywords": [
         "cs.AR",
-        "FPGA"
+        "DATE"
       ],
-      "abstract": "arXiv:2608.28160v1 Announce Type: new \nAbstract: FPGA-GPP heterogeneous systems combine software flexibility with the performance and energy efficiency of reconfigurable hardware. However, determining which application tasks should execute on the GPP or FPGA requires extensive expertise and design-space exploration, particularly when user objectives vary across latency, communication, resource utilisation, and power. This paper proposes Gen-TAS, a knowledge-grounded LLM framework for user-specific FPGA-GPP task allocation. By combining task-graph analysis with RAG, Gen-TAS grounds LLM reasoning in historical implementation knowledge and generates multiple explainable strategies tailored to the specified objectives. Human-in-the-loop selection and a deterministic backend connect LLM-generat",
-      "pdf_link": "https://arxiv.org/pdf/2608.28160.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.28160",
-      "submission_date": "2026-08-31T04:00:00+00:00",
-      "conference": "FPGA",
+      "abstract": "arXiv:2608.30932v1 Announce Type: new \nAbstract: Heterogeneous multi-chiplet accelerators allow chiplets to be configured independently to better match different operator characteristics and improve inference efficiency. However, heterogeneity makes simulator evaluation expensive, limiting the number of iterations affordable for hardware design space exploration (HW-DSE). Mainstream data-driven methods rely mainly on final metrics and a few predefined states, and require many search iterations to implicitly learn the relationships between input parameters and optimization objectives, making them less effective in this setting. In practice, evaluators also generate detailed reports on execution timelines, resource utilization, memory accesses, and communication behavior. Large language mode",
+      "pdf_link": "https://arxiv.org/pdf/2608.30932.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.30932",
+      "submission_date": "2026-09-01T04:00:00+00:00",
+      "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-08-31T12:38:39.138769+00:00"
+      "score": 31.5,
+      "updated_at": "2026-09-01T11:04:28.720164+00:00"
     },
     {
-      "forum_id": "2608.26418",
+      "forum_id": "2606.06159",
       "paper_number": -1,
-      "title": "Redwood: A Frontier AI Accelerator Designed, Verified, and Deployed from Scratch in 2 Weeks by AI",
+      "title": "ITP-STDP: A Hardware-Efficient Intrinsic-Timing Power-of-Two Synaptic Learning Engine for On-Chip SNNs",
       "authors": [
-        "Architect Labs"
+        "Haihang Xia, Xinyu Zhao, Xuecheng Wang, John Goodenough, Charith Abhayaratne, Panagiotis A. Panagiotou, Chunyi Song, Tiantai Deng"
       ],
       "keywords": [
         "cs.AR",
-        "FPGA"
+        "DATE"
       ],
-      "abstract": "arXiv:2608.26418v2 Announce Type: replace \nAbstract: Modern AI workloads and the hardware that runs them evolve on different timescales: architectural definition precedes volume silicon by years, while target workloads shift in months. Design decisions are therefore committed under deep uncertainty and paid for twice, once in the generality added as a hedge, and again when new workloads map poorly onto frozen silicon. As Moore's Law stagnates, specialization is the main remaining source of performance-per-watt and demands a design cycle that runs at the cadence of the workloads. We present an end-to-end AI system that collapses the software-to-silicon stack into a single optimization loop, where hardware and software are co-designed and verified under one objective. Its first demonstration",
-      "pdf_link": "https://arxiv.org/pdf/2608.26418.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.26418",
-      "submission_date": "2026-08-31T04:00:00+00:00",
-      "conference": "FPGA",
+      "abstract": "arXiv:2606.06159v2 Announce Type: replace \nAbstract: Spiking neural networks (SNNs) have the potential to emerge as the third generation of neural networks and have attracted increasing attention across a wide range of applications. However, the large number of synaptic connections in SNNs leads to intensive weight-update computation by on-chip learning algorithms during training, resulting in substantial hardware resource utilization and energy consumption. Among existing SNN learning algorithms, spike-timing-dependent plasticity (STDP) is one of the most extensively studied and widely adopted, serving as a fundamental learning component in SNNs. To address the hardware and energy overheads associated with SNN training, this paper presents intrinsic-timing power-of-two STDP (ITP-STDP) and",
+      "pdf_link": "https://arxiv.org/pdf/2606.06159.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.06159",
+      "submission_date": "2026-09-01T04:00:00+00:00",
+      "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-08-31T12:38:39.139051+00:00"
+      "score": 4.0,
+      "updated_at": "2026-09-01T11:04:28.720510+00:00"
+    },
+    {
+      "forum_id": "2509.12458",
+      "paper_number": -1,
+      "title": "Neural 3D Object Reconstruction with Small-Scale Unmanned Aerial Vehicles",
+      "authors": [
+        "\\`Almos Veres-Vit\\`alyos, Filip Lemic, Daniel Johannes Bugelnig, Joan Bernaus Casades\\'us, Genis Castillo Gomez-Raya, Sergi Abadal, Bernhard Rinner, Xavier Costa-P\\'erez"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2509.12458v3 Announce Type: replace-cross \nAbstract: Miniaturized Uncrewed Aerial Vehicles (UAVs) can access indoor and hard-to-reach spaces, but severe constraints on payload and autonomy have limited their use in demanding tasks such as high-quality 3D reconstruction. We introduce a novel system architecture that enables autonomous, high-fidelity 3D scanning of static objects with sub-100 gram UAVs. Our core innovation lies in a closed-loop active viewpoint selection framework specifically tailored for ultra-constrained micro-platforms, advancing beyond standard static or offline active reconstruction methods. The framework establishes a dual-reconstruction pipeline that creates a real-time (RT) feedback loop between data capture and flight control. A near-RT process uses Structure",
+      "pdf_link": "https://arxiv.org/pdf/2509.12458.pdf",
+      "forum_link": "https://arxiv.org/abs/2509.12458",
+      "submission_date": "2026-09-01T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-09-01T11:04:28.720567+00:00"
     }
   ]
 }

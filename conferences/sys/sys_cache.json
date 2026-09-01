@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-08-31T12:38:39.007958+00:00",
-  "paper_count": 443,
+  "last_updated": "2026-09-01T11:04:28.662857+00:00",
+  "paper_count": 442,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -175,29 +175,6 @@
       "ratings": [],
       "score": 98.5,
       "updated_at": "2026-07-21T08:54:26.738243+00:00"
-    },
-    {
-      "forum_id": "2608.28076",
-      "paper_number": -1,
-      "title": "Performance Evaluation of Fast Fourier Transforms on Emerging RISC-V Hardware with Vector Extension Support",
-      "authors": [
-        "Daniel Seibel, Kaveh Haghighi Mood, Jayesh Badwaik, Prateek Chawla, Stepan Nassyr, Andreas Herten"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.28076v1 Announce Type: cross \nAbstract: This manuscript presents a performance evaluation of Fast Fourier Transform (FFT) implementations on emerging processors supporting the RISC-V Vector Extension (RVV 1.0). By introducing juFFTe, a light-weight high-performance library for discrete Fourier transforms, it is demonstrated how effective vectorization of performance-critical FFT kernels can be achieved on RVV-enabled hardware. Comprehensive benchmarks on three RVV 1.0-ready processors, the SiFive X280, the X100 core of the SpacemiT K3 and the C920v2 core of the Sophon SG2044, reveal substantial performance improvements of juFFTe (https://github.com/FZJ-JSC/juFFTe) over the widely used FFTW3 library. Although RVV-enabled platforms show promising results at this stage of developme",
-      "pdf_link": "https://arxiv.org/pdf/2608.28076.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.28076",
-      "submission_date": "2026-08-31T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 98.0,
-      "updated_at": "2026-08-31T12:38:29.185939+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-147",
@@ -2025,6 +2002,29 @@
       "updated_at": "2026-07-21T08:54:22.925113+00:00"
     },
     {
+      "forum_id": "2608.12103",
+      "paper_number": -1,
+      "title": "Who Should Own the Expert Cache? Kernel-Managed Tiering for Trillion-Parameter MoE Inference",
+      "authors": [
+        "Yuan Si, Yufeng Lin, Daming Li, Jialu Zhang"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.12103v2 Announce Type: replace \nAbstract: Mixture-of-experts models whose expert pools exceed DRAM capacity require a weight-residency tier. Existing systems manage it in user space with expert-granular placement, frequency-based admission, and explicit pinning. We evaluate whether the operating system page cache can instead serve as the expert tier, using router traces from three MoE models with 128 to 896 experts per layer; the trillion-parameter production model's traces are replayed natively against its full 1.45 TB expert pool on GH200 hardware. Capacity is enforced by three independent mechanisms.\n  Iteration time varies smoothly with cache size (run-to-run spread <=4%), and device traffic follows the same trend. Under severe pressure the outcome depends on reclaim: device",
+      "pdf_link": "https://arxiv.org/pdf/2608.12103.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.12103",
+      "submission_date": "2026-09-01T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 44.0,
+      "updated_at": "2026-09-01T11:03:48.673975+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-70",
       "paper_number": 70,
       "title": "Ambulance: Saving BFT through Racing",
@@ -3544,6 +3544,29 @@
       "updated_at": "2026-07-21T08:54:22.942128+00:00"
     },
     {
+      "forum_id": "2511.15503",
+      "paper_number": -1,
+      "title": "DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures",
+      "authors": [
+        "Peiming Yang, Sankeerth Durvasula, Ivan Fernandez, Mohammad Sadrosadati, Onur Mutlu, Gennady Pekhimenko, Christina Giannoula"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2511.15503v5 Announce Type: replace-cross \nAbstract: High-performance Host processors can integrate Processing-In-Memory (PIM) devices, which can accelerate memory-intensive kernels of Machine Learning (ML) models, including Large Language Models (LLMs), by leveraging the large memory bandwidth available at PIM cores. However, Host processor needs consecutive elements distributed across DRAM banks, while PIM cores need consecutive elements within their local banks. This necessitates data rearrangements in ML kernel execution that pose significant performance and programmability challenges, further exacerbated by the need to support diverse PIM devices. Current compilation approaches lack systematic optimization for diverse ML kernels and multiple PIM devices, and may largely ignore d",
+      "pdf_link": "https://arxiv.org/pdf/2511.15503.pdf",
+      "forum_link": "https://arxiv.org/abs/2511.15503",
+      "submission_date": "2026-09-01T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.5,
+      "updated_at": "2026-09-01T11:03:48.731855+00:00"
+    },
+    {
       "forum_id": "dblp-eurosys26-2",
       "paper_number": 2,
       "title": "CofferOS: Hardening OS-level Virtualization with Rust.",
@@ -4455,6 +4478,29 @@
       "updated_at": "2026-07-21T08:54:17.393948+00:00"
     },
     {
+      "forum_id": "2607.28835",
+      "paper_number": -1,
+      "title": "From C to Idiomatic Rust: A Ship-of-Theseus Agentic Translation",
+      "authors": [
+        "Vasily A. Sartakov"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.28835v2 Announce Type: replace-cross \nAbstract: C underpins operating systems, embedded platforms, and network infrastructure as its abstractions map directly to machine behaviour. Its explicit memory model, predictable data representations, and minimal runtime allow compilers to generate fast, deterministic code. These properties also leave correctness and memory safety entirely to the programmer, making undefined behaviour, pointer misuse, and lifetime errors persistent sources of defects and security vulnerabilities in long-lived C codebases. Rust eliminates most failure modes through a static ownership and borrowing model that enforces memory safety and aliasing constraints at compile time. However, mature C systems cannot be translated directly: implicit layout assumptions,",
+      "pdf_link": "https://arxiv.org/pdf/2607.28835.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.28835",
+      "submission_date": "2026-09-01T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 24.0,
+      "updated_at": "2026-09-01T11:03:48.674332+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-56",
       "paper_number": 56,
       "title": "Osprey: Transparent and Efficient Virtual Memory for Secure Computation",
@@ -4654,6 +4700,29 @@
       "ratings": [],
       "score": 22.5,
       "updated_at": "2026-07-21T08:54:22.940355+00:00"
+    },
+    {
+      "forum_id": "2608.30830",
+      "paper_number": -1,
+      "title": "Adaptive KV Retention for LLM Agents at Human-Approval Timescales",
+      "authors": [
+        "Minseo Choi, Ananya Joshi"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.30830v1 Announce Type: new \nAbstract: Unlike the seconds-scale tool-call pauses targeted by prior agent-serving systems, agentic LLM requests can be suspended for minutes or hours while waiting for human approval. We study how suspension and resumption affect GPU serving performance and develop a retention policy that balances active-serving capacity against future recomputation under uncertain approval waits. The central tension is severe because retaining suspended KV preserves fast resume but can consume enough GPU capacity to reduce active-serving goodput by 41%, while evicting it avoids that residency cost at the expense of nearly $10\\times$ higher resume latency when the request returns. We develop a tiered retention controller around GPU opportunity cost, which expresses ",
+      "pdf_link": "https://arxiv.org/pdf/2608.30830.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.30830",
+      "submission_date": "2026-09-01T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 22.0,
+      "updated_at": "2026-09-01T11:03:48.673935+00:00"
     },
     {
       "forum_id": "usenix-osdi26-8",
@@ -5308,29 +5377,6 @@
       "updated_at": "2026-07-21T08:54:26.741587+00:00"
     },
     {
-      "forum_id": "2608.28183",
-      "paper_number": -1,
-      "title": "Memory-efficient GPU pipelines for real-time non-line-of-sight reconstruction",
-      "authors": [
-        "Alfonso L\\'opez-Ruiz, Diego Royo"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.28183v1 Announce Type: new \nAbstract: Non-line-of-sight (NLOS) imaging reconstructs scenes hidden around a corner from indirect light recorded by a single-photon avalanche diode (SPAD). A single reconstruction is a large inverse problem: billions of photon timestamps must be binned, moved through memory, transformed and inverted. As SPAD arrays raise acquisition throughput, reconstruction becomes the limiting stage. We rebuild the GPU execution of two established wave-based algorithms, f-k migration and phasor-fields, for both streaming and offline processing. On the phasor-fields side we assemble the ring-and-radius kernels of previous work once and offline, using the analytic Fourier transform of a ring, so the propagation kernel never exists in dense form at runtime, reducing",
-      "pdf_link": "https://arxiv.org/pdf/2608.28183.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.28183",
-      "submission_date": "2026-08-31T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-08-31T12:38:29.185500+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-41",
       "paper_number": 41,
       "title": "Efficient and Scalable Synchronization via Generalized Cache Coherence",
@@ -5460,52 +5506,6 @@
       "ratings": [],
       "score": 14.5,
       "updated_at": "2026-07-21T08:54:26.739010+00:00"
-    },
-    {
-      "forum_id": "2507.07130",
-      "paper_number": -1,
-      "title": "Ampere: Communication-Efficient and High-Accuracy Split Federated Learning",
-      "authors": [
-        "Zihan Zhang, Leon Wong, Blesson Varghese"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2507.07130v2 Announce Type: replace \nAbstract: A Federated Learning (FL) system collaboratively trains neural networks across devices and a server but is limited by significant on-device computation costs. Split Federated Learning (SFL) systems mitigate this by offloading a block of layers of the network from the device to a server. However, in doing so, it introduces large communication overheads due to frequent exchanges of intermediate activations and gradients between devices and the server and reduces model accuracy for non-IID data. We propose Ampere, a novel collaborative training system that simultaneously minimizes on-device computation and device-server communication while improving model accuracy. Unlike SFL, which uses a global loss by iterative end-to-end training, Amper",
-      "pdf_link": "https://arxiv.org/pdf/2507.07130.pdf",
-      "forum_link": "https://arxiv.org/abs/2507.07130",
-      "submission_date": "2026-08-31T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.0,
-      "updated_at": "2026-08-31T12:38:29.186296+00:00"
-    },
-    {
-      "forum_id": "2607.21021",
-      "paper_number": -1,
-      "title": "Multimmit: Extending Blocks for Faster Finality",
-      "authors": [
-        "Andrew Lewis-Pye, Patrick O'Grady"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.21021v4 Announce Type: replace \nAbstract: To meet the throughput demands of modern blockchain systems, protocols for State Machine Replication (SMR) increasingly have many processors disseminate blocks of transactions in parallel, with consensus then establishing a total ordering on the blocks of all producers. Such designs face a choice as to when a block may enter the ordering. Certified approaches wait for a quorum to attest a block's availability, which is robust but adds message delays to every transaction. Uncertified approaches let proposals reference blocks immediately, which is fast but degrades rapidly when referenced data must be fetched on the critical path. Raptr, the state of the art, takes a middle course, finalising the longest prefix of the leader's proposal tha",
-      "pdf_link": "https://arxiv.org/pdf/2607.21021.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.21021",
-      "submission_date": "2026-08-31T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.0,
-      "updated_at": "2026-08-31T12:38:29.186495+00:00"
     },
     {
       "forum_id": "usenix-osdi26-45",
@@ -6391,29 +6391,6 @@
       "updated_at": "2026-07-21T08:54:26.744089+00:00"
     },
     {
-      "forum_id": "2608.27874",
-      "paper_number": -1,
-      "title": "TerraceMoE: A Cost Model for Hierarchical MoE All-to-All Communication",
-      "authors": [
-        "Weicheng Xue, Bingqiang Wang, Li Yuan, Huihui Zhou, Yonghong Tian"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.27874v1 Announce Type: new \nAbstract: Hierarchical two-hop dispatch can reduce slow-fabric traffic in expert-parallel Mixture-of-Experts training, but it adds a second collective and an arrival-side operator chain. We present a cost model for screening that trade at the communication-call level, bounded by validation gates that withdraw a capability in code when they fail rather than reporting a caveat. At a reference geometry with 16 groups of 8 ranks, $q=3$, $H=2048$, and 4096 tokens per rank, the corrected effective breakeven hierarchy ratio is 3.98 for the measured PyTorch arrival chain, 1.49 for a hypothetical fused target, and 1.10 at zero implementation overhead. These are ratio-only sensitivity results, not deployment predictions: platform A measures 1.03, platform B has",
-      "pdf_link": "https://arxiv.org/pdf/2608.27874.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.27874",
-      "submission_date": "2026-08-31T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.5,
-      "updated_at": "2026-08-31T12:38:29.185234+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-43",
       "paper_number": 43,
       "title": "Eywa: Automating Model-Based Testing using LLMs",
@@ -6459,29 +6436,6 @@
       "ratings": [],
       "score": 11.5,
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
-    },
-    {
-      "forum_id": "2608.28352",
-      "paper_number": -1,
-      "title": "No Silver Bullet: Boosting GaussDB Performance on the 30TB TPC-H Workload",
-      "authors": [
-        "Tim Zeyl, Jason Lam, Shu Lin, Reza Pournaghi, Qi Cheng, Calvin Wong, Kaixiang Du, Yuliang He, Yang Sun, Weicheng Wang, Paul Lee, Chen Ruo, Yang Xinyi, Li Qunan, Wang Junjie, Hu Dongxing, Chong Chen, Per-Ake Larson"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.28352v1 Announce Type: cross \nAbstract: GaussDB is Huawei's premier database system, designed for large-scale deployments and the most demanding workloads. It is a distributed shared-nothing system, capable of handling all types of workloads. This paper outlines a series of modifications to GaussDB aimed at improving its performance on large-scale and complex analytical workloads. After these changes, its performance on the TPC-H workload exceeded the best published result by 40% at 30 TB.\n  The key enhancements to achieve this elite performance include adopting a pipeline execution model, a faster and more scalable inter-node data shuffle, exploiting a unified bus and unified remote memory access. We also expanded the support of cost-based Bloom filter placement and implemented",
-      "pdf_link": "https://arxiv.org/pdf/2608.28352.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.28352",
-      "submission_date": "2026-08-31T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-08-31T12:38:29.186119+00:00"
     },
     {
       "forum_id": "usenix-osdi26-63",
@@ -8950,6 +8904,29 @@
       "ratings": [],
       "score": 2.0,
       "updated_at": "2026-07-21T08:54:26.743211+00:00"
+    },
+    {
+      "forum_id": "2608.31004",
+      "paper_number": -1,
+      "title": "Storage-Centric System Designs for Enabling Fast, Efficient, and Low-Cost Genomic and Metagenomic Analyses",
+      "authors": [
+        "Nika Mansouri Ghiasi"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.31004v1 Announce Type: cross \nAbstract: Genomic and metagenomic analyses play critical roles in many fields, such as precision medicine, urgent clinical settings, discovering early warnings of communicable diseases, ensuring food safety through pathogen monitoring, agriculture, and scientific discovery. Due to the challenges of analyzing and storing massive volumes of genomic and metagenomic sequence data, significant efforts have been made to accelerate (meta)genomic analyses and store sequence data compressed. Despite the benefits of these techniques, we identify two major outstanding problems in accessing stored sequence data and supplying it to the analysis units: (i) the data movement bottleneck due to moving large amounts of low-reuse data from storage and the unnecessary ",
+      "pdf_link": "https://arxiv.org/pdf/2608.31004.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.31004",
+      "submission_date": "2026-09-01T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-09-01T11:03:48.730654+00:00"
     },
     {
       "forum_id": "dblp-eurosys26-6",
