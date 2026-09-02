@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-09-01T11:04:28.662857+00:00",
-  "paper_count": 442,
+  "last_updated": "2026-09-02T10:35:27.001017+00:00",
+  "paper_count": 441,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -2002,29 +2002,6 @@
       "updated_at": "2026-07-21T08:54:22.925113+00:00"
     },
     {
-      "forum_id": "2608.12103",
-      "paper_number": -1,
-      "title": "Who Should Own the Expert Cache? Kernel-Managed Tiering for Trillion-Parameter MoE Inference",
-      "authors": [
-        "Yuan Si, Yufeng Lin, Daming Li, Jialu Zhang"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.12103v2 Announce Type: replace \nAbstract: Mixture-of-experts models whose expert pools exceed DRAM capacity require a weight-residency tier. Existing systems manage it in user space with expert-granular placement, frequency-based admission, and explicit pinning. We evaluate whether the operating system page cache can instead serve as the expert tier, using router traces from three MoE models with 128 to 896 experts per layer; the trillion-parameter production model's traces are replayed natively against its full 1.45 TB expert pool on GH200 hardware. Capacity is enforced by three independent mechanisms.\n  Iteration time varies smoothly with cache size (run-to-run spread <=4%), and device traffic follows the same trend. Under severe pressure the outcome depends on reclaim: device",
-      "pdf_link": "https://arxiv.org/pdf/2608.12103.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.12103",
-      "submission_date": "2026-09-01T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 44.0,
-      "updated_at": "2026-09-01T11:03:48.673975+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-70",
       "paper_number": 70,
       "title": "Ambulance: Saving BFT through Racing",
@@ -2385,6 +2362,29 @@
       "ratings": [],
       "score": 37.5,
       "updated_at": "2026-07-21T08:54:22.933996+00:00"
+    },
+    {
+      "forum_id": "2607.02401",
+      "paper_number": -1,
+      "title": "FlintKV: A Fast Durable Storage Engine for Modern Databases",
+      "authors": [
+        "Sergey Egorov (Royal Holloway, University of London, Egham, United Kingdom, University of Surrey, Guildford, United Kingdom), Gregory Chockler (University of Surrey, Guildford, United Kingdom), Brijesh Dongol (University of Surrey, Guildford, United Kingdom), Dan O'Keeffe (Royal Holloway, University of London, Egham, United Kingdom), Sadegh Keshavarzi (University of Surrey, Guildford, United Kingdom)"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.02401v2 Announce Type: replace \nAbstract: Byte-addressable non-volatile memory (NVM) offers an opportunity to rethink storage engine architectures. While recent NVM key-value stores achieve high throughput for ingestion and point lookups, they omit or under-specify the support for the richer interface guarantees required by modern databases. Production key-value engines (e.g., RocksDB) provide point-in-time snapshots, consistent iterators, and atomic batches-features essential for implementing transactions and concurrency control. We present FlintKV, an NVM-optimized skiplist-based storage engine that natively supports the full API of production key-value stores. FlintKV supports both atomic batch writes and snapshot-consistent iteration efficiently while guaranteeing durable li",
+      "pdf_link": "https://arxiv.org/pdf/2607.02401.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.02401",
+      "submission_date": "2026-09-02T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 37.0,
+      "updated_at": "2026-09-02T10:35:23.792278+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-20",
@@ -3544,29 +3544,6 @@
       "updated_at": "2026-07-21T08:54:22.942128+00:00"
     },
     {
-      "forum_id": "2511.15503",
-      "paper_number": -1,
-      "title": "DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures",
-      "authors": [
-        "Peiming Yang, Sankeerth Durvasula, Ivan Fernandez, Mohammad Sadrosadati, Onur Mutlu, Gennady Pekhimenko, Christina Giannoula"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2511.15503v5 Announce Type: replace-cross \nAbstract: High-performance Host processors can integrate Processing-In-Memory (PIM) devices, which can accelerate memory-intensive kernels of Machine Learning (ML) models, including Large Language Models (LLMs), by leveraging the large memory bandwidth available at PIM cores. However, Host processor needs consecutive elements distributed across DRAM banks, while PIM cores need consecutive elements within their local banks. This necessitates data rearrangements in ML kernel execution that pose significant performance and programmability challenges, further exacerbated by the need to support diverse PIM devices. Current compilation approaches lack systematic optimization for diverse ML kernels and multiple PIM devices, and may largely ignore d",
-      "pdf_link": "https://arxiv.org/pdf/2511.15503.pdf",
-      "forum_link": "https://arxiv.org/abs/2511.15503",
-      "submission_date": "2026-09-01T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-09-01T11:03:48.731855+00:00"
-    },
-    {
       "forum_id": "dblp-eurosys26-2",
       "paper_number": 2,
       "title": "CofferOS: Hardening OS-level Virtualization with Rust.",
@@ -4478,29 +4455,6 @@
       "updated_at": "2026-07-21T08:54:17.393948+00:00"
     },
     {
-      "forum_id": "2607.28835",
-      "paper_number": -1,
-      "title": "From C to Idiomatic Rust: A Ship-of-Theseus Agentic Translation",
-      "authors": [
-        "Vasily A. Sartakov"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.28835v2 Announce Type: replace-cross \nAbstract: C underpins operating systems, embedded platforms, and network infrastructure as its abstractions map directly to machine behaviour. Its explicit memory model, predictable data representations, and minimal runtime allow compilers to generate fast, deterministic code. These properties also leave correctness and memory safety entirely to the programmer, making undefined behaviour, pointer misuse, and lifetime errors persistent sources of defects and security vulnerabilities in long-lived C codebases. Rust eliminates most failure modes through a static ownership and borrowing model that enforces memory safety and aliasing constraints at compile time. However, mature C systems cannot be translated directly: implicit layout assumptions,",
-      "pdf_link": "https://arxiv.org/pdf/2607.28835.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.28835",
-      "submission_date": "2026-09-01T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 24.0,
-      "updated_at": "2026-09-01T11:03:48.674332+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-56",
       "paper_number": 56,
       "title": "Osprey: Transparent and Efficient Virtual Memory for Secure Computation",
@@ -4700,29 +4654,6 @@
       "ratings": [],
       "score": 22.5,
       "updated_at": "2026-07-21T08:54:22.940355+00:00"
-    },
-    {
-      "forum_id": "2608.30830",
-      "paper_number": -1,
-      "title": "Adaptive KV Retention for LLM Agents at Human-Approval Timescales",
-      "authors": [
-        "Minseo Choi, Ananya Joshi"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.30830v1 Announce Type: new \nAbstract: Unlike the seconds-scale tool-call pauses targeted by prior agent-serving systems, agentic LLM requests can be suspended for minutes or hours while waiting for human approval. We study how suspension and resumption affect GPU serving performance and develop a retention policy that balances active-serving capacity against future recomputation under uncertain approval waits. The central tension is severe because retaining suspended KV preserves fast resume but can consume enough GPU capacity to reduce active-serving goodput by 41%, while evicting it avoids that residency cost at the expense of nearly $10\\times$ higher resume latency when the request returns. We develop a tiered retention controller around GPU opportunity cost, which expresses ",
-      "pdf_link": "https://arxiv.org/pdf/2608.30830.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.30830",
-      "submission_date": "2026-09-01T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 22.0,
-      "updated_at": "2026-09-01T11:03:48.673935+00:00"
     },
     {
       "forum_id": "usenix-osdi26-8",
@@ -6438,6 +6369,52 @@
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
     },
     {
+      "forum_id": "2609.00954",
+      "paper_number": -1,
+      "title": "Influence of Logging Frameworks on Bind9",
+      "authors": [
+        "Max Schr\\\"otter, Hannes Signer, Bettina Schnor"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.00954v1 Announce Type: cross \nAbstract: Host-based Intrusion Prevention Systems (IPS) rely on application logs to detect and block malicious activity. However, on modern high-speed networks the logging subsystem itself becomes a bottleneck: an attacker can hide traces simply by generating enough traffic to overwhelm the application's log pipeline, dropping crucial traces. In this work, we show that widely deployed setups such as Fail2Ban monitoring BIND9 can be defeated with less than 65 Mbps of DNS traffic. Further, we show that when replacing core components of the IPS architecture with their higher-performance equivalent, iptables with eBPF and regex matching with Hyperscan, the logging backends themselves become the bottleneck. Therefore, we present FIPS, a new IPC designed ",
+      "pdf_link": "https://arxiv.org/pdf/2609.00954.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.00954",
+      "submission_date": "2026-09-02T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-09-02T10:35:23.733648+00:00"
+    },
+    {
+      "forum_id": "2609.01490",
+      "paper_number": -1,
+      "title": "Faster Convergence of Multidimensional Approximate Agreement via Smallest Enclosing Balls",
+      "authors": [
+        "Darya Melnyk"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.01490v1 Announce Type: new \nAbstract: This work considers the multidimensional approximate agreement problem. In this problem, $n$ parties in a distributed system, up to $t$ of which may be corrupted by a Byzantine adversary, need to output vectors that are close to each other and that lie inside the convex hull of all non-corrupted input vectors. We assume that nodes communicate in a fully-connected authenticated network and analyze synchronous and asynchronous communication models. The focus of this work is on the contraction factor of approximate agreement protocols.\n  The first multidimensional approximate agreement protocols had a contraction rate of $1-1/n$(VG, PODC'13) and $\\sqrt[d]{1/2}$(MH, STOC'13). While a rate below $1$ is sufficient for convergence, it is not suffic",
+      "pdf_link": "https://arxiv.org/pdf/2609.01490.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.01490",
+      "submission_date": "2026-09-02T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-09-02T10:35:23.791144+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-63",
       "paper_number": 63,
       "title": "Hardware Lifecycle-Aware Power Planning in Commercial Hyperscale Datacenters (Operational Systems)",
@@ -7057,6 +7034,29 @@
       "ratings": [],
       "score": 5.0,
       "updated_at": "2026-07-21T08:54:26.740416+00:00"
+    },
+    {
+      "forum_id": "2609.00400",
+      "paper_number": -1,
+      "title": "Client-side transparent caching for remote ROOT data analysis",
+      "authors": [
+        "Dmytro Kovalskyi, Jan Eysermans, Mariarosaria D'Alfonso, Christoph Paus"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.00400v1 Announce Type: new \nAbstract: High-energy physics analyses often process the same data as physicists refine algorithms and test new ideas. With data increasingly read from remote storage, each iteration is subject to network latency and depends on network bandwidth and shared-storage throughput, which can vary substantially under load. We present uCache (xrd-ucache), a transparent client-side cache implemented as an XRootD client plugin that requires neither server-side deployment nor changes to analysis code. It uses local storage on the analysis machine as a cache layer between the network and memory. The cache stores only the data actually read by an analysis. It can also rebuild cached data into a branch-aligned, recompressed form, eliminating most of the input/outpu",
+      "pdf_link": "https://arxiv.org/pdf/2609.00400.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.00400",
+      "submission_date": "2026-09-02T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.5,
+      "updated_at": "2026-09-02T10:35:23.790010+00:00"
     },
     {
       "forum_id": "dblp-eurosys26-23",
@@ -8904,29 +8904,6 @@
       "ratings": [],
       "score": 2.0,
       "updated_at": "2026-07-21T08:54:26.743211+00:00"
-    },
-    {
-      "forum_id": "2608.31004",
-      "paper_number": -1,
-      "title": "Storage-Centric System Designs for Enabling Fast, Efficient, and Low-Cost Genomic and Metagenomic Analyses",
-      "authors": [
-        "Nika Mansouri Ghiasi"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.31004v1 Announce Type: cross \nAbstract: Genomic and metagenomic analyses play critical roles in many fields, such as precision medicine, urgent clinical settings, discovering early warnings of communicable diseases, ensuring food safety through pathogen monitoring, agriculture, and scientific discovery. Due to the challenges of analyzing and storing massive volumes of genomic and metagenomic sequence data, significant efforts have been made to accelerate (meta)genomic analyses and store sequence data compressed. Despite the benefits of these techniques, we identify two major outstanding problems in accessing stored sequence data and supplying it to the analysis units: (i) the data movement bottleneck due to moving large amounts of low-reuse data from storage and the unnecessary ",
-      "pdf_link": "https://arxiv.org/pdf/2608.31004.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.31004",
-      "submission_date": "2026-09-01T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-09-01T11:03:48.730654+00:00"
     },
     {
       "forum_id": "dblp-eurosys26-6",

@@ -1,100 +1,54 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-09-01T11:04:28.723327+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-09-02T10:35:27.060925+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2608.30268",
+      "forum_id": "2609.00421",
       "paper_number": -1,
-      "title": "FABO: Agent-Guided Discovery of Joint Breakpoint Optimization for Timing-Driven Routing Trees",
+      "title": "VARA: A Voltage-Aware ReRAM-Based Accelerator for Energy-Efficient Computing",
       "authors": [
-        "Shang Liu, Wenji Fang, Jing Wang, Hongxin Kong, Yao Lu, Zhiyao Xie"
-      ],
-      "keywords": [
-        "cs.AR",
-        "ICCAD"
-      ],
-      "abstract": "arXiv:2608.30268v1 Announce Type: new \nAbstract: The topology of a routing tree determines how a multi-pin net branches and shares physical wire, directly affecting wirelength, congestion, capacitance, and delay. We study a central early-stage routing problem: minimizing wirelength while bounding the root-to-sink path stretch for every sink. SALT is the state-of-the-art constructive algorithm for this problem. We ask whether language-model-guided search can discover a constructive algorithm that improves on SALT. To make this search reliable, we develop an agent framework that combines parallel exploration with independent checking. Applied to SALT, the framework discovers a structural limitation: SALT repairs one sink path at a time and therefore never jointly decides where paths sharing ",
-      "pdf_link": "https://arxiv.org/pdf/2608.30268.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.30268",
-      "submission_date": "2026-09-01T04:00:00+00:00",
-      "conference": "ICCAD",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 34.0,
-      "updated_at": "2026-09-01T11:04:28.719850+00:00"
-    },
-    {
-      "forum_id": "2608.30932",
-      "paper_number": -1,
-      "title": "Beacon: LLM Multi-Agent Driven Hardware Design Space Exploration for Heterogeneous Multi-Chiplet Deep Learning Accelerators",
-      "authors": [
-        "Boyu Li, Zongwei Zhu, Qianyue Cao, Xi Li, Xuehai Zhou"
+        "Peng Dang, Yintao He, Huawei Li"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.30932v1 Announce Type: new \nAbstract: Heterogeneous multi-chiplet accelerators allow chiplets to be configured independently to better match different operator characteristics and improve inference efficiency. However, heterogeneity makes simulator evaluation expensive, limiting the number of iterations affordable for hardware design space exploration (HW-DSE). Mainstream data-driven methods rely mainly on final metrics and a few predefined states, and require many search iterations to implicitly learn the relationships between input parameters and optimization objectives, making them less effective in this setting. In practice, evaluators also generate detailed reports on execution timelines, resource utilization, memory accesses, and communication behavior. Large language mode",
-      "pdf_link": "https://arxiv.org/pdf/2608.30932.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.30932",
-      "submission_date": "2026-09-01T04:00:00+00:00",
+      "abstract": "arXiv:2609.00421v1 Announce Type: new \nAbstract: ReRAM-based in-memory computing (IMC) architectures are widely regarded as a promising approach to alleviating the computational bottleneck of conventional architectures. Since ReRAM crossbars perform matrix-vector multiplication (MVM) in the analog domain, their computational energy consumption is highly dependent on weight and activation distributions. However, most existing ReRAM accelerators focus primarily on weight optimization while paying limited attention to the impact of activations on computational energy consumption, leaving the energy-saving potential of activation sparsity largely underexploited. In this paper, we propose a voltage-aware ReRAM-based accelerator (VARA), along with its accompanying design methodology. Specificall",
+      "pdf_link": "https://arxiv.org/pdf/2609.00421.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.00421",
+      "submission_date": "2026-09-02T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-09-01T11:04:28.720164+00:00"
+      "score": 1.0,
+      "updated_at": "2026-09-02T10:35:27.057534+00:00"
     },
     {
-      "forum_id": "2606.06159",
+      "forum_id": "2609.00701",
       "paper_number": -1,
-      "title": "ITP-STDP: A Hardware-Efficient Intrinsic-Timing Power-of-Two Synaptic Learning Engine for On-Chip SNNs",
+      "title": "FALCON: Fault-Tolerant Magnetic Tunnel Junction-Based In-Memory Stochastic Architecture for Reliability-Critical Edge AI Applications",
       "authors": [
-        "Haihang Xia, Xinyu Zhao, Xuecheng Wang, John Goodenough, Charith Abhayaratne, Panagiotis A. Panagiotou, Chunyi Song, Tiantai Deng"
+        "Farzad Razi, Mehran Moghadam, Sercan Aygun, M. Hassan Najafi, Marc Riedel"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2606.06159v2 Announce Type: replace \nAbstract: Spiking neural networks (SNNs) have the potential to emerge as the third generation of neural networks and have attracted increasing attention across a wide range of applications. However, the large number of synaptic connections in SNNs leads to intensive weight-update computation by on-chip learning algorithms during training, resulting in substantial hardware resource utilization and energy consumption. Among existing SNN learning algorithms, spike-timing-dependent plasticity (STDP) is one of the most extensively studied and widely adopted, serving as a fundamental learning component in SNNs. To address the hardware and energy overheads associated with SNN training, this paper presents intrinsic-timing power-of-two STDP (ITP-STDP) and",
-      "pdf_link": "https://arxiv.org/pdf/2606.06159.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.06159",
-      "submission_date": "2026-09-01T04:00:00+00:00",
+      "abstract": "arXiv:2609.00701v1 Announce Type: cross \nAbstract: As modern data-centric applications such as neural inference and sensor-edge analytics expand, they increasingly encounter the von Neumann memory wall, suffering from excessive data movement overhead and stringent energy constraints. In-Memory Computing (IMC) utilizing emerging non-volatile technologies, such as Magnetic Tunnel Junctions (MTJs), promises to mitigate these bottlenecks. However, conventional binary radix-based IMC architectures suffer from excessive vulnerability to process-induced variations, restricted operating margins, and thermal noise. To bridge the gap between energy efficiency and computational reliability, this work proposes FALCON, a fault-tolerant, MTJ-based in-memory arithmetic architecture integrated with Stocha",
+      "pdf_link": "https://arxiv.org/pdf/2609.00701.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.00701",
+      "submission_date": "2026-09-02T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-09-01T11:04:28.720510+00:00"
-    },
-    {
-      "forum_id": "2509.12458",
-      "paper_number": -1,
-      "title": "Neural 3D Object Reconstruction with Small-Scale Unmanned Aerial Vehicles",
-      "authors": [
-        "\\`Almos Veres-Vit\\`alyos, Filip Lemic, Daniel Johannes Bugelnig, Joan Bernaus Casades\\'us, Genis Castillo Gomez-Raya, Sergi Abadal, Bernhard Rinner, Xavier Costa-P\\'erez"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2509.12458v3 Announce Type: replace-cross \nAbstract: Miniaturized Uncrewed Aerial Vehicles (UAVs) can access indoor and hard-to-reach spaces, but severe constraints on payload and autonomy have limited their use in demanding tasks such as high-quality 3D reconstruction. We introduce a novel system architecture that enables autonomous, high-fidelity 3D scanning of static objects with sub-100 gram UAVs. Our core innovation lies in a closed-loop active viewpoint selection framework specifically tailored for ultra-constrained micro-platforms, advancing beyond standard static or offline active reconstruction methods. The framework establishes a dual-reconstruction pipeline that creates a real-time (RT) feedback loop between data capture and flight control. A near-RT process uses Structure",
-      "pdf_link": "https://arxiv.org/pdf/2509.12458.pdf",
-      "forum_link": "https://arxiv.org/abs/2509.12458",
-      "submission_date": "2026-09-01T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-09-01T11:04:28.720567+00:00"
+      "score": 1.0,
+      "updated_at": "2026-09-02T10:35:27.057846+00:00"
     }
   ]
 }

@@ -1,77 +1,146 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-09-01T11:03:48.637956+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-09-02T10:35:23.696522+00:00",
+  "paper_count": 6,
   "papers": [
     {
-      "forum_id": "2608.29103",
+      "forum_id": "2609.00442",
       "paper_number": -1,
-      "title": "CLASP: Chained-Request-Aware Scaling and Operator Placement for Serverless Stream Processing",
+      "title": "DRLM: Deep Reinforcement Learning-Based LLM Query Orchestration in Edge Environments",
       "authors": [
-        "Tianyu Qi, Maria A. Rodriguez, Rajkumar Buyya"
+        "Reza Farahani, Zoha Azimi Ourimi, Mario Colosi, Lauri Loven, Christian Timmerer, Schahram Dustdar"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.29103v1 Announce Type: new \nAbstract: Stateful serverless (Function-as-a-Service) environments, whose workers host state servers, are increasingly used for stream processing. A stream application is a pipeline of operators, where each operator forwards intermediate data downstream through a chained request. As input rates fluctuate, the system should adjust operator parallelism and place instances across workers to sustain the incoming rate. Existing approaches do so without fully accounting for chained-request overhead, leading them to misestimate the required number of workers. Too few leave the cluster unable to keep up with the input rate, while too many route a larger fraction of chained requests across worker boundaries, increasing end-to-end latency.\n  We propose CLASP, a",
-      "pdf_link": "https://arxiv.org/pdf/2608.29103.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.29103",
-      "submission_date": "2026-09-01T04:00:00+00:00",
+      "abstract": "arXiv:2609.00442v1 Announce Type: new \nAbstract: Large language model (LLM) services increasingly process heterogeneous queries with diverse latency, accuracy, and resource requirements. While edge deployment reduces response time, the heterogeneity of devices and the diversity of model families, parameter scales, and quantization levels make efficient LLM query orchestration challenging. This paper introduces DRLM, a Deep Reinforcement Learning-based LLM query orchestration framework in edge environments. DRLM integrates two lightweight predictors: (i) a class-conditioned quality estimator that maps queries to semantic categories and infers model performance, and (ii) a feature-driven latency predictor that estimates inference time across model-device configurations. These predictions, co",
+      "pdf_link": "https://arxiv.org/pdf/2609.00442.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.00442",
+      "submission_date": "2026-09-02T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 62.0,
-      "updated_at": "2026-09-01T11:03:48.217040+00:00"
+      "score": 22.0,
+      "updated_at": "2026-09-02T10:35:23.451267+00:00"
     },
     {
-      "forum_id": "2606.07491",
+      "forum_id": "2609.01025",
       "paper_number": -1,
-      "title": "Twelve quick tips for designing AI-driven HPC workflows",
+      "title": "MakoXC: Rearchitecting DFT Exchange-Correlation with Matrix-Aligned and Knowledge-Organized Sparsity",
       "authors": [
-        "Jamie J. Alnasir"
+        "Haozhi Han, Fusong Ju, Jing Bai, Ruge Zhang, Xiang Zhao, Liang Yuan, Yunquan Zhang, Ting Cao, Liu Yunxin, Yifeng Chen, Kun Li"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2606.07491v2 Announce Type: replace \nAbstract: High-performance computing (HPC) clusters remain the backbone of large-scale scientific computation, traditionally executing deterministic, linear pipelines optimised for predictable performance. However, the pervasive integration of artificial intelligence (AI) and foundation models into scientific research has introduced a fundamentally new computational paradigm. AI-driven workflows are characteristically iterative, data-driven, and probabilistic, introducing unique challenges regarding data gravity, heterogeneous resource management, and complex workflow orchestration.\n  This guide provides twelve practical tips designed to help researchers design efficient, scalable, and reproducible AI-driven HPC workflows. By addressing critical s",
-      "pdf_link": "https://arxiv.org/pdf/2606.07491.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.07491",
-      "submission_date": "2026-09-01T04:00:00+00:00",
+      "abstract": "arXiv:2609.01025v1 Announce Type: new \nAbstract: Density Functional Theory (DFT) is indispensable for materials science and drug discovery, yet the exchange--correlation (XC) evaluation remains a major bottleneck due to its cubic scaling. Although linear-scaling methods exploit electronic nearsightedness to reduce asymptotic complexity, they produce irregular sparse workloads that hide implicit sparsity and prevent efficient use of modern AI accelerators. We present MakoXC, a modular matrix-aligned XC evaluation engine that rearchitects nearsightedness-induced sparsity into regular, accelerator-friendly computations. MakoXC co-designs three key techniques: (1) Matrix-Aligned Cells reorganize nearsightedness-induced interactions into dense, accelerator-aligned data clusters; (2) Sparsity-Gu",
+      "pdf_link": "https://arxiv.org/pdf/2609.01025.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.01025",
+      "submission_date": "2026-09-02T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 45.5,
-      "updated_at": "2026-09-01T11:03:48.217779+00:00"
+      "score": 13.0,
+      "updated_at": "2026-09-02T10:35:23.451613+00:00"
     },
     {
-      "forum_id": "2608.29656",
+      "forum_id": "2609.00392",
       "paper_number": -1,
-      "title": "A Smallest-Need-First Job Scheduling Framework with Adaptive Optimization of Idle Node Counts for Energy-Efficient HPC Systems",
+      "title": "Operation-Type-Aware Client Routing for Leader-Based Consensus Datastores",
       "authors": [
-        "Reza Pulungan, Raka Satya Prasasta, Santana Yuda Pradata,  Mursalim, Hiroyuki Takizawa, Muhammad Alfian Amrizal"
+        "Sri Saran Balaji Vellore Rajakumar, James Thompson"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.29656v1 Announce Type: new \nAbstract: Power-state management in high-performance computing (HPC) clusters must reduce idle energy without excessive wake-up delays for rigid parallel jobs. This paper presents SNF-ICON, an event-driven controller combining smallest-need-first (SNF) gang scheduling, predictive wake timing, and adaptive warm-spare control. At each scheduler invocation, recent interarrival and completed-service samples are screened for sufficiency, exponential-like variability, low lag-one autocorrelation, and acceptable Kolmogorov-Smirnov distance. Rejected or data-sparse windows use SNF+IPM (Intelligent Power Manager), whereas accepted windows activate release prediction and an exponential next-event model. Warm-spare optimization is applied only when queue, event,",
-      "pdf_link": "https://arxiv.org/pdf/2608.29656.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.29656",
-      "submission_date": "2026-09-01T04:00:00+00:00",
+      "abstract": "arXiv:2609.00392v1 Announce Type: new \nAbstract: Leader-based consensus datastores (etcd, ZooKeeper) face two competing routing goals: spread load evenly across members, and route operations to the member whose protocol role matches the operation. Writes must commit through the leader, so sending them elsewhere adds a forwarding hop. Linearizable reads need only a lightweight leader confirmation before any member can serve them locally. The upstream etcd client uses gRPC's round_robin balancer, distributing reads and writes uniformly across cluster members. An operation-aware client resolves this by pinning writes to the leader and distributing reads across the healthy read pool. In steady state on a 3-node etcd cluster (80/20 read/write mix, 5 trials), this lowers write P50 by 29% and rai",
+      "pdf_link": "https://arxiv.org/pdf/2609.00392.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.00392",
+      "submission_date": "2026-09-02T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 9.5,
-      "updated_at": "2026-09-01T11:03:48.217158+00:00"
+      "score": 11.0,
+      "updated_at": "2026-09-02T10:35:23.451134+00:00"
+    },
+    {
+      "forum_id": "2609.00817",
+      "paper_number": -1,
+      "title": "Characterizing the Scalability and Performance of Large-Scale AI Training Under Multi-Tenancy",
+      "authors": [
+        "Jacopo Raffi, Thomas Pasquali, Lorenzo Piarulli, Filippo Spiga, Marco Faltelli, Andreas Herten, Domenico Siracusa, Daniele De Sensi, Flavio Vella"
+      ],
+      "keywords": [
+        "cs.DC",
+        "Supercomputing"
+      ],
+      "abstract": "arXiv:2609.00817v1 Announce Type: new \nAbstract: Characterising AI workload performance on modern HPC systems requires understanding both their scalability in isolation and their behaviour under concurrent execution. However, the interplay among parallelisation strategies, network congestion, compute capability, and interconnect technologies remains poorly understood. This work investigates the performance and scalability of AI models up to 2400 GPUs. We quantify the communication overheads and their impact across different interconnects by evaluating scale-up, scale-out, and rack-scale configurations under multiple allocation schemes. Finally, we study how multiple concurrent training jobs interfere with each other by designing a realistic noise model. We design a benchmark suite of AI mo",
+      "pdf_link": "https://arxiv.org/pdf/2609.00817.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.00817",
+      "submission_date": "2026-09-02T04:00:00+00:00",
+      "conference": "Supercomputing",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 6.5,
+      "updated_at": "2026-09-02T10:35:23.451331+00:00"
+    },
+    {
+      "forum_id": "2609.01490",
+      "paper_number": -1,
+      "title": "Faster Convergence of Multidimensional Approximate Agreement via Smallest Enclosing Balls",
+      "authors": [
+        "Darya Melnyk"
+      ],
+      "keywords": [
+        "cs.DC",
+        "SC'"
+      ],
+      "abstract": "arXiv:2609.01490v1 Announce Type: new \nAbstract: This work considers the multidimensional approximate agreement problem. In this problem, $n$ parties in a distributed system, up to $t$ of which may be corrupted by a Byzantine adversary, need to output vectors that are close to each other and that lie inside the convex hull of all non-corrupted input vectors. We assume that nodes communicate in a fully-connected authenticated network and analyze synchronous and asynchronous communication models. The focus of this work is on the contraction factor of approximate agreement protocols.\n  The first multidimensional approximate agreement protocols had a contraction rate of $1-1/n$(VG, PODC'13) and $\\sqrt[d]{1/2}$(MH, STOC'13). While a rate below $1$ is sufficient for convergence, it is not suffic",
+      "pdf_link": "https://arxiv.org/pdf/2609.01490.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.01490",
+      "submission_date": "2026-09-02T04:00:00+00:00",
+      "conference": "SC'",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-09-02T10:35:23.451732+00:00"
+    },
+    {
+      "forum_id": "2609.00837",
+      "paper_number": -1,
+      "title": "Breaking Cycles for Scalable Fair Ordering in Blockchain Systems",
+      "authors": [
+        "Jinchun He, Wangjie Qiu, Yizhong Liu, Shengda Zhuo, Kwok-Yan Lam"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2609.00837v1 Announce Type: new \nAbstract: In blockchain systems, transaction order directly determines financial outcomes: unfair ordering enables front-running and sandwich attacks that have extracted over \\$686M from Ethereum users. Current fair-ordering protocols aggregate pairwise receive-order evidence from replicas. Under contention or adversarial manipulation, however, Condorcet cycles force them into global strongly connected component (SCC) condensation, causing delays, coarse batches, and scaling failures.\n  We present FlashOrder, a deterministic fair-ordering engine that localizes cyclic ambiguity before it propagates across the batch. FlashOrder embeds pairwise preferences into one-dimensional canonical positions, clusters nearby transactions with a partition hypergraph,",
+      "pdf_link": "https://arxiv.org/pdf/2609.00837.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.00837",
+      "submission_date": "2026-09-02T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-09-02T10:35:23.451386+00:00"
     }
   ]
 }

@@ -1,54 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-09-01T11:03:48.162755+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-09-02T10:35:23.395193+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2608.30954",
+      "forum_id": "2609.01527",
       "paper_number": -1,
-      "title": "Clock-Gating Insertion Strategies on an Open-Source MSP430 Core: A Reproducible PPA Study and a Gate-Level Simulation Caveat",
+      "title": "Performance Characterization of SPEC CPU 2026 on AMD EPYC 9755 Processor",
       "authors": [
-        "Xingran Huang, Qiming Guo, Jinwen Tang, Wenqi Jia, Dongzheng Wang"
+        "Kunal Kashyap, Rajiv Ramanathan, Shayantika Bhattacharya"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2608.30954v1 Announce Type: new \nAbstract: Clock gating, the standard technique for cutting dynamic power, is introduced either as hand-written behavioral clock gates at the register-transfer level (RTL) or as integrated clock-gating (ICG) cells inserted automatically during synthesis; the two are widely treated as interchangeable. In this paper we show, on a real open-source 16-bit microcontroller core (openMSP430) synthesized with a 32 nm standard-cell library, that they are not equivalent in practice: behavioral latch-based RTL gating is functionally correct in ideal RTL simulation (10/10 self-checking testcases, identical to the ungated baseline) yet fails at gate level: the gated multiplier result is never captured and reads zero, while tool-inserted ICG cells pass gate-level si",
-      "pdf_link": "https://arxiv.org/pdf/2608.30954.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.30954",
-      "submission_date": "2026-09-01T04:00:00+00:00",
+      "abstract": "arXiv:2609.01527v1 Announce Type: new \nAbstract: SPEC CPU 2026 is the first major update to the industry-standard CPU benchmark suite since 2017. This paper presents the first microarchitecture based performance characterization of the new suite, conducted on AMD EPYC \"Zen 5\", also the first SPEC CPU characterization study on this microarchitecture. Using a multi-lens methodology spanning pipeline efficiency, control flow behavior, cache hierarchy pressure, and instruction mix, we analyze both SPECrate and SPECspeed suites. We introduce scale analysis, comparing single-copy to full-system behavior to expose system-level bottlenecks invisible to conventional characterization. Our analysis reveals substantial behavioral diversity across the suite, and the multi-lens analysis identifies three",
+      "pdf_link": "https://arxiv.org/pdf/2609.01527.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.01527",
+      "submission_date": "2026-09-02T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-09-01T11:03:48.158624+00:00"
-    },
-    {
-      "forum_id": "2509.12458",
-      "paper_number": -1,
-      "title": "Neural 3D Object Reconstruction with Small-Scale Unmanned Aerial Vehicles",
-      "authors": [
-        "\\`Almos Veres-Vit\\`alyos, Filip Lemic, Daniel Johannes Bugelnig, Joan Bernaus Casades\\'us, Genis Castillo Gomez-Raya, Sergi Abadal, Bernhard Rinner, Xavier Costa-P\\'erez"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2509.12458v3 Announce Type: replace-cross \nAbstract: Miniaturized Uncrewed Aerial Vehicles (UAVs) can access indoor and hard-to-reach spaces, but severe constraints on payload and autonomy have limited their use in demanding tasks such as high-quality 3D reconstruction. We introduce a novel system architecture that enables autonomous, high-fidelity 3D scanning of static objects with sub-100 gram UAVs. Our core innovation lies in a closed-loop active viewpoint selection framework specifically tailored for ultra-constrained micro-platforms, advancing beyond standard static or offline active reconstruction methods. The framework establishes a dual-reconstruction pipeline that creates a real-time (RT) feedback loop between data capture and flight control. A near-RT process uses Structure",
-      "pdf_link": "https://arxiv.org/pdf/2509.12458.pdf",
-      "forum_link": "https://arxiv.org/abs/2509.12458",
-      "submission_date": "2026-09-01T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-09-01T11:03:48.158756+00:00"
+      "score": 4.5,
+      "updated_at": "2026-09-02T10:35:23.391939+00:00"
     }
   ]
 }
