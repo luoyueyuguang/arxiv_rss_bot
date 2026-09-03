@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-09-02T10:35:27.001017+00:00",
-  "paper_count": 441,
+  "last_updated": "2026-09-03T10:38:53.505250+00:00",
+  "paper_count": 444,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1182,6 +1182,29 @@
       "ratings": [],
       "score": 60.0,
       "updated_at": "2026-07-21T08:54:17.398103+00:00"
+    },
+    {
+      "forum_id": "2603.08003",
+      "paper_number": -1,
+      "title": "SafarDB: FPGA-Accelerated Distributed Transactions via Replicated Data Types",
+      "authors": [
+        "Javad Saberlatibari, Prithviraj Yuvaraj, Philip Brisk, Mohammad Sadoghi, Mohsen Lesani"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2603.08003v3 Announce Type: replace \nAbstract: Data replication is critical to data center design, ensuring high availability, scalability, and fault tolerance. However, replicas must be coordinated to maintain convergence and database integrity constraints under transactional workloads. Commutative Replicated Data Types (RDTs) provide convergence for conflict-free objects using relaxed consistency, and Well-coordinated Replicated Data Types (WRDTs) provide convergence and integrity for general objects using a hybrid model, relaxed when possible and strong when necessary. While state-of-the-art RDT hardware acceleration uses Remote Direct Memory Access (RDMA), recent data center architectures increasingly leverage FPGAs as application accelerators to achieve lower latency and higher ",
+      "pdf_link": "https://arxiv.org/pdf/2603.08003.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.08003",
+      "submission_date": "2026-09-03T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 59.5,
+      "updated_at": "2026-09-03T10:38:49.616351+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-126",
@@ -2364,29 +2387,6 @@
       "updated_at": "2026-07-21T08:54:22.933996+00:00"
     },
     {
-      "forum_id": "2607.02401",
-      "paper_number": -1,
-      "title": "FlintKV: A Fast Durable Storage Engine for Modern Databases",
-      "authors": [
-        "Sergey Egorov (Royal Holloway, University of London, Egham, United Kingdom, University of Surrey, Guildford, United Kingdom), Gregory Chockler (University of Surrey, Guildford, United Kingdom), Brijesh Dongol (University of Surrey, Guildford, United Kingdom), Dan O'Keeffe (Royal Holloway, University of London, Egham, United Kingdom), Sadegh Keshavarzi (University of Surrey, Guildford, United Kingdom)"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.02401v2 Announce Type: replace \nAbstract: Byte-addressable non-volatile memory (NVM) offers an opportunity to rethink storage engine architectures. While recent NVM key-value stores achieve high throughput for ingestion and point lookups, they omit or under-specify the support for the richer interface guarantees required by modern databases. Production key-value engines (e.g., RocksDB) provide point-in-time snapshots, consistent iterators, and atomic batches-features essential for implementing transactions and concurrency control. We present FlintKV, an NVM-optimized skiplist-based storage engine that natively supports the full API of production key-value stores. FlintKV supports both atomic batch writes and snapshot-consistent iteration efficiently while guaranteeing durable li",
-      "pdf_link": "https://arxiv.org/pdf/2607.02401.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.02401",
-      "submission_date": "2026-09-02T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 37.0,
-      "updated_at": "2026-09-02T10:35:23.792278+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-20",
       "paper_number": 20,
       "title": "Checkmate: Zero Performance Overhead Model Checkpointing via Network Gradient Replication",
@@ -3478,6 +3478,29 @@
       "updated_at": "2026-07-21T08:54:22.930905+00:00"
     },
     {
+      "forum_id": "2609.01975",
+      "paper_number": -1,
+      "title": "RT-HiSS: Ray Tracing Accelerated High Dimensional Vector Similarity Searches",
+      "authors": [
+        "Revanth Reddy Munugala, Michael Gowanlock"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.01975v1 Announce Type: new \nAbstract: Recent GPU generations include special-purpose ray tracing (RT) cores for graphics applications. While RT cores are primarily used for rendering, recent works show they can be leveraged for general-purpose tasks, including similarity searches. However, existing approaches do not support datasets exceeding three dimensions. In this work, we propose RT-HiSS, the first exact GPU RT-core-based similarity search algorithm for high-dimensional datasets. GPU similarity search often scales poorly for large datasets with substantial search distances. To address this, RT-HiSS uses RT cores for fast index construction and searches, followed by candidate refinement on CUDA cores. We introduce a two-pass approach to estimate an upper bound on result size",
+      "pdf_link": "https://arxiv.org/pdf/2609.01975.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.01975",
+      "submission_date": "2026-09-03T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 32.5,
+      "updated_at": "2026-09-03T10:38:49.615218+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-41",
       "paper_number": 41,
       "title": "Count-Based Abstractions for Performance Verification of Contention Points",
@@ -4519,6 +4542,29 @@
       "ratings": [],
       "score": 23.5,
       "updated_at": "2026-07-21T08:54:22.927860+00:00"
+    },
+    {
+      "forum_id": "2607.04676",
+      "paper_number": -1,
+      "title": "SpCCL: A Sparsity-Aware Collective Communication Library for GPU Platforms",
+      "authors": [
+        "Lannie Dalton Hough, Emir Gencer, Hoffmann Muki, Abhinav Bhatele"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.04676v2 Announce Type: replace \nAbstract: Collective communication is essential to high performance computing and machine learning workloads, yet libraries such as NCCL do not exploit sparsity in message payloads. Sending only nonzero values can reduce network traffic, but explicitly handling sparsity introduces challenges such as compression and decompression overheads. We address these challenges with sparsity-exploiting versions of all-gather, reduce-scatter, and all-reduce collectives. Our implementations use a new bitvector-based format, Pici, designed for low space overhead and fast GPU-based compression and decompression. Further, our collective algorithms adapt to the degree of sparsity in data, modifying data representations during the course of the collective. At 99% i",
+      "pdf_link": "https://arxiv.org/pdf/2607.04676.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.04676",
+      "submission_date": "2026-09-03T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 23.0,
+      "updated_at": "2026-09-03T10:38:49.616574+00:00"
     },
     {
       "forum_id": "usenix-osdi26-82",
@@ -5577,6 +5623,29 @@
       "updated_at": "2026-07-21T08:54:22.936410+00:00"
     },
     {
+      "forum_id": "2609.02876",
+      "paper_number": -1,
+      "title": "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs",
+      "authors": [
+        "Alessio Spurio Mancini"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.02876v1 Announce Type: cross \nAbstract: Ordinary differential equations (ODEs) underlie models in science and engineering, and many applications need derivatives of their solutions with respect to parameters. Ensembles of independent trajectories suit graphics processing units (GPUs), but current GPU software forces a trade-off: the fastest ensemble solvers cannot be differentiated in reverse mode at the speed they solve, and the solvers built for differentiation solve more slowly. No single tool has yet offered a reverse-mode gradient at the speed of a fused-kernel solve.\n  We present GRADSOLVE, an open-source JAX library for solving and reverse-mode differentiating low-dimensional ODE ensembles on NVIDIA GPUs. It records the steps an adaptive solver accepts and differentiates ",
+      "pdf_link": "https://arxiv.org/pdf/2609.02876.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.02876",
+      "submission_date": "2026-09-03T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-09-03T10:38:49.616179+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-5",
       "paper_number": 5,
       "title": "Simple Is Better: Multiplication May Be All You Need for LLM Request Scheduling",
@@ -5901,6 +5970,29 @@
       "ratings": [],
       "score": 13.0,
       "updated_at": "2026-07-21T08:54:26.742179+00:00"
+    },
+    {
+      "forum_id": "2604.20819",
+      "paper_number": -1,
+      "title": "Stream-CQSA: Exact Out-of-Memory Recovery for Attention",
+      "authors": [
+        "Yiming Bian, Joshua M. Akey"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2604.20819v2 Announce Type: replace-cross \nAbstract: Long-context large language models are limited not only by attention cost but also by out-of-memory (OOM) failures. A selected attention call may not fit in available device memory even when the kernel is optimized. Exact and approximate attention methods reduce memory use, but every fixed implementation still has a device-specific capacity boundary. We introduce Stream-CQSA, an attention-level OOM recovery framework based on CQS decomposition, derived from the theory of cyclic quorum sets (CQS). Stream-CQSA recursively partitions an infeasible attention call into independent subsequence tasks, executes each with a compatible inner kernel, and recomposes the local statistics to recover the full attention output. This recovery is ex",
+      "pdf_link": "https://arxiv.org/pdf/2604.20819.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.20819",
+      "submission_date": "2026-09-03T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.5,
+      "updated_at": "2026-09-03T10:38:49.616700+00:00"
     },
     {
       "forum_id": "usenix-osdi26-72",
@@ -6322,6 +6414,29 @@
       "updated_at": "2026-07-21T08:54:26.744089+00:00"
     },
     {
+      "forum_id": "2608.24067",
+      "paper_number": -1,
+      "title": "A Feature-Major Codebook for Memory-Efficient Sparse-Binary Self-Organizing Maps: Scaling a MEDLINE Atlas to 1.05 Million Neurons on a Single Consumer GPU",
+      "authors": [
+        "Andrew James Amos"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.24067v2 Announce Type: replace-cross \nAbstract: Building a self-organising map at MEDLINE scale has been impractical: the best-matching-unit (BMU) search that dominates training is bound by the bandwidth needed to read the codebook every epoch. I show that this bottleneck is largely an artefact of codebook layout. Storing it feature-major with each feature's weights contiguous, W[v.M+i], recasts the search as a tiled sparse-dense product in which every loaded weight column is reused across a tile of samples. Varying only the layout, with implementation, precision and update rule held fixed, accelerates the BMU search by 4.5-8.5x, and because an exact-argmin BMU is invariant to codebook layout, this costs nothing: held-out quantisation error agrees with a cuSPARSE baseline to wit",
+      "pdf_link": "https://arxiv.org/pdf/2608.24067.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.24067",
+      "submission_date": "2026-09-03T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.5,
+      "updated_at": "2026-09-03T10:38:49.616848+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-43",
       "paper_number": 43,
       "title": "Eywa: Automating Model-Based Testing using LLMs",
@@ -6367,52 +6482,6 @@
       "ratings": [],
       "score": 11.5,
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
-    },
-    {
-      "forum_id": "2609.00954",
-      "paper_number": -1,
-      "title": "Influence of Logging Frameworks on Bind9",
-      "authors": [
-        "Max Schr\\\"otter, Hannes Signer, Bettina Schnor"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.00954v1 Announce Type: cross \nAbstract: Host-based Intrusion Prevention Systems (IPS) rely on application logs to detect and block malicious activity. However, on modern high-speed networks the logging subsystem itself becomes a bottleneck: an attacker can hide traces simply by generating enough traffic to overwhelm the application's log pipeline, dropping crucial traces. In this work, we show that widely deployed setups such as Fail2Ban monitoring BIND9 can be defeated with less than 65 Mbps of DNS traffic. Further, we show that when replacing core components of the IPS architecture with their higher-performance equivalent, iptables with eBPF and regex matching with Hyperscan, the logging backends themselves become the bottleneck. Therefore, we present FIPS, a new IPC designed ",
-      "pdf_link": "https://arxiv.org/pdf/2609.00954.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.00954",
-      "submission_date": "2026-09-02T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-09-02T10:35:23.733648+00:00"
-    },
-    {
-      "forum_id": "2609.01490",
-      "paper_number": -1,
-      "title": "Faster Convergence of Multidimensional Approximate Agreement via Smallest Enclosing Balls",
-      "authors": [
-        "Darya Melnyk"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.01490v1 Announce Type: new \nAbstract: This work considers the multidimensional approximate agreement problem. In this problem, $n$ parties in a distributed system, up to $t$ of which may be corrupted by a Byzantine adversary, need to output vectors that are close to each other and that lie inside the convex hull of all non-corrupted input vectors. We assume that nodes communicate in a fully-connected authenticated network and analyze synchronous and asynchronous communication models. The focus of this work is on the contraction factor of approximate agreement protocols.\n  The first multidimensional approximate agreement protocols had a contraction rate of $1-1/n$(VG, PODC'13) and $\\sqrt[d]{1/2}$(MH, STOC'13). While a rate below $1$ is sufficient for convergence, it is not suffic",
-      "pdf_link": "https://arxiv.org/pdf/2609.01490.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.01490",
-      "submission_date": "2026-09-02T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-09-02T10:35:23.791144+00:00"
     },
     {
       "forum_id": "usenix-osdi26-63",
@@ -6699,6 +6768,29 @@
       "ratings": [],
       "score": 7.0,
       "updated_at": "2026-07-21T08:54:22.939797+00:00"
+    },
+    {
+      "forum_id": "2609.02109",
+      "paper_number": -1,
+      "title": "MeanField Surrogate Modeling for Scalable Runtime Scheduling of Concurrent Heterogeneous AI Inference on Shared GPUs",
+      "authors": [
+        "Youssef Ennouri, Soonhoi Ha"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.02109v1 Announce Type: new \nAbstract: Deploying heterogeneous AI models concurrently on a shared GPU introduces resource contention that complicates runtime scheduling. While surrogate models avoid costly online benchmarking, their profiling requirements typically grow combinatorially with the number of co-running models, limiting scalability. We propose a MeanField surrogate that predicts per-model performance from local configuration and aggregate GPU state rather than explicitly modeling all joint interactions. Experiments on concurrent LLM and vision workloads across $N \\in \\{2,3,4,5,6\\}$ show high predictive accuracy ($R^2 \\approx 0.96$) with an empirical sample budget that grows approximately linearly in $N$, in contrast to the combinatorial cost of fully joint profiling. ",
+      "pdf_link": "https://arxiv.org/pdf/2609.02109.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.02109",
+      "submission_date": "2026-09-03T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 6.5,
+      "updated_at": "2026-09-03T10:38:49.615247+00:00"
     },
     {
       "forum_id": "usenix-osdi26-98",
@@ -7034,29 +7126,6 @@
       "ratings": [],
       "score": 5.0,
       "updated_at": "2026-07-21T08:54:26.740416+00:00"
-    },
-    {
-      "forum_id": "2609.00400",
-      "paper_number": -1,
-      "title": "Client-side transparent caching for remote ROOT data analysis",
-      "authors": [
-        "Dmytro Kovalskyi, Jan Eysermans, Mariarosaria D'Alfonso, Christoph Paus"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.00400v1 Announce Type: new \nAbstract: High-energy physics analyses often process the same data as physicists refine algorithms and test new ideas. With data increasingly read from remote storage, each iteration is subject to network latency and depends on network bandwidth and shared-storage throughput, which can vary substantially under load. We present uCache (xrd-ucache), a transparent client-side cache implemented as an XRootD client plugin that requires neither server-side deployment nor changes to analysis code. It uses local storage on the analysis machine as a cache layer between the network and memory. The cache stores only the data actually read by an analysis. It can also rebuild cached data into a branch-aligned, recompressed form, eliminating most of the input/outpu",
-      "pdf_link": "https://arxiv.org/pdf/2609.00400.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.00400",
-      "submission_date": "2026-09-02T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.5,
-      "updated_at": "2026-09-02T10:35:23.790010+00:00"
     },
     {
       "forum_id": "dblp-eurosys26-23",

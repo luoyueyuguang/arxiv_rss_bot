@@ -1,13 +1,14 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-09-02 10:35:27 UTC
-- **Total Filtered Papers**: 2
-- **Displaying**: 2 (arxiv: 2)
+- **Last Updated**: 2026-09-03 10:38:53 UTC
+- **Total Filtered Papers**: 3
+- **Displaying**: 3 (arxiv: 3)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [VARA: A Voltage-Aware ReRAM-Based Accelerator for Energy-Efficient Computing](https://arxiv.org/abs/2609.00421) | `ARXIV` | 1.0 |
-| 2 | [FALCON: Fault-Tolerant Magnetic Tunnel Junction-Based In-Memory Stochastic Architecture for Reliability-Critical Edge AI Applications](https://arxiv.org/abs/2609.00701) | `ARXIV` | 1.0 |
+| 1 | [Batch Before You Time: Decision-Scoped Proxy Execution for Timing-Aware Logic Rewriting](https://arxiv.org/abs/2609.02470) | `ARXIV` | 2.5 |
+| 2 | [An Emerging NVM-Based On-Chip Training Architecture with Non-Ideality Mitigation Through Bipolar Weight Distributions](https://arxiv.org/abs/2609.01948) | `ARXIV` | 1.0 |
+| 3 | [Dictionary-Guided Mutation Operators for Automated HDL Repair](https://arxiv.org/abs/2609.01775) | `ARXIV` | 1.0 |

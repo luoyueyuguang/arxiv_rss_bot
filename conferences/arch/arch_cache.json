@@ -1,31 +1,54 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-09-02T10:35:23.395193+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-09-03T10:38:48.921998+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2609.01527",
+      "forum_id": "2609.02219",
       "paper_number": -1,
-      "title": "Performance Characterization of SPEC CPU 2026 on AMD EPYC 9755 Processor",
+      "title": "Hardware-Accelerated Instance Segmentation for Resource-Constrained Space Robotics with Criticality Analysis",
       "authors": [
-        "Kunal Kashyap, Rajiv Ramanathan, Shayantika Bhattacharya"
+        "Siddhant Shete, Hilmi Dogu K\\\"uc\\\"uker, Udo Frese, Frank Kirchner"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2609.01527v1 Announce Type: new \nAbstract: SPEC CPU 2026 is the first major update to the industry-standard CPU benchmark suite since 2017. This paper presents the first microarchitecture based performance characterization of the new suite, conducted on AMD EPYC \"Zen 5\", also the first SPEC CPU characterization study on this microarchitecture. Using a multi-lens methodology spanning pipeline efficiency, control flow behavior, cache hierarchy pressure, and instruction mix, we analyze both SPECrate and SPECspeed suites. We introduce scale analysis, comparing single-copy to full-system behavior to expose system-level bottlenecks invisible to conventional characterization. Our analysis reveals substantial behavioral diversity across the suite, and the multi-lens analysis identifies three",
-      "pdf_link": "https://arxiv.org/pdf/2609.01527.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.01527",
-      "submission_date": "2026-09-02T04:00:00+00:00",
+      "abstract": "arXiv:2609.02219v1 Announce Type: cross \nAbstract: Autonomous lunar missions require real-time per- ception under three coupled constraints: extreme low-light conditions, limited onboard compute, and radiation-induced hardware faults that can silently corrupt inference. We present a deployment-oriented instance segmentation framework for resource-constrained lunar robotics that jointly addresses quan- tization calibration and system-level fault exposure under strict compute constraints. First, we introduce Activation Variance Informative Sampling (AVIS), a label-free calibration strategy that deterministically selects calibration samples based on activation variance statistics. Second, we deploy a YOLO-based segmentation model on a Deep Learning Processor Unit (DPU) with architectural modi",
+      "pdf_link": "https://arxiv.org/pdf/2609.02219.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.02219",
+      "submission_date": "2026-09-03T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 4.5,
-      "updated_at": "2026-09-02T10:35:23.391939+00:00"
+      "score": 2.0,
+      "updated_at": "2026-09-03T10:38:48.918036+00:00"
+    },
+    {
+      "forum_id": "2609.01683",
+      "paper_number": -1,
+      "title": "FORGE: Forward-Only Test-Time Adaptation for Integer-Only Vision Models on Microcontrollers",
+      "authors": [
+        "Muhammad Rehan, Haider Ali, Muhammad Ali Munir, Moaz Amjad"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2609.01683v1 Announce Type: cross \nAbstract: Vision models deployed on microcontrollers (MCUs) are quantized to integer-only arithmetic and run in inference-only runtimes that do not carry the machinery backpropagation needs: the standard tool for adapting a model to the distribution shift (sensor noise, blur, lighting) it meets in the field. Existing forward-only test-time adaptation (TTA) methods either run only on server- or edge-GPU-class models (not true microcontroller integer execution), or require the batch-normalization (BN) layers that integer deployment fuses away. We present a forward-only TTA method that operates on deployed, BN-folded, integer-only convolutional networks. The key observation is that fusing BN into the preceding convolution, a mandatory step for integer ",
+      "pdf_link": "https://arxiv.org/pdf/2609.01683.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.01683",
+      "submission_date": "2026-09-03T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-09-03T10:38:48.917947+00:00"
     }
   ]
 }

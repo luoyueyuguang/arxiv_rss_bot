@@ -1,146 +1,77 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-09-02T10:35:23.696522+00:00",
-  "paper_count": 6,
+  "last_updated": "2026-09-03T10:38:49.534138+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2609.00442",
+      "forum_id": "2509.23722",
       "paper_number": -1,
-      "title": "DRLM: Deep Reinforcement Learning-Based LLM Query Orchestration in Edge Environments",
+      "title": "OctoPipe: Reducing Pipeline Bubbles for Heterogeneous Models via Co-Optimizing Partitioning, Placement, and Scheduling",
       "authors": [
-        "Reza Farahani, Zoha Azimi Ourimi, Mario Colosi, Lauri Loven, Christian Timmerer, Schahram Dustdar"
+        "Jihu Guo, Tenghui Ma, Wei Gao, Peng Sun, Xun Chen, Jiaxing Li, Zhisheng Ye, Yuyang Jin, Dahua Lin"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.00442v1 Announce Type: new \nAbstract: Large language model (LLM) services increasingly process heterogeneous queries with diverse latency, accuracy, and resource requirements. While edge deployment reduces response time, the heterogeneity of devices and the diversity of model families, parameter scales, and quantization levels make efficient LLM query orchestration challenging. This paper introduces DRLM, a Deep Reinforcement Learning-based LLM query orchestration framework in edge environments. DRLM integrates two lightweight predictors: (i) a class-conditioned quality estimator that maps queries to semantic categories and infers model performance, and (ii) a feature-driven latency predictor that estimates inference time across model-device configurations. These predictions, co",
-      "pdf_link": "https://arxiv.org/pdf/2609.00442.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.00442",
-      "submission_date": "2026-09-02T04:00:00+00:00",
+      "abstract": "arXiv:2509.23722v3 Announce Type: replace \nAbstract: Pipeline parallelism is widely used to train large language models (LLMs). However, increasing heterogeneity in model architectures exacerbates pipeline bubbles, thereby reducing training efficiency. Prior approaches typically optimize a single phase of the pipeline schedule (i.e., partitioning, placement, or scheduling), leaving substantial pipeline bubbles. While promising, co-optimization poses three key challenges: (1) complex performance modeling, (2) a combinatorial search space, and (3) irregular execution orders. To address these challenges, we propose OctoPipe, a pipeline parallelism system to jointly optimize partitioning, placement, and scheduling. First, we build a graph-based pipeline simulator to model heterogeneous pipelin",
+      "pdf_link": "https://arxiv.org/pdf/2509.23722.pdf",
+      "forum_link": "https://arxiv.org/abs/2509.23722",
+      "submission_date": "2026-09-03T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 22.0,
-      "updated_at": "2026-09-02T10:35:23.451267+00:00"
+      "score": 36.0,
+      "updated_at": "2026-09-03T10:38:48.970242+00:00"
     },
     {
-      "forum_id": "2609.01025",
+      "forum_id": "2609.01864",
       "paper_number": -1,
-      "title": "MakoXC: Rearchitecting DFT Exchange-Correlation with Matrix-Aligned and Knowledge-Organized Sparsity",
+      "title": "CREDIT: Cost-guided Reduction-reuse with Efficient DSMEM Inter-CTA Tiling",
       "authors": [
-        "Haozhi Han, Fusong Ju, Jing Bai, Ruge Zhang, Xiang Zhao, Liang Yuan, Yunquan Zhang, Ting Cao, Liu Yunxin, Yifeng Chen, Kun Li"
+        "Zhengxiong Li, Tsung-Wei Huang, Umit Ogras"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.01025v1 Announce Type: new \nAbstract: Density Functional Theory (DFT) is indispensable for materials science and drug discovery, yet the exchange--correlation (XC) evaluation remains a major bottleneck due to its cubic scaling. Although linear-scaling methods exploit electronic nearsightedness to reduce asymptotic complexity, they produce irregular sparse workloads that hide implicit sparsity and prevent efficient use of modern AI accelerators. We present MakoXC, a modular matrix-aligned XC evaluation engine that rearchitects nearsightedness-induced sparsity into regular, accelerator-friendly computations. MakoXC co-designs three key techniques: (1) Matrix-Aligned Cells reorganize nearsightedness-induced interactions into dense, accelerator-aligned data clusters; (2) Sparsity-Gu",
-      "pdf_link": "https://arxiv.org/pdf/2609.01025.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.01025",
-      "submission_date": "2026-09-02T04:00:00+00:00",
+      "abstract": "arXiv:2609.01864v1 Announce Type: new \nAbstract: NVIDIA distributed shared memory (DSMEM) enables direct shared-memory access within a thread block cluster. However, cluster synchronization, remote access, and resource costs make it difficult to determine when DSMEM improves performance. To fill this gap, we propose CREDIT, a cost-guided framework that identifies DSMEM-profitable workload patterns, predicts their profitability range, and delivers consistent speedups across diverse workloads. CREDIT combines three innovations: (1) a profiling-driven characterization that identifies workload patterns likely to benefit from DSMEM; (2) a transformation that applies DSMEM to reduction-reuse workloads; (3) a cost model based on profiling data, to determine its profitability range. Evaluations on",
+      "pdf_link": "https://arxiv.org/pdf/2609.01864.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.01864",
+      "submission_date": "2026-09-03T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-09-02T10:35:23.451613+00:00"
+      "score": 35.0,
+      "updated_at": "2026-09-03T10:38:48.969667+00:00"
     },
     {
-      "forum_id": "2609.00392",
+      "forum_id": "2609.02238",
       "paper_number": -1,
-      "title": "Operation-Type-Aware Client Routing for Leader-Based Consensus Datastores",
+      "title": "Federated Learning on the American Science Cloud using APPFL",
       "authors": [
-        "Sri Saran Balaji Vellore Rajakumar, James Thompson"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.00392v1 Announce Type: new \nAbstract: Leader-based consensus datastores (etcd, ZooKeeper) face two competing routing goals: spread load evenly across members, and route operations to the member whose protocol role matches the operation. Writes must commit through the leader, so sending them elsewhere adds a forwarding hop. Linearizable reads need only a lightweight leader confirmation before any member can serve them locally. The upstream etcd client uses gRPC's round_robin balancer, distributing reads and writes uniformly across cluster members. An operation-aware client resolves this by pinning writes to the leader and distributing reads across the healthy read pool. In steady state on a 3-node etcd cluster (80/20 read/write mix, 5 trials), this lowers write P50 by 29% and rai",
-      "pdf_link": "https://arxiv.org/pdf/2609.00392.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.00392",
-      "submission_date": "2026-09-02T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-09-02T10:35:23.451134+00:00"
-    },
-    {
-      "forum_id": "2609.00817",
-      "paper_number": -1,
-      "title": "Characterizing the Scalability and Performance of Large-Scale AI Training Under Multi-Tenancy",
-      "authors": [
-        "Jacopo Raffi, Thomas Pasquali, Lorenzo Piarulli, Filippo Spiga, Marco Faltelli, Andreas Herten, Domenico Siracusa, Daniele De Sensi, Flavio Vella"
-      ],
-      "keywords": [
-        "cs.DC",
-        "Supercomputing"
-      ],
-      "abstract": "arXiv:2609.00817v1 Announce Type: new \nAbstract: Characterising AI workload performance on modern HPC systems requires understanding both their scalability in isolation and their behaviour under concurrent execution. However, the interplay among parallelisation strategies, network congestion, compute capability, and interconnect technologies remains poorly understood. This work investigates the performance and scalability of AI models up to 2400 GPUs. We quantify the communication overheads and their impact across different interconnects by evaluating scale-up, scale-out, and rack-scale configurations under multiple allocation schemes. Finally, we study how multiple concurrent training jobs interfere with each other by designing a realistic noise model. We design a benchmark suite of AI mo",
-      "pdf_link": "https://arxiv.org/pdf/2609.00817.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.00817",
-      "submission_date": "2026-09-02T04:00:00+00:00",
-      "conference": "Supercomputing",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 6.5,
-      "updated_at": "2026-09-02T10:35:23.451331+00:00"
-    },
-    {
-      "forum_id": "2609.01490",
-      "paper_number": -1,
-      "title": "Faster Convergence of Multidimensional Approximate Agreement via Smallest Enclosing Balls",
-      "authors": [
-        "Darya Melnyk"
+        "Zilinghan Li, Abhijit Chunduru, Harinarayan Krishnan, Eric Chagnon, Peter Nugent, Kibaek Kim, Ravi Madduri"
       ],
       "keywords": [
         "cs.DC",
         "SC'"
       ],
-      "abstract": "arXiv:2609.01490v1 Announce Type: new \nAbstract: This work considers the multidimensional approximate agreement problem. In this problem, $n$ parties in a distributed system, up to $t$ of which may be corrupted by a Byzantine adversary, need to output vectors that are close to each other and that lie inside the convex hull of all non-corrupted input vectors. We assume that nodes communicate in a fully-connected authenticated network and analyze synchronous and asynchronous communication models. The focus of this work is on the contraction factor of approximate agreement protocols.\n  The first multidimensional approximate agreement protocols had a contraction rate of $1-1/n$(VG, PODC'13) and $\\sqrt[d]{1/2}$(MH, STOC'13). While a rate below $1$ is sufficient for convergence, it is not suffic",
-      "pdf_link": "https://arxiv.org/pdf/2609.01490.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.01490",
-      "submission_date": "2026-09-02T04:00:00+00:00",
+      "abstract": "arXiv:2609.02238v1 Announce Type: new \nAbstract: The American Science Cloud (AmSC), established under the Genesis Mission of the U.S. Department of Energy (DOE), aims to integrate DOE high-performance computing systems, experimental facilities, and data resources into a single, coordinated, AI-driven discovery platform. AmSC's early services focus on curated artifacts, such as gated inference access to hosted models, experiment tracking, and function execution across computing facilities. However, what these services lack is a means to train a model across organizational boundaries where data cannot be centralized due to policy, privacy, or scale. This is, by definition, a use case for federated learning (FL) and a growing class of scientific AI. In this paper, we show that this gap can be",
+      "pdf_link": "https://arxiv.org/pdf/2609.02238.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.02238",
+      "submission_date": "2026-09-03T04:00:00+00:00",
       "conference": "SC'",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-09-02T10:35:23.451732+00:00"
-    },
-    {
-      "forum_id": "2609.00837",
-      "paper_number": -1,
-      "title": "Breaking Cycles for Scalable Fair Ordering in Blockchain Systems",
-      "authors": [
-        "Jinchun He, Wangjie Qiu, Yizhong Liu, Shengda Zhuo, Kwok-Yan Lam"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.00837v1 Announce Type: new \nAbstract: In blockchain systems, transaction order directly determines financial outcomes: unfair ordering enables front-running and sandwich attacks that have extracted over \\$686M from Ethereum users. Current fair-ordering protocols aggregate pairwise receive-order evidence from replicas. Under contention or adversarial manipulation, however, Condorcet cycles force them into global strongly connected component (SCC) condensation, causing delays, coarse batches, and scaling failures.\n  We present FlashOrder, a deterministic fair-ordering engine that localizes cyclic ambiguity before it propagates across the batch. FlashOrder embeds pairwise preferences into one-dimensional canonical positions, clusters nearby transactions with a partition hypergraph,",
-      "pdf_link": "https://arxiv.org/pdf/2609.00837.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.00837",
-      "submission_date": "2026-09-02T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-09-02T10:35:23.451386+00:00"
+      "score": 2.0,
+      "updated_at": "2026-09-03T10:38:48.969847+00:00"
     }
   ]
 }

@@ -1,54 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-09-02T10:35:27.060925+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-09-03T10:38:53.564142+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2609.00421",
+      "forum_id": "2609.02470",
       "paper_number": -1,
-      "title": "VARA: A Voltage-Aware ReRAM-Based Accelerator for Energy-Efficient Computing",
+      "title": "Batch Before You Time: Decision-Scoped Proxy Execution for Timing-Aware Logic Rewriting",
       "authors": [
-        "Peng Dang, Yintao He, Huawei Li"
+        "Pujun Su (Fudan University)"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.00421v1 Announce Type: new \nAbstract: ReRAM-based in-memory computing (IMC) architectures are widely regarded as a promising approach to alleviating the computational bottleneck of conventional architectures. Since ReRAM crossbars perform matrix-vector multiplication (MVM) in the analog domain, their computational energy consumption is highly dependent on weight and activation distributions. However, most existing ReRAM accelerators focus primarily on weight optimization while paying limited attention to the impact of activations on computational energy consumption, leaving the energy-saving potential of activation sparsity largely underexploited. In this paper, we propose a voltage-aware ReRAM-based accelerator (VARA), along with its accompanying design methodology. Specificall",
-      "pdf_link": "https://arxiv.org/pdf/2609.00421.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.00421",
-      "submission_date": "2026-09-02T04:00:00+00:00",
+      "abstract": "arXiv:2609.02470v1 Announce Type: new \nAbstract: Standard Delay Format (SDF)-annotated switching simulation distinguishes delay-dependent activity among functionally equivalent rewrites, but evaluating every candidate repeats timing, compilation, and replay. A zero-delay proxy can remove timed evaluations, but generating that proxy candidate by candidate can cost more than the timed work it saves. We present Batch Before You Time (BBYT), which compiles all candidates of one rewrite decision into one scoped zero-delay image and either commits a well-separated proxy winner or invokes the unchanged timed chain. Across 12 counterbalanced holdout sequences, BBYT reduces complete candidate-selection time by 18.05% on average; the design-level reductions are 5.84% and 30.25%, with both confidence",
+      "pdf_link": "https://arxiv.org/pdf/2609.02470.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.02470",
+      "submission_date": "2026-09-03T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-09-02T10:35:27.057534+00:00"
+      "score": 2.5,
+      "updated_at": "2026-09-03T10:38:53.560473+00:00"
     },
     {
-      "forum_id": "2609.00701",
+      "forum_id": "2609.01948",
       "paper_number": -1,
-      "title": "FALCON: Fault-Tolerant Magnetic Tunnel Junction-Based In-Memory Stochastic Architecture for Reliability-Critical Edge AI Applications",
+      "title": "An Emerging NVM-Based On-Chip Training Architecture with Non-Ideality Mitigation Through Bipolar Weight Distributions",
       "authors": [
-        "Farzad Razi, Mehran Moghadam, Sercan Aygun, M. Hassan Najafi, Marc Riedel"
+        "Peng Dang, Youna Huang, Yintao He, Huawei Li"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.00701v1 Announce Type: cross \nAbstract: As modern data-centric applications such as neural inference and sensor-edge analytics expand, they increasingly encounter the von Neumann memory wall, suffering from excessive data movement overhead and stringent energy constraints. In-Memory Computing (IMC) utilizing emerging non-volatile technologies, such as Magnetic Tunnel Junctions (MTJs), promises to mitigate these bottlenecks. However, conventional binary radix-based IMC architectures suffer from excessive vulnerability to process-induced variations, restricted operating margins, and thermal noise. To bridge the gap between energy efficiency and computational reliability, this work proposes FALCON, a fault-tolerant, MTJ-based in-memory arithmetic architecture integrated with Stocha",
-      "pdf_link": "https://arxiv.org/pdf/2609.00701.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.00701",
-      "submission_date": "2026-09-02T04:00:00+00:00",
+      "abstract": "arXiv:2609.01948v1 Announce Type: new \nAbstract: The rapid advancement of deep learning has presented significant energy efficiency challenges to the conventional von Neumann architecture. In-memory computing (IMC) architectures based on emerging non-volatile memory (eNVM) are widely regarded as a promising solution for accelerating neural network training due to their high parallelism and low power consumption. However, the intrinsic non-idealities of eNVM devices can cause conductance updates to deviate from target values, thereby limiting the performance of on-chip training. To address this challenge, this paper presents a Non-ideality Optimized eNVM Accelerator (NOVA) architecture for on-chip training. Specifically, we first fabricate a two-dimensional (2D) ferroelectric field-effect t",
+      "pdf_link": "https://arxiv.org/pdf/2609.01948.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.01948",
+      "submission_date": "2026-09-03T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-09-02T10:35:27.057846+00:00"
+      "updated_at": "2026-09-03T10:38:53.560382+00:00"
+    },
+    {
+      "forum_id": "2609.01775",
+      "paper_number": -1,
+      "title": "Dictionary-Guided Mutation Operators for Automated HDL Repair",
+      "authors": [
+        "Maisha Mastora, Dean Sullivan"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.01775v1 Announce Type: cross \nAbstract: Automated repair of Hardware Description Language (HDL) designs remains challenging due to the large search space of candidate repairs and the strict syntactic and semantic constraints imposed by HDL grammars. Generic mutation strategies overwhelmingly generate syntactically invalid candidates that waste compilation and simulation budget, while synthesis-driven and template-based approaches impose their own constraints on generality and portability. In this paper, we propose a dictionary-guided HDL repair system that combines ANTLR-derived DUT-specific mutation vocabularies with a simulation-divergence fault localization (FL) module. The mutation operator applies category-constrained token substitutions, insertions, and deletions directly ",
+      "pdf_link": "https://arxiv.org/pdf/2609.01775.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.01775",
+      "submission_date": "2026-09-03T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-09-03T10:38:53.560633+00:00"
     }
   ]
 }

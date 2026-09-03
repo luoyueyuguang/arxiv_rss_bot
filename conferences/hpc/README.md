@@ -1,17 +1,14 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-09-02 10:35:23 UTC
-- **Total Filtered Papers**: 6
-- **Displaying**: 6 (arxiv: 6)
+- **Last Updated**: 2026-09-03 10:38:49 UTC
+- **Total Filtered Papers**: 3
+- **Displaying**: 3 (arxiv: 3)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [DRLM: Deep Reinforcement Learning-Based LLM Query Orchestration in Edge Environments](https://arxiv.org/abs/2609.00442) | `ARXIV` | 22.0 |
-| 2 | [MakoXC: Rearchitecting DFT Exchange-Correlation with Matrix-Aligned and Knowledge-Organized Sparsity](https://arxiv.org/abs/2609.01025) | `ARXIV` | 13.0 |
-| 3 | [Operation-Type-Aware Client Routing for Leader-Based Consensus Datastores](https://arxiv.org/abs/2609.00392) | `ARXIV` | 11.0 |
-| 4 | [Characterizing the Scalability and Performance of Large-Scale AI Training Under Multi-Tenancy](https://arxiv.org/abs/2609.00817) | `ARXIV` | 6.5 |
-| 5 | [Faster Convergence of Multidimensional Approximate Agreement via Smallest Enclosing Balls](https://arxiv.org/abs/2609.01490) | `ARXIV` | 3.0 |
-| 6 | [Breaking Cycles for Scalable Fair Ordering in Blockchain Systems](https://arxiv.org/abs/2609.00837) | `ARXIV` | 2.5 |
+| 1 | [OctoPipe: Reducing Pipeline Bubbles for Heterogeneous Models via Co-Optimizing Partitioning, Placement, and Scheduling](https://arxiv.org/abs/2509.23722) | `ARXIV` | 36.0 |
+| 2 | [CREDIT: Cost-guided Reduction-reuse with Efficient DSMEM Inter-CTA Tiling](https://arxiv.org/abs/2609.01864) | `ARXIV` | 35.0 |
+| 3 | [Federated Learning on the American Science Cloud using APPFL](https://arxiv.org/abs/2609.02238) | `ARXIV` | 2.0 |
