@@ -1,77 +1,146 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-09-03T10:38:49.534138+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-09-04T10:32:55.378247+00:00",
+  "paper_count": 6,
   "papers": [
     {
-      "forum_id": "2509.23722",
+      "forum_id": "2609.03562",
       "paper_number": -1,
-      "title": "OctoPipe: Reducing Pipeline Bubbles for Heterogeneous Models via Co-Optimizing Partitioning, Placement, and Scheduling",
+      "title": "JuPyLive: Seamless Migration of Jupyter Notebook Resources from Laptop to HPC",
       "authors": [
-        "Jihu Guo, Tenghui Ma, Wei Gao, Peng Sun, Xun Chen, Jiaxing Li, Zhisheng Ye, Yuyang Jin, Dahua Lin"
+        "Sima Attar-Khorasani, Matthias Lieber, Siavash Ghiasvand"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2509.23722v3 Announce Type: replace \nAbstract: Pipeline parallelism is widely used to train large language models (LLMs). However, increasing heterogeneity in model architectures exacerbates pipeline bubbles, thereby reducing training efficiency. Prior approaches typically optimize a single phase of the pipeline schedule (i.e., partitioning, placement, or scheduling), leaving substantial pipeline bubbles. While promising, co-optimization poses three key challenges: (1) complex performance modeling, (2) a combinatorial search space, and (3) irregular execution orders. To address these challenges, we propose OctoPipe, a pipeline parallelism system to jointly optimize partitioning, placement, and scheduling. First, we build a graph-based pipeline simulator to model heterogeneous pipelin",
-      "pdf_link": "https://arxiv.org/pdf/2509.23722.pdf",
-      "forum_link": "https://arxiv.org/abs/2509.23722",
-      "submission_date": "2026-09-03T04:00:00+00:00",
+      "abstract": "arXiv:2609.03562v1 Announce Type: new \nAbstract: This work introduces JuPyLive, a migration mechanism that enables seamless transition of Jupyter notebooks between local resources of user's workstation and remote resources of high-performance computing~(HPC) environments, while preserving the user experience. JuPyLive eliminates the underlying complexities of migration process, enabling users to freely choose among available local and remote resources, directly within the familiar Jupyter notebook environment via a single click. JuPyLive leverages ElasticNotebook to manage in-memory state migration, it automates resource allocation on HPC cluster and orchestrates required remote communication channels between the source and destination to enable a bidirectional migration. Furthermore, HPC ",
+      "pdf_link": "https://arxiv.org/pdf/2609.03562.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.03562",
+      "submission_date": "2026-09-04T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 36.0,
-      "updated_at": "2026-09-03T10:38:48.970242+00:00"
+      "score": 44.5,
+      "updated_at": "2026-09-04T10:32:54.959278+00:00"
     },
     {
-      "forum_id": "2609.01864",
+      "forum_id": "2608.23955",
       "paper_number": -1,
-      "title": "CREDIT: Cost-guided Reduction-reuse with Efficient DSMEM Inter-CTA Tiling",
+      "title": "Trust, but Verify: Rigorously Profiling Best-Effort High-Performance Computing for Digital Evolution",
       "authors": [
-        "Zhengxiong Li, Tsung-Wei Huang, Umit Ogras"
+        "Matthew Andres Moreno, Santiago Rodriguez Papa, Charles Ofria, Luis Zaman, Emily Dolson"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.01864v1 Announce Type: new \nAbstract: NVIDIA distributed shared memory (DSMEM) enables direct shared-memory access within a thread block cluster. However, cluster synchronization, remote access, and resource costs make it difficult to determine when DSMEM improves performance. To fill this gap, we propose CREDIT, a cost-guided framework that identifies DSMEM-profitable workload patterns, predicts their profitability range, and delivers consistent speedups across diverse workloads. CREDIT combines three innovations: (1) a profiling-driven characterization that identifies workload patterns likely to benefit from DSMEM; (2) a transformation that applies DSMEM to reduction-reuse workloads; (3) a cost model based on profiling data, to determine its profitability range. Evaluations on",
-      "pdf_link": "https://arxiv.org/pdf/2609.01864.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.01864",
-      "submission_date": "2026-09-03T04:00:00+00:00",
+      "abstract": "arXiv:2608.23955v2 Announce Type: replace-cross \nAbstract: Developments in high-performance computing (HPC) technology continue to drastically increase quantities of available processing power. In the context of digital evolution, this explosive growth offers opportunities to advance both hypothesis-driven explorations of multi-scale biological phenomena and application-driven evolutionary optimization targeting hard problem domains. A particular opportunity arises from emerging next-generation AI/ML hardware accelerator platforms, such as the 880,000-processor Cerebras Wafer-Scale Engine (WSE). Such hardware, however, constrains on-device data storage and movement --- a challenge compounded by vulnerability to failures arising over numerous device components. Best-effort relaxations that ",
+      "pdf_link": "https://arxiv.org/pdf/2608.23955.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.23955",
+      "submission_date": "2026-09-04T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-09-03T10:38:48.969667+00:00"
+      "score": 26.0,
+      "updated_at": "2026-09-04T10:32:54.959962+00:00"
     },
     {
-      "forum_id": "2609.02238",
+      "forum_id": "2609.01025",
       "paper_number": -1,
-      "title": "Federated Learning on the American Science Cloud using APPFL",
+      "title": "MakoXC: Rearchitecting DFT Exchange-Correlation with Matrix-Aligned and Knowledge-Organized Sparsity",
       "authors": [
-        "Zilinghan Li, Abhijit Chunduru, Harinarayan Krishnan, Eric Chagnon, Peter Nugent, Kibaek Kim, Ravi Madduri"
+        "Haozhi Han, Fusong Ju, Jing Bai, Ruge Zhang, Xiang Zhao, Liang Yuan, Yunquan Zhang, Ting Cao, Liu Yunxin, Yifeng Chen, Kun Li"
       ],
       "keywords": [
         "cs.DC",
-        "SC'"
+        "CLUSTER"
       ],
-      "abstract": "arXiv:2609.02238v1 Announce Type: new \nAbstract: The American Science Cloud (AmSC), established under the Genesis Mission of the U.S. Department of Energy (DOE), aims to integrate DOE high-performance computing systems, experimental facilities, and data resources into a single, coordinated, AI-driven discovery platform. AmSC's early services focus on curated artifacts, such as gated inference access to hosted models, experiment tracking, and function execution across computing facilities. However, what these services lack is a means to train a model across organizational boundaries where data cannot be centralized due to policy, privacy, or scale. This is, by definition, a use case for federated learning (FL) and a growing class of scientific AI. In this paper, we show that this gap can be",
-      "pdf_link": "https://arxiv.org/pdf/2609.02238.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.02238",
-      "submission_date": "2026-09-03T04:00:00+00:00",
-      "conference": "SC'",
+      "abstract": "arXiv:2609.01025v2 Announce Type: replace \nAbstract: Density Functional Theory (DFT) is indispensable for materials science and drug discovery, yet the exchange--correlation (XC) evaluation remains a major bottleneck due to its cubic scaling. Although linear-scaling methods exploit electronic nearsightedness to reduce asymptotic complexity, they produce irregular sparse workloads that hide implicit sparsity and prevent efficient use of modern AI accelerators. We present MakoXC, a modular matrix-aligned XC evaluation engine that rearchitects nearsightedness-induced sparsity into regular, accelerator-friendly computations. MakoXC co-designs three key techniques: (1) Matrix-Aligned Cells reorganize nearsightedness-induced interactions into dense, accelerator-aligned data clusters; (2) Sparsit",
+      "pdf_link": "https://arxiv.org/pdf/2609.01025.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.01025",
+      "submission_date": "2026-09-04T04:00:00+00:00",
+      "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-09-03T10:38:48.969847+00:00"
+      "score": 13.0,
+      "updated_at": "2026-09-04T10:32:54.959905+00:00"
+    },
+    {
+      "forum_id": "2609.00817",
+      "paper_number": -1,
+      "title": "Characterizing the Scalability and Performance of Large-Scale AI Training Under Multi-Tenancy",
+      "authors": [
+        "Jacopo Raffi, Thomas Pasquali, Lorenzo Piarulli, Filippo Spiga, Marco Faltelli, Andreas Herten, Domenico Siracusa, Daniele De Sensi, Flavio Vella"
+      ],
+      "keywords": [
+        "cs.DC",
+        "Supercomputing"
+      ],
+      "abstract": "arXiv:2609.00817v2 Announce Type: replace \nAbstract: Characterising AI workload performance on modern HPC systems requires understanding both their scalability in isolation and their behaviour under concurrent execution. However, the interplay among parallelisation strategies, network congestion, compute capability, and interconnect technologies remains poorly understood. This work investigates the performance and scalability of AI models up to 2400 GPUs. We quantify the communication overheads and their impact across different interconnects by evaluating scale-up, scale-out, and rack-scale configurations under multiple allocation schemes. Finally, we study how multiple concurrent training jobs interfere with each other by designing a realistic noise model. We design a benchmark suite of A",
+      "pdf_link": "https://arxiv.org/pdf/2609.00817.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.00817",
+      "submission_date": "2026-09-04T04:00:00+00:00",
+      "conference": "Supercomputing",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 6.5,
+      "updated_at": "2026-09-04T10:32:54.959851+00:00"
+    },
+    {
+      "forum_id": "2606.18958",
+      "paper_number": -1,
+      "title": "Ossim: OS-Driven Live Simulation for Cluster-Scale Full-Stack Evaluation",
+      "authors": [
+        "Yiliang Wan, Haifeng Sun, Yihan Yang, Jonas Kaufmann, Antoine Kaufmann, Jialin Li"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2606.18958v2 Announce Type: replace \nAbstract: Cluster-scale full-stack simulation is essential for evaluating distributed software stacks and emerging hardware components before deployment. Such simulation must achieve both full-stack fidelity for the unmodified production stack and the simulation performance required for iterative configuration exploration. However, no existing method achieves both. We present Ossim, an OS-level approach to cluster-scale full-stack simulation built on top of the Linux virtualization stack. Ossim comprises four subsystems: simulation-oriented scheduling, live memory hierarchy management, simulation-aware IPC, and distributed simulation orchestration. Together, they coordinate live and modeled components under shared simulated time while controlling ",
+      "pdf_link": "https://arxiv.org/pdf/2606.18958.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.18958",
+      "submission_date": "2026-09-04T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.5,
+      "updated_at": "2026-09-04T10:32:54.959691+00:00"
+    },
+    {
+      "forum_id": "2609.03151",
+      "paper_number": -1,
+      "title": "BASP: Communication-Efficient Batch-Aware Sequence Parallelism for LLM Training",
+      "authors": [
+        "Bigyan Ghimire, Jon C. Calhoun"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2609.03151v1 Announce Type: new \nAbstract: Long-context reasoning for large language models (LLMs) is becoming increasingly important, but training over long sequences remains challenging due to massive memory and communication requirements. Sequence parallelism has emerged as an essential technique for addressing bottlenecks in long sequence LLM training. However, we observe that existing sequence parallelism methods are batch-agnostic and apply uniform sequence partitioning across all batch sizes, resulting in inefficient communication. In this paper, we introduce Batch- Aware Sequence Parallelism (BASP), a sequence parallelism approach that leverages batch structure to reduce communication overhead. BASP exploits batch structure by partitioning GPUs into disjoint sequence-parallel",
+      "pdf_link": "https://arxiv.org/pdf/2609.03151.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.03151",
+      "submission_date": "2026-09-04T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-09-04T10:32:54.958961+00:00"
     }
   ]
 }

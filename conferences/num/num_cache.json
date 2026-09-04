@@ -1,100 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-09-03T10:39:26.497211+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-09-04T10:33:44.246968+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2609.02433",
+      "forum_id": "2601.02108",
       "paper_number": -1,
-      "title": "Numerical Analysis of the Virtual Element Approximation for the Smagorinsky Turbulence Model",
+      "title": "An Iterative Method with Asymptotic Orthogonality for Simultaneous Eigenpair Computation",
       "authors": [
-        "Karol L. Cascavita, Francesca Marcon, Maria Strazzullo"
+        "Shengyue Wang, Aihui Zhou"
       ],
       "keywords": [
         "cs.NA",
-        "numerical analysis"
+        "scientific computing"
       ],
-      "abstract": "arXiv:2609.02433v1 Announce Type: new \nAbstract: In this paper, we consider the Smagorinsky model for the Navier-Stokes equations within a virtual element framework. Under the standard assumption of small data, we prove the existence and uniqueness of a solution. Assuming more regularity to the solutions, we derive the known convergence rates $h$ for the a priori error estimates of the Smagorinsky model in two dimensional domains. We additionally prove that divergence-free virtual discretizations provide improved convergence orders, with weaker regularity assumptions than in the finite element literature. We conclude the paper with numerical results that corroborate the theory.",
-      "pdf_link": "https://arxiv.org/pdf/2609.02433.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.02433",
-      "submission_date": "2026-09-03T04:00:00+00:00",
-      "conference": "numerical analysis",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 56.0,
-      "updated_at": "2026-09-03T10:39:26.492523+00:00"
-    },
-    {
-      "forum_id": "2506.02320",
-      "paper_number": -1,
-      "title": "Greedy recursion parameter selection for one-way spatial integration of hyperbolic equations",
-      "authors": [
-        "Michael K. Sleeman, Tim Colonius"
-      ],
-      "keywords": [
-        "cs.NA",
-        "numerical analysis"
-      ],
-      "abstract": "arXiv:2506.02320v3 Announce Type: replace \nAbstract: Solutions to hyperbolic systems comprise waves propagating at finite speeds. When wave propagation is predominantly unidirectional, one-way wave equations can be used to evolve only the right-going solution by removing support for left-going waves. The One-Way Navier-Stokes (OWNS) approach, which was originally developed for systems of first-order hyperbolic equations, constructs one-way approximations to the linearized Navier-Stokes equations using a recursive filter to remove left-going waves. The computational cost scales with the number of recursion parameters, which must be carefully chosen to ensure accuracy and stability of the resulting one-way equation. Previous work has chosen parameters based on heuristic estimates of key eige",
-      "pdf_link": "https://arxiv.org/pdf/2506.02320.pdf",
-      "forum_link": "https://arxiv.org/abs/2506.02320",
-      "submission_date": "2026-09-03T04:00:00+00:00",
-      "conference": "numerical analysis",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-09-03T10:39:26.493075+00:00"
-    },
-    {
-      "forum_id": "2604.21200",
-      "paper_number": -1,
-      "title": "A Temperature-Coupled Cahn-Hilliard-Stokes-Heat Model for Thermally Driven Phase Separation",
-      "authors": [
-        "Maria Deliyianni, Boris Muha, Andrej Novak"
-      ],
-      "keywords": [
-        "cs.NA",
-        "numerical analysis"
-      ],
-      "abstract": "arXiv:2604.21200v2 Announce Type: replace-cross \nAbstract: We study a diffuse-interface model for thermally driven phase separation in viscous incompressible mixtures. The system couples a convective Cahn-Hilliard equation for the order parameter with a Stokes subsystem for the velocity-pressure field and a heat equation for the temperature. Temperature enters the bulk free energy through a Landau-type coefficient, while the phase field affects the flow through concentration-dependent density and viscosity. The model serves as a proxy for temperature-triggered condensation-like phase separation; humidity, latent heat, vapor pressure, and capillary forcing are absorbed into the choice of the threshold temperature $\\Theta_S$. We motivate the chemical potential through a temperature-dependent",
-      "pdf_link": "https://arxiv.org/pdf/2604.21200.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.21200",
-      "submission_date": "2026-09-03T04:00:00+00:00",
-      "conference": "numerical analysis",
+      "abstract": "arXiv:2601.02108v3 Announce Type: replace \nAbstract: The simultaneous computation of a cluster of eigenpairs with mutually orthogonal eigenvectors is a basic task in scientific computing. We develop a predictor--corrector discretization of the quasi-Grassmannian gradient flow for simultaneous eigenpair computation. The proposed iteration requires neither orthogonal initial data nor any orthogonalization operation: the predictor preserves the current Gram matrix, whereas the corrector reduces the orthogonality error, so that the iterates approach orthogonality asymptotically. We establish well-posedness of the discrete scheme and prove invariant-subspace nonexpansion, asymptotic orthogonality, energy decrease, and convergence to the target eigenspace. Numerical experiments with the discrete",
+      "pdf_link": "https://arxiv.org/pdf/2601.02108.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.02108",
+      "submission_date": "2026-09-04T04:00:00+00:00",
+      "conference": "scientific computing",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 3.5,
-      "updated_at": "2026-09-03T10:39:26.493417+00:00"
-    },
-    {
-      "forum_id": "2609.02178",
-      "paper_number": -1,
-      "title": "Error estimate of the nonuniform BDF3-L2 method for subdiffusion equations via multiscale solution decomposition",
-      "authors": [
-        "Wenlin Qiu, Kexin Li, Yiqun Li, Hao Zhang"
-      ],
-      "keywords": [
-        "cs.NA",
-        "SIAM"
-      ],
-      "abstract": "arXiv:2609.02178v1 Announce Type: new \nAbstract: Numerical experiments reported by Quan and Wu [SIAM J Numer Anal 61 (2023) 2106-2132] show that the observed temporal convergence rates of nonuniform L2 methods for subdiffusion models are not consistent with the theoretically predicted order $3-\\alpha$. This discrepancy suggests that a more refined analysis is needed and motivates the development of a nonuniform BDF3-L2 method for the subdiffusion equation. To account for the initial solution singularity, we employ the multiscale solution decomposition to decompose the original solution and approximate a smoother unknown variable that satisfies the subdiffusion model with a smoother source term. The resulting formulation, however, involves restrictive high-order boundary conditions on the s",
-      "pdf_link": "https://arxiv.org/pdf/2609.02178.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.02178",
-      "submission_date": "2026-09-03T04:00:00+00:00",
-      "conference": "SIAM",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-09-03T10:39:26.492333+00:00"
+      "updated_at": "2026-09-04T10:33:44.244609+00:00"
     }
   ]
 }

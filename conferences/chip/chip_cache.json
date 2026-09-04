@@ -1,77 +1,123 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-09-03T10:38:53.564142+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-09-04T10:33:12.711333+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2609.02470",
+      "forum_id": "2609.03125",
       "paper_number": -1,
-      "title": "Batch Before You Time: Decision-Scoped Proxy Execution for Timing-Aware Logic Rewriting",
+      "title": "A Time-Encoded Analog Photonic Interposer for Energy-EfficientIntegration of Analog Vision Sensors and Analog Accelerators",
       "authors": [
-        "Pujun Su (Fudan University)"
+        "Subhradip Chakraborty, Zihan Yin, Xuming Chen, Chengwei Zhou, Gourav Datta, Akhilesh Jaiswal"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DAC"
+      ],
+      "abstract": "arXiv:2609.03125v1 Announce Type: new \nAbstract: This work introduces a time-encoded analog photonic interposer that enables long-distance, high-fidelity transport of analog signals between spatially separated chiplets. Unlike prior silicon-photonic links limited to digital data, the interposer preserves analog information by converting amplitudes into timing intervals using an analog-to-time converter (ATC), transmitting them over a wavelength-division-multiplexed photonic link, and reconstructing values at the receiver without an explicit high-precision ADC/DAC data-converter pipeline. The link instead embeds an implicit 6-bit time-domain quantization and uses a single wavelength per processing element independent of bit precision. Evaluated in a fully analog vision pipeline with an in-p",
+      "pdf_link": "https://arxiv.org/pdf/2609.03125.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.03125",
+      "submission_date": "2026-09-04T04:00:00+00:00",
+      "conference": "DAC",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-09-04T10:33:12.707664+00:00"
+    },
+    {
+      "forum_id": "2609.03137",
+      "paper_number": -1,
+      "title": "A single-precision floating-point systolic Givens-QRD Triangular Solver for MVDR Beamforming",
+      "authors": [
+        "Athi Ram R S, Alwin A, S. G. Sreejeesh, J. U. Kidav"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.02470v1 Announce Type: new \nAbstract: Standard Delay Format (SDF)-annotated switching simulation distinguishes delay-dependent activity among functionally equivalent rewrites, but evaluating every candidate repeats timing, compilation, and replay. A zero-delay proxy can remove timed evaluations, but generating that proxy candidate by candidate can cost more than the timed work it saves. We present Batch Before You Time (BBYT), which compiles all candidates of one rewrite decision into one scoped zero-delay image and either commits a well-separated proxy winner or invokes the unchanged timed chain. Across 12 counterbalanced holdout sequences, BBYT reduces complete candidate-selection time by 18.05% on average; the design-level reductions are 5.84% and 30.25%, with both confidence",
-      "pdf_link": "https://arxiv.org/pdf/2609.02470.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.02470",
-      "submission_date": "2026-09-03T04:00:00+00:00",
+      "abstract": "arXiv:2609.03137v1 Announce Type: new \nAbstract: Computation of adaptive beamforming weights in Minimum Variance Distortionless Response (MVDR) processing is a latency-critical operation that poses significant challenges for real-time hardware implementation. This paper presents an FPGA implementation of a systolic Givens-rotation QR decomposition pipeline for MVDR beamforming on a simulated 32-element ultrasound transducer array, using single-precision floating-point arithmetic. The design is deployed on a Zynq UltraScale+ FPGA at 100 MHz with three parallel kernel instances operating concurrently, achieving a measured throughput of 31,123 weight vectors/s at 90.9% parallel efficiency relative to the measured single-instance rate. At an estimated 2.451 W of programmable-logic power, and 5",
+      "pdf_link": "https://arxiv.org/pdf/2609.03137.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.03137",
+      "submission_date": "2026-09-04T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-09-03T10:38:53.560473+00:00"
+      "score": 2.0,
+      "updated_at": "2026-09-04T10:33:12.707719+00:00"
     },
     {
-      "forum_id": "2609.01948",
+      "forum_id": "2609.02988",
       "paper_number": -1,
-      "title": "An Emerging NVM-Based On-Chip Training Architecture with Non-Ideality Mitigation Through Bipolar Weight Distributions",
+      "title": "Mesh-Native Physics-Informed Graph Surrogates for TCAD-in-the-Loop Design Space Exploration",
       "authors": [
-        "Peng Dang, Youna Huang, Yintao He, Huawei Li"
+        "Leonid Popryho, Ayoub Sadeghi, Inna Partin-Vaisband"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.01948v1 Announce Type: new \nAbstract: The rapid advancement of deep learning has presented significant energy efficiency challenges to the conventional von Neumann architecture. In-memory computing (IMC) architectures based on emerging non-volatile memory (eNVM) are widely regarded as a promising solution for accelerating neural network training due to their high parallelism and low power consumption. However, the intrinsic non-idealities of eNVM devices can cause conductance updates to deviate from target values, thereby limiting the performance of on-chip training. To address this challenge, this paper presents a Non-ideality Optimized eNVM Accelerator (NOVA) architecture for on-chip training. Specifically, we first fabricate a two-dimensional (2D) ferroelectric field-effect t",
-      "pdf_link": "https://arxiv.org/pdf/2609.01948.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.01948",
-      "submission_date": "2026-09-03T04:00:00+00:00",
+      "abstract": "arXiv:2609.02988v1 Announce Type: cross \nAbstract: High-fidelity TCAD simulation of drift-diffusion transport remains the workhorse of emerging FinFET device design, but it is computationally expensive, especially for 3D structures where runtime escalates steeply with mesh complexity. This sharply limits multi-objective design space exploration. Existing machine-learning surrogates map a fixed set of design parameters to a few scalar device metrics, discarding the underlying physics and losing transferability across device geometries and families. A physics-informed graph attention network (GAT) surrogate is proposed. It operates directly on the tetrahedral TCAD mesh and predicts, at every mesh node, the electrostatic potential together with the electron and hole quasi-Fermi levels, the fu",
+      "pdf_link": "https://arxiv.org/pdf/2609.02988.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.02988",
+      "submission_date": "2026-09-04T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-09-04T10:33:12.707868+00:00"
+    },
+    {
+      "forum_id": "2609.04058",
+      "paper_number": -1,
+      "title": "AI-Assisted Design of a Post-Quantum Cryptographic Accelerator: A Deployed-Silicon Case Study",
+      "authors": [
+        "Jungmin Park, Eunha Kim, Wooseop Kim, Seongjoon Cho, Byungho Cha"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.04058v1 Announce Type: cross \nAbstract: Post-quantum migration is mandated on published timelines, and silicon that ships with a defect cannot be patched remotely. The standard acceptance gate cannot detect an entire class of ML-DSA defects. Signing resamples until a candidate meets its norm bounds, so the executed path varies with the message, whereas known-answer tests (KATs) sample fixed values and reach only the depths their seeds trigger. Our accelerator passed its full KAT regression while carrying a norm check that outran block-RAM latency, leaving each candidate's final coefficients unverified; the escape surfaced at reject-loop iteration 5. The blind spot lies in the instrument, not the engineer; care cannot remove it. We replace that gate. A byte-exact golden-reference",
+      "pdf_link": "https://arxiv.org/pdf/2609.04058.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.04058",
+      "submission_date": "2026-09-04T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-09-03T10:38:53.560382+00:00"
+      "updated_at": "2026-09-04T10:33:12.708057+00:00"
     },
     {
-      "forum_id": "2609.01775",
+      "forum_id": "2605.00555",
       "paper_number": -1,
-      "title": "Dictionary-Guided Mutation Operators for Automated HDL Repair",
+      "title": "Sim-FA: A GPGPU Simulator Framework for Fine-Grained Asynchronous Pipeline Analysis",
       "authors": [
-        "Maisha Mastora, Dean Sullivan"
+        "Zhongchun Zhou, Yuhang Gu, Chengtao Lai, Ya Wang, Zeyu Han, Wei Zhang, Jun Liu"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.01775v1 Announce Type: cross \nAbstract: Automated repair of Hardware Description Language (HDL) designs remains challenging due to the large search space of candidate repairs and the strict syntactic and semantic constraints imposed by HDL grammars. Generic mutation strategies overwhelmingly generate syntactically invalid candidates that waste compilation and simulation budget, while synthesis-driven and template-based approaches impose their own constraints on generality and portability. In this paper, we propose a dictionary-guided HDL repair system that combines ANTLR-derived DUT-specific mutation vocabularies with a simulation-divergence fault localization (FL) module. The mutation operator applies category-constrained token substitutions, insertions, and deletions directly ",
-      "pdf_link": "https://arxiv.org/pdf/2609.01775.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.01775",
-      "submission_date": "2026-09-03T04:00:00+00:00",
+      "abstract": "arXiv:2605.00555v4 Announce Type: replace \nAbstract: To efficiently support Large Language Models (LLMs), modern GPGPU architectures have introduced new features and programming paradigms, such as warp specialization. These features enable temporal overlap between the producer and consumer, as well as between matrix multiplication and activation function operations, substantially improving performance. To conduct effective AI infrastructure and computer architecture research, cycle-accurate simulators that support these new features, together with analytical models that faithfully capture workload characteristics, are essential.\n  However, existing academic tools provide limited support for these emerging requirements. Existing cycle-accurate simulators do not incorporate new NVIDIA GPU fe",
+      "pdf_link": "https://arxiv.org/pdf/2605.00555.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.00555",
+      "submission_date": "2026-09-04T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-09-03T10:38:53.560633+00:00"
+      "updated_at": "2026-09-04T10:33:12.708105+00:00"
     }
   ]
 }
