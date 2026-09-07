@@ -1,146 +1,77 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-09-04T10:32:55.378247+00:00",
-  "paper_count": 6,
+  "last_updated": "2026-09-07T11:31:49.791407+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2609.03562",
+      "forum_id": "2609.04513",
       "paper_number": -1,
-      "title": "JuPyLive: Seamless Migration of Jupyter Notebook Resources from Laptop to HPC",
+      "title": "Atlas: Optimizing Deployment of Compound AI Workflows on Heterogeneous Clusters",
       "authors": [
-        "Sima Attar-Khorasani, Matthias Lieber, Siavash Ghiasvand"
+        "Milos Gravara, Andrija Stanisic, Stefan Nastic"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.03562v1 Announce Type: new \nAbstract: This work introduces JuPyLive, a migration mechanism that enables seamless transition of Jupyter notebooks between local resources of user's workstation and remote resources of high-performance computing~(HPC) environments, while preserving the user experience. JuPyLive eliminates the underlying complexities of migration process, enabling users to freely choose among available local and remote resources, directly within the familiar Jupyter notebook environment via a single click. JuPyLive leverages ElasticNotebook to manage in-memory state migration, it automates resource allocation on HPC cluster and orchestrates required remote communication channels between the source and destination to enable a bidirectional migration. Furthermore, HPC ",
-      "pdf_link": "https://arxiv.org/pdf/2609.03562.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.03562",
-      "submission_date": "2026-09-04T04:00:00+00:00",
+      "abstract": "arXiv:2609.04513v1 Announce Type: new \nAbstract: Compound AI workflows are increasingly used to serve complex AI tasks by coordinating multiple AI models and software components. This approach enables deployment flexibility, as each workflow stage can expose different model variants and resource requirements, but it also expands the deployment choices. A deployment must choose an execution plan that selects AI models for each compound AI workflow stage and places them on a heterogeneous cluster in order to satisfy SLOs. Deployment optimizers therefore need estimates to compare many candidate plans and identify feasible ones. System metrics can often be profiled per stage and composed according to workflow topology, but accuracy cannot, as errors and information loss at upstream stages affe",
+      "pdf_link": "https://arxiv.org/pdf/2609.04513.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.04513",
+      "submission_date": "2026-09-07T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 44.5,
-      "updated_at": "2026-09-04T10:32:54.959278+00:00"
+      "score": 64.0,
+      "updated_at": "2026-09-07T11:31:49.321937+00:00"
     },
     {
-      "forum_id": "2608.23955",
+      "forum_id": "2609.04417",
       "paper_number": -1,
-      "title": "Trust, but Verify: Rigorously Profiling Best-Effort High-Performance Computing for Digital Evolution",
+      "title": "Tuning Collective Patterns to Alleviate Congestion in Shared AI Clusters",
       "authors": [
-        "Matthew Andres Moreno, Santiago Rodriguez Papa, Charles Ofria, Luis Zaman, Emily Dolson"
+        "Eashan Gupta, Yongzhou Chen, Apoorve Mohan, Pavlos Maniotis, Abdullah Kayi, Radhika Mittal"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2608.23955v2 Announce Type: replace-cross \nAbstract: Developments in high-performance computing (HPC) technology continue to drastically increase quantities of available processing power. In the context of digital evolution, this explosive growth offers opportunities to advance both hypothesis-driven explorations of multi-scale biological phenomena and application-driven evolutionary optimization targeting hard problem domains. A particular opportunity arises from emerging next-generation AI/ML hardware accelerator platforms, such as the 880,000-processor Cerebras Wafer-Scale Engine (WSE). Such hardware, however, constrains on-device data storage and movement --- a challenge compounded by vulnerability to failures arising over numerous device components. Best-effort relaxations that ",
-      "pdf_link": "https://arxiv.org/pdf/2608.23955.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.23955",
-      "submission_date": "2026-09-04T04:00:00+00:00",
+      "abstract": "arXiv:2609.04417v1 Announce Type: cross \nAbstract: Distributed AI training involves recurring rounds of data exchange between multiple pairs of GPU nodes. Slowdown in even one flow due to congestion can cause the entire communication round to slowdown. Current approaches for evading congestion in AI clusters assume global control over the entire workload (e.g. coordinating the schedule of all jobs) or assume infrastructural support (e.g. adaptive routing in switches). They are thus ill-suited in a shared cloud setting where AI jobs belonging to one user can face external congestion from other users' jobs or background traffic beyond its own control. In this paper, we build a system, REACT, that tunes the recurring pattern of data exchange between GPU nodes (known as communication collectiv",
+      "pdf_link": "https://arxiv.org/pdf/2609.04417.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.04417",
+      "submission_date": "2026-09-07T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 26.0,
-      "updated_at": "2026-09-04T10:32:54.959962+00:00"
+      "score": 14.5,
+      "updated_at": "2026-09-07T11:31:49.322408+00:00"
     },
     {
-      "forum_id": "2609.01025",
+      "forum_id": "2609.05406",
       "paper_number": -1,
-      "title": "MakoXC: Rearchitecting DFT Exchange-Correlation with Matrix-Aligned and Knowledge-Organized Sparsity",
+      "title": "Beyond Scalar Flexibility: From Eligible AI Workloads to Dependable Load Relief",
       "authors": [
-        "Haozhi Han, Fusong Ju, Jing Bai, Ruge Zhang, Xiang Zhao, Liang Yuan, Yunquan Zhang, Ting Cao, Liu Yunxin, Yifeng Chen, Kun Li"
+        "Meiyi Li"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.01025v2 Announce Type: replace \nAbstract: Density Functional Theory (DFT) is indispensable for materials science and drug discovery, yet the exchange--correlation (XC) evaluation remains a major bottleneck due to its cubic scaling. Although linear-scaling methods exploit electronic nearsightedness to reduce asymptotic complexity, they produce irregular sparse workloads that hide implicit sparsity and prevent efficient use of modern AI accelerators. We present MakoXC, a modular matrix-aligned XC evaluation engine that rearchitects nearsightedness-induced sparsity into regular, accelerator-friendly computations. MakoXC co-designs three key techniques: (1) Matrix-Aligned Cells reorganize nearsightedness-induced interactions into dense, accelerator-aligned data clusters; (2) Sparsit",
-      "pdf_link": "https://arxiv.org/pdf/2609.01025.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.01025",
-      "submission_date": "2026-09-04T04:00:00+00:00",
+      "abstract": "arXiv:2609.05406v1 Announce Type: cross \nAbstract: Grid studies often represent data-center flexibility as a fixed percentage of load, although no public production trace has shown how much eligible load persists across event durations or co-moves across clusters. We reconstruct 4,439 hourly power observations from a 185-day trace of 155,410 GPUs and derive a workload-semantic flexibility envelope. The fleet's time-averaged Monte Carlo median facility demand is 55.8 MW, while immediate eligible curtailment averages 3.55 MW after retaining allocated-GPU idle power: 12.1% of workload power and 6.35% of median facility power. Under full realization of that eligibility, 95%-available relief falls from 2.51 MW for one hour to 2.32 MW for four hours and 1.95 MW for 24 hours; a common realizable ",
+      "pdf_link": "https://arxiv.org/pdf/2609.05406.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.05406",
+      "submission_date": "2026-09-07T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 13.0,
-      "updated_at": "2026-09-04T10:32:54.959905+00:00"
-    },
-    {
-      "forum_id": "2609.00817",
-      "paper_number": -1,
-      "title": "Characterizing the Scalability and Performance of Large-Scale AI Training Under Multi-Tenancy",
-      "authors": [
-        "Jacopo Raffi, Thomas Pasquali, Lorenzo Piarulli, Filippo Spiga, Marco Faltelli, Andreas Herten, Domenico Siracusa, Daniele De Sensi, Flavio Vella"
-      ],
-      "keywords": [
-        "cs.DC",
-        "Supercomputing"
-      ],
-      "abstract": "arXiv:2609.00817v2 Announce Type: replace \nAbstract: Characterising AI workload performance on modern HPC systems requires understanding both their scalability in isolation and their behaviour under concurrent execution. However, the interplay among parallelisation strategies, network congestion, compute capability, and interconnect technologies remains poorly understood. This work investigates the performance and scalability of AI models up to 2400 GPUs. We quantify the communication overheads and their impact across different interconnects by evaluating scale-up, scale-out, and rack-scale configurations under multiple allocation schemes. Finally, we study how multiple concurrent training jobs interfere with each other by designing a realistic noise model. We design a benchmark suite of A",
-      "pdf_link": "https://arxiv.org/pdf/2609.00817.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.00817",
-      "submission_date": "2026-09-04T04:00:00+00:00",
-      "conference": "Supercomputing",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 6.5,
-      "updated_at": "2026-09-04T10:32:54.959851+00:00"
-    },
-    {
-      "forum_id": "2606.18958",
-      "paper_number": -1,
-      "title": "Ossim: OS-Driven Live Simulation for Cluster-Scale Full-Stack Evaluation",
-      "authors": [
-        "Yiliang Wan, Haifeng Sun, Yihan Yang, Jonas Kaufmann, Antoine Kaufmann, Jialin Li"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2606.18958v2 Announce Type: replace \nAbstract: Cluster-scale full-stack simulation is essential for evaluating distributed software stacks and emerging hardware components before deployment. Such simulation must achieve both full-stack fidelity for the unmodified production stack and the simulation performance required for iterative configuration exploration. However, no existing method achieves both. We present Ossim, an OS-level approach to cluster-scale full-stack simulation built on top of the Linux virtualization stack. Ossim comprises four subsystems: simulation-oriented scheduling, live memory hierarchy management, simulation-aware IPC, and distributed simulation orchestration. Together, they coordinate live and modeled components under shared simulated time while controlling ",
-      "pdf_link": "https://arxiv.org/pdf/2606.18958.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.18958",
-      "submission_date": "2026-09-04T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.5,
-      "updated_at": "2026-09-04T10:32:54.959691+00:00"
-    },
-    {
-      "forum_id": "2609.03151",
-      "paper_number": -1,
-      "title": "BASP: Communication-Efficient Batch-Aware Sequence Parallelism for LLM Training",
-      "authors": [
-        "Bigyan Ghimire, Jon C. Calhoun"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.03151v1 Announce Type: new \nAbstract: Long-context reasoning for large language models (LLMs) is becoming increasingly important, but training over long sequences remains challenging due to massive memory and communication requirements. Sequence parallelism has emerged as an essential technique for addressing bottlenecks in long sequence LLM training. However, we observe that existing sequence parallelism methods are batch-agnostic and apply uniform sequence partitioning across all batch sizes, resulting in inefficient communication. In this paper, we introduce Batch- Aware Sequence Parallelism (BASP), a sequence parallelism approach that leverages batch structure to reduce communication overhead. BASP exploits batch structure by partitioning GPUs into disjoint sequence-parallel",
-      "pdf_link": "https://arxiv.org/pdf/2609.03151.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.03151",
-      "submission_date": "2026-09-04T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-09-04T10:32:54.958961+00:00"
+      "updated_at": "2026-09-07T11:31:49.322731+00:00"
     }
   ]
 }

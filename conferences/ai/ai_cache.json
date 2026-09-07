@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-09-04T10:33:44.111114+00:00",
-  "paper_count": 31,
+  "last_updated": "2026-09-07T11:32:23.023173+00:00",
+  "paper_count": 30,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -425,29 +425,6 @@
       "ratings": [],
       "score": 4.0,
       "updated_at": "2026-08-14T07:42:28.686169+00:00"
-    },
-    {
-      "forum_id": "2609.01090",
-      "paper_number": -1,
-      "title": "Modelpedia: A Catalog of Model Findings for the Meta-Science of AI",
-      "authors": [
-        "Franciszek Bernat, Dawid P{\\l}udowski, Micha{\\l} Jan W{\\l}odarczyk, Luca Longo, Jianlong Zhou, Andreas Holzinger, Riccardo Guidotti, Wojciech Samek, Przemys{\\l}aw Biecek"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ICLR"
-      ],
-      "abstract": "arXiv:2609.01090v2 Announce Type: replace \nAbstract: Scientific knowledge about AI models is produced faster than the community can organize it. Every few months a new foundation model reshapes the field and hundreds of papers, blogs, and technical reports document how each behaves or fails. Yet, these findings remain scattered and effectively unretrievable. To address this gap we present Modelpedia, an automated, LLM-assisted framework that extracts findings about models from published papers, links it to the model, dataset, method, and concept it concerns, and aggregates the result into a searchable public catalog. Applying the prototype to accepted ICLR 2024 and 2025 papers, we extract over a thousand findings and, treating the catalog itself as an object of study, run a meta-analysis o",
-      "pdf_link": "https://arxiv.org/pdf/2609.01090.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.01090",
-      "submission_date": "2026-09-04T04:00:00+00:00",
-      "conference": "ICLR",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-09-04T10:33:13.357327+00:00"
     },
     {
       "forum_id": "mlr-icml25-4",

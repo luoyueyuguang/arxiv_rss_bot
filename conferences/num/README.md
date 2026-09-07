@@ -1,6 +1,6 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-09-04 10:33:44 UTC
+- **Last Updated**: 2026-09-07 11:32:23 UTC
 - **Total Filtered Papers**: 1
 - **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
@@ -9,4 +9,4 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [An Iterative Method with Asymptotic Orthogonality for Simultaneous Eigenpair Computation](https://arxiv.org/abs/2601.02108) | `ARXIV` | 3.5 |
+| 1 | [Computing accurate singular values using a mixed-precision one-sided Jacobi algorithm](https://arxiv.org/abs/2602.18134) | `ARXIV` | 12.5 |

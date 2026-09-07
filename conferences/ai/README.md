@@ -1,8 +1,8 @@
 # AI / AI for Science Papers
 
-- **Last Updated**: 2026-09-04 10:33:44 UTC
-- **Total Filtered Papers**: 31
-- **Displaying**: 31 (arxiv: 1, mlr: 30)
+- **Last Updated**: 2026-09-07 11:32:23 UTC
+- **Total Filtered Papers**: 30
+- **Displaying**: 30 (mlr: 30)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
@@ -27,16 +27,15 @@
 | 16 | [An Empirical Analysis of Forgetting in Pre-trained Models with Incremental Low-Rank Updates](https://proceedings.mlr.press/v274/soutif25a.html) | `MLR` | 13.0 |
 | 17 | [Reflecting on the State of Rehearsal-Free Continual Learning with Pretrained Models](https://proceedings.mlr.press/v274/thede25a.html) | `MLR` | 12.5 |
 | 18 | [Consistency Regularisation for Unsupervised Domain Adaptation in Monocular Depth Estimation](https://proceedings.mlr.press/v274/el-ghoussani25a.html) | `MLR` | 4.0 |
-| 19 | [Modelpedia: A Catalog of Model Findings for the Meta-Science of AI](https://arxiv.org/abs/2609.01090) | `ARXIV` | 3.0 |
-| 20 | [Masked Autoencoders are Efficient Continual Federated Learners](https://proceedings.mlr.press/v274/paul25a.html) | `MLR` | 3.0 |
-| 21 | [Mitigating Interference in the Knowledge Continuum through Attention-Guided Incremental Learning](https://proceedings.mlr.press/v274/bhat25a.html) | `MLR` | 2.5 |
-| 22 | [Hadamard Domain Training with Integers for Class Incremental Quantized Learning](https://proceedings.mlr.press/v274/schiemer25a.html) | `MLR` | 2.5 |
-| 23 | [Continual Learning for Unsupervised Concept Bottleneck Discovery](https://proceedings.mlr.press/v274/lorello25a.html) | `MLR` | 2.5 |
-| 24 | [Enhanced Label Propagation through Affinity Matrix Fusion for Source-Free Domain Adaptation](https://proceedings.mlr.press/v274/guo25b.html) | `MLR` | 2.5 |
-| 25 | [Less is more: Summarizing Patch Tokens for efficient Multi-Label Class-Incremental Learning](https://proceedings.mlr.press/v274/min25a.html) | `MLR` | 2.5 |
-| 26 | [GRASP: A Rehearsal Policy for Efficient Online Continual Learning](https://proceedings.mlr.press/v274/harun25a.html) | `MLR` | 2.5 |
-| 27 | [Subspace-Configurable Networks](https://proceedings.mlr.press/v274/wang25a.html) | `MLR` | 2.0 |
-| 28 | [Towards More Diverse Evaluation of Class Incremental Learning: Representation Learning Perspective](https://proceedings.mlr.press/v274/cha25a.html) | `MLR` | 1.5 |
-| 29 | [Learning to learn without forgetting using attention](https://proceedings.mlr.press/v274/vettoruzzo25a.html) | `MLR` | 1.5 |
-| 30 | [Integrating Present and Past in Unsupervised Continual Learning](https://proceedings.mlr.press/v274/zhang25a.html) | `MLR` | 1.5 |
-| 31 | [Beyond Unimodal Learning: The Importance of Integrating Multiple Modalities for Lifelong Learning](https://proceedings.mlr.press/v274/sarfraz25a.html) | `MLR` | 1.0 |
+| 19 | [Masked Autoencoders are Efficient Continual Federated Learners](https://proceedings.mlr.press/v274/paul25a.html) | `MLR` | 3.0 |
+| 20 | [Mitigating Interference in the Knowledge Continuum through Attention-Guided Incremental Learning](https://proceedings.mlr.press/v274/bhat25a.html) | `MLR` | 2.5 |
+| 21 | [Hadamard Domain Training with Integers for Class Incremental Quantized Learning](https://proceedings.mlr.press/v274/schiemer25a.html) | `MLR` | 2.5 |
+| 22 | [Continual Learning for Unsupervised Concept Bottleneck Discovery](https://proceedings.mlr.press/v274/lorello25a.html) | `MLR` | 2.5 |
+| 23 | [Enhanced Label Propagation through Affinity Matrix Fusion for Source-Free Domain Adaptation](https://proceedings.mlr.press/v274/guo25b.html) | `MLR` | 2.5 |
+| 24 | [Less is more: Summarizing Patch Tokens for efficient Multi-Label Class-Incremental Learning](https://proceedings.mlr.press/v274/min25a.html) | `MLR` | 2.5 |
+| 25 | [GRASP: A Rehearsal Policy for Efficient Online Continual Learning](https://proceedings.mlr.press/v274/harun25a.html) | `MLR` | 2.5 |
+| 26 | [Subspace-Configurable Networks](https://proceedings.mlr.press/v274/wang25a.html) | `MLR` | 2.0 |
+| 27 | [Towards More Diverse Evaluation of Class Incremental Learning: Representation Learning Perspective](https://proceedings.mlr.press/v274/cha25a.html) | `MLR` | 1.5 |
+| 28 | [Learning to learn without forgetting using attention](https://proceedings.mlr.press/v274/vettoruzzo25a.html) | `MLR` | 1.5 |
+| 29 | [Integrating Present and Past in Unsupervised Continual Learning](https://proceedings.mlr.press/v274/zhang25a.html) | `MLR` | 1.5 |
+| 30 | [Beyond Unimodal Learning: The Importance of Integrating Multiple Modalities for Lifelong Learning](https://proceedings.mlr.press/v274/sarfraz25a.html) | `MLR` | 1.0 |

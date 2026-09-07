@@ -1,16 +1,15 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-09-04 10:33:12 UTC
-- **Total Filtered Papers**: 5
-- **Displaying**: 5 (arxiv: 5)
+- **Last Updated**: 2026-09-07 11:31:54 UTC
+- **Total Filtered Papers**: 4
+- **Displaying**: 4 (arxiv: 4)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [A Time-Encoded Analog Photonic Interposer for Energy-EfficientIntegration of Analog Vision Sensors and Analog Accelerators](https://arxiv.org/abs/2609.03125) | `ARXIV` | 13.5 |
-| 2 | [A single-precision floating-point systolic Givens-QRD Triangular Solver for MVDR Beamforming](https://arxiv.org/abs/2609.03137) | `ARXIV` | 2.0 |
-| 3 | [Mesh-Native Physics-Informed Graph Surrogates for TCAD-in-the-Loop Design Space Exploration](https://arxiv.org/abs/2609.02988) | `ARXIV` | 2.0 |
-| 4 | [AI-Assisted Design of a Post-Quantum Cryptographic Accelerator: A Deployed-Silicon Case Study](https://arxiv.org/abs/2609.04058) | `ARXIV` | 1.0 |
-| 5 | [Sim-FA: A GPGPU Simulator Framework for Fine-Grained Asynchronous Pipeline Analysis](https://arxiv.org/abs/2605.00555) | `ARXIV` | 1.0 |
+| 1 | [GoldenFloat: A Phi-Derived Static-Split Floating-Point Family from GF4 to GF1024 with a Lucas-Exact Integer Identity](https://arxiv.org/abs/2606.05017) | `ARXIV` | 3.0 |
+| 2 | [A Piecewise-Linear Approximation-based Energy-Efficient Error-Optimized Unsigned Square Rooter for Accuracy-Critical Applications](https://arxiv.org/abs/2609.04783) | `ARXIV` | 2.0 |
+| 3 | [Proton Irradiation Characterization of an Open-Source ML Accelerator on a Zynq UltraScale+ MPSoC](https://arxiv.org/abs/2609.05249) | `ARXIV` | 1.0 |
+| 4 | [Golden Ruler: A Numeric Format Catalog with Bit-Exact Conformance Vectors for FP8, BF16, MXFP4, and Microscaling Formats](https://arxiv.org/abs/2606.09686) | `ARXIV` | 1.0 |
