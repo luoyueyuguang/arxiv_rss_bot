@@ -1,6 +1,6 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-09-07 11:32:23 UTC
+- **Last Updated**: 2026-09-08 10:33:14 UTC
 - **Total Filtered Papers**: 1
 - **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
