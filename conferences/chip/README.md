@@ -1,6 +1,6 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-09-08 10:32:45 UTC
+- **Last Updated**: 2026-09-09 10:44:24 UTC
 - **Total Filtered Papers**: 4
 - **Displaying**: 4 (arxiv: 4)
 - **Papers with Ratings**: 0

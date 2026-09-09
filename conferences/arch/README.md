@@ -1,6 +1,6 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-09-08 10:32:41 UTC
+- **Last Updated**: 2026-09-09 10:44:13 UTC
 - **Total Filtered Papers**: 1
 - **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
