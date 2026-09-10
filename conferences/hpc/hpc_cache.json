@@ -1,77 +1,54 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-09-07T11:31:49.791407+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-09-10T10:34:01.736762+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2609.04513",
+      "forum_id": "2609.09165",
       "paper_number": -1,
-      "title": "Atlas: Optimizing Deployment of Compound AI Workflows on Heterogeneous Clusters",
+      "title": "TFR-GNN: Topology- and Fault-Aware Graph Neural Scheduling for Heterogeneous Distributed Computing Systems",
       "authors": [
-        "Milos Gravara, Andrija Stanisic, Stefan Nastic"
+        "Shiyu Yang, Ziyang Zeng, Jie-Si Yang"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.04513v1 Announce Type: new \nAbstract: Compound AI workflows are increasingly used to serve complex AI tasks by coordinating multiple AI models and software components. This approach enables deployment flexibility, as each workflow stage can expose different model variants and resource requirements, but it also expands the deployment choices. A deployment must choose an execution plan that selects AI models for each compound AI workflow stage and places them on a heterogeneous cluster in order to satisfy SLOs. Deployment optimizers therefore need estimates to compare many candidate plans and identify feasible ones. System metrics can often be profiled per stage and composed according to workflow topology, but accuracy cannot, as errors and information loss at upstream stages affe",
-      "pdf_link": "https://arxiv.org/pdf/2609.04513.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.04513",
-      "submission_date": "2026-09-07T04:00:00+00:00",
+      "abstract": "arXiv:2609.09165v1 Announce Type: new \nAbstract: Scheduling workflow directed acyclic graphs (DAGs) on heterogeneous distributed systems is a classical NP-hard problem, and the list-scheduling heuristic HEFT remains the defacto standard because of its low complexity and strong makespan. In real deployments, however, machines fail: commodity and pre-emptible nodes are far less reliable than dedicated ones, and a makespan-optimal but reliability-agnostic placement can be dramatically slowed by node failures. We show empirically, on real workflow structures from the WfCommons/Pegasus corpus, that no single fixed heuristic is best across the joint space of failure intensity and cluster load: with no failures HEFT is optimal, whereas under failures a reliability-aware placement can reduce the e",
+      "pdf_link": "https://arxiv.org/pdf/2609.09165.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.09165",
+      "submission_date": "2026-09-10T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 64.0,
-      "updated_at": "2026-09-07T11:31:49.321937+00:00"
+      "score": 47.0,
+      "updated_at": "2026-09-10T10:34:01.127868+00:00"
     },
     {
-      "forum_id": "2609.04417",
+      "forum_id": "2609.10044",
       "paper_number": -1,
-      "title": "Tuning Collective Patterns to Alleviate Congestion in Shared AI Clusters",
+      "title": "Introvert Clustering for Distributed Graph Algorithms",
       "authors": [
-        "Eashan Gupta, Yongzhou Chen, Apoorve Mohan, Pavlos Maniotis, Abdullah Kayi, Radhika Mittal"
+        "Yi-Jun Chang, Nima Dolatabadi"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.04417v1 Announce Type: cross \nAbstract: Distributed AI training involves recurring rounds of data exchange between multiple pairs of GPU nodes. Slowdown in even one flow due to congestion can cause the entire communication round to slowdown. Current approaches for evading congestion in AI clusters assume global control over the entire workload (e.g. coordinating the schedule of all jobs) or assume infrastructural support (e.g. adaptive routing in switches). They are thus ill-suited in a shared cloud setting where AI jobs belonging to one user can face external congestion from other users' jobs or background traffic beyond its own control. In this paper, we build a system, REACT, that tunes the recurring pattern of data exchange between GPU nodes (known as communication collectiv",
-      "pdf_link": "https://arxiv.org/pdf/2609.04417.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.04417",
-      "submission_date": "2026-09-07T04:00:00+00:00",
+      "abstract": "arXiv:2609.10044v1 Announce Type: new \nAbstract: We introduce a graph decomposition primitive called introvert clustering, which strengthens standard low-diameter clustering by guaranteeing that every clustered vertex keeps at least a $\\left(\\frac12-\\varepsilon\\right)$-fraction of its relevant neighbors in its own cluster. Repeatedly applying this primitive yields a layered introvert network decomposition with $O(\\log n)$ layers and weak diameter $O(\\log n)$.\n  We give two applications in the $\\mathsf{LOCAL}$ model. For every constant $\\varepsilon>0$, we obtain a $\\widetilde O(\\log^2 n)$-round deterministic algorithm for list $\\left(\\frac32+\\varepsilon\\right)\\Delta$-edge coloring on graphs of maximum degree $\\Delta\\geq\\Delta_0(\\varepsilon)$; for bipartite graphs, the result holds for all $",
+      "pdf_link": "https://arxiv.org/pdf/2609.10044.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.10044",
+      "submission_date": "2026-09-10T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-09-07T11:31:49.322408+00:00"
-    },
-    {
-      "forum_id": "2609.05406",
-      "paper_number": -1,
-      "title": "Beyond Scalar Flexibility: From Eligible AI Workloads to Dependable Load Relief",
-      "authors": [
-        "Meiyi Li"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.05406v1 Announce Type: cross \nAbstract: Grid studies often represent data-center flexibility as a fixed percentage of load, although no public production trace has shown how much eligible load persists across event durations or co-moves across clusters. We reconstruct 4,439 hourly power observations from a 185-day trace of 155,410 GPUs and derive a workload-semantic flexibility envelope. The fleet's time-averaged Monte Carlo median facility demand is 55.8 MW, while immediate eligible curtailment averages 3.55 MW after retaining allocated-GPU idle power: 12.1% of workload power and 6.35% of median facility power. Under full realization of that eligibility, 95%-available relief falls from 2.51 MW for one hour to 2.32 MW for four hours and 1.95 MW for 24 hours; a common realizable ",
-      "pdf_link": "https://arxiv.org/pdf/2609.05406.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.05406",
-      "submission_date": "2026-09-07T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-09-07T11:31:49.322731+00:00"
+      "score": 4.0,
+      "updated_at": "2026-09-10T10:34:01.128088+00:00"
     }
   ]
 }

@@ -1,31 +1,54 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-09-07T11:32:23.086198+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-09-10T10:34:47.345768+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2602.18134",
+      "forum_id": "2609.10080",
       "paper_number": -1,
-      "title": "Computing accurate singular values using a mixed-precision one-sided Jacobi algorithm",
+      "title": "Stochastic Lanczos Quadrature for Computational Uncertainty in Linear Algebra",
       "authors": [
-        "Zhengbo Zhou, Fran\\c{c}oise Tisseur, Marcus Webb"
+        "Hassan Fifen, Issa Karambal, Philipp Hennig"
       ],
       "keywords": [
         "cs.NA",
-        "SIAM"
+        "scientific computing"
       ],
-      "abstract": "arXiv:2602.18134v2 Announce Type: replace \nAbstract: We present a relative forward error analysis of a mixed-precision preconditioned one-sided Jacobi algorithm, analogous to a two-sided version introduced in [N. J. Higham, F. Tisseur, M. Webb and Z. Zhou, SIAM J. Matrix Anal. Appl. 46 (2025), pp. 2423-2448], which uses low precision to compute the preconditioner, applies it in high precision, and computes the singular value decomposition using the one-sided Jacobi algorithm at working precision. Our analysis yields relative forward error bounds involving the scaled condition number of the preconditioned matrix rather than that of the input matrix, potentially improving accuracy when the former is smaller. We present and analyze two approaches for constructing effective preconditioners. Ou",
-      "pdf_link": "https://arxiv.org/pdf/2602.18134.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.18134",
-      "submission_date": "2026-09-07T04:00:00+00:00",
-      "conference": "SIAM",
+      "abstract": "arXiv:2609.10080v1 Announce Type: new \nAbstract: Applying a matrix function to a vector is a common operation in large-scale scientific computing, such as Bayesian inference. When the matrix is symmetric positive definite and the function is its inverse, the Lanczos algorithm gives a matrix-free approximation from matrix-vector products alone. Stopping after a fixed number of steps keeps the approximation on the explored Krylov subspace but assigns nothing to its orthogonal complement, which holds the smallest eigenvalues and therefore the largest contributions to the inverse. This truncation is usually treated as a silent numerical error rather than as measurable uncertainty. We show that a single Lanczos run yields both a matrix-free approximation of the inverse and a Gaussian distributi",
+      "pdf_link": "https://arxiv.org/pdf/2609.10080.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.10080",
+      "submission_date": "2026-09-10T04:00:00+00:00",
+      "conference": "scientific computing",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-09-07T11:32:23.083978+00:00"
+      "score": 17.5,
+      "updated_at": "2026-09-10T10:34:47.341856+00:00"
+    },
+    {
+      "forum_id": "2506.17366",
+      "paper_number": -1,
+      "title": "Gaussian Processes and Reproducing Kernel Hilbert Spaces: Connections and Equivalences",
+      "authors": [
+        "Motonobu Kanagawa, Philipp Hennig, Dino Sejdinovic, Bharath K. Sriperumbudur"
+      ],
+      "keywords": [
+        "cs.NA",
+        "numerical analysis"
+      ],
+      "abstract": "arXiv:2506.17366v3 Announce Type: replace-cross \nAbstract: This monograph studies the relations between two approaches using positive definite kernels: probabilistic methods using Gaussian processes, and non-probabilistic methods using reproducing kernel Hilbert spaces (RKHS). They are widely studied and used in machine learning, statistics, and numerical analysis. We study connections and equivalences for fundamental topics such as regression, interpolation, numerical integration, distributional discrepancies, and statistical dependence, as well as sample path properties of Gaussian processes. A unifying perspective for these equivalences is established, based on the equivalence between the Gaussian Hilbert space and the RKHS. The monograph serves as a basis to bridge many other methods b",
+      "pdf_link": "https://arxiv.org/pdf/2506.17366.pdf",
+      "forum_link": "https://arxiv.org/abs/2506.17366",
+      "submission_date": "2026-09-10T04:00:00+00:00",
+      "conference": "numerical analysis",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-09-10T10:34:47.343068+00:00"
     }
   ]
 }

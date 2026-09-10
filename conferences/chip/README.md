@@ -1,15 +1,19 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-09-09 10:44:24 UTC
-- **Total Filtered Papers**: 4
-- **Displaying**: 4 (arxiv: 4)
+- **Last Updated**: 2026-09-10 10:34:12 UTC
+- **Total Filtered Papers**: 8
+- **Displaying**: 8 (arxiv: 8)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [GoldenFloat: A Phi-Derived Static-Split Floating-Point Family from GF4 to GF1024 with a Lucas-Exact Integer Identity](https://arxiv.org/abs/2606.05017) | `ARXIV` | 3.0 |
-| 2 | [A Piecewise-Linear Approximation-based Energy-Efficient Error-Optimized Unsigned Square Rooter for Accuracy-Critical Applications](https://arxiv.org/abs/2609.04783) | `ARXIV` | 2.0 |
-| 3 | [Proton Irradiation Characterization of an Open-Source ML Accelerator on a Zynq UltraScale+ MPSoC](https://arxiv.org/abs/2609.05249) | `ARXIV` | 1.0 |
-| 4 | [Golden Ruler: A Numeric Format Catalog with Bit-Exact Conformance Vectors for FP8, BF16, MXFP4, and Microscaling Formats](https://arxiv.org/abs/2606.09686) | `ARXIV` | 1.0 |
+| 1 | [Minimal Deadlock-Free Routing for Degree-Six Triangular-Lattice Meshes and Tori with Two Forbidden Turns](https://arxiv.org/abs/2609.09746) | `ARXIV` | 32.5 |
+| 2 | [HLSFactory-Agent: Large-Scale Agentic HLS Dataset Construction from Academic and Open-Source Projects](https://arxiv.org/abs/2609.09519) | `ARXIV` | 11.0 |
+| 3 | [AutoTrans: AI-Assisted Automatic Translation of Security Assertions for RISC-V Processors](https://arxiv.org/abs/2609.10057) | `ARXIV` | 3.0 |
+| 4 | [DiffLUT-Net: Differentiable Training of FPGA LUT Networks with Learnable Connectivity](https://arxiv.org/abs/2609.09254) | `ARXIV` | 2.5 |
+| 5 | [NOVA-CIM: Noise- and Correlation-Tolerant Stochastic Interfaces for Analog Compute-in-Memory](https://arxiv.org/abs/2609.07059) | `ARXIV` | 2.5 |
+| 6 | [Differential Stochastic Simulated Annealing Processor for Fully Connected 2048-Spin Optimization](https://arxiv.org/abs/2609.09559) | `ARXIV` | 2.0 |
+| 7 | [FPGA Acceleration of Fully Homomorphic Encryption with Adaptive Key Switching](https://arxiv.org/abs/2609.09423) | `ARXIV` | 1.5 |
+| 8 | [AMEND: Audited Margins Enable Nonblocking Drops in GPU-PIM LLM Decoding](https://arxiv.org/abs/2609.09823) | `ARXIV` | 1.0 |

@@ -1,14 +1,13 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-09-09 10:44:13 UTC
-- **Total Filtered Papers**: 3
-- **Displaying**: 3 (arxiv: 3)
+- **Last Updated**: 2026-09-10 10:34:01 UTC
+- **Total Filtered Papers**: 2
+- **Displaying**: 2 (arxiv: 2)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Atlas: Optimizing Deployment of Compound AI Workflows on Heterogeneous Clusters](https://arxiv.org/abs/2609.04513) | `ARXIV` | 64.0 |
-| 2 | [Tuning Collective Patterns to Alleviate Congestion in Shared AI Clusters](https://arxiv.org/abs/2609.04417) | `ARXIV` | 14.5 |
-| 3 | [Beyond Scalar Flexibility: From Eligible AI Workloads to Dependable Load Relief](https://arxiv.org/abs/2609.05406) | `ARXIV` | 13.0 |
+| 1 | [TFR-GNN: Topology- and Fault-Aware Graph Neural Scheduling for Heterogeneous Distributed Computing Systems](https://arxiv.org/abs/2609.09165) | `ARXIV` | 47.0 |
+| 2 | [Introvert Clustering for Distributed Graph Algorithms](https://arxiv.org/abs/2609.10044) | `ARXIV` | 4.0 |
