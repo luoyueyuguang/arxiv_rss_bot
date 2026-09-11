@@ -1,54 +1,100 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-09-10T10:34:01.736762+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-09-11T10:34:13.268317+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2609.09165",
+      "forum_id": "2609.10812",
       "paper_number": -1,
-      "title": "TFR-GNN: Topology- and Fault-Aware Graph Neural Scheduling for Heterogeneous Distributed Computing Systems",
+      "title": "ExaServe: Large-Scale LLM Serving on Exascale HPC Systems",
       "authors": [
-        "Shiyu Yang, Ziyang Zeng, Jie-Si Yang"
+        "Wenyi Wang, Shu Shi, Yadu Babuji, Ian Foster, Kyle Chard"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.09165v1 Announce Type: new \nAbstract: Scheduling workflow directed acyclic graphs (DAGs) on heterogeneous distributed systems is a classical NP-hard problem, and the list-scheduling heuristic HEFT remains the defacto standard because of its low complexity and strong makespan. In real deployments, however, machines fail: commodity and pre-emptible nodes are far less reliable than dedicated ones, and a makespan-optimal but reliability-agnostic placement can be dramatically slowed by node failures. We show empirically, on real workflow structures from the WfCommons/Pegasus corpus, that no single fixed heuristic is best across the joint space of failure intensity and cluster load: with no failures HEFT is optimal, whereas under failures a reliability-aware placement can reduce the e",
-      "pdf_link": "https://arxiv.org/pdf/2609.09165.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.09165",
-      "submission_date": "2026-09-10T04:00:00+00:00",
+      "abstract": "arXiv:2609.10812v1 Announce Type: new \nAbstract: Cloud-native LLM serving frameworks have made deployment routine in data centers, yet deploying them on leadership-class supercomputers remains an engineering challenge requiring scheduler integration, MPI launch, accelerator selection, node-local weight staging, and platform-specific patches. We present \\textit{ExaServe}, a pip-installable framework that transforms a declarative YAML specification into a reproducible large-scale LLM serving deployment. Using ExaServe, we deploy LLM serving on ALCF Aurora from 1 to 256 nodes (3072 vLLM replicas). Non-streaming inference scales nearly linearly to 256 nodes, reaching 27.1\\,k requests/s (3.8\\,M tokens/s). Token streaming scales differently: a centralized proxy plateaus at $\\sim$4.7\\,k requests/",
+      "pdf_link": "https://arxiv.org/pdf/2609.10812.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.10812",
+      "submission_date": "2026-09-11T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 47.0,
-      "updated_at": "2026-09-10T10:34:01.127868+00:00"
+      "score": 56.0,
+      "updated_at": "2026-09-11T10:34:12.821918+00:00"
     },
     {
-      "forum_id": "2609.10044",
+      "forum_id": "2609.10552",
       "paper_number": -1,
-      "title": "Introvert Clustering for Distributed Graph Algorithms",
+      "title": "Design and Operation of a Federated GPU Cluster for Digital Humanities within DHinfra.at",
       "authors": [
-        "Yi-Jun Chang, Nima Dolatabadi"
+        "Florian Atzenhofer-Baumgartner, David Fleischhacker, Max Resch, Lukas Waldhofer, Michael Otto"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.10044v1 Announce Type: new \nAbstract: We introduce a graph decomposition primitive called introvert clustering, which strengthens standard low-diameter clustering by guaranteeing that every clustered vertex keeps at least a $\\left(\\frac12-\\varepsilon\\right)$-fraction of its relevant neighbors in its own cluster. Repeatedly applying this primitive yields a layered introvert network decomposition with $O(\\log n)$ layers and weak diameter $O(\\log n)$.\n  We give two applications in the $\\mathsf{LOCAL}$ model. For every constant $\\varepsilon>0$, we obtain a $\\widetilde O(\\log^2 n)$-round deterministic algorithm for list $\\left(\\frac32+\\varepsilon\\right)\\Delta$-edge coloring on graphs of maximum degree $\\Delta\\geq\\Delta_0(\\varepsilon)$; for bipartite graphs, the result holds for all $",
-      "pdf_link": "https://arxiv.org/pdf/2609.10044.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.10044",
-      "submission_date": "2026-09-10T04:00:00+00:00",
+      "abstract": "arXiv:2609.10552v1 Announce Type: new \nAbstract: We describe the design, implementation, and operation of a small federated GPU cluster built for Digital Humanities (DH) research within the Austrian DHinfra.at project. The system spans two university sites, brokers logins from a national identity federation, and exposes compute through three interfaces: interactive notebooks, SSH, and an OpenAI-compatible inference API. The core of the platform is a control plane that maps federated identity, per-project quotas, and a model catalogue onto self-service interfaces. We document this control plane in detail, including the request-and-approval queue that mediates every privileged cluster effect and the two-tier model-serving setup, which combines always-on services with on-demand model swapping",
+      "pdf_link": "https://arxiv.org/pdf/2609.10552.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.10552",
+      "submission_date": "2026-09-11T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-09-10T10:34:01.128088+00:00"
+      "score": 33.0,
+      "updated_at": "2026-09-11T10:34:12.821782+00:00"
+    },
+    {
+      "forum_id": "2609.10542",
+      "paper_number": -1,
+      "title": "The Internet of Collaborating Things: Agentic Edge AI for Autonomous Cross-Domain Collaboration",
+      "authors": [
+        "Walid A. Hanafy, Nader Sehatbakhsh, David Irwin, Mani Srivastava, Prashant Shenoy"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2609.10542v1 Announce Type: new \nAbstract: The Internet of Things is on a trajectory toward a trillion connected devices deployed across multiple domains. These devices are no longer simple sensing and actuation endpoints; they are mobile platforms with embedded processing and intelligent on-device services. The dominant paradigm of offloading computation to cloud and edge servers is a vertical device-to-server interaction model that cannot scale with this trajectory. What is needed instead is a horizontal paradigm in which devices communicate and collaborate directly, pooling their compute, sensing, and actuation into dynamic, cross-domain clusters rather than offloading to centralized infrastructure. We refer to this paradigm as the Internet of Collaborating Things (IoCT). Realizin",
+      "pdf_link": "https://arxiv.org/pdf/2609.10542.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.10542",
+      "submission_date": "2026-09-11T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-09-11T10:34:12.821643+00:00"
+    },
+    {
+      "forum_id": "2609.10790",
+      "paper_number": -1,
+      "title": "Composable CXL Memory as a Kubernetes-Native Shared Memory for LLM Serving",
+      "authors": [
+        "Hongjian Fan, Kevin Zhang, David Habinsky, Sean Dykstra"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2609.10790v1 Announce Type: new \nAbstract: We present a Kubernetes Dynamic Resource Allocation (DRA) driver that makes composable CXL memory a schedulable cluster resource, and evaluate the resulting shared-memory tier for cross-node KV-cache reuse in LLM serving. The driver composes CXL regions on demand, materializes them as DAX devices on each participating host, and injects them into pods under a single Container Device Interface (CDI) name so that pods on different nodes access the same physical region. A shared-memory connector for vLLM/llm-d uses that region as a KV-cache tier with a slot directory embedded inside the shared medium, which eliminates the need for an external metadata service. On a two-node cluster with a 512\\,GiB CXL appliance and Qwen2.5-7B-Instruct, cross-nod",
+      "pdf_link": "https://arxiv.org/pdf/2609.10790.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.10790",
+      "submission_date": "2026-09-11T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-09-11T10:34:12.821879+00:00"
     }
   ]
 }

@@ -1,31 +1,77 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-09-10T10:34:01.050584+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-09-11T10:34:12.710440+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2609.09643",
+      "forum_id": "2609.10970",
       "paper_number": -1,
-      "title": "UNISON: A Co-Designed Near-Memory Scheduler of Session KV Residency for LLM Agents",
+      "title": "Fengshui: Demystifying Chiplet Ecosystem and Bespoke Neural Network Accelerator Codesign",
       "authors": [
-        "Fan He, Yan Li, Xiaoyang Zeng"
+        "Haoran Jin, Jirong Yang, Zhiheng Zhang, Justin Shin, Barry Lyu, Kangqi Zhang, Yunpeng Liu, Nathan Bleier"
       ],
       "keywords": [
         "cs.AR",
-        "ISCA"
+        "MICRO"
       ],
-      "abstract": "arXiv:2609.09643v1 Announce Type: new \nAbstract: Large language models are increasingly composed into agent loops that plan, call tools, and resume the same task after each action. These loops press a shared memory hierarchy harder than conventional multi-turn chat, because they hold a growing key-value (KV) prefix across tool waits and place many sessions on one SRAM/HBM pool, so that eviction and hierarchical placement become a session-level efficiency problem orthogonal to compute-mode optimization. Existing proxies based on recency, timeout, or identity miss the mechanism information of the loop and therefore treat a live wait as a cold, discardable unit. We present Unified Native Inter-turn Session Orchestration Nexus (UNISON), an event-driven near-memory scheduler in which Survival-P",
-      "pdf_link": "https://arxiv.org/pdf/2609.09643.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.09643",
-      "submission_date": "2026-09-10T04:00:00+00:00",
-      "conference": "ISCA",
+      "abstract": "arXiv:2609.10970v1 Announce Type: new \nAbstract: Modern ML workloads, with stringent latency and energy constraints, are increasingly hard to run efficiently on homogeneous commodity hardware. We argue that operator-level disaggregation--tailoring microarchitecture, batching, and memory hierarchy to each operator--is essential to overcome these limitations, though the resulting highly bespoke accelerators incur prohibitive Non-Recurring Engineering (NRE) costs. Chiplet-based integration amortizes NRE across applications, but choosing which chiplets to build and how to compose them into accelerators is circularly dependent--a chiplet pool's value depends on the constructed accelerators, while accelerator quality is constrained by available chiplets. This paper introduces Fengshui, a chiplet",
+      "pdf_link": "https://arxiv.org/pdf/2609.10970.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.10970",
+      "submission_date": "2026-09-11T04:00:00+00:00",
+      "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 42.0,
-      "updated_at": "2026-09-10T10:34:01.047276+00:00"
+      "score": 87.0,
+      "updated_at": "2026-09-11T10:34:12.705930+00:00"
+    },
+    {
+      "forum_id": "2609.10861",
+      "paper_number": -1,
+      "title": "REACH: Controller-Managed Long-Span ECC for HBM AI Inference",
+      "authors": [
+        "Rui Xie, Yunhua Fang, Asad Ul Haq, Linsen Ma, Sanchari Sen, Swagath Venkataramani, Liu Liu, Tong Zhang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2609.10861v1 Announce Type: new \nAbstract: High-Bandwidth Memory (HBM) cost motivates stronger controller protection that can support a wider range of device error rates. Long-span error-correcting codes provide stronger protection at a comparable code rate, but a direct implementation couples small accesses to span-wide state and requires costly decoding at HBM bandwidth. Read-dominated LLM decode offers a favorable setting: sequential reads support span aggregation, while sparse writes limit parity-update traffic. This paper presents REACH, a controller microarchitecture that uses established inner codes to correct common errors and identify unresolved chunks, reserving a long outer code for known-erasure repair. Differential parity bounds write traffic, and a co-designed endpoint ",
+      "pdf_link": "https://arxiv.org/pdf/2609.10861.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.10861",
+      "submission_date": "2026-09-11T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.0,
+      "updated_at": "2026-09-11T10:34:12.705908+00:00"
+    },
+    {
+      "forum_id": "2609.10634",
+      "paper_number": -1,
+      "title": "HermiCache: Enclave-Aware Cache Replacement for Trusted Execution Environments",
+      "authors": [
+        "Oussama Elmnaouri, Pascal Cotret, Vianney Lap\\^otre, Lo\\\"ic Lagadec"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2609.10634v1 Announce Type: cross \nAbstract: Trusted Execution Environments (TEEs) protect enclave memory from untrusted software but remain vulnerable to cache-based side-channel attacks due to shared microarchitectural resources. Existing countermeasures use techniques such as cache partitioning or randomization: these solutions are not ideal if a designer wants fine-grained configurations and a deterministic protection. In this paper, we introduce HermiCache which is an answer to these requirements. HermiCache is designed for RISC-V cores and has been implemented in the OpenHwGroup CVA6 core with a Keystone TEE for the software layer. The solution has an area overhead of 6% on the processor core.",
+      "pdf_link": "https://arxiv.org/pdf/2609.10634.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.10634",
+      "submission_date": "2026-09-11T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 26.5,
+      "updated_at": "2026-09-11T10:34:12.706070+00:00"
     }
   ]
 }

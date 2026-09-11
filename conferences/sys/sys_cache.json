@@ -1,7 +1,7 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-09-10T10:34:12.640191+00:00",
+  "last_updated": "2026-09-11T10:34:16.396807+00:00",
   "paper_count": 309,
   "papers": [
     {
@@ -377,29 +377,6 @@
       "ratings": [],
       "score": 76.5,
       "updated_at": "2026-07-21T08:54:22.932132+00:00"
-    },
-    {
-      "forum_id": "2609.09742",
-      "paper_number": -1,
-      "title": "Breaking Fault Lines: Unifying TEE-Assisted BFT Consensus in Partially Trusted Worlds",
-      "authors": [
-        "Xiaoqing Wen, Tong Liu, Jianyu Niu, Jialin Li, Cong Wang, Yinqian Zhang, Chen Feng"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.09742v1 Announce Type: new \nAbstract: This paper revisits TEE-assisted BFT under a universal partial-TEE model, where an arbitrary subset of replicas execute inside TEEs while the remaining replicas operate without hardware trust guarantees. We show that heterogeneous trust changes the structure of quorum formation and fault tolerance. In particular, we derive a tight resilience bound f < max {n/3, m/2}, where n is the total number of replicas and m is the number of TEE-enabled replicas. The result reveals a sharp threshold phenomenon: TEEs improve fault tolerance only once they exceed two-thirds of the deployment.\n  Guided by this characterization, we introduce two protocol principles: (1) a dual-quorum construction that safely combines TEE-only and mixed quorums, and (2) a TEE",
-      "pdf_link": "https://arxiv.org/pdf/2609.09742.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.09742",
-      "submission_date": "2026-09-10T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 76.0,
-      "updated_at": "2026-09-10T10:34:01.928394+00:00"
     },
     {
       "forum_id": "usenix-osdi26-55",
@@ -1471,6 +1448,29 @@
       "ratings": [],
       "score": 46.5,
       "updated_at": "2026-07-21T08:54:17.404293+00:00"
+    },
+    {
+      "forum_id": "2609.11744",
+      "paper_number": -1,
+      "title": "Building py-kvcache: A Performance Characterization of External KV Caching for vLLM with NVMe SSDs",
+      "authors": [
+        "Joseph Kanichai, Tiziano De Matteis, Animesh Trivedi"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.11744v1 Announce Type: new \nAbstract: Prefix caching can reduce the time to first token (TTFT) of long-context LLM requests by reusing previously computed key-value (KV) states, but for short prefixes or fast GPUs, recomputation can be faster than loading from an external cache. We characterize this tradeoff in vLLM across GPU, CPU, and NVMe tiers using synthetic workloads, long-context benchmarks, production traces, and find that cache performance depends on transfer granularity, intermediate memory use, and when transfers enter the request schedule, not only on device bandwidth. These findings motivate py-kvcache, a vLLM KV Offload connector with asynchronous direct I/O, bounded shared staging, and scheduler-aware preloading, which starts disk reads while requests are still wa",
+      "pdf_link": "https://arxiv.org/pdf/2609.11744.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.11744",
+      "submission_date": "2026-09-11T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 46.0,
+      "updated_at": "2026-09-11T10:34:13.481759+00:00"
     },
     {
       "forum_id": "usenix-fast26-37",
@@ -3518,6 +3518,29 @@
       "updated_at": "2026-07-21T08:54:22.935344+00:00"
     },
     {
+      "forum_id": "2609.11923",
+      "paper_number": -1,
+      "title": "GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay",
+      "authors": [
+        "Boning Li, Longbo Huang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.11923v1 Announce Type: new \nAbstract: Counterfactual regret minimization (CFR) is one of the few large numerical workloads that still runs faster on CPUs than on GPUs. Each iteration sweeps a game tree with up to billions of states in millions of small, interdependent gather and scatter steps issued through a generic tree interface. On a GPU every kernel finishes in microseconds, so kernel launches and framework dispatch dominate the run time, and prior GPU implementations have lost to optimized CPU code. We observe that for a fixed game, everything about a CFR iteration except the numerical values is known before the first iteration runs. We propose GPU-CFR, a compiler and runtime built on this observation. It compiles any game once into static dataflow: flat edge and informati",
+      "pdf_link": "https://arxiv.org/pdf/2609.11923.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.11923",
+      "submission_date": "2026-09-11T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 15.5,
+      "updated_at": "2026-09-11T10:34:13.481817+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-116",
       "paper_number": 116,
       "title": "Heterogeneity at Hyperscale: Characterization and Scheduling of Large Production AI Clusters at Alibaba (Operational Systems)",
@@ -3924,6 +3947,29 @@
       "ratings": [],
       "score": 14.0,
       "updated_at": "2026-07-21T08:54:22.936410+00:00"
+    },
+    {
+      "forum_id": "2609.10554",
+      "paper_number": -1,
+      "title": "Memory Profiling and Migration for Heterogeneous Memory Architectures",
+      "authors": [
+        "Marios Asiminakis, Polydoros Petrakis, Manolis Marazakis"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.10554v1 Announce Type: new \nAbstract: Heterogeneous memory systems that combine high-bandwidth memory (HBM) with commodity DRAM can accelerate bandwidth-bound HPC workloads, but current page placement largely depends on manual tuning or OS heuristics not designed for multi-tier dynamics. We present SHAMBLES, a kernel-integrated framework that profiles application memory behavior at low overhead and migrates data across tiers without requiring application changes. SHAMBLES exposes a policy-agnostic interface and a lightweight user-space runtime with pluggable policies (e.g. recency and frequency based) as well as static placement for controlled studies. A logging mode provides reproducible timelines of allocations and migrations to aid analysis. We implement SHAMBLES on a commodi",
+      "pdf_link": "https://arxiv.org/pdf/2609.10554.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.10554",
+      "submission_date": "2026-09-11T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-09-11T10:34:13.480836+00:00"
     },
     {
       "forum_id": "usenix-osdi26-5",
@@ -5629,29 +5675,6 @@
       "updated_at": "2026-07-21T08:54:26.742343+00:00"
     },
     {
-      "forum_id": "2609.09160",
-      "paper_number": -1,
-      "title": "LBFAST: A Lightweight Moment-Represented Lattice Boltzmann Solver for Multi-GPU Architectures",
-      "authors": [
-        "Marco Lauricella, Andrea Montessori, Giorgio Amati, Filippo Spiga, Adriano Tiribocchi, Massimo Bernaschi, Sauro Succi"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.09160v1 Announce Type: new \nAbstract: We present LBFAST, a GPU-oriented lattice Boltzmann solver based on a lightweight moment-represented formulation, in which post-collision populations are reconstructed on the fly from a reduced set of moments rather than stored explicitly. This approach significantly lowers the memory footprint, enabling large three-dimensional simulations within the constraints of modern accelerator architectures, where VRAM capacity and bandwidth are critical resources. The method is assessed through standard single- and two-component benchmarks demonstrating good accuracy and stability. Extensive scaling experiments on multi-GPU systems show near-ideal weak scaling up to 512 GPUs and sustained performance across different velocity sets. The combination of",
-      "pdf_link": "https://arxiv.org/pdf/2609.09160.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.09160",
-      "submission_date": "2026-09-10T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-09-10T10:34:01.927843+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-83",
       "paper_number": 83,
       "title": "Disentangling Graph Dependencies for Efficient Billion-Scale GPU Vector Search",
@@ -5775,29 +5798,6 @@
       "ratings": [],
       "score": 3.5,
       "updated_at": "2026-07-21T08:54:22.933403+00:00"
-    },
-    {
-      "forum_id": "2606.23698",
-      "paper_number": -1,
-      "title": "FP8 is All You Need (Part 2): Full-FP64 3-D FFT on FP8-Generation Tensor CoresThe Integer-Epilogue Wall and the Minimal Hardware That Would Remove It",
-      "authors": [
-        "Satoshi Matsuoka"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2606.23698v3 Announce Type: replace-cross \nAbstract: The NVIDIA Blackwell Ultra (B300) GPU cuts FP64 vector throughput $\\sim 30\\times$ while multiplying FP8 tensor throughput. After the recovery of FP64 GEMM via Ozaki Scheme II on FP8 tensor cores and the Tensor-Memory Equilibrium model of the companions (\"FP8 is All You Need, Part 1\" and \"Ozaki 2.5\") we ask whether the fifth canonical HPC primitive, the full-FP64 $1024^3$ 3-D FFT, can be carried by the same substrate, and answer with a design and its limit. It is a Bailey six-step transform with no FP64 arithmetic: FP8-tensor DFT GEMMs with fused twiddles, residue-domain Karatsuba combines and exact CRT reconstruction whose bulk is a small GEMM on the FP16 tensor path and whose remainder is a Kulisch fixed-point accumulation with a ",
-      "pdf_link": "https://arxiv.org/pdf/2606.23698.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.23698",
-      "submission_date": "2026-09-10T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-09-10T10:34:01.930179+00:00"
     },
     {
       "forum_id": "usenix-osdi26-34",

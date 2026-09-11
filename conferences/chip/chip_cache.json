@@ -1,192 +1,100 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-09-10T10:34:12.722257+00:00",
-  "paper_count": 8,
+  "last_updated": "2026-09-11T10:34:16.512467+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2609.09746",
+      "forum_id": "2512.07312",
       "paper_number": -1,
-      "title": "Minimal Deadlock-Free Routing for Degree-Six Triangular-Lattice Meshes and Tori with Two Forbidden Turns",
+      "title": "DCO: Dynamic Cache Orchestration for LLM Accelerators through Predictive Management",
       "authors": [
-        "Zibo Diao, Rongxi Sun"
+        "Zhongchun Zhou, Chengtao Lai, Yuhang Gu, Wei Zhang"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.09746v1 Announce Type: new \nAbstract: Degree-six triangular-lattice interconnection networks offer substantial minimal-path diversity, but their additional directions complicate deadlock-free routing under wormhole flow control. We study a finite hexagon-shaped mesh and its periodic torus quotient in a common six-direction coordinate system. For the finite mesh, we construct a minimal partially adaptive routing relation that uses one virtual channel and forbids only two directed turns. For the torus, we prove that every source-destination pair has a unique closest lattice lift, but that the same two-turn physical routing relation still has a cyclic one-VC resource CDG for every n >= 3. We eliminate this residual periodic dependency by combining two virtual channels with Hamilton",
-      "pdf_link": "https://arxiv.org/pdf/2609.09746.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.09746",
-      "submission_date": "2026-09-10T04:00:00+00:00",
+      "abstract": "arXiv:2512.07312v2 Announce Type: replace \nAbstract: The rapid adoption of large language models (LLMs) is pushing AI accelerators toward increasingly powerful and specialized designs. Instead of further complicating software development with deeply hierarchical scratchpad memories (SPMs) and their asynchronous management, we investigate the opposite point of the design spectrum: a multi-core AI accelerator equipped with a shared system-level cache and application-aware management policies, which keeps the programming effort modest. Our approach exploits dataflow information available in the software stack to guide cache replacement (including dead-block prediction), in concert with bypass decisions and mechanisms that alleviate cache thrashing.\n  We assess the proposal using a cycle-accur",
+      "pdf_link": "https://arxiv.org/pdf/2512.07312.pdf",
+      "forum_link": "https://arxiv.org/abs/2512.07312",
+      "submission_date": "2026-09-11T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-09-10T10:34:12.717076+00:00"
+      "score": 13.0,
+      "updated_at": "2026-09-11T10:34:16.509448+00:00"
     },
     {
-      "forum_id": "2609.09519",
+      "forum_id": "2609.11713",
       "paper_number": -1,
-      "title": "HLSFactory-Agent: Large-Scale Agentic HLS Dataset Construction from Academic and Open-Source Projects",
+      "title": "A Time-Based Readout for Vector-Matrix Multiplication in Fully Analog Memristive SNNs",
       "authors": [
-        "Kaushik Chandana, Jay Imperatori, Tanmay Shukla, Justin Zhou, Stefan Abi-Karam, Callie Hao"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2609.09519v1 Announce Type: new \nAbstract: Building large, diverse datasets of high-level synthesis (HLS) designs beyond common community benchmarks remains an open challenge. This challenge is made urgent by the rise of deep learning and LLMs for hardware design, which demand such datasets to train QoR models and benchmark LLMs on HLS tasks. Despite ongoing efforts to broaden sources, dataset curation still depends on manual work: locating HLS designs across academic publications and open source, then extracting standalone designs from larger codebases. The process is error-prone and demands expert knowledge, iterative testing, and substantial per-repository engineering.\n  To address this, we present HLSFactory-Agent, an LLM agent that automates large-scale HLS dataset curation by e",
-      "pdf_link": "https://arxiv.org/pdf/2609.09519.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.09519",
-      "submission_date": "2026-09-10T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-09-10T10:34:12.716875+00:00"
-    },
-    {
-      "forum_id": "2609.10057",
-      "paper_number": -1,
-      "title": "AutoTrans: AI-Assisted Automatic Translation of Security Assertions for RISC-V Processors",
-      "authors": [
-        "Sharjeel Imtiaz, Uljana Reinsalu, Tara Ghasempouri"
+        "Elia Mateu-Barriendos, \\'Alvaro G\\'omez-Pau, Josep Rius, Daniel Arum\\'i, Rosa Rodr\\'iguez-Monta\\~n\\'es, Salvador Manich"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.10057v1 Announce Type: cross \nAbstract: Reusing a set of verified security assertions across RISC-V processor targets remains one of the most expensive bottlenecks in hardware security verification. Manual translation takes hours per assertion. Raw LLM translation is fast but unreliable, introducing signal hallucination, where the model invents port names absent from the target RTL and produces outputs that may vary across model updates or even within the same model version. This paper presents AutoTrans, an automated framework that addresses the above shortcomings. First, a new lightweight Regular Expression-based System Verilog signal extractor is proposed to identify the signals for generating security assertions. This step is necessary to prevent signal hallucination. Second",
-      "pdf_link": "https://arxiv.org/pdf/2609.10057.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.10057",
-      "submission_date": "2026-09-10T04:00:00+00:00",
+      "abstract": "arXiv:2609.11713v1 Announce Type: cross \nAbstract: Artificial neural networks rely on vector-matrix multiplications (VMMs), whose implementation in von Neumann architectures is dominated by costly data movement between memory and processing units. Spiking neural networks (SNNs) mitigate this bottleneck by performing in-memory, analog VMMs using memristive crossbar arrays. However, conventional current-mode readout circuits incur significant area and power overhead.\n  This work proposes a fully analog readout architecture based on voltage-to-time conversion of the VMM output. By sensing the column voltage, the proposed approach avoids current-mode summing and scaling circuitry, improving area and energy efficiency. Post-layout simulations of a 10x1 SNN implemented in a 130 nm CMOS technolog",
+      "pdf_link": "https://arxiv.org/pdf/2609.11713.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.11713",
+      "submission_date": "2026-09-11T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-09-11T10:34:16.509405+00:00"
+    },
+    {
+      "forum_id": "2609.07907",
+      "paper_number": -1,
+      "title": "A 28nm 27,648-Spin Multichip Digital Ising Accelerator with Pegasus Connectivity",
+      "authors": [
+        "Tong Wu, Atharva Raut, Ian Khor, Ziyad Alswaidan, Ting-Yu Lee, Hongchang Kuang, Navid Anjum Aadit, Anand Raju, Dhruv Chinmay, Siddharth Das, Ken Mai, Kerem Camsari, Tathagata Srimani"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.07907v2 Announce Type: replace \nAbstract: We report a 28 nm four-chip Ising accelerator with 27,648 spins, degree-15 Pegasus connectivity, and 10b coefficients. Boundary-state streaming overlaps interchip transfers with spin updates, achieving 98.03% simulated weak-scaling efficiency. At 140 MHz, the four-chip system delivers 30.24G peak updates/s at 1.2 pJ/update including I/O power, with 11.5$\\times$ the throughput and approximately one-quarter the logic-plus-SRAM area per spin of a prior 28 nm multichip design. We demonstrate MaxCut, spin glass, frustrated loops, factorization, and 3SAT.",
+      "pdf_link": "https://arxiv.org/pdf/2609.07907.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.07907",
+      "submission_date": "2026-09-11T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 3.0,
-      "updated_at": "2026-09-10T10:34:12.717579+00:00"
+      "updated_at": "2026-09-11T10:34:16.509473+00:00"
     },
     {
-      "forum_id": "2609.09254",
+      "forum_id": "2509.24425",
       "paper_number": -1,
-      "title": "DiffLUT-Net: Differentiable Training of FPGA LUT Networks with Learnable Connectivity",
+      "title": "BiHDTrans: binary hyperdimensional transformer for efficient multivariate time series classification",
       "authors": [
-        "Jiaqi Ye, Xinrui Gong, Jingcun Wang, Olga Kondrateva, Bing Li, Grace Li Zhang"
+        "Jingtao Zhang, Yi Liu, Qi Shen, Changhong Wang"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2609.09254v1 Announce Type: cross \nAbstract: Field-programmable gate arrays (FPGAs) enable efficient neural-network inference, but most deployment flows either accelerate multiply-accumulate operations or convert pretrained quantized models into lookup tables (LUTs). We present DiffLUT-Net, an FPGA-native network connected by six-input LUTs that are trained from scratch. We jointly learn the 64 truth-table entries of a LUT and the source to each of its six input ports using a differentiable LUT function relaxation and hardware source selection. After training, the truth tables and connections are discretized, unused logic can be pruned, and the network is exported directly as synthesizable Verilog. Across five benchmarks, DiffLUT-Net achieves favorable accuracy-resource trade-offs. T",
-      "pdf_link": "https://arxiv.org/pdf/2609.09254.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.09254",
-      "submission_date": "2026-09-10T04:00:00+00:00",
+      "abstract": "arXiv:2509.24425v2 Announce Type: replace-cross \nAbstract: The proliferation of Internet-of-Things (IoT) devices has led to an unprecedented volume of multivariate time series (MTS) data, requiring efficient and accurate processing for timely decision-making in resource-constrained edge environments. Hyperdimensional (HD) computing, with its inherent efficiency and parallelizability, has shown promise in classification tasks but struggles to capture complex temporal patterns, while Transformers excel at sequence modeling but incur high computational and memory overhead. We introduce BiHDTrans, an efficient neurosymbolic binary hyperdimensional Transformer that integrates self-attention into the HD computing paradigm, unifying the representational efficiency of HD computing with the tempora",
+      "pdf_link": "https://arxiv.org/pdf/2509.24425.pdf",
+      "forum_link": "https://arxiv.org/abs/2509.24425",
+      "submission_date": "2026-09-11T04:00:00+00:00",
       "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-09-10T10:34:12.717350+00:00"
-    },
-    {
-      "forum_id": "2609.07059",
-      "paper_number": -1,
-      "title": "NOVA-CIM: Noise- and Correlation-Tolerant Stochastic Interfaces for Analog Compute-in-Memory",
-      "authors": [
-        "Jiachen Ren, Wenshuai Yao, Haobo Liu, Xincheng Feng, Chenxi Hu, Zhengwu Liu, Kechao Tang, Wenyong Zhou, Ngai Wong"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2609.07059v2 Announce Type: replace \nAbstract: Analog compute-in-memory (CIM) enables energy-efficient model acceleration, but its reliance on ADC-based readout, which directly quantizes noisy column currents, makes inference accuracy highly sensitive to analog read noise, active-row scaling, and ADC precision. In this paper, we present NOVA-CIM, a noise- and correlation-tolerant stochastic interface for analog CIM by replacing multi-bit ADC readout with random-reference 1-bit sensing and reconstructing results through lightweight counting. By converting column currents into comparison probabilities, this probability-domain readout averages zero-mean dynamic read noise over stochastic samples while reducing dependence on high-resolution ADCs. We provide a unified robustness analysis ",
-      "pdf_link": "https://arxiv.org/pdf/2609.07059.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.07059",
-      "submission_date": "2026-09-10T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-09-10T10:34:12.717791+00:00"
-    },
-    {
-      "forum_id": "2609.09559",
-      "paper_number": -1,
-      "title": "Differential Stochastic Simulated Annealing Processor for Fully Connected 2048-Spin Optimization",
-      "authors": [
-        "Naoya Onizawa, Md Mohaimenul Alam, Sean Smithson, Duckgyu Shin, Takahiro Hanyu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2609.09559v1 Announce Type: new \nAbstract: A 2,048-spin fully connected annealing processor based on differential stochastic simulated annealing (DSSA) is presented as an architectural design in TSMC 28 nm CMOS with a 3 mm x 4 mm post-layout area. The processor closes timing at 500 MHz, integrates a 16 Mb SRAM weight memory, and amortizes stochastic noise across 16 spins with area-efficient random number generators. DSSA keeps a serialized datapath for density but recomputes interactions only for spins that flip, shrinking the effective workload to the active frontier during each annealing run. Spin-select scheduling, priority-based weight reads, and a temperature controller that skips idle steps accelerate sparse updates without sacrificing full connectivity. Post-layout simulation ",
-      "pdf_link": "https://arxiv.org/pdf/2609.09559.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.09559",
-      "submission_date": "2026-09-10T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-09-10T10:34:12.716970+00:00"
-    },
-    {
-      "forum_id": "2609.09423",
-      "paper_number": -1,
-      "title": "FPGA Acceleration of Fully Homomorphic Encryption with Adaptive Key Switching",
-      "authors": [
-        "Zhihan Xu, Jayashree Adivarahan, Rajgopal Kannan, Viktor K. Prasanna"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2609.09423v1 Announce Type: cross \nAbstract: Fully Homomorphic Encryption (FHE) enables privacy-preserving cloud services but incurs substantial computation overhead, making hardware acceleration essential. Among FHE operations, key-switching is a major performance bottleneck. Recent cryptographic advances introduce a novel key-switching method (i.e., KLSS) that reduces certain operational complexity but demands higher computational precision than the traditional Hybrid Key Switching (HKS) method. This trade-off leads to distinct computation and memory requirements, making the relative latency of KLSS and HKS highly dependent on hardware parallelism, FHE security parameters, and available on-chip memory capacity, particularly on FPGA platforms, where memory resources and parallelism ",
-      "pdf_link": "https://arxiv.org/pdf/2609.09423.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.09423",
-      "submission_date": "2026-09-10T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-09-10T10:34:12.717410+00:00"
-    },
-    {
-      "forum_id": "2609.09823",
-      "paper_number": -1,
-      "title": "AMEND: Audited Margins Enable Nonblocking Drops in GPU-PIM LLM Decoding",
-      "authors": [
-        "Zuxiong Tan, Will Wei-Jen Wang, Wei Shao, Ali Karkehabadi, Houman Homayoun, Avesta Sasan"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2609.09823v1 Announce Type: new \nAbstract: Autoregressive large language model (LLM) decoding re-reads a growing key-value (KV) cache at every step, so long-context attention is bound by graphics processing unit (GPU) memory bandwidth. Block-sparse attention skips low-contribution KV blocks, but a selector that decides after the current query-key (QK) product, such as max-relative block thresholding (BLASST), still reads every K block, and a processing-in-memory (PIM) filter that decides from the current query places a serial PIM stage on the critical path. We present AMEND, a GPU-PIM attention design that removes both dependencies. AMEND predicts each block's BLASST verdict from margins audited at earlier steps, so the GPU fetches only predicted survivors while near-bank PIM units i",
-      "pdf_link": "https://arxiv.org/pdf/2609.09823.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.09823",
-      "submission_date": "2026-09-10T04:00:00+00:00",
-      "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-09-10T10:34:12.717179+00:00"
+      "updated_at": "2026-09-11T10:34:16.509543+00:00"
     }
   ]
 }

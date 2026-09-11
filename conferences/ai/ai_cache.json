@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-09-10T10:34:47.178981+00:00",
-  "paper_count": 35,
+  "last_updated": "2026-09-11T10:34:48.023256+00:00",
+  "paper_count": 32,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -261,52 +261,6 @@
       "updated_at": "2026-08-14T07:42:19.495345+00:00"
     },
     {
-      "forum_id": "2609.08574",
-      "paper_number": -1,
-      "title": "Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context?",
-      "authors": [
-        "Sara Rizwan, Samaanah Abdus Salam"
-      ],
-      "keywords": [
-        "cs.AI",
-        "NeurIPS"
-      ],
-      "abstract": "arXiv:2609.08574v1 Announce Type: cross \nAbstract: Long context language models now advertise windows of one million tokens, but two habits limit how much of that window is used. Attention heads with nothing useful to read still spend their budget on the first token, which is called the attention sink, and where a fact sits in the context changes whether the model finds it. Gated attention cut first token attention from 46.7 percent to 4.8 percent at NeurIPS 2025, and Kimi K3 pairs that idea with Kimi Delta Attention and Attention Residuals behind a one million token window, eight times past the range where these diagnostics have been reported. This paper asks whether the fix survives that jump. We build SinkProbe, a suite that measures sink mass, massive activation, position resolved reca",
-      "pdf_link": "https://arxiv.org/pdf/2609.08574.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.08574",
-      "submission_date": "2026-09-10T04:00:00+00:00",
-      "conference": "NeurIPS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 22.5,
-      "updated_at": "2026-09-10T10:34:13.442344+00:00"
-    },
-    {
-      "forum_id": "2608.29270",
-      "paper_number": -1,
-      "title": "SHADOWBENCH: Toward Reliable Automatic Evaluation of Semantic Alignment in Autoformalization",
-      "authors": [
-        "Hojae Han, Jongyoon Kim, Sanghyeok Park, Dongwook Cheon, Yeachan Park, Myeong Jae Jeon, Sunjong Choe, Soonho Kong, Wonseok Hur, Seung-won Hwang, Donghoon Hyeon"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ICML"
-      ],
-      "abstract": "arXiv:2608.29270v3 Announce Type: replace-cross \nAbstract: Autoformalization translates informal mathematical theorems into code for proof assistants such as Lean. A central challenge is that current evaluation metrics can accept type-correct but misaligned statements or reject correct statements written in a different formulation. Inspired by Pass@$k$, we propose SA-Pass (*Semantic Alignment Pass*), which tests formal statements using auxiliary statements called *shadows* that characterize the intended statement. A generated statement receives full credit only when it compiles, implies each shadow (forward check), and is implied by their conjunction (backward check). We instantiate SA-Pass in ShadowBench, a Lean 4 full autoformalization benchmark of 178 postgraduate- to research-level pro",
-      "pdf_link": "https://arxiv.org/pdf/2608.29270.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.29270",
-      "submission_date": "2026-09-10T04:00:00+00:00",
-      "conference": "ICML",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 21.5,
-      "updated_at": "2026-09-10T10:34:13.464073+00:00"
-    },
-    {
       "forum_id": "mlr-icml25-28",
       "paper_number": 28,
       "title": "Tomorrow Brings Greater Knowledge: Large Language Models Join Dynamic Temporal Knowledge Graphs",
@@ -426,6 +380,29 @@
       "updated_at": "2026-08-14T07:42:40.890330+00:00"
     },
     {
+      "forum_id": "2608.24191",
+      "paper_number": -1,
+      "title": "'Ghaib in Translation' aka Unseen Harm: Measuring Cross-Script Safety Inconsistency with 'Missed-in-Urdu' Scores in LLM Hate Speech Detection",
+      "authors": [
+        "Fawzia Zehra (Fuzzy),  Kara-Isitt, Sonal Khosla, Stephen Swift"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2608.24191v2 Announce Type: replace-cross \nAbstract: Urdu, the world's tenth most spoken language with 246 million speakers, remains almost entirely absent from mainstream LLM safety evaluation and nine years of WOAH proceedings. To investigate whether this absence has measurable consequences for content moderation reliability, five large language models, GPT-4o, Claude Sonnet 4.5, Gemini 2.5 Flash, Qwen-2.5, and Llama-3.1, were tested across six datasets spanning Nastaliq Urdu, Roman Urdu, English, and code-switched Urdu-English. Across the five Urdu-script datasets, label instability between original-script and English-translation classification ranged from 15.9% (Gemini 2.5 Flash) to 31.6% (Qwen-2.5), with a 'Missed-in-Urdu' rate, content flagged as harmful in English translation ",
+      "pdf_link": "https://arxiv.org/pdf/2608.24191.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.24191",
+      "submission_date": "2026-09-11T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.5,
+      "updated_at": "2026-09-11T10:34:16.810785+00:00"
+    },
+    {
       "forum_id": "mlr-icml25-53",
       "paper_number": 53,
       "title": "Reflecting on the State of Rehearsal-Free Continual Learning with Pretrained Models",
@@ -448,52 +425,6 @@
       "ratings": [],
       "score": 12.5,
       "updated_at": "2026-08-14T07:42:43.316013+00:00"
-    },
-    {
-      "forum_id": "2504.05161",
-      "paper_number": -1,
-      "title": "DDPM Score Matching and Distribution Learning",
-      "authors": [
-        "Sinho Chewi, Alkis Kalavasis, Anay Mehrotra, Omar Montasser"
-      ],
-      "keywords": [
-        "cs.LG",
-        "NeurIPS"
-      ],
-      "abstract": "arXiv:2504.05161v2 Announce Type: replace-cross \nAbstract: Score estimation is the backbone of score-based generative models (SGMs), especially denoising diffusion probabilistic models (DDPMs). A key result in this area shows that with accurate score estimates, SGMs can efficiently generate samples from any realistic data distribution (Chen et al., ICLR'23; Lee et al., ALT'23). This distribution learning result, where the learned distribution is implicitly that of the sampler's output, does not explain how score estimation relates to classical tasks of parameter and density estimation.\n  This paper introduces a framework that reduces score estimation to these two tasks, with various implications for statistical and computational learning theory:\n  Parameter Estimation: Koehler et al. (ICLR",
-      "pdf_link": "https://arxiv.org/pdf/2504.05161.pdf",
-      "forum_link": "https://arxiv.org/abs/2504.05161",
-      "submission_date": "2026-09-10T04:00:00+00:00",
-      "conference": "NeurIPS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 5.0,
-      "updated_at": "2026-09-10T10:34:14.146275+00:00"
-    },
-    {
-      "forum_id": "2606.17886",
-      "paper_number": -1,
-      "title": "Monotonic Kolmogorov-Arnold Networks: A Theoretical and Empirical Study of Monotonicity as an Inductive Bias",
-      "authors": [
-        "Mikhail Krasnov, Bla\\v{z} Bertalani\\v{c}, Carolina Fortuna"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ICML"
-      ],
-      "abstract": "arXiv:2606.17886v3 Announce Type: replace \nAbstract: Monotonicity has been a long-running architectural inductive bias for neural networks, motivated by tabular, scientific, and economic settings where outputs are known to respond monotonically to certain inputs. Existing approaches are MLP- or flow-based and lack per-edge functional transparency; the only Kolmogorov--Arnold Network (KAN) variant with monotonicity, MonoKAN, enforces the constraint only on a restricted parameter subset and requires a projection-style training procedure. We close this gap with \\textbf{MKAN}, a KAN with hard monotonicity guaranteed for \\emph{all} parameter values via exponential reparameterization of B-spline coefficients, positive edge weights, and a monotone base activation. Training reduces to standard unc",
-      "pdf_link": "https://arxiv.org/pdf/2606.17886.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.17886",
-      "submission_date": "2026-09-10T04:00:00+00:00",
-      "conference": "ICML",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.5,
-      "updated_at": "2026-09-10T10:34:14.142124+00:00"
     },
     {
       "forum_id": "mlr-icml25-29",
@@ -705,6 +636,29 @@
       "updated_at": "2026-08-14T07:42:18.271166+00:00"
     },
     {
+      "forum_id": "2608.30107",
+      "paper_number": -1,
+      "title": "AtlasNLP: A Country-Aware Atlas of Dataset Representation in NLP",
+      "authors": [
+        "Joan Nwatu, Tsedeniya Solomon Amare, Longju Bai, Bontu Fufa Balcha, Zayd Bashir, Angana Borah, Zara Burzo, Yubin Choi, Naihao Deng, Samika Gupta, Michel Faloughi, Claude Kwizera, Ziqiao Ma, Cynthia Yacel Fuertes Panizo, Ellie Seehorn, Hui Shen, Jiayi Tang, Zesen Zhao, Boyuan Zheng, Rada Mihalcea"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ACL"
+      ],
+      "abstract": "arXiv:2608.30107v2 Announce Type: replace-cross \nAbstract: Understanding which countries are represented in NLP datasets is essential for identifying gaps, targeting data collection, measuring progress, and informing AI policy. However, geographic metadata is very rarely available, and country-level representation is often hidden behind broad language-level claims. We introduce AtlasNLP, a country-aware atlas of over 13,000 NLP dataset records across normalized NLP task categories, tracking both the populations represented and where datasets are produced. AtlasNLP includes AtlasNLP-Gold, a human-curated reference set, and AtlasNLP-Core, an ACL-derived large-scale collection. Using this resource, we show that (1) dataset coverage is highly uneven across countries and tasks; (2) dataset prod",
+      "pdf_link": "https://arxiv.org/pdf/2608.30107.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.30107",
+      "submission_date": "2026-09-11T04:00:00+00:00",
+      "conference": "ACL",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-09-11T10:34:16.810831+00:00"
+    },
+    {
       "forum_id": "mlr-icml25-5",
       "paper_number": 5,
       "title": "Towards More Diverse Evaluation of Class Incremental Learning: Representation Learning Perspective",
@@ -775,29 +729,6 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-08-14T07:42:23.150427+00:00"
-    },
-    {
-      "forum_id": "2601.18524",
-      "paper_number": -1,
-      "title": "From Human Labels to Literature: Semi-Supervised Learning of NMR Chemical Shifts at Scale",
-      "authors": [
-        "Yongqi Jin, Yecheng Wang, Jun-jie Wang, Rong Zhu, Guolin Ke, Weinan E"
-      ],
-      "keywords": [
-        "cs.LG",
-        "AI for Science"
-      ],
-      "abstract": "arXiv:2601.18524v2 Announce Type: replace \nAbstract: Accurate prediction of nuclear magnetic resonance (NMR) chemical shifts is fundamental to spectral analysis and molecular structure elucidation, yet existing machine learning methods rely on limited, labor-intensive atom-assigned datasets. We propose a semi-supervised framework that learns NMR chemical shifts from millions of literature-extracted spectra without explicit atom-level assignments, integrating a small amount of labeled data with large-scale unassigned spectra. We formulate chemical shift prediction from literature spectra as a permutation-invariant set supervision problem, and show that under commonly satisfied conditions on the loss function, optimal bipartite matching reduces to a sorting-based loss, enabling stable large-",
-      "pdf_link": "https://arxiv.org/pdf/2601.18524.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.18524",
-      "submission_date": "2026-09-10T04:00:00+00:00",
-      "conference": "AI for Science",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-09-10T10:34:14.138192+00:00"
     },
     {
       "forum_id": "mlr-icml25-6",
