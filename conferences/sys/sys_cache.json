@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-09-11T10:34:16.396807+00:00",
-  "paper_count": 309,
+  "last_updated": "2026-09-14T11:44:15.796045+00:00",
+  "paper_count": 314,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1450,29 +1450,6 @@
       "updated_at": "2026-07-21T08:54:17.404293+00:00"
     },
     {
-      "forum_id": "2609.11744",
-      "paper_number": -1,
-      "title": "Building py-kvcache: A Performance Characterization of External KV Caching for vLLM with NVMe SSDs",
-      "authors": [
-        "Joseph Kanichai, Tiziano De Matteis, Animesh Trivedi"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.11744v1 Announce Type: new \nAbstract: Prefix caching can reduce the time to first token (TTFT) of long-context LLM requests by reusing previously computed key-value (KV) states, but for short prefixes or fast GPUs, recomputation can be faster than loading from an external cache. We characterize this tradeoff in vLLM across GPU, CPU, and NVMe tiers using synthetic workloads, long-context benchmarks, production traces, and find that cache performance depends on transfer granularity, intermediate memory use, and when transfers enter the request schedule, not only on device bandwidth. These findings motivate py-kvcache, a vLLM KV Offload connector with asynchronous direct I/O, bounded shared staging, and scheduler-aware preloading, which starts disk reads while requests are still wa",
-      "pdf_link": "https://arxiv.org/pdf/2609.11744.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.11744",
-      "submission_date": "2026-09-11T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 46.0,
-      "updated_at": "2026-09-11T10:34:13.481759+00:00"
-    },
-    {
       "forum_id": "usenix-fast26-37",
       "paper_number": 37,
       "title": "Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs",
@@ -1637,6 +1614,29 @@
       "ratings": [],
       "score": 44.0,
       "updated_at": "2026-07-21T08:54:22.926994+00:00"
+    },
+    {
+      "forum_id": "2609.12276",
+      "paper_number": -1,
+      "title": "AKTS: Sub-Microsecond Kernel Policy Switching for Language-Model Agents",
+      "authors": [
+        "Mohammadali Khodabandehlou, Mahdi Alizadeh"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.12276v1 Announce Type: new \nAbstract: GPU-backed LLM servers often multiplex interactive requests with background batch work on the same CPUs. During a request burst, the scheduler should protect time-to-first-token; between bursts, it should let background work make progress. A fixed kernel policy leaves one of these objectives on the table, so agentic OS control needs a way to switch scheduler behavior as the workload changes. The hard part is not deciding that a switch is useful, but applying it safely and fast enough for the kernel. Scheduler events occur every 1-10 $\\mu$s, and any code that runs there must satisfy the eBPF verifier. Scalar knobs are fast but expose only limited policy behavior, while generating new eBPF policy code is expressive but puts compilation, verifi",
+      "pdf_link": "https://arxiv.org/pdf/2609.12276.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.12276",
+      "submission_date": "2026-09-14T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 43.5,
+      "updated_at": "2026-09-14T11:44:12.851511+00:00"
     },
     {
       "forum_id": "usenix-osdi26-57",
@@ -1883,6 +1883,29 @@
       "ratings": [],
       "score": 38.0,
       "updated_at": "2026-07-21T08:54:26.745242+00:00"
+    },
+    {
+      "forum_id": "2609.12330",
+      "paper_number": -1,
+      "title": "Unleashing the Power of Equality Saturation for Tensor Program Superoptimization",
+      "authors": [
+        "Qi Zhan, Xing Hu, Xin Xia, Shanping Li"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.12330v1 Announce Type: new \nAbstract: Efficient GPU implementations of tensor programs often require joint optimization of high-level algebraic formulations and low-level execution strategies. However, the resulting search space grows rapidly as transformations combine across operators, making joint optimization difficult to scale. We present EqiForge, a tensor program superoptimizer based on equality saturation. Its unified IR represents high-level tensor expressions and tiled computations in a single expression language. By composing equality rules, EqiForge derives fused implementations such as FlashAttention-style kernels directly from tensor expressions. Early compaction prunes redundant partial programs before completion, while subgraph composition extends the search to la",
+      "pdf_link": "https://arxiv.org/pdf/2609.12330.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.12330",
+      "submission_date": "2026-09-14T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 37.5,
+      "updated_at": "2026-09-14T11:44:12.929173+00:00"
     },
     {
       "forum_id": "usenix-osdi26-103",
@@ -2205,6 +2228,29 @@
       "updated_at": "2026-07-21T08:54:22.942367+00:00"
     },
     {
+      "forum_id": "2604.04750",
+      "paper_number": -1,
+      "title": "DeepStack: Facilitating Co-Design Exploration of 3D DRAM-Stacked Accelerators for Distributed LLM Inference",
+      "authors": [
+        "Zhiwen Mo, Guoyu Li, Hao Mark Chen, Yu Cheng, Zhengju Tang, Qianzhou Wang, Lei Wang, Shuang Liang, Lingxiao Ma, Xianqi Zhou, Yuxiao Guo, Wayne Luk, Jilong Xue, Hongxiang Fan"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2604.04750v4 Announce Type: replace-cross \nAbstract: Advances in hybrid bonding and packaging have driven growing interest in 3D DRAM-stacked AI accelerators. As large language models (LLMs) scale to hundreds of billions or trillions of parameters, distributed inference across multiple 3D chips has become essential for AI serving. This trend makes cross-stack co-design critical because system-level parallelization and scheduling choices are tightly coupled with hardware characteristics such as memory organization, interconnects, and thermal constraints. We present DeepStack, an accurate performance model and efficient design space exploration (DSE) framework for distributed 3D-stacked LLM inference. At the hardware level, DeepStack captures transaction-aware memory bandwidth, bank ac",
+      "pdf_link": "https://arxiv.org/pdf/2604.04750.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.04750",
+      "submission_date": "2026-09-14T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 35.0,
+      "updated_at": "2026-09-14T11:44:12.931687+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-38",
       "paper_number": 38,
       "title": "A Compilation-Based Under-Constrained Execution Engine",
@@ -2406,6 +2452,29 @@
       "ratings": [],
       "score": 33.5,
       "updated_at": "2026-07-21T08:54:26.741832+00:00"
+    },
+    {
+      "forum_id": "2609.12379",
+      "paper_number": -1,
+      "title": "ForgeMegakernel: A General Framework for Efficient Auto-Regressive Model Decode Megakernels",
+      "authors": [
+        "Leshan Li, Zhui Zhu, Xianglong Deng, Yaojian Chen, Qingfeng He, Yuxuan Li, Rong Zhao, Xu Han, Zhiyuan Liu"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.12379v1 Announce Type: new \nAbstract: Auto-regressive model decode is bandwidth-bound, since every weight and key/value-cache byte crosses high-bandwidth memory once per token. A megakernel is an ideal solution, but existing automatic megakernel generation approaches cannot achieve both generalization across models and correctness guarantees.\n  We present ForgeMegakernel, which generates a per-model high-performance decode megakernel using coding agents. ForgeMegakernel pairs a universal knowledge base of ten progressive milestones with an independent mid-state test oracle. The milestones provide the megakernel's structural properties: a fine-grained instruction stream for each SM, dependency counters replacing the global synchronization, and a shared-memory buffer pool for work",
+      "pdf_link": "https://arxiv.org/pdf/2609.12379.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.12379",
+      "submission_date": "2026-09-14T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.0,
+      "updated_at": "2026-09-14T11:44:12.929202+00:00"
     },
     {
       "forum_id": "usenix-osdi26-29",
@@ -3518,29 +3587,6 @@
       "updated_at": "2026-07-21T08:54:22.935344+00:00"
     },
     {
-      "forum_id": "2609.11923",
-      "paper_number": -1,
-      "title": "GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay",
-      "authors": [
-        "Boning Li, Longbo Huang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.11923v1 Announce Type: new \nAbstract: Counterfactual regret minimization (CFR) is one of the few large numerical workloads that still runs faster on CPUs than on GPUs. Each iteration sweeps a game tree with up to billions of states in millions of small, interdependent gather and scatter steps issued through a generic tree interface. On a GPU every kernel finishes in microseconds, so kernel launches and framework dispatch dominate the run time, and prior GPU implementations have lost to optimized CPU code. We observe that for a fixed game, everything about a CFR iteration except the numerical values is known before the first iteration runs. We propose GPU-CFR, a compiler and runtime built on this observation. It compiles any game once into static dataflow: flat edge and informati",
-      "pdf_link": "https://arxiv.org/pdf/2609.11923.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.11923",
-      "submission_date": "2026-09-11T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 15.5,
-      "updated_at": "2026-09-11T10:34:13.481817+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-116",
       "paper_number": 116,
       "title": "Heterogeneity at Hyperscale: Characterization and Scheduling of Large Production AI Clusters at Alibaba (Operational Systems)",
@@ -3947,29 +3993,6 @@
       "ratings": [],
       "score": 14.0,
       "updated_at": "2026-07-21T08:54:22.936410+00:00"
-    },
-    {
-      "forum_id": "2609.10554",
-      "paper_number": -1,
-      "title": "Memory Profiling and Migration for Heterogeneous Memory Architectures",
-      "authors": [
-        "Marios Asiminakis, Polydoros Petrakis, Manolis Marazakis"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.10554v1 Announce Type: new \nAbstract: Heterogeneous memory systems that combine high-bandwidth memory (HBM) with commodity DRAM can accelerate bandwidth-bound HPC workloads, but current page placement largely depends on manual tuning or OS heuristics not designed for multi-tier dynamics. We present SHAMBLES, a kernel-integrated framework that profiles application memory behavior at low overhead and migrates data across tiers without requiring application changes. SHAMBLES exposes a policy-agnostic interface and a lightweight user-space runtime with pluggable policies (e.g. recency and frequency based) as well as static placement for controlled studies. A logging mode provides reproducible timelines of allocations and migrations to aid analysis. We implement SHAMBLES on a commodi",
-      "pdf_link": "https://arxiv.org/pdf/2609.10554.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.10554",
-      "submission_date": "2026-09-11T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-09-11T10:34:13.480836+00:00"
     },
     {
       "forum_id": "usenix-osdi26-5",
@@ -5972,6 +5995,52 @@
       "updated_at": "2026-07-21T08:54:22.938822+00:00"
     },
     {
+      "forum_id": "2609.12299",
+      "paper_number": -1,
+      "title": "Argus: Orchestrating Cross-Layer GPU Performance Measurements around Semantic Regions",
+      "authors": [
+        "Jianzhu Yao, Yue Guan, Srivatsan Ramesh, Yuanwei Fang, Jian Jiao, Boda Li, Yueming Hao, Xinwei Qiang, Pramod Viswanath, Yufei Ding, Bill Yoshimi, Alexey Loginov, Shane Nay, Adnan Aziz"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.12299v1 Announce Type: new \nAbstract: GPU developers and automated optimizers need performance evidence for semantic code regions--such as neural-network operator implementations and pipeline stages--but this evidence is fragmented across profiling tools. Answering a region-level question can require manually constructing probes and program variants, isolating interfering measurements, and mapping evidence to regions and execution contexts. We present Argus, a region-centric measurement planner and runtime that automates this workflow. Clients identify regions with boundary markers and select signals and execution scopes. Argus preserves region identity across compilation, execution, and measurement variants, constructs interference-aware multi-run plans, and orchestrates transf",
+      "pdf_link": "https://arxiv.org/pdf/2609.12299.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.12299",
+      "submission_date": "2026-09-14T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-09-14T11:44:12.929138+00:00"
+    },
+    {
+      "forum_id": "2609.11932",
+      "paper_number": -1,
+      "title": "Throughput per Megabyte: A Pilot Benchmark of Language-Stack Efficiency for Self-Hosted HTTP Services on a Raspberry Pi 5",
+      "authors": [
+        "William Oliveira"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.11932v1 Announce Type: cross \nAbstract: Cloud-centric web benchmarks miss constraints that matter for self-hosted services on ARM64 single-board computers, especially idle RAM footprint and energy per request. We ran a pilot benchmark on one Raspberry Pi 5, measuring equivalent SQLite-backed CRUD APIs implemented in Go 1.26/net/http, Rust 1.95/Axum, Python 3.13/FastAPI+Granian, Node.js 24/Fastify, and .NET 10 Native AOT across N=50 randomized runs per stack and endpoint, with a separate concurrency sweep and memory time-series collection. Rust achieved the highest weighted throughput-to-RAM ratio (310.25 req/s/MB, 2.8x Go) because its weighted peak RSS was 7.36 MB, while .NET, Node.js, Go, and Rust formed a raw-throughput cluster with overlapping bootstrap CIs (2,125--2,461 req/",
+      "pdf_link": "https://arxiv.org/pdf/2609.11932.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.11932",
+      "submission_date": "2026-09-14T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-09-14T11:44:12.929814+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-22",
       "paper_number": 22,
       "title": "ValScope: Value-Semantics-Aware Metamorphic Testing for Detecting Logical Bugs in DBMSs",
@@ -6261,6 +6330,29 @@
       "ratings": [],
       "score": 2.5,
       "updated_at": "2026-07-21T08:54:26.744870+00:00"
+    },
+    {
+      "forum_id": "2609.11936",
+      "paper_number": -1,
+      "title": "One Simple Trick for Improving the Performance of Energy-Limited Local Inference and Training",
+      "authors": [
+        "Erik Schultheis, Maximilian Kleinegger, Dan Alistarh"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.11936v1 Announce Type: cross \nAbstract: Energy supply and heat dissipation are two of the main challenges with modern GPU deployments. While typically discussed in the context of new datacenter constructions, the same constraints also apply to small form-factor consumer devices, such as the DGX spark. In workloads characterized by alternating compute-intensive tasks such as matmuls with memory-bound operations such as norms or cross-entropy, the compute-intensive parts might hit power and/or thermal limits and start throttling. In this short paper, we show that chunking the workload into smaller parts that alternate compute and memory in higher frequencies, these power and temperature spikes can be smoothed out, preventing throttling and resulting in considerably faster wall-clo",
+      "pdf_link": "https://arxiv.org/pdf/2609.11936.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.11936",
+      "submission_date": "2026-09-14T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-09-14T11:44:12.929840+00:00"
     },
     {
       "forum_id": "usenix-osdi26-10",
@@ -6717,6 +6809,29 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
+    },
+    {
+      "forum_id": "2609.12815",
+      "paper_number": -1,
+      "title": "4D Parallelism Unlocks Exascale Bayesian Neural Networks for High-Fidelity Atmospheric Modeling",
+      "authors": [
+        "Deifilia Kieckhefen, Juan Pedro Guti\\'errez Hermosillo Muriedas, Lars Helge Heyen, Mathis Bode, Iida Hakulinen, Andreas Herten, Chelsea Maria John, Thorsten Kurth, Anni Moisala, Asena Karolin \\\"Ozdemir, Kaleb Phipps, Oskar Taubert, Arvid Weyrauch, Markus G\\\"otz, Charlotte Debus"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.12815v1 Announce Type: cross \nAbstract: We present BEAST, the first-ever Bayesian Swin Transformer for atmospheric forecasting on 0.25$^\\circ$ global resolution able to accurately quantify both aleatoric and epistemic uncertainty. To overcome the associated computational bottlenecks, we devise an orthogonal 4D-parallelization scheme that introduces a unique domain-tensor-parallelism strategy and a novel uncertainty parallel method, enabling us to fully leverage GPU capacity and efficiently scale model training. For a 2.4-billion-parameter model, we achieve a peak performance of 3.96 EFLOP/s on 20,480 NVIDIA GH200 GPUs on the JUPITER supercomputer. We train BEAST as a 700-million-parameter model with 96 random weight samples on 384 nodes on 40 years of data for nearly one million",
+      "pdf_link": "https://arxiv.org/pdf/2609.12815.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.12815",
+      "submission_date": "2026-09-14T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-09-14T11:44:12.930740+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

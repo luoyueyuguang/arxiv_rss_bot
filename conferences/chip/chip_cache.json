@@ -1,100 +1,54 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-09-11T10:34:16.512467+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-09-14T11:44:15.858092+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2512.07312",
+      "forum_id": "2604.04750",
       "paper_number": -1,
-      "title": "DCO: Dynamic Cache Orchestration for LLM Accelerators through Predictive Management",
+      "title": "DeepStack: Facilitating Co-Design Exploration of 3D DRAM-Stacked Accelerators for Distributed LLM Inference",
       "authors": [
-        "Zhongchun Zhou, Chengtao Lai, Yuhang Gu, Wei Zhang"
+        "Zhiwen Mo, Guoyu Li, Hao Mark Chen, Yu Cheng, Zhengju Tang, Qianzhou Wang, Lei Wang, Shuang Liang, Lingxiao Ma, Xianqi Zhou, Yuxiao Guo, Wayne Luk, Jilong Xue, Hongxiang Fan"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2512.07312v2 Announce Type: replace \nAbstract: The rapid adoption of large language models (LLMs) is pushing AI accelerators toward increasingly powerful and specialized designs. Instead of further complicating software development with deeply hierarchical scratchpad memories (SPMs) and their asynchronous management, we investigate the opposite point of the design spectrum: a multi-core AI accelerator equipped with a shared system-level cache and application-aware management policies, which keeps the programming effort modest. Our approach exploits dataflow information available in the software stack to guide cache replacement (including dead-block prediction), in concert with bypass decisions and mechanisms that alleviate cache thrashing.\n  We assess the proposal using a cycle-accur",
-      "pdf_link": "https://arxiv.org/pdf/2512.07312.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.07312",
-      "submission_date": "2026-09-11T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-09-11T10:34:16.509448+00:00"
-    },
-    {
-      "forum_id": "2609.11713",
-      "paper_number": -1,
-      "title": "A Time-Based Readout for Vector-Matrix Multiplication in Fully Analog Memristive SNNs",
-      "authors": [
-        "Elia Mateu-Barriendos, \\'Alvaro G\\'omez-Pau, Josep Rius, Daniel Arum\\'i, Rosa Rodr\\'iguez-Monta\\~n\\'es, Salvador Manich"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2609.11713v1 Announce Type: cross \nAbstract: Artificial neural networks rely on vector-matrix multiplications (VMMs), whose implementation in von Neumann architectures is dominated by costly data movement between memory and processing units. Spiking neural networks (SNNs) mitigate this bottleneck by performing in-memory, analog VMMs using memristive crossbar arrays. However, conventional current-mode readout circuits incur significant area and power overhead.\n  This work proposes a fully analog readout architecture based on voltage-to-time conversion of the VMM output. By sensing the column voltage, the proposed approach avoids current-mode summing and scaling circuitry, improving area and energy efficiency. Post-layout simulations of a 10x1 SNN implemented in a 130 nm CMOS technolog",
-      "pdf_link": "https://arxiv.org/pdf/2609.11713.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.11713",
-      "submission_date": "2026-09-11T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-09-11T10:34:16.509405+00:00"
-    },
-    {
-      "forum_id": "2609.07907",
-      "paper_number": -1,
-      "title": "A 28nm 27,648-Spin Multichip Digital Ising Accelerator with Pegasus Connectivity",
-      "authors": [
-        "Tong Wu, Atharva Raut, Ian Khor, Ziyad Alswaidan, Ting-Yu Lee, Hongchang Kuang, Navid Anjum Aadit, Anand Raju, Dhruv Chinmay, Siddharth Das, Ken Mai, Kerem Camsari, Tathagata Srimani"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2609.07907v2 Announce Type: replace \nAbstract: We report a 28 nm four-chip Ising accelerator with 27,648 spins, degree-15 Pegasus connectivity, and 10b coefficients. Boundary-state streaming overlaps interchip transfers with spin updates, achieving 98.03% simulated weak-scaling efficiency. At 140 MHz, the four-chip system delivers 30.24G peak updates/s at 1.2 pJ/update including I/O power, with 11.5$\\times$ the throughput and approximately one-quarter the logic-plus-SRAM area per spin of a prior 28 nm multichip design. We demonstrate MaxCut, spin glass, frustrated loops, factorization, and 3SAT.",
-      "pdf_link": "https://arxiv.org/pdf/2609.07907.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.07907",
-      "submission_date": "2026-09-11T04:00:00+00:00",
+      "abstract": "arXiv:2604.04750v4 Announce Type: replace \nAbstract: Advances in hybrid bonding and packaging have driven growing interest in 3D DRAM-stacked AI accelerators. As large language models (LLMs) scale to hundreds of billions or trillions of parameters, distributed inference across multiple 3D chips has become essential for AI serving. This trend makes cross-stack co-design critical because system-level parallelization and scheduling choices are tightly coupled with hardware characteristics such as memory organization, interconnects, and thermal constraints. We present DeepStack, an accurate performance model and efficient design space exploration (DSE) framework for distributed 3D-stacked LLM inference. At the hardware level, DeepStack captures transaction-aware memory bandwidth, bank activati",
+      "pdf_link": "https://arxiv.org/pdf/2604.04750.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.04750",
+      "submission_date": "2026-09-14T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 3.0,
-      "updated_at": "2026-09-11T10:34:16.509473+00:00"
+      "updated_at": "2026-09-14T11:44:15.855947+00:00"
     },
     {
-      "forum_id": "2509.24425",
+      "forum_id": "2609.06691",
       "paper_number": -1,
-      "title": "BiHDTrans: binary hyperdimensional transformer for efficient multivariate time series classification",
+      "title": "Gutenberg: Taming Latency-Critical Cloud Services with Near-Data-Processing",
       "authors": [
-        "Jingtao Zhang, Yi Liu, Qi Shen, Changhong Wang"
+        "Qiushi Lin, Phillip B. Gibbons, Jovan Stojkovic, Yiwei Zhao"
       ],
       "keywords": [
         "cs.AR",
-        "FPGA"
+        "DATE"
       ],
-      "abstract": "arXiv:2509.24425v2 Announce Type: replace-cross \nAbstract: The proliferation of Internet-of-Things (IoT) devices has led to an unprecedented volume of multivariate time series (MTS) data, requiring efficient and accurate processing for timely decision-making in resource-constrained edge environments. Hyperdimensional (HD) computing, with its inherent efficiency and parallelizability, has shown promise in classification tasks but struggles to capture complex temporal patterns, while Transformers excel at sequence modeling but incur high computational and memory overhead. We introduce BiHDTrans, an efficient neurosymbolic binary hyperdimensional Transformer that integrates self-attention into the HD computing paradigm, unifying the representational efficiency of HD computing with the tempora",
-      "pdf_link": "https://arxiv.org/pdf/2509.24425.pdf",
-      "forum_link": "https://arxiv.org/abs/2509.24425",
-      "submission_date": "2026-09-11T04:00:00+00:00",
-      "conference": "FPGA",
+      "abstract": "arXiv:2609.06691v2 Announce Type: replace-cross \nAbstract: Latency-critical cloud services place growing pressure on memory while requiring isolation, fairness, and predictable QoS. Near-data processing (NDP) reduces data movement by executing requests close to memory, and prior systems further improve locality through caching and replication. However, writes make replica maintenance expensive, while uneven compute and memory traffic can overload a few NDP units and increase tail latency. Existing throughput-oriented schedulers do not fully address these challenges for co-located cloud services.\n  We present Gutenberg, a CPU+NDP for mutable, latency-critical cloud services. Gutenberg stages subpage updates in a CPU-resident delta buffer, allowing hot writable pages to remain replicated wit",
+      "pdf_link": "https://arxiv.org/pdf/2609.06691.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.06691",
+      "submission_date": "2026-09-14T04:00:00+00:00",
+      "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-09-11T10:34:16.509543+00:00"
+      "updated_at": "2026-09-14T11:44:15.855994+00:00"
     }
   ]
 }

@@ -1,100 +1,123 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-09-11T10:34:13.268317+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-09-14T11:44:12.801731+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2609.10812",
+      "forum_id": "2609.11932",
       "paper_number": -1,
-      "title": "ExaServe: Large-Scale LLM Serving on Exascale HPC Systems",
+      "title": "Throughput per Megabyte: A Pilot Benchmark of Language-Stack Efficiency for Self-Hosted HTTP Services on a Raspberry Pi 5",
       "authors": [
-        "Wenyi Wang, Shu Shi, Yadu Babuji, Ian Foster, Kyle Chard"
+        "William Oliveira"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.10812v1 Announce Type: new \nAbstract: Cloud-native LLM serving frameworks have made deployment routine in data centers, yet deploying them on leadership-class supercomputers remains an engineering challenge requiring scheduler integration, MPI launch, accelerator selection, node-local weight staging, and platform-specific patches. We present \\textit{ExaServe}, a pip-installable framework that transforms a declarative YAML specification into a reproducible large-scale LLM serving deployment. Using ExaServe, we deploy LLM serving on ALCF Aurora from 1 to 256 nodes (3072 vLLM replicas). Non-streaming inference scales nearly linearly to 256 nodes, reaching 27.1\\,k requests/s (3.8\\,M tokens/s). Token streaming scales differently: a centralized proxy plateaus at $\\sim$4.7\\,k requests/",
-      "pdf_link": "https://arxiv.org/pdf/2609.10812.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.10812",
-      "submission_date": "2026-09-11T04:00:00+00:00",
+      "abstract": "arXiv:2609.11932v1 Announce Type: cross \nAbstract: Cloud-centric web benchmarks miss constraints that matter for self-hosted services on ARM64 single-board computers, especially idle RAM footprint and energy per request. We ran a pilot benchmark on one Raspberry Pi 5, measuring equivalent SQLite-backed CRUD APIs implemented in Go 1.26/net/http, Rust 1.95/Axum, Python 3.13/FastAPI+Granian, Node.js 24/Fastify, and .NET 10 Native AOT across N=50 randomized runs per stack and endpoint, with a separate concurrency sweep and memory time-series collection. Rust achieved the highest weighted throughput-to-RAM ratio (310.25 req/s/MB, 2.8x Go) because its weighted peak RSS was 7.36 MB, while .NET, Node.js, Go, and Rust formed a raw-throughput cluster with overlapping bootstrap CIs (2,125--2,461 req/",
+      "pdf_link": "https://arxiv.org/pdf/2609.11932.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.11932",
+      "submission_date": "2026-09-14T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 56.0,
-      "updated_at": "2026-09-11T10:34:12.821918+00:00"
+      "score": 13.5,
+      "updated_at": "2026-09-14T11:44:12.379239+00:00"
     },
     {
-      "forum_id": "2609.10552",
+      "forum_id": "2609.11946",
       "paper_number": -1,
-      "title": "Design and Operation of a Federated GPU Cluster for Digital Humanities within DHinfra.at",
+      "title": "Hyperion: An AI-powered HPC cluster for sciences and humanities research that utilizes ML for predicting job turnaround time",
       "authors": [
-        "Florian Atzenhofer-Baumgartner, David Fleischhacker, Max Resch, Lukas Waldhofer, Michael Otto"
+        "Jun Zhou, Nathan Elgar, Tawnee Benedetto, John Richards, Ming Hu, Greg Wilsbacher, Lawrence Miao, Paul Sagona"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.10552v1 Announce Type: new \nAbstract: We describe the design, implementation, and operation of a small federated GPU cluster built for Digital Humanities (DH) research within the Austrian DHinfra.at project. The system spans two university sites, brokers logins from a national identity federation, and exposes compute through three interfaces: interactive notebooks, SSH, and an OpenAI-compatible inference API. The core of the platform is a control plane that maps federated identity, per-project quotas, and a model catalogue onto self-service interfaces. We document this control plane in detail, including the request-and-approval queue that mediates every privileged cluster effect and the two-tier model-serving setup, which combines always-on services with on-demand model swapping",
-      "pdf_link": "https://arxiv.org/pdf/2609.10552.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.10552",
-      "submission_date": "2026-09-11T04:00:00+00:00",
+      "abstract": "arXiv:2609.11946v1 Announce Type: new \nAbstract: Hyperion is an innovative high-performance computing (HPC) cluster developed for researchers in both science and humanities disciplines at the University of South Carolina (USC). Our approach involved constructing a HPC cluster designed to meet the current research needs while accommodating future expansion. Additionally, we developed and trained two machine learning (ML) models to predict turnaround time, including wait time and wall time, and seamlessly integrated them into the Slurm job submission. Finally, we showcase a variety of sample applications hosted on the Hyperion platform.",
+      "pdf_link": "https://arxiv.org/pdf/2609.11946.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.11946",
+      "submission_date": "2026-09-14T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 33.0,
-      "updated_at": "2026-09-11T10:34:12.821782+00:00"
+      "score": 5.5,
+      "updated_at": "2026-09-14T11:44:12.378571+00:00"
     },
     {
-      "forum_id": "2609.10542",
+      "forum_id": "2609.12649",
       "paper_number": -1,
-      "title": "The Internet of Collaborating Things: Agentic Edge AI for Autonomous Cross-Domain Collaboration",
+      "title": "Hybrid Monitoring for Early Fault Detection in Cloud-Native 5G Systems",
       "authors": [
-        "Walid A. Hanafy, Nader Sehatbakhsh, David Irwin, Mani Srivastava, Prashant Shenoy"
+        "Anton Andersson, Sai Akshara Naineni, Mats Jansborg, Yixing Zhang, Romaric Duvignau"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.10542v1 Announce Type: new \nAbstract: The Internet of Things is on a trajectory toward a trillion connected devices deployed across multiple domains. These devices are no longer simple sensing and actuation endpoints; they are mobile platforms with embedded processing and intelligent on-device services. The dominant paradigm of offloading computation to cloud and edge servers is a vertical device-to-server interaction model that cannot scale with this trajectory. What is needed instead is a horizontal paradigm in which devices communicate and collaborate directly, pooling their compute, sensing, and actuation into dynamic, cross-domain clusters rather than offloading to centralized infrastructure. We refer to this paradigm as the Internet of Collaborating Things (IoCT). Realizin",
-      "pdf_link": "https://arxiv.org/pdf/2609.10542.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.10542",
-      "submission_date": "2026-09-11T04:00:00+00:00",
+      "abstract": "arXiv:2609.12649v1 Announce Type: cross \nAbstract: This paper presents the design implementation and evaluation of NetMon a hybrid network monitoring system designed for Kubernetes-based 5G packet core deployments specifically evaluated on Ericssons Access and Mobility Management Function AMF clusters NetMon combines eBPF-based passive kernel-level traffic observation with active TCP probing and centralized correlation to detect and localize network degradation within seconds The evaluation results demonstrate that the system detects faults as subtle as 10ms of added latency or 5 packet loss correctly attributes them to the affected infrastructure component and maintains this capability under application loads up to 50 simulated UE load The total resource overhead of 34 millicores CPU and ",
+      "pdf_link": "https://arxiv.org/pdf/2609.12649.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.12649",
+      "submission_date": "2026-09-14T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-09-11T10:34:12.821643+00:00"
+      "score": 2.0,
+      "updated_at": "2026-09-14T11:44:12.379724+00:00"
     },
     {
-      "forum_id": "2609.10790",
+      "forum_id": "2608.02386",
       "paper_number": -1,
-      "title": "Composable CXL Memory as a Kubernetes-Native Shared Memory for LLM Serving",
+      "title": "Greedy-Like Defective Coloring: Distributed Algorithms and Applications",
       "authors": [
-        "Hongjian Fan, Kevin Zhang, David Habinsky, Sean Dykstra"
+        "Marc Fuchs, Fabian Kuhn"
+      ],
+      "keywords": [
+        "cs.DC",
+        "SC '"
+      ],
+      "abstract": "arXiv:2608.02386v2 Announce Type: replace \nAbstract: A $d$-defective $c$-coloring of a graph $G=(V,E)$ is a coloring of the nodes $V$ with $c$ colors such that every node has at most $d$ neighbors of the same color. Distributed algorithms for computing different variants of defective coloring are at the core of most deterministic state-of-the-art distributed coloring algorithms, and they are also an important tool in many other distributed graph algorithms. In several cases, the overall complexity could be improved if some version of defective coloring could be solved more efficiently. Barenboim and Elkin [STOC '09] introduced a two-pass greedy algorithm that uses $p^2$ colors with defect $\\lfloor \\Delta/p\\rfloor$ in $O(\\Delta+\\log^{\\ast} n)$ rounds. This remains the best defect/color trad",
+      "pdf_link": "https://arxiv.org/pdf/2608.02386.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.02386",
+      "submission_date": "2026-09-14T04:00:00+00:00",
+      "conference": "SC '",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-09-14T11:44:12.380034+00:00"
+    },
+    {
+      "forum_id": "2609.13064",
+      "paper_number": -1,
+      "title": "NFT-Based Reward Mechanisms: Sybil Farming, Vesting, and Stochastic Verification",
+      "authors": [
+        "Marco Alberto Javarone, Stefanos Leonardos, Carmine Ventre"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.10790v1 Announce Type: new \nAbstract: We present a Kubernetes Dynamic Resource Allocation (DRA) driver that makes composable CXL memory a schedulable cluster resource, and evaluate the resulting shared-memory tier for cross-node KV-cache reuse in LLM serving. The driver composes CXL regions on demand, materializes them as DAX devices on each participating host, and injects them into pods under a single Container Device Interface (CDI) name so that pods on different nodes access the same physical region. A shared-memory connector for vLLM/llm-d uses that region as a KV-cache tier with a slot directory embedded inside the shared medium, which eliminates the need for an external metadata service. On a two-node cluster with a 512\\,GiB CXL appliance and Qwen2.5-7B-Instruct, cross-nod",
-      "pdf_link": "https://arxiv.org/pdf/2609.10790.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.10790",
-      "submission_date": "2026-09-11T04:00:00+00:00",
+      "abstract": "arXiv:2609.13064v1 Announce Type: cross \nAbstract: We study NFT-based reward mechanisms in which a user can create multiple identities and submit fraudulent claims that mature a reward subject to vesting. We assume that the issuer stochastically verifies claims during the vesting period and that identities can be linked into clusters so that the detection of one identity submitting a fraudulent claim causes the whole cluster to be forfeited through a penalty. A farmer's payoff is then non-linear in the number of identities: rewards increase linearly, while the probability of avoiding detection decreases geometrically. We characterise the optimal farming scale in the continuous relaxation of the problem. This allows us to derive a sufficient condition for deterrence and then consider the is",
+      "pdf_link": "https://arxiv.org/pdf/2609.13064.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.13064",
+      "submission_date": "2026-09-14T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-09-11T10:34:12.821879+00:00"
+      "score": 1.0,
+      "updated_at": "2026-09-14T11:44:12.379916+00:00"
     }
   ]
 }
