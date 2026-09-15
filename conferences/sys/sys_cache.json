@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-09-14T11:44:15.796045+00:00",
-  "paper_count": 314,
+  "last_updated": "2026-09-15T11:01:33.964776+00:00",
+  "paper_count": 315,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -218,6 +218,29 @@
       "ratings": [],
       "score": 97.5,
       "updated_at": "2026-07-21T08:54:22.942013+00:00"
+    },
+    {
+      "forum_id": "2609.13585",
+      "paper_number": -1,
+      "title": "mKernel: Fast Multi-GPU, Multi-Node Fused Kernels",
+      "authors": [
+        "Ziming Mao, Yihan Zhang, Shawn Wei Chew, Shuang Ma, Costin Raiciu, Yang Zhou, Scott Shenker, Ion Stoica"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.13585v1 Announce Type: new \nAbstract: Communication has become a bottleneck in distributed training and inference of large models. Overlapping communication with computation at the granularity of kernels, on separate streams, reduces only part of this communication cost. Fused kernels often have better performance by transmitting each output tile as soon as it is produced, but existing fused kernels are largely confined to a single NVLink domain. We present mKernel, a library of multi-GPU, multi-node fused kernels that overlap computation, intra-node NVLink communication, and inter-node RDMA at tile granularity. mKernel partitions the streaming multiprocessors (SMs) of a persistent kernel into compute and communication roles, and an on-GPU controller tunes the SM partition adapt",
+      "pdf_link": "https://arxiv.org/pdf/2609.13585.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.13585",
+      "submission_date": "2026-09-15T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 95.0,
+      "updated_at": "2026-09-15T11:01:31.153806+00:00"
     },
     {
       "forum_id": "usenix-fast26-20",
@@ -1616,29 +1639,6 @@
       "updated_at": "2026-07-21T08:54:22.926994+00:00"
     },
     {
-      "forum_id": "2609.12276",
-      "paper_number": -1,
-      "title": "AKTS: Sub-Microsecond Kernel Policy Switching for Language-Model Agents",
-      "authors": [
-        "Mohammadali Khodabandehlou, Mahdi Alizadeh"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.12276v1 Announce Type: new \nAbstract: GPU-backed LLM servers often multiplex interactive requests with background batch work on the same CPUs. During a request burst, the scheduler should protect time-to-first-token; between bursts, it should let background work make progress. A fixed kernel policy leaves one of these objectives on the table, so agentic OS control needs a way to switch scheduler behavior as the workload changes. The hard part is not deciding that a switch is useful, but applying it safely and fast enough for the kernel. Scheduler events occur every 1-10 $\\mu$s, and any code that runs there must satisfy the eBPF verifier. Scalar knobs are fast but expose only limited policy behavior, while generating new eBPF policy code is expressive but puts compilation, verifi",
-      "pdf_link": "https://arxiv.org/pdf/2609.12276.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.12276",
-      "submission_date": "2026-09-14T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 43.5,
-      "updated_at": "2026-09-14T11:44:12.851511+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-57",
       "paper_number": 57,
       "title": "Nested SEV: Secure and Generic SEV Support for Nested Virtualization",
@@ -1885,29 +1885,6 @@
       "updated_at": "2026-07-21T08:54:26.745242+00:00"
     },
     {
-      "forum_id": "2609.12330",
-      "paper_number": -1,
-      "title": "Unleashing the Power of Equality Saturation for Tensor Program Superoptimization",
-      "authors": [
-        "Qi Zhan, Xing Hu, Xin Xia, Shanping Li"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.12330v1 Announce Type: new \nAbstract: Efficient GPU implementations of tensor programs often require joint optimization of high-level algebraic formulations and low-level execution strategies. However, the resulting search space grows rapidly as transformations combine across operators, making joint optimization difficult to scale. We present EqiForge, a tensor program superoptimizer based on equality saturation. Its unified IR represents high-level tensor expressions and tiled computations in a single expression language. By composing equality rules, EqiForge derives fused implementations such as FlashAttention-style kernels directly from tensor expressions. Early compaction prunes redundant partial programs before completion, while subgraph composition extends the search to la",
-      "pdf_link": "https://arxiv.org/pdf/2609.12330.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.12330",
-      "submission_date": "2026-09-14T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 37.5,
-      "updated_at": "2026-09-14T11:44:12.929173+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-103",
       "paper_number": 103,
       "title": "GraCE: Unlocking CUDA Graphs with Compiler Support for ML Workloads",
@@ -2059,6 +2036,29 @@
       "ratings": [],
       "score": 36.5,
       "updated_at": "2026-07-21T08:54:17.404102+00:00"
+    },
+    {
+      "forum_id": "2609.15627",
+      "paper_number": -1,
+      "title": "DeepSeek-V4-Flash on AMD gfx90a: Correctness Recovery and Inference Performance Engineering",
+      "authors": [
+        "Siming Huang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.15627v1 Announce Type: new \nAbstract: We present the enablement, correctness recovery, and performance engineering of DeepSeek-V4-Flash inference on AMD Instinct MI250 GPUs using the gfx90a/CDNA2 architecture. The system integrates native safetensors loading, tensor and expert parallelism, FP4 routed mixture-of-experts computation, FP8 dense projections, sparse attention, HIP graph execution, and OpenAI-compatible serving within SGLang. An initially fast execution path was found to be numerically incorrect because of a routed-expert W2 layout mismatch. We identify the output permutation, repair the weight layout at load time, and establish fixed-token and hash-based correctness checks before further optimization. On the corrected path, decode performance is improved through pack",
+      "pdf_link": "https://arxiv.org/pdf/2609.15627.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.15627",
+      "submission_date": "2026-09-15T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 36.0,
+      "updated_at": "2026-09-15T11:01:31.156217+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-19",
@@ -2226,29 +2226,6 @@
       "ratings": [],
       "score": 35.5,
       "updated_at": "2026-07-21T08:54:22.942367+00:00"
-    },
-    {
-      "forum_id": "2604.04750",
-      "paper_number": -1,
-      "title": "DeepStack: Facilitating Co-Design Exploration of 3D DRAM-Stacked Accelerators for Distributed LLM Inference",
-      "authors": [
-        "Zhiwen Mo, Guoyu Li, Hao Mark Chen, Yu Cheng, Zhengju Tang, Qianzhou Wang, Lei Wang, Shuang Liang, Lingxiao Ma, Xianqi Zhou, Yuxiao Guo, Wayne Luk, Jilong Xue, Hongxiang Fan"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2604.04750v4 Announce Type: replace-cross \nAbstract: Advances in hybrid bonding and packaging have driven growing interest in 3D DRAM-stacked AI accelerators. As large language models (LLMs) scale to hundreds of billions or trillions of parameters, distributed inference across multiple 3D chips has become essential for AI serving. This trend makes cross-stack co-design critical because system-level parallelization and scheduling choices are tightly coupled with hardware characteristics such as memory organization, interconnects, and thermal constraints. We present DeepStack, an accurate performance model and efficient design space exploration (DSE) framework for distributed 3D-stacked LLM inference. At the hardware level, DeepStack captures transaction-aware memory bandwidth, bank ac",
-      "pdf_link": "https://arxiv.org/pdf/2604.04750.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.04750",
-      "submission_date": "2026-09-14T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-09-14T11:44:12.931687+00:00"
     },
     {
       "forum_id": "usenix-osdi26-38",
@@ -2452,29 +2429,6 @@
       "ratings": [],
       "score": 33.5,
       "updated_at": "2026-07-21T08:54:26.741832+00:00"
-    },
-    {
-      "forum_id": "2609.12379",
-      "paper_number": -1,
-      "title": "ForgeMegakernel: A General Framework for Efficient Auto-Regressive Model Decode Megakernels",
-      "authors": [
-        "Leshan Li, Zhui Zhu, Xianglong Deng, Yaojian Chen, Qingfeng He, Yuxuan Li, Rong Zhao, Xu Han, Zhiyuan Liu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.12379v1 Announce Type: new \nAbstract: Auto-regressive model decode is bandwidth-bound, since every weight and key/value-cache byte crosses high-bandwidth memory once per token. A megakernel is an ideal solution, but existing automatic megakernel generation approaches cannot achieve both generalization across models and correctness guarantees.\n  We present ForgeMegakernel, which generates a per-model high-performance decode megakernel using coding agents. ForgeMegakernel pairs a universal knowledge base of ten progressive milestones with an independent mid-state test oracle. The milestones provide the megakernel's structural properties: a fine-grained instruction stream for each SM, dependency counters replacing the global synchronization, and a shared-memory buffer pool for work",
-      "pdf_link": "https://arxiv.org/pdf/2609.12379.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.12379",
-      "submission_date": "2026-09-14T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 33.0,
-      "updated_at": "2026-09-14T11:44:12.929202+00:00"
     },
     {
       "forum_id": "usenix-osdi26-29",
@@ -4321,6 +4275,29 @@
       "updated_at": "2026-07-21T08:54:26.742179+00:00"
     },
     {
+      "forum_id": "2609.14246",
+      "paper_number": -1,
+      "title": "Joint Optimization for Federated Learning and Transmission over Unreliable Wireless Networks with Heterogeneous Data",
+      "authors": [
+        "Changheng Wang, Xianchao Zhang, Zhiqing Wei, Lingzhu Zhao, Zhongming Yang, Zhiyong Feng"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.14246v1 Announce Type: new \nAbstract: In wireless federated learning (FL), data heterogeneity and multiple local updates induce client drift, degrading model convergence. It is further affected by unreliable wireless links, as transmission errors may invalidate model updates. To address these challenges, we propose a federated random walk averaging (FedRW) framework, which is a variant of federated averaging (FedAvg) that mitigates data heterogeneity by updating models along random walk (RW) paths and aggregating them at the server. Model parameters are transmitted in packets with retransmission support to improve training quality by mitigating wireless errors along RW paths. Meanwhile, wireless transmission delays hinder the exploration of FedRW. To this end, we formulate a joi",
+      "pdf_link": "https://arxiv.org/pdf/2609.14246.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.14246",
+      "submission_date": "2026-09-15T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.5,
+      "updated_at": "2026-09-15T11:01:31.154707+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-72",
       "paper_number": 72,
       "title": "Safeguarding LLM Training at Scale: Online SDC Detection and Insights from 35 Million GPU Hours",
@@ -5265,6 +5242,29 @@
       "updated_at": "2026-07-21T08:54:22.940695+00:00"
     },
     {
+      "forum_id": "2609.15034",
+      "paper_number": -1,
+      "title": "FastPair: GPU-Optimized String Decoding",
+      "authors": [
+        "Joseph Isaacs, Francesco Gargiulo, Peter Boncz, Robert Kruszewski, Nicholas Gates, Rossano Venturini, Will Manning, Martin Prammer"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.15034v1 Announce Type: cross \nAbstract: Modern data systems compress data at rest and decompress it only when needed to preserve interconnect bandwidth. This design is often inefficient on GPU-based compute platforms because many conventional compression techniques exhibit serial data dependencies that limit GPU parallelism, leaving resources idle. Recent NVIDIA GPUs address this decoding deficiency through the Decompression Engine (DE), an on-die, fixed-function decompression accelerator for general-purpose compression formats such as Deflate, LZ4, and Snappy. Recent work has proposed string codecs that replace frequent substrings with fixed-width codes from a small, trained dictionary, making each code's lookup independent. While these lookups can run in parallel, the resultin",
+      "pdf_link": "https://arxiv.org/pdf/2609.15034.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.15034",
+      "submission_date": "2026-09-15T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.0,
+      "updated_at": "2026-09-15T11:01:31.158314+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-8",
       "paper_number": 8,
       "title": "Pilot Execution: Simulating Failure Recovery In Situ for Production Distributed Systems",
@@ -5507,6 +5507,29 @@
       "ratings": [],
       "score": 4.5,
       "updated_at": "2026-07-21T08:54:26.744753+00:00"
+    },
+    {
+      "forum_id": "2609.14306",
+      "paper_number": -1,
+      "title": "Flattening Every Memory Peak in Long-Context Mixture-of-Experts Training",
+      "authors": [
+        "Shrey Pandit, Xuan-Phi Nguyen, Yiran Zhao, Shafiq Joty"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.14306v1 Announce Type: new \nAbstract: Training a Mixture-of-Experts (MoE) model at long context or large batch size fails as soon as any one component's peak allocation exceeds device memory, so the target is every peak at once, not the average footprint. Four are left unbounded by the parallelism plans in common use, and each grows differently: expert dispatch with the routing matrix, the vocabulary projection with tokens times vocabulary, gradient checkpoint boundaries with depth times sequence length, and optimizer state with parameter count. Which one runs out first changes with the model, the context length, and the device count, so lowering the largest only exposes the next. We bound all four with schedules whose GPU working set is fixed at launch: PipelinedLLEP extends le",
+      "pdf_link": "https://arxiv.org/pdf/2609.14306.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.14306",
+      "submission_date": "2026-09-15T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-09-15T11:01:31.154740+00:00"
     },
     {
       "forum_id": "usenix-osdi26-87",
@@ -5995,50 +6018,50 @@
       "updated_at": "2026-07-21T08:54:22.938822+00:00"
     },
     {
-      "forum_id": "2609.12299",
+      "forum_id": "2609.14123",
       "paper_number": -1,
-      "title": "Argus: Orchestrating Cross-Layer GPU Performance Measurements around Semantic Regions",
+      "title": "Grouper: Scheduling Groups for Multi-Tenant Microsecond-Scale Microservices",
       "authors": [
-        "Jianzhu Yao, Yue Guan, Srivatsan Ramesh, Yuanwei Fang, Jian Jiao, Boda Li, Yueming Hao, Xinwei Qiang, Pramod Viswanath, Yufei Ding, Bill Yoshimi, Alexey Loginov, Shane Nay, Adnan Aziz"
+        "Koosha Kazemi, Mohammad Siavashi, Ahmad Siavashi, Mohammad Izadi"
       ],
       "keywords": [
-        "cs.DC",
+        "cs.OS",
         "FAST"
       ],
-      "abstract": "arXiv:2609.12299v1 Announce Type: new \nAbstract: GPU developers and automated optimizers need performance evidence for semantic code regions--such as neural-network operator implementations and pipeline stages--but this evidence is fragmented across profiling tools. Answering a region-level question can require manually constructing probes and program variants, isolating interfering measurements, and mapping evidence to regions and execution contexts. We present Argus, a region-centric measurement planner and runtime that automates this workflow. Clients identify regions with boundary markers and select signals and execution scopes. Argus preserves region identity across compilation, execution, and measurement variants, constructs interference-aware multi-run plans, and orchestrates transf",
-      "pdf_link": "https://arxiv.org/pdf/2609.12299.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.12299",
-      "submission_date": "2026-09-14T04:00:00+00:00",
+      "abstract": "arXiv:2609.14123v1 Announce Type: new \nAbstract: Microsecond-scale core allocation makes colocating latency-critical services with batch work worthwhile. A thread that finds no work parks within microseconds and its core goes to a batch task. Putting one back costs $\\sim$18 $\\mu$s, as the allocator must discover that a core is wanted and then take it from the batch task holding it. A monolith pays that tax once per request, a microservice chain pays it at every hop in both directions, and a multi-tenant host multiplies it again, because every tenant's hops queue at the same allocator. On our port of DeathStarBench's hotelReservation, going from two tenants to ten takes a hop from 39 to 222 $\\mu$s and a 10-RPC path's median from 456 to 2,445 $\\mu$s, a fivefold degradation even though no ten",
+      "pdf_link": "https://arxiv.org/pdf/2609.14123.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.14123",
+      "submission_date": "2026-09-15T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-09-14T11:44:12.929138+00:00"
+      "updated_at": "2026-09-15T11:01:31.049041+00:00"
     },
     {
-      "forum_id": "2609.11932",
+      "forum_id": "2608.12123",
       "paper_number": -1,
-      "title": "Throughput per Megabyte: A Pilot Benchmark of Language-Stack Efficiency for Self-Hosted HTTP Services on a Raspberry Pi 5",
+      "title": "Ready Cohorts: Bounding GPU Opportunity and Avoiding Host Round Trips in LLM-Agent Control",
       "authors": [
-        "William Oliveira"
+        "Josef Liyanjun Chen"
       ],
       "keywords": [
-        "cs.DC",
+        "cs.OS",
         "FAST"
       ],
-      "abstract": "arXiv:2609.11932v1 Announce Type: cross \nAbstract: Cloud-centric web benchmarks miss constraints that matter for self-hosted services on ARM64 single-board computers, especially idle RAM footprint and energy per request. We ran a pilot benchmark on one Raspberry Pi 5, measuring equivalent SQLite-backed CRUD APIs implemented in Go 1.26/net/http, Rust 1.95/Axum, Python 3.13/FastAPI+Granian, Node.js 24/Fastify, and .NET 10 Native AOT across N=50 randomized runs per stack and endpoint, with a separate concurrency sweep and memory time-series collection. Rust achieved the highest weighted throughput-to-RAM ratio (310.25 req/s/MB, 2.8x Go) because its weighted peak RSS was 7.36 MB, while .NET, Node.js, Go, and Rust formed a raw-throughput cluster with overlapping bootstrap CIs (2,125--2,461 req/",
-      "pdf_link": "https://arxiv.org/pdf/2609.11932.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.11932",
-      "submission_date": "2026-09-14T04:00:00+00:00",
+      "abstract": "arXiv:2608.12123v2 Announce Type: replace-cross \nAbstract: We introduce a mechanism that improves LLM-agent execution: keeping four-byte, GPU-computed control-path routing decisions on-device, avoiding a round-trip to host memory for redispatch. It is faster than host-dispatch in all 36 placements x mechanisms settings in our benchmark across four named GPUs with row-median speedup of 1.19x-2.39x, and outputs are correct, matching an independent host implementation, for all 14,557,440 calls in all configurations, in both tested mechanisms.\n  Agent control paths can be deterministic. Their transitions between LLM calls and external tool calls can be GPU-accelerated by batching across agents and time. We define a cohort of transitions with launch times in a window, and study four shares of G",
+      "pdf_link": "https://arxiv.org/pdf/2608.12123.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.12123",
+      "submission_date": "2026-09-15T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-09-14T11:44:12.929814+00:00"
+      "updated_at": "2026-09-15T11:01:31.049780+00:00"
     },
     {
       "forum_id": "usenix-osdi26-22",
@@ -6330,29 +6353,6 @@
       "ratings": [],
       "score": 2.5,
       "updated_at": "2026-07-21T08:54:26.744870+00:00"
-    },
-    {
-      "forum_id": "2609.11936",
-      "paper_number": -1,
-      "title": "One Simple Trick for Improving the Performance of Energy-Limited Local Inference and Training",
-      "authors": [
-        "Erik Schultheis, Maximilian Kleinegger, Dan Alistarh"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.11936v1 Announce Type: cross \nAbstract: Energy supply and heat dissipation are two of the main challenges with modern GPU deployments. While typically discussed in the context of new datacenter constructions, the same constraints also apply to small form-factor consumer devices, such as the DGX spark. In workloads characterized by alternating compute-intensive tasks such as matmuls with memory-bound operations such as norms or cross-entropy, the compute-intensive parts might hit power and/or thermal limits and start throttling. In this short paper, we show that chunking the workload into smaller parts that alternate compute and memory in higher frequencies, these power and temperature spikes can be smoothed out, preventing throttling and resulting in considerably faster wall-clo",
-      "pdf_link": "https://arxiv.org/pdf/2609.11936.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.11936",
-      "submission_date": "2026-09-14T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-09-14T11:44:12.929840+00:00"
     },
     {
       "forum_id": "usenix-osdi26-10",
@@ -6811,27 +6811,50 @@
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
     },
     {
-      "forum_id": "2609.12815",
+      "forum_id": "2609.05997",
       "paper_number": -1,
-      "title": "4D Parallelism Unlocks Exascale Bayesian Neural Networks for High-Fidelity Atmospheric Modeling",
+      "title": "CoCoFL: Continual Computing for Federated Learning over Intermittent Satellite-Ground Links",
       "authors": [
-        "Deifilia Kieckhefen, Juan Pedro Guti\\'errez Hermosillo Muriedas, Lars Helge Heyen, Mathis Bode, Iida Hakulinen, Andreas Herten, Chelsea Maria John, Thorsten Kurth, Anni Moisala, Asena Karolin \\\"Ozdemir, Kaleb Phipps, Oskar Taubert, Arvid Weyrauch, Markus G\\\"otz, Charlotte Debus"
+        "Yun Shen, Kun Guo, Xi Yang, Yaoqi Liu, Yisheng Zhao, Wei Feng"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2609.12815v1 Announce Type: cross \nAbstract: We present BEAST, the first-ever Bayesian Swin Transformer for atmospheric forecasting on 0.25$^\\circ$ global resolution able to accurately quantify both aleatoric and epistemic uncertainty. To overcome the associated computational bottlenecks, we devise an orthogonal 4D-parallelization scheme that introduces a unique domain-tensor-parallelism strategy and a novel uncertainty parallel method, enabling us to fully leverage GPU capacity and efficiently scale model training. For a 2.4-billion-parameter model, we achieve a peak performance of 3.96 EFLOP/s on 20,480 NVIDIA GH200 GPUs on the JUPITER supercomputer. We train BEAST as a 700-million-parameter model with 96 random weight samples on 384 nodes on 40 years of data for nearly one million",
-      "pdf_link": "https://arxiv.org/pdf/2609.12815.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.12815",
-      "submission_date": "2026-09-14T04:00:00+00:00",
+      "abstract": "arXiv:2609.05997v2 Announce Type: replace \nAbstract: Low earth orbit (LEO) satellite constellations enable geographically distributed ground devices to collaboratively train a global model via federated learning (FL) without sharing raw data, with applications in environmental monitoring and disaster prediction. However, in satellite-assisted FL scenarios, intermittent satellite-ground links allow only a subset of devices to participate in global aggregation within each visibility window, leaving unscheduled devices idle and their local computational and data resources underutilized. Under partial device participation, data heterogeneity among devices may bias the global model toward certain devices, thereby deteriorating learning performance. In this regard, we propose a continual computi",
+      "pdf_link": "https://arxiv.org/pdf/2609.05997.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.05997",
+      "submission_date": "2026-09-15T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-09-14T11:44:12.930740+00:00"
+      "updated_at": "2026-09-15T11:01:31.159721+00:00"
+    },
+    {
+      "forum_id": "2604.26821",
+      "paper_number": -1,
+      "title": "Exploring the Efficiency of 3D-Stacked AI Chip Architecture for LLM Inference with VOXEL",
+      "authors": [
+        "Yiqi Liu, Noelle Crawford, Michael Wang, Jilong Xue, Jian Huang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2604.26821v2 Announce Type: replace-cross \nAbstract: To overcome the well-known memory bottleneck of AI chips, 3D-stacked architectures that employ advanced packaging technology with high-density through-silicon vias (TSVs) pins have proven to be a promising solution. The 3D-stacked AI chip enables ultra-high memory bandwidth between compute and memory by stacking numerous DRAM banks atop many AI cores in a distributed manner. However, it is not easy to explore the efficiency of the 3D-stacked AI chip, due to its unique distributed nature. And we need to carefully consider multiple intertwined factors that range from upper-level computing paradigm to machine learning (ML) compiler optimizations, and to the underlying hardware architecture.\n  In this paper, we develop VOXEL, a fast an",
+      "pdf_link": "https://arxiv.org/pdf/2604.26821.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.26821",
+      "submission_date": "2026-09-15T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-09-15T11:01:31.160070+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

@@ -1,54 +1,100 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-09-10T10:34:47.345768+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-09-15T11:02:03.995265+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2609.10080",
+      "forum_id": "2605.28274",
       "paper_number": -1,
-      "title": "Stochastic Lanczos Quadrature for Computational Uncertainty in Linear Algebra",
+      "title": "Factorized Krylov subspace methods for solving large Sylvester equations",
       "authors": [
-        "Hassan Fifen, Issa Karambal, Philipp Hennig"
+        "Yuki Satake, Takeshi Fukaya, Tomohiro Sogabe, Shao-Liang Zhang"
       ],
       "keywords": [
         "cs.NA",
         "scientific computing"
       ],
-      "abstract": "arXiv:2609.10080v1 Announce Type: new \nAbstract: Applying a matrix function to a vector is a common operation in large-scale scientific computing, such as Bayesian inference. When the matrix is symmetric positive definite and the function is its inverse, the Lanczos algorithm gives a matrix-free approximation from matrix-vector products alone. Stopping after a fixed number of steps keeps the approximation on the explored Krylov subspace but assigns nothing to its orthogonal complement, which holds the smallest eigenvalues and therefore the largest contributions to the inverse. This truncation is usually treated as a silent numerical error rather than as measurable uncertainty. We show that a single Lanczos run yields both a matrix-free approximation of the inverse and a Gaussian distributi",
-      "pdf_link": "https://arxiv.org/pdf/2609.10080.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.10080",
-      "submission_date": "2026-09-10T04:00:00+00:00",
+      "abstract": "arXiv:2605.28274v2 Announce Type: replace \nAbstract: Krylov subspace methods, such as the Conjugate Gradient (CG) and BiCGSTAB methods, are widely used in scientific computing for solving linear systems. In this study, we propose a new framework for solving large Sylvester equations in a low-rank format by reconstructing matrix-oriented Krylov subspace methods. The framework realizes efficient algorithms that are mathematically equivalent to the matrix-oriented Krylov subspace methods by exploiting the mathematical properties of the Sylvester operator and the low-rank structure of the right-hand side. Specifically, by leveraging these properties, approximate solutions can be expressed in a low-rank factorized form, enabling efficient computation and reduced memory requirements. The effecti",
+      "pdf_link": "https://arxiv.org/pdf/2605.28274.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.28274",
+      "submission_date": "2026-09-15T04:00:00+00:00",
       "conference": "scientific computing",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 17.5,
-      "updated_at": "2026-09-10T10:34:47.341856+00:00"
+      "score": 35.0,
+      "updated_at": "2026-09-15T11:02:03.990706+00:00"
     },
     {
-      "forum_id": "2506.17366",
+      "forum_id": "2605.05579",
       "paper_number": -1,
-      "title": "Gaussian Processes and Reproducing Kernel Hilbert Spaces: Connections and Equivalences",
+      "title": "Numerical Analysis of Space-Time Dependent Source Identification in Subdiffusion Equations",
       "authors": [
-        "Motonobu Kanagawa, Philipp Hennig, Dino Sejdinovic, Bharath K. Sriperumbudur"
+        "Siyu Cen, Bangti Jin, Yavar Kian, Zhi Zhou"
       ],
       "keywords": [
         "cs.NA",
         "numerical analysis"
       ],
-      "abstract": "arXiv:2506.17366v3 Announce Type: replace-cross \nAbstract: This monograph studies the relations between two approaches using positive definite kernels: probabilistic methods using Gaussian processes, and non-probabilistic methods using reproducing kernel Hilbert spaces (RKHS). They are widely studied and used in machine learning, statistics, and numerical analysis. We study connections and equivalences for fundamental topics such as regression, interpolation, numerical integration, distributional discrepancies, and statistical dependence, as well as sample path properties of Gaussian processes. A unifying perspective for these equivalences is established, based on the equivalence between the Gaussian Hilbert space and the RKHS. The monograph serves as a basis to bridge many other methods b",
-      "pdf_link": "https://arxiv.org/pdf/2506.17366.pdf",
-      "forum_link": "https://arxiv.org/abs/2506.17366",
-      "submission_date": "2026-09-10T04:00:00+00:00",
+      "abstract": "arXiv:2605.05579v2 Announce Type: replace \nAbstract: In this work, we propose an easy-to-implement fixed-point algorithm for reconstructing a space-time dependent source in a subdiffusion model from lateral boundary measurements. The numerical scheme combines a Galerkin finite element method for spatial discretization with a finite difference method for temporal discretization. We establish the linear convergence of the fixed-point iteration and derive an error bound that depends explicitly on the discretization parameters and the noise level. The error analysis relies on stability properties of the continuous inverse problem and technical estimates for the associated direct problem with limited-regularity data. Numerical experiments are presented to support and complement the theoretical ",
+      "pdf_link": "https://arxiv.org/pdf/2605.05579.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.05579",
+      "submission_date": "2026-09-15T04:00:00+00:00",
       "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-09-10T10:34:47.343068+00:00"
+      "score": 13.5,
+      "updated_at": "2026-09-15T11:02:03.990621+00:00"
+    },
+    {
+      "forum_id": "2401.04781",
+      "paper_number": -1,
+      "title": "Mathematical modeling of the mechanical behavior of three-layer plates with a tetrachiral honeycomb core",
+      "authors": [
+        "A. V. Mazaev"
+      ],
+      "keywords": [
+        "cs.NA",
+        "numerical analysis"
+      ],
+      "abstract": "arXiv:2401.04781v4 Announce Type: replace \nAbstract: This work examines the mechanical behavior of three-layer plates with a tetrachiral honeycomb core and solid face layers under static bending conditions. The influence of discretization, relative density, and thickness of the honeycomb core on the stress state of the composite plates is investigated under two boundary conditions: rigid clamping and elastic rotational support. The first numerical experiment setup involves a constant thickness of each composite layer while varying the core relative density. The second experiment setup maintains a constant volume of the honeycomb core solid body, which causes its thickness to change as the relative density varies. Mathematical modeling is performed using the finite element method within the",
+      "pdf_link": "https://arxiv.org/pdf/2401.04781.pdf",
+      "forum_link": "https://arxiv.org/abs/2401.04781",
+      "submission_date": "2026-09-15T04:00:00+00:00",
+      "conference": "numerical analysis",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-09-15T11:02:03.990225+00:00"
+    },
+    {
+      "forum_id": "2609.14303",
+      "paper_number": -1,
+      "title": "Regional Stability and New Eigenvalue Perturbation Bounds",
+      "authors": [
+        "Phuc Tran, Van Vu"
+      ],
+      "keywords": [
+        "cs.NA",
+        "numerical analysis"
+      ],
+      "abstract": "arXiv:2609.14303v1 Announce Type: new \nAbstract: Let $A$ be an $n\\times n$ symmetric matrix with eigenvalues $\\lambda_1\\geq\\cdots\\geq\\lambda_n$. Let $\\tilde A:=A+E$, where $E$ is a symmetric noise matrix, and denote the eigenvalues of $\\tilde A$ by $\\tilde\\lambda_1\\geq\\cdots\\geq\\tilde\\lambda_n$. Bounding the perturbation $|\\tilde \\lambda_i -\\lambda_i| $ is a central problem in linear algebra and numerical analysis.\n  In this paper, we prove new perturbation results by exploring the actual interaction between $E$ and the eigenvectors of $A$. In the setting where $E$ does not act adversarially with respect to these vectors (for instance, if $E$ is random), we obtain a considerable improvement over Weyl's inequality. One can routinely extend these results to the Hermitian and rectangular sett",
+      "pdf_link": "https://arxiv.org/pdf/2609.14303.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.14303",
+      "submission_date": "2026-09-15T04:00:00+00:00",
+      "conference": "numerical analysis",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-09-15T11:02:03.988732+00:00"
     }
   ]
 }

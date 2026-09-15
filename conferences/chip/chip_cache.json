@@ -1,54 +1,192 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-09-14T11:44:15.858092+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-09-15T11:01:34.055494+00:00",
+  "paper_count": 8,
   "papers": [
     {
-      "forum_id": "2604.04750",
+      "forum_id": "2609.13563",
       "paper_number": -1,
-      "title": "DeepStack: Facilitating Co-Design Exploration of 3D DRAM-Stacked Accelerators for Distributed LLM Inference",
+      "title": "A Unified Interconnection Network for Chiplet-Based Scaling of the BrainScaleS Neuromorphic System",
       "authors": [
-        "Zhiwen Mo, Guoyu Li, Hao Mark Chen, Yu Cheng, Zhengju Tang, Qianzhou Wang, Lei Wang, Shuang Liang, Lingxiao Ma, Xianqi Zhou, Yuxiao Guo, Wayne Luk, Jilong Xue, Hongxiang Fan"
+        "Robin Heinemann, Johannes Schemmel"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2604.04750v4 Announce Type: replace \nAbstract: Advances in hybrid bonding and packaging have driven growing interest in 3D DRAM-stacked AI accelerators. As large language models (LLMs) scale to hundreds of billions or trillions of parameters, distributed inference across multiple 3D chips has become essential for AI serving. This trend makes cross-stack co-design critical because system-level parallelization and scheduling choices are tightly coupled with hardware characteristics such as memory organization, interconnects, and thermal constraints. We present DeepStack, an accurate performance model and efficient design space exploration (DSE) framework for distributed 3D-stacked LLM inference. At the hardware level, DeepStack captures transaction-aware memory bandwidth, bank activati",
-      "pdf_link": "https://arxiv.org/pdf/2604.04750.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.04750",
-      "submission_date": "2026-09-14T04:00:00+00:00",
+      "abstract": "arXiv:2609.13563v1 Announce Type: new \nAbstract: The BrainScaleS-2 (BSS-2) neuromorphic architecture combines analog emulation of spiking neural network (SNN) primitives with tightly coupled ADCs and digital processing units. These analog SNN primitives are fixed hardware resources that cannot be multiplexed, limiting the emulated network size to the number of physical hardware copies. To overcome the challenges of scaling analog designs, chiplet-based designs offer a promising approach with cost and flexibility advantages over monolithic scaling. Implementing a chiplet-based BSS-2 architecture requires an interconnection network that handles two distinct classes of traffic: error-tolerant traffic such as spikes and error-intolerant traffic like configuration data or data exchanged by the ",
+      "pdf_link": "https://arxiv.org/pdf/2609.13563.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.13563",
+      "submission_date": "2026-09-15T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 35.0,
+      "updated_at": "2026-09-15T11:01:34.049651+00:00"
+    },
+    {
+      "forum_id": "2607.29357",
+      "paper_number": -1,
+      "title": "Low-Power PLL-Based Clock Stabilization for Flexible IGZO AMS Systems",
+      "authors": [
+        "Paula Carolina Lozano Duarte, Georgios Zervakis, Mehdi Tahoori"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.29357v2 Announce Type: replace \nAbstract: Flexible electronics (FE) platforms rely on analog and mixed-signal (AMS) circuits - biosensors, readout front-ends, and analog-to-digital converters - that dominate both functionality and energy consumption, making on-chip clock generation an essential yet power-critical function. Existing oscillator-based solutions suffer from unbounded process, voltage, and temperature (PVT) drift that degrades signal integrity, while alternative clock sources can consume up to 90% of the total system power budget, rendering them inapplicable to FE platforms and elevating clock generation to a primary power and energy-efficiency design constraint. This paper presents the first phase-locked loop (PLL) architecture designed for n-type-only amorphous ind",
+      "pdf_link": "https://arxiv.org/pdf/2607.29357.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.29357",
+      "submission_date": "2026-09-15T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 7.5,
+      "updated_at": "2026-09-15T11:01:34.050788+00:00"
+    },
+    {
+      "forum_id": "2608.25536",
+      "paper_number": -1,
+      "title": "Syn2Logic: End-to-End Neuromorphic Design Automation",
+      "authors": [
+        "Artur Podobas"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2608.25536v2 Announce Type: replace \nAbstract: In this work, we propose a view on electronic Neuromorphic Design Automation (eNDA), which we see as a design automation flow that bridges computational neuroscience modeling with traditional Electronic Design Automation (EDA) flow. We introduce the term, give examples of how it can be implemented, and design a prototype implementation: Syn2Logic. Syn2Logic is an entire eNDA framework, that allows neuroscientists to model neural behavior using a custom DSL and a compiler that takes the same model description down to synthesizable RTL hardware. We end the paper by applying the eNDA-flow through Syn2Logic to show how to -- without writing a single line of hardware description language (HDL) code-- (i) generate what we believe is the fastes",
+      "pdf_link": "https://arxiv.org/pdf/2608.25536.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.25536",
+      "submission_date": "2026-09-15T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-09-15T11:01:34.050901+00:00"
+    },
+    {
+      "forum_id": "2609.14043",
+      "paper_number": -1,
+      "title": "A High-Throughput FPGA Architecture for Real-Time TCP-SYN Scan Detection",
+      "authors": [
+        "Faisal Saeed, Mohammad Fahad, Ayesha Javaid, Christian Doerr, Muhammad Ali Siddiqi"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.14043v1 Announce Type: cross \nAbstract: TCP-SYN port scanning often precedes cyber-attacks, and early detection of scanner fingerprints embedded in packet headers can provide timely intrusion alerts. Existing approaches are either too computationally expensive for line-rate operation or limited to offline analysis. This brief presents a lightweight FPGA architecture for reconfigurable line-rate fingerprint detection, where each fingerprint is compiled into a shallow Boolean LUT tree, enabling parallel evaluation with constant two-cycle latency regardless of fingerprint count, while resource cost grows linearly with fingerprint count. This detection core is decoupled from a MAC-layer frontend that performs streaming field extraction with no frame buffering or higher-layer state, ",
+      "pdf_link": "https://arxiv.org/pdf/2609.14043.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.14043",
+      "submission_date": "2026-09-15T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 3.0,
-      "updated_at": "2026-09-14T11:44:15.855947+00:00"
+      "updated_at": "2026-09-15T11:01:34.050196+00:00"
     },
     {
-      "forum_id": "2609.06691",
+      "forum_id": "2609.15339",
       "paper_number": -1,
-      "title": "Gutenberg: Taming Latency-Critical Cloud Services with Near-Data-Processing",
+      "title": "A Memristive Synapse for Online STDP Learning and Inference in SNNs",
       "authors": [
-        "Qiushi Lin, Phillip B. Gibbons, Jovan Stojkovic, Yiwei Zhao"
+        "Elia Mateu-Barriendos, \\'Alvaro G\\'omez-Pau, Daniel Arum\\'i, Rosa Rodr\\'iguez-Monta\\~n\\'es, Salvador Manich"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.06691v2 Announce Type: replace-cross \nAbstract: Latency-critical cloud services place growing pressure on memory while requiring isolation, fairness, and predictable QoS. Near-data processing (NDP) reduces data movement by executing requests close to memory, and prior systems further improve locality through caching and replication. However, writes make replica maintenance expensive, while uneven compute and memory traffic can overload a few NDP units and increase tail latency. Existing throughput-oriented schedulers do not fully address these challenges for co-located cloud services.\n  We present Gutenberg, a CPU+NDP for mutable, latency-critical cloud services. Gutenberg stages subpage updates in a CPU-resident delta buffer, allowing hot writable pages to remain replicated wit",
-      "pdf_link": "https://arxiv.org/pdf/2609.06691.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.06691",
-      "submission_date": "2026-09-14T04:00:00+00:00",
+      "abstract": "arXiv:2609.15339v1 Announce Type: cross \nAbstract: This work presents a fully analog memristive synaptic circuit for online spike-timing-dependent plasticity (STDP) learning in spiking neural networks (SNNs). The proposed synapse integrates a local STDP circuit generating gradual timing-dependent conductance updates directly from pre- and post-synaptic spikes. Learning occurs during normal network operation without requiring external digital control or explicit STDP waveform synthesis.\n  Post-layout simulations of the memristive synapse implemented in a 130 nm CMOS technology show spike-timing-dependent conductance adaptation during SNN operation. A 2x2 SNN simulation further illustrates online neuron specialization through unsupervised learning.",
+      "pdf_link": "https://arxiv.org/pdf/2609.15339.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.15339",
+      "submission_date": "2026-09-15T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-09-15T11:01:34.050406+00:00"
+    },
+    {
+      "forum_id": "2605.13507",
+      "paper_number": -1,
+      "title": "Implementation of an Adaptive Transformer Accelerator for Accurate Outdoor Localization with Massive MIMO",
+      "authors": [
+        "Ilayda Yaman, Sijia Cheng, Ove Edfors, Liang Liu"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2605.13507v2 Announce Type: replace \nAbstract: We present a sparsity-aware FPGA implementation of an adaptive Transformer-based localization accelerator for 5G massive MIMO targeting sub-10\\,ms real-time positioning. The architecture exploits propagation characteristics, where beam-delay channel representations exhibit sparsity, enabling a row-wise skipping mechanism that removes low-energy beam components with minimal control overhead. Transformer computations are mapped onto a heterogeneous vector processing engine with parallel processing elements and adder trees, using mixed input- and output-stationary dataflow execution for efficient matrix computation and reduced data movement. Environment-dependent processing is supported through a lightweight runtime model-switching mechanis",
+      "pdf_link": "https://arxiv.org/pdf/2605.13507.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.13507",
+      "submission_date": "2026-09-15T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-09-15T11:01:34.050691+00:00"
+    },
+    {
+      "forum_id": "2609.13546",
+      "paper_number": -1,
+      "title": "WISER: Systematic Design-Space Exploration of Fault-Tolerant Global Control Trapped-Ions",
+      "authors": [
+        "Scott Jones, Song-qing-hao Yang, Prakash Murali"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.13546v1 Announce Type: cross \nAbstract: Trapped-ion quantum computers are a leading candidate for scalable fault-tolerant quantum computing, but conventional Quantum Charge-Coupled Device (QCCD) architectures face severe wiring and power constraints as systems scale. The recently proposed WISE promise orders-of-magnitude reductions in wiring complexity but fundamentally alter the hardware--software interface, making it unclear whether such restrictive architectures can feasibly execute quantum error correction (QEC) and eventually support fault-tolerant workloads. We present WISER, a cross-layer architectural design-space exploration framework for globally controlled trapped-ion systems, to determine whether WISE can support early FTQC, and what hardware/compiler/QEC choices are",
+      "pdf_link": "https://arxiv.org/pdf/2609.13546.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.13546",
+      "submission_date": "2026-09-15T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-09-14T11:44:15.855994+00:00"
+      "updated_at": "2026-09-15T11:01:34.050003+00:00"
+    },
+    {
+      "forum_id": "2609.14595",
+      "paper_number": -1,
+      "title": "Diagnosing Temporal Misalignment in Multichannel Time-Series Classification with Minimum Description Length",
+      "authors": [
+        "Sebastian Buschj\\\"ager, Michael Frichert, Daniel Kuhe, Jian-Jia Chen"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.14595v1 Announce Type: cross \nAbstract: Multichannel time-series classification commonly assumes synchronized sensor streams, although latency, clock drift, and preprocessing can introduce relative delays during data collection or after deployment. Existing synchronization solutions are often hardware-specific and difficult to apply retrospectively. Consequently, synchronization problems may remain undetected while classification performance is suboptimal. We introduce a classifier- and label-free diagnostic based on minimum description length (MDL). Our method applies candidate temporal shifts to sensor groups and measures how efficiently one group can be encoded through a representation of the remaining channels. An increased codelength indicates that the shift destroys shared",
+      "pdf_link": "https://arxiv.org/pdf/2609.14595.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.14595",
+      "submission_date": "2026-09-15T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-09-15T11:01:34.050296+00:00"
     }
   ]
 }
