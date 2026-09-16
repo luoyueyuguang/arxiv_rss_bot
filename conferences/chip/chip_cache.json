@@ -1,192 +1,146 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-09-15T11:01:34.055494+00:00",
-  "paper_count": 8,
+  "last_updated": "2026-09-16T10:49:09.522084+00:00",
+  "paper_count": 6,
   "papers": [
     {
-      "forum_id": "2609.13563",
+      "forum_id": "2609.16358",
       "paper_number": -1,
-      "title": "A Unified Interconnection Network for Chiplet-Based Scaling of the BrainScaleS Neuromorphic System",
+      "title": "EBL: Efficient Broad Learning for Distributed Adaptive Harmonic Analysis",
       "authors": [
-        "Robin Heinemann, Johannes Schemmel"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2609.13563v1 Announce Type: new \nAbstract: The BrainScaleS-2 (BSS-2) neuromorphic architecture combines analog emulation of spiking neural network (SNN) primitives with tightly coupled ADCs and digital processing units. These analog SNN primitives are fixed hardware resources that cannot be multiplexed, limiting the emulated network size to the number of physical hardware copies. To overcome the challenges of scaling analog designs, chiplet-based designs offer a promising approach with cost and flexibility advantages over monolithic scaling. Implementing a chiplet-based BSS-2 architecture requires an interconnection network that handles two distinct classes of traffic: error-tolerant traffic such as spikes and error-intolerant traffic like configuration data or data exchanged by the ",
-      "pdf_link": "https://arxiv.org/pdf/2609.13563.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.13563",
-      "submission_date": "2026-09-15T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-09-15T11:01:34.049651+00:00"
-    },
-    {
-      "forum_id": "2607.29357",
-      "paper_number": -1,
-      "title": "Low-Power PLL-Based Clock Stabilization for Flexible IGZO AMS Systems",
-      "authors": [
-        "Paula Carolina Lozano Duarte, Georgios Zervakis, Mehdi Tahoori"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.29357v2 Announce Type: replace \nAbstract: Flexible electronics (FE) platforms rely on analog and mixed-signal (AMS) circuits - biosensors, readout front-ends, and analog-to-digital converters - that dominate both functionality and energy consumption, making on-chip clock generation an essential yet power-critical function. Existing oscillator-based solutions suffer from unbounded process, voltage, and temperature (PVT) drift that degrades signal integrity, while alternative clock sources can consume up to 90% of the total system power budget, rendering them inapplicable to FE platforms and elevating clock generation to a primary power and energy-efficiency design constraint. This paper presents the first phase-locked loop (PLL) architecture designed for n-type-only amorphous ind",
-      "pdf_link": "https://arxiv.org/pdf/2607.29357.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.29357",
-      "submission_date": "2026-09-15T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 7.5,
-      "updated_at": "2026-09-15T11:01:34.050788+00:00"
-    },
-    {
-      "forum_id": "2608.25536",
-      "paper_number": -1,
-      "title": "Syn2Logic: End-to-End Neuromorphic Design Automation",
-      "authors": [
-        "Artur Podobas"
+        "Changhong Li, Georgios Floros, Biswajit Basu, Shreejith Shanker"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2608.25536v2 Announce Type: replace \nAbstract: In this work, we propose a view on electronic Neuromorphic Design Automation (eNDA), which we see as a design automation flow that bridges computational neuroscience modeling with traditional Electronic Design Automation (EDA) flow. We introduce the term, give examples of how it can be implemented, and design a prototype implementation: Syn2Logic. Syn2Logic is an entire eNDA framework, that allows neuroscientists to model neural behavior using a custom DSL and a compiler that takes the same model description down to synthesizable RTL hardware. We end the paper by applying the eNDA-flow through Syn2Logic to show how to -- without writing a single line of hardware description language (HDL) code-- (i) generate what we believe is the fastes",
-      "pdf_link": "https://arxiv.org/pdf/2608.25536.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.25536",
-      "submission_date": "2026-09-15T04:00:00+00:00",
+      "abstract": "arXiv:2609.16358v1 Announce Type: new \nAbstract: Renewable energy systems and electrified transport have found widespread adoption in recent years. The integration of these non-linear loads, dominated by electric vehicle (EV) charging, however, has introduced severe harmonic distortion into the power grid, impacting the efficiency and lifetime of substation equipment and switchgear in the distribution network. Rapid and high-precision harmonic analysis has hence become a prerequisite for effective harmonic control at the source of injection. This paper proposes an Efficient Broad Learning (EBL) framework for distributed adaptive harmonic estimation. As a quantised FPGA acceleration framework for BLS-style harmonic estimation, it offers high-accuracy estimation with half-cycle input, reconf",
+      "pdf_link": "https://arxiv.org/pdf/2609.16358.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.16358",
+      "submission_date": "2026-09-16T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-09-15T11:01:34.050901+00:00"
+      "score": 13.0,
+      "updated_at": "2026-09-16T10:49:09.517198+00:00"
     },
     {
-      "forum_id": "2609.14043",
+      "forum_id": "2609.16367",
       "paper_number": -1,
-      "title": "A High-Throughput FPGA Architecture for Real-Time TCP-SYN Scan Detection",
+      "title": "FINNAS: FINN-Guided Hardware-Aware NAS and Pruning for FPGA Jet Substructure Classification",
       "authors": [
-        "Faisal Saeed, Mohammad Fahad, Ayesha Javaid, Christian Doerr, Muhammad Ali Siddiqi"
+        "Eva Chauffour, Changhong Li, Georgios Floros, Shreejith Shanker"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.14043v1 Announce Type: cross \nAbstract: TCP-SYN port scanning often precedes cyber-attacks, and early detection of scanner fingerprints embedded in packet headers can provide timely intrusion alerts. Existing approaches are either too computationally expensive for line-rate operation or limited to offline analysis. This brief presents a lightweight FPGA architecture for reconfigurable line-rate fingerprint detection, where each fingerprint is compiled into a shallow Boolean LUT tree, enabling parallel evaluation with constant two-cycle latency regardless of fingerprint count, while resource cost grows linearly with fingerprint count. This detection core is decoupled from a MAC-layer frontend that performs streaming field extraction with no frame buffering or higher-layer state, ",
-      "pdf_link": "https://arxiv.org/pdf/2609.14043.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.14043",
-      "submission_date": "2026-09-15T04:00:00+00:00",
+      "abstract": "arXiv:2609.16367v1 Announce Type: new \nAbstract: FPGAs are well suited to deploying quantised neural networks (QNNs) under strict accuracy, latency, and resource constraints; however, identifying efficient model-accelerator combinations commonly requires extensive manual design-space exploration and repeated hardware synthesis. This paper presents FINNAS, a FINN-guided hardware-aware evolutionary neural architecture search framework. FINNAS jointly searches quantised MLP depth, width, and global precision settings, and ranks candidates using proxy validation accuracy together with FINN-estimated LUT usage and latency under a fully parallel mapping. Selected finalists are fully retrained, subjected to post-search unstructured pruning, and validated using RTL simulation and Vivado out-of-con",
+      "pdf_link": "https://arxiv.org/pdf/2609.16367.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.16367",
+      "submission_date": "2026-09-16T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-09-15T11:01:34.050196+00:00"
+      "score": 3.5,
+      "updated_at": "2026-09-16T10:49:09.517300+00:00"
     },
     {
-      "forum_id": "2609.15339",
+      "forum_id": "2609.16363",
       "paper_number": -1,
-      "title": "A Memristive Synapse for Online STDP Learning and Inference in SNNs",
+      "title": "FSNIC: A Low-Latency Flow-Based Intrusion Detection Architecture for FPGA SmartNICs",
       "authors": [
-        "Elia Mateu-Barriendos, \\'Alvaro G\\'omez-Pau, Daniel Arum\\'i, Rosa Rodr\\'iguez-Monta\\~n\\'es, Salvador Manich"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2609.15339v1 Announce Type: cross \nAbstract: This work presents a fully analog memristive synaptic circuit for online spike-timing-dependent plasticity (STDP) learning in spiking neural networks (SNNs). The proposed synapse integrates a local STDP circuit generating gradual timing-dependent conductance updates directly from pre- and post-synaptic spikes. Learning occurs during normal network operation without requiring external digital control or explicit STDP waveform synthesis.\n  Post-layout simulations of the memristive synapse implemented in a 130 nm CMOS technology show spike-timing-dependent conductance adaptation during SNN operation. A 2x2 SNN simulation further illustrates online neuron specialization through unsupervised learning.",
-      "pdf_link": "https://arxiv.org/pdf/2609.15339.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.15339",
-      "submission_date": "2026-09-15T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-09-15T11:01:34.050406+00:00"
-    },
-    {
-      "forum_id": "2605.13507",
-      "paper_number": -1,
-      "title": "Implementation of an Adaptive Transformer Accelerator for Accurate Outdoor Localization with Massive MIMO",
-      "authors": [
-        "Ilayda Yaman, Sijia Cheng, Ove Edfors, Liang Liu"
+        "Nise O'Cuill, Changhong Li, Georgios Floros, Shreejith Shanker"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2605.13507v2 Announce Type: replace \nAbstract: We present a sparsity-aware FPGA implementation of an adaptive Transformer-based localization accelerator for 5G massive MIMO targeting sub-10\\,ms real-time positioning. The architecture exploits propagation characteristics, where beam-delay channel representations exhibit sparsity, enabling a row-wise skipping mechanism that removes low-energy beam components with minimal control overhead. Transformer computations are mapped onto a heterogeneous vector processing engine with parallel processing elements and adder trees, using mixed input- and output-stationary dataflow execution for efficient matrix computation and reduced data movement. Environment-dependent processing is supported through a lightweight runtime model-switching mechanis",
-      "pdf_link": "https://arxiv.org/pdf/2605.13507.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.13507",
-      "submission_date": "2026-09-15T04:00:00+00:00",
+      "abstract": "arXiv:2609.16363v1 Announce Type: new \nAbstract: Modern data centres require high-performance networking alongside effective real-time security. Traditional Intrusion Detection Systems (IDS) commonly rely on general-purpose processors and often struggle to inspect high-speed traffic at line rate without introducing latency or performance bottlenecks. Smart Network Interface Cards (NICs) provide an alternative by enabling computation directly within the network data plane. This work presents a machine learning-based IDS implemented within an FPGA-based SmartNIC pipeline. The system integrates P4-based packet parsing with a LogicNets IDS model implemented in RTL, enabling deterministic, low-latency inference. Compared with traditional stateless packet-level classifiers, the proposed stateful",
+      "pdf_link": "https://arxiv.org/pdf/2609.16363.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.16363",
+      "submission_date": "2026-09-16T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-09-15T11:01:34.050691+00:00"
+      "score": 2.5,
+      "updated_at": "2026-09-16T10:49:09.517260+00:00"
     },
     {
-      "forum_id": "2609.13546",
+      "forum_id": "2609.16729",
       "paper_number": -1,
-      "title": "WISER: Systematic Design-Space Exploration of Fault-Tolerant Global Control Trapped-Ions",
+      "title": "SpecLens: LLM-Based Verilog Generation with Specification-Derived Constraints via Behavioral Divergence",
       "authors": [
-        "Scott Jones, Song-qing-hao Yang, Prakash Murali"
+        "Wen Bing, Bing Li"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.13546v1 Announce Type: cross \nAbstract: Trapped-ion quantum computers are a leading candidate for scalable fault-tolerant quantum computing, but conventional Quantum Charge-Coupled Device (QCCD) architectures face severe wiring and power constraints as systems scale. The recently proposed WISE promise orders-of-magnitude reductions in wiring complexity but fundamentally alter the hardware--software interface, making it unclear whether such restrictive architectures can feasibly execute quantum error correction (QEC) and eventually support fault-tolerant workloads. We present WISER, a cross-layer architectural design-space exploration framework for globally controlled trapped-ion systems, to determine whether WISE can support early FTQC, and what hardware/compiler/QEC choices are",
-      "pdf_link": "https://arxiv.org/pdf/2609.13546.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.13546",
-      "submission_date": "2026-09-15T04:00:00+00:00",
+      "abstract": "arXiv:2609.16729v1 Announce Type: new \nAbstract: Large language models (LLMs) have recently shown promise in Verilog generation, but producing functionally correct RTL directly from natural-language specifications remains a highly challenging task. Existing approaches improve LLM-based Verilog generation mainly with retrieval-augmented generation (RAG), self-planning, or few-shot prompting. However, these methods focus primarily on external or generic forms of enhancement rather than strengthening the specification with task-specific constraints. In this work, we propose SpecLens, an automated framework for LLM-based Verilog generation that derives specification-driven constraints by analyzing behavioral divergence among multiple candidate implementations, using the original specification ",
+      "pdf_link": "https://arxiv.org/pdf/2609.16729.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.16729",
+      "submission_date": "2026-09-16T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-09-16T10:49:09.517442+00:00"
+    },
+    {
+      "forum_id": "2609.16508",
+      "paper_number": -1,
+      "title": "ScaleLUT: A Fully-Parallel Configurable LUT-Based Accelerator for Real-Time Multi-Scale Super-Resolution",
+      "authors": [
+        "Boyu Li, Chenchen Ding, Zhilin Ai, Wenqing Shi, Baizhou Jiang, Wenyong Zhou, Binxiao Huang, Jiachen Ren, Hao Yu, Ngai Wong"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2609.16508v1 Announce Type: new \nAbstract: Real-time super-resolution (SR) remains challenging for edge devices because deep-learning-based methods require substantial multiply-accumulate (MAC) operations, resources, and power. Lookup-table (LUT)-based SR reduces computation by replacing convolutional inference with table queries, but existing methods still suffer from limited speed, large storage overhead, and poor scalability across upsampling factors. We present ScaleLUT, a hardware-oriented LUT design framework and fully parallel reconfigurable accelerator for real-time multi-scale SR. ScaleLUT combines a hardware-friendly YUV-domain strategy with power-of-two kernels and rotation ensemble to improve receptive-field coverage while reducing LUT dimensionality; division operations ",
+      "pdf_link": "https://arxiv.org/pdf/2609.16508.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.16508",
+      "submission_date": "2026-09-16T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-09-16T10:49:09.517360+00:00"
+    },
+    {
+      "forum_id": "2609.14845",
+      "paper_number": -1,
+      "title": "Accurate Models of AMD Matrix Cores",
+      "authors": [
+        "Faizan A Khattak, Mantas Mikaitis, Carlo J. Graziani"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.14845v2 Announce Type: replace \nAbstract: Matrix multipliers available on recent GPUs do not conform with the IEEE 754 floating point standard. Features of matrix multipliers differ across vendors and architectures of the same vendor, such as accumulator width, rounding behaviour, normalisation points, intermediate underflow and overflow logic, the handling of subnormals, and the treatment of special inputs. As a result, reproducibility of small matrix multiplier results across devices is not possible and cannot be achieved by software control. Implementation details of matrix multipliers are not documented, making it difficult to interpret discrepancies in the computed results. We characterise the numerical behaviour of matrix multipliers across three AMD GPU architectures: CDN",
+      "pdf_link": "https://arxiv.org/pdf/2609.14845.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.14845",
+      "submission_date": "2026-09-16T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-09-15T11:01:34.050003+00:00"
-    },
-    {
-      "forum_id": "2609.14595",
-      "paper_number": -1,
-      "title": "Diagnosing Temporal Misalignment in Multichannel Time-Series Classification with Minimum Description Length",
-      "authors": [
-        "Sebastian Buschj\\\"ager, Michael Frichert, Daniel Kuhe, Jian-Jia Chen"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2609.14595v1 Announce Type: cross \nAbstract: Multichannel time-series classification commonly assumes synchronized sensor streams, although latency, clock drift, and preprocessing can introduce relative delays during data collection or after deployment. Existing synchronization solutions are often hardware-specific and difficult to apply retrospectively. Consequently, synchronization problems may remain undetected while classification performance is suboptimal. We introduce a classifier- and label-free diagnostic based on minimum description length (MDL). Our method applies candidate temporal shifts to sensor groups and measures how efficiently one group can be encoded through a representation of the remaining channels. An increased codelength indicates that the shift destroys shared",
-      "pdf_link": "https://arxiv.org/pdf/2609.14595.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.14595",
-      "submission_date": "2026-09-15T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-09-15T11:01:34.050296+00:00"
+      "updated_at": "2026-09-16T10:49:09.517884+00:00"
     }
   ]
 }

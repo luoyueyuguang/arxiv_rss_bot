@@ -1,12 +1,14 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-09-15 11:01:30 UTC
-- **Total Filtered Papers**: 1
-- **Displaying**: 1 (arxiv: 1)
+- **Last Updated**: 2026-09-16 10:49:05 UTC
+- **Total Filtered Papers**: 3
+- **Displaying**: 3 (arxiv: 3)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [FlashGPU-sim: Enabling GPU Modeling for Modern Architectures and AI Workloads](https://arxiv.org/abs/2609.15311) | `ARXIV` | 26.0 |
+| 1 | [SCHERI: Provably Secure Speculation Under the Constant-Time Policy for CHERI (Extended Version)](https://arxiv.org/abs/2609.17399) | `ARXIV` | 46.0 |
+| 2 | [The World Model Hardware Accelerator](https://arxiv.org/abs/2609.16244) | `ARXIV` | 33.5 |
+| 3 | [Nested Parallel von Neumann Architecture and Nested BSP](https://arxiv.org/abs/2609.16787) | `ARXIV` | 2.5 |

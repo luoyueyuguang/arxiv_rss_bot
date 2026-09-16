@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-09-15T11:02:03.876652+00:00",
-  "paper_count": 31,
+  "last_updated": "2026-09-16T10:49:42.258201+00:00",
+  "paper_count": 32,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -100,6 +100,29 @@
       "ratings": [],
       "score": 61.5,
       "updated_at": "2026-07-23T08:28:51.358970+00:00"
+    },
+    {
+      "forum_id": "2609.17123",
+      "paper_number": -1,
+      "title": "AI for Science with GPT-6 Astra: Thermal Design and Electrothermal Analysis of 2D CFET",
+      "authors": [
+        "Min-Hui Kim, Khushi Sharma, Sarah Zhang, Ye Wang"
+      ],
+      "keywords": [
+        "cs.AI",
+        "AI for Science"
+      ],
+      "abstract": "arXiv:2609.17123v1 Announce Type: cross \nAbstract: Thermal optimization of 2D CFET inverters requires testing structural proposals against their electrical costs. We examine these research tasks using an AI agent workflow within a supplied electrothermal model. At 12 nm, Astra selects a redistributed source-interconnect geometry, while a coordinating agent proposes a substrate-directed heat-removal path. The combined design reduces peak temperature rise by 1.67 K at fixed metal volume and 20 {\\mu}W. A subsequent metal-resistance sensitivity gives about 0.6-K inverter cooling alongside a 2% nFET on-current loss. Effective contact-length scaling further shows that lower temperature can accompany higher thermal resistance when current falls. Reproduction identifies agreeing implementations an",
+      "pdf_link": "https://arxiv.org/pdf/2609.17123.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.17123",
+      "submission_date": "2026-09-16T04:00:00+00:00",
+      "conference": "AI for Science",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 43.5,
+      "updated_at": "2026-09-16T10:49:09.782911+00:00"
     },
     {
       "forum_id": "mlr-icml25-52",
@@ -404,6 +427,29 @@
       "updated_at": "2026-08-14T07:42:43.316013+00:00"
     },
     {
+      "forum_id": "2609.17088",
+      "paper_number": -1,
+      "title": "Interactive Memory Learning for Long-Term Conversations",
+      "authors": [
+        "Cai Ke, Jiangyue Yan, Han Zhang, Xin Liu, Zike Yuan, Yue Yu, Hui Wang, Ruifeng Xu"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ICML"
+      ],
+      "abstract": "arXiv:2609.17088v1 Announce Type: new \nAbstract: Recent advancements in large language models have significantly enhanced the capabilities of agents in modeling long-term conversations. Despite these successes, existing approaches typically adopt a static heuristic paradigm, where information is passively archived without adaptive memory valuation. Consequently, these methods fail to self-evolve or align their memory management with evolving user needs. To address this, we propose ICML (InteraCtive Memory Learning), a multi-agent framework that transforms the memory mechanism from a passive archive into a learnable, interactive memory policy. Specifically, we first employ a session synthesis pipeline to generate expert data, facilitating rapid test-time adaptation in unseen scenarios. Buil",
+      "pdf_link": "https://arxiv.org/pdf/2609.17088.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.17088",
+      "submission_date": "2026-09-16T04:00:00+00:00",
+      "conference": "ICML",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-09-16T10:49:09.775851+00:00"
+    },
+    {
       "forum_id": "mlr-icml25-29",
       "paper_number": 29,
       "title": "Consistency Regularisation for Unsupervised Domain Adaptation in Monocular Depth Estimation",
@@ -449,29 +495,6 @@
       "ratings": [],
       "score": 3.0,
       "updated_at": "2026-08-14T07:42:13.310944+00:00"
-    },
-    {
-      "forum_id": "2604.08568",
-      "paper_number": -1,
-      "title": "Can We Still Trace L1 Signals? Investigating the Resilience of Native Language Signals in the LLM Era",
-      "authors": [
-        "Nabelanita Utami, Ryohei Sasano"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2604.08568v3 Announce Type: replace-cross \nAbstract: The widespread use of LLM-based writing assistance has raised an interesting question about the homogenization of English. As LLMs tend to revise texts toward mainstream English conventions reflected in their training data, the subtle fingerprints that reflect an author's native language (L1) may be gradually disappearing. This study investigates this phenomenon by analyzing native language identification (NLI) performance on academic abstracts. To this end, we construct two NLI datasets of academic abstracts extracted from arXiv and the ACL Anthology that covers eight native language groups across three time periods: pre-neural network (NN), pre-LLM, and post-LLM. We then evaluate NLI performance for each era using NLI classifiers",
-      "pdf_link": "https://arxiv.org/pdf/2604.08568.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.08568",
-      "submission_date": "2026-09-15T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-09-15T11:01:34.525037+00:00"
     },
     {
       "forum_id": "mlr-icml25-8",
