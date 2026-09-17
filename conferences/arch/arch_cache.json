@@ -1,77 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-09-16T10:49:05.473181+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-09-17T10:55:41.461857+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2609.17399",
+      "forum_id": "2609.18792",
       "paper_number": -1,
-      "title": "SCHERI: Provably Secure Speculation Under the Constant-Time Policy for CHERI (Extended Version)",
+      "title": "Quantifying the Effect of HCLs on a Fixed-Microarchitecture MXFP4 Accelerator",
       "authors": [
-        "Shixin Song, Davide Davoli, Elias Storme, Marton Bognar, Dominique Devriese, Frank Piessens, Tamara Rezk"
+        "Daniele Passaretti, Sajjad Tamimi, Nicola Dall'Ora"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2609.17399v1 Announce Type: cross \nAbstract: Capability-based architectures such as CHERI provide strong support for the architectural isolation of software components. To additionally protect against microarchitectural leakage, software can be written in a constant-time fashion. Modern processors, however, rely heavily on speculative execution, which can invalidate the constant-time guarantees and leak isolated secrets transiently.\n  In this work, we show that providing secure speculation for CHERI is non-trivial, and that existing proposals fail to preserve the confidentiality guarantees. We develop a formal framework for reasoning jointly about capability safety, speculative execution, and information-flow security, and use it to demonstrate potential leaks. We then present SCHERI",
-      "pdf_link": "https://arxiv.org/pdf/2609.17399.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.17399",
-      "submission_date": "2026-09-16T04:00:00+00:00",
+      "abstract": "arXiv:2609.18792v1 Announce Type: new \nAbstract: Hardware Construction Languages (HCLs) aim to improve hardware design productivity while generating register-transfer-level (RTL) circuits without changing the designer's microarchitecture. However, most comparisons between HCLs are either qualitative or evaluate quality of results (QoR) across different designs, making it difficult to separate language effects from design effects. This paper compares the most widely used HCLs using the same fixed design, the OCP MXFP4 block dot product, a quantization primitive at the heart of edge Physical-AI inference, implemented as a single 12-stage, II=1 pipeline. A SystemVerilog baseline is followed by implementations in Chisel, SpinalHDL, Amaranth, Clash, Bluespec, and C++ for high-level synthesis (H",
+      "pdf_link": "https://arxiv.org/pdf/2609.18792.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.18792",
+      "submission_date": "2026-09-17T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 46.0,
-      "updated_at": "2026-09-16T10:49:05.468275+00:00"
-    },
-    {
-      "forum_id": "2609.16244",
-      "paper_number": -1,
-      "title": "The World Model Hardware Accelerator",
-      "authors": [
-        "Shashank Chaurasia"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2609.16244v1 Announce Type: new \nAbstract: Diffusion transformers invert the arithmetic that autoregressive decoding made familiar. There is no token-by-token recurrence: every denoising step is a full-sequence forward pass over static shapes, so the entire schedule is known at compile time and the only serial dimension is the step count itself. We exploit that structure in WMHA, a latency-first diffusion-transformer inference accelerator: a very-long-instruction-word sequencer issues four engines from one instruction word, a weight-stationary 16x16 dual-dot array streams FP8 and BF16 contractions, and a single-pass online-softmax attention pipeline keeps keys and values resident through a skewed software pipeline. The design is specified in a frozen micro-architecture document, impl",
-      "pdf_link": "https://arxiv.org/pdf/2609.16244.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.16244",
-      "submission_date": "2026-09-16T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 33.5,
-      "updated_at": "2026-09-16T10:49:05.468027+00:00"
-    },
-    {
-      "forum_id": "2609.16787",
-      "paper_number": -1,
-      "title": "Nested Parallel von Neumann Architecture and Nested BSP",
-      "authors": [
-        "Heng Liao"
-      ],
-      "keywords": [
-        "cs.AR",
-        "ISCA"
-      ],
-      "abstract": "arXiv:2609.16787v1 Announce Type: cross \nAbstract: Large-scale AI computing is no longer a contest of ''one stronger processor,'' but of how an army of processors under one command can still be one computer. This paper offers two interlocking extensions.\n  First, extend BSP to Nested BSP. The Turing machine describes computation as a single tape, in sequence. A million processors need not a longer tape, but a battle plan nested layer within layer: at every layer, parallel work, barrier, exchange and aggregate, then the next phase. Every ``parallel advance'' inside a layer repeats the same four steps. Nested BSP extends classic BSP by nesting it recursively, a computing paradigm for million-scale parallelism, under one rule: every node at every layer is a peer.\n  Second, extend von Neumann ",
-      "pdf_link": "https://arxiv.org/pdf/2609.16787.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.16787",
-      "submission_date": "2026-09-16T04:00:00+00:00",
-      "conference": "ISCA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-09-16T10:49:05.468242+00:00"
+      "score": 34.0,
+      "updated_at": "2026-09-17T10:55:41.458583+00:00"
     }
   ]
 }

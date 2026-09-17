@@ -1,146 +1,238 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-09-16T10:49:09.522084+00:00",
-  "paper_count": 6,
+  "last_updated": "2026-09-17T10:55:45.021662+00:00",
+  "paper_count": 10,
   "papers": [
     {
-      "forum_id": "2609.16358",
+      "forum_id": "2609.18662",
       "paper_number": -1,
-      "title": "EBL: Efficient Broad Learning for Distributed Adaptive Harmonic Analysis",
+      "title": "Automated Instruction Encoding Synthesis for Modern GPU ISA Compression",
       "authors": [
-        "Changhong Li, Georgios Floros, Biswajit Basu, Shreejith Shanker"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2609.16358v1 Announce Type: new \nAbstract: Renewable energy systems and electrified transport have found widespread adoption in recent years. The integration of these non-linear loads, dominated by electric vehicle (EV) charging, however, has introduced severe harmonic distortion into the power grid, impacting the efficiency and lifetime of substation equipment and switchgear in the distribution network. Rapid and high-precision harmonic analysis has hence become a prerequisite for effective harmonic control at the source of injection. This paper proposes an Efficient Broad Learning (EBL) framework for distributed adaptive harmonic estimation. As a quantised FPGA acceleration framework for BLS-style harmonic estimation, it offers high-accuracy estimation with half-cycle input, reconf",
-      "pdf_link": "https://arxiv.org/pdf/2609.16358.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.16358",
-      "submission_date": "2026-09-16T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-09-16T10:49:09.517198+00:00"
-    },
-    {
-      "forum_id": "2609.16367",
-      "paper_number": -1,
-      "title": "FINNAS: FINN-Guided Hardware-Aware NAS and Pruning for FPGA Jet Substructure Classification",
-      "authors": [
-        "Eva Chauffour, Changhong Li, Georgios Floros, Shreejith Shanker"
+        "Mingyuan Ma, Hu He"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.16367v1 Announce Type: new \nAbstract: FPGAs are well suited to deploying quantised neural networks (QNNs) under strict accuracy, latency, and resource constraints; however, identifying efficient model-accelerator combinations commonly requires extensive manual design-space exploration and repeated hardware synthesis. This paper presents FINNAS, a FINN-guided hardware-aware evolutionary neural architecture search framework. FINNAS jointly searches quantised MLP depth, width, and global precision settings, and ranks candidates using proxy validation accuracy together with FINN-estimated LUT usage and latency under a fully parallel mapping. Selected finalists are fully retrained, subjected to post-search unstructured pruning, and validated using RTL simulation and Vivado out-of-con",
-      "pdf_link": "https://arxiv.org/pdf/2609.16367.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.16367",
-      "submission_date": "2026-09-16T04:00:00+00:00",
+      "abstract": "arXiv:2609.18662v1 Announce Type: new \nAbstract: Modern GPU kernels increasingly stress the instruction supply path, while fixed instruction containers can leave substantial footprint slack. This paper presents an automated encoding-synthesis framework that treats instruction layout as a constrained slot-assignment problem over a validated instruction-form field specification. The formulation separates semantic field identity from physical bit positions and supports tied, pinned, and free placement constraints, making it applicable when recurring decoded fields are not frozen by a public format contract. We instantiate the framework for NVIDIA SASS: raw public encoding text is normalized into a machine-readable specification, a SASS disassembler is validated against nvdisasm on 3.78M instr",
+      "pdf_link": "https://arxiv.org/pdf/2609.18662.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.18662",
+      "submission_date": "2026-09-17T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-09-16T10:49:09.517300+00:00"
+      "score": 12.0,
+      "updated_at": "2026-09-17T10:55:45.015493+00:00"
     },
     {
-      "forum_id": "2609.16363",
+      "forum_id": "2609.18675",
       "paper_number": -1,
-      "title": "FSNIC: A Low-Latency Flow-Based Intrusion Detection Architecture for FPGA SmartNICs",
+      "title": "HBFlex: A Flexible Memory System for Bridging Fine-Grained LLM States and Coarse-Grained HBF Parallel Execution",
       "authors": [
-        "Nise O'Cuill, Changhong Li, Georgios Floros, Shreejith Shanker"
+        "Shuzhang Zhong, Weikai Xu, Yifan Zhou, Tongbin Zhao, Tenghao Zhao, Yifei Kang, Cunyin Chang, Shu Li, Guangyu Sun, Meng Li"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.18675v1 Announce Type: new \nAbstract: Large language models (LLMs) require increasing memory capacity to accommodate growing model weights and KV caches. High-Bandwidth Flash (HBF) offers high memory density and aggregate read bandwidth through massive plane-level parallelism, making it an attractive option for LLM serving. However, serving LLMs entirely from HBF introduces three challenges: fine-grained KV reads create placement and access imbalance, incremental writes interfere with foreground reads, and mixed KV lifetimes amplify garbage collection. Hybrid HBM/HBF designs retain HBM to support dynamic KV management, but this allocation reduces the HBF resources available under a fixed packaging budget, limiting aggregate HBF bandwidth.\n  We present HBFlex, a full-HBF memory s",
+      "pdf_link": "https://arxiv.org/pdf/2609.18675.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.18675",
+      "submission_date": "2026-09-17T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-09-17T10:55:45.015537+00:00"
+    },
+    {
+      "forum_id": "2609.19111",
+      "paper_number": -1,
+      "title": "Analog Pin Directionality as an Exfiltration Attack Surface in Mixed-Signal ICs",
+      "authors": [
+        "Ramana Ranganatham, Chirag Adiga, Michael Zuzak, Tejasvi Das"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.19111v1 Announce Type: cross \nAbstract: Mixed-signal SoCs rely on nominally input-only analog pins to acquire off-chip signals, but the directionality of these interfaces is generally treated as a functional property rather than explicitly verified as a security property. This work identifies and experimentally demonstrates a directionality-based class of analog and mixed-signal (AMS) exfiltration attacks in which data-dependent circuit-offset modulation converts a nominally input-only pin into an outbound information channel. We analytically model the attack mechanism and identify three enabling host conditions: a closed-loop amplifier, an exposed amplifier input, and sufficiently high impedance at that pin. This attack class is validated through a representative silicon case s",
+      "pdf_link": "https://arxiv.org/pdf/2609.19111.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.19111",
+      "submission_date": "2026-09-17T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-09-17T10:55:45.015966+00:00"
+    },
+    {
+      "forum_id": "2609.18022",
+      "paper_number": -1,
+      "title": "VeriBugBench: An Empirically Grounded Framework for Constructing Verilog RTL Debugging Benchmarks",
+      "authors": [
+        "Xiankai Meng, Kejian Feng, Xinlin Zhao, Zhuo Zhang, Yan Lei, Xiaoguang Mao, Jiang Wu"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.18022v1 Announce Type: new \nAbstract: RTL source-level debugging research requires benchmark artifacts that provide faulty designs together with precise change locations, executable test stimuli, and reproducible configurations. Available Verilog resources usually provide only a subset of these elements. We present VeriBugBench, a framework for constructing Verilog RTL debugging benchmarks through empirically grounded fault construction, LLM-based testbench enhancement, and execution-based retention. The mutation library maps recurring, multi-granularity repair patterns observed in RTL bug-fix histories to 19 executable inverse operators. For each project, an LLM generates a design-specific stimulus phase from the clean DUT and original testbench; the phase is composed with the ",
+      "pdf_link": "https://arxiv.org/pdf/2609.18022.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.18022",
+      "submission_date": "2026-09-17T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-09-17T10:55:45.015443+00:00"
+    },
+    {
+      "forum_id": "2609.17730",
+      "paper_number": -1,
+      "title": "FAME: An FPGA-Based Platform for Approximate Multipliers Evaluation with Pattern-Guided DNN Retraining",
+      "authors": [
+        "Rappy Saha, Nima Amirafshar, Jude Haris, Nima Taherinejad, Jos\\'e Cano"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2609.16363v1 Announce Type: new \nAbstract: Modern data centres require high-performance networking alongside effective real-time security. Traditional Intrusion Detection Systems (IDS) commonly rely on general-purpose processors and often struggle to inspect high-speed traffic at line rate without introducing latency or performance bottlenecks. Smart Network Interface Cards (NICs) provide an alternative by enabling computation directly within the network data plane. This work presents a machine learning-based IDS implemented within an FPGA-based SmartNIC pipeline. The system integrates P4-based packet parsing with a LogicNets IDS model implemented in RTL, enabling deterministic, low-latency inference. Compared with traditional stateless packet-level classifiers, the proposed stateful",
-      "pdf_link": "https://arxiv.org/pdf/2609.16363.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.16363",
-      "submission_date": "2026-09-16T04:00:00+00:00",
+      "abstract": "arXiv:2609.17730v1 Announce Type: new \nAbstract: Approximate multipliers can reduce hardware area and energy consumption in Deep Neural Network (DNN) inference; however, they introduce computational errors. Assessing the accuracy of numerous approximate multiplier designs across diverse DNN models and large-scale datasets remains challenging due to prohibitive evaluation times. This overhead primarily stems from the slow emulation of approximate multiplier behavior using look-up tables (LUTs) on CPU and GPU platforms. Moreover, the resulting accuracy degradation must be carefully quantified and, if necessary, mitigated (e.g., through retraining), further increasing the overall evaluation cost. To address these challenges, we propose FAME, an FPGA-based platform for evaluating approximate m",
+      "pdf_link": "https://arxiv.org/pdf/2609.17730.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.17730",
+      "submission_date": "2026-09-17T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-09-16T10:49:09.517260+00:00"
+      "updated_at": "2026-09-17T10:55:45.015368+00:00"
     },
     {
-      "forum_id": "2609.16729",
+      "forum_id": "2609.17922",
       "paper_number": -1,
-      "title": "SpecLens: LLM-Based Verilog Generation with Specification-Derived Constraints via Behavioral Divergence",
+      "title": "Demystifying Gate-Level Localization of RTL Trojans",
       "authors": [
-        "Wen Bing, Bing Li"
+        "Navid Nader Tehrani, Azadeh Davoodi, Rasit Onur Topaloglu"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "ICCAD"
       ],
-      "abstract": "arXiv:2609.16729v1 Announce Type: new \nAbstract: Large language models (LLMs) have recently shown promise in Verilog generation, but producing functionally correct RTL directly from natural-language specifications remains a highly challenging task. Existing approaches improve LLM-based Verilog generation mainly with retrieval-augmented generation (RAG), self-planning, or few-shot prompting. However, these methods focus primarily on external or generic forms of enhancement rather than strengthening the specification with task-specific constraints. In this work, we propose SpecLens, an automated framework for LLM-based Verilog generation that derives specification-driven constraints by analyzing behavioral divergence among multiple candidate implementations, using the original specification ",
-      "pdf_link": "https://arxiv.org/pdf/2609.16729.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.16729",
-      "submission_date": "2026-09-16T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2609.17922v1 Announce Type: new \nAbstract: Hardware Trojans are malicious modifications that compromise functionality or leak sensitive data. They pose a severe threat, particularly when inserted at the Register Transfer Level (RTL). After synthesis, these Trojans are often concealed by optimizations in gate-level netlists. Recent efforts, including the ICCAD 2025 contest, emphasize golden-chip-free detection using machine learning (ML) on labeled netlists. In this work, we show that RTL Trojans exhibit stable structural and signal-flow patterns post-synthesis, enabling effective detection through targeted heuristics rather than generic ML feature learning. We propose LoRD, a lightweight heuristic-based approach that exploits these distinctive subgraph signatures, achieving near-perf",
+      "pdf_link": "https://arxiv.org/pdf/2609.17922.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.17922",
+      "submission_date": "2026-09-17T04:00:00+00:00",
+      "conference": "ICCAD",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-09-16T10:49:09.517442+00:00"
+      "updated_at": "2026-09-17T10:55:45.015401+00:00"
     },
     {
-      "forum_id": "2609.16508",
+      "forum_id": "2609.18846",
       "paper_number": -1,
-      "title": "ScaleLUT: A Fully-Parallel Configurable LUT-Based Accelerator for Real-Time Multi-Scale Super-Resolution",
+      "title": "Locus: A Framework for Exploring and Optimizing Point Addition Hardware for Zero-Knowledge Proofs",
       "authors": [
-        "Boyu Li, Chenchen Ding, Zhilin Ai, Wenqing Shi, Baizhou Jiang, Wenyong Zhou, Binxiao Huang, Jiachen Ren, Hao Yu, Ngai Wong"
+        "Gaurav Kuwar, Alhad Daftardar, Jianqiao Mo, Siddharth Garg, Brandon Reagen"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2609.16508v1 Announce Type: new \nAbstract: Real-time super-resolution (SR) remains challenging for edge devices because deep-learning-based methods require substantial multiply-accumulate (MAC) operations, resources, and power. Lookup-table (LUT)-based SR reduces computation by replacing convolutional inference with table queries, but existing methods still suffer from limited speed, large storage overhead, and poor scalability across upsampling factors. We present ScaleLUT, a hardware-oriented LUT design framework and fully parallel reconfigurable accelerator for real-time multi-scale SR. ScaleLUT combines a hardware-friendly YUV-domain strategy with power-of-two kernels and rotation ensemble to improve receptive-field coverage while reducing LUT dimensionality; division operations ",
-      "pdf_link": "https://arxiv.org/pdf/2609.16508.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.16508",
-      "submission_date": "2026-09-16T04:00:00+00:00",
+      "abstract": "arXiv:2609.18846v1 Announce Type: new \nAbstract: Zero-Knowledge Proofs (ZKPs) are critical for privacy-preserving and verifiable computation, but their cryptographic primitives impose high computational overheads. One such primitive is point addition (PADD) on elliptic curves. Several prior works have implemented PADDs in hardware, but only for a few specific elliptic curves and design points, leaving a large design space unexplored, and lacking systematic guidance on hardware design trade-offs. To address this gap, we present Locus, a framework dedicated to optimizing and exploring point addition hardware. Given the parameters of any elliptic curve in a supported equation form, Locus automatically generates ASIC and FPGA implementations of PADD, enabling systematic exploration of the PADD",
+      "pdf_link": "https://arxiv.org/pdf/2609.18846.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.18846",
+      "submission_date": "2026-09-17T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-09-16T10:49:09.517360+00:00"
+      "score": 2.0,
+      "updated_at": "2026-09-17T10:55:45.015645+00:00"
     },
     {
-      "forum_id": "2609.14845",
+      "forum_id": "2607.08427",
       "paper_number": -1,
-      "title": "Accurate Models of AMD Matrix Cores",
+      "title": "FPGN: Redefining Ultra-Fast Programmable Gate-based Neural Acceleration with Differentiable LUTs",
       "authors": [
-        "Faizan A Khattak, Mantas Mikaitis, Carlo J. Graziani"
+        "Jiawei Liang, Haotong Qin, Linfeng Du, Xingyu Liu, Shangkun Li, Hui Yu, Michele Magno, Xinyu Chen, Jiang Xu, Wei Zhang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2607.08427v2 Announce Type: replace \nAbstract: Achieving nanosecond-scale inference latency for deep neural networks (DNNs) has become a primary architectural concern for latency-critical applications. While Field-Programmable Gate Arrays (FPGAs) offer a promising substrate for low-latency inference, conventional FPGA accelerators remain arithmetic-centric, using LUTs primarily as building blocks for numerical operators and peripheral logic. In contrast, recent LUT-native neural networks treat LUTs as learnable neurons, revealing promising theoretical potential to exploit their intrinsic logic expressivity. However, existing methods are largely confined to algorithmic optimizations, failing to translate this theoretical potential into high-performance FPGA accelerators. Specifically,",
+      "pdf_link": "https://arxiv.org/pdf/2607.08427.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.08427",
+      "submission_date": "2026-09-17T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-09-17T10:55:45.016035+00:00"
+    },
+    {
+      "forum_id": "2609.17786",
+      "paper_number": -1,
+      "title": "FairCompressAgent: An Agentic Framework for Fairness-Aware Model Compression for FPGA Deployment",
+      "authors": [
+        "Yuanbo Guo, Yiyu Shi"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.14845v2 Announce Type: replace \nAbstract: Matrix multipliers available on recent GPUs do not conform with the IEEE 754 floating point standard. Features of matrix multipliers differ across vendors and architectures of the same vendor, such as accumulator width, rounding behaviour, normalisation points, intermediate underflow and overflow logic, the handling of subnormals, and the treatment of special inputs. As a result, reproducibility of small matrix multiplier results across devices is not possible and cannot be achieved by software control. Implementation details of matrix multipliers are not documented, making it difficult to interpret discrepancies in the computed results. We characterise the numerical behaviour of matrix multipliers across three AMD GPU architectures: CDN",
-      "pdf_link": "https://arxiv.org/pdf/2609.14845.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.14845",
-      "submission_date": "2026-09-16T04:00:00+00:00",
+      "abstract": "arXiv:2609.17786v1 Announce Type: cross \nAbstract: Fairness-aware model compression requires selecting methods and configurations that balance accuracy, fairness, and deployment cost. These decisions become more difficult when compression methods are composed or the user's requirements change. In this paper, we propose FairCompressAgent (FCA), an agentic framework that integrates fairness-aware pruning, incremental quantization, and sparse low-rank factorization through a common operator interface. A language-model planner uses model profiles and measured outcomes to select compression configurations, while an execution layer performs compression, fine-tuning, evaluation, and constraint-based selection. FCA also supports requirement updates and reports the remaining violation when a reques",
+      "pdf_link": "https://arxiv.org/pdf/2609.17786.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.17786",
+      "submission_date": "2026-09-17T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-09-17T10:55:45.015810+00:00"
+    },
+    {
+      "forum_id": "2609.17556",
+      "paper_number": -1,
+      "title": "WARD: Runtime Workload-Adaptive Vision TRansformer Framework for Dependable Edge AI",
+      "authors": [
+        "Mahdi Taheri, Pramit Kumar Bhaduri, Mohammad Masoumi, Ali Mahani"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.17556v1 Announce Type: new \nAbstract: Edge-deployed AI operate under dynamically changing power budgets, reliability requirements, and input distributions, requiring continuous adaptation. Such conditions arise in long-running edge AI applications, including autonomous systems, industrial monitoring, and satellite onboard intelligence. Existing fault-tolerant methods assume static operating conditions, whereas continual learning techniques neglect concurrent hardware faults during online adaptation. Moreover, the practical deployment of runtime-adaptive reliability frameworks on programmable AI accelerators remains largely unexplored.\n  This paper presents WARD, a runtime-adaptive Vision Transformer framework that combines channel-wise subnetwork partitioning, reliability-aware ",
+      "pdf_link": "https://arxiv.org/pdf/2609.17556.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.17556",
+      "submission_date": "2026-09-17T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-09-16T10:49:09.517884+00:00"
+      "updated_at": "2026-09-17T10:55:45.015256+00:00"
     }
   ]
 }

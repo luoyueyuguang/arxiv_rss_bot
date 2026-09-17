@@ -1,15 +1,13 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-09-16 10:49:42 UTC
-- **Total Filtered Papers**: 4
-- **Displaying**: 4 (arxiv: 4)
+- **Last Updated**: 2026-09-17 10:56:14 UTC
+- **Total Filtered Papers**: 2
+- **Displaying**: 2 (arxiv: 2)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Factorized Krylov subspace methods for solving large Sylvester equations](https://arxiv.org/abs/2605.28274) | `ARXIV` | 35.0 |
-| 2 | [Numerical Analysis of Space-Time Dependent Source Identification in Subdiffusion Equations](https://arxiv.org/abs/2605.05579) | `ARXIV` | 13.5 |
-| 3 | [Mathematical modeling of the mechanical behavior of three-layer plates with a tetrachiral honeycomb core](https://arxiv.org/abs/2401.04781) | `ARXIV` | 12.0 |
-| 4 | [Regional Stability and New Eigenvalue Perturbation Bounds](https://arxiv.org/abs/2609.14303) | `ARXIV` | 4.0 |
+| 1 | [Pressure-robustness by commuting interpolation operators for Stokes discretizations with continuous pressures](https://arxiv.org/abs/2609.18657) | `ARXIV` | 14.5 |
+| 2 | [Low-gate-count block encodings for second-quantized fermionic Hamiltonians](https://arxiv.org/abs/2510.08644) | `ARXIV` | 2.0 |
