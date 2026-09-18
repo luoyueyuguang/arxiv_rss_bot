@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-09-17T10:55:44.947144+00:00",
-  "paper_count": 310,
+  "last_updated": "2026-09-18T10:31:53.629633+00:00",
+  "paper_count": 314,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -448,6 +448,29 @@
       "ratings": [],
       "score": 76.0,
       "updated_at": "2026-07-21T08:54:22.941642+00:00"
+    },
+    {
+      "forum_id": "2609.19909",
+      "paper_number": -1,
+      "title": "Xronos: Heterogeneity-Aware Tensor Parallelism for Collaborative LLM Fine-Tuning on Edge CPUs",
+      "authors": [
+        "Wonmi Choi, Sunjae Park, Dohyeok Kwon, Zhixiong Niu, Yeonho Yoo, Chuck Yoo, Gyeongsik Yang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.19909v1 Announce Type: new \nAbstract: Collaborative fine-tuning on edge devices adapts large language models to domain-specific data while keeping each device's data local. State-of-the-art (SOTA) collaborative fine-tuning techniques are largely designed for GPU-based edge devices and rely on pipeline parallelism (PP). However, many edge platforms, including IoT gateways, smart-home hubs, and in-vehicle computers, are primarily CPU-based. This paper reports that PP is ineffective on CPU-based edge devices because the same CPU handles both model computation and communication, which causes severe CPU contention. Our analysis shows that this leads to 5.75$\\times$ higher computation stall ratios than on GPU devices on average. Tensor parallelism (TP) can alleviate this contention by",
+      "pdf_link": "https://arxiv.org/pdf/2609.19909.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.19909",
+      "submission_date": "2026-09-18T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 75.0,
+      "updated_at": "2026-09-18T10:31:51.210871+00:00"
     },
     {
       "forum_id": "usenix-osdi26-31",
@@ -1682,29 +1705,6 @@
       "updated_at": "2026-07-21T08:54:26.737924+00:00"
     },
     {
-      "forum_id": "2609.18388",
-      "paper_number": -1,
-      "title": "GeoMesh: Workload-Balanced and Sign-Compressed Geo-Distributed LLM Training",
-      "authors": [
-        "Changyong Shin, Jaerim Park, Minchul Kang, Younghun Go, Zhixiong Niu, Yongqiang Xiong, Gyeongsik Yang, Chuck Yoo"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.18388v1 Announce Type: new \nAbstract: Large language models are increasingly trained on GPUs distributed across multiple regions, but geo-distributed training is challenging in practice. Real clusters often contain GPUs with different speeds and memory capacities, and they communicate over slow wide-area networks. Our analysis shows that this creates serious problems: existing synchronous methods preserve stable updates, but fast GPUs wait up to 20.9% of their runtime for slower ones, and all workers spend, on average, 65.8% of their runtime on synchronization. Recent asynchronous methods reduce waiting time but worsen the model accuracy due to stale updates. To address the problems, we present GeoMesh, a synchronous geo-distributed training framework for heterogeneous GPUs. Geo",
-      "pdf_link": "https://arxiv.org/pdf/2609.18388.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.18388",
-      "submission_date": "2026-09-17T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 43.0,
-      "updated_at": "2026-09-17T10:55:42.090257+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-44",
       "paper_number": 44,
       "title": "Weave: Efficient Co-Scheduling for Disaggregated RL Post-Training",
@@ -1852,17 +1852,17 @@
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2609.17652v1 Announce Type: cross \nAbstract: When agentic sessions run to a million tokens with many sessions resident at once, the KV cache and the index that ranks it live in host memory, and the scan that ranks all n keys for a top-k step becomes the traffic that bounds decoding. We present Fathom, a key scan in which each query decides how many bits of each key channel to read. The 4-bit K cache is stored channel-major as bit planes, so a prefix of t planes is exactly the channel's t-bit quantizer, and the query spends its bit budget by reverse water-filling over the variance-weighted importance of its channels. At one million tokens on Qwen3-8B a decode step is 1.67x faster in GPU time than with the 136-bit scans of Double Sparsity, Loki and SparQ r=32, and in the same GPU time ",
+      "abstract": "arXiv:2609.17652v2 Announce Type: replace-cross \nAbstract: When agentic sessions run to a million tokens with many sessions resident at once, the KV cache and the index that ranks it live in host memory, and the scan that ranks all n keys for a top-k step becomes the traffic that bounds decoding. We present Fathom, a key scan in which each query decides how many bits of each key channel to read. The 4-bit K cache is stored channel-major as bit planes, so a prefix of t planes is exactly the channel's t-bit quantizer, and the query spends its bit budget by reverse water-filling over the variance-weighted importance of its channels. At one million tokens on Qwen3-8B a decode step is 1.67x faster in GPU time than with the 136-bit scans of Double Sparsity, Loki and SparQ r=32, and in the same G",
       "pdf_link": "https://arxiv.org/pdf/2609.17652.pdf",
       "forum_link": "https://arxiv.org/abs/2609.17652",
-      "submission_date": "2026-09-17T04:00:00+00:00",
+      "submission_date": "2026-09-18T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 38.0,
-      "updated_at": "2026-09-17T10:55:42.091889+00:00"
+      "updated_at": "2026-09-18T10:31:51.213070+00:00"
     },
     {
       "forum_id": "usenix-fast26-7",
@@ -1999,29 +1999,6 @@
       "ratings": [],
       "score": 37.0,
       "updated_at": "2026-07-21T08:54:22.939070+00:00"
-    },
-    {
-      "forum_id": "2609.19024",
-      "paper_number": -1,
-      "title": "OAK: Restart- and Age-Aware Scheduling for Distributed Machine Learning on Shared GPU Clusters",
-      "authors": [
-        "Khaled Aljbab, Amine Barrak"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.19024v1 Announce Type: new \nAbstract: Distributed machine learning increasingly runs on shared multi-tenant GPU clusters where contention and failures are routine. Goodput-driven schedulers maximise instantaneous throughput but treat accumulated waiting time and restart cost as second-class signals: long-waiting jobs are repeatedly deferred, and the minutes of checkpoint loading paid after each interruption are not folded back into allocation decisions.\n  We present OAK, a per-round mixed-integer linear scheduler whose composite utility adds two first-class terms to goodput: an age key that elevates jobs with high cumulative waiting time, and a decomposed restart factor that tracks productive training time and checkpoint overhead as separately measured quantities rather than a s",
-      "pdf_link": "https://arxiv.org/pdf/2609.19024.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.19024",
-      "submission_date": "2026-09-17T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 36.5,
-      "updated_at": "2026-09-17T10:55:42.091513+00:00"
     },
     {
       "forum_id": "usenix-osdi26-6",
@@ -2503,6 +2480,29 @@
       "updated_at": "2026-07-21T08:54:22.930905+00:00"
     },
     {
+      "forum_id": "2609.19203",
+      "paper_number": -1,
+      "title": "Position: It is Time to Virtualize Foundation Models with a Self-evolving Operating System Layer",
+      "authors": [
+        "Suparna Bhattacharya, Tarun Kumar, Cong Xu, Satish Kumar Mopur, Jiahao Li, Ashish Mishra, Aalap Tripathy, Annmary Justine Koomthanam, Martin Foltin, Ian Foster"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.19203v1 Announce Type: cross \nAbstract: AI applications have shifted from single, monolithic foundation models (FM) to compound agentic systems. Yet today's stacks remain fragmented: even as protocols (e.g., MCP, A2A) ease tool/agent connectivity, each framework embeds an implicit runtime for state, memory, budgets, and guardrails, making behavior non-portable and governance brittle. It mirrors computing before operating systems, when every program re-implemented basic services. This position paper argues that the field now needs a Foundation Model Operating System (FMOS) -- a system layer that virtualizes FM interactions analogous to how virtual machines abstract physical hardware, giving applications the illusion of dedicated, trustworthy FM instances with effectively unbounde",
+      "pdf_link": "https://arxiv.org/pdf/2609.19203.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.19203",
+      "submission_date": "2026-09-18T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 32.5,
+      "updated_at": "2026-09-18T10:31:51.162326+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-41",
       "paper_number": 41,
       "title": "Count-Based Abstractions for Performance Verification of Contention Points",
@@ -2629,6 +2629,29 @@
       "ratings": [],
       "score": 27.5,
       "updated_at": "2026-07-21T08:54:26.742068+00:00"
+    },
+    {
+      "forum_id": "2609.19743",
+      "paper_number": -1,
+      "title": "Syndrome Decoding for Silent Data Corruption in Quantized Integer GPU Arithmetic",
+      "authors": [
+        "Pranav Napolean, Vikas Srivastava, Napolean Periathambi"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.19743v1 Announce Type: new \nAbstract: Quantized neural network inference runs integer matrix multiplications on GPU tensor cores, and the INT32 accumulators inside those cores have neither parity nor ECC. A transient fault in this datapath returns a valid but wrong integer and raises no interrupt. Checksum based Algorithm Based Fault Tolerance (ABFT) can detect such silent data corruptions (SDCs), but its verdict is binary. It cannot identify the corrupted element or its magnitude, and unweighted row and column checksums are blind by construction to errors that cancel on both axes. We present SProbe, a trailing verification kernel that reads the output of an unmodified vendor GEMM. A randomized Freivalds gate with three independent evaluation points in a 61 bit prime field misse",
+      "pdf_link": "https://arxiv.org/pdf/2609.19743.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.19743",
+      "submission_date": "2026-09-18T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 27.0,
+      "updated_at": "2026-09-18T10:31:51.210491+00:00"
     },
     {
       "forum_id": "usenix-osdi26-124",
@@ -2892,6 +2915,29 @@
       "ratings": [],
       "score": 24.0,
       "updated_at": "2026-07-21T08:54:17.399279+00:00"
+    },
+    {
+      "forum_id": "2609.20322",
+      "paper_number": -1,
+      "title": "The Price of Decentralization, Paid Twice: A Latency Floor and a Minimal Subsidy from a Geographic Decentralization Invariant",
+      "authors": [
+        "Ruiyang Zhang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.20322v1 Announce Type: new \nAbstract: Latency-aware validator selection---rewarding validators for low network latency through voting weight, leadership, or fast-quorum membership---is known to push validators to co-locate, eroding the geographic fault-independence that Byzantine fault tolerance assumes. We give this tension a sharp, protocol-agnostic form. Calling a stake configuration (rho,gamma)-decentralized if no radius-rho region holds more than a gamma fraction of stake, we prove that for quorum threshold beta>gamma every proposer's beta-quorum commit latency is at least rho---independent of the protocol---and in the plane the minimum is exactly rho*sqrt(beta/gamma). Our main result couples this geometric floor to an incentive one: in a location-choice game with the true ",
+      "pdf_link": "https://arxiv.org/pdf/2609.20322.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.20322",
+      "submission_date": "2026-09-18T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 23.5,
+      "updated_at": "2026-09-18T10:31:51.211080+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-34",
@@ -3970,6 +4016,29 @@
       "ratings": [],
       "score": 14.0,
       "updated_at": "2026-07-21T08:54:22.936410+00:00"
+    },
+    {
+      "forum_id": "2609.20359",
+      "paper_number": -1,
+      "title": "Accelerating Sharded Data Parallelism at Scale with Federated Learning",
+      "authors": [
+        "Gianluca Mittone, Marco Aldinucci"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.20359v1 Announce Type: new \nAbstract: The symbiotic scaling of artificial intelligence models and high-performance computing systems continually creates algorithmic challenges in their convergence. Foundation models (FMs) are a crucial example, requiring months-long training on thousands of cutting-edge GPUs. Sharded data parallelism (DP) is the dominant strategy to accelerate such computations by splitting data and models across multiple GPUs. However, it incurs prohibitive communication overhead when deployed at scale, particularly on multi-tier interconnects with heterogeneous performance. Inspired by the efficient communication principles of federated learning (FL), this work introduces two hybrid algorithms - FL+FSDP and FL+HSDP - interleaving sharded DP with FedAvg-style a",
+      "pdf_link": "https://arxiv.org/pdf/2609.20359.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.20359",
+      "submission_date": "2026-09-18T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-09-18T10:31:51.211102+00:00"
     },
     {
       "forum_id": "usenix-osdi26-5",
@@ -6263,6 +6332,29 @@
       "updated_at": "2026-07-21T08:54:26.744870+00:00"
     },
     {
+      "forum_id": "2609.20009",
+      "paper_number": -1,
+      "title": "Distributed Edge Inference: an Experimental Study on Multiview Detection",
+      "authors": [
+        "Gianluca Mittone, Giulio Malenza, Marco Aldinucci, Robert Birke"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.20009v1 Announce Type: new \nAbstract: Computing is evolving rapidly to cater to the increasing demand for sophisticated services, and Cloud computing lays a solid foundation for flexible on-demand provisioning. However, as the size of applications grows, the centralised client-server approach used by Cloud computing increasingly limits the applications' scalability. To achieve ultra-scalability, cloud/edge/fog computing converges into the compute continuum, completely decentralising the infrastructure to encompass universal, pervasive resources. The compute continuum makes devising applications benefitting from this complex environment a challenging research problem. We put the opportunities the compute continuum offers to the test through a real-world multi-view detection model",
+      "pdf_link": "https://arxiv.org/pdf/2609.20009.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.20009",
+      "submission_date": "2026-09-18T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-09-18T10:31:51.211059+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-10",
       "paper_number": 10,
       "title": "OBASE: Object-Based Address-Space Engineering to Improve Memory Tiering",
@@ -6602,27 +6694,27 @@
       "updated_at": "2026-07-21T08:54:26.743211+00:00"
     },
     {
-      "forum_id": "2606.03077",
+      "forum_id": "2609.20006",
       "paper_number": -1,
-      "title": "Libra: Efficient Resource Management for Agentic RL Post-Training",
+      "title": "P-GADMM: Parallel Group-Based ADMM for Asynchronous Optimization in Heterogeneous Edge Networks",
       "authors": [
-        "Kaiwen Chen, Xin Tan, Jingzong Li, Zhi Zhou, Cen Li, Jiang Liu, Meng Jie, Jiazhi Jiang, Hong Xu"
+        "Gaiguo Wei, Qingying Zhang, Heqiang Wang, Yu Zhang, Xiaoxiong Zhong"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2606.03077v3 Announce Type: replace-cross \nAbstract: Reinforcement learning (RL) has emerged as a standard post-training paradigm for shaping large language models (LLMs) into capable agents. In agentic RL, the rollout stage generates trajectories while invoking tools, producing long-tailed and non-stationary workloads that expose two fundamental challenges. First, due to the long-tailed response distribution, a small fraction of trajectories dominates rollout makespan.Second, rollout and training differ in their compute patterns, memory demands, and sensitivity to sequence length. As the policy evolves, shifts in the workload distribution further change their relative resource demands, making it difficult to maintain balanced execution across the two stages.\n  We present Libra, an a",
-      "pdf_link": "https://arxiv.org/pdf/2606.03077.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.03077",
-      "submission_date": "2026-09-17T04:00:00+00:00",
+      "abstract": "arXiv:2609.20006v1 Announce Type: new \nAbstract: The Alternating Direction Method of Multipliers (ADMM) is widely used for distributed optimization, but its synchronous implementation can suffer from efficiency loss in heterogeneous edge networks, where fast clients or groups need to wait for slower ones before global updates can be completed. Existing group-based ADMM methods reduce communication overhead through grouping, but their grouping rules usually focus on data similarity or network topology and do not explicitly account for computation heterogeneity. To address this issue, this paper proposes Parallel Group-Based ADMM (P-GADMM) for distributed optimization in heterogeneous edge networks. P-GADMM forms computation-aware edge groups according to client computational capabilities an",
+      "pdf_link": "https://arxiv.org/pdf/2609.20006.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.20006",
+      "submission_date": "2026-09-18T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-09-17T10:55:42.092588+00:00"
+      "updated_at": "2026-09-18T10:31:51.211039+00:00"
     },
     {
       "forum_id": "usenix-osdi26-15",

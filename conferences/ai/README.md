@@ -1,6 +1,6 @@
 # AI / AI for Science Papers
 
-- **Last Updated**: 2026-09-17 10:56:14 UTC
+- **Last Updated**: 2026-09-18 10:32:23 UTC
 - **Total Filtered Papers**: 31
 - **Displaying**: 31 (arxiv: 1, mlr: 30)
 - **Papers with Ratings**: 0
@@ -21,14 +21,14 @@
 | 10 | [A Contrastive Symmetric Forward-Forward Algorithm (SFFA) for Continual Learning Tasks](https://proceedings.mlr.press/v274/terres-escudero25a.html) | `MLR` | 31.0 |
 | 11 | [Diffusion Augmented Agents: A Framework for Efficient Exploration and Transfer Learning](https://proceedings.mlr.press/v274/palo25a.html) | `MLR` | 26.5 |
 | 12 | [Tomorrow Brings Greater Knowledge: Large Language Models Join Dynamic Temporal Knowledge Graphs](https://proceedings.mlr.press/v274/maio25a.html) | `MLR` | 21.5 |
-| 13 | [Adaptive Action Advising with Different Rewards](https://proceedings.mlr.press/v274/guo25a.html) | `MLR` | 21.0 |
-| 14 | [Disentangling the Causes of Plasticity Loss in Neural Networks](https://proceedings.mlr.press/v274/lyle25a.html) | `MLR` | 13.5 |
-| 15 | [Optimizing the Learning Rate for the Online Training of Neural Networks](https://proceedings.mlr.press/v274/cazzonelli25a.html) | `MLR` | 13.5 |
-| 16 | [An Empirical Analysis of Forgetting in Pre-trained Models with Incremental Low-Rank Updates](https://proceedings.mlr.press/v274/soutif25a.html) | `MLR` | 13.0 |
-| 17 | [Reflecting on the State of Rehearsal-Free Continual Learning with Pretrained Models](https://proceedings.mlr.press/v274/thede25a.html) | `MLR` | 12.5 |
-| 18 | [Consistency Regularisation for Unsupervised Domain Adaptation in Monocular Depth Estimation](https://proceedings.mlr.press/v274/el-ghoussani25a.html) | `MLR` | 4.0 |
-| 19 | [Masked Autoencoders are Efficient Continual Federated Learners](https://proceedings.mlr.press/v274/paul25a.html) | `MLR` | 3.0 |
-| 20 | [Can We Still Trace L1 Signals? Investigating the Resilience of Native Language Signals in the LLM Era](https://arxiv.org/abs/2604.08568) | `ARXIV` | 2.5 |
+| 13 | [ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI](https://arxiv.org/abs/2609.19644) | `ARXIV` | 21.0 |
+| 14 | [Adaptive Action Advising with Different Rewards](https://proceedings.mlr.press/v274/guo25a.html) | `MLR` | 21.0 |
+| 15 | [Disentangling the Causes of Plasticity Loss in Neural Networks](https://proceedings.mlr.press/v274/lyle25a.html) | `MLR` | 13.5 |
+| 16 | [Optimizing the Learning Rate for the Online Training of Neural Networks](https://proceedings.mlr.press/v274/cazzonelli25a.html) | `MLR` | 13.5 |
+| 17 | [An Empirical Analysis of Forgetting in Pre-trained Models with Incremental Low-Rank Updates](https://proceedings.mlr.press/v274/soutif25a.html) | `MLR` | 13.0 |
+| 18 | [Reflecting on the State of Rehearsal-Free Continual Learning with Pretrained Models](https://proceedings.mlr.press/v274/thede25a.html) | `MLR` | 12.5 |
+| 19 | [Consistency Regularisation for Unsupervised Domain Adaptation in Monocular Depth Estimation](https://proceedings.mlr.press/v274/el-ghoussani25a.html) | `MLR` | 4.0 |
+| 20 | [Masked Autoencoders are Efficient Continual Federated Learners](https://proceedings.mlr.press/v274/paul25a.html) | `MLR` | 3.0 |
 | 21 | [Mitigating Interference in the Knowledge Continuum through Attention-Guided Incremental Learning](https://proceedings.mlr.press/v274/bhat25a.html) | `MLR` | 2.5 |
 | 22 | [Hadamard Domain Training with Integers for Class Incremental Quantized Learning](https://proceedings.mlr.press/v274/schiemer25a.html) | `MLR` | 2.5 |
 | 23 | [Continual Learning for Unsupervised Concept Bottleneck Discovery](https://proceedings.mlr.press/v274/lorello25a.html) | `MLR` | 2.5 |

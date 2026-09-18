@@ -1,54 +1,77 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-09-17T10:56:14.282463+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-09-18T10:32:23.121124+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2609.18657",
+      "forum_id": "2609.19949",
       "paper_number": -1,
-      "title": "Pressure-robustness by commuting interpolation operators for Stokes discretizations with continuous pressures",
+      "title": "Dynamics of Stochastic Hamiltonian systems I - Wong-Zakai Variational integrators",
       "authors": [
-        "Philip L. Lederer, Theresa Vock"
+        "Jacky Cresson (LMAP), Rouba SAfI (LU)"
       ],
       "keywords": [
         "cs.NA",
-        "SIAM"
+        "numerical analysis"
       ],
-      "abstract": "arXiv:2609.18657v1 Announce Type: new \nAbstract: Common finite element discretizations for the incompressible Stokes equations with a continuous pressure approximation -- the MINI element, the Taylor--Hood element, or stabilized equal-order elements -- are not pressure-robust: the velocity error is polluted by the pressure best-approximation error, multiplied by the inverse viscosity. The established remedy replaces the test function in the momentum equation by a divergence-preserving reconstruction operator; for continuous pressure approximations this construction is cumbersome, requiring the solution of local problems (Lederer, Linke, Merdon & Sch\\\"oberl, SIAM J. Numer. Anal., 2017). We propose a simpler alternative: interpolating the force by a N\\'ed\\'elec interpolation operator of suit",
-      "pdf_link": "https://arxiv.org/pdf/2609.18657.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.18657",
-      "submission_date": "2026-09-17T04:00:00+00:00",
-      "conference": "SIAM",
+      "abstract": "arXiv:2609.19949v1 Announce Type: cross \nAbstract: We construct variational integrators to study the dynamics of stochastic Hamiltonian systems using their Wong-Zakai approximation. This approach can be used to interpret and justify previous work of Wang et al (L. Wang, J. Hong, R. Scherer, F. Bai. Dynamics and variational Integrators of stochastic Hamiltonian systems. International Journal of Numerical Analysis and Modeling, 6(4), 2009) on stochastic variational integrators. Numerical examples are provided.",
+      "pdf_link": "https://arxiv.org/pdf/2609.19949.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.19949",
+      "submission_date": "2026-09-18T04:00:00+00:00",
+      "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-09-17T10:56:14.278591+00:00"
+      "score": 2.5,
+      "updated_at": "2026-09-18T10:32:23.118056+00:00"
     },
     {
-      "forum_id": "2510.08644",
+      "forum_id": "2609.20713",
       "paper_number": -1,
-      "title": "Low-gate-count block encodings for second-quantized fermionic Hamiltonians",
+      "title": "A Unified Framework for Wasserstein Convergence of ULMC Methods beyond Log-Concavity: Old and New",
       "authors": [
-        "Diyi Liu, Shuchen Zhu, Lin Lin, Guang Hao Low, Chao Yang"
+        "Wanjie Lyu, Xiaojie Wang, Bin Yang"
       ],
       "keywords": [
         "cs.NA",
         "scientific computing"
       ],
-      "abstract": "arXiv:2510.08644v2 Announce Type: replace-cross \nAbstract: Efficient block encoding of many-body Hamiltonians is a central requirement for quantum algorithms in scientific computing, particularly in the early fault-tolerant era. In this work, we introduce new explicit constructions for block encoding second-quantized Hamiltonians that substantially reduce Clifford+T gate complexity and ancilla overhead. By utilizing a data lookup strategy based on the SWAP architecture for the sparsity oracle $O_C$, and a direct sampling method for the amplitude oracle $O_A$ with SELECT-SWAP architecture, we achieve a T count that scales as $\\mathcal{\\tilde{O}}(\\sqrt{L})$ with respect to the number of interaction terms $L$ in general second-quantized Hamiltonians. We also achieve an improved constant facto",
-      "pdf_link": "https://arxiv.org/pdf/2510.08644.pdf",
-      "forum_link": "https://arxiv.org/abs/2510.08644",
-      "submission_date": "2026-09-17T04:00:00+00:00",
+      "abstract": "arXiv:2609.20713v1 Announce Type: new \nAbstract: As a fundamental task across computational statistics, scientific computing and machine learning, sampling from high-dimensional probability distributions has received increasing attention in recent years. Numerous sampling algorithms have been proposed, among which underdamped Langevin Monte Carlo (ULMC) methods based on underdamped Langevin dynamics (ULD) have emerged as a class of efficient ones. In this work, we introduce a ``universal\" predictor-corrector formulation that bridges Euler-type, UBU-type and randomized schemes through different choices of method parameters. Notably, the ``universal\" integrator induces two novel classes of low-cost integrators, termed low-cost randomized integrators (LC-RIs) and low-cost UBU integrators (LC-",
+      "pdf_link": "https://arxiv.org/pdf/2609.20713.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.20713",
+      "submission_date": "2026-09-18T04:00:00+00:00",
       "conference": "scientific computing",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-09-17T10:56:14.279685+00:00"
+      "updated_at": "2026-09-18T10:32:23.117868+00:00"
+    },
+    {
+      "forum_id": "2601.00728",
+      "paper_number": -1,
+      "title": "Precision autotuning for linear solvers via contextual bandit-based RL",
+      "authors": [
+        "Erin Carson, Xinye Chen"
+      ],
+      "keywords": [
+        "cs.NA",
+        "scientific computing"
+      ],
+      "abstract": "arXiv:2601.00728v5 Announce Type: replace-cross \nAbstract: We propose a reinforcement learning (RL) framework for \\xy{responsive} precision tuning for linear solvers, which can be extended to general algorithms. The framework is formulated as a contextual bandit problem and solved using incremental action-value estimation with a discretized state space to select optimal precision configurations for computational steps, \\xy{retaining} precision and computational efficiency. To verify its effectiveness, we apply the framework to iterative refinement for solving linear systems $Ax = b$. In this application, our approach dynamically chooses precisions based on calculated features from the system while maintaining acceptable accuracy and convergence. In detail, an action-value estimator takes d",
+      "pdf_link": "https://arxiv.org/pdf/2601.00728.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.00728",
+      "submission_date": "2026-09-18T04:00:00+00:00",
+      "conference": "scientific computing",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-09-18T10:32:23.118588+00:00"
     }
   ]
 }

@@ -1,31 +1,54 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-09-17T10:55:41.461857+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-09-18T10:31:50.623328+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2609.18792",
+      "forum_id": "2609.19683",
       "paper_number": -1,
-      "title": "Quantifying the Effect of HCLs on a Fixed-Microarchitecture MXFP4 Accelerator",
+      "title": "MiX: Micro-Inverted-Scaling for End-to-End Low-Bit Vision-Language Model Acceleration",
       "authors": [
-        "Daniele Passaretti, Sajjad Tamimi, Nicola Dall'Ora"
+        "Yuan Liao, Jae-sun Seo"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2609.18792v1 Announce Type: new \nAbstract: Hardware Construction Languages (HCLs) aim to improve hardware design productivity while generating register-transfer-level (RTL) circuits without changing the designer's microarchitecture. However, most comparisons between HCLs are either qualitative or evaluate quality of results (QoR) across different designs, making it difficult to separate language effects from design effects. This paper compares the most widely used HCLs using the same fixed design, the OCP MXFP4 block dot product, a quantization primitive at the heart of edge Physical-AI inference, implemented as a single 12-stage, II=1 pipeline. A SystemVerilog baseline is followed by implementations in Chisel, SpinalHDL, Amaranth, Clash, Bluespec, and C++ for high-level synthesis (H",
-      "pdf_link": "https://arxiv.org/pdf/2609.18792.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.18792",
-      "submission_date": "2026-09-17T04:00:00+00:00",
+      "abstract": "arXiv:2609.19683v1 Announce Type: new \nAbstract: The deployment of Vision-Language Models (VLMs) on edge devices is severely bottlenecked by memory bandwidth, necessitating aggressive sub-8-bit quantization. Since edge accelerators are strictly constrained by area and power, they require end-to-end quantized models. However, the extreme dynamic range gap between multi-modal tokens causes standard block formats to suffer \"microscaling collapse,\" where a single massive outlier hijacks the shared exponent, underflowing surrounding elements and destroying attention maps. To break this bottleneck, we propose Micro-Inverted-Scaling (MiX), a novel format that mathematically inverts the microscaling paradigm: rather than grouping multiple mantissas under one shared exponent, MiX groups private, pe",
+      "pdf_link": "https://arxiv.org/pdf/2609.19683.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.19683",
+      "submission_date": "2026-09-18T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 34.0,
-      "updated_at": "2026-09-17T10:55:41.458583+00:00"
+      "score": 22.0,
+      "updated_at": "2026-09-18T10:31:50.620225+00:00"
+    },
+    {
+      "forum_id": "2609.19376",
+      "paper_number": -1,
+      "title": "Rosetta: Automating First-Principles Performance Modeling Using Multi-Agent LLMs",
+      "authors": [
+        "Karthikeyan Sankaralingam"
+      ],
+      "keywords": [
+        "cs.AR",
+        "ISCA"
+      ],
+      "abstract": "arXiv:2609.19376v1 Announce Type: cross \nAbstract: Analytical performance models --- derivations of throughput or speedup from hardware parameters --- make claims independently verifiable and expose binding constraints, yet rarely accompany architecture papers because building one by hand takes weeks of expert effort. We present Rosetta, a multi-agent LLM pipeline that automatically generates first-principles analytical models from research paper PDFs. Given a paper as sole input, Rosetta produces a mathematical specification, an executable Python model, and a plain-English interpretation --- all autonomously, with zero human intervention. The formalization process itself is the primary value: it surfaces implicit assumptions and identifies missing parameters. Four design decisions address",
+      "pdf_link": "https://arxiv.org/pdf/2609.19376.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.19376",
+      "submission_date": "2026-09-18T04:00:00+00:00",
+      "conference": "ISCA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.0,
+      "updated_at": "2026-09-18T10:31:50.620320+00:00"
     }
   ]
 }

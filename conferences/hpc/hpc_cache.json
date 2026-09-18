@@ -1,32 +1,9 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-09-17T10:55:41.982856+00:00",
-  "paper_count": 6,
+  "last_updated": "2026-09-18T10:31:51.110964+00:00",
+  "paper_count": 3,
   "papers": [
-    {
-      "forum_id": "2609.18178",
-      "paper_number": -1,
-      "title": "Zero-I/O Fault Recovery for Sharded Deep Learning via Dynamic Framework Dependency Rebinding",
-      "authors": [
-        "Genlang Chen, Junyi Zhu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.18178v1 Announce Type: new \nAbstract: Distributed model training at scale is frequently interrupted by transient network failures, conventionally forcing cluster managers to abort all processes and roll back to the latest checkpoint. While periodic checkpointing provides durability, frequent snapshotting introduces severe storage backpressure: our measurements on a 1.216B-parameter decoder reveal that per-update asynchronous checkpointing incurs up to a +656.7% latency overhead, consumes 32.5 GiB of host memory, and generates 3.39 TB/hour of storage traffic. To eliminate this overhead, we present AccelPact, a parallel runtime enabling zero-I/O in-memory fault recovery for sharded distributed training. When communication fails at a committed optimizer step, device memory remains ",
-      "pdf_link": "https://arxiv.org/pdf/2609.18178.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.18178",
-      "submission_date": "2026-09-17T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 47.5,
-      "updated_at": "2026-09-17T10:55:41.521387+00:00"
-    },
     {
       "forum_id": "2609.18066",
       "paper_number": -1,
@@ -38,109 +15,63 @@
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.18066v1 Announce Type: new \nAbstract: Private large language model (LLM) fine-tuning is increasingly important for organizations that need to adapt models using sensitive data, but it often exceeds the memory capacity of commodity datacenter accelerators. Apple Silicon offers a different design point through large unified memory and lower complete-system cost, while recent Apple software support enables distributed execution over RDMA-over-Thunderbolt (TB). This paper studies whether Apple Silicon can serve as a practical platform for private LLM fine-tuning. We characterize RDMA-over-TB communication on Mac Studio nodes, showing that the measured bandwidth is far below nominal TB specifications. Next, we extend Apple's implementation with multi-trunk communication, persistent w",
+      "abstract": "arXiv:2609.18066v2 Announce Type: replace \nAbstract: Private large language model (LLM) fine-tuning is increasingly important for organizations that need to adapt models using sensitive data, but it often exceeds the memory capacity of commodity datacenter accelerators. Apple Silicon offers a different design point through large unified memory and lower complete-system cost, while recent Apple software support enables distributed execution over RDMA-over-Thunderbolt (TB). This paper studies whether Apple Silicon can serve as a practical platform for private LLM fine-tuning. We characterize RDMA-over-TB communication on Mac Studio nodes, showing that the measured bandwidth is far below nominal TB specifications. Next, we extend Apple's implementation with multi-trunk communication, persiste",
       "pdf_link": "https://arxiv.org/pdf/2609.18066.pdf",
       "forum_link": "https://arxiv.org/abs/2609.18066",
-      "submission_date": "2026-09-17T04:00:00+00:00",
+      "submission_date": "2026-09-18T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 44.5,
-      "updated_at": "2026-09-17T10:55:41.521219+00:00"
+      "updated_at": "2026-09-18T10:31:50.671986+00:00"
     },
     {
-      "forum_id": "2609.19024",
+      "forum_id": "2609.19936",
       "paper_number": -1,
-      "title": "OAK: Restart- and Age-Aware Scheduling for Distributed Machine Learning on Shared GPU Clusters",
+      "title": "VERA: Reinforcement Learning for Dynamic Memory Scaling of HPC Workloads in Kubernetes",
       "authors": [
-        "Khaled Aljbab, Amine Barrak"
+        "Ade Pramono, Jie Ren, Ivy Peng"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.19024v1 Announce Type: new \nAbstract: Distributed machine learning increasingly runs on shared multi-tenant GPU clusters where contention and failures are routine. Goodput-driven schedulers maximise instantaneous throughput but treat accumulated waiting time and restart cost as second-class signals: long-waiting jobs are repeatedly deferred, and the minutes of checkpoint loading paid after each interruption are not folded back into allocation decisions.\n  We present OAK, a per-round mixed-integer linear scheduler whose composite utility adds two first-class terms to goodput: an age key that elevates jobs with high cumulative waiting time, and a decomposed restart factor that tracks productive training time and checkpoint overhead as separately measured quantities rather than a s",
-      "pdf_link": "https://arxiv.org/pdf/2609.19024.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.19024",
-      "submission_date": "2026-09-17T04:00:00+00:00",
+      "abstract": "arXiv:2609.19936v1 Announce Type: new \nAbstract: Memory over-provisioning results in resource underutilization when HPC workloads run on Kubernetes. The default Vertical Pod Autoscaler (VPA) cannot anticipate phase-driven memory spikes for first-run HPC jobs. In this work, we present a reinforcement learning (RL) recommender VERA that formulates vertical memory scaling as a Markov Decision Process and trains an agent on 3353 real Prometheus traces. Evaluated on a live Google Kubernetes Engine cluster using LAMMPS, graph analytics, in-memory analytics, and MLPerf 3D-UNet, the RL agent reclaims 31.6% of the available memory headroom and incurs at most one OOM event while VPA reclaims -7.9% over the same runs, raising memory provisioning, and its recommendation would have been insufficient to",
+      "pdf_link": "https://arxiv.org/pdf/2609.19936.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.19936",
+      "submission_date": "2026-09-18T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 37.0,
-      "updated_at": "2026-09-17T10:55:41.522059+00:00"
+      "score": 12.5,
+      "updated_at": "2026-09-18T10:31:50.671013+00:00"
     },
     {
-      "forum_id": "2609.18519",
+      "forum_id": "2605.02194",
       "paper_number": -1,
-      "title": "COMPASS-ABS: Reducing Fragmentation in Shared GPU Clusters for Deep Learning Training Workloads",
+      "title": "A Treasure Trove of Performance: Analyzing the IO500 Submission Data",
       "authors": [
-        "Yukai Zhou, Hongfan Wu"
+        "Julian Kunkel, Aasish Kumar Sharma, Anila Ghazanfar, Sepehr Mahmoodianhamedani, Sascha Safenreider"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.18519v1 Announce Type: new \nAbstract: With the rapid advancement of deep learning technology, shared GPU clusters receive an increasing number of deep learning training (DLT) jobs. Yet resource fragmentation make such clusters underutilized and forces the DLT jobs running on them to endure long turnaround times. Extensive research has been devoted to quantifying fragmentation and developing scheduling algorithms that alleviate its impact. However, existing fragmentation measures break down in the absence of workload distribution information, while current schedulers cannot continuously maintain resource fragmentation at a low level. To tackle these problems, we first introduce Scheduler-Induced Fragmentation (SIF), a metric built on the notion of partial-nodes that is independen",
-      "pdf_link": "https://arxiv.org/pdf/2609.18519.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.18519",
-      "submission_date": "2026-09-17T04:00:00+00:00",
+      "abstract": "arXiv:2605.02194v2 Announce Type: replace \nAbstract: The IO500 benchmark has become the community standard for evaluating HPC storage system performance, yet the detailed data contained in its submission packages remains largely unexplored beyond aggregate leaderboard rankings. We present a statistical characterization of 61 IO500 submissions from four competition lists (ISC21 through SC22), examining score distributions, inter-phase correlations, and insights derived from detailed log files that accompany each submission. Our analysis reveals that IO500 scores span four orders of magnitude. Spearman correlation analysis shows strong within-domain clustering for both bandwidth (rs = 0.78 to 0.96) and metadata (rs = 0.89 to 0.98) phases, with the composite sub-scores exhibiting rs = 0.92 at",
+      "pdf_link": "https://arxiv.org/pdf/2605.02194.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.02194",
+      "submission_date": "2026-09-18T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 34.0,
-      "updated_at": "2026-09-17T10:55:41.521583+00:00"
-    },
-    {
-      "forum_id": "2609.18388",
-      "paper_number": -1,
-      "title": "GeoMesh: Workload-Balanced and Sign-Compressed Geo-Distributed LLM Training",
-      "authors": [
-        "Changyong Shin, Jaerim Park, Minchul Kang, Younghun Go, Zhixiong Niu, Yongqiang Xiong, Gyeongsik Yang, Chuck Yoo"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.18388v1 Announce Type: new \nAbstract: Large language models are increasingly trained on GPUs distributed across multiple regions, but geo-distributed training is challenging in practice. Real clusters often contain GPUs with different speeds and memory capacities, and they communicate over slow wide-area networks. Our analysis shows that this creates serious problems: existing synchronous methods preserve stable updates, but fast GPUs wait up to 20.9% of their runtime for slower ones, and all workers spend, on average, 65.8% of their runtime on synchronization. Recent asynchronous methods reduce waiting time but worsen the model accuracy due to stale updates. To address the problems, we present GeoMesh, a synchronous geo-distributed training framework for heterogeneous GPUs. Geo",
-      "pdf_link": "https://arxiv.org/pdf/2609.18388.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.18388",
-      "submission_date": "2026-09-17T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 15.5,
-      "updated_at": "2026-09-17T10:55:41.521439+00:00"
-    },
-    {
-      "forum_id": "2609.17573",
-      "paper_number": -1,
-      "title": "GroupKV: Hierarchical KV Cache Management for Long-Context Diffusion LLM Inference",
-      "authors": [
-        "Jinhao Wang, Zhexin Hu, Kangjie Zhou, Xin Zhou, Fangfang Liu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.17573v1 Announce Type: cross \nAbstract: Diffusion large language models (dLLMs) are emerging as a promising generative paradigm that complements autoregressive decoding. In long-context settings, KV cache bloat and offloading transfer overhead have become primary bottlenecks in inference systems. Meanwhile, the periodic full-sequence recomputation and localized token updates in dLLMs make the KV lifecycle substantially more dynamic, complicating cache management and prefetch scheduling while making heavyweight token-level indexing or clustering schemes harder to amortize effectively during decoding.\n  To address these challenges, we present \\textsc{GroupKV}, a lightweight hierarchical KV cache management system for long-context dLLM inference. We observe that under block-wise de",
-      "pdf_link": "https://arxiv.org/pdf/2609.17573.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.17573",
-      "submission_date": "2026-09-17T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-09-17T10:55:41.522199+00:00"
+      "score": 4.5,
+      "updated_at": "2026-09-18T10:31:50.671787+00:00"
     }
   ]
 }
