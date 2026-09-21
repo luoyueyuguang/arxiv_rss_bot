@@ -1,13 +1,12 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-09-18 10:31:50 UTC
-- **Total Filtered Papers**: 2
-- **Displaying**: 2 (arxiv: 2)
+- **Last Updated**: 2026-09-21 11:56:41 UTC
+- **Total Filtered Papers**: 1
+- **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [MiX: Micro-Inverted-Scaling for End-to-End Low-Bit Vision-Language Model Acceleration](https://arxiv.org/abs/2609.19683) | `ARXIV` | 22.0 |
-| 2 | [Rosetta: Automating First-Principles Performance Modeling Using Multi-Agent LLMs](https://arxiv.org/abs/2609.19376) | `ARXIV` | 13.0 |
+| 1 | [Quantifying the Effect of HCLs on a Fixed-Microarchitecture MXFP4 Accelerator](https://arxiv.org/abs/2609.18792) | `ARXIV` | 34.0 |

@@ -1,77 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-09-18T10:32:23.121124+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-09-21T11:57:15.093182+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2609.19949",
+      "forum_id": "2603.20859",
       "paper_number": -1,
-      "title": "Dynamics of Stochastic Hamiltonian systems I - Wong-Zakai Variational integrators",
+      "title": "Accelerated Nehari manifold optimization methods for computing ground state solutions of coupled elliptic systems",
       "authors": [
-        "Jacky Cresson (LMAP), Rouba SAfI (LU)"
+        "Zhaoxing Chen, Wei Liu, Ziqing Xie, Wenfan Yi"
       ],
       "keywords": [
         "cs.NA",
-        "numerical analysis"
+        "SIAM"
       ],
-      "abstract": "arXiv:2609.19949v1 Announce Type: cross \nAbstract: We construct variational integrators to study the dynamics of stochastic Hamiltonian systems using their Wong-Zakai approximation. This approach can be used to interpret and justify previous work of Wang et al (L. Wang, J. Hong, R. Scherer, F. Bai. Dynamics and variational Integrators of stochastic Hamiltonian systems. International Journal of Numerical Analysis and Modeling, 6(4), 2009) on stochastic variational integrators. Numerical examples are provided.",
-      "pdf_link": "https://arxiv.org/pdf/2609.19949.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.19949",
-      "submission_date": "2026-09-18T04:00:00+00:00",
-      "conference": "numerical analysis",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-09-18T10:32:23.118056+00:00"
-    },
-    {
-      "forum_id": "2609.20713",
-      "paper_number": -1,
-      "title": "A Unified Framework for Wasserstein Convergence of ULMC Methods beyond Log-Concavity: Old and New",
-      "authors": [
-        "Wanjie Lyu, Xiaojie Wang, Bin Yang"
-      ],
-      "keywords": [
-        "cs.NA",
-        "scientific computing"
-      ],
-      "abstract": "arXiv:2609.20713v1 Announce Type: new \nAbstract: As a fundamental task across computational statistics, scientific computing and machine learning, sampling from high-dimensional probability distributions has received increasing attention in recent years. Numerous sampling algorithms have been proposed, among which underdamped Langevin Monte Carlo (ULMC) methods based on underdamped Langevin dynamics (ULD) have emerged as a class of efficient ones. In this work, we introduce a ``universal\" predictor-corrector formulation that bridges Euler-type, UBU-type and randomized schemes through different choices of method parameters. Notably, the ``universal\" integrator induces two novel classes of low-cost integrators, termed low-cost randomized integrators (LC-RIs) and low-cost UBU integrators (LC-",
-      "pdf_link": "https://arxiv.org/pdf/2609.20713.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.20713",
-      "submission_date": "2026-09-18T04:00:00+00:00",
-      "conference": "scientific computing",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-09-18T10:32:23.117868+00:00"
-    },
-    {
-      "forum_id": "2601.00728",
-      "paper_number": -1,
-      "title": "Precision autotuning for linear solvers via contextual bandit-based RL",
-      "authors": [
-        "Erin Carson, Xinye Chen"
-      ],
-      "keywords": [
-        "cs.NA",
-        "scientific computing"
-      ],
-      "abstract": "arXiv:2601.00728v5 Announce Type: replace-cross \nAbstract: We propose a reinforcement learning (RL) framework for \\xy{responsive} precision tuning for linear solvers, which can be extended to general algorithms. The framework is formulated as a contextual bandit problem and solved using incremental action-value estimation with a discretized state space to select optimal precision configurations for computational steps, \\xy{retaining} precision and computational efficiency. To verify its effectiveness, we apply the framework to iterative refinement for solving linear systems $Ax = b$. In this application, our approach dynamically chooses precisions based on calculated features from the system while maintaining acceptable accuracy and convergence. In detail, an action-value estimator takes d",
-      "pdf_link": "https://arxiv.org/pdf/2601.00728.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.00728",
-      "submission_date": "2026-09-18T04:00:00+00:00",
-      "conference": "scientific computing",
+      "abstract": "arXiv:2603.20859v2 Announce Type: replace \nAbstract: This paper presents a class of efficient algorithms for computing the ground state solutions of a semilinear elliptic system, which are unstable saddle points of the variational functional. Variational arguments show that these unstable saddle points can be characterized as the local minimizers of the variational functional constrained to the Nehari manifold $\\mathcal{N}$. The Nehari manifold optimization method (NMOM) proposed in [Z. Chen, W. Liu, Z. Xie, and W. Yi. {\\em SIAM J. Sci. Comput.}, 47(4): A2098-A2126, 2025] provides a Riemannian gradient descent framework on $\\mathcal{N}$ for such constrained minimization problems. To deal with both the intrinsic instability of the solutions and the increased computational complexity introdu",
+      "pdf_link": "https://arxiv.org/pdf/2603.20859.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.20859",
+      "submission_date": "2026-09-21T04:00:00+00:00",
+      "conference": "SIAM",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-09-18T10:32:23.118588+00:00"
+      "updated_at": "2026-09-21T11:57:15.090655+00:00"
     }
   ]
 }

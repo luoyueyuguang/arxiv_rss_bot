@@ -1,7 +1,7 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-09-18T10:32:23.063495+00:00",
+  "last_updated": "2026-09-21T11:57:15.025507+00:00",
   "paper_count": 31,
   "papers": [
     {
@@ -261,6 +261,29 @@
       "updated_at": "2026-08-14T07:42:19.495345+00:00"
     },
     {
+      "forum_id": "2609.08574",
+      "paper_number": -1,
+      "title": "Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context?",
+      "authors": [
+        "Sara Rizwan, Samaanah Abdus Salam, Mohammed Mudassir Uddin"
+      ],
+      "keywords": [
+        "cs.AI",
+        "NeurIPS"
+      ],
+      "abstract": "arXiv:2609.08574v2 Announce Type: replace-cross \nAbstract: Long context language models now advertise windows of one million tokens, but two habits limit how much of that window is used. Attention heads with nothing useful to read still spend their budget on the first token, which is called the attention sink, and where a fact sits in the context changes whether the model finds it. Gated attention cut first token attention from 46.7 percent to 4.8 percent at NeurIPS 2025, and Kimi K3 pairs that idea with Kimi Delta Attention and Attention Residuals behind a one million token window, eight times past the range where these diagnostics have been reported. This paper asks whether the fix survives that jump. We build SinkProbe, a suite that measures sink mass, massive activation, position resol",
+      "pdf_link": "https://arxiv.org/pdf/2609.08574.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.08574",
+      "submission_date": "2026-09-21T04:00:00+00:00",
+      "conference": "NeurIPS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 22.5,
+      "updated_at": "2026-09-21T11:56:45.755025+00:00"
+    },
+    {
       "forum_id": "mlr-icml25-28",
       "paper_number": 28,
       "title": "Tomorrow Brings Greater Knowledge: Large Language Models Join Dynamic Temporal Knowledge Graphs",
@@ -283,29 +306,6 @@
       "ratings": [],
       "score": 21.5,
       "updated_at": "2026-08-14T07:42:28.076845+00:00"
-    },
-    {
-      "forum_id": "2609.19644",
-      "paper_number": -1,
-      "title": "ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI",
-      "authors": [
-        "Jaehyun Nam, Jinsung Yoon, Yanzhou Pan, Yubo Wang, Rui Meng, Parthasarathy Ranganathan, Tomas Pfister"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ICML"
-      ],
-      "abstract": "arXiv:2609.19644v1 Announce Type: new \nAbstract: Scientific discovery is defined by the ability to identify the boundaries of existing knowledge and venture into unexplored territory. The ultimate vision for AI in science is problem-driven autonomous research: given a fundamental challenge by a human expert, the AI independently navigates the scientific landscape, uncovers theoretical and empirical bottlenecks, and systematically expands the frontier of knowledge. In this paper, we introduce ScientistTwo, a fully autonomous multi-agent framework designed to realize this vision. Specifically, ScientistTwo takes an initial problem as input, establishes state-of-the-art baselines, formulates novel hypotheses, and coordinates specialized agents to orchestrate an end-to-end discovery cycle with",
-      "pdf_link": "https://arxiv.org/pdf/2609.19644.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.19644",
-      "submission_date": "2026-09-18T04:00:00+00:00",
-      "conference": "ICML",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 21.0,
-      "updated_at": "2026-09-18T10:31:53.866336+00:00"
     },
     {
       "forum_id": "mlr-icml25-13",

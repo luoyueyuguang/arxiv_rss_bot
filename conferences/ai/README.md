@@ -1,6 +1,6 @@
 # AI / AI for Science Papers
 
-- **Last Updated**: 2026-09-18 10:32:23 UTC
+- **Last Updated**: 2026-09-21 11:57:15 UTC
 - **Total Filtered Papers**: 31
 - **Displaying**: 31 (arxiv: 1, mlr: 30)
 - **Papers with Ratings**: 0
@@ -20,8 +20,8 @@
 | 9 | [Patch-Based Contrastive Learning and Memory Consolidation for Online Unsupervised Continual Learning](https://proceedings.mlr.press/v274/taylor25a.html) | `MLR` | 31.5 |
 | 10 | [A Contrastive Symmetric Forward-Forward Algorithm (SFFA) for Continual Learning Tasks](https://proceedings.mlr.press/v274/terres-escudero25a.html) | `MLR` | 31.0 |
 | 11 | [Diffusion Augmented Agents: A Framework for Efficient Exploration and Transfer Learning](https://proceedings.mlr.press/v274/palo25a.html) | `MLR` | 26.5 |
-| 12 | [Tomorrow Brings Greater Knowledge: Large Language Models Join Dynamic Temporal Knowledge Graphs](https://proceedings.mlr.press/v274/maio25a.html) | `MLR` | 21.5 |
-| 13 | [ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI](https://arxiv.org/abs/2609.19644) | `ARXIV` | 21.0 |
+| 12 | [Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context?](https://arxiv.org/abs/2609.08574) | `ARXIV` | 22.5 |
+| 13 | [Tomorrow Brings Greater Knowledge: Large Language Models Join Dynamic Temporal Knowledge Graphs](https://proceedings.mlr.press/v274/maio25a.html) | `MLR` | 21.5 |
 | 14 | [Adaptive Action Advising with Different Rewards](https://proceedings.mlr.press/v274/guo25a.html) | `MLR` | 21.0 |
 | 15 | [Disentangling the Causes of Plasticity Loss in Neural Networks](https://proceedings.mlr.press/v274/lyle25a.html) | `MLR` | 13.5 |
 | 16 | [Optimizing the Learning Rate for the Online Training of Neural Networks](https://proceedings.mlr.press/v274/cazzonelli25a.html) | `MLR` | 13.5 |
