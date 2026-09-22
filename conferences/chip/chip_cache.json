@@ -1,77 +1,123 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-09-21T11:56:45.543024+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-09-22T10:56:25.834072+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2609.18022",
+      "forum_id": "2609.22343",
       "paper_number": -1,
-      "title": "VeriBugBench: An Empirically Grounded Framework for Constructing Verilog RTL Debugging Benchmarks",
+      "title": "Design-Space Exploration of Post-Quantum Cryptography Acceleration on an Open-Source RISC-V GPGPU",
       "authors": [
-        "Xiankai Meng, Kejian Feng, Xinlin Zhao, Zhuo Zhang, Yan Lei, Xiaoguang Mao, Jiang Wu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2609.18022v2 Announce Type: replace \nAbstract: RTL source-level debugging research requires benchmark artifacts that provide faulty designs together with precise change locations, executable test stimuli, and reproducible configurations. Available Verilog resources usually provide only a subset of these elements. We present VeriBugBench, a framework for constructing Verilog RTL debugging benchmarks through empirically grounded fault construction, LLM-based testbench enhancement, and execution-based retention. The mutation library maps recurring, multi-granularity repair patterns observed in RTL bug-fix histories to 19 executable inverse operators. For each project, an LLM generates a design-specific stimulus phase from the clean DUT and original testbench; the phase is composed with ",
-      "pdf_link": "https://arxiv.org/pdf/2609.18022.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.18022",
-      "submission_date": "2026-09-21T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-09-21T11:56:45.540572+00:00"
-    },
-    {
-      "forum_id": "2609.21774",
-      "paper_number": -1,
-      "title": "Scalable Packet Tracking on FPGAs for Erasure-Coded RDMA over Lossy WANs",
-      "authors": [
-        "Yicheng Qian, Konstantin Taranov, Yevgeny Yankilevich, Assaf Shacham, Mahmoud Elhaddad, Abdul Kabbani, Miriam Leeser, Nadeen Gebara"
+        "Hossam Hassan, Marc Xander Makkes, Chae Eun Lee, Hyungmin Yoon"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2609.21774v1 Announce Type: new \nAbstract: Modern AI workloads increasingly rely on scale across architectures that interconnect multiple datacenters to form a single \"AI factory\", overcoming the power and cooling constraints of individual sites. However, extending Remote Direct Memory Access (RDMA) across wide area networks (WANs) introduces fundamental challenges: multi-path packet reordering, high latency, and packet loss that severely degrade performance. While erasure coding (EC) has emerged as a promising mechanism for loss recovery, its effectiveness critically depends on efficient packet arrival tracking implemented in hardware. We present COmpact Multi-path Erasure-coded Tracking (COMET), the first fully hardware-offloaded packet-arrival tracking design implemented on an FPG",
-      "pdf_link": "https://arxiv.org/pdf/2609.21774.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.21774",
-      "submission_date": "2026-09-21T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-09-21T11:56:45.540192+00:00"
-    },
-    {
-      "forum_id": "2609.21157",
-      "paper_number": -1,
-      "title": "Can Agents Design Better Chips with a Higher Level Abstraction?",
-      "authors": [
-        "Zijian Ding, Yang Zou, Yizhou Sun, Jason Cong"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2609.21157v1 Announce Type: cross \nAbstract: Large Language Model (LLM) agents are increasingly being explored for chip design, but most existing approaches operate directly at RTL. We ask whether agents can design better chips by leveraging higher-level abstractions. We compare Direct RTL Design, Agent-based HLS Design, Post-Compiler HLS Refinement, and Post-HLS RTL Refinement, and combine Agent-based HLS Design with Post-HLS RTL Refinement as Agent-based HLS with RTL Refinement (AHRR). We use FPGAs as a practical, easy-to-deploy platform for end-to-end evaluation, but note that the design-flow tradeoffs we study are largely independent of the target technology. Across a diverse 11-tasks benchmark suite, AHRR achieves a 2.6$\\times$ geometric-mean speedup over Direct RTL Design acros",
-      "pdf_link": "https://arxiv.org/pdf/2609.21157.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.21157",
-      "submission_date": "2026-09-21T04:00:00+00:00",
+      "abstract": "arXiv:2609.22343v1 Announce Type: new \nAbstract: Post-quantum cryptography (PQC) acceleration has been studied for CPUs and FPGAs, yet GPGPUs - dominating high-throughput computing - remain unexplored for PQC hardware integration as a functional unit. We present what is, to our knowledge, the first such integration: the Vortex Post-Quantum Crypto Unit (PCU) on the open-source Vortex RISC-V GPGPU. The PCU implements a 256-point NTT over Kyber (q=3329) and Dilithium (q=8380417) moduli in 134 logic cells (73 LUT4 + 61 CCU2C) - the smallest reported NTT accelerator by logic-cell count, 2.8x smaller than the next smallest design. It achieves 228.78 MHz on Lattice ECP5 and 299.8 MHz place-and-route on Xilinx Artix-7, and passes 253 functional tests across 7 suites. On Vortex SimX, it achieves 42",
+      "pdf_link": "https://arxiv.org/pdf/2609.22343.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.22343",
+      "submission_date": "2026-09-22T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 3.0,
-      "updated_at": "2026-09-21T11:56:45.540291+00:00"
+      "updated_at": "2026-09-22T10:56:25.828927+00:00"
+    },
+    {
+      "forum_id": "2609.24288",
+      "paper_number": -1,
+      "title": "Circuit-Architecture-Training Co-Design with Regenerative-SA Similarity Sensing for Aggressive SAR Skipping in Analog Compute-in-Memory",
+      "authors": [
+        "Yufei Liu, Shuang Liu, Junjie Wang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.24288v1 Announce Type: new \nAbstract: This work presents a circuit-architecture-training co-design framework that exploits sense-amplifier (SA) regeneration to detect analog-output similarity and reduce SAR comparisons in compute-in-memory (CIM) systems. Hardware-aware training incorporates circuit-characterized SA disturbance and encoding errors caused by prefix reuse, enabling aggressive comparison skipping. The detector is characterized through 55-nm CMOS schematic simulations, with system-level evaluation on WRN-28-10, ResNet20, and DeiT using an ISAAC-based W4A4 CIM model. On WRN-28-10, the proposed approach achieves 77.3% Top-1 accuracy (W4A4 baseline: 78.4%) while reducing SAR comparisons by 48.19% across the evaluated layers. Energy-budget analysis estimates a 27.18% red",
+      "pdf_link": "https://arxiv.org/pdf/2609.24288.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.24288",
+      "submission_date": "2026-09-22T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-09-22T10:56:25.829429+00:00"
+    },
+    {
+      "forum_id": "2609.24847",
+      "paper_number": -1,
+      "title": "SPECTRA: Adaptive Execution of Speculative Decoding on a Runtime-Reconfigurable Tiled Architecture",
+      "authors": [
+        "Gabriele Tombesi, William Baisi, Je Yang, Elisavet Lydia Alvanaki, Kevin Lee, Michael Lippe, Biruk Seyoum, Luca P. Carloni"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2609.24847v1 Announce Type: new \nAbstract: LLM inference on edge devices is constrained by computational and memory resources, making efficient autoregressive decoding challenging. Speculative decoding alleviates this bottleneck by generating tokens with a smaller draft model and verifying multiple tokens in parallel with a batched target model pass. However, verification introduces a runtime-dependent intermediate regime between memory-bound general matrix-vector (GEMV) operations in decoding and compute-bound general matrix-matrix (GEMM) operations in prefill, as its arithmetic intensity varies with speculation length and acceptance rate. We present SPECTRA, a runtime-reconfigurable tiled architecture that sustains high utilization across the full speculative decoding pipeline. Wit",
+      "pdf_link": "https://arxiv.org/pdf/2609.24847.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.24847",
+      "submission_date": "2026-09-22T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-09-22T10:56:25.829552+00:00"
+    },
+    {
+      "forum_id": "2609.23517",
+      "paper_number": -1,
+      "title": "VSpector: Specification-Driven Bug Detection for RISC-V CPUs",
+      "authors": [
+        "Tianyu Jia, Zhaoyang Yu, Yuanliang Chen, Wei You, Jianjun Huang, Bin Liang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.23517v1 Announce Type: cross \nAbstract: Detecting RTL design bugs in open-source RISC-V CPU implementations is critical for ensuring system reliability. Traditional detection approaches inherently rely on predefined artifacts. In this paper, we leverage the official,natural-language RISC-V specifications as an effective information source for bug detection. We present VSpector, a specification-driven bug detection pipeline that directly checks whether CPU register-transfer level (RTL) implementations adhere to official specification rules, without requiring specialized construction of reference models, formal properties, or custom bug patterns. To resolve the key technical trade-off between broad context scope and model reasoning accuracy when using Large Language Models (LLMs),",
+      "pdf_link": "https://arxiv.org/pdf/2609.23517.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.23517",
+      "submission_date": "2026-09-22T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-09-22T10:56:25.829707+00:00"
+    },
+    {
+      "forum_id": "2505.24509",
+      "paper_number": -1,
+      "title": "Bi-SamplerZ: A Rejection-Aware Cooperative Gaussian Sampling Framework for Falcon Signature Hardware",
+      "authors": [
+        "Binke Zhao, Ghada Alsuhi, Hani Saleh, Baker Mohammad"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2505.24509v2 Announce Type: replace \nAbstract: We present Bi-SamplerZ, a rejection-aware cooperative sampling framework that converts this idle capacity into useful computation. After an asymmetric accept/reject outcome, Bi- SamplerZ latches the completed logical result and dynamically reassigns the released physical datapath to the unfinished target. The two paths then evaluate fresh independent candidates for the same remaining distribution. We show that this post-rejection cooperation increases the assisted-round completion probability without modifying the underlying candidate distribution or Bernoulli acceptance rule, and we state the randomness-allocation conditions required to preserve the joint output distribution of the original pair of logical sampler calls",
+      "pdf_link": "https://arxiv.org/pdf/2505.24509.pdf",
+      "forum_link": "https://arxiv.org/abs/2505.24509",
+      "submission_date": "2026-09-22T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-09-22T10:56:25.829837+00:00"
     }
   ]
 }

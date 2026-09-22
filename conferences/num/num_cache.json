@@ -1,31 +1,77 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-09-21T11:57:15.093182+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-09-22T10:56:56.863952+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2603.20859",
+      "forum_id": "2609.24332",
       "paper_number": -1,
-      "title": "Accelerated Nehari manifold optimization methods for computing ground state solutions of coupled elliptic systems",
+      "title": "Autoencoders vs. Numerical Analysis--Informed Manifold Learning for Navier--Stokes Flows",
       "authors": [
-        "Zhaoxing Chen, Wei Liu, Ziqing Xie, Wenfan Yi"
+        "Alessandro Della Pia, Lucia Russo, Ioannis Kevrekidis, Constantinos Siettos"
+      ],
+      "keywords": [
+        "cs.NA",
+        "numerical analysis"
+      ],
+      "abstract": "arXiv:2609.24332v1 Announce Type: new \nAbstract: Autoencoders (AEs) have become a dominant approach to nonlinear latent-space construction in data-driven reduced-order modelling (ROM), with their decoders lifting latent representations back to the ambient state space. Their prominence, however, has overshadowed an established alternative: manifold-learning methods grounded in classical numerical analysis. We revisit this alternative using Parsimonious Diffusion Maps (PDMs), benchmarking them against Proper Orthogonal Decomposition (POD)-based ROMs and several convolutional AE architectures for the two-dimensional incompressible flow past a rotating cylinder ---a bifurcating Navier-Stokes (NS) system organized by a codimension-2 Bogdanov-Takens point and its associated Hopf, saddle-node, an",
+      "pdf_link": "https://arxiv.org/pdf/2609.24332.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.24332",
+      "submission_date": "2026-09-22T04:00:00+00:00",
+      "conference": "numerical analysis",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 27.0,
+      "updated_at": "2026-09-22T10:56:56.859213+00:00"
+    },
+    {
+      "forum_id": "2609.23676",
+      "paper_number": -1,
+      "title": "Numerical analysis of parabolic equations with Prandtl--Ishlinskii hysteresis of play type",
+      "authors": [
+        "Shu Xu, Liqun Cao"
+      ],
+      "keywords": [
+        "cs.NA",
+        "numerical analysis"
+      ],
+      "abstract": "arXiv:2609.23676v1 Announce Type: new \nAbstract: Rigorous error analysis for numerical approximations of parabolic equations with hysteresis remains limited, even for the widely used Prandtl--Ishlinskii hysteresis of play type. In this work, we establish an $O(h+\\tau)$ error bound for an implicit Euler $P_1$ finite element discretization. The analysis requires neither higher-order temporal regularity of the hysteresis variables, which cannot in general be expected in hysteretic evolutions, nor additional spatial regularity of these variables. For the temporal discretization, we exploit a convex subgradient-flow structure in a weighted Hilbert space together with the associated dissipation and coercive subgradient remainder to obtain first-order convergence. For the spatial discretization, ",
+      "pdf_link": "https://arxiv.org/pdf/2609.23676.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.23676",
+      "submission_date": "2026-09-22T04:00:00+00:00",
+      "conference": "numerical analysis",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.5,
+      "updated_at": "2026-09-22T10:56:56.858787+00:00"
+    },
+    {
+      "forum_id": "2609.22460",
+      "paper_number": -1,
+      "title": "Update to: Spectral sets: Numerical range and beyond",
+      "authors": [
+        "Michel Crouzeix, Anne Greenbaum"
       ],
       "keywords": [
         "cs.NA",
         "SIAM"
       ],
-      "abstract": "arXiv:2603.20859v2 Announce Type: replace \nAbstract: This paper presents a class of efficient algorithms for computing the ground state solutions of a semilinear elliptic system, which are unstable saddle points of the variational functional. Variational arguments show that these unstable saddle points can be characterized as the local minimizers of the variational functional constrained to the Nehari manifold $\\mathcal{N}$. The Nehari manifold optimization method (NMOM) proposed in [Z. Chen, W. Liu, Z. Xie, and W. Yi. {\\em SIAM J. Sci. Comput.}, 47(4): A2098-A2126, 2025] provides a Riemannian gradient descent framework on $\\mathcal{N}$ for such constrained minimization problems. To deal with both the intrinsic instability of the solutions and the increased computational complexity introdu",
-      "pdf_link": "https://arxiv.org/pdf/2603.20859.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.20859",
-      "submission_date": "2026-09-21T04:00:00+00:00",
+      "abstract": "arXiv:2609.22460v1 Announce Type: new \nAbstract: We use the results of Lorist and Schwenninger, {\\em A solution to Crouzeix's conjecture}, arXiv:2608.03841v2, https://arxiv.org/abs/2608.03841, to update the 2019 paper of Crouzeix and Greenbaum, {\\em Spectral sets: Numerical range and beyond}, SIAM J.~Matrix Anal.~Appl., 40(3):1087-1101. For all regions considered in the 2019 paper, we are able to show that the region is a $K$-spectral set with a bound on $K$ that is smaller than that established in the 2019 paper. In particular, we show that various annular regions are $2$-spectral sets and that a more general convex region with a circular hole or cutout is a $4$-spectral set.",
+      "pdf_link": "https://arxiv.org/pdf/2609.22460.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.22460",
+      "submission_date": "2026-09-22T04:00:00+00:00",
       "conference": "SIAM",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-09-21T11:57:15.090655+00:00"
+      "updated_at": "2026-09-22T10:56:56.858321+00:00"
     }
   ]
 }

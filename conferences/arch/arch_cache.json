@@ -1,31 +1,100 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-09-21T11:56:41.224937+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-09-22T10:56:21.753756+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2609.18792",
+      "forum_id": "2607.13184",
       "paper_number": -1,
-      "title": "Quantifying the Effect of HCLs on a Fixed-Microarchitecture MXFP4 Accelerator",
+      "title": "Microflow: Microarchitectural Causal Observability for Deep Cross-Layer Analysis and Optimization",
       "authors": [
-        "Daniele Passaretti, Sajjad Tamimi, Nicola Dall'Ora"
+        "Saber Ganjisaffar, Chengyu Song, Nael Abu-Ghazaleh"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2609.18792v2 Announce Type: replace \nAbstract: Hardware Construction Languages (HCLs) aim to improve hardware design productivity while generating register-transfer-level (RTL) circuits without changing the designer's microarchitecture. However, most comparisons between HCLs are either qualitative or evaluate quality of results (QoR) across different designs, making it difficult to separate language effects from design effects. This paper compares the most widely used HCLs using the same fixed design, the OCP MXFP4 block dot product, a quantization primitive at the heart of edge Physical-AI inference, implemented as a single 12-stage, II=1 pipeline. A SystemVerilog baseline is followed by implementations in Chisel, SpinalHDL, Amaranth, Clash, Bluespec, and C++ for high-level synthesi",
-      "pdf_link": "https://arxiv.org/pdf/2609.18792.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.18792",
-      "submission_date": "2026-09-21T04:00:00+00:00",
+      "abstract": "arXiv:2607.13184v2 Announce Type: replace \nAbstract: Modern computer architecture relies heavily on simulation to identify bottlenecks and evaluate optimizations. However, existing microarchitectural performance analysis methods are fundamentally limited by an instruction-centric paradigm that captures only downstream symptoms while leaving the true microarchitectural root cause opaque. Because modern processors are governed by complex interactions across non-instruction entities like prefetchers, replacement policies, and shared queue occupancies, instruction-centric frameworks miss the mechanisms that dictate performance. To eliminate this blind spot, we present Microflow, a framework that achieves causal observability in microarchitectural simulation. To address this, we introduce the M",
+      "pdf_link": "https://arxiv.org/pdf/2607.13184.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.13184",
+      "submission_date": "2026-09-22T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 34.0,
-      "updated_at": "2026-09-21T11:56:41.220296+00:00"
+      "score": 13.0,
+      "updated_at": "2026-09-22T10:56:21.748010+00:00"
+    },
+    {
+      "forum_id": "2609.22636",
+      "paper_number": -1,
+      "title": "Presage: Prefetch Search via Agent-Guided Experiments",
+      "authors": [
+        "Matthew Giordano, Parthasarathy Ranganathan, Baris Kasikci, Akanksha Jain"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2609.22636v1 Announce Type: new \nAbstract: Data prefetching is an established technique to mitigate cache miss latency and keep the processor saturated with data. Software exists in a unique position to issue prefetches, having algorithmic knowledge of the workload at hand. However, inserting software prefetches is a time consuming, unpredictable task, with a high degree of sensitivity to microarchitecture or future code changes. While several compiler- and FDO-based approaches insert and tune software prefetches automatically, they use heuristics that do not generalize and do not consider issues that arise in large codebases. In this paper, we show that semantic understanding and reasoning about a program is a vital component in inserting effective software prefetches. We also ident",
+      "pdf_link": "https://arxiv.org/pdf/2609.22636.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.22636",
+      "submission_date": "2026-09-22T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.5,
+      "updated_at": "2026-09-22T10:56:21.747685+00:00"
+    },
+    {
+      "forum_id": "2608.01041",
+      "paper_number": -1,
+      "title": "On the Limits of Machine-Learned Ranking for Modern Microarchitectural Policies",
+      "authors": [
+        "Yanxin Zhang, Shayne Wadle, Yuxuan Xiong, Zheyu Fu, Trivikram Krishnamurthy, Karthikeyan Sankaralingam"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2608.01041v2 Announce Type: replace \nAbstract: Machine-learning predictors estimate processor performance far faster than cycle-level simulation. For design-space exploration, however, the valuable test is not merely reproducing the usual hardware ordering, but identifying how different hardware configurations rank on individual program phases. We evaluate four ML-predictors in two design regimes: \\emph{Structural Parameters} (SP), varying hardware resources such as issue width, ROB size, and cache capacity; and \\emph{Behavioral Policies} (BP), varying prefetching and replacement algorithms. In the SP regime, aggregate ranking is strong, yet counter-intuitive windows(CIW)---where the configuration expected to be slower is faster---constitute $22.4\\%$ of non-tied windows across five p",
+      "pdf_link": "https://arxiv.org/pdf/2608.01041.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.01041",
+      "submission_date": "2026-09-22T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-09-22T10:56:21.748022+00:00"
+    },
+    {
+      "forum_id": "2609.22743",
+      "paper_number": -1,
+      "title": "TEMPO: A Tag-Based Framework for Efficient Memory Ordering",
+      "authors": [
+        "Pranith Kumar, Prasun Gera, Hyojong Kim, Chulhyung Park, Hyesoon Kim"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2609.22743v1 Announce Type: new \nAbstract: Weak-memory processors rely on ordering instruc- tions for correctness, yet conventional implementations often en- force them more conservatively than the memory model requires. This over-enforcement manifests as drain-induced retirement stalls at ordering instructions and conservative squash/replay of speculative loads, suppressing legal executions and reducing throughput. We present TEMPO, a tag-based framework for precise microarchitectural implementation of ordering instructions. TEMPO assigns lightweight ordering tags to instructions and decomposes enforcement across retirement-time predicates and completion-time store ordering, allowing the core to enforce required ordering without conservative retirement serialization. TEMPO eliminate",
+      "pdf_link": "https://arxiv.org/pdf/2609.22743.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.22743",
+      "submission_date": "2026-09-22T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-09-22T10:56:21.747704+00:00"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-09-21T11:57:15.025507+00:00",
-  "paper_count": 31,
+  "last_updated": "2026-09-22T10:56:56.760565+00:00",
+  "paper_count": 32,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -274,14 +274,14 @@
       "abstract": "arXiv:2609.08574v2 Announce Type: replace-cross \nAbstract: Long context language models now advertise windows of one million tokens, but two habits limit how much of that window is used. Attention heads with nothing useful to read still spend their budget on the first token, which is called the attention sink, and where a fact sits in the context changes whether the model finds it. Gated attention cut first token attention from 46.7 percent to 4.8 percent at NeurIPS 2025, and Kimi K3 pairs that idea with Kimi Delta Attention and Attention Residuals behind a one million token window, eight times past the range where these diagnostics have been reported. This paper asks whether the fix survives that jump. We build SinkProbe, a suite that measures sink mass, massive activation, position resol",
       "pdf_link": "https://arxiv.org/pdf/2609.08574.pdf",
       "forum_link": "https://arxiv.org/abs/2609.08574",
-      "submission_date": "2026-09-21T04:00:00+00:00",
+      "submission_date": "2026-09-22T04:00:00+00:00",
       "conference": "NeurIPS",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 22.5,
-      "updated_at": "2026-09-21T11:56:45.755025+00:00"
+      "updated_at": "2026-09-22T10:56:26.036024+00:00"
     },
     {
       "forum_id": "mlr-icml25-28",
@@ -330,6 +330,29 @@
       "ratings": [],
       "score": 21.0,
       "updated_at": "2026-08-14T07:42:18.885647+00:00"
+    },
+    {
+      "forum_id": "2609.23102",
+      "paper_number": -1,
+      "title": "When Does Adversarial Refinement Help? A Negative Result and Open Problem in Adapting R3GAN to Time Series Imputation",
+      "authors": [
+        "Yufeng He"
+      ],
+      "keywords": [
+        "cs.LG",
+        "NeurIPS"
+      ],
+      "abstract": "arXiv:2609.23102v1 Announce Type: new \nAbstract: Diffusion models and transformers have supplanted GANs for multivariate time series imputation, largely on grounds of GAN training instability. R3GAN (NeurIPS 2024) removes that instability via regularized relativistic losses with provable convergence, raising a natural question: do stable, modern GANs revive adversarial imputation? We adapt R3GAN to 1D temporal data with a coarse-to-fine refinement framework and a frequency-domain discriminator, and audit 14 saved configurations across 3 datasets. Because these are heterogeneous single runs, the evidence is descriptive rather than a matched causal ablation. We report a negative result. All five saved mean/zero-start configurations improve by 48.4-70.2%. Among eight eligible non-legacy linea",
+      "pdf_link": "https://arxiv.org/pdf/2609.23102.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.23102",
+      "submission_date": "2026-09-22T04:00:00+00:00",
+      "conference": "NeurIPS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 16.5,
+      "updated_at": "2026-09-22T10:56:26.531393+00:00"
     },
     {
       "forum_id": "mlr-icml25-38",

@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-09-21T11:56:45.482801+00:00",
-  "paper_count": 312,
+  "last_updated": "2026-09-22T10:56:25.754794+00:00",
+  "paper_count": 311,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1616,29 +1616,6 @@
       "updated_at": "2026-07-21T08:54:22.926994+00:00"
     },
     {
-      "forum_id": "2609.21594",
-      "paper_number": -1,
-      "title": "HyperParallel-FSDP: Topology-Aware Fully Sharded Training with Layout-Driven Muon on Ascend SuperPods",
-      "authors": [
-        "Mo Sun, Yifan Yao, Yanwei Liu, Luobin Liu, Zhenzhang Yang, Kaisheng Wang, Xiangyu Meng, Chen Li, Xizheng Pang, Huilan Li, Xinglei Xu, Yushi Cui, Xinyao Lin, Kaiqi Chen, Jie Zhang, Zeke Wang, Teng Su"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.21594v1 Announce Type: new \nAbstract: Declarative SPMD programming uses tensor sharding descriptions to drive distributed execution, separating parallelization from model code. However, the evaluated PyTorch DTensor stack dispatches every operator below autograd, incurring repeated dispatch and metadata costs, while lacking an inexpensive end-to-end validation path. Existing FSDP and distributed Muon implementations also mismatch two-tier supernode topologies: FSDP relies on explicit parameter packing and unpacking, and Muon's whole-matrix orthogonalization conflicts with parameter sharding.\n  We observe that distributed tensors need only express sharding semantics at the tensor API boundary above autograd, allowing differentiation and kernels to operate on plain tensors. Based ",
-      "pdf_link": "https://arxiv.org/pdf/2609.21594.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.21594",
-      "submission_date": "2026-09-21T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 43.5,
-      "updated_at": "2026-09-21T11:56:41.839218+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-57",
       "paper_number": 57,
       "title": "Nested SEV: Secure and Generic SEV Support for Nested Virtualization",
@@ -1842,29 +1819,6 @@
       "updated_at": "2026-07-21T08:54:17.394352+00:00"
     },
     {
-      "forum_id": "2609.17652",
-      "paper_number": -1,
-      "title": "Fathom: Per-Query Read Depth for Sparse Decoding over Offloaded KV Caches",
-      "authors": [
-        "Vivek Kalyanarangan"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.17652v3 Announce Type: replace-cross \nAbstract: When agentic sessions run to a million tokens with many sessions resident at once, the KV cache and the index that ranks it live in host memory, and the scan that ranks all n keys for a top-k step becomes the traffic that bounds decoding. We present Fathom, a key scan in which each query decides how many bits of each key channel to read. The 4-bit K cache is stored channel-major as bit planes, so a prefix of t planes is exactly the channel's t-bit quantizer, and the query spends its bit budget by reverse water-filling over the variance-weighted importance of its channels. At one million tokens on Qwen3-8B a decode step is 1.67x faster in GPU time than with the 136-bit scans of Double Sparsity, Loki and SparQ r=32, and in the same G",
-      "pdf_link": "https://arxiv.org/pdf/2609.17652.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.17652",
-      "submission_date": "2026-09-21T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 38.0,
-      "updated_at": "2026-09-21T11:56:41.840428+00:00"
-    },
-    {
       "forum_id": "usenix-fast26-7",
       "paper_number": 7,
       "title": "Bidaw: Enhancing Key-Value Caching for Interactive LLM Serving via Bidirectional Computation–Storage Awareness",
@@ -2059,6 +2013,29 @@
       "ratings": [],
       "score": 36.5,
       "updated_at": "2026-07-21T08:54:17.404102+00:00"
+    },
+    {
+      "forum_id": "2609.15627",
+      "paper_number": -1,
+      "title": "DeepSeek-V4-Flash on AMD gfx90a: Correctness Recovery and Inference Performance Engineering",
+      "authors": [
+        "Siming Huang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.15627v2 Announce Type: replace \nAbstract: We present the enablement, correctness recovery, and performance engineering of DeepSeek-V4-Flash inference on AMD Instinct MI250 GPUs using the gfx90a/CDNA2 architecture. The system integrates native safetensors loading, tensor and expert parallelism, FP4 routed mixture-of-experts computation, FP8 dense projections, sparse attention, HIP graph execution, and OpenAI-compatible serving within SGLang. An initially fast execution path was found to be numerically incorrect because of a routed-expert W2 layout mismatch. We identify the output permutation, repair the weight layout at load time, and establish fixed-token and hash-based correctness checks before further optimization. On the corrected path, decode performance is improved through ",
+      "pdf_link": "https://arxiv.org/pdf/2609.15627.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.15627",
+      "submission_date": "2026-09-22T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 36.0,
+      "updated_at": "2026-09-22T10:56:22.753351+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-19",
@@ -2546,29 +2523,6 @@
       "updated_at": "2026-07-21T08:54:22.942128+00:00"
     },
     {
-      "forum_id": "2609.06694",
-      "paper_number": -1,
-      "title": "ForgeStencil: Automating Per-Case Stencil Specialization from Kernels to 100+ Real Applications",
-      "authors": [
-        "Yaojian Chen, Yuxuan Li, Wubing Wan, Lin Gan, Guangwen Yang, Zhiyuan Liu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.06694v2 Announce Type: replace \nAbstract: Industrial and scientific computing rests on a few core kernels, and the stencil is among the most widely used: weather and climate models, seismic imaging, fluid dynamics, and image processing all run on it. No single stencil implementation is fastest: the optimal kernel changes qualitatively with stencil shape, grid shape, precision, and host application. For two decades the field has answered with general methods (DSLs, code generators, autotuners), because specialized solutions were too expensive to build per case, so all reuse one human-authored recipe. That reuse costs performance; we call the cost the generality tax. This premise no longer holds: code-synthesis agents now build a correct, specialized solution per case at acceptabl",
-      "pdf_link": "https://arxiv.org/pdf/2609.06694.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.06694",
-      "submission_date": "2026-09-21T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-09-21T11:56:41.840263+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-99",
       "paper_number": 99,
       "title": "ADAngel: Accelerating Arbitrary-Precision Quantized LLMs with Adaptive Computing Mapping",
@@ -2914,6 +2868,29 @@
       "ratings": [],
       "score": 23.5,
       "updated_at": "2026-07-21T08:54:22.927860+00:00"
+    },
+    {
+      "forum_id": "2607.04676",
+      "paper_number": -1,
+      "title": "SpCCL: A Sparsity-Aware Collective Communication Library for GPU Platforms",
+      "authors": [
+        "Lannie Dalton Hough, Emir Gencer, Hoffmann Muki, Abhinav Bhatele"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.04676v3 Announce Type: replace \nAbstract: Collective communication is essential to high performance computing and machine learning workloads, yet libraries such as NCCL do not exploit sparsity in message payloads. Sending only nonzero values can reduce network traffic, but explicitly handling sparsity introduces challenges such as compression and decompression overheads. We address these challenges with sparsity-exploiting versions of all-gather, reduce-scatter, and all-reduce collectives. Our implementations use a new bitvector-based format, Pici, designed for low space overhead and fast GPU-based compression and decompression. Further, our collective algorithms adapt to the degree of sparsity in data, modifying data representations during the course of the collective. At 99% i",
+      "pdf_link": "https://arxiv.org/pdf/2607.04676.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.04676",
+      "submission_date": "2026-09-22T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 23.0,
+      "updated_at": "2026-09-22T10:56:22.753093+00:00"
     },
     {
       "forum_id": "usenix-osdi26-82",
@@ -3703,29 +3680,6 @@
       "updated_at": "2026-07-21T08:54:26.741587+00:00"
     },
     {
-      "forum_id": "2609.21366",
-      "paper_number": -1,
-      "title": "TokaGLINT: A Scalable GPU-Tailored Implicit Solver for Full 3D Tokamak Electromagnetic Simulations",
-      "authors": [
-        "Zifan Yang, Haoyuan Zhang, Jialin Li, Wu Yuan, Xiazhen Liu, Jian Zhang, Jianyuan Xiao, Shan Liang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.21366v1 Announce Type: new \nAbstract: We introduce TokaGLINT, a GPU-accelerated implicit solver for electromagnetic field computations in full 3D tokamak simulations, aimed at efficient large-scale parallel GPU computing. Its central innovation lies in the co-design of hierarchical domain decomposition and a fast exact local solver, where hierarchical partitioning is tailored to match fine-grained intra-card subdomains and exploit the tensor-based solver dedicated to curvilinear-coordinate symplectic CN-FDTD-discretized 3D Maxwell equations. Backed by automated operator fusion and batching customized for the intra-card multi-subdomain structure, the solver decouples unknowns through discrete transformations and leverages tensor-structured computations to achieve high hardware ut",
-      "pdf_link": "https://arxiv.org/pdf/2609.21366.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.21366",
-      "submission_date": "2026-09-21T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-09-21T11:56:41.839027+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-41",
       "paper_number": 41,
       "title": "Efficient and Scalable Synchronization via Generalized Cache Coherence",
@@ -3855,29 +3809,6 @@
       "ratings": [],
       "score": 14.5,
       "updated_at": "2026-07-21T08:54:26.739010+00:00"
-    },
-    {
-      "forum_id": "2607.21021",
-      "paper_number": -1,
-      "title": "Multimmit: Extending Blocks for Faster Finality",
-      "authors": [
-        "Andrew Lewis-Pye, Patrick O'Grady"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.21021v5 Announce Type: replace \nAbstract: To meet the throughput demands of modern blockchain systems, protocols for State Machine Replication (SMR) increasingly have many processors disseminate blocks of transactions in parallel, with consensus then establishing a total ordering on the blocks of all producers. Such designs face a choice as to when a block may enter the ordering. Certified approaches wait for a quorum to attest a block's availability, which is robust but adds message delays to every transaction. Uncertified approaches let proposals reference blocks immediately, which is fast but degrades rapidly when referenced data must be fetched on the critical path. Raptr, the state of the art, takes a middle course, finalising the longest prefix of the leader's proposal tha",
-      "pdf_link": "https://arxiv.org/pdf/2607.21021.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.21021",
-      "submission_date": "2026-09-21T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.0,
-      "updated_at": "2026-09-21T11:56:41.840060+00:00"
     },
     {
       "forum_id": "usenix-osdi26-45",
@@ -4016,6 +3947,29 @@
       "ratings": [],
       "score": 14.0,
       "updated_at": "2026-07-21T08:54:22.936410+00:00"
+    },
+    {
+      "forum_id": "2609.23843",
+      "paper_number": -1,
+      "title": "Adaptive Determinantal Client Scheduling in Federated Learning",
+      "authors": [
+        "Wen Xu, Ben Liang, Gary Boudreau, Hamza Sokun"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.23843v1 Announce Type: cross \nAbstract: Scheduling clients for model training is critical in federated learning due to both data and system heterogeneity. Most previous works focus on the quality of the scheduled clients to achieve faster convergence, shorter wall-clock convergence time, or better average model performance. They rarely consider the diversity of clients, which is important to counter heterogeneity and improve performance for the worst-off clients. In this work, we advocate the use of determinantal point processes (DPPs) to model and enhance the diversity in client scheduling. We first design the kernel matrices of DPPs using gradient information and quality scores, which inherently enables a flexible quality-diversity trade-off. Applying fast MAP inference over D",
+      "pdf_link": "https://arxiv.org/pdf/2609.23843.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.23843",
+      "submission_date": "2026-09-22T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-09-22T10:56:22.751955+00:00"
     },
     {
       "forum_id": "usenix-osdi26-5",
@@ -4808,6 +4762,29 @@
       "ratings": [],
       "score": 11.5,
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
+    },
+    {
+      "forum_id": "2304.10640",
+      "paper_number": -1,
+      "title": "Distributed Linear Solvers and Data Heterogeneity",
+      "authors": [
+        "Boris Velasevic, Rohit Parasnis, Christopher G. Brinton, Navid Azizan"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2304.10640v5 Announce Type: replace \nAbstract: We consider the problem of solving a large-scale system of linear equations in a distributed/federated setting. The taskmaster solves the system with the help of a set of machines, each of which possesses a subset of the equations. While various solutions for this problem exist, a fundamental understanding and rigorous comparison between the convergence rates of the main algorithmic classes - the projection-based methods and the optimization-based ones - is missing. We provide the first comprehensive analysis and comparison of these two classes of algorithms, with a particular focus on the fastest representative method from each class, i.e., the Accelerated Projection-Based Consensus (APC) and the Distributed Heavy-Ball Method. We introd",
+      "pdf_link": "https://arxiv.org/pdf/2304.10640.pdf",
+      "forum_link": "https://arxiv.org/abs/2304.10640",
+      "submission_date": "2026-09-22T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-09-22T10:56:22.752441+00:00"
     },
     {
       "forum_id": "usenix-osdi26-63",
@@ -6018,29 +5995,6 @@
       "updated_at": "2026-07-21T08:54:22.938822+00:00"
     },
     {
-      "forum_id": "2609.21173",
-      "paper_number": -1,
-      "title": "Adapting the Actor Model of Concurrency for High-Frequency Trading: Synchronous Message Delivery (fast_send) and a Tick-to-Book Latency Study",
-      "authors": [
-        "Vincent Maciejewski"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.21173v1 Announce Type: cross \nAbstract: The actor model - state isolation, data-race freedom, deadlock resistance, and sequential single-message reasoning - has long been dismissed as unsuitable for high-frequency trading (HFT): actors seem to imply many threads, a mailbox per actor, and a heap-allocated message plus a context switch per interaction, overhead incompatible with a microsecond budget. This paper argues the dismissal is wrong for co-located actors, and supports it both analytically and with a deployed, measured implementation: kaspar-hft, an open-source C++20 framework. Four extensions adapt the model for HFT: fast_send, a synchronous delivery mechanism in which the sending thread runs the receiver's handler inline and returns the reply as a value; actor groups, whi",
-      "pdf_link": "https://arxiv.org/pdf/2609.21173.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.21173",
-      "submission_date": "2026-09-21T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-09-21T11:56:41.839709+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-22",
       "paper_number": 22,
       "title": "ValScope: Value-Semantics-Aware Metamorphic Testing for Detecting Logical Bugs in DBMSs",
@@ -6786,6 +6740,29 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
+    },
+    {
+      "forum_id": "2609.22645",
+      "paper_number": -1,
+      "title": "Extreme-Scale Ising Machines with Cluster Mean-Field Theory",
+      "authors": [
+        "Xiuqi Zhang, Shuvro Chowdhury, Shaila Niazi, Christian Z. Pratt, Navid Anjum Aadit, Kerem Y. Camsari"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.22645v1 Announce Type: cross \nAbstract: Scaling analog and digital Ising machines to larger problems requires overcoming finite device capacity and the cost of communication between devices. We present cluster mean-field theory (CMFT), a framework that partitions a large interaction graph into clusters sized to fit available hardware. Each cluster performs local updates independently, while interactions across cluster boundaries enter through periodically updated effective biases computed from boundary-spin averages. To reduce the error introduced by fixed cluster boundaries, we introduce dynamic partitioning, which cycles through multiple partitions so that interactions approximated by mean fields at one stage can act through instantaneous spins at another. On three-dimensional",
+      "pdf_link": "https://arxiv.org/pdf/2609.22645.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.22645",
+      "submission_date": "2026-09-22T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-09-22T10:56:22.751582+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",
