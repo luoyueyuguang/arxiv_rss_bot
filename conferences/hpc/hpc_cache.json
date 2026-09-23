@@ -1,192 +1,31 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-09-22T10:56:22.636253+00:00",
-  "paper_count": 8,
+  "last_updated": "2026-09-23T10:44:12.602328+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2604.10180",
+      "forum_id": "2609.19024",
       "paper_number": -1,
-      "title": "Tessera: Unlocking Heterogeneous GPUs through Kernel-Granularity Disaggregation",
+      "title": "OAK: Restart- and Age-Aware Scheduling for Distributed Machine Learning on Shared GPU Clusters",
       "authors": [
-        "Tiancheng Hu, Jin Qin, Zheng Wang, Junhao Hu, Yuzheng Wang, Lei Chen, Yizhou Shan, Mingxing Zhang, Ting Cao, Chunwei Xia, Huimin Cui, Tao Xie, Chenxi Wang"
+        "Khaled Aljbab, Amine Barrak"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2604.10180v3 Announce Type: replace \nAbstract: Disaggregation maps parts of an AI workload to different types of GPUs, offering a path to utilize modern heterogeneous GPU clusters. However, existing solutions operate at a coarse granularity and are tightly coupled to specific model architectures, leaving much room for performance improvement. This paper presents Tessera, the first kernel disaggregation system to improve performance and cost efficiency on heterogeneous GPUs for large model inference. Our key insight is that kernels within a single application exhibit diverse resource demands, making them the most suitable granularity for aligning computation with hardware capabilities. Tessera integrates offline analysis with online adaptation by extracting precise inter-kernel depend",
-      "pdf_link": "https://arxiv.org/pdf/2604.10180.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.10180",
-      "submission_date": "2026-09-22T04:00:00+00:00",
+      "abstract": "arXiv:2609.19024v2 Announce Type: replace \nAbstract: Distributed machine learning increasingly runs on shared multi-tenant GPU clusters where contention and failures are routine. Goodput-driven schedulers maximise instantaneous throughput but treat accumulated waiting time and restart cost as second-class signals: long-waiting jobs are repeatedly deferred, and the minutes of checkpoint loading paid after each interruption are not folded back into allocation decisions.\n  We present OAK, a per-round mixed-integer linear scheduler whose composite utility adds two first-class terms to goodput: an age key that elevates jobs with high cumulative waiting time, and a decomposed restart factor that tracks productive training time and checkpoint overhead as separately measured quantities rather than",
+      "pdf_link": "https://arxiv.org/pdf/2609.19024.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.19024",
+      "submission_date": "2026-09-23T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 44.5,
-      "updated_at": "2026-09-22T10:56:21.830951+00:00"
-    },
-    {
-      "forum_id": "2609.23301",
-      "paper_number": -1,
-      "title": "Accurate Distributed Tracing for Large-Scale AI Infrastructure: Time Synchronization as a Foundation for Reliable Observability",
-      "authors": [
-        "Hesham Elbakoury, Ankur Sharma"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.23301v1 Announce Type: new \nAbstract: Distributed tracing in large-scale AI infrastructure fails silently when clock accuracy is insufficient: causal events are misordered, fault attribution is corrupted, and performance diagnoses are unreliable. We present TempoTrace, a system that co-designs IEEE 1588v2 PTP time synchronization with distributed tracing to preserve causal ordering across heterogeneous, multi-tenant GPU clusters. We formally prove that NTP-grade clocks produce causal inversions at 25-30% of directed operation pairs under WAN/cloud conditions (11.3% under LAN NTP). A Laplace heavy-tail noise model extends the analysis beyond Gaussian assumptions, giving a weighted expected misorder rate of 27.76% vs. 29.37% Gaussian, confirming robustness to tail shape. TempoTrac",
-      "pdf_link": "https://arxiv.org/pdf/2609.23301.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.23301",
-      "submission_date": "2026-09-22T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 27.0,
-      "updated_at": "2026-09-22T10:56:21.829352+00:00"
-    },
-    {
-      "forum_id": "2609.22978",
-      "paper_number": -1,
-      "title": "DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale",
-      "authors": [
-        "Jialiang Huang, Hongxuan Tang, Jingchang Chen, Yuxuan Liu, Yixiao Chen, Yuan Cheng, Yi Tao, Jingli Zhou, Yupeng Chen, Haoyu Chen, Jiarui Wang, Shengkai Lin, Chuqi Zhang, Bryan Lee Teng, Lian Guo, Zhe Fu, Wenjun Gao, Yisong Wang, Liang Zhao, Zehao Wang, Ziwei Xie, Yongqiang Guo, Peixin Cong, Ziyi Gao, Shuiping Yu, Hanwei Xu, Zuofan Wu, Zhizhou Ren, Yuyang Zhou, Bowei Zhang, Zhihuan Huang, Qihao Zhu, Lei Wang, Tianle Lin, Han Yu, Jiewen Hu, Dejian Yang, Shuo Yang, Shanghao Lu, Shaoyuan Chen, Junjie Qiu, Zhangli Sha, Yinmin Zhong, Yongtong Wu, Shiyu Wang, Wei Liu, Bingzheng Xu, Longhao Chen, Qiushi Du, Yuzhen Huang, Shirong Ma, Yaohui Wang, Mingshu Chen, Tongrui Xiong, Y. C. Yan, Haowen Luo, Haofen Liang, Xiaokang Zhang, Weihao Zeng, Runxin Xu, Peiyi Wang, Jinhua Zhu, Ruoyu Zhang, Wenkai Yang, Qi Tang, Jiping Yu, Tian Ye, Ruizhe Pan, Honghui Ding, Xiaodong Liu, Lingxiao Luo, Zhihong Shao, Yuhan Wu, Jibai Lu, Wen Liu, Haoling Zhang, Jingcheng Hu, Yaoyang Ye, Chaofan Lin, Zhaochen Zhang, Jianan Tong, Hengxu Wu, Zhihao Li, Yicheng Wang, Luyao Wang, Yuzhuo Bai, Lingyue Fu, Ruifan Xu, Y. Z. Wang, Zonglin Li, Mingqi Wei, Haiyang Shen, Chengyuan Zhang, Chao Jin, Zili Zhang, R. H. Yang, Xinbo Xu, Jian Zhou, Ruidong Zhu, Yuzhe Guo, Zelun Pan, Shaoheng Nie, Erhang Li, Shuhan Lin, Zheng Liu, Anshuo Chen, Zilong Lyu, Sinuo Cao, Rui Yu, Chuhao Wang, Junyi Guo, Junxiao Song, Kaifeng Chen, Menghao Ye, Junxian Li, Di Wu, Haiyang Ma, Yilun Wang, Haoran Yang, Yizai Cai, Shichun Liu, Yiping Wang, Junbo Sun, Shicheng Xu, Xiao Bi, Ying He, Yichao Zhang, Mingxing Zhang, Liyue Zhang, Panpan Huang, Wenfeng Liang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.22978v1 Announce Type: new \nAbstract: Large-scale agentic training and evaluation with large language models (LLMs) rely on isolated, stateful execution environments in which models inspect repositories, invoke tools, execute commands, and interact with task-specific services. These workloads create sandboxes in large bursts, span heterogeneous functionality and isolation requirements, retain state across long interactions, and draw from large image corpora with limited reuse. Supporting them therefore requires an elastic execution platform rather than a single sandbox runtime.\n  This report presents DeepSeek Elastic Compute (DSec), a production sandbox platform that exposes FnCall, container, microVM, and full-VM sandbox backends through a unified SDK. DSec coordinates placemen",
-      "pdf_link": "https://arxiv.org/pdf/2609.22978.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.22978",
-      "submission_date": "2026-09-22T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 21.0,
-      "updated_at": "2026-09-22T10:56:21.829155+00:00"
-    },
-    {
-      "forum_id": "2609.23278",
-      "paper_number": -1,
-      "title": "Accurate Simulation of Distributed Training Jobs with Network Contention Modeling",
-      "authors": [
-        "Yeonho Yoo, Hyunho Lee, Hyunmok Choi, Chuck Yoo, Gyeongsik Yang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.23278v1 Announce Type: new \nAbstract: Trace-driven simulation is widely used to evaluate distributed training (DT) jobs in GPU clusters, but existing simulators either ignore network contention or approximate it with a fixed penalty. This misses how scheduling decisions determine which jobs share server network interfaces and inter-server links, thereby changing networking time during training. As a result, our motivating experiments demonstrate that they incur large errors, reaching up to 73.64% mean absolute percentage error (MAPE) in average job completion time (JCT). This paper introduces MoSim, a GPU-cluster simulator that models DT job execution under dynamic network contention. MoSim combines GPU-free characterization with network contention model: it obtains each job's c",
-      "pdf_link": "https://arxiv.org/pdf/2609.23278.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.23278",
-      "submission_date": "2026-09-22T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 16.0,
-      "updated_at": "2026-09-22T10:56:21.829288+00:00"
-    },
-    {
-      "forum_id": "2609.23766",
-      "paper_number": -1,
-      "title": "TriFleetRCA: On-Premise LLM Root Cause Analysis for Kubernetes",
-      "authors": [
-        "Rohit Patel, Susil Kumar Mohanty, Jeenal Chaudhary"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.23766v1 Announce Type: cross \nAbstract: Root cause analysis at a remote site is slow: evidence is scattered across pod logs, Kubernetes events and cluster-level objects, and many operators cannot send production logs to a hosted model at all. On-premise inference removes the second constraint but raises a question live-cluster benchmarks have not addressed: when one workstation GPU fixes both the model and the context budget, how should evidence be retrieved, and what happens when the runbooks the model consults have been tampered with? We present TriFleetRCA, a pipeline running entirely on one on-premise GPU that collects evidence at one of three scopes (pod, namespace, cluster), ranks it by template de-duplication then BM25, filters runbooks through an ingest guard, and return",
-      "pdf_link": "https://arxiv.org/pdf/2609.23766.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.23766",
-      "submission_date": "2026-09-22T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-09-22T10:56:21.830483+00:00"
-    },
-    {
-      "forum_id": "2609.22755",
-      "paper_number": -1,
-      "title": "NSP: Accelerating Variable-Length LLM Training via Nested Sequence Parallelism",
-      "authors": [
-        "Yi'ou Wang, Xiaoyang Li, Yijie Zheng, Shouda Liu, Yuxuan Wang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.22755v1 Announce Type: new \nAbstract: Long-context LLM training on long-tailed corpora faces a central communication--balance tradeoff. Such sequence-length heterogeneity makes any single sequence-parallelism (SP) degree a poor fit for the workload: a small degree leaves the few long sequences badly imbalanced, while a large degree forces the many short sequences that dominate the workload to pay excessive communication. Existing dynamic-SP systems mix SP degrees within a batch, but to run several groups at once they partition the GPUs into disjoint groups, which reintroduces imbalance across groups and forces costly micro-batch workarounds.\n  We present NSP, a sequence-parallel training system that resolves this tradeoff by nesting differently sized SP groups on shared GPUs wit",
-      "pdf_link": "https://arxiv.org/pdf/2609.22755.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.22755",
-      "submission_date": "2026-09-22T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-09-22T10:56:21.829056+00:00"
-    },
-    {
-      "forum_id": "2609.22645",
-      "paper_number": -1,
-      "title": "Extreme-Scale Ising Machines with Cluster Mean-Field Theory",
-      "authors": [
-        "Xiuqi Zhang, Shuvro Chowdhury, Shaila Niazi, Christian Z. Pratt, Navid Anjum Aadit, Kerem Y. Camsari"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.22645v1 Announce Type: cross \nAbstract: Scaling analog and digital Ising machines to larger problems requires overcoming finite device capacity and the cost of communication between devices. We present cluster mean-field theory (CMFT), a framework that partitions a large interaction graph into clusters sized to fit available hardware. Each cluster performs local updates independently, while interactions across cluster boundaries enter through periodically updated effective biases computed from boundary-spin averages. To reduce the error introduced by fixed cluster boundaries, we introduce dynamic partitioning, which cycles through multiple partitions so that interactions approximated by mean fields at one stage can act through instantaneous spins at another. On three-dimensional",
-      "pdf_link": "https://arxiv.org/pdf/2609.22645.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.22645",
-      "submission_date": "2026-09-22T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-09-22T10:56:21.830323+00:00"
-    },
-    {
-      "forum_id": "2609.22142",
-      "paper_number": -1,
-      "title": "When Does Learning Beat Heuristics? A Case Study in Kubernetes Scheduler Score Plugins",
-      "authors": [
-        "Wang Xuying, Zhibek Sarypbekova"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.22142v1 Announce Type: new \nAbstract: Kubernetes scheduler plugins that score candidate nodes are, in production, hand-tuned heuristics. We ask whether a learned scoring function - trained on real placement decisions from a production cluster trace - can match or exceed these heuristics, and if not, why. We implement an external, HTTP-backed scoring plugin for a widely used scheduler simulator and evaluate two learned models (a Random Forest over engineered features, and a graph neural network encoder over per-job task-dependency graphs) trained on a large-scale production cluster trace. Under standard regression fit (R^2), both models improve modestly but monotonically across four feature-engineering iterations, reaching R^2 of about 0.042. However, on the metric that actually ",
-      "pdf_link": "https://arxiv.org/pdf/2609.22142.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.22142",
-      "submission_date": "2026-09-22T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-09-22T10:56:21.828792+00:00"
+      "score": 37.0,
+      "updated_at": "2026-09-23T10:44:12.194406+00:00"
     }
   ]
 }

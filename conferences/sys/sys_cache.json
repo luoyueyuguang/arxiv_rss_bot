@@ -1,7 +1,7 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-09-22T10:56:25.754794+00:00",
+  "last_updated": "2026-09-23T10:44:15.454344+00:00",
   "paper_count": 311,
   "papers": [
     {
@@ -638,6 +638,29 @@
       "updated_at": "2026-07-21T08:54:26.745556+00:00"
     },
     {
+      "forum_id": "2609.25918",
+      "paper_number": -1,
+      "title": "Hydrozoan: Latency-Adaptive DAG Consensus under Mixed Byzantine and Crash Faults",
+      "authors": [
+        "Qianyu Yu, Lefteris Kokoris-Kogias, Alberto Sonnino"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.25918v1 Announce Type: new \nAbstract: DAG-based consensus protocols can achieve great throughput and the optimal three-message-delay limit for n = 3f+1 consensus. While two-delay protocols exist, they pay with reduced resilience (requiring 5f+1-style committees) or rely on fallbacks that sacrifice the DAG's high throughput. This paper introduces Hydrozoan, the first DAG protocol with a dual commit path under a hybrid fault model of f Byzantine and c crashed validators, on n = 3f+c+2p+1 validators. Leaders commit in two message delays whenever at most p validators are faulty, and in three otherwise, with no extra messages, no view changes, and multiple leaders per round. Both paths are evaluated on the same DAG, using a novel graded indirect rule to reconcile them so that every h",
+      "pdf_link": "https://arxiv.org/pdf/2609.25918.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.25918",
+      "submission_date": "2026-09-23T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 65.5,
+      "updated_at": "2026-09-23T10:44:12.690853+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-91",
       "paper_number": 91,
       "title": "M3U: Scalable Kernel Memory Management for Efficient Post-Copy Live Migration of High-End Virtual Machines",
@@ -704,6 +727,29 @@
       "ratings": [],
       "score": 64.5,
       "updated_at": "2026-07-21T08:54:26.745021+00:00"
+    },
+    {
+      "forum_id": "2609.25443",
+      "paper_number": -1,
+      "title": "ZeroGate: Trust-Preserving Fast Paths for Governed AI Agent Runtimes",
+      "authors": [
+        "Zexun Wang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.25443v1 Announce Type: cross \nAbstract: Moving authorization earlier can shorten an agent's dispatch boundary without removing authorization work. It can also admit an action whose payload, authority, or relevant state has changed. ZeroGate separates exact-action approval from durable local admission: an issuer signs a short-lived ActionPass, and a trusted runtime adapter reconstructs the final action before a local gate checks its binding and consumes its nonce. A SQLite transaction couples nonce consumption, applicable quota updates, and an admission receipt. We state a conditional decision-preservation proposition: successful local admission implies that a specified synchronous policy would authorize the same action at the admission point, provided approval is sound, all poli",
+      "pdf_link": "https://arxiv.org/pdf/2609.25443.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.25443",
+      "submission_date": "2026-09-23T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 62.5,
+      "updated_at": "2026-09-23T10:44:12.691761+00:00"
     },
     {
       "forum_id": "usenix-osdi26-47",
@@ -1955,6 +2001,29 @@
       "updated_at": "2026-07-21T08:54:22.939070+00:00"
     },
     {
+      "forum_id": "2609.19024",
+      "paper_number": -1,
+      "title": "OAK: Restart- and Age-Aware Scheduling for Distributed Machine Learning on Shared GPU Clusters",
+      "authors": [
+        "Khaled Aljbab, Amine Barrak"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.19024v2 Announce Type: replace \nAbstract: Distributed machine learning increasingly runs on shared multi-tenant GPU clusters where contention and failures are routine. Goodput-driven schedulers maximise instantaneous throughput but treat accumulated waiting time and restart cost as second-class signals: long-waiting jobs are repeatedly deferred, and the minutes of checkpoint loading paid after each interruption are not folded back into allocation decisions.\n  We present OAK, a per-round mixed-integer linear scheduler whose composite utility adds two first-class terms to goodput: an age key that elevates jobs with high cumulative waiting time, and a decomposed restart factor that tracks productive training time and checkpoint overhead as separately measured quantities rather than",
+      "pdf_link": "https://arxiv.org/pdf/2609.19024.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.19024",
+      "submission_date": "2026-09-23T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 36.5,
+      "updated_at": "2026-09-23T10:44:12.692710+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-6",
       "paper_number": 6,
       "title": "Prism: Cost-Efficient Multi-LLM Serving via GPU Memory Ballooning",
@@ -2013,29 +2082,6 @@
       "ratings": [],
       "score": 36.5,
       "updated_at": "2026-07-21T08:54:17.404102+00:00"
-    },
-    {
-      "forum_id": "2609.15627",
-      "paper_number": -1,
-      "title": "DeepSeek-V4-Flash on AMD gfx90a: Correctness Recovery and Inference Performance Engineering",
-      "authors": [
-        "Siming Huang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.15627v2 Announce Type: replace \nAbstract: We present the enablement, correctness recovery, and performance engineering of DeepSeek-V4-Flash inference on AMD Instinct MI250 GPUs using the gfx90a/CDNA2 architecture. The system integrates native safetensors loading, tensor and expert parallelism, FP4 routed mixture-of-experts computation, FP8 dense projections, sparse attention, HIP graph execution, and OpenAI-compatible serving within SGLang. An initially fast execution path was found to be numerically incorrect because of a routed-expert W2 layout mismatch. We identify the output permutation, repair the weight layout at load time, and establish fixed-token and hash-based correctness checks before further optimization. On the corrected path, decode performance is improved through ",
-      "pdf_link": "https://arxiv.org/pdf/2609.15627.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.15627",
-      "submission_date": "2026-09-22T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 36.0,
-      "updated_at": "2026-09-22T10:56:22.753351+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-19",
@@ -2408,6 +2454,29 @@
       "updated_at": "2026-07-21T08:54:26.741832+00:00"
     },
     {
+      "forum_id": "2609.25451",
+      "paper_number": -1,
+      "title": "Fast Recovery for LLM Serving via Decoupled Device Memory Lifetime in Dynamo",
+      "authors": [
+        "Schwinn Saereesitthipitak (NVIDIA), Mohammed Abdulwahhab (NVIDIA), Hannah Zhang (NVIDIA), Dan Feigin (NVIDIA), Neelay Shah (NVIDIA), Maksim Khadkevich (NVIDIA), Itay Neeman (NVIDIA), Vikram Sharma Mailthody (NVIDIA), Wen-mei W. Hwu (NVIDIA Research)"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.25451v1 Announce Type: new \nAbstract: Large language model (LLM) inference replicas run across tightly coupled GPUs and serve traffic continuously for weeks. Hardware and software failures are therefore inevitable, and one worker failure can disrupt an entire replica. Recovery requires reinitializing the engine, taking minutes even when weights and compilation artifacts are cached. Production deployments overprovision serving capacity to mask this window. We argue that the dominant cost is loss of ready serving capacity, not request progress, so recovery should preserve initialized engine state rather than reconstruct it. We present fast recovery for Dynamo based on this principle. Snapshots capture an initialized engine once and restore it instead of reinitializing it. Analysis",
+      "pdf_link": "https://arxiv.org/pdf/2609.25451.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.25451",
+      "submission_date": "2026-09-23T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.0,
+      "updated_at": "2026-09-23T10:44:12.690580+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-29",
       "paper_number": 29,
       "title": "kSTEP: Characterization and Deterministic Testing of Linux CPU Scheduler Bugs",
@@ -2521,6 +2590,29 @@
       "ratings": [],
       "score": 32.5,
       "updated_at": "2026-07-21T08:54:22.942128+00:00"
+    },
+    {
+      "forum_id": "2604.12300",
+      "paper_number": -1,
+      "title": "TierBPF: Page Migration Admission Control for Tiered Memory via eBPF",
+      "authors": [
+        "Xi Wang, Tal Zussman, Bin Ma, Asaf Cidon, Dong Li"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2604.12300v2 Announce Type: replace \nAbstract: Software-based memory tiering systems decide which pages to place on the slower or faster tier. However, they do not consider two important factors that greatly influence application performance: the size of the migrated pages, and the underlying hardware device and tiering topology. We introduce TierBPF, a software mechanism that can be plugged into existing memory tiering systems to take these factors into account, by making architecture-aware page admission decisions. TierBPF is implemented as a set of eBPF hooks, allowing users to define their custom policies. In order to make its decisions, TierBPF utilizes a lightweight tracking mechanism for page profiling which is not dependent on the application's working set size. TierBPF, inte",
+      "pdf_link": "https://arxiv.org/pdf/2604.12300.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.12300",
+      "submission_date": "2026-09-23T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.5,
+      "updated_at": "2026-09-23T10:44:12.638024+00:00"
     },
     {
       "forum_id": "usenix-osdi26-99",
@@ -2868,29 +2960,6 @@
       "ratings": [],
       "score": 23.5,
       "updated_at": "2026-07-21T08:54:22.927860+00:00"
-    },
-    {
-      "forum_id": "2607.04676",
-      "paper_number": -1,
-      "title": "SpCCL: A Sparsity-Aware Collective Communication Library for GPU Platforms",
-      "authors": [
-        "Lannie Dalton Hough, Emir Gencer, Hoffmann Muki, Abhinav Bhatele"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2607.04676v3 Announce Type: replace \nAbstract: Collective communication is essential to high performance computing and machine learning workloads, yet libraries such as NCCL do not exploit sparsity in message payloads. Sending only nonzero values can reduce network traffic, but explicitly handling sparsity introduces challenges such as compression and decompression overheads. We address these challenges with sparsity-exploiting versions of all-gather, reduce-scatter, and all-reduce collectives. Our implementations use a new bitvector-based format, Pici, designed for low space overhead and fast GPU-based compression and decompression. Further, our collective algorithms adapt to the degree of sparsity in data, modifying data representations during the course of the collective. At 99% i",
-      "pdf_link": "https://arxiv.org/pdf/2607.04676.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.04676",
-      "submission_date": "2026-09-22T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 23.0,
-      "updated_at": "2026-09-22T10:56:22.753093+00:00"
     },
     {
       "forum_id": "usenix-osdi26-82",
@@ -3949,29 +4018,6 @@
       "updated_at": "2026-07-21T08:54:22.936410+00:00"
     },
     {
-      "forum_id": "2609.23843",
-      "paper_number": -1,
-      "title": "Adaptive Determinantal Client Scheduling in Federated Learning",
-      "authors": [
-        "Wen Xu, Ben Liang, Gary Boudreau, Hamza Sokun"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.23843v1 Announce Type: cross \nAbstract: Scheduling clients for model training is critical in federated learning due to both data and system heterogeneity. Most previous works focus on the quality of the scheduled clients to achieve faster convergence, shorter wall-clock convergence time, or better average model performance. They rarely consider the diversity of clients, which is important to counter heterogeneity and improve performance for the worst-off clients. In this work, we advocate the use of determinantal point processes (DPPs) to model and enhance the diversity in client scheduling. We first design the kernel matrices of DPPs using gradient information and quality scores, which inherently enables a flexible quality-diversity trade-off. Applying fast MAP inference over D",
-      "pdf_link": "https://arxiv.org/pdf/2609.23843.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.23843",
-      "submission_date": "2026-09-22T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-09-22T10:56:22.751955+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-5",
       "paper_number": 5,
       "title": "Simple Is Better: Multiplication May Be All You Need for LLM Request Scheduling",
@@ -4762,29 +4808,6 @@
       "ratings": [],
       "score": 11.5,
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
-    },
-    {
-      "forum_id": "2304.10640",
-      "paper_number": -1,
-      "title": "Distributed Linear Solvers and Data Heterogeneity",
-      "authors": [
-        "Boris Velasevic, Rohit Parasnis, Christopher G. Brinton, Navid Azizan"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2304.10640v5 Announce Type: replace \nAbstract: We consider the problem of solving a large-scale system of linear equations in a distributed/federated setting. The taskmaster solves the system with the help of a set of machines, each of which possesses a subset of the equations. While various solutions for this problem exist, a fundamental understanding and rigorous comparison between the convergence rates of the main algorithmic classes - the projection-based methods and the optimization-based ones - is missing. We provide the first comprehensive analysis and comparison of these two classes of algorithms, with a particular focus on the fastest representative method from each class, i.e., the Accelerated Projection-Based Consensus (APC) and the Distributed Heavy-Ball Method. We introd",
-      "pdf_link": "https://arxiv.org/pdf/2304.10640.pdf",
-      "forum_link": "https://arxiv.org/abs/2304.10640",
-      "submission_date": "2026-09-22T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-09-22T10:56:22.752441+00:00"
     },
     {
       "forum_id": "usenix-osdi26-63",
@@ -6740,29 +6763,6 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
-    },
-    {
-      "forum_id": "2609.22645",
-      "paper_number": -1,
-      "title": "Extreme-Scale Ising Machines with Cluster Mean-Field Theory",
-      "authors": [
-        "Xiuqi Zhang, Shuvro Chowdhury, Shaila Niazi, Christian Z. Pratt, Navid Anjum Aadit, Kerem Y. Camsari"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.22645v1 Announce Type: cross \nAbstract: Scaling analog and digital Ising machines to larger problems requires overcoming finite device capacity and the cost of communication between devices. We present cluster mean-field theory (CMFT), a framework that partitions a large interaction graph into clusters sized to fit available hardware. Each cluster performs local updates independently, while interactions across cluster boundaries enter through periodically updated effective biases computed from boundary-spin averages. To reduce the error introduced by fixed cluster boundaries, we introduce dynamic partitioning, which cycles through multiple partitions so that interactions approximated by mean fields at one stage can act through instantaneous spins at another. On three-dimensional",
-      "pdf_link": "https://arxiv.org/pdf/2609.22645.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.22645",
-      "submission_date": "2026-09-22T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-09-22T10:56:22.751582+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

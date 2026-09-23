@@ -1,123 +1,215 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-09-22T10:56:25.834072+00:00",
-  "paper_count": 5,
+  "last_updated": "2026-09-23T10:44:15.512499+00:00",
+  "paper_count": 9,
   "papers": [
     {
-      "forum_id": "2609.22343",
+      "forum_id": "2608.06791",
       "paper_number": -1,
-      "title": "Design-Space Exploration of Post-Quantum Cryptography Acceleration on an Open-Source RISC-V GPGPU",
+      "title": "HLSmith: An Expert-Guided Agentic Framework for C/C++-to-HLS Translation",
       "authors": [
-        "Hossam Hassan, Marc Xander Makkes, Chae Eun Lee, Hyungmin Yoon"
+        "Yuebo Luo, Ahmad Sedigh Baroughi, Philip Stachura, Le Chen, Venkatram Vishwanath, Zhenman Fang, Caiwen Ding"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2609.22343v1 Announce Type: new \nAbstract: Post-quantum cryptography (PQC) acceleration has been studied for CPUs and FPGAs, yet GPGPUs - dominating high-throughput computing - remain unexplored for PQC hardware integration as a functional unit. We present what is, to our knowledge, the first such integration: the Vortex Post-Quantum Crypto Unit (PCU) on the open-source Vortex RISC-V GPGPU. The PCU implements a 256-point NTT over Kyber (q=3329) and Dilithium (q=8380417) moduli in 134 logic cells (73 LUT4 + 61 CCU2C) - the smallest reported NTT accelerator by logic-cell count, 2.8x smaller than the next smallest design. It achieves 228.78 MHz on Lattice ECP5 and 299.8 MHz place-and-route on Xilinx Artix-7, and passes 253 functional tests across 7 suites. On Vortex SimX, it achieves 42",
-      "pdf_link": "https://arxiv.org/pdf/2609.22343.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.22343",
-      "submission_date": "2026-09-22T04:00:00+00:00",
+      "abstract": "arXiv:2608.06791v2 Announce Type: replace \nAbstract: Application-specific FPGA accelerators offer substantial performance and energy-efficiency gains across many application domains, but developing them is costly, often requiring months of specialized effort. Even with high-level synthesis (HLS), designers still need extensive hardware expertise to build high-performance accelerators. Although large language models (LLMs) have demonstrated strong software-generation capabilities, even frontier models lack the hardware intuition and procedural knowledge needed to reliably translate baseline C/C++ programs into high-performance HLS designs: they struggle to identify effective architectures, follow the optimization processes used by HLS experts, and apply hardware transformations consistently",
+      "pdf_link": "https://arxiv.org/pdf/2608.06791.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.06791",
+      "submission_date": "2026-09-23T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-09-22T10:56:25.828927+00:00"
+      "score": 13.0,
+      "updated_at": "2026-09-23T10:44:15.508245+00:00"
     },
     {
-      "forum_id": "2609.24288",
+      "forum_id": "2609.25637",
       "paper_number": -1,
-      "title": "Circuit-Architecture-Training Co-Design with Regenerative-SA Similarity Sensing for Aggressive SAR Skipping in Analog Compute-in-Memory",
+      "title": "SLED-IFV: Solver-Validated LLM-Guided Decomposition for Scalable Hardware Information-Flow Verification",
       "authors": [
-        "Yufei Liu, Shuang Liu, Junjie Wang"
+        "Liangtao Dai, Yimin Gao, Melika Morsali, Mircea Stan"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.24288v1 Announce Type: new \nAbstract: This work presents a circuit-architecture-training co-design framework that exploits sense-amplifier (SA) regeneration to detect analog-output similarity and reduce SAR comparisons in compute-in-memory (CIM) systems. Hardware-aware training incorporates circuit-characterized SA disturbance and encoding errors caused by prefix reuse, enabling aggressive comparison skipping. The detector is characterized through 55-nm CMOS schematic simulations, with system-level evaluation on WRN-28-10, ResNet20, and DeiT using an ISAAC-based W4A4 CIM model. On WRN-28-10, the proposed approach achieves 77.3% Top-1 accuracy (W4A4 baseline: 78.4%) while reducing SAR comparisons by 48.19% across the evaluated layers. Energy-budget analysis estimates a 27.18% red",
-      "pdf_link": "https://arxiv.org/pdf/2609.24288.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.24288",
-      "submission_date": "2026-09-22T04:00:00+00:00",
+      "abstract": "arXiv:2609.25637v1 Announce Type: cross \nAbstract: Formal hardware information-flow verification (IFV) provides strong guarantees against secret-dependent timing and control behavior, but often scales poorly on realistic RTL. We identify two recurring proof barriers in self-composed IFV: implementation complexity, where proof-hard datapath logic dominates even though the property needs only a compact boundary relation, and relational inductive complexity, where the proof depends on cross-copy public-control facts that the backend prover does not infer efficiently. To address them, we introduce two semantic proof decomposition forms: functional simplification, which replaces a proof-hard RTL region with a validated over-approximate summary, and relational strengthening, which exposes and pr",
+      "pdf_link": "https://arxiv.org/pdf/2609.25637.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.25637",
+      "submission_date": "2026-09-23T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.5,
+      "updated_at": "2026-09-23T10:44:15.508004+00:00"
+    },
+    {
+      "forum_id": "2609.26644",
+      "paper_number": -1,
+      "title": "Dynamic Slack-Aware Clocking for Near-Threshold Tensor Processing Units (TPUs)",
+      "authors": [
+        "Muhammad Usman Nadeem (Utah State University, Logan, UT), Sanghamitra Roy (Utah State University, Logan, UT), Koushik Chakraborty (Utah State University, Logan, UT)"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.26644v1 Announce Type: new \nAbstract: Operating Tensor Processing Units (TPUs) in the near-threshold computing (NTC) region significantly reduces energy consumption but introduces high delay sensitivity to process variation and data activity. Conventional designs typically rely on a conservative, fixed global clock to ensure safety, which leaves large portions of timing margin unexploited as most operations finish well before the clock edge. We propose Dynamic Slack-Aware Clocking (DSAC), a proactive framework that replaces worst-case timing with operation-specific adjustments. DSAC employs lightweight Hamming-Distance, Most-Significant-Bit, and Hybrid predictors to estimate the delay sensitivity of individual multiply-accumulate (MAC) operations and classify them into three tim",
+      "pdf_link": "https://arxiv.org/pdf/2609.26644.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.26644",
+      "submission_date": "2026-09-23T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-09-23T10:44:15.507965+00:00"
+    },
+    {
+      "forum_id": "2606.05362",
+      "paper_number": -1,
+      "title": "TESSERA: A Workload-Driven Simulation and Design-Space Exploration Framework for Heterogeneous NPUs",
+      "authors": [
+        "Arghadip Das, Hoseok Kim, Soomin Lee, Arnab Raha, Deepak A Mathaikutty, Vijay Raghunathan"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2606.05362v3 Announce Type: replace \nAbstract: AI model architectures are diversifying rapidly. While CNNs and transformers rely on dense matrix multiplication, emerging architectures (state-space models, fast Fourier transform (FFT)-based long convolutions, Kolmogorov-Arnold networks, and spiking networks) are not multiply-accumulate (MAC) dominated; they spend much of their computation on vector and non-MAC primitives that homogeneous, MAC-centric neural processing units (NPUs) serve poorly. This motivates heterogeneous NPUs (HPUs) built from non-identical tiles. However, prior designs vary only one or two architectural dimensions and target narrow workloads, while existing frameworks lack support for jointly exploring fine-grained tile-level heterogeneity.\n  We present TESSERA, an",
+      "pdf_link": "https://arxiv.org/pdf/2606.05362.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.05362",
+      "submission_date": "2026-09-23T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-09-22T10:56:25.829429+00:00"
+      "updated_at": "2026-09-23T10:44:15.508143+00:00"
     },
     {
-      "forum_id": "2609.24847",
+      "forum_id": "2606.26383",
       "paper_number": -1,
-      "title": "SPECTRA: Adaptive Execution of Speculative Decoding on a Runtime-Reconfigurable Tiled Architecture",
+      "title": "SOLAR: AI-Powered Speed-of-Light Performance Analysis",
       "authors": [
-        "Gabriele Tombesi, William Baisi, Je Yang, Elisavet Lydia Alvanaki, Kevin Lee, Michael Lippe, Biruk Seyoum, Luca P. Carloni"
+        "Qijing Huang, Sana Damani, Zhifan Ye, Athinagoras Skiadopoulos, Siva Kumar Sastry Hari, Jason Clemons, Sahil Modi, Jingquan Wang, Aditya Kane, Edward C Lin, Humphrey Shi, Christos Kozyrakis"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2606.26383v2 Announce Type: replace-cross \nAbstract: How fast could a deep-learning model run on target hardware, and how far is today's implementation from that limit? These questions are central to software, hardware, and algorithm optimizations. Speed-of-Light (SOL) analysis answers them by computing a workload's theoretical minimum execution time on a given architecture. Yet deriving SOL bounds remains manual, error-prone, and disconnected from rapid model development. To close this gap, we introduce SOLAR, a framework that automatically derives validated SOL bounds from PyTorch and JAX source code. SOLAR leverages both generative and deterministic components in its flow: an LLM frontend translates any source programs into an executable Affine Loop IR, validated by output compari",
+      "pdf_link": "https://arxiv.org/pdf/2606.26383.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.26383",
+      "submission_date": "2026-09-23T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-09-23T10:44:15.508281+00:00"
+    },
+    {
+      "forum_id": "2609.25782",
+      "paper_number": -1,
+      "title": "Hot-Cold Tiering of HBM and High Bandwidth Flash for Agentic LLM Serving",
+      "authors": [
+        "Jongjin Baek, Won Ji, Seungjae Yoo, Joo-Young Kim"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.25782v1 Announce Type: new \nAbstract: Large language model (LLM) serving is increasingly agentic, with multi-turn sessions that idle between actions yet must retain their full context. Limited GPU memory capacity forces inactive KV states to be evicted, so resuming a session incurs either costly recomputation or slow interconnect transfers. To address this, high bandwidth flash (HBF)-an on-package 3D-NAND memory offering orders-of-magnitude greater capacity than high bandwidth memory (HBM) at comparable read bandwidth-has emerged as a strong candidate. However, its high read energy and limited write endurance make it impractical to serve all KV traffic. Fortunately, our analysis shows that agentic KV states exhibit distinct access patterns: a small hot set is read for every deco",
+      "pdf_link": "https://arxiv.org/pdf/2609.25782.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.25782",
+      "submission_date": "2026-09-23T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-09-23T10:44:15.507803+00:00"
+    },
+    {
+      "forum_id": "2609.25335",
+      "paper_number": -1,
+      "title": "GRADE-RTL: Evaluating LLM-Generated RTL Beyond Compilation",
+      "authors": [
+        "Hepziba Susan, Shivaranjani G. R., Malik Imran, Muhammad Rashid, Sumathi Gokulanathan, Zain Ul Abideen"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.25335v1 Announce Type: new \nAbstract: Large language models (LLMs) can generate register-transfer-level (RTL) code from natural-language specifications, but compilation alone does not establish structural completeness, functional correctness, or implementation efficiency. This paper presents a framework for evaluating LLM-generated RTL beyond compilation, which we named GRADE-RTL. Using fixed prompts and validation settings, GRADE-RTL applies five checks, such as Port Signature, Compilation, Elaboration, Module Completeness, and Functional Equivalence against trusted reference RTL. With the help of compact metrics, we identify where candidates fail and distinguish end-to-end success from eligibility for downstream synthesis. We evaluate nine general-purpose and RTL-specialized L",
+      "pdf_link": "https://arxiv.org/pdf/2609.25335.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.25335",
+      "submission_date": "2026-09-23T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-09-23T10:44:15.507705+00:00"
+    },
+    {
+      "forum_id": "2609.26551",
+      "paper_number": -1,
+      "title": "Toki: Profiling HBM Performance on FPGA Systems with RISC-V Soft Cores and PCIe Host DMA Traffic",
+      "authors": [
+        "Andrea Galimberti, Andrea Motta, Gianni Antichi, Davide Zoni"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2609.24847v1 Announce Type: new \nAbstract: LLM inference on edge devices is constrained by computational and memory resources, making efficient autoregressive decoding challenging. Speculative decoding alleviates this bottleneck by generating tokens with a smaller draft model and verifying multiple tokens in parallel with a batched target model pass. However, verification introduces a runtime-dependent intermediate regime between memory-bound general matrix-vector (GEMV) operations in decoding and compute-bound general matrix-matrix (GEMM) operations in prefill, as its arithmetic intensity varies with speculation length and acceptance rate. We present SPECTRA, a runtime-reconfigurable tiled architecture that sustains high utilization across the full speculative decoding pipeline. Wit",
-      "pdf_link": "https://arxiv.org/pdf/2609.24847.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.24847",
-      "submission_date": "2026-09-22T04:00:00+00:00",
+      "abstract": "arXiv:2609.26551v1 Announce Type: new \nAbstract: Programmable RISC-V soft cores are becoming more widespread in data-center scenarios, making it crucial to design efficient systems that deploy them on FPGA chips with HBM memory. Toki, released as open source, is the first hardware-software framework that enables profiling the performance of HBM on FPGA accelerator cards by jointly considering (i) the execution of workloads on RISC-V soft cores instantiated on the FPGA and (ii) the injection of memory traffic from the host system via DMA over PCIe, providing insights that cannot be obtained with synthetic traffic generators alone. Extensive experiments target an AMD Alveo U55C card, deploying up to 60 RISC-V compute cores and stressing its HBM2 memory through real-world applications and mic",
+      "pdf_link": "https://arxiv.org/pdf/2609.26551.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.26551",
+      "submission_date": "2026-09-23T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-09-22T10:56:25.829552+00:00"
+      "score": 1.5,
+      "updated_at": "2026-09-23T10:44:15.507926+00:00"
     },
     {
-      "forum_id": "2609.23517",
+      "forum_id": "2609.25873",
       "paper_number": -1,
-      "title": "VSpector: Specification-Driven Bug Detection for RISC-V CPUs",
+      "title": "AgenticSizing: A Large Language Model-based Multi-Agent Framework for Analog Circuit Sizing",
       "authors": [
-        "Tianyu Jia, Zhaoyang Yu, Yuanliang Chen, Wei You, Jianjun Huang, Bin Liang"
+        "Yijia Hao, Pratibha Verma, Dongxu Guo, Cristian Sestito, Michael O'Boyle, Christos-Savvas Bouganis, Themis Prodromakis"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.23517v1 Announce Type: cross \nAbstract: Detecting RTL design bugs in open-source RISC-V CPU implementations is critical for ensuring system reliability. Traditional detection approaches inherently rely on predefined artifacts. In this paper, we leverage the official,natural-language RISC-V specifications as an effective information source for bug detection. We present VSpector, a specification-driven bug detection pipeline that directly checks whether CPU register-transfer level (RTL) implementations adhere to official specification rules, without requiring specialized construction of reference models, formal properties, or custom bug patterns. To resolve the key technical trade-off between broad context scope and model reasoning accuracy when using Large Language Models (LLMs),",
-      "pdf_link": "https://arxiv.org/pdf/2609.23517.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.23517",
-      "submission_date": "2026-09-22T04:00:00+00:00",
+      "abstract": "arXiv:2609.25873v1 Announce Type: cross \nAbstract: Analog circuit sizing remains a challenging and time-consuming task due to the large design space, strong performance trade-offs, and increasing circuit complexity in scaled technologies. Although recent large language model (LLM)-based methods show promise in improving sample efficiency and interpretability, existing approaches often lack explicit circuit-topology understanding and are mainly evaluated on relatively simple analog building blocks. This paper presents a multi-agent LLM-based framework for complex analog circuit sizing. The proposed framework first analyzes the circuit topology and decomposes the netlist into functional blocks and substructures. It also extracts lightweight design knowledge for reuse. Based on the extracted ",
+      "pdf_link": "https://arxiv.org/pdf/2609.25873.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.25873",
+      "submission_date": "2026-09-23T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-09-22T10:56:25.829707+00:00"
-    },
-    {
-      "forum_id": "2505.24509",
-      "paper_number": -1,
-      "title": "Bi-SamplerZ: A Rejection-Aware Cooperative Gaussian Sampling Framework for Falcon Signature Hardware",
-      "authors": [
-        "Binke Zhao, Ghada Alsuhi, Hani Saleh, Baker Mohammad"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2505.24509v2 Announce Type: replace \nAbstract: We present Bi-SamplerZ, a rejection-aware cooperative sampling framework that converts this idle capacity into useful computation. After an asymmetric accept/reject outcome, Bi- SamplerZ latches the completed logical result and dynamically reassigns the released physical datapath to the unfinished target. The two paths then evaluate fresh independent candidates for the same remaining distribution. We show that this post-rejection cooperation increases the assisted-round completion probability without modifying the underlying candidate distribution or Bernoulli acceptance rule, and we state the randomness-allocation conditions required to preserve the joint output distribution of the original pair of logical sampler calls",
-      "pdf_link": "https://arxiv.org/pdf/2505.24509.pdf",
-      "forum_link": "https://arxiv.org/abs/2505.24509",
-      "submission_date": "2026-09-22T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-09-22T10:56:25.829837+00:00"
+      "score": 1.5,
+      "updated_at": "2026-09-23T10:44:15.508046+00:00"
     }
   ]
 }

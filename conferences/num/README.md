@@ -1,14 +1,12 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-09-22 10:56:56 UTC
-- **Total Filtered Papers**: 3
-- **Displaying**: 3 (arxiv: 3)
+- **Last Updated**: 2026-09-23 10:44:44 UTC
+- **Total Filtered Papers**: 1
+- **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Autoencoders vs. Numerical Analysis--Informed Manifold Learning for Navier--Stokes Flows](https://arxiv.org/abs/2609.24332) | `ARXIV` | 27.0 |
-| 2 | [Numerical analysis of parabolic equations with Prandtl--Ishlinskii hysteresis of play type](https://arxiv.org/abs/2609.23676) | `ARXIV` | 12.5 |
-| 3 | [Update to: Spectral sets: Numerical range and beyond](https://arxiv.org/abs/2609.22460) | `ARXIV` | 1.5 |
+| 1 | [Convergence of the original BGN method for mean curvature flow](https://arxiv.org/abs/2609.25402) | `ARXIV` | 1.0 |
