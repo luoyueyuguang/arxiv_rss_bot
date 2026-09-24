@@ -1,31 +1,31 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-09-23T10:44:12.602328+00:00",
+  "last_updated": "2026-09-24T11:04:41.697563+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2609.19024",
+      "forum_id": "2609.27085",
       "paper_number": -1,
-      "title": "OAK: Restart- and Age-Aware Scheduling for Distributed Machine Learning on Shared GPU Clusters",
+      "title": "Crossflow: Prefill-Decode Elasticity for Agentic LLM Serving",
       "authors": [
-        "Khaled Aljbab, Amine Barrak"
+        "Yi Xu, Ehsan K. Ardestani, Wenyin Fu, Martin Schatz, Krishna Malladi, Zhan Shu, Adnan Aziz, Shobhit Kanaujia, Ajit Mathews, Chunqiang Tang"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.19024v2 Announce Type: replace \nAbstract: Distributed machine learning increasingly runs on shared multi-tenant GPU clusters where contention and failures are routine. Goodput-driven schedulers maximise instantaneous throughput but treat accumulated waiting time and restart cost as second-class signals: long-waiting jobs are repeatedly deferred, and the minutes of checkpoint loading paid after each interruption are not folded back into allocation decisions.\n  We present OAK, a per-round mixed-integer linear scheduler whose composite utility adds two first-class terms to goodput: an age key that elevates jobs with high cumulative waiting time, and a decomposed restart factor that tracks productive training time and checkpoint overhead as separately measured quantities rather than",
-      "pdf_link": "https://arxiv.org/pdf/2609.19024.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.19024",
-      "submission_date": "2026-09-23T04:00:00+00:00",
+      "abstract": "arXiv:2609.27085v1 Announce Type: new \nAbstract: As serving capacity demand surpasses that of training, serving efficiency becomes increasingly important. Prefill-decode (P/D) disaggregation improves serving efficiency through specialization and isolation of the two phases. These benefits rest on a static partitioning. Phase demand, however, is not static. We observe that in a large LLM fleet the ratio of uncached input to output tokens has peak-to-mean ratios up to 4.7x at minute timescales, and that in a public agentic trace the hourly ratio spans a median 24.5x within a single day, while reassigning a replica takes tens of minutes. Agentic traffic sharpens the mismatch. Sizing each pool at its ninety-fifth percentile leaves up to 17% of cluster capacity unused; sizing below it converts ",
+      "pdf_link": "https://arxiv.org/pdf/2609.27085.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.27085",
+      "submission_date": "2026-09-24T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 37.0,
-      "updated_at": "2026-09-23T10:44:12.194406+00:00"
+      "score": 1.0,
+      "updated_at": "2026-09-24T11:04:41.233938+00:00"
     }
   ]
 }

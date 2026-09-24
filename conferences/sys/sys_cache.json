@@ -1,7 +1,7 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-09-23T10:44:15.454344+00:00",
+  "last_updated": "2026-09-24T11:04:45.008885+00:00",
   "paper_count": 311,
   "papers": [
     {
@@ -638,29 +638,6 @@
       "updated_at": "2026-07-21T08:54:26.745556+00:00"
     },
     {
-      "forum_id": "2609.25918",
-      "paper_number": -1,
-      "title": "Hydrozoan: Latency-Adaptive DAG Consensus under Mixed Byzantine and Crash Faults",
-      "authors": [
-        "Qianyu Yu, Lefteris Kokoris-Kogias, Alberto Sonnino"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.25918v1 Announce Type: new \nAbstract: DAG-based consensus protocols can achieve great throughput and the optimal three-message-delay limit for n = 3f+1 consensus. While two-delay protocols exist, they pay with reduced resilience (requiring 5f+1-style committees) or rely on fallbacks that sacrifice the DAG's high throughput. This paper introduces Hydrozoan, the first DAG protocol with a dual commit path under a hybrid fault model of f Byzantine and c crashed validators, on n = 3f+c+2p+1 validators. Leaders commit in two message delays whenever at most p validators are faulty, and in three otherwise, with no extra messages, no view changes, and multiple leaders per round. Both paths are evaluated on the same DAG, using a novel graded indirect rule to reconcile them so that every h",
-      "pdf_link": "https://arxiv.org/pdf/2609.25918.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.25918",
-      "submission_date": "2026-09-23T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 65.5,
-      "updated_at": "2026-09-23T10:44:12.690853+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-91",
       "paper_number": 91,
       "title": "M3U: Scalable Kernel Memory Management for Efficient Post-Copy Live Migration of High-End Virtual Machines",
@@ -727,29 +704,6 @@
       "ratings": [],
       "score": 64.5,
       "updated_at": "2026-07-21T08:54:26.745021+00:00"
-    },
-    {
-      "forum_id": "2609.25443",
-      "paper_number": -1,
-      "title": "ZeroGate: Trust-Preserving Fast Paths for Governed AI Agent Runtimes",
-      "authors": [
-        "Zexun Wang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.25443v1 Announce Type: cross \nAbstract: Moving authorization earlier can shorten an agent's dispatch boundary without removing authorization work. It can also admit an action whose payload, authority, or relevant state has changed. ZeroGate separates exact-action approval from durable local admission: an issuer signs a short-lived ActionPass, and a trusted runtime adapter reconstructs the final action before a local gate checks its binding and consumes its nonce. A SQLite transaction couples nonce consumption, applicable quota updates, and an admission receipt. We state a conditional decision-preservation proposition: successful local admission implies that a specified synchronous policy would authorize the same action at the admission point, provided approval is sound, all poli",
-      "pdf_link": "https://arxiv.org/pdf/2609.25443.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.25443",
-      "submission_date": "2026-09-23T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 62.5,
-      "updated_at": "2026-09-23T10:44:12.691761+00:00"
     },
     {
       "forum_id": "usenix-osdi26-47",
@@ -1319,6 +1273,29 @@
       "updated_at": "2026-07-21T08:54:17.398727+00:00"
     },
     {
+      "forum_id": "2609.27189",
+      "paper_number": -1,
+      "title": "ZOCheck: CPU-Shadow Checkpointing for Zeroth-Order LLM Fine-Tuning",
+      "authors": [
+        "Minqiu Sun, Xin Huang, Luanzheng Guo, Nathan R. Tallent, Kento Sato, Dong Dai"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.27189v1 Announce Type: new \nAbstract: Zeroth-order (ZO) optimization is an attractive option for memory-efficient LLM fine-tuning, but its fault tolerance remains underexplored. Unlike first-order training, ZO progress can be represented by lightweight seed-and-scalar step logs, yet naive log-only recovery still incurs replay cost that grows with training progress, and shortcut replay does not preserve the executed floating-point trajectory. We present ZOCheck, a fault-tolerant ZO training system that exploits this replayable structure through a CPU shadow process that continuously replays logged updates, materializes consistent recovery images off the GPU critical path, and persists them asynchronously. ZOCheck therefore combines non-blocking checkpointing during training with ",
+      "pdf_link": "https://arxiv.org/pdf/2609.27189.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.27189",
+      "submission_date": "2026-09-24T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 49.5,
+      "updated_at": "2026-09-24T11:04:41.828420+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-5",
       "paper_number": 5,
       "title": "FastServe: Iteration-Level Preemptive Scheduling for Large Language Model Inference",
@@ -1449,6 +1426,29 @@
       "ratings": [],
       "score": 47.5,
       "updated_at": "2026-07-21T08:54:22.940465+00:00"
+    },
+    {
+      "forum_id": "2608.26537",
+      "paper_number": -1,
+      "title": "IBLTs Measure Before They Decode: Self-Sizing Set Reconciliation for Database Consistency Verification",
+      "authors": [
+        "Min Wu, Ji Qi, Zhengsheng Ye, Chengdui Luo, Shudong Lu, Zhengyang Wei"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.26537v3 Announce Type: replace-cross \nAbstract: Cross-system data replication pipelines cannot confirm end-to-end consistency from the local guarantees of each hop, so the two endpoints must be compared directly on a periodic basis. Once the rows of a fixed snapshot are normalized into fingerprints, the task reduces to finding the symmetric difference of the two sets. An Invertible Bloom Lookup Table (IBLT) reconciles the sets with communication that grows only with the difference cardinality $d$, independent of table size, but its capacity must be fixed while $d$ is still unknown. Across 41,603 production reconciliations over 90 days, nonzero $d$ spans about seven orders of magnitude, and no reliable empirical constant exists.\n  We show that the count array of an IBLT has alrea",
+      "pdf_link": "https://arxiv.org/pdf/2608.26537.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.26537",
+      "submission_date": "2026-09-24T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 47.0,
+      "updated_at": "2026-09-24T11:04:41.831040+00:00"
     },
     {
       "forum_id": "usenix-osdi26-9",
@@ -1614,6 +1614,29 @@
       "ratings": [],
       "score": 44.5,
       "updated_at": "2026-07-21T08:54:22.925113+00:00"
+    },
+    {
+      "forum_id": "2609.27266",
+      "paper_number": -1,
+      "title": "xTier: Intelligent Tiering for CXL-Enabled Memory",
+      "authors": [
+        "Sriranga Ramaswamy, Yueqi Chen"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.27266v1 Announce Type: new \nAbstract: CXL-enabled memory expands server memory capacity, but introduces a page-placement problem: the operating system must decide which pages should reside in DRAM and which should reside on slower CXL memory. Existing systems make this tradeoff in one of two ways. Userspace controllers support flexible policies, but expose placement decisions to scheduler jitter and kernel-userspace crossing overhead. Kernel-space systems avoid this latency, but rely on fixed heuristics that must generalize across workloads.\n  We present xTier, a kernel-resident learned memory-tiering system. xTier attaches eBPF programs to PEBS events and uses a compact quantized MLP to score sampled pages inside the kernel at microsecond-scale latency. Rather than reacting to ",
+      "pdf_link": "https://arxiv.org/pdf/2609.27266.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.27266",
+      "submission_date": "2026-09-24T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 44.0,
+      "updated_at": "2026-09-24T11:04:41.750749+00:00"
     },
     {
       "forum_id": "usenix-osdi26-70",
@@ -1796,6 +1819,29 @@
       "ratings": [],
       "score": 42.5,
       "updated_at": "2026-07-21T08:54:17.399784+00:00"
+    },
+    {
+      "forum_id": "2601.03390",
+      "paper_number": -1,
+      "title": "Aspen: Making Leaderless BFT Fast Paths Practical with Synchronized Clocks",
+      "authors": [
+        "Daniel Qian, Xiyu Hao, Jinkun Geng, Yuncheng Yao, Aurojit Panda, Jinyang Li, Anirudh Sivaraman"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2601.03390v3 Announce Type: replace \nAbstract: No Byzantine Fault Tolerant (BFT) protocol can commit a request in less than the single round trip it takes for clients to reach the replicas and hear back. Some protocols approach this bound with a leaderless, speculative fast path, where clients broadcast requests directly to replicas and commit in two message delays ($2\\Delta$). However, such a fast path is extremely fragile: when clients submit requests concurrently, replicas receive them in different orders and end up in different states, forcing the protocol into costly recovery.\n  This paper presents Aspen, a leaderless speculative BFT protocol that can maintain its fast path even while clients submit requests concurrently, at a near-optimal latency of $2\\Delta + \\epsilon$. The $\\",
+      "pdf_link": "https://arxiv.org/pdf/2601.03390.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.03390",
+      "submission_date": "2026-09-24T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 42.0,
+      "updated_at": "2026-09-24T11:04:41.830010+00:00"
     },
     {
       "forum_id": "usenix-osdi26-67",
@@ -1999,29 +2045,6 @@
       "ratings": [],
       "score": 37.0,
       "updated_at": "2026-07-21T08:54:22.939070+00:00"
-    },
-    {
-      "forum_id": "2609.19024",
-      "paper_number": -1,
-      "title": "OAK: Restart- and Age-Aware Scheduling for Distributed Machine Learning on Shared GPU Clusters",
-      "authors": [
-        "Khaled Aljbab, Amine Barrak"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.19024v2 Announce Type: replace \nAbstract: Distributed machine learning increasingly runs on shared multi-tenant GPU clusters where contention and failures are routine. Goodput-driven schedulers maximise instantaneous throughput but treat accumulated waiting time and restart cost as second-class signals: long-waiting jobs are repeatedly deferred, and the minutes of checkpoint loading paid after each interruption are not folded back into allocation decisions.\n  We present OAK, a per-round mixed-integer linear scheduler whose composite utility adds two first-class terms to goodput: an age key that elevates jobs with high cumulative waiting time, and a decomposed restart factor that tracks productive training time and checkpoint overhead as separately measured quantities rather than",
-      "pdf_link": "https://arxiv.org/pdf/2609.19024.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.19024",
-      "submission_date": "2026-09-23T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 36.5,
-      "updated_at": "2026-09-23T10:44:12.692710+00:00"
     },
     {
       "forum_id": "usenix-osdi26-6",
@@ -2454,29 +2477,6 @@
       "updated_at": "2026-07-21T08:54:26.741832+00:00"
     },
     {
-      "forum_id": "2609.25451",
-      "paper_number": -1,
-      "title": "Fast Recovery for LLM Serving via Decoupled Device Memory Lifetime in Dynamo",
-      "authors": [
-        "Schwinn Saereesitthipitak (NVIDIA), Mohammed Abdulwahhab (NVIDIA), Hannah Zhang (NVIDIA), Dan Feigin (NVIDIA), Neelay Shah (NVIDIA), Maksim Khadkevich (NVIDIA), Itay Neeman (NVIDIA), Vikram Sharma Mailthody (NVIDIA), Wen-mei W. Hwu (NVIDIA Research)"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.25451v1 Announce Type: new \nAbstract: Large language model (LLM) inference replicas run across tightly coupled GPUs and serve traffic continuously for weeks. Hardware and software failures are therefore inevitable, and one worker failure can disrupt an entire replica. Recovery requires reinitializing the engine, taking minutes even when weights and compilation artifacts are cached. Production deployments overprovision serving capacity to mask this window. We argue that the dominant cost is loss of ready serving capacity, not request progress, so recovery should preserve initialized engine state rather than reconstruct it. We present fast recovery for Dynamo based on this principle. Snapshots capture an initialized engine once and restore it instead of reinitializing it. Analysis",
-      "pdf_link": "https://arxiv.org/pdf/2609.25451.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.25451",
-      "submission_date": "2026-09-23T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 33.0,
-      "updated_at": "2026-09-23T10:44:12.690580+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-29",
       "paper_number": 29,
       "title": "kSTEP: Characterization and Deterministic Testing of Linux CPU Scheduler Bugs",
@@ -2590,29 +2590,6 @@
       "ratings": [],
       "score": 32.5,
       "updated_at": "2026-07-21T08:54:22.942128+00:00"
-    },
-    {
-      "forum_id": "2604.12300",
-      "paper_number": -1,
-      "title": "TierBPF: Page Migration Admission Control for Tiered Memory via eBPF",
-      "authors": [
-        "Xi Wang, Tal Zussman, Bin Ma, Asaf Cidon, Dong Li"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2604.12300v2 Announce Type: replace \nAbstract: Software-based memory tiering systems decide which pages to place on the slower or faster tier. However, they do not consider two important factors that greatly influence application performance: the size of the migrated pages, and the underlying hardware device and tiering topology. We introduce TierBPF, a software mechanism that can be plugged into existing memory tiering systems to take these factors into account, by making architecture-aware page admission decisions. TierBPF is implemented as a set of eBPF hooks, allowing users to define their custom policies. In order to make its decisions, TierBPF utilizes a lightweight tracking mechanism for page profiling which is not dependent on the application's working set size. TierBPF, inte",
-      "pdf_link": "https://arxiv.org/pdf/2604.12300.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.12300",
-      "submission_date": "2026-09-23T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-09-23T10:44:12.638024+00:00"
     },
     {
       "forum_id": "usenix-osdi26-99",
@@ -5719,6 +5696,29 @@
       "ratings": [],
       "score": 4.0,
       "updated_at": "2026-07-21T08:54:26.742343+00:00"
+    },
+    {
+      "forum_id": "2603.13668",
+      "paper_number": -1,
+      "title": "Audo-Sight: AI-driven Ambient Perception Across Edge-Cloud for Blind and Low Vision Users",
+      "authors": [
+        "Jacob Bradshaw, Mohsen Riahi Alam, Bhanuja Ainary, Minseo Kim, Mohsen Amini Salehi"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2603.13668v2 Announce Type: replace \nAbstract: Despite advances in assistive technologies, Blind and Low-Vision (BLV) individuals continue to face challenges in understanding their surroundings. Delivering concise, useful, and timely scene descriptions for ambient perception remains a long-standing problem in accessibility. Existing solutions often fail to identify user expectations for real-time and accessible responses. Moreover, for a given task, they either rely on cloud offloading, which imposes a significant delay, or edge-based AI, which often sacrifices accuracy. To address this, we present Audo-Sight, an AI-driven assistive system that spans across Edge-Cloud continuum and enables BLV individuals to perceive their surroundings through voice-based conversation. Audo-Sight pro",
+      "pdf_link": "https://arxiv.org/pdf/2603.13668.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.13668",
+      "submission_date": "2026-09-24T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-09-24T11:04:41.830046+00:00"
     },
     {
       "forum_id": "usenix-osdi26-83",

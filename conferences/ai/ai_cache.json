@@ -1,7 +1,7 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-09-23T10:44:44.846699+00:00",
+  "last_updated": "2026-09-24T11:05:17.891335+00:00",
   "paper_count": 31,
   "papers": [
     {
@@ -451,6 +451,29 @@
       "updated_at": "2026-08-14T07:42:13.310944+00:00"
     },
     {
+      "forum_id": "2609.27932",
+      "paper_number": -1,
+      "title": "Binary Quantized Neural Network Training Is W[1]-Hard Parameterized by Input and Output Dimensions",
+      "authors": [
+        "Tao Jiang, Minbo Gao, Shaowei Cai"
+      ],
+      "keywords": [
+        "cs.LG",
+        "ICLR"
+      ],
+      "abstract": "arXiv:2609.27932v1 Announce Type: new \nAbstract: Ganian et al. (ICLR 2026) proved that quantized neural network training is fixed-parameter tractable when parameterized jointly by architecture treewidth, input dimension $\\alpha$, and output dimension $\\omega$, and left open whether $\\alpha+\\omega$ alone yields fixed-parameter tractability. We prove that 2-QNNT is W[1]-hard parameterized by $\\alpha+\\omega$. The hardness already holds with zero error on $D_k=\\{(\\xi^{(r)},\\xi^{(r)}):0\\le r\\le k\\}$, where every input equals its target, $|D_k|=\\alpha=\\omega=k+1$, and the examples form a coordinatewise prefix chain. It also holds when every non-source bias is fixed to zero. Under the Exponential Time Hypothesis, no algorithm runs in $f(\\alpha+\\omega)|I|^{o(\\alpha+\\omega)}$ for any computable $f$",
+      "pdf_link": "https://arxiv.org/pdf/2609.27932.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.27932",
+      "submission_date": "2026-09-24T04:00:00+00:00",
+      "conference": "ICLR",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-09-24T11:04:45.694448+00:00"
+    },
+    {
       "forum_id": "mlr-icml25-8",
       "paper_number": 8,
       "title": "Mitigating Interference in the Knowledge Continuum through Attention-Guided Incremental Learning",
@@ -683,29 +706,6 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-08-14T07:42:23.150427+00:00"
-    },
-    {
-      "forum_id": "2609.23989",
-      "paper_number": -1,
-      "title": "ACLArena: Agent Continue Learning in Multi-stage Post-training",
-      "authors": [
-        "Haixin Wang, Xiaoxuan Wang, Junkai Zhang, Han Zhang, Renliang Sun, Alexander K Taylor, Yidan Shi, Haoran Deng, Chenguang Wang, Jason Cong, Yizhou Sun, Wei Wang"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ACL"
-      ],
-      "abstract": "arXiv:2609.23989v1 Announce Type: new \nAbstract: Building general-purpose agents for industrial deployment requires integrating multiple capabilities, each typically acquired at a distinct stage of training. Yet there is currently no well-established recipe for Agent Continual Learning (ACL), with little understanding of the trade-offs among existing integration paradigms. To address this gap, we introduce ACLArena, a framework for comprehensively studying, analyzing, and evaluating ACL. We first build a sequential training pipeline and conduct an in-depth analysis that explains the mechanisms of forgetting and generalization from two complementary perspectives, the model level and the token level. Guided by these analyses, we systematically compare multi-teacher on-policy distillation, se",
-      "pdf_link": "https://arxiv.org/pdf/2609.23989.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.23989",
-      "submission_date": "2026-09-23T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-09-23T10:44:15.853319+00:00"
     },
     {
       "forum_id": "mlr-icml25-6",
