@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-09-24T11:05:17.891335+00:00",
-  "paper_count": 31,
+  "last_updated": "2026-09-25T11:06:21.214491+00:00",
+  "paper_count": 33,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -309,6 +309,29 @@
       "updated_at": "2026-08-14T07:42:18.885647+00:00"
     },
     {
+      "forum_id": "2609.30192",
+      "paper_number": -1,
+      "title": "SAGE: Mitigating Long-Horizon Reasoning Biases via Topological Guidance",
+      "authors": [
+        "Xinyue Zeng, Jiawei Zhang, Yujun Yan, Dawei Zhou"
+      ],
+      "keywords": [
+        "cs.AI",
+        "NeurIPS"
+      ],
+      "abstract": "arXiv:2609.30192v1 Announce Type: new \nAbstract: Long-horizon reasoning remains a central challenge for large language models (LLMs) under sparse-reward regimes. We argue that this brittleness arises from two biases induced by complex reasoning spaces: an exploration bias, where models are drawn toward locally plausible but structurally unstable branches, and a compounding bias, where small local deviations accumulate across depth and suppress rare rewards. We introduce Symbolic Closure Analysis (SCA) as a theoretical lens characterizing how branching structures and sparse rewards induce these biases in long-horizon reasoning with local admissibility, and as a design principle for structural priors in less formal reasoning tasks. Motivated by this analysis, we propose SAGE (Structural Admi",
+      "pdf_link": "https://arxiv.org/pdf/2609.30192.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.30192",
+      "submission_date": "2026-09-25T04:00:00+00:00",
+      "conference": "NeurIPS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.0,
+      "updated_at": "2026-09-25T11:05:46.907074+00:00"
+    },
+    {
       "forum_id": "mlr-icml25-38",
       "paper_number": 38,
       "title": "Disentangling the Causes of Plasticity Loss in Neural Networks",
@@ -404,6 +427,29 @@
       "updated_at": "2026-08-14T07:42:43.316013+00:00"
     },
     {
+      "forum_id": "2609.28850",
+      "paper_number": -1,
+      "title": "RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers?",
+      "authors": [
+        "Mithil Salunkhe, Haochen Ding, Samridhi Verma, Volodymyr Kindratenko"
+      ],
+      "keywords": [
+        "cs.AI",
+        "NeurIPS"
+      ],
+      "abstract": "arXiv:2609.28850v1 Announce Type: new \nAbstract: Reproducing a machine learning paper involves most research steps, from installing software and debugging to running experiments, work that AI agents increasingly do. We introduce RECLAIM, a benchmark of 100 NeurIPS 2025 papers that can be rebuilt yearly from new conferences. For each paper we fix in advance the result to reproduce, what counts as a successful reproduction, and a GPU-hour budget. An agent must reproduce that result using the paper and whatever its authors released. What the authors released decides the difficulty tier. Run-tier releases include code, data, and weights; Retrain-tier releases lack weights, so the agent trains the model; Reimplement-tier releases lack code, so the agent writes it. A separate language model grad",
+      "pdf_link": "https://arxiv.org/pdf/2609.28850.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.28850",
+      "submission_date": "2026-09-25T04:00:00+00:00",
+      "conference": "NeurIPS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-09-25T11:05:46.899781+00:00"
+    },
+    {
       "forum_id": "mlr-icml25-29",
       "paper_number": 29,
       "title": "Consistency Regularisation for Unsupervised Domain Adaptation in Monocular Depth Estimation",
@@ -451,27 +497,27 @@
       "updated_at": "2026-08-14T07:42:13.310944+00:00"
     },
     {
-      "forum_id": "2609.27932",
+      "forum_id": "2609.29875",
       "paper_number": -1,
-      "title": "Binary Quantized Neural Network Training Is W[1]-Hard Parameterized by Input and Output Dimensions",
+      "title": "When Can Agents Forget Their Reasoning? ICLR for Long-Horizon Agent Context Compression",
       "authors": [
-        "Tao Jiang, Minbo Gao, Shaowei Cai"
+        "Mingxuan Wang, Fei Luo, Bo Wang, Guorun Yao, Yinglong Guo, Chao Ning, Hongyue Chen, Yanbiao Ma, Jungong Han"
       ],
       "keywords": [
-        "cs.LG",
+        "cs.AI",
         "ICLR"
       ],
-      "abstract": "arXiv:2609.27932v1 Announce Type: new \nAbstract: Ganian et al. (ICLR 2026) proved that quantized neural network training is fixed-parameter tractable when parameterized jointly by architecture treewidth, input dimension $\\alpha$, and output dimension $\\omega$, and left open whether $\\alpha+\\omega$ alone yields fixed-parameter tractability. We prove that 2-QNNT is W[1]-hard parameterized by $\\alpha+\\omega$. The hardness already holds with zero error on $D_k=\\{(\\xi^{(r)},\\xi^{(r)}):0\\le r\\le k\\}$, where every input equals its target, $|D_k|=\\alpha=\\omega=k+1$, and the examples form a coordinatewise prefix chain. It also holds when every non-source bias is fixed to zero. Under the Exponential Time Hypothesis, no algorithm runs in $f(\\alpha+\\omega)|I|^{o(\\alpha+\\omega)}$ for any computable $f$",
-      "pdf_link": "https://arxiv.org/pdf/2609.27932.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.27932",
-      "submission_date": "2026-09-24T04:00:00+00:00",
+      "abstract": "arXiv:2609.29875v1 Announce Type: new \nAbstract: Long horizon language model agents continually accumulate reasoning history, increasing context length and inference cost even after earlier decisions have been executed and observed. Unlike static Chain of Thought compression, removing historical reasoning can change future actions and the resulting interaction trajectory. We study when such reasoning can be safely forgotten. We propose Interaction Aware Compression for Long Horizon Reasoning (ICLR), a training free online method that ranks reasoning blocks using frozen proxy entropy while preserving actions, tool calls, and observations. On 260 WorkBuddyBench tasks, ICLR improves average reward from 0.699 to 0.718, while reducing input, output, and cache read tokens by 25.5%, 14.4%, and 33",
+      "pdf_link": "https://arxiv.org/pdf/2609.29875.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.29875",
+      "submission_date": "2026-09-25T04:00:00+00:00",
       "conference": "ICLR",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-09-24T11:04:45.694448+00:00"
+      "updated_at": "2026-09-25T11:05:46.905852+00:00"
     },
     {
       "forum_id": "mlr-icml25-8",

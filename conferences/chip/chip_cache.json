@@ -1,100 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-09-24T11:04:45.096303+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-09-25T11:05:46.595882+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2609.26824",
+      "forum_id": "2609.28717",
       "paper_number": -1,
-      "title": "FINN-Tro: Exploiting Verification Gaps in Dataflow Inference Accelerators",
+      "title": "HeteroReason: Heterogeneous FPGA-GPU Acceleration for Disaggregated Speculative Reasoning",
       "authors": [
-        "Qazi Arbab Ahmed, Suraj Karki, Thorsten Jungeblut"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2609.26824v1 Announce Type: new \nAbstract: The growing adoption of dataflow accelerators for neural network inference introduces new attack surfaces that existing verification methodologies fail to address. Inference ac- celeration frameworks such as FINN, which transform quantized neural networks into FPGA-deployable dataflow architectures, implicitly assume semantic equivalence between the software model and the synthesized hardware. In this work, we in- troduce the FINN-Tro attack, which identifies and exploits a critical verification gap in the FINN compilation pipeline that enables stealthy hardware Trojan insertion without modifying the original quantized model. The Trojan is placed in the last Matrix-Vector Activation Unit (MVAU) layer and supports two counter-based trigger mo",
-      "pdf_link": "https://arxiv.org/pdf/2609.26824.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.26824",
-      "submission_date": "2026-09-24T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-09-24T11:04:45.092590+00:00"
-    },
-    {
-      "forum_id": "2609.27437",
-      "paper_number": -1,
-      "title": "Mamba-Family State-Space Model Kernels on a Programmable CGLA",
-      "authors": [
-        "Takuto Ando, Yasuhiko Nakashima"
+        "Zehuan Zhang, Quan Deng, Zibo Ren, Hao Mark Chen, Guoyu Li, Xuchun Hu, Jose G. F. Coutinho, Ce Guo, Wayne Luk, Zhiqiang Que, Hongxiang Fan"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.27437v1 Announce Type: new \nAbstract: Edge and embedded inference is constrained by power and data movement. Mamba-family state-space models replace attention with sequence-linear recurrence, but their inference path combines dense projections, short-reduction SSD kernels, and recurrent-state updates. This paper maps these kernel groups onto IMAX, a programmable CPU-Grounded Linear Array (CGLA), and measures them from kernel execution to token-level integration. Projection kernels match the long-reduction IMAX pipeline, whereas SSD Step-1 is limited by short reductions and kernel-boundary overheads. Mamba-130M token-level integration identifies projection GEMV as the decode bottleneck. These results show that programmable CGLAs fit long-reduction projection kernels, while SSD an",
-      "pdf_link": "https://arxiv.org/pdf/2609.27437.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.27437",
-      "submission_date": "2026-09-24T04:00:00+00:00",
+      "abstract": "arXiv:2609.28717v1 Announce Type: new \nAbstract: Large Reasoning Models (LRMs) have achieved state-of-the-art performance in reasoning tasks by utilizing Chain-of-Thought (CoT) reasoning. To achieve fast execution speed, speculative reasoning techniques adopt a lightweight draft model for candidate token generation followed by process reward models (PRMs) for verification and a strong target model for refinements. This paper identifies that the existing speculative reasoning paradigm follows a strictly forward-only reasoning trajectory, which lacks robustness and can lead to severe error propagation if early reasoning steps are suboptimal. Furthermore, executing these disparate inference schemes, including sequential drafting and parallel verification on homogeneous GPU platforms, can lead",
+      "pdf_link": "https://arxiv.org/pdf/2609.28717.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.28717",
+      "submission_date": "2026-09-25T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-09-25T11:05:46.591844+00:00"
+    },
+    {
+      "forum_id": "2609.30131",
+      "paper_number": -1,
+      "title": "Enhancing Word-Level Property Directed Reachability with LLM-Driven Semantic Guidance",
+      "authors": [
+        "Guangyu Hu, Mingkai Miao, Zhiyuan Yan, Xiaofeng Zhou, Wei Zhang, Hongce Zhang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.30131v1 Announce Type: new \nAbstract: Property Directed Reachability (PDR) is a prominent algorithm for hardware formal verification. However, bit-level PDR often struggles with datapath-heavy designs because bit-blasting obscures high-level semantics. While word-level PDR addresses this by reasoning over bit-vector and array theories, its performance remains bottlenecked by discovering proof-relevant word-level relations. We propose LLM4PDR, a framework leveraging Large Language Models (LLMs) to guide word-level PDR search through three mechanisms: (1) Predicate Generation, extracting state relationships as candidate predicates during inductive generalization; (2) Clause Generation, producing candidate frame lemmas to accelerate convergence after formal validation; and (3) Asse",
+      "pdf_link": "https://arxiv.org/pdf/2609.30131.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.30131",
+      "submission_date": "2026-09-25T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-09-24T11:04:45.092829+00:00"
+      "updated_at": "2026-09-25T11:05:46.592384+00:00"
     },
     {
-      "forum_id": "2609.27453",
+      "forum_id": "2609.29727",
       "paper_number": -1,
-      "title": "Implementation and Evaluation of BitNet Inference on a CGLA by Signed-Int4 Instructions",
+      "title": "VQ-LIC: Shared Vector-Quantized Learned Image Compression on a Resource-Constrained FPGA",
       "authors": [
-        "Takuto Ando, Yasuhiko Nakashima"
+        "Muhammad Fahd Ibrahim Bhatti, Abdullah Bin Faisal, Ahsan Usman, Naveed Anwar Bhatti, Muhammad Ali Siddiqi"
       ],
       "keywords": [
         "cs.AR",
-        "FPGA"
+        "DATE"
       ],
-      "abstract": "arXiv:2609.27453v1 Announce Type: new \nAbstract: Large language model (LLM) inference transfers model weights and activations for every generated token, making memory traffic and its energy cost part of the decode path. BitNet b1.58 represents its low-bit weights by ternary values and uses integer activations. However, this arithmetic does not match conventional int8 or floating-point general matrix multiplication, and existing BitNet accelerators implement it in specialized datapaths. We instead map this operation to a CPU-Grounded Linear Array (CGLA), a programmable ASIC with explicit direct memory access, local memories, and reusable compiler-visible integer lanes. The mapping adds OP_SMA4 as a reusable signed-int4 multiply-accumulate instruction rather than a BitNet-only datapath. Each",
-      "pdf_link": "https://arxiv.org/pdf/2609.27453.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.27453",
-      "submission_date": "2026-09-24T04:00:00+00:00",
-      "conference": "FPGA",
+      "abstract": "arXiv:2609.29727v1 Announce Type: new \nAbstract: Learned image compression (LIC) is hard to deploy on severely resource-constrained FPGAs, since how fast it actually runs depends not just on arithmetic count, but also on memory traffic, imbalance between different operations, and how the hardware batches its work. We present VQ-LIC, an asymmetric edge-cloud codec in which a compact INT8 depthwise (DW)-pointwise (PW) analysis transform and multi-codebook vector quantization (VQ) run at the edge on a reusable DW/PW engine pair, while reconstruction is handled by a larger cloud decoder. Since VQ codeword matching is expressible as a dot product, it is mapped directly onto the same PW engine, removing the need for a separate VQ compute array, to our knowledge a first for FPGA LIC. A novel late",
+      "pdf_link": "https://arxiv.org/pdf/2609.29727.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.29727",
+      "submission_date": "2026-09-25T04:00:00+00:00",
+      "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-09-24T11:04:45.092944+00:00"
-    },
-    {
-      "forum_id": "2609.27456",
-      "paper_number": -1,
-      "title": "Precision and resource scaling of real-time flux distortion compensation for superconducting quantum control",
-      "authors": [
-        "Qi Zhou, Zi-Hao Mei, Peng Duan, Peng Wang, Liang-Liang Guo, Hao-Ran Tao, Wei-Cheng Kong, Hui Yang, Guo-Ping Guo, Zhao-Yun Chen"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2609.27456v1 Announce Type: cross \nAbstract: Real-time waveform generation supports dynamic quantum circuits without pre-storing complete waveforms for every execution path. However, long-lived distortions in flux-control lines degrade gate fidelity, requiring compensation to account for the actual pulse history. A frequency-domain inversion and time-domain fitting method is proposed for resource-efficient real-time flux distortion compensation. The method fits the reconstructed compensation impulse response with a compact hybrid infinite impulse response (IIR) and finite impulse response (FIR) filter. Look-ahead parallelization enables this filter to process synthesized waveforms at 1.2GSa/s on a field-programmable gate array (FPGA). Two-qubit cross-entropy benchmarking shows that r",
-      "pdf_link": "https://arxiv.org/pdf/2609.27456.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.27456",
-      "submission_date": "2026-09-24T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-09-24T11:04:45.093229+00:00"
+      "score": 1.5,
+      "updated_at": "2026-09-25T11:05:46.592243+00:00"
     }
   ]
 }

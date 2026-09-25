@@ -1,100 +1,54 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-09-24T11:05:18.079276+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-09-25T11:06:21.293367+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2604.18924",
+      "forum_id": "2511.12124",
       "paper_number": -1,
-      "title": "Lindbladian Homotopy Analysis Method to Solve Nonlinear Partial Differential Equations",
+      "title": "Discretization, Uniform-in-Time Estimations and Approximation of Invariant Measures for Nonlinear Stochastic Differential Equations with Non-Uniform Dissipativity",
       "authors": [
-        "Eunsik Choi, Jungin E. Kim, Xueling Lu, Yan Wang"
+        "Shan Huang, Xiaoyue Li"
       ],
       "keywords": [
         "cs.NA",
         "scientific computing"
       ],
-      "abstract": "arXiv:2604.18924v3 Announce Type: replace \nAbstract: Quantum scientific computing is to solve engineering and science problems such as simulation and optimization on quantum computers. Solving ordinary and partial differential equations (PDEs) is essential in simulations. However, existing quantum approaches to solve nonlinear PDEs suffer from the issues of curse of dimensionality and convergence during the linearization process. In this paper, a Lindbladian homotopy analysis method (LHAM) is proposed as a quantum differential equation solver to simulate nonlinear and nonunitary dynamics. The original nonlinear problem is first converted to a recursive sequence of linear PDEs with the homotopy analysis method and reformulated as a higher-dimensional lower block triangular linear homogeneou",
-      "pdf_link": "https://arxiv.org/pdf/2604.18924.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.18924",
-      "submission_date": "2026-09-24T04:00:00+00:00",
-      "conference": "scientific computing",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.5,
-      "updated_at": "2026-09-24T11:05:18.075426+00:00"
-    },
-    {
-      "forum_id": "2606.18305",
-      "paper_number": -1,
-      "title": "Starter-Iterator Neural Operator: A Unified Architecture for High-Fidelity Forward and Inverse PDE Problems",
-      "authors": [
-        "Kuilin Qin, Lianfang Wang, Xu Sun, Jiwei Jia, Yu Wang, Yong Wang, Yuping Duan"
-      ],
-      "keywords": [
-        "cs.NA",
-        "scientific computing"
-      ],
-      "abstract": "arXiv:2606.18305v2 Announce Type: replace \nAbstract: Operator learning is an emerging field at the intersection of machine learning and scientific computing. By learning mappings between function spaces, neural operators provide data-driven surrogate models for families of partial differential equations (PDEs). Once trained, these models can evaluate solution operators efficiently, making them suitable for many-query applications such as real-time prediction and parameter sweeps. However, maintaining high approximation accuracy and stable long-term predictions remains challenging for complex forward and inverse problems. To address these challenges, we propose the Starter-Iterator Neural Operator (SINO), which incorporates the initialization and residual-correction structures of classical ",
-      "pdf_link": "https://arxiv.org/pdf/2606.18305.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.18305",
-      "submission_date": "2026-09-24T04:00:00+00:00",
+      "abstract": "arXiv:2511.12124v3 Announce Type: replace \nAbstract: The approximation of invariant measures for nonlinear ergodic stochastic differential equations (SDEs) is a central problem in scientific computing, with important applications in stochastic sampling, physics, and ecology. We first propose an easily applicable explicit Truncated Euler-Maruyama (TEM) scheme and prove its numerical ergodicity in the $L^p$-Wasserstein distance ($p\\geqslant 1$). Furthermore, by combining truncation techniques with the coupling method, we establish a uniform-in-time $1/2$-order convergence rate in moments for the TEM scheme. Additionally, leveraging the exponential ergodicity of both the numerical and exact solutions, we derive a $1/2$-order convergence rate for the invariant measures of the TEM scheme and th",
+      "pdf_link": "https://arxiv.org/pdf/2511.12124.pdf",
+      "forum_link": "https://arxiv.org/abs/2511.12124",
+      "submission_date": "2026-09-25T04:00:00+00:00",
       "conference": "scientific computing",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 3.5,
-      "updated_at": "2026-09-24T11:05:18.075498+00:00"
+      "updated_at": "2026-09-25T11:06:21.290053+00:00"
     },
     {
-      "forum_id": "2609.28152",
+      "forum_id": "2601.16709",
       "paper_number": -1,
-      "title": "Discrete Sobolev and Trudinger inequalities on polyhedral meshes",
+      "title": "Barotropic-Baroclinic Splitting for Multilayer Shallow Water Models with Exchanges",
       "authors": [
-        "Maxime Herda, Ariane Trescases, Antoine Zurek"
+        "Nina Aguillon, Sophie H\\\"ornschemeyer, Jacques Sainte-Marie"
       ],
       "keywords": [
         "cs.NA",
         "numerical analysis"
       ],
-      "abstract": "arXiv:2609.28152v1 Announce Type: new \nAbstract: We revisit the derivation of discrete Sobolev and related inequalities on bounded domains for piecewise constant functions on polyhedral meshes. Our results improve the dependence of the Sobolev constant on the Lebesgue exponents and allow us to recover the asymptotics of the continuous case. As a consequence we derive a discrete version of the Trudinger inequality and variants. We extend our results to broken Sobolev spaces and discuss implications of these new or refined discrete functional inequalities in the numerical analysis of non-conforming numerical methods.",
-      "pdf_link": "https://arxiv.org/pdf/2609.28152.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.28152",
-      "submission_date": "2026-09-24T04:00:00+00:00",
+      "abstract": "arXiv:2601.16709v2 Announce Type: replace \nAbstract: This work presents the numerical analysis of a barotropic-baroclinic splitting in a nonlinear multilayer framework with exchanges between the layers in terrain-following coordinates. The splitting is formulated as an exact operator splitting. The barotropic step handles free surface evolution and depth-averaged velocity via a well-balanced one-layer model, while the baroclinic step manages vertical exchanges between layers and adjusts velocities to their mean values. We show that the barotropic-baroclinic splitting preserves total energy conservation and meets both a discrete maximum principle and a discrete entropy inequality. Several numerical experiments are presented showing the gain in computational cost, particularly in low Froude ",
+      "pdf_link": "https://arxiv.org/pdf/2601.16709.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.16709",
+      "submission_date": "2026-09-25T04:00:00+00:00",
       "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-09-24T11:05:18.074694+00:00"
-    },
-    {
-      "forum_id": "2609.22460",
-      "paper_number": -1,
-      "title": "Update to: Spectral sets: Numerical range and beyond",
-      "authors": [
-        "Michel Crouzeix, Anne Greenbaum"
-      ],
-      "keywords": [
-        "cs.NA",
-        "SIAM"
-      ],
-      "abstract": "arXiv:2609.22460v2 Announce Type: replace \nAbstract: We use the results of Lorist and Schwenninger, {\\em A solution to Crouzeix's conjecture}, arXiv:2608.03841v2, https://arxiv.org/abs/2608.03841, to update the 2019 paper of Crouzeix and Greenbaum, {\\em Spectral sets: Numerical range and beyond}, SIAM J.~Matrix Anal.~Appl., 40(3):1087-1101. For all regions considered in the 2019 paper, we are able to show that the region is a $K$-spectral set with a bound on $K$ that is smaller than that established in the 2019 paper. In particular, we show that various annular regions are $2$-spectral sets and that a more general convex region with a circular hole or cutout is a $4$-spectral set.",
-      "pdf_link": "https://arxiv.org/pdf/2609.22460.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.22460",
-      "submission_date": "2026-09-24T04:00:00+00:00",
-      "conference": "SIAM",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-09-24T11:05:18.075600+00:00"
+      "score": 1.0,
+      "updated_at": "2026-09-25T11:06:21.290095+00:00"
     }
   ]
 }

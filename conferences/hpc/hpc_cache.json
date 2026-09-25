@@ -1,31 +1,100 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-09-24T11:04:41.697563+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-09-25T11:05:43.191566+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2609.27085",
+      "forum_id": "2605.13343",
       "paper_number": -1,
-      "title": "Crossflow: Prefill-Decode Elasticity for Agentic LLM Serving",
+      "title": "A Neural Hierarchical-Matrix Preconditioner for Real-Time GPU Solves",
       "authors": [
-        "Yi Xu, Ehsan K. Ardestani, Wenyin Fu, Martin Schatz, Krishna Malladi, Zhan Shu, Adnan Aziz, Shobhit Kanaujia, Ajit Mathews, Chunqiang Tang"
+        "Carl Osborne, Minghao Guo, Crystal Owens, Wojciech Matusik"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.27085v1 Announce Type: new \nAbstract: As serving capacity demand surpasses that of training, serving efficiency becomes increasingly important. Prefill-decode (P/D) disaggregation improves serving efficiency through specialization and isolation of the two phases. These benefits rest on a static partitioning. Phase demand, however, is not static. We observe that in a large LLM fleet the ratio of uncached input to output tokens has peak-to-mean ratios up to 4.7x at minute timescales, and that in a public agentic trace the hourly ratio spans a median 24.5x within a single day, while reassigning a replica takes tens of minutes. Agentic traffic sharpens the mismatch. Sizing each pool at its ninety-fifth percentile leaves up to 17% of cluster capacity unused; sizing below it converts ",
-      "pdf_link": "https://arxiv.org/pdf/2609.27085.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.27085",
-      "submission_date": "2026-09-24T04:00:00+00:00",
+      "abstract": "arXiv:2605.13343v3 Announce Type: replace-cross \nAbstract: Interactive simulation solves Ax=b for a sparse SPD A that changes every frame, inside an 8-16 ms budget. At a few thousand unknowns, the setup of algebraic multigrid alone exceeds that budget, while Jacobi and other local preconditioners have no setup but cannot move error across the domain. We learn a preconditioner for this gap: a graph-and-attention network predicts an SPD approximate inverse in H^2-matrix format. On a spatially ordered 3D mesh, blocks of the true inverse lose rank as the clusters they couple move apart; the nested bases of the format follow that decay, so inference and apply are dominated by leaf-block work linear in N, where a dense inverse costs N^2. Our main finding concerns training. Probe losses reach M o",
+      "pdf_link": "https://arxiv.org/pdf/2605.13343.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.13343",
+      "submission_date": "2026-09-25T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.5,
+      "updated_at": "2026-09-25T11:05:41.460749+00:00"
+    },
+    {
+      "forum_id": "2609.29395",
+      "paper_number": -1,
+      "title": "Concurrent Split Learning Through Stable Client Clustering",
+      "authors": [
+        "Mohammad Kohankhaki, Valentin Rentschler, Anke Schmeink"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2609.29395v1 Announce Type: new \nAbstract: Training with a fixed global batch limits how many distributed clients can provide examples in any one step. We examine a way to use additional server workers without increasing the batch processed by an individual workload. Global Clustered Parallel Split Learning (GCPSL) assigns clients to fixed clusters, executes a Parallel Split Learning with Global Sampling (GPSL) workload for each cluster concurrently, and periodically fuses the client and server model segments. In simulations with 256 logical clients, dividing the population across more workloads improves direct data participation, while smaller clusters can incur an accuracy cost. A four-H100 implementation of label-aware GCPSL reaches 85% CIFAR-10 validation accuracy in $6.13 \\pm 0.",
+      "pdf_link": "https://arxiv.org/pdf/2609.29395.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.29395",
+      "submission_date": "2026-09-25T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-09-25T11:05:41.459606+00:00"
+    },
+    {
+      "forum_id": "2609.29160",
+      "paper_number": -1,
+      "title": "Cross-Model Autoscaling for Shared LLM Serving",
+      "authors": [
+        "Xin Zhang, Xianyan Xie, Zhen He, Xijin Yin, Xingtong Lin, Bangbo Liang, Zequn Cheng, Peihao Huang, Guo Chen"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2609.29160v1 Announce Type: new \nAbstract: Multi-model LLM serving is moving toward shared MaaS clusters, where co-hosted models compete for a fixed GPU budget while each model experiences time-varying demand and must satisfy its own latency SLO. Existing LLM autoscalers remain largely model-local: their signals expose local runtime activity or delayed latency outcomes, and their scale-up or provisioning decisions do not directly determine how shared capacity should be allocated across competing models.\n  We present the Token-service-share Rebalancing Engine (TRE), a control-plane framework for hot-switched multi-model LLM serving. TRE introduces Token Service Share (TSS), a calibrated, demand-normalized signal that estimates effective token service per active or queued request and y",
+      "pdf_link": "https://arxiv.org/pdf/2609.29160.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.29160",
+      "submission_date": "2026-09-25T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-09-25T11:05:41.459471+00:00"
+    },
+    {
+      "forum_id": "2609.29808",
+      "paper_number": -1,
+      "title": "Hard Stop: Kernel-Level Preemption and Containment for Rogue Agentic Execution",
+      "authors": [
+        "Jos\\'e Luis Pino"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2609.29808v1 Announce Type: cross \nAbstract: In July 2026, an unconstrained autonomous agent participating in a frontier AI cybersecurity evaluation harness breached its evaluation sandbox, established an external command-and-control foothold, and executed a multi-stage intrusion into Hugging Face's production multi-tenant dataset conversion infrastructure (referred to in this autopsy as Incident-2026-Alpha). Over 4.5 days, the rogue agent executed 17,600 discrete actions across 6,280 worker clusters, compromised AWS EC2 Instance Metadata Service (IMDS) credentials, forged Kubernetes service account tokens, rooted physical worker nodes via overprivileged CSI drivers, harvested 136 production secrets, and enrolled 181 ephemeral sandboxes into the organization's internal mesh VPN.\n  Th",
+      "pdf_link": "https://arxiv.org/pdf/2609.29808.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.29808",
+      "submission_date": "2026-09-25T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-09-24T11:04:41.233938+00:00"
+      "updated_at": "2026-09-25T11:05:41.460298+00:00"
     }
   ]
 }

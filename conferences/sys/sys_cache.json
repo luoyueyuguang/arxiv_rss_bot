@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-09-24T11:04:45.008885+00:00",
-  "paper_count": 311,
+  "last_updated": "2026-09-25T11:05:46.536652+00:00",
+  "paper_count": 309,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1273,29 +1273,6 @@
       "updated_at": "2026-07-21T08:54:17.398727+00:00"
     },
     {
-      "forum_id": "2609.27189",
-      "paper_number": -1,
-      "title": "ZOCheck: CPU-Shadow Checkpointing for Zeroth-Order LLM Fine-Tuning",
-      "authors": [
-        "Minqiu Sun, Xin Huang, Luanzheng Guo, Nathan R. Tallent, Kento Sato, Dong Dai"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.27189v1 Announce Type: new \nAbstract: Zeroth-order (ZO) optimization is an attractive option for memory-efficient LLM fine-tuning, but its fault tolerance remains underexplored. Unlike first-order training, ZO progress can be represented by lightweight seed-and-scalar step logs, yet naive log-only recovery still incurs replay cost that grows with training progress, and shortcut replay does not preserve the executed floating-point trajectory. We present ZOCheck, a fault-tolerant ZO training system that exploits this replayable structure through a CPU shadow process that continuously replays logged updates, materializes consistent recovery images off the GPU critical path, and persists them asynchronously. ZOCheck therefore combines non-blocking checkpointing during training with ",
-      "pdf_link": "https://arxiv.org/pdf/2609.27189.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.27189",
-      "submission_date": "2026-09-24T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 49.5,
-      "updated_at": "2026-09-24T11:04:41.828420+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-5",
       "paper_number": 5,
       "title": "FastServe: Iteration-Level Preemptive Scheduling for Large Language Model Inference",
@@ -1426,29 +1403,6 @@
       "ratings": [],
       "score": 47.5,
       "updated_at": "2026-07-21T08:54:22.940465+00:00"
-    },
-    {
-      "forum_id": "2608.26537",
-      "paper_number": -1,
-      "title": "IBLTs Measure Before They Decode: Self-Sizing Set Reconciliation for Database Consistency Verification",
-      "authors": [
-        "Min Wu, Ji Qi, Zhengsheng Ye, Chengdui Luo, Shudong Lu, Zhengyang Wei"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.26537v3 Announce Type: replace-cross \nAbstract: Cross-system data replication pipelines cannot confirm end-to-end consistency from the local guarantees of each hop, so the two endpoints must be compared directly on a periodic basis. Once the rows of a fixed snapshot are normalized into fingerprints, the task reduces to finding the symmetric difference of the two sets. An Invertible Bloom Lookup Table (IBLT) reconciles the sets with communication that grows only with the difference cardinality $d$, independent of table size, but its capacity must be fixed while $d$ is still unknown. Across 41,603 production reconciliations over 90 days, nonzero $d$ spans about seven orders of magnitude, and no reliable empirical constant exists.\n  We show that the count array of an IBLT has alrea",
-      "pdf_link": "https://arxiv.org/pdf/2608.26537.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.26537",
-      "submission_date": "2026-09-24T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 47.0,
-      "updated_at": "2026-09-24T11:04:41.831040+00:00"
     },
     {
       "forum_id": "usenix-osdi26-9",
@@ -1614,29 +1568,6 @@
       "ratings": [],
       "score": 44.5,
       "updated_at": "2026-07-21T08:54:22.925113+00:00"
-    },
-    {
-      "forum_id": "2609.27266",
-      "paper_number": -1,
-      "title": "xTier: Intelligent Tiering for CXL-Enabled Memory",
-      "authors": [
-        "Sriranga Ramaswamy, Yueqi Chen"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.27266v1 Announce Type: new \nAbstract: CXL-enabled memory expands server memory capacity, but introduces a page-placement problem: the operating system must decide which pages should reside in DRAM and which should reside on slower CXL memory. Existing systems make this tradeoff in one of two ways. Userspace controllers support flexible policies, but expose placement decisions to scheduler jitter and kernel-userspace crossing overhead. Kernel-space systems avoid this latency, but rely on fixed heuristics that must generalize across workloads.\n  We present xTier, a kernel-resident learned memory-tiering system. xTier attaches eBPF programs to PEBS events and uses a compact quantized MLP to score sampled pages inside the kernel at microsecond-scale latency. Rather than reacting to ",
-      "pdf_link": "https://arxiv.org/pdf/2609.27266.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.27266",
-      "submission_date": "2026-09-24T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 44.0,
-      "updated_at": "2026-09-24T11:04:41.750749+00:00"
     },
     {
       "forum_id": "usenix-osdi26-70",
@@ -1819,29 +1750,6 @@
       "ratings": [],
       "score": 42.5,
       "updated_at": "2026-07-21T08:54:17.399784+00:00"
-    },
-    {
-      "forum_id": "2601.03390",
-      "paper_number": -1,
-      "title": "Aspen: Making Leaderless BFT Fast Paths Practical with Synchronized Clocks",
-      "authors": [
-        "Daniel Qian, Xiyu Hao, Jinkun Geng, Yuncheng Yao, Aurojit Panda, Jinyang Li, Anirudh Sivaraman"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2601.03390v3 Announce Type: replace \nAbstract: No Byzantine Fault Tolerant (BFT) protocol can commit a request in less than the single round trip it takes for clients to reach the replicas and hear back. Some protocols approach this bound with a leaderless, speculative fast path, where clients broadcast requests directly to replicas and commit in two message delays ($2\\Delta$). However, such a fast path is extremely fragile: when clients submit requests concurrently, replicas receive them in different orders and end up in different states, forcing the protocol into costly recovery.\n  This paper presents Aspen, a leaderless speculative BFT protocol that can maintain its fast path even while clients submit requests concurrently, at a near-optimal latency of $2\\Delta + \\epsilon$. The $\\",
-      "pdf_link": "https://arxiv.org/pdf/2601.03390.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.03390",
-      "submission_date": "2026-09-24T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 42.0,
-      "updated_at": "2026-09-24T11:04:41.830010+00:00"
     },
     {
       "forum_id": "usenix-osdi26-67",
@@ -2338,6 +2246,29 @@
       "ratings": [],
       "score": 35.0,
       "updated_at": "2026-07-21T08:54:22.928440+00:00"
+    },
+    {
+      "forum_id": "2609.29160",
+      "paper_number": -1,
+      "title": "Cross-Model Autoscaling for Shared LLM Serving",
+      "authors": [
+        "Xin Zhang, Xianyan Xie, Zhen He, Xijin Yin, Xingtong Lin, Bangbo Liang, Zequn Cheng, Peihao Huang, Guo Chen"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.29160v1 Announce Type: new \nAbstract: Multi-model LLM serving is moving toward shared MaaS clusters, where co-hosted models compete for a fixed GPU budget while each model experiences time-varying demand and must satisfy its own latency SLO. Existing LLM autoscalers remain largely model-local: their signals expose local runtime activity or delayed latency outcomes, and their scale-up or provisioning decisions do not directly determine how shared capacity should be allocated across competing models.\n  We present the Token-service-share Rebalancing Engine (TRE), a control-plane framework for hot-switched multi-model LLM serving. TRE introduces Token Service Share (TSS), a calibrated, demand-normalized signal that estimates effective token service per active or queued request and y",
+      "pdf_link": "https://arxiv.org/pdf/2609.29160.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.29160",
+      "submission_date": "2026-09-25T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.5,
+      "updated_at": "2026-09-25T11:05:43.286019+00:00"
     },
     {
       "forum_id": "usenix-osdi26-104",
@@ -4740,6 +4671,29 @@
       "updated_at": "2026-07-21T08:54:26.744089+00:00"
     },
     {
+      "forum_id": "2609.28541",
+      "paper_number": -1,
+      "title": "Adaptive Tiling for Least-Squares Phase Unwrapping: Runtime and Accuracy",
+      "authors": [
+        "Antoine Moevus, Max Mignotte"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.28541v1 Announce Type: cross \nAbstract: Phase unwrapping estimates the missing multiples of $2\\pi$ in measured phase images. For large images, tiling limits the size of local reconstruction problems and enables parallel processing. Adaptive tiling could further reduce the number of local problems and boundaries by retaining large tiles where little refinement is needed. We investigate whether this reduction makes reconstruction faster. We compare complete reconstruction time and accuracy for a regular grid, quadtree, and kd-tree partitions. We also evaluate nine criteria for deciding where quadtree tiles should be subdivided, including residue count, fringe density, and measures of phase variation, at different tile sizes and budgets. In single-threaded experiments on a heteroge",
+      "pdf_link": "https://arxiv.org/pdf/2609.28541.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.28541",
+      "submission_date": "2026-09-25T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.5,
+      "updated_at": "2026-09-25T11:05:43.287059+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-43",
       "paper_number": 43,
       "title": "Eywa: Automating Model-Based Testing using LLMs",
@@ -4785,6 +4739,29 @@
       "ratings": [],
       "score": 11.5,
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
+    },
+    {
+      "forum_id": "2609.30163",
+      "paper_number": -1,
+      "title": "Steelhead: Interleaving Partially Synchronous and Asynchronous Commit Rules on a Shared DAG",
+      "authors": [
+        "George Danezis, Zeno De Angeli, Philipp Jovanovic, Lefteris Kokoris-Kogias, Markus Legner, Alberto Sonnino"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.30163v1 Announce Type: new \nAbstract: Dual-mode consensus protocols are fast when the network is partially synchronous and remain live under asynchrony. We introduce Steelhead, a dual-mode mechanism that composes a partially synchronous and an asynchronous commit rule over one DAG: every k-th round is decided by the asynchronous rule, whose leader a common coin reveals after the votes, and all other rounds by the partially synchronous rule. Every interval, validators replay the committed DAG under each candidate period, adopt the one with the fewest expected message delays, and fall back to k = 1 when the output stalls; the asynchronous rule applied to the coin rounds alone keeps the protocol live. Steelhead sends no message beyond the DAG's blocks, not even to agree on the peri",
+      "pdf_link": "https://arxiv.org/pdf/2609.30163.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.30163",
+      "submission_date": "2026-09-25T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-09-25T11:05:43.287031+00:00"
     },
     {
       "forum_id": "usenix-osdi26-63",
@@ -5696,29 +5673,6 @@
       "ratings": [],
       "score": 4.0,
       "updated_at": "2026-07-21T08:54:26.742343+00:00"
-    },
-    {
-      "forum_id": "2603.13668",
-      "paper_number": -1,
-      "title": "Audo-Sight: AI-driven Ambient Perception Across Edge-Cloud for Blind and Low Vision Users",
-      "authors": [
-        "Jacob Bradshaw, Mohsen Riahi Alam, Bhanuja Ainary, Minseo Kim, Mohsen Amini Salehi"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2603.13668v2 Announce Type: replace \nAbstract: Despite advances in assistive technologies, Blind and Low-Vision (BLV) individuals continue to face challenges in understanding their surroundings. Delivering concise, useful, and timely scene descriptions for ambient perception remains a long-standing problem in accessibility. Existing solutions often fail to identify user expectations for real-time and accessible responses. Moreover, for a given task, they either rely on cloud offloading, which imposes a significant delay, or edge-based AI, which often sacrifices accuracy. To address this, we present Audo-Sight, an AI-driven assistive system that spans across Edge-Cloud continuum and enables BLV individuals to perceive their surroundings through voice-based conversation. Audo-Sight pro",
-      "pdf_link": "https://arxiv.org/pdf/2603.13668.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.13668",
-      "submission_date": "2026-09-24T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-09-24T11:04:41.830046+00:00"
     },
     {
       "forum_id": "usenix-osdi26-83",

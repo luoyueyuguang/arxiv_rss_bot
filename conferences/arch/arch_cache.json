@@ -1,77 +1,77 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-09-24T11:04:41.134106+00:00",
+  "last_updated": "2026-09-25T11:05:41.406388+00:00",
   "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2609.27456",
+      "forum_id": "2609.29246",
       "paper_number": -1,
-      "title": "Precision and resource scaling of real-time flux distortion compensation for superconducting quantum control",
+      "title": "HBF-Sim: An Extensible HBF Simulator for Large-scale GPU Memory Systems",
       "authors": [
-        "Qi Zhou, Zi-Hao Mei, Peng Duan, Peng Wang, Liang-Liang Guo, Hao-Ran Tao, Wei-Cheng Kong, Hui Yang, Guo-Ping Guo, Zhao-Yun Chen"
+        "Yaqi Li, Jing Wang, Junfeng Wang, Long Yang, Han Yan, Xiaohu Chai, Liang Shi"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2609.27456v1 Announce Type: cross \nAbstract: Real-time waveform generation supports dynamic quantum circuits without pre-storing complete waveforms for every execution path. However, long-lived distortions in flux-control lines degrade gate fidelity, requiring compensation to account for the actual pulse history. A frequency-domain inversion and time-domain fitting method is proposed for resource-efficient real-time flux distortion compensation. The method fits the reconstructed compensation impulse response with a compact hybrid infinite impulse response (IIR) and finite impulse response (FIR) filter. Look-ahead parallelization enables this filter to process synthesized waveforms at 1.2GSa/s on a field-programmable gate array (FPGA). Two-qubit cross-entropy benchmarking shows that r",
-      "pdf_link": "https://arxiv.org/pdf/2609.27456.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.27456",
-      "submission_date": "2026-09-24T04:00:00+00:00",
+      "abstract": "arXiv:2609.29246v1 Announce Type: new \nAbstract: High-bandwidth flash (HBF) is introduced to address the memory wall, which can co-package a dense NAND stack with the GPU, targeting the performance gap between near-accelerator bandwidth and flash density. HBF, however, is neither a large HBM nor a fast NVMe SSD. Its usable bandwidth depends on how GPU cache-line requests map onto NAND pages, how concurrency spreads across channel-affine die sets, and how media management interacts with the GPU memory pipeline. To our knowledge, existing GPU, SSD, or HBF simulators cannot faithfully model this behavior. We present HBF-Sim, an extensible, reusable, and faithful HBF simulator integrated with simulated GPUs. It closes the loop between GPU issue limits, device queuing, and NAND behavior in one ",
+      "pdf_link": "https://arxiv.org/pdf/2609.29246.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.29246",
+      "submission_date": "2026-09-25T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-09-24T11:04:41.129055+00:00"
+      "score": 36.0,
+      "updated_at": "2026-09-25T11:05:41.401148+00:00"
     },
     {
-      "forum_id": "2609.27319",
+      "forum_id": "2609.29267",
       "paper_number": -1,
-      "title": "Exploiting Decompression Latency for Covert Channels in Inter-Line-Compressed LLCs",
+      "title": "MagiCFirm: A Runtime for Magic-State Cultivation with Algorithm-Hardware Co-Design",
       "authors": [
-        "David K. Oh, Hiroshi Sasaki"
+        "Jubo Xu, Abbas B. Ziad, Prakash Murali, Hongxiang Fan"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2609.27319v1 Announce Type: new \nAbstract: The recently proposed XOR cache is an inter-line-compressed last-level cache (LLC) that leverages the data-inclusion relationship between the private caches and the LLC, compressing two cache lines into one by XORing them. The architecture relies on the cache coherence protocol for data decompression. In this paper, we demonstrate that this mechanism - specifically the latency asymmetry between a cache hit on an uncompressed vs. compressed line - introduces microarchitectural vulnerabilities. Based on this observation, we propose a covert channel attack targeting the XOR cache. A colluding sender controls the receiver's access latency by triggering decompression through targeted write requests to partner cache lines. By exploiting the data-d",
-      "pdf_link": "https://arxiv.org/pdf/2609.27319.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.27319",
-      "submission_date": "2026-09-24T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-09-24T11:04:41.128864+00:00"
-    },
-    {
-      "forum_id": "2609.22743",
-      "paper_number": -1,
-      "title": "TEMPO: A Tag-Based Framework for Efficient Memory Ordering",
-      "authors": [
-        "Pranith Kumar, Prasun Gera, Hyojong Kim, Chulhyung Park, Hyesoon Kim"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2609.22743v2 Announce Type: replace \nAbstract: Weak-memory processors rely on ordering instructions for correctness, yet conventional implementations often enforce them more conservatively than the memory model requires. This over-enforcement manifests as drain-induced retirement stalls at ordering instructions and conservative squash/replay of speculative loads, suppressing legal executions and reducing throughput. We present TEMPO, a tag-based framework for precise micro-architectural implementation of ordering instructions. TEMPO assigns lightweight ordering tags to instructions and decomposes enforcement across retirement-time predicates and completion-time store ordering, allowing the core to enforce required ordering without conservative retirement serialization. TEMPO eliminat",
-      "pdf_link": "https://arxiv.org/pdf/2609.22743.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.22743",
-      "submission_date": "2026-09-24T04:00:00+00:00",
+      "abstract": "arXiv:2609.29267v1 Announce Type: cross \nAbstract: Magic-state cultivation offers a promising alternative for lowering the cost of non-Clifford operations in fault-tolerant quantum computing (FTQC). However, realizing cultivation in practice exposes two challenges: (i) the lack of an open-source classical runtime layer between logical software and physical control, and (ii) the latency constraints on protocol-specific decisions that determine magic-state readiness. To address these challenges, we adopt an algorithm--hardware co-design approach. At the algorithm level, we develop a two-stage early-escape scheme that identifies an informative subset of detectors offline, constructs a compact decoding problem, and performs partial decoding in parallel with complete decoding at runtime, allowi",
+      "pdf_link": "https://arxiv.org/pdf/2609.29267.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.29267",
+      "submission_date": "2026-09-25T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-09-24T11:04:41.129091+00:00"
+      "updated_at": "2026-09-25T11:05:41.401326+00:00"
+    },
+    {
+      "forum_id": "2609.30131",
+      "paper_number": -1,
+      "title": "Enhancing Word-Level Property Directed Reachability with LLM-Driven Semantic Guidance",
+      "authors": [
+        "Guangyu Hu, Mingkai Miao, Zhiyuan Yan, Xiaofeng Zhou, Wei Zhang, Hongce Zhang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2609.30131v1 Announce Type: new \nAbstract: Property Directed Reachability (PDR) is a prominent algorithm for hardware formal verification. However, bit-level PDR often struggles with datapath-heavy designs because bit-blasting obscures high-level semantics. While word-level PDR addresses this by reasoning over bit-vector and array theories, its performance remains bottlenecked by discovering proof-relevant word-level relations. We propose LLM4PDR, a framework leveraging Large Language Models (LLMs) to guide word-level PDR search through three mechanisms: (1) Predicate Generation, extracting state relationships as candidate predicates during inductive generalization; (2) Clause Generation, producing candidate frame lemmas to accelerate convergence after formal validation; and (3) Asse",
+      "pdf_link": "https://arxiv.org/pdf/2609.30131.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.30131",
+      "submission_date": "2026-09-25T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-09-25T11:05:41.401311+00:00"
     }
   ]
 }
