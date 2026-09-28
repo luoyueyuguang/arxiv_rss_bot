@@ -1,6 +1,6 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-09-25 11:05:43 UTC
+- **Last Updated**: 2026-09-28 12:51:27 UTC
 - **Total Filtered Papers**: 4
 - **Displaying**: 4 (arxiv: 4)
 - **Papers with Ratings**: 0
@@ -9,7 +9,7 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [A Neural Hierarchical-Matrix Preconditioner for Real-Time GPU Solves](https://arxiv.org/abs/2605.13343) | `ARXIV` | 34.5 |
-| 2 | [Concurrent Split Learning Through Stable Client Clustering](https://arxiv.org/abs/2609.29395) | `ARXIV` | 13.5 |
-| 3 | [Cross-Model Autoscaling for Shared LLM Serving](https://arxiv.org/abs/2609.29160) | `ARXIV` | 12.0 |
-| 4 | [Hard Stop: Kernel-Level Preemption and Containment for Rogue Agentic Execution](https://arxiv.org/abs/2609.29808) | `ARXIV` | 1.0 |
+| 1 | [Scepsy: Serving Agentic Workflows Using Aggregate LLM Pipelines](https://arxiv.org/abs/2604.15186) | `ARXIV` | 42.0 |
+| 2 | [Bandwidth-Aware and Cost-Efficient Pipeline Parallel Scheduling in Geo-Distributed LLM Training](https://arxiv.org/abs/2605.25375) | `ARXIV` | 39.5 |
+| 3 | [Job Class Thermal Intent Aware Liquid Cooling Allocation for AI Data Centers](https://arxiv.org/abs/2609.30785) | `ARXIV` | 13.0 |
+| 4 | [Momentum-Guided Federated Split Distillation for Personalized Temporal Edge Intelligence](https://arxiv.org/abs/2609.31159) | `ARXIV` | 1.0 |

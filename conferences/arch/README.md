@@ -1,14 +1,12 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-09-25 11:05:41 UTC
-- **Total Filtered Papers**: 3
-- **Displaying**: 3 (arxiv: 3)
+- **Last Updated**: 2026-09-28 12:51:26 UTC
+- **Total Filtered Papers**: 1
+- **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [HBF-Sim: An Extensible HBF Simulator for Large-scale GPU Memory Systems](https://arxiv.org/abs/2609.29246) | `ARXIV` | 36.0 |
-| 2 | [MagiCFirm: A Runtime for Magic-State Cultivation with Algorithm-Hardware Co-Design](https://arxiv.org/abs/2609.29267) | `ARXIV` | 2.0 |
-| 3 | [Enhancing Word-Level Property Directed Reachability with LLM-Driven Semantic Guidance](https://arxiv.org/abs/2609.30131) | `ARXIV` | 1.0 |
+| 1 | [Peregrino: A Full-Hardware Accelerator for the Complete Falcon Post-Quantum Digital Signature Scheme on Resource-Constrained Edge Devices](https://arxiv.org/abs/2609.31252) | `ARXIV` | 44.0 |

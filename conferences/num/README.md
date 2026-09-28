@@ -1,13 +1,12 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-09-25 11:06:21 UTC
-- **Total Filtered Papers**: 2
-- **Displaying**: 2 (arxiv: 2)
+- **Last Updated**: 2026-09-28 12:51:59 UTC
+- **Total Filtered Papers**: 1
+- **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Discretization, Uniform-in-Time Estimations and Approximation of Invariant Measures for Nonlinear Stochastic Differential Equations with Non-Uniform Dissipativity](https://arxiv.org/abs/2511.12124) | `ARXIV` | 3.5 |
-| 2 | [Barotropic-Baroclinic Splitting for Multilayer Shallow Water Models with Exchanges](https://arxiv.org/abs/2601.16709) | `ARXIV` | 1.0 |
+| 1 | [Non-uniform finite-element meshes defined by ray dynamics for Helmholtz problems](https://arxiv.org/abs/2506.15630) | `ARXIV` | 2.0 |

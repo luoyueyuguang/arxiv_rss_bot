@@ -1,6 +1,6 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-09-25 11:05:46 UTC
+- **Last Updated**: 2026-09-28 12:51:30 UTC
 - **Total Filtered Papers**: 3
 - **Displaying**: 3 (arxiv: 3)
 - **Papers with Ratings**: 0
@@ -9,6 +9,6 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [HeteroReason: Heterogeneous FPGA-GPU Acceleration for Disaggregated Speculative Reasoning](https://arxiv.org/abs/2609.28717) | `ARXIV` | 2.5 |
-| 2 | [Enhancing Word-Level Property Directed Reachability with LLM-Driven Semantic Guidance](https://arxiv.org/abs/2609.30131) | `ARXIV` | 2.0 |
-| 3 | [VQ-LIC: Shared Vector-Quantized Learned Image Compression on a Resource-Constrained FPGA](https://arxiv.org/abs/2609.29727) | `ARXIV` | 1.5 |
+| 1 | [GRACIDIT: Graph-Circuit Digital Twin for Configuration-Induced Routing Delay Prediction in Zynq UltraScale+ FPGAs](https://arxiv.org/abs/2609.30534) | `ARXIV` | 36.0 |
+| 2 | [From Routing Delay Shifts to Silent Data Corruption: Neutron-Induced SEU Effects in AXI-Based Zynq UltraScale+ MPSoCs](https://arxiv.org/abs/2609.30538) | `ARXIV` | 33.5 |
+| 3 | [Peregrino: A Full-Hardware Accelerator for the Complete Falcon Post-Quantum Digital Signature Scheme on Resource-Constrained Edge Devices](https://arxiv.org/abs/2609.31252) | `ARXIV` | 12.0 |

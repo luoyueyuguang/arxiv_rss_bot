@@ -1,77 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-09-25T11:05:41.406388+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-09-28T12:51:26.960582+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2609.29246",
+      "forum_id": "2609.31252",
       "paper_number": -1,
-      "title": "HBF-Sim: An Extensible HBF Simulator for Large-scale GPU Memory Systems",
+      "title": "Peregrino: A Full-Hardware Accelerator for the Complete Falcon Post-Quantum Digital Signature Scheme on Resource-Constrained Edge Devices",
       "authors": [
-        "Yaqi Li, Jing Wang, Junfeng Wang, Long Yang, Han Yan, Xiaohu Chai, Liang Shi"
+        "Antonio Carre\\~no, Jaime Se\\~nor, Jorge Portilla"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2609.29246v1 Announce Type: new \nAbstract: High-bandwidth flash (HBF) is introduced to address the memory wall, which can co-package a dense NAND stack with the GPU, targeting the performance gap between near-accelerator bandwidth and flash density. HBF, however, is neither a large HBM nor a fast NVMe SSD. Its usable bandwidth depends on how GPU cache-line requests map onto NAND pages, how concurrency spreads across channel-affine die sets, and how media management interacts with the GPU memory pipeline. To our knowledge, existing GPU, SSD, or HBF simulators cannot faithfully model this behavior. We present HBF-Sim, an extensible, reusable, and faithful HBF simulator integrated with simulated GPUs. It closes the loop between GPU issue limits, device queuing, and NAND behavior in one ",
-      "pdf_link": "https://arxiv.org/pdf/2609.29246.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.29246",
-      "submission_date": "2026-09-25T04:00:00+00:00",
+      "abstract": "arXiv:2609.31252v1 Announce Type: cross \nAbstract: The arrival of quantum computers threatens the security guarantees of classical cryptography, since quantum algorithms can break schemes that remain secure against conventional attacks. The National Institute of Standards and Technology (NIST) has therefore standardized a set of post-quantum cryptographic algorithms, among them Falcon, a lattice-based digital signature scheme with the most compact signature and public-key sizes of the standardized candidates. Falcon's reliance on floating-point arithmetic makes it hard to implement in hardware, and prior work offers only partial accelerators for specific operations such as signature generation or verification, or a single full implementation generated through high-level synthesis (HLS). Th",
+      "pdf_link": "https://arxiv.org/pdf/2609.31252.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.31252",
+      "submission_date": "2026-09-28T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 36.0,
-      "updated_at": "2026-09-25T11:05:41.401148+00:00"
-    },
-    {
-      "forum_id": "2609.29267",
-      "paper_number": -1,
-      "title": "MagiCFirm: A Runtime for Magic-State Cultivation with Algorithm-Hardware Co-Design",
-      "authors": [
-        "Jubo Xu, Abbas B. Ziad, Prakash Murali, Hongxiang Fan"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2609.29267v1 Announce Type: cross \nAbstract: Magic-state cultivation offers a promising alternative for lowering the cost of non-Clifford operations in fault-tolerant quantum computing (FTQC). However, realizing cultivation in practice exposes two challenges: (i) the lack of an open-source classical runtime layer between logical software and physical control, and (ii) the latency constraints on protocol-specific decisions that determine magic-state readiness. To address these challenges, we adopt an algorithm--hardware co-design approach. At the algorithm level, we develop a two-stage early-escape scheme that identifies an informative subset of detectors offline, constructs a compact decoding problem, and performs partial decoding in parallel with complete decoding at runtime, allowi",
-      "pdf_link": "https://arxiv.org/pdf/2609.29267.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.29267",
-      "submission_date": "2026-09-25T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-09-25T11:05:41.401326+00:00"
-    },
-    {
-      "forum_id": "2609.30131",
-      "paper_number": -1,
-      "title": "Enhancing Word-Level Property Directed Reachability with LLM-Driven Semantic Guidance",
-      "authors": [
-        "Guangyu Hu, Mingkai Miao, Zhiyuan Yan, Xiaofeng Zhou, Wei Zhang, Hongce Zhang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2609.30131v1 Announce Type: new \nAbstract: Property Directed Reachability (PDR) is a prominent algorithm for hardware formal verification. However, bit-level PDR often struggles with datapath-heavy designs because bit-blasting obscures high-level semantics. While word-level PDR addresses this by reasoning over bit-vector and array theories, its performance remains bottlenecked by discovering proof-relevant word-level relations. We propose LLM4PDR, a framework leveraging Large Language Models (LLMs) to guide word-level PDR search through three mechanisms: (1) Predicate Generation, extracting state relationships as candidate predicates during inductive generalization; (2) Clause Generation, producing candidate frame lemmas to accelerate convergence after formal validation; and (3) Asse",
-      "pdf_link": "https://arxiv.org/pdf/2609.30131.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.30131",
-      "submission_date": "2026-09-25T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-09-25T11:05:41.401311+00:00"
+      "score": 44.0,
+      "updated_at": "2026-09-28T12:51:26.958502+00:00"
     }
   ]
 }
