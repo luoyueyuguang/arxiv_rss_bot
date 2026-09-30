@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-09-29T12:05:34.519671+00:00",
-  "paper_count": 306,
+  "last_updated": "2026-09-30T12:05:01.571083+00:00",
+  "paper_count": 309,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1817,6 +1817,29 @@
       "ratings": [],
       "score": 40.5,
       "updated_at": "2026-07-21T08:54:17.394352+00:00"
+    },
+    {
+      "forum_id": "2609.37916",
+      "paper_number": -1,
+      "title": "RLX: A Unified Multi-Backend Tensor Compiler and Distributed Runtime in Rust",
+      "authors": [
+        "Eugene Hauptmann, Nataliya Kosmyna"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.37916v1 Announce Type: new \nAbstract: Production machine learning (ML) stacks often split graph compilation and kernel execution across different layers and languages, making backend behavior, deployment guarantees, and performance fallbacks hard to reason about end-to-end. RLX addresses this gap with a single Rust codebase that combines compiler and runtime roles around one primitive-level, three-level intermediate representation (IR), plus a transparent dispatch contract that resolves each operator to native, common-IR, or rewritten lowering and fails compilation when legalization is not possible. The same IR targets fourteen runtime devices (cpu, metal, mlx, ane, cuda, rocm, oneapi, tpu, hexagon, gpu, vulkan, opengl, directx, webgpu) and two specialty codegen paths (Cortex-M ",
+      "pdf_link": "https://arxiv.org/pdf/2609.37916.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.37916",
+      "submission_date": "2026-09-30T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 39.0,
+      "updated_at": "2026-09-30T12:04:59.265731+00:00"
     },
     {
       "forum_id": "usenix-fast26-7",
@@ -4938,6 +4961,29 @@
       "updated_at": "2026-07-21T08:54:22.941047+00:00"
     },
     {
+      "forum_id": "2609.36899",
+      "paper_number": -1,
+      "title": "Reshaping Rollout Workloads for Asynchronous RL Post-Training on Heterogeneous Accelerators",
+      "authors": [
+        "Jiahui Li, Hao Nie, Yibo Zhu, Pengjin Xie, Yu Zhou, Xiaolong Zheng, Liang Liu, Huadong Ma"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.36899v1 Announce Type: new \nAbstract: Reinforcement learning (RL) post-training increasingly relies on long-horizon, multi-turn rollouts. As post-training jobs outgrow a single cluster, rollout pools assembled across clusters introduce hardware heterogeneity. Rollout scheduling must serve two stakeholders: the hardware needs high aggregate decode throughput, while each trajectory needs to finish quickly. The tension arises from the memory-bandwidth-bound nature of autoregressive decoding. A large active batch amortizes weight reads for high throughput but leaves each trajectory a smaller bandwidth share and a longer completion time. The scheduling objective is therefore specialization, letting different workers serve different roles. Heterogeneous hardware further enables this s",
+      "pdf_link": "https://arxiv.org/pdf/2609.36899.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.36899",
+      "submission_date": "2026-09-30T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 7.0,
+      "updated_at": "2026-09-30T12:04:59.264010+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-69",
       "paper_number": 69,
       "title": "Come Hell or Still Water: Alleviating Tail Latency in Cloud Block Store",
@@ -5171,6 +5217,29 @@
       "ratings": [],
       "score": 5.5,
       "updated_at": "2026-07-21T08:54:22.940695+00:00"
+    },
+    {
+      "forum_id": "2510.03491",
+      "paper_number": -1,
+      "title": "SHORTCUT: In-Collective Topology Reconfiguration for Low-Latency AllReduce",
+      "authors": [
+        "Sarah-Michelle Hammer, Anton Juerss, Stefan Schmid"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2510.03491v2 Announce Type: replace-cross \nAbstract: Distributed ML training relies on efficient AllReduce communication to aggregate data across nodes. In this setting, reconfigurable optical interconnects offer high-bandwidth, energy-efficient direct links between accelerators but often produce ring-based topologies that remain static during a collective.\n  The Ring AllReduce algorithm naturally matches these topologies but its cumulative latency grows linearly with node count. Low-latency algorithms such as Recursive Doubling (RD) instead achieve logarithmic cumulative per-step latency, but their long-distance exchanges incur dilation and congestion costs on a static ring. In-collective topology reconfiguration can eliminate these penalties but each topology change adds reconfigur",
+      "pdf_link": "https://arxiv.org/pdf/2510.03491.pdf",
+      "forum_link": "https://arxiv.org/abs/2510.03491",
+      "submission_date": "2026-09-30T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.0,
+      "updated_at": "2026-09-30T12:04:59.268439+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-8",

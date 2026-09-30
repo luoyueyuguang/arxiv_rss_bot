@@ -1,31 +1,54 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-09-28T12:51:26.960582+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-09-30T12:04:58.769350+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2609.31252",
+      "forum_id": "2606.23742",
       "paper_number": -1,
-      "title": "Peregrino: A Full-Hardware Accelerator for the Complete Falcon Post-Quantum Digital Signature Scheme on Resource-Constrained Edge Devices",
+      "title": "Low-power analogue neural networks with trainable nonlinear connections for continuous control",
       "authors": [
-        "Antonio Carre\\~no, Jaime Se\\~nor, Jorge Portilla"
+        "Ian T. Vidamour, Fernando Aguirre, Thomas J. Hayward, Matthew O. A. Ellis, Charles Swindells, Alexander McDonnell, Martin Trefzer, Finley Robins, Luca Manneschi, Susan Stepney, Tony Kenyon, Oliver J. Sutton, Jack C. Gartside, Ivan Y. Tyukin, Adnan Mehonic, Eleni Vasilaki"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2609.31252v1 Announce Type: cross \nAbstract: The arrival of quantum computers threatens the security guarantees of classical cryptography, since quantum algorithms can break schemes that remain secure against conventional attacks. The National Institute of Standards and Technology (NIST) has therefore standardized a set of post-quantum cryptographic algorithms, among them Falcon, a lattice-based digital signature scheme with the most compact signature and public-key sizes of the standardized candidates. Falcon's reliance on floating-point arithmetic makes it hard to implement in hardware, and prior work offers only partial accelerators for specific operations such as signature generation or verification, or a single full implementation generated through high-level synthesis (HLS). Th",
-      "pdf_link": "https://arxiv.org/pdf/2609.31252.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.31252",
-      "submission_date": "2026-09-28T04:00:00+00:00",
+      "abstract": "arXiv:2606.23742v2 Announce Type: replace-cross \nAbstract: Physical neural networks promise low-power machine learning by computing directly with analogue device physics, but most architectures force nonlinear device responses to act as scalar weights. Inspired by Kolmogorov-Arnold networks, we place trainable nonlinear functions on the connections, making each physical connection a learnable computational element. Realising these functions as analogue band-pass filters on field-programmable analogue arrays, we find that the benefit is task-dependent and follows from the smoothness of the physical basis: the networks represent smooth, continuously valued targets, including robotic kinematics, continuous control, and photovoltaic maximum-power-point tracking, with far fewer nodes and connec",
+      "pdf_link": "https://arxiv.org/pdf/2606.23742.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.23742",
+      "submission_date": "2026-09-30T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 44.0,
-      "updated_at": "2026-09-28T12:51:26.958502+00:00"
+      "score": 32.5,
+      "updated_at": "2026-09-30T12:04:58.766396+00:00"
+    },
+    {
+      "forum_id": "2605.13210",
+      "paper_number": -1,
+      "title": "PoisonCap: Efficient Hierarchical Temporal Safety for CHERI",
+      "authors": [
+        "Yuecheng Wang, Jonathan Woodruff, Alfredo Mazzinghi, Peter Rugg, Alexandre Joannou, Samuel W. Stark, Robert N. M. Watson, Simon W. Moore"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2605.13210v3 Announce Type: replace \nAbstract: In this paper, we present PoisonCap: scalable temporal safety with strict use-after-free protection and initialisation safety for CHERI systems. Efficient memory safety is an increasing priority for programming languages, operating systems, and hardware designs, and CHERI is a leading hardware/software system that provides native spatial safety and a foundation for temporal memory safety. Cornucopia Reloaded, the current state-of-the-art CHERI temporal safety solution, provides use-after-reallocation safety instead of stronger use-after-free safety, and is not able to enforce initialisation safety. We show that a new 'poison' capability format can be used to enforce strict use-after-free and initialisation safety, and also to communicate",
+      "pdf_link": "https://arxiv.org/pdf/2605.13210.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.13210",
+      "submission_date": "2026-09-30T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.5,
+      "updated_at": "2026-09-30T12:04:58.766312+00:00"
     }
   ]
 }

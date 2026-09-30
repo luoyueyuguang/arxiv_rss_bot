@@ -1,77 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-09-28T12:51:30.045880+00:00",
+  "last_updated": "2026-09-30T12:05:01.620890+00:00",
   "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2609.30534",
+      "forum_id": "2609.37711",
       "paper_number": -1,
-      "title": "GRACIDIT: Graph-Circuit Digital Twin for Configuration-Induced Routing Delay Prediction in Zynq UltraScale+ FPGAs",
+      "title": "Zephyr: An Efficient Audio Denoising System Using Spiking Neural Networks Enabled With A Sparsity-Aware Flexible FPGA PE Array",
       "authors": [
-        "Mostafa Darvishi"
+        "Cheng-En Chang, Chi-Wei Kao, Chung-Lun Yang, Yan-Lin Jiang, Yi-Chen Huang, Sebastian Fieldhouse, Kea-Tiong Tang"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.30534v1 Announce Type: cross \nAbstract: Configuration-induced perturbations in SRAM-based FPGAs may activate dormant programmable routing branches and increase path delay without immediately producing a functional error. Although prior studies have separately investigated the electrical origin of these delay changes, their in-situ detection, and the topology of commercial routing fabrics, a scalable method for predicting their timing impact at the granularity of programmable interconnect points and routed nets remains unavailable. This paper presents GRACIDIT, a graph-circuit digital twin framework for predicting configuration-induced routing delay degradation in Zynq UltraScale+ FPGAs. The proposed framework extracts the routing-resource graph of the XCZU7EV programmable fabric",
-      "pdf_link": "https://arxiv.org/pdf/2609.30534.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.30534",
-      "submission_date": "2026-09-28T04:00:00+00:00",
+      "abstract": "arXiv:2609.37711v1 Announce Type: new \nAbstract: In this work we look to neuromorphic computing to solve the power consumption problem that audio denoising neural networks face on edge devices like smartphones, wireless headphones and hearing aids. Spiking neural networks (SNNs) have the potential to solve this problem due to their high activation sparsity and low complexity, however many SOTA SNNs require hardware that supports a mixture of operations to be able to fully perform inference. To solve this problem, we convert SOTA audio denoising neural network Spiking-FullSubNet to a hardware friendly version showing that via QAT and activation function simplification we can achieve $\\approx28\\times$ improvement in power consumption to 52.9nJ per 32ms audio frame when calculated for custom ",
+      "pdf_link": "https://arxiv.org/pdf/2609.37711.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.37711",
+      "submission_date": "2026-09-30T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 36.0,
-      "updated_at": "2026-09-28T12:51:30.044057+00:00"
+      "score": 3.5,
+      "updated_at": "2026-09-30T12:05:01.618268+00:00"
     },
     {
-      "forum_id": "2609.30538",
+      "forum_id": "2609.36584",
       "paper_number": -1,
-      "title": "From Routing Delay Shifts to Silent Data Corruption: Neutron-Induced SEU Effects in AXI-Based Zynq UltraScale+ MPSoCs",
+      "title": "Making Analog Training Scale: Co-Designing Mapping, Optimizer, and Converters",
       "authors": [
-        "Mostafa Darvishi"
+        "Zhaoxian Wu, Tayfun Gokmen, Omobayode Fagbohungbe, T. Patrick Xiao, Tianyi Chen"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2609.36584v1 Announce Type: cross \nAbstract: Analog in-memory computing (AIMC) offers an alternative for model training by executing matrix operations directly where weights are stored. However, scaling AIMC to train modern deep models remains an open challenge due to severe hardware non-idealities, including physical weights with finite dynamic range and write granularity, analog-digital converters with finite resolution, and noisy and asymmetric updates. Guided by the insight that gradient accumulation is sensitive to precision and rounding errors, we adopt a mixed-precision training paradigm: executing forward and backward matrix multiplications in the analog domain while computing weight gradients in the digital domain. To enable scalable training, we present a holistic system-al",
+      "pdf_link": "https://arxiv.org/pdf/2609.36584.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.36584",
+      "submission_date": "2026-09-30T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-09-30T12:05:01.618366+00:00"
+    },
+    {
+      "forum_id": "2609.36634",
+      "paper_number": -1,
+      "title": "Lossless Compression of Lookup Tables for Hardware Applications",
+      "authors": [
+        "Alireza Khataei, Kia Bazargan"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2609.30538v1 Announce Type: cross \nAbstract: SRAM-based FPGA system-on-chip devices are vulnerable to single-event upsets (SEUs) in configuration memory, which may perturb programmable routing resources and degrade communication fabrics. In modern Zynq UltraScale+ MPSoCs, such routing disturbances can introduce small propagation delay shifts that remain logically transparent yet compromise AXI-based data transfers and lead to silent data corruption. Although routing delay degradation and AXI interconnect failures have been studied independently, their experimental correlation under neutron irradiation has not been established. This work presents a cross-layer investigation on a ZCU104 platform integrating routing-dominated delay sensors with an AXI interconnect benchmark comprising r",
-      "pdf_link": "https://arxiv.org/pdf/2609.30538.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.30538",
-      "submission_date": "2026-09-28T04:00:00+00:00",
+      "abstract": "arXiv:2609.36634v1 Announce Type: new \nAbstract: Large lookup tables are widely used in hardware to store constant-valued arrays for applications ranging from elementary mathematical operations, such as constant-coefficient multiplication and nonlinear function evaluation, to emerging machine learning models, including table-based neural networks (NNs) and Kolmogorov-Arnold networks (KANs). However, storing extensive tables of constant values can lead to excessive hardware costs in resource-constrained edge devices such as FPGAs. In this paper, we propose CompressedLUT, a lossless compression scheme and its decoder hardware architecture for the efficient storage and retrieval of arbitrary data in hardware. Our method combines decomposition, self-similarities, higher-bit compression, and mu",
+      "pdf_link": "https://arxiv.org/pdf/2609.36634.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.36634",
+      "submission_date": "2026-09-30T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 33.5,
-      "updated_at": "2026-09-28T12:51:30.044108+00:00"
-    },
-    {
-      "forum_id": "2609.31252",
-      "paper_number": -1,
-      "title": "Peregrino: A Full-Hardware Accelerator for the Complete Falcon Post-Quantum Digital Signature Scheme on Resource-Constrained Edge Devices",
-      "authors": [
-        "Antonio Carre\\~no, Jaime Se\\~nor, Jorge Portilla"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2609.31252v1 Announce Type: cross \nAbstract: The arrival of quantum computers threatens the security guarantees of classical cryptography, since quantum algorithms can break schemes that remain secure against conventional attacks. The National Institute of Standards and Technology (NIST) has therefore standardized a set of post-quantum cryptographic algorithms, among them Falcon, a lattice-based digital signature scheme with the most compact signature and public-key sizes of the standardized candidates. Falcon's reliance on floating-point arithmetic makes it hard to implement in hardware, and prior work offers only partial accelerators for specific operations such as signature generation or verification, or a single full implementation generated through high-level synthesis (HLS). Th",
-      "pdf_link": "https://arxiv.org/pdf/2609.31252.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.31252",
-      "submission_date": "2026-09-28T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-09-28T12:51:30.044151+00:00"
+      "score": 1.0,
+      "updated_at": "2026-09-30T12:05:01.618155+00:00"
     }
   ]
 }

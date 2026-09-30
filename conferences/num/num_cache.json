@@ -1,31 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-09-28T12:51:59.699901+00:00",
+  "last_updated": "2026-09-30T12:05:31.871071+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2506.15630",
+      "forum_id": "2609.37137",
       "paper_number": -1,
-      "title": "Non-uniform finite-element meshes defined by ray dynamics for Helmholtz problems",
+      "title": "Mixed-Precision Computing for Scientific Discovery: Formats, Co-Design, and Responsible Approximation",
       "authors": [
-        "Martin Averseng, Jeffrey Galkowski, Euan A. Spence"
+        "Emmanuel Agullo, Hartwig Anzt, Daniel Bauer, David Bindel, Alfredo Buttari, Alexandru Calotoiu, Erin Claire Carson, Pasqua D'Ambra, Ieva Dau\\v{z}ickait\\.e, James W. Demmel, Jack Dongarra, Iain Duff, Massimiliano Fasi, Dominik G\\\"oddeke, Stef Graillat, Laslo Hunhold, Roman Iakymchuk, Fabienne J\\'ez\\'equel, Nils Kohl, Harald K\\\"ostler, Jakub Kru\\v{z}\\'ik, Julien Langou, Xiaoye Sherry Li, Hatem Ltaief, Piotr Luszczek, Yuxin Ma, Theo Mary, Mantas Mikaitis, Hiroyuki Ootomo, Daniel Osei-Kuffuor, Enrique S. Quintana-Ort\\'i, Ulrich R\\\"ude, Jennifer Scott, John Shalf, Linda Stals, Rasmus Tamstorf, Stefan Turek, Petr Vacek, Bastien Vieubl\\'e, Rio Yokota"
       ],
       "keywords": [
         "cs.NA",
-        "numerical analysis"
+        "scientific computing"
       ],
-      "abstract": "arXiv:2506.15630v3 Announce Type: replace \nAbstract: The $h$-version of the finite-element method ($h$-FEM) applied to the high-frequency Helmholtz equation has been a classic topic in numerical analysis since the 1990s. It is now rigorously understood that (using piecewise polynomials of degree $p$ on a mesh of a maximal width $h$) the conditions \"$(hk)^p \\rho$ sufficiently small\" and \"$(hk)^{2p} \\rho$ sufficiently small\" guarantee, respectively, $k$-uniform quasioptimality (QO) and bounded relative error (BRE), where $\\rho$ is the norm of the solution operator with $\\rho\\sim k$ for non-trapping problems. Empirically, these conditions are observed to be optimal in the context of $h$-FEM with a uniform mesh. This paper demonstrates that QO and BRE can be achieved using certain non-uniform ",
-      "pdf_link": "https://arxiv.org/pdf/2506.15630.pdf",
-      "forum_link": "https://arxiv.org/abs/2506.15630",
-      "submission_date": "2026-09-28T04:00:00+00:00",
-      "conference": "numerical analysis",
+      "abstract": "arXiv:2609.37137v1 Announce Type: new \nAbstract: Reduced and mixed precision have moved from a niche optimization to a central design axis in scientific computing and engineering, driven by energy constraints, heterogeneous accelerators, and the convergence of simulation and machine learning. This paper organizes the landscape around seven coupled themes---number formats, floating-point emulation, emerging architectures, hardware/software co-design, relation to other approximations, software design, and precision as a multilevel resource ---and, for each theme, synthesizes the state of the art, future directions, and open questions. We emphasize \\emph{energy per trusted solution} as the core objective, and we frame \\say{recklessly responsible} computing as a pragmatic doctrine: exploit low",
+      "pdf_link": "https://arxiv.org/pdf/2609.37137.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.37137",
+      "submission_date": "2026-09-30T04:00:00+00:00",
+      "conference": "scientific computing",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-09-28T12:51:59.698399+00:00"
+      "score": 4.0,
+      "updated_at": "2026-09-30T12:05:31.868505+00:00"
     }
   ]
 }
