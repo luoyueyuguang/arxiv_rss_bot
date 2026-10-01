@@ -1,7 +1,7 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-09-30T12:05:31.810223+00:00",
+  "last_updated": "2026-10-01T12:27:37.273992+00:00",
   "paper_count": 32,
   "papers": [
     {
@@ -18,14 +18,14 @@
       "abstract": "arXiv:2509.06154v3 Announce Type: replace \nAbstract: Developing accurate, data-efficient surrogate models is central to advancing AI for Science. Neural operators (NOs), which approximate mappings between infinite-dimensional function spaces using conventional neural architectures, have gained popularity as surrogates for systems driven by partial differential equations (PDEs). However, their reliance on large datasets and limited ability to generalize in low-data regimes hinder their practical utility. We argue that these limitations arise from their global processing of data, which fails to exploit the local, discretized structure of physical systems. To address this, we propose Graph Neural Simulators (GNS) as a principled surrogate modeling paradigm for time-dependent PDEs. GNS leverag",
       "pdf_link": "https://arxiv.org/pdf/2509.06154.pdf",
       "forum_link": "https://arxiv.org/abs/2509.06154",
-      "submission_date": "2026-09-30T04:00:00+00:00",
+      "submission_date": "2026-10-01T04:00:00+00:00",
       "conference": "AI for Science",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 75.5,
-      "updated_at": "2026-09-30T12:05:02.388095+00:00"
+      "updated_at": "2026-10-01T12:27:07.993059+00:00"
     },
     {
       "forum_id": "mlr-icml25-1",
@@ -463,14 +463,14 @@
       "abstract": "arXiv:2609.37078v1 Announce Type: new \nAbstract: Time series modeling increasingly demands high-quality supervision, yet target observations remain scarce - exogenous inputs are broadly available, but target measurements are often unavailable due to cost, infrastructure, or accessibility constraints. Can models trained on observed locations reconstruct target time series where measurements have never been collected? We term this zero-shot time series reconstruction. A naive approach - directly mapping exogenous inputs to targets - can yield predictions at unobserved locations, but without target signals, such models fail to capture the intrinsic dynamics of the target variable, producing overly smooth outputs that underestimate extremes. This reveals systematic errors that call for explici",
       "pdf_link": "https://arxiv.org/pdf/2609.37078.pdf",
       "forum_link": "https://arxiv.org/abs/2609.37078",
-      "submission_date": "2026-09-30T04:00:00+00:00",
+      "submission_date": "2026-10-01T04:00:00+00:00",
       "conference": "ICML",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 3.0,
-      "updated_at": "2026-09-30T12:05:02.374142+00:00"
+      "updated_at": "2026-10-01T12:27:07.975452+00:00"
     },
     {
       "forum_id": "mlr-icml25-4",

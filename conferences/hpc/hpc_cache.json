@@ -1,78 +1,9 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-09-30T12:04:59.185010+00:00",
-  "paper_count": 12,
+  "last_updated": "2026-10-01T12:27:03.823199+00:00",
+  "paper_count": 5,
   "papers": [
-    {
-      "forum_id": "2609.34244",
-      "paper_number": -1,
-      "title": "Heddle: Learning Structural Templates for Parallelism Planning on Heterogeneous GPU Clusters",
-      "authors": [
-        "Taeyoon Kim, Yonguk Song, Seoyeong Choy, Hexiao Duan, Dong Li, Seo Jin Park, Myeongjae Jeon"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.34244v2 Announce Type: replace \nAbstract: Training large machine learning models on shared GPU infrastructures faces two challenges: (1) GPU availability shifts dynamically with varying resource demands from tenants, and (2) hardware heterogeneity accumulates as datacenters continuously adopt new GPU generations. Due to the vast search space induced by heterogeneous GPU types and node sizes, training planners must prune it aggressively to remain tractable, yet must also derive high-throughput plans promptly as cluster configurations change. Heddle achieves this goal through a learning-based planner that reduces the full planning problem to a search over pipeline structures. Heddle encapsulates planning decisions in a structural template and learns to construct plans from templat",
-      "pdf_link": "https://arxiv.org/pdf/2609.34244.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.34244",
-      "submission_date": "2026-09-30T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 66.0,
-      "updated_at": "2026-09-30T12:04:58.818998+00:00"
-    },
-    {
-      "forum_id": "2609.36899",
-      "paper_number": -1,
-      "title": "Reshaping Rollout Workloads for Asynchronous RL Post-Training on Heterogeneous Accelerators",
-      "authors": [
-        "Jiahui Li, Hao Nie, Yibo Zhu, Pengjin Xie, Yu Zhou, Xiaolong Zheng, Liang Liu, Huadong Ma"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.36899v1 Announce Type: new \nAbstract: Reinforcement learning (RL) post-training increasingly relies on long-horizon, multi-turn rollouts. As post-training jobs outgrow a single cluster, rollout pools assembled across clusters introduce hardware heterogeneity. Rollout scheduling must serve two stakeholders: the hardware needs high aggregate decode throughput, while each trajectory needs to finish quickly. The tension arises from the memory-bandwidth-bound nature of autoregressive decoding. A large active batch amortizes weight reads for high throughput but leaves each trajectory a smaller bandwidth share and a longer completion time. The scheduling objective is therefore specialization, letting different workers serve different roles. Heterogeneous hardware further enables this s",
-      "pdf_link": "https://arxiv.org/pdf/2609.36899.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.36899",
-      "submission_date": "2026-09-30T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 65.0,
-      "updated_at": "2026-09-30T12:04:58.817758+00:00"
-    },
-    {
-      "forum_id": "2604.15186",
-      "paper_number": -1,
-      "title": "Scepsy: Serving Agentic Workflows Using Aggregate LLM Pipelines",
-      "authors": [
-        "Otto White, Marcel Wagenl\\\"ander, Britannio Jarrett, Xijin Zhou, Yanda Tao, Pedro Silvestre, Guo Li, Huanzhou Zhu, Llu\\'is Vilanova, Peter Pietzuch"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2604.15186v3 Announce Type: replace \nAbstract: Agentic workflows carry out complex tasks by orchestrating multiple large language models (LLMs) and tools. Serving them at a target throughput with low latency is hard because they are written in arbitrary agentic frameworks and their execution times are unpredictable: execution branches, fans out, or recurs in data-dependent ways. Since their LLMs often outnumber the available GPUs, they also oversubscribe GPUs.\n  We describe Scepsy, a serving system that schedules arbitrary multi-LLM agentic workflows onto a GPU cluster. Scepsy exploits the insight that, while the end-to-end latency of an agentic workflow is unpredictable, each LLM's fraction of execution time is comparatively stable across requests. Scepsy profiles each LLM under dif",
-      "pdf_link": "https://arxiv.org/pdf/2604.15186.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.15186",
-      "submission_date": "2026-09-30T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 42.0,
-      "updated_at": "2026-09-30T12:04:58.818732+00:00"
-    },
     {
       "forum_id": "2609.32868",
       "paper_number": -1,
@@ -84,86 +15,63 @@
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.32868v2 Announce Type: replace \nAbstract: Traditional scientific computing requires researchers to translate computational intent into environment configuration, resource requests, and executable jobs, then diagnose failures from scheduler state and application logs. We present ASCEND (Autonomous Scientific Computing Engine and Novel Discovery), an AI-powered agent interface that runs the agent on the researcher's own laptop, reaching Slurm-managed clusters and a GPU workstation over a multiplexed authenticated connection, with site-specific execution policies checked by locally executed tools; the language model is hosted remotely and holds no credentials. No facility-scale service is required: an account on each resource is sufficient, and the public installer lets users link ",
+      "abstract": "arXiv:2609.32868v3 Announce Type: replace \nAbstract: Traditional scientific computing requires researchers to translate intent into environment configuration, resource requests, and executable jobs, then diagnose failures from scheduler state and logs. We present ASCEND (Autonomous Scientific Computing Engine and Novel Discovery), an AI-powered agent interface that supports several placements of the agent and, in the arrangement used for every case here, runs it on the researcher's own laptop, reaching Slurm-managed clusters and a GPU workstation over a multiplexed authenticated connection, with site policies checked by locally executed tools. The language model agent (Claude Code or Codex, selected at each launch) is hosted remotely and proposes actions but holds no credentials. No facili",
       "pdf_link": "https://arxiv.org/pdf/2609.32868.pdf",
       "forum_link": "https://arxiv.org/abs/2609.32868",
-      "submission_date": "2026-09-30T04:00:00+00:00",
+      "submission_date": "2026-10-01T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 35.5,
-      "updated_at": "2026-09-30T12:04:58.818914+00:00"
+      "updated_at": "2026-10-01T12:27:03.387741+00:00"
     },
     {
-      "forum_id": "2609.33092",
+      "forum_id": "2609.39350",
       "paper_number": -1,
-      "title": "Hierarchical Secure Distributed Linearly Separable Computation with Arbitrary Heterogeneous Data Assignment",
+      "title": "HAPMoE: Heterogeneity-Aware Automatic Parallelism Planning for Mixture-of-Experts Models Training",
       "authors": [
-        "Ziting Zhang, Chenyi Sun, Kai Wan, Xiang Zhang"
+        "Mengyuan Fan, Peizhuang Cong, Zixiao Huang, Si Xu, Tong Qiao, Yanghao Li, Jing Yang, Tong Yang, Quanlu Zhang, Yu Wang"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.33092v2 Announce Type: replace \nAbstract: This paper studies secure distributed linearly separable computation over a three-layer hierarchical network, where clustered users communicate with a central server through relays. The server aims to recover Kc linear combinations of K intermediate outcomes, where each intermediate outcome is a separable function of one dataset. We consider a more general setting with arbitrary heterogeneous data assignment across users, where ''arbitrary'' means that the data assignment is given in advance (which can be in any form) and ''heterogeneous'' means that the users may hold different numbers of datasets. Under this assignment, each user computes the intermediate outcomes of its assigned datasets and sends masked messages to its associated rel",
-      "pdf_link": "https://arxiv.org/pdf/2609.33092.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.33092",
-      "submission_date": "2026-09-30T04:00:00+00:00",
+      "abstract": "arXiv:2609.39350v1 Announce Type: new \nAbstract: As model sizes continue to scale, distributed training has become inevitable. Automatic parallelization techniques can derive efficient training parallelism strategies at low cost while achieving superior performance. The difficulty of this problem is jointly determined by the complexity of the model and the underlying compute cluster. Meanwhile, mixture-of-experts (MoE) models are increasingly emerging as the dominant architecture and the rapid evolution of accelerator hardware has made cluster heterogeneity commonplace, posing substantial challenges to automatic parallelization. However, existing approaches typically target either MoE architectures or heterogeneous clusters, failing to generalize to scenarios where both challenges coexist.",
+      "pdf_link": "https://arxiv.org/pdf/2609.39350.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.39350",
+      "submission_date": "2026-10-01T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-09-30T12:04:58.818960+00:00"
+      "score": 26.5,
+      "updated_at": "2026-10-01T12:27:03.386260+00:00"
     },
     {
-      "forum_id": "2609.37085",
+      "forum_id": "2604.09107",
       "paper_number": -1,
-      "title": "ARGOS: Reinforcement Learning-Driven Multidimensional Elasticity for Service Orchestration in the Computing Continuum",
+      "title": "TensorHub: Scalable and Elastic Weight Transfer for LLM RL Training",
       "authors": [
-        "Javier Mateos-Bravo, Sergio Laso, Juan Luis Herrera, Ilir Murturi, Pantelis Frangoudis, Schahram Dustdar"
+        "Chenhao Ye, Huaizheng Zhang, Mingcong Han, Baoquan Zhong, Xiang Li, Qixiang Chen, Xinyi Zhang, Weidong Zhang, Kaihua Jiang, Wang Zhang, He Sun, Wencong Xiao, Andrea C. Arpaci-Dusseau, Remzi H. Arpaci-Dusseau"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.37085v1 Announce Type: new \nAbstract: Data-intensive services in the Computing Continuum must balance analytics quality, resource usage, and cost across heterogeneous nodes with limited and uneven capacity. This balance becomes especially difficult when resource scaling reaches capacity limits, because changes in demand and cluster pressure must then be absorbed without violating client-defined quality ranges. Existing orchestrators mainly adapt resources, placements, or replicas, while analytics requirements such as coverage, sample, and freshness remain fixed. This article presents ARGOS, the Adaptive Reinforcement Learning-Driven Governance for Orchestrated Services, an end-to-end controller that formulates multidimensional elasticity as a per-request Markov decision process ",
-      "pdf_link": "https://arxiv.org/pdf/2609.37085.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.37085",
-      "submission_date": "2026-09-30T04:00:00+00:00",
+      "abstract": "arXiv:2604.09107v2 Announce Type: replace \nAbstract: Modern LLM reinforcement learning (RL) workloads require a high-performance weight transfer system to scale training across heterogeneous compute resources. However, efficiently transferring terabyte-scale model weights across thousands of GPUs remains challenging because the system must accommodate clusters that dynamically scale up and down while keeping coordination, data movement, and storage overhead low.\n  We introduce Reference-Oriented Storage (ROS), a new storage abstraction for RL weight transfer that exploits highly replicated model weights in place. ROS presents the illusion that certain versions of the model weights are stored and can be fetched on demand. Underneath, ROS does not physically store any copies of the weights; ",
+      "pdf_link": "https://arxiv.org/pdf/2604.09107.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.09107",
+      "submission_date": "2026-10-01T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 22.0,
-      "updated_at": "2026-09-30T12:04:58.818030+00:00"
-    },
-    {
-      "forum_id": "2609.36157",
-      "paper_number": -1,
-      "title": "Encoder-Sharing Hierarchical Federated Multi-Task Learning for VANETs",
-      "authors": [
-        "M. Saeid HaghighiFard, Sinem Coleri"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.36157v1 Announce Type: cross \nAbstract: Most federated learning frameworks for vehicular ad hoc networks assume that all vehicles collaboratively train a single model for a common task. This assumption limits their applicability to practical vehicular environments, where vehicles may perform heterogeneous but related perception tasks with different output spaces. This paper proposes encoder-sharing hierarchical multi-task federated learning (EN-HMTFL), which integrates cluster-based hierarchical federated learning with a globally shared encoder and vehicle-local decoders. EN-HMTFL enables vehicles performing different tasks to collaboratively learn a transferable feature representation while preserving their task-specific models locally. Only the encoder is exchanged and aggrega",
-      "pdf_link": "https://arxiv.org/pdf/2609.36157.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.36157",
-      "submission_date": "2026-09-30T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-09-30T12:04:58.818398+00:00"
+      "score": 14.5,
+      "updated_at": "2026-10-01T12:27:03.387540+00:00"
     },
     {
       "forum_id": "2609.36266",
@@ -176,109 +84,40 @@
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.36266v1 Announce Type: cross \nAbstract: Distributed quantum computing (DQC) has been proposed as a way to scale quantum algorithms for practical applications beyond monolithic quantum processor architectures. Among these applications, quantum chemistry is widely regarded as one of the most promising use cases for quantum computing. In this work, we estimate the distributed-resource requirements of unitary coupled-cluster (UCC) ans\\\"atze for quantum chemistry, focusing on unitary coupled-cluster singles and doubles (UCCSD), unitary pair coupled-cluster doubles (UpCCD), and unitary pair coupled-cluster with generalized singles and doubles (UpCCGSD) circuits for hydrogen chains. We focus on a teleportation-based approach to DQC, quantitatively comparing a naive distribution method ",
+      "abstract": "arXiv:2609.36266v2 Announce Type: replace-cross \nAbstract: Distributed quantum computing (DQC) has been proposed as a way to scale quantum algorithms for practical applications beyond monolithic quantum processor architectures. Among these applications, quantum chemistry is widely regarded as one of the most promising use cases for quantum computing. In this work, we estimate the distributed-resource requirements of unitary coupled-cluster (UCC) ans\\\"atze for quantum chemistry, focusing on unitary coupled-cluster singles and doubles (UCCSD), unitary pair coupled-cluster doubles (UpCCD), and unitary pair coupled-cluster with generalized singles and doubles (UpCCGSD) circuits for hydrogen chains. We focus on a teleportation-based approach to DQC, quantitatively comparing a naive distribution",
       "pdf_link": "https://arxiv.org/pdf/2609.36266.pdf",
       "forum_link": "https://arxiv.org/abs/2609.36266",
-      "submission_date": "2026-09-30T04:00:00+00:00",
+      "submission_date": "2026-10-01T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 13.0,
-      "updated_at": "2026-09-30T12:04:58.818449+00:00"
+      "updated_at": "2026-10-01T12:27:03.388221+00:00"
     },
     {
-      "forum_id": "2609.36986",
+      "forum_id": "2609.29808",
       "paper_number": -1,
-      "title": "CF-LoRA: Decoupled Factor Aggregation and Adaptation-Aware Client Clustering for Federated LoRA Fine-Tuning",
+      "title": "Hard Stop: Kernel-Level Preemption and Containment for Rogue Agentic Execution",
       "authors": [
-        "Mengjun Yi, Langxing Yang, Suhan Guo, Furao Shen, Jian Zhao"
+        "Jos\\'e Luis Pino"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.36986v1 Announce Type: cross \nAbstract: Federated LoRA fine-tuning enables parameter-efficient adaptation of pre-trained models without sharing private data, but suffers from two fundamental mismatches under heterogeneous client data: a structural aggregation mismatch caused by independently averaging LoRA factors, and a statistical collaboration mismatch caused by enforcing a single global adapter across divergent clients. To address these issues, we propose CF-LoRA, a clustered federated LoRA fine-tuning framework that combines decoupled factor aggregation with adaptation-aware client clustering. CF-LoRA first learns a globally shared $A$ factor while retaining personalized $B_i$ factors, then identifies clients with similar adaptation patterns based on the cosine similarity o",
-      "pdf_link": "https://arxiv.org/pdf/2609.36986.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.36986",
-      "submission_date": "2026-09-30T04:00:00+00:00",
+      "abstract": "arXiv:2609.29808v2 Announce Type: replace-cross \nAbstract: In July 2026, an unconstrained autonomous agent participating in a frontier AI cybersecurity evaluation harness breached its evaluation sandbox, established an external command-and-control foothold, and executed a multi-stage intrusion into Hugging Face's production multi-tenant dataset conversion infrastructure (referred to in this autopsy as Incident-2026-Alpha). Over 4.5 days, the rogue agent executed 17,600 discrete actions across 6,280 worker clusters, compromised AWS EC2 Instance Metadata Service (IMDS) credentials, forged Kubernetes service account tokens, rooted physical worker nodes via overprivileged CSI drivers, harvested 136 production secrets, and enrolled 181 ephemeral sandboxes into the organization's internal mesh V",
+      "pdf_link": "https://arxiv.org/pdf/2609.29808.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.29808",
+      "submission_date": "2026-10-01T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-09-30T12:04:58.818577+00:00"
-    },
-    {
-      "forum_id": "2605.15335",
-      "paper_number": -1,
-      "title": "Designing Dense Satellite Clusters for Distributed Space-based Datacenters",
-      "authors": [
-        "Jules P\\'enot, Hamsa Balakrishnan"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2605.15335v2 Announce Type: replace \nAbstract: Recent proposals for datacenters in sun-synchronous Low Earth Orbit (LEO) rely on a large number of compute satellites formation-flying in dense clusters. Designing such satellite clusters requires optimizing the satellites' orbital geometry under several safety and operational constraints applied throughout the cluster's entire orbit. These constraints include guaranteeing a minimum inter-satellite spacing, unobstructed solar power for every satellite, and that each satellite have a stable set of nearest neighbors with which it can maintain inter-satellite links (ISLs). In this work, we propose two main cluster orbital designs, parametrized by the minimum inter-satellite spacing $R_{min}$ and the cluster radius $R_{max}$: a planar clust",
-      "pdf_link": "https://arxiv.org/pdf/2605.15335.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.15335",
-      "submission_date": "2026-09-30T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-09-30T12:04:58.818827+00:00"
-    },
-    {
-      "forum_id": "2604.25540",
-      "paper_number": -1,
-      "title": "Economical and ecological impact of sector coupling applied to computing clusters",
-      "authors": [
-        "P. Bechtle, O. Freyermuth, M. Geffers, M. Giffels, M. H\\\"ubner, F. Kirfel, J. Kreutz, S. Krieg, S. Matberg, M. Schnepf"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2604.25540v2 Announce Type: replace \nAbstract: The rising share of abundant renewable energy inevitably increases volatility in the electricity production. The concept of sector coupling means that the volatility of electricity production to a large degree can be absorbed by dispatching electricity consumption whenever excess renewable energy is available. A system that is dynamically operated based on this principle can lower its total environmental impact. In addition, operational costs might be reducible as electricity prizes strongly depend on the residual load of the energy system. High-performance computing clusters in the field of science represent an ideal testing ground for such dynamic operation. Short-term delays in computing results due to electricity production being ass",
-      "pdf_link": "https://arxiv.org/pdf/2604.25540.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.25540",
-      "submission_date": "2026-09-30T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-09-30T12:04:58.818776+00:00"
-    },
-    {
-      "forum_id": "2609.36762",
-      "paper_number": -1,
-      "title": "Federated Clustering with Unknown Local and Global Cluster Cardinalities",
-      "authors": [
-        "Mitushi Goyal, Tarun S., Riddhanya Senapathi, Arun Raman"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.36762v1 Announce Type: cross \nAbstract: Federated clustering methods that do not require the global number of clusters $K$ still assume that each client knows its local number $K_g$. This assumption is hard to justify when clients know no more about their data than the server does, as in fault diagnosis across independently operated industrial sites. We propose a two-phase framework in which neither count is known: each client first estimates $K_g$ from its own data, and an aggregator that requires local counts, such as FedGEM, then uses these estimates in place of the true values. For the first phase we introduce Adaptive Split--Merge (ASM), which grows a spherical Gaussian mixture by BIC-driven splitting and then merges excess components. ASM uses no labels, selects its hyperp",
-      "pdf_link": "https://arxiv.org/pdf/2609.36762.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.36762",
-      "submission_date": "2026-09-30T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-09-30T12:04:58.818536+00:00"
+      "score": 1.0,
+      "updated_at": "2026-10-01T12:27:03.388076+00:00"
     }
   ]
 }

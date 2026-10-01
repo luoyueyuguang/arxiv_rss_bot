@@ -1,77 +1,31 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-09-30T12:05:01.620890+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-10-01T12:27:06.828928+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2609.37711",
+      "forum_id": "2609.14595",
       "paper_number": -1,
-      "title": "Zephyr: An Efficient Audio Denoising System Using Spiking Neural Networks Enabled With A Sparsity-Aware Flexible FPGA PE Array",
+      "title": "Diagnosing Temporal Misalignment in Multichannel Time-Series Classification with Minimum Description Length",
       "authors": [
-        "Cheng-En Chang, Chi-Wei Kao, Chung-Lun Yang, Yan-Lin Jiang, Yi-Chen Huang, Sebastian Fieldhouse, Kea-Tiong Tang"
+        "Sebastian Buschj\\\"ager, Michael Frichert, Daniel Kuhse, Jian-Jia Chen"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.37711v1 Announce Type: new \nAbstract: In this work we look to neuromorphic computing to solve the power consumption problem that audio denoising neural networks face on edge devices like smartphones, wireless headphones and hearing aids. Spiking neural networks (SNNs) have the potential to solve this problem due to their high activation sparsity and low complexity, however many SOTA SNNs require hardware that supports a mixture of operations to be able to fully perform inference. To solve this problem, we convert SOTA audio denoising neural network Spiking-FullSubNet to a hardware friendly version showing that via QAT and activation function simplification we can achieve $\\approx28\\times$ improvement in power consumption to 52.9nJ per 32ms audio frame when calculated for custom ",
-      "pdf_link": "https://arxiv.org/pdf/2609.37711.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.37711",
-      "submission_date": "2026-09-30T04:00:00+00:00",
+      "abstract": "arXiv:2609.14595v2 Announce Type: replace-cross \nAbstract: Multichannel time-series classification commonly assumes synchronized sensor streams, although latency, clock drift, and preprocessing can introduce relative delays during data collection or after deployment. Existing synchronization solutions are often hardware-specific and difficult to apply retrospectively. Consequently, synchronization problems may remain undetected while classification performance is suboptimal. We introduce a classifier- and label-free diagnostic based on minimum description length (MDL). Our method applies candidate temporal shifts to sensor groups and measures how efficiently one group can be encoded through a representation of the remaining channels. An increased codelength indicates that the shift destroy",
+      "pdf_link": "https://arxiv.org/pdf/2609.14595.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.14595",
+      "submission_date": "2026-10-01T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-09-30T12:05:01.618268+00:00"
-    },
-    {
-      "forum_id": "2609.36584",
-      "paper_number": -1,
-      "title": "Making Analog Training Scale: Co-Designing Mapping, Optimizer, and Converters",
-      "authors": [
-        "Zhaoxian Wu, Tayfun Gokmen, Omobayode Fagbohungbe, T. Patrick Xiao, Tianyi Chen"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2609.36584v1 Announce Type: cross \nAbstract: Analog in-memory computing (AIMC) offers an alternative for model training by executing matrix operations directly where weights are stored. However, scaling AIMC to train modern deep models remains an open challenge due to severe hardware non-idealities, including physical weights with finite dynamic range and write granularity, analog-digital converters with finite resolution, and noisy and asymmetric updates. Guided by the insight that gradient accumulation is sensitive to precision and rounding errors, we adopt a mixed-precision training paradigm: executing forward and backward matrix multiplications in the analog domain while computing weight gradients in the digital domain. To enable scalable training, we present a holistic system-al",
-      "pdf_link": "https://arxiv.org/pdf/2609.36584.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.36584",
-      "submission_date": "2026-09-30T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-09-30T12:05:01.618366+00:00"
-    },
-    {
-      "forum_id": "2609.36634",
-      "paper_number": -1,
-      "title": "Lossless Compression of Lookup Tables for Hardware Applications",
-      "authors": [
-        "Alireza Khataei, Kia Bazargan"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2609.36634v1 Announce Type: new \nAbstract: Large lookup tables are widely used in hardware to store constant-valued arrays for applications ranging from elementary mathematical operations, such as constant-coefficient multiplication and nonlinear function evaluation, to emerging machine learning models, including table-based neural networks (NNs) and Kolmogorov-Arnold networks (KANs). However, storing extensive tables of constant values can lead to excessive hardware costs in resource-constrained edge devices such as FPGAs. In this paper, we propose CompressedLUT, a lossless compression scheme and its decoder hardware architecture for the efficient storage and retrieval of arbitrary data in hardware. Our method combines decomposition, self-similarities, higher-bit compression, and mu",
-      "pdf_link": "https://arxiv.org/pdf/2609.36634.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.36634",
-      "submission_date": "2026-09-30T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-09-30T12:05:01.618155+00:00"
+      "score": 2.0,
+      "updated_at": "2026-10-01T12:27:06.827320+00:00"
     }
   ]
 }

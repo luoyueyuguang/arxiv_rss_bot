@@ -1,31 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-09-30T12:05:31.871071+00:00",
+  "last_updated": "2026-10-01T12:27:37.377743+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2609.37137",
+      "forum_id": "2608.09414",
       "paper_number": -1,
-      "title": "Mixed-Precision Computing for Scientific Discovery: Formats, Co-Design, and Responsible Approximation",
+      "title": "poly_rust: a domain-specific language for polytopal methods with a Rust interpreter",
       "authors": [
-        "Emmanuel Agullo, Hartwig Anzt, Daniel Bauer, David Bindel, Alfredo Buttari, Alexandru Calotoiu, Erin Claire Carson, Pasqua D'Ambra, Ieva Dau\\v{z}ickait\\.e, James W. Demmel, Jack Dongarra, Iain Duff, Massimiliano Fasi, Dominik G\\\"oddeke, Stef Graillat, Laslo Hunhold, Roman Iakymchuk, Fabienne J\\'ez\\'equel, Nils Kohl, Harald K\\\"ostler, Jakub Kru\\v{z}\\'ik, Julien Langou, Xiaoye Sherry Li, Hatem Ltaief, Piotr Luszczek, Yuxin Ma, Theo Mary, Mantas Mikaitis, Hiroyuki Ootomo, Daniel Osei-Kuffuor, Enrique S. Quintana-Ort\\'i, Ulrich R\\\"ude, Jennifer Scott, John Shalf, Linda Stals, Rasmus Tamstorf, Stefan Turek, Petr Vacek, Bastien Vieubl\\'e, Rio Yokota"
+        "Daniele A. Di Pietro"
       ],
       "keywords": [
         "cs.NA",
-        "scientific computing"
+        "numerical analysis"
       ],
-      "abstract": "arXiv:2609.37137v1 Announce Type: new \nAbstract: Reduced and mixed precision have moved from a niche optimization to a central design axis in scientific computing and engineering, driven by energy constraints, heterogeneous accelerators, and the convergence of simulation and machine learning. This paper organizes the landscape around seven coupled themes---number formats, floating-point emulation, emerging architectures, hardware/software co-design, relation to other approximations, software design, and precision as a multilevel resource ---and, for each theme, synthesizes the state of the art, future directions, and open questions. We emphasize \\emph{energy per trusted solution} as the core objective, and we frame \\say{recklessly responsible} computing as a pragmatic doctrine: exploit low",
-      "pdf_link": "https://arxiv.org/pdf/2609.37137.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.37137",
-      "submission_date": "2026-09-30T04:00:00+00:00",
-      "conference": "scientific computing",
+      "abstract": "arXiv:2608.09414v2 Announce Type: replace \nAbstract: Background: Over the last two decades, considerable effort in the applied mathematics community has been devoted to the development of polytopal methods, i.e., numerical methods for partial differential equations that support meshes more general than those used by traditional finite element methods. Despite their flexibility and attractive mathematical properties, polytopal methods have a steep implementation curve and, to date, no easily accessible open-source software framework has been available for their systematic implementation.\n  Methods: In this article, we introduce poly_rust, a new software library implementing a domain-specific language (DSL) specifically designed for polytopal methods. poly_rust provides high-level constructs",
+      "pdf_link": "https://arxiv.org/pdf/2608.09414.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.09414",
+      "submission_date": "2026-10-01T04:00:00+00:00",
+      "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-09-30T12:05:31.868505+00:00"
+      "score": 15.0,
+      "updated_at": "2026-10-01T12:27:37.374632+00:00"
     }
   ]
 }
