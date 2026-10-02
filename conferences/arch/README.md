@@ -1,13 +1,15 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-10-01 12:27:03 UTC
-- **Total Filtered Papers**: 2
-- **Displaying**: 2 (arxiv: 2)
+- **Last Updated**: 2026-10-02 11:51:02 UTC
+- **Total Filtered Papers**: 4
+- **Displaying**: 4 (arxiv: 4)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Low-power analogue neural networks with trainable nonlinear connections for continuous control](https://arxiv.org/abs/2606.23742) | `ARXIV` | 32.5 |
-| 2 | [PoisonCap: Efficient Hierarchical Temporal Safety for CHERI](https://arxiv.org/abs/2605.13210) | `ARXIV` | 31.5 |
+| 1 | [U-Sonic: An Open-Source 8-Channel Ultrasound Transmit IP in a 130 nm RISC-V SoC](https://arxiv.org/abs/2610.01603) | `ARXIV` | 67.0 |
+| 2 | [Cross-Layer Analysis of Thermal Tuning Stalls in Wafer-Scale Optical Interconnects for LLM MoE Training](https://arxiv.org/abs/2608.24637) | `ARXIV` | 64.0 |
+| 3 | [Open-Source Multi-Wire SPI Readout for Wearable Ultrasound Probes](https://arxiv.org/abs/2610.01623) | `ARXIV` | 23.0 |
+| 4 | [Catscan: Visualizing Pipelines of CPU Performance Simulation](https://arxiv.org/abs/2610.02121) | `ARXIV` | 2.5 |

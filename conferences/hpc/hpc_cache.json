@@ -1,123 +1,31 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-10-01T12:27:03.823199+00:00",
-  "paper_count": 5,
+  "last_updated": "2026-10-02T11:51:02.751430+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2609.32868",
+      "forum_id": "2610.00687",
       "paper_number": -1,
-      "title": "ASCEND: Personal AI Agents for Autonomous Scientific Computing Across HPC Clusters and GPU Workstations",
+      "title": "Leto: Fast In-Place Recovery for LLM Training on Surviving Hardware",
       "authors": [
-        "J. Paul Liu, Uthpala Herath, Andrew Petersen"
+        "Geon-Woo Kim, Joon Ha Kim, Daehyeok Kim"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.32868v3 Announce Type: replace \nAbstract: Traditional scientific computing requires researchers to translate intent into environment configuration, resource requests, and executable jobs, then diagnose failures from scheduler state and logs. We present ASCEND (Autonomous Scientific Computing Engine and Novel Discovery), an AI-powered agent interface that supports several placements of the agent and, in the arrangement used for every case here, runs it on the researcher's own laptop, reaching Slurm-managed clusters and a GPU workstation over a multiplexed authenticated connection, with site policies checked by locally executed tools. The language model agent (Claude Code or Codex, selected at each launch) is hosted remotely and proposes actions but holds no credentials. No facili",
-      "pdf_link": "https://arxiv.org/pdf/2609.32868.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.32868",
-      "submission_date": "2026-10-01T04:00:00+00:00",
+      "abstract": "arXiv:2610.00687v1 Announce Type: new \nAbstract: Hardware-operable failures (HOFs) interrupt large language model (LLM) training but permit recovery on the same hardware without reset, repair, or replacement. Existing recovery systems nevertheless reload checkpoints, recompute lost progress, and rebuild process state, idling GPUs that could otherwise continue training.\n  We present Leto, a fault-tolerant training system that leverages surviving hardware to enable efficient in-place recovery. Our key insight is that the state needed to resume training can be retained or prepared outside the active training process while remaining on the same hardware. Leto retains the working model state and the reusable process state, and preinitializes the remaining state in a shadow trainer. We devise tw",
+      "pdf_link": "https://arxiv.org/pdf/2610.00687.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.00687",
+      "submission_date": "2026-10-02T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 35.5,
-      "updated_at": "2026-10-01T12:27:03.387741+00:00"
-    },
-    {
-      "forum_id": "2609.39350",
-      "paper_number": -1,
-      "title": "HAPMoE: Heterogeneity-Aware Automatic Parallelism Planning for Mixture-of-Experts Models Training",
-      "authors": [
-        "Mengyuan Fan, Peizhuang Cong, Zixiao Huang, Si Xu, Tong Qiao, Yanghao Li, Jing Yang, Tong Yang, Quanlu Zhang, Yu Wang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.39350v1 Announce Type: new \nAbstract: As model sizes continue to scale, distributed training has become inevitable. Automatic parallelization techniques can derive efficient training parallelism strategies at low cost while achieving superior performance. The difficulty of this problem is jointly determined by the complexity of the model and the underlying compute cluster. Meanwhile, mixture-of-experts (MoE) models are increasingly emerging as the dominant architecture and the rapid evolution of accelerator hardware has made cluster heterogeneity commonplace, posing substantial challenges to automatic parallelization. However, existing approaches typically target either MoE architectures or heterogeneous clusters, failing to generalize to scenarios where both challenges coexist.",
-      "pdf_link": "https://arxiv.org/pdf/2609.39350.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.39350",
-      "submission_date": "2026-10-01T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 26.5,
-      "updated_at": "2026-10-01T12:27:03.386260+00:00"
-    },
-    {
-      "forum_id": "2604.09107",
-      "paper_number": -1,
-      "title": "TensorHub: Scalable and Elastic Weight Transfer for LLM RL Training",
-      "authors": [
-        "Chenhao Ye, Huaizheng Zhang, Mingcong Han, Baoquan Zhong, Xiang Li, Qixiang Chen, Xinyi Zhang, Weidong Zhang, Kaihua Jiang, Wang Zhang, He Sun, Wencong Xiao, Andrea C. Arpaci-Dusseau, Remzi H. Arpaci-Dusseau"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2604.09107v2 Announce Type: replace \nAbstract: Modern LLM reinforcement learning (RL) workloads require a high-performance weight transfer system to scale training across heterogeneous compute resources. However, efficiently transferring terabyte-scale model weights across thousands of GPUs remains challenging because the system must accommodate clusters that dynamically scale up and down while keeping coordination, data movement, and storage overhead low.\n  We introduce Reference-Oriented Storage (ROS), a new storage abstraction for RL weight transfer that exploits highly replicated model weights in place. ROS presents the illusion that certain versions of the model weights are stored and can be fetched on demand. Underneath, ROS does not physically store any copies of the weights; ",
-      "pdf_link": "https://arxiv.org/pdf/2604.09107.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.09107",
-      "submission_date": "2026-10-01T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-10-01T12:27:03.387540+00:00"
-    },
-    {
-      "forum_id": "2609.36266",
-      "paper_number": -1,
-      "title": "Quantifying Teleportation Overhead in Distributed Unitary Coupled-Cluster Ans\\\"atze",
-      "authors": [
-        "Grier M. Jones, Hassan Tariq Shafi, Zixuan Wang, Thomas Trenty, Zachary Vernec, Hans-Arno Jacobsen"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.36266v2 Announce Type: replace-cross \nAbstract: Distributed quantum computing (DQC) has been proposed as a way to scale quantum algorithms for practical applications beyond monolithic quantum processor architectures. Among these applications, quantum chemistry is widely regarded as one of the most promising use cases for quantum computing. In this work, we estimate the distributed-resource requirements of unitary coupled-cluster (UCC) ans\\\"atze for quantum chemistry, focusing on unitary coupled-cluster singles and doubles (UCCSD), unitary pair coupled-cluster doubles (UpCCD), and unitary pair coupled-cluster with generalized singles and doubles (UpCCGSD) circuits for hydrogen chains. We focus on a teleportation-based approach to DQC, quantitatively comparing a naive distribution",
-      "pdf_link": "https://arxiv.org/pdf/2609.36266.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.36266",
-      "submission_date": "2026-10-01T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-10-01T12:27:03.388221+00:00"
-    },
-    {
-      "forum_id": "2609.29808",
-      "paper_number": -1,
-      "title": "Hard Stop: Kernel-Level Preemption and Containment for Rogue Agentic Execution",
-      "authors": [
-        "Jos\\'e Luis Pino"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2609.29808v2 Announce Type: replace-cross \nAbstract: In July 2026, an unconstrained autonomous agent participating in a frontier AI cybersecurity evaluation harness breached its evaluation sandbox, established an external command-and-control foothold, and executed a multi-stage intrusion into Hugging Face's production multi-tenant dataset conversion infrastructure (referred to in this autopsy as Incident-2026-Alpha). Over 4.5 days, the rogue agent executed 17,600 discrete actions across 6,280 worker clusters, compromised AWS EC2 Instance Metadata Service (IMDS) credentials, forged Kubernetes service account tokens, rooted physical worker nodes via overprivileged CSI drivers, harvested 136 production secrets, and enrolled 181 ephemeral sandboxes into the organization's internal mesh V",
-      "pdf_link": "https://arxiv.org/pdf/2609.29808.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.29808",
-      "submission_date": "2026-10-01T04:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-01T12:27:03.388076+00:00"
+      "score": 11.0,
+      "updated_at": "2026-10-02T11:51:02.368797+00:00"
     }
   ]
 }

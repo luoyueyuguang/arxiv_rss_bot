@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-10-01T12:27:06.752306+00:00",
-  "paper_count": 315,
+  "last_updated": "2026-10-02T11:51:05.680068+00:00",
+  "paper_count": 311,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1315,29 +1315,6 @@
       "updated_at": "2026-07-21T08:54:17.406908+00:00"
     },
     {
-      "forum_id": "2609.39131",
-      "paper_number": -1,
-      "title": "Characterizing High Bandwidth Flash for LLM Serving",
-      "authors": [
-        "Zack Yu, Chloe Wong, Coleman Hooper, Minjae Lee, Wonjun Kang, Youngjin Cho, Michael W. Mahoney, Yakun Sophia Shao, Kurt Keutzer, Amir Gholami"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.39131v1 Announce Type: cross \nAbstract: Large language model (LLM) serving requires substantial memory to store model weights and KV caches. As models grow larger and contexts become longer, memory capacity and bandwidth increasingly become bottlenecks for serving performance. Agentic workloads compound this pressure through repeated interactions over growing contexts, making it increasingly important to retain KV state for reuse. High-bandwidth flash (HBF) offers a way to expand accelerator memory capacity for large language model (LLM) serving, but its access costs and limited write endurance complicate its use. We evaluate HBF for high-throughput agentic serving across system design and scheduling choices to understand when additional capacity improves serving performance and",
-      "pdf_link": "https://arxiv.org/pdf/2609.39131.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.39131",
-      "submission_date": "2026-10-01T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 48.0,
-      "updated_at": "2026-10-01T12:27:03.976338+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-143",
       "paper_number": 143,
       "title": "XLL: Cross-Layer Logging for Data Deduplication in Consensus-Based Storage",
@@ -1426,29 +1403,6 @@
       "ratings": [],
       "score": 47.5,
       "updated_at": "2026-07-21T08:54:22.940465+00:00"
-    },
-    {
-      "forum_id": "2608.26537",
-      "paper_number": -1,
-      "title": "IBLTs Measure Before They Decode: Self-Sizing Set Reconciliation for Database Consistency Verification",
-      "authors": [
-        "Min Wu, Ji Qi, Zhengsheng Ye, Chengdui Luo, Shudong Lu, Zhengyang Wei"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.26537v4 Announce Type: replace-cross \nAbstract: Cross-system data replication pipelines cannot confirm end-to-end consistency from the local guarantees of each hop, so the two endpoints must be compared directly on a periodic basis. Once the rows of a fixed snapshot are normalized into fingerprints, the task reduces to finding the symmetric difference of the two sets. An Invertible Bloom Lookup Table (IBLT) reconciles the sets with communication that grows only with the difference cardinality $d$, independent of table size, but its capacity must be fixed while $d$ is still unknown. Across 41,603 production reconciliations over 90 days, nonzero $d$ spans about seven orders of magnitude, and no reliable empirical constant exists.\n  We show that the count array of an IBLT has alrea",
-      "pdf_link": "https://arxiv.org/pdf/2608.26537.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.26537",
-      "submission_date": "2026-10-01T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 47.0,
-      "updated_at": "2026-10-01T12:27:03.977953+00:00"
     },
     {
       "forum_id": "usenix-osdi26-9",
@@ -1842,29 +1796,6 @@
       "updated_at": "2026-07-21T08:54:22.942248+00:00"
     },
     {
-      "forum_id": "2609.38648",
-      "paper_number": -1,
-      "title": "StateFork: Branchable Infrastructure for Agent Exploration",
-      "authors": [
-        "Jiakai Xu, Tianle Zhou, Georgios Liargkovas, Danielle Gillai, Ruizhe Fu, Patrick Shen, Eugene Wu, Kostis Kaffes"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.38648v1 Announce Type: new \nAbstract: AI agents improve task success by exploring multiple trajectories, but for computer-use agents each trajectory modifies external environment state. Branching from an intermediate point is correct only when restoration is observation-equivalent - future actions produce the same observations - and practical only when creating, restoring, and discarding branch states is physically efficient. We study this problem for terminal-using agents, where tasks modify files, shell context, running processes, and local services. We introduce StateFork, a logical control plane that separates exploration policies from physical state materialization, exposing sessions, commands, snapshots, restores, and cleanup over multiple execution substrates. We also bui",
-      "pdf_link": "https://arxiv.org/pdf/2609.38648.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.38648",
-      "submission_date": "2026-10-01T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 41.5,
-      "updated_at": "2026-10-01T12:27:03.883301+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-17",
       "paper_number": 17,
       "title": "Tessera: A Holistic Pipeline Parallelism Framework for Trillion-Parameter Heterogeneous MoE Training (Operational Systems)",
@@ -2022,29 +1953,6 @@
       "ratings": [],
       "score": 37.0,
       "updated_at": "2026-07-21T08:54:22.939070+00:00"
-    },
-    {
-      "forum_id": "2609.39631",
-      "paper_number": -1,
-      "title": "Kirin: Cloud-native WebAssembly Service Orchestration",
-      "authors": [
-        "Joshua Bauer, Sebastian Werner, Maria C. Borges"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.39631v1 Announce Type: new \nAbstract: Modern cloud computing infrastructure relies heavily on virtualization to provide workload isolation and resource efficiency. While containers have become the dominant deployment primitive due to their fast orchestration compared to traditional virtual machines, they still introduce non-trivial overhead. WebAssembly (Wasm) has emerged as an alternative isolation technology, offering a lightweight execution model. Because of compatibility limitations, WebAssembly has mainly been applied to Function-as-a-Service (FaaS) and Edge Computing scenarios, where it has attracted growing research interest.\n  However, recent advances in the WebAssembly ecosystem have significantly matured the technology, raising the question of whether it can serve as a",
-      "pdf_link": "https://arxiv.org/pdf/2609.39631.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.39631",
-      "submission_date": "2026-10-01T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 36.5,
-      "updated_at": "2026-10-01T12:27:03.975164+00:00"
     },
     {
       "forum_id": "usenix-osdi26-6",
@@ -2719,29 +2627,6 @@
       "ratings": [],
       "score": 26.5,
       "updated_at": "2026-07-21T08:54:22.924267+00:00"
-    },
-    {
-      "forum_id": "2609.39067",
-      "paper_number": -1,
-      "title": "Argus: A Real-EKS Study of When Predicting Spot Interruptions Beats Simple Checkpointing",
-      "authors": [
-        "Angshuman Chakravertty, MD Rayyan"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.39067v1 Announce Type: cross \nAbstract: Elastic Compute Cloud (EC2) Spot is 60% to 90% cheaper than On-Demand but can be reclaimed on just a 2-minute notice; for expensive multi-node training this loss can be severe, with one reclaim costing hours of synchronous progress. We build Argus, a Kubernetes operator, and ask empirically, on a CIFAR-10 testbed, when predicting interruptions beats simple checkpointing. Argus on real EKS survives a real Spot drain with a graceful SIGTERM checkpoint, resuming from epoch 8 and losing only the in-progress epoch. Alongside, we further find that in an 80-trial benchmark, the reactive-on-notice degrades toward no protection once interruption outpaces the fixed 2-minute notice, and predictive wasted compute is driven to zero, but with an oversiz",
-      "pdf_link": "https://arxiv.org/pdf/2609.39067.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.39067",
-      "submission_date": "2026-10-01T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 26.0,
-      "updated_at": "2026-10-01T12:27:03.976308+00:00"
     },
     {
       "forum_id": "usenix-fast26-8",
@@ -4018,6 +3903,29 @@
       "updated_at": "2026-07-21T08:54:22.936410+00:00"
     },
     {
+      "forum_id": "2610.00687",
+      "paper_number": -1,
+      "title": "Leto: Fast In-Place Recovery for LLM Training on Surviving Hardware",
+      "authors": [
+        "Geon-Woo Kim, Joon Ha Kim, Daehyeok Kim"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.00687v1 Announce Type: new \nAbstract: Hardware-operable failures (HOFs) interrupt large language model (LLM) training but permit recovery on the same hardware without reset, repair, or replacement. Existing recovery systems nevertheless reload checkpoints, recompute lost progress, and rebuild process state, idling GPUs that could otherwise continue training.\n  We present Leto, a fault-tolerant training system that leverages surviving hardware to enable efficient in-place recovery. Our key insight is that the state needed to resume training can be retained or prepared outside the active training process while remaining on the same hardware. Leto retains the working model state and the reusable process state, and preinitializes the remaining state in a shadow trainer. We devise tw",
+      "pdf_link": "https://arxiv.org/pdf/2610.00687.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.00687",
+      "submission_date": "2026-10-02T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-10-02T11:51:02.848801+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-5",
       "paper_number": 5,
       "title": "Simple Is Better: Multiplication May Be All You Need for LLM Request Scheduling",
@@ -4808,29 +4716,6 @@
       "ratings": [],
       "score": 11.5,
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
-    },
-    {
-      "forum_id": "2609.39357",
-      "paper_number": -1,
-      "title": "Robustifying Asynchronous SGD via Soft Throttling",
-      "authors": [
-        "Kaoru Otsuka, Maxime Meyer, Yuki Takezawa, Makoto Yamada, Anastasia Koloskova"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.39357v1 Announce Type: cross \nAbstract: Asynchronous SGD is a popular algorithm for distributed learning where each client's gradient update is applied on arrival. This leads to a speed-up, but also an increased vulnerability to attacks, as fast clients can dominate the total update. We introduce Throttle, a Byzantine-robust generalization of asynchronous SGD where the key idea is to exponentially down-weight updates from faster clients by a factor $q$. Both asynchronous SGD ($q=1$) and synchronous Byzantine-robust SGD ($q\\to\\infty$) correspond to specific settings of Throttle. We provide a theoretical analysis of the convergence rate and validate the robustness to attacks both theoretically and empirically. Remarkably, our experiments show that this down-weighting mechanism can",
-      "pdf_link": "https://arxiv.org/pdf/2609.39357.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.39357",
-      "submission_date": "2026-10-01T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-10-01T12:27:03.976610+00:00"
     },
     {
       "forum_id": "usenix-osdi26-63",
@@ -5744,6 +5629,29 @@
       "updated_at": "2026-07-21T08:54:26.742343+00:00"
     },
     {
+      "forum_id": "2609.09160",
+      "paper_number": -1,
+      "title": "LBFAST: A Lightweight Moment-Represented Lattice Boltzmann Solver for Multi-GPU Architectures",
+      "authors": [
+        "Marco Lauricella, Andrea Montessori, Giorgio Amati, Filippo Spiga, Adriano Tiribocchi, Massimo Bernaschi, Sauro Succi"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.09160v2 Announce Type: replace \nAbstract: We present LBFAST, a GPU-oriented lattice Boltzmann solver based on a lightweight moment-represented formulation, in which post-collision populations are reconstructed on the fly from a reduced set of moments rather than stored explicitly. This approach significantly lowers the memory footprint, enabling large three-dimensional simulations within the constraints of modern accelerator architectures, where VRAM capacity and bandwidth are critical resources. The method is assessed through standard single- and two-component benchmarks demonstrating good accuracy and stability. Extensive scaling experiments on multi-GPU systems show near-ideal weak scaling up to 512 GPUs and sustained performance across different velocity sets. The combinatio",
+      "pdf_link": "https://arxiv.org/pdf/2609.09160.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.09160",
+      "submission_date": "2026-10-02T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-10-02T11:51:02.850960+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-83",
       "paper_number": 83,
       "title": "Disentangling Graph Dependencies for Efficient Billion-Scale GPU Vector Search",
@@ -6332,6 +6240,29 @@
       "updated_at": "2026-07-21T08:54:26.744870+00:00"
     },
     {
+      "forum_id": "2610.01160",
+      "paper_number": -1,
+      "title": "Serving a Revisable World: Versioned Execution for Interruptible Agents",
+      "authors": [
+        "Yanxin Zhang, Rahul Sharma, Nitin Vegesna, Zheyu Fu, Chang Liu, Trivikram Krishnamurthy"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.01160v1 Announce Type: new \nAbstract: LLM agents revise running tasks when users change instructions, tools fail, or new information changes a plan. Today's servers express a revision as aborting old requests and submitting replacements. Yet the old execution's buffered output and outstanding work must stop affecting the application, while completed KV state may still be useful to its replacement. Handling these obligations separately can leave obsolete effects publishable and force the successor to rebuild valid state.\n  We present \\retire, a serving control-plane redesign around \\emph{versioned execution}. Requests own scheduling and memory resources; execution versions own \\emph{authority}, the permission to publish output or install state for the current execution. \\retire f",
+      "pdf_link": "https://arxiv.org/pdf/2610.01160.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.01160",
+      "submission_date": "2026-10-02T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-10-02T11:51:02.849187+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-10",
       "paper_number": 10,
       "title": "OBASE: Object-Based Address-Space Engineering to Improve Memory Tiering",
@@ -6788,73 +6719,50 @@
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
     },
     {
-      "forum_id": "2609.38723",
+      "forum_id": "2610.00714",
       "paper_number": -1,
-      "title": "Towards Efficient HPC Systems for Agents: Challenges and Opportunities",
+      "title": "MANTA: Machine Learning Augmented Tiering Advisor",
       "authors": [
-        "Yunjia Zheng, Bintang Dwi Marthen, Zachary Pan, Minghao Li, Raminder Singh, Manasvita Joshi, Minlan Yu, Juncheng Yang"
+        "Johannes Freischuetz, Kiet Pham, Sujay Yadalam, Konstantinos Kanellis, Michael Swift, Shivaram Venkataraman"
       ],
       "keywords": [
-        "cs.DC",
+        "cs.OS",
         "FAST"
       ],
-      "abstract": "arXiv:2609.38723v1 Announce Type: new \nAbstract: Coding agents have become real users of high-performance computing (HPC) systems, yet today's HPC abstractions, interfaces, and policies remain designed for human-driven workflows. In our measurement, users running coding agents are only 19.5% of the observed population, but account for 55.8% of job submissions, 29.1% of CPU core-hours, and 42.7% of GPU-hours. Agents are not simply faster humans. They issue commands at 20.8x the human rate, decompose work into fine-grained explore-modify-execute loops, and pursue open-ended goals through trial-and-error campaigns that continue through nights and weekends. These behaviors strain abstractions built for human timescales, surfacing as control-plane pressure on the scheduler, metadata-intensive I",
-      "pdf_link": "https://arxiv.org/pdf/2609.38723.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.38723",
-      "submission_date": "2026-10-01T04:00:00+00:00",
+      "abstract": "arXiv:2610.00714v1 Announce Type: cross \nAbstract: Memory tiering has been used to expand memory capacity, particularly in datacenters, by combining fast DRAM with slower tiers, including CXL-attached memory. Its effectiveness depends on keeping useful pages in the fast tier, but existing heuristic policies can lag behind changing hot sets in phased or bursty workloads. To explore these limitations, we introduce ChOMP, a scalable offline optimizer that minimizes placement and bandwidth-sensitive migration costs. We then develop a trace-driven simulator that uses this reference to identify performance opportunities for online policies. Motivated by these results, MANTA predicts future page usefulness from runtime access features and integrates a lightweight learned model into ARMS. Across e",
+      "pdf_link": "https://arxiv.org/pdf/2610.00714.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.00714",
+      "submission_date": "2026-10-02T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-10-01T12:27:03.974331+00:00"
+      "updated_at": "2026-10-02T11:51:02.786568+00:00"
     },
     {
-      "forum_id": "2609.39250",
+      "forum_id": "2610.00702",
       "paper_number": -1,
-      "title": "Client and Training Data Selection for Computationally Efficient Synchronized Federated Learning",
+      "title": "Ditto: Generalized Reconfigurable Linearizable Reads",
       "authors": [
-        "Muzaffer Citir, Hiroki Nishikawa, Sangyoung Park"
+        "Aleksey Panas"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2609.39250v1 Announce Type: cross \nAbstract: Federated learning (FL) is a promising paradigm of machine learning, which preserves user privacy by enabling learning without sharing raw data with a cloud server. Straggling clients have been a problem for FL as they introduce delays in aggregating the local models and hence, the convergence of the global model. Therefore, it is important to have a mechanism that ensures fast convergence of the global model as well as good FL participation rate. Another issue for the convergence of a model in FL is the non-independent and identically distributed (non-iid) data across the clients. Prior approaches based on probabilistic client selection do not work well under non-iid data especially when the number of clients is small. We show scenarios w",
-      "pdf_link": "https://arxiv.org/pdf/2609.39250.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.39250",
-      "submission_date": "2026-10-01T04:00:00+00:00",
+      "abstract": "arXiv:2610.00702v1 Announce Type: new \nAbstract: Linearizability gives developers the illusion that operations on a distributed datastore execute sequentially on a single machine. Providing it is expensive, so numerous specialized reads algo- rithms have been proposed to make reads significantly faster without sacrificing linearizability, which matters because most workloads are read-dominant by orders of magnitude. Yet, none of these algorithms is the best choice for every deployment. We show why with a framework that classifies these algorithms into a generalized space together with a mathematical analysis of their latencies as a function of this generalization. The analysis exposes two fundamental tradeoffs, one between read and write latency and one between read and write tolerance to ",
+      "pdf_link": "https://arxiv.org/pdf/2610.00702.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.00702",
+      "submission_date": "2026-10-02T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-10-01T12:27:03.976363+00:00"
-    },
-    {
-      "forum_id": "2609.40336",
-      "paper_number": -1,
-      "title": "Local Relaxation Hierarchies for Quantum Ground State Energies: Convergence Guarantees and Message Passing Algorithms",
-      "authors": [
-        "Sheng-Ku Lin, Ricardo Rivera Cardoso, Roberto Bondesan"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.40336v1 Announce Type: cross \nAbstract: Convex relaxation hierarchies provide lower bounds to the ground state energy of quantum many-body systems that can be computed in polynomial time on a classical computer, at any fixed hierarchy level. However, scaling these methods to large systems and accurate approximations remains challenging due to the computational cost of traditional solvers and the scarcity of efficiency guarantees. In this work, we develop local relaxation hierarchies and efficient, highly parallelisable message passing algorithms for estimating the relaxed ground state energies. We show that the first level of the hierarchy---based on local consistency of pairwise reduced density matrices---is exact for commuting Hamiltonians on trees. We further establish that a",
-      "pdf_link": "https://arxiv.org/pdf/2609.40336.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.40336",
-      "submission_date": "2026-10-01T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-01T12:27:03.976644+00:00"
+      "updated_at": "2026-10-02T11:51:02.848836+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",
