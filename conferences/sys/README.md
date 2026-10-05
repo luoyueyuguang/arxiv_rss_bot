@@ -1,7 +1,7 @@
 # Systems / AI Infra / AI Compiler / RISC-V Papers
 
-- **Last Updated**: 2026-10-02 11:51:05 UTC
-- **Total Filtered Papers**: 311
+- **Last Updated**: 2026-10-05 13:32:59 UTC
+- **Total Filtered Papers**: 308
 - **Displaying**: 200 (arxiv: 1, usenix: 199)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
@@ -177,7 +177,7 @@
 | 166 | [Optimal Software Pipelining and Warp Specialization for Tensor Core GPUs](https://www.usenix.org/conference/osdi26/presentation/soi) | `USENIX` | 14.0 |
 | 167 | [Controlling Arbitrary Internet Queues with Titrate](https://www.usenix.org/conference/nsdi26/presentation/zhou-titrate) | `USENIX` | 14.0 |
 | 168 | [REAL: Emulating Control Plane at Simulator’s Cost](https://www.usenix.org/conference/nsdi26/presentation/xia) | `USENIX` | 14.0 |
-| 169 | [Leto: Fast In-Place Recovery for LLM Training on Surviving Hardware](https://arxiv.org/abs/2610.00687) | `ARXIV` | 13.5 |
+| 169 | [Characterization-Guided GPU Fault Resilience in NVIDIA MPS](https://arxiv.org/abs/2605.26461) | `ARXIV` | 13.5 |
 | 170 | [Simple Is Better: Multiplication May Be All You Need for LLM Request Scheduling](https://www.usenix.org/conference/osdi26/presentation/zhang-dingyan) | `USENIX` | 13.5 |
 | 171 | [Timelock Drive: Isolated Time-Based Defense for Storage Systems](https://www.usenix.org/conference/osdi26/presentation/rosenblum) | `USENIX` | 13.5 |
 | 172 | [Surviving the Impossible Trinity: Revisiting CPU Scheduling Problem on Modern COTS Mobile Devices (Operational Systems)](https://www.usenix.org/conference/osdi26/presentation/xiao) | `USENIX` | 13.5 |

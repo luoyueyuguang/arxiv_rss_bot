@@ -1,169 +1,123 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-10-02T11:51:05.742523+00:00",
-  "paper_count": 7,
+  "last_updated": "2026-10-05T13:32:59.696695+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2610.00281",
+      "forum_id": "2610.02333",
       "paper_number": -1,
-      "title": "Vulnerability-Weighted Routing of Timing-Critical Nets for Configuration-Upset-Resilient SRAM-Based FPGAs",
+      "title": "Duplication-Aware Retiming and Cell Interface Redesign for Superconductor Circuit Minimization",
       "authors": [
-        "Mostafa Darvishi"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2610.00281v1 Announce Type: cross \nAbstract: Conventional FPGA routing optimizes timing, congestion, and routability but does not distinguish routes with similar nominal performance and substantially different susceptibility to configuration-induced delay degradation. This paper presents a vulnerability-weighted routing methodology for SRAM-based field-programmable gate arrays (FPGAs) that incorporates predicted routing-fault severity directly into the routing objective. A continuous vulnerability cost relates delay perturbations caused by electrically attachable dormant routing resources to the available downstream timing slack, while a complementary configuration-concentration term discourages excessive localization of vulnerable resources. To limit implementation disruption, only ",
-      "pdf_link": "https://arxiv.org/pdf/2610.00281.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.00281",
-      "submission_date": "2026-10-02T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 35.5,
-      "updated_at": "2026-10-02T11:51:05.737615+00:00"
-    },
-    {
-      "forum_id": "2610.00106",
-      "paper_number": -1,
-      "title": "SyntheticHLS: Building Diverse Synthetic High-Level Synthesis Datasets using LLMs",
-      "authors": [
-        "Stefan Abi-Karam, Miaoyan Zhou, Callie Hao"
+        "Panagiotis Papanikolaou, Alex Vanasse, Haoran Jin, Georgios Tzimpragos, Jennifer Volk"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.00106v1 Announce Type: new \nAbstract: Deep learning and large language models (LLMs) are rapidly gaining adoption in semiconductor design, driving demand for training datasets. Most efforts focus on hardware description languages (HDLs) while designs for high-level synthesis (HLS), a popular approach to domain-specific accelerators, remain scarce. HLS dataset efforts emphasize manual curation or design parameterization, seldom addressing high-quality LLM-based generation or diversity in code length, hierarchy, design-space size, latency, resource utilization, and application domain, potentially limiting model generalization.\n  We propose SyntheticHLS, a framework for generating large-scale, complex, diverse synthetic HLS datasets using LLMs. Its two key ideas are: 1) an iterativ",
-      "pdf_link": "https://arxiv.org/pdf/2610.00106.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.00106",
-      "submission_date": "2026-10-02T04:00:00+00:00",
+      "abstract": "arXiv:2610.02333v1 Announce Type: cross \nAbstract: Superconductor electronics have increasingly shifted away from RSFQ and its variants toward logic families that eliminate explicit gate-level clocking. While this transition enables simpler circuits and more efficient architectures, it also introduces an implicit reliance on dual-rail codes, resulting in inherent gate duplication. This work presents a duplication-aware retiming methodology for Josephson junction (JJ) count minimization, co-optimizing register placement and polarity assignment. The approach applies beyond SFQ to any monotonic circuit. We further identify cell interfaces---specifically, interconnect drivers, receivers, and fanout (FO) elements---as dominant contributors to JJ count in each cell. A new amplifier design is int",
+      "pdf_link": "https://arxiv.org/pdf/2610.02333.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.02333",
+      "submission_date": "2026-10-05T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-10-02T11:51:05.737031+00:00"
+      "score": 15.5,
+      "updated_at": "2026-10-05T13:32:59.693900+00:00"
     },
     {
-      "forum_id": "2610.01918",
+      "forum_id": "2610.03219",
       "paper_number": -1,
-      "title": "Timing-Driven Logic Remapping with Local Physical Context",
+      "title": "Evidence-Guided Repository-Level RTL Repair",
       "authors": [
-        "Zijian Jiang, Hongyang Pan, Cunqing Lan, Keren Zhu"
+        "Yuxin Du, Juxin Niu, Zhe Jiang, Nan Guan"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.01918v1 Announce Type: new \nAbstract: The timing behavior of a mapped circuit depends on both its logic implementation and the physical environment in which that implementation is realized. Revisiting mapping decisions after placement therefore requires a search procedure that accounts for surrounding timing constraints, fanout loads, and interconnect effects. We study local remapping in this setting and develop a framework that couples discrete mapping search with physical implementation feedback. Timing-critical regions are isolated through bounded windows whose interfaces retain the context of the surrounding circuit. Within each window, a mixed-integer formulation jointly selects logic cuts, signal polarities, and library cells under a delay model informed by estimated locat",
-      "pdf_link": "https://arxiv.org/pdf/2610.01918.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.01918",
-      "submission_date": "2026-10-02T04:00:00+00:00",
+      "abstract": "arXiv:2610.03219v1 Announce Type: new \nAbstract: Repository-level RTL repair must localize a failure that spans files, modules, and clock cycles, then propagate the fix consistently. Existing methods reason over source code, which reveals possible behaviors but not the failed execution, and cannot tell whether a local fix was propagated consistently. We therefore present an evidence-guided framework with three modules. Failure grounding converts a problem statement into a reproduced failing run and a failure anchor. Waveform-guided localization uses a localization toolbox to narrow the observed violation into a candidate mechanism and an evidence trail. Consistency-aware repair and validation then expand that seed into a coordinated patch and replay the same scenario to check that the viol",
+      "pdf_link": "https://arxiv.org/pdf/2610.03219.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.03219",
+      "submission_date": "2026-10-05T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-10-02T11:51:05.737450+00:00"
+      "score": 2.5,
+      "updated_at": "2026-10-05T13:32:59.693868+00:00"
     },
     {
-      "forum_id": "2610.01623",
+      "forum_id": "2605.24461",
       "paper_number": -1,
-      "title": "Open-Source Multi-Wire SPI Readout for Wearable Ultrasound Probes",
+      "title": "Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster",
       "authors": [
-        "Federico Villani, Soumyo Bhattacharjee, Lisa Odermatt, C\\'edric Hirschi, Luca Benini, Andrea Cossettini"
+        "Ehsan K. Ardestani, Leonardo Piga, Jovan Stojkovic, Pavan Balaji, Mustafa Ozdal, Mikel Jimenez Fernandez, Mihaela Dimovska, Luka Tadic, Hao Shen, Devika Vishwanath, Richa Mishra, Melaku Mihret, Valentin Andrei, Mauricio Cespedes, Julien Prigent, James Monahan, Tyler Graf, Bin Li, Shobhit Kanaujia, Kaushik Veeraraghavan, Chunqiang Tang"
       ],
       "keywords": [
         "cs.AR",
-        "FPGA"
+        "DATE"
       ],
-      "abstract": "arXiv:2610.01623v1 Announce Type: new \nAbstract: Wearable ultrasound probes must transfer increasingly large acquisition payloads while maintaining compact, low-power electronics. In TinyProbe, the current bottleneck in data transfer occurs between the acquisition FPGA and the wireless system controller. This work presents an open-source, multi-wire SPI readout interface that uses serial command and address phases followed by a build-time-selectable dual- or quad-lane payload phase that is intended to address this bottleneck by increasing the potential bandwidth over the wifi limit while retaining compatibility with the Microcontroller-centric wearable US architecture. The interface emulates a serial flash memory, enabling compatibility with a broad range of microcontroller families and th",
-      "pdf_link": "https://arxiv.org/pdf/2610.01623.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.01623",
-      "submission_date": "2026-10-02T04:00:00+00:00",
-      "conference": "FPGA",
+      "abstract": "arXiv:2605.24461v3 Announce Type: replace \nAbstract: The electric power supply for AI data centers is now the most significant bottleneck in the race toward Artificial General Intelligence, surpassing even the constraint of AI accelerator availability. To our knowledge, this paper is the first to describe the end-to-end power management process for a hyper-scale AI datacenter; from early power planning to accommodate next-generation accelerators 6--12 months before their general availability, to tuning power settings after large scale deployment, and finally to dynamic, runtime power management for evolving workloads. We present detailed power measurements for a 150 MW datacenter hosting a cluster of 83K GB200 GPUs. We share insights from building this state-of-the-art AI cluster. We hope ",
+      "pdf_link": "https://arxiv.org/pdf/2605.24461.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.24461",
+      "submission_date": "2026-10-05T04:00:00+00:00",
+      "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-10-02T11:51:05.737357+00:00"
+      "score": 2.0,
+      "updated_at": "2026-10-05T13:32:59.694078+00:00"
     },
     {
-      "forum_id": "2610.00311",
+      "forum_id": "2510.07304",
       "paper_number": -1,
-      "title": "EdgeDAE: Acceleration of Diffusion Action Experts for Real-Time Physical AI with Tiny VLAs on Edge FPGA-GPU Systems",
+      "title": "Cocoon: A System Architecture for Differentially Private Training with Correlated Noises",
       "authors": [
-        "Zhiheng Chen, Ye Qiao, Mohammad Abdullah Al Faruque, Sitao Huang"
+        "Donghwan Kim, Xin Gu, Jinho Baek, Timothy Lo, Younghoon Min, Kwangsik Shin, Jongryool Kim, Jongse Park, Kiwan Maeng"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2610.00311v1 Announce Type: new \nAbstract: Physical AI models such as Vision-Language-Action (VLA) architectures enable generalist robotic policies through large-scale transformer backbones and diffusion-based action decoders. While edge GPU platforms excel at parallelizing the compute-intensive vision-transformer workloads, they exhibit fundamental limitations for the Diffusion Action Expert (DAE) module: the iterative denoising process requires repeated parameter loading from DRAM across multiple steps, resulting in memory-bound performance where the GPU's massive computational throughput remains underutilized. This mismatch between DAE's I/O-intensive characteristics and GPU's compute-centric architecture motivates a heterogeneous acceleration approach. This paper presents \\textbf",
-      "pdf_link": "https://arxiv.org/pdf/2610.00311.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.00311",
-      "submission_date": "2026-10-02T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-10-02T11:51:05.737160+00:00"
-    },
-    {
-      "forum_id": "2610.01867",
-      "paper_number": -1,
-      "title": "ZTA-Q: an Open-source RISC-V Platform for Accurate Quantized CNN Inference",
-      "authors": [
-        "Yike Li, Ajay Kumar M, Vishnu PS, Dimitrios S. Nikolopoulos, Bo Ji, Hans Vandierendonck, Deepu John"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2610.01867v1 Announce Type: new \nAbstract: Low-precision inference is widely adopted in edge AI to reduce computational cost and memory footprint. However, existing open-source accelerator platforms provide limited end-to-end support for CNNs following the standard TensorFlow Lite integer inference scheme. This paper presents ZTA-Q, an open-source RISC-V-based platform that enables accurate deployment of TensorFlow Lite INT8 models. In addition to extending operator support, ZTA-Q provides a configurable post-processing datapath for studying how circuit-level approximations, including reduced multiplier precision, shared shift scaling, and simplified rounding, affect model accuracy. The proposed system is implemented on a Digilent Arty A7-100T FPGA and operates at 83.3 MHz. Evaluatio",
-      "pdf_link": "https://arxiv.org/pdf/2610.01867.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.01867",
-      "submission_date": "2026-10-02T04:00:00+00:00",
+      "abstract": "arXiv:2510.07304v2 Announce Type: replace \nAbstract: Machine learning (ML) models memorize and leak training data, causing serious privacy issues to data owners. Training algorithms with differential privacy (DP) have been gaining attention as a solution. However, these algorithms add noise at each training iteration and degrade accuracy, limiting their real-world adoption. To improve accuracy, a new family of approaches adds carefully designed correlated noises, so that noises cancel out each other across iterations. We performed an extensive characterization study of these new mechanisms and show they incur non-negligible overheads when the model is relatively large or uses large embedding tables compared to the hardware capacity. Motivated by the analysis, we propose Cocoon, a framework",
+      "pdf_link": "https://arxiv.org/pdf/2510.07304.pdf",
+      "forum_link": "https://arxiv.org/abs/2510.07304",
+      "submission_date": "2026-10-05T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-10-02T11:51:05.737406+00:00"
+      "updated_at": "2026-10-05T13:32:59.694054+00:00"
     },
     {
-      "forum_id": "2512.04705",
+      "forum_id": "2609.13546",
       "paper_number": -1,
-      "title": "Hardware-Algorithm Co-Optimization of Early-Exit Neural Networks for Multi-Core Edge Accelerators",
+      "title": "WISER: Systematic Design-Space Exploration of Trapped Ions with Multiplexed Control",
       "authors": [
-        "Alaa Zniber, Arne Symons, Ouassim Karrakchou, Marian Verhelst, Mounir Ghogho"
+        "Scott Jones, Song-qing-hao Yang, Prakash Murali"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "DAC"
       ],
-      "abstract": "arXiv:2512.04705v3 Announce Type: replace-cross \nAbstract: The deployment of Early-Exiting Neural Networks (EENNs) on edge accelerators requires optimizing not only the network architecture but also its hardware deployment. Exit configuration, quantization, and hardware workload mapping interact in non-trivial ways, influencing memory traffic, accelerator utilization, and ultimately the energy-latency trade-off. This work presents a hardware-aware co-design framework for EENNs that jointly optimizes exit configuration, quantization-aware training, and multi-core hardware mapping within a unified NAS process. Leveraging analytical design space exploration, the framework identifies efficient workload mappings for each candidate architecture while providing accurate latency and energy estimat",
-      "pdf_link": "https://arxiv.org/pdf/2512.04705.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.04705",
-      "submission_date": "2026-10-02T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2609.13546v2 Announce Type: replace-cross \nAbstract: Trapped-ion Quantum Charge-Coupled Devices (QCCD) are a leading contender for quantum computing, but their scalability is constrained by control wiring and electronics. Wiring using Integrated Switching Electronics (WISE), a recently proposed QCCD architecture, reduces wiring through multiplexing and integrated switching hardware. However, this leaves an execution model with limited parallelism and limited flexibility in ion movement. Further, these devices need to be paired with a quantum error correction (QEC) code to enable fault-tolerant quantum computation (FTQC). Can WISE architectures efficiently support FTQC requirements? Which QEC choices, device and control parameters are practical?\n  We present WISER, a cross-layer desig",
+      "pdf_link": "https://arxiv.org/pdf/2609.13546.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.13546",
+      "submission_date": "2026-10-05T04:00:00+00:00",
+      "conference": "DAC",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-10-02T11:51:05.737871+00:00"
+      "updated_at": "2026-10-05T13:32:59.694107+00:00"
     }
   ]
 }

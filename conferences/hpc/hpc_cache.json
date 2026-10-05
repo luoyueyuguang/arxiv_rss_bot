@@ -1,31 +1,123 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-10-02T11:51:02.751430+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-10-05T13:32:57.135154+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2610.00687",
+      "forum_id": "2605.26461",
       "paper_number": -1,
-      "title": "Leto: Fast In-Place Recovery for LLM Training on Surviving Hardware",
+      "title": "Characterization-Guided GPU Fault Resilience in NVIDIA MPS",
       "authors": [
-        "Geon-Woo Kim, Joon Ha Kim, Daehyeok Kim"
+        "Rixin Liu, Xingqi Cui, Kaijian Wang, Xinheng Ding, Zirui Liu, Yuke Wang, Jiarong Xing"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.00687v1 Announce Type: new \nAbstract: Hardware-operable failures (HOFs) interrupt large language model (LLM) training but permit recovery on the same hardware without reset, repair, or replacement. Existing recovery systems nevertheless reload checkpoints, recompute lost progress, and rebuild process state, idling GPUs that could otherwise continue training.\n  We present Leto, a fault-tolerant training system that leverages surviving hardware to enable efficient in-place recovery. Our key insight is that the state needed to resume training can be retained or prepared outside the active training process while remaining on the same hardware. Leto retains the working model state and the reusable process state, and preinitializes the remaining state in a shadow trainer. We devise tw",
-      "pdf_link": "https://arxiv.org/pdf/2610.00687.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.00687",
-      "submission_date": "2026-10-02T04:00:00+00:00",
+      "abstract": "arXiv:2605.26461v2 Announce Type: replace \nAbstract: NVIDIA Multi-Process Service (MPS) enables fine-grained GPU sharing by allowing multiple processes to execute concurrently on the same GPU, making it an important mechanism for improving GPU utilization. However, MPS has weak fault resilience: a fault in one process can terminate all co-running processes, limiting its adoption in resilience-critical settings such as multi-tenant GPU clusters. In this work, we design fault-resilient MPS to solve this problem. Our design is guided by insights from a systematic characterization of GPU faults and a deep analysis of their end-to-end processing pipeline. Based on these insights, we design two complementary mechanisms. First, we design a fault isolation mechanism for the dominant memory-related",
+      "pdf_link": "https://arxiv.org/pdf/2605.26461.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.26461",
+      "submission_date": "2026-10-05T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-10-02T11:51:02.368797+00:00"
+      "score": 72.5,
+      "updated_at": "2026-10-05T13:32:56.316385+00:00"
+    },
+    {
+      "forum_id": "2610.02745",
+      "paper_number": -1,
+      "title": "AI-Assisted GPU optimization of the Stochastic Variational Method for Few-Body Boson System",
+      "authors": [
+        "Noritaka Shimizu, Shigeyoshi Aoyama, Yusuke Tsunoda, Akira Nukada"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2610.02745v1 Announce Type: cross \nAbstract: The stochastic variational method (SVM) is one of the most powerful methods to solve quantum few-body systems precisely in various fields, such as nuclear and atomic physics. To the best of our knowledge, no SVM code optimized for GPUs has been reported. We developed a parallel SVM code for few-body clusters of $^4$He atoms and optimized it for two GPU architectures, NVIDIA GH200 and AMD Instinct MI300A, with the entire code written by an AI coding agent. On the algorithmic side, we introduce the secular-equation method with the Gu--Eisenstat prescription for solving the generalized eigenvalue problem within the SVM framework. The main part of the code tuning is to batch the many small matrices so that the GPUs are used efficiently, togeth",
+      "pdf_link": "https://arxiv.org/pdf/2610.02745.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.02745",
+      "submission_date": "2026-10-05T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.5,
+      "updated_at": "2026-10-05T13:32:56.316150+00:00"
+    },
+    {
+      "forum_id": "2605.24461",
+      "paper_number": -1,
+      "title": "Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster",
+      "authors": [
+        "Ehsan K. Ardestani, Leonardo Piga, Jovan Stojkovic, Pavan Balaji, Mustafa Ozdal, Mikel Jimenez Fernandez, Mihaela Dimovska, Luka Tadic, Hao Shen, Devika Vishwanath, Richa Mishra, Melaku Mihret, Valentin Andrei, Mauricio Cespedes, Julien Prigent, James Monahan, Tyler Graf, Bin Li, Shobhit Kanaujia, Kaushik Veeraraghavan, Chunqiang Tang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2605.24461v3 Announce Type: replace-cross \nAbstract: The electric power supply for AI data centers is now the most significant bottleneck in the race toward Artificial General Intelligence, surpassing even the constraint of AI accelerator availability. To our knowledge, this paper is the first to describe the end-to-end power management process for a hyper-scale AI datacenter; from early power planning to accommodate next-generation accelerators 6--12 months before their general availability, to tuning power settings after large scale deployment, and finally to dynamic, runtime power management for evolving workloads. We present detailed power measurements for a 150 MW datacenter hosting a cluster of 83K GB200 GPUs. We share insights from building this state-of-the-art AI cluster. We",
+      "pdf_link": "https://arxiv.org/pdf/2605.24461.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.24461",
+      "submission_date": "2026-10-05T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 23.5,
+      "updated_at": "2026-10-05T13:32:56.316542+00:00"
+    },
+    {
+      "forum_id": "2609.37085",
+      "paper_number": -1,
+      "title": "ARGOS: Reinforcement Learning-Driven Multidimensional Elasticity for Service Orchestration in the Computing Continuum",
+      "authors": [
+        "Javier Mateos-Bravo, Sergio Laso, Juan Luis Herrera, Ilir Murturi, Pantelis Frangoudis, Schahram Dustdar"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2609.37085v2 Announce Type: replace \nAbstract: Data-intensive services in the Computing Continuum must balance analytics quality, resource usage, and cost across heterogeneous nodes with limited and uneven capacity. This balance becomes especially difficult when resource scaling reaches capacity limits, because changes in demand and cluster pressure must then be absorbed without violating client-defined quality ranges. Existing orchestrators mainly adapt resources, placements, or replicas, while analytics requirements such as coverage, sample, and freshness remain fixed. This article presents ARGOS, the Adaptive Reinforcement Learning-Driven Governance for Orchestrated Services, an end-to-end controller that formulates multidimensional elasticity as a per-request Markov decision proc",
+      "pdf_link": "https://arxiv.org/pdf/2609.37085.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.37085",
+      "submission_date": "2026-10-05T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-10-05T13:32:56.316430+00:00"
+    },
+    {
+      "forum_id": "2610.02732",
+      "paper_number": -1,
+      "title": "ServeTwin: A Benchmark-Validated Simulator for Distributed LLM Architecture Exploration",
+      "authors": [
+        "Sungjoon Park, Changue Jung, Kyungno Joo, Mincheol Kang, Jaehyung Ahn, Sehwan Lee, Sangjoon Kim"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2610.02732v1 Announce Type: cross \nAbstract: Evaluating distributed LLM serving designs on physical clusters is costly. Yet existing simulators provide only subsets of the capabilities needed for realistic design exploration: stateful closed-loop execution, timing prediction without profiling target hardware, and direct execution of unmodified serving benchmarks. We present ServeTwin, a closed-loop simulator that couples specification-driven analytical timing with a stateful serving loop. This coupling captures feedback among request completion, scheduling, queue state, and KV-cache evolution, including prefill-decode disaggregation and multi-turn agent workloads. ServeTwin avoids target-hardware operator profiling through iSTAGE, an analytical trace generator that derives per-iterat",
+      "pdf_link": "https://arxiv.org/pdf/2610.02732.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.02732",
+      "submission_date": "2026-10-05T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 6.0,
+      "updated_at": "2026-10-05T13:32:56.316108+00:00"
     }
   ]
 }

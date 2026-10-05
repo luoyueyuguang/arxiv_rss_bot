@@ -1,100 +1,77 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-10-02T11:51:02.304468+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-10-05T13:32:56.270391+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2610.01603",
+      "forum_id": "2610.03562",
       "paper_number": -1,
-      "title": "U-Sonic: An Open-Source 8-Channel Ultrasound Transmit IP in a 130 nm RISC-V SoC",
+      "title": "A Secure dToF LiDAR SoC with Dual-Domain Fingerprinting and Event-Driven AFE Circuit Achieving Sensor-Level Attack Resilience",
       "authors": [
-        "Federico Villani, Nico Canzani, Marc-Andr\\'e Wessner, Philippe Sauter, Enrico Zelioli, Andrea Cossettini, Christoph Leitner, Luca Benini"
+        "Risa Nonaka, Ryoya Matsuno, Shota Nagai, Satomi Miyagi, Yuki Hayakawa, Ryo Suzuki, Kazuma Ikeda, Ozora Sako, Rokuto Nagata, Ryo Yoshida, Shimpei Ando, Wenlun Zhang, Kentaro Yoshioka"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2610.01603v1 Announce Type: new \nAbstract: Miniaturized ultrasound (US) probes require programmable and synchronized transmit (TX) excitation across multiple elements, while existing compact platforms often rely on limited microcontroller (MCU) pulse generators or closed-source fixed-function pulser devices. We present U-Sonic, an open-source digital US TX peripheral integrated into a 32-bit RISC-V system-on-chip (SoC). The implemented SoC integrates 8 pulser cores, while the parameterized architecture supports up to 16 channels. Each core generates single- or dual-tone bursts with programmable period, duty cycle, pulse count, polarity, and idle level, together with optional inverted stop pulses for active damping. A shared memory-mapped Open Bus Interface (OBI) enables synchronous s",
-      "pdf_link": "https://arxiv.org/pdf/2610.01603.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.01603",
-      "submission_date": "2026-10-02T04:00:00+00:00",
+      "abstract": "arXiv:2610.03562v1 Announce Type: cross \nAbstract: Recent studies have shown that most commercial direct time-of-flight (dToF) LiDARs can be spoofed by injecting high-frequency laser pulses into the receiver, which can erase pedestrians from the point cloud. This paper presents the first dToF LiDAR system-on-chip (SoC) with integrated sensor-level hardware security against spoofing attacks. We propose Dual-Domain Fingerprinting (DDF), which emits laser pulse pairs whose time interval and amplitude ratio are both randomized and authenticates received echoes in this two-dimensional space, so that spoofed signals are rejected before they corrupt the ranging result. An Event-Driven AFE (ED-AFE) activates the ADC only around pulse peaks: it digitizes three samples around each peak with a trigge",
+      "pdf_link": "https://arxiv.org/pdf/2610.03562.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.03562",
+      "submission_date": "2026-10-05T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 67.0,
-      "updated_at": "2026-10-02T11:51:02.298442+00:00"
+      "score": 11.5,
+      "updated_at": "2026-10-05T13:32:56.266477+00:00"
     },
     {
-      "forum_id": "2608.24637",
+      "forum_id": "2610.02236",
       "paper_number": -1,
-      "title": "Cross-Layer Analysis of Thermal Tuning Stalls in Wafer-Scale Optical Interconnects for LLM MoE Training",
+      "title": "An Adaptive Heterogeneous Architecture for High-Ratio, High-Throughput Lossless Compression",
       "authors": [
-        "Seongwon Yoon, Pin-Jun Chen, Shimeng Yu"
+        "Zeyu Jia (School of Biomedical Engineering,Technology, Tianjin Medical University, Medical School, Tianjin University)"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2608.24637v3 Announce Type: replace \nAbstract: Mixture-of-experts (MoE) training is dominated by all-to-all communication, and wafer-scale optical interconnects based on dense wavelength-division multiplexing promise the bandwidth density it needs. Their microring resonators are held on resonance by thermo-optic tuning loops, while MoE compute bursts move the temperature of the photonic layer by several kelvin within milliseconds. We quantify the cost with a cross-layer analysis in which per-device timelines from a packet-level network simulation drive an Ansys thermal model of a 3D GPU, EIC, and PIC stack, the resonance drift becomes a per-round communication stall, and the stall is fed back into the network simulation until both agree. H100 die-temperature measurements match the mo",
-      "pdf_link": "https://arxiv.org/pdf/2608.24637.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.24637",
-      "submission_date": "2026-10-02T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 64.0,
-      "updated_at": "2026-10-02T11:51:02.298655+00:00"
-    },
-    {
-      "forum_id": "2610.01623",
-      "paper_number": -1,
-      "title": "Open-Source Multi-Wire SPI Readout for Wearable Ultrasound Probes",
-      "authors": [
-        "Federico Villani, Soumyo Bhattacharjee, Lisa Odermatt, C\\'edric Hirschi, Luca Benini, Andrea Cossettini"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2610.01623v1 Announce Type: new \nAbstract: Wearable ultrasound probes must transfer increasingly large acquisition payloads while maintaining compact, low-power electronics. In TinyProbe, the current bottleneck in data transfer occurs between the acquisition FPGA and the wireless system controller. This work presents an open-source, multi-wire SPI readout interface that uses serial command and address phases followed by a build-time-selectable dual- or quad-lane payload phase that is intended to address this bottleneck by increasing the potential bandwidth over the wifi limit while retaining compatibility with the Microcontroller-centric wearable US architecture. The interface emulates a serial flash memory, enabling compatibility with a broad range of microcontroller families and th",
-      "pdf_link": "https://arxiv.org/pdf/2610.01623.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.01623",
-      "submission_date": "2026-10-02T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 23.0,
-      "updated_at": "2026-10-02T11:51:02.298462+00:00"
-    },
-    {
-      "forum_id": "2610.02121",
-      "paper_number": -1,
-      "title": "Catscan: Visualizing Pipelines of CPU Performance Simulation",
-      "authors": [
-        "Aaron Lindsay, Nicholas Kelly, Scott Witscher, Mahesh Madhav"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2610.02121v1 Announce Type: new \nAbstract: Processor pipeline visualization tools are routine inside industry CPU teams, but few of them are described or released publicly. As a result, students, researchers, and other practitioners rarely see the tooling that processor architects use to debug performance before silicon. This paper describes two pieces of Ampere Computing's performance- analysis infrastructure that we have released to the community as open source: event streams, a simulator-output format, and Catscan, an interactive viewer built around that format. Event streams record microarchitectural activity as typed events connected by transaction relationships, so a user can move between a symptom and the instruction, uop, or memory transaction that explains it. Catscan uses t",
-      "pdf_link": "https://arxiv.org/pdf/2610.02121.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.02121",
-      "submission_date": "2026-10-02T04:00:00+00:00",
+      "abstract": "arXiv:2610.02236v1 Announce Type: new \nAbstract: Modern lossless data compression enforces an acute dichotomy: industrial streaming codecs (e.g., Zstandard) prioritize throughput (10 to 1000 MiB/s) at the expense of compression density, while context-mixing algorithms achieve superior ratios at unusable serial speeds (0.1 to 1 MiB/s). We present GPX, an adaptive heterogeneous compression architecture for structured data streams. While optimized for high-throughput enterprise and scientific large-block workloads (>= 4 MiB), GPX operates transparently across arbitrary stream lengths down to sub-kilobyte inputs (N >= 256 B). GPX combines a sub-15-microsecond native structural decision probe, GPU-native reversible domain transforms, AVX2 multi-hypothesis sequence optimization, and adaptive ent",
+      "pdf_link": "https://arxiv.org/pdf/2610.02236.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.02236",
+      "submission_date": "2026-10-05T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-10-02T11:51:02.298543+00:00"
+      "updated_at": "2026-10-05T13:32:56.266247+00:00"
+    },
+    {
+      "forum_id": "2610.02235",
+      "paper_number": -1,
+      "title": "CORE: COverage CAlibration and Evicted-Mass REdistribution for KV Cache",
+      "authors": [
+        "Shuxin Liu, Qing Liu, Yi Du, Ou Wu"
+      ],
+      "keywords": [
+        "cs.AR",
+        "ISCA"
+      ],
+      "abstract": "arXiv:2610.02235v1 Announce Type: new \nAbstract: Long-context decoding is increasingly constrained by key--value (KV) cache memory and bandwidth. Existing fixed-budget compression methods typically separate retention from compensation, while a retention ranking specifies neither discarded attention mass nor the direction of induced output error. We start from an exact factorization: eviction error equals evicted attention mass times the directional gap between the evicted centroid and retained output, highlighting the importance of set-level coverage in retention and mass-preserving memory writing. We introduce CORE COverage Calibration and Evicted-Mass REdistribution for KV Cache, which distills an offline allocation combining query utility and log-determinant coverage into a lightweight ",
+      "pdf_link": "https://arxiv.org/pdf/2610.02235.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.02235",
+      "submission_date": "2026-10-05T04:00:00+00:00",
+      "conference": "ISCA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-10-05T13:32:56.266235+00:00"
     }
   ]
 }
