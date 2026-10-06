@@ -1,8 +1,8 @@
 # AI / AI for Science Papers
 
-- **Last Updated**: 2026-10-05 13:33:29 UTC
-- **Total Filtered Papers**: 31
-- **Displaying**: 31 (arxiv: 1, mlr: 30)
+- **Last Updated**: 2026-10-06 12:43:58 UTC
+- **Total Filtered Papers**: 30
+- **Displaying**: 30 (mlr: 30)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
@@ -35,8 +35,7 @@
 | 24 | [Less is more: Summarizing Patch Tokens for efficient Multi-Label Class-Incremental Learning](https://proceedings.mlr.press/v274/min25a.html) | `MLR` | 2.5 |
 | 25 | [GRASP: A Rehearsal Policy for Efficient Online Continual Learning](https://proceedings.mlr.press/v274/harun25a.html) | `MLR` | 2.5 |
 | 26 | [Subspace-Configurable Networks](https://proceedings.mlr.press/v274/wang25a.html) | `MLR` | 2.0 |
-| 27 | [Near-Optimal Convex Optimization with Lazy Second-Order Oracles](https://arxiv.org/abs/2610.03222) | `ARXIV` | 1.5 |
-| 28 | [Towards More Diverse Evaluation of Class Incremental Learning: Representation Learning Perspective](https://proceedings.mlr.press/v274/cha25a.html) | `MLR` | 1.5 |
-| 29 | [Learning to learn without forgetting using attention](https://proceedings.mlr.press/v274/vettoruzzo25a.html) | `MLR` | 1.5 |
-| 30 | [Integrating Present and Past in Unsupervised Continual Learning](https://proceedings.mlr.press/v274/zhang25a.html) | `MLR` | 1.5 |
-| 31 | [Beyond Unimodal Learning: The Importance of Integrating Multiple Modalities for Lifelong Learning](https://proceedings.mlr.press/v274/sarfraz25a.html) | `MLR` | 1.0 |
+| 27 | [Towards More Diverse Evaluation of Class Incremental Learning: Representation Learning Perspective](https://proceedings.mlr.press/v274/cha25a.html) | `MLR` | 1.5 |
+| 28 | [Learning to learn without forgetting using attention](https://proceedings.mlr.press/v274/vettoruzzo25a.html) | `MLR` | 1.5 |
+| 29 | [Integrating Present and Past in Unsupervised Continual Learning](https://proceedings.mlr.press/v274/zhang25a.html) | `MLR` | 1.5 |
+| 30 | [Beyond Unimodal Learning: The Importance of Integrating Multiple Modalities for Lifelong Learning](https://proceedings.mlr.press/v274/sarfraz25a.html) | `MLR` | 1.0 |

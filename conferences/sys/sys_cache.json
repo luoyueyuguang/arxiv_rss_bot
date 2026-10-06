@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-10-05T13:32:59.640216+00:00",
-  "paper_count": 308,
+  "last_updated": "2026-10-06T12:43:26.827051+00:00",
+  "paper_count": 306,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -3903,29 +3903,6 @@
       "updated_at": "2026-07-21T08:54:22.936410+00:00"
     },
     {
-      "forum_id": "2605.26461",
-      "paper_number": -1,
-      "title": "Characterization-Guided GPU Fault Resilience in NVIDIA MPS",
-      "authors": [
-        "Rixin Liu, Xingqi Cui, Kaijian Wang, Xinheng Ding, Zirui Liu, Yuke Wang, Jiarong Xing"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2605.26461v2 Announce Type: replace \nAbstract: NVIDIA Multi-Process Service (MPS) enables fine-grained GPU sharing by allowing multiple processes to execute concurrently on the same GPU, making it an important mechanism for improving GPU utilization. However, MPS has weak fault resilience: a fault in one process can terminate all co-running processes, limiting its adoption in resilience-critical settings such as multi-tenant GPU clusters. In this work, we design fault-resilient MPS to solve this problem. Our design is guided by insights from a systematic characterization of GPU faults and a deep analysis of their end-to-end processing pipeline. Based on these insights, we design two complementary mechanisms. First, we design a fault isolation mechanism for the dominant memory-related",
-      "pdf_link": "https://arxiv.org/pdf/2605.26461.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.26461",
-      "submission_date": "2026-10-05T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-10-05T13:32:57.220977+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-5",
       "paper_number": 5,
       "title": "Simple Is Better: Multiplication May Be All You Need for LLM Request Scheduling",
@@ -6554,29 +6531,6 @@
       "ratings": [],
       "score": 2.0,
       "updated_at": "2026-07-21T08:54:26.743211+00:00"
-    },
-    {
-      "forum_id": "2610.02745",
-      "paper_number": -1,
-      "title": "AI-Assisted GPU optimization of the Stochastic Variational Method for Few-Body Boson System",
-      "authors": [
-        "Noritaka Shimizu, Shigeyoshi Aoyama, Yusuke Tsunoda, Akira Nukada"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.02745v1 Announce Type: cross \nAbstract: The stochastic variational method (SVM) is one of the most powerful methods to solve quantum few-body systems precisely in various fields, such as nuclear and atomic physics. To the best of our knowledge, no SVM code optimized for GPUs has been reported. We developed a parallel SVM code for few-body clusters of $^4$He atoms and optimized it for two GPU architectures, NVIDIA GH200 and AMD Instinct MI300A, with the entire code written by an AI coding agent. On the algorithmic side, we introduce the secular-equation method with the Gu--Eisenstat prescription for solving the generalized eigenvalue problem within the SVM framework. The main part of the code tuning is to batch the many small matrices so that the GPUs are used efficiently, togeth",
-      "pdf_link": "https://arxiv.org/pdf/2610.02745.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.02745",
-      "submission_date": "2026-10-05T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-10-05T13:32:57.220586+00:00"
     },
     {
       "forum_id": "usenix-osdi26-15",
