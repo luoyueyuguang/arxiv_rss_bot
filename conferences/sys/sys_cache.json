@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-10-06T12:43:26.827051+00:00",
-  "paper_count": 306,
+  "last_updated": "2026-10-07T12:37:01.803353+00:00",
+  "paper_count": 309,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1860,6 +1860,29 @@
       "ratings": [],
       "score": 38.0,
       "updated_at": "2026-07-21T08:54:26.745242+00:00"
+    },
+    {
+      "forum_id": "2610.07688",
+      "paper_number": -1,
+      "title": "FailBench: Evaluating Fault Tolerance Across Distributed Training Architectures",
+      "authors": [
+        "Khaled Aljbab, Amine Barrak"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.07688v1 Announce Type: new \nAbstract: Distributed deep learning relies on data, pipeline, tensor, and hybrid parallelism, yet fault-tolerance mechanisms are typically evaluated only on the architecture for which they were designed. This leaves practitioners with little guidance when choosing mechanisms across architectures. FailBench provides a unified evaluation harness covering seven distributed training architectures, eight crash-fault-tolerance mechanisms and a no-FT baseline, and single, concurrent, and cascading fail-stop failures. We evaluate 142 (architecture, mechanism, trace) combinations on an 8xV100 cluster, with per-rank checkpoint states ranging from 205 MB to 2.7 GB. Three findings emerge. First, no mechanism is universally best: on A2, disk checkpointing has the ",
+      "pdf_link": "https://arxiv.org/pdf/2610.07688.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.07688",
+      "submission_date": "2026-10-07T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 37.5,
+      "updated_at": "2026-10-07T12:36:58.609451+00:00"
     },
     {
       "forum_id": "usenix-osdi26-103",
@@ -4648,6 +4671,29 @@
       "updated_at": "2026-07-21T08:54:26.744089+00:00"
     },
     {
+      "forum_id": "2610.07126",
+      "paper_number": -1,
+      "title": "CUDA-MPQS: A GPU-Resident Self-Initializing Quadratic Sieve, and the Factorization of RSA-155",
+      "authors": [
+        "Fabian Januszewski, Christoph Heinrichs"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.07126v1 Announce Type: cross \nAbstract: The quadratic sieve (QS) is an irregular, cache-hostile, branch-heavy integer factorization algorithm; prior GPU work accelerates individual stages of it. We present \\swname{}, a self-initializing quadratic sieve in which \\emph{every} stage --- polynomial initialization, sieving, relation post-processing, large-prime matching, \\GFtwo{} matrix construction, Block Wiedemann linear algebra and the square root --- executes on the GPU, the CPU restricted to orchestration, setup and I/O, the sieve window 99.9\\% GPU-busy with no device-wide or event synchronization and no synchronous copy. With it we factored the 512-bit RSA-155 challenge modulus end to end on GPUs: a 64$\\times$H100 sieve feeding a single-H100 \\GFtwo{} solve, 700.6~GPU-h and 242~",
+      "pdf_link": "https://arxiv.org/pdf/2610.07126.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.07126",
+      "submission_date": "2026-10-07T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.5,
+      "updated_at": "2026-10-07T12:36:58.610405+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-43",
       "paper_number": 43,
       "title": "Eywa: Automating Model-Based Testing using LLMs",
@@ -6648,6 +6694,29 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
+    },
+    {
+      "forum_id": "2610.08430",
+      "paper_number": -1,
+      "title": "NeMo-DCR: Bit-Exact Delta-Compressed Refit for Scalable Agentic RL at Trillion-Parameter Scale",
+      "authors": [
+        "Songlin Jiang, Zhiyu Li, Terry Kong, Yu Yao, Youngeun Kwon, Bernard Nguyen, Ashwath Aithal, Mario Di Francesco"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.08430v1 Announce Type: new \nAbstract: Agentic reinforcement learning (RL) disaggregates training from rollout, so each policy update must reach the rollout clusters before the next batch. Transferring a full 1T checkpoint for such weight synchronization (refit) takes 87.5 min between two AWS regions. Measurements of BF16 training show that about 1% of weights change their stored values per step. Recent systems exploit this sparsity but fall short on placement, exactness, or efficiency: they reimplement placement rules, assemble full tensors, rebuild values arithmetically, or use a cross-cluster collective, and none fully recovers from mid-refit failures.\n  We present NeMo-DCR (Delta-Compressed Refit), which sends only changes yet is bit-exact: receivers obtain the same parameter",
+      "pdf_link": "https://arxiv.org/pdf/2610.08430.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.08430",
+      "submission_date": "2026-10-07T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-10-07T12:36:58.610236+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

@@ -1,77 +1,100 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-10-05T13:32:56.270391+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-10-07T12:36:57.851186+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2610.03562",
+      "forum_id": "2610.08301",
       "paper_number": -1,
-      "title": "A Secure dToF LiDAR SoC with Dual-Domain Fingerprinting and Event-Driven AFE Circuit Achieving Sensor-Level Attack Resilience",
+      "title": "Zeppelin: Client-Side BFV Encryption and Decryption for Helium-Powered Microcontrollers",
       "authors": [
-        "Risa Nonaka, Ryoya Matsuno, Shota Nagai, Satomi Miyagi, Yuki Hayakawa, Ryo Suzuki, Kazuma Ikeda, Ozora Sako, Rokuto Nagata, Ryo Yoshida, Shimpei Ando, Wenlun Zhang, Kentaro Yoshioka"
+        "Muhammad Saif ul Islam, Karar Haider, Manaal Malik, Naveed Anwar Bhatti, Muhammad Ali Siddiqi"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2610.03562v1 Announce Type: cross \nAbstract: Recent studies have shown that most commercial direct time-of-flight (dToF) LiDARs can be spoofed by injecting high-frequency laser pulses into the receiver, which can erase pedestrians from the point cloud. This paper presents the first dToF LiDAR system-on-chip (SoC) with integrated sensor-level hardware security against spoofing attacks. We propose Dual-Domain Fingerprinting (DDF), which emits laser pulse pairs whose time interval and amplitude ratio are both randomized and authenticates received echoes in this two-dimensional space, so that spoofed signals are rejected before they corrupt the ranging result. An Event-Driven AFE (ED-AFE) activates the ADC only around pulse peaks: it digitizes three samples around each peak with a trigge",
-      "pdf_link": "https://arxiv.org/pdf/2610.03562.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.03562",
-      "submission_date": "2026-10-05T04:00:00+00:00",
+      "abstract": "arXiv:2610.08301v1 Announce Type: cross \nAbstract: The growth of the Internet of Things (IoT) has raised concerns over the privacy of data collected by resource-constrained sensing devices. Homomorphic encryption (HE) addresses this by letting a device encrypt its data once and an untrusted cloud server compute on the ciphertext without seeing the values. In practice, HE's memory and computational cost have kept it out of reach of microcontroller-class devices. Prior work, SEAL-Embedded, made this feasible using CKKS, but left three gaps: its arithmetic is entirely scalar, even on hardware with a vector instruction set; it never decrypts on the device, so the client cannot consume a result; and it does not explore BFV, whose encoding uses only integer arithmetic and decrypts exactly. We pr",
+      "pdf_link": "https://arxiv.org/pdf/2610.08301.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.08301",
+      "submission_date": "2026-10-07T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.5,
-      "updated_at": "2026-10-05T13:32:56.266477+00:00"
+      "score": 33.5,
+      "updated_at": "2026-10-07T12:36:57.844901+00:00"
     },
     {
-      "forum_id": "2610.02236",
+      "forum_id": "2605.18612",
       "paper_number": -1,
-      "title": "An Adaptive Heterogeneous Architecture for High-Ratio, High-Throughput Lossless Compression",
+      "title": "Predictive Software Scheduling as an Early-Warning Hint Layer for Optical Engine Thermal Drift in Heterogeneous SoIC Packaging",
       "authors": [
-        "Zeyu Jia (School of Biomedical Engineering,Technology, Tianjin Medical University, Medical School, Tianjin University)"
+        "Chi Fei Chung"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2610.02236v1 Announce Type: new \nAbstract: Modern lossless data compression enforces an acute dichotomy: industrial streaming codecs (e.g., Zstandard) prioritize throughput (10 to 1000 MiB/s) at the expense of compression density, while context-mixing algorithms achieve superior ratios at unusable serial speeds (0.1 to 1 MiB/s). We present GPX, an adaptive heterogeneous compression architecture for structured data streams. While optimized for high-throughput enterprise and scientific large-block workloads (>= 4 MiB), GPX operates transparently across arbitrary stream lengths down to sub-kilobyte inputs (N >= 256 B). GPX combines a sub-15-microsecond native structural decision probe, GPU-native reversible domain transforms, AVX2 multi-hypothesis sequence optimization, and adaptive ent",
-      "pdf_link": "https://arxiv.org/pdf/2610.02236.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.02236",
-      "submission_date": "2026-10-05T04:00:00+00:00",
+      "abstract": "arXiv:2605.18612v4 Announce Type: replace \nAbstract: As semiconductor scaling reaches the A16 / 2 nm node, the integration of co-packaged optics (CPO) via TSMC's Compact Universal Photonic Engine (COUPE) architecture introduces critical thermal-optical coupling challenges. Micro-ring resonators embedded in the Photonic Integrated Circuit (PIC) layer are exquisitely sensitive to temperature: a wafer-level center wavelength deviation of merely +/-1.7 nm across the 300 mm wafer represents the COUPE platform's manufacturing control limit. We propose XRM-SSD V24, a physics-aware scheduling layer that models inference-load density 20-50 ms before execution and issues early-warning hints to the COUPE bias-control firmware, enabling pre-emptive thermal compensation. Simulation-based validation on ",
+      "pdf_link": "https://arxiv.org/pdf/2605.18612.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.18612",
+      "submission_date": "2026-10-07T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-10-05T13:32:56.266247+00:00"
+      "score": 32.5,
+      "updated_at": "2026-10-07T12:36:57.844977+00:00"
     },
     {
-      "forum_id": "2610.02235",
+      "forum_id": "2610.07820",
       "paper_number": -1,
-      "title": "CORE: COverage CAlibration and Evicted-Mass REdistribution for KV Cache",
+      "title": "Efficient and Implementation-Hardened RBLWE on Commodity Cortex-M Microcontrollers",
       "authors": [
-        "Shuxin Liu, Qing Liu, Yi Du, Ou Wu"
+        "Muhammad Asim Javaid, Muhammad Adeel Pasha, Muhammad Ali Siddiqi"
       ],
       "keywords": [
         "cs.AR",
-        "ISCA"
+        "MICRO"
       ],
-      "abstract": "arXiv:2610.02235v1 Announce Type: new \nAbstract: Long-context decoding is increasingly constrained by key--value (KV) cache memory and bandwidth. Existing fixed-budget compression methods typically separate retention from compensation, while a retention ranking specifies neither discarded attention mass nor the direction of induced output error. We start from an exact factorization: eviction error equals evicted attention mass times the directional gap between the evicted centroid and retained output, highlighting the importance of set-level coverage in retention and mass-preserving memory writing. We introduce CORE COverage Calibration and Evicted-Mass REdistribution for KV Cache, which distills an offline allocation combining query utility and log-determinant coverage into a lightweight ",
-      "pdf_link": "https://arxiv.org/pdf/2610.02235.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.02235",
-      "submission_date": "2026-10-05T04:00:00+00:00",
-      "conference": "ISCA",
+      "abstract": "arXiv:2610.07820v1 Announce Type: cross \nAbstract: Efficient post-quantum cryptography on resource-constrained Internet-of-Things (IoT) devices requires implementations that exploit the target processor architecture while resisting practical implementation attacks. This paper presents an ISA-accelerated and implementation-hardened realization of Ring Binary Learning with Errors (RBLWE) encryption on a commodity ARM Cortex-M33 microcontroller. Packing four 8-bit polynomial coefficients into the byte lanes of a 32-bit register and processing them with SIMD-style instructions, together with a packed message codec, accelerates encryption and decryption, while a buffered hardware-TRNG entropy source drawn from the on-die Secure Element drives the key-generation gain. Together these give same-co",
+      "pdf_link": "https://arxiv.org/pdf/2610.07820.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.07820",
+      "submission_date": "2026-10-07T04:00:00+00:00",
+      "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-10-05T13:32:56.266235+00:00"
+      "score": 26.0,
+      "updated_at": "2026-10-07T12:36:57.844888+00:00"
+    },
+    {
+      "forum_id": "2610.07078",
+      "paper_number": -1,
+      "title": "SVRF: Efficient Register Storage for Long-Vector Architectures",
+      "authors": [
+        "Francesco Minervini, Lorenzo Deltetto, Osman Unsal, Adrian Cristal"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2610.07078v1 Announce Type: new \nAbstract: Vector processors exploit data-level parallelism to provide high computational throughput, but very long vectors can make the Vector Register File (VRF) a significant source of area, energy, and register pressure. This cost is exacerbated when vector instructions operate on values with scalar semantics: although such values are architecturally represented using vector registers, they do not require full-width storage. This paper proposes the Scalarized Vector Register File (SVRF), a microarchitectural enhancement that redirects scalar-semantics vector values to a dedicated scalar register file, avoiding unnecessary allocation and access of full-width physical vector registers. The SVRF integrates with vector register renaming while preservin",
+      "pdf_link": "https://arxiv.org/pdf/2610.07078.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.07078",
+      "submission_date": "2026-10-07T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 25.0,
+      "updated_at": "2026-10-07T12:36:57.844450+00:00"
     }
   ]
 }

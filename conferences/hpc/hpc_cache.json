@@ -1,123 +1,123 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-10-05T13:32:57.135154+00:00",
+  "last_updated": "2026-10-07T12:36:58.520142+00:00",
   "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2605.26461",
+      "forum_id": "2610.07516",
       "paper_number": -1,
-      "title": "Characterization-Guided GPU Fault Resilience in NVIDIA MPS",
+      "title": "NCCL M2N: A Layout- and Topology-Aware Collective for Distributed Tensor Resharding",
       "authors": [
-        "Rixin Liu, Xingqi Cui, Kaijian Wang, Xinheng Ding, Zirui Liu, Yuke Wang, Jiarong Xing"
+        "Kaushik Kandadi, Youngeun Kwon, Sreeram Potluri, Ching-Hsiang Chu, Ke Wen, Pouya Kousha, Sangkug Lym, Nitin Nitin, Manjunath Gorentla Venkata"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2605.26461v2 Announce Type: replace \nAbstract: NVIDIA Multi-Process Service (MPS) enables fine-grained GPU sharing by allowing multiple processes to execute concurrently on the same GPU, making it an important mechanism for improving GPU utilization. However, MPS has weak fault resilience: a fault in one process can terminate all co-running processes, limiting its adoption in resilience-critical settings such as multi-tenant GPU clusters. In this work, we design fault-resilient MPS to solve this problem. Our design is guided by insights from a systematic characterization of GPU faults and a deep analysis of their end-to-end processing pipeline. Based on these insights, we design two complementary mechanisms. First, we design a fault isolation mechanism for the dominant memory-related",
-      "pdf_link": "https://arxiv.org/pdf/2605.26461.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.26461",
-      "submission_date": "2026-10-05T04:00:00+00:00",
+      "abstract": "arXiv:2610.07516v1 Announce Type: new \nAbstract: Distributed training and rollout generation often use different tensor layouts, requiring model weights to be resharded across distinct process groups. This M-to-N redistribution is not directly expressed by standard collectives. Flat direct sends duplicate traffic across destination replicas, while gather-then-broadcast concentrates network injection at one root and transfers data that destinations do not need. For DeepSeek-V3 on 256 GPUs, legacy all-gather plus broadcast accounts for 29.4% of the reported reinforcement-learning step time. We present NCCL M2N, a layout- and topology-aware collective primitive for distributed tensor resharding. Given source and destination meshes and placements, it derives the required transfer regions and a",
+      "pdf_link": "https://arxiv.org/pdf/2610.07516.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.07516",
+      "submission_date": "2026-10-07T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 72.5,
-      "updated_at": "2026-10-05T13:32:56.316385+00:00"
+      "score": 74.0,
+      "updated_at": "2026-10-07T12:36:57.907207+00:00"
     },
     {
-      "forum_id": "2610.02745",
+      "forum_id": "2610.07593",
       "paper_number": -1,
-      "title": "AI-Assisted GPU optimization of the Stochastic Variational Method for Few-Body Boson System",
+      "title": "TRANSIT: Transparent Scale-in for Multi-Node LLM Training",
       "authors": [
-        "Noritaka Shimizu, Shigeyoshi Aoyama, Yusuke Tsunoda, Akira Nukada"
+        "Hyungyo Kim, Nicholas Satchanov, Hrishi Shah, Gaohan Ye, Jiaqi Lou, Robert Walkup, Shweta Salaria, I-Hsin Chung, Hubertus Franke, Seetharami Seelam, Apoorve Mohan, Nam Sung Kim"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.02745v1 Announce Type: cross \nAbstract: The stochastic variational method (SVM) is one of the most powerful methods to solve quantum few-body systems precisely in various fields, such as nuclear and atomic physics. To the best of our knowledge, no SVM code optimized for GPUs has been reported. We developed a parallel SVM code for few-body clusters of $^4$He atoms and optimized it for two GPU architectures, NVIDIA GH200 and AMD Instinct MI300A, with the entire code written by an AI coding agent. On the algorithmic side, we introduce the secular-equation method with the Gu--Eisenstat prescription for solving the generalized eigenvalue problem within the SVM framework. The main part of the code tuning is to batch the many small matrices so that the GPUs are used efficiently, togeth",
-      "pdf_link": "https://arxiv.org/pdf/2610.02745.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.02745",
-      "submission_date": "2026-10-05T04:00:00+00:00",
+      "abstract": "arXiv:2610.07593v1 Announce Type: new \nAbstract: TRANSIT is a transparent scale-in framework to enable multi-node model training on fewer GPUs while maintaining training efficiency by transparently leveraging CPU DRAM as an extension of GPU memory during distributed training. It achieves this through a user-space interposition layer, requiring no modifications to the application, training framework, cluster scheduler, device driver, or operating system. Furthermore, TRANSIT achieves higher efficiency by leveraging a zero-copy data path for CPU-GPU transfers. We evaluate TRANSIT on dense and MoE models across scales up to 64 NVIDIA H100 GPUs and multiple parallelism configurations over a RoCE network. Our evaluation shows that TRANSIT can: (a) outperform state-of-the-art framework-managed o",
+      "pdf_link": "https://arxiv.org/pdf/2610.07593.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.07593",
+      "submission_date": "2026-10-07T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 34.5,
-      "updated_at": "2026-10-05T13:32:56.316150+00:00"
+      "score": 55.0,
+      "updated_at": "2026-10-07T12:36:57.907254+00:00"
     },
     {
-      "forum_id": "2605.24461",
+      "forum_id": "2610.07688",
       "paper_number": -1,
-      "title": "Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster",
+      "title": "FailBench: Evaluating Fault Tolerance Across Distributed Training Architectures",
       "authors": [
-        "Ehsan K. Ardestani, Leonardo Piga, Jovan Stojkovic, Pavan Balaji, Mustafa Ozdal, Mikel Jimenez Fernandez, Mihaela Dimovska, Luka Tadic, Hao Shen, Devika Vishwanath, Richa Mishra, Melaku Mihret, Valentin Andrei, Mauricio Cespedes, Julien Prigent, James Monahan, Tyler Graf, Bin Li, Shobhit Kanaujia, Kaushik Veeraraghavan, Chunqiang Tang"
+        "Khaled Aljbab, Amine Barrak"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2605.24461v3 Announce Type: replace-cross \nAbstract: The electric power supply for AI data centers is now the most significant bottleneck in the race toward Artificial General Intelligence, surpassing even the constraint of AI accelerator availability. To our knowledge, this paper is the first to describe the end-to-end power management process for a hyper-scale AI datacenter; from early power planning to accommodate next-generation accelerators 6--12 months before their general availability, to tuning power settings after large scale deployment, and finally to dynamic, runtime power management for evolving workloads. We present detailed power measurements for a 150 MW datacenter hosting a cluster of 83K GB200 GPUs. We share insights from building this state-of-the-art AI cluster. We",
-      "pdf_link": "https://arxiv.org/pdf/2605.24461.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.24461",
-      "submission_date": "2026-10-05T04:00:00+00:00",
+      "abstract": "arXiv:2610.07688v1 Announce Type: new \nAbstract: Distributed deep learning relies on data, pipeline, tensor, and hybrid parallelism, yet fault-tolerance mechanisms are typically evaluated only on the architecture for which they were designed. This leaves practitioners with little guidance when choosing mechanisms across architectures. FailBench provides a unified evaluation harness covering seven distributed training architectures, eight crash-fault-tolerance mechanisms and a no-FT baseline, and single, concurrent, and cascading fail-stop failures. We evaluate 142 (architecture, mechanism, trace) combinations on an 8xV100 cluster, with per-rank checkpoint states ranging from 205 MB to 2.7 GB. Three findings emerge. First, no mechanism is universally best: on A2, disk checkpointing has the ",
+      "pdf_link": "https://arxiv.org/pdf/2610.07688.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.07688",
+      "submission_date": "2026-10-07T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 23.5,
-      "updated_at": "2026-10-05T13:32:56.316542+00:00"
+      "score": 36.0,
+      "updated_at": "2026-10-07T12:36:57.907310+00:00"
     },
     {
-      "forum_id": "2609.37085",
+      "forum_id": "2610.07030",
       "paper_number": -1,
-      "title": "ARGOS: Reinforcement Learning-Driven Multidimensional Elasticity for Service Orchestration in the Computing Continuum",
+      "title": "LLM-Based Multi-Agent Collaboration for Constrained Multi-Objective Container Placement",
       "authors": [
-        "Javier Mateos-Bravo, Sergio Laso, Juan Luis Herrera, Ilir Murturi, Pantelis Frangoudis, Schahram Dustdar"
+        "Suvarthi Sarkar, Abhishek Hazra, Akshat Mittal, Aryabartta Sahu"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2609.37085v2 Announce Type: replace \nAbstract: Data-intensive services in the Computing Continuum must balance analytics quality, resource usage, and cost across heterogeneous nodes with limited and uneven capacity. This balance becomes especially difficult when resource scaling reaches capacity limits, because changes in demand and cluster pressure must then be absorbed without violating client-defined quality ranges. Existing orchestrators mainly adapt resources, placements, or replicas, while analytics requirements such as coverage, sample, and freshness remain fixed. This article presents ARGOS, the Adaptive Reinforcement Learning-Driven Governance for Orchestrated Services, an end-to-end controller that formulates multidimensional elasticity as a per-request Markov decision proc",
-      "pdf_link": "https://arxiv.org/pdf/2609.37085.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.37085",
-      "submission_date": "2026-10-05T04:00:00+00:00",
+      "abstract": "arXiv:2610.07030v1 Announce Type: new \nAbstract: Container placement in data centers must simultaneously minimize power consumption and maximize affinity preferences, while satisfying multi-resource capacity and anti-affinity constraints. Traditional approaches typically rely on fixed rules, which lack adaptability to dynamic cluster states and are difficult to extend for adaptive decision-making. On the other hand, meta-heuristic methods, although more flexible, are often computationally expensive, slower and prone to getting trapped in local optima. In this work, we propose an adaptive and efficient approach based on an LLM-driven multi-agent collaboration framework, where four specialized agents operate in a closed-loop ReAct cycle at each placement step. A Power Consumption Agent and a",
+      "pdf_link": "https://arxiv.org/pdf/2610.07030.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.07030",
+      "submission_date": "2026-10-07T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-10-05T13:32:56.316430+00:00"
+      "score": 33.0,
+      "updated_at": "2026-10-07T12:36:57.906814+00:00"
     },
     {
-      "forum_id": "2610.02732",
+      "forum_id": "2610.08430",
       "paper_number": -1,
-      "title": "ServeTwin: A Benchmark-Validated Simulator for Distributed LLM Architecture Exploration",
+      "title": "NeMo-DCR: Bit-Exact Delta-Compressed Refit for Scalable Agentic RL at Trillion-Parameter Scale",
       "authors": [
-        "Sungjoon Park, Changue Jung, Kyungno Joo, Mincheol Kang, Jaehyung Ahn, Sehwan Lee, Sangjoon Kim"
+        "Songlin Jiang, Zhiyu Li, Terry Kong, Yu Yao, Youngeun Kwon, Bernard Nguyen, Ashwath Aithal, Mario Di Francesco"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.02732v1 Announce Type: cross \nAbstract: Evaluating distributed LLM serving designs on physical clusters is costly. Yet existing simulators provide only subsets of the capabilities needed for realistic design exploration: stateful closed-loop execution, timing prediction without profiling target hardware, and direct execution of unmodified serving benchmarks. We present ServeTwin, a closed-loop simulator that couples specification-driven analytical timing with a stateful serving loop. This coupling captures feedback among request completion, scheduling, queue state, and KV-cache evolution, including prefill-decode disaggregation and multi-turn agent workloads. ServeTwin avoids target-hardware operator profiling through iSTAGE, an analytical trace generator that derives per-iterat",
-      "pdf_link": "https://arxiv.org/pdf/2610.02732.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.02732",
-      "submission_date": "2026-10-05T04:00:00+00:00",
+      "abstract": "arXiv:2610.08430v1 Announce Type: new \nAbstract: Agentic reinforcement learning (RL) disaggregates training from rollout, so each policy update must reach the rollout clusters before the next batch. Transferring a full 1T checkpoint for such weight synchronization (refit) takes 87.5 min between two AWS regions. Measurements of BF16 training show that about 1% of weights change their stored values per step. Recent systems exploit this sparsity but fall short on placement, exactness, or efficiency: they reimplement placement rules, assemble full tensors, rebuild values arithmetically, or use a cross-cluster collective, and none fully recovers from mid-refit failures.\n  We present NeMo-DCR (Delta-Compressed Refit), which sends only changes yet is bit-exact: receivers obtain the same parameter",
+      "pdf_link": "https://arxiv.org/pdf/2610.08430.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.08430",
+      "submission_date": "2026-10-07T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 6.0,
-      "updated_at": "2026-10-05T13:32:56.316108+00:00"
+      "score": 4.5,
+      "updated_at": "2026-10-07T12:36:57.907694+00:00"
     }
   ]
 }

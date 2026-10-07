@@ -1,31 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-10-01T12:27:37.377743+00:00",
+  "last_updated": "2026-10-07T12:37:35.378455+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2608.09414",
+      "forum_id": "2610.07513",
       "paper_number": -1,
-      "title": "poly_rust: a domain-specific language for polytopal methods with a Rust interpreter",
+      "title": "Efficient Approximation of Structured Linear Operators using Randomized One-Sided Queries",
       "authors": [
-        "Daniele A. Di Pietro"
+        "Esther Gallmeier, Samuel E. Otto"
       ],
       "keywords": [
         "cs.NA",
-        "numerical analysis"
+        "scientific computing"
       ],
-      "abstract": "arXiv:2608.09414v2 Announce Type: replace \nAbstract: Background: Over the last two decades, considerable effort in the applied mathematics community has been devoted to the development of polytopal methods, i.e., numerical methods for partial differential equations that support meshes more general than those used by traditional finite element methods. Despite their flexibility and attractive mathematical properties, polytopal methods have a steep implementation curve and, to date, no easily accessible open-source software framework has been available for their systematic implementation.\n  Methods: In this article, we introduce poly_rust, a new software library implementing a domain-specific language (DSL) specifically designed for polytopal methods. poly_rust provides high-level constructs",
-      "pdf_link": "https://arxiv.org/pdf/2608.09414.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.09414",
-      "submission_date": "2026-10-01T04:00:00+00:00",
-      "conference": "numerical analysis",
+      "abstract": "arXiv:2610.07513v1 Announce Type: new \nAbstract: Approximating linear operators on high-dimensional spaces using only forward operator-vector product queries is a common but challenging task in scientific computing and machine learning arising when access to the adjoint action is experimentally unavailable or difficult to construct computationally. Existing query-efficient methods with polylogarithmic query complexity in the error tolerance rely on self-adjointness or access to the adjoint operator, while existing adjoint-free methods based on global low-order regularity have polynomial query complexity. We show that a priori local row-space information can be exploited for query-efficient, adjoint-free operator approximation, and that this information can be supplied by local high-order r",
+      "pdf_link": "https://arxiv.org/pdf/2610.07513.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.07513",
+      "submission_date": "2026-10-07T04:00:00+00:00",
+      "conference": "scientific computing",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 15.0,
-      "updated_at": "2026-10-01T12:27:37.374632+00:00"
+      "score": 3.0,
+      "updated_at": "2026-10-07T12:37:35.374910+00:00"
     }
   ]
 }

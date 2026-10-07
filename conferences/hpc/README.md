@@ -1,6 +1,6 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-10-06 12:43:23 UTC
+- **Last Updated**: 2026-10-07 12:36:58 UTC
 - **Total Filtered Papers**: 5
 - **Displaying**: 5 (arxiv: 5)
 - **Papers with Ratings**: 0
@@ -9,8 +9,8 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Characterization-Guided GPU Fault Resilience in NVIDIA MPS](https://arxiv.org/abs/2605.26461) | `ARXIV` | 72.5 |
-| 2 | [AI-Assisted GPU optimization of the Stochastic Variational Method for Few-Body Boson System](https://arxiv.org/abs/2610.02745) | `ARXIV` | 34.5 |
-| 3 | [Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster](https://arxiv.org/abs/2605.24461) | `ARXIV` | 23.5 |
-| 4 | [ARGOS: Reinforcement Learning-Driven Multidimensional Elasticity for Service Orchestration in the Computing Continuum](https://arxiv.org/abs/2609.37085) | `ARXIV` | 12.0 |
-| 5 | [ServeTwin: A Benchmark-Validated Simulator for Distributed LLM Architecture Exploration](https://arxiv.org/abs/2610.02732) | `ARXIV` | 6.0 |
+| 1 | [NCCL M2N: A Layout- and Topology-Aware Collective for Distributed Tensor Resharding](https://arxiv.org/abs/2610.07516) | `ARXIV` | 74.0 |
+| 2 | [TRANSIT: Transparent Scale-in for Multi-Node LLM Training](https://arxiv.org/abs/2610.07593) | `ARXIV` | 55.0 |
+| 3 | [FailBench: Evaluating Fault Tolerance Across Distributed Training Architectures](https://arxiv.org/abs/2610.07688) | `ARXIV` | 36.0 |
+| 4 | [LLM-Based Multi-Agent Collaboration for Constrained Multi-Objective Container Placement](https://arxiv.org/abs/2610.07030) | `ARXIV` | 33.0 |
+| 5 | [NeMo-DCR: Bit-Exact Delta-Compressed Refit for Scalable Agentic RL at Trillion-Parameter Scale](https://arxiv.org/abs/2610.08430) | `ARXIV` | 4.5 |

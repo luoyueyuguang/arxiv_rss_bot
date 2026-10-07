@@ -1,123 +1,146 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-10-05T13:32:59.696695+00:00",
-  "paper_count": 5,
+  "last_updated": "2026-10-07T12:37:01.871242+00:00",
+  "paper_count": 6,
   "papers": [
     {
-      "forum_id": "2610.02333",
+      "forum_id": "2610.08190",
       "paper_number": -1,
-      "title": "Duplication-Aware Retiming and Cell Interface Redesign for Superconductor Circuit Minimization",
+      "title": "On the Impact of Degradation-Balanced Scheduling in Manycore Systems",
       "authors": [
-        "Panagiotis Papanikolaou, Alex Vanasse, Haoran Jin, Georgios Tzimpragos, Jennifer Volk"
+        "Maria Pantazi-Kypraiou, George Goudroumanis, George Floros, Anuj Pathania, George Stamoulis"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.02333v1 Announce Type: cross \nAbstract: Superconductor electronics have increasingly shifted away from RSFQ and its variants toward logic families that eliminate explicit gate-level clocking. While this transition enables simpler circuits and more efficient architectures, it also introduces an implicit reliance on dual-rail codes, resulting in inherent gate duplication. This work presents a duplication-aware retiming methodology for Josephson junction (JJ) count minimization, co-optimizing register placement and polarity assignment. The approach applies beyond SFQ to any monotonic circuit. We further identify cell interfaces---specifically, interconnect drivers, receivers, and fanout (FO) elements---as dominant contributors to JJ count in each cell. A new amplifier design is int",
-      "pdf_link": "https://arxiv.org/pdf/2610.02333.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.02333",
-      "submission_date": "2026-10-05T04:00:00+00:00",
+      "abstract": "arXiv:2610.08190v1 Announce Type: new \nAbstract: Electromigration degradation in manycore systems depends strongly on how runtime workload is distributed across cores. Task placement affects power, temperature, and current density, which in turn shape the spatial distribution of degradation over time. However, a scheduler that ranks cores only by their current reliability state may not always distinguish among candidate cores, especially when reliability values are close at decision time. In this case, scheduling decisions can be driven by secondary factors rather than by long-term degradation balance. This paper studies degradation-balanced scheduling and proposes a Reliability-Balanced (RB) policy that predicts the full-task effect of each candidate assignment. RB penalizes added imbalan",
+      "pdf_link": "https://arxiv.org/pdf/2610.08190.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.08190",
+      "submission_date": "2026-10-07T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 15.5,
-      "updated_at": "2026-10-05T13:32:59.693900+00:00"
+      "score": 13.0,
+      "updated_at": "2026-10-07T12:37:01.866212+00:00"
     },
     {
-      "forum_id": "2610.03219",
+      "forum_id": "2610.07600",
       "paper_number": -1,
-      "title": "Evidence-Guided Repository-Level RTL Repair",
+      "title": "Beyond No-Good Benders Cuts: Exact Realizability for Discretely Tunable Clock Trees",
       "authors": [
-        "Yuxin Du, Juxin Niu, Zhe Jiang, Nan Guan"
+        "Boxiang Song, Keren Zhu"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.03219v1 Announce Type: new \nAbstract: Repository-level RTL repair must localize a failure that spans files, modules, and clock cycles, then propagate the fix consistently. Existing methods reason over source code, which reveals possible behaviors but not the failed execution, and cannot tell whether a local fix was propagated consistently. We therefore present an evidence-guided framework with three modules. Failure grounding converts a problem statement into a reproduced failing run and a failure anchor. Waveform-guided localization uses a localization toolbox to narrow the observed violation into a candidate mechanism and an evidence trail. Consistency-aware repair and validation then expand that seed into a coordinated patch and replay the same scenario to check that the viol",
-      "pdf_link": "https://arxiv.org/pdf/2610.03219.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.03219",
-      "submission_date": "2026-10-05T04:00:00+00:00",
+      "abstract": "arXiv:2610.07600v1 Announce Type: new \nAbstract: Useful-skew schedules can satisfy timing constraints yet remain unrealizable by a fixed clock tree with discrete tuning choices. We formulate this mismatch as exact membership in a finite relative-latency set and develop a checkable feedback interface between the scheduler and the tree model. Arithmetic certificates explain unrealizable targets, while tree-specific contraction reduces the structural size of the exact relations projected onto selected sinks. These relations become realizability cuts that can exclude more candidates than a no-good on the same certificate support, including discrete holes that linear inequalities cannot separate. Controlled experiments confirm fewer oracle calls and faster projection construction. They also exp",
+      "pdf_link": "https://arxiv.org/pdf/2610.07600.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.07600",
+      "submission_date": "2026-10-07T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-10-07T12:37:01.866009+00:00"
+    },
+    {
+      "forum_id": "2610.06937",
+      "paper_number": -1,
+      "title": "FAPO: Fanout-Aware Post-Mapping Optimization for LUT-Based FPGAs",
+      "authors": [
+        "Xiaoyu Hao, Keren Zhu"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2610.06937v1 Announce Type: new \nAbstract: Reducing logic depth during FPGA technology mapping does not necessarily eliminate fanout bottlenecks in the resulting LUT networks.Replicating heavily loaded LUTs can alleviate these bottlenecks, but the added copies consume area and may increase upstream loading. We propose FAPO, a mapper-independent post-mapping optimizer that jointly refines sink assignments and LUT cuts under a final-area constraint.Replication, cut switching, and recovery are evaluated by the resulting live LUT count.We derive a necessary all-critical-path condition for delay reduction and obtain minimum-copy proposals by minimum cut within a restricted same-cut family.These proposals complement greedy refinement, with mappings selected by full-network area and timing.",
+      "pdf_link": "https://arxiv.org/pdf/2610.06937.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.06937",
+      "submission_date": "2026-10-07T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-10-07T12:37:01.865583+00:00"
+    },
+    {
+      "forum_id": "2610.08186",
+      "paper_number": -1,
+      "title": "A gem5-based Simulation Framework for Computing-in-DRAM",
+      "authors": [
+        "Alexander Kusnezoff, Jo\\~ao Paulo C. de Lima, Jeronimo Castrillon, Asif Ali Khan"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2610.08186v1 Announce Type: new \nAbstract: Computing-in-Memory using DRAM (CIMD) has demonstrated substantial energy and throughput gains for memory-bound workloads consisting of bulk-bitwise operations, by performing computation directly within DRAM subarrays. Realizing CIMD, however, requires a redesign of the memory controller and careful mapping of operands onto the memory arrays. Presently, accurate FPGA-based testbeds exist, but they are costly and labor-intensive, while open-source simulators are largely trace-based and cannot execute full application runs. The only full-application CIMD simulator available, included with MIMDRAM, is built on an outdated version of gem5 and its toolchains. We present gem5-CIMD, a full-application CIMD simulation framework built on the latest v",
+      "pdf_link": "https://arxiv.org/pdf/2610.08186.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.08186",
+      "submission_date": "2026-10-07T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-10-05T13:32:59.693868+00:00"
+      "updated_at": "2026-10-07T12:37:01.866174+00:00"
     },
     {
-      "forum_id": "2605.24461",
+      "forum_id": "2610.08688",
       "paper_number": -1,
-      "title": "Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster",
+      "title": "A Framework for Accelerating Transformer Inference on RISC-V for Edge AI",
       "authors": [
-        "Ehsan K. Ardestani, Leonardo Piga, Jovan Stojkovic, Pavan Balaji, Mustafa Ozdal, Mikel Jimenez Fernandez, Mihaela Dimovska, Luka Tadic, Hao Shen, Devika Vishwanath, Richa Mishra, Melaku Mihret, Valentin Andrei, Mauricio Cespedes, Julien Prigent, James Monahan, Tyler Graf, Bin Li, Shobhit Kanaujia, Kaushik Veeraraghavan, Chunqiang Tang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2605.24461v3 Announce Type: replace \nAbstract: The electric power supply for AI data centers is now the most significant bottleneck in the race toward Artificial General Intelligence, surpassing even the constraint of AI accelerator availability. To our knowledge, this paper is the first to describe the end-to-end power management process for a hyper-scale AI datacenter; from early power planning to accommodate next-generation accelerators 6--12 months before their general availability, to tuning power settings after large scale deployment, and finally to dynamic, runtime power management for evolving workloads. We present detailed power measurements for a 150 MW datacenter hosting a cluster of 83K GB200 GPUs. We share insights from building this state-of-the-art AI cluster. We hope ",
-      "pdf_link": "https://arxiv.org/pdf/2605.24461.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.24461",
-      "submission_date": "2026-10-05T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-10-05T13:32:59.694078+00:00"
-    },
-    {
-      "forum_id": "2510.07304",
-      "paper_number": -1,
-      "title": "Cocoon: A System Architecture for Differentially Private Training with Correlated Noises",
-      "authors": [
-        "Donghwan Kim, Xin Gu, Jinho Baek, Timothy Lo, Younghoon Min, Kwangsik Shin, Jongryool Kim, Jongse Park, Kiwan Maeng"
+        "Ajay Kumar M, Vishnu PS, Yike Li, Shreejith Shanker, Dimitrios S. Nikolopoulos, Bo Ji, Hans Vandierendonck, Deepu John"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2510.07304v2 Announce Type: replace \nAbstract: Machine learning (ML) models memorize and leak training data, causing serious privacy issues to data owners. Training algorithms with differential privacy (DP) have been gaining attention as a solution. However, these algorithms add noise at each training iteration and degrade accuracy, limiting their real-world adoption. To improve accuracy, a new family of approaches adds carefully designed correlated noises, so that noises cancel out each other across iterations. We performed an extensive characterization study of these new mechanisms and show they incur non-negligible overheads when the model is relatively large or uses large embedding tables compared to the hardware capacity. Motivated by the analysis, we propose Cocoon, a framework",
-      "pdf_link": "https://arxiv.org/pdf/2510.07304.pdf",
-      "forum_link": "https://arxiv.org/abs/2510.07304",
-      "submission_date": "2026-10-05T04:00:00+00:00",
+      "abstract": "arXiv:2610.08688v1 Announce Type: new \nAbstract: This work presents a framework for accelerating transformer-based language models (LMs) on resource-constrained IoT devices. The framework targets compact LMs: BERT-Tiny (B-Ty), MobileBERT (M-Bt), MiniLM (M-Lm), Electra (E-Lt) and DeBERTa (D-Bt) -- selected for their architectural diversity and use in edge inference scenarios. The proposed flow derives lightweight instruction set extensions tailored to the non-obvious computational patterns of these models. In addition, a custom instruction is introduced to accelerate the address generation stage of batch matrix multiplication, achieving a performance improvement of 15.39--21.74% with modest ASIC overheads of 6.79% in area and 2.33% in power. To further enhance performance without incurring ",
+      "pdf_link": "https://arxiv.org/pdf/2610.08688.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.08688",
+      "submission_date": "2026-10-07T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-05T13:32:59.694054+00:00"
+      "score": 2.0,
+      "updated_at": "2026-10-07T12:37:01.866477+00:00"
     },
     {
-      "forum_id": "2609.13546",
+      "forum_id": "2610.07301",
       "paper_number": -1,
-      "title": "WISER: Systematic Design-Space Exploration of Trapped Ions with Multiplexed Control",
+      "title": "A Pipelined FPGA Architecture for Banded Sparse Matrix Dense Matrix Multiplication in Longformer",
       "authors": [
-        "Scott Jones, Song-qing-hao Yang, Prakash Murali"
+        "Phillip Pramberger, Athanasios Tziouvaras, Shreejith Shanker, George Floros"
       ],
       "keywords": [
         "cs.AR",
-        "DAC"
+        "FPGA"
       ],
-      "abstract": "arXiv:2609.13546v2 Announce Type: replace-cross \nAbstract: Trapped-ion Quantum Charge-Coupled Devices (QCCD) are a leading contender for quantum computing, but their scalability is constrained by control wiring and electronics. Wiring using Integrated Switching Electronics (WISE), a recently proposed QCCD architecture, reduces wiring through multiplexing and integrated switching hardware. However, this leaves an execution model with limited parallelism and limited flexibility in ion movement. Further, these devices need to be paired with a quantum error correction (QEC) code to enable fault-tolerant quantum computation (FTQC). Can WISE architectures efficiently support FTQC requirements? Which QEC choices, device and control parameters are practical?\n  We present WISER, a cross-layer desig",
-      "pdf_link": "https://arxiv.org/pdf/2609.13546.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.13546",
-      "submission_date": "2026-10-05T04:00:00+00:00",
-      "conference": "DAC",
+      "abstract": "arXiv:2610.07301v1 Announce Type: new \nAbstract: Sparse attention mechanisms have become increasingly important for transformer models processing long input sequences due to their lower computational and memory complexity compared to full self-attention. Longformer achieves this through a sliding-window attention mechanism that produces a structured banded sparse attention matrix. However, existing sparse transformer accelerators primarily target attention generation or unstructured sparsity, leaving sparse matrix--dense matrix multiplication (SpMM) for structured sparse attention largely unexplored. This paper presents a pipelined FPGA architecture for accelerating banded SpMM in Longformer. The proposed design exploits the predictable sparsity pattern of Longformer's attention matrix thr",
+      "pdf_link": "https://arxiv.org/pdf/2610.07301.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.07301",
+      "submission_date": "2026-10-07T04:00:00+00:00",
+      "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-05T13:32:59.694107+00:00"
+      "score": 1.5,
+      "updated_at": "2026-10-07T12:37:01.865910+00:00"
     }
   ]
 }
