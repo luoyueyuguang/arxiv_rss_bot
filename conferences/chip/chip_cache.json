@@ -1,146 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-10-07T12:37:01.871242+00:00",
-  "paper_count": 6,
+  "last_updated": "2026-10-08T12:46:51.143757+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2610.08190",
+      "forum_id": "2610.10129",
       "paper_number": -1,
-      "title": "On the Impact of Degradation-Balanced Scheduling in Manycore Systems",
+      "title": "When Algorithmic Exploration Becomes Cheap: A Case Study of Agentic Research in EDA",
       "authors": [
-        "Maria Pantazi-Kypraiou, George Goudroumanis, George Floros, Anuj Pathania, George Stamoulis"
+        "Keren Zhu, Yu Deng, Xiaoyu Hao, Liwen Jiang, Zijian Jiang, Cunqing Lan, Boxiang Song, Pujun Su, Yaojia Wang"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.08190v1 Announce Type: new \nAbstract: Electromigration degradation in manycore systems depends strongly on how runtime workload is distributed across cores. Task placement affects power, temperature, and current density, which in turn shape the spatial distribution of degradation over time. However, a scheduler that ranks cores only by their current reliability state may not always distinguish among candidate cores, especially when reliability values are close at decision time. In this case, scheduling decisions can be driven by secondary factors rather than by long-term degradation balance. This paper studies degradation-balanced scheduling and proposes a Reliability-Balanced (RB) policy that predicts the full-task effect of each candidate assignment. RB penalizes added imbalan",
-      "pdf_link": "https://arxiv.org/pdf/2610.08190.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.08190",
-      "submission_date": "2026-10-07T04:00:00+00:00",
+      "abstract": "arXiv:2610.10129v1 Announce Type: new \nAbstract: As EDA researchers, we conducted eight deliberate trials of agentic algorithm exploration, selecting several topics outside our areas of depth. One faculty member and seven students participated, including students without publication experience. With limited intervention in the algorithms, agents developed mathematical constructions, analyzed existing tools, and implemented improvements; some efforts fell short of their practical goals. We also used AI to collect, classify, and analyze 8,420 papers from four EDA conferences and two journals over 2022-2026. Among 2,380 primary-core papers, we classified 97.7% from titles and abstracts as computationally closed, including work on new formulations. Together, these observations suggest that muc",
+      "pdf_link": "https://arxiv.org/pdf/2610.10129.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.10129",
+      "submission_date": "2026-10-08T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-10-07T12:37:01.866212+00:00"
+      "score": 1.5,
+      "updated_at": "2026-10-08T12:46:51.140814+00:00"
     },
     {
-      "forum_id": "2610.07600",
+      "forum_id": "2610.10403",
       "paper_number": -1,
-      "title": "Beyond No-Good Benders Cuts: Exact Realizability for Discretely Tunable Clock Trees",
+      "title": "SUSpMV: A High Frequency Sparse Matrix Vector Multiplier on HBM Enabled FPGA written in SUS",
       "authors": [
-        "Boxiang Song, Keren Zhu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2610.07600v1 Announce Type: new \nAbstract: Useful-skew schedules can satisfy timing constraints yet remain unrealizable by a fixed clock tree with discrete tuning choices. We formulate this mismatch as exact membership in a finite relative-latency set and develop a checkable feedback interface between the scheduler and the tree model. Arithmetic certificates explain unrealizable targets, while tree-specific contraction reduces the structural size of the exact relations projected onto selected sinks. These relations become realizability cuts that can exclude more candidates than a no-good on the same certificate support, including discrete holes that linear inequalities cannot separate. Controlled experiments confirm fewer oracle calls and faster projection construction. They also exp",
-      "pdf_link": "https://arxiv.org/pdf/2610.07600.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.07600",
-      "submission_date": "2026-10-07T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-10-07T12:37:01.866009+00:00"
-    },
-    {
-      "forum_id": "2610.06937",
-      "paper_number": -1,
-      "title": "FAPO: Fanout-Aware Post-Mapping Optimization for LUT-Based FPGAs",
-      "authors": [
-        "Xiaoyu Hao, Keren Zhu"
+        "Lennart Van Hirtum, David Volz, Andreas Koch, Christian Plessl"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2610.06937v1 Announce Type: new \nAbstract: Reducing logic depth during FPGA technology mapping does not necessarily eliminate fanout bottlenecks in the resulting LUT networks.Replicating heavily loaded LUTs can alleviate these bottlenecks, but the added copies consume area and may increase upstream loading. We propose FAPO, a mapper-independent post-mapping optimizer that jointly refines sink assignments and LUT cuts under a final-area constraint.Replication, cut switching, and recovery are evaluated by the resulting live LUT count.We derive a necessary all-critical-path condition for delay reduction and obtain minimum-copy proposals by minimum cut within a restricted same-cut family.These proposals complement greedy refinement, with mappings selected by full-network area and timing.",
-      "pdf_link": "https://arxiv.org/pdf/2610.06937.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.06937",
-      "submission_date": "2026-10-07T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-10-07T12:37:01.865583+00:00"
-    },
-    {
-      "forum_id": "2610.08186",
-      "paper_number": -1,
-      "title": "A gem5-based Simulation Framework for Computing-in-DRAM",
-      "authors": [
-        "Alexander Kusnezoff, Jo\\~ao Paulo C. de Lima, Jeronimo Castrillon, Asif Ali Khan"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2610.08186v1 Announce Type: new \nAbstract: Computing-in-Memory using DRAM (CIMD) has demonstrated substantial energy and throughput gains for memory-bound workloads consisting of bulk-bitwise operations, by performing computation directly within DRAM subarrays. Realizing CIMD, however, requires a redesign of the memory controller and careful mapping of operands onto the memory arrays. Presently, accurate FPGA-based testbeds exist, but they are costly and labor-intensive, while open-source simulators are largely trace-based and cannot execute full application runs. The only full-application CIMD simulator available, included with MIMDRAM, is built on an outdated version of gem5 and its toolchains. We present gem5-CIMD, a full-application CIMD simulation framework built on the latest v",
-      "pdf_link": "https://arxiv.org/pdf/2610.08186.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.08186",
-      "submission_date": "2026-10-07T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-10-07T12:37:01.866174+00:00"
-    },
-    {
-      "forum_id": "2610.08688",
-      "paper_number": -1,
-      "title": "A Framework for Accelerating Transformer Inference on RISC-V for Edge AI",
-      "authors": [
-        "Ajay Kumar M, Vishnu PS, Yike Li, Shreejith Shanker, Dimitrios S. Nikolopoulos, Bo Ji, Hans Vandierendonck, Deepu John"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2610.08688v1 Announce Type: new \nAbstract: This work presents a framework for accelerating transformer-based language models (LMs) on resource-constrained IoT devices. The framework targets compact LMs: BERT-Tiny (B-Ty), MobileBERT (M-Bt), MiniLM (M-Lm), Electra (E-Lt) and DeBERTa (D-Bt) -- selected for their architectural diversity and use in edge inference scenarios. The proposed flow derives lightweight instruction set extensions tailored to the non-obvious computational patterns of these models. In addition, a custom instruction is introduced to accelerate the address generation stage of batch matrix multiplication, achieving a performance improvement of 15.39--21.74% with modest ASIC overheads of 6.79% in area and 2.33% in power. To further enhance performance without incurring ",
-      "pdf_link": "https://arxiv.org/pdf/2610.08688.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.08688",
-      "submission_date": "2026-10-07T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-10-07T12:37:01.866477+00:00"
-    },
-    {
-      "forum_id": "2610.07301",
-      "paper_number": -1,
-      "title": "A Pipelined FPGA Architecture for Banded Sparse Matrix Dense Matrix Multiplication in Longformer",
-      "authors": [
-        "Phillip Pramberger, Athanasios Tziouvaras, Shreejith Shanker, George Floros"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2610.07301v1 Announce Type: new \nAbstract: Sparse attention mechanisms have become increasingly important for transformer models processing long input sequences due to their lower computational and memory complexity compared to full self-attention. Longformer achieves this through a sliding-window attention mechanism that produces a structured banded sparse attention matrix. However, existing sparse transformer accelerators primarily target attention generation or unstructured sparsity, leaving sparse matrix--dense matrix multiplication (SpMM) for structured sparse attention largely unexplored. This paper presents a pipelined FPGA architecture for accelerating banded SpMM in Longformer. The proposed design exploits the predictable sparsity pattern of Longformer's attention matrix thr",
-      "pdf_link": "https://arxiv.org/pdf/2610.07301.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.07301",
-      "submission_date": "2026-10-07T04:00:00+00:00",
+      "abstract": "arXiv:2610.10403v1 Announce Type: new \nAbstract: SUSpMV is a Sparse Matrix Vector multiplication (SpMV) accelerator written in the upcoming HDL SUS. By leveraging SUS's unique latency counting and inference mechanism, SUSpMV could be designed with very deep pipelines yet small design complexity overhead. This enables an efficient implementation which employs all 32 HBM channels on the Alveo U280 FPGA at 400MHz for streaming matrix data into 32 Compute Units (CUs). Input and output vectors are stored in DDR memory, which allows zero-overhead chaining of multiplications and increases overall system memory bandwidth by not sharing HBM bandwidth with the CUs.\n  A CU processes the SpMV in tiles of width 1024 and a dynamically chosen height, up to 32768. Each CU is capable of accumulating the mu",
+      "pdf_link": "https://arxiv.org/pdf/2610.10403.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.10403",
+      "submission_date": "2026-10-08T04:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-10-07T12:37:01.865910+00:00"
+      "updated_at": "2026-10-08T12:46:51.140875+00:00"
+    },
+    {
+      "forum_id": "2610.09156",
+      "paper_number": -1,
+      "title": "Compiling Semi-Ring Dynamic Programming to Tier-Aware 3D-DRAM Processing-in-Memory",
+      "authors": [
+        "Mahbod Afarin, Tsung-Han Lu, Tajana Rosing"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2610.09156v1 Announce Type: new \nAbstract: Processing-in-Memory (PIM) on monolithic 3D (M3D) DRAM is a promising answer to the memory wall for data-intensive dynamic programming (DP), yet extracting its performance today demands hand-written kernels: the programmer must pick a tile size, place data across non-uniform-latency memory tiers, partition work between heterogeneous processing units, and insert the right broadcasts and queues by hand. We present GenMLIR, an MLIR compiler that automates this mapping for tier-aware 3D PIM. GenMLIR encodes the semi-ring generalized grid update, the algebraic form shared by all-pairs shortest path (APSP) and sequence alignment, as a first-class IR abstraction, and lowers it through four GenDRAM-aware pass groups that derive blocked tiling, tier-",
+      "pdf_link": "https://arxiv.org/pdf/2610.09156.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.09156",
+      "submission_date": "2026-10-08T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-10-08T12:46:51.140568+00:00"
     }
   ]
 }

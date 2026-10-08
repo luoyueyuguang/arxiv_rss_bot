@@ -1,16 +1,14 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-10-07 12:36:58 UTC
-- **Total Filtered Papers**: 5
-- **Displaying**: 5 (arxiv: 5)
+- **Last Updated**: 2026-10-08 12:46:47 UTC
+- **Total Filtered Papers**: 3
+- **Displaying**: 3 (arxiv: 3)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [NCCL M2N: A Layout- and Topology-Aware Collective for Distributed Tensor Resharding](https://arxiv.org/abs/2610.07516) | `ARXIV` | 74.0 |
-| 2 | [TRANSIT: Transparent Scale-in for Multi-Node LLM Training](https://arxiv.org/abs/2610.07593) | `ARXIV` | 55.0 |
-| 3 | [FailBench: Evaluating Fault Tolerance Across Distributed Training Architectures](https://arxiv.org/abs/2610.07688) | `ARXIV` | 36.0 |
-| 4 | [LLM-Based Multi-Agent Collaboration for Constrained Multi-Objective Container Placement](https://arxiv.org/abs/2610.07030) | `ARXIV` | 33.0 |
-| 5 | [NeMo-DCR: Bit-Exact Delta-Compressed Refit for Scalable Agentic RL at Trillion-Parameter Scale](https://arxiv.org/abs/2610.08430) | `ARXIV` | 4.5 |
+| 1 | [AI-Assisted Computational Reproducibility on the FABRIC Testbed](https://arxiv.org/abs/2606.25879) | `ARXIV` | 13.0 |
+| 2 | [HPC-MQBench: Qualification-First Benchmarking on Slurm with a Single-Broker Kafka Evaluation](https://arxiv.org/abs/2610.09786) | `ARXIV` | 5.0 |
+| 3 | [Expert Coupling in MoE Pretraining: Reducing All-to-All Overhead with Correlated Placement and Token Shuffling](https://arxiv.org/abs/2610.09372) | `ARXIV` | 4.0 |

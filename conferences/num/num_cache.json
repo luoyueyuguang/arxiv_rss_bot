@@ -1,31 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-10-07T12:37:35.378455+00:00",
+  "last_updated": "2026-10-08T12:47:32.419369+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2610.07513",
+      "forum_id": "2610.10419",
       "paper_number": -1,
-      "title": "Efficient Approximation of Structured Linear Operators using Randomized One-Sided Queries",
+      "title": "A hat function based positive contact discontinuity capturing Boltzmann scheme",
       "authors": [
-        "Esther Gallmeier, Samuel E. Otto"
+        "Balwinder Singh, S. V. Raghurama Rao"
       ],
       "keywords": [
         "cs.NA",
-        "scientific computing"
+        "numerical analysis"
       ],
-      "abstract": "arXiv:2610.07513v1 Announce Type: new \nAbstract: Approximating linear operators on high-dimensional spaces using only forward operator-vector product queries is a common but challenging task in scientific computing and machine learning arising when access to the adjoint action is experimentally unavailable or difficult to construct computationally. Existing query-efficient methods with polylogarithmic query complexity in the error tolerance rely on self-adjointness or access to the adjoint operator, while existing adjoint-free methods based on global low-order regularity have polynomial query complexity. We show that a priori local row-space information can be exploited for query-efficient, adjoint-free operator approximation, and that this information can be supplied by local high-order r",
-      "pdf_link": "https://arxiv.org/pdf/2610.07513.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.07513",
-      "submission_date": "2026-10-07T04:00:00+00:00",
-      "conference": "scientific computing",
+      "abstract": "arXiv:2610.10419v1 Announce Type: new \nAbstract: The suitable moments of the Maxwell velocity distribution function recover the conserved variable and flux vectors of the Euler equations of gas dynamics. However, the Maxwellian has infinite support in velocity space, which poses challenges for the numerical analysis of kinetic schemes based on it. Although Maxwellian is a natural choice, it is not the only distribution function that preserves these key moments. In his seminal paper, Perthame (1990) introduced a compactly supported hat function as an alternative. This paper presents the formulation and analysis of a contact discontinuity capturing Boltzmann scheme based on peculiar velocity, constructed using the hat function. Owing to the compact support of the hat function in velocity spa",
+      "pdf_link": "https://arxiv.org/pdf/2610.10419.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.10419",
+      "submission_date": "2026-10-08T04:00:00+00:00",
+      "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-10-07T12:37:35.374910+00:00"
+      "score": 2.0,
+      "updated_at": "2026-10-08T12:47:32.416464+00:00"
     }
   ]
 }
