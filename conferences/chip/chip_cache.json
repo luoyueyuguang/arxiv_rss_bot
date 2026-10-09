@@ -1,77 +1,100 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-10-08T12:46:51.143757+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-10-09T12:32:25.254802+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2610.10129",
+      "forum_id": "2610.10579",
       "paper_number": -1,
-      "title": "When Algorithmic Exploration Becomes Cheap: A Case Study of Agentic Research in EDA",
+      "title": "CacheFit: The Rising Cost of Cache Replacement and Constraint-Driven Redesign of Last-Level Cache Replacement Policies",
       "authors": [
-        "Keren Zhu, Yu Deng, Xiaoyu Hao, Liwen Jiang, Zijian Jiang, Cunqing Lan, Boxiang Song, Pujun Su, Yaojia Wang"
+        "Bita Aslrousta, Kaushal Mhapsekar, Darsh Asher, Azam Ghanbari, Joshua Kalyanapu, Samira Mirbagher Ajorpaz"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.10129v1 Announce Type: new \nAbstract: As EDA researchers, we conducted eight deliberate trials of agentic algorithm exploration, selecting several topics outside our areas of depth. One faculty member and seven students participated, including students without publication experience. With limited intervention in the algorithms, agents developed mathematical constructions, analyzed existing tools, and implemented improvements; some efforts fell short of their practical goals. We also used AI to collect, classify, and analyze 8,420 papers from four EDA conferences and two journals over 2022-2026. Among 2,380 primary-core papers, we classified 97.7% from titles and abstracts as computationally closed, including work on new formulations. Together, these observations suggest that muc",
-      "pdf_link": "https://arxiv.org/pdf/2610.10129.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.10129",
-      "submission_date": "2026-10-08T04:00:00+00:00",
+      "abstract": "arXiv:2610.10579v1 Announce Type: new \nAbstract: The latency, power, and area costs of LLC replacement remain poorly explored not because simulators cannot be instrumented--event counters feeding a power model are routine--but because no cost model takes a replacement policy as input. CACTI and McPAT price regular structures, a cache or a core, not the small, oddly shaped arrays and dependent logic a policy is made of, and no event count reveals a victim-selection path's logic depth. Without a model, cost has never been an objective a policy search could optimize.\n  In practice, a policy is first selected in simulation for its IPC, and its cost is reduced later in RTL, after the algorithm is fixed. Cost thus enters the design too late to shape it. This paper asks what happens when cost is ",
+      "pdf_link": "https://arxiv.org/pdf/2610.10579.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.10579",
+      "submission_date": "2026-10-09T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 36.0,
+      "updated_at": "2026-10-09T12:32:25.252304+00:00"
+    },
+    {
+      "forum_id": "2610.10858",
+      "paper_number": -1,
+      "title": "RFChipAgent: Multi-Agentic AI Flow for Analog/RF Chip Design",
+      "authors": [
+        "Awani Khodkumbhe, Yunfei Feng, Raj Rangarajan, Kevin Wang, Kamal Sahota"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2610.10858v1 Announce Type: new \nAbstract: Analog/RF circuits remain the critical interface between digital computation and the physical world, and emerging standards from Wi-Fi 7 to 6G place stringent demands on them, yet analog/RF design remains one of the most labor-intensive steps in chip development. We present RFChipAgent, a first-of-its-kind multi-agent flow of large language model (LLM) agents for end-to-end analog/RF circuit design automation, in which AI agents collaboratively orchestrate the complete design flow under human supervision. RFChipAgent is built around four technical pillars. First, a multimodal retrieval-augmented generation (RAG) subsystem with private per-document FAISS indexing extracts design knowledge from existing engineering documentation. Second, a top",
+      "pdf_link": "https://arxiv.org/pdf/2610.10858.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.10858",
+      "submission_date": "2026-10-09T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-10-09T12:32:25.252374+00:00"
+    },
+    {
+      "forum_id": "2610.10924",
+      "paper_number": -1,
+      "title": "The Missing Fourth Term for the Emulation Tensor Memory Equilibrium (TME) Model: The Residue Deconstruction Cost",
+      "authors": [
+        "Harun Bayraktar, John Gunnels, Peter Caday"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2610.10924v1 Announce Type: new \nAbstract: The Tensor-Memory Equilibrium (TME) model of \"FP8 is All You Need (Part 1)\" calculates the execution time of Ozaki Scheme II emulation of fp64 as the maximum of a tensor-core term and a High-Bandwidth Memory (HBM) traffic term, plus a per-output reconstruction term. However, it omits the per-input deconstruction cost: every streamed fp64 operand must be scaled, rounded, and reduced modulo each of the $r$ moduli on SIMT pipes before any matrix multiply can issue. In this note we add this fourth term, calibrate its constant from the cuBLAS emulation path, and derive a closed-form operational-intensity threshold $\\mathrm{OI}^{*} = c_q r P_{\\mathrm{fp64}}/(8P_{\\mathrm{int}})$ below which emulation cannot match native fp64 regardless of tensor-co",
+      "pdf_link": "https://arxiv.org/pdf/2610.10924.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.10924",
+      "submission_date": "2026-10-09T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-10-08T12:46:51.140814+00:00"
+      "updated_at": "2026-10-09T12:32:25.252399+00:00"
     },
     {
-      "forum_id": "2610.10403",
+      "forum_id": "2610.10985",
       "paper_number": -1,
-      "title": "SUSpMV: A High Frequency Sparse Matrix Vector Multiplier on HBM Enabled FPGA written in SUS",
+      "title": "ATLAS: Adaptive TDA-guided Landscape-Aware Transistor Sizing",
       "authors": [
-        "Lennart Van Hirtum, David Volz, Andreas Koch, Christian Plessl"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2610.10403v1 Announce Type: new \nAbstract: SUSpMV is a Sparse Matrix Vector multiplication (SpMV) accelerator written in the upcoming HDL SUS. By leveraging SUS's unique latency counting and inference mechanism, SUSpMV could be designed with very deep pipelines yet small design complexity overhead. This enables an efficient implementation which employs all 32 HBM channels on the Alveo U280 FPGA at 400MHz for streaming matrix data into 32 Compute Units (CUs). Input and output vectors are stored in DDR memory, which allows zero-overhead chaining of multiplications and increases overall system memory bandwidth by not sharing HBM bandwidth with the CUs.\n  A CU processes the SpMV in tiles of width 1024 and a dynamically chosen height, up to 32768. Each CU is capable of accumulating the mu",
-      "pdf_link": "https://arxiv.org/pdf/2610.10403.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.10403",
-      "submission_date": "2026-10-08T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-10-08T12:46:51.140875+00:00"
-    },
-    {
-      "forum_id": "2610.09156",
-      "paper_number": -1,
-      "title": "Compiling Semi-Ring Dynamic Programming to Tier-Aware 3D-DRAM Processing-in-Memory",
-      "authors": [
-        "Mahbod Afarin, Tsung-Han Lu, Tajana Rosing"
+        "Youngmin Oh, Jihwan Won, Yuntae Park, Bosun Hwang, Suwan Kim"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.09156v1 Announce Type: new \nAbstract: Processing-in-Memory (PIM) on monolithic 3D (M3D) DRAM is a promising answer to the memory wall for data-intensive dynamic programming (DP), yet extracting its performance today demands hand-written kernels: the programmer must pick a tile size, place data across non-uniform-latency memory tiers, partition work between heterogeneous processing units, and insert the right broadcasts and queues by hand. We present GenMLIR, an MLIR compiler that automates this mapping for tier-aware 3D PIM. GenMLIR encodes the semi-ring generalized grid update, the algebraic form shared by all-pairs shortest path (APSP) and sequence alignment, as a first-class IR abstraction, and lowers it through four GenDRAM-aware pass groups that derive blocked tiling, tier-",
-      "pdf_link": "https://arxiv.org/pdf/2610.09156.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.09156",
-      "submission_date": "2026-10-08T04:00:00+00:00",
+      "abstract": "arXiv:2610.10985v1 Announce Type: new \nAbstract: Analog transistor sizing, finding design parameters that simultaneously satisfy multiple performance specifications, is a labor-intensive bottleneck in circuit design. To support analog circuit experts, various automation methods have been proposed, including Bayesian optimization (BO), reinforcement learning (RL), and others. Yet existing methods are oblivious to the topological structure of a feasible design space, which can fragment into disconnected regions due to operating-regime transitions, conflicting specification trade-offs, and nonconvex device physics. This topological blindness causes the optimizer to converge within a single feasible region while missing others that may contain superior designs. To address this limitation, we p",
+      "pdf_link": "https://arxiv.org/pdf/2610.10985.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.10985",
+      "submission_date": "2026-10-09T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-10-08T12:46:51.140568+00:00"
+      "updated_at": "2026-10-09T12:32:25.252426+00:00"
     }
   ]
 }

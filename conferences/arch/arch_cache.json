@@ -1,54 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-10-08T12:46:47.270332+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-10-09T12:32:14.523058+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2605.18612",
+      "forum_id": "2609.19683",
       "paper_number": -1,
-      "title": "Predictive Software Scheduling as an Early-Warning Hint Layer for Optical Engine Thermal Drift in Heterogeneous SoIC Packaging",
+      "title": "MiX: Micro-Inverted-Scaling for End-to-End Low-Bit Vision-Language Model Acceleration",
       "authors": [
-        "Chi Fei Chung"
+        "Yuan Liao, Jae-sun Seo"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2605.18612v5 Announce Type: replace \nAbstract: As semiconductor scaling approaches the A16 / 2 nm node, the integration of co-packaged optics (CPO) through TSMC's Compact Universal Photonic Engine (COUPE) architecture introduces critical thermal-optical coupling challenges. Micro-ring resonators embedded in the Photonic Integrated Circuit (PIC) layer are highly sensitive to temperature, with a wafer-level center wavelength deviation of merely +/-1.7 nm across a 300 mm wafer representing the platform's manufacturing control limit. To address this, we propose XRM-SSD V24, a physics-aware scheduling layer that models inference-load density 20-50 ms before execution and issues early-warning hints to the COUPE bias-control firmware, enabling pre-emptive thermal compensation.\n  Simulation-",
-      "pdf_link": "https://arxiv.org/pdf/2605.18612.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.18612",
-      "submission_date": "2026-10-08T04:00:00+00:00",
+      "abstract": "arXiv:2609.19683v2 Announce Type: replace \nAbstract: The deployment of Vision-Language Models (VLMs) on edge devices is severely bottlenecked by memory bandwidth, necessitating aggressive sub-8-bit quantization. Since edge accelerators are strictly constrained by area and power, they require end-to-end quantized models. However, the extreme dynamic range gap between multi-modal tokens causes standard block formats to suffer \"microscaling collapse,\" where a single massive outlier hijacks the shared exponent, underflowing surrounding elements and destroying attention maps. To break this bottleneck, we propose Micro-Inverted-Scaling (MiX), a novel format that mathematically inverts the microscaling paradigm: rather than grouping multiple mantissas under one shared exponent, MiX groups private",
+      "pdf_link": "https://arxiv.org/pdf/2609.19683.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.19683",
+      "submission_date": "2026-10-09T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-10-08T12:46:47.266070+00:00"
-    },
-    {
-      "forum_id": "2610.09447",
-      "paper_number": -1,
-      "title": "BenchmarkAnything: Agent-Driven Construction of Simulator-Ready Microarchitecture Benchmarks",
-      "authors": [
-        "Xiangfeng Sun, Ceyu Xu, Chen Bai, Yuan Xie"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2610.09447v1 Announce Type: new \nAbstract: The selection of benchmark workloads is of paramount importance in computer architecture, as it establishes the yardstick against which architectural innovations are measured and guided. Yet for decades, the SPEC benchmark suites, comprising merely tens of workloads, have been the de facto standard in academic architectural research, where they are frequently treated as a principal evaluation and optimization target. When a suite this small is relied upon so heavily, it risks architectural overfitting; as our research and prior studies demonstrate, an overly narrow focus can mislead design decisions by overvaluing certain innovations, producing cores that excel on SPEC benchmarks yet underperform on broader, realistic workloads.\n  To mitigat",
-      "pdf_link": "https://arxiv.org/pdf/2610.09447.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.09447",
-      "submission_date": "2026-10-08T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-10-08T12:46:47.265896+00:00"
+      "score": 22.0,
+      "updated_at": "2026-10-09T12:32:14.521264+00:00"
     }
   ]
 }

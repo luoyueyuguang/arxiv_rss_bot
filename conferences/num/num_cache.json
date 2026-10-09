@@ -1,31 +1,77 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-10-08T12:47:32.419369+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-10-09T12:32:57.506508+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2610.10419",
+      "forum_id": "2610.11120",
       "paper_number": -1,
-      "title": "A hat function based positive contact discontinuity capturing Boltzmann scheme",
+      "title": "Numerical Neural Operator: Connection Between Numerical Analysis and the Operator Learning and Building Discretized Neural Operators from Finite Element Methods",
       "authors": [
-        "Balwinder Singh, S. V. Raghurama Rao"
+        "Zecheng Zhang"
       ],
       "keywords": [
         "cs.NA",
         "numerical analysis"
       ],
-      "abstract": "arXiv:2610.10419v1 Announce Type: new \nAbstract: The suitable moments of the Maxwell velocity distribution function recover the conserved variable and flux vectors of the Euler equations of gas dynamics. However, the Maxwellian has infinite support in velocity space, which poses challenges for the numerical analysis of kinetic schemes based on it. Although Maxwellian is a natural choice, it is not the only distribution function that preserves these key moments. In his seminal paper, Perthame (1990) introduced a compactly supported hat function as an alternative. This paper presents the formulation and analysis of a contact discontinuity capturing Boltzmann scheme based on peculiar velocity, constructed using the hat function. Owing to the compact support of the hat function in velocity spa",
-      "pdf_link": "https://arxiv.org/pdf/2610.10419.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.10419",
-      "submission_date": "2026-10-08T04:00:00+00:00",
+      "abstract": "arXiv:2610.11120v1 Announce Type: new \nAbstract: Operator learning aims to learn mappings between function spaces and has been widely used for PDE-related problems. This raises two fundamental questions. First, is there a connection between standard numerical methods and neural operators, given that both are designed to approximate PDE solution operators? Second, when a neural operator is trained on numerically generated data, does it approximate the underlying infinite dimension operator, the training data themselves, or the discretized numerical scheme used to generate them? A key hypothesis in the paper is that the trained neural operator may mimic the discretized numerical schemes that generate the training data. The hypothesis has been partially and preliminary verified by the linear ",
+      "pdf_link": "https://arxiv.org/pdf/2610.11120.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.11120",
+      "submission_date": "2026-10-09T04:00:00+00:00",
       "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-10-08T12:47:32.416464+00:00"
+      "score": 35.0,
+      "updated_at": "2026-10-09T12:32:57.503570+00:00"
+    },
+    {
+      "forum_id": "2211.16168",
+      "paper_number": -1,
+      "title": "Robust boundary integral equations for the solution of elastic scattering problems via Helmholtz decompositions",
+      "authors": [
+        "V. Dominguez, C. Turc"
+      ],
+      "keywords": [
+        "cs.NA",
+        "SIAM"
+      ],
+      "abstract": "arXiv:2211.16168v3 Announce Type: replace \nAbstract: Helmholtz decompositions of the elastic fields open up new avenues for the solution of linear elastic scattering problems via boundary integral equations (BIE) [Dong, Lai, Li, Mathematics of Computation,2021]. The main appeal of this approach is that the ensuing systems of BIE feature only integral operators associated with the Helmholtz equation. However, these BIE involve non standard boundary integral operators that do not result after the application of either the Dirichlet or the Neumann trace to Helmholtz single and double layer potentials. Rather, the Helmholtz decomposition approach leads to BIE formulations of elastic scattering problems with Neumann boundary conditions that involve boundary traces of the Hessians of Helmholtz l",
+      "pdf_link": "https://arxiv.org/pdf/2211.16168.pdf",
+      "forum_link": "https://arxiv.org/abs/2211.16168",
+      "submission_date": "2026-10-09T04:00:00+00:00",
+      "conference": "SIAM",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-10-09T12:32:57.504035+00:00"
+    },
+    {
+      "forum_id": "2610.12336",
+      "paper_number": -1,
+      "title": "asdex: Automatic Sparse Differentiation in JAX",
+      "authors": [
+        "Adrian Hill, Guillaume Dalle"
+      ],
+      "keywords": [
+        "cs.NA",
+        "scientific computing"
+      ],
+      "abstract": "arXiv:2610.12336v1 Announce Type: cross \nAbstract: Many tasks in scientific computing and machine learning require the Jacobian or Hessian matrix of a function. Automatic differentiation (AD) computes these derivatives to machine precision, but materializing a dense $m \\times n$ Jacobian requires $n$ forward-mode or $m$ reverse-mode AD passes, one per column or row. For a large class of functions, each output depends on only a few inputs, making the derivative matrix sparse. Automatic sparse differentiation (ASD) exploits this structure in four steps: detection of the input-agnostic sparsity pattern, coloring of a graph to group columns or rows that can share an AD pass, compressed differentiation to compute a compressed derivative matrix with one AD pass per color, and finally decompressi",
+      "pdf_link": "https://arxiv.org/pdf/2610.12336.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.12336",
+      "submission_date": "2026-10-09T04:00:00+00:00",
+      "conference": "scientific computing",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-10-09T12:32:57.504029+00:00"
     }
   ]
 }

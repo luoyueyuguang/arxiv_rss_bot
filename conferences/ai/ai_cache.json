@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-10-08T12:47:32.227715+00:00",
-  "paper_count": 30,
+  "last_updated": "2026-10-09T12:32:57.382024+00:00",
+  "paper_count": 32,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -100,6 +100,29 @@
       "ratings": [],
       "score": 61.5,
       "updated_at": "2026-07-23T08:28:51.358970+00:00"
+    },
+    {
+      "forum_id": "2610.11031",
+      "paper_number": -1,
+      "title": "Language Modeling is Monotone Compression",
+      "authors": [
+        "Noam Mazor, Andrew Morgan, Rafael Pass"
+      ],
+      "keywords": [
+        "cs.AI",
+        "ICLR"
+      ],
+      "abstract": "arXiv:2610.11031v1 Announce Type: cross \nAbstract: A long-standing hypothesis in artificial intelligence and neuroscience posits that intelligence is closely related to compression: the ability to compress information efficiently intuitively reflects capacities associated with intelligence and learning. Indeed, recent experimental works verify this intuition by showing connections between the capabilities of large language models (LLMs) and their ability as compressors: for instance, Deletang et al. (ICLR'24) demonstrate that LLMs can be used as powerful compressors, and Huang et al. (COLM'24) show that the compression ability of LLMs is highly correlated with their performance on benchmarks for knowledge and reasoning.\n  In this work, we initiate a theoretical study of this connection. Ou",
+      "pdf_link": "https://arxiv.org/pdf/2610.11031.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.11031",
+      "submission_date": "2026-10-09T04:00:00+00:00",
+      "conference": "ICLR",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 43.5,
+      "updated_at": "2026-10-09T12:32:25.569345+00:00"
     },
     {
       "forum_id": "mlr-icml25-52",
@@ -355,6 +378,29 @@
       "ratings": [],
       "score": 13.5,
       "updated_at": "2026-08-14T07:42:35.410607+00:00"
+    },
+    {
+      "forum_id": "2610.10627",
+      "paper_number": -1,
+      "title": "Sample-Efficiency of Kolmogorov-Arnold Networks",
+      "authors": [
+        "Kevin Riehl, Shaimaa K. El-Baklish, Fan Wu, Anastasios Kouvelas"
+      ],
+      "keywords": [
+        "cs.LG",
+        "NeurIPS"
+      ],
+      "abstract": "arXiv:2610.10627v1 Announce Type: new \nAbstract: Deep reinforcement learning has achieved substantial performance gains over classical control approaches. Yet, a central challenge to learning in real-world applications is acquiring costly samples. Kolmogorov-Arnold Networks are a recently proposed architecture that can learn physical relationships in control problems effectively, with significantly higher parameter efficiency and interpretability when compared to Multi-Layer-Perceptron architectures. In this work, we systematically study sample-efficiency using computational experiments, covering the Feynman dataset and the Gymnasium RL benchmark. The results show that similar performance can be achieved with 40% fewer samples using the Kolmogorov-Arnold architecture, and that relative per",
+      "pdf_link": "https://arxiv.org/pdf/2610.10627.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.10627",
+      "submission_date": "2026-10-09T04:00:00+00:00",
+      "conference": "NeurIPS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.0,
+      "updated_at": "2026-10-09T12:32:25.876497+00:00"
     },
     {
       "forum_id": "mlr-icml25-49",

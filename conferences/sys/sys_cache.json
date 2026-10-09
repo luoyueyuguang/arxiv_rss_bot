@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-10-08T12:46:51.068511+00:00",
-  "paper_count": 310,
+  "last_updated": "2026-10-09T12:32:25.160311+00:00",
+  "paper_count": 309,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1020,29 +1020,6 @@
       "updated_at": "2026-07-21T08:54:22.937910+00:00"
     },
     {
-      "forum_id": "2609.12276",
-      "paper_number": -1,
-      "title": "AKTS: Sub-Microsecond Kernel Policy Switching for Language-Model Agents",
-      "authors": [
-        "Mohammadali Khodabandehlou, Mahdi Alizadeh"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.12276v2 Announce Type: replace \nAbstract: GPU-backed LLM servers multiplex interactive requests with background batch work on the same CPUs; a fixed kernel policy serves one objective and loses the other, so agentic OS control needs to switch scheduler behavior as the workload changes. The hard part is applying the switch safely and fast enough for the kernel: scheduler events occur every 1-10 $\\mu$s, and any code running there must satisfy the eBPF verifier. Scalar knobs are fast but limited, while generating eBPF policy code puts compilation, verification and possible rejection on the runtime path. We present AKTS, which verifies a policy library once, at load time, and reduces the agent's runtime action to writing an integer index into an in-kernel array of preverified polici",
-      "pdf_link": "https://arxiv.org/pdf/2609.12276.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.12276",
-      "submission_date": "2026-10-08T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 55.5,
-      "updated_at": "2026-10-08T12:46:47.948448+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-45",
       "paper_number": 45,
       "title": "JITServe: SLO-aware LLM Serving with Imprecise Request Information",
@@ -1639,6 +1616,29 @@
       "updated_at": "2026-07-21T08:54:22.926994+00:00"
     },
     {
+      "forum_id": "2610.11158",
+      "paper_number": -1,
+      "title": "Zepp: Accelerating Distributed MoE Serving under Relaxed Balance Constraints",
+      "authors": [
+        "Chang Chen, Andrew Yang, Tiancheng Chen, Jiangfei Duan, Xinwei Qiang, Zhongkai Yu, Xiang Fang, Yufei Ding"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.11158v1 Announce Type: new \nAbstract: As Mixture-of-Experts (MoE) models continue to scale, serving them increasingly relies on expert parallelism (EP) across a growing number of devices. Yet skewed expert workloads create imbalance across computation, communication, and memory, making load balancing a central optimization objective in distributed MoE serving. We observe that balance is not free: operations introduced to balance one dimension can themselves be expensive or imbalanced. This motivates us to rethink balance as a constraint rather than an optimization objective. We present Zepp, which directly optimizes the bottleneck communication in distributed MoE serving subject to simplified balance constraints on physical resources, i.e., GPUs and NICs. Zepp progressively opti",
+      "pdf_link": "https://arxiv.org/pdf/2610.11158.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.11158",
+      "submission_date": "2026-10-09T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 43.5,
+      "updated_at": "2026-10-09T12:32:15.276522+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-57",
       "paper_number": 57,
       "title": "Nested SEV: Secure and Generic SEV Support for Nested Virtualization",
@@ -1727,29 +1727,6 @@
       "ratings": [],
       "score": 43.0,
       "updated_at": "2026-07-21T08:54:17.397155+00:00"
-    },
-    {
-      "forum_id": "2610.10137",
-      "paper_number": -1,
-      "title": "Behind a Simple Read: Understanding Work and Waiting in the Linux I/O Stack",
-      "authors": [
-        "Yang Shen, Kai Lu, Min Xie, Huijun Wu, Zhenwei Wu, Wenzhe Zhang"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.10137v1 Announce Type: new \nAbstract: A simple read interface provides uniform functional semantics, but not equally simple or predictable performance behavior. We use synchronous large-buffer reads in Linux as an observation window and decompose the buffered-read path end to end, distinguishing work volume, processing time, and critical-path exposure. We find that Linux reduces metadata work through large folios and overlaps most cold-read copying with device waiting, but these mechanisms depend on access advice, folio granularity, cache state, and backend execution. Using an experimental kernel prototype, we validate additional opportunities from out-of-order early copying and opportunistic parallelism, while showing that faster request submission does not improve end-to-end p",
-      "pdf_link": "https://arxiv.org/pdf/2610.10137.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.10137",
-      "submission_date": "2026-10-08T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 42.5,
-      "updated_at": "2026-10-08T12:46:47.948413+00:00"
     },
     {
       "forum_id": "usenix-osdi26-50",
@@ -2294,29 +2271,6 @@
       "updated_at": "2026-07-21T08:54:22.928440+00:00"
     },
     {
-      "forum_id": "2603.07850",
-      "paper_number": -1,
-      "title": "A Lock-Free, Fully GPU-Resident Architecture for the Verification of Goldbach's Conjecture",
-      "authors": [
-        "Isaac Llorente-Saguer"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2603.07850v2 Announce Type: replace-cross \nAbstract: We present a device-resident, multi-GPU architecture for the large-scale computational verification of Goldbach's conjecture. In prior work, a segmented double-sieve eliminated monolithic VRAM bottlenecks but remained constrained by host-side sieve construction and PCIe transfer latency. Here we migrate the entire segment generation pipeline to the GPU using shared-memory tiling, leaving per-segment host-device communication small and independent of segment size, and schedule work across devices through a lock-free atomic counter, scaling near-linearly to two GPUs (speedup 2.03 at $N = 10^{12}$). On the same hardware, the architecture is $13.1\\times$ faster than its host-coupled predecessor at $N = 10^{10}$. It verifies Goldbach's ",
-      "pdf_link": "https://arxiv.org/pdf/2603.07850.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.07850",
-      "submission_date": "2026-10-08T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 34.0,
-      "updated_at": "2026-10-08T12:46:48.057239+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-104",
       "paper_number": 104,
       "title": "VTC: DNN Compilation with Virtual Tensors for Data Movement Elimination",
@@ -2405,6 +2359,29 @@
       "ratings": [],
       "score": 34.0,
       "updated_at": "2026-07-21T08:54:26.743563+00:00"
+    },
+    {
+      "forum_id": "2610.10542",
+      "paper_number": -1,
+      "title": "Omnisolver: An extensible interface to Ising spin-glass and QUBO solvers: adding a distributed GPU brute-force plugin",
+      "authors": [
+        "Konrad Ja{\\l}owiecki, Jakub Paw{\\l}owski, Bart{\\l}omiej Gardas, {\\L}ukasz Pawela"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.10542v1 Announce Type: cross \nAbstract: This software update extends Omnisolver with \\texttt{omnisolver-bruteforce}, a first-class plugin for exact exhaustive search of QUBO and Ising instances on CUDA-enabled GPUs. The update contributes three components: packaging of the single-GPU brute-force kernel of [Computer Physics Communications 260, 107728, 2021] as a first-class Omnisolver plugin with a uniform Python and CLI interface, a Ray-based distributed framework that splits the search into $2^{k}$ fixed-variable subproblems and dispatches them across multiple GPUs and hosts, with a controller that gathers and merges partial results, and numerical stabilization of the fast \\texttt{float32} ground-state path through compensated incremental updates, periodic exact energy re-ancho",
+      "pdf_link": "https://arxiv.org/pdf/2610.10542.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.10542",
+      "submission_date": "2026-10-09T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.5,
+      "updated_at": "2026-10-09T12:32:15.276981+00:00"
     },
     {
       "forum_id": "usenix-osdi26-92",
@@ -3703,29 +3680,6 @@
       "updated_at": "2026-07-21T08:54:26.741587+00:00"
     },
     {
-      "forum_id": "2610.09657",
-      "paper_number": -1,
-      "title": "Fast and Memory Efficient Offload Training Framework with Hybrid XPU Computation",
-      "authors": [
-        "Zhiyi Yao, Zuning Liang, Yuedong Xu, Jin Zhao, Jessie Hui Wang, Tong Li"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.09657v1 Announce Type: new \nAbstract: With the ever-growing size of deep learning models, GPU memory is prone to being insufficient during training. A prominent approach is ZeRO-Offload, which moves the optimizer states to CPU memory and performs parameter update using CPU. However, the deficiencies of ZeRO-Offload include low GPU utilization, imperfect overlapping of communication and computation, and inflexible offloading. In this paper, we leverage Direct Host Access (DHA) on the GPU that can compute data in CPU memory, forming a novel hybrid on-GPU and DHA. We design and implement MemFerry consisting of an execution scheduler and a shadow model. The scheduler strategically chooses layers of parameters for DHA computation and transmits the remaining parameters to GPU memory s",
-      "pdf_link": "https://arxiv.org/pdf/2610.09657.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.09657",
-      "submission_date": "2026-10-08T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-10-08T12:46:48.054524+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-41",
       "paper_number": 41,
       "title": "Efficient and Scalable Synchronization via Generalized Cache Coherence",
@@ -4156,6 +4110,29 @@
       "ratings": [],
       "score": 13.5,
       "updated_at": "2026-07-21T08:54:26.743933+00:00"
+    },
+    {
+      "forum_id": "2610.10845",
+      "paper_number": -1,
+      "title": "Real Long-Term Memory for AI: A 50-Million-Token Window That Is Faster and Cheaper Than Recompute",
+      "authors": [
+        "Sietse Schelpe"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.10845v1 Announce Type: cross \nAbstract: A large language model can only use the text that fits in its context window, and it recomputes its internal key-value (KV) state for a prompt every time the prompt is sent. We test a memory layer, the public package galahad-kv, that saves the KV state of each block of about 16,000 tokens to encrypted local NVMe disk and loads it back later, byte-exact, without recomputing it. We ran it on 50,000,000 tokens of real public text, served through vLLM on one NVIDIA H100, with Gemma 4 12B and Gemma 4 31B. Every block we probed was loaded back from the encrypted store with no recompute (100 of 100, at depths from 0 to 50M tokens) on both models. Loading a block was 2.8x to 4.3x faster than recomputing it and used 8.8x to 12.3x less GPU energy, a",
+      "pdf_link": "https://arxiv.org/pdf/2610.10845.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.10845",
+      "submission_date": "2026-10-09T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.0,
+      "updated_at": "2026-10-09T12:32:15.277077+00:00"
     },
     {
       "forum_id": "usenix-osdi26-37",
