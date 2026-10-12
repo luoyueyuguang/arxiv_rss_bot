@@ -1,100 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-10-09T12:32:25.254802+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-10-12T14:22:32.181049+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2610.10579",
+      "forum_id": "2610.12795",
       "paper_number": -1,
-      "title": "CacheFit: The Rising Cost of Cache Replacement and Constraint-Driven Redesign of Last-Level Cache Replacement Policies",
+      "title": "Power, Performance, and Area of HPC-Based Malware Detectors: An FPGA and Open-PDK ASIC Study",
       "authors": [
-        "Bita Aslrousta, Kaushal Mhapsekar, Darsh Asher, Azam Ghanbari, Joshua Kalyanapu, Samira Mirbagher Ajorpaz"
+        "Alireza Abolhasani Zeraatkar, Parnian Shabani Kamran, Parsa Mirfasihi, Saleh Khalaj Monfared, Hussain Al-Asaad"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.10579v1 Announce Type: new \nAbstract: The latency, power, and area costs of LLC replacement remain poorly explored not because simulators cannot be instrumented--event counters feeding a power model are routine--but because no cost model takes a replacement policy as input. CACTI and McPAT price regular structures, a cache or a core, not the small, oddly shaped arrays and dependent logic a policy is made of, and no event count reveals a victim-selection path's logic depth. Without a model, cost has never been an objective a policy search could optimize.\n  In practice, a policy is first selected in simulation for its IPC, and its cost is reduced later in RTL, after the algorithm is fixed. Cost thus enters the design too late to shape it. This paper asks what happens when cost is ",
-      "pdf_link": "https://arxiv.org/pdf/2610.10579.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.10579",
-      "submission_date": "2026-10-09T04:00:00+00:00",
+      "abstract": "arXiv:2610.12795v1 Announce Type: cross \nAbstract: Hardware malware detectors (HMDs) classify programs as benign or malicious based on hardware performance counter (HPC) data. Previous studies have shown that ensemble classifiers outperform other classifiers on detection metrics. However, the area, power, and timing costs of HMDs remain open questions. We address these questions across a comprehensive design space comprising multiple classifier families, variable HPC sets, and ensemble learning methods. We designed a pipeline to reconstruct selected trained models, generate synthesizable register-transfer-level (RTL) implementations, validate each design against a bit-accurate golden model, and evaluate the implementations. The results show that tree- and rule-based detectors achieve the h",
+      "pdf_link": "https://arxiv.org/pdf/2610.12795.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.12795",
+      "submission_date": "2026-10-12T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 36.0,
-      "updated_at": "2026-10-09T12:32:25.252304+00:00"
+      "score": 8.0,
+      "updated_at": "2026-10-12T14:22:32.178039+00:00"
     },
     {
-      "forum_id": "2610.10858",
+      "forum_id": "2608.06318",
       "paper_number": -1,
-      "title": "RFChipAgent: Multi-Agentic AI Flow for Analog/RF Chip Design",
+      "title": "Breaking Memory Bottlenecks in Quantum Control Systems for More Precise Experiments and Higher Throughput Computing",
       "authors": [
-        "Awani Khodkumbhe, Yunfei Feng, Raj Rangarajan, Kevin Wang, Kamal Sahota"
+        "Yicheng Guang, Neel Vora, Yilun Xu, Yueqi Chen, Gang Huang"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.10858v1 Announce Type: new \nAbstract: Analog/RF circuits remain the critical interface between digital computation and the physical world, and emerging standards from Wi-Fi 7 to 6G place stringent demands on them, yet analog/RF design remains one of the most labor-intensive steps in chip development. We present RFChipAgent, a first-of-its-kind multi-agent flow of large language model (LLM) agents for end-to-end analog/RF circuit design automation, in which AI agents collaboratively orchestrate the complete design flow under human supervision. RFChipAgent is built around four technical pillars. First, a multimodal retrieval-augmented generation (RAG) subsystem with private per-document FAISS indexing extracts design knowledge from existing engineering documentation. Second, a top",
-      "pdf_link": "https://arxiv.org/pdf/2610.10858.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.10858",
-      "submission_date": "2026-10-09T04:00:00+00:00",
+      "abstract": "arXiv:2608.06318v3 Announce Type: replace \nAbstract: As quantum computing matures, there is an increasing need for deeper and longer experiments to characterize quantum devices precisely and higher circuit throughput to validate more domain applications. However, this need is hindered by a memory bottleneck at the quantum control system layer, arising from the limited capacity of on-chip block random-access memory (BRAM) and the non-deterministic latency of dynamic random-access memory (DRAM). To break this bottleneck, we present Ant-Q, a memory hierarchy design for the QubiC 2.0 control system that integrates DRAM with BRAM to support pipelined quantum circuit execution while keeping inter-circuit timing deterministic whenever each circuit outlasts the refill of the next. A switch between",
+      "pdf_link": "https://arxiv.org/pdf/2608.06318.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.06318",
+      "submission_date": "2026-10-12T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-10-09T12:32:25.252374+00:00"
+      "score": 2.0,
+      "updated_at": "2026-10-12T14:22:32.178201+00:00"
     },
     {
-      "forum_id": "2610.10924",
+      "forum_id": "2610.13368",
       "paper_number": -1,
-      "title": "The Missing Fourth Term for the Emulation Tensor Memory Equilibrium (TME) Model: The Residue Deconstruction Cost",
+      "title": "Anechoic: Onsager-Corrected Parallel Annealing for Sub-0.1 ms Dense Max-Cut on an FPGA",
       "authors": [
-        "Harun Bayraktar, John Gunnels, Peter Caday"
+        "Seungki Hong, Kyeongwon Jeong, Taekwang Jang"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.10924v1 Announce Type: new \nAbstract: The Tensor-Memory Equilibrium (TME) model of \"FP8 is All You Need (Part 1)\" calculates the execution time of Ozaki Scheme II emulation of fp64 as the maximum of a tensor-core term and a High-Bandwidth Memory (HBM) traffic term, plus a per-output reconstruction term. However, it omits the per-input deconstruction cost: every streamed fp64 operand must be scaled, rounded, and reduced modulo each of the $r$ moduli on SIMT pipes before any matrix multiply can issue. In this note we add this fourth term, calibrate its constant from the cuBLAS emulation path, and derive a closed-form operational-intensity threshold $\\mathrm{OI}^{*} = c_q r P_{\\mathrm{fp64}}/(8P_{\\mathrm{int}})$ below which emulation cannot match native fp64 regardless of tensor-co",
-      "pdf_link": "https://arxiv.org/pdf/2610.10924.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.10924",
-      "submission_date": "2026-10-09T04:00:00+00:00",
+      "abstract": "arXiv:2610.13368v1 Announce Type: new \nAbstract: Ising machines solve combinatorial optimization problems by annealing a network of spins. On dense problems, the least expensive hardware step updates all spins at once: stochastic cellular automata (SCA) decide every spin in parallel and read couplings only for the spins that flip. Such synchronous updates create an echo: the previous state of each spin returns to it through its neighbors. On K2000, a Max-Cut benchmark on a 2,000-node complete graph, two-thirds of all flips undo the same spin's flip one step earlier. This paper presents Anechoic, an FPGA Ising machine that subtracts this echo from every decision. Dynamical mean-field theory identifies the echo as an Onsager reaction; its one-step strength is the number of spins whose flip p",
+      "pdf_link": "https://arxiv.org/pdf/2610.13368.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.13368",
+      "submission_date": "2026-10-12T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-10-09T12:32:25.252399+00:00"
-    },
-    {
-      "forum_id": "2610.10985",
-      "paper_number": -1,
-      "title": "ATLAS: Adaptive TDA-guided Landscape-Aware Transistor Sizing",
-      "authors": [
-        "Youngmin Oh, Jihwan Won, Yuntae Park, Bosun Hwang, Suwan Kim"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2610.10985v1 Announce Type: new \nAbstract: Analog transistor sizing, finding design parameters that simultaneously satisfy multiple performance specifications, is a labor-intensive bottleneck in circuit design. To support analog circuit experts, various automation methods have been proposed, including Bayesian optimization (BO), reinforcement learning (RL), and others. Yet existing methods are oblivious to the topological structure of a feasible design space, which can fragment into disconnected regions due to operating-regime transitions, conflicting specification trade-offs, and nonconvex device physics. This topological blindness causes the optimizer to converge within a single feasible region while missing others that may contain superior designs. To address this limitation, we p",
-      "pdf_link": "https://arxiv.org/pdf/2610.10985.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.10985",
-      "submission_date": "2026-10-09T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-09T12:32:25.252426+00:00"
+      "updated_at": "2026-10-12T14:22:32.177872+00:00"
     }
   ]
 }

@@ -1,15 +1,14 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-10-09 12:32:25 UTC
-- **Total Filtered Papers**: 4
-- **Displaying**: 4 (arxiv: 4)
+- **Last Updated**: 2026-10-12 14:22:32 UTC
+- **Total Filtered Papers**: 3
+- **Displaying**: 3 (arxiv: 3)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [CacheFit: The Rising Cost of Cache Replacement and Constraint-Driven Redesign of Last-Level Cache Replacement Policies](https://arxiv.org/abs/2610.10579) | `ARXIV` | 36.0 |
-| 2 | [RFChipAgent: Multi-Agentic AI Flow for Analog/RF Chip Design](https://arxiv.org/abs/2610.10858) | `ARXIV` | 4.0 |
-| 3 | [The Missing Fourth Term for the Emulation Tensor Memory Equilibrium (TME) Model: The Residue Deconstruction Cost](https://arxiv.org/abs/2610.10924) | `ARXIV` | 1.5 |
-| 4 | [ATLAS: Adaptive TDA-guided Landscape-Aware Transistor Sizing](https://arxiv.org/abs/2610.10985) | `ARXIV` | 1.0 |
+| 1 | [Power, Performance, and Area of HPC-Based Malware Detectors: An FPGA and Open-PDK ASIC Study](https://arxiv.org/abs/2610.12795) | `ARXIV` | 8.0 |
+| 2 | [Breaking Memory Bottlenecks in Quantum Control Systems for More Precise Experiments and Higher Throughput Computing](https://arxiv.org/abs/2608.06318) | `ARXIV` | 2.0 |
+| 3 | [Anechoic: Onsager-Corrected Parallel Annealing for Sub-0.1 ms Dense Max-Cut on an FPGA](https://arxiv.org/abs/2610.13368) | `ARXIV` | 1.5 |

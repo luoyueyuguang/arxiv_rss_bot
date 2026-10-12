@@ -1,54 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-10-09T12:32:57.506508+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-10-12T14:23:02.960574+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2610.11120",
+      "forum_id": "2610.12618",
       "paper_number": -1,
-      "title": "Numerical Neural Operator: Connection Between Numerical Analysis and the Operator Learning and Building Discretized Neural Operators from Finite Element Methods",
+      "title": "Mesh-Native Tokenisation: Retrofitting Foundation Models to Unstructured Data",
       "authors": [
-        "Zecheng Zhang"
+        "Georg Maierhofer, Miles Cranmer, Payel Mukhopadhyay"
       ],
       "keywords": [
         "cs.NA",
-        "numerical analysis"
+        "scientific computing"
       ],
-      "abstract": "arXiv:2610.11120v1 Announce Type: new \nAbstract: Operator learning aims to learn mappings between function spaces and has been widely used for PDE-related problems. This raises two fundamental questions. First, is there a connection between standard numerical methods and neural operators, given that both are designed to approximate PDE solution operators? Second, when a neural operator is trained on numerically generated data, does it approximate the underlying infinite dimension operator, the training data themselves, or the discretized numerical scheme used to generate them? A key hypothesis in the paper is that the trained neural operator may mimic the discretized numerical schemes that generate the training data. The hypothesis has been partially and preliminary verified by the linear ",
-      "pdf_link": "https://arxiv.org/pdf/2610.11120.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.11120",
-      "submission_date": "2026-10-09T04:00:00+00:00",
-      "conference": "numerical analysis",
+      "abstract": "arXiv:2610.12618v1 Announce Type: cross \nAbstract: Physics foundation models are an increasingly popular approach for building versatile emulators for spatiotemporal systems. They require tokenisation layers that lift physical field data into a latent representation suitable for dynamic processing. A typical choice for this layer is a convolutional encoder, which lifts field information in a locality-aware way and can be trained very efficiently. However, this choice cannot be applied to a large class of scientific computing problems where data are represented on unstructured meshes, for example simulations on domains with curved boundaries. Such data typically require graph neural network architectures, which are more expensive to train and, in the form currently used, encode information ",
+      "pdf_link": "https://arxiv.org/pdf/2610.12618.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.12618",
+      "submission_date": "2026-10-12T04:00:00+00:00",
+      "conference": "scientific computing",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-10-09T12:32:57.503570+00:00"
-    },
-    {
-      "forum_id": "2211.16168",
-      "paper_number": -1,
-      "title": "Robust boundary integral equations for the solution of elastic scattering problems via Helmholtz decompositions",
-      "authors": [
-        "V. Dominguez, C. Turc"
-      ],
-      "keywords": [
-        "cs.NA",
-        "SIAM"
-      ],
-      "abstract": "arXiv:2211.16168v3 Announce Type: replace \nAbstract: Helmholtz decompositions of the elastic fields open up new avenues for the solution of linear elastic scattering problems via boundary integral equations (BIE) [Dong, Lai, Li, Mathematics of Computation,2021]. The main appeal of this approach is that the ensuing systems of BIE feature only integral operators associated with the Helmholtz equation. However, these BIE involve non standard boundary integral operators that do not result after the application of either the Dirichlet or the Neumann trace to Helmholtz single and double layer potentials. Rather, the Helmholtz decomposition approach leads to BIE formulations of elastic scattering problems with Neumann boundary conditions that involve boundary traces of the Hessians of Helmholtz l",
-      "pdf_link": "https://arxiv.org/pdf/2211.16168.pdf",
-      "forum_link": "https://arxiv.org/abs/2211.16168",
-      "submission_date": "2026-10-09T04:00:00+00:00",
-      "conference": "SIAM",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-10-09T12:32:57.504035+00:00"
+      "score": 1.0,
+      "updated_at": "2026-10-12T14:23:02.956622+00:00"
     },
     {
       "forum_id": "2610.12336",
@@ -61,17 +38,17 @@
         "cs.NA",
         "scientific computing"
       ],
-      "abstract": "arXiv:2610.12336v1 Announce Type: cross \nAbstract: Many tasks in scientific computing and machine learning require the Jacobian or Hessian matrix of a function. Automatic differentiation (AD) computes these derivatives to machine precision, but materializing a dense $m \\times n$ Jacobian requires $n$ forward-mode or $m$ reverse-mode AD passes, one per column or row. For a large class of functions, each output depends on only a few inputs, making the derivative matrix sparse. Automatic sparse differentiation (ASD) exploits this structure in four steps: detection of the input-agnostic sparsity pattern, coloring of a graph to group columns or rows that can share an AD pass, compressed differentiation to compute a compressed derivative matrix with one AD pass per color, and finally decompressi",
+      "abstract": "arXiv:2610.12336v2 Announce Type: replace-cross \nAbstract: Many tasks in scientific computing and machine learning require the Jacobian or Hessian matrix of a function. Automatic differentiation (AD) computes these derivatives to machine precision, but materializing a dense $m \\times n$ Jacobian requires $n$ forward-mode or $m$ reverse-mode AD passes, one per column or row. For a large class of functions, each output depends on only a few inputs, making the derivative matrix sparse. Automatic sparse differentiation (ASD) exploits this structure in four steps: detection of the input-agnostic sparsity pattern, coloring of a graph to group columns or rows that can share an AD pass, compressed differentiation to compute a compressed derivative matrix with one AD pass per color, and finally dec",
       "pdf_link": "https://arxiv.org/pdf/2610.12336.pdf",
       "forum_link": "https://arxiv.org/abs/2610.12336",
-      "submission_date": "2026-10-09T04:00:00+00:00",
+      "submission_date": "2026-10-12T04:00:00+00:00",
       "conference": "scientific computing",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-10-09T12:32:57.504029+00:00"
+      "updated_at": "2026-10-12T14:23:02.957774+00:00"
     }
   ]
 }

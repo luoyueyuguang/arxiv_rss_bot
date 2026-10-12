@@ -1,6 +1,6 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-10-09 12:32:15 UTC
+- **Last Updated**: 2026-10-12 14:22:29 UTC
 - **Total Filtered Papers**: 1
 - **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
@@ -9,4 +9,4 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving](https://arxiv.org/abs/2407.00079) | `ARXIV` | 22.0 |
+| 1 | [ShoreKeeper: Accelerating Iterative Data Analytics in the Cloud via Distributed Recovery-Cost-Aware Caching](https://arxiv.org/abs/2610.13396) | `ARXIV` | 24.5 |
