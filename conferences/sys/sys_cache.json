@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-10-12T14:22:32.093538+00:00",
-  "paper_count": 313,
+  "last_updated": "2026-10-13T13:31:37.798490+00:00",
+  "paper_count": 306,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -550,29 +550,6 @@
       "ratings": [],
       "score": 70.5,
       "updated_at": "2026-07-21T08:54:17.404872+00:00"
-    },
-    {
-      "forum_id": "2509.04084",
-      "paper_number": -1,
-      "title": "Optimizing Frequent Checkpointing via Low-Cost Differential for Distributed Training Systems",
-      "authors": [
-        "Chenxuan Yao, Yuchong Hu, Feifan Liu, Zhengyu Liu, Lin Wang, Mingqi Li, Dan Feng"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2509.04084v5 Announce Type: replace \nAbstract: Distributed training of large deep-learning models often leads to failures, so checkpointing is commonly employed for recovery. State-of-the-art studies focus on frequent checkpointing for fast recovery from failures. However, frequent checkpointing generates numerous checkpoints, incurring substantial costs and thus degrading training performance. Recently, differential checkpointing has been proposed to reduce costs, but it is limited to recommendation systems, so its application to general distributed training systems remains unexplored.\n  In this paper, we find that gradients generated during distributed training can be reused to construct differential checkpoints, while the former's size is smaller than the latter's, motivating us t",
-      "pdf_link": "https://arxiv.org/pdf/2509.04084.pdf",
-      "forum_link": "https://arxiv.org/abs/2509.04084",
-      "submission_date": "2026-10-12T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 68.0,
-      "updated_at": "2026-10-12T14:22:29.185693+00:00"
     },
     {
       "forum_id": "usenix-osdi26-112",
@@ -1452,29 +1429,6 @@
       "updated_at": "2026-07-21T08:54:17.393518+00:00"
     },
     {
-      "forum_id": "2608.15171",
-      "paper_number": -1,
-      "title": "P-PAS: Prefill-Pressure Adaptive Scheduling for Long-Context LLM Serving",
-      "authors": [
-        "Timo S\\\"amann"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.15171v2 Announce Type: replace \nAbstract: Long-context LLM applications such as retrieval-augmented generation (RAG) and agentic systems often process tens of thousands of input tokens to produce short outputs, making end-to-end request latency an important serving objective. We show that the maximum number of batched tokens (MBT), which controls the token scheduling budget in vLLM, has a scheduling-pressure-dependent effect on latency. Larger token budgets can reduce latency under low scheduling pressure, while smaller budgets become preferable under higher pressure. Consequently, no single static MBT performs best across load regimes. We introduce Prefill-Pressure Adaptive Scheduling (P-PAS), a lightweight policy that dynamically adapts the global scheduling budget using concu",
-      "pdf_link": "https://arxiv.org/pdf/2608.15171.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.15171",
-      "submission_date": "2026-10-12T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 46.5,
-      "updated_at": "2026-10-12T14:22:29.185848+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-107",
       "paper_number": 107,
       "title": "Rethinking Process Snapshots for Near-Warm Serverless Cold Starts",
@@ -1540,29 +1494,6 @@
       "ratings": [],
       "score": 45.0,
       "updated_at": "2026-07-21T08:54:22.940225+00:00"
-    },
-    {
-      "forum_id": "2610.13325",
-      "paper_number": -1,
-      "title": "Taking Tokenization off the Host for Agentic LLM Serving",
-      "authors": [
-        "Mohammad Siavashi, Pascal Schwinte, Ali Banaei, Gerald Q. Maguire Jr., Marco Chiesa, Dejan Kosti\\'c"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.13325v1 Announce Type: new \nAbstract: Agentic workloads resend long contexts that barely change between calls. Prefix caching now skips most of their prefill, yet every request must still be tokenized in full before the cache can even be consulted. Tokenization, a CPU stage long treated as negligible, becomes the largest part of time-to-first-token (TTFT), and a frontend that tokenizes for a whole GPU fleet limits how many GPUs it can feed. We present GraphTok, a GPU tokenizer that runs the entire encoding pipeline, from pre-tokenization through byte-pair encoding (BPE) merging to token-ID assembly, as one replayable CUDA graph. GraphTok reproduces the reference token IDs bit-for-bit on GPT-2, Llama 3, Qwen 2.5, DeepSeek-V3, and Gemma 3, hands short inputs to a CPU engine where ",
-      "pdf_link": "https://arxiv.org/pdf/2610.13325.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.13325",
-      "submission_date": "2026-10-12T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 44.5,
-      "updated_at": "2026-10-12T14:22:29.184132+00:00"
     },
     {
       "forum_id": "usenix-osdi26-68",
@@ -1683,29 +1614,6 @@
       "ratings": [],
       "score": 44.0,
       "updated_at": "2026-07-21T08:54:22.926994+00:00"
-    },
-    {
-      "forum_id": "2610.11158",
-      "paper_number": -1,
-      "title": "Zepp: Accelerating Distributed MoE Serving under Relaxed Balance Constraints",
-      "authors": [
-        "Chang Chen, Andrew Yang, Tiancheng Chen, Jiangfei Duan, Xinwei Qiang, Zhongkai Yu, Xiang Fang, Yufei Ding"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.11158v2 Announce Type: replace \nAbstract: As Mixture-of-Experts (MoE) models continue to scale, serving them increasingly relies on expert parallelism (EP) across a growing number of devices. Yet skewed expert workloads create imbalance across computation, communication, and memory, making load balancing a central optimization objective in distributed MoE serving. We observe that balance is not free: operations introduced to balance one dimension can themselves be expensive or imbalanced. This motivates us to rethink balance as a constraint rather than an optimization objective. We present Zepp, which directly optimizes the bottleneck communication in distributed MoE serving subject to simplified balance constraints on physical resources, i.e., GPUs and NICs. Zepp progressively ",
-      "pdf_link": "https://arxiv.org/pdf/2610.11158.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.11158",
-      "submission_date": "2026-10-12T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 43.5,
-      "updated_at": "2026-10-12T14:22:29.186044+00:00"
     },
     {
       "forum_id": "usenix-osdi26-57",
@@ -3443,29 +3351,6 @@
       "ratings": [],
       "score": 17.0,
       "updated_at": "2026-07-21T08:54:26.740162+00:00"
-    },
-    {
-      "forum_id": "2610.13396",
-      "paper_number": -1,
-      "title": "ShoreKeeper: Accelerating Iterative Data Analytics in the Cloud via Distributed Recovery-Cost-Aware Caching",
-      "authors": [
-        "Jongseop Lee, Minsu Sun, Xinyue Ma, Atul Sandur, Myeongjae Jeon"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.13396v1 Announce Type: new \nAbstract: Large-scale data-intensive workloads powered by iterative graph or machine learning processing have an insatiable demand for memory due to the continuous generation of new intermediate data. Although existing caching strategies strive to keep performance-critical data in memory, they often fail in practice because they are limited to node-local memory management and assume high node availability. In this paper, we introduce ShoreKeeper, a framework that maximizes execution efficiency by treating cluster-wide memory as a unified, elastic pool. ShoreKeeper employs a global optimization model that maps distributed dataflows into a single graph abstraction to minimize the recovery cost of data evicted from cache across the cluster. To handle mem",
-      "pdf_link": "https://arxiv.org/pdf/2610.13396.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.13396",
-      "submission_date": "2026-10-12T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 16.5,
-      "updated_at": "2026-10-12T14:22:29.184314+00:00"
     },
     {
       "forum_id": "usenix-osdi26-109",
@@ -5431,29 +5316,6 @@
       "updated_at": "2026-07-21T08:54:26.740416+00:00"
     },
     {
-      "forum_id": "2610.12971",
-      "paper_number": -1,
-      "title": "PredictIO: Decoupling Workload Prediction from OS-Controlled Storage Prefetching",
-      "authors": [
-        "Jun Lu, Yancan Mao, Zhenya Ma, Sheng Yue, Yongjian Fu, Ju Ren"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.12971v1 Announce Type: new \nAbstract: Storage stalls remain a significant source of application latency even on fast storage devices. Prefetching can hide part of this latency by fetching data before it is demanded, but general-purpose operating-system mechanisms typically infer future accesses from recent file offsets. This approach is ineffective when accesses are determined by workload structure, such as recurring sparse accesses during application launch, logical traversal in database scans, or model-layout metadata in LLM runtimes. Existing workload-aware prefetchers usually embed prediction logic inside individual applications and couple execution to application-level I/O paths, making policies difficult to reuse across workloads and systems. We present PredictIO, a progra",
-      "pdf_link": "https://arxiv.org/pdf/2610.12971.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.12971",
-      "submission_date": "2026-10-12T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.5,
-      "updated_at": "2026-10-12T14:22:29.085251+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-27",
       "paper_number": 27,
       "title": "SBB: Eliminating Centralized Bottlenecks in Userspace Network Runtime",
@@ -6330,29 +6192,6 @@
       "ratings": [],
       "score": 2.5,
       "updated_at": "2026-07-21T08:54:26.744870+00:00"
-    },
-    {
-      "forum_id": "2610.13408",
-      "paper_number": -1,
-      "title": "Ember: Making Unified Virtual Memory Practical for Discrete-Memory GPUs",
-      "authors": [
-        "Senad-Leandro Lemes Galera, Michail Georgoulakis Misegiannis, Ferdinand Gruber, Jana Giceva, Dimitrios Stavrakakis"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.13408v1 Announce Type: new \nAbstract: GPU working sets have outgrown GPU memory, so applications must oversubscribe it, keeping only hot data on the GPU. NVIDIA's Unified Virtual Memory (UVM) supports oversubscription, but its performance degrades once data exceeds the GPU's memory. This stems from its fault-driven data placement, wasting interconnect bandwidth, and underutilizing the GPU. This raises the question: can UVM oversubscription become practical on stock GPUs, exploiting GPU memory speed and minimizing wasted interconnect bandwidth, without placement hints, profiling runs, or application changes?\n  To this end, we present Ember, a UVM management framework for oversubscribed workloads. Ember introduces a hybrid address space; allocations start as mapped into host memor",
-      "pdf_link": "https://arxiv.org/pdf/2610.13408.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.13408",
-      "submission_date": "2026-10-12T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-10-12T14:22:29.085555+00:00"
     },
     {
       "forum_id": "usenix-osdi26-10",
