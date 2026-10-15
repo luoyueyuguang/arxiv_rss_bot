@@ -1,77 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-10-12T14:22:28.491522+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-10-15T10:50:02.509953+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2610.12940",
+      "forum_id": "2610.19645",
       "paper_number": -1,
-      "title": "CacheFlex: Direct Software-Managed Access to Higher-Level Cache for Scalable Vector Support",
+      "title": "MFSA: A Multi-Format Systolic Array with Native Micro Scaling Support",
       "authors": [
-        "Jingqun Zhang, Maohua Nie, Jiayi Wang, Weihang Li, Rishi Sappidi, Shwet Chitnis, Ang Li"
+        "Jiayi Wang, Kearnan Bishop, Ang Li"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2610.12940v1 Announce Type: new \nAbstract: Wider vector/SIMD lanes multiply compute throughput, but cache improvements remain challenging. We identify L1 data cache capacity as the most impactful parameter for performance and efficiency. L1 capacity is constrained by pipeline coupling and latency requirements; private L2 offers an order of magnitude more capacity but is inaccessible from software. This work proposes CacheFlex, an ISA and microarchitecture co-design that enables software-managed, direct access to private L2 SRAM by allowing runtime conversion of parts of L2 into a scratchpad memory (SPM). Through a lightweight ISA extension, software explicitly controls data placement and lifetime within the L2. CacheFlex integrates into an out-of-order pipeline with cross-domain memo",
-      "pdf_link": "https://arxiv.org/pdf/2610.12940.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.12940",
-      "submission_date": "2026-10-12T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 51.0,
-      "updated_at": "2026-10-12T14:22:28.486687+00:00"
-    },
-    {
-      "forum_id": "2610.13368",
-      "paper_number": -1,
-      "title": "Anechoic: Onsager-Corrected Parallel Annealing for Sub-0.1 ms Dense Max-Cut on an FPGA",
-      "authors": [
-        "Seungki Hong, Kyeongwon Jeong, Taekwang Jang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2610.13368v1 Announce Type: new \nAbstract: Ising machines solve combinatorial optimization problems by annealing a network of spins. On dense problems, the least expensive hardware step updates all spins at once: stochastic cellular automata (SCA) decide every spin in parallel and read couplings only for the spins that flip. Such synchronous updates create an echo: the previous state of each spin returns to it through its neighbors. On K2000, a Max-Cut benchmark on a 2,000-node complete graph, two-thirds of all flips undo the same spin's flip one step earlier. This paper presents Anechoic, an FPGA Ising machine that subtracts this echo from every decision. Dynamical mean-field theory identifies the echo as an Onsager reaction; its one-step strength is the number of spins whose flip p",
-      "pdf_link": "https://arxiv.org/pdf/2610.13368.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.13368",
-      "submission_date": "2026-10-12T04:00:00+00:00",
+      "abstract": "arXiv:2610.19645v1 Announce Type: new \nAbstract: AI workloads increasingly employ low-precision formats such as BF16 / FP16, FP8 variants, FP4, Micro Scaling (MX), and INT modes across models, layers, and execution stages to balance accuracy, memory footprint, and throughput, which in turn requires hardware to support these formats in a flexible and efficient way. We present MFSA, a weight-stationary multi-format systolic array that achieves area efficiency through two architectural choices. At the PE level, MFSA uses dot-product-accumulator-based processing elements extended from an existing open-source trans-precision FPU to support reduced-precision formats (FP32/FP16/BF16/CFP8/FP4/INT16/INT8/INT4) with a shared datapath and proportional throughput scaling. At the array level, MFSA empl",
+      "pdf_link": "https://arxiv.org/pdf/2610.19645.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.19645",
+      "submission_date": "2026-10-15T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 31.5,
-      "updated_at": "2026-10-12T14:22:28.486756+00:00"
-    },
-    {
-      "forum_id": "2610.13067",
-      "paper_number": -1,
-      "title": "TPCS: A Cycle-Level Simulation Paradigm with Native Execution Semantics for RTL Modeling and Generation",
-      "authors": [
-        "Chengzhen Meng, Xiaoyu Li, Chen Bai, Zhenyu Zhang, Hongjun Dai"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2610.13067v1 Announce Type: new \nAbstract: The growing diversity of domain-specific architectures and microarchitectural designs demands fast and accurate evaluation methods during early design stages. However, existing approaches suffer from a fundamental trade-off: high-level simulators offer speed but lack fidelity, while RTL-based tools provide accuracy at the cost of significant simulation overhead. This gap limits efficient pre-RTL microarchitecture exploration. Therefore, we propose Transaction-Pruned Cycle Simulation (TPCS), a novel modeling and simulation framework. It serves as a unified intermediate abstraction spanning microarchitecture modeling, cycle-accurate simulation, and synthesizable RTL implementation. TPCS organizes combinational logic as transaction-based functi",
-      "pdf_link": "https://arxiv.org/pdf/2610.13067.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.13067",
-      "submission_date": "2026-10-12T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-10-12T14:22:28.486709+00:00"
+      "updated_at": "2026-10-15T10:50:02.507467+00:00"
     }
   ]
 }

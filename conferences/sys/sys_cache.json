@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-10-14T11:08:30.868033+00:00",
-  "paper_count": 306,
+  "last_updated": "2026-10-15T10:50:06.220764+00:00",
+  "paper_count": 310,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1429,6 +1429,29 @@
       "updated_at": "2026-07-21T08:54:17.393518+00:00"
     },
     {
+      "forum_id": "2610.19423",
+      "paper_number": -1,
+      "title": "Beyond the Trial-and-Error Loop: Hybrid Projection and Automated Tuning for Distributed Training",
+      "authors": [
+        "Anshu Raina, Peyman Razaghi, Yuankai Chen, Cheng Yao, Yao Fu, Vidushi Goyal, Devang Patel, Wen Xie, Zhenyu Gu, Emad Barsoum"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.19423v1 Announce Type: cross \nAbstract: Configuring distributed LLM training across hundreds of GPUs requires jointly optimizing tensor, pipeline, expert, context, and data parallelism alongside micro-batch size, recomputation, sharding, and overlap, a combinatorial space where memory legality can hinge on a single byte of activation accounting. Today, teams navigate it through expensive multi-node trial and error, burning GPU-hours on crashes and suboptimal recipes. We present Primus Projection, which closes this loop with two coupled components. First, a hybrid projection engine that measures what it can and simulates what it cannot: GPU microbenchmarks on as few as a single device capture compute kernels and any in-scope communication; a sub-node downscale-measure-upscale wor",
+      "pdf_link": "https://arxiv.org/pdf/2610.19423.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.19423",
+      "submission_date": "2026-10-15T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 46.5,
+      "updated_at": "2026-10-15T10:50:03.163102+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-107",
       "paper_number": 107,
       "title": "Rethinking Process Snapshots for Near-Warm Serverless Cold Starts",
@@ -1470,6 +1493,29 @@
       "ratings": [],
       "score": 46.0,
       "updated_at": "2026-07-21T08:54:26.744507+00:00"
+    },
+    {
+      "forum_id": "2610.18925",
+      "paper_number": -1,
+      "title": "CacheSmith: Accurate RAG Serving under Latency SLOs with Adaptive KV Reuse",
+      "authors": [
+        "Xinyue Ma, Damin Lee, Aashaka Shah, Myeongjae Jeon"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.18925v1 Announce Type: cross \nAbstract: This paper presents CacheSmith, a KV cache reuse system for RAG prefill that maximizes quality-gated SLO attainment. While context caching lowers prefill latency by reusing precomputed KV states for retrieved chunks, it misses cross-chunk attention that a full prefill would compute over concatenated inputs. Prior selective recomputation schemes tackle this problem but enforce static, one-size-fits-all configurations that fail to effectively handle request heterogeneity or dynamic latency budgets. CacheSmith decomposes selective recomputation into a three-phase workflow of WarmUp, Probe, and Patch that can be dynamically configured to exploit a wide range of cost-accuracy trade-offs. At serving time, an SLO-aware scheduler in CacheSmith for",
+      "pdf_link": "https://arxiv.org/pdf/2610.18925.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.18925",
+      "submission_date": "2026-10-15T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 45.5,
+      "updated_at": "2026-10-15T10:50:03.162877+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-133",
@@ -1794,6 +1840,29 @@
       "ratings": [],
       "score": 42.0,
       "updated_at": "2026-07-21T08:54:22.942248+00:00"
+    },
+    {
+      "forum_id": "2610.19489",
+      "paper_number": -1,
+      "title": "How the Dirty Set Moves: Characterizing Schedule Reuse in Incremental Sparse Matrix Multiplication",
+      "authors": [
+        "Hunter Horne (HorneSci), Eric Spencer (Loyola University Chicago, HorneSci), Alex Henningfield (HorneSci), Arslan Bisharat (Loyola University Chicago)"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.19489v1 Announce Type: cross \nAbstract: Sparse matrices, in which most entries are zero, are central to scientific simulation, graph analytics and machine learning, and their multiplication with dense inputs is a core parallel kernel. In many applications the matrix stays fixed while only a few input rows change per step, so the result can be updated from those rows alone, which we call the dirty set. Sparse kernels often add a second optimization based on the inspector-executor principle, in which a tiled schedule is prepared once and reused across calls. However, when this reuse remains profitable as the dirty set moves is not well characterized. In this paper, we show that retained tiled execution rarely beats direct CSC in incremental sparse matrix multiplication, although i",
+      "pdf_link": "https://arxiv.org/pdf/2610.19489.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.19489",
+      "submission_date": "2026-10-15T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 41.0,
+      "updated_at": "2026-10-15T10:50:03.163135+00:00"
     },
     {
       "forum_id": "usenix-osdi26-17",
@@ -4319,6 +4388,29 @@
       "ratings": [],
       "score": 12.5,
       "updated_at": "2026-07-21T08:54:22.934320+00:00"
+    },
+    {
+      "forum_id": "2610.19801",
+      "paper_number": -1,
+      "title": "Delta Tokenizer: Reference-Identical Tokenization of Session Deltas and Segment-Parallelism for Long Prompts on Multicore CPUs",
+      "authors": [
+        "Zhenyu Zhang, Zhichao Cao"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.19801v1 Announce Type: cross \nAbstract: An agent that drives an LLM sends the model the same conversation again and again, and each turn adds only a little text at the end. Inference engines reuse the KV cache of the shared prefix, so only the new tokens pass through the model. However, tokenization has no such shortcut. The CPU front end of the serving engine converts every request back into token IDs from its first character, which lengthens the time to first token (TTFT) and consumes CPU on every turn.\n  We present Delta Tokenizer, a CPU tokenization front end that tokenizes only the delta between a request and the previous request of the same session. It retains the earlier token sequence, encodes again only the appended text and the short tail whose tokens the append could ",
+      "pdf_link": "https://arxiv.org/pdf/2610.19801.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.19801",
+      "submission_date": "2026-10-15T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-10-15T10:50:03.163327+00:00"
     },
     {
       "forum_id": "usenix-osdi26-11",

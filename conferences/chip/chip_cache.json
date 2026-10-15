@@ -1,77 +1,77 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-10-12T14:22:32.181049+00:00",
+  "last_updated": "2026-10-15T10:50:06.285976+00:00",
   "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2610.12795",
+      "forum_id": "2610.19973",
       "paper_number": -1,
-      "title": "Power, Performance, and Area of HPC-Based Malware Detectors: An FPGA and Open-PDK ASIC Study",
+      "title": "STISA: A 0.16 GOPS/W/PE Single-Shot Inference FPGA-based SNN Accelerator with Algorithm and Hardware Co-Design",
       "authors": [
-        "Alireza Abolhasani Zeraatkar, Parnian Shabani Kamran, Parsa Mirfasihi, Saleh Khalaj Monfared, Hussain Al-Asaad"
+        "Kainan Wang, Chengyi Yang, Lei Liu, Chengting Yu, Yee Sin Ang, Bo Wang, Aili Wang"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "FPGA"
       ],
-      "abstract": "arXiv:2610.12795v1 Announce Type: cross \nAbstract: Hardware malware detectors (HMDs) classify programs as benign or malicious based on hardware performance counter (HPC) data. Previous studies have shown that ensemble classifiers outperform other classifiers on detection metrics. However, the area, power, and timing costs of HMDs remain open questions. We address these questions across a comprehensive design space comprising multiple classifier families, variable HPC sets, and ensemble learning methods. We designed a pipeline to reconstruct selected trained models, generate synthesizable register-transfer-level (RTL) implementations, validate each design against a bit-accurate golden model, and evaluate the implementations. The results show that tree- and rule-based detectors achieve the h",
-      "pdf_link": "https://arxiv.org/pdf/2610.12795.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.12795",
-      "submission_date": "2026-10-12T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2610.19973v1 Announce Type: new \nAbstract: Spiking neural networks (SNNs) offer great potential for low-power intelligent computing owing to their event-driven nature, yet their deployment is limited by high inference latency and inefficient hardware utilization caused by temporal dependencies. Existing accelerators struggle to balance timesteps, accuracy, and energy efficiency, while hardware-oriented timestep compression remains underexplored. To address these challenges, this work presents STISA, a unified algorithm-hardware co-design framework featuring: (i) a Temporal Splitter Compression (TSC) technique with a Temporal Split Structure (TSS) to reduce temporal redundancy while preserving network dynamics; (ii) a hardware-efficient spatiotemporal parallelism scheme, which co-opti",
+      "pdf_link": "https://arxiv.org/pdf/2610.19973.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.19973",
+      "submission_date": "2026-10-15T04:00:00+00:00",
+      "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 8.0,
-      "updated_at": "2026-10-12T14:22:32.178039+00:00"
+      "score": 2.5,
+      "updated_at": "2026-10-15T10:50:06.284047+00:00"
     },
     {
-      "forum_id": "2608.06318",
+      "forum_id": "2610.19665",
       "paper_number": -1,
-      "title": "Breaking Memory Bottlenecks in Quantum Control Systems for More Precise Experiments and Higher Throughput Computing",
+      "title": "ESL-former: Event Sparse Linear Transformer for FPGA-Accelerated Malware Detection",
       "authors": [
-        "Yicheng Guang, Neel Vora, Yilun Xu, Yueqi Chen, Gang Huang"
+        "Jun Yang, Yumeng Cao, Yingxuan Xiao, Changhong Li, Shangru Zhou"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "FPGA"
       ],
-      "abstract": "arXiv:2608.06318v3 Announce Type: replace \nAbstract: As quantum computing matures, there is an increasing need for deeper and longer experiments to characterize quantum devices precisely and higher circuit throughput to validate more domain applications. However, this need is hindered by a memory bottleneck at the quantum control system layer, arising from the limited capacity of on-chip block random-access memory (BRAM) and the non-deterministic latency of dynamic random-access memory (DRAM). To break this bottleneck, we present Ant-Q, a memory hierarchy design for the QubiC 2.0 control system that integrates DRAM with BRAM to support pipelined quantum circuit execution while keeping inter-circuit timing deterministic whenever each circuit outlasts the refill of the next. A switch between",
-      "pdf_link": "https://arxiv.org/pdf/2608.06318.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.06318",
-      "submission_date": "2026-10-12T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-10-12T14:22:32.178201+00:00"
-    },
-    {
-      "forum_id": "2610.13368",
-      "paper_number": -1,
-      "title": "Anechoic: Onsager-Corrected Parallel Annealing for Sub-0.1 ms Dense Max-Cut on an FPGA",
-      "authors": [
-        "Seungki Hong, Kyeongwon Jeong, Taekwang Jang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2610.13368v1 Announce Type: new \nAbstract: Ising machines solve combinatorial optimization problems by annealing a network of spins. On dense problems, the least expensive hardware step updates all spins at once: stochastic cellular automata (SCA) decide every spin in parallel and read couplings only for the spins that flip. Such synchronous updates create an echo: the previous state of each spin returns to it through its neighbors. On K2000, a Max-Cut benchmark on a 2,000-node complete graph, two-thirds of all flips undo the same spin's flip one step earlier. This paper presents Anechoic, an FPGA Ising machine that subtracts this echo from every decision. Dynamical mean-field theory identifies the echo as an Onsager reaction; its one-step strength is the number of spins whose flip p",
-      "pdf_link": "https://arxiv.org/pdf/2610.13368.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.13368",
-      "submission_date": "2026-10-12T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2610.19665v1 Announce Type: new \nAbstract: Transformer based intrusion detection has shown strong potential for identifying unknown malware variants, but its deployment on resource constrained edge devices remains difficult due to the high computational and memory cost of self attention. This paper presents an event sparse Linear Transformer framework for malware detection on FPGA edge platforms. Instead of relying on an explicit attention matrix, the proposed method derives token and channel importance directly from the accumulated key value state of Linear Transformer. A contribution aware scoring function is introduced to measure the perturbation of each token or kernel channel to the linear attention state, allowing redundant tokens and low contribution channels to be removed wit",
+      "pdf_link": "https://arxiv.org/pdf/2610.19665.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.19665",
+      "submission_date": "2026-10-15T04:00:00+00:00",
+      "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-10-12T14:22:32.177872+00:00"
+      "updated_at": "2026-10-15T10:50:06.283920+00:00"
+    },
+    {
+      "forum_id": "2610.18906",
+      "paper_number": -1,
+      "title": "O-SCOPE: a Raspberry Pi Pico oscilloscope",
+      "authors": [
+        "Gabriel Andrecut, Mircea Andrecut"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DAC"
+      ],
+      "abstract": "arXiv:2610.18906v1 Announce Type: new \nAbstract: In this paper we provide an introduction to some of the efficient features of the Raspberry Pi Pico (RP2) family of microconroller boards (RP2040 and RP2350). More exactly, we show how to use PIO (Programmable Input/Output) and DMA (Direct Memory Access) to program the RP2 boards for efficient DAC (Digital to Analog) and ADC (Analog to Digital) conversions. Using OP-AMPS (Operational Amplifiers) we also show how to build a minimal electronic frontend interface for signal input/output. Finally, we integrate all these components into a product, the O-SCOPE, which is a practical and easy to use oscilloscope and wave function generator. The RP2 component of the O-SCOPE is built using Micropython, while the user interface is developed using vanil",
+      "pdf_link": "https://arxiv.org/pdf/2610.18906.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.18906",
+      "submission_date": "2026-10-15T04:00:00+00:00",
+      "conference": "DAC",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-10-15T10:50:06.283688+00:00"
     }
   ]
 }
