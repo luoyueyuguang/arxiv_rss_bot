@@ -1,31 +1,77 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-10-12T14:22:29.027246+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-10-16T10:39:30.981369+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2610.13396",
+      "forum_id": "2610.21815",
       "paper_number": -1,
-      "title": "ShoreKeeper: Accelerating Iterative Data Analytics in the Cloud via Distributed Recovery-Cost-Aware Caching",
+      "title": "Exact Makespan Bounds and the GPipe Homogeneity Bias for Heterogeneous LLM Inference Pipelines",
       "authors": [
-        "Jongseop Lee, Minsu Sun, Xinyue Ma, Atul Sandur, Myeongjae Jeon"
+        "Zhu Wenbo"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.13396v1 Announce Type: new \nAbstract: Large-scale data-intensive workloads powered by iterative graph or machine learning processing have an insatiable demand for memory due to the continuous generation of new intermediate data. Although existing caching strategies strive to keep performance-critical data in memory, they often fail in practice because they are limited to node-local memory management and assume high node availability. In this paper, we introduce ShoreKeeper, a framework that maximizes execution efficiency by treating cluster-wide memory as a unified, elastic pool. ShoreKeeper employs a global optimization model that maps distributed dataflows into a single graph abstraction to minimize the recovery cost of data evicted from cache across the cluster. To handle mem",
-      "pdf_link": "https://arxiv.org/pdf/2610.13396.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.13396",
-      "submission_date": "2026-10-12T04:00:00+00:00",
+      "abstract": "arXiv:2610.21815v1 Announce Type: new \nAbstract: We give an exact critical-path characterization of the makespan of micro-batch pipelines serving LLMs on heterogeneous GPU clusters, quantifying how the classic homogeneous GPipe formula errs. In the pure-forward, communication-free, infinite-buffer setting, T(M) = (M-1)tau_max + Sum_j tau_j, where tau_j is stage j's per-micro-batch service time and M the micro-batch count (Theorem 1). Under asynchronous communication -- modern NCCL-based serving -- it extends to T(M) = Sum_j tau_j + Sum_j d_j + (M-1)tau_max, with Sum_j d_j a purely additive constant (Theorem 2); under blocking communication, T(M) = (M-1)sigma_max + Sum_s sigma_s with sigma_s = tau_s + d_s, so communication enters the steady-state slope iff some d_s > tau_max - tau_s (Theore",
+      "pdf_link": "https://arxiv.org/pdf/2610.21815.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.21815",
+      "submission_date": "2026-10-16T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 64.5,
+      "updated_at": "2026-10-16T10:39:30.398576+00:00"
+    },
+    {
+      "forum_id": "2604.08182",
+      "paper_number": -1,
+      "title": "Wattlytics: A Web Platform for Co-Optimizing Performance, Energy, and TCO in HPC Clusters",
+      "authors": [
+        "Ayesha Afzal, Georg Hager, Gerhard Wellein"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2604.08182v2 Announce Type: replace \nAbstract: The escalating computational demands and energy footprint of GPU-accelerated computing systems complicate informed design and operational decisions. We present the first release of Wattlytics (https://wattlytics.netlify.app), an interactive, browser-based decision-support system. Unlike existing procurement-oriented calculators, Wattlytics uniquely integrates benchmark-driven GPU performance scaling, dynamic voltage and frequency scaling (DVFS)-aware piecewise power modeling, and multi-year total cost of ownership (TCO) analysis within a single interactive environment. Users can configure heterogeneous systems across contemporary GPU architectures (GH200, H100, L40S, L40, A40, A100, and L4), select representative scientific workloads (e.",
+      "pdf_link": "https://arxiv.org/pdf/2604.08182.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.08182",
+      "submission_date": "2026-10-16T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 30.0,
+      "updated_at": "2026-10-16T10:39:30.399304+00:00"
+    },
+    {
+      "forum_id": "2610.22172",
+      "paper_number": -1,
+      "title": "Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing",
+      "authors": [
+        "Mingjin Zhang, Jiannong Cao, Tao Wu, Xiangchun Chen, Ne Wang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2610.22172v1 Announce Type: new \nAbstract: Large Language Models (LLMs) have shown exceptional capabilities but rely heavily on centralized cloud GPU clusters, leading to high bandwidth costs, latency, and privacy issues. Edge computing offers a solution by deploying LLMs closer to users on edge servers, yet single edge servers often cannot meet LLMs' heavy computational demands. Collaborative Edge Computing (CEC) addresses this challenge by integrating resources of multiple geo-distributed heterogeneous edge servers, which jointly host small model shards and associated Key-Value (KV) cache for distributed inference. However, edge servers may disconnect or easily become overloaded, making it essential to migrate stateful KV cache to other servers for ensuring continuous service. Exis",
+      "pdf_link": "https://arxiv.org/pdf/2610.22172.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.22172",
+      "submission_date": "2026-10-16T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 24.5,
-      "updated_at": "2026-10-12T14:22:28.559707+00:00"
+      "updated_at": "2026-10-16T10:39:30.398728+00:00"
     }
   ]
 }

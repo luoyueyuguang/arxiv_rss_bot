@@ -1,31 +1,123 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-10-15T10:50:02.509953+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-10-16T10:39:30.356520+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2610.19645",
+      "forum_id": "2610.21064",
       "paper_number": -1,
-      "title": "MFSA: A Multi-Format Systolic Array with Native Micro Scaling Support",
+      "title": "Where the SRAM Goes: Per-Symbol Attribution of Static Memory in FreeRTOS-C and Embassy-Rust IoT Firmware on a 64 KB RISC-V Microcontroller",
       "authors": [
-        "Jiayi Wang, Kearnan Bishop, Ang Li"
+        "Romi Fadli, Jan Everhard Riwurohi, Wahyu Ramadani Putri Utami, Zulfa Malika Amana"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2610.19645v1 Announce Type: new \nAbstract: AI workloads increasingly employ low-precision formats such as BF16 / FP16, FP8 variants, FP4, Micro Scaling (MX), and INT modes across models, layers, and execution stages to balance accuracy, memory footprint, and throughput, which in turn requires hardware to support these formats in a flexible and efficient way. We present MFSA, a weight-stationary multi-format systolic array that achieves area efficiency through two architectural choices. At the PE level, MFSA uses dot-product-accumulator-based processing elements extended from an existing open-source trans-precision FPU to support reduced-precision formats (FP32/FP16/BF16/CFP8/FP4/INT16/INT8/INT4) with a shared datapath and proportional throughput scaling. At the array level, MFSA empl",
-      "pdf_link": "https://arxiv.org/pdf/2610.19645.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.19645",
-      "submission_date": "2026-10-15T04:00:00+00:00",
+      "abstract": "arXiv:2610.21064v1 Announce Type: cross \nAbstract: Selecting a firmware stack for a memory-constrained microcontroller is usually guided by aggregate binary sizes, which report how much SRAM a build consumes but not where it goes or why. We address that gap with a per-symbol attribution method that decomposes static RAM into architectural categories - scheduler heap, network buffers and pools, task stacks, and linker-reserved regions - by bounding sized ELF symbols to the .data, .bss and .stack section ranges. The method is validated by reconciling every category sum exactly against the size-based totals for all sixteen builds. We apply it to eight cumulative firmware milestones, from a bare task scaffold to a full MQTT-over-Ethernet client, implemented twice, in FreeRTOS-C and in Embassy-",
+      "pdf_link": "https://arxiv.org/pdf/2610.21064.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.21064",
+      "submission_date": "2026-10-16T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-10-15T10:50:02.507467+00:00"
+      "score": 36.0,
+      "updated_at": "2026-10-16T10:39:30.351058+00:00"
+    },
+    {
+      "forum_id": "2602.12596",
+      "paper_number": -1,
+      "title": "Arcal\\'{i}s: Accelerating Remote Procedure Calls Using a L\\'{i}ghtweight Near-Cache Solution",
+      "authors": [
+        "Johnson Umeike (University of Maryland, College Park), Pongstorn Maidee (AMD Research,Advanced Development), Bahar Asgari (University of Maryland, College Park)"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2602.12596v5 Announce Type: replace \nAbstract: Modern microservices increasingly depend on high-performance remote procedure calls (RPCs) to coordinate fine-grained, distributed computation. As network bandwidths continue to scale, the CPU overhead associated with RPC processing, particularly serialization, deserialization, and protocol handling, has become a critical bottleneck. This challenge is exacerbated by fast user-space networking stacks such as DPDK, which expose RPC processing as the dominant performance limiter. While prior hardware accelerators have explored NIC-attached and FPGA-based offload, these approaches remain farther from the cache hierarchy, so the frequent data accesses during RPC processing each pay an extra interconnect traversal cost that inflates RPC time. ",
+      "pdf_link": "https://arxiv.org/pdf/2602.12596.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.12596",
+      "submission_date": "2026-10-16T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.5,
+      "updated_at": "2026-10-16T10:39:30.351116+00:00"
+    },
+    {
+      "forum_id": "2610.20754",
+      "paper_number": -1,
+      "title": "Foundations of Hardware-Software Leakage Contracts",
+      "authors": [
+        "Jan Reineke"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2610.20754v1 Announce Type: cross \nAbstract: Microarchitectural attacks such as Spectre and Meltdown undermine security by exploiting software-visible side effects of microarchitectural optimizations like caches and speculative execution. To use modern hardware securely, programmers must take into account the security implications of these optimizations. Yet instruction set architectures (ISAs)---the conventional abstraction layer between hardware and software---are ill-suited for secure programming: by design, they abstract from microarchitectural details and therefore fail to reflect their security consequences.\n  A new security abstraction is emerging to fill this void: hardware-software leakage contracts. To support the principled development of secure software on modern hardware",
+      "pdf_link": "https://arxiv.org/pdf/2610.20754.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.20754",
+      "submission_date": "2026-10-16T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 26.0,
+      "updated_at": "2026-10-16T10:39:30.351011+00:00"
+    },
+    {
+      "forum_id": "2610.22230",
+      "paper_number": -1,
+      "title": "Architecting for Hardware Diversity: Meta's End-to-End Co-Design for High-Performance AI Training on AMD GPUs",
+      "authors": [
+        "Haoyu Zhang, Arshad Rahman, Adnan Aziz, Ajith Prabhudev, Amin Farmahini, Ben Rhoads, Benson Ma, Brian Shi, Cen Zhao, CK Luk, Dingming Wu, Emad El-Haraty, Eric Chen, Frank Li, Gary Huang, Gefei Zuo, Haoran Zhang, Hiwot Kassa, Hongyi Zeng, Jack Taylor, Jeremy Hadidjojo, John Donati, Jonathan Sheffield, Julio Machado Silva, Karthik Ganesan, Kent Russell, KR Kishore, Lei Tian, Liu Ke, Muhammad Osama, Peng Chen, Rakesh Hemnani, Ryan Swann, Saleel Kudchadker, Shankar Yanamandram, Shobhit Kanaujia, Shucai Xiao, Srinath Bayareddy, Srinivas Vaidyanathan, Sudharssun Subramanian, Supadchaya Puangpontip, Taylor Robie, Tianhao Huang, Tyler Hart, Viswesh Sankaran, Weijun Jiang, Wenkai Du, Xiaodong Wang, Xiaohu Guo, Yao Rong, Yinbin Ma, Yue Dong, Yuzhen Huang, Yvonne Liu, Zhan Shu, Dan Rabinovitsj, Ajit Mathews, Chunqiang Tang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2610.22230v1 Announce Type: cross \nAbstract: Meta deploys a heterogeneous fleet comprising NVIDIA GPUs, AMD GPUs, and proprietary MTIA accelerators to reduce costs and mitigate vendor lock-in. However, the extensive history of NVIDIA-specific optimizations hinders performance portability to other hardware. This paper presents our methods for optimizing alternative accelerators, using AMD Instinct MI350X versus NVIDIA B200 for recommendation model training as a case study. We propose three reusable principles. First, hardware-model co-design is essential: rather than directly porting models from NVIDIA GPUs, revising model structures and software recipes allows full exploitation of accelerator-specific strengths (e.g., MI350X's 1.6x HBM capacity relative to B200). Second, our analytic",
+      "pdf_link": "https://arxiv.org/pdf/2610.22230.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.22230",
+      "submission_date": "2026-10-16T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 21.0,
+      "updated_at": "2026-10-16T10:39:30.351081+00:00"
+    },
+    {
+      "forum_id": "2610.21353",
+      "paper_number": -1,
+      "title": "A Black-Box Positioning Solution for Effortless Integration in Wearable Navigation",
+      "authors": [
+        "Anh-Van Vu, Changmin Sung, Dongsoo Han"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2610.21353v1 Announce Type: cross \nAbstract: Accurate localization is critical for a wide range of applications, including navigation, augmented reality, safety management, and healthcare. However, achieving accurate positioning remains challenging, especially in GPS-degraded environments. Pedestrian Dead Reckoning (PDR), which estimates position based on inertial sensor data, offers a promising alternative but typically demands substantial effort in algorithm design and system integration. This complexity often leads to prolonged development timelines and elevated costs. To address these challenges, we present the PDR Sensor (PDRS), a plug-and-play, black-box PDR module optimized for seamless integration into wearable and IoT platforms. PDRS integrates a microprocessor and an inerti",
+      "pdf_link": "https://arxiv.org/pdf/2610.21353.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.21353",
+      "submission_date": "2026-10-16T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-10-16T10:39:30.351070+00:00"
     }
   ]
 }
