@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-10-16T10:39:33.983630+00:00",
-  "paper_count": 311,
+  "last_updated": "2026-10-19T12:03:50.720900+00:00",
+  "paper_count": 309,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1862,29 +1862,6 @@
       "updated_at": "2026-07-21T08:54:26.745242+00:00"
     },
     {
-      "forum_id": "2610.21241",
-      "paper_number": -1,
-      "title": "Range: Decoupling KV-Cache Reuse Granularity from Storage Work",
-      "authors": [
-        "Dingsen Shi, Jiahao Zhang, Liqiang Lv, Boming Huang, Yanbo Dai, Ying He, Donger Chen, Harry Fu, Wang Feng, Song Fu"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.21241v1 Announce Type: new \nAbstract: LLM serving reuses cached key-value (KV) state to skip prefill, and growing contexts push that state past GPU HBM and CPU DRAM onto NVMe SSDs, placing prefix restore on the critical path of time-to-first-token (TTFT). We find that on a well-configured host-issued path the SSD is not the bottleneck: restoring the same 6 GiB of KV takes 2.1 s as 192 objects but 3.0 s as 6,144 objects, and more under layerwise loading, because every layer of the storage stack - lookup, allocation, I/O submission, GPU delivery, store, index - charges per logical object while the bytes stay the same. This cost grows with the KV footprint: longer contexts, deeper models under layerwise loading, and tensor parallelism each multiply the object count. Prior systems m",
-      "pdf_link": "https://arxiv.org/pdf/2610.21241.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.21241",
-      "submission_date": "2026-10-16T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 37.5,
-      "updated_at": "2026-10-16T10:39:31.017969+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-103",
       "paper_number": 103,
       "title": "GraCE: Unlocking CUDA Graphs with Compiler Support for ML Workloads",
@@ -2457,29 +2434,6 @@
       "updated_at": "2026-07-21T08:54:22.930905+00:00"
     },
     {
-      "forum_id": "2610.21162",
-      "paper_number": -1,
-      "title": "Coordination-Free Workload Regularization for Variable-Cost Distributed Training",
-      "authors": [
-        "Tao Huang, Chen Zhu, Antonio Alonso, Daming Li, Adarsh Goura, Jaideep Ray, Yitong Zhou"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.21162v1 Announce Type: new \nAbstract: Synchronous data-parallel training usually assigns every rank the same number of records, even when record costs vary by orders of magnitude. For variable-length models, this converts input variation into idle time because each step waits for its most expensive rank-local batch. We present Batch Cost Lookahead (BCL), a coordination-free data-loading policy that buffers a bounded rank-local window and repartitions it into fixed-cardinality packs with balanced estimated cost. BCL preserves the trainer's record-count contract and requires neither cross-rank metadata exchange nor runtime modification. In simulation over public workload distributions, enabling BCL reduces per-rank estimated batch-cost variability by up to 82.8%. Across 13 NeMo-RL",
-      "pdf_link": "https://arxiv.org/pdf/2610.21162.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.21162",
-      "submission_date": "2026-10-16T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-10-16T10:39:31.060149+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-41",
       "paper_number": 41,
       "title": "Count-Based Abstractions for Performance Verification of Contention Points",
@@ -2871,6 +2825,29 @@
       "updated_at": "2026-07-21T08:54:17.399279+00:00"
     },
     {
+      "forum_id": "2610.23409",
+      "paper_number": -1,
+      "title": "Flash RNN-T: Memory-Efficient Joint Network and Transducer Loss Computation",
+      "authors": [
+        "Mahmoud Ashraf"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.23409v1 Announce Type: cross \nAbstract: The recurrent neural network transducer (RNN-T) remains a practical choice for streaming speech recognition, but training requires large intermediate tensors. We present Flash RNN-T, a joint and loss implementation combining specialized kernels with optional tiled recomputation over the full alignment space and vocabulary. Tiled and untiled Flash form the entire measured throughput-memory frontier on medium and long workloads. On H100, untiled Flash achieves 24-39% higher throughput with 26-56% less memory than the fastest baseline on these workloads wherever it fits. Tiling reduces memory further through recomputation. On medium, tiled Flash uses ninefold less memory than that baseline at 16% lower throughput when both use one backward ca",
+      "pdf_link": "https://arxiv.org/pdf/2610.23409.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.23409",
+      "submission_date": "2026-10-19T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 23.5,
+      "updated_at": "2026-10-19T12:03:48.426661+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-34",
       "paper_number": 34,
       "title": "R-TCP: A Framework to Optimize TCP Performance Over Rate-Limiting Networks",
@@ -3004,29 +2981,6 @@
       "ratings": [],
       "score": 23.0,
       "updated_at": "2026-07-21T08:54:22.936633+00:00"
-    },
-    {
-      "forum_id": "2606.03754",
-      "paper_number": -1,
-      "title": "Fast TetraBFT: Optimizing Latency Where It Matters",
-      "authors": [
-        "Antonio J. Fern\\'andez-Pinto, Manuel Bravo, Gregory Chockler, Alexey Gotsman"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2606.03754v2 Announce Type: replace \nAbstract: Unauthenticated Byzantine consensus protocols achieve optimal failure resilience while relying only on authenticated point-to-point channels, not authenticated messages. They are an attractive building block for blockchains that do not mandate symmetric trust assumptions as well as for future post-quantum settings. We consider unauthenticated Byzantine consensus in partially synchronous networks and focus on optimizing its good-case latency - the worst-case time for correct processes to reach a decision under favorable conditions. A recently proposed ForgetIT protocol achieves an optimal good-case latency of 3 message delays but employs a highly complex design. We show that this complexity is unnecessary. To this end, we present Fast Tet",
-      "pdf_link": "https://arxiv.org/pdf/2606.03754.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.03754",
-      "submission_date": "2026-10-16T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 22.5,
-      "updated_at": "2026-10-16T10:39:31.062232+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-134",
@@ -3304,29 +3258,6 @@
       "ratings": [],
       "score": 17.5,
       "updated_at": "2026-07-21T08:54:17.400855+00:00"
-    },
-    {
-      "forum_id": "2505.12242",
-      "paper_number": -1,
-      "title": "ZenFlow: Enabling Stall-Free Offloading for LLM Training",
-      "authors": [
-        "Tingfeng Lan, Yusen Wu, Bin Ma, Zhaoyuan Su, Rui Yang, Tekin Bicer, Masahiro Tanaka, Olatunji Ruwase, Dong Li, Yue Cheng"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2505.12242v4 Announce Type: replace \nAbstract: Fine-tuning large language models (LLMs) often exceeds GPU memory limits, prompting systems to offload model states to CPU memory. However, existing offloaded training frameworks like ZeRO-Offload treat all parameters equally and update the full model on the CPU, causing severe GPU stalls, where fast, expensive GPUs sit idle, waiting for slow CPU updates and limited-bandwidth PCIe transfers. We present ZenFlow, a new offloaded training framework that decouples updates between GPU and CPU by prioritizing important gradients. ZenFlow performs in-place updates of important gradients on GPU while offloading and accumulating less important ones on CPU without blocking training iterations, fully overlapping CPU work with GPU computation. To ma",
-      "pdf_link": "https://arxiv.org/pdf/2505.12242.pdf",
-      "forum_link": "https://arxiv.org/abs/2505.12242",
-      "submission_date": "2026-10-16T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 17.0,
-      "updated_at": "2026-10-16T10:39:31.061692+00:00"
     },
     {
       "forum_id": "usenix-osdi26-61",
@@ -4785,6 +4716,29 @@
       "ratings": [],
       "score": 11.5,
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
+    },
+    {
+      "forum_id": "2610.23047",
+      "paper_number": -1,
+      "title": "DIFFLET: A Fast Inference Engine for Diffusion Transformer Models on AWS Trainium",
+      "authors": [
+        "Bin Ma, Min Yu, Vijay Kodamalla, Jialin Liu, Dong Li"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.23047v1 Announce Type: new \nAbstract: On AWS Trainium2, every component of a diffusion model runs as a program compiled ahead of time for fixed shapes, while pipelines differ across models, prompt lengths across requests, and caching decisions across denoising steps. We present Difflet, a serving engine in which five model pipelines share one compilation backend, joint attention is split across cores by attention head, and a host controller decides at each denoising step whether to run the denoiser or reuse its earlier output. A small probe program computes the caching signal on the device and returns one number per step, and a resident model process keeps every program loaded across requests. Across five image and video model families, fused attention accelerates denoiser steps",
+      "pdf_link": "https://arxiv.org/pdf/2610.23047.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.23047",
+      "submission_date": "2026-10-19T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-10-19T12:03:48.425538+00:00"
     },
     {
       "forum_id": "usenix-osdi26-63",
@@ -6625,29 +6579,6 @@
       "updated_at": "2026-07-21T08:54:26.743211+00:00"
     },
     {
-      "forum_id": "2604.17104",
-      "paper_number": -1,
-      "title": "TensorDex: A Compact, Tensor-Centric Storage System for Modern AI Models",
-      "authors": [
-        "Tingfeng Lan, Zirui Wang, Yunjia Zheng, Zhaoyuan Su, Juncheng Yang, Yue Cheng"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2604.17104v3 Announce Type: replace \nAbstract: Modern model hubs store hundreds of petabytes of large language models (LLMs), with fine-tuned variants dominating the storage footprint. These variants contain substantial cross-model redundancy that delta compression can exploit by storing only the difference between a target and a reference model. However, compression effectiveness depends critically on choosing a similar reference. At model-hub scale, this is challenging because model lineage metadata is often missing or unreliable, and different tensors within the same model may be most similar to tensors from different models. Consequently, model-level pairing leaves substantial redundancy unexploited.\n  We present TensorDex, a lossless, tensor-centric storage system that performs ",
-      "pdf_link": "https://arxiv.org/pdf/2604.17104.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.17104",
-      "submission_date": "2026-10-16T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-10-16T10:39:31.062080+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-15",
       "paper_number": 15,
       "title": "Extracting Database Access-Control Policies from Web Applications",
@@ -6763,6 +6694,29 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
+    },
+    {
+      "forum_id": "2610.22996",
+      "paper_number": -1,
+      "title": "TALLOP: Joint Optimization of Local Training and Communication Compression for Time-Constrained Federated Learning",
+      "authors": [
+        "Honoka Anada, Yafei Ou, Shinya Takamaeda-Yamazaki"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.22996v1 Announce Type: cross \nAbstract: Minimizing the wall-clock time required to reach a target accuracy is crucial in federated learning (FL), where many applications require frequent model updates as data distributions evolve over time. Nevertheless, in heterogeneous environments, slow clients with limited computational and communication capabilities can delay global synchronization, forcing faster clients to wait and increasing the overall training time. To mitigate this straggler effect, recent studies have introduced per-round time constraints and adapted client workloads within the available time. However, these approaches primarily focus on local computation, whereas communication can become a major bottleneck in communication-limited environments, motivating the joint ",
+      "pdf_link": "https://arxiv.org/pdf/2610.22996.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.22996",
+      "submission_date": "2026-10-19T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-10-19T12:03:48.426328+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

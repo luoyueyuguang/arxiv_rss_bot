@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-10-16T10:40:07.517517+00:00",
-  "paper_count": 30,
+  "last_updated": "2026-10-19T12:04:21.239991+00:00",
+  "paper_count": 31,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -402,6 +402,29 @@
       "ratings": [],
       "score": 12.5,
       "updated_at": "2026-08-14T07:42:43.316013+00:00"
+    },
+    {
+      "forum_id": "2610.23271",
+      "paper_number": -1,
+      "title": "NestedVLA: Learning to Consolidate and Generate Skills for Vision-Language-Action Models",
+      "authors": [
+        "Guodong Du, Wanyu Lin"
+      ],
+      "keywords": [
+        "cs.LG",
+        "NeurIPS"
+      ],
+      "abstract": "arXiv:2610.23271v1 Announce Type: cross \nAbstract: Vision--Language--Action (VLA) models promise generalist robotic agents, yet consolidating skills learned across heterogeneous tasks and environments remains difficult: training data is fragmented across platforms, joint multi-task training suffers from interference, and model merging tends to introduce parameter conflicts or require architectural changes. We instead advocate a paradigm in which skills are first learned independently and then consolidated post hoc. To this end, we propose NestedVLA, which replaces parameter aggregation with parameter generation: a nested hypernetwork, conditioned on the target task, synthesizes task-adaptive action-expert parameters that compose with a frozen base VLA. Task-specific compressed VLM residual",
+      "pdf_link": "https://arxiv.org/pdf/2610.23271.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.23271",
+      "submission_date": "2026-10-19T04:00:00+00:00",
+      "conference": "NeurIPS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.5,
+      "updated_at": "2026-10-19T12:03:51.195436+00:00"
     },
     {
       "forum_id": "mlr-icml25-29",

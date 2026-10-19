@@ -1,192 +1,100 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-10-16T10:39:34.034407+00:00",
-  "paper_count": 8,
+  "last_updated": "2026-10-19T12:03:50.773109+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2609.17730",
+      "forum_id": "2610.23767",
       "paper_number": -1,
-      "title": "FAME: An FPGA-Based Platform for Approximate Multipliers Evaluation with Pattern-Guided DNN Retraining",
+      "title": "TileDRAM: Compiler-Controlled Tile-to-DRAM Layouts for 3D DRAM GPGPUs",
       "authors": [
-        "Rappy Saha, Nima Amirafshar, Jude Haris, Nima Taherinejad, Jos\\'e Cano"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2609.17730v2 Announce Type: replace \nAbstract: Approximate multipliers can reduce hardware area and energy consumption in Deep Neural Network (DNN) inference; however, they introduce computational errors. Assessing the accuracy of numerous approximate multiplier designs across diverse DNN models and large-scale datasets remains challenging due to prohibitive evaluation times. This overhead primarily stems from the slow emulation of approximate multiplier behavior using look-up tables (LUTs) on CPU and GPU platforms. Moreover, the resulting accuracy degradation must be carefully quantified and, if necessary, mitigated (e.g., through retraining), further increasing the overall evaluation cost. To address these challenges, we propose FAME, an FPGA-based platform for evaluating approxima",
-      "pdf_link": "https://arxiv.org/pdf/2609.17730.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.17730",
-      "submission_date": "2026-10-16T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-10-16T10:39:34.029959+00:00"
-    },
-    {
-      "forum_id": "2602.12596",
-      "paper_number": -1,
-      "title": "Arcal\\'{i}s: Accelerating Remote Procedure Calls Using a L\\'{i}ghtweight Near-Cache Solution",
-      "authors": [
-        "Johnson Umeike (University of Maryland, College Park), Pongstorn Maidee (AMD Research,Advanced Development), Bahar Asgari (University of Maryland, College Park)"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2602.12596v5 Announce Type: replace \nAbstract: Modern microservices increasingly depend on high-performance remote procedure calls (RPCs) to coordinate fine-grained, distributed computation. As network bandwidths continue to scale, the CPU overhead associated with RPC processing, particularly serialization, deserialization, and protocol handling, has become a critical bottleneck. This challenge is exacerbated by fast user-space networking stacks such as DPDK, which expose RPC processing as the dominant performance limiter. While prior hardware accelerators have explored NIC-attached and FPGA-based offload, these approaches remain farther from the cache hierarchy, so the frequent data accesses during RPC processing each pay an extra interconnect traversal cost that inflates RPC time. ",
-      "pdf_link": "https://arxiv.org/pdf/2602.12596.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.12596",
-      "submission_date": "2026-10-16T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-10-16T10:39:34.029781+00:00"
-    },
-    {
-      "forum_id": "2610.21552",
-      "paper_number": -1,
-      "title": "Minimum RISC-V: Maximum FPGA Efficiency",
-      "authors": [
-        "Martin Langhammer, Bogdan Pasca, Gregg Baeckler"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2610.21552v1 Announce Type: new \nAbstract: RISC-V processors are now widely available for FPGAs, with most FPGA vendors replacing their proprietary soft-CPU architectures with this instruction-set architecture (ISA). Although contemporary FPGAs are increasingly resource- and feature-rich, a soft processor system---including memory---often occupies a disproportionately large footprint and delivers only modest performance relative to the potential of the target device. In this work we first design a lightweight but deeply pipelined RISC-V core that can run above 700 MHz in a mid-range device and that is capable of retiring one instruction per clock under ideal conditions. We then develop and demonstrate a new optimization method that compiles the final application binary and a speciali",
-      "pdf_link": "https://arxiv.org/pdf/2610.21552.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.21552",
-      "submission_date": "2026-10-16T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-10-16T10:39:34.029338+00:00"
-    },
-    {
-      "forum_id": "2609.00421",
-      "paper_number": -1,
-      "title": "VARA: A Voltage-Aware ReRAM-Based Accelerator for Energy-Efficient Computing",
-      "authors": [
-        "Peng Dang, Yintao He, Huawei Li"
+        "Guangyuan Xu, Lanxuan Zhang, Ziyang Li, Zhaoshi Li, Yajun Ha"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.00421v2 Announce Type: replace \nAbstract: ReRAM-based in-memory computing (IMC) architectures are widely regarded as a promising approach to alleviating the computational bottleneck of conventional architectures. Since ReRAM crossbars perform matrix-vector multiplication (MVM) in the analog domain, their computational energy consumption is highly dependent on weight and activation distributions. However, most existing ReRAM accelerators focus primarily on weight optimization while paying limited attention to the impact of activations on computational energy consumption, leaving the energy-saving potential of activation sparsity largely underexploited. In this paper, we propose a voltage-aware ReRAM-based accelerator (VARA), along with its accompanying design methodology. Specifi",
-      "pdf_link": "https://arxiv.org/pdf/2609.00421.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.00421",
-      "submission_date": "2026-10-16T04:00:00+00:00",
+      "abstract": "arXiv:2610.23767v1 Announce Type: new \nAbstract: Modern GPU compilers expose rich layout abstractions for mapping tensors to threads and on-chip resources, but compute-unit-local (CU-local) 3D DRAM architectures lack a corresponding abstraction for specifying how operand-tile data are\n  arranged within the DRAM address space. Without such an abstraction, conventional placement under the existing DRAM address mapping can subject structured tile accesses to severe row-buffer conflicts. We present TileDRAM, a compiler-runtime\n  toolchain that introduces tile-to-DRAM layouts as a compiler-visible abstraction for DRAM placement. TileDRAM extends the GPU Linear Layout abstraction from compute-side mapping targets to DRAM placement coordinates and selects layouts per\n  tile access signature, usin",
+      "pdf_link": "https://arxiv.org/pdf/2610.23767.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.23767",
+      "submission_date": "2026-10-19T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-10-16T10:39:34.029860+00:00"
+      "score": 12.0,
+      "updated_at": "2026-10-19T12:03:50.770352+00:00"
     },
     {
-      "forum_id": "2609.01948",
+      "forum_id": "2610.22579",
       "paper_number": -1,
-      "title": "An Emerging NVM-Based On-Chip Training Architecture with Non-Ideality Mitigation Through Bipolar Weight Distributions",
+      "title": "MemLLM: End-to-end In-Storage Acceleration of On-device Retrieval-Augmented Generation using Precomputed KV Caches",
       "authors": [
-        "Peng Dang, Youna Huang, Yintao He, Huawei Li"
+        "Seungkwan Kang, Hyungseok Ko, Heemin Kim, Myoungsoo Jung"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2609.01948v2 Announce Type: replace \nAbstract: The rapid advancement of deep learning has presented significant energy efficiency challenges to the conventional von Neumann architecture. In-memory computing (IMC) architectures based on emerging non-volatile memory (eNVM) are widely regarded as a promising solution for accelerating neural network training due to their high parallelism and low power consumption. However, the intrinsic non-idealities of eNVM devices can cause conductance updates to deviate from target values, thereby limiting the performance of on-chip training. To address this challenge, this paper presents a Non-ideality Optimized eNVM Accelerator (NOVA) architecture for on-chip training. Specifically, we first fabricate a two-dimensional (2D) ferroelectric field-effe",
-      "pdf_link": "https://arxiv.org/pdf/2609.01948.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.01948",
-      "submission_date": "2026-10-16T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-10-16T10:39:34.029898+00:00"
-    },
-    {
-      "forum_id": "2604.08182",
-      "paper_number": -1,
-      "title": "Wattlytics: A Web Platform for Co-Optimizing Performance, Energy, and TCO in HPC Clusters",
-      "authors": [
-        "Ayesha Afzal, Georg Hager, Gerhard Wellein"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2604.08182v2 Announce Type: replace-cross \nAbstract: The escalating computational demands and energy footprint of GPU-accelerated computing systems complicate informed design and operational decisions. We present the first release of Wattlytics (https://wattlytics.netlify.app), an interactive, browser-based decision-support system. Unlike existing procurement-oriented calculators, Wattlytics uniquely integrates benchmark-driven GPU performance scaling, dynamic voltage and frequency scaling (DVFS)-aware piecewise power modeling, and multi-year total cost of ownership (TCO) analysis within a single interactive environment. Users can configure heterogeneous systems across contemporary GPU architectures (GH200, H100, L40S, L40, A40, A100, and L4), select representative scientific workloa",
-      "pdf_link": "https://arxiv.org/pdf/2604.08182.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.08182",
-      "submission_date": "2026-10-16T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-10-16T10:39:34.030047+00:00"
-    },
-    {
-      "forum_id": "2610.21096",
-      "paper_number": -1,
-      "title": "Helix: A Unified Programmable Accelerator for Diverse Krylov Subspace Solvers",
-      "authors": [
-        "Wei Chen, Yizhi Yuan, Linghao Song"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2610.21096v1 Announce Type: new \nAbstract: Domain-specific accelerators deliver high performance and energy efficiency through specialization but often lack support for extensible algorithm families. Existing FPGA accelerators for Krylov subspace methods, which iteratively solve sparse linear systems, typically support a single solver or require separate hardware configurations. Helix follows a systematic algorithm-family design methodology that first abstracts common computational primitives from diverse Krylov solvers and builds the architecture around efficient, programmable primitive kernels. Helix then introduces programmable datapaths to coordinate these primitives. Its architecture decouples hardware implementation from solver-specific execution, enabling HBM reuse and zero so",
-      "pdf_link": "https://arxiv.org/pdf/2610.21096.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.21096",
-      "submission_date": "2026-10-16T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-16T10:39:34.029233+00:00"
-    },
-    {
-      "forum_id": "2606.22283",
-      "paper_number": -1,
-      "title": "Apple Neural Engine: Architecture, Programming, and Performance",
-      "authors": [
-        "Spencer H. Bryngelson"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2606.22283v2 Announce Type: replace \nAbstract: The Apple Neural Engine (ANE) is Apple's fixed-function matrix accelerator. It has shipped in every Apple system-on-chip since the A11 in iPhones and iPads and the M1 in Macs. Applications reach it only through Core ML, which documents almost nothing below its own surface. This work reverse-engineers the engine. We reach it directly, below Core ML, from an ordinary user process, and that access opens the rest to measurement. We measure on Apple silicon and decompile the private runtime, compiler, kernel driver, and firmware, checking each against the other. We give the datapath and the roofline that bounds throughput and energy. Below that are the compiler and the program format it emits, the weight-compression scheme, the kernel driver,",
-      "pdf_link": "https://arxiv.org/pdf/2606.22283.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.22283",
-      "submission_date": "2026-10-16T04:00:00+00:00",
+      "abstract": "arXiv:2610.22579v1 Announce Type: new \nAbstract: Retrieval-augmented generation (RAG) on edge devices enables personalized large language model (LLM) inference while preserving privacy. However, RAG's inherent length asymmetry makes the prefill phase the dominant bottleneck. While precomputing the KV caches offline alleviates the prefill cost on server systems, the multi-gigabyte caches over the narrow interconnect create a severe I/O wall for on-device systems. To mitigate this, we propose MemLLM, an end-to-end in-storage processing (ISP) architecture that executes the complete attention pipeline based on precomputed KV caches within the SSD. MemLLM utilizes per-channel accelerators to fully utilize the aggregated NAND channel bandwidth and accelerates all KV cache-related computations on",
+      "pdf_link": "https://arxiv.org/pdf/2610.22579.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.22579",
+      "submission_date": "2026-10-19T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-10-16T10:39:34.029817+00:00"
+      "updated_at": "2026-10-19T12:03:50.770039+00:00"
+    },
+    {
+      "forum_id": "2610.23503",
+      "paper_number": -1,
+      "title": "HBFSim: A Simulator for Exploring HBF in Memory Hierarchies for LLMs",
+      "authors": [
+        "Jinheng Li, Guosheng Wang, Hongchao Du, Shangyu Wu, Qiao Li, Chun Jason Xue"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2610.23503v1 Announce Type: new \nAbstract: High Bandwidth Flash (HBF) has recently emerged as a promising technology that provides terabyte-scale accelerator-local capacity at bandwidths approaching HBM, with a potential cost-per-bit advantage over HBM. However, its NAND foundation brings long latency, out-of-place updates, and finite write endurance directly into the accelerator memory hierarchy, making its effects on performance and lifetime difficult to predict. To study this emerging design space, we present HBFSim, an LLM-aware event-driven simulator for heterogeneous HBM+HBF memory systems that preserves application-level memory semantics while modeling flash-internal behavior. HBFSim models HBM, HBF with host-managed flash translation, and conventional capacity tiers in one si",
+      "pdf_link": "https://arxiv.org/pdf/2610.23503.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.23503",
+      "submission_date": "2026-10-19T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-10-19T12:03:50.770269+00:00"
+    },
+    {
+      "forum_id": "2608.00894",
+      "paper_number": -1,
+      "title": "Rethinking Agentic Kernel Generation for Emerging Accelerators",
+      "authors": [
+        "Ruijie Gao, Jirong Yang, Barry Lyu, Haoran Jin, Nathan Bleier"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2608.00894v3 Announce Type: replace \nAbstract: Emerging accelerators often lack mature compiler backends, motivating neural agents that generate and repair kernels from architectural documentation and simulator feedback. This approach repeatedly reconstructs workload-invariant machine semantics, including instruction behavior, legality constraints, synchronization rules, and memory protocols, for every workload. We argue that these semantics should be compiled once into a persistent symbolic artifact, while neural reasoning should focus on workload-dependent mapping decisions.\n  We present Zomboss, a compiler-mediated agentic framework for kernel generation that places neural search within a verified compiler boundary. Zomboss compiles machine semantics and legality constraints into ",
+      "pdf_link": "https://arxiv.org/pdf/2608.00894.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.00894",
+      "submission_date": "2026-10-19T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-10-19T12:03:50.770628+00:00"
     }
   ]
 }
