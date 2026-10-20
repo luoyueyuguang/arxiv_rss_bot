@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-10-19T12:03:50.720900+00:00",
-  "paper_count": 309,
+  "last_updated": "2026-10-20T10:54:23.517961+00:00",
+  "paper_count": 306,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -2825,29 +2825,6 @@
       "updated_at": "2026-07-21T08:54:17.399279+00:00"
     },
     {
-      "forum_id": "2610.23409",
-      "paper_number": -1,
-      "title": "Flash RNN-T: Memory-Efficient Joint Network and Transducer Loss Computation",
-      "authors": [
-        "Mahmoud Ashraf"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.23409v1 Announce Type: cross \nAbstract: The recurrent neural network transducer (RNN-T) remains a practical choice for streaming speech recognition, but training requires large intermediate tensors. We present Flash RNN-T, a joint and loss implementation combining specialized kernels with optional tiled recomputation over the full alignment space and vocabulary. Tiled and untiled Flash form the entire measured throughput-memory frontier on medium and long workloads. On H100, untiled Flash achieves 24-39% higher throughput with 26-56% less memory than the fastest baseline on these workloads wherever it fits. Tiling reduces memory further through recomputation. On medium, tiled Flash uses ninefold less memory than that baseline at 16% lower throughput when both use one backward ca",
-      "pdf_link": "https://arxiv.org/pdf/2610.23409.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.23409",
-      "submission_date": "2026-10-19T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 23.5,
-      "updated_at": "2026-10-19T12:03:48.426661+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-34",
       "paper_number": 34,
       "title": "R-TCP: A Framework to Optimize TCP Performance Over Rate-Limiting Networks",
@@ -4716,29 +4693,6 @@
       "ratings": [],
       "score": 11.5,
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
-    },
-    {
-      "forum_id": "2610.23047",
-      "paper_number": -1,
-      "title": "DIFFLET: A Fast Inference Engine for Diffusion Transformer Models on AWS Trainium",
-      "authors": [
-        "Bin Ma, Min Yu, Vijay Kodamalla, Jialin Liu, Dong Li"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.23047v1 Announce Type: new \nAbstract: On AWS Trainium2, every component of a diffusion model runs as a program compiled ahead of time for fixed shapes, while pipelines differ across models, prompt lengths across requests, and caching decisions across denoising steps. We present Difflet, a serving engine in which five model pipelines share one compilation backend, joint attention is split across cores by attention head, and a host controller decides at each denoising step whether to run the denoiser or reuse its earlier output. A small probe program computes the caching signal on the device and returns one number per step, and a resident model process keeps every program loaded across requests. Across five image and video model families, fused attention accelerates denoiser steps",
-      "pdf_link": "https://arxiv.org/pdf/2610.23047.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.23047",
-      "submission_date": "2026-10-19T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-10-19T12:03:48.425538+00:00"
     },
     {
       "forum_id": "usenix-osdi26-63",
@@ -6694,29 +6648,6 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
-    },
-    {
-      "forum_id": "2610.22996",
-      "paper_number": -1,
-      "title": "TALLOP: Joint Optimization of Local Training and Communication Compression for Time-Constrained Federated Learning",
-      "authors": [
-        "Honoka Anada, Yafei Ou, Shinya Takamaeda-Yamazaki"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.22996v1 Announce Type: cross \nAbstract: Minimizing the wall-clock time required to reach a target accuracy is crucial in federated learning (FL), where many applications require frequent model updates as data distributions evolve over time. Nevertheless, in heterogeneous environments, slow clients with limited computational and communication capabilities can delay global synchronization, forcing faster clients to wait and increasing the overall training time. To mitigate this straggler effect, recent studies have introduced per-round time constraints and adapted client workloads within the available time. However, these approaches primarily focus on local computation, whereas communication can become a major bottleneck in communication-limited environments, motivating the joint ",
-      "pdf_link": "https://arxiv.org/pdf/2610.22996.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.22996",
-      "submission_date": "2026-10-19T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-19T12:03:48.426328+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

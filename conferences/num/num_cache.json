@@ -1,54 +1,77 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-10-12T14:23:02.960574+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-10-20T10:54:54.355956+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2610.12618",
+      "forum_id": "2601.21635",
       "paper_number": -1,
-      "title": "Mesh-Native Tokenisation: Retrofitting Foundation Models to Unstructured Data",
+      "title": "Numerical analysis of a locking-free primal hybrid method for linear elasticity with $H(\\mathrm{div})$-conforming stress recovery",
       "authors": [
-        "Georg Maierhofer, Miles Cranmer, Payel Mukhopadhyay"
+        "Giovanni Taraschi, Maicon Ribeiro Correa"
       ],
       "keywords": [
         "cs.NA",
-        "scientific computing"
+        "numerical analysis"
       ],
-      "abstract": "arXiv:2610.12618v1 Announce Type: cross \nAbstract: Physics foundation models are an increasingly popular approach for building versatile emulators for spatiotemporal systems. They require tokenisation layers that lift physical field data into a latent representation suitable for dynamic processing. A typical choice for this layer is a convolutional encoder, which lifts field information in a locality-aware way and can be trained very efficiently. However, this choice cannot be applied to a large class of scientific computing problems where data are represented on unstructured meshes, for example simulations on domains with curved boundaries. Such data typically require graph neural network architectures, which are more expensive to train and, in the form currently used, encode information ",
-      "pdf_link": "https://arxiv.org/pdf/2610.12618.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.12618",
-      "submission_date": "2026-10-12T04:00:00+00:00",
-      "conference": "scientific computing",
+      "abstract": "arXiv:2601.21635v2 Announce Type: replace \nAbstract: In this work, we study a primal hybrid finite element method for the approximation of linear elasticity problems, posed in terms of displacement, an auxiliary pressure field, and a Lagrange multiplier related to the traction. We develop a general analysis for the existence and uniqueness of the solution for the discrete problem, which is applied to the construction of stable approximation spaces on triangular and quadrilateral meshes. The use of these spaces lead to optimal convergence orders, resulting in a locking-free method capable of providing robust approximations for nearly incompressible problems. Finally, we propose a strategy for recovering the stress field from the hybrid solution by solving element-wise sub-problems. The resu",
+      "pdf_link": "https://arxiv.org/pdf/2601.21635.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.21635",
+      "submission_date": "2026-10-20T04:00:00+00:00",
+      "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-12T14:23:02.956622+00:00"
+      "score": 14.5,
+      "updated_at": "2026-10-20T10:54:54.352446+00:00"
     },
     {
-      "forum_id": "2610.12336",
+      "forum_id": "2610.24704",
       "paper_number": -1,
-      "title": "asdex: Automatic Sparse Differentiation in JAX",
+      "title": "Numerical Analysis for a Nonlinear Coupled Thermoelastic System with Acoustic Boundary Conditions",
       "authors": [
-        "Adrian Hill, Guillaume Dalle"
+        "Adriano A. Alc\\^antara, Bruno A. Carmo, Juan B. L\\'imaco, Carlos M. Guzm\\'an"
       ],
       "keywords": [
         "cs.NA",
-        "scientific computing"
+        "numerical analysis"
       ],
-      "abstract": "arXiv:2610.12336v2 Announce Type: replace-cross \nAbstract: Many tasks in scientific computing and machine learning require the Jacobian or Hessian matrix of a function. Automatic differentiation (AD) computes these derivatives to machine precision, but materializing a dense $m \\times n$ Jacobian requires $n$ forward-mode or $m$ reverse-mode AD passes, one per column or row. For a large class of functions, each output depends on only a few inputs, making the derivative matrix sparse. Automatic sparse differentiation (ASD) exploits this structure in four steps: detection of the input-agnostic sparsity pattern, coloring of a graph to group columns or rows that can share an AD pass, compressed differentiation to compute a compressed derivative matrix with one AD pass per color, and finally dec",
-      "pdf_link": "https://arxiv.org/pdf/2610.12336.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.12336",
-      "submission_date": "2026-10-12T04:00:00+00:00",
-      "conference": "scientific computing",
+      "abstract": "arXiv:2610.24704v1 Announce Type: new \nAbstract: This paper presents the first $L^2$-norm error analysis for a nonlinear thermoelastic system with acoustic boundary conditions. The model involves three coupled variables: the acoustic potential $u$, the temperature $\\theta$, and the normal displacement to the boundary $\\delta$, with nonlinearities $|u|^d u$ in the domain and $g(\\cdot,u')$ on the boundary, in addition to a nonlocal term $\\beta(\\int_\\Omega\\theta dx)\\Delta\\theta$ in the heat equation. We establish error estimates for the fully discrete problem, using the Crank-Nicolson method for time discretization and finite element method with basis of degree $r \\geqslant 1$ for space discretization. We demonstrate that the domain-boundary coupling induces a half-power loss in the spatial c",
+      "pdf_link": "https://arxiv.org/pdf/2610.24704.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.24704",
+      "submission_date": "2026-10-20T04:00:00+00:00",
+      "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-12T14:23:02.957774+00:00"
+      "score": 12.5,
+      "updated_at": "2026-10-20T10:54:54.350614+00:00"
+    },
+    {
+      "forum_id": "2303.17755",
+      "paper_number": -1,
+      "title": "Lattice-based kernel approximation and serendipitous weights for parametric PDEs in very high dimensions",
+      "authors": [
+        "Vesa Kaarnioja, Frances Y. Kuo, Ian H. Sloan"
+      ],
+      "keywords": [
+        "cs.NA",
+        "SIAM"
+      ],
+      "abstract": "arXiv:2303.17755v3 Announce Type: replace \nAbstract: We describe a fast method for solving elliptic partial differential equations (PDEs) with uncertain coefficients using kernel interpolation at a lattice point set. By representing the input random field of the system using the model proposed by Kaarnioja, Kuo, and Sloan (SIAM J. Numer. Anal. 2020), in which a countable number of independent random variables enter the random field as periodic functions, it was shown by Kaarnioja, Kazashi, Kuo, Nobile, and Sloan (Numer. Math. 2022) that the lattice-based kernel interpolant can be constructed for the PDE solution as a function of the stochastic variables in a highly efficient manner using fast Fourier transform (FFT). In this work, we discuss the connection between our model and the popular",
+      "pdf_link": "https://arxiv.org/pdf/2303.17755.pdf",
+      "forum_link": "https://arxiv.org/abs/2303.17755",
+      "submission_date": "2026-10-20T04:00:00+00:00",
+      "conference": "SIAM",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-10-20T10:54:54.352148+00:00"
     }
   ]
 }
