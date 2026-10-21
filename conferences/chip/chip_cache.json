@@ -1,100 +1,123 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-10-19T12:03:50.773109+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-10-21T11:07:52.360818+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2610.23767",
+      "forum_id": "2610.28246",
       "paper_number": -1,
-      "title": "TileDRAM: Compiler-Controlled Tile-to-DRAM Layouts for 3D DRAM GPGPUs",
+      "title": "DiffRMST: A GPU-Accelerated Fully Differentiable Rectilinear Minimum Spanning Tree Wirelength Model for Global Placement",
       "authors": [
-        "Guangyuan Xu, Lanxuan Zhang, Ziyang Li, Zhaoshi Li, Yajun Ha"
+        "Fuxing Huang, Hao Ai, Wenxing Zhu, Xinning Liu, Ziran Zhu"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "ISPD"
       ],
-      "abstract": "arXiv:2610.23767v1 Announce Type: new \nAbstract: Modern GPU compilers expose rich layout abstractions for mapping tensors to threads and on-chip resources, but compute-unit-local (CU-local) 3D DRAM architectures lack a corresponding abstraction for specifying how operand-tile data are\n  arranged within the DRAM address space. Without such an abstraction, conventional placement under the existing DRAM address mapping can subject structured tile accesses to severe row-buffer conflicts. We present TileDRAM, a compiler-runtime\n  toolchain that introduces tile-to-DRAM layouts as a compiler-visible abstraction for DRAM placement. TileDRAM extends the GPU Linear Layout abstraction from compute-side mapping targets to DRAM placement coordinates and selects layouts per\n  tile access signature, usin",
-      "pdf_link": "https://arxiv.org/pdf/2610.23767.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.23767",
-      "submission_date": "2026-10-19T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2610.28246v1 Announce Type: new \nAbstract: Analytical global placement requires a differentiable wirelength objective that accurately reflects routed interconnect cost. The widely used half-perimeter wirelength (HPWL) is efficient but overlooks the internal topology of multi-pin nets. The rectilinear Steiner minimum tree (RSMT) provides higher fidelity, but its underlying decision problem is NP-complete, and its discrete construction precludes direct use in gradient-based optimization. The rectilinear minimum spanning tree (RMST) offers a polynomial-time alternative, but remains nondifferentiable because of minimization over discrete spanning trees. To address these limitations, we present DiffRMST, a fully differentiable RMST wirelength model for analytical global placement. DiffRMS",
+      "pdf_link": "https://arxiv.org/pdf/2610.28246.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.28246",
+      "submission_date": "2026-10-21T04:00:00+00:00",
+      "conference": "ISPD",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-10-19T12:03:50.770352+00:00"
+      "score": 36.5,
+      "updated_at": "2026-10-21T11:07:52.358049+00:00"
     },
     {
-      "forum_id": "2610.22579",
+      "forum_id": "2610.28276",
       "paper_number": -1,
-      "title": "MemLLM: End-to-end In-Storage Acceleration of On-device Retrieval-Augmented Generation using Precomputed KV Caches",
+      "title": "RPolyPlan: A Unified Global Floorplanning and Legalization Framework for Rectilinear Soft Modules",
       "authors": [
-        "Seungkwan Kang, Hyungseok Ko, Heemin Kim, Myoungsoo Jung"
+        "Fuxing Huang, Wenxing Zhu, Xinning Liu, Ziran Zhu"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "ICCAD"
       ],
-      "abstract": "arXiv:2610.22579v1 Announce Type: new \nAbstract: Retrieval-augmented generation (RAG) on edge devices enables personalized large language model (LLM) inference while preserving privacy. However, RAG's inherent length asymmetry makes the prefill phase the dominant bottleneck. While precomputing the KV caches offline alleviates the prefill cost on server systems, the multi-gigabyte caches over the narrow interconnect create a severe I/O wall for on-device systems. To mitigate this, we propose MemLLM, an end-to-end in-storage processing (ISP) architecture that executes the complete attention pipeline based on precomputed KV caches within the SSD. MemLLM utilizes per-channel accelerators to fully utilize the aggregated NAND channel bandwidth and accelerates all KV cache-related computations on",
-      "pdf_link": "https://arxiv.org/pdf/2610.22579.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.22579",
-      "submission_date": "2026-10-19T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2610.28276v1 Announce Type: new \nAbstract: Floorplanning with rectilinear soft modules improves area utilization and wirelength by allowing modules to adapt to rectilinear polygon (RPoly) shapes. Existing methods typically construct rectilinear polygons through incremental refinement after obtaining a rectangular global solution, which confines polygon exploration to the neighborhood induced by the initial floorplan. This paper presents RPolyPlan, a unified framework for outline-free and fixed-outline floorplanning that directly incorporates continuously deformable rectilinear polygons into global floorplanning. To enable direct polygon optimization, we introduce a structured continuous representation and a differentiable polygon shaping model that dynamically optimizes rectilinear m",
+      "pdf_link": "https://arxiv.org/pdf/2610.28276.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.28276",
+      "submission_date": "2026-10-21T04:00:00+00:00",
+      "conference": "ICCAD",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-19T12:03:50.770039+00:00"
+      "score": 32.5,
+      "updated_at": "2026-10-21T11:07:52.358094+00:00"
     },
     {
-      "forum_id": "2610.23503",
+      "forum_id": "2610.27204",
       "paper_number": -1,
-      "title": "HBFSim: A Simulator for Exploring HBF in Memory Hierarchies for LLMs",
+      "title": "A Combined Streaming FPGA Architecture for Client-Side CKKS Encoding and Encryption",
       "authors": [
-        "Jinheng Li, Guosheng Wang, Hongchao Du, Shangyu Wu, Qiao Li, Chun Jason Xue"
+        "Joseph Kurina, Bogdan Pasca, Suleyman Demirsoy, Sunwoong Kim"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "FPGA"
       ],
-      "abstract": "arXiv:2610.23503v1 Announce Type: new \nAbstract: High Bandwidth Flash (HBF) has recently emerged as a promising technology that provides terabyte-scale accelerator-local capacity at bandwidths approaching HBM, with a potential cost-per-bit advantage over HBM. However, its NAND foundation brings long latency, out-of-place updates, and finite write endurance directly into the accelerator memory hierarchy, making its effects on performance and lifetime difficult to predict. To study this emerging design space, we present HBFSim, an LLM-aware event-driven simulator for heterogeneous HBM+HBF memory systems that preserves application-level memory semantics while modeling flash-internal behavior. HBFSim models HBM, HBF with host-managed flash translation, and conventional capacity tiers in one si",
-      "pdf_link": "https://arxiv.org/pdf/2610.23503.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.23503",
-      "submission_date": "2026-10-19T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2610.27204v1 Announce Type: cross \nAbstract: Homomorphic encryption allows a computing service to process encrypted data, but the client must first encode and encrypt its inputs. Sharing hardware between floating-point encoding and modular encryption reduces area but requires those transform roles to execute at different times. We present a streaming FPGA architecture for CKKS encoding and encryption that computes the shared floating-point encoding transform once and performs the integer transforms for six residue moduli in parallel. Dedicated transform pipelines exchange intermediate results on chip rather than through off-chip memory. DSP Builder generates the transform RTL, and Altera HLS IP Gen compiler compiles the surrounding SYCL pipeline into IP integrated with DMA and contro",
+      "pdf_link": "https://arxiv.org/pdf/2610.27204.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.27204",
+      "submission_date": "2026-10-21T04:00:00+00:00",
+      "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-19T12:03:50.770269+00:00"
+      "score": 2.5,
+      "updated_at": "2026-10-21T11:07:52.358143+00:00"
     },
     {
-      "forum_id": "2608.00894",
+      "forum_id": "2602.20802",
       "paper_number": -1,
-      "title": "Rethinking Agentic Kernel Generation for Emerging Accelerators",
+      "title": "LUTstructions: Fast-Reconfigurable FPGA-Based Instructions",
       "authors": [
-        "Ruijie Gao, Jirong Yang, Barry Lyu, Haoran Jin, Nathan Bleier"
+        "Philippos Papaphilippou"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2602.20802v5 Announce Type: replace \nAbstract: General-purpose processors feature a limited number of instructions based on an instruction set. They can be numerous, such as with vector extensions that include hundreds or thousands of instructions, but this comes at a cost; they are often unable to express arbitrary tasks efficiently. This paper explores the concept of having reconfigurable instructions by incorporating reconfigurable areas in a softcore. It follows a relatively new computing paradigm for seamlessly loading instruction implementation-carrying bitstreams from main memory. The resulting softcore is entirely evaluated on an FPGA, essentially having an FPGA-on-FPGA for the instruction implementations, with no notable operating frequency overhead. This is achieved with a ",
+      "pdf_link": "https://arxiv.org/pdf/2602.20802.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.20802",
+      "submission_date": "2026-10-21T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-10-21T11:07:52.358217+00:00"
+    },
+    {
+      "forum_id": "2610.27508",
+      "paper_number": -1,
+      "title": "KatoANN: Enabling Near-Exact Vector Search at the Speed of Lossy Scans with CPU Matrix Engines",
+      "authors": [
+        "Soobin Cho, Gyuyeong Kim"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2608.00894v3 Announce Type: replace \nAbstract: Emerging accelerators often lack mature compiler backends, motivating neural agents that generate and repair kernels from architectural documentation and simulator feedback. This approach repeatedly reconstructs workload-invariant machine semantics, including instruction behavior, legality constraints, synchronization rules, and memory protocols, for every workload. We argue that these semantics should be compiled once into a persistent symbolic artifact, while neural reasoning should focus on workload-dependent mapping decisions.\n  We present Zomboss, a compiler-mediated agentic framework for kernel generation that places neural search within a verified compiler boundary. Zomboss compiles machine semantics and legality constraints into ",
-      "pdf_link": "https://arxiv.org/pdf/2608.00894.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.00894",
-      "submission_date": "2026-10-19T04:00:00+00:00",
+      "abstract": "arXiv:2610.27508v1 Announce Type: cross \nAbstract: Distance scans in partition-family approximate nearest-neighbor (ANN) search are typically limited by memory bandwidth. Existing systems therefore improve throughput by reading fewer bytes per candidate, often at the cost of recall. We present KatoANN, a CPU ANN search system that removes this tradeoff by batching distance scans on Intel AMX, a CPU matrix engine. Batching allows multiple queries to reuse each fetched vector code, shifting the scan from memory-bound to compute-bound and enabling near-exact distances at the speed of a lossy scan. KatoANN stores each vector once as a 16-bit SQ16 code split into high- and low-byte planes. Its adaptive rank-then-refine scan first ranks all candidates using only the high byte, then refines a sma",
+      "pdf_link": "https://arxiv.org/pdf/2610.27508.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.27508",
+      "submission_date": "2026-10-21T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-19T12:03:50.770628+00:00"
+      "score": 1.5,
+      "updated_at": "2026-10-21T11:07:52.358175+00:00"
     }
   ]
 }

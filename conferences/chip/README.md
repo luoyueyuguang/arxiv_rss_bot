@@ -1,15 +1,16 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-10-20 10:54:23 UTC
-- **Total Filtered Papers**: 4
-- **Displaying**: 4 (arxiv: 4)
+- **Last Updated**: 2026-10-21 11:07:52 UTC
+- **Total Filtered Papers**: 5
+- **Displaying**: 5 (arxiv: 5)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [TileDRAM: Compiler-Controlled Tile-to-DRAM Layouts for 3D DRAM GPGPUs](https://arxiv.org/abs/2610.23767) | `ARXIV` | 12.0 |
-| 2 | [MemLLM: End-to-end In-Storage Acceleration of On-device Retrieval-Augmented Generation using Precomputed KV Caches](https://arxiv.org/abs/2610.22579) | `ARXIV` | 1.0 |
-| 3 | [HBFSim: A Simulator for Exploring HBF in Memory Hierarchies for LLMs](https://arxiv.org/abs/2610.23503) | `ARXIV` | 1.0 |
-| 4 | [Rethinking Agentic Kernel Generation for Emerging Accelerators](https://arxiv.org/abs/2608.00894) | `ARXIV` | 1.0 |
+| 1 | [DiffRMST: A GPU-Accelerated Fully Differentiable Rectilinear Minimum Spanning Tree Wirelength Model for Global Placement](https://arxiv.org/abs/2610.28246) | `ARXIV` | 36.5 |
+| 2 | [RPolyPlan: A Unified Global Floorplanning and Legalization Framework for Rectilinear Soft Modules](https://arxiv.org/abs/2610.28276) | `ARXIV` | 32.5 |
+| 3 | [A Combined Streaming FPGA Architecture for Client-Side CKKS Encoding and Encryption](https://arxiv.org/abs/2610.27204) | `ARXIV` | 2.5 |
+| 4 | [LUTstructions: Fast-Reconfigurable FPGA-Based Instructions](https://arxiv.org/abs/2602.20802) | `ARXIV` | 2.5 |
+| 5 | [KatoANN: Enabling Near-Exact Vector Search at the Speed of Lossy Scans with CPU Matrix Engines](https://arxiv.org/abs/2610.27508) | `ARXIV` | 1.5 |

@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-10-20T10:54:54.270324+00:00",
-  "paper_count": 30,
+  "last_updated": "2026-10-21T11:08:22.175642+00:00",
+  "paper_count": 32,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -171,6 +171,29 @@
       "updated_at": "2026-07-23T08:28:36.615532+00:00"
     },
     {
+      "forum_id": "2511.15633",
+      "paper_number": -1,
+      "title": "Hierarchical Semantic Tree Anchoring for CLIP-Based Class-Incremental Learning",
+      "authors": [
+        "Tao Hu, Lan Li, Zhen-Hao Xie, Da-Wei Zhou"
+      ],
+      "keywords": [
+        "cs.LG",
+        "NeurIPS"
+      ],
+      "abstract": "arXiv:2511.15633v2 Announce Type: replace-cross \nAbstract: Class-Incremental Learning (CIL) enables models to learn new classes continually while preserving past knowledge. Recently, vision-language models like CLIP offer transferable features via multimodal pre-training, making them well-suited for CIL. However, real-world visual and linguistic concepts are inherently hierarchical: a textual concept like \"dog\" subsumes fine-grained categories such as \"Labrador\" and \"Golden Retriever,\" and each category is associated with corresponding images. Nevertheless, existing CLIP-based CIL methods fail to explicitly capture this inherent hierarchy, leading to feature drift of fine-grained classes during incremental updates and ultimately to catastrophic forgetting. To address this challenge, we pro",
+      "pdf_link": "https://arxiv.org/pdf/2511.15633.pdf",
+      "forum_link": "https://arxiv.org/abs/2511.15633",
+      "submission_date": "2026-10-21T04:00:00+00:00",
+      "conference": "NeurIPS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.0,
+      "updated_at": "2026-10-21T11:07:52.893961+00:00"
+    },
+    {
       "forum_id": "mlr-icml25-23",
       "paper_number": 23,
       "title": "iWISDM: Assessing instruction following in multimodal models at scale",
@@ -307,6 +330,29 @@
       "ratings": [],
       "score": 21.0,
       "updated_at": "2026-08-14T07:42:18.885647+00:00"
+    },
+    {
+      "forum_id": "2605.10765",
+      "paper_number": -1,
+      "title": "Dynamic Cross-Modal Prompt Generation for Multimodal Continual Instruction Tuning",
+      "authors": [
+        "Tao Hu, Da-Wei Zhou"
+      ],
+      "keywords": [
+        "cs.AI",
+        "NeurIPS"
+      ],
+      "abstract": "arXiv:2605.10765v2 Announce Type: replace-cross \nAbstract: Multimodal Large Language Models (MLLMs) achieve strong performance through instruction tuning, yet real-world deployment often requires continual capability expansion across sequential tasks. In such scenarios, Multimodal Continual Instruction Tuning (MCIT) aims to acquire new capabilities while limiting catastrophic forgetting. Existing methods mainly follow a module-composition paradigm: they maintain task-level prompts or LoRA experts and dynamically route or aggregate a subset of them at inference. However, samples within the same task can still differ substantially in visual scenes, question intents, and reasoning demands. This motivates instance-level adaptation to individual query-image pairs rather than only selecting or c",
+      "pdf_link": "https://arxiv.org/pdf/2605.10765.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.10765",
+      "submission_date": "2026-10-21T04:00:00+00:00",
+      "conference": "NeurIPS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 17.5,
+      "updated_at": "2026-10-21T11:07:52.641992+00:00"
     },
     {
       "forum_id": "mlr-icml25-38",

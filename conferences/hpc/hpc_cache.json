@@ -1,31 +1,77 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-10-19T12:03:48.343906+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-10-21T11:07:49.754688+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2610.22435",
+      "forum_id": "2610.27755",
       "paper_number": -1,
-      "title": "TRACE: Transformer Residual Activation Codebook Encoding for Communication-efficient Distributed Edge Inference",
+      "title": "Evaluating Runtime Prediction and Conservative Walltime Policies in HPC Systems",
       "authors": [
-        "Muhammad Azlan Qazi, Alexandros Iosifidis, Qi Zhang"
+        "Hector Romero Ugalde, Youssef Faqir-Rhazoui, Marlon Funk, Jesus Gorro\\~nogoitia Cruz"
+      ],
+      "keywords": [
+        "cs.DC",
+        "Supercomputing"
+      ],
+      "abstract": "arXiv:2610.27755v1 Announce Type: new \nAbstract: Efficient use of large-scale supercomputing systems depends on accurate runtime estimation and walltime selection. To avoid premature termination, users often overestimate walltime, leading to poor resource utilization and reduced scheduling efficiency. This paper presents a predictor-agnostic framework for safe walltime recommendation in production HPC environments. Rather than proposing a new runtime prediction model, the primary contribution is the SAFE decision layer, which converts predicted runtimes into conservative bounded walltime recommendations suitable for deployment. Runtime prediction is therefore treated as a modular component within the proposed framework. We evaluate the approach using large-scale production job histories fr",
+      "pdf_link": "https://arxiv.org/pdf/2610.27755.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.27755",
+      "submission_date": "2026-10-21T04:00:00+00:00",
+      "conference": "Supercomputing",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-10-21T11:07:49.385009+00:00"
+    },
+    {
+      "forum_id": "2610.24865",
+      "paper_number": -1,
+      "title": "A mechanism for collective foraging: percolating recruitment cascades coupled to a maximum-entropy",
+      "authors": [
+        "Galen J. Wilkerson"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.22435v1 Announce Type: cross \nAbstract: Distributed Transformer inference across co-located edge devices is fundamentally communication-bound, as exchanging activations between sequence-parallel partitions dominates inference latency under commodity edge bandwidths. Existing compression schemes reduce this cost but retain a structural bottleneck: the received data must still undergo key/value projection before attention can proceed, serializing computation behind communication. This paper presents Transformer Residual Activation Codebook Encoding (Trace), a framework that addresses these limitations. Trace places a Vector Quantizer (VQ) at the post-attention residual of every Transformer layer and precomputes codebook-indexed key/value representations. During inference, exchange",
-      "pdf_link": "https://arxiv.org/pdf/2610.22435.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.22435",
-      "submission_date": "2026-10-19T04:00:00+00:00",
+      "abstract": "arXiv:2610.24865v2 Announce Type: replace-cross \nAbstract: Foraging recruitment is a contagion: an agent that finds a resource triggers a linear-threshold cascade, the model built for rumour and adoption spread on social networks, now embedded in space. Because activation is degree-normalized, the same rule that spreads the cascade also stifles it as neighbourhoods crowd, so the swarm aggregates on a resource and then releases to explore again. The cascade runs on the communication network, but acting on it moves agents in physical space, and that motion rewires the network: network and space are one coupled system, and this feedback, not any tuning, makes the coordination self-limiting. Because recruitment chains along the graph rather than reaching near neighbours alone, whether a discov",
+      "pdf_link": "https://arxiv.org/pdf/2610.24865.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.24865",
+      "submission_date": "2026-10-21T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 14.0,
-      "updated_at": "2026-10-19T12:03:47.827127+00:00"
+      "score": 2.0,
+      "updated_at": "2026-10-21T11:07:49.386296+00:00"
+    },
+    {
+      "forum_id": "2610.28392",
+      "paper_number": -1,
+      "title": "Budgeted Admission from Timestamped Capacity Records in Shared Clusters",
+      "authors": [
+        "Andrew Bond, Syed Izhan Khilji"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2610.28392v1 Announce Type: new \nAbstract: A cluster admission gate can receive a capacity record that no longer matches current schedulability. We study one exogenous binary schedulability unit under a bound on the joint probability of admission and unavailability. For a symmetric Markov state, we derive the stationary admission frontier for a fixed observation delay and apply finite likelihood allocation to a delay-tagged delivered record. A one-sided exact binomial endpoint calibrates each fitted policy, and exact enumeration confirms the per-policy confidence target in every tested parameter cell. A separate deterministic guard charges every unresolved admission against the realized allowance and bounds unavailable-state admissions at every prefix under truthful outcome feedback.",
+      "pdf_link": "https://arxiv.org/pdf/2610.28392.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.28392",
+      "submission_date": "2026-10-21T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-10-21T11:07:49.385153+00:00"
     }
   ]
 }

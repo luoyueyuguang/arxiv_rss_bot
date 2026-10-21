@@ -1,54 +1,31 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-10-19T12:03:47.757231+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-10-21T11:07:49.243316+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2607.05475",
+      "forum_id": "2610.27376",
       "paper_number": -1,
-      "title": "Is Your NPU Ready for LLMs? Dissecting the Hidden Efficiency Bottlenecks in Mobile LLM Inference",
+      "title": "Green Light: Carbon-Aware Design of Photonic Transformer Accelerators at the Edge",
       "authors": [
-        "Guanyu Cai, Ruiming Tian, Lang Yang, Zhouhong Ren, Jinliang Yuan, Lingkun Li, Jiliang Wang"
+        "Bharat Bhatta, Ishan Thakkar"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2607.05475v2 Announce Type: replace \nAbstract: Deploying Large Language Models (LLMs) on mobile devices enhances privacy and reduces latency, but is severely constrained by hardware inefficiencies. We present the first comprehensive, cross-layer measurement study of mobile LLM inference, spanning five mainstream frameworks (e.g., llama.cpp and GENIE) and three hardware backends (CPU, GPU, and NPU). To enable this analysis, we develop PowerBench, a fine-grained profiling tool that measures LLM throughput and provides the first backend-specific energy attribution for mobile LLM inference, going beyond traditional device-level measurements. We further conduct hardware microbenchmarks to characterize the memory-system performance and compute capabilities of mobile CPUs, GPUs, and NPUs. O",
-      "pdf_link": "https://arxiv.org/pdf/2607.05475.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.05475",
-      "submission_date": "2026-10-19T04:00:00+00:00",
+      "abstract": "arXiv:2610.27376v1 Announce Type: new \nAbstract: Migrating transformer inference to the edge requires sustainability considerations that encompass both operation and manufacturing, rather than operational energy alone. Silicon photonics enables high-bandwidth, low-energy matrix multiplication; however, existing microring-resonator-based Dot Product Unit (DPU) organizations have been tailored to convolutional computations and evaluated using analog signaling without accounting for embodied carbon footprints. We adapt three DPU organizations (AMW, MAW, and MWA) to transformer inference workloads and extend each organization to stochastic signaling, yielding six organizations in total. We then calculate their embodied and operational carbon per inference. Across five transformer models and fo",
+      "pdf_link": "https://arxiv.org/pdf/2610.27376.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.27376",
+      "submission_date": "2026-10-21T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 24.5,
-      "updated_at": "2026-10-19T12:03:47.754152+00:00"
-    },
-    {
-      "forum_id": "2602.22248",
-      "paper_number": -1,
-      "title": "Machine Learning on Heterogeneous, Edge, and Quantum Hardware for Particle Physics (ML-HEQUPP)",
-      "authors": [
-        "Julia Gonski, Jennifer Ott, Shiva Abbaszadeh, Sagar Addepalli, Matteo Cremonesi, Jennet Dickinson, Giuseppe Di Guglielmo, Yigit Erdem Ertorer, Lindsey Gray, Ryan Herbst, Christian Herwig, Tae Min Hong, Benedikt Maier, Maryam Bayat Makou, David W. Miller, Mark S. Neubauer, Cristian Pena, Dylan Rankin, Seon-Hee Seo, Giordon Stark, Alexander Tapper, Audrey Corbeil Therrien, Ioannis Xiotidis, Keisuke Yoshihara, Nural Akchurin, Carlos Arguelles, Saptaparna Bhattacharya, Lorenzo Borella, Christian Boutan, Tom Braine, James Brau, Marco Carminati, Antonio Chahine, Yuan-Tang Chou, Talal Ahmed Chowdhury, Seokju Chung, Ryan Coffee, Alberto Coppi, Mariarosaria D'Alfonso, Abhilasha Dave, Chance Desmet, Angela Di Fulvio, Karri DiPetrillo, Javier Duarte, Auralee Edelen, Jan Eysermans, Yongbin Feng, Emmett Forrestel, Julian Garcia Pardinas, Loredana Gastaldo, Lino Gerlach, Abarajithan Gnaneswaran, Loukas Gouskos, Katya Govorkova, Carl Grace, Christopher Grant, Philip Harris, Ciaran Hasnip, Timon Heim, Abraham Holtermann, Gian Michele Innocenti, Koji Ishidoshiro, Miaochen Jin, Jyothisraj Johnson, Stephen Jones, Andreas Jung, Nicholas Kamp, Georgia Karagiorgi, Ryan Kastner, Doojin Kim, Kyoungchul Kong, Katie Kudela, Bo-Cheng Lai, Yun-Tsung Lai, Jelena Lalic, Tommy Lam, Jeffrey Lazar, Aobo Li, Zepeng Li, Haoyun Liu, Qibin Liu, Vladimir Loncar, Zhenghua Ma, Luca Macchiarulo, Christopher Madrid, Prashansa Mukim, Victoria Nguyen, Sungbin Oh, Isobel Ojalvo, Hideyoshi Ozaki, Simone Pagan Griso, Santosh Parajuli, Myeonghun Park, Benjamin Parpillon, Christoph Paus, Sara Pozzi, Ema Puljak, Benjamin Ramhorst, Amy Roberts, Larry Ruckman, Sebastian Schmitt, Kate Scholberg, Noah Singer, Eluned Anne Smith, Alexandre Sousa, Michael Spannowsky, Kaito Sugizaki, Sioni Summers, Yanwen Sun, Daniel Tapia Takaki, Antonino Tumeo, Caterina Vernieri, Belina von Krosigk, Yash Vora, Linyan Wan, Michael H. L. S. Wang, Amanda Weinstein, Andy White, Simon Williams, Liangyu Wu, Felix Yu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2602.22248v4 Announce Type: replace-cross \nAbstract: The next generation of particle physics experiments will face a new era of challenges in data acquisition, due to unprecedented data rates and volumes along with extreme environments and operational constraints. Harnessing this data for scientific discovery demands real-time inference and decision-making, intelligent data reduction, and efficient processing architectures beyond current capabilities. Crucial to the success of this experimental paradigm are several emerging technologies, such as artificial intelligence and machine learning (AI/ML), silicon microelectronics, and the advent of quantum algorithms and processing. Their intersection includes areas of research such as low-power and low-latency devices for edge computing, h",
-      "pdf_link": "https://arxiv.org/pdf/2602.22248.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.22248",
-      "submission_date": "2026-10-19T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-10-19T12:03:47.754240+00:00"
+      "score": 53.5,
+      "updated_at": "2026-10-21T11:07:49.240911+00:00"
     }
   ]
 }
