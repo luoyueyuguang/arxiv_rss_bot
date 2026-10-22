@@ -1,77 +1,77 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-10-21T11:07:49.754688+00:00",
+  "last_updated": "2026-10-22T11:07:40.226160+00:00",
   "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2610.27755",
+      "forum_id": "2610.28759",
       "paper_number": -1,
-      "title": "Evaluating Runtime Prediction and Conservative Walltime Policies in HPC Systems",
+      "title": "GPU-Accelerated Construction of the Gabriel Graph: Parallelization Strategies and Applications to Large-Margin Classification and Graph-Based Clustering",
       "authors": [
-        "Hector Romero Ugalde, Youssef Faqir-Rhazoui, Marlon Funk, Jesus Gorro\\~nogoitia Cruz"
-      ],
-      "keywords": [
-        "cs.DC",
-        "Supercomputing"
-      ],
-      "abstract": "arXiv:2610.27755v1 Announce Type: new \nAbstract: Efficient use of large-scale supercomputing systems depends on accurate runtime estimation and walltime selection. To avoid premature termination, users often overestimate walltime, leading to poor resource utilization and reduced scheduling efficiency. This paper presents a predictor-agnostic framework for safe walltime recommendation in production HPC environments. Rather than proposing a new runtime prediction model, the primary contribution is the SAFE decision layer, which converts predicted runtimes into conservative bounded walltime recommendations suitable for deployment. Runtime prediction is therefore treated as a modular component within the proposed framework. We evaluate the approach using large-scale production job histories fr",
-      "pdf_link": "https://arxiv.org/pdf/2610.27755.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.27755",
-      "submission_date": "2026-10-21T04:00:00+00:00",
-      "conference": "Supercomputing",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-10-21T11:07:49.385009+00:00"
-    },
-    {
-      "forum_id": "2610.24865",
-      "paper_number": -1,
-      "title": "A mechanism for collective foraging: percolating recruitment cascades coupled to a maximum-entropy",
-      "authors": [
-        "Galen J. Wilkerson"
+        "Diego Sanches Nere dos Santos, Luiz Carlos Bambirra Torres"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.24865v2 Announce Type: replace-cross \nAbstract: Foraging recruitment is a contagion: an agent that finds a resource triggers a linear-threshold cascade, the model built for rumour and adoption spread on social networks, now embedded in space. Because activation is degree-normalized, the same rule that spreads the cascade also stifles it as neighbourhoods crowd, so the swarm aggregates on a resource and then releases to explore again. The cascade runs on the communication network, but acting on it moves agents in physical space, and that motion rewires the network: network and space are one coupled system, and this feedback, not any tuning, makes the coordination self-limiting. Because recruitment chains along the graph rather than reaching near neighbours alone, whether a discov",
-      "pdf_link": "https://arxiv.org/pdf/2610.24865.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.24865",
-      "submission_date": "2026-10-21T04:00:00+00:00",
+      "abstract": "arXiv:2610.28759v1 Announce Type: new \nAbstract: The Gabriel graph is a proximity graph widely used in computational geometry and geometric machine learning, underlying large-margin classifiers and, as we show in this work, density-aware clustering methods. Its construction, however, has cubic time complexity $O(N^3)$ in the naive formulation, which severely limits its use on datasets beyond a few thousand samples. This paper presents a set of GPU parallelization strategies, implemented in CUDA, that make Gabriel graph construction practical at scale. We introduce (i) an implicit closed-form mapping from a linear thread index to the corresponding vertex pair $(i,j)$, which removes the need for an explicit $O(N^2)$ adjacency structure and lets every thread locate its pair in constant time a",
+      "pdf_link": "https://arxiv.org/pdf/2610.28759.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.28759",
+      "submission_date": "2026-10-22T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-10-21T11:07:49.386296+00:00"
+      "score": 45.5,
+      "updated_at": "2026-10-22T11:07:39.783726+00:00"
     },
     {
-      "forum_id": "2610.28392",
+      "forum_id": "2610.28867",
       "paper_number": -1,
-      "title": "Budgeted Admission from Timestamped Capacity Records in Shared Clusters",
+      "title": "Engineering Low-Latency, High-Throughput Quantum Decoders on NVIDIA GPUs",
       "authors": [
-        "Andrew Bond, Syed Izhan Khilji"
+        "Stefano Markidis, Luca Pennati, Ivy Peng"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.28392v1 Announce Type: new \nAbstract: A cluster admission gate can receive a capacity record that no longer matches current schedulability. We study one exogenous binary schedulability unit under a bound on the joint probability of admission and unavailability. For a symmetric Markov state, we derive the stationary admission frontier for a fixed observation delay and apply finite likelihood allocation to a delay-tagged delivered record. A one-sided exact binomial endpoint calibrates each fitted policy, and exact enumeration confirms the per-policy confidence target in every tested parameter cell. A separate deterministic guard charges every unresolved admission against the realized allowance and bounds unavailable-state admissions at every prefix under truthful outcome feedback.",
-      "pdf_link": "https://arxiv.org/pdf/2610.28392.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.28392",
-      "submission_date": "2026-10-21T04:00:00+00:00",
+      "abstract": "arXiv:2610.28867v1 Announce Type: new \nAbstract: We design and optimize a quantum error correction (QEC) decoder for NVIDIA GPUs, combining Relay belief propagation, a state-of-the-art message-passing algorithm, with order-zero ordered statistics post-processing. Our implementation uses CUDA Graphs to control GPU execution, stops updates for converged samples, and collects unresolved samples in queues for post-processing. We optimize sparse traversal through coalesced message accesses, prefetching, and register reuse, and accelerate binary post-processing with warp-level collectives. In addition, mixed FP16-FP32 arithmetic and INT8 quantization reduce message storage and traffic while retaining accuracy using accumulators at higher precision. We evaluate surface, hypergraph product, and bi",
+      "pdf_link": "https://arxiv.org/pdf/2610.28867.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.28867",
+      "submission_date": "2026-10-22T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-10-21T11:07:49.385153+00:00"
+      "score": 43.0,
+      "updated_at": "2026-10-22T11:07:39.783770+00:00"
+    },
+    {
+      "forum_id": "2610.17091",
+      "paper_number": -1,
+      "title": "MCCL: Measurement-based Collective Communication Library",
+      "authors": [
+        "Michele Ferrero, Gabriele Castellano, Paolo Medagliani, Sebastien Martin, Roberto Morabito, Massimo Gallo"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2610.17091v2 Announce Type: replace-cross \nAbstract: Collective communication is a critical performance bottleneck in large-scale distributed training. Existing libraries and synthesis frameworks compute open-loop schedules once, assuming a static topology and peak link capacities. In production, however, persistent gray failures can silently degrade link throughput and latency for hours, causing pre-computed schedules to lose much of their efficiency during execution. In this paper, we present Measurement-based Collective Communication Library (MCCL), a collective communication library that closes the loop between runtime network measurement and dynamic schedule synthesis. MCCL passively measures GPU-to-GPU throughput, detects persistent degradation, re-synthesizes the affected comm",
+      "pdf_link": "https://arxiv.org/pdf/2610.17091.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.17091",
+      "submission_date": "2026-10-22T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 16.5,
+      "updated_at": "2026-10-22T11:07:39.784799+00:00"
     }
   ]
 }

@@ -1,123 +1,54 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-10-21T11:07:52.360818+00:00",
-  "paper_count": 5,
+  "last_updated": "2026-10-22T11:07:43.062314+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2610.28246",
+      "forum_id": "2610.29503",
       "paper_number": -1,
-      "title": "DiffRMST: A GPU-Accelerated Fully Differentiable Rectilinear Minimum Spanning Tree Wirelength Model for Global Placement",
+      "title": "Hard and Soft Real-Time DNN Inference Scheduling on Heterogeneous Multi-Accelerator Systems via Reinforcement Learning",
       "authors": [
-        "Fuxing Huang, Hao Ai, Wenxing Zhu, Xinning Liu, Ziran Zhu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "ISPD"
-      ],
-      "abstract": "arXiv:2610.28246v1 Announce Type: new \nAbstract: Analytical global placement requires a differentiable wirelength objective that accurately reflects routed interconnect cost. The widely used half-perimeter wirelength (HPWL) is efficient but overlooks the internal topology of multi-pin nets. The rectilinear Steiner minimum tree (RSMT) provides higher fidelity, but its underlying decision problem is NP-complete, and its discrete construction precludes direct use in gradient-based optimization. The rectilinear minimum spanning tree (RMST) offers a polynomial-time alternative, but remains nondifferentiable because of minimization over discrete spanning trees. To address these limitations, we present DiffRMST, a fully differentiable RMST wirelength model for analytical global placement. DiffRMS",
-      "pdf_link": "https://arxiv.org/pdf/2610.28246.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.28246",
-      "submission_date": "2026-10-21T04:00:00+00:00",
-      "conference": "ISPD",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 36.5,
-      "updated_at": "2026-10-21T11:07:52.358049+00:00"
-    },
-    {
-      "forum_id": "2610.28276",
-      "paper_number": -1,
-      "title": "RPolyPlan: A Unified Global Floorplanning and Legalization Framework for Rectilinear Soft Modules",
-      "authors": [
-        "Fuxing Huang, Wenxing Zhu, Xinning Liu, Ziran Zhu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "ICCAD"
-      ],
-      "abstract": "arXiv:2610.28276v1 Announce Type: new \nAbstract: Floorplanning with rectilinear soft modules improves area utilization and wirelength by allowing modules to adapt to rectilinear polygon (RPoly) shapes. Existing methods typically construct rectilinear polygons through incremental refinement after obtaining a rectangular global solution, which confines polygon exploration to the neighborhood induced by the initial floorplan. This paper presents RPolyPlan, a unified framework for outline-free and fixed-outline floorplanning that directly incorporates continuously deformable rectilinear polygons into global floorplanning. To enable direct polygon optimization, we introduce a structured continuous representation and a differentiable polygon shaping model that dynamically optimizes rectilinear m",
-      "pdf_link": "https://arxiv.org/pdf/2610.28276.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.28276",
-      "submission_date": "2026-10-21T04:00:00+00:00",
-      "conference": "ICCAD",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-10-21T11:07:52.358094+00:00"
-    },
-    {
-      "forum_id": "2610.27204",
-      "paper_number": -1,
-      "title": "A Combined Streaming FPGA Architecture for Client-Side CKKS Encoding and Encryption",
-      "authors": [
-        "Joseph Kurina, Bogdan Pasca, Suleyman Demirsoy, Sunwoong Kim"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2610.27204v1 Announce Type: cross \nAbstract: Homomorphic encryption allows a computing service to process encrypted data, but the client must first encode and encrypt its inputs. Sharing hardware between floating-point encoding and modular encryption reduces area but requires those transform roles to execute at different times. We present a streaming FPGA architecture for CKKS encoding and encryption that computes the shared floating-point encoding transform once and performs the integer transforms for six residue moduli in parallel. Dedicated transform pipelines exchange intermediate results on chip rather than through off-chip memory. DSP Builder generates the transform RTL, and Altera HLS IP Gen compiler compiles the surrounding SYCL pipeline into IP integrated with DMA and contro",
-      "pdf_link": "https://arxiv.org/pdf/2610.27204.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.27204",
-      "submission_date": "2026-10-21T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-10-21T11:07:52.358143+00:00"
-    },
-    {
-      "forum_id": "2602.20802",
-      "paper_number": -1,
-      "title": "LUTstructions: Fast-Reconfigurable FPGA-Based Instructions",
-      "authors": [
-        "Philippos Papaphilippou"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2602.20802v5 Announce Type: replace \nAbstract: General-purpose processors feature a limited number of instructions based on an instruction set. They can be numerous, such as with vector extensions that include hundreds or thousands of instructions, but this comes at a cost; they are often unable to express arbitrary tasks efficiently. This paper explores the concept of having reconfigurable instructions by incorporating reconfigurable areas in a softcore. It follows a relatively new computing paradigm for seamlessly loading instruction implementation-carrying bitstreams from main memory. The resulting softcore is entirely evaluated on an FPGA, essentially having an FPGA-on-FPGA for the instruction implementations, with no notable operating frequency overhead. This is achieved with a ",
-      "pdf_link": "https://arxiv.org/pdf/2602.20802.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.20802",
-      "submission_date": "2026-10-21T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-10-21T11:07:52.358217+00:00"
-    },
-    {
-      "forum_id": "2610.27508",
-      "paper_number": -1,
-      "title": "KatoANN: Enabling Near-Exact Vector Search at the Speed of Lossy Scans with CPU Matrix Engines",
-      "authors": [
-        "Soobin Cho, Gyuyeong Kim"
+        "Francesco Giulio Blanco, Enrico Russo, Giuseppe Ascia, Davide Patti, Maurizio Palesi"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.27508v1 Announce Type: cross \nAbstract: Distance scans in partition-family approximate nearest-neighbor (ANN) search are typically limited by memory bandwidth. Existing systems therefore improve throughput by reading fewer bytes per candidate, often at the cost of recall. We present KatoANN, a CPU ANN search system that removes this tradeoff by batching distance scans on Intel AMX, a CPU matrix engine. Batching allows multiple queries to reuse each fetched vector code, shifting the scan from memory-bound to compute-bound and enabling near-exact distances at the speed of a lossy scan. KatoANN stores each vector once as a 16-bit SQ16 code split into high- and low-byte planes. Its adaptive rank-then-refine scan first ranks all candidates using only the high byte, then refines a sma",
-      "pdf_link": "https://arxiv.org/pdf/2610.27508.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.27508",
-      "submission_date": "2026-10-21T04:00:00+00:00",
+      "abstract": "arXiv:2610.29503v1 Announce Type: new \nAbstract: We present a scheduling framework for heterogeneous multi-accelerator systems executing both hard real-time and soft real-time QoS-aware DNN inference workloads. The framework combines an online reinforcement learning (RL) scheduler with a deterministic runtime safety layer. The RL scheduler dynamically generates candidate schedules by jointly selecting sub-job priorities and accelerator assignments, while runtime certification guarantees that all HRT deadlines remain satisfied independently of the learned policy.\n  To enable runtime certification in heterogeneous precedence-constrained systems, we introduce a schedulability-preserving prefix replacement criterion based on machine-wise cuts. The proposed criterion guarantees that runtime-gen",
+      "pdf_link": "https://arxiv.org/pdf/2610.29503.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.29503",
+      "submission_date": "2026-10-22T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-10-21T11:07:52.358175+00:00"
+      "score": 12.0,
+      "updated_at": "2026-10-22T11:07:43.060503+00:00"
+    },
+    {
+      "forum_id": "2610.28676",
+      "paper_number": -1,
+      "title": "VHDLBench: Benchmarking and Fine-Tuning Large Language Models for VHDL-Based Chip Design",
+      "authors": [
+        "Patrik Drazic, Benaoumeur Senouci, Boualem Benatallah"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2610.28676v1 Announce Type: new \nAbstract: The rapid evolution of digital circuit complexity demands innovative approaches to hardware design automation. While Large Language Models (LLMs) have influenced software development, their application to Hardware Description Language (HDL) generation remains largely unexplored, particularly for VHDL. This paper presents a comprehensive study for AI-assisted digital circuit design, addressing gaps in current Electronic Design Automation workflows. The work introduces a VHDL dataset of 18,500+ syntax-verified examples from open-source repositories and converted Verilog designs. Five 7B-parameter LLMs were fine-tuned using parameter-efficient QLoRA technique, enabling deployment in resource-constrained environments. To evaluate model efficacy,",
+      "pdf_link": "https://arxiv.org/pdf/2610.28676.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.28676",
+      "submission_date": "2026-10-22T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.0,
+      "updated_at": "2026-10-22T11:07:43.060391+00:00"
     }
   ]
 }

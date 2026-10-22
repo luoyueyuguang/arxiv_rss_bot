@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-10-21T11:07:52.294652+00:00",
-  "paper_count": 312,
+  "last_updated": "2026-10-22T11:07:42.961621+00:00",
+  "paper_count": 311,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -69,6 +69,29 @@
       "ratings": [],
       "score": 132.0,
       "updated_at": "2026-07-21T08:54:17.392951+00:00"
+    },
+    {
+      "forum_id": "2610.28637",
+      "paper_number": -1,
+      "title": "To Keep or Not to Keep: Learning KV Cache Retention in Disaggregated LLM Serving Systems",
+      "authors": [
+        "Dong Liu, Yanxuan Yu, Eric Jiang, Shu Wang, Ying Nian Wu"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.28637v1 Announce Type: cross \nAbstract: Disaggregated \\textsc{LLM} serving separates prefill and decode across node pools, placing a network fabric between \\textsc{KV}-cache computation and consumption. This breaks a key assumption of classical cache policies: a miss no longer incurs only local recomputation, but also network transfer to the decode node. Likewise, admitting a block to the global cache requires an additional transfer, so poor retention decisions waste both memory and bandwidth. We present \\textbf{KVLearn}, a learning-based framework for cost-aware \\textsc{KV}-cache retention in disaggregated serving. KVLearn includes: (i) a lightweight Prefix Reuse Predictor (\\textsc{PRP}) that estimates reuse probability from structural and temporal prefix features without modif",
+      "pdf_link": "https://arxiv.org/pdf/2610.28637.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.28637",
+      "submission_date": "2026-10-22T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 128.0,
+      "updated_at": "2026-10-22T11:07:40.409232+00:00"
     },
     {
       "forum_id": "usenix-osdi26-96",
@@ -1110,6 +1133,29 @@
       "updated_at": "2026-07-21T08:54:22.933512+00:00"
     },
     {
+      "forum_id": "2610.30114",
+      "paper_number": -1,
+      "title": "The End of Consensus Research?",
+      "authors": [
+        "Cl\\'ement Burgelin, Rachid Guerraoui, Zicong Hong, Yinan Hu, Anne-Marie Kermarrec, Rafael Pires, Rasmus Moorits Veski, Martijn de Vos"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.30114v1 Announce Type: new \nAbstract: Consensus is a fundamental problem in distributed computing and at the core of state machine replication (SMR). Despite decades of active human research, discovering practical low-latency solutions to the problem is still open, as it requires combining protocol knowledge, correctness reasoning, implementation, and experimental evaluation. We report on how AI helped us discover A-greement, a new consensus protocol for geo-replicated state machines that significantly outperforms state-of-the-art solutions. Averaged across six deployments with 5 or 9 replicas, A-greement reduces the mean latency of a geo-distributed key-value store over the fastest baseline by 12.2% and 33.3% on write-heavy and read-heavy workloads, respectively, and matches th",
+      "pdf_link": "https://arxiv.org/pdf/2610.30114.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.30114",
+      "submission_date": "2026-10-22T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 54.5,
+      "updated_at": "2026-10-22T11:07:40.409200+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-26",
       "paper_number": 26,
       "title": "DistVS: Large-scale Vector Search with Compute-Memory Disaggregation",
@@ -1750,29 +1796,6 @@
       "ratings": [],
       "score": 42.5,
       "updated_at": "2026-07-21T08:54:17.399784+00:00"
-    },
-    {
-      "forum_id": "2511.14102",
-      "paper_number": -1,
-      "title": "Specter: Fast MoE Inference via Quantization-Enabled Multi-Step Speculative Offloading",
-      "authors": [
-        "Wenfeng Wang, Xiaofeng Hou, Xinfeng Xia, Xinkai WAng, Mingxuan Zhang, Peng Tang, Jiacheng Liu, Chao Li"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2511.14102v2 Announce Type: replace-cross \nAbstract: Mixture-of-experts (MoE) models often exceed a single accelerator's memory capacity. Offloading experts to host memory creates a severe PCIe I/O bottleneck because data-dependent routing keeps transfers on the critical path. We present Specter, an inference system that uses quantization to combine speculative decoding with expert offloading. Its lightweight quantized draft model runs efficiently on device while preserving high-fidelity expert activation patterns. This provides accurate multi-step lookahead over future expert usage, allowing the runtime to organize expert movement and execution ahead of verification and improve both communication and execution efficiency. Under single-request inference, Specter achieves an average 1",
-      "pdf_link": "https://arxiv.org/pdf/2511.14102.pdf",
-      "forum_link": "https://arxiv.org/abs/2511.14102",
-      "submission_date": "2026-10-21T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 42.0,
-      "updated_at": "2026-10-21T11:07:49.963495+00:00"
     },
     {
       "forum_id": "usenix-osdi26-67",
@@ -3386,17 +3409,17 @@
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2610.28620v1 Announce Type: new \nAbstract: Ternary LLMs read only a few gigabytes per decoded token, yet on dual-socket servers with four NUMA nodes the fastest ternary runtime we found uses less than half of the memory bandwidth. Placing each weight on the node of the thread that reads it is necessary but not enough: in a decode engine with node-local weights that reuses ik_llama.cpp's kernels, threads on two generations of Xeon servers still spend 20-48% of each token waiting at synchronization points. Per-thread barrier traces show that most of the wait is for the slowest threads of each node; the barriers' own latency (microseconds each, but up to 12% of the token for the smallest model) and serial per-node work are smaller parts. On identical kernels, a Megatron-style column spl",
+      "abstract": "arXiv:2610.28620v2 Announce Type: replace \nAbstract: Ternary LLMs read only a few gigabytes per decoded token, yet on dual-socket servers with four NUMA nodes the fastest ternary runtime we found uses less than half of the memory bandwidth. Placing each weight on the node of the thread that reads it is necessary but not enough: in a decode engine with node-local weights that reuses ik_llama's kernels, threads on two generations of Xeon servers still spend 20-48% of each token waiting at synchronization points. Per-thread barrier traces show that most of the wait is for the slowest threads of each node; the barriers' own latency (microseconds each, but up to 12% of the token for the smallest model) and serial per-node work are smaller parts. On identical kernels, a Megatron-style column spl",
       "pdf_link": "https://arxiv.org/pdf/2610.28620.pdf",
       "forum_link": "https://arxiv.org/abs/2610.28620",
-      "submission_date": "2026-10-21T04:00:00+00:00",
+      "submission_date": "2026-10-22T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 16.5,
-      "updated_at": "2026-10-21T11:07:49.961937+00:00"
+      "updated_at": "2026-10-22T11:07:40.410313+00:00"
     },
     {
       "forum_id": "usenix-osdi26-109",
@@ -3678,6 +3701,29 @@
       "ratings": [],
       "score": 15.0,
       "updated_at": "2026-07-21T08:54:26.741587+00:00"
+    },
+    {
+      "forum_id": "2610.28805",
+      "paper_number": -1,
+      "title": "SAT Sampling at Scale via GPU-based Boolean Constraint Propagation",
+      "authors": [
+        "Alexander Nadel, Yogev Shalmon, Ofer Strichman"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.28805v1 Announce Type: cross \nAbstract: Constrained-random verification tests hardware designs by sampling solutions of Boolean formulas. Existing samplers largely follow one of two approaches: CPU-based SAT samplers (e.g., CMSGen), which remain effective even at rare targets but offer limited throughput, and GPU-based gradient samplers, which achieve high throughput at high-probability targets but collapse at rare ones. We introduce Gpap-S, the first GPU sampler built on Boolean constraint propagation (BCP). At its core is Gpap, a new GPU engine for BCP that efficiently propagates many independent partial assignments concurrently on a shared Boolean formula. This capability allows Gpap-S to combine the rare-target robustness of SAT-based sampling with the throughput of GPU para",
+      "pdf_link": "https://arxiv.org/pdf/2610.28805.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.28805",
+      "submission_date": "2026-10-22T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.5,
+      "updated_at": "2026-10-22T11:07:40.409257+00:00"
     },
     {
       "forum_id": "usenix-osdi26-41",
@@ -4741,29 +4787,6 @@
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
     },
     {
-      "forum_id": "2610.23047",
-      "paper_number": -1,
-      "title": "DIFFLET: A Fast Inference Engine for Diffusion Transformer Models on AWS Trainium",
-      "authors": [
-        "Bin Ma, Min Yu, Vijay Kodamalla, Jonny Liu, Da Li, Dong Li"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.23047v2 Announce Type: replace \nAbstract: On AWS Trainium2, every component of a diffusion model runs as a program compiled ahead of time for fixed shapes, while pipelines differ across models, prompt lengths across requests, and caching decisions across denoising steps. We present Difflet, a serving engine in which five model pipelines share one compilation backend, joint attention is split across cores by attention head, and a host controller decides at each denoising step whether to run the denoiser or reuse its earlier output. A small probe program computes the caching signal on the device and returns one number per step, and a resident model process keeps every program loaded across requests. Across five image and video model families, fused attention accelerates denoiser s",
-      "pdf_link": "https://arxiv.org/pdf/2610.23047.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.23047",
-      "submission_date": "2026-10-21T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-10-21T11:07:49.963388+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-63",
       "paper_number": 63,
       "title": "Hardware Lifecycle-Aware Power Planning in Commercial Hyperscale Datacenters (Operational Systems)",
@@ -5800,6 +5823,29 @@
       "updated_at": "2026-07-21T08:54:22.933403+00:00"
     },
     {
+      "forum_id": "2610.28939",
+      "paper_number": -1,
+      "title": "Koala: Non-disruptive Reconfiguration for Long-running Stateful Dataflows",
+      "authors": [
+        "Lei Huang, Sakshi Sharma, Chenxu Yu, Zikun Wang, Yuanli Wang, Zichen Zhu, John Liagouris, Vasiliki Kalavri"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.28939v1 Announce Type: new \nAbstract: Stateful dataflow systems must decide where state lives relative to the tasks that process it. For long-running applications that require frequent reconfiguration due to changes in resource allocation, partitioning, or task placement, this design choice presents a core trade-off between adaptability and performance. Co-locating state with computation ensures low latency at steady state but makes reconfiguration disruptive, as any change forces state migration. On the other hand, keeping state in an external store makes reconfiguration seamless, but incurs overhead on every access.\n  We present Koala, a reconfiguration protocol for distributed dataflow systems that retains the operational performance of embedded-state architectures while matc",
+      "pdf_link": "https://arxiv.org/pdf/2610.28939.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.28939",
+      "submission_date": "2026-10-22T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-10-22T11:07:40.408616+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-34",
       "paper_number": 34,
       "title": "StriaTrace: Efficient Tracing and Diagnosis for Online LLM Inference (Operational Systems)",
@@ -5970,29 +6016,6 @@
       "ratings": [],
       "score": 3.0,
       "updated_at": "2026-07-21T08:54:22.938822+00:00"
-    },
-    {
-      "forum_id": "2605.21187",
-      "paper_number": -1,
-      "title": "NVIDIA Spectrum-X: Hardware-Accelerated Multiplane Networking for Large-Scale AI Training",
-      "authors": [
-        "Sajy Khashab, Albert Gran Alcoz, Alon Gal, Jacky Romano, Rani Abboud, Yonatan Piasetzky, Lior Maman, Amit Nishry, Barak Gafni, Omer Shabtai, Matty Kadosh, Dror Goldenberg, Gilad Shainer, Mark Silberstein"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2605.21187v2 Announce Type: replace-cross \nAbstract: As distributed model training scales to span hundreds of thousands of GPUs, scale-out networks face unprecedented performance and efficiency demands. NVIDIA Spectrum-X Ethernet has been designed from the ground up to achieve predictable and stable network performance with high utilization and low latency. This paper presents the Spectrum-X multiplane architecture, which replaces hierarchical depth with topological parallelism, and introduces hardware-accelerated load balancing in NICs and switches as the key architectural approach to provide fast reaction to highly dynamic network conditions at the microsecond timescales that AI training workloads demand. We describe the motivation, design principles, evaluation methodology and per",
-      "pdf_link": "https://arxiv.org/pdf/2605.21187.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.21187",
-      "submission_date": "2026-10-21T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-10-21T11:07:49.963522+00:00"
     },
     {
       "forum_id": "usenix-osdi26-22",
@@ -6625,29 +6648,6 @@
       "updated_at": "2026-07-21T08:54:26.743211+00:00"
     },
     {
-      "forum_id": "2610.27306",
-      "paper_number": -1,
-      "title": "SweepANN: A GPU-Accelerated Large-K Approximate Vector Search for Drug Discovery",
-      "authors": [
-        "Zhenyu Zhang, Qi Lin, Nan Zhang, Zhichao Cao"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.27306v1 Announce Type: cross \nAbstract: DrugCLIP places small molecules and protein pockets in one space, turning genome-wide drug discovery into large-K retrieval by vector proximity. A campaign fixes over 20K pockets in advance for one library of over 500M molecules. Each pocket keeps K = 500K candidates, 0.1% of the collection, versus 100 in ANN benchmarks. Missed hits never get tested, so mean recall must reach 99% relative to exact search. Large answers make IVF probe every list holding a result and graph search track K or more candidates, so costs grow with K. On our CPUs and GPUs, neither index family reaches the target without losing most of its edge over scanning.\n  SweepANN partitions compressed vectors across GPUs and scans each resident partition. One matrix multipli",
-      "pdf_link": "https://arxiv.org/pdf/2610.27306.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.27306",
-      "submission_date": "2026-10-21T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-10-21T11:07:49.962313+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-15",
       "paper_number": 15,
       "title": "Extracting Database Access-Control Policies from Web Applications",
@@ -6763,29 +6763,6 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
-    },
-    {
-      "forum_id": "2610.26945",
-      "paper_number": -1,
-      "title": "Emulating DGEMM and ZGEMM with INT8 Matrix Engines on Intel Arc GPUs: Ozaki Scheme II on the Xe2 Architecture",
-      "authors": [
-        "Rostislavs Rostovskis, Aleksandrs Platonenko"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.26945v1 Announce Type: cross \nAbstract: Double-precision matrix multiplication, real (DGEMM) and complex (ZGEMM), dominates the run time of dense linear algebra and electronic-structure codes. On affordable GPUs, however, FP64 throughput is a small and shrinking fraction of the throughput of the low-precision matrix engines. Ozaki scheme II closes this gap by reducing a floating-point matrix product to a handful of exact INT8 products followed by a Chinese-remainder reconstruction; the number of products sets the accuracy. We present what is, to our knowledge, the first implementation of Ozaki scheme II for Intel GPUs. Written in SYCL on top of oneMKL, it runs entirely on the device and exposes the full BLAS dgemm/zgemm interface. Making the scheme fast on the Xe2 (Battlemage) a",
-      "pdf_link": "https://arxiv.org/pdf/2610.26945.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.26945",
-      "submission_date": "2026-10-21T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-21T11:07:49.961976+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

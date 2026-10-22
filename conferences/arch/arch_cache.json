@@ -1,31 +1,54 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-10-21T11:07:49.243316+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-10-22T11:07:39.688383+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2610.27376",
+      "forum_id": "2601.18702",
       "paper_number": -1,
-      "title": "Green Light: Carbon-Aware Design of Photonic Transformer Accelerators at the Edge",
+      "title": "From Fuzzy to Exact: The Halo Architecture for Infinite-Depth Reasoning via Rational Arithmetic",
       "authors": [
-        "Bharat Bhatta, Ishan Thakkar"
+        "Hansheng Ren"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2610.27376v1 Announce Type: new \nAbstract: Migrating transformer inference to the edge requires sustainability considerations that encompass both operation and manufacturing, rather than operational energy alone. Silicon photonics enables high-bandwidth, low-energy matrix multiplication; however, existing microring-resonator-based Dot Product Unit (DPU) organizations have been tailored to convolutional computations and evaluated using analog signaling without accounting for embodied carbon footprints. We adapt three DPU organizations (AMW, MAW, and MWA) to transformer inference workloads and extend each organization to stochastic signaling, yielding six organizations in total. We then calculate their embodied and operational carbon per inference. Across five transformer models and fo",
-      "pdf_link": "https://arxiv.org/pdf/2610.27376.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.27376",
-      "submission_date": "2026-10-21T04:00:00+00:00",
+      "abstract": "arXiv:2601.18702v5 Announce Type: replace-cross \nAbstract: The prevailing scaling paradigm of Large Language Models (LLMs) rests on a substrate of \"Fuzzy\" floating-point arithmetic. To mitigate the inherent instability of this approximate foundation, modern architectures have erected a complex scaffolding of structural and numerical heuristics--Complex Residuals, Pre-RMSNorm, Attention Scaling, and Gradient Clipping--consuming significant compute solely to prevent numerical collapse.\n  We propose a paradigm shift to the \"Exact\". We introduce the Halo Architecture, grounded in the Rational Field (Q) and powered by a custom Exact Inference Unit (EIU). To resolve the exponential bit-width growth of rational arithmetic, Halo employs a Dual-Ring Topology that unifies two complementary control m",
+      "pdf_link": "https://arxiv.org/pdf/2601.18702.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.18702",
+      "submission_date": "2026-10-22T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 53.5,
-      "updated_at": "2026-10-21T11:07:49.240911+00:00"
+      "score": 12.5,
+      "updated_at": "2026-10-22T11:07:39.685770+00:00"
+    },
+    {
+      "forum_id": "2610.29445",
+      "paper_number": -1,
+      "title": "Deciding Scale Placement in MXFP4 Dot Products with Integer Arithmetic",
+      "authors": [
+        "Shreyas Vinayakumar"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2610.29445v1 Announce Type: cross \nAbstract: The Open Compute Project's microscaling (MX) family includes MXFP4, which stores 32 four-bit elements with a shared power-of-two scale. When lowering a dot-product reduction, a compiler can apply these scales before the reduction, or defer scaling until afterwards. Although equivalent over real numbers, these formulations can produce different IEEE binary32 results through overflow or underflow, with equivalence also depending on the reduction tree. We study the legality of compiler rewrites in either direction by deriving conditions under which the two formulations are bitwise equivalent.\n  To decide rewrite legality, we construct an integer state machine that exploits the finite element alphabet and shared power-of-two scales, modeling o",
+      "pdf_link": "https://arxiv.org/pdf/2610.29445.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.29445",
+      "submission_date": "2026-10-22T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-10-22T11:07:39.685677+00:00"
     }
   ]
 }

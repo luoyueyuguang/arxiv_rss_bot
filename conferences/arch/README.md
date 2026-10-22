@@ -1,12 +1,13 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-10-21 11:07:49 UTC
-- **Total Filtered Papers**: 1
-- **Displaying**: 1 (arxiv: 1)
+- **Last Updated**: 2026-10-22 11:07:39 UTC
+- **Total Filtered Papers**: 2
+- **Displaying**: 2 (arxiv: 2)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Green Light: Carbon-Aware Design of Photonic Transformer Accelerators at the Edge](https://arxiv.org/abs/2610.27376) | `ARXIV` | 53.5 |
+| 1 | [From Fuzzy to Exact: The Halo Architecture for Infinite-Depth Reasoning via Rational Arithmetic](https://arxiv.org/abs/2601.18702) | `ARXIV` | 12.5 |
+| 2 | [Deciding Scale Placement in MXFP4 Dot Products with Integer Arithmetic](https://arxiv.org/abs/2610.29445) | `ARXIV` | 11.0 |
