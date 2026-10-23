@@ -1,9 +1,32 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-10-22T11:07:43.062314+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-10-23T10:58:51.101523+00:00",
+  "paper_count": 3,
   "papers": [
+    {
+      "forum_id": "2610.30990",
+      "paper_number": -1,
+      "title": "SnakeCharmer: Orchestrating Utility, Timeliness, and Placement in GPU Prefetching",
+      "authors": [
+        "Yuhan Tang, Tiejun Li, Jianmin Zhang, An Hu, Guangyu Sun, Sheng Ma, Yiqun Lang, Hanqing Li, Siqing Fu"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2610.30990v1 Announce Type: new \nAbstract: GPUs rely on massive thread-level parallelism to tolerate long memory latency, yet they still suffer severe stalls when many warps simultaneously wait for data from the memory system. Address-prediction-based GPU prefetchers can mitigate such stalls, but accurate prediction alone does not guarantee performance improvement: a predicted prefetch becomes beneficial only if it is worth issuing, arrives at the right time, and is retained without harmful interference. Because these requirements interact, optimizing any single dimension in isolation can simply move the bottleneck to another.\n  We capture these requirements with a predicted-prefetch-to-realized-benefit perspective and propose SnakeCharmer, a unified backend prefetch-control framewor",
+      "pdf_link": "https://arxiv.org/pdf/2610.30990.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.30990",
+      "submission_date": "2026-10-23T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.0,
+      "updated_at": "2026-10-23T10:58:51.098413+00:00"
+    },
     {
       "forum_id": "2610.29503",
       "paper_number": -1,
@@ -15,40 +38,40 @@
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.29503v1 Announce Type: new \nAbstract: We present a scheduling framework for heterogeneous multi-accelerator systems executing both hard real-time and soft real-time QoS-aware DNN inference workloads. The framework combines an online reinforcement learning (RL) scheduler with a deterministic runtime safety layer. The RL scheduler dynamically generates candidate schedules by jointly selecting sub-job priorities and accelerator assignments, while runtime certification guarantees that all HRT deadlines remain satisfied independently of the learned policy.\n  To enable runtime certification in heterogeneous precedence-constrained systems, we introduce a schedulability-preserving prefix replacement criterion based on machine-wise cuts. The proposed criterion guarantees that runtime-gen",
+      "abstract": "arXiv:2610.29503v2 Announce Type: replace \nAbstract: We present a scheduling framework for heterogeneous multi-accelerator systems executing both hard real-time and soft real-time QoS-aware DNN inference workloads. The framework combines an online reinforcement learning (RL) scheduler with a deterministic runtime safety layer. The RL scheduler dynamically generates candidate schedules by jointly selecting sub-job priorities and accelerator assignments, while runtime certification guarantees that all HRT deadlines remain satisfied independently of the learned policy.\n  To enable runtime certification in heterogeneous precedence-constrained systems, we introduce a schedulability-preserving prefix replacement criterion based on machine-wise cuts. The proposed criterion guarantees that runtime",
       "pdf_link": "https://arxiv.org/pdf/2610.29503.pdf",
       "forum_link": "https://arxiv.org/abs/2610.29503",
-      "submission_date": "2026-10-22T04:00:00+00:00",
+      "submission_date": "2026-10-23T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 12.0,
-      "updated_at": "2026-10-22T11:07:43.060503+00:00"
+      "updated_at": "2026-10-23T10:58:51.098558+00:00"
     },
     {
-      "forum_id": "2610.28676",
+      "forum_id": "2610.30397",
       "paper_number": -1,
-      "title": "VHDLBench: Benchmarking and Fine-Tuning Large Language Models for VHDL-Based Chip Design",
+      "title": "Verified DRAM Address Mapping Reverse Engineering with Threshold Sweep",
       "authors": [
-        "Patrik Drazic, Benaoumeur Senouci, Boualem Benatallah"
+        "Hewen Zhang, Ian G. Harris"
       ],
       "keywords": [
         "cs.AR",
-        "FPGA"
+        "DATE"
       ],
-      "abstract": "arXiv:2610.28676v1 Announce Type: new \nAbstract: The rapid evolution of digital circuit complexity demands innovative approaches to hardware design automation. While Large Language Models (LLMs) have influenced software development, their application to Hardware Description Language (HDL) generation remains largely unexplored, particularly for VHDL. This paper presents a comprehensive study for AI-assisted digital circuit design, addressing gaps in current Electronic Design Automation workflows. The work introduces a VHDL dataset of 18,500+ syntax-verified examples from open-source repositories and converted Verilog designs. Five 7B-parameter LLMs were fine-tuned using parameter-efficient QLoRA technique, enabling deployment in resource-constrained environments. To evaluate model efficacy,",
-      "pdf_link": "https://arxiv.org/pdf/2610.28676.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.28676",
-      "submission_date": "2026-10-22T04:00:00+00:00",
-      "conference": "FPGA",
+      "abstract": "arXiv:2610.30397v1 Announce Type: new \nAbstract: We propose an end-to-end software pipeline for solving and validating DRAM address mapping functions on embedded LPDDR5 systems, and we instantiate it on embedded platforms. Starting from a large latency dataset of address pairs, the pipeline first builds a latency histogram and then performs a threshold sweep to obtain candidate same-bank address pairs. For each threshold, we apply a Knock-Knock-style linear-constraint solver to recover candidate bank masks. Final bank masks are calculated using GF(2) reduced row echelon form (RREF). To verify correctness, we implement two verification stages, group verification and single function verification, inspired by prior work. Group verification checks whether bank partitions induced by the recover",
+      "pdf_link": "https://arxiv.org/pdf/2610.30397.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.30397",
+      "submission_date": "2026-10-23T04:00:00+00:00",
+      "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 5.0,
-      "updated_at": "2026-10-22T11:07:43.060391+00:00"
+      "score": 1.0,
+      "updated_at": "2026-10-23T10:58:51.098185+00:00"
     }
   ]
 }

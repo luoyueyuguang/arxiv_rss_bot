@@ -1,77 +1,54 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-10-20T10:54:54.355956+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-10-23T10:59:26.436349+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2601.21635",
+      "forum_id": "2610.31451",
       "paper_number": -1,
-      "title": "Numerical analysis of a locking-free primal hybrid method for linear elasticity with $H(\\mathrm{div})$-conforming stress recovery",
+      "title": "A Fast Algorithm for Quaternion Tensor Singular Value Decomposition under the T-product",
       "authors": [
-        "Giovanni Taraschi, Maicon Ribeiro Correa"
-      ],
-      "keywords": [
-        "cs.NA",
-        "numerical analysis"
-      ],
-      "abstract": "arXiv:2601.21635v2 Announce Type: replace \nAbstract: In this work, we study a primal hybrid finite element method for the approximation of linear elasticity problems, posed in terms of displacement, an auxiliary pressure field, and a Lagrange multiplier related to the traction. We develop a general analysis for the existence and uniqueness of the solution for the discrete problem, which is applied to the construction of stable approximation spaces on triangular and quadrilateral meshes. The use of these spaces lead to optimal convergence orders, resulting in a locking-free method capable of providing robust approximations for nearly incompressible problems. Finally, we propose a strategy for recovering the stress field from the hybrid solution by solving element-wise sub-problems. The resu",
-      "pdf_link": "https://arxiv.org/pdf/2601.21635.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.21635",
-      "submission_date": "2026-10-20T04:00:00+00:00",
-      "conference": "numerical analysis",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-10-20T10:54:54.352446+00:00"
-    },
-    {
-      "forum_id": "2610.24704",
-      "paper_number": -1,
-      "title": "Numerical Analysis for a Nonlinear Coupled Thermoelastic System with Acoustic Boundary Conditions",
-      "authors": [
-        "Adriano A. Alc\\^antara, Bruno A. Carmo, Juan B. L\\'imaco, Carlos M. Guzm\\'an"
-      ],
-      "keywords": [
-        "cs.NA",
-        "numerical analysis"
-      ],
-      "abstract": "arXiv:2610.24704v1 Announce Type: new \nAbstract: This paper presents the first $L^2$-norm error analysis for a nonlinear thermoelastic system with acoustic boundary conditions. The model involves three coupled variables: the acoustic potential $u$, the temperature $\\theta$, and the normal displacement to the boundary $\\delta$, with nonlinearities $|u|^d u$ in the domain and $g(\\cdot,u')$ on the boundary, in addition to a nonlocal term $\\beta(\\int_\\Omega\\theta dx)\\Delta\\theta$ in the heat equation. We establish error estimates for the fully discrete problem, using the Crank-Nicolson method for time discretization and finite element method with basis of degree $r \\geqslant 1$ for space discretization. We demonstrate that the domain-boundary coupling induces a half-power loss in the spatial c",
-      "pdf_link": "https://arxiv.org/pdf/2610.24704.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.24704",
-      "submission_date": "2026-10-20T04:00:00+00:00",
-      "conference": "numerical analysis",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-10-20T10:54:54.350614+00:00"
-    },
-    {
-      "forum_id": "2303.17755",
-      "paper_number": -1,
-      "title": "Lattice-based kernel approximation and serendipitous weights for parametric PDEs in very high dimensions",
-      "authors": [
-        "Vesa Kaarnioja, Frances Y. Kuo, Ian H. Sloan"
+        "Daochang Zhang, Yue Zhao, Jingqian Li"
       ],
       "keywords": [
         "cs.NA",
         "SIAM"
       ],
-      "abstract": "arXiv:2303.17755v3 Announce Type: replace \nAbstract: We describe a fast method for solving elliptic partial differential equations (PDEs) with uncertain coefficients using kernel interpolation at a lattice point set. By representing the input random field of the system using the model proposed by Kaarnioja, Kuo, and Sloan (SIAM J. Numer. Anal. 2020), in which a countable number of independent random variables enter the random field as periodic functions, it was shown by Kaarnioja, Kazashi, Kuo, Nobile, and Sloan (Numer. Math. 2022) that the lattice-based kernel interpolant can be constructed for the PDE solution as a function of the stochastic variables in a highly efficient manner using fast Fourier transform (FFT). In this work, we discuss the connection between our model and the popular",
-      "pdf_link": "https://arxiv.org/pdf/2303.17755.pdf",
-      "forum_link": "https://arxiv.org/abs/2303.17755",
-      "submission_date": "2026-10-20T04:00:00+00:00",
+      "abstract": "arXiv:2610.31451v1 Announce Type: new \nAbstract: Quaternion tensor singular value decomposition (T-SVD) under the T-product provides a framework for analyzing multidimensional quaternion data. However, the T-SVD construction of Pan and Ng (SIAM J. Matrix Anal. Appl., 2024) \\cite{PanNg2024} contains a structural gap: an unrestricted quaternion matrix SVD need not preserve the paired Fourier block structure required for tensor factor recovery, potentially leading to loss of T-unitarity and inaccurate reconstruction.\n  To address this issue, we develop a structure-preserving construction that transforms each paired quaternion block into a complex matrix and maps its complex SVD factors back to quaternion factors with the required structure. This construction corrects the proof of \\cite[Theore",
+      "pdf_link": "https://arxiv.org/pdf/2610.31451.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.31451",
+      "submission_date": "2026-10-23T04:00:00+00:00",
       "conference": "SIAM",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-10-20T10:54:54.352148+00:00"
+      "score": 2.5,
+      "updated_at": "2026-10-23T10:59:26.432672+00:00"
+    },
+    {
+      "forum_id": "2610.31663",
+      "paper_number": -1,
+      "title": "Phase Transition from Random Features to Fully Trainable Networks",
+      "authors": [
+        "Xin He, Huan Lao, Xiliang Lu, Shijun Zhang"
+      ],
+      "keywords": [
+        "cs.NA",
+        "scientific computing"
+      ],
+      "abstract": "arXiv:2610.31663v1 Announce Type: new \nAbstract: Constructing accurate and computationally tractable approximation spaces is a fundamental task in scientific computing. Partially trainable neural networks bridge fixed random features and fully adaptive representations. This paper quantifies a phase transition pattern in approximation bounds and observes analogous behavior in training errors: a rapid but smooth initial improvement followed by diminishing returns, with a sharper transition under greater initialization mismatch. Under polynomial spectral decay with exponent $\\alpha>1$ and leverage compatibility, we establish a squared $L_2$ approximation rate $\\mathcal{O}((\\kappa_P\\log(m/\\delta)/m)^\\alpha)$ for two-layer networks of width $m$ and trainable proportion $P$, where $\\kappa_P=(P/\\",
+      "pdf_link": "https://arxiv.org/pdf/2610.31663.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.31663",
+      "submission_date": "2026-10-23T04:00:00+00:00",
+      "conference": "scientific computing",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-10-23T10:59:26.432826+00:00"
     }
   ]
 }

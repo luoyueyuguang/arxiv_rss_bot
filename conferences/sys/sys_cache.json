@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-10-22T11:07:42.961621+00:00",
-  "paper_count": 311,
+  "last_updated": "2026-10-23T10:58:51.017275+00:00",
+  "paper_count": 310,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -69,29 +69,6 @@
       "ratings": [],
       "score": 132.0,
       "updated_at": "2026-07-21T08:54:17.392951+00:00"
-    },
-    {
-      "forum_id": "2610.28637",
-      "paper_number": -1,
-      "title": "To Keep or Not to Keep: Learning KV Cache Retention in Disaggregated LLM Serving Systems",
-      "authors": [
-        "Dong Liu, Yanxuan Yu, Eric Jiang, Shu Wang, Ying Nian Wu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.28637v1 Announce Type: cross \nAbstract: Disaggregated \\textsc{LLM} serving separates prefill and decode across node pools, placing a network fabric between \\textsc{KV}-cache computation and consumption. This breaks a key assumption of classical cache policies: a miss no longer incurs only local recomputation, but also network transfer to the decode node. Likewise, admitting a block to the global cache requires an additional transfer, so poor retention decisions waste both memory and bandwidth. We present \\textbf{KVLearn}, a learning-based framework for cost-aware \\textsc{KV}-cache retention in disaggregated serving. KVLearn includes: (i) a lightweight Prefix Reuse Predictor (\\textsc{PRP}) that estimates reuse probability from structural and temporal prefix features without modif",
-      "pdf_link": "https://arxiv.org/pdf/2610.28637.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.28637",
-      "submission_date": "2026-10-22T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 128.0,
-      "updated_at": "2026-10-22T11:07:40.409232+00:00"
     },
     {
       "forum_id": "usenix-osdi26-96",
@@ -1133,29 +1110,6 @@
       "updated_at": "2026-07-21T08:54:22.933512+00:00"
     },
     {
-      "forum_id": "2610.30114",
-      "paper_number": -1,
-      "title": "The End of Consensus Research?",
-      "authors": [
-        "Cl\\'ement Burgelin, Rachid Guerraoui, Zicong Hong, Yinan Hu, Anne-Marie Kermarrec, Rafael Pires, Rasmus Moorits Veski, Martijn de Vos"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.30114v1 Announce Type: new \nAbstract: Consensus is a fundamental problem in distributed computing and at the core of state machine replication (SMR). Despite decades of active human research, discovering practical low-latency solutions to the problem is still open, as it requires combining protocol knowledge, correctness reasoning, implementation, and experimental evaluation. We report on how AI helped us discover A-greement, a new consensus protocol for geo-replicated state machines that significantly outperforms state-of-the-art solutions. Averaged across six deployments with 5 or 9 replicas, A-greement reduces the mean latency of a geo-distributed key-value store over the fastest baseline by 12.2% and 33.3% on write-heavy and read-heavy workloads, respectively, and matches th",
-      "pdf_link": "https://arxiv.org/pdf/2610.30114.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.30114",
-      "submission_date": "2026-10-22T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 54.5,
-      "updated_at": "2026-10-22T11:07:40.409200+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-26",
       "paper_number": 26,
       "title": "DistVS: Large-scale Vector Search with Compute-Memory Disaggregation",
@@ -1199,6 +1153,29 @@
       "ratings": [],
       "score": 53.5,
       "updated_at": "2026-07-21T08:54:17.397052+00:00"
+    },
+    {
+      "forum_id": "2608.13434",
+      "paper_number": -1,
+      "title": "Fast Tendermint: Speeding Up a Foundational Consensus Protocol",
+      "authors": [
+        "Preston Vander Vos, Daniel Cason"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2608.13434v2 Announce Type: replace \nAbstract: Tendermint is among the most widely studied and deployed Byzantine fault-tolerant (BFT) consensus protocols, owing in part to its native leader-rotation mechanism that subsumes complex view changes. Like most partially-synchronous BFT protocols, Tendermint tolerates $f < n/3$ Byzantine processes and decides in three communication steps. Motivated by the push for lower-latency blockchains, a recent line of work shows that consensus can be solved in two communication steps when $f < n/5$. We present Fast Tendermint, an adaptation of Tendermint to the $n > 5f$ setting that decides in two communication steps in the good case, while preserving Tendermint's leader-rotation structure. Fast Tendermint collapses Tendermint's prevote and precommit",
+      "pdf_link": "https://arxiv.org/pdf/2608.13434.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.13434",
+      "submission_date": "2026-10-23T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 52.5,
+      "updated_at": "2026-10-23T10:58:47.679662+00:00"
     },
     {
       "forum_id": "usenix-osdi26-132",
@@ -1796,6 +1773,29 @@
       "ratings": [],
       "score": 42.5,
       "updated_at": "2026-07-21T08:54:17.399784+00:00"
+    },
+    {
+      "forum_id": "2511.14102",
+      "paper_number": -1,
+      "title": "Specter: Fast MoE Inference via Quantization-Enabled Multi-Step Speculative Offloading",
+      "authors": [
+        "Wenfeng Wang, Xiaofeng Hou, Xinfeng Xia, Xinkai Wang, Mingxuan Zhang, Peng Tang, Jiacheng Liu, Chao Li"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2511.14102v3 Announce Type: replace-cross \nAbstract: Mixture-of-experts (MoE) models often exceed a single accelerator's memory capacity. Offloading experts to host memory creates a severe PCIe I/O bottleneck because data-dependent routing keeps transfers on the critical path. We present Specter, an inference system that uses quantization to combine speculative decoding with expert offloading. Its lightweight quantized draft model runs efficiently on device while preserving high-fidelity expert activation patterns. This provides accurate multi-step lookahead over future expert usage, allowing the runtime to organize expert movement and execution ahead of verification and improve both communication and execution efficiency. Under single-request inference, Specter achieves an average 1",
+      "pdf_link": "https://arxiv.org/pdf/2511.14102.pdf",
+      "forum_link": "https://arxiv.org/abs/2511.14102",
+      "submission_date": "2026-10-23T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 42.0,
+      "updated_at": "2026-10-23T10:58:47.679905+00:00"
     },
     {
       "forum_id": "usenix-osdi26-67",
@@ -3399,29 +3399,6 @@
       "updated_at": "2026-07-21T08:54:26.740162+00:00"
     },
     {
-      "forum_id": "2610.28620",
-      "paper_number": -1,
-      "title": "Weight Placement Is Not Enough: Synchronization in Multi-Node CPU Decoding of Ternary LLMs",
-      "authors": [
-        "Runguo Li, Dezhen Lu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.28620v2 Announce Type: replace \nAbstract: Ternary LLMs read only a few gigabytes per decoded token, yet on dual-socket servers with four NUMA nodes the fastest ternary runtime we found uses less than half of the memory bandwidth. Placing each weight on the node of the thread that reads it is necessary but not enough: in a decode engine with node-local weights that reuses ik_llama's kernels, threads on two generations of Xeon servers still spend 20-48% of each token waiting at synchronization points. Per-thread barrier traces show that most of the wait is for the slowest threads of each node; the barriers' own latency (microseconds each, but up to 12% of the token for the smallest model) and serial per-node work are smaller parts. On identical kernels, a Megatron-style column spl",
-      "pdf_link": "https://arxiv.org/pdf/2610.28620.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.28620",
-      "submission_date": "2026-10-22T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 16.5,
-      "updated_at": "2026-10-22T11:07:40.410313+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-109",
       "paper_number": 109,
       "title": "TrainMover: An Interruption-Resilient Runtime for ML Training",
@@ -3701,29 +3678,6 @@
       "ratings": [],
       "score": 15.0,
       "updated_at": "2026-07-21T08:54:26.741587+00:00"
-    },
-    {
-      "forum_id": "2610.28805",
-      "paper_number": -1,
-      "title": "SAT Sampling at Scale via GPU-based Boolean Constraint Propagation",
-      "authors": [
-        "Alexander Nadel, Yogev Shalmon, Ofer Strichman"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.28805v1 Announce Type: cross \nAbstract: Constrained-random verification tests hardware designs by sampling solutions of Boolean formulas. Existing samplers largely follow one of two approaches: CPU-based SAT samplers (e.g., CMSGen), which remain effective even at rare targets but offer limited throughput, and GPU-based gradient samplers, which achieve high throughput at high-probability targets but collapse at rare ones. We introduce Gpap-S, the first GPU sampler built on Boolean constraint propagation (BCP). At its core is Gpap, a new GPU engine for BCP that efficiently propagates many independent partial assignments concurrently on a shared Boolean formula. This capability allows Gpap-S to combine the rare-target robustness of SAT-based sampling with the throughput of GPU para",
-      "pdf_link": "https://arxiv.org/pdf/2610.28805.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.28805",
-      "submission_date": "2026-10-22T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-10-22T11:07:40.409257+00:00"
     },
     {
       "forum_id": "usenix-osdi26-41",
@@ -5823,29 +5777,6 @@
       "updated_at": "2026-07-21T08:54:22.933403+00:00"
     },
     {
-      "forum_id": "2610.28939",
-      "paper_number": -1,
-      "title": "Koala: Non-disruptive Reconfiguration for Long-running Stateful Dataflows",
-      "authors": [
-        "Lei Huang, Sakshi Sharma, Chenxu Yu, Zikun Wang, Yuanli Wang, Zichen Zhu, John Liagouris, Vasiliki Kalavri"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.28939v1 Announce Type: new \nAbstract: Stateful dataflow systems must decide where state lives relative to the tasks that process it. For long-running applications that require frequent reconfiguration due to changes in resource allocation, partitioning, or task placement, this design choice presents a core trade-off between adaptability and performance. Co-locating state with computation ensures low latency at steady state but makes reconfiguration disruptive, as any change forces state migration. On the other hand, keeping state in an external store makes reconfiguration seamless, but incurs overhead on every access.\n  We present Koala, a reconfiguration protocol for distributed dataflow systems that retains the operational performance of embedded-state architectures while matc",
-      "pdf_link": "https://arxiv.org/pdf/2610.28939.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.28939",
-      "submission_date": "2026-10-22T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-10-22T11:07:40.408616+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-34",
       "paper_number": 34,
       "title": "StriaTrace: Efficient Tracing and Diagnosis for Online LLM Inference (Operational Systems)",
@@ -6016,6 +5947,29 @@
       "ratings": [],
       "score": 3.0,
       "updated_at": "2026-07-21T08:54:22.938822+00:00"
+    },
+    {
+      "forum_id": "2605.19385",
+      "paper_number": -1,
+      "title": "LatentStore: An Efficient Latent-First Storage System for AI-Generated Images",
+      "authors": [
+        "Zirui Wang, Yunjia Zheng, Tingfeng Lan, Zhaoyuan Su, Haoran Ni, Juncheng Yang, Yue Cheng"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2605.19385v3 Announce Type: replace \nAbstract: The explosive growth of AI-generated images has created a sustainability challenge for storage infrastructure. Platforms like Midjourney and Adobe Firefly already host billions of generative images, yet conventional object stores persist them as blobs with full-resolution pixels, consuming huge amounts of storage capacity and bandwidth. Unlike natural photos, however, AI-generated images can be deterministically reconstructed from compact, model-native latent tensors, making persistent image storage fundamentally redundant. This paper presents LatentStore, a latent-first storage system for AI-generated images. LatentStore treats compressed latents as durable storage objects and uses on-demand GPU reconstruction on the read path to trade ",
+      "pdf_link": "https://arxiv.org/pdf/2605.19385.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.19385",
+      "submission_date": "2026-10-23T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-10-23T10:58:47.679494+00:00"
     },
     {
       "forum_id": "usenix-osdi26-22",
@@ -6646,6 +6600,29 @@
       "ratings": [],
       "score": 2.0,
       "updated_at": "2026-07-21T08:54:26.743211+00:00"
+    },
+    {
+      "forum_id": "2610.30587",
+      "paper_number": -1,
+      "title": "Know When to Escalate: Critic-Guided Adaptive Execution for Cloud-Local Embodied Agents",
+      "authors": [
+        "Wei Zhang, Lirong Xiang, Charles Fleming"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.30587v1 Announce Type: cross \nAbstract: Recent advances in foundation-model agents have enabled increasingly capable embodied systems for long-horizon planning and interaction. However, embodied agents require fast, closed-loop decisions as they continuously perceive and act on a changing environment. Deploying strong cloud agents leaves the platform idle for seconds between consecutive actions, while lightweight local models respond quickly but are more vulnerable to errors. Existing hierarchical architectures typically assign models fixed roles, whereas conventional model routers make stateless per-request decisions. We present CARE, a critic-guided adaptive execution framework that dynamically determines when to escalate control from a local executor to a stronger cloud model",
+      "pdf_link": "https://arxiv.org/pdf/2610.30587.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.30587",
+      "submission_date": "2026-10-23T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-10-23T10:58:47.678884+00:00"
     },
     {
       "forum_id": "usenix-osdi26-15",

@@ -1,77 +1,77 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-10-22T11:07:40.226160+00:00",
+  "last_updated": "2026-10-23T10:58:47.536408+00:00",
   "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2610.28759",
+      "forum_id": "2610.17528",
       "paper_number": -1,
-      "title": "GPU-Accelerated Construction of the Gabriel Graph: Parallelization Strategies and Applications to Large-Margin Classification and Graph-Based Clustering",
+      "title": "ATTUNE: Agentic Throughput Tuning for LLM Training",
       "authors": [
-        "Diego Sanches Nere dos Santos, Luiz Carlos Bambirra Torres"
+        "Leo Fan, Hongyang Wang, Wenbo Chen, Jingguo Liu, Xian Li, Xuan Wang, Ruochen Wen, Yiming Yan, Hao Wu, Yichuan Li, Qian Qu, Zheshen Wang, Benoit Dumoulin"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.28759v1 Announce Type: new \nAbstract: The Gabriel graph is a proximity graph widely used in computational geometry and geometric machine learning, underlying large-margin classifiers and, as we show in this work, density-aware clustering methods. Its construction, however, has cubic time complexity $O(N^3)$ in the naive formulation, which severely limits its use on datasets beyond a few thousand samples. This paper presents a set of GPU parallelization strategies, implemented in CUDA, that make Gabriel graph construction practical at scale. We introduce (i) an implicit closed-form mapping from a linear thread index to the corresponding vertex pair $(i,j)$, which removes the need for an explicit $O(N^2)$ adjacency structure and lets every thread locate its pair in constant time a",
-      "pdf_link": "https://arxiv.org/pdf/2610.28759.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.28759",
-      "submission_date": "2026-10-22T04:00:00+00:00",
+      "abstract": "arXiv:2610.17528v2 Announce Type: replace \nAbstract: The throughput of an LLM training job depends on its recipe: how the model is split across GPUs, how memory is traded for compute, and which kernels and communication overlaps it uses. The best recipe changes with every model, accelerator and framework version. Automated tuners search a fixed space of knobs and check only that a job runs, so they miss levers outside that space and can ship a configuration that silently changes training. ATTUNE is a coding agent that tunes any working recipe unattended within a GPU-hour budget. Guided by a skill of search rules, scripts and lessons from past tuning campaigns, it diagnoses each run and changes one lever at a time. A correctness gate outside the agent refuses any argument known to change th",
+      "pdf_link": "https://arxiv.org/pdf/2610.17528.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.17528",
+      "submission_date": "2026-10-23T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 45.5,
-      "updated_at": "2026-10-22T11:07:39.783726+00:00"
+      "score": 33.0,
+      "updated_at": "2026-10-23T10:58:47.014914+00:00"
     },
     {
-      "forum_id": "2610.28867",
+      "forum_id": "2610.31211",
       "paper_number": -1,
-      "title": "Engineering Low-Latency, High-Throughput Quantum Decoders on NVIDIA GPUs",
+      "title": "Evolving Federated Density Peak Clustering with Shuffler-Based Anonymization",
       "authors": [
-        "Stefano Markidis, Luca Pennati, Ivy Peng"
+        "Miha O\\v{z}bot, Seiichi Ozawa, Igor \\v{S}krjanc"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.28867v1 Announce Type: new \nAbstract: We design and optimize a quantum error correction (QEC) decoder for NVIDIA GPUs, combining Relay belief propagation, a state-of-the-art message-passing algorithm, with order-zero ordered statistics post-processing. Our implementation uses CUDA Graphs to control GPU execution, stops updates for converged samples, and collects unresolved samples in queues for post-processing. We optimize sparse traversal through coalesced message accesses, prefetching, and register reuse, and accelerate binary post-processing with warp-level collectives. In addition, mixed FP16-FP32 arithmetic and INT8 quantization reduce message storage and traffic while retaining accuracy using accumulators at higher precision. We evaluate surface, hypergraph product, and bi",
-      "pdf_link": "https://arxiv.org/pdf/2610.28867.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.28867",
-      "submission_date": "2026-10-22T04:00:00+00:00",
+      "abstract": "arXiv:2610.31211v1 Announce Type: cross \nAbstract: In this paper, we present a novel one-shot federated clustering approach based on evolving fuzzy clustering and shuffler-based anonymization. In federated clustering, each round reveals additional model information to the server and can increase the opportunity to infer properties of local datasets, even when raw samples are never shared. Consequently, fewer client-server exchanges and unlinkability are important, so transmitted information cannot be attributed to any single client. Data-stream clustering algorithms, which learn in a single pass over the data, align well with the one-shot federated learning paradigm, where a single communication round can be sufficient. The proposed Evolving Federated Density Peak Clustering (eFDPC) method",
+      "pdf_link": "https://arxiv.org/pdf/2610.31211.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.31211",
+      "submission_date": "2026-10-23T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 43.0,
-      "updated_at": "2026-10-22T11:07:39.783770+00:00"
+      "score": 2.5,
+      "updated_at": "2026-10-23T10:58:47.014564+00:00"
     },
     {
-      "forum_id": "2610.17091",
+      "forum_id": "2610.24865",
       "paper_number": -1,
-      "title": "MCCL: Measurement-based Collective Communication Library",
+      "title": "A mechanism for collective foraging: percolating recruitment cascades coupled to a maximum-entropy field",
       "authors": [
-        "Michele Ferrero, Gabriele Castellano, Paolo Medagliani, Sebastien Martin, Roberto Morabito, Massimo Gallo"
+        "Galen J. Wilkerson"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.17091v2 Announce Type: replace-cross \nAbstract: Collective communication is a critical performance bottleneck in large-scale distributed training. Existing libraries and synthesis frameworks compute open-loop schedules once, assuming a static topology and peak link capacities. In production, however, persistent gray failures can silently degrade link throughput and latency for hours, causing pre-computed schedules to lose much of their efficiency during execution. In this paper, we present Measurement-based Collective Communication Library (MCCL), a collective communication library that closes the loop between runtime network measurement and dynamic schedule synthesis. MCCL passively measures GPU-to-GPU throughput, detects persistent degradation, re-synthesizes the affected comm",
-      "pdf_link": "https://arxiv.org/pdf/2610.17091.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.17091",
-      "submission_date": "2026-10-22T04:00:00+00:00",
+      "abstract": "arXiv:2610.24865v3 Announce Type: replace-cross \nAbstract: Foraging recruitment is a contagion: an agent that finds a resource triggers a linear-threshold cascade, the model built for rumour and adoption spread on social networks, now embedded in space. Because activation is degree-normalized, the same rule that spreads the cascade also stifles it as neighbourhoods crowd, so the swarm aggregates on a resource and then releases to explore again. The cascade runs on the communication network, but acting on it moves agents in physical space, and that motion rewires the network: network and space are one coupled system, and this feedback, not any tuning, makes the coordination self-limiting. Because recruitment chains along the graph rather than reaching near neighbours alone, whether a discov",
+      "pdf_link": "https://arxiv.org/pdf/2610.24865.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.24865",
+      "submission_date": "2026-10-23T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 16.5,
-      "updated_at": "2026-10-22T11:07:39.784799+00:00"
+      "score": 2.0,
+      "updated_at": "2026-10-23T10:58:47.015211+00:00"
     }
   ]
 }
