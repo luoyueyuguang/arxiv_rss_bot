@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-10-23T10:58:51.017275+00:00",
-  "paper_count": 310,
+  "last_updated": "2026-10-26T12:13:20.337288+00:00",
+  "paper_count": 311,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -706,6 +706,29 @@
       "updated_at": "2026-07-21T08:54:26.745021+00:00"
     },
     {
+      "forum_id": "2610.31827",
+      "paper_number": -1,
+      "title": "KVStream: Adaptive Parallel Storage Management for KV Caching in Large-Scale LLM Serving",
+      "authors": [
+        "Avinash Maurya, Jaiaid Mobin, Jie Ye, M. Mustafa Rafique, Franck Cappello, Bogdan Nicolae"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.31827v1 Announce Type: new \nAbstract: Long-context LLM serving for agentic, coding, and document workloads reuses prefixes whose key-value (KV) cache outgrows GPU and host memory, putting storage I/O on the critical path of the inference step for retrieving prefixes. A single node-local NVMe absorbs all retrievals, while the parallel file system or cloud file store that nodes already mount carries almost no inference traffic. We cast prefix retrieval as aggregate-bandwidth scheduling across these tiers and present KVStream, a KV cache engine that batches a step's reads, defers writes behind the forward pass, replicates each chunk on every tier, and lets each tier adaptively claim the next unread chunks once it is free. Our performance model shows this routing attains the aggrega",
+      "pdf_link": "https://arxiv.org/pdf/2610.31827.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.31827",
+      "submission_date": "2026-10-26T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 61.5,
+      "updated_at": "2026-10-26T12:13:17.432106+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-47",
       "paper_number": 47,
       "title": "RollArt: Disaggregated Multi-Task Agentic RL Training at Scale",
@@ -1153,29 +1176,6 @@
       "ratings": [],
       "score": 53.5,
       "updated_at": "2026-07-21T08:54:17.397052+00:00"
-    },
-    {
-      "forum_id": "2608.13434",
-      "paper_number": -1,
-      "title": "Fast Tendermint: Speeding Up a Foundational Consensus Protocol",
-      "authors": [
-        "Preston Vander Vos, Daniel Cason"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2608.13434v2 Announce Type: replace \nAbstract: Tendermint is among the most widely studied and deployed Byzantine fault-tolerant (BFT) consensus protocols, owing in part to its native leader-rotation mechanism that subsumes complex view changes. Like most partially-synchronous BFT protocols, Tendermint tolerates $f < n/3$ Byzantine processes and decides in three communication steps. Motivated by the push for lower-latency blockchains, a recent line of work shows that consensus can be solved in two communication steps when $f < n/5$. We present Fast Tendermint, an adaptation of Tendermint to the $n > 5f$ setting that decides in two communication steps in the good case, while preserving Tendermint's leader-rotation structure. Fast Tendermint collapses Tendermint's prevote and precommit",
-      "pdf_link": "https://arxiv.org/pdf/2608.13434.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.13434",
-      "submission_date": "2026-10-23T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 52.5,
-      "updated_at": "2026-10-23T10:58:47.679662+00:00"
     },
     {
       "forum_id": "usenix-osdi26-132",
@@ -1775,29 +1775,6 @@
       "updated_at": "2026-07-21T08:54:17.399784+00:00"
     },
     {
-      "forum_id": "2511.14102",
-      "paper_number": -1,
-      "title": "Specter: Fast MoE Inference via Quantization-Enabled Multi-Step Speculative Offloading",
-      "authors": [
-        "Wenfeng Wang, Xiaofeng Hou, Xinfeng Xia, Xinkai Wang, Mingxuan Zhang, Peng Tang, Jiacheng Liu, Chao Li"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2511.14102v3 Announce Type: replace-cross \nAbstract: Mixture-of-experts (MoE) models often exceed a single accelerator's memory capacity. Offloading experts to host memory creates a severe PCIe I/O bottleneck because data-dependent routing keeps transfers on the critical path. We present Specter, an inference system that uses quantization to combine speculative decoding with expert offloading. Its lightweight quantized draft model runs efficiently on device while preserving high-fidelity expert activation patterns. This provides accurate multi-step lookahead over future expert usage, allowing the runtime to organize expert movement and execution ahead of verification and improve both communication and execution efficiency. Under single-request inference, Specter achieves an average 1",
-      "pdf_link": "https://arxiv.org/pdf/2511.14102.pdf",
-      "forum_link": "https://arxiv.org/abs/2511.14102",
-      "submission_date": "2026-10-23T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 42.0,
-      "updated_at": "2026-10-23T10:58:47.679905+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-67",
       "paper_number": 67,
       "title": "Bodega: Localized Linearizable Reads at Anywhere Anytime via Roster Leases",
@@ -2294,6 +2271,26 @@
       "updated_at": "2026-07-21T08:54:22.928440+00:00"
     },
     {
+      "forum_id": "usenix-nsdi26-70",
+      "paper_number": 70,
+      "title": "Wallet: Confidential Serverless Computing",
+      "authors": [
+        "Patrick Sabanic, Masanori Misono, Teofil Bodea, Julian Pritzi, Michael Hackl, Dimitrios Stavrakakis, and Pramod Bhatotia, Technical University of Munich"
+      ],
+      "keywords": [],
+      "abstract": "Although serverless computing offers compelling cost and deployment simplicity advantages, a significant challenge remains in securely managing sensitive data as it flows through the network of ephemeral function executions in serverless computing environments within untrusted clouds. While Confidential Virtual Machines (CVMs) offer a promising secure execution environment, their integration with serverless architectures currently faces fundamental limitations in key areas: security , performance , and resource efficiency . We present WALLET, a lightweight confidential computing system for secure serverless deployments. By employing nested confidential execution and a decoupled guest OS within CVMs, WALLET runs each function in a minimal \"trustlet\", significantly improving security through a reduced Trusted Computing Base (TCB). Furthermore, by leveraging a data-centric I/O architecture built upon a lightweight LibOS, WALLET optimizes network communication to address performance and resource efficiency challenges. Our evaluation shows that compared to CVM-based deployments, WALLET has a 4.3× smaller TCB, improves end-to-end latency (15–93%), achieves higher function density (up to 907×), and reduces inter-function communication (up to 27×) and function chaining latency (16.7-30.2×); thus, WALLET offers a practical system design for confidential serverless computing.",
+      "pdf_link": "https://www.usenix.org/conference/nsdi26/presentation/sabanic",
+      "forum_link": "https://www.usenix.org/conference/nsdi26/presentation/sabanic",
+      "submission_date": null,
+      "conference": "NSDI '26",
+      "source": "usenix",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.5,
+      "updated_at": "2026-10-26T12:13:18.818476+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-104",
       "paper_number": 104,
       "title": "VTC: DNN Compilation with Virtual Tensors for Data Movement Elimination",
@@ -2544,6 +2541,52 @@
       "ratings": [],
       "score": 32.5,
       "updated_at": "2026-07-21T08:54:22.942128+00:00"
+    },
+    {
+      "forum_id": "2610.32803",
+      "paper_number": -1,
+      "title": "Quantum Cadence: Post-Quantum Consensus with Multiple Concurrent Proposers",
+      "authors": [
+        "Mohammad Mussadiq Jalalzai, Tobias Klenze, Jovan Komatovic"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.32803v1 Announce Type: new \nAbstract: The consensus protocols of most high-performance blockchains use quorum certificates, which bundle the signatures of a quorum of validators. Signature schemes such as BLS can aggregate the signatures of a whole quorum into a single short signature, which keeps these certificates small. A large-scale quantum computer would break these schemes, and no post-quantum scheme with comparable aggregate size and aggregation time is known. Without aggregation, a certificate holds one large post-quantum signature per member of the quorum, so it becomes infeasible for each validator to broadcast certificates, as modern consensus protocols often require.\n  We present Quantum Cadence, a post-quantum consensus protocol with multiple concurrent proposers th",
+      "pdf_link": "https://arxiv.org/pdf/2610.32803.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.32803",
+      "submission_date": "2026-10-26T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.5,
+      "updated_at": "2026-10-26T12:13:17.432627+00:00"
+    },
+    {
+      "forum_id": "2607.00740",
+      "paper_number": -1,
+      "title": "A Reduced Stochastic Model of Microservice Availability: Algorithms for Identification and Formal Analysis",
+      "authors": [
+        "Anatoly A. Krasnovsky, Anna Maslovskaya"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.00740v2 Announce Type: replace-cross \nAbstract: Estimating microservice operation availability requires connecting runtime observations to completion of the required work within a deadline. Detailed architectural models provide one route, but their reconstruction and analysis can be costly. We present algorithms for identifying and analysing a reduced stochastic availability model from telemetry and declared operation requirements. The identification procedure constructs a joint law of execution states and retains compatible laws when observations are incomplete. Formal results establish attainable probability bounds and conditions for identifying a completion-and-deadline representation directly. This construction preserves the range obtained by evaluating the same completion-a",
+      "pdf_link": "https://arxiv.org/pdf/2607.00740.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.00740",
+      "submission_date": "2026-10-26T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.0,
+      "updated_at": "2026-10-26T12:13:17.433866+00:00"
     },
     {
       "forum_id": "usenix-osdi26-99",
@@ -5949,27 +5992,27 @@
       "updated_at": "2026-07-21T08:54:22.938822+00:00"
     },
     {
-      "forum_id": "2605.19385",
+      "forum_id": "2511.10442",
       "paper_number": -1,
-      "title": "LatentStore: An Efficient Latent-First Storage System for AI-Generated Images",
+      "title": "FastGraph: PCA-Subspace Binned k-Nearest-Neighbor Graph Construction for GPU Geometric Deep Learning",
       "authors": [
-        "Zirui Wang, Yunjia Zheng, Tingfeng Lan, Zhaoyuan Su, Haoran Ni, Juncheng Yang, Yue Cheng"
+        "Aarush Agarwal, Jan Kieseler, Raymond He, Matteo Cremonesi, Shah Rukh Qasim"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2605.19385v3 Announce Type: replace \nAbstract: The explosive growth of AI-generated images has created a sustainability challenge for storage infrastructure. Platforms like Midjourney and Adobe Firefly already host billions of generative images, yet conventional object stores persist them as blobs with full-resolution pixels, consuming huge amounts of storage capacity and bandwidth. Unlike natural photos, however, AI-generated images can be deterministically reconstructed from compact, model-native latent tensors, making persistent image storage fundamentally redundant. This paper presents LatentStore, a latent-first storage system for AI-generated images. LatentStore treats compressed latents as durable storage objects and uses on-demand GPU reconstruction on the read path to trade ",
-      "pdf_link": "https://arxiv.org/pdf/2605.19385.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.19385",
-      "submission_date": "2026-10-23T04:00:00+00:00",
+      "abstract": "arXiv:2511.10442v2 Announce Type: replace \nAbstract: Dynamic graph neural networks repeatedly construct k-nearest-neighbor graphs in learned latent spaces, making GPU-accelerated graph construction an important operation in scientific point-cloud workloads. We present FastGraph, a PyTorch-integrated primitive for exact kNN graph construction in low-to-moderate-dimensional spaces. FastGraph uses a PCA-subspace cell list: it fits a compact binning coordinate system to the input tensor, uses that subspace for spatial pruning, and evaluates all candidate distances in the original feature space. The data-adaptive orthonormal subspace improves uniform-grid pruning in the d=4-10 range evaluated around the d=4 GravNet operating point. Point data remain GPU-resident, with small host synchronization",
+      "pdf_link": "https://arxiv.org/pdf/2511.10442.pdf",
+      "forum_link": "https://arxiv.org/abs/2511.10442",
+      "submission_date": "2026-10-26T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-10-23T10:58:47.679494+00:00"
+      "updated_at": "2026-10-26T12:13:17.433487+00:00"
     },
     {
       "forum_id": "usenix-osdi26-22",
@@ -6600,29 +6643,6 @@
       "ratings": [],
       "score": 2.0,
       "updated_at": "2026-07-21T08:54:26.743211+00:00"
-    },
-    {
-      "forum_id": "2610.30587",
-      "paper_number": -1,
-      "title": "Know When to Escalate: Critic-Guided Adaptive Execution for Cloud-Local Embodied Agents",
-      "authors": [
-        "Wei Zhang, Lirong Xiang, Charles Fleming"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.30587v1 Announce Type: cross \nAbstract: Recent advances in foundation-model agents have enabled increasingly capable embodied systems for long-horizon planning and interaction. However, embodied agents require fast, closed-loop decisions as they continuously perceive and act on a changing environment. Deploying strong cloud agents leaves the platform idle for seconds between consecutive actions, while lightweight local models respond quickly but are more vulnerable to errors. Existing hierarchical architectures typically assign models fixed roles, whereas conventional model routers make stateless per-request decisions. We present CARE, a critic-guided adaptive execution framework that dynamically determines when to escalate control from a local executor to a stronger cloud model",
-      "pdf_link": "https://arxiv.org/pdf/2610.30587.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.30587",
-      "submission_date": "2026-10-23T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-10-23T10:58:47.678884+00:00"
     },
     {
       "forum_id": "usenix-osdi26-15",

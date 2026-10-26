@@ -1,54 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-10-23T10:59:26.436349+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-10-26T12:13:52.586969+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2610.31451",
+      "forum_id": "2610.32810",
       "paper_number": -1,
-      "title": "A Fast Algorithm for Quaternion Tensor Singular Value Decomposition under the T-product",
+      "title": "Numerical analysis of a Lax-Wendroff type lattice Boltzmann scheme for the advection equation",
       "authors": [
-        "Daochang Zhang, Yue Zhao, Jingqian Li"
+        "Thomas Bellotti (EM2C), Filipa Caetano (LMO), Fran\\c{c}ois Dubois (Cnam,MACS), Benjamin Graille (LMO)"
       ],
       "keywords": [
         "cs.NA",
-        "SIAM"
+        "numerical analysis"
       ],
-      "abstract": "arXiv:2610.31451v1 Announce Type: new \nAbstract: Quaternion tensor singular value decomposition (T-SVD) under the T-product provides a framework for analyzing multidimensional quaternion data. However, the T-SVD construction of Pan and Ng (SIAM J. Matrix Anal. Appl., 2024) \\cite{PanNg2024} contains a structural gap: an unrestricted quaternion matrix SVD need not preserve the paired Fourier block structure required for tensor factor recovery, potentially leading to loss of T-unitarity and inaccurate reconstruction.\n  To address this issue, we develop a structure-preserving construction that transforms each paired quaternion block into a complex matrix and maps its complex SVD factors back to quaternion factors with the required structure. This construction corrects the proof of \\cite[Theore",
-      "pdf_link": "https://arxiv.org/pdf/2610.31451.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.31451",
-      "submission_date": "2026-10-23T04:00:00+00:00",
-      "conference": "SIAM",
+      "abstract": "arXiv:2610.32810v1 Announce Type: new \nAbstract: A linear monodimensional lattice Boltzmann scheme with three velocities tackling the advection equation is investigated. We prove that it is second-order accurate and provide necessary and sufficient stability conditions through an explicit formula involving the two relaxation parameters. Relying on existing results for finite difference schemes, we prove convergence for smooth initial data with initialization of the non-conserved moments at equilibrium. Several numerical simulations illustrate these theoretical findings.",
+      "pdf_link": "https://arxiv.org/pdf/2610.32810.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.32810",
+      "submission_date": "2026-10-26T04:00:00+00:00",
+      "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-10-23T10:59:26.432672+00:00"
-    },
-    {
-      "forum_id": "2610.31663",
-      "paper_number": -1,
-      "title": "Phase Transition from Random Features to Fully Trainable Networks",
-      "authors": [
-        "Xin He, Huan Lao, Xiliang Lu, Shijun Zhang"
-      ],
-      "keywords": [
-        "cs.NA",
-        "scientific computing"
-      ],
-      "abstract": "arXiv:2610.31663v1 Announce Type: new \nAbstract: Constructing accurate and computationally tractable approximation spaces is a fundamental task in scientific computing. Partially trainable neural networks bridge fixed random features and fully adaptive representations. This paper quantifies a phase transition pattern in approximation bounds and observes analogous behavior in training errors: a rapid but smooth initial improvement followed by diminishing returns, with a sharper transition under greater initialization mismatch. Under polynomial spectral decay with exponent $\\alpha>1$ and leverage compatibility, we establish a squared $L_2$ approximation rate $\\mathcal{O}((\\kappa_P\\log(m/\\delta)/m)^\\alpha)$ for two-layer networks of width $m$ and trainable proportion $P$, where $\\kappa_P=(P/\\",
-      "pdf_link": "https://arxiv.org/pdf/2610.31663.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.31663",
-      "submission_date": "2026-10-23T04:00:00+00:00",
-      "conference": "scientific computing",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-23T10:59:26.432826+00:00"
+      "score": 4.0,
+      "updated_at": "2026-10-26T12:13:52.585445+00:00"
     }
   ]
 }

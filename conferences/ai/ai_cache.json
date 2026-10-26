@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-10-23T10:59:26.258754+00:00",
-  "paper_count": 31,
+  "last_updated": "2026-10-26T12:13:52.479463+00:00",
+  "paper_count": 30,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -307,29 +307,6 @@
       "ratings": [],
       "score": 21.0,
       "updated_at": "2026-08-14T07:42:18.885647+00:00"
-    },
-    {
-      "forum_id": "2603.01092",
-      "paper_number": -1,
-      "title": "The Alien Space of Science: Sampling Coherent but Cognitively Unavailable Research Directions",
-      "authors": [
-        "Alejandro H. Artiles, Martin Weiss, Levin Brinkmann, Iyad Rahwan, Bernhard Sch\\\"olkopf, Christopher Pal, Hugo Larochelle, Anirudh Goyal, Nasim Rahaman"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ICML"
-      ],
-      "abstract": "arXiv:2603.01092v3 Announce Type: replace \nAbstract: Scientific discovery is constrained not only by what is true, but by what is cognitively available to researchers. Many directions are coherent in light of the literature yet unlikely to be proposed because no existing community combines the relevant concepts, methods, and intuitions. Modern language models inherit this bias, recombining high-density regions of the literature when prompted for novel ideas. We target the complementary region, the alien space of science: directions that are scientifically plausible but unlikely under the distribution of existing researchers. Our method decomposes papers into conceptual units and clusters them into a vocabulary of idea atoms. A coherence model scores whether atom combinations form viable re",
-      "pdf_link": "https://arxiv.org/pdf/2603.01092.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.01092",
-      "submission_date": "2026-10-23T04:00:00+00:00",
-      "conference": "ICML",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.0,
-      "updated_at": "2026-10-23T10:58:51.445064+00:00"
     },
     {
       "forum_id": "mlr-icml25-38",

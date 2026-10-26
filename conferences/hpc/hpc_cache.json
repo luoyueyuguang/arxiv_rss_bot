@@ -1,77 +1,123 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-10-23T10:58:47.536408+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-10-26T12:13:17.292554+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2610.17528",
+      "forum_id": "2412.17484",
       "paper_number": -1,
-      "title": "ATTUNE: Agentic Throughput Tuning for LLM Training",
+      "title": "Power- and Fragmentation-aware Online Scheduling for GPU Datacenters",
       "authors": [
-        "Leo Fan, Hongyang Wang, Wenbo Chen, Jingguo Liu, Xian Li, Xuan Wang, Ruochen Wen, Yiming Yan, Hao Wu, Yichuan Li, Qian Qu, Zheshen Wang, Benoit Dumoulin"
+        "Francesco Lettich, Emanuele Carlini, Franco Maria Nardini, Raffaele Perego, Salvatore Trani"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.17528v2 Announce Type: replace \nAbstract: The throughput of an LLM training job depends on its recipe: how the model is split across GPUs, how memory is traded for compute, and which kernels and communication overlaps it uses. The best recipe changes with every model, accelerator and framework version. Automated tuners search a fixed space of knobs and check only that a job runs, so they miss levers outside that space and can ship a configuration that silently changes training. ATTUNE is a coding agent that tunes any working recipe unattended within a GPU-hour budget. Guided by a skill of search rules, scripts and lessons from past tuning campaigns, it diagnoses each run and changes one lever at a time. A correctness gate outside the agent refuses any argument known to change th",
-      "pdf_link": "https://arxiv.org/pdf/2610.17528.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.17528",
-      "submission_date": "2026-10-23T04:00:00+00:00",
+      "abstract": "arXiv:2412.17484v2 Announce Type: replace \nAbstract: The rise of Artificial Intelligence and Large Language Models is driving increased GPU usage in data centers for complex training and inference tasks, impacting operational costs, energy demands, and the environmental footprint of large-scale computing infrastructures. This work addresses the online scheduling problem in GPU datacenters, which involves scheduling tasks without knowledge of their future arrivals. We focus on two objectives: minimizing GPU fragmentation and reducing power consumption. GPU fragmentation occurs when partial GPU allocations hinder the efficient use of remaining resources, especially as the datacenter nears full capacity. A recent scheduling policy, Fragmentation Gradient Descent (FGD), leverages a fragmentati",
+      "pdf_link": "https://arxiv.org/pdf/2412.17484.pdf",
+      "forum_link": "https://arxiv.org/abs/2412.17484",
+      "submission_date": "2026-10-26T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 33.0,
-      "updated_at": "2026-10-23T10:58:47.014914+00:00"
+      "score": 35.5,
+      "updated_at": "2026-10-26T12:13:16.730923+00:00"
     },
     {
-      "forum_id": "2610.31211",
+      "forum_id": "2610.32632",
       "paper_number": -1,
-      "title": "Evolving Federated Density Peak Clustering with Shuffler-Based Anonymization",
+      "title": "Toward Open ISA Supercomputing: A Comparative Study of RISC-V, Arm, and x86 Architectures on HPC Workloads",
       "authors": [
-        "Miha O\\v{z}bot, Seiichi Ozawa, Igor \\v{S}krjanc"
+        "Emanuele Venieri, Giacomo Madella, Gabriele Ceccolini, Simone Manoni, Federico Ficarelli, Filippo Barbari, Jenny Lynn Almerol, Elisabetta Boella, Nitin Shukla, Simone Bn\\`a, Luca Benini, Andrea bartolini"
       ],
       "keywords": [
         "cs.DC",
-        "CLUSTER"
+        "Supercomputing"
       ],
-      "abstract": "arXiv:2610.31211v1 Announce Type: cross \nAbstract: In this paper, we present a novel one-shot federated clustering approach based on evolving fuzzy clustering and shuffler-based anonymization. In federated clustering, each round reveals additional model information to the server and can increase the opportunity to infer properties of local datasets, even when raw samples are never shared. Consequently, fewer client-server exchanges and unlinkability are important, so transmitted information cannot be attributed to any single client. Data-stream clustering algorithms, which learn in a single pass over the data, align well with the one-shot federated learning paradigm, where a single communication round can be sufficient. The proposed Evolving Federated Density Peak Clustering (eFDPC) method",
-      "pdf_link": "https://arxiv.org/pdf/2610.31211.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.31211",
-      "submission_date": "2026-10-23T04:00:00+00:00",
-      "conference": "CLUSTER",
+      "abstract": "arXiv:2610.32632v1 Announce Type: new \nAbstract: RISC-V is emerging as a candidate architecture for high-performance computing (HPC), but its competitiveness against established x86 and Arm processors remains difficult to assess because existing studies use different platforms, workloads, and methodologies, and rarely consider energy efficiency. Our work provides an evaluation of contemporary HPC RISC-V, Arm, and x86 processors using a common software stack and methodology. We characterize the Sophgo SG2044 and compare it with the NVIDIA Grace CPU Superchip and Intel Xeon Platinum 8480+ across four HPC benchmarks (STREAM, HPL, HPL-MxP, and HPCG) and four representative applications (iPIC3D, PLUTO, OpenFOAM, and llama.cpp). The version of HPL-MxP linked to OpenBLAS built and used for this w",
+      "pdf_link": "https://arxiv.org/pdf/2610.32632.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.32632",
+      "submission_date": "2026-10-26T04:00:00+00:00",
+      "conference": "Supercomputing",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-10-23T10:58:47.014564+00:00"
+      "score": 26.0,
+      "updated_at": "2026-10-26T12:13:16.730327+00:00"
     },
     {
-      "forum_id": "2610.24865",
+      "forum_id": "2610.32438",
       "paper_number": -1,
-      "title": "A mechanism for collective foraging: percolating recruitment cascades coupled to a maximum-entropy field",
+      "title": "Data Quality Audit and Bivariate Temperature-Humidity Analysis of a Long-Term LoRaWAN Network: Anomaly Detection, PCA, Clustering and Machine Learning",
       "authors": [
-        "Galen J. Wilkerson"
+        "Mamadou Sow"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.24865v3 Announce Type: replace-cross \nAbstract: Foraging recruitment is a contagion: an agent that finds a resource triggers a linear-threshold cascade, the model built for rumour and adoption spread on social networks, now embedded in space. Because activation is degree-normalized, the same rule that spreads the cascade also stifles it as neighbourhoods crowd, so the swarm aggregates on a resource and then releases to explore again. The cascade runs on the communication network, but acting on it moves agents in physical space, and that motion rewires the network: network and space are one coupled system, and this feedback, not any tuning, makes the coordination self-limiting. Because recruitment chains along the graph rather than reaching near neighbours alone, whether a discov",
-      "pdf_link": "https://arxiv.org/pdf/2610.24865.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.24865",
-      "submission_date": "2026-10-23T04:00:00+00:00",
+      "abstract": "arXiv:2610.32438v1 Announce Type: cross \nAbstract: Long-term environmental IoT/LPWAN deployments often aggregate heterogeneous data streams from diverse devices without systematic auditing of each variable's actual coverage prior to analysis-an increased risk when multiple sensor types coexist within the same network. This work proposes a C++17 processing pipeline applied to the Tour Perret LoRaWAN dataset (421 937 frames, June 2021--June 2023, 5 devices). A systematic coverage audit integrated into the extraction phase reveals that CO2 is completely missing (0% coverage) and pressure is reported only by an isolated base module (Wyres, 4.24% of the corpus), invalidating the initial hypothesis of a joint four-variable analysis. The analysis is refocused on the Temperature--Humidity pair, jo",
+      "pdf_link": "https://arxiv.org/pdf/2610.32438.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.32438",
+      "submission_date": "2026-10-26T04:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-10-23T10:58:47.015211+00:00"
+      "score": 24.0,
+      "updated_at": "2026-10-26T12:13:16.730771+00:00"
+    },
+    {
+      "forum_id": "2610.32027",
+      "paper_number": -1,
+      "title": "Bounding Queue Waits for Fair Scheduling of Bursty HPC Workloads via Hierarchical Algorithms",
+      "authors": [
+        "Karaen Senthilkumar, Suman Raj, Maxime Gonthier, Kyle Chard, Donpaul Stephens, Ian Foster"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2610.32027v1 Announce Type: new \nAbstract: HPC clusters are shared among many projects, each holding an allocation of node-hours, and ensuring fairness is becoming harder. Foundation models workflows and automated pipelines have made job submissions bursty and concentrated among a few heavy users, so occasional users absorb queueing delays created by frequent ones, with no indication of how long their jobs will wait. Existing schedulers either forget past usage, protect only the job at the head of the queue, or assume that running jobs can be preempted. We propose HyDRA, a Hybrid Deadline and Ranking-Aware scheduler that enforces fairness among users while bounding the queue wait of every job. HyDRA assigns each job a deadline on arrival based on its size, the priorities of its proje",
+      "pdf_link": "https://arxiv.org/pdf/2610.32027.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.32027",
+      "submission_date": "2026-10-26T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.0,
+      "updated_at": "2026-10-26T12:13:16.730240+00:00"
+    },
+    {
+      "forum_id": "2610.32247",
+      "paper_number": -1,
+      "title": "MetaDB: Putting File-System Structure Back into Distributed Databases",
+      "authors": [
+        "Zebin Ren, Biao Cao, Kang Chen, Zhihui Yin, Qiushi Chen, Jielong Jian, Jiwei Xiong, Xinxing Wang, Yan Xing, Liguo Duan, Ran Zheng, Xianjun Meng, Zhenyu Hou"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2610.32247v1 Announce Type: cross \nAbstract: Storage systems in production increasingly rely on distributed databases for metadata management, yet our experience at Baidu shows that treating a general-purpose database as a black box leaves substantial performance and efficiency untapped. File-system metadata exhibits directory-tree locality, differentiated consistency requirements, and clustered deletions that general-purpose databases largely ignore. We thus propose MetaDB, a metadata-aware distributed transactional database that serves as the shared metadata layer for Baidu's large-scale storage systems. MetaDB addresses three key mismatches between general-purpose databases and metadata workloads: Data Model Mismatch, Transaction Model Mismatch, and Storage Implementation Mismatch",
+      "pdf_link": "https://arxiv.org/pdf/2610.32247.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.32247",
+      "submission_date": "2026-10-26T04:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-10-26T12:13:16.730728+00:00"
     }
   ]
 }
