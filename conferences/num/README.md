@@ -1,6 +1,6 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-10-26 12:13:52 UTC
+- **Last Updated**: 2026-10-27 11:35:04 UTC
 - **Total Filtered Papers**: 1
 - **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
@@ -9,4 +9,4 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Numerical analysis of a Lax-Wendroff type lattice Boltzmann scheme for the advection equation](https://arxiv.org/abs/2610.32810) | `ARXIV` | 4.0 |
+| 1 | [Nonlinear Inverse Iterations for Spin-Orbit Coupled Quantum Gases](https://arxiv.org/abs/2601.08990) | `ARXIV` | 4.5 |

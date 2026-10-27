@@ -1,54 +1,123 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-10-22T11:07:39.688383+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-10-27T11:34:09.695177+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2601.18702",
+      "forum_id": "2610.33843",
       "paper_number": -1,
-      "title": "From Fuzzy to Exact: The Halo Architecture for Infinite-Depth Reasoning via Rational Arithmetic",
+      "title": "Real-Time Recurrent Qubit-State Discrimination on a Heterogeneous AI-Engine-FPGA Accelerator",
       "authors": [
-        "Hansheng Ren"
+        "Vu Le, Yilun Xu, Neel Vora, Gang Huang, Deepak Ganesan, Phuc Nguyen"
       ],
       "keywords": [
         "cs.AR",
-        "MICRO"
+        "ISCA"
       ],
-      "abstract": "arXiv:2601.18702v5 Announce Type: replace-cross \nAbstract: The prevailing scaling paradigm of Large Language Models (LLMs) rests on a substrate of \"Fuzzy\" floating-point arithmetic. To mitigate the inherent instability of this approximate foundation, modern architectures have erected a complex scaffolding of structural and numerical heuristics--Complex Residuals, Pre-RMSNorm, Attention Scaling, and Gradient Clipping--consuming significant compute solely to prevent numerical collapse.\n  We propose a paradigm shift to the \"Exact\". We introduce the Halo Architecture, grounded in the Rational Field (Q) and powered by a custom Exact Inference Unit (EIU). To resolve the exponential bit-width growth of rational arithmetic, Halo employs a Dual-Ring Topology that unifies two complementary control m",
-      "pdf_link": "https://arxiv.org/pdf/2601.18702.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.18702",
-      "submission_date": "2026-10-22T04:00:00+00:00",
-      "conference": "MICRO",
+      "abstract": "arXiv:2610.33843v1 Announce Type: new \nAbstract: Qubit readout, or qubit state discrimination, remains one of the slowest and most error-prone operations in superconducting quantum processors, making fast, accurate, and hardware-efficient classification essential for scalable quantum computing. Conventional discriminators integrate the I/Q record into a single point, discarding evidence a relaxing qubit leaves behind; full-resolution feed-forward classifiers recover it but are too costly to deploy under this constraint. Recurrent classifiers retain full resolution far more cheaply, but their loop-carried hidden state cannot fit a single AI Engine (AIE) tile's register capacity and spills to data memory, adding latency that grows with sequence length.\n  We present a hardware-aware LSTM acce",
+      "pdf_link": "https://arxiv.org/pdf/2610.33843.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.33843",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "ISCA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-10-22T11:07:39.685770+00:00"
+      "score": 65.0,
+      "updated_at": "2026-10-27T11:34:09.690894+00:00"
     },
     {
-      "forum_id": "2610.29445",
+      "forum_id": "2610.35569",
       "paper_number": -1,
-      "title": "Deciding Scale Placement in MXFP4 Dot Products with Integer Arithmetic",
+      "title": "ADACT: PDE-Constrained Thermal Hardware/Software Co-Design Adjoint-Driven Optimal Control via Finite Difference Discretization",
       "authors": [
-        "Shreyas Vinayakumar"
+        "Don Li"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2610.29445v1 Announce Type: cross \nAbstract: The Open Compute Project's microscaling (MX) family includes MXFP4, which stores 32 four-bit elements with a shared power-of-two scale. When lowering a dot-product reduction, a compiler can apply these scales before the reduction, or defer scaling until afterwards. Although equivalent over real numbers, these formulations can produce different IEEE binary32 results through overflow or underflow, with equivalence also depending on the reduction tree. We study the legality of compiler rewrites in either direction by deriving conditions under which the two formulations are bitwise equivalent.\n  To decide rewrite legality, we construct an integer state machine that exploits the finite element alphabet and shared power-of-two scales, modeling o",
-      "pdf_link": "https://arxiv.org/pdf/2610.29445.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.29445",
-      "submission_date": "2026-10-22T04:00:00+00:00",
+      "abstract": "arXiv:2610.35569v1 Announce Type: cross \nAbstract: By virtue of the sheer compute demands of large-scale artificial intelligence (AI) and high-performance computing (HPC), modern multi-core microprocessors suffer from severe power density limits and thermal throttling, entailing an urgent need for principled methods for predictive, physics-informed dynamical thermal management (DTM). Here, we introduce a hardware/software co-design physics-informed PDE-constrained DTM throttling optimal control algorithm, ADACT (Adjoint-Driven Adaptive Co-Design Thermal Control), that minimizes thermal risk and cooling energy overhead while maximizing core execution throughput. The underlying physical temperature field is governed by a two-dimensional nonhomogeneous parabolic reaction-diffusion equation wi",
+      "pdf_link": "https://arxiv.org/pdf/2610.35569.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.35569",
+      "submission_date": "2026-10-27T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-10-22T11:07:39.685677+00:00"
+      "score": 54.5,
+      "updated_at": "2026-10-27T11:34:09.691069+00:00"
+    },
+    {
+      "forum_id": "2610.33107",
+      "paper_number": -1,
+      "title": "Fast Path, Exact Path: One Library of Hardwired Operators for Streaming and Exact Canny Edge Detection on a Low-Cost FPGA",
+      "authors": [
+        "Raj Mali"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2610.33107v1 Announce Type: new \nAbstract: Hysteresis edge tracking, the final stage of Canny edge detection, follows edge chains of unbounded length and therefore resists single-pass streaming; FPGA designs either approximate it or dedicate separate labelling hardware to it. We show that a single library of hardwired 3x3 operators, each with an identical two-clock latency, delivers both a camera-rate approximation and exact hysteresis on a low-cost Artix-7 (XC7A35T). The fast path streams camera pixels through the operators and K local hysteresis stages and commits each edge decision 262.15-720.63 microseconds after the pixel arrives (K = 1-8; system simulation with a datasheet camera model), that is, 3 + K camera lines later and 46-127x sooner than a frame-based processor can even ",
+      "pdf_link": "https://arxiv.org/pdf/2610.33107.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.33107",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 32.5,
+      "updated_at": "2026-10-27T11:34:09.690771+00:00"
+    },
+    {
+      "forum_id": "2610.34838",
+      "paper_number": -1,
+      "title": "PaFeDSE: Pareto-Feedback-Guided Microarchitecture Design Space Exploration for Efficient Pareto Search",
+      "authors": [
+        "Joonyong Park, Hyojeong Lee, Sejeong Yang, Joo-Young Kim"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2610.34838v1 Announce Type: new \nAbstract: Efficient microarchitecture design space exploration (DSE) is critical for optimizing performance, power, and area trade-offs in modern out-of-order processors. While machine-learning-based DSE significantly reduces the cost of exhaustively evaluating large design spaces, existing methods still waste expensive simulations on Pareto-miss candidates that do not improve the Pareto frontier and repeatedly process redundant candidates during iterative exploration. In this paper, we propose PaFeDSE, a Pareto-feedback-guided microarchitecture DSE framework for efficient Pareto search. PaFeDSE leverages Pareto-hit feedback to prioritize candidates likely to improve the frontier and Pareto-miss feedback to suppress exploration of unpromising local re",
+      "pdf_link": "https://arxiv.org/pdf/2610.34838.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.34838",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 24.5,
+      "updated_at": "2026-10-27T11:34:09.690969+00:00"
+    },
+    {
+      "forum_id": "2610.34907",
+      "paper_number": -1,
+      "title": "When and Why to Use TMA: A Workload-Grounded Characterization of Tensor Memory Acceleration on NVIDIA Hopper GPUs",
+      "authors": [
+        "Christin David Bose, Cesar Avalos, Junrui Pan, Timothy Rogers"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2610.34907v1 Announce Type: cross \nAbstract: The Tensor Memory Accelerator (TMA), introduced on NVIDIA Hopper, is used pervasively in production GPU kernels yet its usage is conspicuously selective: expert kernel developers in CUTLASS, FlashAttention-3, and FlashInfer apply TMA to some tensor operands within a kernel but fall back to cp.async, direct global loads, or distributed shared memory (DSM) for others. Vendor documentation describes the API, and recent microbenchmarking work characterizes TMA throughput in isolation, but neither answers the question practitioners actually face: given a memory operand in a kernel, should it use TMA, and if so, with or without cluster multicast? We address this gap with a workload-grounded characterization study on H100. We catalog the TMA, mul",
+      "pdf_link": "https://arxiv.org/pdf/2610.34907.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.34907",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-10-27T11:34:09.691047+00:00"
     }
   ]
 }

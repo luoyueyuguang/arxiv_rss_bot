@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-10-26T12:13:52.479463+00:00",
-  "paper_count": 30,
+  "last_updated": "2026-10-27T11:35:04.373750+00:00",
+  "paper_count": 32,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -309,6 +309,29 @@
       "updated_at": "2026-08-14T07:42:18.885647+00:00"
     },
     {
+      "forum_id": "2605.23751",
+      "paper_number": -1,
+      "title": "Approaching I/O-optimality for Approximate Attention",
+      "authors": [
+        "P\\'al Andr\\'as Papp, Aleksandros Sobczyk, Anastasios Zouzias"
+      ],
+      "keywords": [
+        "cs.LG",
+        "NeurIPS"
+      ],
+      "abstract": "arXiv:2605.23751v2 Announce Type: replace \nAbstract: We revisit the I/O complexity of attention in large language models. Given query-key-value matrices $Q,K,V\\in\\mathbb{R}^{n\\times d}$, and a machine with fast memory size $M$, the goal is to compute the \"attention matrix\" $A=\\text{softmax}(Q K ^{\\top}/\\sqrt{d}) V$ with the minimal number of data transfers between fast and slow memory. Existing methods in the literature, most notably FlashAttention and its variants, incur an I/O cost that depends quadratically on the context length $n$, while a trivial lower bound only requires $\\Omega(nd)$ I/O's to read the inputs and write the output. In this work we show that the dependence on $n$ can be reduced to almost-linear, by developing I/O-efficient algorithms inspired by the recent approximate ",
+      "pdf_link": "https://arxiv.org/pdf/2605.23751.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.23751",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "NeurIPS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-10-27T11:34:33.204747+00:00"
+    },
+    {
       "forum_id": "mlr-icml25-38",
       "paper_number": 38,
       "title": "Disentangling the Causes of Plasticity Loss in Neural Networks",
@@ -425,6 +448,29 @@
       "ratings": [],
       "score": 4.0,
       "updated_at": "2026-08-14T07:42:28.686169+00:00"
+    },
+    {
+      "forum_id": "2610.34777",
+      "paper_number": -1,
+      "title": "Scope-Gap Injection: Exploiting Evaluator Channel Blind Spots in the OpenClaw Agent Security Competition",
+      "authors": [
+        "Weihang Niu, Mengxing Ren, Che Qu"
+      ],
+      "keywords": [
+        "cs.AI",
+        "IJCAI"
+      ],
+      "abstract": "arXiv:2610.34777v1 Announce Type: new \nAbstract: This paper introduces Scope-Gap Injection (SGI), an indirect prompt injection method for multi-stage LLM-agent safety pipelines. In the IJCAI 2026 OpenClaw Agent Security Attack Competition, each attack package is judged by a static skill scan (S1), an LLM-judge safety check over the task and skill definition (S2), and a live execution audit (S3). Our observations suggest a scope gap: S2 appears to inspect the task instruction and skill definition without inspecting attachment contents, while the agent reads attachments during S3. SGI keeps the visible task and skill benign, while target identifiers, bypass parameters, and authorization procedures are moved into an attachment written as a business worklist. The S2 judge therefore sees a harm",
+      "pdf_link": "https://arxiv.org/pdf/2610.34777.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.34777",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "IJCAI",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-10-27T11:34:32.919381+00:00"
     },
     {
       "forum_id": "mlr-icml25-4",

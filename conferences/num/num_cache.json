@@ -1,31 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-10-26T12:13:52.586969+00:00",
+  "last_updated": "2026-10-27T11:35:04.513438+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2610.32810",
+      "forum_id": "2601.08990",
       "paper_number": -1,
-      "title": "Numerical analysis of a Lax-Wendroff type lattice Boltzmann scheme for the advection equation",
+      "title": "Nonlinear Inverse Iterations for Spin-Orbit Coupled Quantum Gases",
       "authors": [
-        "Thomas Bellotti (EM2C), Filipa Caetano (LMO), Fran\\c{c}ois Dubois (Cnam,MACS), Benjamin Graille (LMO)"
+        "Patrick Henning, Laura Huynh"
       ],
       "keywords": [
         "cs.NA",
-        "numerical analysis"
+        "SIAM"
       ],
-      "abstract": "arXiv:2610.32810v1 Announce Type: new \nAbstract: A linear monodimensional lattice Boltzmann scheme with three velocities tackling the advection equation is investigated. We prove that it is second-order accurate and provide necessary and sufficient stability conditions through an explicit formula involving the two relaxation parameters. Relying on existing results for finite difference schemes, we prove convergence for smooth initial data with initialization of the non-conserved moments at equilibrium. Several numerical simulations illustrate these theoretical findings.",
-      "pdf_link": "https://arxiv.org/pdf/2610.32810.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.32810",
-      "submission_date": "2026-10-26T04:00:00+00:00",
-      "conference": "numerical analysis",
+      "abstract": "arXiv:2601.08990v2 Announce Type: replace \nAbstract: This work concerns the computation of ground states of two-component spin-orbit coupled Bose-Einstein condensates (SO-coupled BECs), modelled by a coupled nonlinear eigenvalue problem of Gross-Pitaevskii type. In regimes with strongly modulated densities, including supersolid-like phases, conventional numerical approaches such as generalized inverse iterations or gradient descent may converge slowly. To address this issue, we apply the J-method [E. Jarlebring, S. Kvaal, W. Michiels. SIAM J. Sci. Comput. 36-4, 2014], which allows nonlinear inverse iterations to be accelerated through spectral shifting. A central analytical challenge arises from global phase invariance, which causes the target eigenvalue of the J-operator to be multiple an",
+      "pdf_link": "https://arxiv.org/pdf/2601.08990.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.08990",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "SIAM",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-10-26T12:13:52.585445+00:00"
+      "score": 4.5,
+      "updated_at": "2026-10-27T11:35:04.511456+00:00"
     }
   ]
 }

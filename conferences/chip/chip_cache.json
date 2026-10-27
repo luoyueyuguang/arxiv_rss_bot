@@ -1,54 +1,238 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-10-26T12:13:20.466628+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-10-27T11:34:32.516351+00:00",
+  "paper_count": 10,
   "papers": [
     {
-      "forum_id": "2610.32597",
+      "forum_id": "2610.33510",
       "paper_number": -1,
-      "title": "Automated Multi-Line Bug Repair Using Model Checker Aided LLMs: A Case Study on RISC-V Processors",
+      "title": "DiffRouter: A Differentiable Routing Framework for UltraScale FPGAs",
       "authors": [
-        "Debleena Das, Chandan Kumar Jha, Muhammad Hassan, Rolf Drechsler, Ansuman Banerjee, Subhra K. Das, Amlan Chakrabarti"
+        "Xiaohan Gao, Zhili Xiong, Yusu Wang, David Z. Pan"
       ],
       "keywords": [
         "cs.AR",
-        "DATE"
+        "FPGA"
       ],
-      "abstract": "arXiv:2610.32597v1 Announce Type: new \nAbstract: Functional verification of Register-Transfer Level(RTL) designs has become a critical bottleneck in modern semiconductor development, often consuming the majority of project resources. Debugging, in particular, remains an especially time-consuming task, requiring careful analysis of simulation traces or counterexamples. Recent work has explored applying Large Language Models (LLMs) to RTL debug and repair with great promise. However, the existing approaches typically are for single-line bugs, operate in open-loop, rely heavily on prompts or retrieval, lack scalability, and often produce incorrect fixes. In this paper, we propose a novel automated RTL bug repair methodology that combines LLMs, assertions, and a model checker to provide scalab",
-      "pdf_link": "https://arxiv.org/pdf/2610.32597.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.32597",
-      "submission_date": "2026-10-26T04:00:00+00:00",
-      "conference": "DATE",
+      "abstract": "arXiv:2610.33510v1 Announce Type: new \nAbstract: Routing has become a major bottleneck in large-scale FPGA design flows, where traditional routers rely on sequential net-by-net processing and rip-up-reroute heuristics. This inherent sequentialism limits parallelism, leads to suboptimal utilization of routing resources, and significantly increases runtime on modern FPGAs. This paper introduces DiffRouter, the first differentiable, gradient-based FPGA routing framework with GPU acceleration. By lifting routing into a continuous optimization space, DiffRouter enables highly concurrent routing and improved global optimality before projecting solutions back onto the discrete fabric. The framework consists of three key stages: (1) Resource-pruned preprocessing, which extracts compact routing var",
+      "pdf_link": "https://arxiv.org/pdf/2610.33510.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.33510",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-10-26T12:13:20.464544+00:00"
+      "score": 34.5,
+      "updated_at": "2026-10-27T11:34:32.512311+00:00"
     },
     {
-      "forum_id": "2610.32052",
+      "forum_id": "2610.33107",
       "paper_number": -1,
-      "title": "A Resource-Efficient and Precision-Scalable FPGA Accelerator for Spiking Neural Networks Using Minifloat Arithmetic",
+      "title": "Fast Path, Exact Path: One Library of Hardwired Operators for Streaming and Exact Canny Edge Detection on a Low-Cost FPGA",
       "authors": [
-        "Ali Mehrabi, Philip C. Jose"
+        "Raj Mali"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2610.33107v1 Announce Type: new \nAbstract: Hysteresis edge tracking, the final stage of Canny edge detection, follows edge chains of unbounded length and therefore resists single-pass streaming; FPGA designs either approximate it or dedicate separate labelling hardware to it. We show that a single library of hardwired 3x3 operators, each with an identical two-clock latency, delivers both a camera-rate approximation and exact hysteresis on a low-cost Artix-7 (XC7A35T). The fast path streams camera pixels through the operators and K local hysteresis stages and commits each edge decision 262.15-720.63 microseconds after the pixel arrives (K = 1-8; system simulation with a datasheet camera model), that is, 3 + K camera lines later and 46-127x sooner than a frame-based processor can even ",
+      "pdf_link": "https://arxiv.org/pdf/2610.33107.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.33107",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.0,
+      "updated_at": "2026-10-27T11:34:32.512162+00:00"
+    },
+    {
+      "forum_id": "2610.35569",
+      "paper_number": -1,
+      "title": "ADACT: PDE-Constrained Thermal Hardware/Software Co-Design Adjoint-Driven Optimal Control via Finite Difference Discretization",
+      "authors": [
+        "Don Li"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.32052v1 Announce Type: cross \nAbstract: Spiking neural networks (SNNs) are well suited to event-driven edge intelligence, but the arithmetic complexity, memory footprint, and power consumption associated with conventional floating-point implementations can limit their deployment on resource-constrained hardware. This paper presents a precision-scalable and resource-efficient SNN hardware accelerator architecture based on parameterized minifloat arithmetic. The proposed architecture implements recurrent leaky integrate-and-fire (LIF) neurons and leaky-integrator (LI) readout neurons using a unified minifloat datapath whose word length and mantissa width can be configured at synthesis time. A valid-driven arithmetic subsystem employs pipelined minifloat multiplication and addition",
-      "pdf_link": "https://arxiv.org/pdf/2610.32052.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.32052",
-      "submission_date": "2026-10-26T04:00:00+00:00",
+      "abstract": "arXiv:2610.35569v1 Announce Type: cross \nAbstract: By virtue of the sheer compute demands of large-scale artificial intelligence (AI) and high-performance computing (HPC), modern multi-core microprocessors suffer from severe power density limits and thermal throttling, entailing an urgent need for principled methods for predictive, physics-informed dynamical thermal management (DTM). Here, we introduce a hardware/software co-design physics-informed PDE-constrained DTM throttling optimal control algorithm, ADACT (Adjoint-Driven Adaptive Co-Design Thermal Control), that minimizes thermal risk and cooling energy overhead while maximizing core execution throughput. The underlying physical temperature field is governed by a two-dimensional nonhomogeneous parabolic reaction-diffusion equation wi",
+      "pdf_link": "https://arxiv.org/pdf/2610.35569.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.35569",
+      "submission_date": "2026-10-27T04:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-10-26T12:13:20.464650+00:00"
+      "updated_at": "2026-10-27T11:34:32.512801+00:00"
+    },
+    {
+      "forum_id": "2610.34838",
+      "paper_number": -1,
+      "title": "PaFeDSE: Pareto-Feedback-Guided Microarchitecture Design Space Exploration for Efficient Pareto Search",
+      "authors": [
+        "Joonyong Park, Hyojeong Lee, Sejeong Yang, Joo-Young Kim"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2610.34838v1 Announce Type: new \nAbstract: Efficient microarchitecture design space exploration (DSE) is critical for optimizing performance, power, and area trade-offs in modern out-of-order processors. While machine-learning-based DSE significantly reduces the cost of exhaustively evaluating large design spaces, existing methods still waste expensive simulations on Pareto-miss candidates that do not improve the Pareto frontier and repeatedly process redundant candidates during iterative exploration. In this paper, we propose PaFeDSE, a Pareto-feedback-guided microarchitecture DSE framework for efficient Pareto search. PaFeDSE leverages Pareto-hit feedback to prioritize candidates likely to improve the frontier and Pareto-miss feedback to suppress exploration of unpromising local re",
+      "pdf_link": "https://arxiv.org/pdf/2610.34838.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.34838",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-10-27T11:34:32.512573+00:00"
+    },
+    {
+      "forum_id": "2610.33843",
+      "paper_number": -1,
+      "title": "Real-Time Recurrent Qubit-State Discrimination on a Heterogeneous AI-Engine-FPGA Accelerator",
+      "authors": [
+        "Vu Le, Yilun Xu, Neel Vora, Gang Huang, Deepak Ganesan, Phuc Nguyen"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2610.33843v1 Announce Type: new \nAbstract: Qubit readout, or qubit state discrimination, remains one of the slowest and most error-prone operations in superconducting quantum processors, making fast, accurate, and hardware-efficient classification essential for scalable quantum computing. Conventional discriminators integrate the I/Q record into a single point, discarding evidence a relaxing qubit leaves behind; full-resolution feed-forward classifiers recover it but are too costly to deploy under this constraint. Recurrent classifiers retain full resolution far more cheaply, but their loop-carried hidden state cannot fit a single AI Engine (AIE) tile's register capacity and spills to data memory, adding latency that grows with sequence length.\n  We present a hardware-aware LSTM acce",
+      "pdf_link": "https://arxiv.org/pdf/2610.33843.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.33843",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-10-27T11:34:32.512412+00:00"
+    },
+    {
+      "forum_id": "2610.35026",
+      "paper_number": -1,
+      "title": "Detection of Single Stuck-at and Bridging Faults in Cluster-based FPGA Architectures",
+      "authors": [
+        "Nachiketa Das, Sudip Ghosh, H. Rahaman"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2610.35026v1 Announce Type: new \nAbstract: This paper presents a new technique for detecting single stuck-at and bridging faults in cluster-based FPGA architectures, using same set of test vectors generated by a test pattern generator circuitry. This technique is based on configuration of logic elements using test logic structure and the outputs of two separated logic elements are compared to detect a fault. To do this, block under test, TPG and output response analysis circuitry are generated in FPGAs. The configurations of test pattern generation, block under test and output response analysis are also discussed in this paper. The novelty lies in the fact that the same set of test vectors can detect all the stuck-at as well as bridging faults if the test vectors are applied in a par",
+      "pdf_link": "https://arxiv.org/pdf/2610.35026.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.35026",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-10-27T11:34:32.512598+00:00"
+    },
+    {
+      "forum_id": "2610.35144",
+      "paper_number": -1,
+      "title": "Realizing Low-Precision Storage and Sparse Execution in a Folded FPGA Speech Enhancer",
+      "authors": [
+        "Cl\\'ement Laroche"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2610.35144v1 Announce Type: cross \nAbstract: Hardware-aware training often optimizes FPGA resources, latency, or bit operations, but folding changes what compression saves: shared arithmetic decouples precision, weight storage, and scheduled work. We derive training objectives from the measured costs of a folded streaming speech-enhancement accelerator. Mixed-precision weights reduce on-chip storage; structured channel sparsity removes entire operations from the engine schedule. We deploy a bit-exact implementation on the Kria KV260. The best sparse model eliminates 47.3% of convolution MACs, cutting frame time by 45% (1.86 to 1.03 ms) and dynamic energy by 60% (83 to 33 $\\mu$J/frame) against a storage-priced model measured in the same session, with higher speech quality. Relative to",
+      "pdf_link": "https://arxiv.org/pdf/2610.35144.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.35144",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-10-27T11:34:32.512772+00:00"
+    },
+    {
+      "forum_id": "2511.22348",
+      "paper_number": -1,
+      "title": "FADiff: Fusion-Aware Differentiable Optimization for DNN Scheduling on Tensor Accelerators",
+      "authors": [
+        "Shuao Jia, Zichao Ling, Chen Bai, Bei Yu, Kang Zhao, Jianwang Zhai"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2511.22348v3 Announce Type: replace \nAbstract: Efficiently deploying Deep Neural Networks (DNNs) - particularly Large Language Models (LLMs) - on tensor accelerators is essential for achieving high throughput and energy efficiency at the edge. However, the combinatorial explosion of the joint design space spanning intra-layer mapping and inter-layer fusion renders existing approaches inadequate. In this work, we present FADiff, a gradient-based optimization framework that automatically discovers optimal mapping and fusion strategies to accelerate DNN inference. We first formulate a unified, differentiable analytical cost model that accurately estimates the energy and latency of individual layer mappings as well as diverse fusion configurations. We then combine CP-SAT-based pre-enumer",
+      "pdf_link": "https://arxiv.org/pdf/2511.22348.pdf",
+      "forum_link": "https://arxiv.org/abs/2511.22348",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-10-27T11:34:32.512821+00:00"
+    },
+    {
+      "forum_id": "2610.30448",
+      "paper_number": -1,
+      "title": "Proba: A High-Performance, Low-Traffic Probabilistic Spatial Memory Streaming Prefetcher",
+      "authors": [
+        "Yinting Huang, Jacky Wong, Sam Ainsworth"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2610.30448v2 Announce Type: replace \nAbstract: Spatial Memory Streaming (SMS) prefetchers exploit recurring spatial access patterns across memory regions to predict future accesses. Despite their effectiveness, existing SMS-based designs suffer from coarse control over aggressiveness and limited adaptability to dynamic program behavior and historical patterns. In this work, we present Proba, a feedback-directed SMS-based prefetcher that integrates probabilistic pattern updates, marginal accuracy decision-making, and pattern accumulation over several trigger features to achieve fine-grained accuracy-coverage trade-offs. When accuracy deteriorates, Proba moderates its aggressiveness to prioritize accurate prefetches; conversely, when accuracy rises, it expands its coverage. Proba achie",
+      "pdf_link": "https://arxiv.org/pdf/2610.30448.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.30448",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-10-27T11:34:32.512865+00:00"
+    },
+    {
+      "forum_id": "2610.32632",
+      "paper_number": -1,
+      "title": "Toward Open ISA Supercomputing: A Comparative Study of RISC-V, Arm, and x86 Architectures on HPC Workloads",
+      "authors": [
+        "Emanuele Venieri, Giacomo Madella, Gabriele Ceccolini, Simone Manoni, Federico Ficarelli, Filippo Barbari, Jenny Lynn Almerol, Elisabetta Boella, Nitin Shukla, Simone Bn\\`a, Luca Benini, Andrea bartolini"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2610.32632v2 Announce Type: replace-cross \nAbstract: RISC-V is emerging as a candidate architecture for high-performance computing (HPC), but its competitiveness against established x86 and Arm processors remains difficult to assess because existing studies use different platforms, workloads, and methodologies, and rarely consider energy efficiency. Our work provides an evaluation of contemporary HPC RISC-V, Arm, and x86 processors using a common software stack and methodology. We characterize the Sophgo SG2044 and compare it with the NVIDIA Grace CPU Superchip and Intel Xeon Platinum 8480+ across four HPC benchmarks (STREAM, HPL, HPL-MxP, and HPCG) and four representative applications (iPIC3D, PLUTO, OpenFOAM, and llama$.$cpp). The version of HPL-MxP linked to OpenBLAS built and use",
+      "pdf_link": "https://arxiv.org/pdf/2610.32632.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.32632",
+      "submission_date": "2026-10-27T04:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-10-27T11:34:32.512929+00:00"
     }
   ]
 }
