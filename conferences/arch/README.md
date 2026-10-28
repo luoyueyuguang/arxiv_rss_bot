@@ -1,16 +1,15 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-10-27 11:34:09 UTC
-- **Total Filtered Papers**: 5
-- **Displaying**: 5 (arxiv: 5)
+- **Last Updated**: 2026-10-28 12:04:41 UTC
+- **Total Filtered Papers**: 4
+- **Displaying**: 4 (arxiv: 4)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Real-Time Recurrent Qubit-State Discrimination on a Heterogeneous AI-Engine-FPGA Accelerator](https://arxiv.org/abs/2610.33843) | `ARXIV` | 65.0 |
-| 2 | [ADACT: PDE-Constrained Thermal Hardware/Software Co-Design Adjoint-Driven Optimal Control via Finite Difference Discretization](https://arxiv.org/abs/2610.35569) | `ARXIV` | 54.5 |
-| 3 | [Fast Path, Exact Path: One Library of Hardwired Operators for Streaming and Exact Canny Edge Detection on a Low-Cost FPGA](https://arxiv.org/abs/2610.33107) | `ARXIV` | 32.5 |
-| 4 | [PaFeDSE: Pareto-Feedback-Guided Microarchitecture Design Space Exploration for Efficient Pareto Search](https://arxiv.org/abs/2610.34838) | `ARXIV` | 24.5 |
-| 5 | [When and Why to Use TMA: A Workload-Grounded Characterization of Tensor Memory Acceleration on NVIDIA Hopper GPUs](https://arxiv.org/abs/2610.34907) | `ARXIV` | 12.0 |
+| 1 | [Keeping Inference in the Radio: Design and Measurement of a Spiking Accelerator for mmWave ISAC Activity Recognition](https://arxiv.org/abs/2610.37480) | `ARXIV` | 55.5 |
+| 2 | [Hardware-Matched Spiking Neural Networks for Real-Time Purkinje Cell Spike Classification](https://arxiv.org/abs/2610.37104) | `ARXIV` | 24.5 |
+| 3 | [Kernel Performance Engineering under Physical Non-Idealities](https://arxiv.org/abs/2610.37466) | `ARXIV` | 11.0 |
+| 4 | [RV565: Cross-Layer Co-Design for Frame-Independent Video Playback on MicroPython-Class ESP32-S3 Systems](https://arxiv.org/abs/2610.35935) | `ARXIV` | 1.0 |

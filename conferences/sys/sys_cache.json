@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-10-27T11:34:32.393684+00:00",
-  "paper_count": 318,
+  "last_updated": "2026-10-28T12:04:59.918396+00:00",
+  "paper_count": 312,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -131,29 +131,6 @@
       "ratings": [],
       "score": 109.5,
       "updated_at": "2026-07-21T08:54:22.924151+00:00"
-    },
-    {
-      "forum_id": "2610.34440",
-      "paper_number": -1,
-      "title": "Speculative Decoding for Mixture-of-Experts Models: Expert Bytes, Kernel Bandwidth and the Best Draft Length",
-      "authors": [
-        "Yuzheng Lan"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.34440v1 Announce Type: cross \nAbstract: Speculative decoding checks several drafted tokens in one verification pass. On a mixture-of-experts (MoE) model, consecutive tokens often select the same experts. A deduplicating engine reads each selected expert once per pass, so it requests fewer bytes than a per-slot engine, which reads it once per token. We write a step's time as the bytes each kernel requests over its effective bandwidth, plus fixed time. Under geometric acceptance, we derive from this step time when speculation is faster than plain decoding. The best draft length is a monotone staircase in the acceptance rate. We bound how a bandwidth error moves each result, and we check the main steps in Lean. Deduplication is faster exactly where its share $\\bar u(n)$ of the per-",
-      "pdf_link": "https://arxiv.org/pdf/2610.34440.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.34440",
-      "submission_date": "2026-10-27T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 106.5,
-      "updated_at": "2026-10-27T11:34:10.614635+00:00"
     },
     {
       "forum_id": "usenix-osdi26-42",
@@ -661,6 +638,29 @@
       "updated_at": "2026-07-21T08:54:26.745556+00:00"
     },
     {
+      "forum_id": "2610.35999",
+      "paper_number": -1,
+      "title": "safeL4: Rethinking Safe-Language-Based Single Address Space Microkernels",
+      "authors": [
+        "Zheyuan Xu, Xiaobei Zhang, Zihan Li, Zekai Nie, Guangtao Zhu, Zhuang Lu, Qianying Zhang, Shijun Zhao, Haibo Chen, Rui Hou"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.35999v1 Announce Type: new \nAbstract: Microkernels provide good features such as high security, safety, and flexibility, but their reliance on hardware-based isolation leads to heavy performance overhead, limiting their widespread adoption. Although constructing single-address-space microkernels based on safe language-based isolation is a promising approach to addressing the performance issue, this approach still faces challenges in maintaining the principle of minimality and enforcing capability-based, fine-grained access control over system resources. We propose safeL4, an approach to constructing microkernels based on safe languages. It guarantees minimality through low-level abstractions for unsafe operations, and implements a capability system based on the safe language's o",
+      "pdf_link": "https://arxiv.org/pdf/2610.35999.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.35999",
+      "submission_date": "2026-10-28T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 65.0,
+      "updated_at": "2026-10-28T12:04:41.859566+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-91",
       "paper_number": 91,
       "title": "M3U: Scalable Kernel Memory Management for Efficient Post-Copy Live Migration of High-End Virtual Machines",
@@ -739,17 +739,17 @@
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2610.33647v1 Announce Type: new \nAbstract: While the Log-Sum-Exp (LSE) function is a foundational numerical primitive for stable log-domain computation in modern machine learning, its fast and efficient computation on generic platforms (\\ie, CPUs and GPUs) has been underexplored, potentially creating execution bottlenecks for large workloads. On GPU, the de facto implementation torch.logsumexp dispatches a chain of nine sub-kernels per call, incurring redundant High Bandwidth Memory (HBM) traffic and launch overhead. On CPU, exp and log operations are hardware-hungry, limiting the computing efficiency. To address these bottlenecks, we propose two drop-in kernels to significantly accelerate LSE computation on both GPUs and CPUs: FuseLSE, a single-pass fused kernel that evaluates LSE's",
+      "abstract": "arXiv:2610.33647v2 Announce Type: replace \nAbstract: While the Log-Sum-Exp (LSE) function is a foundational numerical primitive for stable log-domain computation in modern machine learning, its fast and efficient computation on generic platforms (\\ie, CPUs and GPUs) has been underexplored, potentially creating execution bottlenecks for large workloads. On GPU, the de facto implementation $\\texttt{torch.logsumexp}$ dispatches a chain of nine sub-kernels per call, incurring redundant High Bandwidth Memory (HBM) traffic and launch overhead. On CPU, exp and log operations are hardware-hungry, limiting the computing efficiency. To address these bottlenecks, we propose two drop-in kernels to significantly accelerate LSE computation on both GPUs and CPUs: FuseLSE, a single-pass fused kernel that ",
       "pdf_link": "https://arxiv.org/pdf/2610.33647.pdf",
       "forum_link": "https://arxiv.org/abs/2610.33647",
-      "submission_date": "2026-10-27T04:00:00+00:00",
+      "submission_date": "2026-10-28T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 64.0,
-      "updated_at": "2026-10-27T11:34:10.612815+00:00"
+      "updated_at": "2026-10-28T12:04:41.941493+00:00"
     },
     {
       "forum_id": "usenix-osdi26-47",
@@ -1473,29 +1473,6 @@
       "ratings": [],
       "score": 47.0,
       "updated_at": "2026-07-21T08:54:17.393518+00:00"
-    },
-    {
-      "forum_id": "2610.33380",
-      "paper_number": -1,
-      "title": "Operating System Support for Accelerators as First-Class Compute Elements in Heterogeneous Systems",
-      "authors": [
-        "Mohammad Shahidzadeh, Lesley Shannon"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.33380v1 Announce Type: cross \nAbstract: Heterogeneous systems-on-chip (SoCs) increasingly rely on domain-specific hardware accelerators (HAs) to deliver performance and energy efficiency gains beyond what general-purpose processors can provide. However, operating systems (O/S), such as Linux, assume that processors are the Compute Elements (CEs) and HAs are peripheral devices rather than specialized CEs. As a result, HA execution incurs substantial software (SW) overheads that reduce the effective benefits of hardware (HW) acceleration.\n  This work demonstrates that significant inefficiencies arise from ``O/S peripheral device taxes'' (O/S taxes), including SW stack-accelerator communication, invocation, interrupt handling, and scheduling. We built MEERKAT, a Field-Programmable ",
-      "pdf_link": "https://arxiv.org/pdf/2610.33380.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.33380",
-      "submission_date": "2026-10-27T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 46.5,
-      "updated_at": "2026-10-27T11:34:10.488783+00:00"
     },
     {
       "forum_id": "usenix-osdi26-107",
@@ -2427,29 +2404,6 @@
       "updated_at": "2026-07-21T08:54:26.743563+00:00"
     },
     {
-      "forum_id": "2610.34006",
-      "paper_number": -1,
-      "title": "InferScale: Kubernetes-Native Predictive Autoscaling for SLO-Aware AI Inference",
-      "authors": [
-        "Wen Huang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.34006v1 Announce Type: new \nAbstract: Kubernetes Horizontal Pod Autoscaler (HPA) is widely used for inference services, but reactive scaling is often too slow when pods take tens of seconds to become ready. The problem gets worse in shared clusters, where independent HPAs compete for the same resource budget and can hurt different tenants from run to run. We present InferScale, a Kubernetes-native autoscaler that combines inference-aware signals, short-horizon demand prediction, SLO-state control, fast-path spike handling, and tenant-priority headroom without replacing the default scheduler. We evaluate InferScale on Azure Kubernetes Service in two settings. On a real ResNet-50 ONNX workload with 21-second cold start, repeated ramp-burst runs improve SLO compliance from 47.8% +/",
-      "pdf_link": "https://arxiv.org/pdf/2610.34006.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.34006",
-      "submission_date": "2026-10-27T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 33.5,
-      "updated_at": "2026-10-27T11:34:10.612892+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-92",
       "paper_number": 92,
       "title": "Compaction-Free Memory Defragmentation for Virtualization via Infinite Guest Physical Address Space",
@@ -2495,6 +2449,29 @@
       "ratings": [],
       "score": 33.5,
       "updated_at": "2026-07-21T08:54:26.741832+00:00"
+    },
+    {
+      "forum_id": "2610.37200",
+      "paper_number": -1,
+      "title": "PipeLink: Contract-Guided Linking of GPU Kernel Components",
+      "authors": [
+        "Jize Guo, Xupeng Miao"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.37200v1 Announce Type: new \nAbstract: The fastest machine-learning kernels are compositions of components, such as loaders, matrix-multiply mainloops, epilogues and communication stages, that run concurrently on one GPU streaming multiprocessor and share its on-chip memory, barriers, warps and registers. Because these components hard-code where they sit in this shared space, they cannot be compiled, shipped or replaced on their own: combining components from different sources means forking them by hand or keeping them in separate kernels. We present PipeLink, a contract-guided linker for GPU kernel components. Each component is compiled separately into an LTO object that carries a contract stating what it requires and what it promises; PipeLink checks the contracts against each ",
+      "pdf_link": "https://arxiv.org/pdf/2610.37200.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.37200",
+      "submission_date": "2026-10-28T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.0,
+      "updated_at": "2026-10-28T12:04:41.940807+00:00"
     },
     {
       "forum_id": "usenix-osdi26-29",
@@ -2546,27 +2523,27 @@
       "updated_at": "2026-07-21T08:54:22.930905+00:00"
     },
     {
-      "forum_id": "2609.01975",
+      "forum_id": "2610.36434",
       "paper_number": -1,
-      "title": "RT-HiSS: Ray Tracing Accelerated High Dimensional Vector Similarity Searches",
+      "title": "JustGoal: With Only a Goal, the AI Baseline Is Above the Expert Kernels",
       "authors": [
-        "Revanth Reddy Munugala, Michael Gowanlock"
+        "Yaojian Chen, Dazhi Peng, Zhui Zhu, Leshan Li, Haojun Sun, Yiyun Zheng, Qingfeng He, Shangzhan Li, Xianglong Deng, Yifei Shen, Shengye Xiang, Zhen Li, Lin Gan, Yuxuan Li, Xu Han, Zhiyuan Liu"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2609.01975v2 Announce Type: replace \nAbstract: Recent GPU generations include special-purpose ray tracing (RT) cores for graphics applications. While RT cores are primarily used for rendering, recent works show they can be leveraged for general-purpose tasks, including similarity searches. However, existing approaches do not support datasets exceeding three dimensions. In this work, we propose RT-HiSS, the first exact GPU RT-core-based similarity search algorithm for high-dimensional datasets. GPU similarity search often scales poorly for large datasets with substantial search distances. To address this, RT-HiSS uses RT cores for fast index construction and searches, followed by candidate refinement on CUDA cores. We introduce a two-pass approach to estimate an upper bound on result ",
-      "pdf_link": "https://arxiv.org/pdf/2609.01975.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.01975",
-      "submission_date": "2026-10-27T04:00:00+00:00",
+      "abstract": "arXiv:2610.36434v1 Announce Type: new \nAbstract: A small number of GPU kernels often determines the efficiency of large language model training and inference. High-performance kernel development typically relies on expert knowledge through manual implementation, collaboration with general-purpose models, or specialized agents equipped with domain knowledge, evaluation methods, and search workflows. We investigate how much value this knowledge provides as foundation models become stronger. We introduce JustGoal, a goal-only baseline in which a general-purpose agent receives only the optimization objective and constraints, without kernel-specific infrastructure, knowledge bases, or predefined workflows, and builds its own evaluation loop. On NVIDIA B200 GPUs, JustGoal outperforms open-source",
+      "pdf_link": "https://arxiv.org/pdf/2610.36434.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.36434",
+      "submission_date": "2026-10-28T04:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 32.5,
-      "updated_at": "2026-10-27T11:34:10.615575+00:00"
+      "updated_at": "2026-10-28T12:04:41.940607+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-41",
@@ -4830,6 +4807,29 @@
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
     },
     {
+      "forum_id": "2610.36370",
+      "paper_number": -1,
+      "title": "IOSage: Detecting HPC I/O Bottleneck Patterns to Guide LLM Recommendations",
+      "authors": [
+        "Mahdi Banisharif, Tabassum Mahmud, Ahmad Tarraf, Suren Byna, Ali Jannesari"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.36370v1 Announce Type: new \nAbstract: HPC applications often leave much of their parallel file system's bandwidth unused, and turning their Darshan logs into concrete I/O fixes still requires a scarce I/O expert. Rule-based tools flag counters against thresholds set by experts, and in tools built on large language models (LLMs), such as ION and IOAgent, the LLM decides which bottlenecks a log contains. We present IOSage, in which a classifier trained on many labeled logs, not the LLM, makes that decision, since a single log gives an LLM no baseline for what is abnormal. The LLM receives the I/O bottleneck patterns the classifier detects, the job's configuration files, per-file Darshan evidence, and for each pattern a card built from benchmark training runs, and writes recommende",
+      "pdf_link": "https://arxiv.org/pdf/2610.36370.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.36370",
+      "submission_date": "2026-10-28T04:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-10-28T12:04:41.940579+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-63",
       "paper_number": 63,
       "title": "Hardware Lifecycle-Aware Power Planning in Commercial Hyperscale Datacenters (Operational Systems)",
@@ -5212,29 +5212,6 @@
       "updated_at": "2026-07-21T08:54:22.937661+00:00"
     },
     {
-      "forum_id": "2610.33404",
-      "paper_number": -1,
-      "title": "COPE: Composable Performance Emulation for Mixture-of-Experts Offloading Policies",
-      "authors": [
-        "Hanming Zhang, Erhu Feng"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.33404v1 Announce Type: cross \nAbstract: As LLMs scale, mixture-of-experts (MoE) architectures increase model capacity while keeping per-token computation manageable through sparse expert activation. This sparsity also enables memory-efficient deployment by retaining most expert weights in CPU memory and transferring or executing only the routed experts on demand. Existing MoE offloading systems typically target specific model-platform configurations, yet differences in model sparsity, CPU and GPU throughput, VRAM capacity, and host-device bandwidth can change the policy ranking. Because implementing and exhaustively evaluating all candidate policies incurs substantial engineering cost, efficiently selecting the best-performing policy for each model-platform configuration remains",
-      "pdf_link": "https://arxiv.org/pdf/2610.33404.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.33404",
-      "submission_date": "2026-10-27T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 6.0,
-      "updated_at": "2026-10-27T11:34:10.614431+00:00"
-    },
-    {
       "forum_id": "usenix-fast26-1",
       "paper_number": 1,
       "title": "Here, There and Everywhere: The Past, the Present and the Future of Local Storage in Cloud",
@@ -5329,29 +5306,6 @@
       "ratings": [],
       "score": 5.5,
       "updated_at": "2026-07-21T08:54:22.940695+00:00"
-    },
-    {
-      "forum_id": "2610.34422",
-      "paper_number": -1,
-      "title": "From GPU to TPU with Coding Agents: What Works, What Fails, and What It Costs?",
-      "authors": [
-        "Hui Sun, Anderson Uch\\^oa, Wesley K. G. Assun\\c{c}\\~ao"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.34422v1 Announce Type: cross \nAbstract: A coding agent can migrate a machine learning workload, report success, and still change how the model trains. Rising compute costs, limited accelerator capacity, and vendor dependence are pushing organizations toward alternatives to graphics processing units (GPUs); a key question is whether agent-generated migrations to tensor processing units (TPUs) can be trusted and at what cost. We build a dataset of 148 PyTorch ML research projects and use Claude Code to migrate ten of them from NVIDIA GPUs to Google Cloud TPUs. We independently assess whether each migration runs, preserves numerical behavior, executes on the intended hardware, maintains the project's goal, and delivers acceptable performance. We also examine failures, human effort,",
-      "pdf_link": "https://arxiv.org/pdf/2610.34422.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.34422",
-      "submission_date": "2026-10-27T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 5.0,
-      "updated_at": "2026-10-27T11:34:10.614595+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-8",
@@ -5912,29 +5866,6 @@
       "updated_at": "2026-07-21T08:54:22.933403+00:00"
     },
     {
-      "forum_id": "2610.34595",
-      "paper_number": -1,
-      "title": "Cross-Modal Data Co-Locality for Heterogeneous Storage Systems",
-      "authors": [
-        "Abdullah Al-Mamun"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.34595v1 Announce Type: new \nAbstract: Distributed vector stores increasingly serve multimodal workloads whose representations are jointly accessed but independently partitioned and placed. As a result, cross-modal physical locality remains largely unoptimized. Multimodal queries can incur remote accesses and cross-tier data movement even when each modality's ANN search remains efficient. We present Coloc, a storage-management layer that makes cross-modal access locality a first-class data-layout signal. A Cross-Modal Access Graph combines semantic affinity, co-access, and temporal behavior. A movement-aware optimizer places frequently co-accessed vectors under capacity and topology constraints. A migration manager adapts placement as workloads shift by weighing locality gains ag",
-      "pdf_link": "https://arxiv.org/pdf/2610.34595.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.34595",
-      "submission_date": "2026-10-27T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-10-27T11:34:10.613286+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-34",
       "paper_number": 34,
       "title": "StriaTrace: Efficient Tracing and Diagnosis for Online LLM Inference (Operational Systems)",
@@ -6398,29 +6329,6 @@
       "updated_at": "2026-07-21T08:54:26.744870+00:00"
     },
     {
-      "forum_id": "2610.35164",
-      "paper_number": -1,
-      "title": "Accelerating SO(2)-Equivariant Materials Models through Low-Precision Emulation",
-      "authors": [
-        "Denghui Lu, Alexander Maeder, Alexandros Nikolaos Ziogas, Mathieu Luisier, Manasa Kaniselvan"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.35164v1 Announce Type: cross \nAbstract: Rotationally equivariant architectures improve the physical fidelity of machine-learned (ML) universal materials models based on graph neural networks (GNNs). However, their scalability is limited by the use of non-trivial, high-precision tensor operations during both training and inference. Adopting the reduced-precision formats of matrix multiplication units (MMUs), e.g., FP8 instead of FP32, provides massive increases in throughput, up to 30x (60x) on NVIDIA Hopper (Blackwell) GPUs, but may lead to drastic loss of accuracy. Here, we introduce tailored 'emulated' low-precision operations under the integer Ozaki scheme to accelerate the 'SO(2)-equivariant' processing layers of GNNs, which dominate the runtime of (1) many state-of-the-art ",
-      "pdf_link": "https://arxiv.org/pdf/2610.35164.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.35164",
-      "submission_date": "2026-10-27T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-10-27T11:34:10.614654+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-10",
       "paper_number": 10,
       "title": "OBASE: Object-Based Address-Space Engineering to Improve Memory Tiering",
@@ -6760,29 +6668,6 @@
       "updated_at": "2026-07-21T08:54:26.743211+00:00"
     },
     {
-      "forum_id": "2610.24038",
-      "paper_number": -1,
-      "title": "Merge Hulls Without Copying Vertices: GPU Isotonic Regression",
-      "authors": [
-        "Elena Raikova"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.24038v2 Announce Type: replace \nAbstract: Isotonic regression finds the monotone sequence closest to the data in weighted least squares. It is used to calibrate probabilities and inside differentiable ranking. Its standard algorithm, pool adjacent violators, is sequential within a sequence, and torchsort, the exact GPU solver of differentiable sorting libraries, runs it with one thread per sequence, which is slow on long ones. The fit is the slope sequence of the lower convex hull of cumulative sums, and hulls of sorted points can be merged in parallel. Merging partial hulls level by level, however, copies the surviving vertices at every level, which moves Theta(n log n) data when most points survive. We store each chunk's hull once and represent a merged hull as a list of segme",
-      "pdf_link": "https://arxiv.org/pdf/2610.24038.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.24038",
-      "submission_date": "2026-10-27T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-10-27T11:34:10.615593+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-15",
       "paper_number": 15,
       "title": "Extracting Database Access-Control Policies from Web Applications",
@@ -6898,29 +6783,6 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
-    },
-    {
-      "forum_id": "2610.34427",
-      "paper_number": -1,
-      "title": "ScaleRLT: Exact Log-Probabilities and Fast Deferred Rollouts for Reinforcement Learning on Looped Transformers",
-      "authors": [
-        "Dezhen Lu, Zixiang Ni, Runguo Li"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.34427v1 Announce Type: cross \nAbstract: Looped language models such as Ouro reuse one block of layers several times per token. A rollout engine can batch the deeper loops of several response positions and run them only when a deep readout is due. This deferred schedule is fast, but the learner of an on-policy RL algorithm recomputes the sampled tokens' log-probabilities with a dense pass, and the two computations differ in floating point: in FP32 at 4096 tokens about 18% of the sampled tokens miss a $10^{-5}$ same-weight gate, and with bf16 weights nearly every token does. We use a hybrid learner log-probability, $\\ell=\\ell_{\\mathrm{dense}}+\\mathrm{sg}(\\ell_{\\mathrm{sched}}-\\ell_{\\mathrm{dense}})$, where $\\mathrm{sg}$ denotes stop-gradient. Its value is a no-grad replay through ",
-      "pdf_link": "https://arxiv.org/pdf/2610.34427.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.34427",
-      "submission_date": "2026-10-27T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-27T11:34:10.614616+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

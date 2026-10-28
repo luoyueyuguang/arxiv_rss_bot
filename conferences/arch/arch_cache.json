@@ -1,123 +1,100 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-10-27T11:34:09.695177+00:00",
-  "paper_count": 5,
+  "last_updated": "2026-10-28T12:04:41.095677+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2610.33843",
+      "forum_id": "2610.37480",
       "paper_number": -1,
-      "title": "Real-Time Recurrent Qubit-State Discrimination on a Heterogeneous AI-Engine-FPGA Accelerator",
+      "title": "Keeping Inference in the Radio: Design and Measurement of a Spiking Accelerator for mmWave ISAC Activity Recognition",
       "authors": [
-        "Vu Le, Yilun Xu, Neel Vora, Gang Huang, Deepak Ganesan, Phuc Nguyen"
-      ],
-      "keywords": [
-        "cs.AR",
-        "ISCA"
-      ],
-      "abstract": "arXiv:2610.33843v1 Announce Type: new \nAbstract: Qubit readout, or qubit state discrimination, remains one of the slowest and most error-prone operations in superconducting quantum processors, making fast, accurate, and hardware-efficient classification essential for scalable quantum computing. Conventional discriminators integrate the I/Q record into a single point, discarding evidence a relaxing qubit leaves behind; full-resolution feed-forward classifiers recover it but are too costly to deploy under this constraint. Recurrent classifiers retain full resolution far more cheaply, but their loop-carried hidden state cannot fit a single AI Engine (AIE) tile's register capacity and spills to data memory, adding latency that grows with sequence length.\n  We present a hardware-aware LSTM acce",
-      "pdf_link": "https://arxiv.org/pdf/2610.33843.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.33843",
-      "submission_date": "2026-10-27T04:00:00+00:00",
-      "conference": "ISCA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 65.0,
-      "updated_at": "2026-10-27T11:34:09.690894+00:00"
-    },
-    {
-      "forum_id": "2610.35569",
-      "paper_number": -1,
-      "title": "ADACT: PDE-Constrained Thermal Hardware/Software Co-Design Adjoint-Driven Optimal Control via Finite Difference Discretization",
-      "authors": [
-        "Don Li"
+        "Anthony S\\'anchez, Rafael Ruiz, Jos\\'e A. Belloch, Jes\\'us O. Lacruz, Joerg Widmer"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2610.35569v1 Announce Type: cross \nAbstract: By virtue of the sheer compute demands of large-scale artificial intelligence (AI) and high-performance computing (HPC), modern multi-core microprocessors suffer from severe power density limits and thermal throttling, entailing an urgent need for principled methods for predictive, physics-informed dynamical thermal management (DTM). Here, we introduce a hardware/software co-design physics-informed PDE-constrained DTM throttling optimal control algorithm, ADACT (Adjoint-Driven Adaptive Co-Design Thermal Control), that minimizes thermal risk and cooling energy overhead while maximizing core execution throughput. The underlying physical temperature field is governed by a two-dimensional nonhomogeneous parabolic reaction-diffusion equation wi",
-      "pdf_link": "https://arxiv.org/pdf/2610.35569.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.35569",
-      "submission_date": "2026-10-27T04:00:00+00:00",
+      "abstract": "arXiv:2610.37480v1 Announce Type: cross \nAbstract: Integrated sensing and communication allows wireless networks to recognize human activity from the channel estimates that the receiver computes anyway. The inference, however, runs on the general-purpose processors of the base station, access point or handset, which are the first components a device switches off to save energy. Always-on sensing therefore requires a classifier that is small enough to remain powered while the rest of the system sleeps. We investigate whether Spiking Neural Networks (SNNs) can provide such a classifier. To this end, we generate SNN accelerators for micro-Doppler activity recognition on the public DISC dataset (IEEE 802.11ay at 60 GHz) with the open-source Spiker+ framework, and implement them together with a",
+      "pdf_link": "https://arxiv.org/pdf/2610.37480.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.37480",
+      "submission_date": "2026-10-28T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 54.5,
-      "updated_at": "2026-10-27T11:34:09.691069+00:00"
+      "score": 55.5,
+      "updated_at": "2026-10-28T12:04:41.091975+00:00"
     },
     {
-      "forum_id": "2610.33107",
+      "forum_id": "2610.37104",
       "paper_number": -1,
-      "title": "Fast Path, Exact Path: One Library of Hardwired Operators for Streaming and Exact Canny Edge Detection on a Low-Cost FPGA",
+      "title": "Hardware-Matched Spiking Neural Networks for Real-Time Purkinje Cell Spike Classification",
       "authors": [
-        "Raj Mali"
+        "Arooba Farhan, Afsah Syed, Muhammad Fahd Ibrahim Bhatti, Muhammad Areeb Khalid Kidwai, Muhammad Ahsan Salar Khan, Vincenzo Romano, Muhammad Ali Siddiqi"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2610.33107v1 Announce Type: new \nAbstract: Hysteresis edge tracking, the final stage of Canny edge detection, follows edge chains of unbounded length and therefore resists single-pass streaming; FPGA designs either approximate it or dedicate separate labelling hardware to it. We show that a single library of hardwired 3x3 operators, each with an identical two-clock latency, delivers both a camera-rate approximation and exact hysteresis on a low-cost Artix-7 (XC7A35T). The fast path streams camera pixels through the operators and K local hysteresis stages and commits each edge decision 262.15-720.63 microseconds after the pixel arrives (K = 1-8; system simulation with a datasheet camera model), that is, 3 + K camera lines later and 46-127x sooner than a frame-based processor can even ",
-      "pdf_link": "https://arxiv.org/pdf/2610.33107.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.33107",
-      "submission_date": "2026-10-27T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-10-27T11:34:09.690771+00:00"
-    },
-    {
-      "forum_id": "2610.34838",
-      "paper_number": -1,
-      "title": "PaFeDSE: Pareto-Feedback-Guided Microarchitecture Design Space Exploration for Efficient Pareto Search",
-      "authors": [
-        "Joonyong Park, Hyojeong Lee, Sejeong Yang, Joo-Young Kim"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2610.34838v1 Announce Type: new \nAbstract: Efficient microarchitecture design space exploration (DSE) is critical for optimizing performance, power, and area trade-offs in modern out-of-order processors. While machine-learning-based DSE significantly reduces the cost of exhaustively evaluating large design spaces, existing methods still waste expensive simulations on Pareto-miss candidates that do not improve the Pareto frontier and repeatedly process redundant candidates during iterative exploration. In this paper, we propose PaFeDSE, a Pareto-feedback-guided microarchitecture DSE framework for efficient Pareto search. PaFeDSE leverages Pareto-hit feedback to prioritize candidates likely to improve the frontier and Pareto-miss feedback to suppress exploration of unpromising local re",
-      "pdf_link": "https://arxiv.org/pdf/2610.34838.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.34838",
-      "submission_date": "2026-10-27T04:00:00+00:00",
+      "abstract": "arXiv:2610.37104v1 Announce Type: new \nAbstract: Distinguishing Purkinje cell (PC) simple spikes (SSs) from complex spikes (CSs) is key to studying cerebellar function. PC recordings commonly rely on wired headstages, whose tethers restrict natural movement in freely behaving animals. Untethered headstages remove this constraint, but cannot continuously transmit raw recordings within their power budgets, making on-headstage spike classification an attractive form of compression, provided it runs accurately in real time on constrained hardware. This work presents two compact spiking neural networks (SNNs) matched to their target hardware: ConvSNN, which maps to the Matrix Vector Processor (MVP) of an EFM32PG28 microcontroller, and StreamSNN, which processes one waveform value per timestep u",
+      "pdf_link": "https://arxiv.org/pdf/2610.37104.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.37104",
+      "submission_date": "2026-10-28T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 24.5,
-      "updated_at": "2026-10-27T11:34:09.690969+00:00"
+      "updated_at": "2026-10-28T12:04:41.091905+00:00"
     },
     {
-      "forum_id": "2610.34907",
+      "forum_id": "2610.37466",
       "paper_number": -1,
-      "title": "When and Why to Use TMA: A Workload-Grounded Characterization of Tensor Memory Acceleration on NVIDIA Hopper GPUs",
+      "title": "Kernel Performance Engineering under Physical Non-Idealities",
       "authors": [
-        "Christin David Bose, Cesar Avalos, Junrui Pan, Timothy Rogers"
+        "Supun Kuruppu, Pranav Dangi, Wei Li, Zhenyu Bai, Tulika Mitra"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2610.34907v1 Announce Type: cross \nAbstract: The Tensor Memory Accelerator (TMA), introduced on NVIDIA Hopper, is used pervasively in production GPU kernels yet its usage is conspicuously selective: expert kernel developers in CUTLASS, FlashAttention-3, and FlashInfer apply TMA to some tensor operands within a kernel but fall back to cp.async, direct global loads, or distributed shared memory (DSM) for others. Vendor documentation describes the API, and recent microbenchmarking work characterizes TMA throughput in isolation, but neither answers the question practitioners actually face: given a memory operand in a kernel, should it use TMA, and if so, with or without cluster multicast? We address this gap with a workload-grounded characterization study on H100. We catalog the TMA, mul",
-      "pdf_link": "https://arxiv.org/pdf/2610.34907.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.34907",
-      "submission_date": "2026-10-27T04:00:00+00:00",
+      "abstract": "arXiv:2610.37466v1 Announce Type: new \nAbstract: Physical non-idealities in integrated circuit (IC) design and fabrication are concealed by conventional hardware abstractions, yet they can limit kernel performance and obscure optimization opportunities. Using distributed shared memory (DSMEM) on NVIDIA H100 GPUs as a case study, we show how floorsweeping restricts hardware resources available for clustered execution, potentially offsetting the benefits of reduced data movement enabled by DSMEM. Guided by these insights, we develop a wave-aware clustering strategy that accounts for these resource constraints to improve kernel performance. Evaluations using a global-load-and-broadcast microbenchmark, GEMM, and the Hopper version of FlashAttention 4 demonstrate the performance implications of",
+      "pdf_link": "https://arxiv.org/pdf/2610.37466.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.37466",
+      "submission_date": "2026-10-28T04:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-10-27T11:34:09.691047+00:00"
+      "score": 11.0,
+      "updated_at": "2026-10-28T12:04:41.091930+00:00"
+    },
+    {
+      "forum_id": "2610.35935",
+      "paper_number": -1,
+      "title": "RV565: Cross-Layer Co-Design for Frame-Independent Video Playback on MicroPython-Class ESP32-S3 Systems",
+      "authors": [
+        "Ayushman Bhattacharya, Anwesha Chakraborty"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2610.35935v1 Announce Type: new \nAbstract: Video on SPI-attached microcontroller displays is limited less by decoding than by where each byte lives and which stages run serially. We present RV565, a decode framework for frame-independent video whose decoded representation is the panel's native RGB565 format, and evaluate it on an ESP32-S3 with two ten-second windows of an openly licensed film. A serial path - inflate, then scale into internal-memory stripes overlapped with SPI direct-memory-access (DMA) transfers - meets the 41.7 ms deadline on the lighter window but misses all 7,200 frames of the heavier one. RV565's dual-core pipeline inflates the next frame on the second core during the transfer and sustains 24 FPS with zero misses and 10.3 ms of slack on both windows; frame time ",
+      "pdf_link": "https://arxiv.org/pdf/2610.35935.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.35935",
+      "submission_date": "2026-10-28T04:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-10-28T12:04:41.091832+00:00"
     }
   ]
 }
