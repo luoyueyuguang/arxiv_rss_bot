@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-10-28T12:04:59.918396+00:00",
-  "paper_count": 312,
+  "last_updated": "2026-10-29T12:15:28.687524+00:00",
+  "paper_count": 307,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -638,29 +638,6 @@
       "updated_at": "2026-07-21T08:54:26.745556+00:00"
     },
     {
-      "forum_id": "2610.35999",
-      "paper_number": -1,
-      "title": "safeL4: Rethinking Safe-Language-Based Single Address Space Microkernels",
-      "authors": [
-        "Zheyuan Xu, Xiaobei Zhang, Zihan Li, Zekai Nie, Guangtao Zhu, Zhuang Lu, Qianying Zhang, Shijun Zhao, Haibo Chen, Rui Hou"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.35999v1 Announce Type: new \nAbstract: Microkernels provide good features such as high security, safety, and flexibility, but their reliance on hardware-based isolation leads to heavy performance overhead, limiting their widespread adoption. Although constructing single-address-space microkernels based on safe language-based isolation is a promising approach to addressing the performance issue, this approach still faces challenges in maintaining the principle of minimality and enforcing capability-based, fine-grained access control over system resources. We propose safeL4, an approach to constructing microkernels based on safe languages. It guarantees minimality through low-level abstractions for unsafe operations, and implements a capability system based on the safe language's o",
-      "pdf_link": "https://arxiv.org/pdf/2610.35999.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.35999",
-      "submission_date": "2026-10-28T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 65.0,
-      "updated_at": "2026-10-28T12:04:41.859566+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-91",
       "paper_number": 91,
       "title": "M3U: Scalable Kernel Memory Management for Efficient Post-Copy Live Migration of High-End Virtual Machines",
@@ -727,29 +704,6 @@
       "ratings": [],
       "score": 64.5,
       "updated_at": "2026-07-21T08:54:26.745021+00:00"
-    },
-    {
-      "forum_id": "2610.33647",
-      "paper_number": -1,
-      "title": "Speeding up Log-Sum-Exp: Kernel Fusion at the Memory Wall, Integer Arithmetic at the Compute Wall",
-      "authors": [
-        "Lingyun Yao, Martin Andraud, Niki Loppi, Andrea Pilzer, Anji Liu, Guy Van den Broeck, Martin Trapp"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.33647v2 Announce Type: replace \nAbstract: While the Log-Sum-Exp (LSE) function is a foundational numerical primitive for stable log-domain computation in modern machine learning, its fast and efficient computation on generic platforms (\\ie, CPUs and GPUs) has been underexplored, potentially creating execution bottlenecks for large workloads. On GPU, the de facto implementation $\\texttt{torch.logsumexp}$ dispatches a chain of nine sub-kernels per call, incurring redundant High Bandwidth Memory (HBM) traffic and launch overhead. On CPU, exp and log operations are hardware-hungry, limiting the computing efficiency. To address these bottlenecks, we propose two drop-in kernels to significantly accelerate LSE computation on both GPUs and CPUs: FuseLSE, a single-pass fused kernel that ",
-      "pdf_link": "https://arxiv.org/pdf/2610.33647.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.33647",
-      "submission_date": "2026-10-28T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 64.0,
-      "updated_at": "2026-10-28T12:04:41.941493+00:00"
     },
     {
       "forum_id": "usenix-osdi26-47",
@@ -2451,29 +2405,6 @@
       "updated_at": "2026-07-21T08:54:26.741832+00:00"
     },
     {
-      "forum_id": "2610.37200",
-      "paper_number": -1,
-      "title": "PipeLink: Contract-Guided Linking of GPU Kernel Components",
-      "authors": [
-        "Jize Guo, Xupeng Miao"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.37200v1 Announce Type: new \nAbstract: The fastest machine-learning kernels are compositions of components, such as loaders, matrix-multiply mainloops, epilogues and communication stages, that run concurrently on one GPU streaming multiprocessor and share its on-chip memory, barriers, warps and registers. Because these components hard-code where they sit in this shared space, they cannot be compiled, shipped or replaced on their own: combining components from different sources means forking them by hand or keeping them in separate kernels. We present PipeLink, a contract-guided linker for GPU kernel components. Each component is compiled separately into an LTO object that carries a contract stating what it requires and what it promises; PipeLink checks the contracts against each ",
-      "pdf_link": "https://arxiv.org/pdf/2610.37200.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.37200",
-      "submission_date": "2026-10-28T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 33.0,
-      "updated_at": "2026-10-28T12:04:41.940807+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-29",
       "paper_number": 29,
       "title": "kSTEP: Characterization and Deterministic Testing of Linux CPU Scheduler Bugs",
@@ -2521,29 +2452,6 @@
       "ratings": [],
       "score": 33.0,
       "updated_at": "2026-07-21T08:54:22.930905+00:00"
-    },
-    {
-      "forum_id": "2610.36434",
-      "paper_number": -1,
-      "title": "JustGoal: With Only a Goal, the AI Baseline Is Above the Expert Kernels",
-      "authors": [
-        "Yaojian Chen, Dazhi Peng, Zhui Zhu, Leshan Li, Haojun Sun, Yiyun Zheng, Qingfeng He, Shangzhan Li, Xianglong Deng, Yifei Shen, Shengye Xiang, Zhen Li, Lin Gan, Yuxuan Li, Xu Han, Zhiyuan Liu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.36434v1 Announce Type: new \nAbstract: A small number of GPU kernels often determines the efficiency of large language model training and inference. High-performance kernel development typically relies on expert knowledge through manual implementation, collaboration with general-purpose models, or specialized agents equipped with domain knowledge, evaluation methods, and search workflows. We investigate how much value this knowledge provides as foundation models become stronger. We introduce JustGoal, a goal-only baseline in which a general-purpose agent receives only the optimization objective and constraints, without kernel-specific infrastructure, knowledge bases, or predefined workflows, and builds its own evaluation loop. On NVIDIA B200 GPUs, JustGoal outperforms open-source",
-      "pdf_link": "https://arxiv.org/pdf/2610.36434.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.36434",
-      "submission_date": "2026-10-28T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 32.5,
-      "updated_at": "2026-10-28T12:04:41.940607+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-41",
@@ -4805,29 +4713,6 @@
       "ratings": [],
       "score": 11.5,
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
-    },
-    {
-      "forum_id": "2610.36370",
-      "paper_number": -1,
-      "title": "IOSage: Detecting HPC I/O Bottleneck Patterns to Guide LLM Recommendations",
-      "authors": [
-        "Mahdi Banisharif, Tabassum Mahmud, Ahmad Tarraf, Suren Byna, Ali Jannesari"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.36370v1 Announce Type: new \nAbstract: HPC applications often leave much of their parallel file system's bandwidth unused, and turning their Darshan logs into concrete I/O fixes still requires a scarce I/O expert. Rule-based tools flag counters against thresholds set by experts, and in tools built on large language models (LLMs), such as ION and IOAgent, the LLM decides which bottlenecks a log contains. We present IOSage, in which a classifier trained on many labeled logs, not the LLM, makes that decision, since a single log gives an LLM no baseline for what is abnormal. The LLM receives the I/O bottleneck patterns the classifier detects, the job's configuration files, per-file Darshan evidence, and for each pattern a card built from benchmark training runs, and writes recommende",
-      "pdf_link": "https://arxiv.org/pdf/2610.36370.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.36370",
-      "submission_date": "2026-10-28T04:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-10-28T12:04:41.940579+00:00"
     },
     {
       "forum_id": "usenix-osdi26-63",

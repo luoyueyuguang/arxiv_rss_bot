@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-10-28T12:05:32.468027+00:00",
-  "paper_count": 33,
+  "last_updated": "2026-10-29T12:16:00.345796+00:00",
+  "paper_count": 30,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -192,29 +192,6 @@
       "ratings": [],
       "score": 33.0,
       "updated_at": "2026-08-14T07:42:25.045743+00:00"
-    },
-    {
-      "forum_id": "2610.34797",
-      "paper_number": -1,
-      "title": "TimeWorld: Towards Action-Conditioned Multimodal World Models for Time Series Forecasting",
-      "authors": [
-        "Hang Ni, Weijia Zhang, Hao Liu"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ACL"
-      ],
-      "abstract": "arXiv:2610.34797v1 Announce Type: new \nAbstract: Time series forecasting supports decision-making in web applications such as online retail and network management, where planned actions can reshape future dynamics. World models provide a natural paradigm for predicting such action-dependent changes beyond extrapolating historical patterns. However, existing time series world models (TSWMs) typically rely on fixed, domain-specific covariate schemas that limit flexible intervention specification, while multimodal forecasters treat text primarily as passive predictive context. To investigate these gaps, we introduce TSWM-Bench, a cross-domain benchmark for multimodal TSWMs spanning seven real-world datasets, with textual interventions grounded in recorded action--outcome data. Our evaluation ",
-      "pdf_link": "https://arxiv.org/pdf/2610.34797.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.34797",
-      "submission_date": "2026-10-28T04:00:00+00:00",
-      "conference": "ACL",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-10-28T12:05:00.673130+00:00"
     },
     {
       "forum_id": "mlr-icml25-46",
@@ -636,29 +613,6 @@
       "updated_at": "2026-08-14T07:42:18.271166+00:00"
     },
     {
-      "forum_id": "2610.33381",
-      "paper_number": -1,
-      "title": "The Cost of an Unknown Horizon for the Last Iterate of Clipped SGD under Heavy-Tailed Noise",
-      "authors": [
-        "Yuxing Peng, Zhiqing Tang, Weijia Jia"
-      ],
-      "keywords": [
-        "cs.LG",
-        "ICLR"
-      ],
-      "abstract": "arXiv:2610.33381v2 Announce Type: new \nAbstract: Training is often stopped at a data-dependent time, so guarantees for the last iterate must hold at all times simultaneously. We determine the optimal time-uniform rate for the last iterate of clipped SGD on smooth convex objectives under heavy-tailed noise with a bounded central $p$th moment, $1<p>\\beta_p$, even with adaptive step sizes and thresholds. This rate lies between the optimal rate $O(T^{-\\alpha_p})$ for a known horizon $T$, $\\alpha_p=(p-1)/p$, and the previous time-uniform rate $\\tilde O(t^{-2(p-1)/(3p)})$ (Chezhegov et al., ICLR 2026); under finite variance, the exponents are $1/2$, $2/5$, and $1/3$. Their conjecture that a better schedule reaches the optimal rate thus holds with a known horizon (Liu; Jiang et al.) but fails wit",
-      "pdf_link": "https://arxiv.org/pdf/2610.33381.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.33381",
-      "submission_date": "2026-10-28T04:00:00+00:00",
-      "conference": "ICLR",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-10-28T12:05:00.668865+00:00"
-    },
-    {
       "forum_id": "mlr-icml25-5",
       "paper_number": 5,
       "title": "Towards More Diverse Evaluation of Class Incremental Learning: Representation Learning Perspective",
@@ -729,29 +683,6 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-08-14T07:42:23.150427+00:00"
-    },
-    {
-      "forum_id": "2610.33145",
-      "paper_number": -1,
-      "title": "Neural-DISCO: Source-Conditioned Counterfactual Editing of Neural Population Activity",
-      "authors": [
-        "Nico Policzer, James Ho, Joseph Soo, Xin Tang"
-      ],
-      "keywords": [
-        "cs.LG",
-        "NeurIPS"
-      ],
-      "abstract": "arXiv:2610.33145v1 Announce Type: new \nAbstract: Understanding how neural activity encodes behavioral and sensory variables is a key challenge in systems neuroscience. This requires models that go beyond predicting activity from labels and instead support source-conditioned counterfactual editing: given a recorded source response, we should be able to edit one measured behavioral or stimulus label and predict how neural activity would change while preserving other observed labels and source-specific variability not explained by the labels. Here, we introduce \\textbf{Neural-DISCO}, a disentangled representation learning framework for counterfactual modeling of neural activity. Neural-DISCO partitions the latent space into label-specific components, each associated with an observed behaviora",
-      "pdf_link": "https://arxiv.org/pdf/2610.33145.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.33145",
-      "submission_date": "2026-10-28T04:00:00+00:00",
-      "conference": "NeurIPS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-28T12:05:00.668147+00:00"
     },
     {
       "forum_id": "mlr-icml25-6",
