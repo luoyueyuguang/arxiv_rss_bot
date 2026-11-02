@@ -1,13 +1,14 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-10-30 12:05:38 UTC
-- **Total Filtered Papers**: 2
-- **Displaying**: 2 (arxiv: 2)
+- **Last Updated**: 2026-11-02 14:42:50 UTC
+- **Total Filtered Papers**: 3
+- **Displaying**: 3 (arxiv: 3)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Plenty of Room in the Middle: Revealing Opportunities on a GPU Cluster via Fine-Grained Monitoring](https://arxiv.org/abs/2610.36329) | `ARXIV` | 34.0 |
-| 2 | [TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving](https://arxiv.org/abs/2610.37230) | `ARXIV` | 3.5 |
+| 1 | [MemX: Memory-Aware Automatic Parallelism for Cross-Vendor Heterogeneous GPU Training](https://arxiv.org/abs/2610.41525) | `ARXIV` | 66.5 |
+| 2 | [LLM Fine-Tuning Workloads: Characterization, Challenges, and Opportunities for Serverless AI](https://arxiv.org/abs/2610.40983) | `ARXIV` | 31.0 |
+| 3 | [Matching Workloads to Blackwell: Power-Resolved Benchmarking of NVIDIA B200 and B300 across HPC and AI Workloads](https://arxiv.org/abs/2610.41919) | `ARXIV` | 16.5 |

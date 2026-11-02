@@ -1,100 +1,54 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-10-28T12:04:41.095677+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-11-02T14:42:49.815731+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2610.37480",
+      "forum_id": "2604.26103",
       "paper_number": -1,
-      "title": "Keeping Inference in the Radio: Design and Measurement of a Spiking Accelerator for mmWave ISAC Activity Recognition",
+      "title": "AMMA: A Multi-Chiplet Memory-Centric Architecture for Low-Latency 1M Context Attention Serving",
       "authors": [
-        "Anthony S\\'anchez, Rafael Ruiz, Jos\\'e A. Belloch, Jes\\'us O. Lacruz, Joerg Widmer"
+        "Zhongkai Yu, Haotian Ye, Chenyang Zhou, Ohm Rishabh Venkatachalam, Zaifeng Pan, Zhengding Hu, Junsung Kim, Won Woo Ro, Po-An Tsai, Shuyi Pei, Yangwook Kang, Yufei Ding"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2610.37480v1 Announce Type: cross \nAbstract: Integrated sensing and communication allows wireless networks to recognize human activity from the channel estimates that the receiver computes anyway. The inference, however, runs on the general-purpose processors of the base station, access point or handset, which are the first components a device switches off to save energy. Always-on sensing therefore requires a classifier that is small enough to remain powered while the rest of the system sleeps. We investigate whether Spiking Neural Networks (SNNs) can provide such a classifier. To this end, we generate SNN accelerators for micro-Doppler activity recognition on the public DISC dataset (IEEE 802.11ay at 60 GHz) with the open-source Spiker+ framework, and implement them together with a",
-      "pdf_link": "https://arxiv.org/pdf/2610.37480.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.37480",
-      "submission_date": "2026-10-28T04:00:00+00:00",
+      "abstract": "arXiv:2604.26103v3 Announce Type: replace \nAbstract: All current LLM serving systems place the GPU at the center, from production-level attention-FFN disaggregation to NVIDIA's Rubin GPU-LPU heterogeneous platform. Even academic PIM/PNM proposals still treat the GPU as the central hub for cross-device communication. Yet the GPU's compute-rich architecture is fundamentally mismatched with the memory-bound nature of decode-phase attention, inflating serving latency while wasting power and die area on idle compute units. The problem is compounded as reasoning and agentic workloads push context lengths toward one million tokens, making attention latency the primary user-facing bottleneck.\n  To address these inefficiencies, we present AMMA, a multi-chiplet, memory-centric architecture for low-l",
+      "pdf_link": "https://arxiv.org/pdf/2604.26103.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.26103",
+      "submission_date": "2026-11-02T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 55.5,
-      "updated_at": "2026-10-28T12:04:41.091975+00:00"
+      "score": 46.0,
+      "updated_at": "2026-11-02T14:42:49.813128+00:00"
     },
     {
-      "forum_id": "2610.37104",
+      "forum_id": "2607.16408",
       "paper_number": -1,
-      "title": "Hardware-Matched Spiking Neural Networks for Real-Time Purkinje Cell Spike Classification",
+      "title": "Idle Cycles Are Not Wasted Cycles",
       "authors": [
-        "Arooba Farhan, Afsah Syed, Muhammad Fahd Ibrahim Bhatti, Muhammad Areeb Khalid Kidwai, Muhammad Ahsan Salar Khan, Vincenzo Romano, Muhammad Ali Siddiqi"
+        "Matheus Stolet, Simon Peter, Antoine Kaufmann"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2610.37104v1 Announce Type: new \nAbstract: Distinguishing Purkinje cell (PC) simple spikes (SSs) from complex spikes (CSs) is key to studying cerebellar function. PC recordings commonly rely on wired headstages, whose tethers restrict natural movement in freely behaving animals. Untethered headstages remove this constraint, but cannot continuously transmit raw recordings within their power budgets, making on-headstage spike classification an attractive form of compression, provided it runs accurately in real time on constrained hardware. This work presents two compact spiking neural networks (SNNs) matched to their target hardware: ConvSNN, which maps to the Matrix Vector Processor (MVP) of an EFM32PG28 microcontroller, and StreamSNN, which processes one waveform value per timestep u",
-      "pdf_link": "https://arxiv.org/pdf/2610.37104.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.37104",
-      "submission_date": "2026-10-28T04:00:00+00:00",
+      "abstract": "arXiv:2607.16408v2 Announce Type: replace-cross \nAbstract: Idle network service cores are treated as wasted compute. This assumption motivates increasingly sophisticated mechanisms that reclaim idle cores at microsecond timescales. We argue that this view no longer matches modern server hardware. On contemporary multicore processors, active cores compete for a shared package-level power and thermal budget. Once that budget becomes the limiting resource, an idle core that waits efficiently returns compute capacity that hardware can redistribute to productive work. Measurements on a recent AMD EPYC processor show how waiting strategy, processor topology, and idle duration determine this trade-off. Our results suggest that reclaiming idle cores often yields less benefit than commonly assumed ",
+      "pdf_link": "https://arxiv.org/pdf/2607.16408.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.16408",
+      "submission_date": "2026-11-02T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 24.5,
-      "updated_at": "2026-10-28T12:04:41.091905+00:00"
-    },
-    {
-      "forum_id": "2610.37466",
-      "paper_number": -1,
-      "title": "Kernel Performance Engineering under Physical Non-Idealities",
-      "authors": [
-        "Supun Kuruppu, Pranav Dangi, Wei Li, Zhenyu Bai, Tulika Mitra"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2610.37466v1 Announce Type: new \nAbstract: Physical non-idealities in integrated circuit (IC) design and fabrication are concealed by conventional hardware abstractions, yet they can limit kernel performance and obscure optimization opportunities. Using distributed shared memory (DSMEM) on NVIDIA H100 GPUs as a case study, we show how floorsweeping restricts hardware resources available for clustered execution, potentially offsetting the benefits of reduced data movement enabled by DSMEM. Guided by these insights, we develop a wave-aware clustering strategy that accounts for these resource constraints to improve kernel performance. Evaluations using a global-load-and-broadcast microbenchmark, GEMM, and the Hopper version of FlashAttention 4 demonstrate the performance implications of",
-      "pdf_link": "https://arxiv.org/pdf/2610.37466.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.37466",
-      "submission_date": "2026-10-28T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-10-28T12:04:41.091930+00:00"
-    },
-    {
-      "forum_id": "2610.35935",
-      "paper_number": -1,
-      "title": "RV565: Cross-Layer Co-Design for Frame-Independent Video Playback on MicroPython-Class ESP32-S3 Systems",
-      "authors": [
-        "Ayushman Bhattacharya, Anwesha Chakraborty"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2610.35935v1 Announce Type: new \nAbstract: Video on SPI-attached microcontroller displays is limited less by decoding than by where each byte lives and which stages run serially. We present RV565, a decode framework for frame-independent video whose decoded representation is the panel's native RGB565 format, and evaluate it on an ESP32-S3 with two ten-second windows of an openly licensed film. A serial path - inflate, then scale into internal-memory stripes overlapped with SPI direct-memory-access (DMA) transfers - meets the 41.7 ms deadline on the lighter window but misses all 7,200 frames of the heavier one. RV565's dual-core pipeline inflates the next frame on the second core during the transfer and sustains 24 FPS with zero misses and 10.3 ms of slack on both windows; frame time ",
-      "pdf_link": "https://arxiv.org/pdf/2610.35935.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.35935",
-      "submission_date": "2026-10-28T04:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-28T12:04:41.091832+00:00"
+      "score": 24.0,
+      "updated_at": "2026-11-02T14:42:49.813165+00:00"
     }
   ]
 }

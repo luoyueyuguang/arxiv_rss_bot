@@ -1,123 +1,31 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-10-28T12:04:59.991368+00:00",
-  "paper_count": 5,
+  "last_updated": "2026-11-02T14:43:04.823221+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2610.33510",
+      "forum_id": "2610.40932",
       "paper_number": -1,
-      "title": "DiffRouter: A Differentiable Routing Framework for UltraScale FPGAs",
+      "title": "HippocamFLEX: FPGA Prototyping of Hippocampus-Inspired Architecture for Context-Aware Sequence Prediction",
       "authors": [
-        "Xiaohan Gao, Zhili Xiong, Yusu Wang, David Z. Pan"
+        "Bhuvanesh S. Kayarabettu, Hamed Poursiami, Keiland Cooper, Babak Shahbaba, Norbert Fortin, Maryam Parsa, Akhilesh Jaiswal"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2610.33510v2 Announce Type: replace \nAbstract: Routing has become a major bottleneck in large-scale FPGA design flows, where traditional routers rely on sequential net-by-net processing and rip-up-reroute heuristics. This inherent sequentialism limits parallelism, leads to suboptimal utilization of routing resources, and significantly increases runtime on modern FPGAs. This paper introduces DiffRouter, the first differentiable, gradient-based FPGA routing framework with GPU acceleration. By lifting routing into a continuous optimization space, DiffRouter enables highly concurrent routing and improved global optimality before projecting solutions back onto the discrete fabric. The framework consists of three key stages: (1) Resource-pruned preprocessing, which extracts compact routing",
-      "pdf_link": "https://arxiv.org/pdf/2610.33510.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.33510",
-      "submission_date": "2026-10-28T04:00:00+00:00",
+      "abstract": "arXiv:2610.40932v1 Announce Type: new \nAbstract: Unlike conventional architectures that treat memory as static pattern storage, the hippocampus organizes experience as ordered sequences and retrieves them through temporally compressed replay spanning prior, current, and anticipated states. This capacity of context-appropriate sequence prediction remains absent from conventional deep learning accelerators and existing neuromorphic fabrics. We present HippocamFLEX, a fully synthesizable digital implementation of these hippocampal computational principles, realized with SystemVerilog RTL on the AMD Zynq UltraScale+,XCZU9EG. The design maps the hippocampal trisynaptic pathway onto three pipeline stages: a Dentate Gyrus / Entorhinal Cortex (DG/EC) stage for hypervector proximity matching, a CA3",
+      "pdf_link": "https://arxiv.org/pdf/2610.40932.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.40932",
+      "submission_date": "2026-11-02T05:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 35.5,
-      "updated_at": "2026-10-28T12:04:59.989280+00:00"
-    },
-    {
-      "forum_id": "2610.36481",
-      "paper_number": -1,
-      "title": "A State Augmented Approach to Paralle Modeling in High-Level Synthesis",
-      "authors": [
-        "Nicholas Kovacs, Hao Zheng"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2610.36481v1 Announce Type: new \nAbstract: High-level synthesis (HLS) can schedule only the concurrency made legal by its input description. For feedback-coupled designs, a sequential behavioral model can obscure the architectural state boundaries and hazard resolution needed for efficient overlap. We develop an explicit architectural modeling methodology based on synchronous sequential processes that start in lockstep and synchronize completion before repeating. Persistent state, communication, and feedback control are represented in C++, while HLS schedules and binds operations within that structure. A five-stage RV32I processor illustrates three consequential modeling decisions: which version of a value a consumer reads, when it consumes that value, and how architectural memory ac",
-      "pdf_link": "https://arxiv.org/pdf/2610.36481.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.36481",
-      "submission_date": "2026-10-28T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-10-28T12:04:59.988973+00:00"
-    },
-    {
-      "forum_id": "2610.37319",
-      "paper_number": -1,
-      "title": "AnalogScout: Simulation-Efficient PVT-Aware Analog Sizing with LLM Agents",
-      "authors": [
-        "Yichen Long, Keren Zhu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2610.37319v1 Announce Type: new \nAbstract: Analog device sizing must satisfy all specifications across process, voltage, and temperature (PVT) corners to ensure tape-out success, but simulating every candidate at all corners dominates the sizing time and slows design iteration. Conventional surrogate-based optimizers search the sizing space directly, while recent large language model (LLM) agents add circuit knowledge to designs but still delegate the sizes to global optimizers. Both learn the circuit response from repeated multi-corner SPICE simulations and optimize on top of it, which becomes expensive under a limited simulation budget. Providing an agent with reusable verified designs and sizing sub-blocks analytically could save most of this budget. We propose AnalogScout, a simu",
-      "pdf_link": "https://arxiv.org/pdf/2610.37319.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.37319",
-      "submission_date": "2026-10-28T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-10-28T12:04:59.989122+00:00"
-    },
-    {
-      "forum_id": "2610.36612",
-      "paper_number": -1,
-      "title": "Silent Blindness: Fault Vulnerability of Hardware Malware Detectors",
-      "authors": [
-        "Alireza Abolhasani Zeraatkar, Parnian Shabani Kamran, Parsa Mirfasihi, Saleh Khalaj Monfared, Hussain Al-Asaad"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2610.36612v1 Announce Type: cross \nAbstract: Hardware malware detectors (HMDs) classify hardware performance-counter measurements to identify malicious execution. Faults in their decision logic or parameters can weaken detection and allow malware to be classified as benign. We investigate this vulnerability through structural fault injection across a design space comprising 18 classifiers, four counter budgets, and AdaBoost and Bagging ensembles. The simulation evaluates 453,174 decision stuck-at and selected parameter bit-flip events on a 7,400-instance. Primary comparisons use 128 completed configurations. These completed-subset results are distinguished from the simulation summaries covering 140 configurations with enumerable fault sites. Fault outcomes are classified by their sec",
-      "pdf_link": "https://arxiv.org/pdf/2610.36612.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.36612",
-      "submission_date": "2026-10-28T04:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-28T12:04:59.989213+00:00"
-    },
-    {
-      "forum_id": "2610.33437",
-      "paper_number": -1,
-      "title": "Combinatorial Lock for Trojan-Resilient AI Engines via Hash-Assisted Spectral Filtering",
-      "authors": [
-        "Soumita Chatterjee, Sudip Ghosh, Tamal Ghosh, Bhargab B. Bhattacharya, Hafizur Rahaman"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2610.33437v2 Announce Type: replace-cross \nAbstract: Multi-trigger backdoor attacks, in which heterogeneous trigger mechanisms (e.g., patch, blend, warping, and the latent-domain Spy-Watermark) coexist within a single poisoned model, cannot be addressed by existing shortcut-based defenses that assume a single, static attack mechanism. Current multi-trigger remedies (BU+FT, BU+ANP, and BU+ABL) rely on backdoor unlearning, which incurs high training costs and loses effectiveness at low poisoning ratios. This paper proposes Combinatorial Lock, a training-free, reference-calibrated defense that reduces multi-trigger identification to a combinatorial problem over binary activation signatures. This formulation is the key novelty: it yields a multi-trigger defense that is training-free, tri",
-      "pdf_link": "https://arxiv.org/pdf/2610.33437.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.33437",
-      "submission_date": "2026-10-28T04:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-10-28T12:04:59.989391+00:00"
+      "score": 6.0,
+      "updated_at": "2026-11-02T14:43:04.821977+00:00"
     }
   ]
 }

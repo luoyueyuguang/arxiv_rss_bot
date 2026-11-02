@@ -1,12 +1,14 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-10-30 12:06:31 UTC
-- **Total Filtered Papers**: 1
-- **Displaying**: 1 (arxiv: 1)
+- **Last Updated**: 2026-11-02 14:43:36 UTC
+- **Total Filtered Papers**: 3
+- **Displaying**: 3 (arxiv: 3)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Nonlinear Inverse Iterations for Spin-Orbit Coupled Quantum Gases](https://arxiv.org/abs/2601.08990) | `ARXIV` | 4.5 |
+| 1 | [Numerical analysis of linear finite element methods for the Gross--Pitaevskii eigenvalue problem](https://arxiv.org/abs/2610.41715) | `ARXIV` | 36.0 |
+| 2 | [Stochastic Rayleigh-Ritz Ascent: Global Linear Convergence under a Spectral Gap](https://arxiv.org/abs/2610.42071) | `ARXIV` | 3.5 |
+| 3 | [Immersed Boundary Electrodiffusion in the Wasserstein Gradient Flow Formalism: Global Well-Posedness, Non-Equilibrium Thermodynamics, and Singular Asymptotics](https://arxiv.org/abs/2610.40942) | `ARXIV` | 2.5 |
