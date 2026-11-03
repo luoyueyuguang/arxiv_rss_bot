@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-11-02T14:43:36.470627+00:00",
-  "paper_count": 30,
+  "last_updated": "2026-11-03T13:36:46.570688+00:00",
+  "paper_count": 31,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -588,6 +588,29 @@
       "ratings": [],
       "score": 2.5,
       "updated_at": "2026-08-14T07:42:42.102751+00:00"
+    },
+    {
+      "forum_id": "2610.41396",
+      "paper_number": -1,
+      "title": "ProSearch: Benchmarking Multi-Constraint Protocol Retrieval in Experimental Science",
+      "authors": [
+        "Wenliang Liang, Zhiyuan Ning, Haolin Chen, Yuanchun Zhou, Wenjuan Cui, Yi Du"
+      ],
+      "keywords": [
+        "cs.AI",
+        "AI for Science"
+      ],
+      "abstract": "arXiv:2610.41396v1 Announce Type: cross \nAbstract: In AI for Science scenarios, experimental design and method reproduction require retrieving protocols that satisfy multiple interdependent constraints, yet existing benchmarks lack systematic evaluation of this capability. To address this gap, we introduce ProSearch, a benchmark for multi-constraint protocol retrieval in experimental science. ProSearch has three key features: (1) realism, with queries grounded in real experimental records and expert-defined templates; (2) complexity, with 60 experimental fields and their dependencies; and (3) diagnosticity, with 3-5 explicit constraints per query, including numerical and negation constraints. We construct ProSearch through LLM-based extraction, data-driven constraint selection, controlled ",
+      "pdf_link": "https://arxiv.org/pdf/2610.41396.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.41396",
+      "submission_date": "2026-11-03T05:00:00+00:00",
+      "conference": "AI for Science",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-11-03T13:36:08.970329+00:00"
     },
     {
       "forum_id": "mlr-icml25-12",

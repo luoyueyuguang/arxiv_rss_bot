@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-11-02T14:43:04.744686+00:00",
-  "paper_count": 314,
+  "last_updated": "2026-11-03T13:36:08.772981+00:00",
+  "paper_count": 307,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1616,29 +1616,6 @@
       "updated_at": "2026-07-21T08:54:22.926994+00:00"
     },
     {
-      "forum_id": "2610.41508",
-      "paper_number": -1,
-      "title": "HiState: Hierarchical Prefix Cache Management for Hybrid LLM Serving in Agentic Workloads",
-      "authors": [
-        "Zaifeng Pan, Lucas Wang, Xinwei Qiang, Yanbo Zhou, Chang Chen, Zhengding Hu, Yue Guan, Yufei Ding"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.41508v1 Announce Type: new \nAbstract: Hybrid large language models combine full-attention and recurrent linear layers to reduce inference costs. Prefix caching can further reduce redundant computation across requests, but a recurrent checkpoint cannot recover an earlier state corresponding to a shorter prefix. Existing hybrid prefix caching systems retain checkpoints at selected boundaries to support common reuse patterns in conventional conversations. However, agent workloads modify and revisit earlier contexts, exposing reusable prefixes whose checkpoints were never saved or have already been evicted. A straightforward approach is to retain more checkpoints to reduce recomputation, but their cumulative footprint can displace reusable prefixes from other sessions and cause addi",
-      "pdf_link": "https://arxiv.org/pdf/2610.41508.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.41508",
-      "submission_date": "2026-11-02T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 43.5,
-      "updated_at": "2026-11-02T14:42:50.815878+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-57",
       "paper_number": 57,
       "title": "Nested SEV: Secure and Generic SEV Support for Nested Virtualization",
@@ -1727,29 +1704,6 @@
       "ratings": [],
       "score": 43.0,
       "updated_at": "2026-07-21T08:54:17.397155+00:00"
-    },
-    {
-      "forum_id": "2606.26439",
-      "paper_number": -1,
-      "title": "TileMaxSim: Roofline Regimes and Compression Limits for Fused GPU MaxSim Scoring",
-      "authors": [
-        "Ashutosh Sharma"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2606.26439v2 Announce Type: replace-cross \nAbstract: MaxSim scoring dominates the cost of multi-vector retrieval. Several groups built fused GPU kernels for it independently during 2026, and all report one measure of success: the fraction of peak memory bandwidth reached. That measure assumes the operator is limited by the bytes it moves. We show the assumption fails in two ways, and that two other quantities decide performance: which side of the roofline ridge a shape falls on, and how many dependent gathers the scoring path performs. We first locate the boundary. Fused arithmetic intensity is Nq*Nd /(Nq + Nd) FLOP per byte, against an H100 dense-FP16 ridge of 295.4. The operator is therefore memory-bound at ColBERT shapes and compute-bound at ColPali-scale query lengths. Published ",
-      "pdf_link": "https://arxiv.org/pdf/2606.26439.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.26439",
-      "submission_date": "2026-11-02T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 42.5,
-      "updated_at": "2026-11-02T14:42:50.817094+00:00"
     },
     {
       "forum_id": "usenix-osdi26-50",
@@ -2312,29 +2266,6 @@
       "ratings": [],
       "score": 34.5,
       "updated_at": "2026-10-26T12:13:18.818476+00:00"
-    },
-    {
-      "forum_id": "2610.40983",
-      "paper_number": -1,
-      "title": "LLM Fine-Tuning Workloads: Characterization, Challenges, and Opportunities for Serverless AI",
-      "authors": [
-        "Radu Nicolae, Daniele Lotito, Alexandru Iosup"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.40983v1 Announce Type: new \nAbstract: Serverless execution of Large Language Models (LLMs) is becoming important, reflecting their wide societal use. An increasingly present stage in LLM pipelines is fine-tuning, which specializes trained models and improves inference performance. Serverless operation of LLM fine-tuning workloads shifts operational concerns from the user to the provider. For these new workloads, providers face important operational complexities, such as performance issues, resource waste, and even service failure due to misconfiguration. However, optimizing such workloads is still at an early stage, and, relevant to this work, relatively little is currently known about how LLM fine-tuning workloads run in practice. In this work, we address the knowledge gap by c",
-      "pdf_link": "https://arxiv.org/pdf/2610.40983.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.40983",
-      "submission_date": "2026-11-02T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 34.0,
-      "updated_at": "2026-11-02T14:42:50.815466+00:00"
     },
     {
       "forum_id": "usenix-osdi26-104",
@@ -5262,29 +5193,6 @@
       "updated_at": "2026-07-21T08:54:22.940695+00:00"
     },
     {
-      "forum_id": "2610.34422",
-      "paper_number": -1,
-      "title": "From GPU to TPU with Coding Agents: What Works, What Fails, and What It Costs?",
-      "authors": [
-        "Hui Sun, Anderson Uch\\^oa, Wesley K. G. Assun\\c{c}\\~ao"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.34422v2 Announce Type: replace-cross \nAbstract: A coding agent can migrate a machine learning workload, report success, and still change how the model trains. Rising compute costs, limited accelerator capacity, and vendor dependence are pushing organizations toward alternatives to graphics processing units (GPUs); a key question is whether agent-generated migrations to tensor processing units (TPUs) can be trusted and at what cost. We build a dataset of 148 PyTorch ML research projects and use Claude Code to migrate ten of them from NVIDIA GPUs to Google Cloud TPUs. We independently assess whether each migration runs, preserves numerical behavior, executes on the intended hardware, maintains the project's goal, and delivers acceptable performance. We also examine failures, human",
-      "pdf_link": "https://arxiv.org/pdf/2610.34422.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.34422",
-      "submission_date": "2026-11-02T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 5.0,
-      "updated_at": "2026-11-02T14:42:50.817313+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-8",
       "paper_number": 8,
       "title": "Pilot Execution: Simulating Failure Recovery In Situ for Production Distributed Systems",
@@ -6015,29 +5923,6 @@
       "updated_at": "2026-07-21T08:54:22.938822+00:00"
     },
     {
-      "forum_id": "2606.26441",
-      "paper_number": -1,
-      "title": "GPUSparse: Fast and Exact Learned Sparse Retrieval on a GPU-Resident Inverted Index",
-      "authors": [
-        "Ashutosh Sharma"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2606.26441v2 Announce Type: replace-cross \nAbstract: Learned sparse models such as SPLADE match the quality of dense bi-encoders and keep the exact-match behavior of lexical retrieval. They are served on CPUs, using inverted-index traversal algorithms such as WAND. These algorithms are fast because they prune: they skip documents that cannot enter the top-k. Pruning makes the result approximate, and its control flow is sequential and datadependent, which suits a CPU and not a GPU. We argue that a GPU should not run a faster traversal. It should remove traversal altogether. A GPU has enough memory bandwidth to score every posting, so exactness need not be traded for speed. We present GPUSparse, which keeps the inverted index in GPU memory and scores queries with one fused scatter-add ",
-      "pdf_link": "https://arxiv.org/pdf/2606.26441.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.26441",
-      "submission_date": "2026-11-02T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-11-02T14:42:50.817118+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-22",
       "paper_number": 22,
       "title": "ValScope: Value-Semantics-Aware Metamorphic Testing for Detecting Logical Bugs in DBMSs",
@@ -6668,29 +6553,6 @@
       "updated_at": "2026-07-21T08:54:26.743211+00:00"
     },
     {
-      "forum_id": "2610.41207",
-      "paper_number": -1,
-      "title": "Resource Locks and Fast Unlock for Shared Balances in Certificate-Based Payment Systems",
-      "authors": [
-        "Lingkang Shangguan"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.41207v1 Announce Type: new \nAbstract: Certificate-based payment systems such as FastPay settle a payment with one round of signatures from a quorum of validators and avoid global ordering. The client collects the signatures, and validators never talk to each other. We observe that this client-driven design is complete only as long as no lock is ever undone. Each account has a single writer, a conflict can only come from that writer's own misbehavior, and the account stays locked as the penalty. Stablecoin payments routinely need balances that several accounts debit: treasuries, merchant pools, allowances and subscriptions. There, honest accounts race, locks must be undone, and a quorum certificate held privately by a client can be silently overridden. We prove that no unlock rul",
-      "pdf_link": "https://arxiv.org/pdf/2610.41207.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.41207",
-      "submission_date": "2026-11-02T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-11-02T14:42:50.815496+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-15",
       "paper_number": 15,
       "title": "Extracting Database Access-Control Policies from Web Applications",
@@ -6806,29 +6668,6 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
-    },
-    {
-      "forum_id": "2610.41209",
-      "paper_number": -1,
-      "title": "Falcons: Pushing the Speed-Ratio Limits of Lossy Compression for Parallel Scientific Applications",
-      "authors": [
-        "Bing Lu, Jinyang Liu, Xinyang Ma, Quantong Fu, Chenwei Hou, Zedong Liu, Wenjing Huang, Yida Gu, Xingchen Liu, Zheng Wei, Anbang Wu, Xiaofeng Hou, Chao Li, Guangming Tan, Minyi Guo, Dingwen Tao"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.41209v1 Announce Type: new \nAbstract: The extreme volume of scientific data has become a critical challenge for modern exa-scale scientific computing applications, and error-bounded lossy compression remains indispensable for scientific data management due to its high data reduction rate and controllable data fidelity. However, to ensure sufficient data reduction, existing compressors incur prohibitive computational overheads in real-world parallel scientific computing applications. To overcome the performance bottlenecks of error-bounded lossy compression, we present \\textbf{Falcons}, a broadly deployable error-bounded lossy compressor that simultaneously achieves \\textbf{high compression ratios with ultra-fast throughput, minimizing the overhead in parallel scientific applicat",
-      "pdf_link": "https://arxiv.org/pdf/2610.41209.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.41209",
-      "submission_date": "2026-11-02T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-11-02T14:42:50.815520+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",
