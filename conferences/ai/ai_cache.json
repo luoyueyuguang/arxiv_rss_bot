@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-11-04T13:45:40.215328+00:00",
-  "paper_count": 30,
+  "last_updated": "2026-11-05T13:58:50.627542+00:00",
+  "paper_count": 31,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -100,6 +100,29 @@
       "ratings": [],
       "score": 61.5,
       "updated_at": "2026-07-23T08:28:51.358970+00:00"
+    },
+    {
+      "forum_id": "2605.16725",
+      "paper_number": -1,
+      "title": "Baba in Wonderland: Online Self-Supervised Dynamics Discovery for Executable World Models",
+      "authors": [
+        "SeungWon Seo, DongHeun Han, SeongRae Noh, HyeongYeop Kang"
+      ],
+      "keywords": [
+        "cs.AI",
+        "NeurIPS"
+      ],
+      "abstract": "arXiv:2605.16725v2 Announce Type: replace \nAbstract: Executable world models can be read, edited, executed, and reused for planning, but only if the program captures the environment's transition law rather than semantic shortcuts in its surface vocabulary. We study online executable world-model learning under prior misalignment, where an agent must induce state-dependent dynamics from interaction evidence alone, without rule descriptions, reward signals, or trustworthy lexical priors. We introduce Alice, a closed-loop system that treats failed candidate updates as structural signal: when a candidate explains a new transition but loses previously explained ones, the preservation conflict reveals dynamics that the current program had conflated. Alice refines these conflicts into hypothesis c",
+      "pdf_link": "https://arxiv.org/pdf/2605.16725.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.16725",
+      "submission_date": "2026-11-05T05:00:00+00:00",
+      "conference": "NeurIPS",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 42.5,
+      "updated_at": "2026-11-05T13:58:17.348959+00:00"
     },
     {
       "forum_id": "mlr-icml25-52",

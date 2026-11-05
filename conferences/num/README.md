@@ -1,14 +1,12 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-11-04 13:45:40 UTC
-- **Total Filtered Papers**: 3
-- **Displaying**: 3 (arxiv: 3)
+- **Last Updated**: 2026-11-05 13:58:50 UTC
+- **Total Filtered Papers**: 1
+- **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Numerical analysis of linear finite element methods for the Gross--Pitaevskii eigenvalue problem](https://arxiv.org/abs/2610.41715) | `ARXIV` | 36.0 |
-| 2 | [Stochastic Rayleigh-Ritz Ascent: Global Linear Convergence under a Spectral Gap](https://arxiv.org/abs/2610.42071) | `ARXIV` | 3.5 |
-| 3 | [Immersed Boundary Electrodiffusion in the Wasserstein Gradient Flow Formalism: Global Well-Posedness, Non-Equilibrium Thermodynamics, and Singular Asymptotics](https://arxiv.org/abs/2610.40942) | `ARXIV` | 2.5 |
+| 1 | [Reconstruction and well-posedness of an inverse coefficient problem for a diffusion equation](https://arxiv.org/abs/2611.06112) | `ARXIV` | 1.0 |

@@ -1,54 +1,54 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-11-02T14:42:49.815731+00:00",
+  "last_updated": "2026-11-05T13:58:10.339182+00:00",
   "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2604.26103",
+      "forum_id": "2611.05419",
       "paper_number": -1,
-      "title": "AMMA: A Multi-Chiplet Memory-Centric Architecture for Low-Latency 1M Context Attention Serving",
+      "title": "Unlocking Turing Tensor Cores: A Measured Throughput Account of From-Scratch Pre-training on a Single 22G RTX 2080 Ti",
       "authors": [
-        "Zhongkai Yu, Haotian Ye, Chenyang Zhou, Ohm Rishabh Venkatachalam, Zaifeng Pan, Zhengding Hu, Junsung Kim, Won Woo Ro, Po-An Tsai, Shuyi Pei, Yangwook Kang, Yufei Ding"
+        "Dezhou Shen"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2604.26103v3 Announce Type: replace \nAbstract: All current LLM serving systems place the GPU at the center, from production-level attention-FFN disaggregation to NVIDIA's Rubin GPU-LPU heterogeneous platform. Even academic PIM/PNM proposals still treat the GPU as the central hub for cross-device communication. Yet the GPU's compute-rich architecture is fundamentally mismatched with the memory-bound nature of decode-phase attention, inflating serving latency while wasting power and die area on idle compute units. The problem is compounded as reasoning and agentic workloads push context lengths toward one million tokens, making attention latency the primary user-facing bottleneck.\n  To address these inefficiencies, we present AMMA, a multi-chiplet, memory-centric architecture for low-l",
-      "pdf_link": "https://arxiv.org/pdf/2604.26103.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.26103",
-      "submission_date": "2026-11-02T05:00:00+00:00",
+      "abstract": "arXiv:2611.05419v1 Announce Type: new \nAbstract: The RTX 2080 Ti (TU102) ships full second-generation Tensor Cores in hardware, yet the vendor throttles FP16 matrix multiplication at the driver level, leaving usable tensor throughput well below the hardware peak. turing-unlock lifts this restriction with a kernel module that, before the nvidia driver binds the device, writes the FP16 speed selectors (SS0=0x88888888, SS1=0x8) and releases the ACR mutex; published measurements report cuBLAS FP16 matmul throughput rising from 55.7 to 91.4 TFLOPS (about 1.6x). On the same 22G 2080 Ti and under the same from-scratch pre-training protocol as the companion memory ledger (five tiers of Chinese encoder-decoder models, 2,451 steps per tier, 16,384 tokens per step, seed 42), we obtain a before/after ",
+      "pdf_link": "https://arxiv.org/pdf/2611.05419.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.05419",
+      "submission_date": "2026-11-05T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 46.0,
-      "updated_at": "2026-11-02T14:42:49.813128+00:00"
+      "score": 42.5,
+      "updated_at": "2026-11-05T13:58:10.335543+00:00"
     },
     {
-      "forum_id": "2607.16408",
+      "forum_id": "2610.13368",
       "paper_number": -1,
-      "title": "Idle Cycles Are Not Wasted Cycles",
+      "title": "Anechoic: Onsager-Corrected Parallel Annealing for Sub-0.1 ms Dense Max-Cut on an FPGA",
       "authors": [
-        "Matheus Stolet, Simon Peter, Antoine Kaufmann"
+        "Seungki Hong, Kyeongwon Jeong, Taekwang Jang"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2607.16408v2 Announce Type: replace-cross \nAbstract: Idle network service cores are treated as wasted compute. This assumption motivates increasingly sophisticated mechanisms that reclaim idle cores at microsecond timescales. We argue that this view no longer matches modern server hardware. On contemporary multicore processors, active cores compete for a shared package-level power and thermal budget. Once that budget becomes the limiting resource, an idle core that waits efficiently returns compute capacity that hardware can redistribute to productive work. Measurements on a recent AMD EPYC processor show how waiting strategy, processor topology, and idle duration determine this trade-off. Our results suggest that reclaiming idle cores often yields less benefit than commonly assumed ",
-      "pdf_link": "https://arxiv.org/pdf/2607.16408.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.16408",
-      "submission_date": "2026-11-02T05:00:00+00:00",
+      "abstract": "arXiv:2610.13368v2 Announce Type: replace \nAbstract: Ising machines solve combinatorial optimization problems by annealing a network of spins. On dense problems, the least expensive hardware step updates all spins at once: stochastic cellular automata (SCA) decide every spin in parallel and read couplings only for the spins that flip. Such synchronous updates create an echo: the previous state of each spin returns to it through its neighbors. On K2000, a Max-Cut benchmark on a 2,000-node complete graph, two-thirds of all flips undo the same spin's flip one step earlier. This paper presents Anechoic, an FPGA Ising machine that subtracts this echo from every decision. Dynamical mean-field theory identifies the echo as an Onsager reaction; its one-step strength is the number of spins whose fl",
+      "pdf_link": "https://arxiv.org/pdf/2610.13368.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.13368",
+      "submission_date": "2026-11-05T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 24.0,
-      "updated_at": "2026-11-02T14:42:49.813165+00:00"
+      "score": 31.5,
+      "updated_at": "2026-11-05T13:58:10.335799+00:00"
     }
   ]
 }

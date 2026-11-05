@@ -1,77 +1,123 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-11-02T14:42:50.647156+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-11-05T13:58:10.886954+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2610.41525",
+      "forum_id": "2611.06057",
       "paper_number": -1,
-      "title": "MemX: Memory-Aware Automatic Parallelism for Cross-Vendor Heterogeneous GPU Training",
+      "title": "vExpert: Virtualizing Expert Storage for Adaptive Load Balancing in Distributed MoE Inference",
       "authors": [
-        "Lin Meng, Yuzhong Sun, Jie Zhu"
+        "Wenxun Wang, Xiuhong Li, Yida Wang, Chen Tang, Zongle Huang, Ke Hong, Yu Wang, Yongpan Liu"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.41525v1 Announce Type: new \nAbstract: Cross-vendor heterogeneous GPU clusters are increasingly used for large-scale model training. However, their GPUs differ substantially in compute power, memory capacity, and interconnect characteristics. Existing automatic parallelism training systems usually minimize iteration time while treating memory as a hard constraint, almost failing in resolving the compute--memory asymmetry of cross-vendor clusters regardless correlation between memory and throughput. In this paper, we present MemX, a new memory-aware automatic parallelism system that jointly optimizes iteration time, peak memory usage, and cross-GPU memory balance. MemX consists of a weighted-product objective function, heterogeneous recomputation strategies, a minimal-set profiler",
-      "pdf_link": "https://arxiv.org/pdf/2610.41525.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.41525",
-      "submission_date": "2026-11-02T05:00:00+00:00",
+      "abstract": "arXiv:2611.06057v1 Announce Type: new \nAbstract: Mixture-of-Experts (MoE) models have become prevailing, yet their distributed deployment suffers from severe dynamic load imbalance due to the conflict between static expert placement and inherent routing dynamism. While host DRAM offers capacity to avoid static device storage for load balancing, we identify existing offloading works fundamentally fail in distributed inference due to two overlooked challenges: (1) coupled performance impacts of runtime Host-to-Device transfers due to load dynamism and shared PCIe topology; (2) system-level memory overhead incurred by DRAM usage at scale. In this paper, we propose vExpert that shifts DRAM offloading paradigm from partial residency to full redundancy through virtualized expert storage. We pion",
+      "pdf_link": "https://arxiv.org/pdf/2611.06057.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.06057",
+      "submission_date": "2026-11-05T05:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 66.5,
-      "updated_at": "2026-11-02T14:42:49.921968+00:00"
+      "score": 35.0,
+      "updated_at": "2026-11-05T13:58:10.412056+00:00"
     },
     {
-      "forum_id": "2610.40983",
+      "forum_id": "2610.24865",
       "paper_number": -1,
-      "title": "LLM Fine-Tuning Workloads: Characterization, Challenges, and Opportunities for Serverless AI",
+      "title": "A self-organizing mechanism for collective foraging: recruitment cascades couple Levy search to a clustered maximum-entropy resource field",
       "authors": [
-        "Radu Nicolae, Daniele Lotito, Alexandru Iosup"
+        "Galen J. Wilkerson"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.40983v1 Announce Type: new \nAbstract: Serverless execution of Large Language Models (LLMs) is becoming important, reflecting their wide societal use. An increasingly present stage in LLM pipelines is fine-tuning, which specializes trained models and improves inference performance. Serverless operation of LLM fine-tuning workloads shifts operational concerns from the user to the provider. For these new workloads, providers face important operational complexities, such as performance issues, resource waste, and even service failure due to misconfiguration. However, optimizing such workloads is still at an early stage, and, relevant to this work, relatively little is currently known about how LLM fine-tuning workloads run in practice. In this work, we address the knowledge gap by c",
-      "pdf_link": "https://arxiv.org/pdf/2610.40983.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.40983",
-      "submission_date": "2026-11-02T05:00:00+00:00",
+      "abstract": "arXiv:2610.24865v4 Announce Type: replace-cross \nAbstract: Foraging recruitment is modeled as a contagion: an agent that finds a resource triggers a linear-threshold cascade on the group's communication network. Because activation is degree-normalized, crowding shuts the cascade off, so the swarm aggregates on a resource and then disperses to explore again. Acting on the cascade moves agents in space, and that motion rewires the network, so recruitment and exploration are one coupled process; removing this coupling alone abolishes the self-limitation. Recruitment spreads only within a connectivity window, bounded below by percolation onset and above by degree-blocking. The swarm self-organizes to the near-critical edge of this window -- self-organized quasi-criticality: recruitment sits ne",
+      "pdf_link": "https://arxiv.org/pdf/2610.24865.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.24865",
+      "submission_date": "2026-11-05T05:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 31.0,
-      "updated_at": "2026-11-02T14:42:49.921613+00:00"
+      "score": 23.5,
+      "updated_at": "2026-11-05T13:58:10.413467+00:00"
     },
     {
-      "forum_id": "2610.41919",
+      "forum_id": "2505.06896",
       "paper_number": -1,
-      "title": "Matching Workloads to Blackwell: Power-Resolved Benchmarking of NVIDIA B200 and B300 across HPC and AI Workloads",
+      "title": "RCOMPSs: A Scalable Runtime System for R Code Execution on Manycore Systems",
       "authors": [
-        "Mohsen Zand, Trung Dac Nguyen, H. Birali Runesha"
+        "Xiran Zhang, Javier Conejero, Sameh Abdulah, Jorge Ejarque, Ying Sun, Rosa M. Badia, David E. Keyes, Marc G. Genton"
+      ],
+      "keywords": [
+        "cs.DC",
+        "Supercomputing"
+      ],
+      "abstract": "arXiv:2505.06896v2 Announce Type: replace \nAbstract: R has become a cornerstone of scientific and statistical computing due to its extensive package ecosystem, expressive syntax, and strong support for reproducible analysis. However, as data sizes and computational demands grow, native R parallelism support remains limited. This paper presents RCOMPSs, a scalable runtime system that enables efficient parallel execution of R applications on multicore and manycore systems. RCOMPSs adopts a dynamic, task-based programming model, allowing users to write code in a sequential style, while the runtime automatically handles asynchronous task execution, dependency tracking, and scheduling across available resources. We present RCOMPSs using three representative data analysis algorithms, i.e., K-nea",
+      "pdf_link": "https://arxiv.org/pdf/2505.06896.pdf",
+      "forum_link": "https://arxiv.org/abs/2505.06896",
+      "submission_date": "2026-11-05T05:00:00+00:00",
+      "conference": "Supercomputing",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-11-05T13:58:10.413040+00:00"
+    },
+    {
+      "forum_id": "2512.03416",
+      "paper_number": -1,
+      "title": "TokenScale: Timely and Accurate Autoscaling for Disaggregated LLM Serving with Token Velocity",
+      "authors": [
+        "Ruiqi Lai, Hongrui Liu, Chengzhi Lu, Zonghao Liu, Siyu Cao, Siyang Shao, Yixin Zhang, Luo Mai, Dmitrii Ustiugov"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.41919v1 Announce Type: new \nAbstract: We evaluate NVIDIA B200 and B300 (Blackwell Ultra) GPUs on two independent eight-GPU clusters, spanning computer-vision inference and training, LLM inference with Llama-3-8B and 70B~\\cite{llama3}, and six production HPC codes. The B300 is not a uniform successor to the B200: it trails by up to 5.6$\\times$ on convolutional inference, 8$\\times$ on 3D vision transformer training, 24--27\\% on 70B LLM throughput, and 16$\\times$ on double-precision Quantum ESPRESSO. We resolve the convolutional deficit using per-GPU board power rather than throughput alone: on the affected workloads the B300 draws only 36--53\\% of its 1100\\,W envelope, whereas on ViT-Large, which it wins, both parts saturate at 95--97\\% of TDP. Because our harness keeps inputs res",
-      "pdf_link": "https://arxiv.org/pdf/2610.41919.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.41919",
-      "submission_date": "2026-11-02T05:00:00+00:00",
+      "abstract": "arXiv:2512.03416v2 Announce Type: replace \nAbstract: The architectural shift to prefill/decode (PD) disaggregation in LLM serving improves resource utilization but struggles with the bursty nature of modern workloads. Existing autoscaling policies, often retrofitted from monolithic systems like those in AIBrix and DistServe, rely on lagging indicators such as GPU utilization or coarse-grained request counts. This results in slow reactions to load spikes, leading to significant Time-to First-Token (TTFT) and Time-Per-Output-Token (TPOT) SLO violations and costly over-provisioning. We introduce TokenScale, an autoscaling framework that resolves this performance mismatch through two innovations. First, we propose Token Velocity, a novel metric that unifies the prefill, network, and decode sta",
+      "pdf_link": "https://arxiv.org/pdf/2512.03416.pdf",
+      "forum_link": "https://arxiv.org/abs/2512.03416",
+      "submission_date": "2026-11-05T05:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 16.5,
-      "updated_at": "2026-11-02T14:42:49.922159+00:00"
+      "score": 13.0,
+      "updated_at": "2026-11-05T13:58:10.413092+00:00"
+    },
+    {
+      "forum_id": "2611.06179",
+      "paper_number": -1,
+      "title": "Chiron: Cache Management Empowered by LLM Intelligence for AI Workloads",
+      "authors": [
+        "Bohan Zhang, Renshu Ge, Tianze Wang, Chen Chen"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2611.06179v1 Announce Type: new \nAbstract: AI clusters keep data in remote object stores and rely on local caches to stop GPUs from waiting for data. A cache performs well only when its prefetching and eviction policies match the access pattern, yet these patterns differ across AI workloads and change between phases of one workflow. Existing methods either need code changes, which compromises user transparency, or use low-end heuristics, which cannot follow such changes. Large language models (LLMs) can infer access behavior without user hints, but direct LLM control of cache actions suffers from long reasoning delay, high token cost, and poor decision quality. We present Chiron, a cache system based on advisory switching control. An LLM asynchronously diagnoses the access pattern an",
+      "pdf_link": "https://arxiv.org/pdf/2611.06179.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.06179",
+      "submission_date": "2026-11-05T05:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.5,
+      "updated_at": "2026-11-05T13:58:10.412273+00:00"
     }
   ]
 }

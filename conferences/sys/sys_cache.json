@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-11-04T13:45:06.676470+00:00",
-  "paper_count": 307,
+  "last_updated": "2026-11-05T13:58:17.028918+00:00",
+  "paper_count": 313,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -69,6 +69,29 @@
       "ratings": [],
       "score": 132.0,
       "updated_at": "2026-07-21T08:54:17.392951+00:00"
+    },
+    {
+      "forum_id": "2611.04382",
+      "paper_number": -1,
+      "title": "Beyond Compression Ratio: High-Throughput KV Compression for Disaggregated LLM Serving",
+      "authors": [
+        "Junhong Wu, Zedong Liu, Xinyang Ma, Yuhan Chen, Guangming Tan, Dingwen Tao"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.04382v2 Announce Type: replace \nAbstract: KV cache compression reduces the communication volume of disaggregated large language model serving, but its practical benefit depends not only on compression ratio and model quality, but also on how efficiently the compression pipeline executes. This requirement becomes increasingly important as modern serving systems adopt high-bandwidth interconnects, where inefficient compression can offset a substantial portion of the saved communication time. This paper presents FastKVComp, a high-throughput KV cache compression data path built on top of KVServe. FastKVComp improves compression execution in two complementary ways. First, it fuses the distribution transformation and low-bit quantization stages into a KVaware TileLang kernel, elimina",
+      "pdf_link": "https://arxiv.org/pdf/2611.04382.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.04382",
+      "submission_date": "2026-11-05T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 129.5,
+      "updated_at": "2026-11-05T13:58:11.006387+00:00"
     },
     {
       "forum_id": "usenix-osdi26-96",
@@ -377,6 +400,29 @@
       "ratings": [],
       "score": 76.5,
       "updated_at": "2026-07-21T08:54:22.932132+00:00"
+    },
+    {
+      "forum_id": "2609.09742",
+      "paper_number": -1,
+      "title": "Breaking Fault Lines: Unifying TEE-Assisted BFT Consensus in Partially Trusted Worlds",
+      "authors": [
+        "Xiaoqing Wen, Tong Liu, Jianyu Niu, Jialin Li, Cong Wang, Yinqian Zhang, Chen Feng"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2609.09742v3 Announce Type: replace \nAbstract: This paper revisits TEE-assisted BFT under a universal partial-TEE model, where an arbitrary subset of replicas execute inside TEEs while the remaining replicas operate without hardware trust guarantees. We show that heterogeneous trust changes the structure of quorum formation and fault tolerance. In particular, we derive a tight resilience bound f < max {n/3, m/2}, where n is the total number of replicas and m is the number of TEE-enabled replicas. The result reveals a sharp threshold phenomenon: TEEs improve fault tolerance only once they exceed two-thirds of the deployment.\n  Guided by this characterization, we introduce two protocol principles: (1) a dual-quorum construction that safely combines TEE-only and mixed quorums, and (2) a",
+      "pdf_link": "https://arxiv.org/pdf/2609.09742.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.09742",
+      "submission_date": "2026-11-05T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 76.0,
+      "updated_at": "2026-11-05T13:58:11.006365+00:00"
     },
     {
       "forum_id": "usenix-osdi26-55",
@@ -3785,6 +3831,29 @@
       "updated_at": "2026-07-21T08:54:26.739010+00:00"
     },
     {
+      "forum_id": "2611.04253",
+      "paper_number": -1,
+      "title": "UMLoad: Fast On-Demand Model Loading on Unified Memory Architecture",
+      "authors": [
+        "Zimeng Wang, Jinrong Yang, Rong Chen"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.04253v2 Announce Type: replace \nAbstract: On-demand model loading dominates response latency for interactive on-device AI, yet unified memory architectures (UMAs), now common on edge devices, should make it cheap by placing weights in memory the GPU already sees. However, frameworks still use the loading flow built for discrete GPUs, leaving significant inefficiencies. This paper presents UMLoad, a system-level model-loading accelerator that decouples a framework's logical allocations from their physical page backing. UMLoad uses on-demand reconstruction to eliminate the weight copy while preserving copy independence, and GPU-assisted page zeroing to accelerate runtime allocation while preserving its security guarantee. Implemented on Intel, AMD, and NVIDIA UMA platforms and eva",
+      "pdf_link": "https://arxiv.org/pdf/2611.04253.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.04253",
+      "submission_date": "2026-11-05T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.0,
+      "updated_at": "2026-11-05T13:58:10.939989+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-45",
       "paper_number": 45,
       "title": "RLinf: Flexible and Efficient Large-Scale Reinforcement Learning via Macro-to-Micro Flow Transformation",
@@ -4084,6 +4153,29 @@
       "ratings": [],
       "score": 13.5,
       "updated_at": "2026-07-21T08:54:26.743933+00:00"
+    },
+    {
+      "forum_id": "2611.05642",
+      "paper_number": -1,
+      "title": "Runway Characters: Serving a 57B Video Diffusion Transformer for Real-Time Conversation",
+      "authors": [
+        "Rohan Agarwal, Robin Andeer, Alex Armbruster, Bennett Arthur, Michail Christos Doukas, Piero Esposito, Qiming Fang, Aron Filkey, Bryan Fox, Anastasis Germanidis, Jonathan Granskog, Corina Gurau, Robin Kahlow, Taras Khakhulin, Nasir Mohammad Khalid, Tomasz {\\L}akomy, Mike Leisz, Kathleen M. Lewis, Daniil Merkulov, Nicolas Neubert, Ryan Phillips, Yining Shi, Axel \\\"Orn Sigur{\\dh}sson, Erica Simmons, Mark Sturley, Ziyi Tang, Michail Tarasiou, Jamie Umpherson, Cindy Wang, Jimei Yang, Hudson Yeo, Wei Zhang, Zejia Zheng"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.05642v1 Announce Type: new \nAbstract: Conversational video characters must generate video as fast as it plays, for one user at a time: at 24 fps, a sustained 166.7 ms per four-frame chunk at batch size one, with only a few chunks of buffering. We describe the system behind Runway Characters, which serves a $\\approx$57B-parameter autoregressive video diffusion transformer (four denoising passes per chunk) at 704$\\times$1088 and 24 fps on four H100 GPUs with a voice agent in the loop. Each chunk takes 240 attention calls, each reading a 5,788-slot KV cache in which only 757 tokens are new, and 29% of the original step was whole-cache work repeated in every call. We move that work to write time (a ring cache, RoPE and FP8 quantization applied once per write, and a delta rotation wh",
+      "pdf_link": "https://arxiv.org/pdf/2611.05642.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.05642",
+      "submission_date": "2026-11-05T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.0,
+      "updated_at": "2026-11-05T13:58:11.003892+00:00"
     },
     {
       "forum_id": "usenix-osdi26-37",
@@ -5923,6 +6015,29 @@
       "updated_at": "2026-07-21T08:54:22.938822+00:00"
     },
     {
+      "forum_id": "2611.05558",
+      "paper_number": -1,
+      "title": "Easy Multi-Precision Acceleration via Vectorization",
+      "authors": [
+        "Chansup Byun, Piotr Luszczek, Jeremy Kepner, LaToya Anderson, William Arcand, David Bestor, William Bergeron, Alex Bonn, Daniel Burrill, Vijay Gadepally, Michael Houle, Matthew Hubbell, Hayden Jananthan, Michael Jones, Lauren Milechin, Julie Mullen, Andrew Prout, Albert Reuther, Antonio Rosa, Charles Yee, Peter Michaleas"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.05558v1 Announce Type: cross \nAbstract: High level programming languages and accelerators are powerful enablers for a wide range of applications. Accelerators offer significant performance via diverse numeric precision and increased memory bandwidth and capacity. These enable new algorithms to be explored. Construction of these algorithms can be enabled by the ready accessibility of these performance features in high-level languages. Achieving scalable vertical (within a compute node), precision (over various numeric precisions), and temporal (over different generations of hardware) performance while retaining productivity requires effective abstractions. Vectorized coding that expresses operations as high-level matrix mathematics has historically been an important method for ac",
+      "pdf_link": "https://arxiv.org/pdf/2611.05558.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.05558",
+      "submission_date": "2026-11-05T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-11-05T13:58:11.005235+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-22",
       "paper_number": 22,
       "title": "ValScope: Value-Semantics-Aware Metamorphic Testing for Detecting Logical Bugs in DBMSs",
@@ -6668,6 +6783,29 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
+    },
+    {
+      "forum_id": "2611.04667",
+      "paper_number": -1,
+      "title": "FedCSGA: Evolutionary Client Selection with Joint Statistical and System Heterogeneity in Federated Learning",
+      "authors": [
+        "Ghani Haider, Majid Kundroo, Leo Zhang, Jinchul Choi, Taehong Kim"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.04667v2 Announce Type: replace-cross \nAbstract: Federated Learning (FL) enables collaborative training of machine learning models across distributed clients while preserving data privacy. In practical deployments, FL relies on selecting a client subset in each communication round to reduce communication cost, mitigate stragglers, and improve training efficiency under heterogeneous data and system conditions. In heterogeneous edge computing environments, both statistical heterogeneity and system heterogeneity significantly affect convergence efficiency and model performance. However, existing client selection methods often address these factors independently, overlooking their coupled and dynamic impact across communication rounds. To address this limitation, we propose FedCSGA, ",
+      "pdf_link": "https://arxiv.org/pdf/2611.04667.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.04667",
+      "submission_date": "2026-11-05T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-11-05T13:58:11.006976+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

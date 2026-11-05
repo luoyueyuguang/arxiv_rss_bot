@@ -1,77 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-11-02T14:43:36.573606+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-11-05T13:58:50.695116+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2610.41715",
+      "forum_id": "2611.06112",
       "paper_number": -1,
-      "title": "Numerical analysis of linear finite element methods for the Gross--Pitaevskii eigenvalue problem",
+      "title": "Reconstruction and well-posedness of an inverse coefficient problem for a diffusion equation",
       "authors": [
-        "Tianyang Chu, Mingyan Zhang"
+        "Siyu Cen, Bangti Jin, Yavar Kian, Zhi Zhou"
       ],
       "keywords": [
         "cs.NA",
         "numerical analysis"
       ],
-      "abstract": "arXiv:2610.41715v1 Announce Type: new \nAbstract: In this paper, we analyze the standard and the mass-lumped linear finite element methods for the Gross--Pitaevskii eigenvalue problem. For the standard method, we give a new proof of the uniqueness of the discrete ground state up to sign for sufficiently small mesh sizes, which only requires the $H^1$-convergence of the discrete ground states. For both methods, we establish optimal convergence rates in the $L^p$- and $W^{1,p}$-norms for $1 \\le p < \\infty$. Under additional regularity assumptions on the potential, we further obtain an optimal convergence rate in the $W^{1,\\infty}$-norm and an almost optimal convergence rate, up to a logarithmic factor, in the $L^\\infty$-norm. Moreover, we prove that the discrete ground states superconverge to",
-      "pdf_link": "https://arxiv.org/pdf/2610.41715.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.41715",
-      "submission_date": "2026-11-02T05:00:00+00:00",
+      "abstract": "arXiv:2611.06112v1 Announce Type: new \nAbstract: In this work, we investigate the inverse coefficient problem of determining an unknown coefficient in a diffusion equation from a single boundary flux measurement. More precisely, assuming that the domain is cylindrical, we develop a unified theoretical and numerical framework for the stable reconstruction of a space-time-dependent coefficient, by reformulating the inverse problem as a nonlinear equation. The inherent nonlinearity of the problem is transferred to an auxiliary nonlinear equation, enabling the application of techniques and concepts from nonlinear analysis. By combining representation formulas with regularity properties of solutions to diffusion equations, we extend to nonlinear inverse problems an approach that has so far been",
+      "pdf_link": "https://arxiv.org/pdf/2611.06112.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.06112",
+      "submission_date": "2026-11-05T05:00:00+00:00",
       "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 36.0,
-      "updated_at": "2026-11-02T14:43:36.570298+00:00"
-    },
-    {
-      "forum_id": "2610.42071",
-      "paper_number": -1,
-      "title": "Stochastic Rayleigh-Ritz Ascent: Global Linear Convergence under a Spectral Gap",
-      "authors": [
-        "Jonas Bresch, Oleh Melnyk"
-      ],
-      "keywords": [
-        "cs.NA",
-        "SIAM"
-      ],
-      "abstract": "arXiv:2610.42071v1 Announce Type: cross \nAbstract: We consider the adjoint-free random-plane iteration algorithm for finding the top eigenvector of a matrix proposed in (SIAM J. Matrix Anal. Appl. 47 (2026), 1349-1374). Unlike standard methods such as the power method or gradient descent, the above algorithm lacked linear convergence guarantees in the presence of a spectral gap. In this paper, we establish explicit spectral-gap-dependent global linear convergence rates in expectation, providing quantitative guarantees for the empirically observed convergence.",
-      "pdf_link": "https://arxiv.org/pdf/2610.42071.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.42071",
-      "submission_date": "2026-11-02T05:00:00+00:00",
-      "conference": "SIAM",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-11-02T14:43:36.570651+00:00"
-    },
-    {
-      "forum_id": "2610.40942",
-      "paper_number": -1,
-      "title": "Immersed Boundary Electrodiffusion in the Wasserstein Gradient Flow Formalism: Global Well-Posedness, Non-Equilibrium Thermodynamics, and Singular Asymptotics",
-      "authors": [
-        "Pilhwa Lee"
-      ],
-      "keywords": [
-        "cs.NA",
-        "NA"
-      ],
-      "abstract": "arXiv:2610.40942v1 Announce Type: cross \nAbstract: We introduce a unified optimal transport framework for the Immersed Boundary (IB) electrodiffusion active pump model. By representing membrane chemical potential barriers and active pump potentials via smoothed Eulerian kernels ($\\Psi_w, \\mathcal{H}_w$), we formulate the passive dynamics as an $L^2$-Wasserstein ($W_2$) gradient flow coupled to non-conservative active pushing fields representing ATP-driven $3:2$ $\\text{Na}^+/\\text{K}^+$ exchangers. We establish global weak existence of solutions to the continuous Poisson--Nernst--Planck--IB system via a split-step Jordan--Kinderlehrer--Otto (JKO) variational scheme, backed by Calder\\'on--Zygmund bounds for non-local Poisson drift and $H^3(\\mathbb{S}^1)$ interface regularity under Stokes flo",
-      "pdf_link": "https://arxiv.org/pdf/2610.40942.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.40942",
-      "submission_date": "2026-11-02T05:00:00+00:00",
-      "conference": "NA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-11-02T14:43:36.570432+00:00"
+      "score": 1.0,
+      "updated_at": "2026-11-05T13:58:50.693093+00:00"
     }
   ]
 }
