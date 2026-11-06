@@ -1,123 +1,54 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-11-05T13:58:10.886954+00:00",
-  "paper_count": 5,
+  "last_updated": "2026-11-06T13:42:38.436573+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2611.06057",
+      "forum_id": "2611.07084",
       "paper_number": -1,
-      "title": "vExpert: Virtualizing Expert Storage for Adaptive Load Balancing in Distributed MoE Inference",
+      "title": "DMuon: Scaling Matrix Optimizers in Data Parallelism with Topology-Aware Matrix Ownership and Communication",
       "authors": [
-        "Wenxun Wang, Xiuhong Li, Yida Wang, Chen Tang, Zongle Huang, Ke Hong, Yu Wang, Yongpan Liu"
+        "Starrick Liu, Ruizhi Chengze, Lufang Chen, Michael Zhao, Ran Yu, Xiaofan Li, dance kuzi, Yue Zhang, Zijuan Lin, SongAo Han, YongHua Chen, Ruyi Gan, Hao Wang"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2611.06057v1 Announce Type: new \nAbstract: Mixture-of-Experts (MoE) models have become prevailing, yet their distributed deployment suffers from severe dynamic load imbalance due to the conflict between static expert placement and inherent routing dynamism. While host DRAM offers capacity to avoid static device storage for load balancing, we identify existing offloading works fundamentally fail in distributed inference due to two overlooked challenges: (1) coupled performance impacts of runtime Host-to-Device transfers due to load dynamism and shared PCIe topology; (2) system-level memory overhead incurred by DRAM usage at scale. In this paper, we propose vExpert that shifts DRAM offloading paradigm from partial residency to full redundancy through virtualized expert storage. We pion",
-      "pdf_link": "https://arxiv.org/pdf/2611.06057.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.06057",
-      "submission_date": "2026-11-05T05:00:00+00:00",
+      "abstract": "arXiv:2611.07084v1 Announce Type: new \nAbstract: Matrix optimizers such as Muon update whole weight matrices, which conflicts with the element- or row-wise sharding of data-parallel runtimes. Once parameters are sharded as well, matrix optimizers incur extra communication or repeated computation. We present DMuon, a matrix-granular optimizer runtime for PyTorch FSDP (ZeRO-2/3) and HSDP. DMuon assigns each matrix a unique owner, which performs the Newton--Schulz (NS) iteration and optimizer update on the full matrix, and balances the load across owners by computational cost. On HSDP, ownership is global across replicas, so the cluster keeps a single copy of gradients and optimizer state, and updated parameters are published across nodes as soon as they are ready, overlapping subsequent comp",
+      "pdf_link": "https://arxiv.org/pdf/2611.07084.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.07084",
+      "submission_date": "2026-11-06T05:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-11-05T13:58:10.412056+00:00"
+      "score": 47.0,
+      "updated_at": "2026-11-06T13:42:37.822355+00:00"
     },
     {
-      "forum_id": "2610.24865",
+      "forum_id": "2610.38020",
       "paper_number": -1,
-      "title": "A self-organizing mechanism for collective foraging: recruitment cascades couple Levy search to a clustered maximum-entropy resource field",
+      "title": "Random Centres and the $\\varepsilon$-Dependence of Constant-Round Planar Domination",
       "authors": [
-        "Galen J. Wilkerson"
+        "Sebastian Senge (Independent Researcher)"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.24865v4 Announce Type: replace-cross \nAbstract: Foraging recruitment is modeled as a contagion: an agent that finds a resource triggers a linear-threshold cascade on the group's communication network. Because activation is degree-normalized, crowding shuts the cascade off, so the swarm aggregates on a resource and then disperses to explore again. Acting on the cascade moves agents in space, and that motion rewires the network, so recruitment and exploration are one coupled process; removing this coupling alone abolishes the self-limitation. Recruitment spreads only within a connectivity window, bounded below by percolation onset and above by degree-blocking. The swarm self-organizes to the near-critical edge of this window -- self-organized quasi-criticality: recruitment sits ne",
-      "pdf_link": "https://arxiv.org/pdf/2610.24865.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.24865",
-      "submission_date": "2026-11-05T05:00:00+00:00",
+      "abstract": "arXiv:2610.38020v2 Announce Type: replace \nAbstract: It was recently shown (arXiv:2610.09618) that the infimum of the approximation ratios of deterministic constant-round LOCAL algorithms for minimum dominating set on planar graphs is 7. The $(7+\\varepsilon)$-approximation given there runs in $T_0+O((c_0/\\varepsilon)^{\\kappa})$ rounds with $\\kappa=\\ln 3/\\ln(24/23)\\approx 25.81$, and it is asked there whether this exponent can be substantially reduced. We replace the heaviest-edge star selection in its clustering step by a random-centre rule: every part becomes a centre independently with probability $p$, and every non-centre joins its heaviest centre neighbour. For planar graphs this gives $\\kappa<5.89$ with $p=3/8$ and $\\kappa<6.7$ with $p=1/2$. For every proper minor-closed class of dens",
+      "pdf_link": "https://arxiv.org/pdf/2610.38020.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.38020",
+      "submission_date": "2026-11-06T05:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 23.5,
-      "updated_at": "2026-11-05T13:58:10.413467+00:00"
-    },
-    {
-      "forum_id": "2505.06896",
-      "paper_number": -1,
-      "title": "RCOMPSs: A Scalable Runtime System for R Code Execution on Manycore Systems",
-      "authors": [
-        "Xiran Zhang, Javier Conejero, Sameh Abdulah, Jorge Ejarque, Ying Sun, Rosa M. Badia, David E. Keyes, Marc G. Genton"
-      ],
-      "keywords": [
-        "cs.DC",
-        "Supercomputing"
-      ],
-      "abstract": "arXiv:2505.06896v2 Announce Type: replace \nAbstract: R has become a cornerstone of scientific and statistical computing due to its extensive package ecosystem, expressive syntax, and strong support for reproducible analysis. However, as data sizes and computational demands grow, native R parallelism support remains limited. This paper presents RCOMPSs, a scalable runtime system that enables efficient parallel execution of R applications on multicore and manycore systems. RCOMPSs adopts a dynamic, task-based programming model, allowing users to write code in a sequential style, while the runtime automatically handles asynchronous task execution, dependency tracking, and scheduling across available resources. We present RCOMPSs using three representative data analysis algorithms, i.e., K-nea",
-      "pdf_link": "https://arxiv.org/pdf/2505.06896.pdf",
-      "forum_link": "https://arxiv.org/abs/2505.06896",
-      "submission_date": "2026-11-05T05:00:00+00:00",
-      "conference": "Supercomputing",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-11-05T13:58:10.413040+00:00"
-    },
-    {
-      "forum_id": "2512.03416",
-      "paper_number": -1,
-      "title": "TokenScale: Timely and Accurate Autoscaling for Disaggregated LLM Serving with Token Velocity",
-      "authors": [
-        "Ruiqi Lai, Hongrui Liu, Chengzhi Lu, Zonghao Liu, Siyu Cao, Siyang Shao, Yixin Zhang, Luo Mai, Dmitrii Ustiugov"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2512.03416v2 Announce Type: replace \nAbstract: The architectural shift to prefill/decode (PD) disaggregation in LLM serving improves resource utilization but struggles with the bursty nature of modern workloads. Existing autoscaling policies, often retrofitted from monolithic systems like those in AIBrix and DistServe, rely on lagging indicators such as GPU utilization or coarse-grained request counts. This results in slow reactions to load spikes, leading to significant Time-to First-Token (TTFT) and Time-Per-Output-Token (TPOT) SLO violations and costly over-provisioning. We introduce TokenScale, an autoscaling framework that resolves this performance mismatch through two innovations. First, we propose Token Velocity, a novel metric that unifies the prefill, network, and decode sta",
-      "pdf_link": "https://arxiv.org/pdf/2512.03416.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.03416",
-      "submission_date": "2026-11-05T05:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-11-05T13:58:10.413092+00:00"
-    },
-    {
-      "forum_id": "2611.06179",
-      "paper_number": -1,
-      "title": "Chiron: Cache Management Empowered by LLM Intelligence for AI Workloads",
-      "authors": [
-        "Bohan Zhang, Renshu Ge, Tianze Wang, Chen Chen"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2611.06179v1 Announce Type: new \nAbstract: AI clusters keep data in remote object stores and rely on local caches to stop GPUs from waiting for data. A cache performs well only when its prefetching and eviction policies match the access pattern, yet these patterns differ across AI workloads and change between phases of one workflow. Existing methods either need code changes, which compromises user transparency, or use low-end heuristics, which cannot follow such changes. Large language models (LLMs) can infer access behavior without user hints, but direct LLM control of cache actions suffers from long reasoning delay, high token cost, and poor decision quality. We present Chiron, a cache system based on advisory switching control. An LLM asynchronously diagnoses the access pattern an",
-      "pdf_link": "https://arxiv.org/pdf/2611.06179.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.06179",
-      "submission_date": "2026-11-05T05:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-11-05T13:58:10.412273+00:00"
+      "score": 1.0,
+      "updated_at": "2026-11-06T13:42:37.823296+00:00"
     }
   ]
 }

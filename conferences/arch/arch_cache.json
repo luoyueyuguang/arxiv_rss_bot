@@ -1,54 +1,100 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-11-05T13:58:10.339182+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-11-06T13:42:37.732325+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2611.05419",
+      "forum_id": "2611.07264",
       "paper_number": -1,
-      "title": "Unlocking Turing Tensor Cores: A Measured Throughput Account of From-Scratch Pre-training on a Single 22G RTX 2080 Ti",
+      "title": "Energy Measurement and Optimization of TinyML in Resource-Constrained Embedded Systems: A Systematic Mapping Study",
       "authors": [
-        "Dezhou Shen"
+        "Clariele Almeida, Renan Beserra, Rafael Moura, Danilo Ara\\'ujo, Bruno Nogueira, S\\'ergio Chevtchenko, Ermeson Andrade"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2611.05419v1 Announce Type: new \nAbstract: The RTX 2080 Ti (TU102) ships full second-generation Tensor Cores in hardware, yet the vendor throttles FP16 matrix multiplication at the driver level, leaving usable tensor throughput well below the hardware peak. turing-unlock lifts this restriction with a kernel module that, before the nvidia driver binds the device, writes the FP16 speed selectors (SS0=0x88888888, SS1=0x8) and releases the ACR mutex; published measurements report cuBLAS FP16 matmul throughput rising from 55.7 to 91.4 TFLOPS (about 1.6x). On the same 22G 2080 Ti and under the same from-scratch pre-training protocol as the companion memory ledger (five tiers of Chinese encoder-decoder models, 2,451 steps per tier, 16,384 tokens per step, seed 42), we obtain a before/after ",
-      "pdf_link": "https://arxiv.org/pdf/2611.05419.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.05419",
-      "submission_date": "2026-11-05T05:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 42.5,
-      "updated_at": "2026-11-05T13:58:10.335543+00:00"
-    },
-    {
-      "forum_id": "2610.13368",
-      "paper_number": -1,
-      "title": "Anechoic: Onsager-Corrected Parallel Annealing for Sub-0.1 ms Dense Max-Cut on an FPGA",
-      "authors": [
-        "Seungki Hong, Kyeongwon Jeong, Taekwang Jang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2610.13368v2 Announce Type: replace \nAbstract: Ising machines solve combinatorial optimization problems by annealing a network of spins. On dense problems, the least expensive hardware step updates all spins at once: stochastic cellular automata (SCA) decide every spin in parallel and read couplings only for the spins that flip. Such synchronous updates create an echo: the previous state of each spin returns to it through its neighbors. On K2000, a Max-Cut benchmark on a 2,000-node complete graph, two-thirds of all flips undo the same spin's flip one step earlier. This paper presents Anechoic, an FPGA Ising machine that subtracts this echo from every decision. Dynamical mean-field theory identifies the echo as an Onsager reaction; its one-step strength is the number of spins whose fl",
-      "pdf_link": "https://arxiv.org/pdf/2610.13368.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.13368",
-      "submission_date": "2026-11-05T05:00:00+00:00",
+      "abstract": "arXiv:2611.07264v1 Announce Type: cross \nAbstract: The rapid expansion of the Internet of Things (IoT) has increased the volume of data generated at the network edge, where many devices operate under severe memory, processing, and energy constraints. In this context, Tiny Machine Learning (TinyML) enables machine learning (ML) tasks to be executed on microcontrollers, smart sensors, and other resource-constrained platforms. However, the literature remains heterogeneous regarding the algorithms evaluated, energy-measurement methods, reported metrics, influencing factors, and optimization strategies. This study presents a systematic mapping of energy-aware TinyML research. It identifies the main models and learning approaches, classifies energy-evaluation methodologies and metrics, examines ",
+      "pdf_link": "https://arxiv.org/pdf/2611.07264.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.07264",
+      "submission_date": "2026-11-06T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 31.5,
-      "updated_at": "2026-11-05T13:58:10.335799+00:00"
+      "updated_at": "2026-11-06T13:42:37.728668+00:00"
+    },
+    {
+      "forum_id": "2611.08147",
+      "paper_number": -1,
+      "title": "MCUFlowNet: Hardware-Aware Neural Architecture Search for Optical Flow on Microcontrollers",
+      "authors": [
+        "Enmin Lin, Jona Beysens"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2611.08147v1 Announce Type: cross \nAbstract: Dense optical flow allows small drones to avoid obstacles. However, few dense optical flow networks are designed for microcontrollers (MCUs) with neural accelerators, whose on-chip SRAM limits the input resolution. We present PACE-NAS, a macro-to-micro neural architecture search framework that decouples memory from latency: a macro design fixes the backbone and its peak SRAM, and a micro design searches operators and depths to trade accuracy against compiler-estimated latency. We apply it to EdgeFlowNet on a Grove Vision AI V2 board (Ethos-U55), where profiling locates the peak SRAM at the full-resolution output head. Replacing transposed convolutions with bilinear upsampling and convolutions lowers the peak SRAM by 18%, and two lightweigh",
+      "pdf_link": "https://arxiv.org/pdf/2611.08147.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.08147",
+      "submission_date": "2026-11-06T05:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-11-06T13:42:37.728700+00:00"
+    },
+    {
+      "forum_id": "2611.08200",
+      "paper_number": -1,
+      "title": "Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise",
+      "authors": [
+        "Muhammad Shaheer Bin Junaid"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2611.08200v1 Announce Type: cross \nAbstract: Zirah is a hardware signer built around an STM32F407 microcontroller, and its purpose is to find out, on inexpensive hardware, where a post-quantum signing key is exposed and what actually protects it. The device draws every random bit from a reverse-biased 2N3904 junction in avalanche breakdown, amplified by an LM358 and screened by SP 800-90B health tests, computes ML-DSA-65 (FIPS 204, hedged) on the STM32 with two-share arithmetic masking of the secret-key multiplications, and adds ECDSA P-256 from an ATECC608 secure element over the same digest, once a person has matched an eight-digit digest prefix on its OLED with the PC and pressed a button. A desktop application and a command-line tool drive the board and verify its output, and bec",
+      "pdf_link": "https://arxiv.org/pdf/2611.08200.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.08200",
+      "submission_date": "2026-11-06T05:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-11-06T13:42:37.728709+00:00"
+    },
+    {
+      "forum_id": "2506.08911",
+      "paper_number": -1,
+      "title": "Implementing Keyword Spotting on the MCXN947 Microcontroller with Integrated NPU",
+      "authors": [
+        "Petar Jaku\\v{s}, Hrvoje D\\v{z}apo"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2506.08911v2 Announce Type: replace-cross \nAbstract: This paper presents a keyword spotting (KWS) system implemented on the NXP MCXN947 microcontroller with an integrated Neural Processing Unit (NPU), enabling real-time voice interaction on resource-constrained devices. The system combines MFCC feature extraction with a CNN classifier, optimized using Quantization Aware Training to reduce model size with minimal accuracy drop. Experimental results demonstrate a 59x speedup in inference time when leveraging the NPU compared to CPU-only execution, achieving 97.06% accuracy with a model size of 30.58 KB, demonstrating the feasibility of efficient, low-power voice interfaces on embedded platforms.",
+      "pdf_link": "https://arxiv.org/pdf/2506.08911.pdf",
+      "forum_link": "https://arxiv.org/abs/2506.08911",
+      "submission_date": "2026-11-06T05:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.5,
+      "updated_at": "2026-11-06T13:42:37.728765+00:00"
     }
   ]
 }

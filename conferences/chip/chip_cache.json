@@ -1,146 +1,100 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-11-05T13:58:17.103803+00:00",
-  "paper_count": 6,
+  "last_updated": "2026-11-06T13:42:59.767938+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2611.06737",
+      "forum_id": "2611.07506",
       "paper_number": -1,
-      "title": "Data Center Agglomeration and Power Infrastructure Capacity in the United States",
+      "title": "Memory Fit: Architectural Support for Page Placement by Learning Models of Good Behavior",
       "authors": [
-        "Yutong Ma"
+        "Chun Deng, Hui Sub Shim, Evan Laufer, Anna Eaton, David Tennenhouse, Tsachy Weissman, Philip Levis"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2611.06737v1 Announce Type: new \nAbstract: The continuous expansion of digital infrastructure, especially data centers, has imposed unprecedented, geographically concentrated stress on existing power grids. However, rigorous causal evidence quantifying how these facilities reshape local power-infrastructure supply remains limited. This study builds a comprehensive county-level US panel dataset spanning 2010-2024, uniquely integrating individual data center building footprints and power-plant additions. To mitigate endogeneity and high-dimensional confounding, this study deploys Double Machine Learning with five-fold cross-fitting, conditioning on county and year fixed effects alongside regional socioeconomic covariates. Baseline estimation identifies a significant positive causal eff",
-      "pdf_link": "https://arxiv.org/pdf/2611.06737.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.06737",
-      "submission_date": "2026-11-05T05:00:00+00:00",
+      "abstract": "arXiv:2611.07506v1 Announce Type: cross \nAbstract: Server main memory is increasingly heterogeneous, incorporating technologies such as zswap, CXL memory expanders, and emerging phase-change memories (PCM). To decide where to place pages, operating systems have to choose between efficient but coarse-grained access bits, out-of-band profiling, or costly runtime instrumentation.\n  This paper proposes memory fit, a hardware abstraction that provides precise and accurate page placement information to an operating system. Memory fit measures how well a page \"fits\" each type of memory in the system. Memory fit separates the mechanism of measuring affinity between pages and memories from the OS policy of choosing which pages to move when. The paper describes soft trace matching (STM), a computati",
+      "pdf_link": "https://arxiv.org/pdf/2611.07506.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.07506",
+      "submission_date": "2026-11-06T05:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-11-05T13:58:17.100564+00:00"
+      "score": 33.0,
+      "updated_at": "2026-11-06T13:42:59.765748+00:00"
     },
     {
-      "forum_id": "2611.06436",
+      "forum_id": "2611.08399",
       "paper_number": -1,
-      "title": "Hardwired Distributed Processing Units for Inference: Neural Decisions at the Sensor that Free the Host",
+      "title": "Scaling Up Analog CIM: A Simulation Framework for Topology-Aware Mapping",
       "authors": [
-        "Raj Mali"
+        "Yuxin Ren, Danella Zhao, Huanrui Yang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2611.08399v1 Announce Type: new \nAbstract: Analog compute-in-memory (CIM) enables energy-efficient AI inference by performing in-situ matrix multiplication. The growing demand for deploying larger models motivates chiplet integration to expand CIM capacity. However, simulation abstractions based on local operator costs and aggregate communication metrics obscure the impact of weight-mapping topology when CIM system scales up. We develop a phase analysis that quantifies how strongly mapping topology affects system performance across hardware configurations and how mapping optimization translates into latency gains. To evaluate and exploit this design space, we present Isobar, a simulation platform integrating CIM decompositions, heterogeneous execution, and resource modeling. Validate",
+      "pdf_link": "https://arxiv.org/pdf/2611.08399.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.08399",
+      "submission_date": "2026-11-06T05:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.0,
+      "updated_at": "2026-11-06T13:42:59.765696+00:00"
+    },
+    {
+      "forum_id": "2611.07559",
+      "paper_number": -1,
+      "title": "OpenRDMA: A GPU-Native Multi-Path Reliable RDMA Transport Architecture",
+      "authors": [
+        "Ziheng Ji, Chunyu Liu, Weihao Peng, Mingheng Mi, Pu Wang, Hai Zhang"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2611.06436v1 Announce Type: new \nAbstract: We show that a hardwired distributed processing unit (HDPU) can take a neural decision at the sensor and so remove the inference from the host. Built for zebra-crossing detection on a low-cost Artix-7 FPGA, the unit decides on every camera frame in a fixed 2,269,477 clock cycles (34.04 ms depends upon Fpga clk ), inside the 37.49-ms frame period, and on the board it returns the same scores and decisions as its bit-exact software model on all 639 test images. The whole detection path, from camera pixels to decision, takes 1,814 LUTs, with no processor, no operating system and no full-resolution frame store. When the unit answers instead of reporting \"not sure\", 95.7% of its answers on street photographs are correct, and a hardware contrast st",
-      "pdf_link": "https://arxiv.org/pdf/2611.06436.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.06436",
-      "submission_date": "2026-11-05T05:00:00+00:00",
+      "abstract": "arXiv:2611.07559v1 Announce Type: new \nAbstract: As the computing power density of large-scale AI clusters rises, network communication increasingly limits system performance. GPU-initiated communication requires low-overhead request submission to overlap communication with computation. However, GPUDirect RDMA (GDR) still relies on CPU involvement in its control path, while InfiniBand GPUDirect Async (IBGDA) requires GPUs to assemble Work Queue Entries (WQEs), consuming additional SM resources and memory bandwidth. We propose OpenRDMA, an open-source multi-path reliable RDMA transport architecture designed for GPU-friendly communication. First, OpenRDMA provides a minimal GPU doorbell mechanism: the GPU issues an 8-byte token, and a dedicated FPGA NIC reconstructs the complete WQE from pre",
+      "pdf_link": "https://arxiv.org/pdf/2611.07559.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.07559",
+      "submission_date": "2026-11-06T05:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-11-05T13:58:17.100519+00:00"
-    },
-    {
-      "forum_id": "2611.06829",
-      "paper_number": -1,
-      "title": "Enabling AWS Cloud FPGA Development Using High-Level Vitis HLS",
-      "authors": [
-        "David Rostcheck"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2611.06829v1 Announce Type: new \nAbstract: We present a toolchain for development of ML models on AWS EC2 F2 cloud FPGA infrastructure from high-level language, implementing a complete Vitis HLS to HDK bridge to AFI workflow that has been absent from the academic literature despite eight years of AWS FPGA availability. We introduce a four-level methodology (FP32 PyTorch, bit-accurate quantized Python, HLS C-simulation, physical FPGA) to aid in localizing errors, including FPGA-specific circuit errors. Together these tools allow coding agents to effectively implement FPGA designs from user directions, testing and debugging as needed. We document the deployment workflow, timing closure strategies, and practical HLS engineering decisions that proved crucial. We validate using TinyBERT f",
-      "pdf_link": "https://arxiv.org/pdf/2611.06829.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.06829",
-      "submission_date": "2026-11-05T05:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-11-05T13:58:17.100646+00:00"
-    },
-    {
-      "forum_id": "2610.13368",
-      "paper_number": -1,
-      "title": "Anechoic: Onsager-Corrected Parallel Annealing for Sub-0.1 ms Dense Max-Cut on an FPGA",
-      "authors": [
-        "Seungki Hong, Kyeongwon Jeong, Taekwang Jang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2610.13368v2 Announce Type: replace \nAbstract: Ising machines solve combinatorial optimization problems by annealing a network of spins. On dense problems, the least expensive hardware step updates all spins at once: stochastic cellular automata (SCA) decide every spin in parallel and read couplings only for the spins that flip. Such synchronous updates create an echo: the previous state of each spin returns to it through its neighbors. On K2000, a Max-Cut benchmark on a 2,000-node complete graph, two-thirds of all flips undo the same spin's flip one step earlier. This paper presents Anechoic, an FPGA Ising machine that subtracts this echo from every decision. Dynamical mean-field theory identifies the echo as an Onsager reaction; its one-step strength is the number of spins whose fl",
-      "pdf_link": "https://arxiv.org/pdf/2610.13368.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.13368",
-      "submission_date": "2026-11-05T05:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-11-05T13:58:17.100944+00:00"
-    },
-    {
-      "forum_id": "2611.06491",
-      "paper_number": -1,
-      "title": "FPTR: Feasibility-Preserving Transactional Refinement for Deadline-Constrained Joint Beam and Resource Allocation",
-      "authors": [
-        "Minghao Kong, Zirong Liu, Jianhao Wu, Muyao Chen, Jianxin Wu, Rongjie Wang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2611.06491v1 Announce Type: cross \nAbstract: Short-interval wireless schedulers must return a complete, feasible beam-and-resource allocation before each execution deadline, and a late or invalid output gives no utility in the current control cycle. Searching longer can increase transmitted traffic, but it may also miss the deadline or leave only an infeasible intermediate solution. We propose Feasibility-Preserving Transactional Refinement (FPTR), which always keeps a validated feasible allocation, the incumbent. Each refinement stage builds a separate candidate and leaves the incumbent unchanged. A candidate replaces the incumbent only if it is complete, passes the feasibility validator before its stage cutoff, and strictly improves the objective; otherwise it is discarded. Four re",
-      "pdf_link": "https://arxiv.org/pdf/2611.06491.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.06491",
-      "submission_date": "2026-11-05T05:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
       "score": 2.0,
-      "updated_at": "2026-11-05T13:58:17.100814+00:00"
+      "updated_at": "2026-11-06T13:42:59.765600+00:00"
     },
     {
       "forum_id": "2611.06079",
       "paper_number": -1,
       "title": "TauLang: A Language and Compiler for Space-Time Programming on Statically Scheduled Accelerators",
       "authors": [
-        "Xuxiao Yang, Junchi Wu, Feiyang Wu, Zhuoran Li, Shuo Tao, Dongyi Fan, Yiming Zhang, Keqin Luo, Xingrui Gao, Xuehai Qian, Youwei Zhuo"
+        "Xuxiao Yang, Junchi Wu, Yuqi Peng, Feiyang Wu, Zhuoran Li, Wei Kong, Shuo Tao, Dongyi Fan, Yiming Zhang, Keqin Luo, Xingrui Gao, Xuehai Qian, Youwei Zhuo"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2611.06079v1 Announce Type: cross \nAbstract: Statically scheduled accelerators such as Groq's Tensor Streaming Processor (TSP) achieve low-latency large language model inference by stripping dynamic synchronization hardware from the chip. With no caches, arbiters, or hardware schedulers, the compiler must fix the exact slice and issue cycle of every operation, so when an operation runs is a condition for correctness. Existing kernel languages cannot target such machines because they rely on hardware to resolve cycle timing and instead encode schedules implicitly in code structure. We present TauLang, a kernel language and compiler that makes time a first-class citizen of the program. The programmer schedules operations, loops, and composed kernels with parameterized explicit times, s",
+      "abstract": "arXiv:2611.06079v2 Announce Type: replace-cross \nAbstract: Statically scheduled accelerators such as Groq's Tensor Streaming Processor (TSP) achieve low-latency large language model inference by stripping dynamic synchronization hardware from the chip. With no caches, arbiters, or hardware schedulers, the compiler must fix the exact slice and issue cycle of every operation, so when an operation runs is a condition for correctness. Existing kernel languages cannot target such machines because they rely on hardware to resolve cycle timing and instead encode schedules implicitly in code structure. We present TauLang, a kernel language and compiler that makes time a first-class citizen of the program. The programmer schedules operations, loops, and composed kernels with parameterized explicit ",
       "pdf_link": "https://arxiv.org/pdf/2611.06079.pdf",
       "forum_link": "https://arxiv.org/abs/2611.06079",
-      "submission_date": "2026-11-05T05:00:00+00:00",
+      "submission_date": "2026-11-06T05:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-11-05T13:58:17.100775+00:00"
+      "score": 2.0,
+      "updated_at": "2026-11-06T13:42:59.765990+00:00"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-11-05T13:58:17.028918+00:00",
+  "last_updated": "2026-11-06T13:42:59.684230+00:00",
   "paper_count": 313,
   "papers": [
     {
@@ -69,29 +69,6 @@
       "ratings": [],
       "score": 132.0,
       "updated_at": "2026-07-21T08:54:17.392951+00:00"
-    },
-    {
-      "forum_id": "2611.04382",
-      "paper_number": -1,
-      "title": "Beyond Compression Ratio: High-Throughput KV Compression for Disaggregated LLM Serving",
-      "authors": [
-        "Junhong Wu, Zedong Liu, Xinyang Ma, Yuhan Chen, Guangming Tan, Dingwen Tao"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.04382v2 Announce Type: replace \nAbstract: KV cache compression reduces the communication volume of disaggregated large language model serving, but its practical benefit depends not only on compression ratio and model quality, but also on how efficiently the compression pipeline executes. This requirement becomes increasingly important as modern serving systems adopt high-bandwidth interconnects, where inefficient compression can offset a substantial portion of the saved communication time. This paper presents FastKVComp, a high-throughput KV cache compression data path built on top of KVServe. FastKVComp improves compression execution in two complementary ways. First, it fuses the distribution transformation and low-bit quantization stages into a KVaware TileLang kernel, elimina",
-      "pdf_link": "https://arxiv.org/pdf/2611.04382.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.04382",
-      "submission_date": "2026-11-05T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 129.5,
-      "updated_at": "2026-11-05T13:58:11.006387+00:00"
     },
     {
       "forum_id": "usenix-osdi26-96",
@@ -284,6 +261,29 @@
       "updated_at": "2026-07-21T08:54:26.745136+00:00"
     },
     {
+      "forum_id": "2611.07149",
+      "paper_number": -1,
+      "title": "FastAFD: When Does Attention-FFN Disaggregation Pay on Rack-Scale NVLink?",
+      "authors": [
+        "Yichao Fu, Yuxuan Zhang, Minshen Zhang, Ruitian Wang, Junda Chen, Hao Zhang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.07149v1 Announce Type: new \nAbstract: Attention-FFN disaggregation (AFD) separates attention from the experts of a mixture-of-experts (MoE) model and has been reported to raise decode throughput over colocated serving. Whether this advantage holds on rack-scale NVLink systems such as GB200 NVL72 remains unclear: prior results were obtained on other hardware, against narrower colocated baselines, or with analytical models, whereas production engines serve large MoE models on these systems with wide expert parallelism (wide EP). We build and tune FastAFD, an AFD engine for GB200 NVL72 that overlaps the MoE of one microbatch with the attention of the other, and compare it against the best vLLM wide EP setting. Experiments show that AFD has a throughput advantage of up to 1.17x over",
+      "pdf_link": "https://arxiv.org/pdf/2611.07149.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.07149",
+      "submission_date": "2026-11-06T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 85.0,
+      "updated_at": "2026-11-06T13:42:38.589243+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-2",
       "paper_number": 2,
       "title": "Strata: Hierarchical Context Caching for Long Context Language Model Serving",
@@ -400,29 +400,6 @@
       "ratings": [],
       "score": 76.5,
       "updated_at": "2026-07-21T08:54:22.932132+00:00"
-    },
-    {
-      "forum_id": "2609.09742",
-      "paper_number": -1,
-      "title": "Breaking Fault Lines: Unifying TEE-Assisted BFT Consensus in Partially Trusted Worlds",
-      "authors": [
-        "Xiaoqing Wen, Tong Liu, Jianyu Niu, Jialin Li, Cong Wang, Yinqian Zhang, Chen Feng"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.09742v3 Announce Type: replace \nAbstract: This paper revisits TEE-assisted BFT under a universal partial-TEE model, where an arbitrary subset of replicas execute inside TEEs while the remaining replicas operate without hardware trust guarantees. We show that heterogeneous trust changes the structure of quorum formation and fault tolerance. In particular, we derive a tight resilience bound f < max {n/3, m/2}, where n is the total number of replicas and m is the number of TEE-enabled replicas. The result reveals a sharp threshold phenomenon: TEEs improve fault tolerance only once they exceed two-thirds of the deployment.\n  Guided by this characterization, we introduce two protocol principles: (1) a dual-quorum construction that safely combines TEE-only and mixed quorums, and (2) a",
-      "pdf_link": "https://arxiv.org/pdf/2609.09742.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.09742",
-      "submission_date": "2026-11-05T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 76.0,
-      "updated_at": "2026-11-05T13:58:11.006365+00:00"
     },
     {
       "forum_id": "usenix-osdi26-55",
@@ -2129,6 +2106,29 @@
       "updated_at": "2026-07-21T08:54:26.745684+00:00"
     },
     {
+      "forum_id": "2611.06984",
+      "paper_number": -1,
+      "title": "Resource-Efficient Reinforcement Learning Post-Training through Elastic Expert Parallelism",
+      "authors": [
+        "Jia Wei, Ziyi Qiu, Yi Xu, Xuehai Qian"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.06984v1 Announce Type: cross \nAbstract: Reinforcement learning post-training improves the capabilities of large language models, but generating training responses is a major computational bottleneck. In mixture-of-experts models, workers that finish their assigned responses may remain occupied because their experts are still needed by workers processing longer responses. Consequently, approximately one-third of occupied worker time in the baseline occurs after local response generation finishes. Here we present FlexFloor, a system that enables earlier resource release during synchronous response generation while preserving the expert computation required by ongoing responses. FlexFloor jointly adapts response scheduling and the active group of workers. It uses historical respons",
+      "pdf_link": "https://arxiv.org/pdf/2611.06984.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.06984",
+      "submission_date": "2026-11-06T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 35.5,
+      "updated_at": "2026-11-06T13:42:38.590010+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-30",
       "paper_number": 30,
       "title": "What Are You (M)Waiting For: The Hidden Cost of Idle in the Hyperscale Cloud (Operational Systems)",
@@ -2226,6 +2226,29 @@
       "ratings": [],
       "score": 35.5,
       "updated_at": "2026-07-21T08:54:22.942367+00:00"
+    },
+    {
+      "forum_id": "2611.07211",
+      "paper_number": -1,
+      "title": "Not All Loops Cost the Same: Phase-Dependent Depth for Serving Looped Transformers",
+      "authors": [
+        "Zhixu Du, Yuhan Cheng, Hai \"Helen\" Li, Yiran Chen"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.07211v1 Announce Type: new \nAbstract: Looped transformers scale inference-time reasoning by repeatedly reusing a shared core, increasing computation without increasing parameter count. Serving prefilling and decoding with a uniform loop budget couples their costs. We present LoopDuet, a phase-dependent depth and training-free serving approach that selects the two budgets jointly while preserving decoding depth at prefilling boundaries. Our vLLM implementation gathers tokens requiring further recurrence into compact batches, turning the selected allocation into executable savings with existing weights and attention kernels. At runtime, a queue-age controller adjusts prefilling depth to retain quality as demand changes. Experiments on the full HotpotQA dataset with one A100-80GB d",
+      "pdf_link": "https://arxiv.org/pdf/2611.07211.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.07211",
+      "submission_date": "2026-11-06T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 35.0,
+      "updated_at": "2026-11-06T13:42:38.589289+00:00"
     },
     {
       "forum_id": "usenix-osdi26-38",
@@ -3831,29 +3854,6 @@
       "updated_at": "2026-07-21T08:54:26.739010+00:00"
     },
     {
-      "forum_id": "2611.04253",
-      "paper_number": -1,
-      "title": "UMLoad: Fast On-Demand Model Loading on Unified Memory Architecture",
-      "authors": [
-        "Zimeng Wang, Jinrong Yang, Rong Chen"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.04253v2 Announce Type: replace \nAbstract: On-demand model loading dominates response latency for interactive on-device AI, yet unified memory architectures (UMAs), now common on edge devices, should make it cheap by placing weights in memory the GPU already sees. However, frameworks still use the loading flow built for discrete GPUs, leaving significant inefficiencies. This paper presents UMLoad, a system-level model-loading accelerator that decouples a framework's logical allocations from their physical page backing. UMLoad uses on-demand reconstruction to eliminate the weight copy while preserving copy independence, and GPU-assisted page zeroing to accelerate runtime allocation while preserving its security guarantee. Implemented on Intel, AMD, and NVIDIA UMA platforms and eva",
-      "pdf_link": "https://arxiv.org/pdf/2611.04253.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.04253",
-      "submission_date": "2026-11-05T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.0,
-      "updated_at": "2026-11-05T13:58:10.939989+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-45",
       "paper_number": 45,
       "title": "RLinf: Flexible and Efficient Large-Scale Reinforcement Learning via Macro-to-Micro Flow Transformation",
@@ -4153,29 +4153,6 @@
       "ratings": [],
       "score": 13.5,
       "updated_at": "2026-07-21T08:54:26.743933+00:00"
-    },
-    {
-      "forum_id": "2611.05642",
-      "paper_number": -1,
-      "title": "Runway Characters: Serving a 57B Video Diffusion Transformer for Real-Time Conversation",
-      "authors": [
-        "Rohan Agarwal, Robin Andeer, Alex Armbruster, Bennett Arthur, Michail Christos Doukas, Piero Esposito, Qiming Fang, Aron Filkey, Bryan Fox, Anastasis Germanidis, Jonathan Granskog, Corina Gurau, Robin Kahlow, Taras Khakhulin, Nasir Mohammad Khalid, Tomasz {\\L}akomy, Mike Leisz, Kathleen M. Lewis, Daniil Merkulov, Nicolas Neubert, Ryan Phillips, Yining Shi, Axel \\\"Orn Sigur{\\dh}sson, Erica Simmons, Mark Sturley, Ziyi Tang, Michail Tarasiou, Jamie Umpherson, Cindy Wang, Jimei Yang, Hudson Yeo, Wei Zhang, Zejia Zheng"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.05642v1 Announce Type: new \nAbstract: Conversational video characters must generate video as fast as it plays, for one user at a time: at 24 fps, a sustained 166.7 ms per four-frame chunk at batch size one, with only a few chunks of buffering. We describe the system behind Runway Characters, which serves a $\\approx$57B-parameter autoregressive video diffusion transformer (four denoising passes per chunk) at 704$\\times$1088 and 24 fps on four H100 GPUs with a voice agent in the loop. Each chunk takes 240 attention calls, each reading a 5,788-slot KV cache in which only 757 tokens are new, and 29% of the original step was whole-cache work repeated in every call. We move that work to write time (a ring cache, RoPE and FP8 quantization applied once per write, and a delta rotation wh",
-      "pdf_link": "https://arxiv.org/pdf/2611.05642.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.05642",
-      "submission_date": "2026-11-05T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-11-05T13:58:11.003892+00:00"
     },
     {
       "forum_id": "usenix-osdi26-37",
@@ -6015,27 +5992,27 @@
       "updated_at": "2026-07-21T08:54:22.938822+00:00"
     },
     {
-      "forum_id": "2611.05558",
+      "forum_id": "2611.08307",
       "paper_number": -1,
-      "title": "Easy Multi-Precision Acceleration via Vectorization",
+      "title": "Measured Coupling for Parallel Decoding in Diffusion Language Models",
       "authors": [
-        "Chansup Byun, Piotr Luszczek, Jeremy Kepner, LaToya Anderson, William Arcand, David Bestor, William Bergeron, Alex Bonn, Daniel Burrill, Vijay Gadepally, Michael Houle, Matthew Hubbell, Hayden Jananthan, Michael Jones, Lauren Milechin, Julie Mullen, Andrew Prout, Albert Reuther, Antonio Rosa, Charles Yee, Peter Michaleas"
+        "Tal Oved, Lior Wolf"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2611.05558v1 Announce Type: cross \nAbstract: High level programming languages and accelerators are powerful enablers for a wide range of applications. Accelerators offer significant performance via diverse numeric precision and increased memory bandwidth and capacity. These enable new algorithms to be explored. Construction of these algorithms can be enabled by the ready accessibility of these performance features in high-level languages. Achieving scalable vertical (within a compute node), precision (over various numeric precisions), and temporal (over different generations of hardware) performance while retaining productivity requires effective abstractions. Vectorized coding that expresses operations as high-level matrix mathematics has historically been an important method for ac",
-      "pdf_link": "https://arxiv.org/pdf/2611.05558.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.05558",
-      "submission_date": "2026-11-05T05:00:00+00:00",
+      "abstract": "arXiv:2611.08307v1 Announce Type: cross \nAbstract: Diffusion language models can write many tokens per step, but must choose which tokens are safe to commit together. Mean-field decoding penalizes pairs of positions whose predictions look alike. We replace this proxy with the coupling itself: how much committing one token changes the model's confidence at another. Cheap probes inside the main forward pass measure it, with no training or extra model, and it plugs into the same mean-field rule. On three models and four benchmarks, our method needs far fewer steps than mean-field decoding and is faster in most settings, also with a key-value cache, at an average accuracy cost of 1.1 points. Shuffling the couplings or replacing them with a uniform bonus loses this gain.",
+      "pdf_link": "https://arxiv.org/pdf/2611.08307.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.08307",
+      "submission_date": "2026-11-06T05:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-11-05T13:58:11.005235+00:00"
+      "updated_at": "2026-11-06T13:42:38.590351+00:00"
     },
     {
       "forum_id": "usenix-osdi26-22",
@@ -6327,6 +6304,29 @@
       "ratings": [],
       "score": 2.5,
       "updated_at": "2026-07-21T08:54:26.744870+00:00"
+    },
+    {
+      "forum_id": "2611.08306",
+      "paper_number": -1,
+      "title": "GINGER: Spicing Up Graph-Based Vector Search",
+      "authors": [
+        "Daniel Salwasser, Lars Gottesb\\\"uren, Laxman Dhulipala, Jakub {\\L}\\k{a}cki, Guy Blelloch, Rajesh Jayaram, Tobias Rubel, Kshiteej Sheth, Amir Zandieh, Vahab Mirrokni"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.08306v1 Announce Type: cross \nAbstract: We present \\textsc{Ginger}, a state-of-the-art open-source C++ library for graph-based approximate nearest neighbor search (ANNS). We developed \\textsc{Ginger} at Google to push the speed and memory efficiency of graph search on large and high-dimensional embedding datasets. \\textsc{Ginger} surpasses existing ANNS libraries with regards to query throughput and indexing time while matching the memory footprint of the most space-efficient competitors.\n  \\textsc{Ginger} builds upon recent advances in proximity graph construction (PiPNN) and vector quantization (TurboQuant). We introduce Nested TurboQuant (NTQ), a two-level quantizer which supports low precision graph navigation and high precision reranking in a single code. This representatio",
+      "pdf_link": "https://arxiv.org/pdf/2611.08306.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.08306",
+      "submission_date": "2026-11-06T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-11-06T13:42:38.590337+00:00"
     },
     {
       "forum_id": "usenix-osdi26-10",
@@ -6785,27 +6785,27 @@
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
     },
     {
-      "forum_id": "2611.04667",
+      "forum_id": "2611.07198",
       "paper_number": -1,
-      "title": "FedCSGA: Evolutionary Client Selection with Joint Statistical and System Heterogeneity in Federated Learning",
+      "title": "Capability Gain from ISA to Shared Execution on AMD MI300A and MI250X",
       "authors": [
-        "Ghani Haider, Majid Kundroo, Leo Zhang, Jinchul Choi, Taehong Kim"
+        "Aaron Jarmusch, Sunita Chandrasekaran"
       ],
       "keywords": [
         "cs.DC",
         "FAST"
       ],
-      "abstract": "arXiv:2611.04667v2 Announce Type: replace-cross \nAbstract: Federated Learning (FL) enables collaborative training of machine learning models across distributed clients while preserving data privacy. In practical deployments, FL relies on selecting a client subset in each communication round to reduce communication cost, mitigate stragglers, and improve training efficiency under heterogeneous data and system conditions. In heterogeneous edge computing environments, both statistical heterogeneity and system heterogeneity significantly affect convergence efficiency and model performance. However, existing client selection methods often address these factors independently, overlooking their coupled and dynamic impact across communication rounds. To address this limitation, we propose FedCSGA, ",
-      "pdf_link": "https://arxiv.org/pdf/2611.04667.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.04667",
-      "submission_date": "2026-11-05T05:00:00+00:00",
+      "abstract": "arXiv:2611.07198v1 Announce Type: new \nAbstract: Each new GPU generation is showcased by its peak instruction rates, yet users hardly ever run instructions directly: they reach the hardware's performance through vendor libraries, applications and devices shared with other jobs. How much of a theoretical speedup survives these layers is rarely measured, so a team deciding whether to move to a new generation, or to adopt FP8 or 2:4 sparsity, lacks adequate guidance. AMD's MI300A (CDNA3) adds new FP8 matrix instructions and 2:4 structured-sparse instructions that the predecessor, the MI250X (CDNA2), does not have. We analyze this theoretical speedup gap on AMD's MI300A (CDNA3) against the MI250X (CDNA2) by defining a new metric, capability gain.\n  Capability gain is the fraction of a feature'",
+      "pdf_link": "https://arxiv.org/pdf/2611.07198.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.07198",
+      "submission_date": "2026-11-06T05:00:00+00:00",
       "conference": "FAST",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-11-05T13:58:11.006976+00:00"
+      "updated_at": "2026-11-06T13:42:38.589269+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

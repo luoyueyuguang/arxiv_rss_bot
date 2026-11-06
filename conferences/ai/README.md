@@ -1,6 +1,6 @@
 # AI / AI for Science Papers
 
-- **Last Updated**: 2026-11-05 13:58:50 UTC
+- **Last Updated**: 2026-11-06 13:43:32 UTC
 - **Total Filtered Papers**: 31
 - **Displaying**: 31 (arxiv: 1, mlr: 30)
 - **Papers with Ratings**: 0
@@ -13,12 +13,12 @@
 | 2 | [ARCLE: The Abstraction and Reasoning Corpus Learning Environment for Reinforcement Learning](https://proceedings.mlr.press/v274/lee25a.html) | `MLR` | 63.0 |
 | 3 | [Partial Models for Building Adaptive Model-Based Reinforcement Learning Agents](https://proceedings.mlr.press/v274/alver25a.html) | `MLR` | 61.5 |
 | 4 | [Statistical Context Detection for Deep Lifelong Reinforcement Learning](https://proceedings.mlr.press/v274/dick25a.html) | `MLR` | 61.5 |
-| 5 | [Baba in Wonderland: Online Self-Supervised Dynamics Discovery for Executable World Models](https://arxiv.org/abs/2605.16725) | `ARXIV` | 42.5 |
-| 6 | [Sub-goal Distillation: A Method to Improve Small Language Agents](https://proceedings.mlr.press/v274/hashemzadeh25a.html) | `MLR` | 42.5 |
-| 7 | [Cross-Domain Policy Transfer by Representation Alignment via Multi-Domain Behavioral Cloning](https://proceedings.mlr.press/v274/watahiki25a.html) | `MLR` | 41.5 |
-| 8 | [Continual Learning of Diffusion Models with Generative Distillation](https://proceedings.mlr.press/v274/masip25a.html) | `MLR` | 37.0 |
-| 9 | [iWISDM: Assessing instruction following in multimodal models at scale](https://proceedings.mlr.press/v274/lei25a.html) | `MLR` | 33.0 |
-| 10 | [Patch-Based Contrastive Learning and Memory Consolidation for Online Unsupervised Continual Learning](https://proceedings.mlr.press/v274/taylor25a.html) | `MLR` | 31.5 |
+| 5 | [Sub-goal Distillation: A Method to Improve Small Language Agents](https://proceedings.mlr.press/v274/hashemzadeh25a.html) | `MLR` | 42.5 |
+| 6 | [Cross-Domain Policy Transfer by Representation Alignment via Multi-Domain Behavioral Cloning](https://proceedings.mlr.press/v274/watahiki25a.html) | `MLR` | 41.5 |
+| 7 | [Continual Learning of Diffusion Models with Generative Distillation](https://proceedings.mlr.press/v274/masip25a.html) | `MLR` | 37.0 |
+| 8 | [iWISDM: Assessing instruction following in multimodal models at scale](https://proceedings.mlr.press/v274/lei25a.html) | `MLR` | 33.0 |
+| 9 | [Patch-Based Contrastive Learning and Memory Consolidation for Online Unsupervised Continual Learning](https://proceedings.mlr.press/v274/taylor25a.html) | `MLR` | 31.5 |
+| 10 | [Seeing Beyond the Next Step: World-Model-Guided Human-Like Navigation in Multi-Agent Scenes](https://arxiv.org/abs/2611.07730) | `ARXIV` | 31.0 |
 | 11 | [A Contrastive Symmetric Forward-Forward Algorithm (SFFA) for Continual Learning Tasks](https://proceedings.mlr.press/v274/terres-escudero25a.html) | `MLR` | 31.0 |
 | 12 | [Diffusion Augmented Agents: A Framework for Efficient Exploration and Transfer Learning](https://proceedings.mlr.press/v274/palo25a.html) | `MLR` | 26.5 |
 | 13 | [Tomorrow Brings Greater Knowledge: Large Language Models Join Dynamic Temporal Knowledge Graphs](https://proceedings.mlr.press/v274/maio25a.html) | `MLR` | 21.5 |
