@@ -1,100 +1,31 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-11-06T13:42:59.767938+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-11-09T15:06:29.670760+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2611.07506",
+      "forum_id": "2611.09518",
       "paper_number": -1,
-      "title": "Memory Fit: Architectural Support for Page Placement by Learning Models of Good Behavior",
+      "title": "Memory as a Temporal Resource: Lifetime Contracts for Multi-Retention Systems",
       "authors": [
-        "Chun Deng, Hui Sub Shim, Evan Laufer, Anna Eaton, David Tennenhouse, Tsachy Weissman, Philip Levis"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2611.07506v1 Announce Type: cross \nAbstract: Server main memory is increasingly heterogeneous, incorporating technologies such as zswap, CXL memory expanders, and emerging phase-change memories (PCM). To decide where to place pages, operating systems have to choose between efficient but coarse-grained access bits, out-of-band profiling, or costly runtime instrumentation.\n  This paper proposes memory fit, a hardware abstraction that provides precise and accurate page placement information to an operating system. Memory fit measures how well a page \"fits\" each type of memory in the system. Memory fit separates the mechanism of measuring affinity between pages and memories from the OS policy of choosing which pages to move when. The paper describes soft trace matching (STM), a computati",
-      "pdf_link": "https://arxiv.org/pdf/2611.07506.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.07506",
-      "submission_date": "2026-11-06T05:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 33.0,
-      "updated_at": "2026-11-06T13:42:59.765748+00:00"
-    },
-    {
-      "forum_id": "2611.08399",
-      "paper_number": -1,
-      "title": "Scaling Up Analog CIM: A Simulation Framework for Topology-Aware Mapping",
-      "authors": [
-        "Yuxin Ren, Danella Zhao, Huanrui Yang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2611.08399v1 Announce Type: new \nAbstract: Analog compute-in-memory (CIM) enables energy-efficient AI inference by performing in-situ matrix multiplication. The growing demand for deploying larger models motivates chiplet integration to expand CIM capacity. However, simulation abstractions based on local operator costs and aggregate communication metrics obscure the impact of weight-mapping topology when CIM system scales up. We develop a phase analysis that quantifies how strongly mapping topology affects system performance across hardware configurations and how mapping optimization translates into latency gains. To evaluate and exploit this design space, we present Isobar, a simulation platform integrating CIM decompositions, heterogeneous execution, and resource modeling. Validate",
-      "pdf_link": "https://arxiv.org/pdf/2611.08399.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.08399",
-      "submission_date": "2026-11-06T05:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.0,
-      "updated_at": "2026-11-06T13:42:59.765696+00:00"
-    },
-    {
-      "forum_id": "2611.07559",
-      "paper_number": -1,
-      "title": "OpenRDMA: A GPU-Native Multi-Path Reliable RDMA Transport Architecture",
-      "authors": [
-        "Ziheng Ji, Chunyu Liu, Weihao Peng, Mingheng Mi, Pu Wang, Hai Zhang"
+        "Adrian Jackson"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2611.07559v1 Announce Type: new \nAbstract: As the computing power density of large-scale AI clusters rises, network communication increasingly limits system performance. GPU-initiated communication requires low-overhead request submission to overlap communication with computation. However, GPUDirect RDMA (GDR) still relies on CPU involvement in its control path, while InfiniBand GPUDirect Async (IBGDA) requires GPUs to assemble Work Queue Entries (WQEs), consuming additional SM resources and memory bandwidth. We propose OpenRDMA, an open-source multi-path reliable RDMA transport architecture designed for GPU-friendly communication. First, OpenRDMA provides a minimal GPU doorbell mechanism: the GPU issues an 8-byte token, and a dedicated FPGA NIC reconstructs the complete WQE from pre",
-      "pdf_link": "https://arxiv.org/pdf/2611.07559.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.07559",
-      "submission_date": "2026-11-06T05:00:00+00:00",
+      "abstract": "arXiv:2611.09518v1 Announce Type: new \nAbstract: Computers move and rewrite data whose useful lifetimes range from inner-loop iterations to years, yet memory systems usually hide retention as a fixed physical property. We argue that required lifetime should become a first-class resource across algorithms, programming systems, controllers, and devices. Building on prior lifetime-aware placement, we propose an event-based validity contract that links application completion events to retention-class selection and renewal of protection. Applications would be enabled to express semantic contracts such as ``until this tile completes'' and the system will map data to homogeneous arrays engineered for ephemeral, epoch, or durable retention and preserve correctness through margins, ECC, refresh, mi",
+      "pdf_link": "https://arxiv.org/pdf/2611.09518.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.09518",
+      "submission_date": "2026-11-09T05:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-11-06T13:42:59.765600+00:00"
-    },
-    {
-      "forum_id": "2611.06079",
-      "paper_number": -1,
-      "title": "TauLang: A Language and Compiler for Space-Time Programming on Statically Scheduled Accelerators",
-      "authors": [
-        "Xuxiao Yang, Junchi Wu, Yuqi Peng, Feiyang Wu, Zhuoran Li, Wei Kong, Shuo Tao, Dongyi Fan, Yiming Zhang, Keqin Luo, Xingrui Gao, Xuehai Qian, Youwei Zhuo"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2611.06079v2 Announce Type: replace-cross \nAbstract: Statically scheduled accelerators such as Groq's Tensor Streaming Processor (TSP) achieve low-latency large language model inference by stripping dynamic synchronization hardware from the chip. With no caches, arbiters, or hardware schedulers, the compiler must fix the exact slice and issue cycle of every operation, so when an operation runs is a condition for correctness. Existing kernel languages cannot target such machines because they rely on hardware to resolve cycle timing and instead encode schedules implicitly in code structure. We present TauLang, a kernel language and compiler that makes time a first-class citizen of the program. The programmer schedules operations, loops, and composed kernels with parameterized explicit ",
-      "pdf_link": "https://arxiv.org/pdf/2611.06079.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.06079",
-      "submission_date": "2026-11-06T05:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-11-06T13:42:59.765990+00:00"
+      "score": 12.0,
+      "updated_at": "2026-11-09T15:06:29.669228+00:00"
     }
   ]
 }

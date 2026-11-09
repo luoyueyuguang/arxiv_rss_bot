@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-11-06T13:43:32.354882+00:00",
-  "paper_count": 31,
+  "last_updated": "2026-11-09T15:09:02.064092+00:00",
+  "paper_count": 30,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -214,29 +214,6 @@
       "ratings": [],
       "score": 31.5,
       "updated_at": "2026-08-14T07:42:39.058377+00:00"
-    },
-    {
-      "forum_id": "2611.07730",
-      "paper_number": -1,
-      "title": "Seeing Beyond the Next Step: World-Model-Guided Human-Like Navigation in Multi-Agent Scenes",
-      "authors": [
-        "Seong-Eun Hong, JuYeong Hwang, Jinhyun Kim, Hanyoung Jang, HyeongYeop Kang"
-      ],
-      "keywords": [
-        "cs.AI",
-        "NeurIPS"
-      ],
-      "abstract": "arXiv:2611.07730v1 Announce Type: cross \nAbstract: Selecting a next motion in a populated scene is not just a matter of avoiding what is currently in the way: an action can be locally feasible yet drift onto the road instead of the crosswalk, cut into a stream of crossing pedestrians, or bottleneck a narrow passage. These failure modes are invisible from the current state alone, and acting on them requires reasoning about what each candidate action will cause. World models offer exactly this, namely action-conditioned predictions of the future, but rolling them out at every decision step is a cost deployable navigation systems cannot pay, and the field has largely traded foresight for speed. We argue this is a false dichotomy. The natural place for a world model in human-aware navigation i",
-      "pdf_link": "https://arxiv.org/pdf/2611.07730.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.07730",
-      "submission_date": "2026-11-06T05:00:00+00:00",
-      "conference": "NeurIPS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 31.0,
-      "updated_at": "2026-11-06T13:42:59.987712+00:00"
     },
     {
       "forum_id": "mlr-icml25-3",

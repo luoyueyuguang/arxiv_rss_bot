@@ -1,54 +1,215 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-11-06T13:42:38.436573+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-11-09T15:06:13.940676+00:00",
+  "paper_count": 9,
   "papers": [
     {
       "forum_id": "2611.07084",
       "paper_number": -1,
-      "title": "DMuon: Scaling Matrix Optimizers in Data Parallelism with Topology-Aware Matrix Ownership and Communication",
+      "title": "DMuon-2: Scaling Matrix Optimizers in Data Parallelism with Topology-Aware Matrix Ownership and Communication",
       "authors": [
-        "Starrick Liu, Ruizhi Chengze, Lufang Chen, Michael Zhao, Ran Yu, Xiaofan Li, dance kuzi, Yue Zhang, Zijuan Lin, SongAo Han, YongHua Chen, Ruyi Gan, Hao Wang"
+        "Starrick Liu, Ruizhi Chengze, Lufang Chen, Michael Zhao, Ran Yu, Xiaofan Li, Dance Kuzi, Yue Zhang, Zijuan Lin, SongAo Han, YongHua Chen, Ruyi Gan, Hao Wang"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2611.07084v1 Announce Type: new \nAbstract: Matrix optimizers such as Muon update whole weight matrices, which conflicts with the element- or row-wise sharding of data-parallel runtimes. Once parameters are sharded as well, matrix optimizers incur extra communication or repeated computation. We present DMuon, a matrix-granular optimizer runtime for PyTorch FSDP (ZeRO-2/3) and HSDP. DMuon assigns each matrix a unique owner, which performs the Newton--Schulz (NS) iteration and optimizer update on the full matrix, and balances the load across owners by computational cost. On HSDP, ownership is global across replicas, so the cluster keeps a single copy of gradients and optimizer state, and updated parameters are published across nodes as soon as they are ready, overlapping subsequent comp",
+      "abstract": "arXiv:2611.07084v2 Announce Type: replace \nAbstract: Matrix optimizers such as Muon update whole weight matrices, which conflicts with the element- or row-wise sharding of data-parallel runtimes. Once parameters are sharded as well, matrix optimizers incur extra communication or repeated computation. We present DMuon, a matrix-granular optimizer runtime for PyTorch FSDP (ZeRO-2/3) and HSDP. DMuon assigns each matrix a unique owner, which performs the Newton--Schulz (NS) iteration and optimizer update on the full matrix, and balances the load across owners by computational cost. On HSDP, ownership is global across replicas, so the cluster keeps a single copy of gradients and optimizer state, and updated parameters are published across nodes as soon as they are ready, overlapping subsequent ",
       "pdf_link": "https://arxiv.org/pdf/2611.07084.pdf",
       "forum_link": "https://arxiv.org/abs/2611.07084",
-      "submission_date": "2026-11-06T05:00:00+00:00",
+      "submission_date": "2026-11-09T05:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 47.0,
-      "updated_at": "2026-11-06T13:42:37.822355+00:00"
+      "updated_at": "2026-11-09T15:06:13.525643+00:00"
     },
     {
-      "forum_id": "2610.38020",
+      "forum_id": "2611.09646",
       "paper_number": -1,
-      "title": "Random Centres and the $\\varepsilon$-Dependence of Constant-Round Planar Domination",
+      "title": "Fast and Actionable Classification of HPC I/O Time Series",
       "authors": [
-        "Sebastian Senge (Independent Researcher)"
+        "Maxime Gonthier (RIKEN CCS), Luan Teylo (RIKEN CCS), Francesco Antici (RIKEN CCS), Mihail Popov (LaBRI, UB), Francieli Boito (LaBRI, UB)"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.38020v2 Announce Type: replace \nAbstract: It was recently shown (arXiv:2610.09618) that the infimum of the approximation ratios of deterministic constant-round LOCAL algorithms for minimum dominating set on planar graphs is 7. The $(7+\\varepsilon)$-approximation given there runs in $T_0+O((c_0/\\varepsilon)^{\\kappa})$ rounds with $\\kappa=\\ln 3/\\ln(24/23)\\approx 25.81$, and it is asked there whether this exponent can be substantially reduced. We replace the heaviest-edge star selection in its clustering step by a random-centre rule: every part becomes a centre independently with probability $p$, and every non-centre joins its heaviest centre neighbour. For planar graphs this gives $\\kappa<5.89$ with $p=3/8$ and $\\kappa<6.7$ with $p=1/2$. For every proper minor-closed class of dens",
-      "pdf_link": "https://arxiv.org/pdf/2610.38020.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.38020",
-      "submission_date": "2026-11-06T05:00:00+00:00",
+      "abstract": "arXiv:2611.09646v1 Announce Type: new \nAbstract: Input/output (I/O) is a major bottleneck for highperformance computing (HPC) performance. One of the challenges is the contention between jobs when sharing the parallel file system. However, tackling this issue depends on knowing the temporal behavior of jobs. In this paper, we propose a clusteringbased approach to characterize jobs' temporal I/O behavior. We propose SAGE, a lightweight method that cuts I/O traces into short windows and learns an alphabet from them. The trace then becomes a sequence of symbols, which we call ''genome'', and we use clustering to separate them into classes. We evaluate SAGE and its two-stage variant SAGE-2 on 819,771 real traces from 2 HPC systems. We compare them against other techniques from the state of the",
+      "pdf_link": "https://arxiv.org/pdf/2611.09646.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.09646",
+      "submission_date": "2026-11-09T05:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-11-06T13:42:37.823296+00:00"
+      "score": 37.0,
+      "updated_at": "2026-11-09T15:06:13.524814+00:00"
+    },
+    {
+      "forum_id": "2611.02975",
+      "paper_number": -1,
+      "title": "Introducing Cluster Efficiency to LLM Serving: Pooling Economical Accelerators over Fast Interconnects",
+      "authors": [
+        "Youhe Jiang, Pavle Glu\\v{s}ac, Binhang Yuan, Eiko Yoneki"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2611.02975v2 Announce Type: replace \nAbstract: Long-context large language model (LLM) serving places substantial demands on compute, memory capacity, and memory bandwidth. Economical accelerators can offer these resources at lower cost, but their limited per-device capacity requires pooling across devices, making communication overhead critical. We study cluster efficiency, measured in tokens per dollar and per joule, and show how low-latency, high-bandwidth interconnects enable economical accelerators to retain their cost advantage. Guided by a characterization of coding-agent workloads and accelerator scaling, we realize this design on the Tenstorrent Galaxy, a cluster of Blackhole chips. The serving stack combines integrated communication engines, pipelined ring transfers, commun",
+      "pdf_link": "https://arxiv.org/pdf/2611.02975.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.02975",
+      "submission_date": "2026-11-09T05:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 35.0,
+      "updated_at": "2026-11-09T15:06:13.525596+00:00"
+    },
+    {
+      "forum_id": "2611.09251",
+      "paper_number": -1,
+      "title": "Green500: Adventure in Qualifying a Cluster",
+      "authors": [
+        "Nicolas Richart, Xavier Ouvrard, Julia Paolini, Manuel Cubero-Castan, Gilles Fourestey"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2611.09251v1 Announce Type: new \nAbstract: Energy effciency has become a key metric for evaluating High Performance Computing (HPC) systems, as reflected by the Green500 ranking. However, energy effciency alone does not capture the full environmental impact of an HPC cluster. Using the Kuma cluster at EPFL, we report on two Green500 measurement campaigns at Level 2 and Level 3, and extend this analysis to a full carbon footprint assessment using the MITSI life-cycle based methodology. GPU power capping experiments show that energy effciency peaks at 450 W, achieving an 11% performance loss offset by a 20% reduction in energy consumption. When embodied emissions are accounted for, the optimal power cap for carbon effciency shifts to 500 W under Switzerland's low-carbon electrical grid",
+      "pdf_link": "https://arxiv.org/pdf/2611.09251.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.09251",
+      "submission_date": "2026-11-09T05:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 17.5,
+      "updated_at": "2026-11-09T15:06:13.524613+00:00"
+    },
+    {
+      "forum_id": "2611.09093",
+      "paper_number": -1,
+      "title": "Two-Layer Evolutionary Scheduling for Machine Learning Jobs in Multi-Cluster Environments",
+      "authors": [
+        "Jingyuan Xu, Changwu Huang, Lemeng Pan, Ke Tang, Xin Yao"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2611.09093v1 Announce Type: cross \nAbstract: The rapid growth of large-scale machine learning (ML) workloads has led to unprecedented demands on GPU cluster scheduling systems. However, existing heuristic schedulers struggle to handle the complexity and dynamics of multi-cluster GPU environments, often leading to load imbalance, long queuing delays, and poor alignment to business objectives. This paper formulates the ML scheduling problem in multi-cluster GPU environments as online multi-objective optimization that minimizes the average and maximum weighted queuing times while maximizing GPU time utilization. To solve this optimization problem, we propose EVO-GP, a two-layer evolutionary online scheduling method that decouples global job-to-cluster allocation from intra-cluster GPU r",
+      "pdf_link": "https://arxiv.org/pdf/2611.09093.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.09093",
+      "submission_date": "2026-11-09T05:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.0,
+      "updated_at": "2026-11-09T15:06:13.525024+00:00"
+    },
+    {
+      "forum_id": "2611.09474",
+      "paper_number": -1,
+      "title": "Nebula: Distributed Position-Independent Caching for LLM Serving",
+      "authors": [
+        "Yifei Liu, Junbin Pan, Junhao Hu, Yang Liu, Junyi Chen, Juntong Wu, Chen Chen, Haiyuan Zhao, Xiaoxu Chen, Weihang Chen"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2611.09474v1 Announce Type: new \nAbstract: Modern LLM workflows, such as retrieval-augmented generation (RAG) and LLM agents, build long prompts from multiple independent text segments, making prefill a major source of computation. Reusing KV caches is therefore important for reducing serving costs and latency: distributed caching systems spread KV cache across a cluster to increase aggregate capacity, while position-independent caching (PIC) enables reuse of recurring segments under different prefixes. However, existing systems distribute KV caches but still rely on prefix caching (PC), while existing PIC methods enable position-independent reuse without cluster-wide resource management.\n  We present Nebula, the first distributed LLM serving framework to treat PIC segments as first-",
+      "pdf_link": "https://arxiv.org/pdf/2611.09474.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.09474",
+      "submission_date": "2026-11-09T05:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.5,
+      "updated_at": "2026-11-09T15:06:13.524717+00:00"
+    },
+    {
+      "forum_id": "2611.08508",
+      "paper_number": -1,
+      "title": "MeshRT: Compile-Time Governed Wafer-Scale Runtime for Low-Latency High-Throughput Inference",
+      "authors": [
+        "Congjie He, Le Xu, Zhan Lu, Yeqi Huang, Haocheng Xiao, Cheng Deng, Lingxiao Ma, Ziming Miao, Fan Yang, Luo Mai"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2611.08508v1 Announce Type: cross \nAbstract: Wafer-scale accelerators promise ultra-low-latency AI inference, but current system stacks still carry an unsustainably high cost premium. The reason is that many current and emerging inference techniques, such as batching and MoE, introduce runtime dynamism that existing wafer-scale systems cannot support efficiently. As a result, they must choose between two unsatisfactory options: accept suboptimal latency, or preserve low latency by restricting dynamic techniques, thereby limiting the models they can support and reducing aggregate throughput. This tradeoff significantly increases the cost of low-latency serving.\n  We present MeshRT, the first wafer-scale system to achieve both ultra-low latency and high throughput for LLM inference. Me",
+      "pdf_link": "https://arxiv.org/pdf/2611.08508.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.08508",
+      "submission_date": "2026-11-09T05:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 11.0,
+      "updated_at": "2026-11-09T15:06:13.524920+00:00"
+    },
+    {
+      "forum_id": "2611.08660",
+      "paper_number": -1,
+      "title": "AutoParallel: Composable, PyTorch-Native Automatic Parallelism for Production Training",
+      "authors": [
+        "Kaijian Wang, Sanket Purandare, Aditya Venkataraman, Will Constable, Ivan Kobzarev, Elias Ellison, Simon Fan, Edward Z. Yang, Davide Italiano, Patrick Labatut, Yuke Wang, Francisco Massa"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2611.08660v1 Announce Type: new \nAbstract: Training large models requires multiple interacting forms of parallelism. As models and clusters scale, finding and maintaining efficient parallelization plans becomes essential for training performance. Diverse model architectures, workloads, and hardware topologies demand flexible strategies, yet production PyTorch systems typically rely on hand-written recipes that are costly to adapt and tend to reuse familiar patterns, which may be suboptimal for a given workload. We present AutoParallel, a PyTorch-native planner for distributed model training. AutoParallel searches parallelization choices jointly across the training computation, allowing established techniques to be combined and unconventional strategies to emerge. It expresses its dec",
+      "pdf_link": "https://arxiv.org/pdf/2611.08660.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.08660",
+      "submission_date": "2026-11-09T05:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.5,
+      "updated_at": "2026-11-09T15:06:13.524005+00:00"
+    },
+    {
+      "forum_id": "2608.02386",
+      "paper_number": -1,
+      "title": "Greedy-Like Defective Coloring: Distributed Algorithms and Applications",
+      "authors": [
+        "Marc Fuchs, Fabian Kuhn"
+      ],
+      "keywords": [
+        "cs.DC",
+        "SC '"
+      ],
+      "abstract": "arXiv:2608.02386v3 Announce Type: replace \nAbstract: A $d$-defective $c$-coloring of a graph $G=(V,E)$ is a coloring of the nodes $V$ with $c$ colors such that every node has at most $d$ neighbors of the same color. Distributed algorithms for computing different variants of defective coloring are at the core of most deterministic state-of-the-art distributed coloring algorithms, and they are also an important tool in many other distributed graph algorithms. In several cases, the overall complexity could be improved if some version of defective coloring could be solved more efficiently. Barenboim and Elkin [STOC '09] introduced a two-pass greedy algorithm that uses $p^2$ colors with defect $\\lfloor \\Delta/p\\rfloor$ in $O(\\Delta+\\log^{\\ast} n)$ rounds. This remains the best defect/color trad",
+      "pdf_link": "https://arxiv.org/pdf/2608.02386.pdf",
+      "forum_link": "https://arxiv.org/abs/2608.02386",
+      "submission_date": "2026-11-09T05:00:00+00:00",
+      "conference": "SC '",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-11-09T15:06:13.525403+00:00"
     }
   ]
 }

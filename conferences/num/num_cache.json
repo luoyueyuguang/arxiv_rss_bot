@@ -1,31 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-11-05T13:58:50.695116+00:00",
+  "last_updated": "2026-11-09T15:09:02.120205+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2611.06112",
+      "forum_id": "2604.02064",
       "paper_number": -1,
-      "title": "Reconstruction and well-posedness of an inverse coefficient problem for a diffusion equation",
+      "title": "Quantitative Universal Approximation for Noisy Quantum Neural Networks",
       "authors": [
-        "Siyu Cen, Bangti Jin, Yavar Kian, Zhi Zhou"
+        "Lukas Gonon, Antoine Jacquier, Marcel Mordarski"
       ],
       "keywords": [
         "cs.NA",
         "numerical analysis"
       ],
-      "abstract": "arXiv:2611.06112v1 Announce Type: new \nAbstract: In this work, we investigate the inverse coefficient problem of determining an unknown coefficient in a diffusion equation from a single boundary flux measurement. More precisely, assuming that the domain is cylindrical, we develop a unified theoretical and numerical framework for the stable reconstruction of a space-time-dependent coefficient, by reformulating the inverse problem as a nonlinear equation. The inherent nonlinearity of the problem is transferred to an auxiliary nonlinear equation, enabling the application of techniques and concepts from nonlinear analysis. By combining representation formulas with regularity properties of solutions to diffusion equations, we extend to nonlinear inverse problems an approach that has so far been",
-      "pdf_link": "https://arxiv.org/pdf/2611.06112.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.06112",
-      "submission_date": "2026-11-05T05:00:00+00:00",
+      "abstract": "arXiv:2604.02064v4 Announce Type: replace-cross \nAbstract: We prove a quantitative universal approximation theorem for noisy quantum neural networks (QNNs), with explicit non-asymptotic error bounds in terms of the number of accuracy blocks, the qubit count, the number of two-qubit gates, and hardware noise parameters. Motivated by quantitative finance, where target functions are expectations of payoffs, we first extend existing noiseless bounds to expectation functions and derive explicit constants for exponential Levy models, covering the Black-Scholes price of (truncated) European Put options. We then formulate the noisy circuit via quantum channels, obtain a fidelity-based bound for general noise models, and specialise to depolarising noise with readout error, calibrated to real hardwa",
+      "pdf_link": "https://arxiv.org/pdf/2604.02064.pdf",
+      "forum_link": "https://arxiv.org/abs/2604.02064",
+      "submission_date": "2026-11-09T05:00:00+00:00",
       "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-11-05T13:58:50.693093+00:00"
+      "score": 1.5,
+      "updated_at": "2026-11-09T15:09:02.118584+00:00"
     }
   ]
 }
