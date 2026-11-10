@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-11-09T15:06:29.597275+00:00",
-  "paper_count": 315,
+  "last_updated": "2026-11-10T14:18:18.640281+00:00",
+  "paper_count": 307,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -858,29 +858,6 @@
       "updated_at": "2026-07-21T08:54:26.742642+00:00"
     },
     {
-      "forum_id": "2611.08720",
-      "paper_number": -1,
-      "title": "The GPU Needs an Operating System",
-      "authors": [
-        "Reza Nourai, Behnam Bastani"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.08720v1 Announce Type: new \nAbstract: AI chips sit mostly idle while serving models, because replies must be fast and each step waits on memory. On two large open models, the math units were busy only about 6-11% of the time. We argue the GPU needs an operating system that keeps urgent work on schedule and fills idle capacity with other useful work. A feature that ships today recovers a quarter of a GPU with work designed to share, and a tenth with real jobs, at 5% slower decode. Our research system does better: one resident kernel runs a whole model faster than vLLM's best for a single request, and shares the GPU at under 2% slowdown. Scaling beyond one hand-built model needs compilers and a few new chip features, which we specify.",
-      "pdf_link": "https://arxiv.org/pdf/2611.08720.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.08720",
-      "submission_date": "2026-11-09T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 57.0,
-      "updated_at": "2026-11-09T15:06:14.027701+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-19",
       "paper_number": 19,
       "title": "Syncopate: Efficient Multi-GPU AI Kernels via Automatic Chunk-Centric Compute-Communication Overlap",
@@ -1272,29 +1249,6 @@
       "ratings": [],
       "score": 51.5,
       "updated_at": "2026-07-21T08:54:17.407310+00:00"
-    },
-    {
-      "forum_id": "2611.08902",
-      "paper_number": -1,
-      "title": "Inside the Trap: A Renewal Law for Prefix-Cache Collapse in LLM Agent Serving",
-      "authors": [
-        "Akshat Valse, Ali Jannesari"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.08902v1 Announce Type: new \nAbstract: Prefix caching lets an LLM agent's follow-up turns reuse cached KV, but a burst can tip an engine into a trap in which every turn misses and the backlog does not drain, at a load it served before. In registered paired tests on two engines, two GPUs and two models (passed at 9 of 10 rates), a 200-session burst left the engine at zero hits to the end in all 30 runs, while every matched no-burst run stayed good and a session cap prevented the trap in all 30 capped runs. We analyse an idealization of the trapped state exactly: for a fluid FIFO server on which every turn misses, we prove that along FIFO orbits its cycles obey a linear renewal recursion. As is classical, the trap drains if and only if arrivals are below the all-miss capacity; abov",
-      "pdf_link": "https://arxiv.org/pdf/2611.08902.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.08902",
-      "submission_date": "2026-11-09T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 51.0,
-      "updated_at": "2026-11-09T15:06:14.027851+00:00"
     },
     {
       "forum_id": "usenix-osdi26-59",
@@ -2228,29 +2182,6 @@
       "updated_at": "2026-07-21T08:54:22.942367+00:00"
     },
     {
-      "forum_id": "2611.02975",
-      "paper_number": -1,
-      "title": "Introducing Cluster Efficiency to LLM Serving: Pooling Economical Accelerators over Fast Interconnects",
-      "authors": [
-        "Youhe Jiang, Pavle Glu\\v{s}ac, Binhang Yuan, Eiko Yoneki"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.02975v2 Announce Type: replace \nAbstract: Long-context large language model (LLM) serving places substantial demands on compute, memory capacity, and memory bandwidth. Economical accelerators can offer these resources at lower cost, but their limited per-device capacity requires pooling across devices, making communication overhead critical. We study cluster efficiency, measured in tokens per dollar and per joule, and show how low-latency, high-bandwidth interconnects enable economical accelerators to retain their cost advantage. Guided by a characterization of coding-agent workloads and accelerator scaling, we realize this design on the Tenstorrent Galaxy, a cluster of Blackhole chips. The serving stack combines integrated communication engines, pipelined ring transfers, commun",
-      "pdf_link": "https://arxiv.org/pdf/2611.02975.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.02975",
-      "submission_date": "2026-11-09T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-11-09T15:06:14.030323+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-38",
       "paper_number": 38,
       "title": "A Compilation-Based Under-Constrained Execution Engine",
@@ -2762,29 +2693,6 @@
       "ratings": [],
       "score": 25.5,
       "updated_at": "2026-07-21T08:54:22.935921+00:00"
-    },
-    {
-      "forum_id": "2611.08770",
-      "paper_number": -1,
-      "title": "ReKV: Overlapping Quantized KV Transfer and Suffix Recomputation",
-      "authors": [
-        "Guangjian Dong"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.08770v1 Announce Type: new \nAbstract: Prefill--decode disaggregation moves a prompt's key--value (KV) cache between workers before the first token can be generated. Reducing this handoff to either cache compression or recomputation misses a useful choice: which layers to transmit, at what precision, and which layers to execute again on the decode worker. ReKV transfers a quantized prefix KV cache and one BF16 boundary state, then reconstructs a contiguous suffix while the prefix is in flight. In a model-shaped synthetic benchmark on cross-node H100s, the Q8 configuration meeting separately evaluated quality criteria reduces 8K handoff latency by $2.36\\times$, $2.84\\times$, and $3.65\\times$ over BF16 transfer for Qwen2.5-7B, Qwen2.5-3B, and Qwen3-8B. It is also faster than the be",
-      "pdf_link": "https://arxiv.org/pdf/2611.08770.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.08770",
-      "submission_date": "2026-11-09T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 25.0,
-      "updated_at": "2026-11-09T15:06:14.027724+00:00"
     },
     {
       "forum_id": "usenix-osdi26-62",
@@ -3877,29 +3785,6 @@
       "updated_at": "2026-07-21T08:54:26.739010+00:00"
     },
     {
-      "forum_id": "2611.09651",
-      "paper_number": -1,
-      "title": "Concurrent Use of FP32 and FP64 Computing Units on GPUs and Mixed-Precision Placement in WENO Reconstruction",
-      "authors": [
-        "Jun Hatayama, Daichi Mukunoki, Yusuke Onishi, Atsushi Sekimoto, Toshinori Kouchi"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.09651v1 Announce Type: new \nAbstract: Scientific computing often requires FP64 arithmetic, although FP64 performance is limited on NVIDIA GPUs. Double-float (DF) emulation, which represents a value using two FP32 values with about 48 bits of significand, outperforms native FP64 where FP64 units are limited. On the other hand, mixed-precision strategies offload to FP32 the operations that do not determine accuracy. In both approaches, the native FP64 units remain idle during FP32 instruction execution. We investigated whether this idle resource can be recovered on A100, GH200, GB200, and RTX PRO 6000 Blackwell Max-Q. A microbenchmark shows that co-resident FP32 and native-FP64 kernels exceed the throughput of the faster kernel alone on A100 but not on GH200 and GB200; on RTX 6000",
-      "pdf_link": "https://arxiv.org/pdf/2611.09651.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.09651",
-      "submission_date": "2026-11-09T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 14.0,
-      "updated_at": "2026-11-09T15:06:14.028973+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-45",
       "paper_number": 45,
       "title": "RLinf: Flexible and Efficient Large-Scale Reinforcement Learning via Macro-to-Micro Flow Transformation",
@@ -4830,52 +4715,6 @@
       "updated_at": "2026-07-21T08:54:22.938261+00:00"
     },
     {
-      "forum_id": "2611.09646",
-      "paper_number": -1,
-      "title": "Fast and Actionable Classification of HPC I/O Time Series",
-      "authors": [
-        "Maxime Gonthier (RIKEN CCS), Luan Teylo (RIKEN CCS), Francesco Antici (RIKEN CCS), Mihail Popov (LaBRI, UB), Francieli Boito (LaBRI, UB)"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.09646v1 Announce Type: new \nAbstract: Input/output (I/O) is a major bottleneck for highperformance computing (HPC) performance. One of the challenges is the contention between jobs when sharing the parallel file system. However, tackling this issue depends on knowing the temporal behavior of jobs. In this paper, we propose a clusteringbased approach to characterize jobs' temporal I/O behavior. We propose SAGE, a lightweight method that cuts I/O traces into short windows and learns an alphabet from them. The trace then becomes a sequence of symbols, which we call ''genome'', and we use clustering to separate them into classes. We evaluate SAGE and its two-stage variant SAGE-2 on 819,771 real traces from 2 HPC systems. We compare them against other techniques from the state of the",
-      "pdf_link": "https://arxiv.org/pdf/2611.09646.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.09646",
-      "submission_date": "2026-11-09T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-11-09T15:06:14.028948+00:00"
-    },
-    {
-      "forum_id": "2610.23047",
-      "paper_number": -1,
-      "title": "DIFFLET: A Fast Inference Engine for Diffusion Transformer Models on AWS Trainium",
-      "authors": [
-        "Bin Ma, Min Yu, Vijay Kodamalla, Johnny Liu, Da Li, Dong Li"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.23047v3 Announce Type: replace \nAbstract: On AWS Trainium2, every component of a diffusion model runs as a program compiled ahead of time for fixed shapes, while pipelines differ across models, prompt lengths across requests, and caching decisions across denoising steps. We present Difflet, a serving engine in which five model pipelines share one compilation backend, joint attention is split across cores by attention head, and a host controller decides at each denoising step whether to run the denoiser or reuse its earlier output. A small probe program computes the caching signal on the device and returns one number per step, and a resident model process keeps every program loaded across requests. Across five image and video model families, fused attention accelerates denoiser s",
-      "pdf_link": "https://arxiv.org/pdf/2610.23047.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.23047",
-      "submission_date": "2026-11-09T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-11-09T15:06:14.030183+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-63",
       "paper_number": 63,
       "title": "Hardware Lifecycle-Aware Power Planning in Commercial Hyperscale Datacenters (Operational Systems)",
@@ -5596,29 +5435,6 @@
       "ratings": [],
       "score": 4.5,
       "updated_at": "2026-07-21T08:54:26.744753+00:00"
-    },
-    {
-      "forum_id": "2611.09424",
-      "paper_number": -1,
-      "title": "MINE: Entropy-coded Memory-efficient Inference for Large Language Models",
-      "authors": [
-        "Emil Sch\\\"atzle, Markus P\\\"uschel"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.09424v1 Announce Type: cross \nAbstract: We present MINE (Memory-efficient INference Engine), a lossless entropy coding approach that accelerates single-stream inference of Large Language Models (LLMs), where existing lossless compression methods yield speedups only for specific data types such as \\texttt{BF16} and under additional assumptions. Single-stream decoding is strongly memory-bound, since every weight must be streamed from memory once per generated token and requests cannot be batched in local or low-latency deployments. At the core of MINE is dtANS-LLM, a GPU entropy coding scheme adapted from the prior dtANS to the needs of LLM inference. It exploits the non-uniform distribution of weights, which persists even after quantization, and exposes hyper-parameters that trad",
-      "pdf_link": "https://arxiv.org/pdf/2611.09424.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.09424",
-      "submission_date": "2026-11-09T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-11-09T15:06:14.029447+00:00"
     },
     {
       "forum_id": "usenix-osdi26-87",
