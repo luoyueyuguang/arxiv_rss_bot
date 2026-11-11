@@ -1,31 +1,77 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-11-09T15:09:02.120205+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-11-11T13:31:54.182283+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2604.02064",
+      "forum_id": "2611.14341",
       "paper_number": -1,
-      "title": "Quantitative Universal Approximation for Noisy Quantum Neural Networks",
+      "title": "Numerical analysis of coupled flow, deformation and frictional contact mechanics in a fractured porous medium",
       "authors": [
-        "Lukas Gonon, Antoine Jacquier, Marcel Mordarski"
+        "Marius Nevland, Kundan Kumar, Inga Berre, Jakub Wiktor Both, Eirik Keilegavlen"
       ],
       "keywords": [
         "cs.NA",
         "numerical analysis"
       ],
-      "abstract": "arXiv:2604.02064v4 Announce Type: replace-cross \nAbstract: We prove a quantitative universal approximation theorem for noisy quantum neural networks (QNNs), with explicit non-asymptotic error bounds in terms of the number of accuracy blocks, the qubit count, the number of two-qubit gates, and hardware noise parameters. Motivated by quantitative finance, where target functions are expectations of payoffs, we first extend existing noiseless bounds to expectation functions and derive explicit constants for exponential Levy models, covering the Black-Scholes price of (truncated) European Put options. We then formulate the noisy circuit via quantum channels, obtain a fidelity-based bound for general noise models, and specialise to depolarising noise with readout error, calibrated to real hardwa",
-      "pdf_link": "https://arxiv.org/pdf/2604.02064.pdf",
-      "forum_link": "https://arxiv.org/abs/2604.02064",
-      "submission_date": "2026-11-09T05:00:00+00:00",
+      "abstract": "arXiv:2611.14341v1 Announce Type: new \nAbstract: This paper studies the numerical approximation of a mathematical model of coupled flow and viscoelastic deformation in a fractured porous medium including fracture contact mechanics. We consider a mixed-dimensional model, where the fracture is modeled as a co-dimension one object within the porous medium. This model couples Darcy flow in the matrix and fracture, linear viscoelasticity of the matrix and frictional contact mechanics of the fracture surfaces; the contact conditions include normal compliance and a Coulomb friction law. We propose and analyze a fully discrete numerical scheme for this problem, using conformal finite elements in space and the implicit Euler method in time. Existence and uniqueness of the discrete solution is estab",
+      "pdf_link": "https://arxiv.org/pdf/2611.14341.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.14341",
+      "submission_date": "2026-11-11T05:00:00+00:00",
       "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-11-09T15:09:02.118584+00:00"
+      "score": 13.5,
+      "updated_at": "2026-11-11T13:31:54.178977+00:00"
+    },
+    {
+      "forum_id": "2605.09288",
+      "paper_number": -1,
+      "title": "MC$^2$: Monte Carlo Correction for Fast Elliptic PDE Solving",
+      "authors": [
+        "Ethan Hsu, Hong Meng Yam, Ivan Ge"
+      ],
+      "keywords": [
+        "cs.NA",
+        "scientific computing"
+      ],
+      "abstract": "arXiv:2605.09288v2 Announce Type: replace-cross \nAbstract: Partial differential equation (PDE) solvers underpin modern computer graphics, geometry processing, and scientific computing. Classical Monte Carlo PDE solvers such as Walk-on-Spheres (WoS) provide mesh-free estimations that are unbiased, but with accuracy limited by sampling and numerical approximation. Learned solvers are fast but biased and brittle under distribution shift. We therefore present MC$^2$, a hybrid Neural Network-Monte Carlo PDE solver that treats a low-budget Monte Carlo solution as a structured estimator of the true field and learns a single-pass neural correction to recover a high-fidelity solution. MC$^2$ matches the accuracy of solutions using over $1000\\times$ more Monte Carlo samples, outperforming all evalua",
+      "pdf_link": "https://arxiv.org/pdf/2605.09288.pdf",
+      "forum_link": "https://arxiv.org/abs/2605.09288",
+      "submission_date": "2026-11-11T05:00:00+00:00",
+      "conference": "scientific computing",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 6.0,
+      "updated_at": "2026-11-11T13:31:54.179686+00:00"
+    },
+    {
+      "forum_id": "2611.13332",
+      "paper_number": -1,
+      "title": "FP64 Performance and the Limits of Ozaki Emulation on HPC Systems",
+      "authors": [
+        "Katarzyna (Kasia),  Swirydowicz, Nicholas Malaya, Noah Wolfe, Paul Bauman, Pieter Ghysels, Jonathan Belof"
+      ],
+      "keywords": [
+        "cs.NA",
+        "scientific computing"
+      ],
+      "abstract": "arXiv:2611.13332v1 Announce Type: cross \nAbstract: A growing industry narrative holds that native double precision can be deprioritized in HPC accelerators, on the hypothesis that low-precision tensor cores can emulate FP64 on demand, and that most HPC workloads are bandwidth-bound. This paper evaluates some of those claims and explores the importance of FP64 in scientific computing. We show roofline profiling data of representative HPC workloads, across a variety of common computational motifs, to evaluate the arithmetic-intensity and accuracy requirements of these workloads. We also consider FP64 emulation via the Ozaki method to ascertain some of the possibilities and limitations of these approaches.\n  These results indicate that Ozaki emulation should not be evaluated as a general repl",
+      "pdf_link": "https://arxiv.org/pdf/2611.13332.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.13332",
+      "submission_date": "2026-11-11T05:00:00+00:00",
+      "conference": "scientific computing",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-11-11T13:31:54.179193+00:00"
     }
   ]
 }

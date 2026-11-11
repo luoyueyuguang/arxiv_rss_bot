@@ -1,77 +1,123 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-11-09T15:06:13.482597+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-11-11T13:31:04.924149+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2611.08526",
+      "forum_id": "2504.04404",
       "paper_number": -1,
-      "title": "RoadBlock: Rethinking GPU Tensor Core Microarchitecture for Emerging Microscaling Format Support",
+      "title": "fRAC: Remote Accelerator Calls on Hostless FPGAs",
       "authors": [
-        "Nikhil Rout, Blaise Tine"
+        "Ziyi Yang, Krishnan B. Iyer, Yixi Chen, Ran Shu, Zsolt Istv\\'an, Marco Canini, Suhaib A. Fahmy"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2611.08526v1 Announce Type: new \nAbstract: While multiple recent custom Microscaling (MX) format proposals preserve higher model quality over OCP MX, their hardware evaluations remain confined to standalone MAC-unit prototypes, ignoring the system-level integration overheads inside real GPU Tensor Cores. To this end, we present RoadBlock, an open-source framework for accurate end-to-end modeling of custom MX formats in a programmable Tensor Core, built on the RISC-V Vortex GPGPU. RoadBlock exposes data size, scale-factor size, and block size as configurable parameters and automatically derives per-thread metadata tiling for arbitrary formats, enabling format-specific Perplexity-PPA tradeoff evaluation before silicon commitment.",
-      "pdf_link": "https://arxiv.org/pdf/2611.08526.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.08526",
-      "submission_date": "2026-11-09T05:00:00+00:00",
+      "abstract": "arXiv:2504.04404v3 Announce Type: replace-cross \nAbstract: Hardware accelerators are essential for meeting microsecond-scale demands in distributed applications, but invoking them over the network remains bottlenecked by host software. Host-mediated paths (RPC, RDMA) still rely on the CPU to reassemble requests and launch accelerators, which dominates end-to-end latency, while packet-level offload on SmartNICs lacks any notion of a complete request. We introduce the Remote Accelerator Call (RAC) paradigm, in which transport ingestion, request reassembly, dispatch, and accelerator invocation are handled entirely in hardware. We build fRAC, a hostless prototype that implements this network-to-accelerator interface as a lightweight shim on an FPGA hosting multiple virtualized accelerators, re",
+      "pdf_link": "https://arxiv.org/pdf/2504.04404.pdf",
+      "forum_link": "https://arxiv.org/abs/2504.04404",
+      "submission_date": "2026-11-11T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 47.5,
-      "updated_at": "2026-11-09T15:06:13.478775+00:00"
+      "score": 75.0,
+      "updated_at": "2026-11-11T13:31:04.919304+00:00"
     },
     {
-      "forum_id": "2611.09825",
+      "forum_id": "2611.13644",
       "paper_number": -1,
-      "title": "BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design",
+      "title": "Tri-Stack-PIM: A Heterogeneous Multi-Die 3D-Integrated Processing-in-Memory Architecture for Efficient LLM Inference",
       "authors": [
-        "Dayou Du, Woon Yee Ng, Guangming Sheng, Nick Lau, Jianyi Cheng, Luo Mai"
+        "Shuao Jia, Zichao Ling, Chen Bai, Kang Zhao, Jianwang Zhai"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2611.09825v1 Announce Type: cross \nAbstract: The key-value (KV) cache dominates memory capacity and bandwidth in long-context LLM serving. While 4-bit microscaling formats (NVFP4, MXFP4) shrink the cache and run attention on FP4 Tensor Cores, a fundamental gap remains between algorithmic quantization and system-aware acceleration: existing FP4 KV systems use vanilla quantization that causes severe accuracy drops, whereas accuracy-oriented 4-bit algorithms rely on vector codebooks whose lookup overhead degrades decoding throughput. We present BitDecoding-FP4, an algorithm--system co-design for accurate and efficient native FP4 KV decoding. We mitigate three error sources: Dual-Residual Query Quantization splits queries into two FP4 tensors, cutting query logit error from 60% to 1%; Un",
-      "pdf_link": "https://arxiv.org/pdf/2611.09825.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.09825",
-      "submission_date": "2026-11-09T05:00:00+00:00",
+      "abstract": "arXiv:2611.13644v1 Announce Type: new \nAbstract: Large language model (LLM) inference during autoregressive decoding is fundamentally memory-bandwidth-bound. Existing three-dimensional (3D) stacked processing-in-memory (PIM) architectures alleviate the off-chip bandwidth wall, yet remain constrained by several limitations: physical layer (PHY), controllers, and direct memory access (DMA) engines compete with arithmetic units for advanced-node base-die area; hybrid-bonding keep-out zones fragment the base-die floorplan and impede physical design; compute tiles built in a dynamic random access memory (DRAM) process are restricted to low logic density, capping achievable throughput; and nonlinear operations offloaded to the host reintroduce a communication bottleneck. We present Tri-Stack-PIM",
+      "pdf_link": "https://arxiv.org/pdf/2611.13644.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.13644",
+      "submission_date": "2026-11-11T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-11-09T15:06:13.478938+00:00"
+      "score": 45.5,
+      "updated_at": "2026-11-11T13:31:04.919094+00:00"
     },
     {
-      "forum_id": "2606.16190",
+      "forum_id": "2611.13802",
       "paper_number": -1,
-      "title": "Embedded Arena: Iterative Optimization via Hardware Feedback",
+      "title": "Scaling Shapley Energy Attribution to Large LLM Batches",
       "authors": [
-        "Zhihan Zhang, Alexander Le Metzger, Jiuyang Lyu, Chun-Cheng Chang, Jiayi Shao, Yujia Liu, Emmanuel Azuh Mensah, Edward Wang, Kurtis Heimerl, Gregory D. Abowd, Shwetak Patel, Natasha Jaques, Vikram Iyer"
+        "Qi Luo, Ziwen Wang, Kunlin Li, Changxi Liu, Yun Chen"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2606.16190v2 Announce Type: replace \nAbstract: As AI moves into the physical world, from robots to environmental sensors to medical wearables, it increasingly relies on local inference to meet latency, communication, or privacy constraints. Optimizing models for heterogeneous edge hardware such as microcontrollers (MCUs) requires simultaneously satisfying hard physical constraints on memory, power, and temperature while preserving accuracy, a multidimensional optimization that is today performed manually by experts. We ask whether an LLM agent can autonomously navigate this complex, multi-turn pipeline guided by real hardware feedback, and introduce a hardware-in-the-loop agent arena in which the agent iteratively refines both model and firmware by compiling, flashing, and measuring ",
-      "pdf_link": "https://arxiv.org/pdf/2606.16190.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.16190",
-      "submission_date": "2026-11-09T05:00:00+00:00",
+      "abstract": "arXiv:2611.13802v1 Announce Type: cross \nAbstract: LLM services have become essential infrastructure for applications such as chat assistants and coding agents. Service providers need to attribute resource consumption to individual requests for purposes such as billing. Among these resources, energy is a key metric for assessing the cost of serving each request. However, serving engines batch requests together, and GPUs report only aggregate energy consumption. Providers typically estimate each request's share in proportion to its token consumption, but this approach can produce substantially unfair estimates. The Shapley value provides a principled solution to fair energy allocation, but computing it directly requires $2^N-1$ GPU runs for $N$ requests, which is infeasible for large batche",
+      "pdf_link": "https://arxiv.org/pdf/2611.13802.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.13802",
+      "submission_date": "2026-11-11T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-11-09T15:06:13.478948+00:00"
+      "score": 43.5,
+      "updated_at": "2026-11-11T13:31:04.919271+00:00"
+    },
+    {
+      "forum_id": "2611.13860",
+      "paper_number": -1,
+      "title": "Uncovering the Memory Hierarchy of Modern NVIDIA GPUs for Accurate Simulation",
+      "authors": [
+        "Ziwen Wang, Jiapeng Zhou, Changxi Liu, Dongsheng Wang, Yun Chen"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2611.13860v1 Announce Type: new \nAbstract: Emerging artificial intelligence workloads, particularly Large Language Models (LLMs), place unprecedented demands on GPU memory systems. Consequently, architectural innovations increasingly target the memory system to alleviate these bottlenecks. However, existing works still rely on outdated memory hierarchy models that fail to capture the complexities of modern hardware. This fidelity gap leads to inaccurate characterization and could misguide optimization strategies. To bridge this gap, we present GemAtlas, the first systematic reverse engineering of the memory hierarchy in modern NVIDIA GPUs. By developing fine-grained SASS-level benchmarking, we expose critical, previously undocumented micro-architectural details across different cache",
+      "pdf_link": "https://arxiv.org/pdf/2611.13860.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.13860",
+      "submission_date": "2026-11-11T05:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.5,
+      "updated_at": "2026-11-11T13:31:04.919132+00:00"
+    },
+    {
+      "forum_id": "2611.13630",
+      "paper_number": -1,
+      "title": "Machine-learning decoders for fusion-based quantum computing in real time",
+      "authors": [
+        "Daniel Barter, Jacob C. Bridgeman, Chris Dawson, Terry Farrelly, Shane Fleming, Mercedes Gimeno-Segovia, Paul Hartke, Timothy Hein, Sean Howell, Gregory Hyegang Jun, Siddhartha Kamalakara, Yehua Liu, Jose M. Monsalve Diaz, Eddie Richter, Sam Roberts"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2611.13630v1 Announce Type: cross \nAbstract: Fault-tolerant quantum computation requires decoders that combine accuracy, throughput, low latency, and scalability to large numbers of physical qubits. In photonic fusion-based architectures, erasures from photon loss and probabilistic fusion measurements are a dominant error mechanism, motivating decoders that remain accurate at high erasure rates. We introduce PRISM, a transformer-based machine-learning decoder designed to exploit the known locations of erasures in protocols subject to both Pauli and erasure errors. We benchmark PRISM across a wide range of fault-tolerant protocols based on surface codes, color codes, and quantum low-density parity-check codes, with distances up to 24. Across these benchmarks, PRISM matches the logical",
+      "pdf_link": "https://arxiv.org/pdf/2611.13630.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.13630",
+      "submission_date": "2026-11-11T05:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-11-11T13:31:04.919226+00:00"
     }
   ]
 }

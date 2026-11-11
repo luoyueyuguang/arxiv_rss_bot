@@ -1,31 +1,123 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-11-09T15:06:29.670760+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-11-11T13:31:17.904351+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2611.09518",
+      "forum_id": "2611.13931",
       "paper_number": -1,
-      "title": "Memory as a Temporal Resource: Lifetime Contracts for Multi-Retention Systems",
+      "title": "TAPCO-G: LLM-Guided Design-Adaptive Timing and Power Co-Optimization with Graph-Based Physical Priors",
       "authors": [
-        "Adrian Jackson"
+        "Wuqian Tang, Zixiao Wang, Che-Chien Lin, Fong-Hua Fu, Laura Ang\\'elica Shion-Korsak, Xinyun Zhang, Bei Yu, Chun-Yao Wang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2611.13931v1 Announce Type: new \nAbstract: Post-placement timing and power co-optimization is critical to meeting setup timing targets and reducing power within placement constraints. A cell replacement can improve timing along one path while increasing power or reducing slack on others. Conventional optimizers follow fixed rules for scheduling and accepting repairs, limiting their ability to address design-specific bottlenecks. A large language model (LLM) can propose changes to these rules, but on its own it cannot reliably estimate how a cell replacement affects endpoint slack and power. TAPCO-G combines LLM-guided optimizer adaptation with graph-based physical priors to evaluate candidate cell replacements. The outer loop tunes tool settings using physical-design feedback and rev",
+      "pdf_link": "https://arxiv.org/pdf/2611.13931.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.13931",
+      "submission_date": "2026-11-11T05:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 15.0,
+      "updated_at": "2026-11-11T13:31:17.901504+00:00"
+    },
+    {
+      "forum_id": "2611.13008",
+      "paper_number": -1,
+      "title": "An Open Implementation Flow for the Xilinx Spartan-3E and Spartan-6 that Runs in the Browser, Checked Byte for Byte Against ISE",
+      "authors": [
+        "Pedro Malo"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2611.09518v1 Announce Type: new \nAbstract: Computers move and rewrite data whose useful lifetimes range from inner-loop iterations to years, yet memory systems usually hide retention as a fixed physical property. We argue that required lifetime should become a first-class resource across algorithms, programming systems, controllers, and devices. Building on prior lifetime-aware placement, we propose an event-based validity contract that links application completion events to retention-class selection and renewal of protection. Applications would be enabled to express semantic contracts such as ``until this tile completes'' and the system will map data to homogeneous arrays engineered for ephemeral, epoch, or durable retention and preserve correctness through margins, ECC, refresh, mi",
-      "pdf_link": "https://arxiv.org/pdf/2611.09518.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.09518",
-      "submission_date": "2026-11-09T05:00:00+00:00",
+      "abstract": "arXiv:2611.13008v1 Announce Type: new \nAbstract: The author describes an open implementation flow, from HDL to a programmable bitstream, for the Xilinx Spartan-3E (XC3S100E to XC3S1200E) and Spartan-6 (XC6SLX16, XC6SLX45), devices that only the discontinued ISE 14.7 supports. The flow runs unchanged in a web browser or in Node.js: Yosys and nextpnr compiled to WebAssembly, with nextpnr's Himbaechel framework given Spartan-3E and Spartan-6 architectures generated from Silinx's own device descriptions, bit database and timing model, and Silinx's own bitstream writer. The bit database was built by black-box observation of ISE's documented XDL and bitgen tools, using codeword-batched experiments; the router is given only switches whose bits were measured, and the writer refuses a feature it ha",
+      "pdf_link": "https://arxiv.org/pdf/2611.13008.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.13008",
+      "submission_date": "2026-11-11T05:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-11-09T15:06:29.669228+00:00"
+      "score": 13.0,
+      "updated_at": "2026-11-11T13:31:17.901259+00:00"
+    },
+    {
+      "forum_id": "2611.13860",
+      "paper_number": -1,
+      "title": "Uncovering the Memory Hierarchy of Modern NVIDIA GPUs for Accurate Simulation",
+      "authors": [
+        "Ziwen Wang, Jiapeng Zhou, Changxi Liu, Dongsheng Wang, Yun Chen"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2611.13860v1 Announce Type: new \nAbstract: Emerging artificial intelligence workloads, particularly Large Language Models (LLMs), place unprecedented demands on GPU memory systems. Consequently, architectural innovations increasingly target the memory system to alleviate these bottlenecks. However, existing works still rely on outdated memory hierarchy models that fail to capture the complexities of modern hardware. This fidelity gap leads to inaccurate characterization and could misguide optimization strategies. To bridge this gap, we present GemAtlas, the first systematic reverse engineering of the memory hierarchy in modern NVIDIA GPUs. By developing fine-grained SASS-level benchmarking, we expose critical, previously undocumented micro-architectural details across different cache",
+      "pdf_link": "https://arxiv.org/pdf/2611.13860.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.13860",
+      "submission_date": "2026-11-11T05:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-11-11T13:31:17.901412+00:00"
+    },
+    {
+      "forum_id": "2504.04404",
+      "paper_number": -1,
+      "title": "fRAC: Remote Accelerator Calls on Hostless FPGAs",
+      "authors": [
+        "Ziyi Yang, Krishnan B. Iyer, Yixi Chen, Ran Shu, Zsolt Istv\\'an, Marco Canini, Suhaib A. Fahmy"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2504.04404v3 Announce Type: replace-cross \nAbstract: Hardware accelerators are essential for meeting microsecond-scale demands in distributed applications, but invoking them over the network remains bottlenecked by host software. Host-mediated paths (RPC, RDMA) still rely on the CPU to reassemble requests and launch accelerators, which dominates end-to-end latency, while packet-level offload on SmartNICs lacks any notion of a complete request. We introduce the Remote Accelerator Call (RAC) paradigm, in which transport ingestion, request reassembly, dispatch, and accelerator invocation are handled entirely in hardware. We build fRAC, a hostless prototype that implements this network-to-accelerator interface as a lightweight shim on an FPGA hosting multiple virtualized accelerators, re",
+      "pdf_link": "https://arxiv.org/pdf/2504.04404.pdf",
+      "forum_link": "https://arxiv.org/abs/2504.04404",
+      "submission_date": "2026-11-11T05:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-11-11T13:31:17.901906+00:00"
+    },
+    {
+      "forum_id": "2611.14495",
+      "paper_number": -1,
+      "title": "SkipLane: Write-Once, Conflict-Free Accumulation for Zero-Skipping CNN Engines on FPGAs",
+      "authors": [
+        "Aditya Saboo, Pratibha Verma"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2611.14495v1 Announce Type: new \nAbstract: Skipping zero activations saves multiplications in CNN accelerators, but it complicates accumulation: the products in a compressed input window belong to different output columns and must be merged. In our earlier engine, this merging was done by read-modify-write (RMW) of a row buffer, which made sparse inputs slower than dense ones even at 87% sparsity. Existing designs either merge kernel rows through RMW or reduce bank conflicts with extra hardware, without eliminating them. SkipLane makes the entire accumulation path write-once. Each kernel row is processed in its own lane, which holds partial sums in three registers and retires up to three finished columns per cycle into memory banks that cannot conflict. Lanes and input channels are s",
+      "pdf_link": "https://arxiv.org/pdf/2611.14495.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.14495",
+      "submission_date": "2026-11-11T05:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-11-11T13:31:17.901555+00:00"
     }
   ]
 }
