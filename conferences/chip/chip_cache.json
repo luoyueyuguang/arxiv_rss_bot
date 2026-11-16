@@ -1,123 +1,169 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-11-11T13:31:17.904351+00:00",
-  "paper_count": 5,
+  "last_updated": "2026-11-16T14:43:15.580049+00:00",
+  "paper_count": 7,
   "papers": [
     {
-      "forum_id": "2611.13931",
+      "forum_id": "2611.11051",
       "paper_number": -1,
-      "title": "TAPCO-G: LLM-Guided Design-Adaptive Timing and Power Co-Optimization with Graph-Based Physical Priors",
+      "title": "PRISM: Preference-based Reward and Uncertainty-Integrated Synthesis Minimization for RTL PPA Optimization",
       "authors": [
-        "Wuqian Tang, Zixiao Wang, Che-Chien Lin, Fong-Hua Fu, Laura Ang\\'elica Shion-Korsak, Xinyun Zhang, Bei Yu, Chun-Yao Wang"
+        "Armin Abdollahi, Negin Ashrafi, Mehdi Kamal, Massoud Pedram"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2611.13931v1 Announce Type: new \nAbstract: Post-placement timing and power co-optimization is critical to meeting setup timing targets and reducing power within placement constraints. A cell replacement can improve timing along one path while increasing power or reducing slack on others. Conventional optimizers follow fixed rules for scheduling and accepting repairs, limiting their ability to address design-specific bottlenecks. A large language model (LLM) can propose changes to these rules, but on its own it cannot reliably estimate how a cell replacement affects endpoint slack and power. TAPCO-G combines LLM-guided optimizer adaptation with graph-based physical priors to evaluate candidate cell replacements. The outer loop tunes tool settings using physical-design feedback and rev",
-      "pdf_link": "https://arxiv.org/pdf/2611.13931.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.13931",
-      "submission_date": "2026-11-11T05:00:00+00:00",
+      "abstract": "arXiv:2611.11051v2 Announce Type: replace \nAbstract: This paper introduces a budget-aware, multi-objective framework (called PRISM) for RTL optimization that improves power, performance, and area (PPA) while sharply limiting expensive commercial synthesis tool calls. Starting from a synthesizable baseline and functional testbench, the method iterates through LLM-driven rewrite generation, fast compile/simulation equivalence filtering, low-cost proxy feature extraction, and selective commercial synthesis tool (Synopsys Design Compiler (DC)) evaluation. To prioritize which candidates deserve high-quality synthesis, we train a preference-based reward model using pairwise ranking supervision derived from commercial synthesis tool outcomes, and combine ensemble uncertainty with a diversity-awar",
+      "pdf_link": "https://arxiv.org/pdf/2611.11051.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.11051",
+      "submission_date": "2026-11-16T05:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 15.0,
-      "updated_at": "2026-11-11T13:31:17.901504+00:00"
+      "score": 4.5,
+      "updated_at": "2026-11-16T14:43:15.575661+00:00"
     },
     {
-      "forum_id": "2611.13008",
+      "forum_id": "2611.18524",
       "paper_number": -1,
-      "title": "An Open Implementation Flow for the Xilinx Spartan-3E and Spartan-6 that Runs in the Browser, Checked Byte for Byte Against ISE",
+      "title": "EventSpikeSeg: Memory-Aware Mixed-Signal Architecture for Event-Camera Spiking Segmentation",
       "authors": [
-        "Pedro Malo"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2611.13008v1 Announce Type: new \nAbstract: The author describes an open implementation flow, from HDL to a programmable bitstream, for the Xilinx Spartan-3E (XC3S100E to XC3S1200E) and Spartan-6 (XC6SLX16, XC6SLX45), devices that only the discontinued ISE 14.7 supports. The flow runs unchanged in a web browser or in Node.js: Yosys and nextpnr compiled to WebAssembly, with nextpnr's Himbaechel framework given Spartan-3E and Spartan-6 architectures generated from Silinx's own device descriptions, bit database and timing model, and Silinx's own bitstream writer. The bit database was built by black-box observation of ISE's documented XDL and bitgen tools, using codeword-batched experiments; the router is given only switches whose bits were measured, and the writer refuses a feature it ha",
-      "pdf_link": "https://arxiv.org/pdf/2611.13008.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.13008",
-      "submission_date": "2026-11-11T05:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-11-11T13:31:17.901259+00:00"
-    },
-    {
-      "forum_id": "2611.13860",
-      "paper_number": -1,
-      "title": "Uncovering the Memory Hierarchy of Modern NVIDIA GPUs for Accurate Simulation",
-      "authors": [
-        "Ziwen Wang, Jiapeng Zhou, Changxi Liu, Dongsheng Wang, Yun Chen"
+        "Amir Mohammad Khadem Hosseini, Sattar Mirzakuchaki"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2611.13860v1 Announce Type: new \nAbstract: Emerging artificial intelligence workloads, particularly Large Language Models (LLMs), place unprecedented demands on GPU memory systems. Consequently, architectural innovations increasingly target the memory system to alleviate these bottlenecks. However, existing works still rely on outdated memory hierarchy models that fail to capture the complexities of modern hardware. This fidelity gap leads to inaccurate characterization and could misguide optimization strategies. To bridge this gap, we present GemAtlas, the first systematic reverse engineering of the memory hierarchy in modern NVIDIA GPUs. By developing fine-grained SASS-level benchmarking, we expose critical, previously undocumented micro-architectural details across different cache",
-      "pdf_link": "https://arxiv.org/pdf/2611.13860.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.13860",
-      "submission_date": "2026-11-11T05:00:00+00:00",
+      "abstract": "arXiv:2611.18524v1 Announce Type: new \nAbstract: Event-camera segmentation requires persistent neural state despite sparse input events, making memory organization a central constraint on embedded implementation. We present EventSpikeSeg, a mixed-signal architecture combining resident capacitor memory with shared analog processing in GF180MCU 180-nm CMOS. Its 25-population spiking encoder-decoder has 143,824 synaptic weights but requires 30,976,000 membrane states at 440 x 640 resolution. The mapping specifies chronological 5-ms model updates, digital event/address services and 64-state capacitor banks. Characterization covers 22 module families and 74 operating points, distinguishing transistor simulations from digital-library estimates. Nominal results include 41.711 microwatts biased ne",
+      "pdf_link": "https://arxiv.org/pdf/2611.18524.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.18524",
+      "submission_date": "2026-11-16T05:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-11-16T14:43:15.575291+00:00"
+    },
+    {
+      "forum_id": "2611.18422",
+      "paper_number": -1,
+      "title": "The State Is Not the Bottleneck: A Paged-State Gated-DeltaNet Tile on a Tri-Mode Multicast Mesh, Bit-Exact from RTL to Silicon",
+      "authors": [
+        "Cong Xu, Ravi Sankar"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2611.18422v1 Announce Type: cross \nAbstract: Linear-attention language models replace a growing key-value cache with a recurrent state of fixed size. On an edge FPGA, this state can exceed the on-chip memory and must be paged to external memory. This paper asks whether such paging dominates the cost of decoding (generating tokens). We built a hardware tile that computes one complete layer of a custom 369-million-parameter hybrid Gated DeltaNet model on an Agilex 5 FPGA and pages its recurrent state. The model state needs 6.2 MiB, whereas the device has 0.87 MiB of block memory. Paging adds 26.0 MB of memory traffic per decoded token, at most 11.2 percent of the calculated total. On the board at 75 MHz, with synthetic weights, one token takes 11.15 ms in this layer. The matrix-vector ",
+      "pdf_link": "https://arxiv.org/pdf/2611.18422.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.18422",
+      "submission_date": "2026-11-16T05:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-11-16T14:43:15.575575+00:00"
+    },
+    {
+      "forum_id": "2611.17723",
+      "paper_number": -1,
+      "title": "uhd-rfsoc: Bringing Off-the-Shelf RFSoC Boards to Unmodified UHD Applications",
+      "authors": [
+        "Wei Cheng, Yiming Li, Junyao Zheng, Cheng-Bin Chen, Tingjun Chen"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2611.17723v1 Announce Type: cross \nAbstract: Next-generation wireless research relies on software-defined radios (SDRs) with more channels and larger bandwidth. The USRP family is one of the most widely used SDR platforms, and much of the wireless software ecosystem is built on top of the USRP hardware driver (UHD). However, each USRP model comes with a fixed channel count, bandwidth, and streaming capability. Off-the-shelf radio frequency system-on-chip (RFSoC) boards, on the other hand, integrate up to 16 analog-to-digital converters (ADCs) and 16 digital-to-analog converters (DACs) operating at several gigasamples per second (GS/s), but existing UHD applications cannot directly use them. We present uhd-rfsoc, an open-source FPGA design and host software stack that turns these boar",
+      "pdf_link": "https://arxiv.org/pdf/2611.17723.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.17723",
+      "submission_date": "2026-11-16T05:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-11-16T14:43:15.575467+00:00"
+    },
+    {
+      "forum_id": "2610.27508",
+      "paper_number": -1,
+      "title": "KatoANN: Enabling Near-Exact Vector Search at the Speed of Lossy Scans with CPU Matrix Engines",
+      "authors": [
+        "Soobin Cho, Gyuyeong Kim"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2610.27508v2 Announce Type: replace-cross \nAbstract: Emerging CPU matrix engines, such as Intel AMX, enable high throughput by batching multiple queries. However, they support only low-precision formats, which can significantly degrade recall (i.e., search quality). We present KatoANN, the first approximate nearest neighbor (ANN) search system that achieves both high throughput and high recall simultaneously on CPU matrix engines. Specifically, KatoANN represents each vector using a 16-bit code, splits it into high- and low-byte planes, and computes near-exact distances using 8-bit matrix multiplications that the matrix engine supports. To reduce extra multiplication overhead, it ranks all candidates by their high bytes alone and refines only a few survivors with the full distance. K",
+      "pdf_link": "https://arxiv.org/pdf/2610.27508.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.27508",
+      "submission_date": "2026-11-16T05:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-11-11T13:31:17.901412+00:00"
+      "updated_at": "2026-11-16T14:43:15.575692+00:00"
     },
     {
-      "forum_id": "2504.04404",
+      "forum_id": "2611.17108",
       "paper_number": -1,
-      "title": "fRAC: Remote Accelerator Calls on Hostless FPGAs",
+      "title": "LazyWeights: Decode-on-Demand Edge LLMs",
       "authors": [
-        "Ziyi Yang, Krishnan B. Iyer, Yixi Chen, Ran Shu, Zsolt Istv\\'an, Marco Canini, Suhaib A. Fahmy"
+        "Arnab Sanyal, Gourav Datta, Sandeep P. Chinchali"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2504.04404v3 Announce Type: replace-cross \nAbstract: Hardware accelerators are essential for meeting microsecond-scale demands in distributed applications, but invoking them over the network remains bottlenecked by host software. Host-mediated paths (RPC, RDMA) still rely on the CPU to reassemble requests and launch accelerators, which dominates end-to-end latency, while packet-level offload on SmartNICs lacks any notion of a complete request. We introduce the Remote Accelerator Call (RAC) paradigm, in which transport ingestion, request reassembly, dispatch, and accelerator invocation are handled entirely in hardware. We build fRAC, a hostless prototype that implements this network-to-accelerator interface as a lightweight shim on an FPGA hosting multiple virtualized accelerators, re",
-      "pdf_link": "https://arxiv.org/pdf/2504.04404.pdf",
-      "forum_link": "https://arxiv.org/abs/2504.04404",
-      "submission_date": "2026-11-11T05:00:00+00:00",
+      "abstract": "arXiv:2611.17108v2 Announce Type: replace-cross \nAbstract: Memory decides which LLMs an edge device runs, and how fast: capacity on a 4 GB Jetson Nano, bandwidth on an 8 GB Jetson Orin Nano Super. Deployed formats (GPTQ, AWQ, llama.cpp's K- and I-quants) spend equal bits on every integer code of a matrix, although the codes are far from uniform. LazyWeights keeps these formats but tunes GPTQ so the codes compress, Huffman-codes them losslessly in interleaved lanes, and decodes them on demand in a small unit between DRAM and L2, so GPU kernels run unchanged and DRAM moves only coded bytes. At 1% and 3.5% perplexity budgets, coded Phi-3-mini, Mistral-7B and SmolLM-1.7B are 5.7-31.4% smaller than the best llama.cpp format. A bit-exact 0.21 mm^2 ASIC decoder unit (1 GHz, 7 nm) cuts Orin latenc",
+      "pdf_link": "https://arxiv.org/pdf/2611.17108.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.17108",
+      "submission_date": "2026-11-16T05:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-11-11T13:31:17.901906+00:00"
+      "score": 2.0,
+      "updated_at": "2026-11-16T14:43:15.575739+00:00"
     },
     {
-      "forum_id": "2611.14495",
+      "forum_id": "2611.18527",
       "paper_number": -1,
-      "title": "SkipLane: Write-Once, Conflict-Free Accumulation for Zero-Skipping CNN Engines on FPGAs",
+      "title": "WaferTetris: Efficient Freeform Mapping on Wafer-Scale Accelerators",
       "authors": [
-        "Aditya Saboo, Pratibha Verma"
+        "Dayou Du, Congjie He, Andrew Boutros, Luo Mai, Vaughn Betz, Jianyi Cheng"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2611.14495v1 Announce Type: new \nAbstract: Skipping zero activations saves multiplications in CNN accelerators, but it complicates accumulation: the products in a compressed input window belong to different output columns and must be merged. In our earlier engine, this merging was done by read-modify-write (RMW) of a row buffer, which made sparse inputs slower than dense ones even at 87% sparsity. Existing designs either merge kernel rows through RMW or reduce bank conflicts with extra hardware, without eliminating them. SkipLane makes the entire accumulation path write-once. Each kernel row is processed in its own lane, which holds partial sums in three registers and retires up to three finished columns per cycle into memory banks that cannot conflict. Lanes and input channels are s",
-      "pdf_link": "https://arxiv.org/pdf/2611.14495.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.14495",
-      "submission_date": "2026-11-11T05:00:00+00:00",
+      "abstract": "arXiv:2611.18527v1 Announce Type: new \nAbstract: Wafer-scale accelerators offer massive compute capacity through hundreds of thousands of processing elements (PEs) interconnected across a single wafer, but realizing this potential requires efficient application mapping. Their scale makes programming these systems and mapping applications onto them challenging. Existing approaches rely on template-based mappings to maintain productivity, but these templates restrict the mapping design space. In particular, they impose fixed geometric layouts over the PE grid, often leaving compute and memory resources underutilized.\n  In this work, we present WaferTetris, a system that removes these geometric restrictions through freeform mapping. Its Tetris-like strategy flexibly packs computation across t",
+      "pdf_link": "https://arxiv.org/pdf/2611.18527.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.18527",
+      "submission_date": "2026-11-16T05:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-11-11T13:31:17.901555+00:00"
+      "score": 1.0,
+      "updated_at": "2026-11-16T14:43:15.575347+00:00"
     }
   ]
 }

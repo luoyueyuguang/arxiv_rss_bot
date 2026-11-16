@@ -1,54 +1,100 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-11-11T13:31:05.489879+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-11-16T14:43:02.740726+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2611.14026",
+      "forum_id": "2601.22585",
       "paper_number": -1,
-      "title": "Energy-Proportional Serverless Computing on SBC Clusters",
+      "title": "HetCCL: Efficient LLM Training on Heterogeneous Vendor GPUs",
       "authors": [
-        "Yuliya Sasinskaya, Natalie Carl, Niklas Kowallik, David Bermbach"
+        "Heehoon Kim, Chris Jaehwan Lee, Taejeoung Kim, Jongwon Park, Jinpyo Kim, Pyongwon Suh, Ryan H. Choi, Sangwoo Lee, Jaejin Lee"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2611.14026v1 Announce Type: new \nAbstract: Serverless computing promises to run code only on demand, yet the servers beneath it draw most of their power while idle, so energy consumption does not scale to zero with the workload. We show that the statelessness of serverless functions makes it possible to extend scale-to-zero from function instances to physical nodes, enabling energy proportionality. Our platform, built on tinyFaaS for clusters of single-board computers, treats node power state as part of worker selection, powering workers off when idle and back on under load. On a physical cluster, our approach reduces mean power draw by 39.6 % on a bursty, trace-based workload and by 46.7 % on a sparse one, without a detectable change in median latency on the bursty workload. The cos",
-      "pdf_link": "https://arxiv.org/pdf/2611.14026.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.14026",
-      "submission_date": "2026-11-11T05:00:00+00:00",
+      "abstract": "arXiv:2601.22585v2 Announce Type: replace \nAbstract: The rapid growth of large language models is driving organizations to expand their GPU clusters, often with GPUs from multiple vendors. However, current deep learning frameworks lack support for collective communication across heterogeneous GPUs, leading to inefficiency and higher costs. We present HetCCL, a collective communication library that unifies vendor-specific backends and enables RDMA-based communication across GPUs without requiring driver modifications. HetCCL introduces two novel mechanisms that enable cross-vendor communication while leveraging optimized vendor libraries, NVIDIA NCCL and AMD RCCL. Evaluations on a multi-vendor GPU cluster show that HetCCL matches NCCL and RCCL performance in homogeneous setups while uniquel",
+      "pdf_link": "https://arxiv.org/pdf/2601.22585.pdf",
+      "forum_link": "https://arxiv.org/abs/2601.22585",
+      "submission_date": "2026-11-16T05:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-11-11T13:31:04.994077+00:00"
+      "score": 66.5,
+      "updated_at": "2026-11-16T14:43:02.054205+00:00"
     },
     {
-      "forum_id": "2606.30533",
+      "forum_id": "2610.41525",
       "paper_number": -1,
-      "title": "Reconciling Strict SLOs with Low Cost under Fine-Grained Load Fluctuations",
+      "title": "MemX: Memory-Aware Automatic Parallelism for Cross-Vendor Heterogeneous GPU Training",
       "authors": [
-        "Dilina Dehigama, Shyam Jesalpura, Zeyu Xu, Marton Nemeth, Shengda Zhu, Marios Kogias, Boris Grot"
+        "Lin Meng, Yuzhong Sun, Jie Zhu"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2606.30533v2 Announce Type: replace \nAbstract: Cloud-based online services face significant sub-second load fluctuations while needing to meet strict Service Level Objectives (SLOs). Cluster operators often over-provision resources to protect SLOs, sacrificing utilization and cost efficiency. Existing reactive and proactive autoscalers, serverless (FaaS) deployments, and VM/FaaS hybrid systems fail to reconcile strict SLO compliance with low cost and high utilization under fine-grained load fluctuation.\n  We introduce Spandana, an architecture that addresses this trade off by decoupling SLO enforcement from cost optimization. A lightweight controller colocated with each application VM enforces SLOs by steering each arriving request between the VM and FaaS. Requests that can meet the ",
-      "pdf_link": "https://arxiv.org/pdf/2606.30533.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.30533",
-      "submission_date": "2026-11-11T05:00:00+00:00",
+      "abstract": "arXiv:2610.41525v2 Announce Type: replace \nAbstract: Cross-vendor heterogeneous GPU clusters are increasingly used for large-scale model training. However, their GPUs differ substantially in compute power, memory capacity, and interconnect characteristics. Existing automatic parallelism training systems usually minimize iteration time while treating memory as a hard constraint, almost failing in resolving the compute--memory asymmetry of cross-vendor clusters regardless correlation between memory and throughput. In this paper, we present MemX, a new memory-aware automatic parallelism system that jointly optimizes iteration time, peak memory usage, and cross-GPU memory balance. MemX consists of a weighted-product objective function, heterogeneous recomputation strategies, a minimal-set prof",
+      "pdf_link": "https://arxiv.org/pdf/2610.41525.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.41525",
+      "submission_date": "2026-11-16T05:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-11-11T13:31:04.994592+00:00"
+      "score": 66.5,
+      "updated_at": "2026-11-16T14:43:02.054363+00:00"
+    },
+    {
+      "forum_id": "2611.17850",
+      "paper_number": -1,
+      "title": "OrbitWeaver: LLM Agent Planning with Simulation Feedback for Optically Interconnected Orbital GPU Clusters",
+      "authors": [
+        "Pengcheng Luo, Bowen Zhang"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2611.17850v1 Announce Type: new \nAbstract: Space-based data-center designs increasingly consider GPU computing formations connected by inter-satellite optical links. With limited neighboring connections, jobs assigned disjoint GPUs can still contend on shared relay paths. Rank placement and communication priorities jointly affect this contention and the readiness of downstream computation. We present OrbitWeaver, an offline large language model (LLM) agent planner that jointly optimizes rank placement and communication order. Guided by communication structure, execution dependencies, and simulation feedback, the agent constructs and refines plans that coordinate shared-link access with computation progress. This coordination reduces contention and dependency blocking, shortening mean",
+      "pdf_link": "https://arxiv.org/pdf/2611.17850.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.17850",
+      "submission_date": "2026-11-16T05:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 44.0,
+      "updated_at": "2026-11-16T14:43:02.053746+00:00"
+    },
+    {
+      "forum_id": "2611.18459",
+      "paper_number": -1,
+      "title": "Callo: Serving Cache-Miss Requests with Speculative Decoding on Invalidated KV under Prefill-Decode Disaggregation",
+      "authors": [
+        "Jianjun Ou, Matthew Lentz"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2611.18459v1 Announce Type: new \nAbstract: Agent sessions may involve frequent context edits, which effectively invalidate cached KV state and force requests to wait for re-prefill before decoding. We present Callo, a disaggregated serving system that leverages invalidated KV for speculative drafts to reduce this latency, while verifying drafts against the exact KV after prefill before committing tokens. Callo makes effective use of decode resources by scheduling speculations during periods of underutilization and preempting speculations when drafts are likely to not be accepted. We evaluated Callo on a two-GPU testbed using SWE-agent sessions across three model families, observing all-request speedups of 1.05-1.19x over vLLM at moderate load. We demonstrate that these gains are also",
+      "pdf_link": "https://arxiv.org/pdf/2611.18459.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.18459",
+      "submission_date": "2026-11-16T05:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-11-16T14:43:02.053983+00:00"
     }
   ]
 }

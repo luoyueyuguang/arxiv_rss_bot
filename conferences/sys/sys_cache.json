@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-11-13T13:53:56.933432+00:00",
-  "paper_count": 307,
+  "last_updated": "2026-11-16T14:43:15.502877+00:00",
+  "paper_count": 311,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -473,6 +473,29 @@
       "ratings": [],
       "score": 74.0,
       "updated_at": "2026-07-21T08:54:17.395824+00:00"
+    },
+    {
+      "forum_id": "2610.04277",
+      "paper_number": -1,
+      "title": "SyclKittens: A Tile Programming Model for Programmers and Coding Agents on Intel GPUs",
+      "authors": [
+        "Yehong Jiang, Sheng Chen, Fangwen Fu, Yen-Kuang Chen, Xinmin Tian, Stuart H. Sul, Simran Arora"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.04277v2 Announce Type: replace \nAbstract: New AI accelerators arrive before the kernels that make them fast, because peak kernel performance requires architecture-specific expertise in operand pipelines and data-movement techniques. Coding agents can now write, compile, and tune kernels on their own, so they could greatly accelerate kernel development and optimization. What agents produce depends on the interfaces they are given. These interfaces may expose a machine's raw capabilities or encode the known-good methods for exploiting its hardware features efficiently. We test the performance impact of these two interfaces on Intel GPUs through controlled experiments with five coding models on three kernels. With raw SYCL and execution feedback, Opus 4.8, the strongest of the thre",
+      "pdf_link": "https://arxiv.org/pdf/2610.04277.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.04277",
+      "submission_date": "2026-11-16T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 72.0,
+      "updated_at": "2026-11-16T14:43:02.867743+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-59",
@@ -1819,6 +1842,29 @@
       "updated_at": "2026-07-21T08:54:17.394352+00:00"
     },
     {
+      "forum_id": "2611.18145",
+      "paper_number": -1,
+      "title": "Compiling Specialized GPU-Initiated Networking",
+      "authors": [
+        "Javid Baydamirli, Ismayil Ismayilov, Kaan Oktay, Didem Unat"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.18145v1 Announce Type: new \nAbstract: Machine learning systems specialize computation to the workload and hardware, but communication remains in generic libraries whose device code and transport decisions are not visible to high-level compilers. We present Obaleth, a compiler that makes GPU-initiated communication part of a kernel's intermediate representation, co-optimizes it alongside computation, and lowers it to specialized transport code. Obaleth plans completions around buffer lifetimes and optimizes memory ordering, synchronization, and batching across NVIDIA and AMD GPUs. On H100 GPUs, Obaleth sends small messages up to 3.3$\\times$ faster, and on 256 GPUs runs all-to-all 1.25$\\times$ and 2.3$\\times$ faster than NVSHMEM and NCCL GIN, with much smaller memory and register ",
+      "pdf_link": "https://arxiv.org/pdf/2611.18145.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.18145",
+      "submission_date": "2026-11-16T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 38.0,
+      "updated_at": "2026-11-16T14:43:02.866777+00:00"
+    },
+    {
       "forum_id": "usenix-fast26-7",
       "paper_number": 7,
       "title": "Bidaw: Enhancing Key-Value Caching for Interactive LLM Serving via Bidirectional Computation–Storage Awareness",
@@ -2452,6 +2498,29 @@
       "ratings": [],
       "score": 33.0,
       "updated_at": "2026-07-21T08:54:22.930905+00:00"
+    },
+    {
+      "forum_id": "2611.17659",
+      "paper_number": -1,
+      "title": "INC-SRv6: In-Network Route Exploration and Fast Failover Using Segment Routing Headers in Dynamic UAV Networks",
+      "authors": [
+        "Zhiyuan Ren, Zhao Li"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.17659v1 Announce Type: cross \nAbstract: Unmanned aerial vehicle (UAV) networks require a network provisioning mechanism that guarantees delivery and latency quality of service (QoS) under dynamic conditions in next-generation airborne mesh networks by continuously learning and repairing multi-hop paths under rapid link turnover without flooding the control plane. This paper presents INC-SRv6, an in-network computing routing mechanism that repurposes the IPv6 Segment Routing Header (SRH) and its Segments Left (SL) pointer into a self-learning, fast-failover distributed control plane. Rather than treating the SRH as a static source-committed vector, INC-SRv6 uses the active SL pointer to partition the segment list in flight: slots ahead of SL provide capacity for hop-by-hop next-h",
+      "pdf_link": "https://arxiv.org/pdf/2611.17659.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.17659",
+      "submission_date": "2026-11-16T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 32.5,
+      "updated_at": "2026-11-16T14:43:02.867210+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-41",
@@ -5191,6 +5260,29 @@
       "ratings": [],
       "score": 5.5,
       "updated_at": "2026-07-21T08:54:22.940695+00:00"
+    },
+    {
+      "forum_id": "2611.17827",
+      "paper_number": -1,
+      "title": "SIMTurn: Lightweight Divergent Subgroup Scheduling for Intra-Warp Synchronization",
+      "authors": [
+        "Nikhil Rout, Joe Samuel Rosh, Blaise Tine"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.17827v1 Announce Type: cross \nAbstract: Stack-based reconvergence enables efficient SIMT execution with a shared warp program counter and compact control-flow state. However, its fixed serialization of divergent paths can deadlock programs that rely on intra-warp synchronization: a spinning subgroup may prevent a resource-holding sibling from executing. Independent Thread Scheduling (ITS) enables finer-grained progress through per-thread execution state, but introduces additional hardware cost. We present SIMTurn, a lightweight compiler-hardware mechanism that enables forward progress among divergent subgroups while retaining stack-based reconvergence. SIMTurn combines a compiler-inserted yield instruction at potentially blocking loops with a bounded pool of resumable subgroups.",
+      "pdf_link": "https://arxiv.org/pdf/2611.17827.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.17827",
+      "submission_date": "2026-11-16T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.0,
+      "updated_at": "2026-11-16T14:43:02.867254+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-8",
