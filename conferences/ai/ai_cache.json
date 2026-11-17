@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-11-16T14:43:55.321555+00:00",
-  "paper_count": 31,
+  "last_updated": "2026-11-17T15:29:16.120293+00:00",
+  "paper_count": 30,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -214,29 +214,6 @@
       "ratings": [],
       "score": 31.5,
       "updated_at": "2026-08-14T07:42:39.058377+00:00"
-    },
-    {
-      "forum_id": "2611.13710",
-      "paper_number": -1,
-      "title": "AutoManifold: Agentic Design of Data Visualisation Algorithms via Manifold Embedding",
-      "authors": [
-        "Burak Susam, Ruiyuan Kang, Tingting Mu"
-      ],
-      "keywords": [
-        "cs.AI",
-        "NeurIPS"
-      ],
-      "abstract": "arXiv:2611.13710v2 Announce Type: replace \nAbstract: Manifold embedding for data visualisation is dominated by a small set of hand-designed state-of-the-art (SOTA) algorithms. Their design targets are fixed at development time, resulting in inflexible algorithmic behaviour that cannot be readily steered towards user-specified structural priorities. Hand-designing new embedding algorithms to address user priority requires highly specialised expertise and is time consuming. To address autonomous algorithm design tailored to user preference, we introduce an agentic algorithm generation pipeline AutoManifold. It composes new manifold embedding algorithms from a constrained vocabulary of affinity, cost, and optimisation primitives, supported by multi-agent large-language-model (LLM) orchestrati",
-      "pdf_link": "https://arxiv.org/pdf/2611.13710.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.13710",
-      "submission_date": "2026-11-16T05:00:00+00:00",
-      "conference": "NeurIPS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 31.0,
-      "updated_at": "2026-11-16T14:43:15.825834+00:00"
     },
     {
       "forum_id": "mlr-icml25-3",
