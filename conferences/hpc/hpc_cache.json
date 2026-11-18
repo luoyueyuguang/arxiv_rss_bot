@@ -1,100 +1,31 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-11-16T14:43:02.740726+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-11-18T15:03:32.662298+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2601.22585",
+      "forum_id": "2611.22160",
       "paper_number": -1,
-      "title": "HetCCL: Efficient LLM Training on Heterogeneous Vendor GPUs",
+      "title": "Collecting Infrastructure-Level Measures for Energy Analysis in Modern Computing Infrastructures",
       "authors": [
-        "Heehoon Kim, Chris Jaehwan Lee, Taejeoung Kim, Jongwon Park, Jinpyo Kim, Pyongwon Suh, Ryan H. Choi, Sangwoo Lee, Jaejin Lee"
+        "Isac Pasianotto, Stefano Cozzini, Niccolo Tosato"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2601.22585v2 Announce Type: replace \nAbstract: The rapid growth of large language models is driving organizations to expand their GPU clusters, often with GPUs from multiple vendors. However, current deep learning frameworks lack support for collective communication across heterogeneous GPUs, leading to inefficiency and higher costs. We present HetCCL, a collective communication library that unifies vendor-specific backends and enables RDMA-based communication across GPUs without requiring driver modifications. HetCCL introduces two novel mechanisms that enable cross-vendor communication while leveraging optimized vendor libraries, NVIDIA NCCL and AMD RCCL. Evaluations on a multi-vendor GPU cluster show that HetCCL matches NCCL and RCCL performance in homogeneous setups while uniquel",
-      "pdf_link": "https://arxiv.org/pdf/2601.22585.pdf",
-      "forum_link": "https://arxiv.org/abs/2601.22585",
-      "submission_date": "2026-11-16T05:00:00+00:00",
+      "abstract": "arXiv:2611.22160v1 Announce Type: new \nAbstract: Modern HPC facilities are complex environments in which all components are tightly coupled; consequently, precisely modeling and accounting for energy consumption requires approaches that go beyond instrumenting individual compute nodes. Aiming for a cluster-wide vision, we designed a scalable data collection pipeline that aggregates fine-grained measurements from multiple subsystems-spanning component loads, software and hardware counters, sensors and energy-ensuring consistent sampling frequencies and synchronized data acquisition across the infrastructure. We present a dataset of comprehensive metrics collected at 1 Hz over one month from a production research data center supporting heterogeneous workloads, including HPC, Kubernetes servi",
+      "pdf_link": "https://arxiv.org/pdf/2611.22160.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.22160",
+      "submission_date": "2026-11-18T05:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 66.5,
-      "updated_at": "2026-11-16T14:43:02.054205+00:00"
-    },
-    {
-      "forum_id": "2610.41525",
-      "paper_number": -1,
-      "title": "MemX: Memory-Aware Automatic Parallelism for Cross-Vendor Heterogeneous GPU Training",
-      "authors": [
-        "Lin Meng, Yuzhong Sun, Jie Zhu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2610.41525v2 Announce Type: replace \nAbstract: Cross-vendor heterogeneous GPU clusters are increasingly used for large-scale model training. However, their GPUs differ substantially in compute power, memory capacity, and interconnect characteristics. Existing automatic parallelism training systems usually minimize iteration time while treating memory as a hard constraint, almost failing in resolving the compute--memory asymmetry of cross-vendor clusters regardless correlation between memory and throughput. In this paper, we present MemX, a new memory-aware automatic parallelism system that jointly optimizes iteration time, peak memory usage, and cross-GPU memory balance. MemX consists of a weighted-product objective function, heterogeneous recomputation strategies, a minimal-set prof",
-      "pdf_link": "https://arxiv.org/pdf/2610.41525.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.41525",
-      "submission_date": "2026-11-16T05:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 66.5,
-      "updated_at": "2026-11-16T14:43:02.054363+00:00"
-    },
-    {
-      "forum_id": "2611.17850",
-      "paper_number": -1,
-      "title": "OrbitWeaver: LLM Agent Planning with Simulation Feedback for Optically Interconnected Orbital GPU Clusters",
-      "authors": [
-        "Pengcheng Luo, Bowen Zhang"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2611.17850v1 Announce Type: new \nAbstract: Space-based data-center designs increasingly consider GPU computing formations connected by inter-satellite optical links. With limited neighboring connections, jobs assigned disjoint GPUs can still contend on shared relay paths. Rank placement and communication priorities jointly affect this contention and the readiness of downstream computation. We present OrbitWeaver, an offline large language model (LLM) agent planner that jointly optimizes rank placement and communication order. Guided by communication structure, execution dependencies, and simulation feedback, the agent constructs and refines plans that coordinate shared-link access with computation progress. This coordination reduces contention and dependency blocking, shortening mean",
-      "pdf_link": "https://arxiv.org/pdf/2611.17850.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.17850",
-      "submission_date": "2026-11-16T05:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 44.0,
-      "updated_at": "2026-11-16T14:43:02.053746+00:00"
-    },
-    {
-      "forum_id": "2611.18459",
-      "paper_number": -1,
-      "title": "Callo: Serving Cache-Miss Requests with Speculative Decoding on Invalidated KV under Prefill-Decode Disaggregation",
-      "authors": [
-        "Jianjun Ou, Matthew Lentz"
-      ],
-      "keywords": [
-        "cs.DC",
-        "CLUSTER"
-      ],
-      "abstract": "arXiv:2611.18459v1 Announce Type: new \nAbstract: Agent sessions may involve frequent context edits, which effectively invalidate cached KV state and force requests to wait for re-prefill before decoding. We present Callo, a disaggregated serving system that leverages invalidated KV for speculative drafts to reduce this latency, while verifying drafts against the exact KV after prefill before committing tokens. Callo makes effective use of decode resources by scheduling speculations during periods of underutilization and preempting speculations when drafts are likely to not be accepted. We evaluated Callo on a two-GPU testbed using SWE-agent sessions across three model families, observing all-request speedups of 1.05-1.19x over vLLM at moderate load. We demonstrate that these gains are also",
-      "pdf_link": "https://arxiv.org/pdf/2611.18459.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.18459",
-      "submission_date": "2026-11-16T05:00:00+00:00",
-      "conference": "CLUSTER",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-11-16T14:43:02.053983+00:00"
+      "score": 15.5,
+      "updated_at": "2026-11-18T15:03:31.285637+00:00"
     }
   ]
 }

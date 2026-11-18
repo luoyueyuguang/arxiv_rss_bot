@@ -1,31 +1,54 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-11-16T14:43:01.989386+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-11-18T15:03:31.241417+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2611.18524",
+      "forum_id": "2611.21954",
       "paper_number": -1,
-      "title": "EventSpikeSeg: Memory-Aware Mixed-Signal Architecture for Event-Camera Spiking Segmentation",
+      "title": "ThermLeT: Transformer-based Temperature Prediction for 2.5D Chiplet Architecture",
       "authors": [
-        "Amir Mohammad Khadem Hosseini, Sattar Mirzakuchaki"
+        "Varun Darshana Parekh, Anusha Devulapally, Sivani Devarapalli, Cassius Henderson, Shimeng Yu, Vijaykrishnan Narayanan"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2611.18524v1 Announce Type: new \nAbstract: Event-camera segmentation requires persistent neural state despite sparse input events, making memory organization a central constraint on embedded implementation. We present EventSpikeSeg, a mixed-signal architecture combining resident capacitor memory with shared analog processing in GF180MCU 180-nm CMOS. Its 25-population spiking encoder-decoder has 143,824 synaptic weights but requires 30,976,000 membrane states at 440 x 640 resolution. The mapping specifies chronological 5-ms model updates, digital event/address services and 64-state capacitor banks. Characterization covers 22 module families and 74 operating points, distinguishing transistor simulations from digital-library estimates. Nominal results include 41.711 microwatts biased ne",
-      "pdf_link": "https://arxiv.org/pdf/2611.18524.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.18524",
-      "submission_date": "2026-11-16T05:00:00+00:00",
+      "abstract": "arXiv:2611.21954v1 Announce Type: new \nAbstract: The drive toward heterogeneous 2.5D chiplet packages promises unmatched performance and customization, yet the resulting density amplifies thermal challenges. To facilitate rapid design space exploration, we present ThermLeT, a multimodal transformer-based, scale invariant surrogate that integrates power density maps, spatial coordinate embeddings, material properties and heat transfer rate to predict steady state temperature in 13 ms, about four orders of magnitude faster than conventional finite element solvers such as ANSYS. To train the transformer model, we also create a dataset of 6,221 chiplet layouts perturbed from three representative architectures. On a 150 sample test set, ThermLeT achieves an RMSE of 3.16{\\deg}C and an MAE of 2.2",
+      "pdf_link": "https://arxiv.org/pdf/2611.21954.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.21954",
+      "submission_date": "2026-11-18T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-11-16T14:43:01.986448+00:00"
+      "score": 55.0,
+      "updated_at": "2026-11-18T15:03:31.238540+00:00"
+    },
+    {
+      "forum_id": "2611.22411",
+      "paper_number": -1,
+      "title": "KD-DSE: A Knowledge-Driven LLM Framework for Fast Microarchitecture Design Space Exploration",
+      "authors": [
+        "Siqing Fu, Xin Liu, Yuhan Tang, Hanqing Li, Feng Guo"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2611.22411v1 Announce Type: new \nAbstract: Domain-specific architectures have made design space exploration (DSE) a bottleneck of processor design, yet each candidate costs a full simulation, so exhaustive search is out of reach. Surrogate models need thousands of simulations before they predict reliably, and LLM agents that search directly hallucinate, lack cold-start architectural knowledge, and follow a fixed per-round policy. We present KD-DSE, a knowledge- driven LLM framework for fast microarchitecture DSE. KD- DSE couples a five-state constrained agent with real gem5- McPAT evaluation, retrieves architect-curated guidance from an Architecture Knowledge Base conditioned on the current search state and bottleneck diagnosis, and allocates its budget with a diagnosis-guided two-ph",
+      "pdf_link": "https://arxiv.org/pdf/2611.22411.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.22411",
+      "submission_date": "2026-11-18T05:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.5,
+      "updated_at": "2026-11-18T15:03:31.238641+00:00"
     }
   ]
 }

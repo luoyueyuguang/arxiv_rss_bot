@@ -1,77 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-11-16T14:43:55.478393+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-11-18T15:04:21.132659+00:00",
+  "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2512.03733",
+      "forum_id": "2611.22112",
       "paper_number": -1,
-      "title": "A Superfast Direct Solver for Type-III Inverse Nonuniform Discrete Fourier Transform",
+      "title": "Weak error estimates of a spectral Galerkin approximation to the stochastic Burgers equation driven by rough white noise",
       "authors": [
-        "Yingzhou Li, Jingyu Liu"
-      ],
-      "keywords": [
-        "cs.NA",
-        "SIAM"
-      ],
-      "abstract": "arXiv:2512.03733v2 Announce Type: replace \nAbstract: Various fields in scientific computing require the use of the nonuniform discrete Fourier transform (NUDFT) and its inversion. In [H. Wilber, E. N. Epperly, and A. H. Barnett, SIAM J. Sci. Comput., 47 (2025), pp. A1702-A1732], the authors proposed a direct inversion method for the type-II NUDFT, which achieves quasi-linear complexity by approximating the type-II NUDFT matrix as a product of a hierarchical semiseparable (HSS) matrix and a DFT matrix. In this article, we propose a novel superfast direct inversion method for type-III NUDFT. The proposed method approximates the type-III NUDFT matrix as a product of a type-II NUDFT matrix and an HSS matrix. This decomposition enables both the forward application and the backward inversion to ",
-      "pdf_link": "https://arxiv.org/pdf/2512.03733.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.03733",
-      "submission_date": "2026-11-16T05:00:00+00:00",
-      "conference": "SIAM",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-11-16T14:43:55.474572+00:00"
-    },
-    {
-      "forum_id": "2512.20777",
-      "paper_number": -1,
-      "title": "Improving Matrix Exponential for Generative AI Flows: A Taylor-Based Approach Beyond Paterson--Stockmeyer",
-      "authors": [
-        "Jorge Sastre, Daniel Faronbi, Jos\\'e Miguel Alonso, Peter Traver, Javier Ib\\'a\\~nez, Nuria Lloret"
-      ],
-      "keywords": [
-        "cs.NA",
-        "scientific computing"
-      ],
-      "abstract": "arXiv:2512.20777v3 Announce Type: replace-cross \nAbstract: The matrix exponential is a fundamental operator in scientific computing and system simulation, with applications ranging from control theory and quantum mechanics to modern generative machine learning. While Pad\\'e approximants combined with scaling and squaring have long served as the standard, recent Taylor-based methods, which utilize polynomial evaluation schemes that surpass the classical Paterson--Stockmeyer technique, offer superior accuracy and reduced computational complexity. This paper presents an optimized Taylor-based algorithm for the matrix exponential, specifically designed for the high-throughput requirements of generative AI flows. We provide a rigorous error analysis and develop a dynamic selection strategy for ",
-      "pdf_link": "https://arxiv.org/pdf/2512.20777.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.20777",
-      "submission_date": "2026-11-16T05:00:00+00:00",
-      "conference": "scientific computing",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-11-16T14:43:55.474900+00:00"
-    },
-    {
-      "forum_id": "2611.18545",
-      "paper_number": -1,
-      "title": "From smoothed analysis to backward error: The power of adaptive perturbations",
-      "authors": [
-        "Micha{\\l} Derezi\\'nski, Michael W. Mahoney, Raphael A. Meyer, Christopher Musco"
+        "Minxing Zhang, Yongkui Zou, Yanzhao Cao"
       ],
       "keywords": [
         "cs.NA",
         "numerical analysis"
       ],
-      "abstract": "arXiv:2611.18545v1 Announce Type: cross \nAbstract: Smoothed analysis has become a central tool in theoretical computer science, often allowing for significant improvements to worst-case running times if we settle for a solution to a small random perturbation of the problem instance. This is closely related to the classical concept of backward error in numerical analysis, which allows an algorithm to return a solution to an arbitrary perturbation of the problem.\n  Despite the qualitative similarity of these concepts, we show that they can exhibit large quantitative differences. Notably, we prove that, while a linear system with any $n \\times n$ matrix $A$ can be solved to backward error $\\epsilon$ using $O(\\log(n) / \\epsilon)$ matrix-vector products with $A$, any algorithm that solves a ran",
-      "pdf_link": "https://arxiv.org/pdf/2611.18545.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.18545",
-      "submission_date": "2026-11-16T05:00:00+00:00",
+      "abstract": "arXiv:2611.22112v1 Announce Type: new \nAbstract: In this paper, we investigate weak error estimates for a spectral Galerkin approximation to a stochastic Burgers equation driven by rough space-time white noise. The roughness of the driving noise results that the mild solution possesses only $L^\\infty$-regularity rather than any positive-order differentiability order regularity. The theory of classical numerical analysis reveals that the convergence rate of numerical solution is determined by the smoothness of the exact solution, and hence $L^\\infty$-regularity is insufficient to yield any positive convergence rate. Indeed, De Vecchi et al.\\ \\cite{DeVecchi2026} studied a spectral Galerkin approximation to such equation and only proved pathwise convergence. However, we aim to derive positive",
+      "pdf_link": "https://arxiv.org/pdf/2611.22112.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.22112",
+      "submission_date": "2026-11-18T05:00:00+00:00",
       "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-11-16T14:43:55.474473+00:00"
+      "score": 2.5,
+      "updated_at": "2026-11-18T15:04:21.130113+00:00"
     }
   ]
 }

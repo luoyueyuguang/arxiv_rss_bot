@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-11-17T15:28:35.215727+00:00",
-  "paper_count": 307,
+  "last_updated": "2026-11-18T15:03:50.121385+00:00",
+  "paper_count": 308,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -6551,6 +6551,29 @@
       "ratings": [],
       "score": 2.0,
       "updated_at": "2026-07-21T08:54:26.743211+00:00"
+    },
+    {
+      "forum_id": "2611.03181",
+      "paper_number": -1,
+      "title": "Multi-GPU Acceleration of Interface Problems in FEniCS, with Application to Cardiac Modeling",
+      "authors": [
+        "Edoardo Centofanti, Benjamin Pachev, Joshua Steyer, James D. Trotter, Pietro Benedusi"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.03181v2 Announce Type: replace-cross \nAbstract: GPU acceleration of finite element assembly is well established for standard formulations, but mixed-dimensional problems, in which volumetric subdomains are coupled via lower-dimensional interfaces, remain unsupported in automated frameworks such as FEniCS. We extend cuDOLFINx, a GPU-enabled extension of the DOLFINx finite element framework, to assemble such interface problems on GPUs while preserving the high-level FEniCS programming model. Combined with GPU-resident Krylov solvers and algebraic multigrid preconditioning, this enables end-to-end GPU execution of the EMI (Extracellular--Membrane--Intracellular) model, an elliptic interface problem from cardiac modeling in which many intracellular subdomains are coupled through mem",
+      "pdf_link": "https://arxiv.org/pdf/2611.03181.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.03181",
+      "submission_date": "2026-11-18T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-11-18T15:03:32.760486+00:00"
     },
     {
       "forum_id": "usenix-osdi26-15",
