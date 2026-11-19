@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-11-18T15:03:50.121385+00:00",
-  "paper_count": 308,
+  "last_updated": "2026-11-19T15:13:03.495032+00:00",
+  "paper_count": 317,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -572,6 +572,29 @@
       "ratings": [],
       "score": 68.0,
       "updated_at": "2026-07-21T08:54:17.404774+00:00"
+    },
+    {
+      "forum_id": "2610.38355",
+      "paper_number": -1,
+      "title": "A Flat KV Cache Storage Architecture for LLM Serving",
+      "authors": [
+        "Xin Huang, Teng Ma, Zhuoran Li, Yibo Zhao, Zhaoshi Li, Qianchao Zhu, Wei Yang, Chenxi Wang, Tao Xie, Youwei Zhuo"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2610.38355v2 Announce Type: replace-cross \nAbstract: KV cache reuse accelerates LLM serving, but existing systems manage host DRAM and NVMe SSD as a tiered hierarchy where DRAM acts as an intermediate cache. Production LLM workloads break both premises of this hierarchy. First, bimodal reuse defeats DRAM temporal filtering, since workloads are dominated either by one-shot blocks with long reuse distances or by multi-gigabyte agentic sessions that exceed DRAM capacity, putting SSD on the critical read path. Second, DRAM staging and eviction-ordered layout bottleneck SSD restoration. Holding host staging buffers for in-flight prefixes causes contention under load that aborts prefetches, while incremental eviction scatters a session's blocks across the SSD and prevents large sequential ",
+      "pdf_link": "https://arxiv.org/pdf/2610.38355.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.38355",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 67.0,
+      "updated_at": "2026-11-19T15:12:42.083542+00:00"
     },
     {
       "forum_id": "usenix-osdi26-80",
@@ -1472,6 +1495,29 @@
       "updated_at": "2026-07-21T08:54:26.744507+00:00"
     },
     {
+      "forum_id": "2611.24085",
+      "paper_number": -1,
+      "title": "LEDGE: An Efficient Simulator for Distributed LLM Serving on Heterogeneous Edge Devices",
+      "authors": [
+        "Zihao Wang, Ye Tian, Tajana Rosing, Nalini Venkatasubramanian"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.24085v1 Announce Type: new \nAbstract: Evaluating distributed large language model (LLM) serving on heterogeneous edge devices requires exploring diverse model partitions, device placements, and network conditions, making repeated physical experiments costly. An efficient simulator for edge LLM serving must support diverse, fine-grained placement configurations, capture runtime behavior, and accurately predict execution times while keeping simulation overhead low. We present LEDGE, a lightweight simulator for fast, fine-grained evaluation of distributed LLM serving on heterogeneous edge devices without executing tensor operations. LEDGE constructs event graphs supporting non-uniform tensor and pipeline parallelism, estimates execution costs using reusable performance models calib",
+      "pdf_link": "https://arxiv.org/pdf/2611.24085.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.24085",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 45.0,
+      "updated_at": "2026-11-19T15:12:42.126103+00:00"
+    },
+    {
       "forum_id": "usenix-nsdi26-133",
       "paper_number": 133,
       "title": "Agentix: An Efficient Serving Engine for LLM Agents as General Programs",
@@ -1570,6 +1616,29 @@
       "updated_at": "2026-07-21T08:54:22.925113+00:00"
     },
     {
+      "forum_id": "2611.22900",
+      "paper_number": -1,
+      "title": "blaris: Windowless Random-Access LZSS for Constrained Microcontrollers",
+      "authors": [
+        "Ihor Lukianov"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.22900v1 Announce Type: cross \nAbstract: Embedded LZ77 decompressors (such as heatshrink and tamp) require an in-RAM sliding window that couples memory usage to compression ratio and incurs high latency on random-access reads. We present blaris, a lightweight, windowless LZSS decompressor for execute-in-place (XIP) random access on constrained microcontrollers. By partitioning tokens into bidirectionally traversable streams with power-of-two checkpoints, blaris resolves back-references directly in the compressed payload, achieving compression ratios comparable to high-window heatshrink and tamp configurations without allocating a RAM window. Targeting compress-on-host, decompress-on-device workflows, blaris assumes trusted build-time payloads and omits runtime error and bounds ch",
+      "pdf_link": "https://arxiv.org/pdf/2611.22900.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.22900",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 44.0,
+      "updated_at": "2026-11-19T15:12:42.083158+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-70",
       "paper_number": 70,
       "title": "Ambulance: Saving BFT through Racing",
@@ -1614,6 +1683,29 @@
       "ratings": [],
       "score": 44.0,
       "updated_at": "2026-07-21T08:54:22.926994+00:00"
+    },
+    {
+      "forum_id": "2611.23512",
+      "paper_number": -1,
+      "title": "DexAttention: Distributed Sparse Attention through Rapid Online Planning and Persistent GPU Execution",
+      "authors": [
+        "Sirui Chen, Xuehai Qian"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.23512v1 Announce Type: new \nAbstract: Sparse attention reduces computation, but distributed execution may still transfer unnecessary data and incur substantial per-operation overhead. Mask-aware assignment and scheduling can reduce these costs, but replanning for dynamic masks must be cheaper than the execution time it saves. We present DexAttention, a distributed sparse attention system that co-designs fast online planning with persistent execution. Its assigner uses GPU-accelerated, topology-aware clustering to balance computational load and reduce communication. A lightweight greedy scheduler orders coarse communication and computation operations, while a persistent kernel on each GPU enforces fine-grained dependencies and dispatches ready tasks. This division keeps detailed ",
+      "pdf_link": "https://arxiv.org/pdf/2611.23512.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.23512",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 43.5,
+      "updated_at": "2026-11-19T15:12:42.125678+00:00"
     },
     {
       "forum_id": "usenix-osdi26-57",
@@ -2403,6 +2495,29 @@
       "ratings": [],
       "score": 33.5,
       "updated_at": "2026-07-21T08:54:26.741832+00:00"
+    },
+    {
+      "forum_id": "2611.24833",
+      "paper_number": -1,
+      "title": "DispersedBFT: Bottleneck-Free Primary-Backup Consensus using Dispersed Replication",
+      "authors": [
+        "Nancy Kansal, Celine Sana, Jelle Hellings"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.24833v1 Announce Type: cross \nAbstract: The advent of blockchains is fueling the development of novel resilient data management systems (RDSs). Typically, these RDSs are managed using a primary-backup design using a consensus protocol such as PBFT. In these primary-backup designs, a single participant, the primary, is responsible for coordinating the replication and execution of requests. Unfortunately, the central role of the primary makes it a bottleneck that drastically limits performance.\n  In this paper, we propose DispersedBFT, a high performance PBFT-like consensus protocol that utilizes dispersed replication to eliminate the primary bottleneck of PBFT-like consensus. In specific, DispersedBFT uses information dispersal to distribute the task of replicating request from t",
+      "pdf_link": "https://arxiv.org/pdf/2611.24833.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.24833",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 33.0,
+      "updated_at": "2026-11-19T15:12:42.127588+00:00"
     },
     {
       "forum_id": "usenix-osdi26-29",
@@ -3373,6 +3488,29 @@
       "updated_at": "2026-07-21T08:54:26.740162+00:00"
     },
     {
+      "forum_id": "2611.24496",
+      "paper_number": -1,
+      "title": "Harvesting Expert-Parallel Bubbles for Fine-Tuning",
+      "authors": [
+        "Oana Balmau, Saurav Banka, Jiaxuan Chen, Anne-Marie Kermarrec, Ramya Narasimha Prabhu, Rafael Pires, Mathis Randl, Martijn de Vos"
+      ],
+      "keywords": [
+        "cs.OS",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.24496v1 Announce Type: new \nAbstract: GPUs are expensive, yet latency-critical large language model (LLM) inference leaves part of them idle. Colocation reclaims this capacity by running best-effort work, such as fine-tuning, alongside serving. Many leading LLMs now use a Mixture-of-Experts (MoE) architecture, which adds a new source of idle time. Under expert parallelism, MoE experts are spread across GPUs, and because the router sends uneven numbers of tokens to each GPU, lightly loaded GPUs wait for the most loaded one. Even after applying load balancing solutions, such bubbles still take 8--13% of prefill time.\n  We present BubbleTea, the first colocation system that leverages expert-parallel bubbles for fine-tuning. Unlike existing colocation systems, which make one schedul",
+      "pdf_link": "https://arxiv.org/pdf/2611.24496.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.24496",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 16.5,
+      "updated_at": "2026-11-19T15:12:42.083019+00:00"
+    },
+    {
       "forum_id": "usenix-osdi26-109",
       "paper_number": 109,
       "title": "TrainMover: An Interruption-Resilient Runtime for ML Training",
@@ -3652,6 +3790,29 @@
       "ratings": [],
       "score": 15.0,
       "updated_at": "2026-07-21T08:54:26.741587+00:00"
+    },
+    {
+      "forum_id": "2611.23848",
+      "paper_number": -1,
+      "title": "A Fast, Programmable GPU-to-CPU Invocation Layer for GPU-Initiated Communication",
+      "authors": [
+        "Jiakun Yan, Shiksha Patel, David Sidler, Gengyu Rao, Brandon Potter, Bradford Beckmann"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.23848v1 Announce Type: new \nAbstract: Modern GPU workloads increasingly rely on device-initiated communication to let GPU kernels communicate directly without synchronizing with the host at kernel boundaries. Existing libraries commonly favor placing transport control on GPU threads, an approach known as GPUDirect Async (GDA), and treat reverse offload to host proxy threads as a slower fallback. We argue that reverse offload can outperform GDA and should be a first-class communication path. We further propose exposing reverse offload as a programming interface that lets users define workload-specific communication operations.\n  We present KIWI, a programmable reverse-offload framework that achieves sub-microsecond one-way device-to-host latency and hundreds of millions of operat",
+      "pdf_link": "https://arxiv.org/pdf/2611.23848.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.23848",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.5,
+      "updated_at": "2026-11-19T15:12:42.125842+00:00"
     },
     {
       "forum_id": "usenix-osdi26-41",
@@ -4084,6 +4245,29 @@
       "ratings": [],
       "score": 13.5,
       "updated_at": "2026-07-21T08:54:26.743933+00:00"
+    },
+    {
+      "forum_id": "2611.16301",
+      "paper_number": -1,
+      "title": "Local Coordination for Efficient Small-Model RL on TPUs",
+      "authors": [
+        "Loki Chen, Gregory B. Rehm, Yang Song, Hongye Xie, Ming Lei, Chongyang Bai, Bob Kamma, Mingfu Liang, Kavosh Asadi, Yufei Li, Xi Liu, Jay Xu, Rui Liu, Maziar Sanjabi, Luke Simon, Hamed Firooz"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.16301v3 Announce Type: replace-cross \nAbstract: Reinforcement learning (RL) increasingly targets small language models, and executing these workloads efficiently across multiple accelerators requires effective coordination. On TPUs, Pathways-based RL uses a single controller to coordinate computation across hosts. This execution model is effective for large models, but its coordination computational costs are harder to amortize when small models repeatedly invoke short computations. To characterize these computational costs, we sweep dense models from 0.6B to 405B parameters on TPU v7x under a decode-heavy workload and measure how host and network computational overhead vary with model size. At 0.6B, host orchestration occupies 36% of step time and network communication 2%, wher",
+      "pdf_link": "https://arxiv.org/pdf/2611.16301.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.16301",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.0,
+      "updated_at": "2026-11-19T15:12:42.128302+00:00"
     },
     {
       "forum_id": "usenix-osdi26-37",
@@ -5118,6 +5302,29 @@
       "ratings": [],
       "score": 6.0,
       "updated_at": "2026-07-21T08:54:26.737683+00:00"
+    },
+    {
+      "forum_id": "2611.24458",
+      "paper_number": -1,
+      "title": "A Runtime System for Mitigating Crossbar Port Contention on SM-Partitioned GPUs",
+      "authors": [
+        "Ziwen Wang, Qi Luo, Kunlin Li, Changxi Liu, Dongsheng Wang, Yun Chen"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2611.24458v1 Announce Type: new \nAbstract: To avoid scheduling delays when running concurrent workloads on a GPU, Streaming Multiprocessor (SM) partitioning mechanisms such as CUDA Green Contexts restrict each workload to separate SMs. Despite this partitioning, concurrent workloads still significantly slow down latency-critical workloads, which recent studies attribute to shared L2 cache and memory contention. However, contention also occurs at the crossbar ports connecting each Graphics Processing Cluster (GPC) of SMs to the L2 cache, as all SMs in a GPC share one port. Green Contexts spread workloads across GPCs, placing concurrent workloads in the same GPCs and forcing latency-critical memory requests to queue behind background requests. Packing workloads into separate GPCs avoid",
+      "pdf_link": "https://arxiv.org/pdf/2611.24458.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.24458",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 5.5,
+      "updated_at": "2026-11-19T15:12:42.126471+00:00"
     },
     {
       "forum_id": "usenix-nsdi26-46",
@@ -6553,29 +6760,6 @@
       "updated_at": "2026-07-21T08:54:26.743211+00:00"
     },
     {
-      "forum_id": "2611.03181",
-      "paper_number": -1,
-      "title": "Multi-GPU Acceleration of Interface Problems in FEniCS, with Application to Cardiac Modeling",
-      "authors": [
-        "Edoardo Centofanti, Benjamin Pachev, Joshua Steyer, James D. Trotter, Pietro Benedusi"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.03181v2 Announce Type: replace-cross \nAbstract: GPU acceleration of finite element assembly is well established for standard formulations, but mixed-dimensional problems, in which volumetric subdomains are coupled via lower-dimensional interfaces, remain unsupported in automated frameworks such as FEniCS. We extend cuDOLFINx, a GPU-enabled extension of the DOLFINx finite element framework, to assemble such interface problems on GPUs while preserving the high-level FEniCS programming model. Combined with GPU-resident Krylov solvers and algebraic multigrid preconditioning, this enables end-to-end GPU execution of the EMI (Extracellular--Membrane--Intracellular) model, an elliptic interface problem from cardiac modeling in which many intracellular subdomains are coupled through mem",
-      "pdf_link": "https://arxiv.org/pdf/2611.03181.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.03181",
-      "submission_date": "2026-11-18T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-11-18T15:03:32.760486+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-15",
       "paper_number": 15,
       "title": "Extracting Database Access-Control Policies from Web Applications",
@@ -6691,6 +6875,29 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
+    },
+    {
+      "forum_id": "2607.21653",
+      "paper_number": -1,
+      "title": "MOLT: A Hugging Face-Native, Minimal, and Scalable Framework for Agentic Reinforcement Learning",
+      "authors": [
+        "Jian Hu, Huiying Li, Hao Zhang, Binfeng Xu, Yifan Zhang, Shaokun Zhang, Hemil Desai, Michael Demoret, Pavlo Molchanov, Jan Kautz, Yi Dong"
+      ],
+      "keywords": [
+        "cs.DC",
+        "FAST"
+      ],
+      "abstract": "arXiv:2607.21653v4 Announce Type: replace-cross \nAbstract: Agentic reinforcement learning (RL) research iterates quickly on agents, rewards, and learning algorithms, while policies have grown to hundreds of billions of parameters and beyond. Existing open frameworks force a choice: those that are easy to modify do not scale to the largest models, and those that scale rely on Megatron, which needs dedicated bridge code for every model family and several times more framework code. We present MOLT, an open-source framework built for research that is Hugging Face-native, minimal, and scalable. Its code is easy to modify: the entire RL path is approximately 9.2K lines of Python with one training backend and one rollout engine, so a researcher or an AI coding agent can read it in full and edit t",
+      "pdf_link": "https://arxiv.org/pdf/2607.21653.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.21653",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "FAST",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-11-19T15:12:42.128169+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",

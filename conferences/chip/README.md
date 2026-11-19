@@ -1,16 +1,17 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-11-18 15:03:50 UTC
-- **Total Filtered Papers**: 5
-- **Displaying**: 5 (arxiv: 5)
+- **Last Updated**: 2026-11-19 15:13:03 UTC
+- **Total Filtered Papers**: 6
+- **Displaying**: 6 (arxiv: 6)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Chimera: A Configurable LLM Decode Accelerator Architecture with Compute-Memory-Floorplan Co-Design for HBM-Equipped Multi-Die FPGAs](https://arxiv.org/abs/2611.21677) | `ARXIV` | 16.0 |
-| 2 | [WaferTetris: Efficient Freeform Mapping on Wafer-Scale Accelerators](https://arxiv.org/abs/2611.18527) | `ARXIV` | 2.0 |
-| 3 | [Gateway-Free Kafka Streaming from FPGA-Based Detectors: A Bare-Metal Pipelined Producer on Zynq-7000](https://arxiv.org/abs/2611.22674) | `ARXIV` | 1.5 |
-| 4 | [Multicore Quantum Architecture for Scalable and Energy-Aware Green IoT Computing](https://arxiv.org/abs/2611.21663) | `ARXIV` | 1.0 |
-| 5 | [KD-DSE: A Knowledge-Driven LLM Framework for Fast Microarchitecture Design Space Exploration](https://arxiv.org/abs/2611.22411) | `ARXIV` | 1.0 |
+| 1 | [How to Turn an Attention Neural Network into an Interpretable Hard-Logic Predicate Circuit: Truth-Table Predicate Extraction and State-Machine Merging under Ship-of-Theseus Replacement](https://arxiv.org/abs/2611.24381) | `ARXIV` | 33.0 |
+| 2 | [KatoANN: Enabling Near-Exact Vector Search at the Speed of Lossy Scans with CPU Matrix Engines](https://arxiv.org/abs/2610.27508) | `ARXIV` | 2.5 |
+| 3 | [Mechanistic Critics for Sample-Efficient NPU Design-Space Exploration](https://arxiv.org/abs/2611.24733) | `ARXIV` | 2.0 |
+| 4 | [PULSAR-V: I/O-Aware Post-Update Attestation for RISC-V](https://arxiv.org/abs/2611.24135) | `ARXIV` | 1.0 |
+| 5 | [Contour: Extensible Mapping Surfaces for Agentic Accelerator Kernel Generation](https://arxiv.org/abs/2608.00894) | `ARXIV` | 1.0 |
+| 6 | [Programmable Probabilistic Computer with 1,000,000 p-bits](https://arxiv.org/abs/2606.25313) | `ARXIV` | 1.0 |

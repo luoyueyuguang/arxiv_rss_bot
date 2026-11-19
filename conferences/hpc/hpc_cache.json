@@ -1,31 +1,123 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-11-18T15:03:32.662298+00:00",
-  "paper_count": 1,
+  "last_updated": "2026-11-19T15:12:42.052306+00:00",
+  "paper_count": 5,
   "papers": [
     {
-      "forum_id": "2611.22160",
+      "forum_id": "2606.05951",
       "paper_number": -1,
-      "title": "Collecting Infrastructure-Level Measures for Energy Analysis in Modern Computing Infrastructures",
+      "title": "Demystifying NVSHMEM: A System-Level Analysis on Symmetric Memory and Device-Initiated Operations in GPU Communication",
       "authors": [
-        "Isac Pasianotto, Stefano Cozzini, Niccolo Tosato"
+        "Yijun Ma, Siyuan Shen, Tiancheng Chen, Akhil Langer, Jiri Kraus, Benjamin Glick, Craig Belusar, Jeff Hammond, Torsten Hoefler"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2611.22160v1 Announce Type: new \nAbstract: Modern HPC facilities are complex environments in which all components are tightly coupled; consequently, precisely modeling and accounting for energy consumption requires approaches that go beyond instrumenting individual compute nodes. Aiming for a cluster-wide vision, we designed a scalable data collection pipeline that aggregates fine-grained measurements from multiple subsystems-spanning component loads, software and hardware counters, sensors and energy-ensuring consistent sampling frequencies and synchronized data acquisition across the infrastructure. We present a dataset of comprehensive metrics collected at 1 Hz over one month from a production research data center supporting heterogeneous workloads, including HPC, Kubernetes servi",
-      "pdf_link": "https://arxiv.org/pdf/2611.22160.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.22160",
-      "submission_date": "2026-11-18T05:00:00+00:00",
+      "abstract": "arXiv:2606.05951v2 Announce Type: replace \nAbstract: NVSHMEM is NVIDIA's OpenSHMEM-based PGAS communication library for GPU clusters, enabling GPU-initiated, one-sided communication through symmetric memory. Despite its growing adoption, a system-level understanding of its design and behavior remains scattered across documentation, source code, and application experience. This paper presents a concise study of NVSHMEM's programming model, implementation, and performance characteristics, focusing on symmetric memory, one-sided operations, and device-side collectives. We also examine DeepEP as a case study of NVSHMEM in performance-critical sparse deep learning workloads. Our analysis shows that NVSHMEM pioneered a device-side symmetric-memory programming model that enables fine-grained GPU-",
+      "pdf_link": "https://arxiv.org/pdf/2606.05951.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.05951",
+      "submission_date": "2026-11-19T05:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 15.5,
-      "updated_at": "2026-11-18T15:03:31.285637+00:00"
+      "score": 87.0,
+      "updated_at": "2026-11-19T15:12:40.780567+00:00"
+    },
+    {
+      "forum_id": "2611.23512",
+      "paper_number": -1,
+      "title": "DexAttention: Distributed Sparse Attention through Rapid Online Planning and Persistent GPU Execution",
+      "authors": [
+        "Sirui Chen, Xuehai Qian"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2611.23512v1 Announce Type: new \nAbstract: Sparse attention reduces computation, but distributed execution may still transfer unnecessary data and incur substantial per-operation overhead. Mask-aware assignment and scheduling can reduce these costs, but replanning for dynamic masks must be cheaper than the execution time it saves. We present DexAttention, a distributed sparse attention system that co-designs fast online planning with persistent execution. Its assigner uses GPU-accelerated, topology-aware clustering to balance computational load and reduce communication. A lightweight greedy scheduler orders coarse communication and computation operations, while a persistent kernel on each GPU enforces fine-grained dependencies and dispatches ready tasks. This division keeps detailed ",
+      "pdf_link": "https://arxiv.org/pdf/2611.23512.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.23512",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 48.5,
+      "updated_at": "2026-11-19T15:12:40.779235+00:00"
+    },
+    {
+      "forum_id": "2611.24458",
+      "paper_number": -1,
+      "title": "A Runtime System for Mitigating Crossbar Port Contention on SM-Partitioned GPUs",
+      "authors": [
+        "Ziwen Wang, Qi Luo, Kunlin Li, Changxi Liu, Dongsheng Wang, Yun Chen"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2611.24458v1 Announce Type: new \nAbstract: To avoid scheduling delays when running concurrent workloads on a GPU, Streaming Multiprocessor (SM) partitioning mechanisms such as CUDA Green Contexts restrict each workload to separate SMs. Despite this partitioning, concurrent workloads still significantly slow down latency-critical workloads, which recent studies attribute to shared L2 cache and memory contention. However, contention also occurs at the crossbar ports connecting each Graphics Processing Cluster (GPC) of SMs to the L2 cache, as all SMs in a GPC share one port. Green Contexts spread workloads across GPCs, placing concurrent workloads in the same GPCs and forcing latency-critical memory requests to queue behind background requests. Packing workloads into separate GPCs avoid",
+      "pdf_link": "https://arxiv.org/pdf/2611.24458.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.24458",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 34.0,
+      "updated_at": "2026-11-19T15:12:40.779914+00:00"
+    },
+    {
+      "forum_id": "2611.23857",
+      "paper_number": -1,
+      "title": "Neural Memory Orchestration",
+      "authors": [
+        "Michael Zizov, Boris Morose"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2611.23857v1 Announce Type: new \nAbstract: Modern HPC workloads increasingly stall on the memory hierarchy rather than on compute, and page faults from mmap'd files, swap, and tiered memory are a growing fraction of wall time. Heuristic prefetchers in the kernel handle stride-like and temporally clustered patterns well but degrade sharply on the irregular, data-dependent access streams typical of these workloads. Learned prefetchers have been shown to capture such patterns in simulation but have not been taken to a deployed pipeline running against live workloads on real hardware. We present Overseer, an end-to-end learned page-prefetching system. An eBPF collector observes page faults on the target host, a transformer predictor (OverNet) runs on network-attached inference hardware a",
+      "pdf_link": "https://arxiv.org/pdf/2611.23857.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.23857",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.0,
+      "updated_at": "2026-11-19T15:12:40.779547+00:00"
+    },
+    {
+      "forum_id": "2606.21712",
+      "paper_number": -1,
+      "title": "BatchGen: An Architecture for Scalable and Efficient Batch Inference",
+      "authors": [
+        "Tairan Xu, Leyang Xue, Zhan Lu, Jinfu Deng, Hongyang Xiao, Yinsicheng Jiang, Congjie He, Matej Sandor, Le Xu, Luo Mai"
+      ],
+      "keywords": [
+        "cs.DC",
+        "CLUSTER"
+      ],
+      "abstract": "arXiv:2606.21712v2 Announce Type: replace \nAbstract: Batch inference has become a central mode of AI computation, yet existing inference engines still rely on execution models designed for interactive serving. When scaled to millions of sequences, batch workloads reveal two fundamental requirements: the ability to handle extreme inter- and intra-sequence load variation that emerges only at runtime, and the ability to sustain high utilization across large fleets of GPUs. Existing systems fail to meet these requirements, losing substantial fractions of achievable throughput.\n  We introduce a new architectural foundation for batch inference: the sequence coroutine compute model, which represents each sequence as a fine-grained, event-driven coroutine. This model exposes expressive primitives ",
+      "pdf_link": "https://arxiv.org/pdf/2606.21712.pdf",
+      "forum_link": "https://arxiv.org/abs/2606.21712",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "CLUSTER",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-11-19T15:12:40.780620+00:00"
     }
   ]
 }

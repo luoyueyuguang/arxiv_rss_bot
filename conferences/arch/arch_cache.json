@@ -1,54 +1,100 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-11-18T15:03:31.241417+00:00",
-  "paper_count": 2,
+  "last_updated": "2026-11-19T15:12:40.732399+00:00",
+  "paper_count": 4,
   "papers": [
     {
-      "forum_id": "2611.21954",
+      "forum_id": "2611.24437",
       "paper_number": -1,
-      "title": "ThermLeT: Transformer-based Temperature Prediction for 2.5D Chiplet Architecture",
+      "title": "Dissecting an Unexplored SASS Control-Code Field: Barrier Exemption and Programmable Warp Priority",
       "authors": [
-        "Varun Darshana Parekh, Anusha Devulapally, Sivani Devarapalli, Cassius Henderson, Shimeng Yu, Vijaykrishnan Narayanan"
+        "Ziwen Wang, Qi Luo, Kunlin Li, Changxi Liu, Dongsheng Wang, Yun Chen"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2611.21954v1 Announce Type: new \nAbstract: The drive toward heterogeneous 2.5D chiplet packages promises unmatched performance and customization, yet the resulting density amplifies thermal challenges. To facilitate rapid design space exploration, we present ThermLeT, a multimodal transformer-based, scale invariant surrogate that integrates power density maps, spatial coordinate embeddings, material properties and heat transfer rate to predict steady state temperature in 13 ms, about four orders of magnitude faster than conventional finite element solvers such as ANSYS. To train the transformer model, we also create a dataset of 6,221 chiplet layouts perturbed from three representative architectures. On a 150 sample test set, ThermLeT achieves an RMSE of 3.16{\\deg}C and an MAE of 2.2",
-      "pdf_link": "https://arxiv.org/pdf/2611.21954.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.21954",
-      "submission_date": "2026-11-18T05:00:00+00:00",
+      "abstract": "arXiv:2611.24437v1 Announce Type: new \nAbstract: Every instruction in NVIDIA's native GPU ISA (SASS) carries a control code that guides hardware scheduling, and prior work has decoded its known fields to optimize GPU kernels. However, one control-code field remains unexplored: it appears over 500000 times in NVIDIA's closed-source libraries such as cuBLAS and cuDNN, yet nvcc never emits it when compiling user programs. This paper presents the first systematic study of this control-code field across GPU architectures from Volta to Blackwell. Using instruction-level microbenchmarks, we show that the field controls two independent hardware mechanisms: barrier exemption (EXEMPT), which allows instructions blocked by a pending barrier to issue early during the barrier wait, and programmable war",
+      "pdf_link": "https://arxiv.org/pdf/2611.24437.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.24437",
+      "submission_date": "2026-11-19T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 55.0,
-      "updated_at": "2026-11-18T15:03:31.238540+00:00"
+      "score": 43.0,
+      "updated_at": "2026-11-19T15:12:40.725871+00:00"
     },
     {
-      "forum_id": "2611.22411",
+      "forum_id": "2611.24460",
       "paper_number": -1,
-      "title": "KD-DSE: A Knowledge-Driven LLM Framework for Fast Microarchitecture Design Space Exploration",
+      "title": "TechReport: Implementing CHERI in gem5",
       "authors": [
-        "Siqing Fu, Xin Liu, Yuhan Tang, Hanqing Li, Feng Guo"
+        "Philipp Schmitz, Vishwas Vasuki Gautam, Tobias Jauch, Anna Lena Duque Ant\\'on, Johannes M\\\"uller, Dominik Stoffel, Wolfgang Kunz"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2611.22411v1 Announce Type: new \nAbstract: Domain-specific architectures have made design space exploration (DSE) a bottleneck of processor design, yet each candidate costs a full simulation, so exhaustive search is out of reach. Surrogate models need thousands of simulations before they predict reliably, and LLM agents that search directly hallucinate, lack cold-start architectural knowledge, and follow a fixed per-round policy. We present KD-DSE, a knowledge- driven LLM framework for fast microarchitecture DSE. KD- DSE couples a five-state constrained agent with real gem5- McPAT evaluation, retrieves architect-curated guidance from an Architecture Knowledge Base conditioned on the current search state and bottleneck diagnosis, and allocates its budget with a diagnosis-guided two-ph",
-      "pdf_link": "https://arxiv.org/pdf/2611.22411.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.22411",
-      "submission_date": "2026-11-18T05:00:00+00:00",
+      "abstract": "arXiv:2611.24460v1 Announce Type: new \nAbstract: Despite countless mitigation efforts, memory safety issues still prevail. The recently discovered security issues in PHP underline this fact. One of the most promising approaches to solving this problem is the concept of Capability Hardware Enhanced RISC Instructions (CHERI). There is a well-developed ecosystem of ISA simulators, compilers, operating systems, and hardware designs that support CHERI. However, the lack of a simulator modeling microarchitectural detail hinders efficient and fast design space exploration for CHERI-enhanced designs means the performance impact of CHERI remains understudied. Therefore, we present gem5-CHERI: a CHERI-enhanced adaptation of the gem5 simulator that can boot the CheriBSD operating system and run custo",
+      "pdf_link": "https://arxiv.org/pdf/2611.24460.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.24460",
+      "submission_date": "2026-11-19T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 12.5,
-      "updated_at": "2026-11-18T15:03:31.238641+00:00"
+      "score": 42.5,
+      "updated_at": "2026-11-19T15:12:40.725890+00:00"
+    },
+    {
+      "forum_id": "2611.24872",
+      "paper_number": -1,
+      "title": "MicroAssert: Microarchitecture-Aware Structured Assertion Generation for CPU Verification",
+      "authors": [
+        "Hongqin Lyu, Yonghao Wang, Zhiteng Chao, Wenxing Li, Tiancheng Wang, Evangeline F. Y. Young, Huawei Li"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2611.24872v1 Announce Type: new \nAbstract: Automatic assertion generation reduces manual verification effort, yet existing approaches struggle to capture microarchitectural behaviors and cross-region interactions in CPUs. We present MicroAssert, a microarchitecture-aware framework that identifies functional regions directly from RTL and generates local and composite assertions through structured contracts and deterministic verification primitives. Coverage-guided feedback further improves verification completeness by progressively expanding proof-relevant RTL coverage. Evaluated on five open-source RISC-V CPUs against three existing assertion generation approaches, MicroAssert achieves 100% syntax correctness and complete branch, statement, and toggle coverage, with an average proven",
+      "pdf_link": "https://arxiv.org/pdf/2611.24872.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.24872",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 14.5,
+      "updated_at": "2026-11-19T15:12:40.725962+00:00"
+    },
+    {
+      "forum_id": "2611.23520",
+      "paper_number": -1,
+      "title": "BeFit: Shifting Complexity from Weights to Bernstein Activations for Resource-Constrained Sensing",
+      "authors": [
+        "Malak Gamal El-Din, Yasser Shoukry, Salma Elmalaki"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2611.23520v1 Announce Type: cross \nAbstract: Time-series sensing increasingly relies on neural networks, yet deployment on resource-constrained microcontrollers remains challenging. Aggressive model compression can reduce accuracy, while restricting weights to multiplication-free representations introduces further losses. We present BeFit, an end-to-end framework that shifts model capacity from weights to learnable Bernstein polynomial activations. BeFit (i) finds compact Bernstein-activated convolutional neural networks (BeCNNs) through hardware-aware neural architecture search and trains them via knowledge distillation; (ii) projects their weights to multiplication-free codes, freezes the codes, and recovers the resulting accuracy loss through the learnable activations; and (iii) g",
+      "pdf_link": "https://arxiv.org/pdf/2611.23520.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.23520",
+      "submission_date": "2026-11-19T05:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-11-19T15:12:40.726017+00:00"
     }
   ]
 }

@@ -1,13 +1,15 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-11-18 15:03:31 UTC
-- **Total Filtered Papers**: 2
-- **Displaying**: 2 (arxiv: 2)
+- **Last Updated**: 2026-11-19 15:12:40 UTC
+- **Total Filtered Papers**: 4
+- **Displaying**: 4 (arxiv: 4)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [ThermLeT: Transformer-based Temperature Prediction for 2.5D Chiplet Architecture](https://arxiv.org/abs/2611.21954) | `ARXIV` | 55.0 |
-| 2 | [KD-DSE: A Knowledge-Driven LLM Framework for Fast Microarchitecture Design Space Exploration](https://arxiv.org/abs/2611.22411) | `ARXIV` | 12.5 |
+| 1 | [Dissecting an Unexplored SASS Control-Code Field: Barrier Exemption and Programmable Warp Priority](https://arxiv.org/abs/2611.24437) | `ARXIV` | 43.0 |
+| 2 | [TechReport: Implementing CHERI in gem5](https://arxiv.org/abs/2611.24460) | `ARXIV` | 42.5 |
+| 3 | [MicroAssert: Microarchitecture-Aware Structured Assertion Generation for CPU Verification](https://arxiv.org/abs/2611.24872) | `ARXIV` | 14.5 |
+| 4 | [BeFit: Shifting Complexity from Weights to Bernstein Activations for Resource-Constrained Sensing](https://arxiv.org/abs/2611.23520) | `ARXIV` | 12.0 |
