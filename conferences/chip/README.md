@@ -1,6 +1,6 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-11-19 15:13:03 UTC
+- **Last Updated**: 2026-11-20 14:55:16 UTC
 - **Total Filtered Papers**: 6
 - **Displaying**: 6 (arxiv: 6)
 - **Papers with Ratings**: 0
@@ -9,9 +9,9 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [How to Turn an Attention Neural Network into an Interpretable Hard-Logic Predicate Circuit: Truth-Table Predicate Extraction and State-Machine Merging under Ship-of-Theseus Replacement](https://arxiv.org/abs/2611.24381) | `ARXIV` | 33.0 |
-| 2 | [KatoANN: Enabling Near-Exact Vector Search at the Speed of Lossy Scans with CPU Matrix Engines](https://arxiv.org/abs/2610.27508) | `ARXIV` | 2.5 |
-| 3 | [Mechanistic Critics for Sample-Efficient NPU Design-Space Exploration](https://arxiv.org/abs/2611.24733) | `ARXIV` | 2.0 |
-| 4 | [PULSAR-V: I/O-Aware Post-Update Attestation for RISC-V](https://arxiv.org/abs/2611.24135) | `ARXIV` | 1.0 |
-| 5 | [Contour: Extensible Mapping Surfaces for Agentic Accelerator Kernel Generation](https://arxiv.org/abs/2608.00894) | `ARXIV` | 1.0 |
-| 6 | [Programmable Probabilistic Computer with 1,000,000 p-bits](https://arxiv.org/abs/2606.25313) | `ARXIV` | 1.0 |
+| 1 | [Native FPGA Hard-Block Implementation from High-Level Synthesis](https://arxiv.org/abs/2611.25281) | `ARXIV` | 35.0 |
+| 2 | [Bottom-Up FPGA Reconfigurable Accelerator Overlay Generation](https://arxiv.org/abs/2611.25293) | `ARXIV` | 3.5 |
+| 3 | [Flex-Plorer: A Precision-Aware Hardware-Software Co-Design Framework for an Edge SNN Accelerator](https://arxiv.org/abs/2602.18140) | `ARXIV` | 3.0 |
+| 4 | [BROAD: Bit-Parallel Row-Oriented Arithmetic in DRAM](https://arxiv.org/abs/2610.02502) | `ARXIV` | 1.0 |
+| 5 | [TRANSIT: Transparent Scale-in for Multi-Node LLM Training](https://arxiv.org/abs/2610.07593) | `ARXIV` | 1.0 |
+| 6 | [LazyWeights: Decode-on-Demand Edge LLMs](https://arxiv.org/abs/2611.17108) | `ARXIV` | 1.0 |

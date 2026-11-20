@@ -1,146 +1,146 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-11-19T15:13:03.550932+00:00",
+  "last_updated": "2026-11-20T14:55:16.423108+00:00",
   "paper_count": 6,
   "papers": [
     {
-      "forum_id": "2611.24381",
+      "forum_id": "2611.25281",
       "paper_number": -1,
-      "title": "How to Turn an Attention Neural Network into an Interpretable Hard-Logic Predicate Circuit: Truth-Table Predicate Extraction and State-Machine Merging under Ship-of-Theseus Replacement",
+      "title": "Native FPGA Hard-Block Implementation from High-Level Synthesis",
       "authors": [
-        "Yuchen Li, Zongqi Fan, Xintong Li, Nguyen H. Tran, Ken-Tye Yong"
+        "Mohamed Bouaziz, Mahmoud A. Elshenawy, Krishnan B. Iyer, Abdurauf Abdurakhmanov, Ammar M. Seliaman, Suhaib A. Fahmy"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2611.24381v1 Announce Type: cross \nAbstract: We convert a trained attention network as a whole, attention included, into a hard-logic predicate circuit that runs in its place. Every unit of the circuit is a 0/1 predicate on tokens, and every map between predicates is a minimised truth table. Short tables, such as the product of a query code and a key code, are minimised exactly, and wide feature-to-feature transitions become implication rules by noise-tolerant minimisation. Blocks are replaced one at a time from the output down, in the manner of the Ship of Theseus, and after each replacement the remaining soft part re-adapts to the frozen circuit. Attention selection takes two forms, a row-wise comparison of integer scores (order selection) and a learned rule (rule selection). Both ",
-      "pdf_link": "https://arxiv.org/pdf/2611.24381.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.24381",
-      "submission_date": "2026-11-19T05:00:00+00:00",
+      "abstract": "arXiv:2611.25281v1 Announce Type: new \nAbstract: High-level synthesis (HLS) maps computations to FPGA hard blocks, yet often leaves their arithmetic modes, internal registers, and cascade links idle and recreates them in the fabric, costing area and timing. We present a C++ template library that reaches native hard-block implementations without modifying the HLS compiler. Templates fix source patterns, and an automatic flow picks scheduling settings and verified RTL patches. On AMD Versal, our matrix multiplication uses 2.4--4.5x fewer lookup tables (LUTs) than AutoSA systolic arrays at equal or higher estimated throughput. Our INT8 matrix--vector units reach the three multiply--accumulates per DSP of hand-written FINN RTL, versus at most 1.29 for HLS libraries. In hls4ml, Allo, and Stream",
+      "pdf_link": "https://arxiv.org/pdf/2611.25281.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.25281",
+      "submission_date": "2026-11-20T05:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 33.0,
-      "updated_at": "2026-11-19T15:13:03.546604+00:00"
+      "score": 35.0,
+      "updated_at": "2026-11-20T14:55:16.420534+00:00"
     },
     {
-      "forum_id": "2610.27508",
+      "forum_id": "2611.25293",
       "paper_number": -1,
-      "title": "KatoANN: Enabling Near-Exact Vector Search at the Speed of Lossy Scans with CPU Matrix Engines",
+      "title": "Bottom-Up FPGA Reconfigurable Accelerator Overlay Generation",
       "authors": [
-        "Soobin Cho, Gyuyeong Kim"
+        "Mohamed Bouaziz, Suhaib A. Fahmy"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2611.25293v1 Announce Type: new \nAbstract: Programmable FPGA overlays run new workloads without re-synthesis, yet they pay twice. An overlay adds a second layer of programmability on top of the FPGA's own overhead. Moreover, overlay generators usually start from a regular template, so they spend logic on switches and links that the workloads never use, and they close timing at low clocks. We present a flow that instead grows an overlay bottom-up from the dataflow graphs of the workloads it must run. The flow clusters workloads by structural similarity, ranks shared slots with spectral descriptors of each operation's surroundings, and adds only the units and links a workload lacks. It builds every unit on native hard blocks, with their internal pipeline registers, dual-ported memories",
+      "pdf_link": "https://arxiv.org/pdf/2611.25293.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.25293",
+      "submission_date": "2026-11-20T05:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 3.5,
+      "updated_at": "2026-11-20T14:55:16.420574+00:00"
+    },
+    {
+      "forum_id": "2602.18140",
+      "paper_number": -1,
+      "title": "Flex-Plorer: A Precision-Aware Hardware-Software Co-Design Framework for an Edge SNN Accelerator",
+      "authors": [
+        "Mohammad Farahani, Mohammad Rasoul Roshanshah, Saeed Safari"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.27508v3 Announce Type: replace-cross \nAbstract: Emerging CPU matrix engines, such as Intel AMX, enable high throughput by batching multiple queries. However, they support only low-precision formats, which can significantly degrade recall (i.e., search quality). We present KatoANN, the first approximate nearest neighbor (ANN) search system that achieves both high throughput and high recall simultaneously on CPU matrix engines. Specifically, KatoANN represents each vector using a 16-bit code, splits it into high- and low-byte planes, and computes near-exact distances using 8-bit matrix multiplications that the matrix engine supports. To reduce extra multiplication overhead, it ranks all candidates by their high bytes alone and refines only a few survivors with the full distance. K",
-      "pdf_link": "https://arxiv.org/pdf/2610.27508.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.27508",
-      "submission_date": "2026-11-19T05:00:00+00:00",
+      "abstract": "arXiv:2602.18140v3 Announce Type: replace \nAbstract: Neuromorphic accelerators promise high energy efficiency and computational density for spiking neural networks (SNNs), especially in wearable devices and neural prosthetics where power constraints are stringent. However, most existing platforms exhibit rigid architectures with limited configurability, which restricts their adaptability to heterogeneous signals and diverse design objectives. To address this gap, we present Flex-Plorer, a precision-aware hardware-software co-design framework using heuristic search over weight and decay precisions for a fixed architecture. It couples hardware-aware fixed-point simulation with synthesis-trained LUT/FF estimators and analytical BRAM estimation to guide user-defined accuracy-resource trade-off",
+      "pdf_link": "https://arxiv.org/pdf/2602.18140.pdf",
+      "forum_link": "https://arxiv.org/abs/2602.18140",
+      "submission_date": "2026-11-20T05:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-11-19T15:13:03.546996+00:00"
+      "score": 3.0,
+      "updated_at": "2026-11-20T14:55:16.420683+00:00"
     },
     {
-      "forum_id": "2611.24733",
+      "forum_id": "2610.02502",
       "paper_number": -1,
-      "title": "Mechanistic Critics for Sample-Efficient NPU Design-Space Exploration",
+      "title": "BROAD: Bit-Parallel Row-Oriented Arithmetic in DRAM",
       "authors": [
-        "Yicheng He, Yuqi Xue, Tianyang Wu, Jian Huang, Bin Hu"
+        "William C. Tegge, Jo\\~{a}o Paulo Cardoso de Lima, Shouzhi Fang, Jeronimo Castrillon, Alex K. Jones"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2611.24733v1 Announce Type: new \nAbstract: NPU design-space exploration for LLM inference mainly relies on an expensive simulator that often returns only scalar feedback such as latency and power. Such feedback can rank evaluated configurations, but gives little information for deciding why a configuration is slow or which architecture parameter should be changed next. This limitation is especially severe because prefill and decode workloads can be limited by different resources, including compute throughput and HBM bandwidth. We propose CriticNPU, a sample-efficient DSE framework built around an online-calibrated mechanistic critic for NPU architecture design. The critic uses explicit hardware limits to evaluate NPU configurations: before simulation, it estimates whether a proposed ",
-      "pdf_link": "https://arxiv.org/pdf/2611.24733.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.24733",
-      "submission_date": "2026-11-19T05:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-11-19T15:13:03.546175+00:00"
-    },
-    {
-      "forum_id": "2611.24135",
-      "paper_number": -1,
-      "title": "PULSAR-V: I/O-Aware Post-Update Attestation for RISC-V",
-      "authors": [
-        "Niccol\\`o Lentini, Stefano Di Carlo, Alessandro Savino"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2611.24135v1 Announce Type: cross \nAbstract: Post-update attestation proves that a device installed the intended firmware, not that the image stayed protected until the report was signed. In a multi-master SoC, a master outside the attested processor can corrupt update-critical memory. In contrast, the firmware identity, lifecycle state, and the CPU's protection evidence remain byte-identical to a healthy device's. We present PULSAR-V, a post-update attestation architecture which binds the authenticated update commit to the effective permissions and immutability of both gates (PMP/EPMP on the CPU, the I/O policy mediating DMA), sampled at the commit and at attestation, the I/O gate latching its own commit-time state in hardware. In a RISC-V SoC prototyped on a ZCU102 FPGA (CV32E40S c",
-      "pdf_link": "https://arxiv.org/pdf/2611.24135.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.24135",
-      "submission_date": "2026-11-19T05:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-11-19T15:13:03.546516+00:00"
-    },
-    {
-      "forum_id": "2608.00894",
-      "paper_number": -1,
-      "title": "Contour: Extensible Mapping Surfaces for Agentic Accelerator Kernel Generation",
-      "authors": [
-        "Ruijie Gao, Jirong Yang, Mengtian Hong, Youyou Lu, Barry Lyu, Haoran Jin, Nathan Bleier"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2608.00894v4 Announce Type: replace \nAbstract: Emerging accelerators rarely ship with mature compiler backends, so recent work asks LLM agents to write native kernels directly from ISA documentation and simulator feedback. On two such accelerators, this direct workflow returns a correct kernel on only 17 of 38 workload instances, and most of its inference budget is spent re-deriving machine semantics and repairing illegal code rather than optimizing the workload. We present Contour, which consists of two parts. Contour-Explore replaces native-code generation with search over a mapping surface: a typed set of scheduling knobs and their legal domains, generated automatically from the accelerator's ISA description and the workload graph. A compiler-owned resolver completes partial assig",
-      "pdf_link": "https://arxiv.org/pdf/2608.00894.pdf",
-      "forum_link": "https://arxiv.org/abs/2608.00894",
-      "submission_date": "2026-11-19T05:00:00+00:00",
+      "abstract": "arXiv:2610.02502v2 Announce Type: replace \nAbstract: Processing-using-memory (PUM) architectures perform computation directly within DRAM to reduce costly data movement between memory and processors. Because charge-sharing operations are confined to individual bitlines, existing DRAM-PUM architectures reorganize data into column-oriented, bit-serial representations. This organization is fundamentally incompatible with the row-oriented, word-parallel layouts used by conventional processors and accelerators, requiring expensive data-layout transformations whenever computation transitions between PUM and conventional execution. In this paper, we present BROAD, or Bit-Parallel Row-Oriented Arithmetic in DRAM. BROAD augments the DRAM subarray with two lightweight extensions: migration cells tha",
+      "pdf_link": "https://arxiv.org/pdf/2610.02502.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.02502",
+      "submission_date": "2026-11-20T05:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-11-19T15:13:03.546766+00:00"
+      "updated_at": "2026-11-20T14:55:16.420719+00:00"
     },
     {
-      "forum_id": "2606.25313",
+      "forum_id": "2610.07593",
       "paper_number": -1,
-      "title": "Programmable Probabilistic Computer with 1,000,000 p-bits",
+      "title": "TRANSIT: Transparent Scale-in for Multi-Node LLM Training",
       "authors": [
-        "Navid Anjum Aadit, Xiuqi Zhang, Shuvro Chowdhury, Kevin Callahan-Coray, Kyle Lee, Saleh Bunaiyan, Sanjay Seshan, Clayton Thomas, Jason Twigg, Andrew Seawright, Forrest Brewer, Tathagata Srimani, Kerem Y. Camsari"
+        "Hyungyo Kim, Nicholas Satchanov, Hrishi Shah, Gaohan Ye, Jiaqi Lou, Robert Walkup, Shweta Salaria, I-Hsin Chung, Hubertus Franke, Seetharami Seelam, Apoorve Mohan, Nam Sung Kim"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2606.25313v2 Announce Type: replace-cross \nAbstract: Many problems in physics and machine learning require sampling the collective states of large numbers of interacting variables. On modern graphics processors, repeated movement of interaction data between memory and compute units can limit how efficiently these calculations can scale. Here we demonstrate a programmable probabilistic computer with one million interacting probabilistic bits (p-bits) across 18 field-programmable gate arrays, sustaining $10^{12}$ probabilistic updates per second. Coupling weights remain beside the update circuits in on-chip memory, and only single-bit boundary states pass between devices. Experiments on three-dimensional and quasi-two-dimensional spin glasses show that the ratio of boundary-exchange fr",
-      "pdf_link": "https://arxiv.org/pdf/2606.25313.pdf",
-      "forum_link": "https://arxiv.org/abs/2606.25313",
-      "submission_date": "2026-11-19T05:00:00+00:00",
+      "abstract": "arXiv:2610.07593v2 Announce Type: replace-cross \nAbstract: The growing memory requirements of large language models (LLMs) increasingly force distributed training jobs to span multiple GPU nodes to accommodate their training state. This reduces per-GPU computational efficiency, increases network traffic, and exacerbates job queueing delays. To address these inefficiencies, we introduce TRANSIT, a system that transparently enables efficient distributed LLM training on fewer GPUs through memory oversubscription. TRANSIT optimizes CPU-GPU data movement during oversubscription by coordinating driver-managed page residency with execution-guided zero-copy access, exploiting recurring kernel execution patterns across training iterations.\n  We evaluate TRANSIT on dense and mixture-of-experts (MoE)",
+      "pdf_link": "https://arxiv.org/pdf/2610.07593.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.07593",
+      "submission_date": "2026-11-20T05:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-11-19T15:13:03.546914+00:00"
+      "updated_at": "2026-11-20T14:55:16.420835+00:00"
+    },
+    {
+      "forum_id": "2611.17108",
+      "paper_number": -1,
+      "title": "LazyWeights: Decode-on-Demand Edge LLMs",
+      "authors": [
+        "Arnab Sanyal, Gourav Datta, Sandeep P. Chinchali"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2611.17108v3 Announce Type: replace-cross \nAbstract: Memory determines which large language models (LLMs) an edge device can run and how fast it runs them: capacity limits a 4 GB Jetson Nano, and bandwidth limits an 8 GB Jetson Orin Nano Super. Deployed weight formats (GPTQ, AWQ, and the GGUF K- and I-quants) spend the same number of bits on every integer code of a matrix, although the codes are far from uniform. We present LazyWeights, which keeps these formats, tunes GPTQ so the codes compress, Huffman-codes them losslessly in interleaved lanes, and decodes them on demand in a small unit between DRAM and L2, so GPU kernels run unchanged and DRAM moves only coded bytes. At 1% and 3.5% perplexity budgets, coded Phi-3-mini, Mistral-7B and SmolLM-1.7B are 5.7-31.4% smaller than the bes",
+      "pdf_link": "https://arxiv.org/pdf/2611.17108.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.17108",
+      "submission_date": "2026-11-20T05:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.0,
+      "updated_at": "2026-11-20T14:55:16.420872+00:00"
     }
   ]
 }
