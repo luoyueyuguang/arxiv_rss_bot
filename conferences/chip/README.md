@@ -1,6 +1,6 @@
 # Chip Design / EDA Papers
 
-- **Last Updated**: 2026-11-20 14:55:16 UTC
+- **Last Updated**: 2026-11-23 17:20:02 UTC
 - **Total Filtered Papers**: 6
 - **Displaying**: 6 (arxiv: 6)
 - **Papers with Ratings**: 0
@@ -9,9 +9,9 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Native FPGA Hard-Block Implementation from High-Level Synthesis](https://arxiv.org/abs/2611.25281) | `ARXIV` | 35.0 |
-| 2 | [Bottom-Up FPGA Reconfigurable Accelerator Overlay Generation](https://arxiv.org/abs/2611.25293) | `ARXIV` | 3.5 |
-| 3 | [Flex-Plorer: A Precision-Aware Hardware-Software Co-Design Framework for an Edge SNN Accelerator](https://arxiv.org/abs/2602.18140) | `ARXIV` | 3.0 |
-| 4 | [BROAD: Bit-Parallel Row-Oriented Arithmetic in DRAM](https://arxiv.org/abs/2610.02502) | `ARXIV` | 1.0 |
-| 5 | [TRANSIT: Transparent Scale-in for Multi-Node LLM Training](https://arxiv.org/abs/2610.07593) | `ARXIV` | 1.0 |
-| 6 | [LazyWeights: Decode-on-Demand Edge LLMs](https://arxiv.org/abs/2611.17108) | `ARXIV` | 1.0 |
+| 1 | [GRADPlace: Geometry-Based Routing-Augmented Differentiable Placement for Routability Optimization](https://arxiv.org/abs/2611.27287) | `ARXIV` | 65.5 |
+| 2 | [Mind the Delta: Early Pruning of RTL Variants for Agentic Hardware Optimization](https://arxiv.org/abs/2611.27035) | `ARXIV` | 13.5 |
+| 3 | [Enabling Spatially Fine-Grained DVFS in Neural Processing Units for Energy-Efficient LLM Serving](https://arxiv.org/abs/2607.16473) | `ARXIV` | 2.0 |
+| 4 | [Cruella: A Unified Microscaling and Floating-Point Dot-Product Unit for LLM Inference on FPGAs](https://arxiv.org/abs/2611.27323) | `ARXIV` | 1.5 |
+| 5 | [Rethinking ANNS on Commodity PIM: PIM-Native Vector Search with Cooperative Filtering](https://arxiv.org/abs/2611.27010) | `ARXIV` | 1.0 |
+| 6 | [Auto-Scaling Heterogeneous Neural Processing Units for Energy and Cost-Efficient LLM Serving](https://arxiv.org/abs/2607.16488) | `ARXIV` | 1.0 |

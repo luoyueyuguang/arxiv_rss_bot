@@ -1,100 +1,77 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-11-19T15:12:40.732399+00:00",
-  "paper_count": 4,
+  "last_updated": "2026-11-23T17:19:47.425064+00:00",
+  "paper_count": 3,
   "papers": [
     {
-      "forum_id": "2611.24437",
+      "forum_id": "2611.27323",
       "paper_number": -1,
-      "title": "Dissecting an Unexplored SASS Control-Code Field: Barrier Exemption and Programmable Warp Priority",
+      "title": "Cruella: A Unified Microscaling and Floating-Point Dot-Product Unit for LLM Inference on FPGAs",
       "authors": [
-        "Ziwen Wang, Qi Luo, Kunlin Li, Changxi Liu, Dongsheng Wang, Yun Chen"
+        "Jinho Yang, Taehyeong Kim, Mincheol Cha, Hyeoncheol Kim, Donggeun Kim, Nahye Kim, Yujin Lee, Ryeowook Ko, Woong Gyu Park, Jiwoong Park, Junsoo Kim, Tae-Hyoung Kim, Yongjun Park, Seongmin Hong, Joo-Young Kim"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2611.24437v1 Announce Type: new \nAbstract: Every instruction in NVIDIA's native GPU ISA (SASS) carries a control code that guides hardware scheduling, and prior work has decoded its known fields to optimize GPU kernels. However, one control-code field remains unexplored: it appears over 500000 times in NVIDIA's closed-source libraries such as cuBLAS and cuDNN, yet nvcc never emits it when compiling user programs. This paper presents the first systematic study of this control-code field across GPU architectures from Volta to Blackwell. Using instruction-level microbenchmarks, we show that the field controls two independent hardware mechanisms: barrier exemption (EXEMPT), which allows instructions blocked by a pending barrier to issue early during the barrier wait, and programmable war",
-      "pdf_link": "https://arxiv.org/pdf/2611.24437.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.24437",
-      "submission_date": "2026-11-19T05:00:00+00:00",
+      "abstract": "arXiv:2611.27323v1 Announce Type: new \nAbstract: The number formats that accelerators execute natively are fixed at fabrication, yet large language model (LLM) checkpoints are released with MXFP4 weights in the Microscaling (MX) formats standardized in 2023. FPGAs adopt new formats through bitstreams. However, to the best of our knowledge, no deployed FPGA LLM accelerator executes MXFP4 weights alongside BF16 products. We characterize the decoding of MXFP4 checkpoints, whose layers alternate between MXFP4$\\times$BF16 products and BF16$\\times$BF16 products of attention and BF16 layers. With a BF16 KV cache, BF16$\\times$BF16 products take 56%-77% of the datapath time, during which a separate MXFP4 unit idles. We present Cruella, whose unified dot-product unit (UDPU) executes both product typ",
+      "pdf_link": "https://arxiv.org/pdf/2611.27323.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.27323",
+      "submission_date": "2026-11-23T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 43.0,
-      "updated_at": "2026-11-19T15:12:40.725871+00:00"
+      "score": 43.5,
+      "updated_at": "2026-11-23T17:19:47.421819+00:00"
     },
     {
-      "forum_id": "2611.24460",
+      "forum_id": "2611.27035",
       "paper_number": -1,
-      "title": "TechReport: Implementing CHERI in gem5",
+      "title": "Mind the Delta: Early Pruning of RTL Variants for Agentic Hardware Optimization",
       "authors": [
-        "Philipp Schmitz, Vishwas Vasuki Gautam, Tobias Jauch, Anna Lena Duque Ant\\'on, Johannes M\\\"uller, Dominik Stoffel, Wolfgang Kunz"
+        "Siyang Cai, Cangyuan Li, Haoyu Gao, Kun Wang, Mochen Li, Yilin Zhong, Ke Xu, Yinhe Han, Ying Wang"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2611.24460v1 Announce Type: new \nAbstract: Despite countless mitigation efforts, memory safety issues still prevail. The recently discovered security issues in PHP underline this fact. One of the most promising approaches to solving this problem is the concept of Capability Hardware Enhanced RISC Instructions (CHERI). There is a well-developed ecosystem of ISA simulators, compilers, operating systems, and hardware designs that support CHERI. However, the lack of a simulator modeling microarchitectural detail hinders efficient and fast design space exploration for CHERI-enhanced designs means the performance impact of CHERI remains understudied. Therefore, we present gem5-CHERI: a CHERI-enhanced adaptation of the gem5 simulator that can boot the CheriBSD operating system and run custo",
-      "pdf_link": "https://arxiv.org/pdf/2611.24460.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.24460",
-      "submission_date": "2026-11-19T05:00:00+00:00",
+      "abstract": "arXiv:2611.27035v1 Announce Type: new \nAbstract: Autonomous coding agents powered by large language models (LLMs) now write diverse microarchitectural variants of existing register-transfer level (RTL) designs at high throughput, shifting the primary bottleneck of agentic RTL optimization onto logic synthesis. Commercial toolchains take hours per variant, creating an acute compute asymmetry between proposing and evaluating variants. Existing fast evaluators falter in this regime. Subtle RTL edits trigger nonlinear synthesis shifts that learned predictors and coding agents cannot resolve, while synthesis proxies at reduced effort either alter the optimization trajectory or retain most of its runtime. Selecting a variant, however, does not require regressing absolute quality of results acros",
+      "pdf_link": "https://arxiv.org/pdf/2611.27035.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.27035",
+      "submission_date": "2026-11-23T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 42.5,
-      "updated_at": "2026-11-19T15:12:40.725890+00:00"
+      "score": 11.0,
+      "updated_at": "2026-11-23T17:19:47.421784+00:00"
     },
     {
-      "forum_id": "2611.24872",
+      "forum_id": "2611.27559",
       "paper_number": -1,
-      "title": "MicroAssert: Microarchitecture-Aware Structured Assertion Generation for CPU Verification",
+      "title": "Can Language Models See the Circuit in Pixelated RFIC Passives?",
       "authors": [
-        "Hongqin Lyu, Yonghao Wang, Zhiteng Chao, Wenxing Li, Tiancheng Wang, Evangeline F. Y. Young, Huawei Li"
+        "Jonathan Zhou, Kaushik Sengupta"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2611.24872v1 Announce Type: new \nAbstract: Automatic assertion generation reduces manual verification effort, yet existing approaches struggle to capture microarchitectural behaviors and cross-region interactions in CPUs. We present MicroAssert, a microarchitecture-aware framework that identifies functional regions directly from RTL and generates local and composite assertions through structured contracts and deterministic verification primitives. Coverage-guided feedback further improves verification completeness by progressively expanding proof-relevant RTL coverage. Evaluated on five open-source RISC-V CPUs against three existing assertion generation approaches, MicroAssert achieves 100% syntax correctness and complete branch, statement, and toggle coverage, with an average proven",
-      "pdf_link": "https://arxiv.org/pdf/2611.24872.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.24872",
-      "submission_date": "2026-11-19T05:00:00+00:00",
+      "abstract": "arXiv:2611.27559v1 Announce Type: cross \nAbstract: The emergence of inverse-designed, pixelated passives for microwave and millimeter-wave applications has been a major development in the field of RFIC design. These devices, which appear to be QR-code-like in structure, exist in a generalizable, high-dimensional design space that includes conventional passive topologies. However, these structures are naturally unintuitive for designers, and failures or deviations in performance are difficult to debug. In this work, we ask whether a frontier language model can understand, predict, and edit the responses and layout structure of pixelated passives. The agent, run with all tools disabled, is first asked to read layouts on 18x18 and 27x27 tile grids and, in a single reply, predict the input imp",
+      "pdf_link": "https://arxiv.org/pdf/2611.27559.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.27559",
+      "submission_date": "2026-11-23T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 14.5,
-      "updated_at": "2026-11-19T15:12:40.725962+00:00"
-    },
-    {
-      "forum_id": "2611.23520",
-      "paper_number": -1,
-      "title": "BeFit: Shifting Complexity from Weights to Bernstein Activations for Resource-Constrained Sensing",
-      "authors": [
-        "Malak Gamal El-Din, Yasser Shoukry, Salma Elmalaki"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2611.23520v1 Announce Type: cross \nAbstract: Time-series sensing increasingly relies on neural networks, yet deployment on resource-constrained microcontrollers remains challenging. Aggressive model compression can reduce accuracy, while restricting weights to multiplication-free representations introduces further losses. We present BeFit, an end-to-end framework that shifts model capacity from weights to learnable Bernstein polynomial activations. BeFit (i) finds compact Bernstein-activated convolutional neural networks (BeCNNs) through hardware-aware neural architecture search and trains them via knowledge distillation; (ii) projects their weights to multiplication-free codes, freezes the codes, and recovers the resulting accuracy loss through the learnable activations; and (iii) g",
-      "pdf_link": "https://arxiv.org/pdf/2611.23520.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.23520",
-      "submission_date": "2026-11-19T05:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-11-19T15:12:40.726017+00:00"
+      "score": 11.0,
+      "updated_at": "2026-11-23T17:19:47.421885+00:00"
     }
   ]
 }

@@ -1,15 +1,14 @@
 # Computer Architecture Papers
 
-- **Last Updated**: 2026-11-20 14:55:03 UTC
-- **Total Filtered Papers**: 4
-- **Displaying**: 4 (arxiv: 4)
+- **Last Updated**: 2026-11-23 17:19:47 UTC
+- **Total Filtered Papers**: 3
+- **Displaying**: 3 (arxiv: 3)
 - **Papers with Ratings**: 0
 - **Lookback**: 7 days
 
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Dissecting an Unexplored SASS Control-Code Field: Barrier Exemption and Programmable Warp Priority](https://arxiv.org/abs/2611.24437) | `ARXIV` | 43.0 |
-| 2 | [TechReport: Implementing CHERI in gem5](https://arxiv.org/abs/2611.24460) | `ARXIV` | 42.5 |
-| 3 | [MicroAssert: Microarchitecture-Aware Structured Assertion Generation for CPU Verification](https://arxiv.org/abs/2611.24872) | `ARXIV` | 14.5 |
-| 4 | [BeFit: Shifting Complexity from Weights to Bernstein Activations for Resource-Constrained Sensing](https://arxiv.org/abs/2611.23520) | `ARXIV` | 12.0 |
+| 1 | [Cruella: A Unified Microscaling and Floating-Point Dot-Product Unit for LLM Inference on FPGAs](https://arxiv.org/abs/2611.27323) | `ARXIV` | 43.5 |
+| 2 | [Mind the Delta: Early Pruning of RTL Variants for Agentic Hardware Optimization](https://arxiv.org/abs/2611.27035) | `ARXIV` | 11.0 |
+| 3 | [Can Language Models See the Circuit in Pixelated RFIC Passives?](https://arxiv.org/abs/2611.27559) | `ARXIV` | 11.0 |

@@ -1,6 +1,6 @@
 # Numerical Analysis / Scientific Computing Papers
 
-- **Last Updated**: 2026-11-20 14:55:45 UTC
+- **Last Updated**: 2026-11-23 17:20:35 UTC
 - **Total Filtered Papers**: 1
 - **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
@@ -9,4 +9,4 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [Weak error estimates of a spectral Galerkin approximation to the stochastic Burgers equation driven by rough white noise](https://arxiv.org/abs/2611.22112) | `ARXIV` | 2.5 |
+| 1 | [Numerical Analysis of 2D Stochastic Navier--Stokes Equations with Transport Noise: Regularity and Spatial Semidiscretization](https://arxiv.org/abs/2512.03483) | `ARXIV` | 15.5 |

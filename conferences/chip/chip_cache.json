@@ -1,146 +1,146 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-11-20T14:55:16.423108+00:00",
+  "last_updated": "2026-11-23T17:20:02.343059+00:00",
   "paper_count": 6,
   "papers": [
     {
-      "forum_id": "2611.25281",
+      "forum_id": "2611.27287",
       "paper_number": -1,
-      "title": "Native FPGA Hard-Block Implementation from High-Level Synthesis",
+      "title": "GRADPlace: Geometry-Based Routing-Augmented Differentiable Placement for Routability Optimization",
       "authors": [
-        "Mohamed Bouaziz, Mahmoud A. Elshenawy, Krishnan B. Iyer, Abdurauf Abdurakhmanov, Ammar M. Seliaman, Suhaib A. Fahmy"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2611.25281v1 Announce Type: new \nAbstract: High-level synthesis (HLS) maps computations to FPGA hard blocks, yet often leaves their arithmetic modes, internal registers, and cascade links idle and recreates them in the fabric, costing area and timing. We present a C++ template library that reaches native hard-block implementations without modifying the HLS compiler. Templates fix source patterns, and an automatic flow picks scheduling settings and verified RTL patches. On AMD Versal, our matrix multiplication uses 2.4--4.5x fewer lookup tables (LUTs) than AutoSA systolic arrays at equal or higher estimated throughput. Our INT8 matrix--vector units reach the three multiply--accumulates per DSP of hand-written FINN RTL, versus at most 1.29 for HLS libraries. In hls4ml, Allo, and Stream",
-      "pdf_link": "https://arxiv.org/pdf/2611.25281.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.25281",
-      "submission_date": "2026-11-20T05:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-11-20T14:55:16.420534+00:00"
-    },
-    {
-      "forum_id": "2611.25293",
-      "paper_number": -1,
-      "title": "Bottom-Up FPGA Reconfigurable Accelerator Overlay Generation",
-      "authors": [
-        "Mohamed Bouaziz, Suhaib A. Fahmy"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2611.25293v1 Announce Type: new \nAbstract: Programmable FPGA overlays run new workloads without re-synthesis, yet they pay twice. An overlay adds a second layer of programmability on top of the FPGA's own overhead. Moreover, overlay generators usually start from a regular template, so they spend logic on switches and links that the workloads never use, and they close timing at low clocks. We present a flow that instead grows an overlay bottom-up from the dataflow graphs of the workloads it must run. The flow clusters workloads by structural similarity, ranks shared slots with spectral descriptors of each operation's surroundings, and adds only the units and links a workload lacks. It builds every unit on native hard blocks, with their internal pipeline registers, dual-ported memories",
-      "pdf_link": "https://arxiv.org/pdf/2611.25293.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.25293",
-      "submission_date": "2026-11-20T05:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 3.5,
-      "updated_at": "2026-11-20T14:55:16.420574+00:00"
-    },
-    {
-      "forum_id": "2602.18140",
-      "paper_number": -1,
-      "title": "Flex-Plorer: A Precision-Aware Hardware-Software Co-Design Framework for an Edge SNN Accelerator",
-      "authors": [
-        "Mohammad Farahani, Mohammad Rasoul Roshanshah, Saeed Safari"
+        "Xurong Shen, Xueyan Zhao, Zhipeng Huang, Chaoyu Xing, Biwei Xie"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2602.18140v3 Announce Type: replace \nAbstract: Neuromorphic accelerators promise high energy efficiency and computational density for spiking neural networks (SNNs), especially in wearable devices and neural prosthetics where power constraints are stringent. However, most existing platforms exhibit rigid architectures with limited configurability, which restricts their adaptability to heterogeneous signals and diverse design objectives. To address this gap, we present Flex-Plorer, a precision-aware hardware-software co-design framework using heuristic search over weight and decay precisions for a fixed architecture. It couples hardware-aware fixed-point simulation with synthesis-trained LUT/FF estimators and analytical BRAM estimation to guide user-defined accuracy-resource trade-off",
-      "pdf_link": "https://arxiv.org/pdf/2602.18140.pdf",
-      "forum_link": "https://arxiv.org/abs/2602.18140",
-      "submission_date": "2026-11-20T05:00:00+00:00",
+      "abstract": "arXiv:2611.27287v1 Announce Type: new \nAbstract: Routability-driven placement needs gradients that show how cell movement redistributes routing demand. Cell inflation exploits routing feedback only indirectly, and differentiable methods rely on black-box congestion predictors or on virtual-cell congestion fields frozen between routing updates. We present GRADPlace, which represents probability-weighted candidate routes as movable horizontal and vertical segments. Routing feedback sets their probabilities, while their geometry and expected demand evolve with cell coordinates. An electrostatic routing objective propagates gradients through this geometry to connected cells, complementing cell inflation. On the ISPD 2015 benchmarks, our reproduced Xplace-route and published DCGP results have o",
+      "pdf_link": "https://arxiv.org/pdf/2611.27287.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.27287",
+      "submission_date": "2026-11-23T05:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 3.0,
-      "updated_at": "2026-11-20T14:55:16.420683+00:00"
+      "score": 65.5,
+      "updated_at": "2026-11-23T17:20:02.340839+00:00"
     },
     {
-      "forum_id": "2610.02502",
+      "forum_id": "2611.27035",
       "paper_number": -1,
-      "title": "BROAD: Bit-Parallel Row-Oriented Arithmetic in DRAM",
+      "title": "Mind the Delta: Early Pruning of RTL Variants for Agentic Hardware Optimization",
       "authors": [
-        "William C. Tegge, Jo\\~{a}o Paulo Cardoso de Lima, Shouzhi Fang, Jeronimo Castrillon, Alex K. Jones"
+        "Siyang Cai, Cangyuan Li, Haoyu Gao, Kun Wang, Mochen Li, Yilin Zhong, Ke Xu, Yinhe Han, Ying Wang"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.02502v2 Announce Type: replace \nAbstract: Processing-using-memory (PUM) architectures perform computation directly within DRAM to reduce costly data movement between memory and processors. Because charge-sharing operations are confined to individual bitlines, existing DRAM-PUM architectures reorganize data into column-oriented, bit-serial representations. This organization is fundamentally incompatible with the row-oriented, word-parallel layouts used by conventional processors and accelerators, requiring expensive data-layout transformations whenever computation transitions between PUM and conventional execution. In this paper, we present BROAD, or Bit-Parallel Row-Oriented Arithmetic in DRAM. BROAD augments the DRAM subarray with two lightweight extensions: migration cells tha",
-      "pdf_link": "https://arxiv.org/pdf/2610.02502.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.02502",
-      "submission_date": "2026-11-20T05:00:00+00:00",
+      "abstract": "arXiv:2611.27035v1 Announce Type: new \nAbstract: Autonomous coding agents powered by large language models (LLMs) now write diverse microarchitectural variants of existing register-transfer level (RTL) designs at high throughput, shifting the primary bottleneck of agentic RTL optimization onto logic synthesis. Commercial toolchains take hours per variant, creating an acute compute asymmetry between proposing and evaluating variants. Existing fast evaluators falter in this regime. Subtle RTL edits trigger nonlinear synthesis shifts that learned predictors and coding agents cannot resolve, while synthesis proxies at reduced effort either alter the optimization trajectory or retain most of its runtime. Selecting a variant, however, does not require regressing absolute quality of results acros",
+      "pdf_link": "https://arxiv.org/pdf/2611.27035.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.27035",
+      "submission_date": "2026-11-23T05:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-11-23T17:20:02.340788+00:00"
+    },
+    {
+      "forum_id": "2607.16473",
+      "paper_number": -1,
+      "title": "Enabling Spatially Fine-Grained DVFS in Neural Processing Units for Energy-Efficient LLM Serving",
+      "authors": [
+        "Yuqi Xue, Jerry Wu, Corey Yu, Jian Huang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2607.16473v2 Announce Type: replace \nAbstract: As neural processing units (NPUs) evolve rapidly to accommodate the ever-increasing compute demand of large language models (LLMs), their power consumption is becoming a limiting factor. Our study shows that using dynamic voltage and frequency scaling (DVFS) to exploit the service-level objective (SLO) slacks is a promising way to improve NPU energy efficiency for LLM services. And as tensor operators in LLMs exhibit diverse bottlenecks across NPU components, it is desirable to configure the frequency separately for each component to maximize their energy efficiency.\n  In this paper, we develop eNPU that enables hardware and software support for spatially fine-grained, component-level DVFS on NPUs. eNPU refactors the NPU core pipeline to",
+      "pdf_link": "https://arxiv.org/pdf/2607.16473.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.16473",
+      "submission_date": "2026-11-23T05:00:00+00:00",
+      "conference": "DATE",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-11-23T17:20:02.341078+00:00"
+    },
+    {
+      "forum_id": "2611.27323",
+      "paper_number": -1,
+      "title": "Cruella: A Unified Microscaling and Floating-Point Dot-Product Unit for LLM Inference on FPGAs",
+      "authors": [
+        "Jinho Yang, Taehyeong Kim, Mincheol Cha, Hyeoncheol Kim, Donggeun Kim, Nahye Kim, Yujin Lee, Ryeowook Ko, Woong Gyu Park, Jiwoong Park, Junsoo Kim, Tae-Hyoung Kim, Yongjun Park, Seongmin Hong, Joo-Young Kim"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2611.27323v1 Announce Type: new \nAbstract: The number formats that accelerators execute natively are fixed at fabrication, yet large language model (LLM) checkpoints are released with MXFP4 weights in the Microscaling (MX) formats standardized in 2023. FPGAs adopt new formats through bitstreams. However, to the best of our knowledge, no deployed FPGA LLM accelerator executes MXFP4 weights alongside BF16 products. We characterize the decoding of MXFP4 checkpoints, whose layers alternate between MXFP4$\\times$BF16 products and BF16$\\times$BF16 products of attention and BF16 layers. With a BF16 KV cache, BF16$\\times$BF16 products take 56%-77% of the datapath time, during which a separate MXFP4 unit idles. We present Cruella, whose unified dot-product unit (UDPU) executes both product typ",
+      "pdf_link": "https://arxiv.org/pdf/2611.27323.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.27323",
+      "submission_date": "2026-11-23T05:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-11-23T17:20:02.340873+00:00"
+    },
+    {
+      "forum_id": "2611.27010",
+      "paper_number": -1,
+      "title": "Rethinking ANNS on Commodity PIM: PIM-Native Vector Search with Cooperative Filtering",
+      "authors": [
+        "Dawei Guo, Yizou Chen, Fan Yang, Hui Li, Ming-Chang Yang"
+      ],
+      "keywords": [
+        "cs.AR",
+        "DATE"
+      ],
+      "abstract": "arXiv:2611.27010v1 Announce Type: new \nAbstract: Approximate nearest neighbor search (ANNS) is a key primitive in modern data-intensive systems, and its memory-bound vector-scanning stage makes processing-in-memory (PIM) a promising acceleration platform. Existing PIM-based ANNS systems largely transplant CPU-oriented distance evaluation and top-$k$ selection onto PIM, introducing arithmetic- and state-heavy operations that poorly match lightweight, isolated PIM cores. To address these mismatches, we present PIVOT, a PIM-native vector search system with cooperative filtering, which thoroughly rethinks how ANNS should be executed on commodity PIM. First, PIVOT recasts PIM-side distance evaluation around binary quantization to exploit PIM-native bitwise operations, enabling LUT-free evaluati",
+      "pdf_link": "https://arxiv.org/pdf/2611.27010.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.27010",
+      "submission_date": "2026-11-23T05:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-11-20T14:55:16.420719+00:00"
+      "updated_at": "2026-11-23T17:20:02.340759+00:00"
     },
     {
-      "forum_id": "2610.07593",
+      "forum_id": "2607.16488",
       "paper_number": -1,
-      "title": "TRANSIT: Transparent Scale-in for Multi-Node LLM Training",
+      "title": "Auto-Scaling Heterogeneous Neural Processing Units for Energy and Cost-Efficient LLM Serving",
       "authors": [
-        "Hyungyo Kim, Nicholas Satchanov, Hrishi Shah, Gaohan Ye, Jiaqi Lou, Robert Walkup, Shweta Salaria, I-Hsin Chung, Hubertus Franke, Seetharami Seelam, Apoorve Mohan, Nam Sung Kim"
+        "Yuqi Xue, Jichuan Chang, Jian Huang"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2610.07593v2 Announce Type: replace-cross \nAbstract: The growing memory requirements of large language models (LLMs) increasingly force distributed training jobs to span multiple GPU nodes to accommodate their training state. This reduces per-GPU computational efficiency, increases network traffic, and exacerbates job queueing delays. To address these inefficiencies, we introduce TRANSIT, a system that transparently enables efficient distributed LLM training on fewer GPUs through memory oversubscription. TRANSIT optimizes CPU-GPU data movement during oversubscription by coordinating driver-managed page residency with execution-guided zero-copy access, exploiting recurring kernel execution patterns across training iterations.\n  We evaluate TRANSIT on dense and mixture-of-experts (MoE)",
-      "pdf_link": "https://arxiv.org/pdf/2610.07593.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.07593",
-      "submission_date": "2026-11-20T05:00:00+00:00",
+      "abstract": "arXiv:2607.16488v2 Announce Type: replace \nAbstract: To meet the ever-increasing computing demands of large language model (LLM) services, modern cloud platforms have widely deployed neural processing units (NPUs). These NPU chips have been developed and evolved at an incredibly fast pace, this inevitably produces heterogeneous compute pools backed by different versions of NPU chips. Unfortunately, due to the lack of system and architecture support for managing NPU heterogeneity in the cloud, it is unclear how to best utilize heterogeneous NPUs to maximize the energy and cost efficiency for LLM services.\n  In this paper, we first conduct a characterization study of various generations of real NPU chips to demonstrate the potential benefits on energy/cost efficiency and performance by utili",
+      "pdf_link": "https://arxiv.org/pdf/2607.16488.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.16488",
+      "submission_date": "2026-11-23T05:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-11-20T14:55:16.420835+00:00"
-    },
-    {
-      "forum_id": "2611.17108",
-      "paper_number": -1,
-      "title": "LazyWeights: Decode-on-Demand Edge LLMs",
-      "authors": [
-        "Arnab Sanyal, Gourav Datta, Sandeep P. Chinchali"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2611.17108v3 Announce Type: replace-cross \nAbstract: Memory determines which large language models (LLMs) an edge device can run and how fast it runs them: capacity limits a 4 GB Jetson Nano, and bandwidth limits an 8 GB Jetson Orin Nano Super. Deployed weight formats (GPTQ, AWQ, and the GGUF K- and I-quants) spend the same number of bits on every integer code of a matrix, although the codes are far from uniform. We present LazyWeights, which keeps these formats, tunes GPTQ so the codes compress, Huffman-codes them losslessly in interleaved lanes, and decodes them on demand in a small unit between DRAM and L2, so GPU kernels run unchanged and DRAM moves only coded bytes. At 1% and 3.5% perplexity budgets, coded Phi-3-mini, Mistral-7B and SmolLM-1.7B are 5.7-31.4% smaller than the bes",
-      "pdf_link": "https://arxiv.org/pdf/2611.17108.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.17108",
-      "submission_date": "2026-11-20T05:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-11-20T14:55:16.420872+00:00"
+      "updated_at": "2026-11-23T17:20:02.341105+00:00"
     }
   ]
 }
