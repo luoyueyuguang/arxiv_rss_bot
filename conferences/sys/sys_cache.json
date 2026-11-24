@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-11-23T17:20:02.242752+00:00",
-  "paper_count": 314,
+  "last_updated": "2026-11-24T16:56:22.558058+00:00",
+  "paper_count": 307,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -1249,29 +1249,6 @@
       "ratings": [],
       "score": 51.5,
       "updated_at": "2026-07-21T08:54:17.407310+00:00"
-    },
-    {
-      "forum_id": "2611.27765",
-      "paper_number": -1,
-      "title": "Weave: Routing-Adaptive Runtime Warp Scheduling for MoE Megakernels",
-      "authors": [
-        "Ziyu Huang, Yangjie Zhou, Chenhao Zhu, Hongzhe Yan, Tianwei Qiao, Sicheng He, Zihan Liu, Peng Yu, Shulai Zhang, Xingxun Tang, Xinhao Luo, Minyi Guo, Xiu Lin, Yinghao Yu, Guodong Yang, Liping Zhang, Shixuan Sun, Qingyun Chen, Jingwen Leng"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.27765v1 Announce Type: new \nAbstract: The Mixture-of-Experts (MoE) architecture is widely used in mainstream large language models. Under expert parallelism (EP), state-of-the-art systems fuse each MoE layer into a persistent megakernel for high performance. By the nature of EP, each GPU's communication and computation volumes vary with the routing result. However, prior work either fixes how GPU resources are divided between communication and computation at compile time (e.g., MegaMoE), or adapts to runtime dynamism only at coarse-grained SM granularity (e.g., mKernel), dedicating whole SMs to communication and leaving their Tensor Cores idle. At the finer warp granularity within each SM, static warp schedules can neither match routing-dependent loads nor prevent warps from idl",
-      "pdf_link": "https://arxiv.org/pdf/2611.27765.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.27765",
-      "submission_date": "2026-11-23T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 50.0,
-      "updated_at": "2026-11-23T17:19:48.114190+00:00"
     },
     {
       "forum_id": "usenix-osdi26-59",
@@ -2692,29 +2669,6 @@
       "updated_at": "2026-07-21T08:54:26.738543+00:00"
     },
     {
-      "forum_id": "2611.01363",
-      "paper_number": -1,
-      "title": "Eliminating Servers in State Machine Replication",
-      "authors": [
-        "Dohyun Park, Wenjie Hu, Mahesh Balakrishnan, Yongjoo Park"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.01363v2 Announce Type: replace-cross \nAbstract: State Machine Replication (SMR) underpins many stateful systems, including distributed databases, coordination services, and metadata stores. Fundamentally, SMR requires state to be materialized from a durable total order of commands. Existing SMR systems rely on servers to materialize, locally store, and serve snapshots of state; while the durable total order either resides on the same servers, or on an external, disaggregated shared log. Unfortunately, servers act as brittle, expensive choke-points in such systems, causing service unavailability when they fail; incurring provisioning latency on cold starts; and red-lining when exposed to bad clients. In this paper, we propose Serverless SMR (S^2MR), where both the materialized st",
-      "pdf_link": "https://arxiv.org/pdf/2611.01363.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.01363",
-      "submission_date": "2026-11-23T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 25.5,
-      "updated_at": "2026-11-23T17:19:48.114658+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-99",
       "paper_number": 99,
       "title": "Phantora: Maximizing Code Reuse in Simulation-based Machine Learning System Performance Estimation",
@@ -3969,29 +3923,6 @@
       "updated_at": "2026-07-21T08:54:22.936410+00:00"
     },
     {
-      "forum_id": "2609.23843",
-      "paper_number": -1,
-      "title": "Adaptive Determinantal Client Scheduling in Federated Learning",
-      "authors": [
-        "Wen Xu, Ben Liang, Gary Boudreau, Hamza Sokun"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2609.23843v2 Announce Type: replace-cross \nAbstract: Scheduling clients for model training is critical in federated learning due to both data and system heterogeneity. Most previous works focus on the quality of the scheduled clients to achieve faster convergence, shorter wall-clock convergence time, or better average model performance. They rarely consider the diversity of clients, which is important to counter heterogeneity and improve performance for the worst-off clients. In this work, we advocate the use of determinantal point processes (DPPs) to model and enhance the diversity in client scheduling. We first design the kernel matrices of DPPs using gradient information and quality scores, which inherently enables a flexible quality-diversity trade-off. Applying fast MAP inferenc",
-      "pdf_link": "https://arxiv.org/pdf/2609.23843.pdf",
-      "forum_link": "https://arxiv.org/abs/2609.23843",
-      "submission_date": "2026-11-23T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-11-23T17:19:48.114641+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-5",
       "paper_number": 5,
       "title": "Simple Is Better: Multiplication May Be All You Need for LLM Request Scheduling",
@@ -4408,29 +4339,6 @@
       "ratings": [],
       "score": 12.5,
       "updated_at": "2026-07-21T08:54:22.934320+00:00"
-    },
-    {
-      "forum_id": "2611.26676",
-      "paper_number": -1,
-      "title": "One Behavior, Out of Order: Deterministic Execution and Parallel Simulation of ROS 2 Applications",
-      "authors": [
-        "Chengzi Huang, Behnam Khodabandeloo, Duc Anh Nguyen, Chuanchao Gao, Wang Yi"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.26676v1 Announce Type: cross \nAbstract: System-level simulation is widely used to validate robotic applications before hardware deployment. However, Robot Operating System 2 (ROS 2), a popular middleware for such applications, uses asynchronous publish-subscribe communication, which can make application behavior depend on scheduling and the platform. The behavior can then vary across runs and machines even with the same inputs. This nondeterminism makes faults hard to reproduce and tests unreliable. In this paper, we first give ROS 2 applications a lightweight coordination scheme in which every component, including event-driven ones, reads its inputs and writes its outputs at predefined time instants. By decoupling computation and communication, the scheme makes an application d",
-      "pdf_link": "https://arxiv.org/pdf/2611.26676.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.26676",
-      "submission_date": "2026-11-23T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-11-23T17:19:48.114279+00:00"
     },
     {
       "forum_id": "usenix-osdi26-11",
@@ -5050,29 +4958,6 @@
       "updated_at": "2026-07-21T08:54:22.941047+00:00"
     },
     {
-      "forum_id": "2611.27604",
-      "paper_number": -1,
-      "title": "IsoMoE: Placement-Invariant Hybrid CPU-GPU MoE Inference with Lossless 12-bit Experts",
-      "authors": [
-        "Hang Gu, Teng Wang, Zhendong Zheng, Qianyu Cheng, Wenqi Lou, Lei Gong, Xi Li, Xuehai Zhou"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.27604v1 Announce Type: new \nAbstract: Mixture-of-Experts (MoE) models scale model capacity at low computational cost. Hybrid CPU-GPU inference offloads some experts to the CPU, enabling a single GPU to run MoE models larger than its memory. Expert placement changes with free GPU memory and should only affect speed. However, the greedy decoding outputs of existing hybrid engines change with placement. This is because the two devices use different arithmetic to compute experts. In addition, decoding is limited by CPU memory bandwidth. Lossless compression reduces memory traffic, but the CPU decompresses entropy-coded formats too slowly to keep up with memory reads. To address these challenges, we propose IsoMoE, an efficient hybrid MoE inference system that guarantees that its out",
-      "pdf_link": "https://arxiv.org/pdf/2611.27604.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.27604",
-      "submission_date": "2026-11-23T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 7.0,
-      "updated_at": "2026-11-23T17:19:48.114084+00:00"
-    },
-    {
       "forum_id": "usenix-nsdi26-69",
       "paper_number": 69,
       "title": "Come Hell or Still Water: Alleviating Tail Latency in Cloud Block Store",
@@ -5550,29 +5435,6 @@
       "ratings": [],
       "score": 4.5,
       "updated_at": "2026-07-21T08:54:26.744753+00:00"
-    },
-    {
-      "forum_id": "2611.27255",
-      "paper_number": -1,
-      "title": "AceVLN: Asynchronous Cloud Edge Deployment of VLNs via Latent Scheduling and Compensation",
-      "authors": [
-        "Zihao Zheng, Hangyu Cao, Yulong Han, Xichang Wu, Zhihao Mao, Maoliang Li, Jiayu Chen, Hailong Zou, Donggang Cao, Xuanzhe Liu, Hong Mei, Xiang Chen"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.27255v1 Announce Type: new \nAbstract: Cloud--edge deployment enables asynchronous dual-system VLN on resource-constrained robots, but inference and communication delays cause latent mismatch and navigation errors. Existing adaptation methods reuse historical guidance but cannot provide updated navigation information when it becomes inadequate. We propose AceVLN, a training-free framework for active latent refresh and edge-side compensation. Our analysis reveals that action-relevant mismatch is concentrated in a compact Critical Subspace and can be tracked through fast-system feature drift. Critical Feature Drift Entropy reflects navigation sensitivity and guides adaptive refresh, while Critical Drift Continuity indicates when recent latent updates can support compensation during",
-      "pdf_link": "https://arxiv.org/pdf/2611.27255.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.27255",
-      "submission_date": "2026-11-23T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-11-23T17:19:48.113914+00:00"
     },
     {
       "forum_id": "usenix-osdi26-87",
@@ -6059,29 +5921,6 @@
       "ratings": [],
       "score": 3.0,
       "updated_at": "2026-07-21T08:54:22.938822+00:00"
-    },
-    {
-      "forum_id": "2611.27119",
-      "paper_number": -1,
-      "title": "CTRL: Concurrent Training and Rollout for LLM Reinforcement Learning via GPU Co-Residency",
-      "authors": [
-        "Ruijia Yang, Ruikai Li, Zeyi Wen"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.27119v1 Announce Type: new \nAbstract: Reinforcement learning (RL) post-training of large language models runs two GPU workloads with different hardware demands: rollout decoding, which is dominated by memory access and whose batch shrinks as responses finish, and a dense learner. Current systems either time-share every GPU between them, paying serial phases and switches, or split GPUs into pools whose sizes change only in whole devices. We present CTRL, which makes co-residency a third RL execution layout: every GPU runs a learner rank beside a persistent rollout engine, sharing the device under CUDA MPS. A host-owned learner makes the layout fit: optimizer state stays in host memory, and policy weights stream layer by layer through a bounded GPU window. A publication gate train",
-      "pdf_link": "https://arxiv.org/pdf/2611.27119.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.27119",
-      "submission_date": "2026-11-23T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-11-23T17:19:48.113809+00:00"
     },
     {
       "forum_id": "usenix-osdi26-22",

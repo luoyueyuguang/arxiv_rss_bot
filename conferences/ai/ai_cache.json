@@ -1,55 +1,9 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-11-23T17:20:34.943413+00:00",
-  "paper_count": 32,
+  "last_updated": "2026-11-24T16:56:53.499771+00:00",
+  "paper_count": 30,
   "papers": [
-    {
-      "forum_id": "2603.16849",
-      "paper_number": -1,
-      "title": "GIST: Gauge-Invariant Spectral Transformers for Scalable Graph Neural Operators",
-      "authors": [
-        "Mattia Rigotti, Nicholas Thumiger, Thomas Frick"
-      ],
-      "keywords": [
-        "cs.LG",
-        "NeurIPS"
-      ],
-      "abstract": "arXiv:2603.16849v4 Announce Type: replace \nAbstract: Neural operators on irregular meshes face a fundamental tension. Spectral positional encodings, a natural choice in graph learning for capturing geometry, require cubic-complexity eigendecomposition and inadvertently break gauge invariance through numerical solver artifacts; existing efficient approximations typically sacrifice gauge symmetry by design. Both failure modes break discretization invariance: models fail to transfer across mesh resolutions of the same domain, and similarly across different graphs of related structure in inductive settings. We propose GIST (Gauge-Invariant Spectral Transformer), a scalable neural operator that resolves this tension by restricting attention to pairwise inner products of efficient approximate sp",
-      "pdf_link": "https://arxiv.org/pdf/2603.16849.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.16849",
-      "submission_date": "2026-11-23T05:00:00+00:00",
-      "conference": "NeurIPS",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 109.0,
-      "updated_at": "2026-11-23T17:20:02.884153+00:00"
-    },
-    {
-      "forum_id": "2605.17254",
-      "paper_number": -1,
-      "title": "CatalyticMLLM: A Graph-Text Multimodal Large Language Model for Catalytic Materials",
-      "authors": [
-        "Yanjie Li, Jian Xu, Xu-Yao Zhang, Shiming Xiang, Nian Ran, Weijun Li, Cheng-Lin Liu"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ICML"
-      ],
-      "abstract": "arXiv:2605.17254v5 Announce Type: replace \nAbstract: Property prediction and inverse structural design of catalytic materials are typically modeled as two independent tasks: the former predicts target properties from given structures, whereas the latter generates candidate structures conditioned on desired properties. Although this decoupled paradigm facilitates the construction of a ``generation--evaluation--screening'' workflow, the two models may have different domains of applicability because they are trained on different data distributions. Consequently, during closed-loop optimization, the generative model may produce structures that fall outside the reliable applicability domain of the evaluation model, while prediction errors from the evaluator may accumulate over successive iterat",
-      "pdf_link": "https://arxiv.org/pdf/2605.17254.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.17254",
-      "submission_date": "2026-11-23T05:00:00+00:00",
-      "conference": "ICML",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 86.5,
-      "updated_at": "2026-11-23T17:20:02.595246+00:00"
-    },
     {
       "forum_id": "mlr-icml25-1",
       "paper_number": 1,
