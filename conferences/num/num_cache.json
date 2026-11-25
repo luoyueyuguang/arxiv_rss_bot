@@ -1,31 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-11-23T17:20:35.055317+00:00",
+  "last_updated": "2026-11-25T16:46:16.854257+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2512.03483",
+      "forum_id": "2611.31955",
       "paper_number": -1,
-      "title": "Numerical Analysis of 2D Stochastic Navier--Stokes Equations with Transport Noise: Regularity and Spatial Semidiscretization",
+      "title": "A new angle on matrix-vector complexity",
       "authors": [
-        "Binjie Li, Qin Zhou"
+        "Cecilia Chen, Ethan N. W. Epperly, Michael W. Mahoney, Raphael A. Meyer, John Urschel"
       ],
       "keywords": [
         "cs.NA",
         "numerical analysis"
       ],
-      "abstract": "arXiv:2512.03483v4 Announce Type: replace \nAbstract: This paper establishes a strong convergence rate for the spatial finite element discretization of a two-dimensional stochastic Navier--Stokes system with transport noise and no-slip boundary conditions on a convex polygonal domain. The main challenge arises from the lack of spatial $D(A)$-regularity of the solutio (where $A$ is the Stokes operator), which prevents the direct applicability of standard error analysis techniques. Under a smallness assumption on the transport noise, for a MINI-element spatial semidiscretization, we establish a strong convergence rate of order $h^{\\varrho} \\log\\big(1 + \\frac{1}{h}\\big)$, where $\\varrho \\in (0,1/2)$.",
-      "pdf_link": "https://arxiv.org/pdf/2512.03483.pdf",
-      "forum_link": "https://arxiv.org/abs/2512.03483",
-      "submission_date": "2026-11-23T05:00:00+00:00",
+      "abstract": "arXiv:2611.31955v1 Announce Type: cross \nAbstract: The theory of worst-case matrix-vector complexity has been useful for guiding the design of fast linear algebra algorithms. However, there is a large theory-practice gap in the study of *one-sided* methods, which use matrix-vector products with $\\mathbf{A}$ but not $\\mathbf{A}^\\top$. In practice, for fundamental problems like solving linear systems, one-sided methods like GMRES are often the fastest. By contrast, worst-case analysis often shows pessimistic results, for instance showing that one-sided methods cannot solve a linear system with ideal condition number 1 unless they read the whole matrix $\\mathbf{A}$. Such worst-case complexity results do not reflect real-world experience.\n  To address this issue, this paper proposes a differen",
+      "pdf_link": "https://arxiv.org/pdf/2611.31955.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.31955",
+      "submission_date": "2026-11-25T05:00:00+00:00",
       "conference": "numerical analysis",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 15.5,
-      "updated_at": "2026-11-23T17:20:35.054103+00:00"
+      "score": 11.0,
+      "updated_at": "2026-11-25T16:46:16.851507+00:00"
     }
   ]
 }

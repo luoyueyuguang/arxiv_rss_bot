@@ -1,146 +1,192 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-11-23T17:20:02.343059+00:00",
-  "paper_count": 6,
+  "last_updated": "2026-11-25T16:45:42.060393+00:00",
+  "paper_count": 8,
   "papers": [
     {
-      "forum_id": "2611.27287",
+      "forum_id": "2611.31876",
       "paper_number": -1,
-      "title": "GRADPlace: Geometry-Based Routing-Augmented Differentiable Placement for Routability Optimization",
+      "title": "AgentDRC: Multi-Agent Algorithms for Spatially-Aware Automated DRC Correction",
       "authors": [
-        "Xurong Shen, Xueyan Zhao, Zhipeng Huang, Chaoyu Xing, Biwei Xie"
+        "Pengju Liu (Katie), Nuo Xu (Katie), Winso Chen (Katie), Peijun Li (Katie),  Yang (Katie),  Zhao, Yu Cao, Caiwen Ding"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2611.27287v1 Announce Type: new \nAbstract: Routability-driven placement needs gradients that show how cell movement redistributes routing demand. Cell inflation exploits routing feedback only indirectly, and differentiable methods rely on black-box congestion predictors or on virtual-cell congestion fields frozen between routing updates. We present GRADPlace, which represents probability-weighted candidate routes as movable horizontal and vertical segments. Routing feedback sets their probabilities, while their geometry and expected demand evolve with cell coordinates. An electrostatic routing objective propagates gradients through this geometry to connected cells, complementing cell inflation. On the ISPD 2015 benchmarks, our reproduced Xplace-route and published DCGP results have o",
-      "pdf_link": "https://arxiv.org/pdf/2611.27287.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.27287",
-      "submission_date": "2026-11-23T05:00:00+00:00",
+      "abstract": "arXiv:2611.31876v1 Announce Type: new \nAbstract: Design Rule Checking (DRC) error fixing remains a time-consuming bottleneck in physical design, often requiring manual intervention despite advanced EDA optimizations. Existing LLM-agent approaches fall short due to redundant contextual shapes, limited spatial reasoning over raw coordinates, and inefficient flat layout representations. We propose AgentDRC, which formulates iterative DRC correction as a multi-agent algorithm and introduces a spatial-aware verification and correction algorithm that reconstructs structured spatial relations among critical shapes and validates fixes through geometric and semantic constraint checking. The system coordinates four specialized agents to perceive multi-level, multi-modal geometric features, filter ir",
+      "pdf_link": "https://arxiv.org/pdf/2611.31876.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.31876",
+      "submission_date": "2026-11-25T05:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 65.5,
-      "updated_at": "2026-11-23T17:20:02.340839+00:00"
+      "score": 13.0,
+      "updated_at": "2026-11-25T16:45:42.055671+00:00"
     },
     {
-      "forum_id": "2611.27035",
+      "forum_id": "2611.32652",
       "paper_number": -1,
-      "title": "Mind the Delta: Early Pruning of RTL Variants for Agentic Hardware Optimization",
+      "title": "Power Side-Channel Evaluation using Multi-FPGA Systems",
       "authors": [
-        "Siyang Cai, Cangyuan Li, Haoyu Gao, Kun Wang, Mochen Li, Yilin Zhong, Ke Xu, Yinhe Han, Ying Wang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2611.27035v1 Announce Type: new \nAbstract: Autonomous coding agents powered by large language models (LLMs) now write diverse microarchitectural variants of existing register-transfer level (RTL) designs at high throughput, shifting the primary bottleneck of agentic RTL optimization onto logic synthesis. Commercial toolchains take hours per variant, creating an acute compute asymmetry between proposing and evaluating variants. Existing fast evaluators falter in this regime. Subtle RTL edits trigger nonlinear synthesis shifts that learned predictors and coding agents cannot resolve, while synthesis proxies at reduced effort either alter the optimization trajectory or retain most of its runtime. Selecting a variant, however, does not require regressing absolute quality of results acros",
-      "pdf_link": "https://arxiv.org/pdf/2611.27035.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.27035",
-      "submission_date": "2026-11-23T05:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 13.5,
-      "updated_at": "2026-11-23T17:20:02.340788+00:00"
-    },
-    {
-      "forum_id": "2607.16473",
-      "paper_number": -1,
-      "title": "Enabling Spatially Fine-Grained DVFS in Neural Processing Units for Energy-Efficient LLM Serving",
-      "authors": [
-        "Yuqi Xue, Jerry Wu, Corey Yu, Jian Huang"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2607.16473v2 Announce Type: replace \nAbstract: As neural processing units (NPUs) evolve rapidly to accommodate the ever-increasing compute demand of large language models (LLMs), their power consumption is becoming a limiting factor. Our study shows that using dynamic voltage and frequency scaling (DVFS) to exploit the service-level objective (SLO) slacks is a promising way to improve NPU energy efficiency for LLM services. And as tensor operators in LLMs exhibit diverse bottlenecks across NPU components, it is desirable to configure the frequency separately for each component to maximize their energy efficiency.\n  In this paper, we develop eNPU that enables hardware and software support for spatially fine-grained, component-level DVFS on NPUs. eNPU refactors the NPU core pipeline to",
-      "pdf_link": "https://arxiv.org/pdf/2607.16473.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.16473",
-      "submission_date": "2026-11-23T05:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-11-23T17:20:02.341078+00:00"
-    },
-    {
-      "forum_id": "2611.27323",
-      "paper_number": -1,
-      "title": "Cruella: A Unified Microscaling and Floating-Point Dot-Product Unit for LLM Inference on FPGAs",
-      "authors": [
-        "Jinho Yang, Taehyeong Kim, Mincheol Cha, Hyeoncheol Kim, Donggeun Kim, Nahye Kim, Yujin Lee, Ryeowook Ko, Woong Gyu Park, Jiwoong Park, Junsoo Kim, Tae-Hyoung Kim, Yongjun Park, Seongmin Hong, Joo-Young Kim"
+        "Yaswanth Tavva, Geng Luo, Trevor E. Carlson, Li-Shiuan Peh"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2611.27323v1 Announce Type: new \nAbstract: The number formats that accelerators execute natively are fixed at fabrication, yet large language model (LLM) checkpoints are released with MXFP4 weights in the Microscaling (MX) formats standardized in 2023. FPGAs adopt new formats through bitstreams. However, to the best of our knowledge, no deployed FPGA LLM accelerator executes MXFP4 weights alongside BF16 products. We characterize the decoding of MXFP4 checkpoints, whose layers alternate between MXFP4$\\times$BF16 products and BF16$\\times$BF16 products of attention and BF16 layers. With a BF16 KV cache, BF16$\\times$BF16 products take 56%-77% of the datapath time, during which a separate MXFP4 unit idles. We present Cruella, whose unified dot-product unit (UDPU) executes both product typ",
-      "pdf_link": "https://arxiv.org/pdf/2611.27323.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.27323",
-      "submission_date": "2026-11-23T05:00:00+00:00",
+      "abstract": "arXiv:2611.32652v1 Announce Type: cross \nAbstract: Complex out-of-order processors are difficult to evaluate for power side-channel leakage before tapeout. A single FPGA often lacks sufficient capacity, whereas conventional CAD-based analysis is too slow to support the large numbers of traces required by practical attacks. Multi-FPGA emulation provides greater capacity, but existing partitioning schemes are not security-aware and thus results in poor attack performance. This work presents Scissors, a security-aware multi-FPGA partitioning approach for pre-silicon power side-channel evaluation of complex out-of-order processors. Scissors uses side-channel vulnerability factor (SVF) analysis to identify signals correlated with the secret key. It then keeps strongly key-correlated signals con",
+      "pdf_link": "https://arxiv.org/pdf/2611.32652.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.32652",
+      "submission_date": "2026-11-25T05:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 4.0,
+      "updated_at": "2026-11-25T16:45:42.056379+00:00"
+    },
+    {
+      "forum_id": "2611.31540",
+      "paper_number": -1,
+      "title": "ExitLUT: Boolean Early Exits for Efficient FPGA-Based Neural Network Inference",
+      "authors": [
+        "Oliver Cassidy, Marta Andronic, George A. Constantinides"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2611.31540v1 Announce Type: new \nAbstract: Early exit neural networks reduce average inference cost by terminating once sufficient confidence is reached. On FPGAs, conventional confidence-based exits add arithmetic control paths poorly matched to LUT fabrics, consuming resources that could otherwise support the main datapath. We present ExitLUT, which replaces softmax-style exit decisions with learned Boolean functions mapped directly into FPGA LUTs. In our CNN evaluation, fpgaConvNet is the static spatial-dataflow baseline, while ATHEENA is its softmax-based early exit extension. ExitLUT reduces ATHEENA's exit-decision LUT usage by 2.58$\\times$ over the softmax path and eliminates decision-path DSP usage, while preserving accuracy and exit behavior. Rerunning design-space exploratio",
+      "pdf_link": "https://arxiv.org/pdf/2611.31540.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.31540",
+      "submission_date": "2026-11-25T05:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-11-25T16:45:42.055409+00:00"
+    },
+    {
+      "forum_id": "2611.32662",
+      "paper_number": -1,
+      "title": "OpenWoud: Vendor-Unlocked Scalable Adaptive Random Forest Accelerator",
+      "authors": [
+        "Ewout van Nimwegen, Elijah Seth Cishugi, Hendrik Folmer, Marco Ottavi, Kuan-Hsun Chen"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2611.32662v1 Announce Type: new \nAbstract: Online Machine Learning (ML) enables real-time decision-making on evolving data streams. These dynamic models learn continuously to adapt to new concepts, as previous ones become invalid, but their performance is often limited by throughput. The Adaptive Random Forest (ARF) is a state-of-the-art model for this setting, which naturally exposes parallelism and is therefore well-suited for hardware acceleration. However, prior Field Programmable Gate Array (FPGA)-based accelerators are vendor-locked and rely on resource-hungry Floating-Point (FP) arithmetics, limiting their scalability and portability. We present OpenWoud, a vendor-unlocked ARF framework for FPGAs. Our design replaces FP operators with a flexible FiXed-Point (FxP) arithmetic li",
+      "pdf_link": "https://arxiv.org/pdf/2611.32662.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.32662",
+      "submission_date": "2026-11-25T05:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-11-25T16:45:42.056200+00:00"
+    },
+    {
+      "forum_id": "2611.32275",
+      "paper_number": -1,
+      "title": "On the Design of a Slow Control Interlock System for the European GateMate FPGA",
+      "authors": [
+        "Vitalii Burtsev, Daniele Passaretti, Daniel Anders, Christof Pfannenmueller, Fabian Lurz, Thilo Pionteck"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2611.32275v1 Announce Type: new \nAbstract: Slow Control Systems (SCSs) are essential for the monitoring, configuration, and protection of distributed safety-critical systems in scientific, industrial, and medical applications. Although software-based SCS architectures offer flexibility and scalability, they suffer from software aging and non-deterministic latencies, which limit long-term reliability and timely reaction to critical errors, often requiring additional hardware interlock systems. This paper presents an FPGA-centric lightweight Slow Control Interlock System (SCIS) designed to achieve deterministic ultra-low-latency reaction times in long-running dependable systems. System parameters are acquired and fused at runtime in a Supervisory Monitor Unit (SMU), enabling real-time ",
+      "pdf_link": "https://arxiv.org/pdf/2611.32275.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.32275",
+      "submission_date": "2026-11-25T05:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.5,
-      "updated_at": "2026-11-23T17:20:02.340873+00:00"
+      "updated_at": "2026-11-25T16:45:42.056010+00:00"
     },
     {
-      "forum_id": "2611.27010",
+      "forum_id": "2611.32288",
       "paper_number": -1,
-      "title": "Rethinking ANNS on Commodity PIM: PIM-Native Vector Search with Cooperative Filtering",
+      "title": "Trading BRAM for LUTs: Hybrid Bit-Level Weight Storage for FPGA-Based Spiking Neural Networks",
       "authors": [
-        "Dawei Guo, Yizou Chen, Fan Yang, Hui Li, Ming-Chang Yang"
+        "Dimitrios Sekertzis, Giorgos Dimitrakopoulos"
+      ],
+      "keywords": [
+        "cs.AR",
+        "FPGA"
+      ],
+      "abstract": "arXiv:2611.32288v1 Announce Type: new \nAbstract: Spiking Neural Networks (SNNs) offer an attractive paradigm for energy-efficient AI inference, while their deployment on reconfigurable hardware enables application-specific acceleration without sacrificing model reprogrammability. However, realizing this potential on FPGAs is often severely constrained by the immense on-chip memory needed to store synaptic weights. Existing compression techniques reduce this storage requirement at the cost of weight precision or accuracy. This work presents a hybrid bit-level weight-storage scheme that trades BRAM capacity for FPGA logic resources while preserving the original weights unmodified. Selected weight bits are implemented using Look-Up Tables (LUTs), while the remaining bits are stored in BRAM an",
+      "pdf_link": "https://arxiv.org/pdf/2611.32288.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.32288",
+      "submission_date": "2026-11-25T05:00:00+00:00",
+      "conference": "FPGA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 1.5,
+      "updated_at": "2026-11-25T16:45:42.056054+00:00"
+    },
+    {
+      "forum_id": "2611.32264",
+      "paper_number": -1,
+      "title": "Mayfly: Lifecycle-Aware High-Bandwidth Flash for Recursive Self-Improvement",
+      "authors": [
+        "Chunlin Tian, Mingjia Fan, Feng Yu, Qingyun Zou, Wenju Zhao, Weng-Fai Wong, Bingsheng He"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2611.27010v1 Announce Type: new \nAbstract: Approximate nearest neighbor search (ANNS) is a key primitive in modern data-intensive systems, and its memory-bound vector-scanning stage makes processing-in-memory (PIM) a promising acceleration platform. Existing PIM-based ANNS systems largely transplant CPU-oriented distance evaluation and top-$k$ selection onto PIM, introducing arithmetic- and state-heavy operations that poorly match lightweight, isolated PIM cores. To address these mismatches, we present PIVOT, a PIM-native vector search system with cooperative filtering, which thoroughly rethinks how ANNS should be executed on commodity PIM. First, PIVOT recasts PIM-side distance evaluation around binary quantization to exploit PIM-native bitwise operations, enabling LUT-free evaluati",
-      "pdf_link": "https://arxiv.org/pdf/2611.27010.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.27010",
-      "submission_date": "2026-11-23T05:00:00+00:00",
+      "abstract": "arXiv:2611.32264v1 Announce Type: new \nAbstract: Recursive self-improvement (RSI) lets an LLM improve its agent system by proposing and evaluating candidate variants across tasks. A generation's sessions grow their KV caches together and release them as they finish, creating a burst followed by a decline. At high concurrency, even the KV of sessions ready to run exceeds the GPU's HBM. Offloading that KV to host DRAM or SSDs adds capacity but leaves ready sessions waiting for HBM space before execution. High-Bandwidth Flash (HBF) can serve the overflow in place, but excessive reads lengthen decode steps and repeated writes consume flash endurance. Our key insight is that where ready KV is read should follow the burst and its decline: from HBF in place while the burst overflows HBM, as much ",
+      "pdf_link": "https://arxiv.org/pdf/2611.32264.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.32264",
+      "submission_date": "2026-11-25T05:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-11-23T17:20:02.340759+00:00"
+      "updated_at": "2026-11-25T16:45:42.055949+00:00"
     },
     {
-      "forum_id": "2607.16488",
+      "forum_id": "2611.24637",
       "paper_number": -1,
-      "title": "Auto-Scaling Heterogeneous Neural Processing Units for Energy and Cost-Efficient LLM Serving",
+      "title": "Hypnos: A Dual-Phase End-to-End Platform for Scalable Continual Learning at the Edge",
       "authors": [
-        "Yuqi Xue, Jichuan Chang, Jian Huang"
+        "Guilherme Guedes, Marco P. Apolinario, Charlotte Frenkel"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2607.16488v2 Announce Type: replace \nAbstract: To meet the ever-increasing computing demands of large language model (LLM) services, modern cloud platforms have widely deployed neural processing units (NPUs). These NPU chips have been developed and evolved at an incredibly fast pace, this inevitably produces heterogeneous compute pools backed by different versions of NPU chips. Unfortunately, due to the lack of system and architecture support for managing NPU heterogeneity in the cloud, it is unclear how to best utilize heterogeneous NPUs to maximize the energy and cost efficiency for LLM services.\n  In this paper, we first conduct a characterization study of various generations of real NPU chips to demonstrate the potential benefits on energy/cost efficiency and performance by utili",
-      "pdf_link": "https://arxiv.org/pdf/2607.16488.pdf",
-      "forum_link": "https://arxiv.org/abs/2607.16488",
-      "submission_date": "2026-11-23T05:00:00+00:00",
+      "abstract": "arXiv:2611.24637v3 Announce Type: replace \nAbstract: Continual learning (CL) enables neural networks to adapt to non-stationary data streams by mitigating catastrophic forgetting, offering a path to robust, private, and adaptable edge devices. Yet, porting CL to real-world edge devices remains challenging for two reasons: (i) online operation, where sensor data arrives one sample at a time and the device must adapt on-the-fly, and (ii) the low footprint of edge devices, which makes traditional error backpropagation training prohibitive. Inspired by the brain's wake and sleep cycles, the former for rapid adaptation with minimal resources and the latter for long-term consolidation, we introduce Hypnos, an open-source dual-phase platform for efficient CL at the edge. In the wake phase (e.g., ",
+      "pdf_link": "https://arxiv.org/pdf/2611.24637.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.24637",
+      "submission_date": "2026-11-25T05:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-11-23T17:20:02.341105+00:00"
+      "updated_at": "2026-11-25T16:45:42.056650+00:00"
     }
   ]
 }

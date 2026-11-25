@@ -1,77 +1,192 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-11-23T17:19:47.425064+00:00",
-  "paper_count": 3,
+  "last_updated": "2026-11-25T16:45:27.993301+00:00",
+  "paper_count": 8,
   "papers": [
     {
-      "forum_id": "2611.27323",
+      "forum_id": "2611.32275",
       "paper_number": -1,
-      "title": "Cruella: A Unified Microscaling and Floating-Point Dot-Product Unit for LLM Inference on FPGAs",
+      "title": "On the Design of a Slow Control Interlock System for the European GateMate FPGA",
       "authors": [
-        "Jinho Yang, Taehyeong Kim, Mincheol Cha, Hyeoncheol Kim, Donggeun Kim, Nahye Kim, Yujin Lee, Ryeowook Ko, Woong Gyu Park, Jiwoong Park, Junsoo Kim, Tae-Hyoung Kim, Yongjun Park, Seongmin Hong, Joo-Young Kim"
+        "Vitalii Burtsev, Daniele Passaretti, Daniel Anders, Christof Pfannenmueller, Fabian Lurz, Thilo Pionteck"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2611.27323v1 Announce Type: new \nAbstract: The number formats that accelerators execute natively are fixed at fabrication, yet large language model (LLM) checkpoints are released with MXFP4 weights in the Microscaling (MX) formats standardized in 2023. FPGAs adopt new formats through bitstreams. However, to the best of our knowledge, no deployed FPGA LLM accelerator executes MXFP4 weights alongside BF16 products. We characterize the decoding of MXFP4 checkpoints, whose layers alternate between MXFP4$\\times$BF16 products and BF16$\\times$BF16 products of attention and BF16 layers. With a BF16 KV cache, BF16$\\times$BF16 products take 56%-77% of the datapath time, during which a separate MXFP4 unit idles. We present Cruella, whose unified dot-product unit (UDPU) executes both product typ",
-      "pdf_link": "https://arxiv.org/pdf/2611.27323.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.27323",
-      "submission_date": "2026-11-23T05:00:00+00:00",
+      "abstract": "arXiv:2611.32275v1 Announce Type: new \nAbstract: Slow Control Systems (SCSs) are essential for the monitoring, configuration, and protection of distributed safety-critical systems in scientific, industrial, and medical applications. Although software-based SCS architectures offer flexibility and scalability, they suffer from software aging and non-deterministic latencies, which limit long-term reliability and timely reaction to critical errors, often requiring additional hardware interlock systems. This paper presents an FPGA-centric lightweight Slow Control Interlock System (SCIS) designed to achieve deterministic ultra-low-latency reaction times in long-running dependable systems. System parameters are acquired and fused at runtime in a Supervisory Monitor Unit (SMU), enabling real-time ",
+      "pdf_link": "https://arxiv.org/pdf/2611.32275.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.32275",
+      "submission_date": "2026-11-25T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 43.5,
-      "updated_at": "2026-11-23T17:19:47.421819+00:00"
+      "score": 64.5,
+      "updated_at": "2026-11-25T16:45:27.983869+00:00"
     },
     {
-      "forum_id": "2611.27035",
+      "forum_id": "2611.23022",
       "paper_number": -1,
-      "title": "Mind the Delta: Early Pruning of RTL Variants for Agentic Hardware Optimization",
+      "title": "Dissecting the GPU Load/Store Unit and Exposing Its Security Risks",
       "authors": [
-        "Siyang Cai, Cangyuan Li, Haoyu Gao, Kun Wang, Mochen Li, Yilin Zhong, Ke Xu, Yinhe Han, Ying Wang"
+        "Wenbo Han, Pierre Talbot"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2611.27035v1 Announce Type: new \nAbstract: Autonomous coding agents powered by large language models (LLMs) now write diverse microarchitectural variants of existing register-transfer level (RTL) designs at high throughput, shifting the primary bottleneck of agentic RTL optimization onto logic synthesis. Commercial toolchains take hours per variant, creating an acute compute asymmetry between proposing and evaluating variants. Existing fast evaluators falter in this regime. Subtle RTL edits trigger nonlinear synthesis shifts that learned predictors and coding agents cannot resolve, while synthesis proxies at reduced effort either alter the optimization trajectory or retain most of its runtime. Selecting a variant, however, does not require regressing absolute quality of results acros",
-      "pdf_link": "https://arxiv.org/pdf/2611.27035.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.27035",
-      "submission_date": "2026-11-23T05:00:00+00:00",
+      "abstract": "arXiv:2611.23022v2 Announce Type: replace \nAbstract: GPUs are the main platform for large-scale machine learning and power the largest supercomputers. Their load/store units (LSUs) often determine kernel performance and have been exploited in prior attacks. Yet what is known about the LSU is only a few isolated mechanisms and parameters, and even a single one has been enough for an attack. In particular, it is still unknown what a load costs, where loads contend, and even whether a warp can starve due to contention. Until each is measured, neither its security risk nor a defense is known. We reverse-engineer how the LSU serves load instructions on recent NVIDIA GPUs with microbenchmarks and analyze the security implications. We give a cycle-accurate latency formula for a global L1 hit or s",
+      "pdf_link": "https://arxiv.org/pdf/2611.23022.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.23022",
+      "submission_date": "2026-11-25T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-11-23T17:19:47.421784+00:00"
+      "score": 63.5,
+      "updated_at": "2026-11-25T16:45:27.984083+00:00"
     },
     {
-      "forum_id": "2611.27559",
+      "forum_id": "2611.31983",
       "paper_number": -1,
-      "title": "Can Language Models See the Circuit in Pixelated RFIC Passives?",
+      "title": "Discovering Bandwidth-Efficient Prefetchers to Shrink the Cache Hierarchy",
       "authors": [
-        "Jonathan Zhou, Kaushik Sengupta"
+        "Patrick Tser Jern Kon, Akanksha Jain, Abraham Gonzalez, Rui Meng, Dilara Soylu, Shubham Agarwal, Yawen Wang, Iman Hosseini, Hanna Alam, Jinsung Yoon, Tomas Pfister, Nanyun Peng, Chun-Liang Li, Parthasarathy Ranganathan"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2611.27559v1 Announce Type: cross \nAbstract: The emergence of inverse-designed, pixelated passives for microwave and millimeter-wave applications has been a major development in the field of RFIC design. These devices, which appear to be QR-code-like in structure, exist in a generalizable, high-dimensional design space that includes conventional passive topologies. However, these structures are naturally unintuitive for designers, and failures or deviations in performance are difficult to debug. In this work, we ask whether a frontier language model can understand, predict, and edit the responses and layout structure of pixelated passives. The agent, run with all tools disabled, is first asked to read layouts on 18x18 and 27x27 tile grids and, in a single reply, predict the input imp",
-      "pdf_link": "https://arxiv.org/pdf/2611.27559.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.27559",
-      "submission_date": "2026-11-23T05:00:00+00:00",
+      "abstract": "arXiv:2611.31983v1 Announce Type: cross \nAbstract: Shared last-level caches (LLCs) increasingly dominate server processor die area, forcing architects to trade core counts for cache capacity. While intelligent data prefetching offers a pathway to reclaim this silicon, designing coordinated, multi-level prefetching policies for multi-core systems is bottlenecked by day-long, cycle-level simulations. This simulation wall limits even LLM-based microarchitecture discovery; the state-of-the-art ArchAgent system evolves one cache level at a time on single-core benchmarks, adds multi-core configurations only at the end, and trails the human champion under multi-core shared cache contention. We introduce DuoArchitect, an autonomous agentic framework for multi-fidelity, multi-core co-discovery of p",
+      "pdf_link": "https://arxiv.org/pdf/2611.31983.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.31983",
+      "submission_date": "2026-11-25T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-11-23T17:19:47.421885+00:00"
+      "score": 35.0,
+      "updated_at": "2026-11-25T16:45:27.983958+00:00"
+    },
+    {
+      "forum_id": "2611.32082",
+      "paper_number": -1,
+      "title": "Walk the Cycle: An Efficient Stochastic Solver for Periodic Thermal Analysis of 2.5D/3D ICs",
+      "authors": [
+        "Shengnan Cai, Qibo Xue, Tianshu Hou, Tianxiang Zhu, Zixiao Wang, Yibo Lin, Runsheng Wang, Bei Yu"
+      ],
+      "keywords": [
+        "cs.AR",
+        "ISCA"
+      ],
+      "abstract": "arXiv:2611.32082v1 Announce Type: new \nAbstract: Long-term periodic thermal analysis is essential for designing 2.5D/3D ICs operating under periodic workloads. Deterministic global solvers can be costly for repeated thermal queries, while existing random-walk methods are not tailored to long-term periodic problems or multiscale 3D IC structures, limiting their efficiency and accuracy. We propose CycleWalker, a periodic residual random-walk solver. First, we formulate the periodic steady state (PSS) as an infinite-history backward walk, which needs no initial temperature or warm-up but charges the full temperature field to every path. Second, to cut this cost, we let the walk estimate only the residual of a periodic prior, and shorten long histories by Russian roulette while preserving unbi",
+      "pdf_link": "https://arxiv.org/pdf/2611.32082.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.32082",
+      "submission_date": "2026-11-25T05:00:00+00:00",
+      "conference": "ISCA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.5,
+      "updated_at": "2026-11-25T16:45:27.983807+00:00"
+    },
+    {
+      "forum_id": "2610.08378",
+      "paper_number": -1,
+      "title": "Lachesis: Lifetime-Aware KV Cache Placement for Agent Serving across HBM and High-Bandwidth Flash",
+      "authors": [
+        "Jaehoon Yang, Jeongmin Lee, Haneul Park, Seung Yul Lee, Nam Sung Kim, Jae W. Lee"
+      ],
+      "keywords": [
+        "cs.AR",
+        "ISCA"
+      ],
+      "abstract": "arXiv:2610.08378v2 Announce Type: replace \nAbstract: In agent serving, agents and their sub-agents accumulate context as KV cache across many requests, far beyond HBM capacity. High-bandwidth flash (HBF) adds greater capacity at HBM-class read bandwidth, allowing a server to grow its batch and throughput under a relaxed SLO. We show that this gain meets an endurance wall as the batch growth wears HBF out within its warranty period. Prior work analyzes which KV should reach HBF assuming a request's KV remains readable until completion. However, an agent run is stateful, and by design, its harness discards parts of the context throughout the run. We find that the context divides into groups of KV that the harness discards together, so each group shares one lifetime that is known before the g",
+      "pdf_link": "https://arxiv.org/pdf/2610.08378.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.08378",
+      "submission_date": "2026-11-25T05:00:00+00:00",
+      "conference": "ISCA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 31.5,
+      "updated_at": "2026-11-25T16:45:27.984072+00:00"
+    },
+    {
+      "forum_id": "2611.31767",
+      "paper_number": -1,
+      "title": "DELTA: Diagnosing Exploration Lineages via Twin-path Alignment - What Can Contrasting Design Paths Reveal About Microarchitectural Behavior?",
+      "authors": [
+        "Kaushal Mhapsekar, Darsh Asher, Bita Aslrousta, Amna Hassan, Debayan Sengupta, Azam Ghanbari, Samira Mirbagher Ajorpaz"
+      ],
+      "keywords": [
+        "cs.AR",
+        "ISCA"
+      ],
+      "abstract": "arXiv:2611.31767v1 Announce Type: new \nAbstract: Architects have two mature instruments for performance work. Top-Down analysis tells them where a design loses its pipeline slots, and design-space exploration (DSE) tells them which configuration scores best. Neither explains why a search stops improving: why a backend-bound design rejects a prefetcher that the bottleneck label recommends, or why a capacity increase that helped in one configuration hurts in the next. This paper argues that the evidence needed to answer such questions is already produced during exploration and then discarded. Every parent-child edge in an exploration tree is a controlled intervention: one knob changes, the rest of the design is held fixed, and a cycle-level simulator measures the outcome. When the same edit ",
+      "pdf_link": "https://arxiv.org/pdf/2611.31767.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.31767",
+      "submission_date": "2026-11-25T05:00:00+00:00",
+      "conference": "ISCA",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 12.0,
+      "updated_at": "2026-11-25T16:45:27.983707+00:00"
+    },
+    {
+      "forum_id": "2611.31733",
+      "paper_number": -1,
+      "title": "MOSAIC: Memory-Organized Search with Anti-Imitation Crossover for Training-Free Microarchitecture Optimization",
+      "authors": [
+        "Kaushal Mhapsekar, Bita Aslrousta, Paula Contreras, Azam Ghanbari, Samira Mirbagher Ajorpaz"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2611.31733v1 Announce Type: new \nAbstract: Large language models can generate cache-replacement policies. The central challenge is to retain performance on workloads excluded from the search. In our adaptations of published search methods, generated code resembles established policies, with cosine similarities of 0.78-0.84. The wider comparison also shows held-out harmonic-mean instructions-per-cycle (IPC) losses of 1.0-2.4%. We present MOSAIC, a search controller that improves policies without updating language-model weights. It stores concise lessons from previous evaluations rather than repeatedly copying high-scoring code. When improvement stops, it selects two high-scoring policies whose code embeddings differ and asks the model to combine their mechanisms. Novelty prompts and m",
+      "pdf_link": "https://arxiv.org/pdf/2611.31733.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.31733",
+      "submission_date": "2026-11-25T05:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.5,
+      "updated_at": "2026-11-25T16:45:27.983690+00:00"
+    },
+    {
+      "forum_id": "2611.32397",
+      "paper_number": -1,
+      "title": "Scaling Architectural Simulation to Giga Instructions Per Second",
+      "authors": [
+        "Zhouyi Shen, Hao Tang, Ruike Liu, Jingwei Sun, Guangzhong Sun"
+      ],
+      "keywords": [
+        "cs.AR",
+        "MICRO"
+      ],
+      "abstract": "arXiv:2611.32397v1 Announce Type: new \nAbstract: The cost of detailed architectural simulation constrains design-space exploration, while parallelization across simulated cores offers limited host concurrency for single-core and small multicore targets. We present GIPSim, an instruction-driven simulator that derives instruction timing from dependencies and resource constraints, reducing the overhead of updating pipeline state every simulated cycle. It applies synchronization-guided temporal decomposition to recorded execution, exposing host parallelism beyond the target core count. GIPSim replays the resulting segments in parallel and aggregates their durations through a dependency graph to estimate overall execution time, with replay contexts reconstructed using retained microarchitectura",
+      "pdf_link": "https://arxiv.org/pdf/2611.32397.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.32397",
+      "submission_date": "2026-11-25T05:00:00+00:00",
+      "conference": "MICRO",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 2.0,
+      "updated_at": "2026-11-25T16:45:27.983901+00:00"
     }
   ]
 }
