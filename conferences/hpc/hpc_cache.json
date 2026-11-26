@@ -1,31 +1,31 @@
 {
   "name": "hpc",
   "conference": "High Performance Computing",
-  "last_updated": "2026-11-20T14:55:03.417118+00:00",
+  "last_updated": "2026-11-26T16:21:03.772667+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2610.07593",
+      "forum_id": "2609.29395",
       "paper_number": -1,
-      "title": "TRANSIT: Transparent Scale-in for Multi-Node LLM Training",
+      "title": "Reducing Fixed-Batch Client Idleness in Many-Client Edge Split Learning",
       "authors": [
-        "Hyungyo Kim, Nicholas Satchanov, Hrishi Shah, Gaohan Ye, Jiaqi Lou, Robert Walkup, Shweta Salaria, I-Hsin Chung, Hubertus Franke, Seetharami Seelam, Apoorve Mohan, Nam Sung Kim"
+        "Mohammad Kohankhaki, Valentin Rentschler, Carsten Kamp, Sigrid Brell-Cokcan, Anke Schmeink"
       ],
       "keywords": [
         "cs.DC",
         "CLUSTER"
       ],
-      "abstract": "arXiv:2610.07593v2 Announce Type: replace \nAbstract: The growing memory requirements of large language models (LLMs) increasingly force distributed training jobs to span multiple GPU nodes to accommodate their training state. This reduces per-GPU computational efficiency, increases network traffic, and exacerbates job queueing delays. To address these inefficiencies, we introduce TRANSIT, a system that transparently enables efficient distributed LLM training on fewer GPUs through memory oversubscription. TRANSIT optimizes CPU-GPU data movement during oversubscription by coordinating driver-managed page residency with execution-guided zero-copy access, exploiting recurring kernel execution patterns across training iterations.\n  We evaluate TRANSIT on dense and mixture-of-experts (MoE) model",
-      "pdf_link": "https://arxiv.org/pdf/2610.07593.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.07593",
-      "submission_date": "2026-11-20T05:00:00+00:00",
+      "abstract": "arXiv:2609.29395v2 Announce Type: replace \nAbstract: Parallel Split Learning with Global Sampling (GPSL) trains a split model on a fixed-size batch drawn from the data of all clients. When the client population is much larger than the batch, most clients contribute no data in a round, and additional server capacity does not change this. We propose Global Clustered Parallel Split Learning (GCPSL), which assigns clients to stable clusters, runs one GPSL workload per cluster concurrently, and periodically fuses the split-model replicas. We derive the expected direct data participation under the batch sampler, which separates repeated sampling of the same clients from idling at the fusion barrier. With 256 clients, more clusters raise participation but reduce the client diversity seen by each ",
+      "pdf_link": "https://arxiv.org/pdf/2609.29395.pdf",
+      "forum_link": "https://arxiv.org/abs/2609.29395",
+      "submission_date": "2026-11-26T05:00:00+00:00",
       "conference": "CLUSTER",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 43.0,
-      "updated_at": "2026-11-20T14:55:03.064881+00:00"
+      "score": 2.0,
+      "updated_at": "2026-11-26T16:21:03.033936+00:00"
     }
   ]
 }

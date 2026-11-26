@@ -1,192 +1,54 @@
 {
   "name": "arch",
   "conference": "Computer Architecture",
-  "last_updated": "2026-11-25T16:45:27.993301+00:00",
-  "paper_count": 8,
+  "last_updated": "2026-11-26T16:21:02.982524+00:00",
+  "paper_count": 2,
   "papers": [
     {
-      "forum_id": "2611.32275",
+      "forum_id": "2611.33406",
       "paper_number": -1,
-      "title": "On the Design of a Slow Control Interlock System for the European GateMate FPGA",
+      "title": "WADJET: Whole-Job Authorization and Dispatch for Job Execution Trust on FPGA System-on-Chip Accelerators",
       "authors": [
-        "Vitalii Burtsev, Daniele Passaretti, Daniel Anders, Christof Pfannenmueller, Fabian Lurz, Thilo Pionteck"
+        "Mohamed El-Hadedy"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2611.32275v1 Announce Type: new \nAbstract: Slow Control Systems (SCSs) are essential for the monitoring, configuration, and protection of distributed safety-critical systems in scientific, industrial, and medical applications. Although software-based SCS architectures offer flexibility and scalability, they suffer from software aging and non-deterministic latencies, which limit long-term reliability and timely reaction to critical errors, often requiring additional hardware interlock systems. This paper presents an FPGA-centric lightweight Slow Control Interlock System (SCIS) designed to achieve deterministic ultra-low-latency reaction times in long-running dependable systems. System parameters are acquired and fused at runtime in a Supervisory Monitor Unit (SMU), enabling real-time ",
-      "pdf_link": "https://arxiv.org/pdf/2611.32275.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.32275",
-      "submission_date": "2026-11-25T05:00:00+00:00",
+      "abstract": "arXiv:2611.33406v1 Announce Type: new \nAbstract: On an FPGA system-on-chip, the software that submits work to an accelerator also decides what the accelerator does. It writes the registers one by one, and the hardware runs whatever it finds, so faulty or compromised software can change one address or resend a job. Existing protections decide who may reach an accelerator or keep its data safe. Deciding whether one job was approved and is still unused takes three things in one place: the only way to the accelerator, the whole job held back until checked, and a record of used approvals. WADJET puts the three in one gate in FPGA logic. A separate authority encrypts and authenticates each approved job, with a sequence number, using Ascon-AEAD128. The gate verifies the whole job before releasing",
+      "pdf_link": "https://arxiv.org/pdf/2611.33406.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.33406",
+      "submission_date": "2026-11-26T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 64.5,
-      "updated_at": "2026-11-25T16:45:27.983869+00:00"
+      "score": 64.0,
+      "updated_at": "2026-11-26T16:21:02.979259+00:00"
     },
     {
-      "forum_id": "2611.23022",
+      "forum_id": "2611.33346",
       "paper_number": -1,
-      "title": "Dissecting the GPU Load/Store Unit and Exposing Its Security Risks",
+      "title": "NEVA: Natural-Language Co-Evolution and Validation of Microarchitectures",
       "authors": [
-        "Wenbo Han, Pierre Talbot"
+        "Khoi Le, Sayanti Jana, Matthew DeLorenzo, Jeyavijayan Rajendran, Paul Gratz"
       ],
       "keywords": [
         "cs.AR",
         "MICRO"
       ],
-      "abstract": "arXiv:2611.23022v2 Announce Type: replace \nAbstract: GPUs are the main platform for large-scale machine learning and power the largest supercomputers. Their load/store units (LSUs) often determine kernel performance and have been exploited in prior attacks. Yet what is known about the LSU is only a few isolated mechanisms and parameters, and even a single one has been enough for an attack. In particular, it is still unknown what a load costs, where loads contend, and even whether a warp can starve due to contention. Until each is measured, neither its security risk nor a defense is known. We reverse-engineer how the LSU serves load instructions on recent NVIDIA GPUs with microbenchmarks and analyze the security implications. We give a cycle-accurate latency formula for a global L1 hit or s",
-      "pdf_link": "https://arxiv.org/pdf/2611.23022.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.23022",
-      "submission_date": "2026-11-25T05:00:00+00:00",
+      "abstract": "arXiv:2611.33346v1 Announce Type: new \nAbstract: Recent large language model (LLM)-guided evolutionary approaches have demonstrated the potential to automate microarchitectural design exploration. However, existing approaches primarily evolve C++ simulator code rather than reasoning directly about the microarchitectural designs it represents. As C++ code embodies hardware designs with several layers of abstraction, evolving it directly forces LLMs to reason through implementation details rather than the actual architectural mechanisms, hardware state, and decision rules that define a microarchitectural design. To this end, we propose NEVA, an LLM-guided methodology that generates new microarchitectural policies by extracting, integrating and adapting architectural concepts from published r",
+      "pdf_link": "https://arxiv.org/pdf/2611.33346.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.33346",
+      "submission_date": "2026-11-26T05:00:00+00:00",
       "conference": "MICRO",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 63.5,
-      "updated_at": "2026-11-25T16:45:27.984083+00:00"
-    },
-    {
-      "forum_id": "2611.31983",
-      "paper_number": -1,
-      "title": "Discovering Bandwidth-Efficient Prefetchers to Shrink the Cache Hierarchy",
-      "authors": [
-        "Patrick Tser Jern Kon, Akanksha Jain, Abraham Gonzalez, Rui Meng, Dilara Soylu, Shubham Agarwal, Yawen Wang, Iman Hosseini, Hanna Alam, Jinsung Yoon, Tomas Pfister, Nanyun Peng, Chun-Liang Li, Parthasarathy Ranganathan"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2611.31983v1 Announce Type: cross \nAbstract: Shared last-level caches (LLCs) increasingly dominate server processor die area, forcing architects to trade core counts for cache capacity. While intelligent data prefetching offers a pathway to reclaim this silicon, designing coordinated, multi-level prefetching policies for multi-core systems is bottlenecked by day-long, cycle-level simulations. This simulation wall limits even LLM-based microarchitecture discovery; the state-of-the-art ArchAgent system evolves one cache level at a time on single-core benchmarks, adds multi-core configurations only at the end, and trails the human champion under multi-core shared cache contention. We introduce DuoArchitect, an autonomous agentic framework for multi-fidelity, multi-core co-discovery of p",
-      "pdf_link": "https://arxiv.org/pdf/2611.31983.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.31983",
-      "submission_date": "2026-11-25T05:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 35.0,
-      "updated_at": "2026-11-25T16:45:27.983958+00:00"
-    },
-    {
-      "forum_id": "2611.32082",
-      "paper_number": -1,
-      "title": "Walk the Cycle: An Efficient Stochastic Solver for Periodic Thermal Analysis of 2.5D/3D ICs",
-      "authors": [
-        "Shengnan Cai, Qibo Xue, Tianshu Hou, Tianxiang Zhu, Zixiao Wang, Yibo Lin, Runsheng Wang, Bei Yu"
-      ],
-      "keywords": [
-        "cs.AR",
-        "ISCA"
-      ],
-      "abstract": "arXiv:2611.32082v1 Announce Type: new \nAbstract: Long-term periodic thermal analysis is essential for designing 2.5D/3D ICs operating under periodic workloads. Deterministic global solvers can be costly for repeated thermal queries, while existing random-walk methods are not tailored to long-term periodic problems or multiscale 3D IC structures, limiting their efficiency and accuracy. We propose CycleWalker, a periodic residual random-walk solver. First, we formulate the periodic steady state (PSS) as an infinite-history backward walk, which needs no initial temperature or warm-up but charges the full temperature field to every path. Second, to cut this cost, we let the walk estimate only the residual of a periodic prior, and shorten long histories by Russian roulette while preserving unbi",
-      "pdf_link": "https://arxiv.org/pdf/2611.32082.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.32082",
-      "submission_date": "2026-11-25T05:00:00+00:00",
-      "conference": "ISCA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-11-25T16:45:27.983807+00:00"
-    },
-    {
-      "forum_id": "2610.08378",
-      "paper_number": -1,
-      "title": "Lachesis: Lifetime-Aware KV Cache Placement for Agent Serving across HBM and High-Bandwidth Flash",
-      "authors": [
-        "Jaehoon Yang, Jeongmin Lee, Haneul Park, Seung Yul Lee, Nam Sung Kim, Jae W. Lee"
-      ],
-      "keywords": [
-        "cs.AR",
-        "ISCA"
-      ],
-      "abstract": "arXiv:2610.08378v2 Announce Type: replace \nAbstract: In agent serving, agents and their sub-agents accumulate context as KV cache across many requests, far beyond HBM capacity. High-bandwidth flash (HBF) adds greater capacity at HBM-class read bandwidth, allowing a server to grow its batch and throughput under a relaxed SLO. We show that this gain meets an endurance wall as the batch growth wears HBF out within its warranty period. Prior work analyzes which KV should reach HBF assuming a request's KV remains readable until completion. However, an agent run is stateful, and by design, its harness discards parts of the context throughout the run. We find that the context divides into groups of KV that the harness discards together, so each group shares one lifetime that is known before the g",
-      "pdf_link": "https://arxiv.org/pdf/2610.08378.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.08378",
-      "submission_date": "2026-11-25T05:00:00+00:00",
-      "conference": "ISCA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 31.5,
-      "updated_at": "2026-11-25T16:45:27.984072+00:00"
-    },
-    {
-      "forum_id": "2611.31767",
-      "paper_number": -1,
-      "title": "DELTA: Diagnosing Exploration Lineages via Twin-path Alignment - What Can Contrasting Design Paths Reveal About Microarchitectural Behavior?",
-      "authors": [
-        "Kaushal Mhapsekar, Darsh Asher, Bita Aslrousta, Amna Hassan, Debayan Sengupta, Azam Ghanbari, Samira Mirbagher Ajorpaz"
-      ],
-      "keywords": [
-        "cs.AR",
-        "ISCA"
-      ],
-      "abstract": "arXiv:2611.31767v1 Announce Type: new \nAbstract: Architects have two mature instruments for performance work. Top-Down analysis tells them where a design loses its pipeline slots, and design-space exploration (DSE) tells them which configuration scores best. Neither explains why a search stops improving: why a backend-bound design rejects a prefetcher that the bottleneck label recommends, or why a capacity increase that helped in one configuration hurts in the next. This paper argues that the evidence needed to answer such questions is already produced during exploration and then discarded. Every parent-child edge in an exploration tree is a controlled intervention: one knob changes, the rest of the design is held fixed, and a cycle-level simulator measures the outcome. When the same edit ",
-      "pdf_link": "https://arxiv.org/pdf/2611.31767.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.31767",
-      "submission_date": "2026-11-25T05:00:00+00:00",
-      "conference": "ISCA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 12.0,
-      "updated_at": "2026-11-25T16:45:27.983707+00:00"
-    },
-    {
-      "forum_id": "2611.31733",
-      "paper_number": -1,
-      "title": "MOSAIC: Memory-Organized Search with Anti-Imitation Crossover for Training-Free Microarchitecture Optimization",
-      "authors": [
-        "Kaushal Mhapsekar, Bita Aslrousta, Paula Contreras, Azam Ghanbari, Samira Mirbagher Ajorpaz"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2611.31733v1 Announce Type: new \nAbstract: Large language models can generate cache-replacement policies. The central challenge is to retain performance on workloads excluded from the search. In our adaptations of published search methods, generated code resembles established policies, with cosine similarities of 0.78-0.84. The wider comparison also shows held-out harmonic-mean instructions-per-cycle (IPC) losses of 1.0-2.4%. We present MOSAIC, a search controller that improves policies without updating language-model weights. It stores concise lessons from previous evaluations rather than repeatedly copying high-scoring code. When improvement stops, it selects two high-scoring policies whose code embeddings differ and asks the model to combine their mechanisms. Novelty prompts and m",
-      "pdf_link": "https://arxiv.org/pdf/2611.31733.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.31733",
-      "submission_date": "2026-11-25T05:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-11-25T16:45:27.983690+00:00"
-    },
-    {
-      "forum_id": "2611.32397",
-      "paper_number": -1,
-      "title": "Scaling Architectural Simulation to Giga Instructions Per Second",
-      "authors": [
-        "Zhouyi Shen, Hao Tang, Ruike Liu, Jingwei Sun, Guangzhong Sun"
-      ],
-      "keywords": [
-        "cs.AR",
-        "MICRO"
-      ],
-      "abstract": "arXiv:2611.32397v1 Announce Type: new \nAbstract: The cost of detailed architectural simulation constrains design-space exploration, while parallelization across simulated cores offers limited host concurrency for single-core and small multicore targets. We present GIPSim, an instruction-driven simulator that derives instruction timing from dependencies and resource constraints, reducing the overhead of updating pipeline state every simulated cycle. It applies synchronization-guided temporal decomposition to recorded execution, exposing host parallelism beyond the target core count. GIPSim replays the resulting segments in parallel and aggregates their durations through a dependency graph to estimate overall execution time, with replay contexts reconstructed using retained microarchitectura",
-      "pdf_link": "https://arxiv.org/pdf/2611.32397.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.32397",
-      "submission_date": "2026-11-25T05:00:00+00:00",
-      "conference": "MICRO",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-11-25T16:45:27.983901+00:00"
+      "score": 1.5,
+      "updated_at": "2026-11-26T16:21:02.979241+00:00"
     }
   ]
 }

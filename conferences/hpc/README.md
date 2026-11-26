@@ -1,6 +1,6 @@
 # High Performance Computing Papers
 
-- **Last Updated**: 2026-11-25 16:45:28 UTC
+- **Last Updated**: 2026-11-26 16:21:03 UTC
 - **Total Filtered Papers**: 1
 - **Displaying**: 1 (arxiv: 1)
 - **Papers with Ratings**: 0
@@ -9,4 +9,4 @@
 
 | # | Title | Source | Score |
 | --- | --- | --- | --- |
-| 1 | [TRANSIT: Transparent Scale-in for Multi-Node LLM Training](https://arxiv.org/abs/2610.07593) | `ARXIV` | 43.0 |
+| 1 | [Reducing Fixed-Batch Client Idleness in Many-Client Edge Split Learning](https://arxiv.org/abs/2609.29395) | `ARXIV` | 2.0 |

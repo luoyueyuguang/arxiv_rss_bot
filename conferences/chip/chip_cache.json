@@ -1,123 +1,100 @@
 {
   "name": "chip",
   "conference": "Chip Design / EDA",
-  "last_updated": "2026-11-25T16:45:42.060393+00:00",
-  "paper_count": 8,
+  "last_updated": "2026-11-26T16:21:16.633542+00:00",
+  "paper_count": 6,
   "papers": [
     {
       "forum_id": "2611.31876",
       "paper_number": -1,
       "title": "AgentDRC: Multi-Agent Algorithms for Spatially-Aware Automated DRC Correction",
       "authors": [
-        "Pengju Liu (Katie), Nuo Xu (Katie), Winso Chen (Katie), Peijun Li (Katie),  Yang (Katie),  Zhao, Yu Cao, Caiwen Ding"
+        "Pengju Liu (Katie), Nuo Xu (Katie), Winson Chen (Katie), Peijun Li (Katie),  Yang (Katie),  Zhao, Yu Cao, Caiwen Ding"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2611.31876v1 Announce Type: new \nAbstract: Design Rule Checking (DRC) error fixing remains a time-consuming bottleneck in physical design, often requiring manual intervention despite advanced EDA optimizations. Existing LLM-agent approaches fall short due to redundant contextual shapes, limited spatial reasoning over raw coordinates, and inefficient flat layout representations. We propose AgentDRC, which formulates iterative DRC correction as a multi-agent algorithm and introduces a spatial-aware verification and correction algorithm that reconstructs structured spatial relations among critical shapes and validates fixes through geometric and semantic constraint checking. The system coordinates four specialized agents to perceive multi-level, multi-modal geometric features, filter ir",
+      "abstract": "arXiv:2611.31876v2 Announce Type: replace \nAbstract: Design Rule Checking (DRC) error fixing remains a time-consuming bottleneck in physical design, often requiring manual intervention despite advanced EDA optimizations. Existing LLM-agent approaches fall short due to redundant contextual shapes, limited spatial reasoning over raw coordinates, and inefficient flat layout representations. We propose AgentDRC, which formulates iterative DRC correction as a multi-agent algorithm and introduces a spatial-aware verification and correction algorithm that reconstructs structured spatial relations among critical shapes and validates fixes through geometric and semantic constraint checking. The system coordinates four specialized agents to perceive multi-level, multi-modal geometric features, filte",
       "pdf_link": "https://arxiv.org/pdf/2611.31876.pdf",
       "forum_link": "https://arxiv.org/abs/2611.31876",
-      "submission_date": "2026-11-25T05:00:00+00:00",
+      "submission_date": "2026-11-26T05:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 13.0,
-      "updated_at": "2026-11-25T16:45:42.055671+00:00"
+      "score": 14.0,
+      "updated_at": "2026-11-26T16:21:16.630531+00:00"
     },
     {
-      "forum_id": "2611.32652",
+      "forum_id": "2611.33973",
       "paper_number": -1,
-      "title": "Power Side-Channel Evaluation using Multi-FPGA Systems",
+      "title": "Kolpona: An Agentic Framework with Gradient-Free Neuron Programming for RTL Generation",
       "authors": [
-        "Yaswanth Tavva, Geng Luo, Trevor E. Carlson, Li-Shiuan Peh"
+        "Musa Tur Farazi, Md Nasir Uddin, Soumik Bhattacharjee, Tishna Sabrina, Chowdhury Mohammad Rakin Haider"
       ],
       "keywords": [
         "cs.AR",
-        "FPGA"
+        "DATE"
       ],
-      "abstract": "arXiv:2611.32652v1 Announce Type: cross \nAbstract: Complex out-of-order processors are difficult to evaluate for power side-channel leakage before tapeout. A single FPGA often lacks sufficient capacity, whereas conventional CAD-based analysis is too slow to support the large numbers of traces required by practical attacks. Multi-FPGA emulation provides greater capacity, but existing partitioning schemes are not security-aware and thus results in poor attack performance. This work presents Scissors, a security-aware multi-FPGA partitioning approach for pre-silicon power side-channel evaluation of complex out-of-order processors. Scissors uses side-channel vulnerability factor (SVF) analysis to identify signals correlated with the secret key. It then keeps strongly key-correlated signals con",
-      "pdf_link": "https://arxiv.org/pdf/2611.32652.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.32652",
-      "submission_date": "2026-11-25T05:00:00+00:00",
-      "conference": "FPGA",
+      "abstract": "arXiv:2611.33973v1 Announce Type: cross \nAbstract: Open-weight large language models (LLMs) for register-transfer level (RTL) design are usually improved by fine-tuning on curated Verilog corpora, which needs large sets of verified designs and GPU training. We present Kolpona, an agentic framework that improves such models without gradient training. Its first component is neuron programming, a new form of weight-space programming (WSP) that writes single neurons in closed form into the weights to remove failure habits found on practice tasks, and keeps each edit only when testbench results on fresh tasks favour it. At inference time, tool-using agents propose designs, and a label-free selection stage delivers one design per task from the specification, the candidates and their simulations ",
+      "pdf_link": "https://arxiv.org/pdf/2611.33973.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.33973",
+      "submission_date": "2026-11-26T05:00:00+00:00",
+      "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 4.0,
-      "updated_at": "2026-11-25T16:45:42.056379+00:00"
+      "score": 3.5,
+      "updated_at": "2026-11-26T16:21:16.630405+00:00"
     },
     {
-      "forum_id": "2611.31540",
+      "forum_id": "2611.33406",
       "paper_number": -1,
-      "title": "ExitLUT: Boolean Early Exits for Efficient FPGA-Based Neural Network Inference",
+      "title": "WADJET: Whole-Job Authorization and Dispatch for Job Execution Trust on FPGA System-on-Chip Accelerators",
       "authors": [
-        "Oliver Cassidy, Marta Andronic, George A. Constantinides"
+        "Mohamed El-Hadedy"
       ],
       "keywords": [
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2611.31540v1 Announce Type: new \nAbstract: Early exit neural networks reduce average inference cost by terminating once sufficient confidence is reached. On FPGAs, conventional confidence-based exits add arithmetic control paths poorly matched to LUT fabrics, consuming resources that could otherwise support the main datapath. We present ExitLUT, which replaces softmax-style exit decisions with learned Boolean functions mapped directly into FPGA LUTs. In our CNN evaluation, fpgaConvNet is the static spatial-dataflow baseline, while ATHEENA is its softmax-based early exit extension. ExitLUT reduces ATHEENA's exit-decision LUT usage by 2.58$\\times$ over the softmax path and eliminates decision-path DSP usage, while preserving accuracy and exit behavior. Rerunning design-space exploratio",
-      "pdf_link": "https://arxiv.org/pdf/2611.31540.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.31540",
-      "submission_date": "2026-11-25T05:00:00+00:00",
+      "abstract": "arXiv:2611.33406v1 Announce Type: new \nAbstract: On an FPGA system-on-chip, the software that submits work to an accelerator also decides what the accelerator does. It writes the registers one by one, and the hardware runs whatever it finds, so faulty or compromised software can change one address or resend a job. Existing protections decide who may reach an accelerator or keep its data safe. Deciding whether one job was approved and is still unused takes three things in one place: the only way to the accelerator, the whole job held back until checked, and a record of used approvals. WADJET puts the three in one gate in FPGA logic. A separate authority encrypts and authenticates each approved job, with a sequence number, using Ascon-AEAD128. The gate verifies the whole job before releasing",
+      "pdf_link": "https://arxiv.org/pdf/2611.33406.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.33406",
+      "submission_date": "2026-11-26T05:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 2.5,
-      "updated_at": "2026-11-25T16:45:42.055409+00:00"
+      "updated_at": "2026-11-26T16:21:16.630118+00:00"
     },
     {
-      "forum_id": "2611.32662",
+      "forum_id": "2607.14747",
       "paper_number": -1,
-      "title": "OpenWoud: Vendor-Unlocked Scalable Adaptive Random Forest Accelerator",
+      "title": "Toward Energy-Efficient and Low-Power Arrhythmia Detection for Wearable Devices",
       "authors": [
-        "Ewout van Nimwegen, Elijah Seth Cishugi, Hendrik Folmer, Marco Ottavi, Kuan-Hsun Chen"
+        "Floriaan Bulten, Yawar Rasheed, Arlene John, Vincenzo Stoico, Ghayoor Gillani"
       ],
       "keywords": [
         "cs.AR",
-        "FPGA"
+        "DATE"
       ],
-      "abstract": "arXiv:2611.32662v1 Announce Type: new \nAbstract: Online Machine Learning (ML) enables real-time decision-making on evolving data streams. These dynamic models learn continuously to adapt to new concepts, as previous ones become invalid, but their performance is often limited by throughput. The Adaptive Random Forest (ARF) is a state-of-the-art model for this setting, which naturally exposes parallelism and is therefore well-suited for hardware acceleration. However, prior Field Programmable Gate Array (FPGA)-based accelerators are vendor-locked and rely on resource-hungry Floating-Point (FP) arithmetics, limiting their scalability and portability. We present OpenWoud, a vendor-unlocked ARF framework for FPGAs. Our design replaces FP operators with a flexible FiXed-Point (FxP) arithmetic li",
-      "pdf_link": "https://arxiv.org/pdf/2611.32662.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.32662",
-      "submission_date": "2026-11-25T05:00:00+00:00",
-      "conference": "FPGA",
+      "abstract": "arXiv:2607.14747v2 Announce Type: replace \nAbstract: Cardiovascular diseases are the leading cause of death worldwide, and conditions such as arrhythmia often require long-term monitoring for effective detection and diagnosis. However, current wearable monitoring devices are bulky, uncomfortable, and typically rely on clinicians to manually evaluate electrocardiograms (ECGs). While Deep Learning (DL) algorithms have shown superior performance in arrhythmia detection and classification, their computational complexity coupled with high power consumption limit deployment in wearable devices. To address this challenge, this paper investigates the use of approximation techniques to reduce the power and energy consumption of DL architectures while maintaining acceptable classification performanc",
+      "pdf_link": "https://arxiv.org/pdf/2607.14747.pdf",
+      "forum_link": "https://arxiv.org/abs/2607.14747",
+      "submission_date": "2026-11-26T05:00:00+00:00",
+      "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 2.0,
-      "updated_at": "2026-11-25T16:45:42.056200+00:00"
-    },
-    {
-      "forum_id": "2611.32275",
-      "paper_number": -1,
-      "title": "On the Design of a Slow Control Interlock System for the European GateMate FPGA",
-      "authors": [
-        "Vitalii Burtsev, Daniele Passaretti, Daniel Anders, Christof Pfannenmueller, Fabian Lurz, Thilo Pionteck"
-      ],
-      "keywords": [
-        "cs.AR",
-        "FPGA"
-      ],
-      "abstract": "arXiv:2611.32275v1 Announce Type: new \nAbstract: Slow Control Systems (SCSs) are essential for the monitoring, configuration, and protection of distributed safety-critical systems in scientific, industrial, and medical applications. Although software-based SCS architectures offer flexibility and scalability, they suffer from software aging and non-deterministic latencies, which limit long-term reliability and timely reaction to critical errors, often requiring additional hardware interlock systems. This paper presents an FPGA-centric lightweight Slow Control Interlock System (SCIS) designed to achieve deterministic ultra-low-latency reaction times in long-running dependable systems. System parameters are acquired and fused at runtime in a Supervisory Monitor Unit (SMU), enabling real-time ",
-      "pdf_link": "https://arxiv.org/pdf/2611.32275.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.32275",
-      "submission_date": "2026-11-25T05:00:00+00:00",
-      "conference": "FPGA",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-11-25T16:45:42.056010+00:00"
+      "score": 2.5,
+      "updated_at": "2026-11-26T16:21:16.630452+00:00"
     },
     {
       "forum_id": "2611.32288",
@@ -130,63 +107,40 @@
         "cs.AR",
         "FPGA"
       ],
-      "abstract": "arXiv:2611.32288v1 Announce Type: new \nAbstract: Spiking Neural Networks (SNNs) offer an attractive paradigm for energy-efficient AI inference, while their deployment on reconfigurable hardware enables application-specific acceleration without sacrificing model reprogrammability. However, realizing this potential on FPGAs is often severely constrained by the immense on-chip memory needed to store synaptic weights. Existing compression techniques reduce this storage requirement at the cost of weight precision or accuracy. This work presents a hybrid bit-level weight-storage scheme that trades BRAM capacity for FPGA logic resources while preserving the original weights unmodified. Selected weight bits are implemented using Look-Up Tables (LUTs), while the remaining bits are stored in BRAM an",
+      "abstract": "arXiv:2611.32288v2 Announce Type: replace \nAbstract: Spiking Neural Networks (SNNs) offer an attractive paradigm for energy-efficient AI inference, while their deployment on reconfigurable hardware enables application-specific acceleration without sacrificing model reprogrammability. However, realizing this potential on FPGAs is often severely constrained by the immense on-chip memory needed to store synaptic weights. Existing compression techniques reduce this storage requirement at the cost of weight precision or accuracy. This work presents a hybrid bit-level weight-storage scheme that trades BRAM capacity for FPGA logic resources while preserving the original weights unmodified. Selected weight bits are implemented using Look-Up Tables (LUTs), while the remaining bits are stored in BRA",
       "pdf_link": "https://arxiv.org/pdf/2611.32288.pdf",
       "forum_link": "https://arxiv.org/abs/2611.32288",
-      "submission_date": "2026-11-25T05:00:00+00:00",
+      "submission_date": "2026-11-26T05:00:00+00:00",
       "conference": "FPGA",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 1.5,
-      "updated_at": "2026-11-25T16:45:42.056054+00:00"
+      "score": 2.5,
+      "updated_at": "2026-11-26T16:21:16.630574+00:00"
     },
     {
-      "forum_id": "2611.32264",
+      "forum_id": "2603.18066",
       "paper_number": -1,
-      "title": "Mayfly: Lifecycle-Aware High-Bandwidth Flash for Recursive Self-Improvement",
+      "title": "Predictive Coding Implemented as a Hardware Substrate Computes Gradients faster than Backpropagation",
       "authors": [
-        "Chunlin Tian, Mingjia Fan, Feng Yu, Qingyun Zou, Wenju Zhao, Weng-Fai Wong, Bingsheng He"
+        "Timothy Oh"
       ],
       "keywords": [
         "cs.AR",
         "DATE"
       ],
-      "abstract": "arXiv:2611.32264v1 Announce Type: new \nAbstract: Recursive self-improvement (RSI) lets an LLM improve its agent system by proposing and evaluating candidate variants across tasks. A generation's sessions grow their KV caches together and release them as they finish, creating a burst followed by a decline. At high concurrency, even the KV of sessions ready to run exceeds the GPU's HBM. Offloading that KV to host DRAM or SSDs adds capacity but leaves ready sessions waiting for HBM space before execution. High-Bandwidth Flash (HBF) can serve the overflow in place, but excessive reads lengthen decode steps and repeated writes consume flash endurance. Our key insight is that where ready KV is read should follow the burst and its decline: from HBF in place while the burst overflows HBM, as much ",
-      "pdf_link": "https://arxiv.org/pdf/2611.32264.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.32264",
-      "submission_date": "2026-11-25T05:00:00+00:00",
+      "abstract": "arXiv:2603.18066v3 Announce Type: replace-cross \nAbstract: Backpropagation has enabled modern deep learning but is difficult to realize as an online, fully distributed hardware system due to global error propagation, separate phases, and centralized memory. Predictive coding is an alternative learning algorithm with similar dynamics to backpropagation that arises from local prediction error dynamics. This paper shows that predictive coding can be instantiated as a discrete time digital hardware substrate, with local memory and computation, no instruction set architecture, and one physical core for each predictive-coding neuron. Each core stores its own activity and weights, communicates with the cores that it's connected to, and performs local gradient updates. By updating neuron cores con",
+      "pdf_link": "https://arxiv.org/pdf/2603.18066.pdf",
+      "forum_link": "https://arxiv.org/abs/2603.18066",
+      "submission_date": "2026-11-26T05:00:00+00:00",
       "conference": "DATE",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 1.0,
-      "updated_at": "2026-11-25T16:45:42.055949+00:00"
-    },
-    {
-      "forum_id": "2611.24637",
-      "paper_number": -1,
-      "title": "Hypnos: A Dual-Phase End-to-End Platform for Scalable Continual Learning at the Edge",
-      "authors": [
-        "Guilherme Guedes, Marco P. Apolinario, Charlotte Frenkel"
-      ],
-      "keywords": [
-        "cs.AR",
-        "DATE"
-      ],
-      "abstract": "arXiv:2611.24637v3 Announce Type: replace \nAbstract: Continual learning (CL) enables neural networks to adapt to non-stationary data streams by mitigating catastrophic forgetting, offering a path to robust, private, and adaptable edge devices. Yet, porting CL to real-world edge devices remains challenging for two reasons: (i) online operation, where sensor data arrives one sample at a time and the device must adapt on-the-fly, and (ii) the low footprint of edge devices, which makes traditional error backpropagation training prohibitive. Inspired by the brain's wake and sleep cycles, the former for rapid adaptation with minimal resources and the latter for long-term consolidation, we introduce Hypnos, an open-source dual-phase platform for efficient CL at the edge. In the wake phase (e.g., ",
-      "pdf_link": "https://arxiv.org/pdf/2611.24637.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.24637",
-      "submission_date": "2026-11-25T05:00:00+00:00",
-      "conference": "DATE",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-11-25T16:45:42.056650+00:00"
+      "updated_at": "2026-11-26T16:21:16.630607+00:00"
     }
   ]
 }

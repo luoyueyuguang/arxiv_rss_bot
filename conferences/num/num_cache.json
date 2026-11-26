@@ -1,31 +1,31 @@
 {
   "name": "num",
   "conference": "Numerical Analysis / Scientific Computing",
-  "last_updated": "2026-11-25T16:46:16.854257+00:00",
+  "last_updated": "2026-11-26T16:21:50.571819+00:00",
   "paper_count": 1,
   "papers": [
     {
-      "forum_id": "2611.31955",
+      "forum_id": "2611.33684",
       "paper_number": -1,
-      "title": "A new angle on matrix-vector complexity",
+      "title": "A fast tangential rational Krylov subspace method with randomized sketching for large Lyapunov matrix equations",
       "authors": [
-        "Cecilia Chen, Ethan N. W. Epperly, Michael W. Mahoney, Raphael A. Meyer, John Urschel"
+        "Tianqi Zhang, Fei Xue"
       ],
       "keywords": [
         "cs.NA",
-        "numerical analysis"
+        "SIAM"
       ],
-      "abstract": "arXiv:2611.31955v1 Announce Type: cross \nAbstract: The theory of worst-case matrix-vector complexity has been useful for guiding the design of fast linear algebra algorithms. However, there is a large theory-practice gap in the study of *one-sided* methods, which use matrix-vector products with $\\mathbf{A}$ but not $\\mathbf{A}^\\top$. In practice, for fundamental problems like solving linear systems, one-sided methods like GMRES are often the fastest. By contrast, worst-case analysis often shows pessimistic results, for instance showing that one-sided methods cannot solve a linear system with ideal condition number 1 unless they read the whole matrix $\\mathbf{A}$. Such worst-case complexity results do not reflect real-world experience.\n  To address this issue, this paper proposes a differen",
-      "pdf_link": "https://arxiv.org/pdf/2611.31955.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.31955",
-      "submission_date": "2026-11-25T05:00:00+00:00",
-      "conference": "numerical analysis",
+      "abstract": "arXiv:2611.33684v1 Announce Type: new \nAbstract: We propose a tangential rational Krylov subspace method augmented with randomized sketching for solving continuous-time Lyapunov equations $AX + XA^T + BB^T = 0$, where $A$ is large and sparse and $B$ has a rank much higher than one. Numerical solutions require high-dimensional rational Krylov subspaces (e.g., of dimensions up to $\\sim 1000$), leading to substantial computational cost and long runtime. Building on the adaptive strategies of [SIAM\\,J.\\,Matrix\\,Anal.\\,Appl., 35\\,(2014), pp.\\,476--498], which expand the subspace using the most relevant directions, we introduce several enhancements: selective orthogonalization of basis vectors and fast residual-norm estimation enabled by randomized sketching, and the option to use either adaptiv",
+      "pdf_link": "https://arxiv.org/pdf/2611.33684.pdf",
+      "forum_link": "https://arxiv.org/abs/2611.33684",
+      "submission_date": "2026-11-26T05:00:00+00:00",
+      "conference": "SIAM",
       "source": "arxiv",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
-      "score": 11.0,
-      "updated_at": "2026-11-25T16:46:16.851507+00:00"
+      "score": 34.0,
+      "updated_at": "2026-11-26T16:21:50.569619+00:00"
     }
   ]
 }
