@@ -1,8 +1,8 @@
 {
   "name": "ai",
   "conference": "AI / AI for Science",
-  "last_updated": "2026-11-26T16:21:50.500801+00:00",
-  "paper_count": 32,
+  "last_updated": "2026-11-27T16:06:14.097616+00:00",
+  "paper_count": 31,
   "papers": [
     {
       "forum_id": "mlr-icml25-1",
@@ -100,29 +100,6 @@
       "ratings": [],
       "score": 61.5,
       "updated_at": "2026-07-23T08:28:51.358970+00:00"
-    },
-    {
-      "forum_id": "2605.04375",
-      "paper_number": -1,
-      "title": "Experiment-as-Code Labs: A Declarative Stack for AI-Driven Scientific Discovery",
-      "authors": [
-        "Zhenning Yang, Yuhan Chen, Patrick Tser Jern Kon, Tongyuan Miao, Hongyi Lin, Venkatasubramanian Viswanathan, Danai Koutra, Ang Chen"
-      ],
-      "keywords": [
-        "cs.AI",
-        "AI for Science"
-      ],
-      "abstract": "arXiv:2605.04375v3 Announce Type: replace-cross \nAbstract: To unleash the full potential of AI for Science, we must untether the agents from a purely digital environment. The agent's ability to control and explore in real-world labs is essential because the physical lab remains foundational to scientific discovery. While some tasks can be performed on a computer (e.g., data analysis, running simulated experiments), Eureka moments could occur at any time while operating lab instruments (e.g., when a scientist notices unexpected clues, intuition may prompt a real-time course change). Although autonomous labs are on the rise, which expose programmable APIs to control scientific instruments via software, bridging the gap between increasingly powerful AI agents and automated lab equipment requi",
-      "pdf_link": "https://arxiv.org/pdf/2605.04375.pdf",
-      "forum_link": "https://arxiv.org/abs/2605.04375",
-      "submission_date": "2026-11-26T05:00:00+00:00",
-      "conference": "AI for Science",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 53.5,
-      "updated_at": "2026-11-26T16:21:16.898033+00:00"
     },
     {
       "forum_id": "mlr-icml25-52",
@@ -332,6 +309,29 @@
       "updated_at": "2026-08-14T07:42:18.885647+00:00"
     },
     {
+      "forum_id": "2610.00666",
+      "paper_number": -1,
+      "title": "VisionQ: Benchmarking VLM Judges on Criterion-Specific Comparisons of Computer Vision Method Outputs",
+      "authors": [
+        "Vu Dinh Xuan, Duc-Hai Nguyen, Minh-Dung Dao, Vu Quynh Giao, Quang Hong Nguyen, Binh-Son Hua, Barry O'Sullivan, David Murphy, Hoang D. Nguyen"
+      ],
+      "keywords": [
+        "cs.AI",
+        "CVPR"
+      ],
+      "abstract": "arXiv:2610.00666v2 Announce Type: replace-cross \nAbstract: Qualitative comparison figures in computer vision papers are commonly established to illustrate which method's output is best on a named criterion, such as visual sharpness or surface complexity. VisionQ investigates this important part of computer vision work beyond human judgment towards objective vision-language models (VLMs) as judges. From 1,409 CVPR and ICCV papers, it creates blind multiple-choice questions, each testing one criterion, with the correct answer based on the authors' claimed best result. The best of 21 judges aligns with the authors' claims on 69% of questions, against 32% by chance. Yet it keeps most of its accuracy without the criterion and changes its answers when the options are reordered. Trained on every ",
+      "pdf_link": "https://arxiv.org/pdf/2610.00666.pdf",
+      "forum_link": "https://arxiv.org/abs/2610.00666",
+      "submission_date": "2026-11-27T05:00:00+00:00",
+      "conference": "CVPR",
+      "source": "arxiv",
+      "average_rating": null,
+      "rating_count": 0,
+      "ratings": [],
+      "score": 13.5,
+      "updated_at": "2026-11-27T16:05:42.111664+00:00"
+    },
+    {
       "forum_id": "mlr-icml25-38",
       "paper_number": 38,
       "title": "Disentangling the Causes of Plasticity Loss in Neural Networks",
@@ -472,29 +472,6 @@
       "ratings": [],
       "score": 3.0,
       "updated_at": "2026-08-14T07:42:13.310944+00:00"
-    },
-    {
-      "forum_id": "2611.32148",
-      "paper_number": -1,
-      "title": "RetraQ: Manifold-Constrained Critic Guidance for Flow Policies in RL",
-      "authors": [
-        "Xuanzhuo Liu, Wu Chen, Ruixiang Wu, Shuai Yuan, Chuankang Li, Tongxin Li, Maoqing Yao, Guanghui Ren"
-      ],
-      "keywords": [
-        "cs.AI",
-        "ICLR"
-      ],
-      "abstract": "arXiv:2611.32148v1 Announce Type: cross \nAbstract: A learned critic can improve a pretrained flow-matching policy by steering sampled actions toward higher predicted value. However, even a critic that fits the behavior data well can provide misleading action gradients. Gradient components pointing away from the data-supported region are weakly constrained by behavior data and can lead guidance to exploit critic extrapolation errors. We introduce RetraQ (Retraction-based Q-guidance), which uses geometry encoded by the pretrained flow to constrain both the direction and the destination of critic guidance. A single velocity evaluation of the frozen flow defines a denoising map. RetraQ filters the critic gradient with the map's Jacobian and applies the map itself to correct the updated action.",
-      "pdf_link": "https://arxiv.org/pdf/2611.32148.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.32148",
-      "submission_date": "2026-11-26T05:00:00+00:00",
-      "conference": "ICLR",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 2.5,
-      "updated_at": "2026-11-26T16:21:16.889733+00:00"
     },
     {
       "forum_id": "mlr-icml25-8",

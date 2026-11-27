@@ -1,8 +1,8 @@
 {
   "name": "sys",
   "conference": "Systems / AI Infra / AI Compiler / RISC-V",
-  "last_updated": "2026-11-26T16:21:16.567991+00:00",
-  "paper_count": 311,
+  "last_updated": "2026-11-27T16:05:41.729405+00:00",
+  "paper_count": 307,
   "papers": [
     {
       "forum_id": "usenix-osdi26-3",
@@ -636,29 +636,6 @@
       "ratings": [],
       "score": 66.0,
       "updated_at": "2026-07-21T08:54:26.745556+00:00"
-    },
-    {
-      "forum_id": "2610.35999",
-      "paper_number": -1,
-      "title": "safeL4: Rethinking Safe-Language-Based Single Address Space Microkernels",
-      "authors": [
-        "Zheyuan Xu, Xiaobei Zhang, Zihan Li, Zekai Nie, Guangtao Zhu, Zhuang Lu, Qianying Zhang, Shijun Zhao, Haibo Chen, Rui Hou"
-      ],
-      "keywords": [
-        "cs.OS",
-        "FAST"
-      ],
-      "abstract": "arXiv:2610.35999v2 Announce Type: replace \nAbstract: Microkernels provide good features such as high security, safety, and flexibility, but their reliance on hardware-based isolation leads to heavy performance overhead, limiting their widespread adoption. Although constructing single-address-space microkernels based on safe language-based isolation is a promising approach to addressing the performance issue, this approach still faces challenges in maintaining the principle of minimality and enforcing capability-based, fine-grained access control over system resources. We propose safeL4, an approach to constructing microkernels based on safe languages. It guarantees minimality through low-level abstractions for unsafe operations, and implements a capability system based on the safe language",
-      "pdf_link": "https://arxiv.org/pdf/2610.35999.pdf",
-      "forum_link": "https://arxiv.org/abs/2610.35999",
-      "submission_date": "2026-11-26T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 65.0,
-      "updated_at": "2026-11-26T16:21:03.809560+00:00"
     },
     {
       "forum_id": "usenix-osdi26-91",
@@ -1531,21 +1508,18 @@
         "Lorenzo Alvisi and Robbert van Renesse, Cornell University",
         "Qi Chen and Lidong Zhou, Microsoft Research"
       ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
+      "keywords": [],
       "abstract": "In proof-of-stake blockchains based on State Machine Replication (SMR), the order of transactions directly affects client-visible financial outcomes. Ordered consensus augments the SMR specification by imposing correctness conditions on transaction ordering, with a focus on limiting Byzantine influence. However, real-world ordering attacks can occur even when these conditions hold, often enabled by advantages such as faster networks or proximity to the blockchain infrastructure that allow an adversary to systematically bias outcomes without violating the conditions. To address this gap, we extend ordered consensus with a new model and correctness condition based on equal opportunity , a notion of fairness widely used in legal contexts. Equal opportunity requires that candidates who are equally qualified—according to criteria deemed relevant —have equal chances of being selected (here, for a given position in the total order). We show how carefully introduced randomness can bound ordering bias, and we introduce the Secret Random Oracle (SRO), a fault-tolerant abstraction for generating such randomness. We present two SRO constructions, based on trusted hardware and threshold verifiable random functions, respectively, and use them to build Pompē-SRO, a new ordered consensus protocol that mitigates well-known ordering attacks. Our evaluation shows that Pompē-SRO effectively mitigates front-running and sandwich attacks at a moderate cost to latency.",
       "pdf_link": "https://www.usenix.org/conference/osdi26/presentation/zhang-yunhao",
       "forum_link": "https://www.usenix.org/conference/osdi26/presentation/zhang-yunhao",
-      "submission_date": "2026-11-26T05:00:00+00:00",
+      "submission_date": null,
       "conference": "OSDI '26",
       "source": "usenix",
       "average_rating": null,
       "rating_count": 0,
       "ratings": [],
       "score": 44.5,
-      "updated_at": "2026-11-26T16:21:08.519309+00:00"
+      "updated_at": "2026-11-27T16:05:33.179295+00:00"
     },
     {
       "forum_id": "usenix-osdi26-77",
@@ -4865,29 +4839,6 @@
       "updated_at": "2026-07-21T08:54:22.936520+00:00"
     },
     {
-      "forum_id": "2611.11533",
-      "paper_number": -1,
-      "title": "Ostinato: Low-Latency CPU-GPU MoE Inference for Local Agents",
-      "authors": [
-        "Junning Zhu, Jianxiong Guo"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.11533v2 Announce Type: replace \nAbstract: Language-model agents increasingly run on local workstations with consumer GPUs, where quantized mixture-of-experts (MoE) models split routed experts between GPU and host memory. Prefix-cached agent sessions alternate single-token decode with short tool-return prefills, typically up to a few hundred tokens. Short tool turns touch more experts than consumer GPUs can hold, yet direct roughly 85% of DeepSeek-V4-Flash's routes to a static GPU pool while leaving 3.3-5.5 tokens per cold expert. Widely used local engines such as llama.cpp and KTransformers either copy tens of gigabytes over PCIe per turn, compute every route on the CPU while idling resident GPU experts, or budget GPU memory by whole layers and uniform per-layer quotas. We prese",
-      "pdf_link": "https://arxiv.org/pdf/2611.11533.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.11533",
-      "submission_date": "2026-11-26T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 8.5,
-      "updated_at": "2026-11-26T16:21:03.863199+00:00"
-    },
-    {
       "forum_id": "usenix-osdi26-20",
       "paper_number": 20,
       "title": "Teaching the Old Dog New Tricks: Building Efficient Data Pipelines for Large-Scale LLM Pre-Training (Operational Systems)",
@@ -6717,52 +6668,6 @@
       "ratings": [],
       "score": 1.5,
       "updated_at": "2026-07-21T08:54:22.939632+00:00"
-    },
-    {
-      "forum_id": "2611.33829",
-      "paper_number": -1,
-      "title": "VoroPlex: A Python Framework for Multi-Threaded and Differentiable Voronoi Tessellation",
-      "authors": [
-        "Peihang Lin, Shanmei Wanyan, Mucheng Zhu, Ying Jiang, Chris H. Rycroft, Chenfanfu Jiang, Jiayin Lu"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2611.33829v1 Announce Type: cross \nAbstract: Voronoi tessellations are widely used in computational physics, for example to measure local structure in particle systems and to generate meshes. We present VoroPlex, an open-source Python package for computing Voronoi tessellations in two and three dimensions. VoroPlex is built on the multi-threaded version of the C++ library Voro++, so that large tessellations can be computed in parallel. The package also makes the tessellation differentiable. Each Voronoi vertex is labeled by the generators that define it, and VoroPlex uses these labels to compute the derivative of the vertex with respect to the positions of these generators. PyTorch can therefore compute gradients of quantities such as cell areas, volumes, and interface areas with res",
-      "pdf_link": "https://arxiv.org/pdf/2611.33829.pdf",
-      "forum_link": "https://arxiv.org/abs/2611.33829",
-      "submission_date": "2026-11-26T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-11-26T16:21:03.862567+00:00"
-    },
-    {
-      "forum_id": "2603.19406",
-      "paper_number": -1,
-      "title": "The Bilateral Efficiency of Ethernet: Recalibrating Metcalfe and Boggs After Fifty Years",
-      "authors": [
-        "Paul Borrill"
-      ],
-      "keywords": [
-        "cs.DC",
-        "FAST"
-      ],
-      "abstract": "arXiv:2603.19406v3 Announce Type: replace \nAbstract: In July 1976, Metcalfe and Boggs published their foundational paper on Ethernet in Communications of the ACM. Their efficiency model -- E = (P/C)/(P/C + W*T) -- measures the fraction of Ether time carrying good forward packets under contention. For fifty years this model has framed how the community thinks about Ethernet performance. We argue it is silent on the question that matters for modern intra-rack interconnect: bilateral transaction efficiency -- the fraction of link time that produces committed agreements between sender and receiver. Metcalfe and Boggs themselves planted the seed in their EFTP \"end-dally\" protocol (Section 7.2.2), and the deeper anchor is older still: Abramson's Alohanet carried positive acknowledgments at the l",
-      "pdf_link": "https://arxiv.org/pdf/2603.19406.pdf",
-      "forum_link": "https://arxiv.org/abs/2603.19406",
-      "submission_date": "2026-11-26T05:00:00+00:00",
-      "conference": "FAST",
-      "source": "arxiv",
-      "average_rating": null,
-      "rating_count": 0,
-      "ratings": [],
-      "score": 1.0,
-      "updated_at": "2026-11-26T16:21:03.862990+00:00"
     },
     {
       "forum_id": "usenix-osdi26-14",
